@@ -18,10 +18,10 @@ export const pages = {
   },
   excipient: {
     title: 'Excipients', category: 'Products',
-    description: 'Fillers, binders, coatings, solvents and the rest. Browse the database, then tell us the grade and specification your formulation needs.',
-    meta: 'Explore the Hanpars excipient database and prepare an enquiry with the material, grade, specification and documentation your formulation requires.',
+    description: 'Fillers, binders, coatings, solvents and the rest: a reference list of 1,832 excipients with CAS numbers. Search it, then tell us the grade and specification your formulation needs.',
+    meta: 'Search the Hanpars excipient reference list of 1,832 materials with CAS numbers and prepare an enquiry with the grade, specification and documentation your formulation requires.',
     introTitle: 'For excipients, the grade is the request.',
-    intro: ['Two excipients with the same name can behave very differently, so tell us the grade, the pharmacopoeial specification, the application and the documents you need, and we will take that to suppliers.', 'The database below lists what we have sourced or been asked about before; it is a reference, not a stock list.'],
+    intro: ['Two excipients with the same name can behave very differently, so tell us the grade, the pharmacopoeial specification, the application and the documents you need, and we will take that to suppliers.', 'The reference list below lists what we have sourced or been asked about before; it is a reference, not a stock list.'],
     database: 'https://hanparsco.github.io/excipient_list/', databaseLabel: 'Explore the excipient database',
   },
   nutrition: {
