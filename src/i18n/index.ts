@@ -201,7 +201,7 @@ export const ui = {
         { label: 'تولید قراردادی (CDMO)', href: '/fdf-cdmo', note: 'پروژه‌های توسعه و تولید' },
       ] },
       { label: 'شرکت', items: [
-        { label: 'دربارهٔ هانیا پرسان دارو', href: '/about-us', note: 'که هستیم و چه نیستیم' },
+        { label: 'دربارهٔ هانیا پرسان دارو', href: '/about-us', note: 'درباره ما' },
         { label: 'شیوهٔ کار ما', href: '/culture', note: 'اصول پشت هر درخواست' },
         { label: 'بازارها و تأمین', href: '/markets', note: 'ایران در خانه، تأمین‌کنندگان در خارج' },
       ] },
