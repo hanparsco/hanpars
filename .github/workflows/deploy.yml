@@ -66,3 +66,15 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Ensure custom domain and HTTPS enforcement
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DOMAIN: hanpars.com
+        run: |
+          current=$(gh api repos/${GITHUB_REPOSITORY}/pages --jq '.cname // ""')
+          echo "Current custom domain: '$current'"
+          if [ "$current" != "$DOMAIN" ]; then
+            gh api -X PUT repos/${GITHUB_REPOSITORY}/pages -f cname="$DOMAIN" && echo "Custom domain set to $DOMAIN"
+          fi
+          gh api -X PUT repos/${GITHUB_REPOSITORY}/pages -F https_enforced=true >/dev/null 2>&1 && echo "HTTPS enforced" || echo "HTTPS enforcement not yet available (certificate pending)"
+          gh api repos/${GITHUB_REPOSITORY}/pages --jq '{cname, status, https_enforced, protected_domain_state}'
