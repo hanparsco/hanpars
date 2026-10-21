@@ -82,4 +82,9 @@ jobs:
             echo '```'
           } > pages-report.md
           cat pages-report.md
-          gh issue create --title "Pages domain report ${GITHUB_RUN_ID}" --body-file pages-report.md --label ci-report 2>/dev/null || gh issue create --title "Pages domain report ${GITHUB_RUN_ID}" --body-file pages-report.md
+          set +e
+          rm -rf /tmp/report && mkdir /tmp/report && cp pages-report.md /tmp/report/ && cd /tmp/report
+          git init -q -b ci-report && git config user.name github-actions && git config user.email actions@github.com
+          git add -A && git commit -q -m "Pages domain report ${GITHUB_RUN_ID}"
+          git push -f -q "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:refs/heads/ci-report
+          exit 0
