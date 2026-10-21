@@ -1,0 +1,1124 @@
+{
+  "company": "Haniya Parsan Darou Co. · HANPARS",
+  "title": "Product Portfolio",
+  "description": "Hospital and specialty medicines registered with the Iran Food and Drug Administration (IFDA) and imported by HANPARS from GMP-certified manufacturers in Türkiye, China and India. Listed by therapeutic area with WHO ATC codes, dosage forms and strengths.",
+  "snapshot": "October 2026",
+  "counts": {
+    "total": 46,
+    "available": 30,
+    "launching": 16,
+    "areas": 9
+  },
+  "trust": [
+    {
+      "title": "IFDA-licensed importer",
+      "description": "Marketing authorisation holder for every product listed; dossier, IRC licensing and pharmacovigilance handled in-house."
+    },
+    {
+      "title": "Strategic Medicine Reserve supplier",
+      "description": "Contracted supplier to the IFDA under the national reserve programme for naloxone, misoprostol, hydrocortisone, etomidate and contrast media."
+    },
+    {
+      "title": "Nationwide distribution",
+      "description": "Hospital and pharmacy coverage through Pakhsh Razi, Darougostar Tooba and Dey Darou Omid."
+    },
+    {
+      "title": "Audited supply chain",
+      "description": "GMP-certified sources, batch certificates of analysis on file for every shipment, cold chain for biologics and heparin."
+    }
+  ],
+  "groups": [
+    {
+      "id": "area-1",
+      "title": "Contrast media",
+      "kicker": "Diagnostic imaging",
+      "description": "Iodinated and ionic contrast agents for CT, angiography and urography, supplied to imaging centres and hospitals nationwide.",
+      "products": [
+        {
+          "name": "Iodixanol",
+          "atc": "V08AB09",
+          "formIcons": [
+            {
+              "id": "vial",
+              "label": "Injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Solution for injection",
+              "strength": "320 mg/mL 50 mL"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Iohexol",
+          "atc": "V08AB02",
+          "formIcons": [
+            {
+              "id": "vial",
+              "label": "Injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Solution for injection",
+              "strength": "300 mg/mL 50 mL"
+            },
+            {
+              "form": "Solution for injection",
+              "strength": "350 mg/mL 100 mL"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Meglumine compound",
+          "atc": "V08AA01",
+          "formIcons": [
+            {
+              "id": "vial",
+              "label": "Injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Solution for injection",
+              "strength": "66% / 10% · 20 mL"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        }
+      ]
+    },
+    {
+      "id": "area-2",
+      "title": "Hormones & endocrinology",
+      "kicker": "Endocrine, gynaecology and oncology support",
+      "description": "Corticosteroids, oestrogens, antiandrogen combinations and calcium-regulating hormones.",
+      "products": [
+        {
+          "name": "Calcitonin",
+          "atc": "H05BA03",
+          "formIcons": [
+            {
+              "id": "vial",
+              "label": "Injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Solution for injection",
+              "strength": "50 IU/mL"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Cyproterone compound",
+          "atc": "G03HB01",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "2 mg/0.035 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Estradiol valerate",
+          "atc": "G03CA03",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "1 mg"
+            },
+            {
+              "form": "Tablet",
+              "strength": "2 mg"
+            }
+          ],
+          "origins": [
+            "China",
+            "India"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Exemestane",
+          "atc": "L02BG06",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "25 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Hydrocortisone (as sodium succinate)",
+          "atc": "H02AB09",
+          "formIcons": [
+            {
+              "id": "powder",
+              "label": "Powder for injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Powder for injection",
+              "strength": "100 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        }
+      ]
+    },
+    {
+      "id": "area-3",
+      "title": "CNS & psychiatry",
+      "kicker": "Neurology and mental health",
+      "description": "Antidepressants, antipsychotics, anticonvulsants and antiparkinsonian agents — the fastest-growing part of the portfolio.",
+      "products": [
+        {
+          "name": "Betahistine dihydrochloride",
+          "atc": "N07CA01",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "8 mg"
+            }
+          ],
+          "origins": [
+            "Origin on request"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Carbamazepine",
+          "atc": "N03AF01",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Extended-release Tablet",
+              "strength": "400 mg"
+            }
+          ],
+          "origins": [
+            "Origin on request"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Clomipramine hydrochloride",
+          "atc": "N06AA04",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "25 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Clonazepam",
+          "atc": "N03AE01",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "2 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Clozapine",
+          "atc": "N05AH02",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "25 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Escitalopram (as oxalate)",
+          "atc": "N06AB10",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "10 mg"
+            }
+          ],
+          "origins": [
+            "Origin on request"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Olanzapine",
+          "atc": "N05AH03",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "5 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Perphenazine",
+          "atc": "N05AB03",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "2 mg"
+            },
+            {
+              "form": "Tablet",
+              "strength": "4 mg"
+            }
+          ],
+          "origins": [
+            "Origin on request"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Pregabalin",
+          "atc": "N03AX16",
+          "formIcons": [
+            {
+              "id": "capsule",
+              "label": "Capsule"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Capsule",
+              "strength": "150 mg"
+            },
+            {
+              "form": "Capsule",
+              "strength": "75 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Quetiapine (as fumarate)",
+          "atc": "N05AH04",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "100 mg"
+            },
+            {
+              "form": "Tablet",
+              "strength": "25 mg"
+            }
+          ],
+          "origins": [
+            "Türkiye"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Sertraline (as hydrochloride)",
+          "atc": "N06AB06",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "100 mg"
+            },
+            {
+              "form": "Tablet",
+              "strength": "50 mg"
+            }
+          ],
+          "origins": [
+            "China",
+            "Türkiye"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Topiramate",
+          "atc": "N03AX11",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "100 mg"
+            },
+            {
+              "form": "Tablet",
+              "strength": "25 mg"
+            },
+            {
+              "form": "Tablet",
+              "strength": "50 mg"
+            }
+          ],
+          "origins": [
+            "Origin on request"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Trihexyphenidyl hydrochloride",
+          "atc": "N04AA01",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "2 mg"
+            }
+          ],
+          "origins": [
+            "Origin on request"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        }
+      ]
+    },
+    {
+      "id": "area-4",
+      "title": "Cardiovascular",
+      "kicker": "Antithrombotic, antiarrhythmic and diuretic therapy",
+      "description": "Platelet inhibitors, beta-blockers and loop diuretics for chronic cardiovascular care.",
+      "products": [
+        {
+          "name": "Clopidogrel (as bisulfate)",
+          "atc": "B01AC04",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "75 mg"
+            }
+          ],
+          "origins": [
+            "China",
+            "Türkiye"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Furosemide",
+          "atc": "C03CA01",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "40 mg"
+            }
+          ],
+          "origins": [
+            "Türkiye"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Sotalol hydrochloride",
+          "atc": "C07AA07",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "80 mg"
+            }
+          ],
+          "origins": [
+            "Origin on request"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        }
+      ]
+    },
+    {
+      "id": "area-5",
+      "title": "Anti-infectives",
+      "kicker": "Antibacterials, antituberculars and antimalarials",
+      "description": "Injectable and oral antibiotics, first-line tuberculosis treatment and aminoquinolines.",
+      "products": [
+        {
+          "name": "Ampicillin",
+          "atc": "J01CA01",
+          "formIcons": [
+            {
+              "id": "powder",
+              "label": "Powder for injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Powder for injection",
+              "strength": "250 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Ampicillin / sulbactam",
+          "atc": "J01CR01",
+          "formIcons": [
+            {
+              "id": "powder",
+              "label": "Powder for injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Powder for injection",
+              "strength": "1 g/0.5 g"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Cefuroxime (as axetil)",
+          "atc": "J01DC02",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "500 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Chloroquine phosphate",
+          "atc": "P01BA01",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "250 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Hydroxychloroquine sulfate",
+          "atc": "P01BA02",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "200 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Isoniazid",
+          "atc": "J04AC01",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "300 mg"
+            }
+          ],
+          "origins": [
+            "India"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Rifampicin",
+          "atc": "J04AB02",
+          "formIcons": [
+            {
+              "id": "capsule",
+              "label": "Capsule"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Capsule",
+              "strength": "150 mg"
+            },
+            {
+              "form": "Capsule",
+              "strength": "300 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Vancomycin (as hydrochloride)",
+          "atc": "J01XA01",
+          "formIcons": [
+            {
+              "id": "powder",
+              "label": "Powder for injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Powder for injection",
+              "strength": "500 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        }
+      ]
+    },
+    {
+      "id": "area-6",
+      "title": "Emergency & critical care",
+      "kicker": "Anaesthesia, resuscitation and respiratory",
+      "description": "Products for emergency departments, operating theatres and ICUs, several of them supplied under the national Strategic Medicine Reserve.",
+      "products": [
+        {
+          "name": "Aminophylline",
+          "atc": "R03DA05",
+          "formIcons": [
+            {
+              "id": "vial",
+              "label": "Injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Solution for injection",
+              "strength": "25 mg/mL 10 mL"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Atropine sulfate",
+          "atc": "A03BA01",
+          "formIcons": [
+            {
+              "id": "vial",
+              "label": "Injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Solution for injection",
+              "strength": "0.5 mg/mL"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Epinephrine",
+          "atc": "C01CA24",
+          "formIcons": [
+            {
+              "id": "vial",
+              "label": "Injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Solution for injection",
+              "strength": "1 mg/mL"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Etomidate",
+          "atc": "N01AX07",
+          "formIcons": [
+            {
+              "id": "vial",
+              "label": "Injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Solution for injection",
+              "strength": "2 mg/mL 10 mL"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Heparin sodium",
+          "atc": "B01AB01",
+          "formIcons": [
+            {
+              "id": "vial",
+              "label": "Injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Solution for injection",
+              "strength": "5000 IU/mL 5 mL"
+            }
+          ],
+          "origins": [
+            "Türkiye"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Hyoscine-N-butylbromide",
+          "atc": "A03BB01",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "10 mg"
+            }
+          ],
+          "origins": [
+            "Origin on request"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        },
+        {
+          "name": "Lidocaine / chlorhexidine",
+          "atc": "N01BB52",
+          "formIcons": [
+            {
+              "id": "gel",
+              "label": "Gel"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Gel",
+              "strength": "2% / 0.05% · 12.5 g"
+            }
+          ],
+          "origins": [
+            "Türkiye"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Naloxone hydrochloride",
+          "atc": "V03AB15",
+          "formIcons": [
+            {
+              "id": "vial",
+              "label": "Injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Solution for injection",
+              "strength": "0.4 mg/mL"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Salbutamol (as sulfate)",
+          "atc": "R03AC02",
+          "formIcons": [
+            {
+              "id": "inhaler",
+              "label": "Inhaler"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Metered-dose inhaler",
+              "strength": "100 µg/dose, 200 doses"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        }
+      ]
+    },
+    {
+      "id": "area-7",
+      "title": "Immunology & oncology support",
+      "kicker": "Biologics and chemoprotection",
+      "description": "Anti-TNF biologic therapy and folinate rescue.",
+      "products": [
+        {
+          "name": "Calcium folinate",
+          "atc": "V03AF03",
+          "formIcons": [
+            {
+              "id": "powder",
+              "label": "Powder for injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Powder for injection",
+              "strength": "100 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Infliximab",
+          "atc": "L04AB02",
+          "formIcons": [
+            {
+              "id": "powder",
+              "label": "Powder for injection"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Powder for injection",
+              "strength": "100 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        }
+      ]
+    },
+    {
+      "id": "area-8",
+      "title": "Gastroenterology & women’s health",
+      "kicker": "Hepatobiliary and obstetric care",
+      "description": "Bile-acid therapy and prostaglandin analogue for obstetric indications.",
+      "products": [
+        {
+          "name": "Misoprostol",
+          "atc": "G02AD06",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "200 µg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        },
+        {
+          "name": "Ursodeoxycholic acid",
+          "atc": "A05AA02",
+          "formIcons": [
+            {
+              "id": "capsule",
+              "label": "Capsule"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Capsule",
+              "strength": "300 mg"
+            }
+          ],
+          "origins": [
+            "Türkiye"
+          ],
+          "status": "registered",
+          "statusLabel": "Launching"
+        }
+      ]
+    },
+    {
+      "id": "area-9",
+      "title": "Bone & metabolism",
+      "kicker": "Osteoporosis",
+      "description": "Weekly bisphosphonate therapy.",
+      "products": [
+        {
+          "name": "Alendronate (as sodium)",
+          "atc": "M05BA04",
+          "formIcons": [
+            {
+              "id": "tablet",
+              "label": "Tablet"
+            }
+          ],
+          "forms": [
+            {
+              "form": "Tablet",
+              "strength": "70 mg"
+            }
+          ],
+          "origins": [
+            "China"
+          ],
+          "status": "available",
+          "statusLabel": "Available in Iran"
+        }
+      ]
+    }
+  ],
+  "statusNote": "Status reflects IFDA licensing and import scheduling as of October 2026 and is updated regularly. Dosage forms and strengths are as licensed by the IFDA; manufacturer details and certificates are available to healthcare institutions and partners on request.",
+  "manufacturer": {
+    "title": "Manufacturers: bring your products to Iran with one partner",
+    "description": "From Letter of Authorization to pharmacy shelf — HANPARS prepares and submits the IFDA dossier, obtains the IRC licence, manages currency allocation and import, and places the product with national distributors. We are actively expanding our Turkish and European supplier base.",
+    "services": [
+      "Dossier preparation and IFDA submission",
+      "IRC licensing and renewals",
+      "Currency allocation and import logistics",
+      "Distribution through national wholesalers",
+      "Post-marketing surveillance and reporting"
+    ],
+    "contactHref": "mailto:contact@hanpars.com?subject=Representation%20in%20Iran",
+    "contactLabel": "Talk to our regulatory team"
+  },
+  "sourceFooter": "Haniya Parsan Darou Co. (HANPARS) · 3rd Floor, No. 326, Zafar St., Africa Blvd., Tehran 1968734974, Iran · +98 21 88883325 · contact@hanpars.com"
+}

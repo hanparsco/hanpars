@@ -1,0 +1,21 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
+import Icon from '../../components/Icon.astro';
+import CTA from '../../components/CTA.astro';
+import articles from '../../data/articles.json';
+import { articleSummary } from '../../data/text';
+export function getStaticPaths() {
+  return articles.map(article=>({params:{slug:article.slug},props:{article}}));
+}
+const { article } = Astro.props;
+const date = new Date(article.date).toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+const sorted = [...articles].sort((a,b)=>new Date(b.date).getTime()-new Date(a.date).getTime());
+const index = sorted.findIndex(a=>a.slug===article.slug);
+const next = sorted[index+1];
+---
+<Layout title={`${article.title} | Hanpars Insights`} description={articleSummary(article).slice(0,155)}>
+  <PageHero title={article.title} category="Insights archive" description={`Original publication: ${date} · ${article.category}`} action="Back to the archive" href="/blog-1"/>
+  <section class="section"><div class="container article-wrap"><div class="archive-note">Historical editorial archive. This article retains its original date and commentary. Market figures, forecasts and regulatory references may be outdated and were not independently re-verified for this redesign. Do not treat it as current regulatory or investment advice.</div><article class="article-body" set:html={article.content}/><div class="article-navigation"><a class="text-link" href="/blog-1"><Icon name="arrow" size={16} style="transform:rotate(180deg)"/>All insights</a>{next&&<a class="text-link" href={`/insights/${next.slug}`}>Next archived article<Icon name="arrow" size={16}/></a>}</div></div></section>
+  <CTA title="Bring the conversation to your product."/>
+</Layout>

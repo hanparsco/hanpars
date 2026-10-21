@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StandardPage from '../components/StandardPage.astro';
+import RegulatoryPage from '../components/RegulatoryPage.astro';
+import ContactPage from '../components/ContactPage.astro';
+import InsightsPage from '../components/InsightsPage.astro';
+import { pages, type PageKey } from '../data/pages';
+
+export function getStaticPaths() {
+  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1'].map(page=>({params:{page}}));
+}
+const page = Astro.params.page!;
+const special = {
+  'regulatory-affairs': {title:'Regulatory Affairs | Hanpars Pharmaceutical Services',description:'Explore Hanpars’ regulatory dossier, registration and lifecycle support for APIs and finished dosage forms. Discuss your product and target market.'},
+  'contact-us-1': {title:'Contact Hanpars | Sourcing & Regulatory Enquiries',description:'Prepare a pharmaceutical sourcing or regulatory/CDMO enquiry and continue through the existing Hanpars contact channel. Find published office details.'},
+  'blog-1': {title:'Pharmaceutical Insights Archive | Hanpars',description:'Explore Hanpars’ dated pharmaceutical sourcing, market and regulatory commentary. Read original archived insights with their historical context.'},
+};
+const data = pages[page as PageKey];
+const seo = special[page as keyof typeof special] || {title:`${data?.title} | Hanpars`,description:data?.meta};
+---
+<Layout title={seo.title} description={seo.description}>
+  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:<StandardPage page={page as PageKey}/>}
+</Layout>

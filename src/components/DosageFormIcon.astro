@@ -1,0 +1,11 @@
+---
+import icons from '../data/dosage-icons.json';
+interface Props { name:string; label:string; size?:number; }
+const { name,label,size=22 } = Astro.props;
+const shapes = (icons as Record<string,string>)[name];
+if (!shapes) throw new Error(`Unknown supplied dosage-form icon: ${name}`);
+---
+<svg width={size} height={size} viewBox="0 0 24 24" role="img" aria-label={label} data-dosage-form={name}>
+  <title>{label}</title>
+  <Fragment set:html={shapes}/>
+</svg>

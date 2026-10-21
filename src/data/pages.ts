@@ -1,0 +1,83 @@
+export const pages = {
+  api: {
+    title: 'Active pharmaceutical ingredients', category: 'Products',
+    description: 'Start with the substance. Explore our API reference range and prepare a focused sourcing enquiry for your product and market.',
+    meta: 'Explore Hanpars’ searchable API reference range. Find a substance and prepare a pharmaceutical sourcing enquiry with your specification and target market.',
+    introTitle: 'A starting point for your sourcing conversation.',
+    intro: ['Browse the API reference range, or search for the substance you need. Bring the specification, quantity, destination market and documentation requirements to the enquiry.', 'The original substance names are retained. A reference entry is not a claim of available stock or registration status.'],
+    database: 'https://hanparsco.github.io/api-list/', databaseLabel: 'Open the complete API database',
+  },
+  fdf: {
+    title: 'Finished dosage forms', category: 'Products',
+    description: 'A finished product begins with a clear requirement. Search the FDF reference list by product, INN, strength or original code.',
+    meta: 'Browse Hanpars’ searchable finished dosage-form reference list. Explore original product names, strengths and codes and prepare a sourcing enquiry.',
+    introTitle: 'Find the product. Define the requirement.',
+    intro: ['Use the finished product reference list as a starting point. Include the dosage form, strength, pack size, quantity and target market when preparing your enquiry.', 'Original product names and INN codes are retained from the published working list. Ask about the documentation and specifications relevant to your request.'],
+    database: '', databaseLabel: '',
+  },
+  excipient: {
+    title: 'Excipients', category: 'Products',
+    description: 'The materials around the active ingredient matter. Explore the excipient database and tell us what your formulation requires.',
+    meta: 'Explore the Hanpars excipient database and prepare an enquiry with your material, grade, specifications and pharmaceutical documentation requirements.',
+    introTitle: 'Good sourcing starts with the specification.',
+    intro: ['For an excipient enquiry, the material name is only the beginning. Include the grade, specification, intended application and any required documentation.', 'Use the existing database as a reference, then bring your requirement to Hanpars for a sourcing conversation.'],
+    database: 'https://hanparsco.github.io/excipient_list/', databaseLabel: 'Explore the excipient database',
+  },
+  nutrition: {
+    title: 'Nutrition ingredients', category: 'Products',
+    description: 'A direct route to your nutrition ingredient enquiry. Explore the existing database and share the specification your product needs.',
+    meta: 'Explore Hanpars’ nutrition ingredient reference database and prepare a sourcing enquiry with your ingredient, specification and documentation needs.',
+    introTitle: 'Start with the ingredient you need.',
+    intro: ['The nutrition page connects you to the existing ingredient database, including its vitamins context. Browse the reference and identify the requirement relevant to your product.', 'Include the ingredient, grade or specification, quantity, market and documentation needs. Do not rely on a database listing as a stock or availability statement.'],
+    database: 'https://hanparsco.github.io/Nutrition/', databaseLabel: 'Explore the nutrition database',
+  },
+  'about-us': {
+    title: 'A connection that matters.', category: 'About Hanpars',
+    description: 'Pharmaceutical sourcing, technical conversations and regulatory support—brought together around the needs of your product and market.',
+    meta: 'Learn about Hanpars’ pharmaceutical sourcing focus, its product pathways and its partnership-minded approach to regulatory and development enquiries.',
+    introTitle: 'Products are the starting point. Partnership is the approach.',
+    intro: ['Hanpars Trading Co. focuses on pharmaceutical sourcing, connecting enquiries for active pharmaceutical ingredients, excipients and finished dosage forms with the wider technical and regulatory conversation.', 'Our existing market focus is Iran, with a China sourcing context and collaboration with development and manufacturing partners. We describe our role as sourcing and coordination, rather than implying that Hanpars owns the facilities behind every product.'],
+    cards: [
+      {title:'A defined product focus',icon:'capsule',text:'APIs, excipients and finished dosage forms are core product pathways. Nutrition ingredient enquiries have their own database route.',href:'/api',link:'Explore our products'},
+      {title:'Connected expertise',icon:'file',text:'Dossiers, documentation and market requirements are part of the conversation, alongside regulatory and development support.',href:'/regulatory-affairs',link:'Explore Regulatory Affairs'},
+      {title:'A useful next step',icon:'globe',text:'Start with a clear brief. Product specifications, project status and target-market details help make the enquiry more useful.',href:'/contact-us-1',link:'Prepare an enquiry'},
+    ],
+  },
+  culture: {
+    title: 'Clear principles. Thoughtful work.', category: 'How we work',
+    description: 'A practical approach to collaboration: define the need, communicate clearly and keep product and market requirements in view.',
+    meta: 'Explore the working principles behind Hanpars’ pharmaceutical sourcing and service enquiries: clarity, collaboration and a requirement-led approach.',
+    introTitle: 'Clarity is a good place to begin.',
+    intro: ['Our culture is expressed through how we approach a requirement: a clear brief, a shared understanding of scope and a conversation grounded in the product and market.', 'The existing Hanpars values include integrity, quality-minded working, collaboration and technical development. Here, those ideas become useful principles for your enquiry—not unsupported certification or performance claims.'],
+    cards: [
+      {title:'Be clear about the need',icon:'search',text:'Define the product or project before discussing the path forward. Include the specification, quantity, market and stage of development.'},
+      {title:'Keep responsibilities clear',icon:'layers',text:'Distinguish sourcing and coordination from the roles of manufacturers, development partners and regulatory authorities.'},
+      {title:'Make collaboration practical',icon:'globe',text:'Bring commercial, documentation and technical requirements into the same conversation, with a clearly defined next step.'},
+    ],
+  },
+  markets: {
+    title: 'Product needs. Market context.', category: 'Markets & sourcing',
+    description: 'Pharmaceutical sourcing is shaped by the destination market, documentation requirements and the product itself.',
+    meta: 'Explore Hanpars’ Iran-market sourcing context and the product, specification and regulatory information useful for a pharmaceutical enquiry.',
+    introTitle: 'A requirement is stronger with context.',
+    intro: ['The existing Hanpars market narrative focuses on Iran and describes sourcing context across China, India and Europe. The product, specification and destination market belong at the centre of an enquiry.', 'A sourcing footprint is not a promise that every material or supplier is available for every request. Share the target market and documentation needs so that the relevant scope can be discussed.'],
+    cards: [
+      {title:'Product & specification',icon:'molecule',text:'Identify the substance, dosage form or ingredient, with the grade, strength, pack size or specification that applies.'},
+      {title:'Destination & documentation',icon:'file',text:'Include the destination market and your dossier, documentation or regulatory needs at the start.'},
+      {title:'Scope & next steps',icon:'globe',text:'Discuss the sourcing or service scope for the particular requirement without relying on generic availability claims.'},
+    ],
+  },
+  'fdf-cdmo': {
+    title: 'Development needs connected expertise.', category: 'FDF CDMO',
+    description: 'Finished dosage-form development and manufacturing partnerships, approached through a clear project brief and defined responsibilities.',
+    meta: 'Discuss your finished dosage-form CDMO project with Hanpars, including formulation, technology transfer and development or manufacturing partner coordination.',
+    introTitle: 'Bring the project into focus.',
+    intro: ['Our existing CDMO narrative includes formulation development, analytical work, scale-up, stability, packaging and technology transfer. Discuss which activities and partner responsibilities apply to your project.', 'Hanpars works with development and manufacturing partners. This page does not claim that Hanpars owns a plant, holds a particular GMP certification or can guarantee a regulatory outcome.'],
+    cards: [
+      {title:'Solid oral dosage forms',icon:'capsule',text:'Tablets and capsules. Share the API, dosage form, strength, development stage and target market.'},
+      {title:'Injectable preparations',icon:'box',text:'Ampoule and vial projects. Include the formulation, presentation, project status and relevant documentation needs.'},
+      {title:'Liquid & semi-solid forms',icon:'layers',text:'Liquid and topical semi-solid projects. Start with the formulation scope, application and product requirements.'},
+    ],
+  },
+} as const;
+export type PageKey = keyof typeof pages;

@@ -1,0 +1,179 @@
+{
+  "extractor": {
+    "path": "/home/ubuntu/hanpars/scripts/extract-data.py",
+    "method": "BeautifulSoup HTML parsing plus a narrow non-executing JavaScript literal parser",
+    "sourceExecution": "none"
+  },
+  "sourceProvenance": [
+    {
+      "path": "/home/ubuntu/hanpars-rebuild/audit/fdf-source.html",
+      "bytes": 149472,
+      "sha256": "9df778087aaea995d6369c76e5be0b66bc6360e236994f498b090065919138e0"
+    },
+    {
+      "path": "/home/ubuntu/hanpars-rebuild/audit/api-iframe-0.html",
+      "bytes": 36724,
+      "sha256": "d8cdb390dd36a6be3b4854ad4d0f4f734e6643bd8bc622ee860bdf41bf4dd42a"
+    },
+    {
+      "path": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+      "bytes": 22460,
+      "sha256": "28587afa7d5a6d00a0273c1f7a9c33f7bce3cf42440de84e35c8c1a19581d566"
+    },
+    {
+      "path": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-2.html",
+      "bytes": 41344,
+      "sha256": "fb45d5e9e1a035e552354acf75e7a00bc515c2b5d488893556c884ad925a4952"
+    }
+  ],
+  "originalArticleSources": {
+    "paths": [
+      "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+      "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-2.html"
+    ],
+    "preservation": "Sources remain at the listed local audit paths; no duplicate large source copies were created in the public application tree."
+  },
+  "outputDatasets": {
+    "fdf": {
+      "path": "/home/ubuntu/hanpars/src/data/fdf.json",
+      "shape": "Array<{name: string, code: string}>",
+      "count": 433
+    },
+    "apis": {
+      "path": "/home/ubuntu/hanpars/src/data/apis.json",
+      "shape": "string[]",
+      "count": 1503
+    },
+    "articles": {
+      "path": "/home/ubuntu/hanpars/src/data/articles.json",
+      "shape": "Array<{slug: string, title: string, date: string, category: string, excerpt: string, content: string, image: string}>",
+      "count": 20
+    }
+  },
+  "expectedCounts": {
+    "fdfRows": 433,
+    "apiOriginalStrings": 1503
+  },
+  "actualCounts": {
+    "fdfRows": 433,
+    "apiOriginalStrings": 1503,
+    "articles": 20
+  },
+  "articleExtraction": {
+    "sourceArticleCounts": {
+      "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html": 8,
+      "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-2.html": 12
+    },
+    "sourceArticleCount": 20,
+    "deduplicatedArticleCount": 20,
+    "duplicatesRemovedByExactTitleAndDate": [],
+    "categoriesDefaulted": [],
+    "sanitizerRemovals": {},
+    "recordsWithFullImageNotRepresentedBySchema": [
+      {
+        "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+        "sourceIndex": 1,
+        "title": "Key Trends Shaping China's Finished Dosage Formulation Market in 2025-2026",
+        "date": "November 1, 2025"
+      },
+      {
+        "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+        "sourceIndex": 2,
+        "title": "Chinese Finished Dosage Formulations Going Global: Export Growth and International Impact",
+        "date": "October 1, 2025"
+      },
+      {
+        "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+        "sourceIndex": 3,
+        "title": "China as an Innovator in Finished Dosage Formulations: From Generics to Cutting-Edge Therapies",
+        "date": "September 1, 2025"
+      },
+      {
+        "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+        "sourceIndex": 4,
+        "title": "Key Trends in China's API Market for 2025-2026",
+        "date": "November 15, 2025"
+      },
+      {
+        "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+        "sourceIndex": 5,
+        "title": "Leading API Manufacturers in China: Profiles and Innovations",
+        "date": "October 15, 2025"
+      },
+      {
+        "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+        "sourceIndex": 6,
+        "title": "Global Impact of Chinese API Exports and Supply Chain Dynamics",
+        "date": "September 15, 2025"
+      },
+      {
+        "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+        "sourceIndex": 7,
+        "title": "Regulatory Changes Impacting China's API Sector",
+        "date": "August 15, 2025"
+      },
+      {
+        "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+        "sourceIndex": 8,
+        "title": "Sustainability Initiatives in Chinese API Production",
+        "date": "July 15, 2025"
+      }
+    ]
+  },
+  "discrepancies": [
+    {
+      "type": "article_fullImage_source_field_not_represented",
+      "resolution": "The required schema permits only image; image retains the original image field. fullImage remains in the local audit source.",
+      "details": [
+        {
+          "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+          "sourceIndex": 1,
+          "title": "Key Trends Shaping China's Finished Dosage Formulation Market in 2025-2026",
+          "date": "November 1, 2025"
+        },
+        {
+          "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+          "sourceIndex": 2,
+          "title": "Chinese Finished Dosage Formulations Going Global: Export Growth and International Impact",
+          "date": "October 1, 2025"
+        },
+        {
+          "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+          "sourceIndex": 3,
+          "title": "China as an Innovator in Finished Dosage Formulations: From Generics to Cutting-Edge Therapies",
+          "date": "September 1, 2025"
+        },
+        {
+          "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+          "sourceIndex": 4,
+          "title": "Key Trends in China's API Market for 2025-2026",
+          "date": "November 15, 2025"
+        },
+        {
+          "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+          "sourceIndex": 5,
+          "title": "Leading API Manufacturers in China: Profiles and Innovations",
+          "date": "October 15, 2025"
+        },
+        {
+          "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+          "sourceIndex": 6,
+          "title": "Global Impact of Chinese API Exports and Supply Chain Dynamics",
+          "date": "September 15, 2025"
+        },
+        {
+          "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+          "sourceIndex": 7,
+          "title": "Regulatory Changes Impacting China's API Sector",
+          "date": "August 15, 2025"
+        },
+        {
+          "source": "/home/ubuntu/hanpars-rebuild/audit/blog-iframe-1.html",
+          "sourceIndex": 8,
+          "title": "Sustainability Initiatives in Chinese API Production",
+          "date": "July 15, 2025"
+        }
+      ]
+    }
+  ]
+}

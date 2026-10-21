@@ -1,0 +1,13 @@
+---
+import Icon from './Icon.astro';
+import { articleSummary } from '../data/text';
+interface Props { article: { slug:string; title:string; date:string; category:string; excerpt:string; content:string }; index?:number; }
+const { article, index = 0 } = Astro.props;
+const date = new Date(article.date).toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric', timeZone:'UTC' });
+const isoDate = new Date(article.date).toISOString().slice(0,10);
+const summary = articleSummary(article);
+---
+<a class="insight-card" href={`/insights/${article.slug}`}>
+  <div class:list={['insight-art',{alt:index%3===1}]}><Icon name={index%3===0?'globe':index%3===1?'molecule':'file'} size={42}/></div>
+  <div class="insight-body"><div class="insight-meta"><span>ARCHIVE</span><span>·</span><time datetime={isoDate}>{date}</time></div><h3>{article.title}</h3><p>{summary.slice(0,155)}{summary.length>155?'…':''}</p><span class="text-link">Read the insight <Icon name="diagonal" size={16}/></span></div>
+</a>

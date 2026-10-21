@@ -1,0 +1,6 @@
+---
+import Icon from './Icon.astro';
+interface Props { title?: string; description?: string; }
+const { title = 'A clearer path starts with a conversation.', description = 'Tell us the product, the project and the market. Let’s find the right next step.' } = Astro.props;
+---
+<section class="cta-section"><div class="container cta-box"><div><span class="eyebrow">LET’S CONNECT</span><h2>{title}</h2><p>{description}</p></div><div class="cta-actions"><a class="button button-sky" href="/contact-us-1?type=sourcing">Request a sourcing quote <Icon name="diagonal" size={18}/></a><a class="button button-ghost" href="/contact-us-1?type=regulatory">Discuss a service enquiry <Icon name="diagonal" size={18}/></a></div></div></section>

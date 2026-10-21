@@ -1,0 +1,13 @@
+---
+import Brand from './Brand.astro';
+import Icon from './Icon.astro';
+import { groups, liveNewsletter } from '../data/site';
+---
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-intro"><Brand light /><p>Pharmaceutical products.<br/>Connected expertise.<br/>A clear next step.</p><a class="footer-phone" href="tel:+982188856347"><Icon name="phone" size={16}/> +98 21 8885 6347</a></div>
+    {groups.map(group => <div class="footer-group"><h3>{group.label}</h3>{group.items.map(item => <a href={item.href}>{item.label}</a>)}</div>)}
+    <div class="footer-group footer-connect"><h3>Stay connected</h3><a href="/blog-1">Pharmaceutical insights</a><a href="/contact-us-1">Contact Hanpars</a><p>Receive updates through our existing subscription channel.</p><a class="footer-subscribe" href={liveNewsletter} target="_blank" rel="noopener noreferrer">Subscribe on hanpars.com <Icon name="diagonal" size={15}/></a></div>
+  </div>
+  <div class="container footer-bottom"><span>© {new Date().getFullYear()} Hanpars Pharmaceutical Trading Co. LTD. All rights reserved.</span><span>Thoughtfully connected.</span></div>
+</footer>

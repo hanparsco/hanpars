@@ -1,0 +1,58 @@
+---
+import Icon from './Icon.astro';
+import CTA from './CTA.astro';
+import InsightCard from './InsightCard.astro';
+import { heroImage, partnershipImage, productFamilies } from '../data/site';
+import articles from '../data/articles.json';
+const featured = [...articles].sort((a,b) => new Date(b.date).getTime()-new Date(a.date).getTime()).slice(0,3);
+---
+<section class="hero">
+  <div class="container hero-main">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="status-dot"></span> CONNECTED EXPERTISE. CLEAR NEXT STEPS.</span>
+      <h1>Pharmaceutical<br/>sourcing.<br/><em>Thoughtfully connected.</em></h1>
+      <p class="hero-description">From the right ingredient to the right regulatory pathway. We connect your product needs with sourcing, development partners and regulatory expertise.</p>
+      <div class="hero-actions"><a class="button button-sky" href="/contact-us-1?type=sourcing">Request a sourcing quote <Icon name="diagonal" size={17}/></a><a class="button button-ghost" href="/regulatory-affairs">Explore our services <Icon name="arrow" size={17}/></a></div>
+      <p class="hero-note"><Icon name="globe" size={15}/> Product sourcing · Regulatory Affairs · CDMO partnerships</p>
+    </div>
+    <div class="hero-art"><img src={heroImage} alt="Conceptual frosted-glass capsule and connected molecular-inspired forms" fetchpriority="high" width="960" height="720"/><div class="hero-art-label"><Icon name="molecule" size={30}/><span><strong>The value of connection</strong>Products, expertise and a way forward.</span></div></div>
+  </div>
+  <div class="container hero-tracks">{productFamilies.map((product,i) => <a class="hero-track" href={product.href}><Icon name={product.icon} size={26}/><span><small>0{i+1} / PRODUCT PATHWAY</small>{product.short}</span><Icon class="track-arrow" name="diagonal" size={17}/></a>)}</div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">FIND YOUR STARTING POINT</span><h2>What does your<br/>next product need?</h2></div><p>A clear route to the material, finished product or specialist support you’re looking for.</p></div>
+    <div class="product-grid">{productFamilies.map(product => <a class="product-card" href={product.href}><span class="icon-tile"><Icon name={product.icon} size={25}/></span><span class="eyebrow">{product.label}</span><h3>{product.title}</h3><p>{product.text}</p><span class="card-link">Explore {product.short === 'Finished dosage forms' ? 'FDFs' : product.short.toLowerCase()}<Icon name="diagonal" size={18}/></span></a>)}</div>
+    <div class="guide-panel">
+      <div class="guide-intro"><Icon name="globe" size={25}/><div><h3>Not sure where to begin?</h3><p>Choose what you need. We’ll point you in the right direction.</p></div></div>
+      <div class="guide-content" data-guide>
+        <div class="guide-tabs" role="tablist" aria-label="Choose your requirement"><button id="guide-sourcing" role="tab" type="button" class="guide-tab" aria-selected="true" aria-controls="guide-result" data-guide-type="sourcing">Product sourcing</button><button id="guide-regulatory" role="tab" type="button" class="guide-tab" aria-selected="false" aria-controls="guide-result" data-guide-type="regulatory" tabindex="-1">Regulatory Affairs</button><button id="guide-cdmo" role="tab" type="button" class="guide-tab" aria-selected="false" aria-controls="guide-result" data-guide-type="cdmo" tabindex="-1">CDMO project</button></div>
+        <div class="guide-result" id="guide-result" role="tabpanel" aria-labelledby="guide-sourcing" tabindex="0"><p data-guide-description>Have a product or ingredient in mind? Share its name, specification, quantity and destination market.</p><a class="text-link" href="/contact-us-1?type=sourcing" data-guide-link>Start a sourcing enquiry <Icon name="arrow" size={17}/></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-pale">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">BEYOND THE PRODUCT</span><h2>Connected support.<br/>From brief to market.</h2></div><p>Sourcing is one part of the journey. Documentation, development and regulatory requirements belong in the conversation too.</p></div>
+    <div class="services-grid">
+      <article class="feature-service feature-service-dark"><Icon name="file" size={34}/><span class="eyebrow">REGULATORY AFFAIRS</span><h3>A clearer pathway<br/>to authorisation.</h3><p>Dossier preparation, product registration and lifecycle support. Explore a connected approach to your product and target market.</p><div class="service-tags"><span>CTD / eCTD / ACTD</span><span>API & FDF</span><span>Lifecycle support</span></div><a class="button button-sky" href="/regulatory-affairs">Explore Regulatory Affairs <Icon name="diagonal" size={17}/></a></article>
+      <article class="feature-service feature-service-pale"><Icon name="capsule" size={34}/><span class="eyebrow">DEVELOPMENT & MANUFACTURING PARTNERSHIPS</span><h3>Bring the right<br/>expertise together.</h3><p>Discuss your finished dosage-form project, from formulation and technology transfer to development and manufacturing partnerships.</p><div class="service-tags"><span>FDF development</span><span>Technology transfer</span><span>Partner coordination</span></div><a class="button button-navy" href="/fdf-cdmo">Explore FDF CDMO <Icon name="diagonal" size={17}/></a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container process-layout"><div class="process-intro"><span class="eyebrow">A THOUGHTFUL WAY FORWARD</span><h2>Start with the need.<br/>Build the right brief.</h2><p>A useful conversation begins with a clear requirement—not a generic request.</p><a class="text-link" href="/culture">How we work <Icon name="arrow" size={17}/></a></div><div class="steps"><article class="step"><span class="step-num">01 — SHARE</span><h3>Tell us what<br/>you need.</h3><p>Product, specification, quantity and destination—or your project and dossier status.</p></article><article class="step"><span class="step-num">02 — EXPLORE</span><h3>Put the requirements<br/>in context.</h3><p>Include documentation needs, the target market and the stage of your project.</p></article><article class="step"><span class="step-num">03 — CONNECT</span><h3>Discuss the<br/>next step.</h3><p>Bring the brief to Hanpars so the scope and next actions can be considered together.</p></article></div></div>
+</section>
+
+<section class="section section-pale">
+  <div class="container company-preview"><div class="company-art"><img src={partnershipImage} alt="Conceptual interlocking blue glass forms representing connected expertise" width="960" height="720" loading="lazy"/><span class="art-caption">A partnership-minded approach.</span></div><div><span class="eyebrow">THE HANPARS APPROACH</span><h2>More than a list.<br/>A connection that matters.</h2><p>Hanpars brings together pharmaceutical sourcing and technical and regulatory conversations, with a focus on the needs of manufacturers, distributors and project teams.</p><p>We work with development and manufacturing partners. Clear requirements and clearly defined responsibilities are the starting point.</p><a class="text-link" href="/about-us">Get to know Hanpars <Icon name="diagonal" size={17}/></a></div></div>
+</section>
+
+<section class="section">
+  <div class="container"><div class="section-head"><div><span class="eyebrow">PERSPECTIVES & CONTEXT</span><h2>Stay curious.<br/>See the bigger picture.</h2></div><a class="text-link" href="/blog-1">Explore the insights archive <Icon name="arrow" size={17}/></a></div><div class="insight-grid">{featured.map((article,i) => <InsightCard article={article} index={i}/>)}</div><p class="reference-note">From our dated editorial archive. Historical commentary is not a current market forecast or regulatory recommendation.</p></div>
+</section>
+<CTA />
