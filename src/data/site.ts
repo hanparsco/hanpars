@@ -1,7 +1,7 @@
 export const contactEmail = 'contact@hanpars.com';
 // Web3Forms relays submissions to contactEmail. The access key is public by design; replace once issued.
 export const formEndpoint = 'https://api.web3forms.com/submit';
-export const formAccessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY || 'PENDING-WEB3FORMS-KEY';
+export const formAccessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY || '2713f108-a23c-4f52-8c09-d3a1902c45cc';
 export const groups = [
   { label: 'Products', items: [
     { label: 'Finished dosage forms', href: '/fdf', note: 'The registered portfolio and the reference list' },
