@@ -8,3 +8,4 @@ Static Astro site for the Hanpars redesign, deployed to **https://hanpars.teohan
 - Source data, checks and preserved originals live in `src/data` and `scripts/`.
 - Homepage artwork in `public/images/` is original placeholder SVG; replace with final imagery if desired.
 - Photographs: Unsplash (free licence); list in `scripts/photos.txt`, fetched by CI via `scripts/fetch-photos.sh` into `public/photos/`.
+- `public/photos/hero-products*.jpg` and `products-shelf-full.jpg` are Hanpars' own photographs (supplied by the owner, 21 Oct 2026).
