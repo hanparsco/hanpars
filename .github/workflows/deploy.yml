@@ -9,6 +9,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: pages-${{ github.ref }}
@@ -71,10 +72,14 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DOMAIN: hanpars.com
         run: |
-          current=$(gh api repos/${GITHUB_REPOSITORY}/pages --jq '.cname // ""')
-          echo "Current custom domain: '$current'"
-          if [ "$current" != "$DOMAIN" ]; then
-            gh api -X PUT repos/${GITHUB_REPOSITORY}/pages -f cname="$DOMAIN" && echo "Custom domain set to $DOMAIN"
-          fi
-          gh api -X PUT repos/${GITHUB_REPOSITORY}/pages -F https_enforced=true >/dev/null 2>&1 && echo "HTTPS enforced" || echo "HTTPS enforcement not yet available (certificate pending)"
-          gh api repos/${GITHUB_REPOSITORY}/pages --jq '{cname, status, https_enforced, protected_domain_state}'
+          {
+            echo "### Pages domain step — run ${GITHUB_RUN_ID}"
+            echo '```'
+            echo "BEFORE:"; gh api repos/${GITHUB_REPOSITORY}/pages 2>&1 | head -c 1500; echo
+            echo "SET CNAME:"; gh api -X PUT repos/${GITHUB_REPOSITORY}/pages -f cname="$DOMAIN" 2>&1 | head -c 800; echo " (exit $?)"
+            echo "ENFORCE HTTPS:"; gh api -X PUT repos/${GITHUB_REPOSITORY}/pages -F https_enforced=true 2>&1 | head -c 800; echo " (exit $?)"
+            echo "AFTER:"; gh api repos/${GITHUB_REPOSITORY}/pages 2>&1 | head -c 1500; echo
+            echo '```'
+          } > pages-report.md
+          cat pages-report.md
+          gh issue create --title "Pages domain report ${GITHUB_RUN_ID}" --body-file pages-report.md --label ci-report 2>/dev/null || gh issue create --title "Pages domain report ${GITHUB_RUN_ID}" --body-file pages-report.md
