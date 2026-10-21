@@ -10,7 +10,7 @@ export const pages = {
   fdf: {
     title: 'Finished dosage forms', category: 'Products',
     description: 'The hospital and specialty medicines Hanpars has registered in Iran, followed by the wider reference list of finished products we can source.',
-    meta: 'Browse the Hanpars portfolio of IFDA-registered hospital and specialty medicines and the reference list of 433 finished dosage forms, then prepare a sourcing enquiry.',
+    meta: 'Browse the Hanpars portfolio of IFDA-registered hospital and specialty medicines and the reference list of 626 finished dosage forms, then prepare a sourcing enquiry.',
     introTitle: 'Two lists, one starting point.',
     intro: ['The first list is our own portfolio: medicines for which Hanpars holds the Iranian marketing authorisation, grouped by therapeutic area with licensed dosage forms, strengths and ATC codes.', 'The second is a longer reference list of finished products we can enquire about on your behalf. Names and codes are kept exactly as recorded.'],
     database: '', databaseLabel: '',

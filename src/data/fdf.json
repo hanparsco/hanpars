@@ -1,1734 +1,2506 @@
 [
-  {
-    "name": "ACITRETIN CAPSULE ORAL 10 mg",
-    "code": "17"
-  },
-  {
-    "name": "ACITRETIN CAPSULE ORAL 25 mg",
-    "code": "18"
-  },
-  {
-    "name": "ACTIVATED PROTHROMBIN COMPLEX (CONCENTRATED) INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 500 [iU]",
-    "code": "19"
-  },
-  {
-    "name": "ACICLOVIR OINTMENT OPHTHALMIC 3 % 3 g",
-    "code": "20"
-  },
-  {
-    "name": "ALBUMIN (HUMAN) INJECTION, SOLUTION PARENTERAL 20 % 50 mL",
-    "code": "27"
-  },
-  {
-    "name": "AMINOPHYLLINE INJECTION PARENTERAL 25 mg/1mL 10 mL",
-    "code": "61"
-  },
-  {
-    "name": "AMIODARONE HYDROCHLORIDE INJECTION PARENTERAL 50 mg/1 mL 3 mL",
-    "code": "64"
-  },
-  {
-    "name": "AMPHOTERICIN B INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 50 mg",
-    "code": "79"
-  },
-  {
-    "name": "AMPICILLIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 250 mg",
-    "code": "81"
-  },
-  {
-    "name": "ANTHOCYANOSIDE A TABLET ORAL 100 mg/5 mg",
-    "code": "88"
-  },
-  {
-    "name": "ASPARAGINASE INJECTION, POWDER, FOR SOLUTION PARENTERAL 10000 [iU]",
-    "code": "113"
-  },
-  {
-    "name": "ATRACURIUM BESYLATE INJECTION PARENTERAL 10 mg/1mL 2.5 mL",
-    "code": "116"
-  },
-  {
-    "name": "ATRACURIUM BESYLATE INJECTION PARENTERAL 10 mg/1mL 5 mL",
-    "code": "117"
-  },
-  {
-    "name": "BECLOMETHASONE DIPROPIONATE INHALANT RESPIRATORY 50 ug/1{dose} 200 {Puff}",
-    "code": "133"
-  },
-  {
-    "name": "BLEOMYCIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 15 [iU]",
-    "code": "170"
-  },
-  {
-    "name": "BROMHEXINE HYDROCHLORIDE INJECTION PARENTERAL 2 mg/1mL 2 mL",
-    "code": "176"
-  },
-  {
-    "name": "BURN OINTMENT OINTMENT TOPICAL 30 %/50 % 30 g",
-    "code": "183"
-  },
-  {
-    "name": "CALCITONIN INJECTION PARENTERAL 50 [iU]/1mL",
-    "code": "194"
-  },
-  {
-    "name": "CALCIUM GLUCONATE INJECTION PARENTERAL 10 % 10 mL",
-    "code": "200"
-  },
-  {
-    "name": "CARBAMAZEPINE TABLET ORAL 200 mg",
-    "code": "208"
-  },
-  {
-    "name": "CARMUSTINE INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
-    "code": "219"
-  },
-  {
-    "name": "CEFAZOLIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
-    "code": "224"
-  },
-  {
-    "name": "CEFOTAXIME (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
-    "code": "229"
-  },
-  {
-    "name": "CEFTIZOXIME INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
-    "code": "233"
-  },
-  {
-    "name": "CEFTIZOXIME INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
-    "code": "234"
-  },
-  {
-    "name": "CEFTRIAXONE (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
-    "code": "237"
-  },
-  {
-    "name": "CEFTRIAXONE (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
-    "code": "239"
-  },
-  {
-    "name": "CEFALEXIN POWDER, FOR SUSPENSION ORAL 250 mg/5 mL 100 mL",
-    "code": "246"
-  },
-  {
-    "name": "CHLORAMBUCIL TABLET ORAL 2 mg",
-    "code": "262"
-  },
-  {
-    "name": "CHLORAMPHENICOL SOLUTION, DROPS OPHTHALMIC 0.5 % 10 mL",
-    "code": "264"
-  },
-  {
-    "name": "CHOLESTYRAMINE POWDER, FOR SUSPENSION ORAL 4 g",
-    "code": "283"
-  },
-  {
-    "name": "CINNARIZINE TABLET ORAL 25 MG",
-    "code": "292"
-  },
-  {
-    "name": "CINNARIZINE TABLET ORAL 75MG",
-    "code": "293"
-  },
-  {
-    "name": "CLIDINIUM / CHLORDIAZEPOXIDE TABLET ORAL 2.5 mg/5 mg",
-    "code": "308"
-  },
-  {
-    "name": "CLOXACILLIN (AS SODIUM) CAPSULE ORAL 500 mg",
-    "code": "331"
-  },
-  {
-    "name": "CLOXACILLIN (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
-    "code": "332"
-  },
-  {
-    "name": "COLCHICINE TABLET ORAL 1 mg",
-    "code": "348"
-  },
-  {
-    "name": "CONJUGATED ESTROGENS TABLET ORAL 0.625 mg",
-    "code": "352"
-  },
-  {
-    "name": "CONJUGATED ESTROGENS CREAM VAGINAL 0.625 mg/1g 42.5 g",
-    "code": "353"
-  },
-  {
-    "name": "CONJUGATED ESTROGENS TABLET ORAL 1.25 mg",
-    "code": "354"
-  },
-  {
-    "name": "CROTAMITON CREAM TOPICAL 10 % 30 g",
-    "code": "366"
-  },
-  {
-    "name": "CYCLOPHOSPHAMIDE TABLET ORAL 50 mg",
-    "code": "369"
-  },
-  {
-    "name": "CYCLOPHOSPHAMIDE INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
-    "code": "370"
-  },
-  {
-    "name": "CYPROTERONE COMPOUND TABLET ORAL 2 mg/0.035 mg",
-    "code": "374"
-  },
-  {
-    "name": "DANTROLENE SODIUM INJECTION, POWDER, FOR SOLUTION PARENTERAL 20 mg",
-    "code": "382"
-  },
-  {
-    "name": "DAPSONE TABLET ORAL 100 mg",
-    "code": "383"
-  },
-  {
-    "name": "DAUNORUBICIN (AS HYDROCHLORIDE) INJECTION, POWDER, FOR SOLUTION PARENTERAL 20 mg",
-    "code": "384"
-  },
-  {
-    "name": "DEXTROSE / SODIUM CHLORIDE INJECTION, SOLUTION INTRAVENOUS 5 %/0.9 % 500 mL",
-    "code": "393"
-  },
-  {
-    "name": "DEXTROSE / SODIUM CHLORIDE INJECTION, SOLUTION INTRAVENOUS 3.33 %/0.3 % 1000 mL",
-    "code": "395"
-  },
-  {
-    "name": "DEXTROSE INJECTION, SOLUTION INTRAVENOUS 10 % 500 mL",
-    "code": "411"
-  },
-  {
-    "name": "DIAZOXIDE CAPSULE ORAL 100 mg",
-    "code": "421"
-  },
-  {
-    "name": "DIGOXIN INJECTION PARENTERAL 0.25 mg/1mL 2 mL",
-    "code": "438"
-  },
-  {
-    "name": "DIMETHYL SULFOXIDE SOLUTION PARENTERAL 50 % 50 mL",
-    "code": "450"
-  },
-  {
-    "name": "DOPAMINE HYDROCHLORIDE INJECTION PARENTERAL 40 mg/1mL 5 mL",
-    "code": "468"
-  },
-  {
-    "name": "DOXEPIN CAPSULE ORAL 10 mg",
-    "code": "470"
-  },
-  {
-    "name": "DOXEPIN CAPSULE ORAL 25 mg",
-    "code": "471"
-  },
-  {
-    "name": "EPIRUBICIN HYDROCHLORIDE INJECTION, POWDER, FOR SOLUTION PARENTERAL 50 mg",
-    "code": "492"
-  },
-  {
-    "name": "ERGOTAMINE TARTRATE / CAFFEINE TABLET ORAL 1 mg/100 mg",
-    "code": "493"
-  },
-  {
-    "name": "ESTRADIOL VALERATE INJECTION PARENTERAL 10 mg/1mL",
-    "code": "502"
-  },
-  {
-    "name": "ESTRADIOL VALERATE TABLET ORAL 1 mg",
-    "code": "503"
-  },
-  {
-    "name": "ESTRADIOL VALERATE TABLET ORAL 2 mg",
-    "code": "504"
-  },
-  {
-    "name": "ETHOSUXIMIDE SYRUP ORAL 250 mg/5mL 240 mL",
-    "code": "513"
-  },
-  {
-    "name": "ETHOSUXIMIDE CAPSULE ORAL 250 mg",
-    "code": "514"
-  },
-  {
-    "name": "ETOPOSIDE INJECTION, SOLUTION INTRAVENOUS 20 mg/1mL 5 mL",
-    "code": "518"
-  },
-  {
-    "name": "ETOPOSIDE CAPSULE ORAL 50 mg",
-    "code": "520"
-  },
-  {
-    "name": "FLUCYTOSINE TABLET ORAL 500 mg",
-    "code": "541"
-  },
-  {
-    "name": "FLUDROCORTISONE ACETATE TABLET ORAL 0.1 mg",
-    "code": "543"
-  },
-  {
-    "name": "FLUMAZENIL INJECTION PARENTERAL 0.1 mg/1mL 5 mL",
-    "code": "544"
-  },
-  {
-    "name": "FLUOROMETHOLONE SUSPENSION, DROPS OPHTHALMIC 0.1 % 5 mL",
-    "code": "548"
-  },
-  {
-    "name": "FUROSEMIDE TABLET ORAL 40 mg",
-    "code": "571"
-  },
-  {
-    "name": "GABAPENTIN CAPSULE ORAL 100 mg",
-    "code": "572"
-  },
-  {
-    "name": "GLUCAGON INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 mg",
-    "code": "597"
-  },
-  {
-    "name": "GLYCINE SOLUTION IRRIGATION 1.5 % 3000 mL",
-    "code": "601"
-  },
-  {
-    "name": "HALOPERIDOL (AS DECANOATE) INJECTION PARENTERAL 50 mg/1mL 1 mL",
-    "code": "616"
-  },
-  {
-    "name": "HALOPERIDOL (AS LACTATE) SOLUTION ORAL 2 mg/1mL 15 mL",
-    "code": "618"
-  },
-  {
-    "name": "HEPARIN SODIUM INJECTION PARENTERAL 5000 [iU]/1mL 1 mL",
-    "code": "624"
-  },
-  {
-    "name": "HYDRALAZINE HYDROCHLORIDE INJECTION, POWDER, FOR SOLUTION PARENTERAL 20 mg",
-    "code": "632"
-  },
-  {
-    "name": "HYDROCORTISONE (AS SODIUM SUCCINATE) INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
-    "code": "637"
-  },
-  {
-    "name": "HYDROCORTISONE TABLET ORAL 10 mg",
-    "code": "638"
-  },
-  {
-    "name": "HYDROCORTISONE ENEMA RECTAL 100 mg/60mL",
-    "code": "641"
-  },
-  {
-    "name": "HYDROXYUREA CAPSULE ORAL 500 mg",
-    "code": "648"
-  },
-  {
-    "name": "HYDROXYZINE HYDROCHLORIDE TABLET ORAL 10 mg",
-    "code": "651"
-  },
-  {
-    "name": "HYDROXYZINE HYDROCHLORIDE TABLET ORAL 25 mg",
-    "code": "652"
-  },
-  {
-    "name": "PERITONEAL DIALYSIS I SOLUTION INTRAPERITONEAL 13.62 g/132 meq/3.5 meq/1.5 meq/35 meq/102 meq/1000 mL 2 L",
-    "code": "690"
-  },
-  {
-    "name": "PERITONEAL DIALYSIS II SOLUTION INTRAPERITONEAL 22.7 g/1025.67 meq/3.5 meq/1.5 meq/35 meq/132 meq/1000 mL 2 L",
-    "code": "693"
-  },
-  {
-    "name": "PERITONEAL DIALYSIS III SOLUTION INTRAPERITONEAL 38.6 g/5.67 g/0.257 g/0.152 g/3.922 g/1000 mL 2 L",
-    "code": "694"
-  },
-  {
-    "name": "IOHEXOL INJECTION PARENTERAL 240 mg/1mL 50 mL",
-    "code": "699"
-  },
-  {
-    "name": "IPRATROPIUM BROMIDE SPRAY RESPIRATORY 20 ug/1{dose} 200 {dose}",
-    "code": "708"
-  },
-  {
-    "name": "ISONIAZID TABLET ORAL 300 mg",
-    "code": "713"
-  },
-  {
-    "name": "KETOCONAZOLE CREAM TOPICAL 2 % 30 g",
-    "code": "725"
-  },
-  {
-    "name": "KETOCONAZOLE TABLET ORAL 200 mg",
-    "code": "726"
-  },
-  {
-    "name": "LAMOTRIGINE TABLET ORAL 100 mg",
-    "code": "732"
-  },
-  {
-    "name": "LAMOTRIGINE TABLET ORAL 50 mg",
-    "code": "733"
-  },
-  {
-    "name": "CALCIUM FOLINATE TABLET ORAL 15 mg",
-    "code": "738"
-  },
-  {
-    "name": "LEVAMISOLE TABLET ORAL 50 mg",
-    "code": "741"
-  },
-  {
-    "name": "LIDOCAINE HYDROCHLORIDE GEL TOPICAL 2 % 15 g",
-    "code": "756"
-  },
-  {
-    "name": "MANNITOL INJECTION, SOLUTION INTRAVENOUS 20 % 500 mL",
-    "code": "782"
-  },
-  {
-    "name": "MAPROTILINE HYDROCHLORIDE TABLET ORAL 25 mg",
-    "code": "783"
-  },
-  {
-    "name": "MAPROTILINE HYDROCHLORIDE TABLET ORAL 75 mg",
-    "code": "784"
-  },
-  {
-    "name": "MEDROXYPROGESTERONE ACETATE INJECTION, SUSPENSION PARENTERAL 150 mg/1mL 1 mL",
-    "code": "791"
-  },
-  {
-    "name": "MAFENIDE ACETATE CREAM TOPICAL 112 mg/1g 30 g",
-    "code": "795"
-  },
-  {
-    "name": "MEGLUMINE COMPOUND INJECTION PARENTERAL 66 %/10 % 100 mL",
-    "code": "798"
-  },
-  {
-    "name": "MEGLUMINE COMPOUND INJECTION PARENTERAL 66 %/10 % 20 mL",
-    "code": "799"
-  },
-  {
-    "name": "MELPHALAN TABLET ORAL 2 mg",
-    "code": "803"
-  },
-  {
-    "name": "MERCAPTOPURINE TABLET ORAL 50 mg",
-    "code": "811"
-  },
-  {
-    "name": "MESALAZINE TABLET, DELAYED RELEASE ORAL 500 mg",
-    "code": "813"
-  },
-  {
-    "name": "MESNA INJECTION PARENTERAL 100 mg/1mL 4 mL",
-    "code": "814"
-  },
-  {
-    "name": "METHADONE HYDROCHLORIDE INJECTION PARENTERAL 5 mg/1mL 1 mL",
-    "code": "819"
-  },
-  {
-    "name": "METHYLERGONOVINE MALEATE TABLET ORAL 0.125 mg",
-    "code": "833"
-  },
-  {
-    "name": "METHYLTESTOSTERONE TABLET ORAL 25 mg",
-    "code": "838"
-  },
-  {
-    "name": "METRONIDAZOLE INJECTION, SOLUTION PARENTERAL 5 mg/1mL 100 mL",
-    "code": "843"
-  },
-  {
-    "name": "MINOXIDIL TABLET ORAL 10 mg",
-    "code": "855"
-  },
-  {
-    "name": "MITOMYCIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 2 mg",
-    "code": "857"
-  },
-  {
-    "name": "MITOTANE TABLET ORAL 500 mg",
-    "code": "858"
-  },
-  {
-    "name": "NANDROLONE DECANOATE INJECTION PARENTERAL 25 mg/1mL",
-    "code": "884"
-  },
-  {
-    "name": "NAPHAZOLINE / ANTAZOLINE SOLUTION, DROPS OPHTHALMIC 0.05 %/0.5 % 10 mL",
-    "code": "888"
-  },
-  {
-    "name": "NIFEDIPINE CAPSULE, LIQUID FILLED ORAL 10 mg",
-    "code": "902"
-  },
-  {
-    "name": "NIFEDIPINE TABLET ORAL 10 mg",
-    "code": "903"
-  },
-  {
-    "name": "NIMODIPINE INJECTION, SOLUTION INTRAVENOUS 0.2 mg/1mL 50 mL",
-    "code": "904"
-  },
-  {
-    "name": "NITROFURANTOIN TABLET ORAL 100 mg",
-    "code": "907"
-  },
-  {
-    "name": "NITROGLYCERIN OINTMENT TOPICAL 2 % 30 g",
-    "code": "910"
-  },
-  {
-    "name": "NITROPRUSSIDE SODIUM INJECTION, POWDER, FOR SOLUTION PARENTERAL 50 mg",
-    "code": "916"
-  },
-  {
-    "name": "NORTRIPTYLINE (AS HYDROCHLORIDE) TABLET ORAL 10 mg",
-    "code": "921"
-  },
-  {
-    "name": "NORTRIPTYLINE (AS HYDROCHLORIDE) TABLET ORAL 25 mg",
-    "code": "922"
-  },
-  {
-    "name": "OXYBUTYNIN HYDROCHLORIDE TABLET ORAL 5 mg",
-    "code": "935"
-  },
-  {
-    "name": "OXYTOCIN INJECTION PARENTERAL 10 [iU]/1mL",
-    "code": "939"
-  },
-  {
-    "name": "POTASSIUM CHLORIDE CONCENTRATED INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 2 meq/1mL 50 mL",
-    "code": "941"
-  },
-  {
-    "name": "PATENT BLUE V INJECTION PARENTERAL 25 mg/1mL 2 mL",
-    "code": "955"
-  },
-  {
-    "name": "PERPHENAZINE TABLET ORAL 2 mg",
-    "code": "972"
-  },
-  {
-    "name": "PERPHENAZINE TABLET ORAL 4 mg",
-    "code": "973"
-  },
-  {
-    "name": "PERPHENAZINE TABLET ORAL 8 mg",
-    "code": "975"
-  },
-  {
-    "name": "PHENOBARBITAL SODIUM INJECTION PARENTERAL 200 mg/1mL",
-    "code": "977"
-  },
-  {
-    "name": "PHENOXYBENZAMINE CAPSULE ORAL 10 mg",
-    "code": "984"
-  },
-  {
-    "name": "PHENYLEPHRINE HYDROCHLORIDE SOLUTION, DROPS NASAL 0.25 % 10 mL",
-    "code": "988"
-  },
-  {
-    "name": "PHENYLEPHRINE HYDROCHLORIDE SOLUTION, DROPS OPHTHALMIC 5 % 10 mL",
-    "code": "991"
-  },
-  {
-    "name": "PHENYTOIN SODIUM INJECTION PARENTERAL 50 mg/1mL 5 mL",
-    "code": "995"
-  },
-  {
-    "name": "VITAMIN K1 (PHYTOMENADIONE) INJECTION PARENTERAL 10 mg/1mL 1 mL",
-    "code": "1003"
-  },
-  {
-    "name": "VITAMIN K1 (PHYTOMENADIONE) INJECTION PARENTERAL 2 mg/1mL 0.5 mL",
-    "code": "1004"
-  },
-  {
-    "name": "VITAMIN K1 (PHYTOMENADIONE) TABLET ORAL 10 mg",
-    "code": "1005"
-  },
-  {
-    "name": "PIMOZIDE TABLET ORAL 4 mg",
-    "code": "1009"
-  },
-  {
-    "name": "POTASSIUM AMINOBENZOIC ACID (POTABA) TABLET ORAL 500 mg",
-    "code": "1026"
-  },
-  {
-    "name": "PREDNISOLONE TABLET ORAL 50 mg",
-    "code": "1044"
-  },
-  {
-    "name": "PREDNISOLONE TABLET ORAL 5 mg",
-    "code": "1045"
-  },
-  {
-    "name": "PROCAINAMIDE HYDROCHLORIDE INJECTION PARENTERAL 100 mg/1mL 10 mL",
-    "code": "1054"
-  },
-  {
-    "name": "PROPYLTHIOURACIL TABLET ORAL 50 mg",
-    "code": "1072"
-  },
-  {
-    "name": "PYRIDOSTIGMINE BROMIDE TABLET ORAL 60 mg",
-    "code": "1080"
-  },
-  {
-    "name": "QUINIDINE SULFATE TABLET ORAL 200 mg",
-    "code": "1088"
-  },
-  {
-    "name": "ANTI-D IMMUNOGLOBULIN INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION INTRAMUSCULAR 300 ug",
-    "code": "1099"
-  },
-  {
-    "name": "RIFAMPICIN CAPSULE ORAL 150 mg",
-    "code": "1101"
-  },
-  {
-    "name": "RIFAMPICIN CAPSULE ORAL 300 mg",
-    "code": "1103"
-  },
-  {
-    "name": "RINGER LACTATE INJECTION, SOLUTION INTRAVENOUS 130 meq/3 meq/4 meq/109 meq/28 meq/1L 500 mL",
-    "code": "1107"
-  },
-  {
-    "name": "SALBUTAMOL (AS SULFATE) TABLET ORAL 2 mg",
-    "code": "1114"
-  },
-  {
-    "name": "SELEGILINE HYDROCHLORIDE TABLET ORAL 5 mg",
-    "code": "1121"
-  },
-  {
-    "name": "SILVER SULFADIAZINE CREAM TOPICAL 1 % 50 g",
-    "code": "1130"
-  },
-  {
-    "name": "SODIUM TETRADECYL SULFATE INJECTION PARENTERAL 1 % 2 mL",
-    "code": "1136"
-  },
-  {
-    "name": "SODIUM TETRADECYL SULFATE INJECTION PARENTERAL 3 % 2 mL",
-    "code": "1137"
-  },
-  {
-    "name": "SODIUM CHLORIDE INJECTION, SOLUTION PARENTERAL 0.9 % 1000 mL",
-    "code": "1141"
-  },
-  {
-    "name": "SODIUM CHLORIDE SOLUTION IRRIGATION 0.9 % 1000 mL",
-    "code": "1142"
-  },
-  {
-    "name": "SODIUM CHLORIDE SOLUTION IRRIGATION 0.9 % 3 L",
-    "code": "1143"
-  },
-  {
-    "name": "SODIUM CHLORIDE INJECTION, SOLUTION PARENTERAL 0.9 % 500 mL",
-    "code": "1144"
-  },
-  {
-    "name": "Sodium Chloride Injection, Solution Parentral 0.9% 500 ml",
-    "code": "1144"
-  },
-  {
-    "name": "SODIUM CHLORIDE SOLUTION, DROPS OPHTHALMIC 5 % 10 mL",
-    "code": "1147"
-  },
-  {
-    "name": "SODIUM CHLORIDE INJECTION, SOLUTION INTRAVENOUS 5 % 50 mL",
-    "code": "1148"
-  },
-  {
-    "name": "SODIUM CHLORIDE INJECTION, SOLUTION PARENTERAL 0.45 % 1000 mL",
-    "code": "1149"
-  },
-  {
-    "name": "Sodium Thiosulfate Injection 12.5g/ 50 ml Vial USP 25%",
-    "code": "1158"
-  },
-  {
-    "name": "SOTALOL HYDROCHLORIDE TABLET ORAL 80 mg",
-    "code": "1164"
-  },
-  {
-    "name": "SPECTINOMYCIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 2 g",
-    "code": "1166"
-  },
-  {
-    "name": "SPIRAMYCIN TABLET ORAL 500 mg",
-    "code": "1168"
-  },
-  {
-    "name": "SULFACETAMIDE SODIUM SOLUTION, DROPS OPHTHALMIC 10 % 10 mL",
-    "code": "1180"
-  },
-  {
-    "name": "SULFACETAMIDE SODIUM SOLUTION, DROPS OPHTHALMIC 20 % 10 mL",
-    "code": "1181"
-  },
-  {
-    "name": "SULFADIAZINE TABLET ORAL 500 mg",
-    "code": "1183"
-  },
-  {
-    "name": "TESTOSTERONE ENANTHATE INJECTION PARENTERAL 100 mg/1mL",
-    "code": "1201"
-  },
-  {
-    "name": "TETANUS IMMUNE GLOBULIN INJECTION PARENTERAL 250 [iU]/1mL",
-    "code": "1202"
-  },
-  {
-    "name": "TETRACAINE HYDROCHLORIDE SOLUTION, DROPS OPHTHALMIC 0.5 % 10 mL",
-    "code": "1204"
-  },
-  {
-    "name": "TETRACYCLINE HYDROCHLORIDE OINTMENT OPHTHALMIC 1 % 3 g",
-    "code": "1206"
-  },
-  {
-    "name": "TETRACYCLINE HYDROCHLORIDE CAPSULE ORAL 250 mg",
-    "code": "1207"
-  },
-  {
-    "name": "THIOGUANINE TABLET ORAL 40 mg",
-    "code": "1217"
-  },
-  {
-    "name": "THIORIDAZINE HYDROCHLORIDE TABLET ORAL 10 mg",
-    "code": "1220"
-  },
-  {
-    "name": "THIORIDAZINE HYDROCHLORIDE TABLET ORAL 100 mg",
-    "code": "1221"
-  },
-  {
-    "name": "THIORIDAZINE HYDROCHLORIDE TABLET ORAL 25 mg",
-    "code": "1222"
-  },
-  {
-    "name": "TICLOPIDINE HYDROCHLORIDE TABLET ORAL 250 mg",
-    "code": "1225"
-  },
-  {
-    "name": "TRANYLCYPROMINE TABLET ORAL 10 mg",
-    "code": "1241"
-  },
-  {
-    "name": "TRETINOIN CREAM TOPICAL 0.05 % 15 g",
-    "code": "1245"
-  },
-  {
-    "name": "TRIFLUOPERAZINE INJECTION INTRAMUSCULAR 1 mg/1mL",
-    "code": "1254"
-  },
-  {
-    "name": "VANCOMYCIN (AS HYDROCHLORIDE) INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
-    "code": "1276"
-  },
-  {
-    "name": "VERAPAMIL HYDROCHLORIDE INJECTION PARENTERAL 2.5 mg/1mL 2 mL",
-    "code": "1280"
-  },
-  {
-    "name": "VIGABATRIN TABLET ORAL 500 mg",
-    "code": "1282"
-  },
-  {
-    "name": "VINCRISTINE SULFATE INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 mg",
-    "code": "1284"
-  },
-  {
-    "name": "ZINC OXIDE OINTMENT TOPICAL 25 % 30 g",
-    "code": "1316"
-  },
-  {
-    "name": "METHYLPHENIDATE HYDROCHLORIDE TABLET ORAL 10 mg",
-    "code": "1328"
-  },
-  {
-    "name": "CEFOTAXIME (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
-    "code": "1336"
-  },
-  {
-    "name": "NALOXONE HYDROCHLORIDE INJECTION PARENTERAL 0.4 mg/1mL",
-    "code": "1341"
-  },
-  {
-    "name": "FENTANYL (AS CITRATE) INJECTION PARENTERAL 50 ug/1mL 10 mL",
-    "code": "1359"
-  },
-  {
-    "name": "YOHIMBINE HYDROCHLORIDE TABLET ORAL 2 mg",
-    "code": "1373"
-  },
-  {
-    "name": "AMYL NITRITE INHALANT RESPIRATORY 0.3 mL 0.3 mL",
-    "code": "1388"
-  },
-  {
-    "name": "CARBAMAZEPINE TABLET, EXTENDED RELEASE ORAL 400 mg",
-    "code": "1420"
-  },
-  {
-    "name": "CHARCOAL ACTIVATED TABLET ORAL 250 mg",
-    "code": "1425"
-  },
-  {
-    "name": "CICLOSPORIN INJECTION, SOLUTION INTRAVENOUS 50 mg/1mL 1 mL",
-    "code": "1452"
-  },
-  {
-    "name": "DIAZOXIDE CAPSULE ORAL 50 mg",
-    "code": "1463"
-  },
-  {
-    "name": "EPINEPHRINE INJECTION PARENTERAL 1 mg/1mL 1 mL",
-    "code": "1489"
-  },
-  {
-    "name": "ETOMIDATE INJECTION PARENTERAL 2 mg/1mL 10 mL",
-    "code": "1501"
-  },
-  {
-    "name": "ISOPROTERENOL HYDROCHLORIDE INJECTION PARENTERAL 0.2 mg/1mL",
-    "code": "1558"
-  },
-  {
-    "name": "NOREPINEPHRINE (AS BITARTRATE) INJECTION, SOLUTION, CONCENTRATE PARENTERAL 1 mg/1mL 10 mL",
-    "code": "1620"
-  },
-  {
-    "name": "PHENYLEPHRINE HYDROCHLORIDE INJECTION PARENTERAL 10 mg/1mL 1 mL",
-    "code": "1635"
-  },
-  {
-    "name": "PRIMIDONE SUSPENSION ORAL 125 mg/5mL 250 mL",
-    "code": "1650"
-  },
-  {
-    "name": "PROTAMINE SULFATE INJECTION PARENTERAL 10 MG/1ML 5 ML",
-    "code": "1655"
-  },
-  {
-    "name": "SODIUM NITRITE INJECTION PARENTERAL 30 mg/1mL",
-    "code": "1679"
-  },
-  {
-    "name": "NITROGLYCERIN CAPSULE, LIQUID FILLED ORAL 0.4 mg",
-    "code": "1727"
-  },
-  {
-    "name": "CLOPIDOGREL (AS BISULFATE) TABLET ORAL 75 mg",
-    "code": "1788"
-  },
-  {
-    "name": "VITAMIN D3 INJECTION PARENTERAL 300000 [iU]/1mL",
-    "code": "1814"
-  },
-  {
-    "name": "ADENOSINE INJECTION PARENTERAL 3 mg/1mL 2 mL",
-    "code": "1836"
-  },
-  {
-    "name": "OXANDROLONE TABLET ORAL 2.5 mg",
-    "code": "1878"
-  },
-  {
-    "name": "TOPIRAMATE 25 MG TABLET",
-    "code": "1885"
-  },
-  {
-    "name": "PAMIDRONATE DISODIUM INJECTION, SOLUTION, CONCENTRATE PARENTERAL 9 mg/1mL 10 mL",
-    "code": "1899"
-  },
-  {
-    "name": "HYDROXYPROGESTERONE CAPROATE INJECTION PARENTERAL 250 mg/1mL 1 mL",
-    "code": "1917"
-  },
-  {
-    "name": "RILUZOLE TABLET ORAL 50 mg",
-    "code": "1921"
-  },
-  {
-    "name": "SODIUM BENZOATE INJECTION PARENTERAL 200 mg/1mL 10 mL",
-    "code": "1934"
-  },
-  {
-    "name": "ISOFLURANE INHALANT RESPIRATORY 100 % 100 mL",
-    "code": "1943"
-  },
-  {
-    "name": "CLINDAMYCIN (AS PHOSPHATE) INJECTION PARENTERAL 150 mg/1mL 2 mL",
-    "code": "1947"
-  },
-  {
-    "name": "FENTANYL PATCH TRANSDERMAL 25 ug/1h",
-    "code": "1987"
-  },
-  {
-    "name": "FENTANYL PATCH TRANSDERMAL 50 ug/1h",
-    "code": "1988"
-  },
-  {
-    "name": "LAMOTRIGINE TABLET ORAL 25 mg",
-    "code": "1991"
-  },
-  {
-    "name": "CEFUROXIME (AS AXETIL) TABLET ORAL 250 mg",
-    "code": "2031"
-  },
-  {
-    "name": "CEFUROXIME (AS AXETIL) TABLET ORAL 500 mg",
-    "code": "2032"
-  },
-  {
-    "name": "FLUTICASONE PROPIONATE INHALANT RESPIRATORY 50 ug/1{dose} 120 {Puff}",
-    "code": "2053"
-  },
-  {
-    "name": "IOHEXOL INJECTION PARENTERAL 300 mg/1mL 50 mL",
-    "code": "2059"
-  },
-  {
-    "name": "IOHEXOL INJECTION PARENTERAL 300 mg/1mL 100 mL",
-    "code": "2060"
-  },
-  {
-    "name": "IOHEXOL INJECTION PARENTERAL 350 mg/1mL 50 mL",
-    "code": "2062"
-  },
-  {
-    "name": "IOHEXOL INJECTION PARENTERAL 350 mg/1mL 100 mL",
-    "code": "2063"
-  },
-  {
-    "name": "TACROLIMUS INJECTION, SOLUTION, CONCENTRATE PARENTERAL 5 mg/1mL",
-    "code": "2087"
-  },
-  {
-    "name": "CARBAMAZEPINE TABLET, EXTENDED RELEASE ORAL 200 mg",
-    "code": "2114"
-  },
-  {
-    "name": "METHOTREXATE SODIUM INJECTION PARENTERAL 25 mg/1mL 2 mL",
-    "code": "2158"
-  },
-  {
-    "name": "SODIUM CHLORIDE INJECTION, SOLUTION PARENTERAL 0.45 % 500 mL",
-    "code": "2186"
-  },
-  {
-    "name": "CIPROFLOXACIN (AS LACTATE) INJECTION, SOLUTION INTRAVENOUS 10 mg/1mL 20 mL",
-    "code": "2250"
-  },
-  {
-    "name": "PANTOPRAZOLE (AS SODIUM) INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 40 mg",
-    "code": "2336"
-  },
-  {
-    "name": "ACETYLCYSTEINE TABLET, EFFERVESCENT ORAL 600 mg",
-    "code": "2369"
-  },
-  {
-    "name": "LEVODOPA / CARBIDOPA TABLET, EXTENDED RELEASE ORAL 100 mg/25 mg",
-    "code": "2383"
-  },
-  {
-    "name": "OCTREOTIDE (AS ACETATE) INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE PARENTERAL 20 mg",
-    "code": "2391"
-  },
-  {
-    "name": "SODIUM ACID PHOSPHATE (PHOSPHATE SODIUM) TABLET, EFFERVESCENT ORAL 500 mg",
-    "code": "2397"
-  },
-  {
-    "name": "CEFEPIME (AS HYDROCHLORIDE) INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
-    "code": "2416"
-  },
-  {
-    "name": "MEGESTROL ACETATE SUSPENSION ORAL 40 mg/1mL 240 mL",
-    "code": "2442"
-  },
-  {
-    "name": "DIMERCAPROL INJECTION INTRAMUSCULAR 100 mg/1mL 2 mL",
-    "code": "2506"
-  },
-  {
-    "name": "IODIXANOL INJECTION PARENTERAL 320 mg/1mL 50 mL",
-    "code": "2517"
-  },
-  {
-    "name": "FLUTICASONE PROPIONATE INHALANT RESPIRATORY 250 ug/1{dose} 120 {Puff}",
-    "code": "2710"
-  },
-  {
-    "name": "FLUTICASONE PROPIONATE INHALANT RESPIRATORY 125 ug/1{dose} 120 {Puff}",
-    "code": "2711"
-  },
-  {
-    "name": "EXEMESTANE TABLET ORAL 25 mg",
-    "code": "2962"
-  },
-  {
-    "name": "MEROPENEM INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
-    "code": "3283"
-  },
-  {
-    "name": "ZONISAMIDE CAPSULE ORAL 100 mg",
-    "code": "3545"
-  },
-  {
-    "name": "MAGNESIUM SULFATE INJECTION PARENTERAL 50 % 10 mL",
-    "code": "3823"
-  },
-  {
-    "name": "PIPERACILLIN (AS SODIUM) / TAZOBACTAM (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 4 g/0.5 g",
-    "code": "3894"
-  },
-  {
-    "name": "SIROLIMUS TABLET ORAL 1 mg",
-    "code": "4022"
-  },
-  {
-    "name": "BECLOMETHASONE DIPROPIONATE INHALANT RESPIRATORY 250 ug/1{dose} 200 {Puff}",
-    "code": "4684"
-  },
-  {
-    "name": "IODIXANOL INJECTION PARENTERAL 270 mg/1mL 50 mL",
-    "code": "4757"
-  },
-  {
-    "name": "IMATINIB (AS MESYLATE) TABLET ORAL 100 mg",
-    "code": "4840"
-  },
-  {
-    "name": "Dextrose /Sodium Chloride Injection, Solution Parentral 3.33% 0.3% 500ml",
-    "code": "4907"
-  },
-  {
-    "name": "GALANTAMINE (AS HYDROBROMIDE) TABLET ORAL 4 mg",
-    "code": "4954"
-  },
-  {
-    "name": "GALANTAMINE (AS HYDROBROMIDE) TABLET ORAL 8 mg",
-    "code": "4955"
-  },
-  {
-    "name": "VALSARTAN TABLET ORAL 80 mg",
-    "code": "5423"
-  },
-  {
-    "name": "OCTREOTIDE (AS ACETATE) INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE PARENTERAL 30 mg",
-    "code": "5427"
-  },
-  {
-    "name": "OSELTAMIVIR (AS PHOSPHATE) CAPSULE ORAL 75 mg",
-    "code": "5437"
-  },
-  {
-    "name": "MEROPENEM INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
-    "code": "5629"
-  },
-  {
-    "name": "INFLIXIMAB INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
-    "code": "5831"
-  },
-  {
-    "name": "IMMUNE GLOBULIN INJECTION INTRAVENOUS 50 mg/1mL 100 mL",
-    "code": "5842"
-  },
-  {
-    "name": "METHYLENE BLUE INJECTION PARENTERAL 10 mg/1mL 5 mL",
-    "code": "5979"
-  },
-  {
-    "name": "PRALIDOXIME (AS METHYLSULFATE) INJECTION, POWDER, FOR SOLUTION PARENTERAL 200 mg",
-    "code": "6323"
-  },
-  {
-    "name": "SODIUM PHENYLBUTYRATE INJECTION PARENTERAL 200 mg/1mL 10 mL",
-    "code": "6369"
-  },
-  {
-    "name": "SODIUM PHENYLBUTYRATE TABLET ORAL 500 mg",
-    "code": "6403"
-  },
-  {
-    "name": "RABEPRAZOLE SODIUM TABLET, DELAYED RELEASE ORAL 20 mg",
-    "code": "6438"
-  },
-  {
-    "name": "CILOSTAZOL TABLET ORAL 100 mg",
-    "code": "6453"
-  },
-  {
-    "name": "TOPOTECAN (AS HYDROCHLORIDE) INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 4 mg",
-    "code": "6507"
-  },
-  {
-    "name": "MODAFINIL TABLET ORAL 100 mg",
-    "code": "6579"
-  },
-  {
-    "name": "BICALUTAMIDE TABLET ORAL 50 mg",
-    "code": "6765"
-  },
-  {
-    "name": "LOTEPREDNOL ETABONATE SUSPENSION, DROPS OPHTHALMIC 0.5 % 5 mL",
-    "code": "6854"
-  },
-  {
-    "name": "VERTEPORFIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 15 mg",
-    "code": "6859"
-  },
-  {
-    "name": "ALBUMIN (HUMAN) INJECTION, SOLUTION PARENTERAL 20 % 100 mL",
-    "code": "6888"
-  },
-  {
-    "name": "AMPICILLIN / SULBACTAM INJECTION, POWDER, FOR SOLUTION PARENTERAL 2 g/1 g",
-    "code": "6938"
-  },
-  {
-    "name": "AMPICILLIN / SULBACTAM INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g/0.5 g",
-    "code": "6939"
-  },
-  {
-    "name": "BALANCED SALT SOLUTION (2) SOLUTION OPHTHALMIC 0.64 mg/0.075 mg/0.03 mg/0.048 mg/0.17 mg/0.39 mg/1mL 500 mL",
-    "code": "6968"
-  },
-  {
-    "name": "OXALIPLATIN INJECTION, SOLUTION, CONCENTRATE PARENTERAL 5 mg/1mL 10 mL",
-    "code": "7041"
-  },
-  {
-    "name": "HEMODIALYSIS CONCENTRATED II ACIDIC SOLUTION, CONCENTRATE HEMODIALYSIS 3710 meq/70 meq/35 meq/87.5 meq/70 g/122.5 meq/3902.5 meq/1L 4920 mL",
-    "code": "7196"
-  },
-  {
-    "name": "HEMODIALYSIS CONCENTRATED II SOLUTION, CONCENTRATE INTRAVENOUS 4725 meq/35 meq/70 meq/87.5 meq/3692.5 meq/1225 meq/70 g/1000 mL 4920 mL",
-    "code": "7198"
-  },
-  {
-    "name": "ADAPALENE GEL TOPICAL 0.1 % 30 g",
-    "code": "7436"
-  },
-  {
-    "name": "EPTIFIBATIDE INJECTION, SOLUTION PARENTERAL 0.75 mg/1mL 100 mL",
-    "code": "7469"
-  },
-  {
-    "name": "EPTIFIBATIDE INJECTION, SOLUTION PARENTERAL 2 mg/1mL 10 mL",
-    "code": "7470"
-  },
-  {
-    "name": "OMALIZUMAB INJECTION, POWDER, FOR SOLUTION PARENTERAL 150 mg",
-    "code": "7525"
-  },
-  {
-    "name": "POTASSIUM CHLORIDE TABLET, EXTENDED RELEASE ORAL 600 mg",
-    "code": "7564"
-  },
-  {
-    "name": "AZITHROMYCIN POWDER, FOR SUSPENSION ORAL 200 mg/5mL 22.5 mL",
-    "code": "7986"
-  },
-  {
-    "name": "MISOPROSTOL TABLET ORAL 200 ug",
-    "code": "8095"
-  },
-  {
-    "name": "RISPERIDONE INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE PARENTERAL 25 mg",
-    "code": "8127"
-  },
-  {
-    "name": "VALPROATE SODIUM INJECTION, POWDER, FOR SOLUTION PARENTERAL 400 mg",
-    "code": "8396"
-  },
-  {
-    "name": "DISULFIRAM TABLET ORAL 250 mg",
-    "code": "8634"
-  },
-  {
-    "name": "METOLAZONE TABLET ORAL 5 mg",
-    "code": "8667"
-  },
-  {
-    "name": "EPHEDRINE HYDROCHLORIDE TABLET ORAL 30 mg",
-    "code": "8699"
-  },
-  {
-    "name": "DEFERASIROX TABLET, FOR SUSPENSION ORAL 500 mg",
-    "code": "8997"
-  },
-  {
-    "name": "PEGASPARGASE INJECTION, POWDER, FOR SOLUTION PARENTERAL 3750 [iU]",
-    "code": "9037"
-  },
-  {
-    "name": "PEGASPARGASE INJECTION, POWDER, FOR SOLUTION PARENTERAL 3750 [iU]",
-    "code": "9037"
-  },
-  {
-    "name": "CYCLOPHOSPHAMIDE INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
-    "code": "9391"
-  },
-  {
-    "name": "CYCLOPHOSPHAMIDE INJECTION, POWDER, FOR SOLUTION PARENTERAL 1000 mg",
-    "code": "9391"
-  },
-  {
-    "name": "METHOTREXATE SODIUM INJECTION PARENTERAL 2.5 mg/1mL 2 mL",
-    "code": "9431"
-  },
-  {
-    "name": "FACTOR VIII / VON WILLEBRAND FACTOR INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 500 [iU]/1200 [iU]",
-    "code": "9563"
-  },
-  {
-    "name": "CALCIUM FOLINATE INJECTION PARENTERAL 10 mg/1mL 20 mL",
-    "code": "9572"
-  },
-  {
-    "name": "DESMOPRESSIN (AS ACETATE) TABLET SUBLINGUAL 60 ug",
-    "code": "9606"
-  },
-  {
-    "name": "MESALAZINE TABLET, DELAYED RELEASE ORAL 800 mg",
-    "code": "9916"
-  },
-  {
-    "name": "IOPAMIDOL INJECTION PARENTERAL 370 mg/1mL 50 mL",
-    "code": "9940"
-  },
-  {
-    "name": "EPINEPHRINE INJECTION PARENTERAL 0.1 mg/1mL 10 mL",
-    "code": "10484"
-  },
-  {
-    "name": "COLISTIMETHATE SODIUM INJECTION, POWDER, FOR SOLUTION PARENTERAL 1000000 [iU]",
-    "code": "10730"
-  },
-  {
-    "name": "CIPROFLOXACIN (AS LACTATE) INJECTION, SOLUTION INTRAVENOUS 2 mg/1mL 100 mL",
-    "code": "10757"
-  },
-  {
-    "name": "HYDROXYPROGESTERONE CAPROATE INJECTION PARENTERAL 250 mg/1mL 2 mL",
-    "code": "11441"
-  },
-  {
-    "name": "KETOROLAC TROMETAMOL SOLUTION, DROPS OPHTHALMIC 0.5 % 5 mL",
-    "code": "11458"
-  },
-  {
-    "name": "DIGOXIN SPECIFIC ANTIBODY INJECTION PARENTERAL 40 mg",
-    "code": "11506"
-  },
-  {
-    "name": "MYCOPHENOLIC ACID TABLET, DELAYED RELEASE ORAL 360 mg",
-    "code": "11607"
-  },
-  {
-    "name": "NITROFURANTOIN SUSPENSION ORAL 25 mg/5mL 240 mL",
-    "code": "11725"
-  },
-  {
-    "name": "SUCCINYLCHOLINE CHLORIDE INJECTION PARENTERAL 50 mg/1mL 10 mL",
-    "code": "11866"
-  },
-  {
-    "name": "CISPLATIN INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 1 mg/1mL 10 mL",
-    "code": "11867"
-  },
-  {
-    "name": "LEVODOPA / CARBIDOPA / ENTACAPONE TABLET ORAL 150 mg/37.5 mg/200 mg",
-    "code": "12112"
-  },
-  {
-    "name": "PANCREATIN CAPSULE, DELAYED RELEASE PELLETS ORAL 25000 [iU]",
-    "code": "12312"
-  },
-  {
-    "name": "EDROPHONIUM CHLORIDE INJECTION PARENTERAL 10 mg/1mL 1 mL",
-    "code": "12322"
-  },
-  {
-    "name": "LEVODOPA/CARBDOPA/ENTACAPONE TABLET ORAL 50MG/12.5MG/200MG",
-    "code": "12482"
-  },
-  {
-    "name": "NAGLAZYME 1 mg/ml",
-    "code": "12550"
-  },
-  {
-    "name": "GALSULFASE INJECTION PARENTERAL 1 mg/1mL 5 mL",
-    "code": "12550"
-  },
-  {
-    "name": "INSULIN DETEMIR INJECTION, SOLUTION PARENTERAL 100 [iU]/1mL 3 mL",
-    "code": "12837"
-  },
-  {
-    "name": "CIPROFLOXACIN / DEXAMETHASONE SUSPENSION, DROPS AURICULAR (OTIC) 0.3 %/0.1 %",
-    "code": "12972"
-  },
-  {
-    "name": "DABIGATRAN ETEXILATE (AS MESYLATE) CAPSULE ORAL 75 mg",
-    "code": "13584"
-  },
-  {
-    "name": "PACLITAXEL (ALBUMIN BAND) NANO INJECTION, POWDER, FOR SUSPENSION PARENTERAL 100 mg",
-    "code": "13879"
-  },
-  {
-    "name": "RIFAXIMIN TABLET ORAL 200 mg",
-    "code": "13992"
-  },
-  {
-    "name": "TRACE METAL COMBINATION (2-1) INJECTION PARENTERAL 5.33 ug/0.34 mg/0.54 mg/99 ug/16.6 ug/0.21 mg/4.85 ug/6.9 ug/1.36 mg/1mL 10 mL",
-    "code": "14113"
-  },
-  {
-    "name": "FLUOROURACIL INJECTION PARENTERAL 50 mg/1mL 20 mL",
-    "code": "14530"
-  },
-  {
-    "name": "FACTOR XIII INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 250 [iU]",
-    "code": "14664"
-  },
-  {
-    "name": "MIDODRINE HYDROCHLORIDE TABLET ORAL 5 mg",
-    "code": "15449"
-  },
-  {
-    "name": "DEXTROSE INJECTION, SOLUTION INTRAVENOUS 20 % 50 mL",
-    "code": "15951"
-  },
-  {
-    "name": "DEXTROSE INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 50 % 50 mL",
-    "code": "15952"
-  },
-  {
-    "name": "DOXORUBICIN HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 2 mg/1mL 25 mL",
-    "code": "15971"
-  },
-  {
-    "name": "LEVOFLOXACIN INJECTION, SOLUTION INTRAVENOUS 5 mg/1mL 100 mL",
-    "code": "16320"
-  },
-  {
-    "name": "BUDESONIDE / FORMOTEROL FUMARATE POWDER, METERED RESPIRATORY 320 ug/9 ug/1{dose} 60 {dose}",
-    "code": "16503"
-  },
-  {
-    "name": "HYDROCHLOROTHIAZIDE TABLET ORAL 25 mg",
-    "code": "16582"
-  },
-  {
-    "name": "CALCIUM FOLINATE INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
-    "code": "16766"
-  },
-  {
-    "name": "TOBRAMYCIN SOLUTION RESPIRATORY 75 mg/1mL 4 mL",
-    "code": "16775"
-  },
-  {
-    "name": "FERRIC CARBOXYMALTOSE INJECTION PARENTERAL 50 mg/1mL 10 mL",
-    "code": "16954"
-  },
-  {
-    "name": "IVABRADINE (AS HYDROCHLORIDE) TABLET ORAL 5 mg",
-    "code": "17011"
-  },
-  {
-    "name": "ROMIPLOSTIM INJECTION, POWDER, FOR SOLUTION PARENTERAL 250 ug",
-    "code": "17038"
-  },
-  {
-    "name": "ROCURONIUM BROMIDE INJECTION, SOLUTION PARENTERAL 10 mg/1mL 5 mL",
-    "code": "17084"
-  },
-  {
-    "name": "AMPHOTERICIN B LIPOSOME INJECTION, POWDER, FOR SOLUTION PARENTERAL 50 mg",
-    "code": "17094"
-  },
-  {
-    "name": "IPRATROPIUM BROMIDE / FENOTEROL HYDROBROMIDE AEROSOL, METERED RESPIRATORY 20 ug/50 ug/1{dose} 200 {dose}",
-    "code": "17611"
-  },
-  {
-    "name": "SODIUM BICARBONATE INJECTION PARENTERAL 7.5 % 50 mL",
-    "code": "17833"
-  },
-  {
-    "name": "SALMETEROL (AS XINAFOATE) / FLUTICASONE PROPIONATE DISC RESPIRATORY 50 ug/500 ug/1{dose} 60 {dose}",
-    "code": "18046"
-  },
-  {
-    "name": "HEPATITIS B IMMUNE GLOBULIN INJECTION PARENTERAL 50 [iU]/1mL 50 mL",
-    "code": "18065"
-  },
-  {
-    "name": "LEVODOPA / CARBIDOPA / ENTACAPONE TABLET ORAL 100 mg/25 mg/200 mg",
-    "code": "19232"
-  },
-  {
-    "name": "RISPERIDONE INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE PARENTERAL 37.5 mg",
-    "code": "19736"
-  },
-  {
-    "name": "QUETIAPINE (AS FUMARATE) TABLET, EXTENDED RELEASE ORAL 200 mg",
-    "code": "19983"
-  },
-  {
-    "name": "EVEROLIMUS TABLET ORAL 0.25 mg",
-    "code": "20048"
-  },
-  {
-    "name": "AMINO ACID 10% (1) INJECTION, SOLUTION INTRAVENOUS 5 g/7.4 g/9.31 g/4.3 g/5.1 g/4.4 g/2 g/6.2 g/12 g/3 g/14 g/11 g/11.2 g/6.5 g/0.4 g/1 g/1000mL 500 mL",
-    "code": "20081"
-  },
-  {
-    "name": "SALMETEROL (AS XINAFOATE) / FLUTICASONE PROPIONATE DISC RESPIRATORY 50 ug/250 ug/1{dose} 60 {dose}",
-    "code": "20184"
-  },
-  {
-    "name": "SALMETEROL (AS XINAFOATE) / FLUTICASONE PROPIONATE DISC RESPIRATORY 50 ug/100 ug/1{dose} 60 {dose}",
-    "code": "20185"
-  },
-  {
-    "name": "OXYCODONE HYDROCHLORIDE TABLET, EXTENDED RELEASE ORAL 20 mg",
-    "code": "20629"
-  },
-  {
-    "name": "TIGECYCLINE INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 50 mg",
-    "code": "23169"
-  },
-  {
-    "name": "ELOSULFASE ALFA INJECTION, SOLUTION, CONCENTRATE PARENTERAL 1 mg/1mL 5 mL",
-    "code": "25308"
-  },
-  {
-    "name": "COLISTIMETHATE SODIUM INJECTION, POWDER, FOR SOLUTION PARENTERAL 4500000 [iU]",
-    "code": "50030"
-  },
-  {
-    "name": "NOREPINEPHRINE (AS BITARTRATE) INJECTION, SOLUTION, CONCENTRATE PARENTERAL 1 mg/1mL 4 mL",
-    "code": "50047"
-  },
-  {
-    "name": "TOBRAMYCIN / DEXAMETHASONE SUSPENSION, DROPS OPHTHALMIC 0.3 %/0.1 % 5 mL",
-    "code": "50056"
-  },
-  {
-    "name": "DIMERCAPROL INJECTION PARENTERAL 50 mg/1mL 2 mL",
-    "code": "50079"
-  },
-  {
-    "name": "GOSERELIN (AS ACETATE) IMPLANT PARENTERAL 3.6 mg",
-    "code": "50096"
-  },
-  {
-    "name": "EPHEDRINE HYDROCHLORIDE INJECTION PARENTERAL 50 mg/1mL 1 mL",
-    "code": "50280"
-  },
-  {
-    "name": "PROMETHAZINE HYDROCHLORIDE INJECTION PARENTERAL 25 mg/1mL 2 mL",
-    "code": "50433"
-  },
-  {
-    "name": "CYTARABINE INJECTION, SOLUTION PARENTERAL 50 mg/1mL 20 mL",
-    "code": "50464"
-  },
-  {
-    "name": "MYCOPHENOLATE MOFETIL POWDER, FOR SUSPENSION ORAL 1 g/5mL 110 g",
-    "code": "50710"
-  },
-  {
-    "name": "BRENTUXIMAB VEDOTIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 50 mg",
-    "code": "50841"
-  },
-  {
-    "name": "TESTOSTERONE ENANTHATE INJECTION PARENTERAL 250 mg/1mL",
-    "code": "50872"
-  },
-  {
-    "name": "NIVOLUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 10 mg/1mL 10 mL",
-    "code": "50884"
-  },
-  {
-    "name": "IMMUNE GLOBULIN INJECTION INTRAVENOUS 50 mg/1mL 200 mL",
-    "code": "50893"
-  },
-  {
-    "name": "RISPERIDONE INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE PARENTERAL 50 mg",
-    "code": "50996"
-  },
-  {
-    "name": "EPINEPHRINE AUTOINJECTOR 0.3MG",
-    "code": "51121"
-  },
-  {
-    "name": "POLYMYXIN B / NEOMYCIN SULFATE / HYDROCORTISONE SUSPENSION, DROPS AURICULAR (OTIC) 10000 [iU]/5 mg/10 mg/1mL 5 mL",
-    "code": "51129"
-  },
-  {
-    "name": "CHARCOAL ACTIVATED SUSPENSION ORAL 200 mg/1mL 250 mL",
-    "code": "51252"
-  },
-  {
-    "name": "MEGLUMINE COMPOUND SOLUTION ORAL 66 %/10 % 120 mL",
-    "code": "51516"
-  },
-  {
-    "name": "TOBRAMYCIN SOLUTION RESPIRATORY 60 mg/1mL 5 mL",
-    "code": "51698"
-  },
-  {
-    "name": "LIDOCAINE / PRILOCAINE CREAM TOPICAL 2.5 %/2.5 % 15 g",
-    "code": "51869"
-  },
-  {
-    "name": "NITROFURANTOIN SUSPENSION ORAL 25 mg/5mL 100 mL",
-    "code": "51882"
-  },
-  {
-    "name": "HYDROXOCOBALAMIN INJECTION PARENTERAL 5 mg/1mL 2 mL",
-    "code": "51899"
-  },
-  {
-    "name": "ACETYLCYSTEINE INJECTION PARENTERAL 200 mg/1mL 10 mL",
-    "code": "51914"
-  },
-  {
-    "name": "DEXAMETHASONE TABLET ORAL 4 mg",
-    "code": "51923"
-  },
-  {
-    "name": "LEVODOPA/CARBDOPA/ENTACAPONE TABLET ORAL 200MG/50MG/200MG",
-    "code": "51962"
-  },
-  {
-    "name": "APOMORPHINE HYDROCHLORIDE INJECTION PARENTERAL 5 mg/1mL 20 mL",
-    "code": "51973"
-  },
-  {
-    "name": "PIRACETAM SOLUTION ORAL 20 % 200 mL",
-    "code": "51981"
-  },
-  {
-    "name": "CLINDAMYCIN PHOSPHATE / TRETINOIN GEL TOPICAL 1.2 %/0.025 % 30 g",
-    "code": "51995"
-  },
-  {
-    "name": "SUCCINYLCHOLINE CHLORIDE INJECTION PARENTERAL 20 mg/1mL 5 mL",
-    "code": "52003"
-  },
-  {
-    "name": "TROPICAMIDE SOLUTION, DROPS OPHTHALMIC 0.5 % 0.5 mL",
-    "code": "52008"
-  },
-  {
-    "name": "MIRTAZAPINE TABLET ORAL 15 mg",
-    "code": "52052"
-  },
-  {
-    "name": "HEPATITIS B IMMUNE GLOBULIN INJECTION PARENTERAL 180 [iU]/1mL 1 mL",
-    "code": "52059"
-  },
-  {
-    "name": "HEPATITIS B IMMUNE GLOBULIN INJECTION PARENTERAL 334 [iU]/1mL 3 mL",
-    "code": "52061"
-  },
-  {
-    "name": "ROCURONIUM BROMIDE INJECTION, SOLUTION PARENTERAL 10 mg/1mL 10 mL",
-    "code": "52073"
-  },
-  {
-    "name": "PIPERAZINE SYRUP ORAL 750 mg/5 mL 60 mL",
-    "code": "52145"
-  },
-  {
-    "name": "MESALAZINE ENEMA RECTAL 1 g/100mL",
-    "code": "52146"
-  },
-  {
-    "name": "TESTOSTERONE GEL TOPICAL 1 % 5 g",
-    "code": "52157"
-  },
-  {
-    "name": "VENETOCLAX TABLET ORAL 100 mg",
-    "code": "52186"
-  },
-  {
-    "name": "VALPROATE SODIUM INJECTION PARENTERAL 100 mg/1mL 4 mL",
-    "code": "52223"
-  },
-  {
-    "name": "SODIUM THIOSULFATE INJECTION PARENTERAL 250 mg/1mL 100 mL",
-    "code": "52259"
-  },
-  {
-    "name": "NATRIUMTHIOSULFAT 100 ML 25%",
-    "code": "52259"
-  },
-  {
-    "name": "IODIXANOL INJECTION PARENTERAL 320 mg/1mL 100 mL",
-    "code": "52285"
-  },
-  {
-    "name": "LEVODOPA / CARBIDOPA TABLET ORAL 100 mg/25 mg",
-    "code": "52301"
-  },
-  {
-    "name": "TRIENTINE HYDROCHLORIDE CAPSULE ORAL 250 mg",
-    "code": "52319"
-  },
-  {
-    "name": "ANTI-D IMMUNOGLOBULIN INJECTION, SOLUTION INTRAMUSCULAR 300 ug/2mL",
-    "code": "52345"
-  },
-  {
-    "name": "DIAZOXIDE TABLET ORAL 50 mg",
-    "code": "52351"
-  },
-  {
-    "name": "NIVOLUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 10 mg/1mL 4 mL",
-    "code": "52363"
-  },
-  {
-    "name": "PREDNISOLONE ACETATE SUSPENSION, DROPS OPHTHALMIC 1 % 5 mL",
-    "code": "52376"
-  },
-  {
-    "name": "POTASSIUM CHLORIDE CONCENTRATED INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 2 meq/1mL 10 mL",
-    "code": "52379"
-  },
-  {
-    "name": "UMECLIDINIUM (AS BROMIDE) / VILANTEROL (AS TRIFENATATE) POWDER RESPIRATORY 62.5 ug/25 ug/1{Puff}",
-    "code": "52429"
-  },
-  {
-    "name": "UMECLIDINIUM (AS BROMIDE) / VILANTEROL (AS TRIFENATATE) POWDER, METERED RESPIRATORY 62.5 ug/25 ug/1{Puff} 30 {dose}",
-    "code": "52429"
-  },
-  {
-    "name": "VITAMIN K1 (PHYTOMENADIONE) TABLET, CHEWABLE ORAL 10 mg",
-    "code": "52467"
-  },
-  {
-    "name": "HYDRALAZINE HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 20 mg 1 mL",
-    "code": "52478"
-  },
-  {
-    "name": "PEGASPARGASE INJECTION, SOLUTION PARENTERAL 750 [iU]/1mL 5 mL",
-    "code": "52504"
-  },
-  {
-    "name": "DAUNORUBICIN (AS HYDROCHLORIDE) INJECTION, SOLUTION PARENTERAL 2 mg/1mL 10 mL",
-    "code": "52506"
-  },
-  {
-    "name": "ETHOSUXIMIDE SYRUP ORAL 250 mg/5mL 200 mL",
-    "code": "52620"
-  },
-  {
-    "name": "DARATUMUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 400 MG",
-    "code": "52628"
-  },
-  {
-    "name": "VINBLASTINE SULFATE INJECTION, SOLUTION PARENTERAL 1 mg/1mL 10 mL",
-    "code": "52631"
-  },
-  {
-    "name": "OXANDROLONE TABLET ORAL 10 mg",
-    "code": "52688"
-  },
-  {
-    "name": "REMDESIVIR INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
-    "code": "52689"
-  },
-  {
-    "name": "REMDESIVIR INJECTION, SOLUTION PARENTERAL 5 mg/1mL 20 mL",
-    "code": "52707"
-  },
-  {
-    "name": "BLINATUMOMAB INJECTION, POWDER, FOR SOLUTION PARENTERAL 38.5 ug",
-    "code": "52711"
-  },
-  {
-    "name": "LIDOCAINE HYDROCHLORIDE GEL TOPICAL 2 % 25 g",
-    "code": "52766"
-  },
-  {
-    "name": "PIRACETAM LIQUID ORAL 33.33 % 200 mL",
-    "code": "52769"
-  },
-  {
-    "name": "SODIUM CHLORIDE INJECTION, SOLUTION INTRAVENOUS 20 % 50 mL",
-    "code": "52793"
-  },
-  {
-    "name": "NATAMYCIN SOLUTION, DROPS OPHTHALMIC 5 % 5 mL",
-    "code": "52905"
-  },
-  {
-    "name": "LIPID INFUSION 20% (3) INJECTION, EMULSION INTRAVENOUS 80 mg/100 mg/20 mg/1mL 250 mL",
-    "code": "52913"
-  },
-  {
-    "name": "CALCIUM FOLINATE INJECTION, POWDER PARENTERAL 200 mg",
-    "code": "52936"
-  },
-  {
-    "name": "ETHOSUXIMIDE SYRUP ORAL 250 mg/5mL 100 mL",
-    "code": "52957"
-  },
-  {
-    "name": "NUSINERSEN (AS SODIUM) INJECTION, SOLUTION PARENTERAL 2.4 mg/1mL 5 mL",
-    "code": "52998"
-  },
-  {
-    "name": "PAPAVERINE HYDROCHLORIDE INJECTION PARENTERAL 20 mg/1mL 2 mL",
-    "code": "53026"
-  },
-  {
-    "name": "PRALIDOXIME IODIDE INJECTION, SOLUTION PARENTERAL 25 mg/1 mL 20 mL",
-    "code": "53051"
-  },
-  {
-    "name": "LIPID INFUSION 10% (2) INJECTION, SOLUTION INTRAVENOUS 100 mg/22 mg/12 mg/1mL 500 mL",
-    "code": "53067"
-  },
-  {
-    "name": "GUSELKUMAB INJECTION, SOLUTION PARENTERAL 100 mg/1mL 1 mL",
-    "code": "53140"
-  },
-  {
-    "name": "METHOXSALEN INJECTION PARENTERAL 20 ug/1mL 5 mL",
-    "code": "53217"
-  },
-  {
-    "name": "AMINO ACID 10% PAEDIATRIC (1) INJECTION, SOLUTION INTRAVENOUS 8 mg/13 mg/8.51 mg/3.12 mg/3.75 mg/4.4 mg/2.01 mg/9 mg/7.5 mg/4.76 mg/9.3 mg/4.15 mg/0.7 mg/2.3 mg/1.6 mg/9.71 mg/7.67 mg/5.176 mg/2.26 mg/0.4 mg/1 mL/1mL 100 mL",
-    "code": "53310"
-  },
-  {
-    "name": "DANTROLENE SODIUM INJECTION, POWDER PARENTERAL 120 mg",
-    "code": "53476"
-  }
+{
+"name": "ABIRATERONE ACETATE TABLET ORAL 250 mg",
+"code": "19011"
+},
+{
+"name": "ABIRATERONE ACETATE TABLET ORAL 500 mg",
+"code": "52063"
+},
+{
+"name": "ACARBOSE TABLET ORAL 100 mg",
+"code": "2015"
+},
+{
+"name": "ACARBOSE TABLET ORAL 50 mg",
+"code": "2016"
+},
+{
+"name": "ACETAMINOPHEN INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 150 mg/1mL 6.7 mL",
+"code": "18420"
+},
+{
+"name": "ACETAMINOPHEN SOLUTION ORAL 120 mg/5mL 60 mL",
+"code": "4"
+},
+{
+"name": "ACETAMINOPHEN SOLUTION, DROPS ORAL 100 mg/1mL 15 mL",
+"code": "3"
+},
+{
+"name": "ACETAMINOPHEN SUPPOSITORY RECTAL 125 mg",
+"code": "6"
+},
+{
+"name": "ACETAMINOPHEN SUPPOSITORY RECTAL 325 mg",
+"code": "8"
+},
+{
+"name": "ACETAMINOPHEN SUSPENSION, DROPS ORAL 100 mg/1mL 15 mL",
+"code": "21986"
+},
+{
+"name": "ACETAMINOPHEN TABLET ORAL 325 mg",
+"code": "7"
+},
+{
+"name": "ACETAMINOPHEN TABLET ORAL 500 mg",
+"code": "2012"
+},
+{
+"name": "ACETAZOLAMIDE TABLET ORAL 250 mg",
+"code": "11"
+},
+{
+"name": "ACETYLCYSTEINE TABLET, EFFERVESCENT ORAL 600 mg",
+"code": "2369"
+},
+{
+"name": "ACICLOVIR CREAM TOPICAL 5 % 10 g",
+"code": "24"
+},
+{
+"name": "ACICLOVIR TABLET ORAL 400 mg",
+"code": "23"
+},
+{
+"name": "ACITRETIN CAPSULE ORAL 25 mg",
+"code": "18"
+},
+{
+"name": "ADALIMUMAB INJECTION, SOLUTION PARENTERAL 50 mg/1mL 0.8 mL",
+"code": "16164"
+},
+{
+"name": "AFLIBERCEPT INJECTION PARENTERAL 40 mg/1mL 0.1 mL",
+"code": "22646"
+},
+{
+"name": "AGOMELATINE TABLET ORAL 25 mg",
+"code": "18949"
+},
+{
+"name": "ALBUMIN (HUMAN) INJECTION, SOLUTION PARENTERAL 20 % 100 mL",
+"code": "6888"
+},
+{
+"name": "ALBUMIN (HUMAN) INJECTION, SOLUTION PARENTERAL 20 % 50 mL",
+"code": "27"
+},
+{
+"name": "ALENDRONATE (AS SODIUM) TABLET ORAL 70 mg",
+"code": "2406"
+},
+{
+"name": "ALLOPURINOL TABLET ORAL 100 mg",
+"code": "38"
+},
+{
+"name": "ALLOPURINOL TABLET ORAL 300 mg",
+"code": "2017"
+},
+{
+"name": "ALPRAZOLAM TABLET ORAL 0.5 mg",
+"code": "40"
+},
+{
+"name": "ALPRAZOLAM TABLET ORAL 1 mg",
+"code": "1382"
+},
+{
+"name": "ALTEPLASE INJECTION, POWDER, FOR SOLUTION PARENTERAL 50 mg",
+"code": "5775"
+},
+{
+"name": "AMANTADINE HYDROCHLORIDE CAPSULE ORAL 100 mg",
+"code": "51"
+},
+{
+"name": "AMIKACIN (AS SULFATE) INJECTION PARENTERAL 250 mg/1mL 2 mL",
+"code": "54"
+},
+{
+"name": "AMIODARONE HYDROCHLORIDE TABLET ORAL 200 mg",
+"code": "63"
+},
+{
+"name": "AMLODIPINE (AS BESILATE) / VALSARTAN TABLET ORAL 10 mg/160 mg",
+"code": "15856"
+},
+{
+"name": "AMLODIPINE (AS BESILATE) TABLET ORAL 5 mg",
+"code": "70"
+},
+{
+"name": "AMOXICILLIN CAPSULE ORAL 250 mg",
+"code": "76"
+},
+{
+"name": "AMOXICILLIN CAPSULE ORAL 500 mg",
+"code": "77"
+},
+{
+"name": "AMOXICILLIN POWDER, FOR SUSPENSION ORAL 125 mg/5mL 100 mL",
+"code": "75"
+},
+{
+"name": "AMOXICILLIN POWDER, FOR SUSPENSION ORAL 250 mg/5mL 100 mL",
+"code": "78"
+},
+{
+"name": "AMPHOTERICIN B LIPOSOME INJECTION, POWDER, FOR SOLUTION PARENTERAL 50 mg",
+"code": "17094"
+},
+{
+"name": "AMPICILLIN / SULBACTAM INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g/0.5 g",
+"code": "6939"
+},
+{
+"name": "AMPICILLIN / SULBACTAM INJECTION, POWDER, FOR SOLUTION PARENTERAL 2 g/1 g",
+"code": "6938"
+},
+{
+"name": "AMPICILLIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
+"code": "80"
+},
+{
+"name": "AMPICILLIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
+"code": "82"
+},
+{
+"name": "ANAGRELIDE HYDROCHLORIDE CAPSULE ORAL 500 ug",
+"code": "7659"
+},
+{
+"name": "APIXABAN TABLET ORAL 2.5 mg",
+"code": "51339"
+},
+{
+"name": "APIXABAN TABLET ORAL 5 mg",
+"code": "51340"
+},
+{
+"name": "APREPITANT CAPSULE ORAL 125 mg",
+"code": "13434"
+},
+{
+"name": "ARIPIPRAZOLE TABLET ORAL 5 mg",
+"code": "10392"
+},
+{
+"name": "ASA (ACETYLSALICYLIC ACID) TABLET, DELAYED RELEASE ORAL 81 mg",
+"code": "50622"
+},
+{
+"name": "ATEZOLIZUMAB INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 60 mg/1mL 20 mL",
+"code": "52835"
+},
+{
+"name": "ATORVASTATIN (AS CALCIUM) TABLET ORAL 10 mg",
+"code": "1910"
+},
+{
+"name": "ATORVASTATIN (AS CALCIUM) TABLET ORAL 20 mg",
+"code": "1911"
+},
+{
+"name": "ATORVASTATIN (AS CALCIUM) TABLET ORAL 40 mg",
+"code": "1912"
+},
+{
+"name": "ATRACURIUM BESYLATE INJECTION PARENTERAL 10 mg/1mL 5 mL",
+"code": "117"
+},
+{
+"name": "ATROPINE SULFATE INJECTION PARENTERAL 0.5 mg/1mL",
+"code": "119"
+},
+{
+"name": "AZATHIOPRINE TABLET ORAL 50 mg",
+"code": "122"
+},
+{
+"name": "AZITHROMYCIN CAPSULE ORAL 250 mg",
+"code": "123"
+},
+{
+"name": "AZITHROMYCIN POWDER, FOR SUSPENSION ORAL 100 mg/5mL 30 mL",
+"code": "51960"
+},
+{
+"name": "AZITHROMYCIN POWDER, FOR SUSPENSION ORAL 200 mg/5mL 22.5 mL",
+"code": "7986"
+},
+{
+"name": "AZITHROMYCIN POWDER, FOR SUSPENSION ORAL 200 mg/5mL 30 mL",
+"code": "2373"
+},
+{
+"name": "AZITHROMYCIN TABLET ORAL 250 mg",
+"code": "2110"
+},
+{
+"name": "AZITHROMYCIN TABLET ORAL 500 mg",
+"code": "2407"
+},
+{
+"name": "BACLOFEN TABLET ORAL 10 mg",
+"code": "129"
+},
+{
+"name": "BARICITINIB TABLET ORAL 2 mg",
+"code": "52844"
+},
+{
+"name": "BARICITINIB TABLET ORAL 4 mg",
+"code": "52845"
+},
+{
+"name": "BENDAMUSTINE HYDROCHLORIDE INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
+"code": "13245"
+},
+{
+"name": "BENZOYL PEROXIDE GEL TOPICAL 5 % 30 g",
+"code": "139"
+},
+{
+"name": "BETAHISTINE DIHYDROCHLORIDE TABLET ORAL 8 mg",
+"code": "148"
+},
+{
+"name": "BEVACIZUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 25 mg/1mL 16 mL",
+"code": "5616"
+},
+{
+"name": "BEVACIZUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 25 mg/1mL 4 mL",
+"code": "5615"
+},
+{
+"name": "BICALUTAMIDE TABLET ORAL 50 mg",
+"code": "6765"
+},
+{
+"name": "BILASTINE TABLET ORAL 20 mg",
+"code": "53442"
+},
+{
+"name": "BIPERIDEN HYDROCHLORIDE TABLET ORAL 2 mg",
+"code": "164"
+},
+{
+"name": "BISMUTH SUBCITRATE EQU. TO BISMUTH OXIDE TABLET ORAL 120 mg",
+"code": "169"
+},
+{
+"name": "BISOPROLOL FUMARATE TABLET ORAL 10 mg",
+"code": "8904"
+},
+{
+"name": "BISOPROLOL FUMARATE TABLET ORAL 2.5 mg",
+"code": "11472"
+},
+{
+"name": "BISOPROLOL FUMARATE TABLET ORAL 5 mg",
+"code": "7125"
+},
+{
+"name": "BLINATUMOMAB INJECTION, POWDER, FOR SOLUTION PARENTERAL 38.5 ug",
+"code": "52711"
+},
+{
+"name": "BORTEZOMIB INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 3.5 mg",
+"code": "7088"
+},
+{
+"name": "BOSENTAN TABLET ORAL 125 mg",
+"code": "7848"
+},
+{
+"name": "BOTULINUM A TOXIN INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 300 [iU]",
+"code": "19172"
+},
+{
+"name": "BOTULINUM A TOXIN INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 500 [iU]",
+"code": "3623"
+},
+{
+"name": "BRENTUXIMAB VEDOTIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 50 mg",
+"code": "50841"
+},
+{
+"name": "BUDESONIDE / FORMOTEROL FUMARATE CAPSULE RESPIRATORY 320 ug/9 ug",
+"code": "52854"
+},
+{
+"name": "BUDESONIDE / FORMOTEROL FUMARATE POWDER, METERED RESPIRATORY 160 ug/4.5 ug/1{dose} 120 {dose}",
+"code": "21368"
+},
+{
+"name": "BUDESONIDE / FORMOTEROL FUMARATE POWDER, METERED RESPIRATORY 320 ug/9 ug/1{dose} 120 {dose}",
+"code": "50929"
+},
+{
+"name": "BUDESONIDE / FORMOTEROL FUMARATE POWDER, METERED RESPIRATORY 320 ug/9 ug/1{dose} 60 {dose}",
+"code": "16503"
+},
+{
+"name": "BUDESONIDE SUSPENSION RESPIRATORY 0.25 mg/1mL 2 mL",
+"code": "8889"
+},
+{
+"name": "BUDESONIDE SUSPENSION RESPIRATORY 0.5 mg/1mL 2 mL",
+"code": "52306"
+},
+{
+"name": "BUPIVACAINE HYDROCHLORIDE INJECTION INTRASPINAL 0.5 % 4 mL",
+"code": "1413"
+},
+{
+"name": "BUPRENORPHINE (AS HYDROCHLORIDE) TABLET SUBLINGUAL 2 mg",
+"code": "3799"
+},
+{
+"name": "BUPROPION HYDROCHLORIDE TABLET ORAL 75 mg",
+"code": "1908"
+},
+{
+"name": "BUPROPION HYDROCHLORIDE TABLET, EXTENDED RELEASE ORAL 150 mg",
+"code": "2033"
+},
+{
+"name": "BUSPIRONE HYDROCHLORIDE TABLET ORAL 5 mg",
+"code": "1888"
+},
+{
+"name": "CABERGOLINE TABLET ORAL 0.5 mg",
+"code": "2287"
+},
+{
+"name": "CALCITRIOL CAPSULE, LIQUID FILLED ORAL 0.25 ug",
+"code": "195"
+},
+{
+"name": "CALCIUM DOBESILATE CAPSULE ORAL 500 mg",
+"code": "2414"
+},
+{
+"name": "CAPECITABINE TABLET ORAL 500 mg",
+"code": "2493"
+},
+{
+"name": "CAPTOPRIL TABLET ORAL 25 mg",
+"code": "205"
+},
+{
+"name": "CARBAMAZEPINE TABLET ORAL 200 mg",
+"code": "208"
+},
+{
+"name": "CARBAMAZEPINE TABLET, EXTENDED RELEASE ORAL 200 mg",
+"code": "2114"
+},
+{
+"name": "CARBAMAZEPINE TABLET, EXTENDED RELEASE ORAL 400 mg",
+"code": "1420"
+},
+{
+"name": "CARBOPLATIN INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 10 mg/1mL 15 mL",
+"code": "214"
+},
+{
+"name": "CARBOPLATIN INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 10 mg/1mL 5 mL",
+"code": "215"
+},
+{
+"name": "CARGLUMIC ACID TABLET, FOR SUSPENSION ORAL 200 mg",
+"code": "13171"
+},
+{
+"name": "CARVEDILOL TABLET ORAL 12.5 mg",
+"code": "1924"
+},
+{
+"name": "CARVEDILOL TABLET ORAL 6.25 mg",
+"code": "2475"
+},
+{
+"name": "CASPOFUNGIN ACETATE INJECTION, POWDER, FOR SOLUTION PARENTERAL 50 mg",
+"code": "6757"
+},
+{
+"name": "CEFALEXIN CAPSULE ORAL 250 mg",
+"code": "243"
+},
+{
+"name": "CEFALEXIN CAPSULE ORAL 500 mg",
+"code": "245"
+},
+{
+"name": "CEFAZOLIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
+"code": "222"
+},
+{
+"name": "CEFAZOLIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
+"code": "224"
+},
+{
+"name": "CEFEPIME (AS HYDROCHLORIDE) INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
+"code": "2416"
+},
+{
+"name": "CEFIXIME POWDER, FOR SUSPENSION ORAL 100 mg/5 mL 100 mL",
+"code": "2419"
+},
+{
+"name": "CEFIXIME TABLET ORAL 200 mg",
+"code": "226"
+},
+{
+"name": "CEFIXIME TABLET ORAL 400 mg",
+"code": "52222"
+},
+{
+"name": "CEFOTAXIME (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
+"code": "1336"
+},
+{
+"name": "CEFTAZIDIME / AVIBACTAM (AS SODIUM) INJECTION, POWDER PARENTERAL 2 g/0.5 g",
+"code": "52547"
+},
+{
+"name": "CEFTAZIDIME INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
+"code": "230"
+},
+{
+"name": "CEFTIZOXIME INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
+"code": "233"
+},
+{
+"name": "CEFTRIAXONE (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
+"code": "237"
+},
+{
+"name": "CEFTRIAXONE (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
+"code": "239"
+},
+{
+"name": "CEFUROXIME (AS AXETIL) TABLET ORAL 500 mg",
+"code": "2032"
+},
+{
+"name": "CELECOXIB CAPSULE ORAL 100 mg",
+"code": "1913"
+},
+{
+"name": "CELECOXIB CAPSULE ORAL 200 mg",
+"code": "1932"
+},
+{
+"name": "CETIRIZINE HYDROCHLORIDE TABLET ORAL 10 mg",
+"code": "1424"
+},
+{
+"name": "CETRORELIX INJECTION, POWDER, FOR SOLUTION PARENTERAL 250 ug",
+"code": "5291"
+},
+{
+"name": "CETUXIMAB INJECTION PARENTERAL 5 mg/1mL 20 mL",
+"code": "15691"
+},
+{
+"name": "CHLORPHENIRAMINE MALEATE INJECTION PARENTERAL 10 mg/1mL",
+"code": "275"
+},
+{
+"name": "CHORIONIC GONADOTROPHIN (HUMAN) INJECTION, POWDER, FOR SOLUTION PARENTERAL 5000 [iU]",
+"code": "286"
+},
+{
+"name": "CICLOSPORIN CAPSULE, LIQUID FILLED ORAL 100 mg",
+"code": "287"
+},
+{
+"name": "CICLOSPORIN CAPSULE, LIQUID FILLED ORAL 25 mg",
+"code": "288"
+},
+{
+"name": "CICLOSPORIN CAPSULE, LIQUID FILLED ORAL 50 mg",
+"code": "1758"
+},
+{
+"name": "CINACALCET (AS HYDROCHLORIDE) TABLET ORAL 30 mg",
+"code": "8066"
+},
+{
+"name": "CIPROFLOXACIN (AS HYDROCHLORIDE) TABLET ORAL 500 mg",
+"code": "296"
+},
+{
+"name": "CIPROFLOXACIN (AS LACTATE) INJECTION, SOLUTION INTRAVENOUS 2 mg/1mL 100 mL",
+"code": "10757"
+},
+{
+"name": "CISATRACURIUM (AS BESYLATE) INJECTION PARENTERAL 2 mg/1mL 5 mL",
+"code": "2109"
+},
+{
+"name": "CISPLATIN INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 1 mg/1mL 50 mL",
+"code": "11868"
+},
+{
+"name": "CITALOPRAM TABLET ORAL 20 mg",
+"code": "1905"
+},
+{
+"name": "CITICOLINE INJECTION PARENTERAL 125 mg/1mL 2 mL",
+"code": "303"
+},
+{
+"name": "CLADRIBINE TABLET ORAL 10 mg",
+"code": "52958"
+},
+{
+"name": "CLARITHROMYCIN TABLET ORAL 500 mg",
+"code": "2034"
+},
+{
+"name": "CLINDAMYCIN (AS HYDROCHLORIDE) CAPSULE ORAL 150 mg",
+"code": "309"
+},
+{
+"name": "CLINDAMYCIN (AS HYDROCHLORIDE) CAPSULE ORAL 300 mg",
+"code": "9464"
+},
+{
+"name": "CLINDAMYCIN (AS PHOSPHATE) GEL TOPICAL 1 % 15 g",
+"code": "1862"
+},
+{
+"name": "CLINDAMYCIN (AS PHOSPHATE) INJECTION PARENTERAL 150 mg/1mL 2 mL",
+"code": "1947"
+},
+{
+"name": "CLINDAMYCIN (AS PHOSPHATE) SOLUTION TOPICAL 10 mg/1mL 60 mL",
+"code": "1374"
+},
+{
+"name": "CLOBAZAM TABLET ORAL 10 mg",
+"code": "312"
+},
+{
+"name": "CLOBETASOL PROPIONATE LOTION TOPICAL 0.05 % 25 mL",
+"code": "2425"
+},
+{
+"name": "CLONAZEPAM TABLET ORAL 2 mg",
+"code": "323"
+},
+{
+"name": "CLOPIDOGREL (AS BISULFATE) TABLET ORAL 75 mg",
+"code": "1788"
+},
+{
+"name": "CLOTRIMAZOLE CREAM TOPICAL 1 % 15 g",
+"code": "326"
+},
+{
+"name": "CLOTRIMAZOLE CREAM VAGINAL 1 % 50 g",
+"code": "325"
+},
+{
+"name": "CLOZAPINE TABLET ORAL 100 mg",
+"code": "334"
+},
+{
+"name": "CO-AMOXICLAV TABLET ORAL 250 mg/125 mg",
+"code": "337"
+},
+{
+"name": "CO-AMOXICLAV TABLET ORAL 500 mg/125 mg",
+"code": "338"
+},
+{
+"name": "CO-TRIMOXAZOLE TABLET ORAL 400 mg/80 mg",
+"code": "339"
+},
+{
+"name": "COAGULATION FACTOR VIII (RECOMBINANT) INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 2000 [iU]",
+"code": "53142"
+},
+{
+"name": "COLCHICINE TABLET ORAL 1 mg",
+"code": "348"
+},
+{
+"name": "COLISTIMETHATE SODIUM INJECTION, POWDER, FOR SOLUTION PARENTERAL 1000000 [iU]",
+"code": "10730"
+},
+{
+"name": "CONTRACEPTIVE DE TABLET ORAL 0.15 mg/30 ug",
+"code": "21746"
+},
+{
+"name": "CORIFOLLITROPIN ALFA INJECTION, SOLUTION PARENTERAL 300 ug/1mL 0.5 mL",
+"code": "50720"
+},
+{
+"name": "CYCLOPHOSPHAMIDE INJECTION, SOLUTION PARENTERAL 200 mg/1mL 2.5 mL",
+"code": "53358"
+},
+{
+"name": "CYPROTERONE ACETATE TABLET ORAL 50 mg",
+"code": "373"
+},
+{
+"name": "CYPROTERONE COMPOUND TABLET ORAL 2 mg/0.035 mg",
+"code": "374"
+},
+{
+"name": "DAPAGLIFLOZIN (AS PROPANEDIOL) TABLET ORAL 10 mg",
+"code": "52167"
+},
+{
+"name": "DAPOXETINE (AS HYDROCHLORIDE) TABLET ORAL 30 mg",
+"code": "50640"
+},
+{
+"name": "DAPOXETINE (AS HYDROCHLORIDE) TABLET ORAL 60 mg",
+"code": "51970"
+},
+{
+"name": "DARATUMUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 20 mg/1mL 20 mL",
+"code": "52628"
+},
+{
+"name": "DASATINIB TABLET ORAL 100 mg",
+"code": "52539"
+},
+{
+"name": "DEFERASIROX TABLET ORAL 360 mg",
+"code": "51955"
+},
+{
+"name": "DEFERIPRONE TABLET, DELAYED RELEASE ORAL 500 mg",
+"code": "17853"
+},
+{
+"name": "DEFEROXAMINE MESYLATE INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
+"code": "386"
+},
+{
+"name": "DENOSUMAB INJECTION, SOLUTION PARENTERAL 60 mg/1mL 1 mL",
+"code": "18084"
+},
+{
+"name": "DESLORATADINE SYRUP ORAL 2.5 mg/5 mL 120 mL",
+"code": "52148"
+},
+{
+"name": "DESLORATADINE TABLET ORAL 5 mg",
+"code": "52136"
+},
+{
+"name": "DESMOPRESSIN (AS ACETATE) TABLET SUBLINGUAL 120 ug",
+"code": "9607"
+},
+{
+"name": "DEXAMETHASONE TABLET ORAL 0.5 mg",
+"code": "398"
+},
+{
+"name": "DEXPANTHENOL CREAM TOPICAL 5 % 30 g",
+"code": "403"
+},
+{
+"name": "DEXPANTHENOL INJECTION, SOLUTION PARENTERAL 250 mg/1mL 2 mL",
+"code": "25187"
+},
+{
+"name": "DEXTROMETHORPHAN HYDROBROMIDE CAPSULE, LIQUID FILLED ORAL 15 mg",
+"code": "18769"
+},
+{
+"name": "DEXTROSE / SODIUM CHLORIDE INJECTION, SOLUTION INTRAVENOUS 5 %/0.9 % 500 mL",
+"code": "393"
+},
+{
+"name": "DEXTROSE INJECTION, SOLUTION INTRAVENOUS 10 % 500 mL",
+"code": "411"
+},
+{
+"name": "DEXTROSE INJECTION, SOLUTION INTRAVENOUS 5 % 500 mL",
+"code": "5746"
+},
+{
+"name": "DEXTROSE INJECTION, SOLUTION, CONCENTRATE INTRAVENOUS 50 % 50 mL",
+"code": "15952"
+},
+{
+"name": "DIAZEPAM INJECTION PARENTERAL 5 mg/1mL 2 mL",
+"code": "418"
+},
+{
+"name": "DICLOFENAC DIETHYLAMMONIUM GEL TOPICAL 1 % 60 g",
+"code": "426"
+},
+{
+"name": "DICLOFENAC SODIUM INJECTION PARENTERAL 25 mg/1mL 3 mL",
+"code": "425"
+},
+{
+"name": "DICLOFENAC SODIUM SOLUTION, DROPS OPHTHALMIC 0.1 % 5 mL",
+"code": "1847"
+},
+{
+"name": "DICLOFENAC SODIUM SUPPOSITORY RECTAL 100 mg",
+"code": "427"
+},
+{
+"name": "DICLOFENAC SODIUM SUPPOSITORY RECTAL 50 mg",
+"code": "428"
+},
+{
+"name": "DICLOFENAC SODIUM TABLET, DELAYED RELEASE ORAL 50 mg",
+"code": "2041"
+},
+{
+"name": "DICLOFENAC SODIUM TABLET, EXTENDED RELEASE ORAL 100 mg",
+"code": "1464"
+},
+{
+"name": "DIENOGEST TABLET ORAL 2 mg",
+"code": "50401"
+},
+{
+"name": "DILTIAZEM HYDROCHLORIDE GEL TOPICAL 2 % 30 g",
+"code": "19431"
+},
+{
+"name": "DILTIAZEM HYDROCHLORIDE TABLET ORAL 60 mg",
+"code": "447"
+},
+{
+"name": "DIMENHYDRINATE TABLET ORAL 50 mg",
+"code": "448"
+},
+{
+"name": "DIMETHYL FUMARATE CAPSULE, DELAYED RELEASE ORAL 240 mg",
+"code": "22926"
+},
+{
+"name": "DIPHENOXYLATE TABLET ORAL 2.5 mg",
+"code": "457"
+},
+{
+"name": "DOCETAXEL INJECTION, SOLUTION INTRAVENOUS 20 mg/1mL 1 mL",
+"code": "52349"
+},
+{
+"name": "DOCETAXEL INJECTION, SOLUTION INTRAVENOUS 20 mg/1mL 4 mL",
+"code": "21240"
+},
+{
+"name": "DOMPERIDONE TABLET ORAL 10 mg",
+"code": "6754"
+},
+{
+"name": "DONEPEZIL HYDROCHLORIDE TABLET ORAL 10 mg",
+"code": "1928"
+},
+{
+"name": "DONEPEZIL HYDROCHLORIDE TABLET ORAL 5 mg",
+"code": "1927"
+},
+{
+"name": "DOXORUBICIN HYDROCHLORIDE (PEGYLATED) INJECTABLE, LIPOSOMAL PARENTERAL 2 mg/1mL 10 mL",
+"code": "50610"
+},
+{
+"name": "DOXYCYCLINE (AS HYCLATE) CAPSULE, DELAYED RELEASE ORAL 100 mg",
+"code": "52747"
+},
+{
+"name": "DOXYCYCLINE (AS MONOHYDRATE) CAPSULE ORAL 100 mg",
+"code": "474"
+},
+{
+"name": "DROSPIRENONE / ETHINYLESTRADIOL TABLET ORAL 3 mg/0.02 mg",
+"code": "14870"
+},
+{
+"name": "DROSPIRENONE / ETHINYLESTRADIOL TABLET ORAL 3 mg/0.03 mg",
+"code": "9090"
+},
+{
+"name": "DULOXETINE CAPSULE, DELAYED RELEASE ORAL 20 mg",
+"code": "18430"
+},
+{
+"name": "DULOXETINE CAPSULE, DELAYED RELEASE ORAL 30 mg",
+"code": "7845"
+},
+{
+"name": "DULOXETINE CAPSULE, DELAYED RELEASE ORAL 60 mg",
+"code": "5970"
+},
+{
+"name": "DUTASTERIDE CAPSULE, LIQUID FILLED ORAL 0.5 mg",
+"code": "6735"
+},
+{
+"name": "DYDROGESTERONE TABLET ORAL 10 mg",
+"code": "5596"
+},
+{
+"name": "EDARAVONE INJECTION, SOLUTION PARENTERAL 30 mg/20mL",
+"code": "52366"
+},
+{
+"name": "ELTROMBOPAG (AS OLAMINE) TABLET ORAL 25 mg",
+"code": "51000"
+},
+{
+"name": "ELTROMBOPAG (AS OLAMINE) TABLET ORAL 50 mg",
+"code": "51001"
+},
+{
+"name": "EMICIZUMAB INJECTION, SOLUTION PARENTERAL 150 mg/1mL 0.4 mL",
+"code": "52948"
+},
+{
+"name": "EMICIZUMAB INJECTION, SOLUTION PARENTERAL 150 mg/1mL 0.7 mL",
+"code": "52949"
+},
+{
+"name": "EMPAGLIFLOZIN / LINAGLIPTIN TABLET ORAL 10 mg/5 mg",
+"code": "52239"
+},
+{
+"name": "EMPAGLIFLOZIN / METFORMIN HYDROCHLORIDE TABLET ORAL 12.5 mg/1000 mg",
+"code": "52176"
+},
+{
+"name": "EMPAGLIFLOZIN / METFORMIN HYDROCHLORIDE TABLET ORAL 5 mg/1000 mg",
+"code": "52174"
+},
+{
+"name": "EMPAGLIFLOZIN / METFORMIN HYDROCHLORIDE TABLET ORAL 5 mg/500 mg",
+"code": "52173"
+},
+{
+"name": "EMPAGLIFLOZIN TABLET ORAL 10 mg",
+"code": "52138"
+},
+{
+"name": "EMPAGLIFLOZIN TABLET ORAL 25 mg",
+"code": "52137"
+},
+{
+"name": "ENZALUTAMIDE CAPSULE, LIQUID FILLED ORAL 40 mg",
+"code": "22558"
+},
+{
+"name": "EPINEPHRINE INJECTION PARENTERAL 1 mg/1mL 1 mL",
+"code": "1489"
+},
+{
+"name": "EPLERENONE TABLET ORAL 25 mg",
+"code": "9626"
+},
+{
+"name": "EPLERENONE TABLET ORAL 50 mg",
+"code": "9644"
+},
+{
+"name": "ESCITALOPRAM (AS OXALATE) TABLET ORAL 10 mg",
+"code": "8968"
+},
+{
+"name": "ESCITALOPRAM (AS OXALATE) TABLET ORAL 20 mg",
+"code": "6484"
+},
+{
+"name": "ESOMEPRAZOLE (AS MAGNESIUM) CAPSULE, DELAYED RELEASE ORAL 40 mg",
+"code": "52757"
+},
+{
+"name": "ESOMEPRAZOLE (AS MAGNESIUM) GRANULE, DELAYED RELEASE ORAL 10 mg",
+"code": "52085"
+},
+{
+"name": "ESOMEPRAZOLE CAPSULE, DELAYED RELEASE ORAL 20 mg",
+"code": "13973"
+},
+{
+"name": "ESOMEPRAZOLE CAPSULE, DELAYED RELEASE ORAL 40 mg",
+"code": "13974"
+},
+{
+"name": "ESOMEPRAZOLE TABLET, DELAYED RELEASE ORAL 40 mg",
+"code": "5923"
+},
+{
+"name": "ESTRADIOL (AS HEMIHYDRATE) TABLET VAGINAL 10 ug",
+"code": "3005"
+},
+{
+"name": "ETANERCEPT INJECTION, SOLUTION SUBCUTANEOUS 25 mg/0.5mL",
+"code": "52294"
+},
+{
+"name": "ETANERCEPT INJECTION, SOLUTION SUBCUTANEOUS 50 mg/1mL 1 mL",
+"code": "8170"
+},
+{
+"name": "ETOPOSIDE INJECTION, SOLUTION INTRAVENOUS 20 mg/1mL 5 mL",
+"code": "518"
+},
+{
+"name": "EVEROLIMUS TABLET ORAL 0.75 mg",
+"code": "20050"
+},
+{
+"name": "EVEROLIMUS TABLET ORAL 10 mg",
+"code": "17253"
+},
+{
+"name": "EVEROLIMUS TABLET ORAL 5 mg",
+"code": "16682"
+},
+{
+"name": "EXEMESTANE TABLET ORAL 25 mg",
+"code": "2962"
+},
+{
+"name": "EZETIMIBE / ROSUVASTATIN (AS CALCIUM) TABLET ORAL 10 mg/10 mg",
+"code": "53298"
+},
+{
+"name": "EZETIMIBE / ROSUVASTATIN (AS CALCIUM) TABLET ORAL 10 mg/20 mg",
+"code": "53299"
+},
+{
+"name": "FACTOR IX INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 500 [iU]",
+"code": "93"
+},
+{
+"name": "FACTOR VIIA INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 1.2 mg",
+"code": "2682"
+},
+{
+"name": "FAMOTIDINE TABLET ORAL 20 mg",
+"code": "527"
+},
+{
+"name": "FAMOTIDINE TABLET ORAL 40 mg",
+"code": "528"
+},
+{
+"name": "FAMPRIDINE TABLET, EXTENDED RELEASE ORAL 10 mg",
+"code": "19263"
+},
+{
+"name": "FENOFIBRATE CAPSULE ORAL 100 mg",
+"code": "10932"
+},
+{
+"name": "FENOFIBRATE CAPSULE ORAL 200 mg",
+"code": "5992"
+},
+{
+"name": "FENTANYL (AS CITRATE) INJECTION PARENTERAL 50 ug/1mL 10 mL",
+"code": "1359"
+},
+{
+"name": "FERRIC CARBOXYMALTOSE INJECTION PARENTERAL 50 mg/1mL 10 mL",
+"code": "16954"
+},
+{
+"name": "FEXOFENADINE HYDROCHLORIDE TABLET ORAL 120 mg",
+"code": "6751"
+},
+{
+"name": "FEXOFENADINE HYDROCHLORIDE TABLET ORAL 180 mg",
+"code": "6750"
+},
+{
+"name": "FIBRINOGEN INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
+"code": "532"
+},
+{
+"name": "FINASTERIDE TABLET ORAL 1 mg",
+"code": "1872"
+},
+{
+"name": "FINASTERIDE TABLET ORAL 5 mg",
+"code": "535"
+},
+{
+"name": "FINGOLIMOD (AS HYDROCHLORIDE) CAPSULE ORAL 0.5 mg",
+"code": "18099"
+},
+{
+"name": "FLUCONAZOLE CAPSULE ORAL 150 mg",
+"code": "538"
+},
+{
+"name": "FLUOCINOLONE ACETONIDE CREAM TOPICAL 0.025 % 15 g",
+"code": "546"
+},
+{
+"name": "FLUOROMETHOLONE SUSPENSION, DROPS OPHTHALMIC 0.1 % 5 mL",
+"code": "548"
+},
+{
+"name": "FLUOROURACIL INJECTION PARENTERAL 50 mg/1mL 20 mL",
+"code": "14530"
+},
+{
+"name": "FLUOXETINE (AS HYDROCHLORIDE) CAPSULE ORAL 20 mg",
+"code": "551"
+},
+{
+"name": "FLUVOXAMINE MALEATE TABLET ORAL 100 mg",
+"code": "4708"
+},
+{
+"name": "FLUVOXAMINE MALEATE TABLET ORAL 50 mg",
+"code": "1827"
+},
+{
+"name": "FOLIC ACID TABLET ORAL 5 mg",
+"code": "1948"
+},
+{
+"name": "FOLLITROPIN ALFA INJECTION, POWDER, FOR SOLUTION PARENTERAL 75 [iU]",
+"code": "2570"
+},
+{
+"name": "FORMOTEROL FUMARATE CAPSULE RESPIRATORY 12 ug",
+"code": "5760"
+},
+{
+"name": "FULVESTRANT INJECTION, SOLUTION PARENTERAL 50 mg/1mL 5 mL",
+"code": "8390"
+},
+{
+"name": "FUROSEMIDE INJECTION INTRAVENOUS 10 mg/1mL 2 mL",
+"code": "51896"
+},
+{
+"name": "FUROSEMIDE TABLET ORAL 40 mg",
+"code": "571"
+},
+{
+"name": "GABAPENTIN CAPSULE ORAL 100 mg",
+"code": "572"
+},
+{
+"name": "GABAPENTIN CAPSULE ORAL 300 mg",
+"code": "573"
+},
+{
+"name": "GADOBUTROL INJECTION PARENTERAL 604.72 mg/1mL 15 mL",
+"code": "16793"
+},
+{
+"name": "GADOBUTROL INJECTION PARENTERAL 604.72 mg/1mL 7.5 mL",
+"code": "16792"
+},
+{
+"name": "GADOTERATE MEGLUMINE INJECTION PARENTERAL 376.9 mg/1mL 15 mL",
+"code": "4025"
+},
+{
+"name": "GANIRELIX (AS ACETATE) INJECTION PARENTERAL 500 ug/1mL 0.5 mL",
+"code": "6783"
+},
+{
+"name": "GEMCITABINE HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 100 mg/1mL 2 mL",
+"code": "52336"
+},
+{
+"name": "GEMFIBROZIL CAPSULE ORAL 300 mg",
+"code": "584"
+},
+{
+"name": "GENTAMICIN INJECTION PARENTERAL 40 mg/1mL 1 mL",
+"code": "590"
+},
+{
+"name": "GENTAMICIN INJECTION PARENTERAL 40 mg/1mL 2 mL",
+"code": "592"
+},
+{
+"name": "GLATIRAMER ACETATE INJECTION, SOLUTION PARENTERAL 40 mg/1mL",
+"code": "23125"
+},
+{
+"name": "GLIBENCLAMIDE TABLET ORAL 5 mg",
+"code": "595"
+},
+{
+"name": "GLICLAZIDE TABLET ORAL 80 mg",
+"code": "1523"
+},
+{
+"name": "GLICLAZIDE TABLET, EXTENDED RELEASE ORAL 30 mg",
+"code": "5442"
+},
+{
+"name": "GLICLAZIDE TABLET, EXTENDED RELEASE ORAL 60 mg",
+"code": "19418"
+},
+{
+"name": "GLYCERIN SUPPOSITORY RECTAL 2 g",
+"code": "2055"
+},
+{
+"name": "GOSERELIN (AS ACETATE) IMPLANT PARENTERAL 3.6 mg",
+"code": "50096"
+},
+{
+"name": "GRANISETRON INJECTION, SOLUTION INTRAVENOUS 1 mg/1mL 3 mL",
+"code": "610"
+},
+{
+"name": "GUAIFENESIN SYRUP ORAL 100 mg/5mL 60 mL",
+"code": "614"
+},
+{
+"name": "HALOPERIDOL (AS LACTATE) INJECTION PARENTERAL 5 mg/1mL",
+"code": "620"
+},
+{
+"name": "HYDROCHLOROTHIAZIDE TABLET ORAL 50 mg",
+"code": "636"
+},
+{
+"name": "HYDROCORTISONE (AS SODIUM SUCCINATE) INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
+"code": "637"
+},
+{
+"name": "HYDROXYCHLOROQUINE SULFATE TABLET ORAL 200 mg",
+"code": "1825"
+},
+{
+"name": "HYOSCINE-N-BUTYL BROMIDE INJECTION PARENTERAL 20 mg/1mL",
+"code": "655"
+},
+{
+"name": "HYOSCINE-N-BUTYL BROMIDE TABLET ORAL 10 mg",
+"code": "654"
+},
+{
+"name": "IBRUTINIB CAPSULE ORAL 140 mg",
+"code": "50769"
+},
+{
+"name": "IBUPROFEN TABLET ORAL 400 mg",
+"code": "659"
+},
+{
+"name": "IMATINIB (AS MESYLATE) CAPSULE ORAL 100 mg",
+"code": "2289"
+},
+{
+"name": "IMATINIB (AS MESYLATE) TABLET ORAL 100 mg",
+"code": "4840"
+},
+{
+"name": "IMATINIB (AS MESYLATE) TABLET ORAL 400 mg",
+"code": "23155"
+},
+{
+"name": "IMMUNE GLOBULIN INJECTION INTRAVENOUS 50 mg/1mL 100 mL",
+"code": "5842"
+},
+{
+"name": "IMMUNE GLOBULIN INJECTION INTRAVENOUS 50 mg/1mL 50 mL",
+"code": "5843"
+},
+{
+"name": "INDAPAMIDE TABLET, EXTENDED RELEASE ORAL 1.5 mg",
+"code": "5637"
+},
+{
+"name": "INFLIXIMAB INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
+"code": "5831"
+},
+{
+"name": "INTERFERON BETA-1A INJECTION PARENTERAL 12000000 [iU] 0.5 mL",
+"code": "2666"
+},
+{
+"name": "IODIXANOL INJECTION PARENTERAL 320 mg/1mL 100 mL",
+"code": "52285"
+},
+{
+"name": "IODIXANOL INJECTION PARENTERAL 320 mg/1mL 50 mL",
+"code": "2517"
+},
+{
+"name": "IOHEXOL INJECTION PARENTERAL 300 mg/1mL 100 mL",
+"code": "2060"
+},
+{
+"name": "IOHEXOL INJECTION PARENTERAL 300 mg/1mL 50 mL",
+"code": "2059"
+},
+{
+"name": "IOHEXOL INJECTION PARENTERAL 350 mg/1mL 100 mL",
+"code": "2063"
+},
+{
+"name": "IOHEXOL INJECTION PARENTERAL 350 mg/1mL 50 mL",
+"code": "2062"
+},
+{
+"name": "IOPROMIDE INJECTION PARENTERAL 300 mg/1mL 100 mL",
+"code": "16496"
+},
+{
+"name": "IOPROMIDE INJECTION PARENTERAL 370 mg/1mL 100 mL",
+"code": "2147"
+},
+{
+"name": "IPRATROPIUM BROMIDE / SALBUTAMOL (AS SULFATE) SOLUTION RESPIRATORY 200 ug/1 mg/1mL 2.5 mL",
+"code": "50390"
+},
+{
+"name": "IRINOTECAN HYDROCHLORIDE INJECTION, SOLUTION, CONCENTRATE PARENTERAL 20 mg/1mL 5 mL",
+"code": "2090"
+},
+{
+"name": "IRON (AS SUCROSE) INJECTION INTRAVENOUS 20 mg/1mL 5 mL",
+"code": "4003"
+},
+{
+"name": "ISOTRETINOIN CAPSULE, LIQUID FILLED ORAL 20 mg",
+"code": "720"
+},
+{
+"name": "ISOTRETINOIN GEL TOPICAL 0.05 % 30 g",
+"code": "6184"
+},
+{
+"name": "ITRACONAZOLE CAPSULE ORAL 100 mg",
+"code": "722"
+},
+{
+"name": "KETOCONAZOLE SHAMPOO TOPICAL 2 % 100 mL",
+"code": "7468"
+},
+{
+"name": "KETOROLAC TROMETAMOL INJECTION PARENTERAL 15 mg/1mL 1 mL",
+"code": "23124"
+},
+{
+"name": "KETOROLAC TROMETAMOL INJECTION, SOLUTION PARENTERAL 30 mg/1mL 1 mL",
+"code": "17972"
+},
+{
+"name": "KETOTIFEN (AS FUMARATE) SYRUP ORAL 1 mg/5mL 100 mL",
+"code": "52299"
+},
+{
+"name": "KETOTIFEN (AS FUMARATE) SYRUP ORAL 1 mg/5mL 120 mL",
+"code": "728"
+},
+{
+"name": "KETOTIFEN (AS FUMARATE) SYRUP ORAL 1 mg/5mL 60 mL",
+"code": "18354"
+},
+{
+"name": "LABETALOL HYDROCHLORIDE INJECTION PARENTERAL 5 mg/1mL 20 mL",
+"code": "8004"
+},
+{
+"name": "LACOSAMIDE TABLET ORAL 100 mg",
+"code": "52177"
+},
+{
+"name": "LACOSAMIDE TABLET ORAL 200 mg",
+"code": "21109"
+},
+{
+"name": "LAMOTRIGINE TABLET ORAL 100 mg",
+"code": "732"
+},
+{
+"name": "LAMOTRIGINE TABLET ORAL 50 mg",
+"code": "733"
+},
+{
+"name": "LANSOPRAZOLE CAPSULE, DELAYED RELEASE ORAL 15 mg",
+"code": "6770"
+},
+{
+"name": "LANSOPRAZOLE CAPSULE, DELAYED RELEASE ORAL 30 mg",
+"code": "6222"
+},
+{
+"name": "LATANOPROST SOLUTION, DROPS OPHTHALMIC 50 ug/1mL 2.5 mL",
+"code": "1901"
+},
+{
+"name": "LEFLUNOMIDE TABLET ORAL 20 mg",
+"code": "5974"
+},
+{
+"name": "LENALIDOMIDE CAPSULE ORAL 10 mg",
+"code": "18193"
+},
+{
+"name": "LETROZOLE TABLET ORAL 2.5 mg",
+"code": "1922"
+},
+{
+"name": "LEUPRORELIN ACETATE INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE PARENTERAL 3.75 mg",
+"code": "18438"
+},
+{
+"name": "LEVETIRACETAM INJECTION, SOLUTION, CONCENTRATE PARENTERAL 100 mg/1mL 5 mL",
+"code": "16641"
+},
+{
+"name": "LEVETIRACETAM TABLET ORAL 1000 mg",
+"code": "9533"
+},
+{
+"name": "LEVETIRACETAM TABLET ORAL 250 mg",
+"code": "5973"
+},
+{
+"name": "LEVETIRACETAM TABLET ORAL 500 mg",
+"code": "5977"
+},
+{
+"name": "LEVODOPA / BENSERAZIDE TABLET ORAL 100 mg/25 mg",
+"code": "745"
+},
+{
+"name": "LEVODOPA / BENSERAZIDE TABLET ORAL 200 mg/50 mg",
+"code": "746"
+},
+{
+"name": "LEVODOPA / CARBIDOPA FORTE TABLET ORAL 250 mg/25 mg",
+"code": "748"
+},
+{
+"name": "LEVODOPA / CARBIDOPA TABLET ORAL 100 mg/25 mg",
+"code": "52301"
+},
+{
+"name": "LEVOFLOXACIN INJECTION, SOLUTION INTRAVENOUS 5 mg/1mL 100 mL",
+"code": "16320"
+},
+{
+"name": "LEVOFLOXACIN TABLET ORAL 500 mg",
+"code": "7183"
+},
+{
+"name": "LEVOFLOXACIN TABLET ORAL 750 mg",
+"code": "19797"
+},
+{
+"name": "LEVONORGESTREL TABLET ORAL 1.5 mg",
+"code": "16870"
+},
+{
+"name": "LEVOTHYROXINE SODIUM TABLET ORAL 100 ug",
+"code": "751"
+},
+{
+"name": "LEVOTHYROXINE SODIUM TABLET ORAL 50 ug",
+"code": "2067"
+},
+{
+"name": "LIDOCAINE HYDROCHLORIDE GEL TOPICAL 2 % 25 g",
+"code": "52766"
+},
+{
+"name": "LIDOCAINE HYDROCHLORIDE INJECTION PARENTERAL 2 % 5 mL",
+"code": "753"
+},
+{
+"name": "LINAGLIPTIN TABLET ORAL 5 mg",
+"code": "51883"
+},
+{
+"name": "LINEZOLID INJECTION, SOLUTION PARENTERAL 2 mg/1mL 300 mL",
+"code": "50114"
+},
+{
+"name": "LINEZOLID TABLET ORAL 600 mg",
+"code": "8300"
+},
+{
+"name": "LIRAGLUTIDE INJECTION, SOLUTION PARENTERAL 6 mg/1mL 3 mL",
+"code": "22666"
+},
+{
+"name": "LITHIUM CARBONATE TABLET ORAL 300 mg",
+"code": "767"
+},
+{
+"name": "LOPERAMIDE HYDROCHLORIDE TABLET ORAL 2 mg",
+"code": "1848"
+},
+{
+"name": "LORATADINE TABLET ORAL 10 mg",
+"code": "1574"
+},
+{
+"name": "LORAZEPAM TABLET ORAL 1 mg",
+"code": "771"
+},
+{
+"name": "LORAZEPAM TABLET ORAL 2 mg",
+"code": "772"
+},
+{
+"name": "LOSARTAN POTASSIUM / HYDROCHLOROTHIAZIDE TABLET ORAL 50 mg/12.5 mg",
+"code": "8256"
+},
+{
+"name": "LOSARTAN POTASSIUM TABLET ORAL 50 mg",
+"code": "1933"
+},
+{
+"name": "LOTEPREDNOL ETABONATE SUSPENSION, DROPS OPHTHALMIC 0.5 % 5 mL",
+"code": "6854"
+},
+{
+"name": "MEBEVERINE HYDROCHLORIDE CAPSULE, EXTENDED RELEASE ORAL 200 mg",
+"code": "9532"
+},
+{
+"name": "MEDROXYPROGESTERONE ACETATE TABLET ORAL 5 mg",
+"code": "792"
+},
+{
+"name": "MEFENAMIC ACID CAPSULE ORAL 250 mg",
+"code": "794"
+},
+{
+"name": "MEGESTROL ACETATE TABLET ORAL 40 mg",
+"code": "800"
+},
+{
+"name": "MELOXICAM TABLET ORAL 15 mg",
+"code": "7061"
+},
+{
+"name": "MELOXICAM TABLET ORAL 7.5 mg",
+"code": "5452"
+},
+{
+"name": "MEMANTINE HYDROCHLORIDE CAPSULE, EXTENDED RELEASE ORAL 14 mg",
+"code": "51380"
+},
+{
+"name": "MEMANTINE HYDROCHLORIDE TABLET ORAL 10 mg",
+"code": "5917"
+},
+{
+"name": "MEROPENEM INJECTION, POWDER, FOR SOLUTION PARENTERAL 1 g",
+"code": "5629"
+},
+{
+"name": "MEROPENEM INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
+"code": "3283"
+},
+{
+"name": "MESALAZINE ENEMA RECTAL 4 g/100mL",
+"code": "785"
+},
+{
+"name": "MESALAZINE SUPPOSITORY RECTAL 500 mg",
+"code": "2246"
+},
+{
+"name": "MESALAZINE TABLET, DELAYED RELEASE ORAL 500 mg",
+"code": "813"
+},
+{
+"name": "MESALAZINE TABLET, DELAYED RELEASE ORAL 800 mg",
+"code": "9916"
+},
+{
+"name": "METFORMIN HYDROCHLORIDE / LINAGLIPTIN TABLET ORAL 1000 mg/2.5 mg",
+"code": "52111"
+},
+{
+"name": "METFORMIN HYDROCHLORIDE TABLET ORAL 1000 mg",
+"code": "10915"
+},
+{
+"name": "METFORMIN HYDROCHLORIDE TABLET ORAL 500 mg",
+"code": "817"
+},
+{
+"name": "METFORMIN HYDROCHLORIDE TABLET, EXTENDED RELEASE ORAL 1000 mg",
+"code": "16845"
+},
+{
+"name": "METFORMIN HYDROCHLORIDE TABLET, EXTENDED RELEASE ORAL 500 mg",
+"code": "21337"
+},
+{
+"name": "METHADONE HYDROCHLORIDE TABLET ORAL 5 mg",
+"code": "818"
+},
+{
+"name": "METHOCARBAMOL INJECTION PARENTERAL 100 mg/1mL 10 mL",
+"code": "822"
+},
+{
+"name": "METHOCARBAMOL TABLET ORAL 500 mg",
+"code": "823"
+},
+{
+"name": "METHOTREXATE (AS SODIUM) TABLET ORAL 2.5 mg",
+"code": "824"
+},
+{
+"name": "METHOTREXATE INJECTION, SOLUTION PARENTERAL 25 mg/1mL 0.4 mL",
+"code": "52098"
+},
+{
+"name": "METHOTREXATE INJECTION, SOLUTION PARENTERAL 25 mg/1mL 0.6 mL",
+"code": "52099"
+},
+{
+"name": "METHOTREXATE INJECTION, SOLUTION PARENTERAL 25 mg/1mL 0.8 mL",
+"code": "52100"
+},
+{
+"name": "METHOTREXATE INJECTION, SOLUTION PARENTERAL 25 mg/1mL 1 mL",
+"code": "52432"
+},
+{
+"name": "METHOTREXATE TABLET ORAL 2.5 mg",
+"code": "53486"
+},
+{
+"name": "METHYLPHENIDATE HYDROCHLORIDE TABLET ORAL 10 mg",
+"code": "1328"
+},
+{
+"name": "METOCLOPRAMIDE (AS HYDROCHLORIDE) INJECTION PARENTERAL 5 mg/1mL 2 mL",
+"code": "839"
+},
+{
+"name": "METOCLOPRAMIDE HYDROCHLORIDE TABLET ORAL 10 mg",
+"code": "841"
+},
+{
+"name": "METOPROLOL SUCCINATE TABLET, EXTENDED RELEASE ORAL 23.75 mg",
+"code": "16112"
+},
+{
+"name": "METOPROLOL SUCCINATE TABLET, EXTENDED RELEASE ORAL 47.5 mg",
+"code": "11871"
+},
+{
+"name": "METOPROLOL TARTRATE TABLET ORAL 50 mg",
+"code": "2319"
+},
+{
+"name": "METRONIDAZOLE INJECTION, SOLUTION PARENTERAL 5 mg/1mL 100 mL",
+"code": "843"
+},
+{
+"name": "METRONIDAZOLE TABLET ORAL 250 mg",
+"code": "845"
+},
+{
+"name": "METRONIDAZOLE TABLET ORAL 500 mg",
+"code": "51656"
+},
+{
+"name": "MIDAZOLAM INJECTION PARENTERAL 5 mg/1mL 1 mL",
+"code": "852"
+},
+{
+"name": "MIDAZOLAM INJECTION PARENTERAL 5 mg/1mL 3 mL",
+"code": "1591"
+},
+{
+"name": "MIDODRINE HYDROCHLORIDE TABLET ORAL 2.5 mg",
+"code": "50327"
+},
+{
+"name": "MINOCYCLINE (AS HYDROCHLORIDE) TABLET ORAL 50 mg",
+"code": "53167"
+},
+{
+"name": "MINOXIDIL SOLUTION TOPICAL 50 mg/1mL 60 mL",
+"code": "1829"
+},
+{
+"name": "MIRABEGRON TABLET, EXTENDED RELEASE ORAL 50 mg",
+"code": "51204"
+},
+{
+"name": "MITOTANE TABLET ORAL 500 mg",
+"code": "858"
+},
+{
+"name": "MODAFINIL TABLET ORAL 100 mg",
+"code": "6579"
+},
+{
+"name": "MOMETASONE FUROATE SPRAY, SUSPENSION NASAL 0.05 % 15 mL",
+"code": "22333"
+},
+{
+"name": "MONTELUKAST (AS SODIUM) GRANULE ORAL 4 mg",
+"code": "9448"
+},
+{
+"name": "MONTELUKAST (AS SODIUM) TABLET ORAL 10 mg",
+"code": "6043"
+},
+{
+"name": "MONTELUKAST (AS SODIUM) TABLET, CHEWABLE ORAL 5 mg",
+"code": "1895"
+},
+{
+"name": "MORPHINE SULFATE INJECTION PARENTERAL 10 mg/1mL",
+"code": "1600"
+},
+{
+"name": "MUPIROCIN OINTMENT TOPICAL 2 % 15 g",
+"code": "875"
+},
+{
+"name": "MYCOPHENOLATE MOFETIL TABLET ORAL 500 mg",
+"code": "1753"
+},
+{
+"name": "MYCOPHENOLIC ACID TABLET, DELAYED RELEASE ORAL 360 mg",
+"code": "11607"
+},
+{
+"name": "NALOXONE HYDROCHLORIDE INJECTION PARENTERAL 0.4 mg/1mL",
+"code": "1341"
+},
+{
+"name": "NAPROXEN TABLET ORAL 250 mg",
+"code": "889"
+},
+{
+"name": "NAPROXEN TABLET, DELAYED RELEASE ORAL 500 mg",
+"code": "1606"
+},
+{
+"name": "NEOSTIGMINE METHYLSULFATE INJECTION PARENTERAL 0.5 mg/1mL 1 mL",
+"code": "893"
+},
+{
+"name": "NEOSTIGMINE METHYLSULFATE INJECTION PARENTERAL 2.5 mg/1mL 1 mL",
+"code": "895"
+},
+{
+"name": "NILOTINIB CAPSULE ORAL 200 mg",
+"code": "12273"
+},
+{
+"name": "NIVOLUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 10 mg/1mL 10 mL",
+"code": "50884"
+},
+{
+"name": "OCRELIZUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 30 mg/1mL 10 mL",
+"code": "52172"
+},
+{
+"name": "OCTREOTIDE (AS ACETATE) INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE PARENTERAL 20 mg",
+"code": "2391"
+},
+{
+"name": "OCTREOTIDE (AS ACETATE) INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE PARENTERAL 30 mg",
+"code": "5427"
+},
+{
+"name": "OCTREOTIDE (AS ACETATE) INJECTION,POWDER,EXTENDED RELEASE PARENTERAL 20 mg",
+"code": "53323"
+},
+{
+"name": "OCTREOTIDE (AS ACETATE) INJECTION,POWDER,EXTENDED RELEASE PARENTERAL 30 mg",
+"code": "53324"
+},
+{
+"name": "OLANZAPINE TABLET ORAL 2.5 mg",
+"code": "2751"
+},
+{
+"name": "OLANZAPINE TABLET ORAL 5 mg",
+"code": "1907"
+},
+{
+"name": "OLAPARIB TABLET ORAL 150 mg",
+"code": "52728"
+},
+{
+"name": "OMALIZUMAB INJECTION, SOLUTION PARENTERAL 150 mg/1mL 1 mL",
+"code": "53096"
+},
+{
+"name": "OMEPRAZOLE CAPSULE, DELAYED RELEASE PELLETS ORAL 20 mg",
+"code": "931"
+},
+{
+"name": "ONDANSETRON (AS HYDROCHLORIDE) INJECTION PARENTERAL 2 mg/1 mL 2 mL",
+"code": "2091"
+},
+{
+"name": "ONDANSETRON (AS HYDROCHLORIDE) TABLET ORAL 4 mg",
+"code": "2093"
+},
+{
+"name": "ORLISTAT CAPSULE ORAL 120 mg",
+"code": "2283"
+},
+{
+"name": "OSELTAMIVIR (AS PHOSPHATE) CAPSULE ORAL 75 mg",
+"code": "5437"
+},
+{
+"name": "OSIMERTINIB (AS MESYLATE) TABLET ORAL 80 mg",
+"code": "50911"
+},
+{
+"name": "OXALIPLATIN INJECTION, SOLUTION, CONCENTRATE PARENTERAL 5 mg/1mL 10 mL",
+"code": "7041"
+},
+{
+"name": "OXALIPLATIN INJECTION, SOLUTION, CONCENTRATE PARENTERAL 5 mg/1mL 20 mL",
+"code": "7040"
+},
+{
+"name": "OZANIMOD (AS HYDROCHLORIDE) CAPSULE ORAL 0.92 mg",
+"code": "53257"
+},
+{
+"name": "PACLITAXEL (ALBUMIN BAND) NANO INJECTION, POWDER, FOR SUSPENSION PARENTERAL 100 mg",
+"code": "13879"
+},
+{
+"name": "PACLITAXEL INJECTION PARENTERAL 6 mg/1mL 25 mL",
+"code": "2395"
+},
+{
+"name": "PALBOCICLIB CAPSULE ORAL 100 mg",
+"code": "52722"
+},
+{
+"name": "PALBOCICLIB CAPSULE ORAL 125 mg",
+"code": "50712"
+},
+{
+"name": "PALBOCICLIB CAPSULE ORAL 75 mg",
+"code": "52723"
+},
+{
+"name": "PANCREATIN CAPSULE, DELAYED RELEASE PELLETS ORAL 25000 [iU]",
+"code": "12312"
+},
+{
+"name": "PANTOPRAZOLE (AS SODIUM SESQUIHYDRATE) CAPSULE, DELAYED RELEASE ORAL 40 mg",
+"code": "10029"
+},
+{
+"name": "PANTOPRAZOLE (AS SODIUM SESQUIHYDRATE) TABLET, DELAYED RELEASE ORAL 20 mg",
+"code": "2332"
+},
+{
+"name": "PANTOPRAZOLE (AS SODIUM SESQUIHYDRATE) TABLET, DELAYED RELEASE ORAL 40 mg",
+"code": "2333"
+},
+{
+"name": "PANTOPRAZOLE (AS SODIUM) INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 40 mg",
+"code": "2336"
+},
+{
+"name": "PAROXETINE (AS HYDROCHLORIDE) TABLET ORAL 20 mg",
+"code": "5932"
+},
+{
+"name": "PEGFILGRASTIM INJECTION, SOLUTION PARENTERAL 10 mg/1mL 0.6 mL",
+"code": "18972"
+},
+{
+"name": "PEMBROLIZUMAB INJECTION, SOLUTION PARENTERAL 25 mg/1mL 4 mL",
+"code": "25268"
+},
+{
+"name": "PEMETREXED (AS DISODIUM) INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 500 mg",
+"code": "6119"
+},
+{
+"name": "PENICILLIN G BENZATHIN INJECTION, POWDER PARENTERAL 1200000 [iU]",
+"code": "958"
+},
+{
+"name": "PENTOXIFYLLINE TABLET, EXTENDED RELEASE ORAL 400 mg",
+"code": "970"
+},
+{
+"name": "PERMETHRIN CREAM TOPICAL 5 % 30 g",
+"code": "2449"
+},
+{
+"name": "PERTUZUMAB INJECTION, SOLUTION, CONCENTRATE PARENTERAL 30 mg/1mL 14 mL",
+"code": "23986"
+},
+{
+"name": "PETHIDINE HYDROCHLORIDE INJECTION PARENTERAL 50 mg/1mL 2 mL",
+"code": "1355"
+},
+{
+"name": "PIOGLITAZONE TABLET ORAL 15 mg",
+"code": "5624"
+},
+{
+"name": "PIOGLITAZONE TABLET ORAL 30 mg",
+"code": "5217"
+},
+{
+"name": "PIPERACILLIN (AS SODIUM) / TAZOBACTAM (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTERAL 4 g/0.5 g",
+"code": "3894"
+},
+{
+"name": "PIRACETAM TABLET ORAL 800 mg",
+"code": "1014"
+},
+{
+"name": "PIRFENIDONE TABLET ORAL 200 mg",
+"code": "24097"
+},
+{
+"name": "PNEUMOCOCCAL VACCINE 13-VALENT INJECTION PARENTERAL 0.5 mL",
+"code": "18819"
+},
+{
+"name": "POLYETHYLENE GLYCOL POWDER ORAL 10 g",
+"code": "18312"
+},
+{
+"name": "PORACTANT ALFA INJECTION ENDOTRACHEAL 80 mg/1mL 3 mL",
+"code": "8501"
+},
+{
+"name": "POSACONAZOLE SUSPENSION ORAL 40 mg/1mL 105 mL",
+"code": "50722"
+},
+{
+"name": "POVIDONE IODINE SOLUTION TOPICAL 10 % 250 mL",
+"code": "1035"
+},
+{
+"name": "POVIDONE IODINE SOLUTION TOPICAL 10 % 60 mL",
+"code": "1040"
+},
+{
+"name": "POVIDONE IODINE SOLUTION TOPICAL 7.5 % 1 L",
+"code": "1036"
+},
+{
+"name": "PRAZOSIN TABLET ORAL 1 mg",
+"code": "1042"
+},
+{
+"name": "PREDNISOLONE TABLET ORAL 5 mg",
+"code": "1045"
+},
+{
+"name": "PREGABALIN CAPSULE ORAL 100 mg",
+"code": "9417"
+},
+{
+"name": "PREGABALIN CAPSULE ORAL 150 mg",
+"code": "7928"
+},
+{
+"name": "PREGABALIN CAPSULE ORAL 50 mg",
+"code": "8526"
+},
+{
+"name": "PREGABALIN CAPSULE ORAL 75 mg",
+"code": "7239"
+},
+{
+"name": "PRIMIDONE TABLET ORAL 250 mg",
+"code": "1051"
+},
+{
+"name": "PROGESTERONE SUPPOSITORY VAGINAL 400 mg",
+"code": "2082"
+},
+{
+"name": "PROMETHAZINE SYRUP ORAL 5 mg/5mL 60 mL",
+"code": "1060"
+},
+{
+"name": "PROPOFOL INJECTION, EMULSION PARENTERAL 10 mg/1mL 20 mL",
+"code": "1653"
+},
+{
+"name": "PROPOFOL INJECTION, EMULSION PARENTERAL 10 mg/1mL 50 mL",
+"code": "1951"
+},
+{
+"name": "PROPOFOL INJECTION, EMULSION PARENTERAL 20 mg/1mL 50 mL",
+"code": "16873"
+},
+{
+"name": "PROPRANOLOL HYDROCHLORIDE TABLET ORAL 10 mg",
+"code": "1067"
+},
+{
+"name": "PROPRANOLOL HYDROCHLORIDE TABLET ORAL 40 mg",
+"code": "1068"
+},
+{
+"name": "PSEUDOEPHEDRINE HYDROCHLORIDE SYRUP ORAL 30 mg/5mL 60 mL",
+"code": "1076"
+},
+{
+"name": "PYRIDOSTIGMINE BROMIDE TABLET ORAL 60 mg",
+"code": "1080"
+},
+{
+"name": "QUETIAPINE (AS FUMARATE) TABLET ORAL 100 mg",
+"code": "5927"
+},
+{
+"name": "QUETIAPINE (AS FUMARATE) TABLET ORAL 200 mg",
+"code": "5928"
+},
+{
+"name": "QUETIAPINE (AS FUMARATE) TABLET ORAL 25 mg",
+"code": "6743"
+},
+{
+"name": "RANOLAZINE TABLET, EXTENDED RELEASE ORAL 500 mg",
+"code": "13980"
+},
+{
+"name": "REGORAFENIB TABLET ORAL 40 mg",
+"code": "23161"
+},
+{
+"name": "RETEPLASE INJECTION, POWDER, FOR SOLUTION PARENTERAL 10.4 [iU]",
+"code": "50033"
+},
+{
+"name": "RIFAMPICIN CAPSULE ORAL 300 mg",
+"code": "1103"
+},
+{
+"name": "RIFAXIMIN TABLET ORAL 550 mg",
+"code": "22141"
+},
+{
+"name": "RIMEGEPANT (AS SULFATE) TABLET, ORALLY DISINTEGRATING ORAL 75 mg",
+"code": "53652"
+},
+{
+"name": "RISDIPLAM POWDER, FOR SOLUTION ORAL 0.75 mg/1mL 80 mL",
+"code": "52920"
+},
+{
+"name": "RISPERIDONE INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE PARENTERAL 50 mg",
+"code": "50996"
+},
+{
+"name": "RISPERIDONE TABLET ORAL 1 mg",
+"code": "1773"
+},
+{
+"name": "RISPERIDONE TABLET ORAL 2 mg",
+"code": "1774"
+},
+{
+"name": "RITUXIMAB INJECTION PARENTERAL 10 mg/1mL 10 mL",
+"code": "2473"
+},
+{
+"name": "RITUXIMAB INJECTION PARENTERAL 10 mg/1mL 50 mL",
+"code": "2474"
+},
+{
+"name": "RIVAROXABAN TABLET ORAL 10 mg",
+"code": "17597"
+},
+{
+"name": "RIVAROXABAN TABLET ORAL 15 mg",
+"code": "50005"
+},
+{
+"name": "RIVAROXABAN TABLET ORAL 2.5 mg",
+"code": "52235"
+},
+{
+"name": "RIVAROXABAN TABLET ORAL 20 mg",
+"code": "22856"
+},
+{
+"name": "RIZATRIPTAN (AS BENZOATE) TABLET, ORALLY DISINTEGRATING ORAL 10 mg",
+"code": "20203"
+},
+{
+"name": "ROMIPLOSTIM INJECTION, POWDER, FOR SOLUTION PARENTERAL 250 ug",
+"code": "17038"
+},
+{
+"name": "ROSUVASTATIN (AS CALCIUM) TABLET ORAL 10 mg",
+"code": "6454"
+},
+{
+"name": "ROSUVASTATIN (AS CALCIUM) TABLET ORAL 20 mg",
+"code": "6788"
+},
+{
+"name": "ROSUVASTATIN (AS CALCIUM) TABLET ORAL 40 mg",
+"code": "7316"
+},
+{
+"name": "ROSUVASTATIN (AS CALCIUM) TABLET ORAL 5 mg",
+"code": "7315"
+},
+{
+"name": "SACUBITRIL / VALSARTAN TABLET ORAL 24 mg/26 mg",
+"code": "50702"
+},
+{
+"name": "SACUBITRIL / VALSARTAN TABLET ORAL 49 mg/51 mg",
+"code": "51005"
+},
+{
+"name": "SACUBITRIL / VALSARTAN TABLET ORAL 97 mg/103 mg",
+"code": "52234"
+},
+{
+"name": "SALBUTAMOL (AS SULFATE) SOLUTION RESPIRATORY 2.5 mg/2.5mL",
+"code": "9897"
+},
+{
+"name": "SALBUTAMOL (AS SULFATE) SPRAY, METERED RESPIRATORY 100 ug/1{dose} 200 {dose}",
+"code": "15068"
+},
+{
+"name": "SAPROPTERIN DIHYDROCHLORIDE TABLET, SOLUBLE ORAL 100 mg",
+"code": "21302"
+},
+{
+"name": "SELENIUM SULFIDE SHAMPOO TOPICAL 2.5 % 150 mL",
+"code": "1122"
+},
+{
+"name": "SERTACONAZOLE NITRATE CREAM TOPICAL 2 % 30 g",
+"code": "2456"
+},
+{
+"name": "SERTRALINE (AS HYDROCHLORIDE) TABLET ORAL 100 mg",
+"code": "1897"
+},
+{
+"name": "SERTRALINE (AS HYDROCHLORIDE) TABLET ORAL 50 mg",
+"code": "1896"
+},
+{
+"name": "SEVELAMER CARBONATE TABLET ORAL 800 mg",
+"code": "21183"
+},
+{
+"name": "SEVOFLURANE INHALANT RESPIRATORY 250 mL",
+"code": "2548"
+},
+{
+"name": "SILDENAFIL (AS CITRATE) TABLET ORAL 100 mg",
+"code": "1780"
+},
+{
+"name": "SILDENAFIL (AS CITRATE) TABLET ORAL 50 mg",
+"code": "1781"
+},
+{
+"name": "SILVER SULFADIAZINE CREAM TOPICAL 1 % 50 g",
+"code": "1130"
+},
+{
+"name": "SIROLIMUS TABLET ORAL 1 mg",
+"code": "4022"
+},
+{
+"name": "SITAGLIPTIN (AS PHOSPHATE) / METFORMIN HYDROCHLORIDE TABLET ORAL 50 mg/1000 mg",
+"code": "15478"
+},
+{
+"name": "SITAGLIPTIN (AS PHOSPHATE) / METFORMIN HYDROCHLORIDE TABLET ORAL 50 mg/500 mg",
+"code": "15754"
+},
+{
+"name": "SITAGLIPTIN (AS PHOSPHATE) TABLET ORAL 100 mg",
+"code": "16303"
+},
+{
+"name": "SODIUM CHLORIDE INJECTION, SOLUTION INTRAVENOUS 5 % 50 mL",
+"code": "1148"
+},
+{
+"name": "SODIUM CHLORIDE INJECTION, SOLUTION PARENTERAL 0.9 % 1000 mL",
+"code": "1141"
+},
+{
+"name": "SODIUM CHLORIDE INJECTION, SOLUTION PARENTERAL 0.9 % 500 mL",
+"code": "1144"
+},
+{
+"name": "SOLIFENACIN SUCCINATE TABLET ORAL 10 mg",
+"code": "7559"
+},
+{
+"name": "SOLIFENACIN SUCCINATE TABLET ORAL 5 mg",
+"code": "7558"
+},
+{
+"name": "SORAFENIB (AS TOSYLATE) TABLET ORAL 200 mg",
+"code": "8448"
+},
+{
+"name": "SPIRONOLACTONE TABLET ORAL 100 mg",
+"code": "2099"
+},
+{
+"name": "SPIRONOLACTONE TABLET ORAL 25 mg",
+"code": "1169"
+},
+{
+"name": "SULFASALAZINE TABLET ORAL 500 mg",
+"code": "1182"
+},
+{
+"name": "SUMATRIPTAN (AS SUCCINATE) / NAPROXEN TABLET ORAL 85 mg/500 mg",
+"code": "15589"
+},
+{
+"name": "SUMATRIPTAN (AS SUCCINATE) TABLET ORAL 100 mg",
+"code": "2005"
+},
+{
+"name": "SUMATRIPTAN (AS SUCCINATE) TABLET ORAL 50 mg",
+"code": "2004"
+},
+{
+"name": "SUNITINIB (AS MALATE) CAPSULE ORAL 25 mg",
+"code": "9753"
+},
+{
+"name": "TACROLIMUS CAPSULE ORAL 0.5 mg",
+"code": "5804"
+},
+{
+"name": "TACROLIMUS CAPSULE ORAL 1 mg",
+"code": "2083"
+},
+{
+"name": "TACROLIMUS CAPSULE, EXTENDED RELEASE ORAL 1 mg",
+"code": "52332"
+},
+{
+"name": "TACROLIMUS CAPSULE, EXTENDED RELEASE ORAL 3 mg",
+"code": "50539"
+},
+{
+"name": "TACROLIMUS CAPSULE, EXTENDED RELEASE ORAL 5 mg",
+"code": "52333"
+},
+{
+"name": "TACROLIMUS OINTMENT TOPICAL 0.1 % 30 g",
+"code": "6599"
+},
+{
+"name": "TADALAFIL TABLET ORAL 10 mg",
+"code": "6974"
+},
+{
+"name": "TADALAFIL TABLET ORAL 20 mg",
+"code": "6975"
+},
+{
+"name": "TADALAFIL TABLET ORAL 5 mg",
+"code": "51681"
+},
+{
+"name": "TAMSULOSIN HYDROCHLORIDE CAPSULE, EXTENDED RELEASE ORAL 0.4 mg",
+"code": "1923"
+},
+{
+"name": "TEICOPLANIN INJECTION, POWDER, FOR SOLUTION PARENTERAL 400 mg",
+"code": "10488"
+},
+{
+"name": "TELMISARTAN TABLET ORAL 40 mg",
+"code": "53007"
+},
+{
+"name": "TELMISARTAN TABLET ORAL 80 mg",
+"code": "53008"
+},
+{
+"name": "TEMOZOLOMIDE CAPSULE ORAL 100 mg",
+"code": "5949"
+},
+{
+"name": "TEMOZOLOMIDE INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION INTRAVENOUS 100 mg",
+"code": "50624"
+},
+{
+"name": "TENOFOVIR ALAFENAMIDE (AS FUMARATE) TABLET ORAL 25 mg",
+"code": "51976"
+},
+{
+"name": "TERBINAFINE HYDROCHLORIDE TABLET ORAL 250 mg",
+"code": "1197"
+},
+{
+"name": "TERIFLUNOMIDE TABLET ORAL 14 mg",
+"code": "22698"
+},
+{
+"name": "TETANUS IMMUNE GLOBULIN INJECTION PARENTERAL 250 [iU]/1mL",
+"code": "1202"
+},
+{
+"name": "TETRABENAZINE TABLET ORAL 25 mg",
+"code": "1203"
+},
+{
+"name": "THEOPHYLLINE TABLET, EXTENDED RELEASE ORAL 200 mg",
+"code": "1209"
+},
+{
+"name": "TICAGRELOR TABLET ORAL 90 mg",
+"code": "18002"
+},
+{
+"name": "TIGECYCLINE INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 50 mg",
+"code": "23169"
+},
+{
+"name": "TIOTROPIUM (AS BROMIDE) CAPSULE RESPIRATORY 18 ug",
+"code": "4189"
+},
+{
+"name": "TIRZEPATIDE INJECTION, SOLUTION PARENTERAL 10 mg/0.6 mL",
+"code": "53590"
+},
+{
+"name": "TIRZEPATIDE INJECTION, SOLUTION PARENTERAL 2.5 mg/0.6 mL",
+"code": "53587"
+},
+{
+"name": "TIRZEPATIDE INJECTION, SOLUTION PARENTERAL 5 mg/0.6 mL",
+"code": "53588"
+},
+{
+"name": "TIRZEPATIDE INJECTION, SOLUTION PARENTERAL 7.5 mg/0.6 mL",
+"code": "53589"
+},
+{
+"name": "TIRZEPATIDE INJECTION, SOLUTION SUBCUTANEOUS 10 mg/0.5 mL",
+"code": "53585"
+},
+{
+"name": "TIRZEPATIDE INJECTION, SOLUTION SUBCUTANEOUS 7.5 mg/0.5mL",
+"code": "53508"
+},
+{
+"name": "TIZANIDINE TABLET ORAL 4 mg",
+"code": "5635"
+},
+{
+"name": "TOFACITINIB (AS CITRATE) TABLET ORAL 5 mg",
+"code": "50711"
+},
+{
+"name": "TOLTERODINE TARTRATE TABLET ORAL 2 mg",
+"code": "4579"
+},
+{
+"name": "TRAMADOL HYDROCHLORIDE TABLET ORAL 100 mg",
+"code": "2103"
+},
+{
+"name": "TRANEXAMIC ACID CAPSULE ORAL 250 mg",
+"code": "1239"
+},
+{
+"name": "TRASTUZUMAB DERUXTECAN INJECTION, POWDER, FOR SOLUTION PARENTERAL 100 mg",
+"code": "53090"
+},
+{
+"name": "TRASTUZUMAB EMTANSINE INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 100 mg",
+"code": "50986"
+},
+{
+"name": "TRASTUZUMAB EMTANSINE INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 160 mg",
+"code": "50882"
+},
+{
+"name": "TRASTUZUMAB INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 150 mg",
+"code": "5283"
+},
+{
+"name": "TRAZODONE HYDROCHLORIDE TABLET ORAL 50 mg",
+"code": "1242"
+},
+{
+"name": "TRETINOIN CAPSULE ORAL 10 mg",
+"code": "3431"
+},
+{
+"name": "TRIAMCINOLONE ACETONIDE INJECTION PARENTERAL 40 mg/1mL 1 mL",
+"code": "1247"
+},
+{
+"name": "TRIPTORELIN (AS ACETATE) INJECTION, POWDER, LYOPHILIZED, FOR SUSPENSION, EXTENDED RELEASE PARENTERAL 3.75 mg",
+"code": "1266"
+},
+{
+"name": "UPADACITINIB TABLET, EXTENDED RELEASE ORAL 15 mg",
+"code": "53370"
+},
+{
+"name": "UROFOLLITROPIN INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION INTRAMUSCULAR 75 [iU]",
+"code": "1270"
+},
+{
+"name": "VALACYCLOVIR TABLET ORAL 1000 mg",
+"code": "10064"
+},
+{
+"name": "VALACYCLOVIR TABLET ORAL 500 mg",
+"code": "9161"
+},
+{
+"name": "VALGANCICLOVIR (AS HYDROCHLORIDE) TABLET ORAL 450 mg",
+"code": "4768"
+},
+{
+"name": "VALPROATE SODIUM SYRUP ORAL 200 mg/5mL 300 mL",
+"code": "6170"
+},
+{
+"name": "VALPROATE SODIUM TABLET, DELAYED RELEASE ORAL 200 mg",
+"code": "1275"
+},
+{
+"name": "VALPROATE SODIUM TABLET, EXTENDED RELEASE ORAL 333 mg/145 mg",
+"code": "1871"
+},
+{
+"name": "VALSARTAN / HYDROCHLOROTHIAZIDE TABLET ORAL 160 mg/12.5 mg",
+"code": "9642"
+},
+{
+"name": "VALSARTAN / HYDROCHLOROTHIAZIDE TABLET ORAL 160 mg/25 mg",
+"code": "9638"
+},
+{
+"name": "VALSARTAN / HYDROCHLOROTHIAZIDE TABLET ORAL 80 mg/12.5 mg",
+"code": "9637"
+},
+{
+"name": "VALSARTAN TABLET ORAL 160 mg",
+"code": "5766"
+},
+{
+"name": "VALSARTAN TABLET ORAL 40 mg",
+"code": "9801"
+},
+{
+"name": "VALSARTAN TABLET ORAL 80 mg",
+"code": "5423"
+},
+{
+"name": "VANCOMYCIN (AS HYDROCHLORIDE) INJECTION, POWDER, FOR SOLUTION PARENTERAL 500 mg",
+"code": "1276"
+},
+{
+"name": "VEDOLIZUMAB INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 300 mg",
+"code": "52954"
+},
+{
+"name": "VENETOCLAX TABLET ORAL 100 mg",
+"code": "52186"
+},
+{
+"name": "VENLAFAXINE CAPSULE, EXTENDED RELEASE ORAL 37.5 mg",
+"code": "16035"
+},
+{
+"name": "VENLAFAXINE CAPSULE, EXTENDED RELEASE ORAL 75 mg",
+"code": "13873"
+},
+{
+"name": "VIGABATRIN TABLET ORAL 500 mg",
+"code": "1282"
+},
+{
+"name": "VINORELBINE (AS TARTRATE) CAPSULE, LIQUID FILLED ORAL 20 mg",
+"code": "13254"
+},
+{
+"name": "VINORELBINE (AS TARTRATE) CAPSULE, LIQUID FILLED ORAL 30 mg",
+"code": "8133"
+},
+{
+"name": "VITAMIN B12 INJECTION PARENTERAL 1000 ug/1mL",
+"code": "1294"
+},
+{
+"name": "VITAMIN C INJECTION PARENTERAL 100 mg/1mL 5 mL",
+"code": "1301"
+},
+{
+"name": "VITAMIN D3 INJECTION PARENTERAL 300000 [iU]/1mL",
+"code": "1814"
+},
+{
+"name": "VONOPRAZAN (AS FUMARATE) TABLET ORAL 10 mg",
+"code": "53384"
+},
+{
+"name": "VONOPRAZAN (AS FUMARATE) TABLET ORAL 20 mg",
+"code": "53385"
+},
+{
+"name": "VORICONAZOLE INJECTION, POWDER, FOR SOLUTION PARENTERAL 200 mg",
+"code": "6383"
+},
+{
+"name": "VORICONAZOLE TABLET ORAL 200 mg",
+"code": "6382"
+},
+{
+"name": "WARFARIN SODIUM TABLET ORAL 5 mg",
+"code": "1309"
+},
+{
+"name": "WATER INJECTION PARENTERAL 5 mL",
+"code": "1311"
+},
+{
+"name": "ZOLEDRONIC ACID INJECTION PARENTERAL 4 mg/5mL",
+"code": "12359"
+},
+{
+"name": "ZOLPIDEM TARTRATE TABLET ORAL 10 mg",
+"code": "6028"
+}
 ]
