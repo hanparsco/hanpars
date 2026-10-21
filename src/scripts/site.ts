@@ -122,10 +122,11 @@ if (form) {
   const allowedTypes = ['sourcing','regulatory','cdmo'];
   let type = allowedTypes.includes(parameters.get('type') || '') ? parameters.get('type')! : 'sourcing';
   const labels: Record<string, { product:string; specification:string; message:string; heading:string }> = {
-    sourcing: { product:'Product or ingredient name', specification:'Specification, grade or strength', message:'Documentation needs & other details', heading:'Pharmaceutical sourcing enquiry' },
-    regulatory: { product:'Product / API / FDF', specification:'Dossier format & current status', message:'Regulatory support needed', heading:'Regulatory Affairs enquiry' },
-    cdmo: { product:'Product or project name', specification:'Dosage form, strength & project stage', message:'Development / manufacturing support needed', heading:'FDF CDMO enquiry' },
+    sourcing: { product:'Product or ingredient name', specification:'Specification, grade or strength', message:'Documentation needs and other details', heading:'Sourcing enquiry' },
+    regulatory: { product:'Product / API / FDF', specification:'Dossier format and current status', message:'Regulatory support needed', heading:'Regulatory affairs enquiry' },
+    cdmo: { product:'Product or project name', specification:'Dosage form, strength and project stage', message:'Development / manufacturing support needed', heading:'FDF CDMO enquiry' },
   };
+  const status = document.getElementById('brief-status');
   function selectType(selected: string) {
     type = selected;
     tabs.forEach(tab => {
@@ -140,56 +141,39 @@ if (form) {
     if (productLabel) productLabel.textContent = labels[type].product + ' *';
     if (specLabel) specLabel.textContent = labels[type].specification;
     if (messageLabel) messageLabel.textContent = labels[type].message;
-    const result = document.getElementById('brief-result');
-    if (result) result.hidden = true;
+    const typeField = form!.querySelector<HTMLInputElement>('[data-type-field]');
+    const subject = form!.querySelector<HTMLInputElement>('[data-subject]');
+    if (typeField) typeField.value = labels[type].heading;
+    if (subject) subject.value = `${labels[type].heading} — website`;
   }
   tabs.forEach(tab => tab.addEventListener('click', () => selectType(tab.dataset.enquiryType || 'sourcing')));
   installTabKeys(tabs);
   selectType(type);
   const product = document.getElementById('brief-product') as HTMLInputElement | null;
   if (product && parameters.get('product')) product.value = parameters.get('product')!.slice(0,500);
-  let brief = '';
-  form.addEventListener('submit', event => {
+  const button = form.querySelector<HTMLButtonElement>('[data-send-brief]');
+  form.addEventListener('submit', async event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
-    const data = new FormData(form);
-    const value = (name:string) => String(data.get(name) || '').trim();
-    const lines = [
-      labels[type].heading,
-      `${labels[type].product}: ${value('product')}`,
-      value('specification') ? `${labels[type].specification}: ${value('specification')}` : '',
-      value('quantity') ? `Quantity / project scale: ${value('quantity')}` : '',
-      value('market') ? `Target market / destination: ${value('market')}` : '',
-      value('timing') ? `Requested timing: ${value('timing')}` : '',
-      value('message') ? `${labels[type].message}:\n${value('message')}` : '',
-    ];
-    brief = lines.filter(Boolean).join('\n\n');
-    const result = document.getElementById('brief-result');
-    const text = document.getElementById('brief-text');
-    const status = document.getElementById('brief-status');
-    if (text) text.textContent = brief;
-    if (status) status.textContent = 'Prepared locally. Not sent.';
-    if (result) { result.hidden = false; result.scrollIntoView({ behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'center' }); }
-  });
-  form.addEventListener('input', () => { const result = document.getElementById('brief-result'); if (result) result.hidden = true; });
-  const prepareButton = form.querySelector<HTMLButtonElement>('[data-prepare-brief]');
-  if (prepareButton) prepareButton.disabled = false;
-  document.getElementById('copy-brief')?.addEventListener('click', async () => {
-    const status = document.getElementById('brief-status');
-    try { await navigator.clipboard.writeText(brief); if (status) status.textContent = 'Brief copied. Paste it into the message field on the existing contact form.'; }
-    catch {
-      const text = document.getElementById('brief-text');
-      if (text) { const range = document.createRange(); range.selectNodeContents(text); const selection = window.getSelection(); selection?.removeAllRanges(); selection?.addRange(range); }
-      if (status) status.textContent = 'Your browser blocked automatic copying. The brief is selected: use Copy, or download it.';
+    if (form.dataset.accessKey?.startsWith('PENDING')) {
+      if (status) status.textContent = 'The form is not connected yet. Please email contact@hanpars.com for now.';
+      return;
     }
-  });
-  document.getElementById('download-brief')?.addEventListener('click', () => {
-    if (!brief) return;
-    const url = URL.createObjectURL(new Blob([brief], { type:'text/plain;charset=utf-8' }));
-    const link = document.createElement('a');
-    link.href = url; link.download = 'hanpars-enquiry-brief.txt'; link.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-    const status = document.getElementById('brief-status');
-    if (status) status.textContent = 'Brief downloaded. Nothing has been submitted.';
+    if (button) { button.disabled = true; button.textContent = 'Sending…'; }
+    if (status) status.textContent = '';
+    try {
+      const response = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body:new FormData(form) });
+      const result = await response.json().catch(() => ({}));
+      if (response.ok && result.success !== false) {
+        form.reset(); selectType(type);
+        if (status) status.textContent = 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
+      } else {
+        throw new Error(result.message || 'Submission failed');
+      }
+    } catch {
+      if (status) status.textContent = 'The message could not be sent. Please try again, or email contact@hanpars.com.';
+    } finally {
+      if (button) { button.disabled = false; button.textContent = 'Send the enquiry'; }
+    }
   });
 }

@@ -9,3 +9,4 @@ Static Astro site for the Hanpars redesign, deployed to **https://hanpars.teohan
 - Homepage artwork in `public/images/` is original placeholder SVG; replace with final imagery if desired.
 - Photographs: Unsplash (free licence); list in `scripts/photos.txt`, fetched by CI via `scripts/fetch-photos.sh` into `public/photos/`.
 - `public/photos/hero-products*.jpg` and `products-shelf-full.jpg` are Hanpars' own photographs (supplied by the owner, 21 Oct 2026).
+- Contact form: posts to Web3Forms (`src/data/site.ts`). Set the repository secret/variable `PUBLIC_WEB3FORMS_KEY` (or edit the constant) once the key for contact@hanpars.com is issued.

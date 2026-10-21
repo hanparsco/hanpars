@@ -1,12 +1,12 @@
 ---
 import Brand from './Brand.astro';
-import { groups, liveNewsletter } from '../data/site';
+import { groups, contactEmail } from '../data/site';
 ---
 <footer class="site-footer">
   <div class="container footer-main">
     <div class="footer-intro"><Brand light /><p>Haniya Parsan Darou Co. imports pharmaceutical ingredients and finished medicines for the Iranian market and supports their registration. Offices in Tehran.</p><a class="footer-phone" href="tel:+982188883325">+98 21 8888 3325</a></div>
     {groups.map(group => <div class="footer-group"><h3>{group.label}</h3>{group.items.map(item => <a href={item.href}>{item.label}</a>)}</div>)}
-    <div class="footer-group footer-connect"><h3>Keep in touch</h3><a href="/blog-1">Insights archive</a><a href="/contact-us-1">Contact</a><p>Occasional updates are sent through the subscription form on hanpars.com.</p><a href={liveNewsletter} target="_blank" rel="noopener noreferrer">Subscribe on hanpars.com</a></div>
+    <div class="footer-group footer-connect"><h3>Contact</h3><a href="/contact-us-1">Send an enquiry</a><a href={`mailto:${contactEmail}`}>{contactEmail}</a><a href="/blog-1">Insights archive</a></div>
   </div>
   <div class="container footer-bottom"><span>© {new Date().getFullYear()} Hanpars Pharmaceutical Trading Co. All rights reserved.</span><span>3rd floor, No. 326, Zafar St, Africa Blvd, Tehran</span></div>
 </footer>

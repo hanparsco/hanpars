@@ -298,6 +298,9 @@ summary::-webkit-details-marker { display:none; }
 .form-field textarea { resize:vertical; min-height:96px; }
 .form-field input::placeholder,.form-field textarea::placeholder { color:var(--faint); }
 .form-actions { display:flex; flex-wrap:wrap; gap:14px 28px; align-items:center; margin-top:36px; }
+.botcheck { position:absolute; left:-9999px; opacity:0; }
+.form-status { font-size:15px; color:var(--lapis-deep); margin:16px 0 0; min-height:1.4em; }
+.form-status:empty { display:none; }
 .form-disclaimer { color:var(--faint); font-size:13.5px; margin-top:22px; margin-bottom:0; max-width:50em; }
 .contact-aside { padding-top:8px; }
 .contact-aside h3 { margin-bottom:14px; font-size:22px; }
