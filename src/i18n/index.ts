@@ -34,7 +34,7 @@ export const ui = {
         { label: 'Finished dosage forms', href: '/fdf', note: 'The registered portfolio and the reference list' },
         { label: 'Active pharmaceutical ingredients', href: '/api', note: 'A reference range of 1,453 substances' },
         { label: 'Excipients', href: '/excipient', note: 'Formulation materials by grade' },
-        { label: 'Nutrition', href: '/nutrition', note: 'Vitamins and nutrition ingredients' },
+        { label: 'Nutrition', href: '/nutrition', note: 'Ingredients and the EU health-claims register' },
       ] },
       { label: 'Services', items: [
         { label: 'Regulatory Affairs', href: '/regulatory-affairs', note: 'Dossiers, IFDA submissions, lifecycle' },
@@ -65,7 +65,7 @@ export const ui = {
       lede: 'Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients, and registers them with the IFDA. Based in Tehran, with suppliers in Türkiye, China, India and Europe.',
       primary: 'Prepare a sourcing enquiry', secondary: 'Regulatory affairs',
       heroAlt: 'Hanpars medicines on the display shelves at the Tehran office',
-      entries: { fdf: 'Finished dosage forms', fdfText: (n: number, m: string) => `${n} registered medicines and ${m} reference products.`, api: 'Active ingredients', apiText: (m: string) => `${m} substances in the reference range.`, exc: 'Excipients', excText: 'By grade and specification.', nut: 'Nutrition ingredients', nutText: 'Vitamins and nutrition database.' },
+      entries: { fdf: 'Finished dosage forms', fdfText: (n: number, m: string) => `${n} registered medicines and ${m} reference products.`, api: 'Active ingredients', apiText: (m: string) => `${m} substances in the reference range.`, exc: 'Excipients', excText: 'By grade and specification.', nut: 'Nutrition ingredients', nutText: '2,355 EU nutrition and health claims.' },
       threeTitle: 'Three things we do, usually together.',
       threeLede: 'A supply agreement is only useful once the product is approved and on the shelf, so sourcing, registration and project coordination sit with the same people.',
       three: [
@@ -174,6 +174,12 @@ export const ui = {
       watch: 'What changed in the agencies', watchLede: (d: string) => `Regulatory watch, as of ${d}. Items are summarised from the agencies' own publications; follow the source for the full text.`,
       authorities: 'Authorities', routes: 'Submission routes we handle', format: 'Dossier format', source: 'Source',
     },
+    claims: {
+      title: 'EU nutrition and health claims', entries: 'claims', summary: (n: string, a: string) => `${n} substances, ${a} authorised`,
+      search: 'Search by substance, claim or health relationship', statusLabel: 'Filter by status', all: 'All claims', authorised: 'Authorised', nonAuthorised: 'Non-authorised',
+      substance: 'Nutrient, substance, food or category', claim: 'Claim', relationship: 'Health relationship', status: 'Status',
+      note: 'Compiled from the EU Register of nutrition and health claims made on foods (Regulation (EC) No 1924/2006). Status reflects the register at the time of compilation; check the register before relying on a claim.', source: 'EU Register',
+    },
     notFound: { title: "That page isn't here.", text: 'The address may have changed, or it never led anywhere. The products, services and contact details are all a click away.', home: 'Back to the homepage', contact: 'Contact Hanpars' },
     dateLocale: 'en-GB',
   },
@@ -219,7 +225,7 @@ export const ui = {
       lede: 'هانپارس مواد مؤثره، داروهای ساخته‌شده، مواد جانبی و مواد اولیهٔ تغذیه‌ای را وارد می‌کند و آن‌ها را در سازمان غذا و دارو به ثبت می‌رساند. مستقر در تهران، با تأمین‌کنندگانی در ترکیه، چین، هند و اروپا.',
       primary: 'ثبت درخواست تأمین', secondary: 'امور رگولاتوری',
       heroAlt: 'داروهای هانپارس در قفسه‌های نمایش دفتر تهران',
-      entries: { fdf: 'داروهای ساخته‌شده', fdfText: (n: number, m: string) => `${n} داروی ثبت‌شده و ${m} محصول در فهرست مرجع.`, api: 'مواد مؤثره', apiText: (m: string) => `${m} ماده در فهرست مرجع.`, exc: 'مواد جانبی', excText: 'بر اساس گرید و مشخصات فنی.', nut: 'مواد تغذیه‌ای', nutText: 'ویتامین‌ها و بانک اطلاعات تغذیه.' },
+      entries: { fdf: 'داروهای ساخته‌شده', fdfText: (n: number, m: string) => `${n} داروی ثبت‌شده و ${m} محصول در فهرست مرجع.`, api: 'مواد مؤثره', apiText: (m: string) => `${m} ماده در فهرست مرجع.`, exc: 'مواد جانبی', excText: 'بر اساس گرید و مشخصات فنی.', nut: 'مواد تغذیه‌ای', nutText: '۲٬۳۵۵ ادعای تغذیه‌ای و سلامت اتحادیهٔ اروپا.' },
       threeTitle: 'سه کاری که انجام می‌دهیم؛ معمولاً با هم.',
       threeLede: 'قرارداد تأمین وقتی ارزش دارد که محصول تأیید شده و روی قفسه باشد؛ به همین دلیل تأمین، ثبت و هماهنگی پروژه نزد یک تیم است.',
       three: [
@@ -327,6 +333,12 @@ export const ui = {
       cover: 'آنچه پوشش می‌دهیم', file: 'کجا ثبت می‌کنیم', intel: 'هوش رگولاتوری و هوش مصنوعی در رگولاتوری', principle: 'اصل ما دربارهٔ هوش مصنوعی',
       watch: 'در سازمان‌ها چه تغییر کرد', watchLede: (d: string) => `پایش رگولاتوری، تا ${d}. موارد از انتشارات خود سازمان‌ها خلاصه شده‌اند؛ متن کامل را در منبع ببینید.`,
       authorities: 'مراجع', routes: 'مسیرهای ثبتی که انجام می‌دهیم', format: 'قالب پرونده', source: 'منبع',
+    },
+    claims: {
+      title: 'ادعاهای تغذیه‌ای و سلامت اتحادیهٔ اروپا', entries: 'ادعا', summary: (n: string, a: string) => `${n} ماده، ${a} مورد مجاز`,
+      search: 'جست‌وجو بر اساس ماده، ادعا یا رابطهٔ سلامت', statusLabel: 'فیلتر وضعیت', all: 'همهٔ ادعاها', authorised: 'مجاز', nonAuthorised: 'غیرمجاز',
+      substance: 'ماده مغذی، ماده، غذا یا دسته', claim: 'ادعا', relationship: 'رابطهٔ سلامت', status: 'وضعیت',
+      note: 'گردآوری‌شده از ثبت ادعاهای تغذیه‌ای و سلامت اتحادیهٔ اروپا (آیین‌نامهٔ (EC) 1924/2006). وضعیت‌ها مربوط به زمان گردآوری است؛ پیش از استناد، ثبت رسمی را بررسی کنید.', source: 'ثبت رسمی اتحادیهٔ اروپا',
     },
     notFound: { title: 'این صفحه اینجا نیست.', text: 'نشانی شاید تغییر کرده یا هرگز وجود نداشته است. محصولات، خدمات و راه‌های تماس یک کلیک فاصله دارند.', home: 'بازگشت به صفحهٔ اصلی', contact: 'تماس با هانپارس' },
     dateLocale: 'fa-IR',

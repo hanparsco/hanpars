@@ -69,6 +69,8 @@ for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]
   const i18n = JSON.parse(catalogue.dataset.i18n || '{}') as { inList?:string; matching?:string; none?:string; showing?:string };
   let matching = rows;
   let page = 0;
+  let statusFilter = '';
+  const filters = Array.from(catalogue.querySelectorAll<HTMLButtonElement>('[data-catalogue-filter]'));
   const status = catalogue.querySelector<HTMLElement>('[data-catalogue-status]');
   const count = catalogue.querySelector<HTMLElement>('[data-filter-count]');
   const suffix = catalogue.querySelector<HTMLElement>('[data-count-suffix]');
@@ -83,7 +85,7 @@ for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]
     rows.forEach(row => { row.hidden = true; });
     matching.slice(start, end).forEach(row => { row.hidden = false; });
     if (count) count.textContent = matching.length.toLocaleString('en-US');
-    if (suffix) suffix.textContent = input?.value ? (i18n.matching || 'matching your search') : (i18n.inList || 'in the list');
+    if (suffix) suffix.textContent = (input?.value || statusFilter) ? (i18n.matching || 'matching your search') : (i18n.inList || 'in the list');
     if (status) status.textContent = matching.length ? (i18n.showing || 'Showing {a}–{b} of {n} entries').replace('{a}', String(start+1)).replace('{b}', String(end)).replace('{n}', matching.length.toLocaleString('en-US')) : (i18n.none || 'No matching entries');
     if (pageLabel) pageLabel.textContent = `${page+1} / ${Math.max(1,Math.ceil(matching.length/pageSize))}`;
     if (empty) empty.hidden = matching.length !== 0;
@@ -91,12 +93,18 @@ for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]
     if (next) next.disabled = end >= matching.length;
     if (pager) pager.hidden = matching.length <= pageSize;
   }
-  input?.addEventListener('input', () => {
-    const search = input.value.trim().toLowerCase();
-    matching = rows.filter(row => (row.dataset.search || '').includes(search));
+  function applyFilters() {
+    const search = (input?.value || '').trim().toLowerCase();
+    matching = rows.filter(row => (row.dataset.search || '').includes(search) && (!statusFilter || row.dataset.status === statusFilter));
     page = 0;
     render();
-  });
+  }
+  input?.addEventListener('input', applyFilters);
+  filters.forEach(button => button.addEventListener('click', () => {
+    statusFilter = button.dataset.catalogueFilter || '';
+    filters.forEach(b => b.setAttribute('aria-pressed', String(b === button)));
+    applyFilters();
+  }));
   prev?.addEventListener('click', () => { if (page > 0) { page--; render(); } });
   next?.addEventListener('click', () => { if ((page+1)*pageSize < matching.length) { page++; render(); } });
   render();

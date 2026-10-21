@@ -416,6 +416,18 @@ summary::-webkit-details-marker { display:none; }
   .article-body { font-size:18px; } .article-navigation { flex-direction:column; }
   .notfound { padding-block:90px; }
 }
+.claims-filters { display:flex; flex-wrap:wrap; gap:10px; padding:0 0 20px; }
+.claims-filters button { padding:8px 16px; font-family:var(--display); font-size:13.5px; font-weight:500; background:transparent; border:1px solid var(--line); color:var(--navy); border-radius:var(--radius); transition:border-color .2s,background .2s; }
+.claims-filters button:hover { border-color:var(--navy); }
+.claims-filters button[aria-pressed=true] { background:var(--navy); color:#fff; border-color:var(--navy); }
+.claims-table { font-size:15px; }
+.claims-table th:last-child,.claims-table td:last-child { text-align:start; white-space:nowrap; padding-inline-end:0; }
+.claims-substance { font-weight:600; color:var(--navy); min-width:160px; }
+.claims-claim { min-width:260px; max-width:42em; }
+.claims-rel { color:var(--muted); min-width:180px; }
+.claims-status { display:inline-block; font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:4px 10px; border:1px solid var(--line); border-radius:var(--radius); color:var(--muted); }
+.claims-status.authorised { color:var(--lapis-deep); border-color:var(--lapis); }
+.claims-panel .catalogue-scroll { max-height:760px; }
 
 /* ---------- Persian / RTL ---------- */
 html[lang=fa] { --display:'Samarqand','Montserrat',sans-serif; --sans:'Samarqand','Source Sans 3',sans-serif; }
@@ -432,7 +444,7 @@ html[lang=fa] [dir=ltr],html[lang=fa] [lang=en] { font-family:'Montserrat','Sour
 html[lang=fa] .article-body,html[lang=fa] .article-body p,html[lang=fa] .insight-row h3,html[lang=fa] .insight-row p { font-family:'Source Sans 3',sans-serif; line-height:1.6; }
 html[lang=fa] .insight-row h3,html[lang=fa] .article-body h2,html[lang=fa] .article-body h3,html[lang=fa] .page-hero h1[lang=en] { font-family:'Montserrat',sans-serif; letter-spacing:-.02em; }
 html[lang=fa] .insight-row { text-align:left; }
-html[lang=fa] .catalogue-table td,html[lang=fa] .catalogue-table .table-code { font-family:'Source Sans 3',sans-serif; }
+html[lang=fa] .catalogue-table td,html[lang=fa] .catalogue-table th,html[lang=fa] .catalogue-table .table-code { font-family:'Source Sans 3',sans-serif; }
 html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] select { font-family:inherit; }
 [dir=rtl] .hero:before { -webkit-mask-image:linear-gradient(-100deg,transparent 38%,#000 70%,#000 100%); mask-image:linear-gradient(-100deg,transparent 38%,#000 70%,#000 100%); }
 [dir=rtl] .hero-split:before { -webkit-mask-image:linear-gradient(-100deg,transparent 30%,#000 55%,#000 100%); mask-image:linear-gradient(-100deg,transparent 30%,#000 55%,#000 100%); }

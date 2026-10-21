@@ -26,10 +26,10 @@ export const pages = {
   },
   nutrition: {
     title: 'Nutrition ingredients', category: 'Products',
-    description: 'Vitamins and nutrition ingredients for supplements and fortified products, with their own reference database.',
-    meta: 'Explore the Hanpars nutrition ingredient database and prepare a sourcing enquiry with your ingredient, specification and documentation needs.',
+    description: 'Vitamins and nutrition ingredients for supplements and fortified products, with the EU register of nutrition and health claims as a working reference.',
+    meta: 'Search 2,355 EU nutrition and health claims by substance and status, then prepare a Hanpars sourcing enquiry with your ingredient, specification and documentation needs.',
     introTitle: 'Start with the ingredient.',
-    intro: ['Our nutrition work sits alongside pharmaceuticals, with the same attention to specification and documentation. The database below is the reference, including its vitamins section.', 'Include the ingredient, grade, quantity, market and documentation needs when you enquire.'],
+    intro: ['Our nutrition work sits alongside pharmaceuticals, with the same attention to specification and documentation. The reference below lists every nutrition and health claim in the EU register, authorised and non-authorised, searchable by substance: the starting point for deciding what a supplement or fortified product may say on its label.', 'Include the ingredient, grade, quantity, market and documentation needs when you enquire.'],
     database: 'https://hanparsco.github.io/Nutrition/', databaseLabel: 'Explore the nutrition database',
   },
   'about-us': {
