@@ -1,8 +1,15 @@
 ---
-import Icon from './Icon.astro';
 interface Props { category?: string; title: string; description: string; action?: string; href?: string; dark?: boolean; }
-const { category = 'HANPARS', title, description, action = 'Start an enquiry', href = '/contact-us-1', dark = false } = Astro.props;
+const { category = 'Hanpars', title, description, action = 'Start an enquiry', href = '/contact-us-1', dark = false } = Astro.props;
+const external = href.startsWith('https://');
 ---
 <section class:list={['page-hero', { 'page-hero-dark': dark }]}>
-  <div class="container"><div class="breadcrumbs"><a href="/">Home</a><span>/</span><span>{category}</span></div><div class="page-hero-inner"><div><span class="eyebrow">{category.toUpperCase()}</span><h1>{title}</h1><p>{description}</p></div><a class:list={['button', dark ? 'button-sky' : 'button-navy']} href={href} target={href.startsWith('https://')?'_blank':undefined} rel={href.startsWith('https://')?'noopener noreferrer':undefined}>{action}<Icon name="diagonal" size={18}/></a></div></div>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>{category}</span></nav>
+    <div class="page-hero-inner">
+      <div><h1>{title}</h1><p class="lede">{description}</p></div>
+      <a class:list={['button', dark ? 'button-light' : 'button-navy']} href={href} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}>{action}</a>
+    </div>
+    <slot />
+  </div>
 </section>

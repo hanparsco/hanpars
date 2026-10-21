@@ -1,58 +1,83 @@
 ---
-import Icon from './Icon.astro';
 import CTA from './CTA.astro';
-import InsightCard from './InsightCard.astro';
-import { heroImage, partnershipImage, productFamilies } from '../data/site';
+import InsightRow from './InsightCard.astro';
 import articles from '../data/articles.json';
+import portfolio from '../data/portfolio.json';
+import fdf from '../data/fdf.json';
+import apis from '../data/apis.json';
 const featured = [...articles].sort((a,b) => new Date(b.date).getTime()-new Date(a.date).getTime()).slice(0,3);
+const fmt = (n:number) => n.toLocaleString('en-US');
+const entries = [
+  { href:'/fdf', name:'Finished dosage forms', text:`${portfolio.counts.total} hospital and specialty medicines, and a reference list of ${fmt(fdf.length)} products.` },
+  { href:'/api', name:'Active pharmaceutical ingredients', text:`A reference range of ${fmt(apis.length)} substances for sourcing enquiries.` },
+  { href:'/excipient', name:'Excipients', text:'Formulation materials, requested by grade and specification.' },
+  { href:'/nutrition', name:'Nutrition ingredients', text:'Vitamins and nutrition ingredients, with their own reference database.' },
+];
 ---
 <section class="hero">
   <div class="container hero-main">
-    <div class="hero-copy">
-      <span class="eyebrow"><span class="status-dot"></span> CONNECTED EXPERTISE. CLEAR NEXT STEPS.</span>
-      <h1>Pharmaceutical<br/>sourcing.<br/><em>Thoughtfully connected.</em></h1>
-      <p class="hero-description">From the right ingredient to the right regulatory pathway. We connect your product needs with sourcing, development partners and regulatory expertise.</p>
-      <div class="hero-actions"><a class="button button-sky" href="/contact-us-1?type=sourcing">Request a sourcing quote <Icon name="diagonal" size={17}/></a><a class="button button-ghost" href="/regulatory-affairs">Explore our services <Icon name="arrow" size={17}/></a></div>
-      <p class="hero-note"><Icon name="globe" size={15}/> Product sourcing · Regulatory Affairs · CDMO partnerships</p>
-    </div>
-    <div class="hero-art"><img src={heroImage} alt="Conceptual frosted-glass capsule and connected molecular-inspired forms" fetchpriority="high" width="960" height="720"/><div class="hero-art-label"><Icon name="molecule" size={30}/><span><strong>The value of connection</strong>Products, expertise and a way forward.</span></div></div>
+    <h1>Medicines and pharmaceutical ingredients for Iran, sourced and registered by one team.</h1>
+    <p class="lede">Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients, and prepares their registration with the Iranian authority. We work from Tehran with manufacturers in Türkiye, China, India and Europe, and with the hospitals, distributors and project teams who use what we bring in.</p>
+    <div class="hero-actions"><a class="button button-light" href="/contact-us-1?type=sourcing">Prepare a sourcing enquiry</a><a class="text-link" href="/regulatory-affairs">Talk to the regulatory team</a></div>
   </div>
-  <div class="container hero-tracks">{productFamilies.map((product,i) => <a class="hero-track" href={product.href}><Icon name={product.icon} size={26}/><span><small>0{i+1} / PRODUCT PATHWAY</small>{product.short}</span><Icon class="track-arrow" name="diagonal" size={17}/></a>)}</div>
+  <div class="hero-meta"><div class="container hero-meta-inner">{entries.map(entry => <a href={entry.href}><strong>{entry.name}</strong><span>{entry.text}</span></a>)}</div></div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="section-head"><div><span class="eyebrow">FIND YOUR STARTING POINT</span><h2>What does your<br/>next product need?</h2></div><p>A clear route to the material, finished product or specialist support you’re looking for.</p></div>
-    <div class="product-grid">{productFamilies.map(product => <a class="product-card" href={product.href}><span class="icon-tile"><Icon name={product.icon} size={25}/></span><span class="eyebrow">{product.label}</span><h3>{product.title}</h3><p>{product.text}</p><span class="card-link">Explore {product.short === 'Finished dosage forms' ? 'FDFs' : product.short.toLowerCase()}<Icon name="diagonal" size={18}/></span></a>)}</div>
-    <div class="guide-panel">
-      <div class="guide-intro"><Icon name="globe" size={25}/><div><h3>Not sure where to begin?</h3><p>Choose what you need. We’ll point you in the right direction.</p></div></div>
-      <div class="guide-content" data-guide>
-        <div class="guide-tabs" role="tablist" aria-label="Choose your requirement"><button id="guide-sourcing" role="tab" type="button" class="guide-tab" aria-selected="true" aria-controls="guide-result" data-guide-type="sourcing">Product sourcing</button><button id="guide-regulatory" role="tab" type="button" class="guide-tab" aria-selected="false" aria-controls="guide-result" data-guide-type="regulatory" tabindex="-1">Regulatory Affairs</button><button id="guide-cdmo" role="tab" type="button" class="guide-tab" aria-selected="false" aria-controls="guide-result" data-guide-type="cdmo" tabindex="-1">CDMO project</button></div>
-        <div class="guide-result" id="guide-result" role="tabpanel" aria-labelledby="guide-sourcing" tabindex="0"><p data-guide-description>Have a product or ingredient in mind? Share its name, specification, quantity and destination market.</p><a class="text-link" href="/contact-us-1?type=sourcing" data-guide-link>Start a sourcing enquiry <Icon name="arrow" size={17}/></a></div>
-      </div>
+    <div class="section-head"><h2>Three things we do, usually together.</h2><p class="lede">A supply agreement is only useful once the product is approved and on the shelf. So sourcing, registration and project coordination sit with the same people.</p></div>
+    <div class="columns-3">
+      <article class="column-item"><h3>Import and sourcing</h3><p>We find the substance or finished product you need from manufacturers we already work with, and bring it into Iran with the documents the authority will ask for: certificates of analysis, GMP evidence and stability data, agreed before the first order rather than chased afterwards.</p><a class="text-link" href="/api">Browse the API reference range</a></article>
+      <article class="column-item"><h3>Regulatory affairs</h3><p>Dossiers in CTD, eCTD or ACTD format, submission to the IFDA and to TİTCK in Türkiye, correspondence with the authority, and keeping the authorisation current after approval. Offered on its own, or alongside the products we supply.</p><a class="text-link" href="/regulatory-affairs">What the regulatory team covers</a></article>
+      <article class="column-item"><h3>Development partnerships</h3><p>For finished dosage-form projects we coordinate development and manufacturing partners: formulation, analytical work, scale-up, stability and technology transfer, with each party's responsibilities written down at the start. Hanpars does not own the plants; we run the project.</p><a class="text-link" href="/fdf-cdmo">How a CDMO project begins</a></article>
     </div>
   </div>
 </section>
 
-<section class="section section-pale">
+<section class="section section-navy">
+  <div class="container spotlight">
+    <div>
+      <h2>The hospital and specialty portfolio</h2>
+      <div class="spotlight-figure"><div><strong class="num">{portfolio.counts.total}</strong><span>medicines registered with the IFDA</span></div><div><strong class="num">{portfolio.counts.available}</strong><span>available in Iran today</span></div><div><strong class="num">{portfolio.counts.launching}</strong><span>launching</span></div></div>
+      <p>Contrast media, anaesthetics, antibiotics, hormones, biologics: medicines that hospitals cannot run out of, imported from GMP-certified manufacturers in Türkiye, China and India and distributed nationally through Pakhsh Razi, Darougostar Tooba and Dey Darou Omid. Hanpars is also a contracted supplier to the national Strategic Medicine Reserve.</p>
+      <div class="actions"><a class="button button-light" href="/fdf#product-portfolio">See the full portfolio</a><a class="text-link" href="/contact-us-1?type=regulatory">Represent your products in Iran</a></div>
+      <p class="spotlight-note">Status as of {portfolio.snapshot}. Dosage forms and strengths as licensed by the IFDA; confirm current availability when you enquire.</p>
+    </div>
+    <ul class="area-list">{portfolio.groups.map(group => <li><a href={`/fdf#portfolio-${group.id}`}>{group.title}<small>{group.products.length} {group.products.length === 1 ? 'medicine' : 'medicines'}</small></a></li>)}</ul>
+  </div>
+</section>
+
+<section class="section section-paper">
+  <div class="container company-note">
+    <div>
+      <span class="persian-name" lang="fa">شرکت هانیا پرسان دارو</span>
+      <address class="address">Haniya Parsan Darou Co.<br/>3rd floor, No. 326, Zafar Street<br/>Africa Boulevard, Tehran<small>Office hours 09:00–17:00 ·<a href="tel:+982188856347">+98 21 8885 6347</a></small></address>
+      <a class="text-link" href="/about-us">About Hanpars</a>
+    </div>
+    <div class="copy">
+      <p>Hanpars is a pharmaceutical trading company in Tehran. We are the marketing authorisation holder for the medicines we import, which means the dossier, the IRC licence and pharmacovigilance are handled by us, not passed along. It also means that when a hospital pharmacist or a distributor calls about a product, the person who answers knows its file.</p>
+      <p>We describe our role precisely. We source, register and coordinate; manufacturers manufacture, and the authority decides. A clear brief at the beginning, and clear responsibilities throughout, is how we keep projects moving.</p>
+      <a class="text-link" href="/culture">How we work</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <div class="container">
-    <div class="section-head"><div><span class="eyebrow">BEYOND THE PRODUCT</span><h2>Connected support.<br/>From brief to market.</h2></div><p>Sourcing is one part of the journey. Documentation, development and regulatory requirements belong in the conversation too.</p></div>
-    <div class="services-grid">
-      <article class="feature-service feature-service-dark"><Icon name="file" size={34}/><span class="eyebrow">REGULATORY AFFAIRS</span><h3>A clearer pathway<br/>to authorisation.</h3><p>Dossier preparation, product registration and lifecycle support. Explore a connected approach to your product and target market.</p><div class="service-tags"><span>CTD / eCTD / ACTD</span><span>API & FDF</span><span>Lifecycle support</span></div><a class="button button-sky" href="/regulatory-affairs">Explore Regulatory Affairs <Icon name="diagonal" size={17}/></a></article>
-      <article class="feature-service feature-service-pale"><Icon name="capsule" size={34}/><span class="eyebrow">DEVELOPMENT & MANUFACTURING PARTNERSHIPS</span><h3>Bring the right<br/>expertise together.</h3><p>Discuss your finished dosage-form project, from formulation and technology transfer to development and manufacturing partnerships.</p><div class="service-tags"><span>FDF development</span><span>Technology transfer</span><span>Partner coordination</span></div><a class="button button-navy" href="/fdf-cdmo">Explore FDF CDMO <Icon name="diagonal" size={17}/></a></article>
-    </div>
+    <div class="section-head"><h2>How a request proceeds</h2><p class="lede">You do not need a finished specification to start. A product name and a destination are enough for a first conversation.</p></div>
+    <ol class="steps">
+      <li class="step"><h3>Tell us what you need</h3><p>The molecule or product, the strength or grade if you know it, the quantity, and where it is going. For a regulatory or CDMO question: the product and the stage you have reached.</p></li>
+      <li class="step"><h3>We put it in context</h3><p>Which manufacturers can supply it, what the target market will require in documents and studies, and what is realistic for timing. We come back with questions before we come back with promises.</p></li>
+      <li class="step"><h3>We agree the scope</h3><p>Who does what, in writing: sourcing, dossier, submission, import, distribution. Then the work starts, with one contact at Hanpars accountable for it.</p></li>
+    </ol>
   </div>
 </section>
 
-<section class="section">
-  <div class="container process-layout"><div class="process-intro"><span class="eyebrow">A THOUGHTFUL WAY FORWARD</span><h2>Start with the need.<br/>Build the right brief.</h2><p>A useful conversation begins with a clear requirement—not a generic request.</p><a class="text-link" href="/culture">How we work <Icon name="arrow" size={17}/></a></div><div class="steps"><article class="step"><span class="step-num">01 — SHARE</span><h3>Tell us what<br/>you need.</h3><p>Product, specification, quantity and destination—or your project and dossier status.</p></article><article class="step"><span class="step-num">02 — EXPLORE</span><h3>Put the requirements<br/>in context.</h3><p>Include documentation needs, the target market and the stage of your project.</p></article><article class="step"><span class="step-num">03 — CONNECT</span><h3>Discuss the<br/>next step.</h3><p>Bring the brief to Hanpars so the scope and next actions can be considered together.</p></article></div></div>
-</section>
-
-<section class="section section-pale">
-  <div class="container company-preview"><div class="company-art"><img src={partnershipImage} alt="Conceptual interlocking blue glass forms representing connected expertise" width="960" height="720" loading="lazy"/><span class="art-caption">A partnership-minded approach.</span></div><div><span class="eyebrow">THE HANPARS APPROACH</span><h2>More than a list.<br/>A connection that matters.</h2><p>Hanpars brings together pharmaceutical sourcing and technical and regulatory conversations, with a focus on the needs of manufacturers, distributors and project teams.</p><p>We work with development and manufacturing partners. Clear requirements and clearly defined responsibilities are the starting point.</p><a class="text-link" href="/about-us">Get to know Hanpars <Icon name="diagonal" size={17}/></a></div></div>
-</section>
-
-<section class="section">
-  <div class="container"><div class="section-head"><div><span class="eyebrow">PERSPECTIVES & CONTEXT</span><h2>Stay curious.<br/>See the bigger picture.</h2></div><a class="text-link" href="/blog-1">Explore the insights archive <Icon name="arrow" size={17}/></a></div><div class="insight-grid">{featured.map((article,i) => <InsightCard article={article} index={i}/>)}</div><p class="reference-note">From our dated editorial archive. Historical commentary is not a current market forecast or regulatory recommendation.</p></div>
+<section class="section section-paper section-tight">
+  <div class="container">
+    <div class="section-head"><h2>From the archive</h2><a class="text-link" href="/blog-1">All archived articles</a></div>
+    <ul class="insight-list">{featured.map(article => <li><InsightRow article={article}/></li>)}</ul>
+    <p class="reference-note">Dated editorial commentary, kept with its original publication dates. It is not a current market forecast or regulatory advice.</p>
+  </div>
 </section>
 <CTA />

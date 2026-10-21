@@ -1,11 +1,16 @@
 ---
 import PageHero from './PageHero.astro';
-import InsightCard from './InsightCard.astro';
+import InsightRow from './InsightCard.astro';
 import Icon from './Icon.astro';
 import CTA from './CTA.astro';
 import articles from '../data/articles.json';
 const sorted = [...articles].sort((a,b)=>new Date(b.date).getTime()-new Date(a.date).getTime());
 ---
-<PageHero title="Perspectives for a connected industry." category="Insights" description="Explore our dated archive of pharmaceutical market, sourcing and regulatory commentary. Context for the conversation—not a substitute for current advice." action="Discuss your requirement"/>
-<section class="section"><div class="container"><div class="archive-note">These articles retain their original publication dates and historical commentary. Figures, forecasts and regulatory references may be outdated; confirm current sources before acting. This archive is not a statement of Hanpars’ current capabilities or a current weekly-news service.</div><div class="section-head"><div><span class="eyebrow">THE EDITORIAL ARCHIVE</span><h2>Ideas worth exploring.</h2></div><label class="search-input"><Icon name="search" size={19}/><input type="search" aria-label="Search archived insights" placeholder="Search a topic…" id="insights-search"/></label></div><p class="catalogue-count" id="insights-count" aria-live="polite" style="margin-bottom:20px">{sorted.length} archived articles</p><div class="insight-grid">{sorted.map((article,i)=><div data-insight-card data-search={`${article.title} ${article.category} ${article.excerpt}`.toLowerCase()}><InsightCard article={article} index={i}/></div>)}</div><div class="no-results" id="insights-empty" hidden>No matching articles. Try another topic.</div></div></section>
+<PageHero title="Insights archive" category="Insights" description="Articles on the pharmaceutical market, sourcing and regulation that Hanpars published during 2025. They are kept here with their original dates, as context rather than current advice." action="Discuss a requirement"/>
+<section class="section"><div class="container">
+  <div class="archive-note">Figures, forecasts and regulatory references in these articles reflect the time they were written and have not been updated. Check current sources before relying on them.</div>
+  <div class="section-head"><p class="catalogue-count" id="insights-count" aria-live="polite">{sorted.length} archived articles</p><label class="search-input"><Icon name="search" size={18}/><input type="search" aria-label="Search archived articles" placeholder="Search by topic" id="insights-search"/></label></div>
+  <div class="insight-grid">{sorted.map(article=><div data-insight-card data-search={`${article.title} ${article.category} ${article.excerpt}`.toLowerCase()}><InsightRow article={article}/></div>)}</div>
+  <div class="no-results" id="insights-empty" hidden>No articles match that topic.</div>
+</div></section>
 <CTA />

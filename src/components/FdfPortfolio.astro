@@ -4,131 +4,123 @@ import DosageFormIcon from './DosageFormIcon.astro';
 import portfolio from '../data/portfolio.json';
 const products = portfolio.groups.flatMap(group => group.products.map(product => ({ ...product, area:group.title, areaId:group.id })));
 const searchText = (product:typeof products[number]) => [product.name, product.atc, product.area, product.statusLabel, ...product.origins, ...product.forms.flatMap(form => [form.form,form.strength])].join(' ').toLowerCase();
-const trustIcons = ['shield','box','globe','file'];
 ---
-<section class="portfolio-section" id="product-portfolio" aria-labelledby="portfolio-title" data-portfolio>
+<section class="portfolio-section section-navy" id="product-portfolio" aria-labelledby="portfolio-title" data-portfolio>
   <div class="container">
     <div class="portfolio-intro">
-      <div class="portfolio-intro-copy"><span class="eyebrow">HOSPITAL & SPECIALTY MEDICINES</span><h2 id="portfolio-title">Product portfolio</h2><p>{portfolio.description}</p><div class="portfolio-intro-actions"><a class="button button-sky" href="/contact-us-1?type=sourcing">Discuss a product requirement<Icon name="diagonal" size={17}/></a><a class="portfolio-reference-link" href="#fdf-reference">Jump to the full reference list<Icon name="down" size={16}/></a></div></div>
-      <div class="portfolio-snapshot"><span class="snapshot-label"><span class="snapshot-dot"></span>PORTFOLIO SNAPSHOT · {portfolio.snapshot.toUpperCase()}</span><div class="portfolio-stats"><div><strong>{portfolio.counts.total}</strong><span>Molecules registered</span></div><div><strong>{portfolio.counts.available}</strong><span>Available in Iran</span></div><div><strong>{portfolio.counts.launching}</strong><span>Launching</span></div><div><strong>{portfolio.counts.areas}</strong><span>Therapeutic areas</span></div></div></div>
+      <div><h2 id="portfolio-title">The Hanpars portfolio</h2><p class="portfolio-lede">{portfolio.description}</p><div class="actions"><a class="button button-light" href="/contact-us-1?type=sourcing">Discuss a product</a><a class="text-link" href="#fdf-reference">Skip to the full reference list</a></div></div>
+      <dl class="portfolio-stats"><div><dt>Medicines registered</dt><dd class="num">{portfolio.counts.total}</dd></div><div><dt>Available in Iran</dt><dd class="num">{portfolio.counts.available}</dd></div><div><dt>Launching</dt><dd class="num">{portfolio.counts.launching}</dd></div><div><dt>Therapeutic areas</dt><dd class="num">{portfolio.counts.areas}</dd></div></dl>
     </div>
-    <div class="portfolio-capabilities">{portfolio.trust.map((item,i)=><article><span class="capability-icon"><Icon name={trustIcons[i]} size={21}/></span><div><h3>{item.title}</h3><p>{item.description}</p></div></article>)}</div>
-    <div class="portfolio-browse-heading"><div><span class="eyebrow">EXPLORE BY THERAPEUTIC AREA</span><h3>Find the product you need.</h3></div><p>Original dosage forms, strengths and WHO ATC codes.<br/>Portfolio status is shown for {portfolio.snapshot}.</p></div>
-    <div class="portfolio-controls"><div class="portfolio-filter-row"><div class="portfolio-search"><Icon name="search" size={19}/><input type="search" placeholder="Search molecule, ATC or strength…" aria-label="Search the product portfolio by molecule, ATC code or strength" data-portfolio-search autocomplete="off"/></div><div class="portfolio-view" role="group" aria-label="Portfolio view"><button type="button" data-portfolio-view="cards" aria-pressed="true" aria-controls="portfolio-cards">Cards</button><button type="button" data-portfolio-view="table" aria-pressed="false" aria-controls="portfolio-table">Table</button></div></div><div class="portfolio-area-filters" role="group" aria-label="Filter portfolio by therapeutic area"><button type="button" data-portfolio-area="all" aria-pressed="true">All areas <span>{portfolio.counts.total}</span></button>{portfolio.groups.map(group=><button type="button" data-portfolio-area={group.id} aria-pressed="false">{group.title}<span>{group.products.length}</span></button>)}</div></div>
-    <div class="portfolio-results"><span class="portfolio-result-count" data-portfolio-count aria-live="polite">46 molecules across 9 therapeutic areas</span><button type="button" class="portfolio-clear" data-portfolio-reset>Clear filters</button></div>
-    <div id="portfolio-cards" data-portfolio-cards>
-      {portfolio.groups.map(group=><section class="portfolio-group" data-portfolio-group={group.id} aria-labelledby={`portfolio-${group.id}`}><div class="portfolio-group-head"><div><span class="eyebrow">{group.kicker.toUpperCase()}</span><h3 id={`portfolio-${group.id}`}>{group.title}</h3><p>{group.description}</p></div><span class="portfolio-group-count"><strong data-portfolio-group-count>{group.products.length}</strong> <span data-portfolio-group-label>{group.products.length===1?'molecule':'molecules'}</span></span></div><div class="portfolio-card-grid">{group.products.map(product=>{
-        const entry = {...product,area:group.title,areaId:group.id};
-        return <article class="portfolio-product-card" data-portfolio-card data-area={group.id} data-search={searchText(entry)}><div class="portfolio-card-top"><h4>{product.name}</h4><span class="portfolio-form-icons">{product.formIcons.map(icon=><DosageFormIcon name={icon.id} label={icon.label}/>)}</span></div><dl class="portfolio-forms">{product.forms.map(form=><div><dt>{form.form}</dt><dd>{form.strength}</dd></div>)}</dl><div class="portfolio-card-meta"><span class="portfolio-origin"><Icon name="globe" size={14}/>{product.origins.join(' · ')}</span><span class:list={['portfolio-badge',product.status==='available'?'portfolio-available':'portfolio-launching']}><span></span>{product.statusLabel}</span></div><a class="portfolio-enquire" href={`/contact-us-1?type=sourcing&product=${encodeURIComponent(product.name)}`} aria-label={`Prepare an enquiry about ${product.name}`}>Discuss this product<Icon name="diagonal" size={15}/></a></article>;
-      })}</div></section>)}
+    <div class="portfolio-capabilities">{portfolio.trust.map(item=><article><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
+  </div>
+  <div class="portfolio-body">
+    <div class="container">
+      <div class="portfolio-browse-heading"><h3>Browse by therapeutic area</h3><p>Dosage forms, strengths and WHO ATC codes as licensed. Status as of {portfolio.snapshot}.</p></div>
+      <div class="portfolio-controls">
+        <div class="portfolio-filter-row"><label class="search-input portfolio-search"><Icon name="search" size={18}/><input type="search" placeholder="Search by molecule, ATC code or strength" aria-label="Search the product portfolio by molecule, ATC code or strength" data-portfolio-search autocomplete="off"/></label><div class="portfolio-view" role="group" aria-label="Portfolio view"><button type="button" data-portfolio-view="cards" aria-pressed="true" aria-controls="portfolio-cards">Cards</button><button type="button" data-portfolio-view="table" aria-pressed="false" aria-controls="portfolio-table">Table</button></div></div>
+        <div class="portfolio-area-filters" role="group" aria-label="Filter portfolio by therapeutic area"><button type="button" data-portfolio-area="all" aria-pressed="true">All areas <span>{portfolio.counts.total}</span></button>{portfolio.groups.map(group=><button type="button" data-portfolio-area={group.id} aria-pressed="false">{group.title}<span>{group.products.length}</span></button>)}</div>
+      </div>
+      <div class="portfolio-results"><span class="portfolio-result-count" data-portfolio-count aria-live="polite">46 molecules across 9 therapeutic areas</span><button type="button" class="portfolio-clear" data-portfolio-reset>Clear filters</button></div>
+      <div id="portfolio-cards" data-portfolio-cards>
+        {portfolio.groups.map(group=><section class="portfolio-group" data-portfolio-group={group.id} aria-labelledby={`portfolio-${group.id}`}><div class="portfolio-group-head"><div><h3 id={`portfolio-${group.id}`}>{group.title}</h3><p class="portfolio-kicker">{group.kicker}</p><p>{group.description}</p></div><span class="portfolio-group-count"><strong data-portfolio-group-count>{group.products.length}</strong> <span data-portfolio-group-label>{group.products.length===1?'molecule':'molecules'}</span></span></div><div class="portfolio-card-grid">{group.products.map(product=>{
+          const entry = {...product,area:group.title,areaId:group.id};
+          return <article class="portfolio-product-card" data-portfolio-card data-area={group.id} data-search={searchText(entry)}><div class="portfolio-card-top"><h4>{product.name}</h4><span class="portfolio-form-icons">{product.formIcons.map(icon=><DosageFormIcon name={icon.id} label={icon.label}/>)}</span></div><dl class="portfolio-forms">{product.forms.map(form=><div><dt>{form.form}</dt><dd>{form.strength}</dd></div>)}</dl><div class="portfolio-card-meta"><span class="portfolio-origin">{product.origins.join(', ')}</span><span class:list={['portfolio-badge',product.status==='available'?'portfolio-available':'portfolio-launching']}>{product.statusLabel}</span></div><a class="portfolio-enquire" href={`/contact-us-1?type=sourcing&product=${encodeURIComponent(product.name)}`} aria-label={`Prepare an enquiry about ${product.name}`}>Discuss this product</a></article>;
+        })}</div></section>)}
+      </div>
+      <div id="portfolio-table" class="portfolio-table-wrap" data-portfolio-table hidden><div class="portfolio-table-scroll" tabindex="0" role="region" aria-label="Product portfolio table"><table class="portfolio-table"><thead><tr><th scope="col">Molecule</th><th scope="col">ATC</th><th scope="col">Dosage form and strength</th><th scope="col">Therapeutic area</th><th scope="col">Origin</th><th scope="col">Status</th><th scope="col">Enquiry</th></tr></thead><tbody>{products.slice().sort((a,b)=>a.name.localeCompare(b.name,'en')).map(product=><tr data-portfolio-row data-area={product.areaId} data-search={searchText(product)}><td><strong>{product.name}</strong></td><td><code>{product.atc}</code></td><td>{product.forms.map(form=><div class="portfolio-table-form"><span>{form.form}</span><strong>{form.strength}</strong></div>)}</td><td>{product.area}</td><td>{product.origins.join(', ')}</td><td><span class:list={['portfolio-badge',product.status==='available'?'portfolio-available':'portfolio-launching']}>{product.statusLabel}</span></td><td><a class="text-link" href={`/contact-us-1?type=sourcing&product=${encodeURIComponent(product.name)}`} aria-label={`Enquire about ${product.name}`}>Enquire</a></td></tr>)}</tbody></table></div></div>
+      <div class="portfolio-empty" data-portfolio-empty hidden><h3>No matching products</h3><p>Try another molecule, ATC code or therapeutic area.</p><button class="button button-outline button-small" type="button" data-portfolio-reset>Clear filters</button></div>
+      <p class="portfolio-status-note">Portfolio status reflects IFDA licensing and import scheduling as of {portfolio.snapshot}. Dosage forms and strengths are as licensed by the IFDA; manufacturer details and certificates are available to healthcare institutions and partners on request. Confirm current availability and launch timing when enquiring.</p>
+      <div class="portfolio-manufacturer"><div><h3>{portfolio.manufacturer.title}</h3><p>{portfolio.manufacturer.description}</p><div class="actions"><a class="button button-navy" href="/contact-us-1?type=regulatory">Discuss representation in Iran</a><a class="text-link" href={portfolio.manufacturer.contactHref}>Email the regulatory team</a></div></div><ul>{portfolio.manufacturer.services.map(service=><li>{service}</li>)}</ul></div>
     </div>
-    <div id="portfolio-table" class="portfolio-table-wrap" data-portfolio-table hidden><div class="portfolio-table-scroll" tabindex="0" role="region" aria-label="Product portfolio table"><table class="portfolio-table"><thead><tr><th scope="col">MOLECULE</th><th scope="col">ATC</th><th scope="col">DOSAGE FORM & STRENGTH</th><th scope="col">THERAPEUTIC AREA</th><th scope="col">ORIGIN</th><th scope="col">PORTFOLIO STATUS</th><th scope="col">ENQUIRY</th></tr></thead><tbody>{products.slice().sort((a,b)=>a.name.localeCompare(b.name,'en')).map(product=><tr data-portfolio-row data-area={product.areaId} data-search={searchText(product)}><td><strong>{product.name}</strong></td><td><code>{product.atc}</code></td><td>{product.forms.map(form=><div class="portfolio-table-form"><span>{form.form}</span><strong>{form.strength}</strong></div>)}</td><td>{product.area}</td><td>{product.origins.join(', ')}</td><td><span class:list={['portfolio-badge',product.status==='available'?'portfolio-available':'portfolio-launching']}><span></span>{product.statusLabel}</span></td><td><a class="text-link" href={`/contact-us-1?type=sourcing&product=${encodeURIComponent(product.name)}`} aria-label={`Enquire about ${product.name}`}>Enquire<Icon name="diagonal" size={14}/></a></td></tr>)}</tbody></table></div></div>
-    <div class="portfolio-empty" data-portfolio-empty hidden><Icon name="search" size={30}/><h3>No matching products.</h3><p>Try another molecule, ATC code or therapeutic area.</p><button class="button button-outline" type="button" data-portfolio-reset>Clear filters</button></div>
-    <p class="portfolio-status-note"><Icon name="clock" size={16}/><span>Portfolio status reflects IFDA licensing and import scheduling as of {portfolio.snapshot}. Dosage forms and strengths are as licensed by the IFDA; manufacturer details and certificates are available to healthcare institutions and partners on request. Confirm current availability and launch timing when enquiring.</span></p>
-    <div class="portfolio-manufacturer"><div><span class="eyebrow">FOR MANUFACTURERS</span><h3>{portfolio.manufacturer.title}</h3><p>{portfolio.manufacturer.description}</p><div class="portfolio-manufacturer-actions"><a class="button button-navy" href="/contact-us-1?type=regulatory">Discuss representation in Iran<Icon name="diagonal" size={17}/></a><a class="text-link" href={portfolio.manufacturer.contactHref}>Email the regulatory team<Icon name="mail" size={17}/></a></div></div><ul>{portfolio.manufacturer.services.map(service=><li><Icon name="check" size={19}/>{service}</li>)}</ul></div>
   </div>
 </section>
 <script>import '../scripts/portfolio';</script>
 
 <style>
-  .portfolio-section { padding:0 0 76px; }
-  .portfolio-intro { display:grid; grid-template-columns:1.4fr 1fr; gap:52px; padding:46px; border-radius:14px; background:var(--navy); color:#fff; }
-  .portfolio-intro .eyebrow { color:#91cde6; }
-  .portfolio-intro h2 { font-size:42px; margin-bottom:22px; }
-  .portfolio-intro-copy>p { color:#b8cddd; font-size:18px; line-height:1.75; margin-bottom:26px; }
-  .portfolio-intro-actions { display:flex; flex-wrap:wrap; gap:19px; align-items:center; }
-  .portfolio-intro-actions .button { font-size:14px; padding-inline:18px; }
-  .portfolio-reference-link { font-size:13px; display:flex; gap:7px; color:#c4e2f0; align-items:center; }
-  .portfolio-reference-link:hover { color:var(--sky); }
-  .portfolio-snapshot { align-self:center; border:1px solid #a1c5dd30; background:#133657; border-radius:10px; padding:27px; }
-  .snapshot-label { display:flex; align-items:center; gap:8px; font-size:9px; letter-spacing:1.4px; color:#9ebed3; margin-bottom:25px; }
-  .snapshot-dot { width:5px; height:5px; border-radius:50%; background:var(--sky); flex:none; }
-  .portfolio-stats { display:grid; grid-template-columns:1fr 1fr; gap:27px 22px; }
-  .portfolio-stats>div { border-left:2px solid #62d0f5; padding-left:16px; }
-  .portfolio-stats strong { display:block; font:700 37px/1.1 'Plus Jakarta Sans',sans-serif; letter-spacing:-1px; margin-bottom:8px; }
-  .portfolio-stats span { display:block; font-size:12px; color:#a8c5d9; }
-  .portfolio-capabilities { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; padding:38px 0 45px; border-bottom:1px solid var(--line); }
-  .portfolio-capabilities article { display:flex; align-items:flex-start; gap:13px; }
-  .capability-icon { color:#4184a5; flex:none; margin-top:2px; }
-  .portfolio-capabilities h3 { font-size:16px; line-height:1.4; letter-spacing:-.015em; margin-bottom:10px; }
-  .portfolio-capabilities p { font-size:14px; line-height:1.7; color:#718696; margin:0; }
-  .portfolio-browse-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:30px; padding:42px 0 29px; }
-  .portfolio-browse-heading .eyebrow { margin-bottom:11px; }
-  .portfolio-browse-heading h3 { font-size:29px; }
-  .portfolio-browse-heading p { font-size:15px; color:#738a9b; margin:0; }
-  .portfolio-controls { padding:23px; background:var(--pale); border:1px solid var(--line); border-radius:11px; }
-  .portfolio-filter-row { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:20px; }
-  .portfolio-search { display:flex; align-items:center; gap:10px; width:min(450px,100%); border:1px solid #cbdce6; background:#fff; color:#7391a5; border-radius:6px; padding:9px 13px; }
-  .portfolio-search input { width:100%; min-width:0; height:29px; border:0; outline:0; background:transparent; font-size:16px; color:var(--navy); }
-  .portfolio-search:focus-within { outline:3px solid #62d0f570; }
-  .portfolio-view { display:flex; border:1px solid #c9dbe6; border-radius:6px; overflow:hidden; flex:none; }
-  .portfolio-view button { background:#fff; border:0; color:#668096; font-size:13px; padding:10px 17px; min-height:42px; }
+  .portfolio-section { padding:0; }
+  .portfolio-intro { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:72px; padding:104px 0 64px; align-items:end; }
+  .portfolio-lede { color:var(--on-navy); font-size:19px; line-height:1.65; max-width:34em; margin:26px 0 36px; }
+  .portfolio-stats { margin:0; display:grid; grid-template-columns:1fr 1fr; gap:36px 32px; }
+  .portfolio-stats div { border-top:1px solid var(--line-dark); padding-top:18px; }
+  .portfolio-stats dt { font-size:14.5px; color:var(--on-navy-muted); margin-bottom:8px; }
+  .portfolio-stats dd { margin:0; font-size:54px; line-height:1; color:#fff; }
+  .portfolio-capabilities { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:40px; padding:40px 0 88px; border-top:1px solid var(--line-dark); }
+  .portfolio-capabilities h3 { font-size:21px; line-height:1.3; margin-bottom:12px; color:#fff; font-variation-settings:'opsz' 24; }
+  .portfolio-capabilities p { font-size:15px; line-height:1.65; color:var(--on-navy-muted); margin:0; }
+  .portfolio-body { background:#fff; color:var(--ink); padding-bottom:96px; }
+  .portfolio-body h3 { color:var(--navy); }
+  .portfolio-body :global(.text-link) { color:var(--navy); border-color:var(--line); }
+  .portfolio-body :global(.text-link:hover) { color:var(--lapis); border-color:var(--lapis); }
+  .portfolio-browse-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:40px; padding:88px 0 32px; }
+  .portfolio-browse-heading h3 { font-size:34px; }
+  .portfolio-browse-heading p { font-size:15.5px; color:var(--muted); margin:0; max-width:30em; text-align:right; }
+  .portfolio-controls { padding:24px 0; border-top:1px solid var(--navy); }
+  .portfolio-filter-row { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:22px; }
+  .portfolio-search { width:min(460px,100%); }
+  .portfolio-view { display:flex; border:1px solid var(--line); flex:none; }
+  .portfolio-view button { background:transparent; border:0; color:var(--muted); font-size:14px; padding:9px 18px; min-height:40px; transition:background .2s,color .2s; }
   .portfolio-view button[aria-pressed=true] { background:var(--navy); color:#fff; }
-  .portfolio-area-filters { display:flex; flex-wrap:wrap; gap:8px; }
-  .portfolio-area-filters button { display:flex; align-items:center; gap:9px; background:#fff; border:1px solid #d4e2eb; border-radius:5px; padding:8px 12px; min-height:39px; color:#567287; font-size:12px; }
-  .portfolio-area-filters button>span { color:#8ea8b9; font-size:11px; }
-  .portfolio-area-filters button[aria-pressed=true] { background:#dff3fc; color:var(--navy); border-color:#83c4e0; }
-  .portfolio-area-filters button:hover { border-color:#9fc4d8; }
-  .portfolio-results { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:22px 0; border-bottom:1px solid var(--line); }
-  .portfolio-result-count { font-size:13px; color:#718697; }
-  .portfolio-clear { background:none; border:0; color:#397f9f; font-size:12px; padding:6px 0; text-decoration:underline; text-underline-offset:3px; }
-  .portfolio-group { padding-block:32px 8px; border-bottom:1px solid var(--line); }
-  .portfolio-group-head { display:flex; justify-content:space-between; align-items:flex-end; gap:25px; margin-bottom:22px; }
-  .portfolio-group-head .eyebrow { font-size:9px; letter-spacing:1.2px; margin-bottom:9px; }
-  .portfolio-group-head h3 { font-size:27px; margin-bottom:11px; }
-  .portfolio-group-head p { color:#758999; font-size:16px; max-width:720px; margin:0; }
-  .portfolio-group-count { font-size:13px; color:#88a0b0; white-space:nowrap; }
-  .portfolio-group-count strong { font:600 24px 'Plus Jakarta Sans',sans-serif; color:#4b7895; margin-right:6px; }
-  .portfolio-card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; padding-bottom:25px; }
-  .portfolio-product-card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:25px; display:flex; flex-direction:column; transition:border-color .2s,transform .2s; }
-  .portfolio-product-card:hover { border-color:#9bc8dc; transform:translateY(-2px); }
-  .portfolio-card-top { display:flex; flex-wrap:wrap; align-items:flex-start; gap:12px; justify-content:space-between; margin-bottom:19px; }
-  .portfolio-card-top h4 { font-size:18px; letter-spacing:-.02em; line-height:1.4; flex:1 1 155px; overflow-wrap:anywhere; }
-  .portfolio-form-icons { display:inline-flex; align-items:center; gap:5px; flex:none; color:#487792; background:#f1f7fb; border:1px solid #dfebf2; padding:5px; border-radius:6px; }
+  .portfolio-area-filters { display:flex; flex-wrap:wrap; gap:8px 8px; }
+  .portfolio-area-filters button { display:inline-flex; align-items:center; gap:8px; background:transparent; border:1px solid var(--line); border-radius:999px; padding:7px 14px; min-height:38px; color:var(--ink); font-size:14px; transition:border-color .2s,background .2s,color .2s; }
+  .portfolio-area-filters button>span { color:var(--faint); font-size:13px; }
+  .portfolio-area-filters button:hover { border-color:var(--navy); }
+  .portfolio-area-filters button[aria-pressed=true] { background:var(--navy); color:#fff; border-color:var(--navy); }
+  .portfolio-area-filters button[aria-pressed=true]>span { color:var(--on-navy-muted); }
+  .portfolio-results { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:16px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .portfolio-result-count { font-size:14px; color:var(--muted); }
+  .portfolio-clear { background:none; border:0; color:var(--lapis); font-size:14px; padding:6px 0; border-bottom:1px solid transparent; }
+  .portfolio-clear:hover { border-bottom-color:var(--lapis); }
+  .portfolio-group { padding:56px 0 24px; border-bottom:1px solid var(--line); }
+  .portfolio-group-head { display:flex; justify-content:space-between; align-items:flex-start; gap:32px; margin-bottom:32px; }
+  .portfolio-group-head h3 { font-size:32px; margin-bottom:6px; }
+  .portfolio-kicker { font-family:var(--serif); font-style:italic; color:var(--lapis); font-size:18px; margin-bottom:12px; }
+  .portfolio-group-head p { color:var(--muted); font-size:16px; max-width:40em; margin:0; }
+  .portfolio-group-count { font-size:14px; color:var(--muted); white-space:nowrap; padding-top:12px; }
+  .portfolio-group-count strong { font-family:var(--serif); font-weight:400; font-size:26px; color:var(--navy); margin-right:4px; }
+  .portfolio-card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px 48px; padding-bottom:32px; }
+  .portfolio-product-card { display:flex; flex-direction:column; padding-top:20px; border-top:1px solid var(--line); }
+  .portfolio-card-top { display:flex; align-items:flex-start; gap:16px; justify-content:space-between; margin-bottom:18px; }
+  .portfolio-card-top h4 { font-size:23px; line-height:1.25; overflow-wrap:anywhere; color:var(--navy); }
+  .portfolio-form-icons { display:inline-flex; align-items:center; gap:6px; flex:none; color:var(--lapis); padding-top:4px; }
   .portfolio-form-icons :global(svg) { display:block; }
   .portfolio-forms { padding:0; margin:0 0 18px; }
-  .portfolio-forms>div { display:flex; justify-content:space-between; gap:16px; padding:10px 0; border-top:1px solid #edf2f6; font-size:14px; line-height:1.5; }
-  .portfolio-forms dt { color:#788d9e; }
-  .portfolio-forms dd { margin:0; text-align:right; color:#405f75; font-weight:600; }
-  .portfolio-card-meta { display:flex; align-items:flex-start; flex-wrap:wrap; gap:12px; justify-content:space-between; margin-top:auto; padding-top:8px; }
-  .portfolio-origin { display:flex; align-items:center; gap:5px; font-size:12px; color:#8196a6; }
-  .portfolio-badge { display:inline-flex; align-items:center; gap:5px; white-space:nowrap; padding:5px 8px; border-radius:4px; font-size:10px; line-height:1.4; font-weight:600; }
-  .portfolio-badge>span { width:4px; height:4px; border-radius:50%; background:currentColor; }
-  .portfolio-available { background:#eaf7fb; color:#247e9b; }
-  .portfolio-launching { background:#f1f4f8; color:#698094; }
-  .portfolio-enquire { display:flex; justify-content:space-between; align-items:center; gap:15px; padding-top:17px; margin-top:19px; border-top:1px solid #e8eff4; color:#346f8f; font-size:12px; font-weight:600; }
-  .portfolio-enquire:hover { color:#1793be; }
-  .portfolio-table-wrap { margin-top:25px; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  .portfolio-forms>div { display:flex; justify-content:space-between; gap:16px; padding:8px 0; border-top:1px dotted var(--line); font-size:15px; line-height:1.5; }
+  .portfolio-forms>div:first-child { border-top:0; }
+  .portfolio-forms dt { color:var(--muted); }
+  .portfolio-forms dd { margin:0; text-align:right; color:var(--ink); font-weight:500; }
+  .portfolio-card-meta { display:flex; align-items:baseline; flex-wrap:wrap; gap:8px 16px; justify-content:space-between; margin-top:auto; font-size:14px; }
+  .portfolio-origin { color:var(--muted); }
+  .portfolio-badge { font-size:13.5px; color:var(--muted); white-space:nowrap; }
+  .portfolio-badge:before { content:''; display:inline-block; width:7px; height:7px; border-radius:50%; margin-right:7px; background:currentColor; vertical-align:middle; }
+  .portfolio-available { color:var(--lapis); }
+  .portfolio-launching { color:var(--faint); }
+  .portfolio-enquire { margin-top:18px; align-self:flex-start; color:var(--navy); font-size:15px; font-weight:500; border-bottom:1px solid var(--line); padding-bottom:2px; transition:border-color .2s,color .2s; }
+  .portfolio-enquire:hover { color:var(--lapis); border-color:var(--lapis); }
+  .portfolio-table-wrap { margin-top:8px; border-bottom:1px solid var(--line); }
   .portfolio-table-scroll { overflow:auto; }
-  .portfolio-table { width:100%; border-collapse:collapse; font-size:14px; }
-  .portfolio-table th { text-align:left; color:#6f8a9f; padding:17px; font-size:9px; letter-spacing:.6px; background:var(--pale); border-bottom:1px solid var(--line); white-space:nowrap; }
-  .portfolio-table td { padding:17px; border-bottom:1px solid #eaf0f5; vertical-align:top; color:#70879a; }
+  .portfolio-table { width:100%; border-collapse:collapse; font-size:15px; }
+  .portfolio-table th { text-align:left; color:var(--muted); padding:14px 20px 14px 0; font-size:13px; font-weight:500; border-bottom:1px solid var(--line); white-space:nowrap; letter-spacing:.02em; }
+  .portfolio-table td { padding:16px 20px 16px 0; border-bottom:1px solid var(--line); vertical-align:top; color:var(--muted); }
   .portfolio-table tbody tr:last-child td { border-bottom:0; }
-  .portfolio-table td:first-child { color:#385a74; min-width:175px; }
+  .portfolio-table td:first-child { color:var(--navy); min-width:175px; font-family:var(--serif); font-size:18px; }
+  .portfolio-table td:first-child strong { font-weight:400; }
   .portfolio-table td:nth-child(3) { min-width:190px; }
-  .portfolio-table td .text-link { font-size:12px; }
-  .portfolio-table code { color:#507b96; font-size:11px; white-space:nowrap; }
+  .portfolio-table code { color:var(--ink); font-size:14px; white-space:nowrap; }
   .portfolio-table-form { margin-bottom:8px; }
   .portfolio-table-form:last-child { margin:0; }
-  .portfolio-table-form span,.portfolio-table-form strong { display:block; font-size:12px; }
-  .portfolio-table-form strong { color:#4b6981; font-weight:600; }
-  .portfolio-status-note { display:flex; align-items:flex-start; gap:11px; color:#8193a2; font-size:13px; margin:24px 0 0; line-height:1.8; }
-  .portfolio-status-note>svg { flex:none; margin-top:4px; }
-  .portfolio-manufacturer { margin-top:39px; display:grid; grid-template-columns:1.4fr 1fr; gap:45px; border:1px solid #d7e6ef; background:#eff6fa; padding:38px; border-radius:12px; }
-  .portfolio-manufacturer h3 { font-size:27px; line-height:1.35; margin-bottom:17px; }
-  .portfolio-manufacturer p { color:#6f889b; font-size:16px; line-height:1.75; }
-  .portfolio-manufacturer-actions { display:flex; align-items:center; flex-wrap:wrap; gap:17px; }
-  .portfolio-manufacturer-actions .button { font-size:14px; }
-  .portfolio-manufacturer-actions .text-link { font-size:13px; }
-  .portfolio-manufacturer ul { list-style:none; padding:0; margin:0; align-self:center; display:flex; flex-direction:column; gap:15px; }
-  .portfolio-manufacturer li { display:flex; align-items:flex-start; gap:12px; color:#597991; font-size:15px; }
-  .portfolio-manufacturer li>svg { flex:none; color:#368ead; margin-top:3px; }
-  .portfolio-empty { text-align:center; padding:55px 20px; color:#8ca5b7; }
-  .portfolio-empty>svg { margin:0 auto 15px; }
-  .portfolio-empty h3 { font-size:24px; margin-bottom:12px; color:var(--navy); }
-  .portfolio-empty p { font-size:16px; }
-  @media(max-width:1050px) { .portfolio-intro { padding:36px; gap:30px; grid-template-columns:1.3fr 1fr; } .portfolio-snapshot { padding:23px; } .portfolio-stats strong { font-size:33px; } .portfolio-capabilities { grid-template-columns:repeat(2,minmax(0,1fr)); gap:27px; } .portfolio-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-  @media(max-width:760px) { .portfolio-section { padding-bottom:52px; } .portfolio-intro { grid-template-columns:1fr; padding:30px; gap:29px; } .portfolio-intro h2 { font-size:35px; } .portfolio-intro-copy>p { font-size:17px; } .portfolio-snapshot { padding:24px; } .portfolio-stats { grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; } .portfolio-stats>div { padding-left:10px; } .portfolio-stats strong { font-size:28px; } .portfolio-stats span { font-size:10px; } .snapshot-label { margin-bottom:20px; } .portfolio-capabilities { gap:25px 20px; padding-block:30px; } .portfolio-capabilities h3 { font-size:15px; } .portfolio-capabilities p { font-size:13px; } .portfolio-browse-heading { flex-direction:column; align-items:flex-start; gap:17px; padding-block:31px 25px; } .portfolio-browse-heading h3 { font-size:27px; } .portfolio-group-head { flex-direction:column; align-items:flex-start; gap:14px; } .portfolio-group-head h3 { font-size:24px; } .portfolio-group-count { font-size:12px; } .portfolio-manufacturer { grid-template-columns:1fr; padding:30px; gap:25px; } .portfolio-manufacturer h3 { font-size:25px; } }
-  @media(max-width:540px) { .portfolio-intro { padding:27px 23px; } .portfolio-stats { grid-template-columns:1fr 1fr; gap:23px 20px; } .portfolio-stats strong { font-size:34px; } .portfolio-stats span { font-size:11px; } .portfolio-capabilities { grid-template-columns:1fr; } .portfolio-capabilities h3 { font-size:17px; } .portfolio-capabilities p { font-size:14px; } .portfolio-controls { padding:18px; } .portfolio-filter-row { flex-wrap:wrap; gap:13px; } .portfolio-search { width:100%; } .portfolio-search input { font-size:14px; } .portfolio-view button { font-size:12px; min-height:36px; padding:8px 15px; } .portfolio-area-filters { gap:7px; } .portfolio-area-filters button { font-size:11px; padding:8px 9px; gap:6px; max-width:100%; } .portfolio-card-grid { grid-template-columns:1fr; gap:14px; } .portfolio-product-card { padding:24px; } .portfolio-group-head p { font-size:15px; } .portfolio-manufacturer { padding:27px 23px; } .portfolio-manufacturer-actions { align-items:flex-start; flex-direction:column; } .portfolio-status-note { font-size:12px; } }
-  @media(prefers-reduced-motion:reduce) { .portfolio-product-card { transition:none; } }
+  .portfolio-table-form span,.portfolio-table-form strong { display:block; font-size:13.5px; }
+  .portfolio-table-form strong { color:var(--ink); font-weight:500; }
+  .portfolio-status-note { color:var(--muted); font-size:14.5px; margin:32px 0 0; line-height:1.7; max-width:60em; }
+  .portfolio-manufacturer { margin-top:88px; display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:64px; padding-top:40px; border-top:1px solid var(--navy); }
+  .portfolio-manufacturer h3 { font-size:32px; line-height:1.2; margin-bottom:18px; max-width:14em; }
+  .portfolio-manufacturer p { color:var(--muted); font-size:17px; line-height:1.7; max-width:36em; margin-bottom:28px; }
+  .portfolio-manufacturer ul { list-style:none; padding:0; margin:0; }
+  .portfolio-manufacturer li { padding:14px 0; border-bottom:1px solid var(--line); color:var(--ink); font-size:16.5px; }
+  .portfolio-manufacturer li:first-child { border-top:1px solid var(--line); }
+  .portfolio-empty { padding:56px 0; color:var(--muted); }
+  .portfolio-empty h3 { font-size:26px; margin-bottom:10px; }
+  .portfolio-empty p { margin-bottom:20px; }
+  @media(max-width:1100px) { .portfolio-intro { gap:40px; } .portfolio-stats dd { font-size:44px; } .portfolio-capabilities { grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; } .portfolio-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px 40px; } }
+  @media(max-width:860px) { .portfolio-intro { grid-template-columns:1fr; padding:72px 0 48px; gap:40px; } .portfolio-stats { grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; } .portfolio-stats dd { font-size:36px; } .portfolio-stats dt { font-size:12.5px; } .portfolio-capabilities { padding:32px 0 64px; } .portfolio-browse-heading { flex-direction:column; align-items:flex-start; gap:12px; padding:64px 0 24px; } .portfolio-browse-heading p { text-align:left; } .portfolio-browse-heading h3 { font-size:30px; } .portfolio-group-head { flex-direction:column; gap:10px; } .portfolio-group-count { padding-top:0; } .portfolio-manufacturer { grid-template-columns:1fr; gap:32px; margin-top:64px; } .portfolio-body { padding-bottom:64px; } }
+  @media(max-width:560px) { .portfolio-stats { grid-template-columns:1fr 1fr; gap:24px 20px; } .portfolio-stats dd { font-size:40px; } .portfolio-capabilities { grid-template-columns:1fr; } .portfolio-filter-row { flex-wrap:wrap; gap:14px; } .portfolio-search { width:100%; } .portfolio-view button { font-size:13px; min-height:36px; padding:8px 14px; } .portfolio-area-filters button { font-size:13px; padding:6px 11px; } .portfolio-card-grid { grid-template-columns:1fr; gap:28px; } .portfolio-group-head h3 { font-size:27px; } .portfolio-manufacturer h3 { font-size:27px; } }
 </style>

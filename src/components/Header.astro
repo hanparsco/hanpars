@@ -2,9 +2,8 @@
 import Brand from './Brand.astro';
 import Icon from './Icon.astro';
 import { groups } from '../data/site';
-const path = Astro.url.pathname;
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 ---
-<div class="utility-bar"><div class="container utility-inner"><span>Pharmaceutical sourcing & regulatory support</span><a href="/contact-us-1">Let’s discuss your requirement <Icon name="diagonal" size={13}/></a></div></div>
 <header class="site-header">
   <div class="container header-inner">
     <Brand />
@@ -13,11 +12,11 @@ const path = Astro.url.pathname;
       <a class:list={['nav-link', { active: path === '/' || path === '/home' }]} href="/">Home</a>
       {groups.map((group) => <details class="nav-dropdown">
         <summary class:list={['nav-link', { active: group.items.some((item) => item.href === path) }]}>{group.label}<Icon name="down" size={13}/></summary>
-        <div class="dropdown-panel">{group.items.map((item) => <a href={item.href}><strong>{item.label}</strong><small>{item.note}</small><Icon name="diagonal" size={17}/></a>)}</div>
+        <div class="dropdown-panel">{group.items.map((item) => <a href={item.href}><strong>{item.label}</strong><small>{item.note}</small></a>)}</div>
       </details>)}
       <a class:list={['nav-link', { active: path === '/blog-1' || path.startsWith('/insights/') }]} href="/blog-1">Insights</a>
       <a class:list={['nav-link', { active: path === '/contact-us-1' }]} href="/contact-us-1">Contact</a>
-      <a class="button button-navy nav-cta" href="/contact-us-1">Start an enquiry <Icon name="diagonal" size={16}/></a>
+      <a class="button button-ghost nav-cta" href="/contact-us-1">Start an enquiry</a>
     </nav>
   </div>
 </header>

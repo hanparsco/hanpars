@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none" stroke="#0B2A4A" stroke-opacity="0.10" stroke-width="1">
+  <!-- Eight-point star and cross lattice (khatam / girih) -->
+  <g transform="translate(80 80)">
+    <rect x="-34" y="-34" width="68" height="68"/>
+    <rect x="-34" y="-34" width="68" height="68" transform="rotate(45)"/>
+    <polygon points="0,-56 16,-40 40,-40 40,-16 56,0 40,16 40,40 16,40 0,56 -16,40 -40,40 -40,16 -56,0 -40,-16 -40,-40 -16,-40"/>
+  </g>
+  <!-- corner crosses -->
+  <g>
+    <path d="M0 24 L24 0 M136 0 L160 24 M160 136 L136 160 M24 160 L0 136"/>
+    <path d="M24 0 L24 24 L0 24 M136 0 L136 24 L160 24 M160 136 L136 136 L136 160 M24 160 L24 136 L0 136"/>
+  </g>
+</svg>
