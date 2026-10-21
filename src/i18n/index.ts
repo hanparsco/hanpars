@@ -1,0 +1,336 @@
+export type Lang = 'en' | 'fa';
+export const langs: Lang[] = ['en', 'fa'];
+
+/** Language from a pathname: /fa/... → fa, else en. */
+export function langFromPath(pathname: string): Lang {
+  return pathname === '/fa' || pathname.startsWith('/fa/') ? 'fa' : 'en';
+}
+/** Strip the language prefix. */
+export function stripLang(pathname: string): string {
+  const p = pathname.replace(/\/$/, '') || '/';
+  if (p === '/fa') return '/';
+  return p.startsWith('/fa/') ? p.slice(3) : p;
+}
+/** Localise an English path for a language. */
+export function localePath(path: string, lang: Lang): string {
+  if (lang === 'en') return path;
+  if (path.startsWith('http') || path.startsWith('mailto:') || path.startsWith('tel:') || path.startsWith('#')) return path;
+  const [p, hash] = path.split('#');
+  const [base, query] = p.split('?');
+  const out = base === '/' ? '/fa' : `/fa${base}`;
+  return out + (query ? `?${query}` : '') + (hash ? `#${hash}` : '');
+}
+export const dir = (lang: Lang) => (lang === 'fa' ? 'rtl' : 'ltr');
+
+export const ui = {
+  en: {
+    siteName: 'Hanpars',
+    skip: 'Skip to main content',
+    openNav: 'Open navigation', closeNav: 'Close navigation',
+    nav: { home: 'Home', products: 'Products', services: 'Services', company: 'Company', insights: 'Insights', contact: 'Contact', enquiry: 'Start an enquiry' },
+    switchLabel: 'فارسی', switchTitle: 'نسخهٔ فارسی',
+    groups: [
+      { label: 'Products', items: [
+        { label: 'Finished dosage forms', href: '/fdf', note: 'The registered portfolio and the reference list' },
+        { label: 'Active pharmaceutical ingredients', href: '/api', note: 'A reference range of 1,453 substances' },
+        { label: 'Excipients', href: '/excipient', note: 'Formulation materials by grade' },
+        { label: 'Nutrition', href: '/nutrition', note: 'Vitamins and nutrition ingredients' },
+      ] },
+      { label: 'Services', items: [
+        { label: 'Regulatory Affairs', href: '/regulatory-affairs', note: 'Dossiers, IFDA submissions, lifecycle' },
+        { label: 'FDF CDMO', href: '/fdf-cdmo', note: 'Development and manufacturing projects' },
+      ] },
+      { label: 'Company', items: [
+        { label: 'About Hanpars', href: '/about-us', note: 'Who we are, and what we are not' },
+        { label: 'How we work', href: '/culture', note: 'The habits behind every request' },
+        { label: 'Markets and sourcing', href: '/markets', note: 'Iran at home, suppliers abroad' },
+      ] },
+    ],
+    footer: {
+      intro: 'Haniya Parsan Darou Co. imports pharmaceutical ingredients and finished medicines for the Iranian market and supports their registration. Offices in Tehran.',
+      contact: 'Contact', send: 'Send an enquiry', archive: 'Insights archive',
+      rights: 'Hanpars Pharmaceutical Trading Co. All rights reserved.',
+      address: '3rd floor, No. 326, Zafar St, Africa Blvd, Tehran',
+    },
+    cta: {
+      title: 'Tell us the product and the market. We will tell you the next step.',
+      text: 'Send the molecule or ingredient, the specification and the destination. We reply from Tehran with the questions, the documents and the next step.',
+      primary: 'Prepare a sourcing enquiry', secondary: 'Discuss regulatory or CDMO support',
+      phone: 'Telephone', hours: 'office hours 09:00–17:00, Tehran', office: 'Office', email: 'Email',
+      addressLong: 'Haniya Parsan Darou, 3rd floor, No. 326, Zafar Street, Africa Boulevard, Tehran 1968734974, Iran',
+    },
+    breadcrumbHome: 'Home',
+    home: {
+      title: 'Medicines and ingredients for Iran, sourced and registered by one team.',
+      lede: 'Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients, and registers them with the IFDA. Based in Tehran, with suppliers in Türkiye, China, India and Europe.',
+      primary: 'Prepare a sourcing enquiry', secondary: 'Regulatory affairs',
+      heroAlt: 'Hanpars medicines on the display shelves at the Tehran office',
+      entries: { fdf: 'Finished dosage forms', fdfText: (n: number, m: string) => `${n} registered medicines and ${m} reference products.`, api: 'Active ingredients', apiText: (m: string) => `${m} substances in the reference range.`, exc: 'Excipients', excText: 'By grade and specification.', nut: 'Nutrition ingredients', nutText: 'Vitamins and nutrition database.' },
+      threeTitle: 'Three things we do, usually together.',
+      threeLede: 'A supply agreement is only useful once the product is approved and on the shelf, so sourcing, registration and project coordination sit with the same people.',
+      three: [
+        { title: 'Import and sourcing', text: 'APIs, excipients and finished products from manufacturers we already work with, brought into Iran with the certificates and stability data the authority expects.', link: 'API reference range', href: '/api' },
+        { title: 'Regulatory affairs', text: 'CTD, eCTD and ACTD dossiers, IFDA and TİTCK submissions, authority correspondence and lifecycle maintenance. On its own, or with the products we supply.', link: 'What we cover', href: '/regulatory-affairs' },
+        { title: 'Development partnerships', text: 'For finished dosage-form projects we coordinate development and manufacturing partners, with responsibilities written down at the start. We run the project; partners run the plant.', link: 'How a project begins', href: '/fdf-cdmo' },
+      ],
+      portfolioTitle: 'The hospital and specialty portfolio',
+      figRegistered: 'medicines registered with the IFDA', figAvailable: 'available in Iran', figLaunching: 'launching',
+      portfolioText: 'Contrast media, anaesthetics, antibiotics, hormones and biologics from GMP-certified manufacturers, distributed nationally through Pakhsh Razi, Darougostar Tooba and Dey Darou Omid. Hanpars is a contracted supplier to the national Strategic Medicine Reserve.',
+      portfolioPrimary: 'See the portfolio', portfolioSecondary: 'Represent your products in Iran',
+      portfolioNote: (d: string) => `Status as of ${d}; confirm availability when you enquire.`,
+      companyTitle: 'A trading company in Tehran that holds its own licences.',
+      companyText: 'Hanpars is the marketing authorisation holder for the medicines it imports: the dossier, the IRC licence and pharmacovigilance are handled in-house. We source, register and coordinate; manufacturers manufacture, and the authority decides. Saying precisely who does what is how we keep projects moving.',
+      companyAddress: 'Haniya Parsan Darou Co. · 3rd floor, No. 326, Zafar Street, Africa Boulevard, Tehran', companyHours: 'Office hours 09:00–17:00', about: 'About Hanpars', tehranAlt: 'Tehran beneath the snow-covered Alborz mountains',
+      stepsTitle: 'How a request proceeds', stepsLede: 'A product name and a destination are enough to start.',
+      steps: [
+        { title: 'Tell us what you need', text: 'The product, the strength or grade, the quantity and where it is going.' },
+        { title: 'We put it in context', text: 'Who can supply it, what the market will require, and what is realistic for timing.' },
+        { title: 'We agree the scope', text: 'Who does what, in writing, with one contact at Hanpars accountable for it.' },
+      ],
+      archiveTitle: 'From the archive', archiveAll: 'All archived articles',
+      archiveNote: 'Dated editorial commentary, not a current forecast or regulatory advice.',
+    },
+    catalogue: {
+      fdfTitle: 'Finished product reference list', apiTitle: 'API reference range',
+      entries: 'entries', inList: 'in the list', matching: 'matching your search',
+      searchFdf: 'Search by name, strength or code', searchApi: 'Search for a substance',
+      product: 'Product', substance: 'Substance', code: 'Code', enquiry: 'Enquiry', enquire: 'Enquire',
+      empty: 'Nothing in the list matches that. Try another name or code, or', askDirect: 'ask us directly',
+      allAvailable: (n: string) => `All ${n} original entries available`, showingTpl: 'Showing {a}–{b} of {n} entries', none: 'No matching entries',
+      prev: 'Previous', next: 'Next',
+      note: 'A reference list for enquiries, not a statement of stock, registration or guaranteed availability. Names and codes are kept exactly as in the original working list; specifications, documentation and commercial terms are discussed per request.',
+      externalNote: 'Opens the external database in a new tab.',
+    },
+    portfolio: {
+      title: 'The Hanpars portfolio', discuss: 'Discuss a product', skip: 'Skip to the full reference list',
+      registered: 'Medicines registered', available: 'Available in Iran', launching: 'Launching', areas: 'Therapeutic areas',
+      browse: 'Browse by therapeutic area', browseNote: (d: string) => `Dosage forms, strengths and WHO ATC codes as licensed. Status as of ${d}.`,
+      search: 'Search by molecule, ATC code or strength', cards: 'Cards', table: 'Table', allAreas: 'All areas',
+      count: (n: number, a: number) => `${n} molecules across ${a} therapeutic areas`, countFiltered: ' matching your filters', clear: 'Clear filters',
+      molecule: 'molecule', molecules: 'molecules', discussProduct: 'Discuss this product',
+      th: ['Molecule', 'ATC', 'Dosage form and strength', 'Therapeutic area', 'Origin', 'Status', 'Enquiry'],
+      emptyTitle: 'No matching products', emptyText: 'Try another molecule, ATC code or therapeutic area.',
+      statusNote: (d: string) => `Portfolio status reflects IFDA licensing and import scheduling as of ${d}. Dosage forms and strengths are as licensed by the IFDA; manufacturer details and certificates are available to healthcare institutions and partners on request. Confirm current availability and launch timing when enquiring.`,
+      represent: 'Discuss representation in Iran', emailRa: 'Email the regulatory team',
+      statusAvailable: 'Available in Iran', statusLaunching: 'Launching',
+    },
+    contact: {
+      title: 'Tell us what you are looking for.', category: 'Contact',
+      lede: 'A product to source, a dossier to file, a project to set up. Send the details here and the Tehran office replies by email, usually with a few questions and the next step.',
+      action: 'Write to us', formTitle: 'Send an enquiry', formLede: 'Choose the kind of request and fill in what you know. Your message goes straight to the Hanpars office.',
+      tabs: { sourcing: 'Product sourcing', regulatory: 'Regulatory affairs', cdmo: 'FDF CDMO project' },
+      name: 'Your name', company: 'Company or institution', email: 'Email', phone: 'Telephone',
+      product: 'Product or ingredient name', productPh: 'For example the INN, API or ingredient', spec: 'Specification, grade or strength', specPh: 'If known',
+      quantity: 'Quantity or project scale', quantityPh: 'With units, if known', market: 'Target market or destination', marketPh: 'Where the product is going',
+      timing: 'Timing', timingPh: 'When you need it', message: 'Documentation needs and other details', messagePh: 'Specifications, documents, dossier status, or the support you need.',
+      send: 'Send the enquiry', sending: 'Sending…', orEmail: 'Or email', disclaimer: 'Please leave out confidential personal or medical information. Sending an enquiry does not confirm a quotation, availability or timeline.',
+      asideTitle: 'Or reach us directly', asideText: 'The office is in Tehran. Calls and emails reach the same team that reads the form.',
+      office: 'Office', hours: 'Hours', hoursText: '09:00–17:00, Tehran time', confirmVisit: 'Please confirm before visiting.',
+      labels: {
+        sourcing: { product: 'Product or ingredient name', specification: 'Specification, grade or strength', message: 'Documentation needs and other details', heading: 'Sourcing enquiry' },
+        regulatory: { product: 'Product / API / FDF', specification: 'Dossier format and current status', message: 'Regulatory support needed', heading: 'Regulatory affairs enquiry' },
+        cdmo: { product: 'Product or project name', specification: 'Dosage form, strength and project stage', message: 'Development / manufacturing support needed', heading: 'FDF CDMO enquiry' },
+      },
+      notConnected: 'The form is not connected yet. Please email contact@hanpars.com for now.',
+      sent: 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.',
+      failed: 'The message could not be sent. Please try again, or email contact@hanpars.com.',
+    },
+    insights: {
+      title: 'Insights archive', category: 'Insights', action: 'Discuss a requirement',
+      lede: 'Articles on the pharmaceutical market, sourcing and regulation that Hanpars published during 2025. They are kept here with their original dates, as context rather than current advice.',
+      note: 'Figures, forecasts and regulatory references in these articles reflect the time they were written and have not been updated. Check current sources before relying on them.',
+      count: (n: number) => `${n} archived articles`, search: 'Search by topic', empty: 'No articles match that topic.',
+      articleCategory: 'Insights archive', published: (d: string, c: string) => `Published ${d} in ${c}.`, back: 'Back to the archive',
+      articleNote: 'This article is kept with its original date and commentary. Market figures, forecasts and regulatory references reflect the time of writing and were not re-verified.',
+      all: 'All archived articles', next: 'Next:', ctaTitle: 'Bring the conversation to your own product.',
+      englishOnly: 'The archive articles are available in English.',
+    },
+    standard: {
+      prepare: 'Prepare an enquiry', discussProject: 'Discuss a project', startConversation: 'Start a conversation',
+      dbTitleExc: 'The excipient database', dbTitleNut: 'The nutrition database', dbText: 'Browse the existing reference, then come back with the ingredient and specification you need. It opens in a new tab.',
+      cardsTitle: { 'fdf-cdmo': 'Dosage forms we take on', 'about-us': 'What that looks like in practice', culture: 'Three habits', markets: 'What to include in an enquiry' } as Record<string, string>,
+      easyTitle: 'What makes an enquiry easy to answer',
+      easy: ['The product, ingredient or INN name', 'Specification, grade, dosage form or strength', 'Quantity, destination market and timing', 'Documentation and certificate requirements, where relevant'],
+      cdmoTitle: 'What we ask at the first meeting', cdmoLede: 'The activities and partners depend on the answers, so we start here.',
+      cdmoSteps: [
+        { title: 'The product', text: 'API, dosage form, strength and intended presentation.' },
+        { title: 'The stage', text: 'Existing formulation, dossier, technical data and development status.' },
+        { title: 'The market', text: 'Where it will be registered, and what that authority will require.' },
+        { title: 'The support', text: 'Formulation, scale-up, technology transfer, or a defined partner activity.' },
+      ],
+      cdmoLink: 'How the regulatory requirements fit in',
+      nextTitle: 'Where to go next',
+      nextLinks: [
+        { href: '/fdf', label: 'Finished dosage forms', note: 'Registered portfolio and reference list' },
+        { href: '/api', label: 'Active ingredients', note: '1,453 substances' },
+        { href: '/regulatory-affairs', label: 'Regulatory affairs', note: 'Dossiers and IFDA submissions' },
+        { href: '/fdf-cdmo', label: 'Development projects', note: 'Partner-coordinated FDF work' },
+      ],
+      ctaProduct: 'Tell us the product and the market. We will tell you the next step.', ctaCdmo: 'Tell us where the project stands.',
+    },
+    regulatory: {
+      title: 'Regulatory affairs', category: 'Services', action: 'Request an assessment', photoAlt: 'Analyst operating a laboratory instrument in a quality-control lab',
+      cover: 'What we cover', file: 'Where we file', intel: 'Regulatory intelligence and AI in regulatory', principle: 'Our principle on AI',
+      watch: 'What changed in the agencies', watchLede: (d: string) => `Regulatory watch, as of ${d}. Items are summarised from the agencies' own publications; follow the source for the full text.`,
+      authorities: 'Authorities', routes: 'Submission routes we handle', format: 'Dossier format', source: 'Source',
+    },
+    notFound: { title: "That page isn't here.", text: 'The address may have changed, or it never led anywhere. The products, services and contact details are all a click away.', home: 'Back to the homepage', contact: 'Contact Hanpars' },
+    dateLocale: 'en-GB',
+  },
+  fa: {
+    siteName: 'هانپارس',
+    skip: 'رفتن به محتوای اصلی',
+    openNav: 'باز کردن منو', closeNav: 'بستن منو',
+    nav: { home: 'خانه', products: 'محصولات', services: 'خدمات', company: 'شرکت', insights: 'مقالات', contact: 'تماس', enquiry: 'ثبت درخواست' },
+    switchLabel: 'English', switchTitle: 'English version',
+    groups: [
+      { label: 'محصولات', items: [
+        { label: 'داروهای ساخته‌شده (FDF)', href: '/fdf', note: 'سبد ثبت‌شده و فهرست مرجع' },
+        { label: 'مواد مؤثرهٔ دارویی (API)', href: '/api', note: 'فهرست مرجع ۱٬۴۵۳ ماده' },
+        { label: 'مواد جانبی (اکسیپیان)', href: '/excipient', note: 'مواد فرمولاسیون بر اساس گرید' },
+        { label: 'مکمل و تغذیه', href: '/nutrition', note: 'ویتامین‌ها و مواد اولیهٔ تغذیه‌ای' },
+      ] },
+      { label: 'خدمات', items: [
+        { label: 'امور رگولاتوری', href: '/regulatory-affairs', note: 'پرونده، ثبت در سازمان غذا و دارو، نگه‌داری مجوز' },
+        { label: 'تولید قراردادی (CDMO)', href: '/fdf-cdmo', note: 'پروژه‌های توسعه و تولید' },
+      ] },
+      { label: 'شرکت', items: [
+        { label: 'دربارهٔ هانپارس', href: '/about-us', note: 'که هستیم و چه نیستیم' },
+        { label: 'شیوهٔ کار ما', href: '/culture', note: 'اصول پشت هر درخواست' },
+        { label: 'بازارها و تأمین', href: '/markets', note: 'ایران در خانه، تأمین‌کنندگان در خارج' },
+      ] },
+    ],
+    footer: {
+      intro: 'شرکت هانیا پرسان دارو واردکنندهٔ مواد اولیه و داروهای ساخته‌شده برای بازار ایران است و ثبت آن‌ها را نیز بر عهده می‌گیرد. دفتر مرکزی در تهران.',
+      contact: 'تماس', send: 'ثبت درخواست', archive: 'آرشیو مقالات',
+      rights: 'شرکت بازرگانی دارویی هانپارس. تمامی حقوق محفوظ است.',
+      address: 'تهران، بلوار آفریقا، خیابان ظفر، پلاک ۳۲۶، طبقهٔ سوم',
+    },
+    cta: {
+      title: 'محصول و بازار را به ما بگویید؛ قدم بعدی را ما می‌گوییم.',
+      text: 'نام مولکول یا مادهٔ اولیه، مشخصات فنی و مقصد را بفرستید. از تهران با پرسش‌های لازم، فهرست مدارک و مسیر پیش رو پاسخ می‌دهیم.',
+      primary: 'ثبت درخواست تأمین', secondary: 'مشاورهٔ رگولاتوری یا CDMO',
+      phone: 'تلفن', hours: 'ساعت کاری ۰۹:۰۰ تا ۱۷:۰۰، تهران', office: 'دفتر', email: 'ایمیل',
+      addressLong: 'هانیا پرسان دارو، تهران، بلوار آفریقا، خیابان ظفر، پلاک ۳۲۶، طبقهٔ سوم، کد پستی ۱۹۶۸۷۳۴۹۷۴',
+    },
+    breadcrumbHome: 'خانه',
+    home: {
+      title: 'دارو و مواد اولیهٔ دارویی برای ایران؛ تأمین و ثبت، با یک تیم.',
+      lede: 'هانپارس مواد مؤثره، داروهای ساخته‌شده، مواد جانبی و مواد اولیهٔ تغذیه‌ای را وارد می‌کند و آن‌ها را در سازمان غذا و دارو به ثبت می‌رساند. مستقر در تهران، با تأمین‌کنندگانی در ترکیه، چین، هند و اروپا.',
+      primary: 'ثبت درخواست تأمین', secondary: 'امور رگولاتوری',
+      heroAlt: 'داروهای هانپارس در قفسه‌های نمایش دفتر تهران',
+      entries: { fdf: 'داروهای ساخته‌شده', fdfText: (n: number, m: string) => `${n} داروی ثبت‌شده و ${m} محصول در فهرست مرجع.`, api: 'مواد مؤثره', apiText: (m: string) => `${m} ماده در فهرست مرجع.`, exc: 'مواد جانبی', excText: 'بر اساس گرید و مشخصات فنی.', nut: 'مواد تغذیه‌ای', nutText: 'ویتامین‌ها و بانک اطلاعات تغذیه.' },
+      threeTitle: 'سه کاری که انجام می‌دهیم؛ معمولاً با هم.',
+      threeLede: 'قرارداد تأمین وقتی ارزش دارد که محصول تأیید شده و روی قفسه باشد؛ به همین دلیل تأمین، ثبت و هماهنگی پروژه نزد یک تیم است.',
+      three: [
+        { title: 'واردات و تأمین', text: 'مواد مؤثره، مواد جانبی و داروهای ساخته‌شده از تولیدکنندگانی که با آن‌ها کار می‌کنیم، همراه با گواهی‌ها و داده‌های پایداری که سازمان انتظار دارد، وارد ایران می‌شود.', link: 'فهرست مرجع مواد مؤثره', href: '/api' },
+        { title: 'امور رگولاتوری', text: 'پرونده‌های CTD، eCTD و ACTD، ثبت در سازمان غذا و داروی ایران و TİTCK ترکیه، مکاتبه با مرجع و نگه‌داری مجوز پس از تأیید. به‌تنهایی یا همراه با محصولاتی که تأمین می‌کنیم.', link: 'آنچه پوشش می‌دهیم', href: '/regulatory-affairs' },
+        { title: 'همکاری در توسعه و تولید', text: 'در پروژه‌های داروی ساخته‌شده، شرکای توسعه و تولید را هماهنگ می‌کنیم و مسئولیت‌ها از ابتدا مکتوب می‌شود. پروژه را ما اداره می‌کنیم؛ کارخانه را شرکا.', link: 'یک پروژه چگونه آغاز می‌شود', href: '/fdf-cdmo' },
+      ],
+      portfolioTitle: 'سبد داروهای بیمارستانی و تخصصی',
+      figRegistered: 'داروی ثبت‌شده در سازمان غذا و دارو', figAvailable: 'موجود در ایران', figLaunching: 'در حال عرضه',
+      portfolioText: 'مواد حاجب، داروهای بیهوشی، آنتی‌بیوتیک‌ها، هورمون‌ها و بیولوژیک‌ها از تولیدکنندگان دارای گواهی GMP، با توزیع سراسری از طریق پخش رازی، داروگستر طوبی و دی دارو امید. هانپارس تأمین‌کنندهٔ طرف قرارداد ذخایر راهبردی دارویی کشور است.',
+      portfolioPrimary: 'مشاهدهٔ سبد محصولات', portfolioSecondary: 'نمایندگی محصولات شما در ایران',
+      portfolioNote: (d: string) => `وضعیت تا ${d}؛ موجودی را هنگام استعلام تأیید بگیرید.`,
+      companyTitle: 'شرکتی بازرگانی در تهران که مجوزهایش را خود در اختیار دارد.',
+      companyText: 'هانپارس دارندهٔ پروانهٔ داروهایی است که وارد می‌کند: پرونده، کد IRC و فارماکوویژیلانس در خود شرکت انجام می‌شود. ما تأمین، ثبت و هماهنگ می‌کنیم؛ تولیدکننده تولید می‌کند و مرجع تصمیم می‌گیرد. روشن‌گفتن اینکه چه کسی چه می‌کند، همان چیزی است که پروژه‌ها را پیش می‌برد.',
+      companyAddress: 'شرکت هانیا پرسان دارو · تهران، بلوار آفریقا، خیابان ظفر، پلاک ۳۲۶، طبقهٔ سوم', companyHours: 'ساعت کاری ۰۹:۰۰ تا ۱۷:۰۰', about: 'دربارهٔ هانپارس', tehranAlt: 'تهران در دامنهٔ البرز برفی',
+      stepsTitle: 'یک درخواست چگونه پیش می‌رود', stepsLede: 'نام محصول و مقصد برای شروع کافی است.',
+      steps: [
+        { title: 'بگویید چه می‌خواهید', text: 'محصول، دوز یا گرید، مقدار و مقصد.' },
+        { title: 'ما آن را در بستر می‌گذاریم', text: 'چه کسی می‌تواند تأمین کند، بازار چه می‌خواهد و زمان‌بندی واقع‌بینانه چیست.' },
+        { title: 'محدودهٔ کار را توافق می‌کنیم', text: 'چه کسی چه می‌کند، مکتوب، با یک نفر در هانپارس که پاسخ‌گوی آن است.' },
+      ],
+      archiveTitle: 'از آرشیو', archiveAll: 'همهٔ مقالات آرشیو',
+      archiveNote: 'یادداشت‌های تاریخ‌دار سردبیری؛ نه پیش‌بینی فعلی بازار و نه توصیهٔ رگولاتوری. مقالات به زبان انگلیسی هستند.',
+    },
+    catalogue: {
+      fdfTitle: 'فهرست مرجع داروهای ساخته‌شده', apiTitle: 'فهرست مرجع مواد مؤثره',
+      entries: 'مورد', inList: 'در فهرست', matching: 'مطابق جست‌وجوی شما',
+      searchFdf: 'جست‌وجو بر اساس نام، دوز یا کد', searchApi: 'جست‌وجوی ماده',
+      product: 'محصول', substance: 'ماده', code: 'کد', enquiry: 'استعلام', enquire: 'استعلام',
+      empty: 'موردی مطابق با جست‌وجوی شما نیست. نام یا کد دیگری را امتحان کنید، یا', askDirect: 'مستقیماً از ما بپرسید',
+      allAvailable: (n: string) => `همهٔ ${n} مورد اصلی در دسترس است`, showingTpl: 'نمایش {a} تا {b} از {n} مورد', none: 'موردی یافت نشد',
+      prev: 'قبلی', next: 'بعدی',
+      note: 'این فهرست مرجعِ استعلام است، نه اعلام موجودی، ثبت یا تضمین تأمین. نام‌ها و کدها عیناً از فهرست کاری اصلی حفظ شده‌اند؛ مشخصات، مستندات و شرایط تجاری برای هر درخواست جداگانه بررسی می‌شود.',
+      externalNote: 'بانک اطلاعات خارجی در برگهٔ جدید باز می‌شود.',
+    },
+    portfolio: {
+      title: 'سبد محصولات هانپارس', discuss: 'استعلام یک محصول', skip: 'رفتن به فهرست مرجع کامل',
+      registered: 'داروی ثبت‌شده', available: 'موجود در ایران', launching: 'در حال عرضه', areas: 'حوزهٔ درمانی',
+      browse: 'مرور بر اساس حوزهٔ درمانی', browseNote: (d: string) => `شکل دارویی، دوز و کد ATC مطابق پروانه. وضعیت تا ${d}.`,
+      search: 'جست‌وجو بر اساس مولکول، کد ATC یا دوز', cards: 'کارت', table: 'جدول', allAreas: 'همهٔ حوزه‌ها',
+      count: (n: number, a: number) => `${n} مولکول در ${a} حوزهٔ درمانی`, countFiltered: ' مطابق فیلتر شما', clear: 'حذف فیلترها',
+      molecule: 'مولکول', molecules: 'مولکول', discussProduct: 'استعلام این محصول',
+      th: ['مولکول', 'ATC', 'شکل دارویی و دوز', 'حوزهٔ درمانی', 'کشور مبدأ', 'وضعیت', 'استعلام'],
+      emptyTitle: 'محصولی یافت نشد', emptyText: 'مولکول، کد ATC یا حوزهٔ درمانی دیگری را امتحان کنید.',
+      statusNote: (d: string) => `وضعیت سبد بر اساس پروانهٔ سازمان غذا و دارو و برنامهٔ واردات تا ${d} است. شکل دارویی و دوز مطابق پروانه است؛ مشخصات تولیدکننده و گواهی‌ها در صورت درخواست در اختیار مراکز درمانی و شرکا قرار می‌گیرد. موجودی و زمان عرضه را هنگام استعلام تأیید بگیرید.`,
+      represent: 'گفت‌وگو دربارهٔ نمایندگی در ایران', emailRa: 'ایمیل به تیم رگولاتوری',
+      statusAvailable: 'موجود در ایران', statusLaunching: 'در حال عرضه',
+    },
+    contact: {
+      title: 'بگویید دنبال چه هستید.', category: 'تماس',
+      lede: 'محصولی برای تأمین، پرونده‌ای برای ثبت، پروژه‌ای برای راه‌اندازی. جزئیات را همین‌جا بفرستید؛ دفتر تهران با ایمیل، معمولاً با چند پرسش و قدم بعدی، پاسخ می‌دهد.',
+      action: 'برای ما بنویسید', formTitle: 'ثبت درخواست', formLede: 'نوع درخواست را انتخاب کنید و آنچه می‌دانید را بنویسید. پیام شما مستقیماً به دفتر هانپارس می‌رسد.',
+      tabs: { sourcing: 'تأمین محصول', regulatory: 'امور رگولاتوری', cdmo: 'پروژهٔ CDMO' },
+      name: 'نام شما', company: 'شرکت یا مرکز', email: 'ایمیل', phone: 'تلفن',
+      product: 'نام محصول یا مادهٔ اولیه', productPh: 'برای مثال نام ژنریک، API یا مادهٔ اولیه', spec: 'مشخصات، گرید یا دوز', specPh: 'در صورت اطلاع',
+      quantity: 'مقدار یا مقیاس پروژه', quantityPh: 'با واحد، در صورت اطلاع', market: 'بازار هدف یا مقصد', marketPh: 'محصول به کجا می‌رود',
+      timing: 'زمان‌بندی', timingPh: 'چه زمانی نیاز دارید', message: 'نیازهای مستندات و سایر جزئیات', messagePh: 'مشخصات، مدارک، وضعیت پرونده یا پشتیبانی مورد نیاز.',
+      send: 'ارسال درخواست', sending: 'در حال ارسال…', orEmail: 'یا ایمیل به', disclaimer: 'لطفاً اطلاعات محرمانهٔ شخصی یا پزشکی را درج نکنید. ارسال درخواست به معنای تأیید قیمت، موجودی یا زمان‌بندی نیست.',
+      asideTitle: 'یا مستقیماً با ما در تماس باشید', asideText: 'دفتر در تهران است. تماس‌ها و ایمیل‌ها به همان تیمی می‌رسد که فرم را می‌خواند.',
+      office: 'دفتر', hours: 'ساعت کاری', hoursText: '۰۹:۰۰ تا ۱۷:۰۰ به وقت تهران', confirmVisit: 'پیش از مراجعه هماهنگ بفرمایید.',
+      labels: {
+        sourcing: { product: 'نام محصول یا مادهٔ اولیه', specification: 'مشخصات، گرید یا دوز', message: 'نیازهای مستندات و سایر جزئیات', heading: 'درخواست تأمین' },
+        regulatory: { product: 'محصول / API / FDF', specification: 'قالب پرونده و وضعیت فعلی', message: 'پشتیبانی رگولاتوری مورد نیاز', heading: 'درخواست امور رگولاتوری' },
+        cdmo: { product: 'نام محصول یا پروژه', specification: 'شکل دارویی، دوز و مرحلهٔ پروژه', message: 'پشتیبانی توسعه / تولید مورد نیاز', heading: 'درخواست CDMO' },
+      },
+      notConnected: 'فرم هنوز متصل نشده است. فعلاً به contact@hanpars.com ایمیل بزنید.',
+      sent: 'سپاسگزاریم. درخواست شما به دفتر هانپارس ارسال شد؛ از طریق ایمیل پاسخ می‌دهیم.',
+      failed: 'پیام ارسال نشد. لطفاً دوباره تلاش کنید یا به contact@hanpars.com ایمیل بزنید.',
+    },
+    insights: {
+      title: 'آرشیو مقالات', category: 'مقالات', action: 'طرح یک درخواست',
+      lede: 'مقالاتی دربارهٔ بازار دارو، تأمین و رگولاتوری که هانپارس در سال ۲۰۲۵ منتشر کرده است. این مقالات به زبان انگلیسی و با تاریخ اصلی خود نگه‌داری می‌شوند؛ به عنوان بستر، نه توصیهٔ روز.',
+      note: 'ارقام، پیش‌بینی‌ها و ارجاع‌های رگولاتوری این مقالات مربوط به زمان نگارش است و به‌روز نشده‌اند. پیش از استناد، منابع فعلی را بررسی کنید.',
+      count: (n: number) => `${n} مقالهٔ آرشیوشده`, search: 'جست‌وجوی موضوع', empty: 'مقاله‌ای با این موضوع یافت نشد.',
+      articleCategory: 'آرشیو مقالات', published: (d: string, c: string) => `منتشرشده در ${d}، دستهٔ ${c}.`, back: 'بازگشت به آرشیو',
+      articleNote: 'این مقاله با تاریخ و متن اصلی خود (به انگلیسی) نگه‌داری می‌شود. ارقام بازار، پیش‌بینی‌ها و ارجاع‌های رگولاتوری مربوط به زمان نگارش است و بازبینی نشده‌اند.',
+      all: 'همهٔ مقالات آرشیو', next: 'بعدی:', ctaTitle: 'گفت‌وگو را به محصول خودتان بیاورید.',
+      englishOnly: 'مقالات آرشیو به زبان انگلیسی در دسترس هستند.',
+    },
+    standard: {
+      prepare: 'ثبت درخواست', discussProject: 'گفت‌وگو دربارهٔ پروژه', startConversation: 'شروع گفت‌وگو',
+      dbTitleExc: 'بانک اطلاعات مواد جانبی', dbTitleNut: 'بانک اطلاعات تغذیه', dbText: 'مرجع موجود را مرور کنید و سپس با مادهٔ اولیه و مشخصات مورد نیاز بازگردید. در برگهٔ جدید باز می‌شود.',
+      cardsTitle: { 'fdf-cdmo': 'شکل‌های دارویی که می‌پذیریم', 'about-us': 'در عمل چگونه است', culture: 'سه عادت', markets: 'چه چیزی در استعلام بگنجانید' } as Record<string, string>,
+      easyTitle: 'چه چیزی پاسخ به استعلام را آسان می‌کند',
+      easy: ['نام محصول، مادهٔ اولیه یا نام ژنریک', 'مشخصات، گرید، شکل دارویی یا دوز', 'مقدار، بازار مقصد و زمان‌بندی', 'الزامات مستندات و گواهی‌ها، در صورت لزوم'],
+      cdmoTitle: 'در جلسهٔ اول چه می‌پرسیم', cdmoLede: 'فعالیت‌ها و شرکا به پاسخ‌ها بستگی دارد؛ پس از اینجا شروع می‌کنیم.',
+      cdmoSteps: [
+        { title: 'محصول', text: 'مادهٔ مؤثره، شکل دارویی، دوز و شکل عرضهٔ مورد نظر.' },
+        { title: 'مرحله', text: 'فرمولاسیون موجود، پرونده، داده‌های فنی و وضعیت توسعه.' },
+        { title: 'بازار', text: 'محل ثبت، و آنچه آن مرجع خواهد خواست.' },
+        { title: 'پشتیبانی', text: 'فرمولاسیون، افزایش مقیاس، انتقال فناوری یا فعالیت مشخصی از یک شریک.' },
+      ],
+      cdmoLink: 'جایگاه الزامات رگولاتوری در این مسیر',
+      nextTitle: 'قدم بعدی',
+      nextLinks: [
+        { href: '/fdf', label: 'داروهای ساخته‌شده', note: 'سبد ثبت‌شده و فهرست مرجع' },
+        { href: '/api', label: 'مواد مؤثره', note: '۱٬۴۵۳ ماده' },
+        { href: '/regulatory-affairs', label: 'امور رگولاتوری', note: 'پرونده و ثبت در سازمان غذا و دارو' },
+        { href: '/fdf-cdmo', label: 'پروژه‌های توسعه', note: 'کار FDF با هماهنگی شرکا' },
+      ],
+      ctaProduct: 'محصول و بازار را به ما بگویید؛ قدم بعدی را ما می‌گوییم.', ctaCdmo: 'بگویید پروژه در چه مرحله‌ای است.',
+    },
+    regulatory: {
+      title: 'امور رگولاتوری', category: 'خدمات', action: 'درخواست ارزیابی', photoAlt: 'کارشناس در حال کار با دستگاه آزمایشگاهی در آزمایشگاه کنترل کیفیت',
+      cover: 'آنچه پوشش می‌دهیم', file: 'کجا ثبت می‌کنیم', intel: 'هوش رگولاتوری و هوش مصنوعی در رگولاتوری', principle: 'اصل ما دربارهٔ هوش مصنوعی',
+      watch: 'در سازمان‌ها چه تغییر کرد', watchLede: (d: string) => `پایش رگولاتوری، تا ${d}. موارد از انتشارات خود سازمان‌ها خلاصه شده‌اند؛ متن کامل را در منبع ببینید.`,
+      authorities: 'مراجع', routes: 'مسیرهای ثبتی که انجام می‌دهیم', format: 'قالب پرونده', source: 'منبع',
+    },
+    notFound: { title: 'این صفحه اینجا نیست.', text: 'نشانی شاید تغییر کرده یا هرگز وجود نداشته است. محصولات، خدمات و راه‌های تماس یک کلیک فاصله دارند.', home: 'بازگشت به صفحهٔ اصلی', contact: 'تماس با هانپارس' },
+    dateLocale: 'fa-IR',
+  },
+};
+export type UI = typeof ui.en;
+export const t = (lang: Lang): UI => ui[lang] as UI;

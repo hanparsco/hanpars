@@ -1,31 +1,36 @@
 ---
 import PageHero from './PageHero.astro';
 import CTA from './CTA.astro';
-import data from '../data/regulatory.json';
+import dataEn from '../data/regulatory.json';
+import dataFa from '../data/regulatory.fa.json';
+import { langFromPath, localePath, t } from '../i18n';
+const lang = langFromPath(Astro.url.pathname);
+const data = lang === 'fa' ? dataFa : dataEn;
+const r = t(lang).regulatory;
 const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a, tierName: tier.name, tierNum: tier.num })));
 ---
-<PageHero title="Regulatory affairs" category="Services" description={data.intro} action="Request an assessment" href="/contact-us-1?type=regulatory" photo="lab-instrument" photoAlt="Analyst operating a laboratory instrument in a quality-control lab"/>
+<PageHero title={r.title} category={r.category} description={data.intro} action={r.action} href={localePath('/contact-us-1?type=regulatory', lang)} photo="lab-instrument" photoAlt={r.photoAlt}/>
 
 <section class="section section-paper" id="services"><div class="container">
-  <div class="section-head"><h2>What we cover</h2><p class="lede">{data.coverIntro}</p></div>
-  <div class="ra-services">{data.services.map(group => <article class="ra-group"><div><h3>{group.title}</h3>{group.kicker && <p class="ra-kicker">{group.kicker}</p>}</div><ul class="ra-list">{group.items.map(item => <li>{item}</li>)}</ul></article>)}</div>
+  <div class="section-head"><h2>{r.cover}</h2><p class="lede">{data.coverIntro}</p></div>
+  <div class="ra-services">{data.services.map(group => <article class="ra-group"><div><h3>{group.title}</h3>{group.kicker && <p class="ra-kicker" dir="ltr">{group.kicker}</p>}</div><ul class="ra-list">{group.items.map(item => <li>{item}</li>)}</ul></article>)}</div>
 </div></section>
 
 <section class="section section-navy" id="markets" data-ra-authorities><div class="container">
-  <div class="section-head"><h2>Where we file</h2><p class="lede">{data.fileIntro}</p></div>
-  <div class="ra-tiers">{data.tiers.map(tier => <div class="ra-tier"><div class="ra-tier-head"><span class="ra-tier-num">{tier.num}</span><div><h3>{tier.name}</h3><p>{tier.sub}</p></div></div><div class="ra-chips" role="group" aria-label={`Authorities: ${tier.name}`}>{tier.authorities.map(a => <button type="button" data-authority={a.id} aria-pressed={a.id === 'ema' ? 'true' : 'false'}>{a.short}</button>)}</div></div>)}</div>
-  <div class="ra-detail" aria-live="polite">{authorities.map(a => <article class="ra-authority" data-authority-panel={a.id} hidden={a.id !== 'ema'}><p class="ra-authority-tier">{a.tierName}</p><h3>{a.name}</h3><p class="ra-authority-meta"><span>{a.region}</span><span>Dossier format: {a.format}</span></p><h4>Submission routes we handle</h4><dl class="ra-routes">{a.procedures.map(p => <div><dt>{p.name}</dt><dd>{p.note}</dd></div>)}</dl>{a.footnote && <p class="ra-footnote">{a.footnote}</p>}</article>)}</div>
+  <div class="section-head"><h2>{r.file}</h2><p class="lede">{data.fileIntro}</p></div>
+  <div class="ra-tiers">{data.tiers.map(tier => <div class="ra-tier"><div class="ra-tier-head"><span class="ra-tier-num">{tier.num}</span><div><h3>{tier.name}</h3><p>{tier.sub}</p></div></div><div class="ra-chips" role="group" aria-label={`${r.authorities}: ${tier.name}`}>{tier.authorities.map(a => <button type="button" data-authority={a.id} aria-pressed={a.id === 'ema' ? 'true' : 'false'} dir="ltr">{a.short}</button>)}</div></div>)}</div>
+  <div class="ra-detail" aria-live="polite">{authorities.map(a => <article class="ra-authority" data-authority-panel={a.id} hidden={a.id !== 'ema'}><p class="ra-authority-tier">{a.tierName}</p><h3 dir="ltr">{a.name}</h3><p class="ra-authority-meta"><span>{a.region}</span><span>{r.format}: <span dir="ltr">{a.format}</span></span></p><h4>{r.routes}</h4><dl class="ra-routes">{a.procedures.map(p => <div><dt>{p.name}</dt><dd>{p.note}</dd></div>)}</dl>{a.footnote && <p class="ra-footnote">{a.footnote}</p>}</article>)}</div>
 </div></section>
 
 <section class="section section-paper" id="intelligence"><div class="container">
-  <div class="section-head"><h2>Regulatory intelligence and AI in regulatory</h2><p class="lede">{data.intelligence.intro}</p></div>
+  <div class="section-head"><h2>{r.intel}</h2><p class="lede">{data.intelligence.intro}</p></div>
   <div class="ra-services">{data.intelligence.groups.map(group => <article class="ra-group"><div><h3>{group.title}</h3></div><ul class="ra-list">{group.items.map(item => <li>{item}</li>)}</ul></article>)}</div>
-  <aside class="ra-principle"><p class="kicker">Our principle on AI</p><h3>{data.intelligence.principleTitle}</h3><p>{data.intelligence.principle}</p></aside>
+  <aside class="ra-principle"><p class="kicker">{r.principle}</p><h3>{data.intelligence.principleTitle}</h3><p>{data.intelligence.principle}</p></aside>
 </div></section>
 
 <section class="section" id="watch"><div class="container">
-  <div class="section-head"><h2>What changed in the agencies</h2><p class="lede">Regulatory watch, as of {data.watchDate}. Items are summarised from the agencies' own publications; follow the source for the full text.</p></div>
-  <ul class="insight-list">{data.watch.map(item => <li><a class="insight-row ra-watch-row" href={item.url} target="_blank" rel="noopener noreferrer"><time>{item.date}</time><div><p class="ra-watch-agency">{item.agency} · {item.tag}</p><h3>{item.title}</h3><p>{item.summary}</p></div><span class="cat">Source</span></a></li>)}</ul>
+  <div class="section-head"><h2>{r.watch}</h2><p class="lede">{r.watchLede(data.watchDate)}</p></div>
+  <ul class="insight-list">{data.watch.map(item => <li><a class="insight-row ra-watch-row" href={item.url} target="_blank" rel="noopener noreferrer"><time dir="ltr">{item.date}</time><div><p class="ra-watch-agency"><span dir="ltr">{item.agency}</span> · {item.tag}</p><h3>{item.title}</h3><p>{item.summary}</p></div><span class="cat">{r.source}</span></a></li>)}</ul>
 </div></section>
 
 <CTA title={data.ctaTitle} description={data.ctaText}/>
@@ -51,8 +56,8 @@ const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a
   .ra-group h3 { font-size:21px; }
   .ra-kicker { margin:10px 0 0; font-size:13.5px; color:var(--muted); }
   .ra-list { list-style:none; padding:0; margin:0; }
-  .ra-list li { position:relative; padding:9px 0 9px 22px; color:var(--ink); font-size:16.5px; line-height:1.6; }
-  .ra-list li:before { content:''; position:absolute; left:0; top:17px; width:8px; height:1px; background:var(--lapis); }
+  .ra-list li { position:relative; padding:9px 0; padding-inline-start:22px; color:var(--ink); font-size:16.5px; line-height:1.6; }
+  .ra-list li:before { content:''; position:absolute; inset-inline-start:0; top:17px; width:8px; height:1px; background:var(--lapis); }
   .ra-tiers { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px 56px; margin-bottom:48px; }
   .ra-tier-head { display:flex; gap:18px; align-items:flex-start; padding-top:18px; border-top:1px solid var(--line-dark); margin-bottom:18px; }
   .ra-tier-num { font-family:var(--display); font-weight:600; font-size:13px; letter-spacing:.12em; color:var(--glacier); padding-top:5px; }

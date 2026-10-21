@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import StandardPage from '../../components/StandardPage.astro';
+import RegulatoryPage from '../../components/RegulatoryPage.astro';
+import ContactPage from '../../components/ContactPage.astro';
+import InsightsPage from '../../components/InsightsPage.astro';
+import { pages, type PageKey } from '../../data/pages';
+import { pagesFa } from '../../data/pages.fa';
+
+export function getStaticPaths() {
+  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1'].map(page=>({params:{page}}));
+}
+const page = Astro.params.page!;
+const special = {
+  'regulatory-affairs': {title:'امور رگولاتوری | هانپارس',description:'تدوین پرونده، ثبت در سازمان غذا و دارو و TİTCK و نگه‌داری چرخهٔ عمر مواد مؤثره و داروهای ساخته‌شده، از تیم رگولاتوری هانپارس در تهران.'},
+  'contact-us-1': {title:'تماس با هانپارس',description:'درخواست تأمین، رگولاتوری یا CDMO خود را از طریق فرم تماس هانپارس بفرستید، یا با دفتر تهران تلفنی یا با ایمیل در تماس باشید.'},
+  'blog-1': {title:'آرشیو مقالات | هانپارس',description:'مقالات آرشیوی هانپارس دربارهٔ بازار دارو، تأمین و رگولاتوری، با تاریخ انتشار اصلی ۲۰۲۵.'},
+};
+const data = pagesFa[page as PageKey];
+const seo = special[page as keyof typeof special] || {title:`${data?.title} | هانپارس`,description:data?.meta};
+---
+<Layout title={seo.title} description={seo.description}>
+  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:<StandardPage page={page as PageKey}/>}
+</Layout>

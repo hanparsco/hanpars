@@ -2,7 +2,7 @@ export const pages = {
   api: {
     title: 'Active pharmaceutical ingredients', category: 'Products',
     description: 'A reference range of the substances we are asked about most. Find yours, tell us the specification and destination, and we will come back with what our manufacturers can offer.',
-    meta: 'Search the Hanpars API reference range of 1,503 substances and prepare a pharmaceutical sourcing enquiry with your specification and target market.',
+    meta: 'Search the Hanpars API reference range of 1,453 substances and prepare a pharmaceutical sourcing enquiry with your specification and target market.',
     introTitle: 'Start with the substance.',
     intro: ['Search the list, then bring the pharmacopoeial grade, quantity, destination and the documents you will need: certificates of analysis, DMF or CEP references, GMP certificates.', 'Names are kept exactly as in our working list. An entry means we can enquire about it, not that it is in stock or registered.'],
     database: 'https://hanparsco.github.io/api-list/', databaseLabel: 'Open the complete API database',

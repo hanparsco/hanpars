@@ -1,0 +1,11 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Article from '../../../components/ArticlePage.astro';
+import articles from '../../../data/articles.json';
+import { articleSummary } from '../../../data/text';
+export function getStaticPaths() {
+  return articles.map(article=>({params:{slug:article.slug},props:{article}}));
+}
+const { article } = Astro.props;
+---
+<Layout title={`${article.title} | مقالات هانپارس`} description={articleSummary(article).slice(0,155)}><Article article={article}/></Layout>

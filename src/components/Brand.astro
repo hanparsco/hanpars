@@ -1,7 +1,7 @@
 ---
-interface Props { light?: boolean; }
-const { light = false } = Astro.props;
+import { langFromPath, localePath } from '../i18n';
+const lang = langFromPath(Astro.url.pathname);
 ---
-<a href="/" class:list={['brand', { 'brand-light': light }]} aria-label="Hanpars home">
+<a href={localePath('/', lang)} class="brand" aria-label="Hanpars home">
   <img src="/brand/hanpars-logo-transparent.png" alt="Hanpars" width="222" height="123" class="original-logo" />
 </a>

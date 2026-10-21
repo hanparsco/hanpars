@@ -1,38 +1,43 @@
 ---
 import PageHero from './PageHero.astro';
 import { formEndpoint, formAccessKey, contactEmail } from '../data/site';
+import { langFromPath, t } from '../i18n';
+const lang = langFromPath(Astro.url.pathname);
+const c = t(lang).contact;
+const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, sent: c.sent, failed: c.failed, sending: c.sending, send: c.send });
 ---
-<PageHero title="Tell us what you are looking for." category="Contact" description="A product to source, a dossier to file, a project to set up. Send the details here and the Tehran office replies by email, usually with a few questions and the next step." action="Write to us" href="#enquiry"/>
+<PageHero title={c.title} category={c.category} description={c.lede} action={c.action} href="#enquiry"/>
 <section class="section"><div class="container contact-layout">
-  <div class="brief-panel" id="enquiry"><h2>Send an enquiry</h2><p>Choose the kind of request and fill in what you know. Your message goes straight to the Hanpars office.</p>
-    <div class="enquiry-tabs" role="tablist" aria-label="Enquiry type"><button id="enquiry-sourcing" type="button" class="enquiry-tab" role="tab" aria-selected="true" aria-controls="brief-form" data-enquiry-type="sourcing">Product sourcing</button><button id="enquiry-regulatory" type="button" class="enquiry-tab" role="tab" aria-selected="false" aria-controls="brief-form" data-enquiry-type="regulatory" tabindex="-1">Regulatory affairs</button><button id="enquiry-cdmo" type="button" class="enquiry-tab" role="tab" aria-selected="false" aria-controls="brief-form" data-enquiry-type="cdmo" tabindex="-1">FDF CDMO project</button></div>
-    <form id="brief-form" aria-labelledby="enquiry-sourcing" role="tabpanel" action={formEndpoint} method="POST" data-access-key={formAccessKey} novalidate>
+  <div class="brief-panel" id="enquiry"><h2>{c.formTitle}</h2><p>{c.formLede}</p>
+    <div class="enquiry-tabs" role="tablist" aria-label="Enquiry type"><button id="enquiry-sourcing" type="button" class="enquiry-tab" role="tab" aria-selected="true" aria-controls="brief-form" data-enquiry-type="sourcing">{c.tabs.sourcing}</button><button id="enquiry-regulatory" type="button" class="enquiry-tab" role="tab" aria-selected="false" aria-controls="brief-form" data-enquiry-type="regulatory" tabindex="-1">{c.tabs.regulatory}</button><button id="enquiry-cdmo" type="button" class="enquiry-tab" role="tab" aria-selected="false" aria-controls="brief-form" data-enquiry-type="cdmo" tabindex="-1">{c.tabs.cdmo}</button></div>
+    <form id="brief-form" aria-labelledby="enquiry-sourcing" role="tabpanel" action={formEndpoint} method="POST" data-access-key={formAccessKey} data-i18n={i18n} novalidate>
       <input type="hidden" name="access_key" value={formAccessKey} />
       <input type="hidden" name="subject" value="Website enquiry" data-subject />
       <input type="hidden" name="from_name" value="hanpars.com website" />
       <input type="hidden" name="enquiry_type" value="sourcing" data-type-field />
+      <input type="hidden" name="language" value={lang} />
       <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
       <div class="form-grid">
-        <div class="form-field"><label for="brief-name">Your name <span aria-hidden="true">*</span></label><input id="brief-name" name="name" required maxlength="200" autocomplete="name"/></div>
-        <div class="form-field"><label for="brief-company">Company or institution</label><input id="brief-company" name="company" maxlength="200" autocomplete="organization"/></div>
-        <div class="form-field"><label for="brief-email">Email <span aria-hidden="true">*</span></label><input id="brief-email" name="email" type="email" required maxlength="200" autocomplete="email"/></div>
-        <div class="form-field"><label for="brief-phone">Telephone</label><input id="brief-phone" name="phone" type="tel" maxlength="60" autocomplete="tel"/></div>
-        <div class="form-field full"><label for="brief-product" data-product-label>Product or ingredient name <span aria-hidden="true">*</span></label><input id="brief-product" name="product" placeholder="For example the INN, API or ingredient" required maxlength="500"/></div>
-        <div class="form-field"><label for="brief-spec" data-spec-label>Specification, grade or strength</label><input id="brief-spec" name="specification" placeholder="If known" maxlength="500"/></div>
-        <div class="form-field"><label for="brief-quantity" data-quantity-label>Quantity or project scale</label><input id="brief-quantity" name="quantity" placeholder="With units, if known" maxlength="300"/></div>
-        <div class="form-field"><label for="brief-market">Target market or destination</label><input id="brief-market" name="market" placeholder="Where the product is going" maxlength="300"/></div>
-        <div class="form-field"><label for="brief-timing">Timing</label><input id="brief-timing" name="timing" placeholder="When you need it" maxlength="300"/></div>
-        <div class="form-field full"><label for="brief-message" data-message-label>Documentation needs and other details</label><textarea id="brief-message" name="message" placeholder="Specifications, documents, dossier status, or the support you need." maxlength="5000" rows="4"></textarea></div>
+        <div class="form-field"><label for="brief-name">{c.name} <span aria-hidden="true">*</span></label><input id="brief-name" name="name" required maxlength="200" autocomplete="name"/></div>
+        <div class="form-field"><label for="brief-company">{c.company}</label><input id="brief-company" name="company" maxlength="200" autocomplete="organization"/></div>
+        <div class="form-field"><label for="brief-email">{c.email} <span aria-hidden="true">*</span></label><input id="brief-email" name="email" type="email" required maxlength="200" autocomplete="email" dir="ltr"/></div>
+        <div class="form-field"><label for="brief-phone">{c.phone}</label><input id="brief-phone" name="phone" type="tel" maxlength="60" autocomplete="tel" dir="ltr"/></div>
+        <div class="form-field full"><label for="brief-product" data-product-label>{c.product} <span aria-hidden="true">*</span></label><input id="brief-product" name="product" placeholder={c.productPh} required maxlength="500"/></div>
+        <div class="form-field"><label for="brief-spec" data-spec-label>{c.spec}</label><input id="brief-spec" name="specification" placeholder={c.specPh} maxlength="500"/></div>
+        <div class="form-field"><label for="brief-quantity" data-quantity-label>{c.quantity}</label><input id="brief-quantity" name="quantity" placeholder={c.quantityPh} maxlength="300"/></div>
+        <div class="form-field"><label for="brief-market">{c.market}</label><input id="brief-market" name="market" placeholder={c.marketPh} maxlength="300"/></div>
+        <div class="form-field"><label for="brief-timing">{c.timing}</label><input id="brief-timing" name="timing" placeholder={c.timingPh} maxlength="300"/></div>
+        <div class="form-field full"><label for="brief-message" data-message-label>{c.message}</label><textarea id="brief-message" name="message" placeholder={c.messagePh} maxlength="5000" rows="4"></textarea></div>
       </div>
-      <div class="form-actions"><button class="button button-navy" type="submit" data-send-brief>Send the enquiry</button><a class="text-link" href={`mailto:${contactEmail}`}>Or email {contactEmail}</a></div>
+      <div class="form-actions"><button class="button button-navy" type="submit" data-send-brief>{c.send}</button><a class="text-link" href={`mailto:${contactEmail}`}>{c.orEmail} <span dir="ltr">{contactEmail}</span></a></div>
       <p class="form-status" id="brief-status" role="status" aria-live="polite"></p>
-      <p class="form-disclaimer">Please leave out confidential personal or medical information. Sending an enquiry does not confirm a quotation, availability or timeline.</p>
+      <p class="form-disclaimer">{c.disclaimer}</p>
     </form>
   </div>
-  <aside class="contact-aside"><h3>Or reach us directly</h3><p>The office is in Tehran. Calls and emails reach the same team that reads the form.</p>
-    <div class="contact-detail"><strong>Telephone</strong><p><a href="tel:+982188883325">+98 21 8888 3325</a></p></div>
-    <div class="contact-detail"><strong>Email</strong><p><a href={`mailto:${contactEmail}`}>{contactEmail}</a></p></div>
-    <div class="contact-detail"><strong>Office</strong><p>Haniya Parsan Darou<br/>3rd floor, No. 326, Zafar Street<br/>Africa Boulevard, Tehran 1968734974<br/>Iran</p></div>
-    <div class="contact-detail"><strong>Hours</strong><p>09:00–17:00, Tehran time</p><span class="form-hint">Please confirm before visiting.</span></div>
+  <aside class="contact-aside"><h3>{c.asideTitle}</h3><p>{c.asideText}</p>
+    <div class="contact-detail"><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr">+98 21 8888 3325</a></p></div>
+    <div class="contact-detail"><strong>{c.email}</strong><p><a href={`mailto:${contactEmail}`} dir="ltr">{contactEmail}</a></p></div>
+    <div class="contact-detail"><strong>{c.office}</strong><p>{lang === 'fa' ? 'هانیا پرسان دارو' : 'Haniya Parsan Darou'}<br/>{lang === 'fa' ? 'تهران، بلوار آفریقا، خیابان ظفر' : '3rd floor, No. 326, Zafar Street'}<br/>{lang === 'fa' ? 'پلاک ۳۲۶، طبقهٔ سوم' : 'Africa Boulevard, Tehran 1968734974'}<br/>{lang === 'fa' ? 'کد پستی ۱۹۶۸۷۳۴۹۷۴' : 'Iran'}</p></div>
+    <div class="contact-detail"><strong>{c.hours}</strong><p>{c.hoursText}</p><span class="form-hint">{c.confirmVisit}</span></div>
   </aside>
 </div></section>

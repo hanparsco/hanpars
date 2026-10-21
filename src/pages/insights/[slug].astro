@@ -1,20 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import PageHero from '../../components/PageHero.astro';
-import CTA from '../../components/CTA.astro';
+import Article from '../../components/ArticlePage.astro';
 import articles from '../../data/articles.json';
 import { articleSummary } from '../../data/text';
 export function getStaticPaths() {
   return articles.map(article=>({params:{slug:article.slug},props:{article}}));
 }
 const { article } = Astro.props;
-const date = new Date(article.date).toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
-const sorted = [...articles].sort((a,b)=>new Date(b.date).getTime()-new Date(a.date).getTime());
-const index = sorted.findIndex(a=>a.slug===article.slug);
-const next = sorted[index+1];
 ---
-<Layout title={`${article.title} | Hanpars Insights`} description={articleSummary(article).slice(0,155)}>
-  <PageHero title={article.title} category="Insights archive" description={`Published ${date} in ${article.category}.`} action="Back to the archive" href="/blog-1"/>
-  <section class="section"><div class="container article-wrap"><div class="archive-note">This article is kept with its original date and commentary. Market figures, forecasts and regulatory references reflect the time of writing and were not re-verified.</div><article class="article-body" set:html={article.content}/><div class="article-navigation"><a class="text-link" href="/blog-1">All archived articles</a>{next&&<a class="text-link" href={`/insights/${next.slug}`}>Next: {next.title}</a>}</div></div></section>
-  <CTA title="Bring the conversation to your own product." />
-</Layout>
+<Layout title={`${article.title} | Hanpars Insights`} description={articleSummary(article).slice(0,155)}><Article article={article}/></Layout>

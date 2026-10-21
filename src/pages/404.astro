@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { t } from '../i18n';
+const s = t('en').notFound;
 ---
 <Layout title="Page not found | Hanpars" description="This page could not be found. Continue to the Hanpars homepage, products or contact page." noindex>
-  <section class="hero page-hero notfound"><div class="container"><div class="hero-main"><h1>That page isn't here.</h1><p class="lede">The address may have changed, or it never led anywhere. The products, services and contact details are all a click away.</p><div class="hero-actions"><a class="button button-light" href="/">Back to the homepage</a><a class="text-link" href="/contact-us-1">Contact Hanpars</a></div></div></div></section>
+  <section class="hero page-hero notfound"><div class="container"><div class="hero-main"><h1>{s.title}</h1><p class="lede">{s.text}</p><div class="hero-actions"><a class="button button-light" href="/">{s.home}</a><a class="text-link" href="/contact-us-1">{s.contact}</a></div></div></div></section>
 </Layout>

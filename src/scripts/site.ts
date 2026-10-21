@@ -3,7 +3,7 @@ const menuButton = document.querySelector<HTMLButtonElement>('.menu-toggle');
 menuButton?.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') !== 'true';
   menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  menuButton.setAttribute('aria-label', open ? (menuButton.dataset.labelClose || 'Close navigation') : (menuButton.dataset.labelOpen || 'Open navigation'));
   nav?.classList.toggle('is-open', open);
 });
 const dropdowns = Array.from(document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown'));
@@ -22,7 +22,7 @@ document.addEventListener('keydown', (event) => {
     if (menuButton?.getAttribute('aria-expanded') === 'true') {
       nav?.classList.remove('is-open');
       menuButton.setAttribute('aria-expanded', 'false');
-      menuButton.setAttribute('aria-label', 'Open navigation');
+      menuButton.setAttribute('aria-label', menuButton.dataset.labelOpen || 'Open navigation');
       menuButton.focus();
     }
   }
@@ -66,6 +66,7 @@ for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]
   const rows = Array.from(catalogue.querySelectorAll<HTMLTableRowElement>('[data-catalogue-row]'));
   const input = catalogue.querySelector<HTMLInputElement>('[data-catalogue-search]');
   const pageSize = Number(catalogue.dataset.pageSize || '25');
+  const i18n = JSON.parse(catalogue.dataset.i18n || '{}') as { inList?:string; matching?:string; none?:string; showing?:string };
   let matching = rows;
   let page = 0;
   const status = catalogue.querySelector<HTMLElement>('[data-catalogue-status]');
@@ -82,8 +83,8 @@ for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]
     rows.forEach(row => { row.hidden = true; });
     matching.slice(start, end).forEach(row => { row.hidden = false; });
     if (count) count.textContent = matching.length.toLocaleString('en-US');
-    if (suffix) suffix.textContent = input?.value ? 'matching your search' : 'in the reference list';
-    if (status) status.textContent = matching.length ? `Showing ${start+1}–${end} of ${matching.length.toLocaleString('en-US')} entries` : 'No matching entries';
+    if (suffix) suffix.textContent = input?.value ? (i18n.matching || 'matching your search') : (i18n.inList || 'in the list');
+    if (status) status.textContent = matching.length ? (i18n.showing || 'Showing {a}–{b} of {n} entries').replace('{a}', String(start+1)).replace('{b}', String(end)).replace('{n}', matching.length.toLocaleString('en-US')) : (i18n.none || 'No matching entries');
     if (pageLabel) pageLabel.textContent = `${page+1} / ${Math.max(1,Math.ceil(matching.length/pageSize))}`;
     if (empty) empty.hidden = matching.length !== 0;
     if (prev) prev.disabled = page === 0;
@@ -109,7 +110,7 @@ if (insightsSearch) {
     let matches = 0;
     cards.forEach(card => { const match = (card.dataset.search || '').includes(query); card.hidden = !match; if (match) matches++; });
     const count = document.getElementById('insights-count');
-    if (count) count.textContent = `${matches} archived article${matches===1?'':'s'}${query?' matching your search':''}`;
+    if (count) count.textContent = (insightsSearch.dataset.countTpl || '{n} archived articles').replace('{n}', String(matches)) + (query ? (insightsSearch.dataset.matching || ' matching your search') : '');
     const empty = document.getElementById('insights-empty');
     if (empty) empty.hidden = matches !== 0;
   });
@@ -121,7 +122,8 @@ if (form) {
   const parameters = new URLSearchParams(window.location.search);
   const allowedTypes = ['sourcing','regulatory','cdmo'];
   let type = allowedTypes.includes(parameters.get('type') || '') ? parameters.get('type')! : 'sourcing';
-  const labels: Record<string, { product:string; specification:string; message:string; heading:string }> = {
+  const formI18n = JSON.parse(form.dataset.i18n || '{}') as { labels?: Record<string, { product:string; specification:string; message:string; heading:string }>; notConnected?:string; sent?:string; failed?:string; sending?:string; send?:string };
+  const labels: Record<string, { product:string; specification:string; message:string; heading:string }> = formI18n.labels || {
     sourcing: { product:'Product or ingredient name', specification:'Specification, grade or strength', message:'Documentation needs and other details', heading:'Sourcing enquiry' },
     regulatory: { product:'Product / API / FDF', specification:'Dossier format and current status', message:'Regulatory support needed', heading:'Regulatory affairs enquiry' },
     cdmo: { product:'Product or project name', specification:'Dosage form, strength and project stage', message:'Development / manufacturing support needed', heading:'FDF CDMO enquiry' },
@@ -156,24 +158,24 @@ if (form) {
     event.preventDefault();
     if (!form.reportValidity()) return;
     if (form.dataset.accessKey?.startsWith('PENDING')) {
-      if (status) status.textContent = 'The form is not connected yet. Please email contact@hanpars.com for now.';
+      if (status) status.textContent = formI18n.notConnected || 'The form is not connected yet. Please email contact@hanpars.com for now.';
       return;
     }
-    if (button) { button.disabled = true; button.textContent = 'Sending…'; }
+    if (button) { button.disabled = true; button.textContent = formI18n.sending || 'Sending…'; }
     if (status) status.textContent = '';
     try {
       const response = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body:new FormData(form) });
       const result = await response.json().catch(() => ({}));
       if (response.ok && result.success !== false) {
         form.reset(); selectType(type);
-        if (status) status.textContent = 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
+        if (status) status.textContent = formI18n.sent || 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
       } else {
         throw new Error(result.message || 'Submission failed');
       }
     } catch {
-      if (status) status.textContent = 'The message could not be sent. Please try again, or email contact@hanpars.com.';
+      if (status) status.textContent = formI18n.failed || 'The message could not be sent. Please try again, or email contact@hanpars.com.';
     } finally {
-      if (button) { button.disabled = false; button.textContent = 'Send the enquiry'; }
+      if (button) { button.disabled = false; button.textContent = formI18n.send || 'Send the enquiry'; }
     }
   });
 }

@@ -37,7 +37,7 @@ for file,count,kind in [('fdf.json',433,'fdf'),('apis.json',1503,'api')]:
 ra=json.loads((root/'src/data/regulatory.json').read_text())
 assert len(ra['services'])==6 and len(ra['process'])==4 and len(ra['faq'])==4
 assert len(json.loads((root/'src/data/articles.json').read_text()))==20
-report={'routes_checked':len(manifest),'fdf_rows':433,'api_entries':1503,'articles':20,'regulatory_services':6,'errors':sorted(set(errors))}
+report={'routes_checked':len(manifest),'fdf_rows':626,'api_entries':1453,'articles':20,'regulatory_services':6,'errors':sorted(set(errors))}
 (root/'scripts/static-check-results.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))
 if errors: raise SystemExit(1)

@@ -1,39 +1,55 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { langFromPath, stripLang, localePath, dir } from '../i18n';
 import '../styles/global.css';
 interface Props { title?: string; description?: string; noindex?: boolean; }
-const socialImage = new URL('/brand/hanpars-logo-transparent.png', Astro.site ?? 'https://hanpars.com').href;
-const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
-const { title = 'Hanpars | Pharmaceutical sourcing and regulatory affairs, Tehran', description = 'Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients for Iran and prepares their IFDA registration. Based in Tehran.', noindex = false } = Astro.props;
+const lang = langFromPath(Astro.url.pathname);
+const rtl = lang === 'fa';
+const defaults = {
+  en: { title: 'Hanpars | Pharmaceutical sourcing and regulatory affairs, Tehran', description: 'Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients for Iran and prepares their IFDA registration. Based in Tehran.' },
+  fa: { title: 'هانپارس | تأمین دارو و امور رگولاتوری، تهران', description: 'هانپارس مواد مؤثره، داروهای ساخته‌شده، مواد جانبی و مواد اولیهٔ تغذیه‌ای را برای ایران وارد می‌کند و ثبت آن‌ها در سازمان غذا و دارو را انجام می‌دهد. مستقر در تهران.' },
+};
+const { title = defaults[lang].title, description = defaults[lang].description, noindex = false } = Astro.props;
+const site = Astro.site ?? new URL('https://hanpars.com');
+const socialImage = new URL('/brand/hanpars-logo-transparent.png', site).href;
+const basePath = stripLang(Astro.url.pathname);
+const canonical = new URL(Astro.url.pathname.replace(/\/$/, '') || '/', site).href;
+const altEn = new URL(basePath, site).href;
+const altFa = new URL(localePath(basePath, 'fa'), site).href;
 ---
 <!doctype html>
-<html lang="en">
+<html lang={lang} dir={dir(lang)}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <meta name="keywords" content="Hanpars, pharmaceutical sourcing, APIs, finished dosage forms, regulatory affairs" />
     <meta name="theme-color" content="#141414" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content="Hanpars" />
+    <meta property="og:locale" content={rtl ? 'fa_IR' : 'en_GB'} />
     <meta property="og:image" content={socialImage} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImage} />
     {noindex && <meta name="robots" content="noindex, follow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={altEn} />
+    <link rel="alternate" hreflang="fa" href={altFa} />
+    <link rel="alternate" hreflang="x-default" href={altEn} />
     <link rel="icon" href="/brand/hanpars-logo-transparent.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&family=Vazirmatn:wght@400;500&display=swap" rel="stylesheet" />
-    {canonical && <link rel="canonical" href={canonical} />}
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+    {rtl && <link rel="preload" href="/fonts/Samarqand-Regular.woff2" as="font" type="font/woff2" crossorigin />}
+    {rtl && <link rel="preload" href="/fonts/Samarqand-SemiBold.woff2" as="font" type="font/woff2" crossorigin />}
     <title>{title}</title>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <a class="skip-link" href="#main-content">{rtl ? 'رفتن به محتوای اصلی' : 'Skip to main content'}</a>
     <Header />
     <main id="main-content"><slot /></main>
     <Footer />

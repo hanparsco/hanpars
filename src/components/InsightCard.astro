@@ -1,13 +1,15 @@
 ---
 import { articleSummary } from '../data/text';
+import { langFromPath, localePath } from '../i18n';
 interface Props { article: { slug:string; title:string; date:string; category:string; excerpt:string; content:string }; index?:number; }
 const { article } = Astro.props;
-const date = new Date(article.date).toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' });
+const lang = langFromPath(Astro.url.pathname);
+const date = new Date(article.date).toLocaleDateString(lang === 'fa' ? 'fa-IR' : 'en-GB', { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' });
 const isoDate = new Date(article.date).toISOString().slice(0,10);
 const summary = articleSummary(article);
 ---
-<a class="insight-row" href={`/insights/${article.slug}`}>
-  <time datetime={isoDate}>{date}</time>
+<a class="insight-row" href={localePath(`/insights/${article.slug}`, lang)} lang="en" dir="ltr" data-row-lang={lang}>
+  <time datetime={isoDate} lang={lang} dir={lang === 'fa' ? 'rtl' : 'ltr'}>{date}</time>
   <div><h3>{article.title}</h3><p>{summary.slice(0,160)}{summary.length>160?'…':''}</p></div>
   <span class="cat">{article.category}</span>
 </a>
