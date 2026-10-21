@@ -13,6 +13,8 @@ const isProduct = ['api','fdf','excipient','nutrition'].includes(page);
 const cards = 'cards' in data ? data.cards : [];
 const database = 'database' in data ? data.database : '';
 const databaseLabel = 'databaseLabel' in data ? data.databaseLabel : '';
+const photo = 'photo' in data ? data.photo : undefined;
+const photoAlt = 'photoAlt' in data ? data.photoAlt : '';
 const cdmoSteps = [
   {title:'The product',text:'API, dosage form, strength and intended presentation.'},
   {title:'The stage',text:'Existing formulation, dossier, technical data and development status.'},
@@ -20,7 +22,7 @@ const cdmoSteps = [
   {title:'The support',text:'Formulation, scale-up, technology transfer, or a defined partner activity.'},
 ];
 ---
-<PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':'sourcing'}`} action={page==='fdf-cdmo'?'Discuss a project':isProduct?'Prepare an enquiry':'Start a conversation'} dark={page==='fdf-cdmo'}/>
+<PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':'sourcing'}`} action={page==='fdf-cdmo'?'Discuss a project':isProduct?'Prepare an enquiry':'Start a conversation'} dark={page==='fdf-cdmo'} photo={photo} photoAlt={photoAlt}/>
 <section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map(p=><p>{p}</p>)}</div></div></section>
 {page==='fdf'&&<FdfPortfolio/>}
 {(page==='fdf'||page==='api')&&<section class="section section-paper" id={page==='fdf'?'fdf-reference':undefined} style="scroll-margin-top:40px"><div class="container"><Catalogue type={page} entries={page==='fdf'?fdf:apis.map(name=>({name}))}/>{database&&<p style="margin-top:28px"><a class="text-link" href={database} target="_blank" rel="noopener noreferrer">{databaseLabel}</a> <span class="form-hint" style="display:inline;margin-left:10px">Opens the external database in a new tab.</span></p>}</div></section>}

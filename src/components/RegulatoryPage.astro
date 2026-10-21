@@ -3,7 +3,7 @@ import PageHero from './PageHero.astro';
 import CTA from './CTA.astro';
 import data from '../data/regulatory.json';
 ---
-<PageHero title="Regulatory affairs" category="Services" description={data.intro} action="Request an assessment" href="/contact-us-1?type=regulatory" dark>
+<PageHero title="Regulatory affairs" category="Services" description={data.intro} action="Request an assessment" href="/contact-us-1?type=regulatory" dark photo="lab-instrument" photoAlt="Analyst operating a laboratory instrument in a quality-control lab">
   <div class="scope-strip">{data.facts.map(fact=><div class="scope-item"><small>{fact.label}</small><strong>{fact.value}</strong></div>)}</div>
 </PageHero>
 <section class="section"><div class="container content-split"><h2>{data.whyTitle}</h2><div class="content-copy">{data.why.map(p=><p>{p}</p>)}</div></div></section>

@@ -1,6 +1,7 @@
 ---
-interface Props { category?: string; title: string; description: string; action?: string; href?: string; dark?: boolean; }
-const { category = 'Hanpars', title, description, action = 'Start an enquiry', href = '/contact-us-1', dark = false } = Astro.props;
+import Photo from './Photo.astro';
+interface Props { category?: string; title: string; description: string; action?: string; href?: string; dark?: boolean; photo?: string; photoAlt?: string; }
+const { category = 'Hanpars', title, description, action = 'Start an enquiry', href = '/contact-us-1', dark = false, photo, photoAlt = '' } = Astro.props;
 const external = href.startsWith('https://');
 ---
 <section class:list={['page-hero', { 'page-hero-dark': dark }]}>
@@ -13,3 +14,4 @@ const external = href.startsWith('https://');
     <slot />
   </div>
 </section>
+{photo && <div class="container-wide"><Photo name={photo} alt={photoAlt} class="page-photo" priority /></div>}

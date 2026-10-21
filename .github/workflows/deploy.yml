@@ -24,6 +24,17 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
+      - name: Fetch photographs (cached in the repository once downloaded)
+        id: photos
+        run: bash scripts/fetch-photos.sh
+      - name: Commit newly fetched photographs back to the branch
+        if: steps.photos.outputs.changed == '1'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add public/photos
+          git commit -m "Add photographs fetched by CI [skip ci]"
+          git push
       - run: pnpm install --frozen-lockfile
       - run: pnpm check
       - run: pnpm build
