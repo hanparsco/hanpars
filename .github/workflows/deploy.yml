@@ -69,4 +69,5 @@ jobs:
       - name: Report Pages domain status (informational)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh api repos/${GITHUB_REPOSITORY}/pages --jq '{cname, https_enforced, certificate: .https_certificate.state}' || true
+        run: |
+          gh api repos/${GITHUB_REPOSITORY}/pages --jq '{cname, https_enforced, cert: .https_certificate.state}' || true
