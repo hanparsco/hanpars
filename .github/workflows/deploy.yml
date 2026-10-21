@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -30,6 +30,18 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+      - name: Publish preview build to a dist-* branch (non-main only)
+        if: github.ref != 'refs/heads/main'
+        run: |
+          set -e
+          BR="dist-${GITHUB_REF_NAME}"
+          cd dist
+          git init -q -b "$BR"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -q -m "Preview build of ${GITHUB_REF_NAME} @ ${GITHUB_SHA::7}"
+          git push -f -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/$BR"
 
   deploy:
     needs: build
