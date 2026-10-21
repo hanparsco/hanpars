@@ -9,7 +9,6 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  issues: write
 
 concurrency:
   group: pages-${{ github.ref }}
@@ -67,24 +66,7 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-      - name: Ensure custom domain and HTTPS enforcement
+      - name: Report Pages domain status (informational)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DOMAIN: hanpars.com
-        run: |
-          {
-            echo "### Pages domain step — run ${GITHUB_RUN_ID}"
-            echo '```'
-            echo "BEFORE:"; gh api repos/${GITHUB_REPOSITORY}/pages 2>&1 | head -c 1500; echo
-            echo "SET CNAME:"; gh api -X PUT repos/${GITHUB_REPOSITORY}/pages -f cname="$DOMAIN" 2>&1 | head -c 800; echo " (exit $?)"
-            echo "ENFORCE HTTPS:"; gh api -X PUT repos/${GITHUB_REPOSITORY}/pages -F https_enforced=true 2>&1 | head -c 800; echo " (exit $?)"
-            echo "AFTER:"; gh api repos/${GITHUB_REPOSITORY}/pages 2>&1 | head -c 1500; echo
-            echo '```'
-          } > pages-report.md
-          cat pages-report.md
-          set +e
-          rm -rf /tmp/report && mkdir /tmp/report && cp pages-report.md /tmp/report/ && cd /tmp/report
-          git init -q -b ci-report && git config user.name github-actions && git config user.email actions@github.com
-          git add -A && git commit -q -m "Pages domain report ${GITHUB_RUN_ID}"
-          git push -f -q "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:refs/heads/ci-report
-          exit 0
+        run: gh api repos/${GITHUB_REPOSITORY}/pages --jq '{cname, https_enforced, certificate: .https_certificate.state}' || true
