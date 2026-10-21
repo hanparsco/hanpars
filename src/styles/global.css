@@ -421,11 +421,11 @@ summary::-webkit-details-marker { display:none; }
 .claims-filters button:hover { border-color:var(--navy); }
 .claims-filters button[aria-pressed=true] { background:var(--navy); color:#fff; border-color:var(--navy); }
 .claims-table { font-size:15px; }
-.claims-table th:last-child,.claims-table td:last-child { text-align:start; white-space:nowrap; padding-inline-end:0; }
+.claims-table th:last-child,.claims-table td:last-child { text-align:start; white-space:normal; padding-inline-end:0; min-width:110px; }
 .claims-substance { font-weight:600; color:var(--navy); min-width:160px; }
 .claims-claim { min-width:260px; max-width:42em; }
 .claims-rel { color:var(--muted); min-width:180px; }
-.claims-status { display:inline-block; font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:4px 10px; border:1px solid var(--line); border-radius:var(--radius); color:var(--muted); }
+.claims-status { display:inline-block; white-space:nowrap; font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:4px 10px; border:1px solid var(--line); border-radius:var(--radius); color:var(--muted); }
 .claims-status.authorised { color:var(--lapis-deep); border-color:var(--lapis); }
 .claims-panel .catalogue-scroll { max-height:760px; }
 

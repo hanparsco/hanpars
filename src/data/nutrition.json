@@ -1,11 +1,5 @@
 [
 {
-"substance": "\"\"Dietary food for special medical purposes - oral rehydrating solution with decreased osmolarity composed according to WHO/UNICEF recommendations - ORSALIT.\nORSALIT is available in following versions:\n- ORSALIT without flavor,\n- ORSALIT with banana flavor",
-"claim": "1. ORSALIT is used in all cases when dehydration may occur\n2. ORSALIT is hypoosmolar, oral rehydrating solution composed according to WHO and UNICEF recommendations\n3. ORSALIT helps to avoid dehydration which may occur in case of diarrhea and/or vomiting\n4. ORSALIT uses mechanism of collective adsorption of water, sodium and glucose which is not damaged even during diarrhea\n5. ORSALIT is used in order to supplement current losses of water and electrolytes\n6. Oral rehydrating solutions are used in every situation when dehydration may occur\n7. ORSALIT composition is identical to current recommendations of WHO and UNICEF\n8. ORSALIT composition ensures effective rehydration during diarrhea on the contrary of usually given feezy drinks (cola), apple juice or broth\n9. ORSALIT rehydrates effectively during diarrhea, on the contrary to traditional methods \n10. Oral rehydration is beneficial and well tolerated due to low risk of side effects\n11. ORSALIT is used in order to rehydrate\n12. ORSALIT is dedicated to infants, children and adults rehydration during diarrhea and/or vomiting\n13. ORSALIT is dedicated to supplement body fluids and mineral components\n14. ORSALIT is used in case of disturbance of water-electrolyte balance during dehydration due to diarrhea and/or vomiting",
-"relationship": "Treatment of diarrhoea and/or vomiting",
-"status": "non-authorised"
-},
-{
 "substance": "(Cow’s) Milk\nAnd dairy products for which milk is the principle ingredient and no sugar has been added – e.g. yogurt, cheese.",
 "claim": "(Cow’s) Milk products help support dental health.\n(Cow’s) Milk helps support the normal and healthy development of teeth.\n(Cow’s) Milk contributes to dental health.",
 "relationship": "not validated",
@@ -43,7 +37,7 @@
 },
 {
 "substance": "A combination of B. longum LA 101, L. helveticus LA 102, L. lactis LA 103 and S. thermophilus LA 104",
-"claim": "Improves intestinal discomfort",
+"claim": "Improves intestinal discomfort",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -61,7 +55,7 @@
 },
 {
 "substance": "A combination of Bifidobacterium longum LA 101, Lactobacillus helveticus LA 102, Lactococcus lactis LA 103 and Streptococcus thermophilus LA 104",
-"claim": "Improve intestinal discomfort",
+"claim": "Improve intestinal discomfort",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -132,8 +126,8 @@
 "status": "non-authorised"
 },
 {
-"substance": "A combination of the probiotics:  Lactobacillus casei F19, Lactobacillus plantarum 2592, Leuconostoc mesenteroides 77:1, Pediococcus pentosaceus 16:1",
-"claim": "Support your natural defence.\nHelps your body’s natural defence. \nSupports the immune system.\nContains the probiotics  Lactobacillus casei F19, Lactobacillus plantarum 2592, Leuconostoc mesenteroides 77:1, Pediococcus pentosaceus 16:1",
+"substance": "A combination of the probiotics: Lactobacillus casei F19, Lactobacillus plantarum 2592, Leuconostoc mesenteroides 77:1, Pediococcus pentosaceus 16:1",
+"claim": "Support your natural defence.\nHelps your body’s natural defence. \nSupports the immune system.\nContains the probiotics Lactobacillus casei F19, Lactobacillus plantarum 2592, Leuconostoc mesenteroides 77:1, Pediococcus pentosaceus 16:1",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -306,15 +300,15 @@
 "status": "non-authorised"
 },
 {
-"substance": "Aliments  sources de glucides complexes",
-"claim": "Les glucides complexes contribuent à la satiété. De l’énergie durant la matinée grâce aux glucides complexes\nClarification provided\n“complex carbohydrates contribute to satiety”\n“complex carbohydrates help keep you fuller for longer\"",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
 "substance": "Aliments contenant du Magnésium",
 "claim": "Le Magnésium vous aide à lutter contre les petits stress quotidiens",
 "relationship": "Resistance to mental stress",
+"status": "non-authorised"
+},
+{
+"substance": "Aliments sources de glucides complexes",
+"claim": "Les glucides complexes contribuent à la satiété. De l’énergie durant la matinée grâce aux glucides complexes\nClarification provided\n“complex carbohydrates contribute to satiety”\n“complex carbohydrates help keep you fuller for longer",
+"relationship": "not validated",
 "status": "non-authorised"
 },
 {
@@ -456,7 +450,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Amorphophallus konjac KOCH  (Common Name : Konjac)",
+"substance": "Amorphophallus konjac KOCH (Common Name : Konjac)",
 "claim": "Helps to regulate transit time Helps to maintain a good transit",
 "relationship": "maintenance of normal bowel function",
 "status": "non-authorised"
@@ -474,20 +468,20 @@
 "status": "non-authorised"
 },
 {
-"substance": "Ananas : Pineapple powder (Ananas sativus) obtained from fruit juice and stems                   AND                          Dry aqueous extract of pineapple standardized at 2% of bromelain",
+"substance": "Ananas : Pineapple powder (Ananas sativus) obtained from fruit juice and stems AND Dry aqueous extract of pineapple standardized at 2% of bromelain",
 "claim": "Recommended during slimming diet, at the same time of dietary measures.\nPineapple is a tropical plant whose stems contain bromelain, a proteolytic enzymatic complex.\nBromelain is a proteolytic enzyme with anti-edematous activity which can help to drain tissues with cellulitis.",
 "relationship": "contribution to the maintenance or achievement of a normal body weight",
 "status": "non-authorised"
 },
 {
 "substance": "Ananas comosus - common name : Bromelain, Pineapple",
-"claim": "\"Used for the good circulation of blood in microvessels\"\n\"Helps to decrease the sensations of heavy leggs\"",
+"claim": "Used for the good circulation of blood in microvessels\"\n\"Helps to decrease the sensations of heavy leggs",
 "relationship": "“Vascular and vein health”",
 "status": "non-authorised"
 },
 {
 "substance": "Ananas comosus - common name : Bromelain, Pineapple",
-"claim": "\"Used to facilitate the digestion\" / \"Contributes to the digestive comfort\" / \"Helps to support the digestion\" / \"Contributes to support the digestion\".",
+"claim": "Used to facilitate the digestion\" / \"Contributes to the digestive comfort\" / \"Helps to support the digestion\" / \"Contributes to support the digestion\".",
 "relationship": "reduction of gastro-intestinal discomfort",
 "status": "non-authorised"
 },
@@ -600,7 +594,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Anxiofit-1, a food ingredient that contains an Echinacea angustifolia hydro-alcoholic root dry extract standardised for the specific alkamide profile",
+"substance": "Anxiofit-1, a food ingredient that contains an Echinacea angustifolia hydro-alcoholic root dry extract standardised for the specific alkamide profile",
 "claim": "Anxioﬁt-1 has been shown to ameliorate subthreshold and mild anxiety. Subthreshold and mild anxiety are risk factors in the development of anxiety disorders and depression",
 "relationship": "nan",
 "status": "non-authorised"
@@ -614,12 +608,12 @@
 {
 "substance": "Apium graveolens (Celery)",
 "claim": "A generally restorative tea which is rich in vitamins, minerals, antioxidants and essential herbal oils and helps the body overcome stress and exertion, prevents setting in of changes associated with age, improves the immunity",
-"relationship": "\"invigoration of the body\"",
+"relationship": "invigoration of the body",
 "status": "non-authorised"
 },
 {
-"substance": "Apium graveolens - common name :  celery",
-"claim": "\"Used to enhance the renal elimination of water\" / \"Used to facilitate the elimination functions of the organism\" / \"Used for the drainage of the organism\" / \"Stimulates the elimination function of the organism\" / \"Contributes to the functionary of the urinary tract\"",
+"substance": "Apium graveolens - common name : celery",
+"claim": "Used to enhance the renal elimination of water\" / \"Used to facilitate the elimination functions of the organism\" / \"Used for the drainage of the organism\" / \"Stimulates the elimination function of the organism\" / \"Contributes to the functionary of the urinary tract",
 "relationship": "Increase in renal water elimination",
 "status": "non-authorised"
 },
@@ -798,7 +792,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Aspalathus linearis  (Common Name : Rooibos/Red bush)",
+"substance": "Aspalathus linearis (Common Name : Rooibos/Red bush)",
 "claim": "Contains antioxidant/s; Is a source of antioxdiant/s. With antioxidant/s. Has antioxidant properties Acts as free radical scavengers Contains naturally occuring antioxidants Antioxidants help protect you from free radicals Antioxidants help protect your cells and tissues from oxidation Antioxidants contribute to the total antioxidant capacity of the body and help strengthen our body´s defences",
 "relationship": "Protection of DNA, proteins and lipids from oxidative damage",
 "status": "non-authorised"
@@ -907,37 +901,37 @@
 },
 {
 "substance": "Bacillus subtilis HU58",
-"claim": "•\tContains Probiotic\n•\tContains healthy bacteria\n•\tMaintains dominance of good bacteria in the gut",
+"claim": "• Contains Probiotic\n• Contains healthy bacteria\n• Maintains dominance of good bacteria in the gut",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Bacillus subtilis HU58",
-"claim": "•\tContributes to/ supports / maintains natural resistance/defence\n•\tStrengthens your body’s natural defence\n•\tStimulates the immune system\n•\tStimulates the specific and non specific immune system\n•\tSupports your natural defences\n•\tHelps to regulate the b",
+"claim": "• Contributes to/ supports / maintains natural resistance/defence\n• Strengthens your body’s natural defence\n• Stimulates the immune system\n• Stimulates the specific and non specific immune system\n• Supports your natural defences\n• Helps to regulate the b",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Bacillus subtilis HU58",
-"claim": "•\tFor good intestinal health\n•\tHelps keep your digestive system in balance\n•\tHelps gastrointestinal tract comfort \n•\tMaintains a healthy intestinal environment and functionality\n•\tMaintain the balance of microflora\n•\tPromotes and maintains intestinal hea",
+"claim": "• For good intestinal health\n• Helps keep your digestive system in balance\n• Helps gastrointestinal tract comfort \n• Maintains a healthy intestinal environment and functionality\n• Maintain the balance of microflora\n• Promotes and maintains intestinal hea",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Bacillus subtilis Natto",
-"claim": "•\t Helps support a healthy heart\n•\t Helps maintain a healthy heart",
+"claim": "• Contributes to/ supports / maintains natural resistance/defence\n• Strengthens your body’s natural defence\n• Stimulates the immune system\n• Stimulates the specific and non specific immune system\n• Supports your natural defences\n• Helps to regulate the b",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Bacillus subtilis Natto",
-"claim": "•\tContributes to/ supports / maintains natural resistance/defence\n•\tStrengthens your body’s natural defence\n•\tStimulates the immune system\n•\tStimulates the specific and non specific immune system\n•\tSupports your natural defences\n•\tHelps to regulate the b",
+"claim": "• For good intestinal health\n• Helps keep your digestive system in balance\n• Helps gastrointestinal tract comfort \n• Maintains a healthy intestinal environment and functionality\n• Maintain the balance of microflora\n• Promotes and maintains intestinal hea",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Bacillus subtilis Natto",
-"claim": "•\tFor good intestinal health\n•\tHelps keep your digestive system in balance\n•\tHelps gastrointestinal tract comfort \n•\tMaintains a healthy intestinal environment and functionality\n•\tMaintain the balance of microflora\n•\tPromotes and maintains intestinal hea",
+"claim": "• Helps support a healthy heart\n• Helps maintain a healthy heart",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -990,7 +984,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Barley soup \"Orzotto\"",
+"substance": "Barley soup \"Orzotto",
 "claim": "Contributes to the protection of blood lipids from oxidative damage .",
 "relationship": "nan",
 "status": "non-authorised"
@@ -1320,27 +1314,27 @@
 "status": "non-authorised"
 },
 {
-"substance": "Bifidobacterium adolescentis  EI-15 -ALB 1 (DSM 18351)",
+"substance": "Bifidobacterium adolescentis BA 02 (DSM 17103)",
+"claim": "- rebalances the intestinal motility function; -contributes to the rebalancing of intestinal microflora; - supports the maintenance of intestinal homeostasis; -promotes the wellbeing of the intestine; -restores intestinal flora bacteria in the elderly; -optimizes intestinal transit in the elderly.",
+"relationship": "Bifidobacterium adolescentis BA02 related to the following claimed effect: 'intestinal motility'",
+"status": "non-authorised"
+},
+{
+"substance": "Bifidobacterium adolescentis EI-15 -ALB 1 (DSM 18351)",
 "claim": "- promotes the wellbeing of the intestine;- contributes to restoring intestinal bacterial flora;- contributes to the rebalancing of intestinal microflora;- improves the metabolic activity of intestinal microflora.",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
-"substance": "Bifidobacterium adolescentis  EI-18 -MB 227-BA05 (DSM 18352)",
+"substance": "Bifidobacterium adolescentis EI-18 -MB 227-BA05 (DSM 18352)",
 "claim": "- produces folic acid;- supports the maintenance of intestinal homeostasis;- promotes the wellbeing of the intestine.",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
-"substance": "Bifidobacterium adolescentis  EI-3 -MB 239 (DSM 18350)",
+"substance": "Bifidobacterium adolescentis EI-3 -MB 239 (DSM 18350)",
 "claim": "- produces folic acid and riboflavin;- supports the maintenance of intestinal homeostasis;- contributes to the rebalancing of intestinal microflora;- promotes the wellbeing of the intestine.",
 "relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Bifidobacterium adolescentis BA 02 (DSM 17103)",
-"claim": "- rebalances the intestinal motility function; -contributes to the  rebalancing of intestinal microflora; - supports the maintenance of intestinal homeostasis; -promotes the wellbeing of the intestine; -restores intestinal flora bacteria in the elderly; -optimizes intestinal transit in the elderly.",
-"relationship": "Bifidobacterium adolescentis BA02 related to the following claimed effect: 'intestinal motility'",
 "status": "non-authorised"
 },
 {
@@ -1381,7 +1375,7 @@
 },
 {
 "substance": "Bifidobacterium animalis ssp. lactis BB-12® and Lactobacillus acidophilus LA-5®",
-"claim": "- probiotic\n-helps to support your natural defences;\n-helps to strenghten the natural defense;                                                                                                                           \n-helps to stimulate the immune system",
+"claim": "- probiotic\n-helps to support your natural defences;\n-helps to strenghten the natural defense; \n-helps to stimulate the immune system",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -1392,7 +1386,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Bifidobacterium animalis ssp. lactis BB-12® and Lactobacillus paracasei  ssp. paracasei CRL-431®",
+"substance": "Bifidobacterium animalis ssp. lactis BB-12® and Lactobacillus paracasei ssp. paracasei CRL-431®",
 "claim": "- probiotic\n'-helps against slow transit;\n-improves the gastrointestinal flora.",
 "relationship": "not validated",
 "status": "non-authorised"
@@ -1458,8 +1452,14 @@
 "status": "non-authorised"
 },
 {
-"substance": "Bifidobacterium animalis subsp. lactis (Bi‐07)",
-"claim": "Biﬁdobacterium animalis subsp. lactis Bi-07 contributes to the improvement of lactose digestion in individuals who have difficulty digesting lactose",
+"substance": "Bifidobacterium animalis subsp. lactis (Bi‐07)",
+"claim": "Biﬁdobacterium animalis subsp. lactis Bi-07 contributes to the improvement of lactose digestion in individuals who have difficulty digesting lactose",
+"relationship": "nan",
+"status": "non-authorised"
+},
+{
+"substance": "Bifidobacterium bifidum CNCM I-3426",
+"claim": "Bifidobacterium bifidum CNCM I-3426 increases the proportion of healthy days by maintaining normal immune function in healthy adults during everyday life events such as moderate stress.",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -1494,12 +1494,6 @@
 "status": "non-authorised"
 },
 {
-"substance": "Bifidobacterium bifidum CNCM I-3426",
-"claim": "Bifidobacterium bifidum CNCM I-3426 increases the proportion of healthy days by maintaining normal immune function in healthy adults during everyday life events such as moderate stress.",
-"relationship": "nan",
-"status": "non-authorised"
-},
-{
 "substance": "Bifidobacterium breve BL 03 (DSM 16603)",
 "claim": "- promuove la funzione motoria intestinale; - contribuisce al riequilibrio della microflora intestinale; - favorisce il mantenimento dell'omeostasi intestinale; - ottimizza il transito intestinale nell'anziano.",
 "relationship": "Bifidobacterium longum BL03 related to the following claimed effect: 'intestinal mobility'",
@@ -1507,19 +1501,19 @@
 },
 {
 "substance": "Bifidobacterium breve BR 03 (DSM 16604)",
-"claim": "- riequilibria la funzione motoria intestinale;  contribuisce al riequilibrio della microflora intestinale; ; - migliora l'attività metabolica della microflora ;    intestinale; ; - ottimizza il transito intestinale nell'anziano.",
+"claim": "- riequilibria la funzione motoria intestinale; contribuisce al riequilibrio della microflora intestinale; ; - migliora l'attività metabolica della microflora ; intestinale; ; - ottimizza il transito intestinale nell'anziano.",
 "relationship": "Bifidobacterium breve BR03 related to the following claimed effect: 'intestinal mobility'",
 "status": "non-authorised"
 },
 {
 "substance": "Bifidobacterium breve BR 03 (DSM 16604) + Lactobacillus plantarum LP 01 (LMG P-21021)",
-"claim": "- supports the maintenance of intestinal homeostasis;- supports the maintenance of intestinal homeostasis in   children;- contributes to reducing gastro-intestinal discomfort;- contributes to reducing gastro-intestinal discomfort in   children;- reduces f",
+"claim": "- supports the maintenance of intestinal homeostasis;- supports the maintenance of intestinal homeostasis in children;- contributes to reducing gastro-intestinal discomfort;- contributes to reducing gastro-intestinal discomfort in children;- reduces f",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Bifidobacterium breve BR 03 (DSM 16604) +Lactobacillus plantarum LP 01 (LMG P-21021)",
-"claim": "- favorisce il mantenimento dell'omeostasi intestinale; - contribuisce a ridurre il discomfort gastro-intestinale; - riduce la flatulenza ed il gonfiore addominale; - riequilibria la funzione motoria intestinale; - ottimizza il transito intestinale; - riequilibria la composizione della microflora dopo    trattamento con antibiotici.",
+"claim": "- favorisce il mantenimento dell'omeostasi intestinale; - contribuisce a ridurre il discomfort gastro-intestinale; - riduce la flatulenza ed il gonfiore addominale; - riequilibria la funzione motoria intestinale; - ottimizza il transito intestinale; - riequilibria la composizione della microflora dopo trattamento con antibiotici.",
 "relationship": "A combination of Bifidobacterium breve BR03 and Lactobacillus plantarum LP01 related to the following claimed effect: 'reducing gastrointestinal discomfort associated with increased transit time'",
 "status": "non-authorised"
 },
@@ -1548,7 +1542,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Bifidobacterium infantis Bi1 (LMG P-17502), Bifidobacterium breve Bbr8  (LMG P-17501) and Bifidobacterium longum Bl10 (LMG P-17500)",
+"substance": "Bifidobacterium infantis Bi1 (LMG P-17502), Bifidobacterium breve Bbr8 (LMG P-17501) and Bifidobacterium longum Bl10 (LMG P-17500)",
 "claim": "*balances your intestinal microflora * promotes and maintains intestinal health * promotes and maintains intestinal function * supports healthy gastrointestinal flora",
 "relationship": "not validated",
 "status": "non-authorised"
@@ -1603,18 +1597,18 @@
 },
 {
 "substance": "Bifidobacterium lactis BS 01 (LMG P-21384)",
-"claim": "- riequilibria la funzione motoria intestinale; - riequilibria la composizione della microflora dopo    trattamento con antibiotici; - migliora l'attività metabolica della microflora     intestinale; - promuove il benessere dell'intestino.",
+"claim": "- riequilibria la funzione motoria intestinale; - riequilibria la composizione della microflora dopo trattamento con antibiotici; - migliora l'attività metabolica della microflora intestinale; - promuove il benessere dell'intestino.",
 "relationship": "B. animalis subsp. lactis LMG P-21384 and changes in bowel function",
 "status": "non-authorised"
 },
 {
-"substance": "Bifidobacterium lactis BS 01 (LMG P-21384)+Lactobacillus rhamnosus LR 04 (DSM 16605)+ Lactobacillus plantarum  LP 02(LMG P-21020)+Lactoferrin",
+"substance": "Bifidobacterium lactis BS 01 (LMG P-21384)+Lactobacillus rhamnosus LR 04 (DSM 16605)+ Lactobacillus plantarum LP 02(LMG P-21020)+Lactoferrin",
 "claim": "- supports the natural defences of the organism;- strengthens natural defences;- contributes to the maintenance of intestinal wellbeing;- promotes the maintenance of intestinal homeostasis;- restores intestinal bacterial flora.",
 "relationship": "A combination of Bifidobacterium animalis subsp. lactis BS01, Lactobacillus rhamnosus LR04, Lactobacillus plantarum LP02, lactoferrin and short-chain fructo-oligosaccharides related to the following claimed effect: 'defence against upper respiratory tract infections'",
 "status": "non-authorised"
 },
 {
-"substance": "Bifidobacterium lactis BS 01 (LMG P-21384)+Lactobacillus rhamnosus LR 04 (DSM 16605)+Lactobacillus plantarum  LP 02(LMG P-21020)",
+"substance": "Bifidobacterium lactis BS 01 (LMG P-21384)+Lactobacillus rhamnosus LR 04 (DSM 16605)+Lactobacillus plantarum LP 02(LMG P-21020)",
 "claim": "- supporta le naturali difese dell'organismo; - rinforza le difese naturali; - contribuisce al mantenimento del benessere intestinale; - favorisce il mantenimento dell'omeostasi intestinale; - reintegra la flora batterica intestinale.",
 "relationship": "A combination of Bifidobacterium animalis subsp. lactis BS01, Lactobacillus rhamnosus LR04, Lactobacillus plantarum LP02, and short-chain fructo-oligosaccharides related to the following claimed effect: 'defence against upper respiratory tract infections'",
 "status": "non-authorised"
@@ -1669,12 +1663,12 @@
 },
 {
 "substance": "Bifidobacterium longum W11(LMG P-21586)",
-"claim": "- contributes to the  rebalancing of intestinal microflora;- rebalances the intestinal motility function;- supports the maintenance of intestinal homeostasis;- promotes the wellbeing of the intestine;- contributes to reducing gastro-intestinal discomfort;",
+"claim": "- contributes to the rebalancing of intestinal microflora;- rebalances the intestinal motility function;- supports the maintenance of intestinal homeostasis;- promotes the wellbeing of the intestine;- contributes to reducing gastro-intestinal discomfort;",
 "relationship": "Bifidobacterium longum W11 related to the following claimed effect: 'relief of abdominal discomfort and bloating'",
 "status": "non-authorised"
 },
 {
-"substance": "Bifidobacterium pseudocatenulatum  EI-20 -MB 116 (DSM 18353)",
+"substance": "Bifidobacterium pseudocatenulatum EI-20 -MB 116 (DSM 18353)",
 "claim": "- produces folic acid and riboflavin;- supports the maintenance of intestinal homeostasis;- contributes to the rebalancing of intestinal microflora;- promotes the wellbeing of the intestine.",
 "relationship": "not validated",
 "status": "non-authorised"
@@ -1850,7 +1844,7 @@
 {
 "substance": "Biotin",
 "claim": "Necessary to maintain energy and general vitality",
-"relationship": "\"energy and vitality\"",
+"relationship": "energy and vitality",
 "status": "non-authorised"
 },
 {
@@ -2360,7 +2354,7 @@
 {
 "substance": "Calcium",
 "claim": "Calcium contributes to normal functioning of cells.",
-"relationship": "\"cell membrane permeability\"",
+"relationship": "cell membrane permeability",
 "status": "non-authorised"
 },
 {
@@ -2431,7 +2425,7 @@
 },
 {
 "substance": "CalorieControl Trim® Oat Bran",
-"claim": "\"The inclusion of 3 grams oat beta glucan soluble fiber per day from Calorie ControlTrim® Oat Bran, as part of a diet low in saturated fat and a healthy lifestyle, can help maintain healthy blood glucose levels. Oat beta glucan soluble fiber from Calorie ControlTrim® Oat Bran, as part of a diet low in saturated fat and a healthy lifestyle, can help maintain healthy blood glucose levels. Calorie ControlTrim® Oat Bran helps maintain healthy blood glucose levels.\"",
+"claim": "The inclusion of 3 grams oat beta glucan soluble fiber per day from Calorie ControlTrim® Oat Bran, as part of a diet low in saturated fat and a healthy lifestyle, can help maintain healthy blood glucose levels. Oat beta glucan soluble fiber from Calorie ControlTrim® Oat Bran, as part of a diet low in saturated fat and a healthy lifestyle, can help maintain healthy blood glucose levels. Calorie ControlTrim® Oat Bran helps maintain healthy blood glucose levels.",
 "relationship": "Maintenance or achievement of normal blood glucose concentrations",
 "status": "non-authorised"
 },
@@ -2768,7 +2762,7 @@
 {
 "substance": "Cassis : Dry extract of Ribes Nigrum fruit standardized at 7% of anthocyanosides",
 "claim": "Can help to reduce eyestrain.\nCan help to improve night vision.",
-"relationship": "improvement of visual  adaptation to the dark",
+"relationship": "improvement of visual adaptation to the dark",
 "status": "non-authorised"
 },
 {
@@ -2820,7 +2814,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Chios Mastiha Natural resin  Protected Designation of Origin product. (PDO) (EC)123/1997 (L022/24.1.97)",
+"substance": "Chios Mastiha Natural resin Protected Designation of Origin product. (PDO) (EC)123/1997 (L022/24.1.97)",
 "claim": "Mastiha Chiou has an antioxidant action.",
 "relationship": "Antioxidant, antioxidant content, and antioxidant properties",
 "status": "non-authorised"
@@ -3072,13 +3066,13 @@
 "status": "non-authorised"
 },
 {
-"substance": "Citrullus lunatus  (Watermelon) extract - ACTI-08",
+"substance": "Citrullus lunatus (Watermelon) extract - ACTI-08",
 "claim": "Good source of antioxidants\nContains naturally occuring antioxidants\nHas antioxidant properties\nActs as an antioxidants\nContributes to the protection against oxidation\nHelps increase the antioxidative capacity of the body\nHelps preventing oxidation\nAntioxidants help protect you from free radicals Antioxidants help protect your cells and tissues from oxidation\nAntioxidants contribute to the total antioxidant capacity of the body\nAntioxidants help to protect your body by reinforcing the body's natural defence against the effects of free radicals",
 "relationship": "protection of DNA, proteins and lipids from oxidative damage",
 "status": "non-authorised"
 },
 {
-"substance": "Citrullus lunatus  (Watermelon) extract - ACTI-08",
+"substance": "Citrullus lunatus (Watermelon) extract - ACTI-08",
 "claim": "Helps to improve carbohydrate and fat metabolism of the body\nUsed to facilitate the weight loss\nHelps to loose weight\nContributes to loose weight\nUsed to facilitate the weight loss\nHelps in weight control\nContributes to body weight management.",
 "relationship": "contribution to the maintenance or achievement of a normal body weight",
 "status": "non-authorised"
@@ -3115,7 +3109,7 @@
 },
 {
 "substance": "Citrus sinensis - common name : Orange",
-"claim": "\"Traditionally used for the good circulation of blood in microvessels\" / \"Traditionally used to decrease the sensations of heavy leggs\" / \"Used for the good circulation of blood in microvessels\" / \"Helps to decrease the sensations of heavy leggs\"",
+"claim": "Traditionally used for the good circulation of blood in microvessels\" / \"Traditionally used to decrease the sensations of heavy leggs\" / \"Used for the good circulation of blood in microvessels\" / \"Helps to decrease the sensations of heavy leggs",
 "relationship": "“Vascular and vein health”",
 "status": "non-authorised"
 },
@@ -3288,13 +3282,13 @@
 "status": "non-authorised"
 },
 {
-"substance": "Coffee C21, a blend of pure Arabica roast coffees (Coffea arabica L.) without any non-coffee ingredients",
+"substance": "Coffee C21, a blend of pure Arabica roast coffees (Coffea arabica L.) without any non-coffee ingredients",
 "claim": "Regular consumption of Coffee C21 contributes to the maintenance of DNA integrity in cells of the body",
 "relationship": "nan",
 "status": "non-authorised"
 },
 {
-"substance": "CoffeeSLENDER® Tablets  made from an extract from green coffee beans (Svetol®) the active principle of which is:-=5-caffeoylquinic acid or (Chlorogenic acid) =45%, Caffeine = 2%, 3- caffeoylquinic acid =10%",
+"substance": "CoffeeSLENDER® Tablets made from an extract from green coffee beans (Svetol®) the active principle of which is:-=5-caffeoylquinic acid or (Chlorogenic acid) =45%, Caffeine = 2%, 3- caffeoylquinic acid =10%",
 "claim": "i). As an aid to weight loss and weight control as part of a calorie controlled diet.\nii). Acts by reducing absorption of sugar (glucose) from the digestive tract.",
 "relationship": "Contribution to the maintenance or achievement of a normal body weight",
 "status": "non-authorised"
@@ -3361,7 +3355,7 @@
 },
 {
 "substance": "Combination of Probiotics (Lactobacillus helveticus CNCM I-1722, Lactobacillus rhamnosus CNCM I-1720, Bifidobacterium longum CNCM I-3470 and Saccharomyces cerevisiae boulardii )",
-"claim": "Help relieving intestinal discomfort Reinforce the Intestinal Barrier,              \nIntestinal support for travelers,               \n Improve intestinal comfort in travellers, Normalize intestinal transit",
+"claim": "Help relieving intestinal discomfort Reinforce the Intestinal Barrier, \nIntestinal support for travelers, \n Improve intestinal comfort in travellers, Normalize intestinal transit",
 "relationship": "A combination of L. rhamnosus CNCM I-1720, L. helveticus CNCM I-1722, B. longum subsp. longum CNCM I-3470 and S. cerevisiae var. boulardii CNCM I-1079 and defence against pathogenic gastro-intestinal microorganisms",
 "status": "non-authorised"
 },
@@ -3534,7 +3528,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Cranberry (Lingonberry) juice, (Vaccinium vitis  idaea, Vaccinium macrocarpon)",
+"substance": "Cranberry (Lingonberry) juice, (Vaccinium vitis idaea, Vaccinium macrocarpon)",
 "claim": "Cranberry juice helps to keep the urinary system in a healthy condition;\nLingonberry juice has a positive efect on the urinary tract;",
 "relationship": "not validated",
 "status": "non-authorised"
@@ -3642,8 +3636,8 @@
 "status": "non-authorised"
 },
 {
-"substance": "Cynara scolymus - common name :  artichoke, globe artichoke",
-"claim": "\"Used to enhance the renal elimination of water\" / \"Used to facilitate the elimination functions of the organism\" / \"Used for the drainage of the organism\" / \"Stimulates the elimination function of the organism\" / \"Contributes to the functionary of the urinary tract\"",
+"substance": "Cynara scolymus - common name : artichoke, globe artichoke",
+"claim": "Used to enhance the renal elimination of water\" / \"Used to facilitate the elimination functions of the organism\" / \"Used for the drainage of the organism\" / \"Stimulates the elimination function of the organism\" / \"Contributes to the functionary of the urinary tract",
 "relationship": "Increase in renal water elimination",
 "status": "non-authorised"
 },
@@ -3714,7 +3708,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Decaffeinated green (unroasted) coffee bean extract produced from Coffea canephora robusta (plant:extract ratio between 6:1 to 8:1).  The active ingredients contained in the green coffee extract are chlorogenic acids (>45% w/w). The chlorogenic acids main",
+"substance": "Decaffeinated green (unroasted) coffee bean extract produced from Coffea canephora robusta (plant:extract ratio between 6:1 to 8:1). The active ingredients contained in the green coffee extract are chlorogenic acids (>45% w/w). The chlorogenic acids main",
 "claim": "As an aid to weight loss and weight control as part of a calorie controlled diet.\nActs by reducing absorption of sugar (glucose) from the digestive tract.",
 "relationship": "Contribution to the maintenance or achievement of a normal body weight",
 "status": "non-authorised"
@@ -3795,6 +3789,12 @@
 "substance": "Dietary fibre",
 "claim": "– dietary fibre helps to maintain normal bowel/colonic function;\n– dietary fibre promotes bowel regularity;\n– ensures a healthy digestive system/function.",
 "relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Dietary food for special medical purposes - oral rehydrating solution with decreased osmolarity composed according to WHO/UNICEF recommendations - ORSALIT.\nORSALIT is available in following versions:\n- ORSALIT without flavor,\n- ORSALIT with banana flavor",
+"claim": "1. ORSALIT is used in all cases when dehydration may occur\n2. ORSALIT is hypoosmolar, oral rehydrating solution composed according to WHO and UNICEF recommendations\n3. ORSALIT helps to avoid dehydration which may occur in case of diarrhea and/or vomiting\n4. ORSALIT uses mechanism of collective adsorption of water, sodium and glucose which is not damaged even during diarrhea\n5. ORSALIT is used in order to supplement current losses of water and electrolytes\n6. Oral rehydrating solutions are used in every situation when dehydration may occur\n7. ORSALIT composition is identical to current recommendations of WHO and UNICEF\n8. ORSALIT composition ensures effective rehydration during diarrhea on the contrary of usually given feezy drinks (cola), apple juice or broth\n9. ORSALIT rehydrates effectively during diarrhea, on the contrary to traditional methods \n10. Oral rehydration is beneficial and well tolerated due to low risk of side effects\n11. ORSALIT is used in order to rehydrate\n12. ORSALIT is dedicated to infants, children and adults rehydration during diarrhea and/or vomiting\n13. ORSALIT is dedicated to supplement body fluids and mineral components\n14. ORSALIT is used in case of disturbance of water-electrolyte balance during dehydration due to diarrhea and/or vomiting",
+"relationship": "Treatment of diarrhoea and/or vomiting",
 "status": "non-authorised"
 },
 {
@@ -3900,13 +3900,13 @@
 "status": "non-authorised"
 },
 {
-"substance": "Docosahexaenoic acid and Eicosapentaenoic acid (DHA/EPA)",
+"substance": "Docosahexaenoic acid and Eicosapentaenoic acid (DHA/EPA)",
 "claim": "DHA and EPA contribute to the maintenance of normal blood pressure",
 "relationship": "Maintenance of normal blood pressure",
 "status": "authorised"
 },
 {
-"substance": "Docosahexaenoic acid and Eicosapentaenoic acid (DHA/EPA)",
+"substance": "Docosahexaenoic acid and Eicosapentaenoic acid (DHA/EPA)",
 "claim": "DHA and EPA contribute to the maintenance of normal blood triglyceride levels",
 "relationship": "Maintenance of normal (fasting) blood concentrations of triglycerides",
 "status": "authorised"
@@ -4212,13 +4212,13 @@
 "status": "non-authorised"
 },
 {
-"substance": "Essential fatty acid\nAlpha-linolenic acid (LNA  - omega 3)",
+"substance": "Essential fatty acid\nAlpha-linolenic acid (LNA - omega 3)",
 "claim": "-Alpha-linolenic acid (omega 3) is important for the immune system;\n- Alpha-linolenic acid (omega 3) helps to maintain normal healthy blood lipid levels which is important for the immune system / which helps support the body's immune system",
 "relationship": "“Molecule precursors regulating cell functions”",
 "status": "non-authorised"
 },
 {
-"substance": "Essential fatty acid\nAlpha-linolenic acid (LNA  - omega 3)",
+"substance": "Essential fatty acid\nAlpha-linolenic acid (LNA - omega 3)",
 "claim": "LNA contributes to the good balance in essential fatty acids in the diet and as such helps to maintain a strong body defense (system)",
 "relationship": "Treatment of diseases",
 "status": "non-authorised"
@@ -4386,7 +4386,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Fat-free yogurts and fermented milks with live yogurt cultures complying with the specifications",
+"substance": "Fat-free yogurts and fermented milks with live yogurt cultures complying with the specifications",
 "claim": "Fat-free yogurts and fermented milks with live yogurt cultures, with added vitamin D, and with no added sugars, help to reduce body and visceral fat in the context of an energy-restricted diet",
 "relationship": "nan",
 "status": "non-authorised"
@@ -4428,13 +4428,13 @@
 "status": "non-authorised"
 },
 {
-"substance": "Fermented milk with Lactobacillus paracasei   lpc 37",
+"substance": "Fermented milk with Lactobacillus paracasei lpc 37",
 "claim": "microflora of the gastrointestinal tract",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
-"substance": "Fermented milk with Lactobacillus paracasei   lpc 37",
+"substance": "Fermented milk with Lactobacillus paracasei lpc 37",
 "claim": "natural defence /immune system",
 "relationship": "not validated",
 "status": "non-authorised"
@@ -4645,7 +4645,7 @@
 },
 {
 "substance": "Folic acid (syn.: Vitamin B9)",
-"claim": "- Helps keep arteries/blood vessels healthy; - Contributes to healthy arteries/ blood vessels; - Supports heart health by contributing to the normal functioning of the arteries/blood vessels; -  Helps maintain a normal blood pressure by supporting the elasticity of blood vessels/arteries;",
+"claim": "- Helps keep arteries/blood vessels healthy; - Contributes to healthy arteries/ blood vessels; - Supports heart health by contributing to the normal functioning of the arteries/blood vessels; - Helps maintain a normal blood pressure by supporting the elasticity of blood vessels/arteries;",
 "relationship": "function of blood vessels",
 "status": "non-authorised"
 },
@@ -4662,7 +4662,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Food Category:  Fish \nFood: Cultured Sea bass and Gilthead Sea bream                    \nFood Component / Nutrient: EPA & DHA Omega 3 Highly Unsaturated fatty acids",
+"substance": "Food Category: Fish \nFood: Cultured Sea bass and Gilthead Sea bream \nFood Component / Nutrient: EPA & DHA Omega 3 Highly Unsaturated fatty acids",
 "claim": "Eating cultured sea bass and gilthead sea bream twice a week, as a rich source of omega-3 highly unsaturated fatty acids and part of a healthy lifestyle, has been shown to help maintain heart health",
 "relationship": "maintenance of normal blood LDL-cholesterol concentrations",
 "status": "non-authorised"
@@ -4674,7 +4674,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Food supplement /Food ingredient  : Whole cranberry powder from North American Cranberry (Vaccinium macrocarpon)  Early Black species.",
+"substance": "Food supplement /Food ingredient : Whole cranberry powder from North American Cranberry (Vaccinium macrocarpon) Early Black species.",
 "claim": "Helps to maintain the health of the urinary system.\nContributes to urinary tract health.\nHas a beneficial effect on the urinary system.\nHelps to eliminate pathogenic bacteria from urinary tract.",
 "relationship": "Defence against bacterial pathogens in the lower urinary tract",
 "status": "non-authorised"
@@ -4808,7 +4808,7 @@
 {
 "substance": "Fructose",
 "claim": "Improves well-being after alcohol use",
-"relationship": "\"mental health\"",
+"relationship": "mental health",
 "status": "non-authorised"
 },
 {
@@ -4914,25 +4914,25 @@
 "status": "non-authorised"
 },
 {
-"substance": "Galactoligo-saccharide   (Arabino-galactans or Gum Acacia)",
+"substance": "Galactoligo-saccharide (Arabino-galactans or Gum Acacia)",
 "claim": "Contains Prebiotic\nPromotes growth of healthy organisms",
 "relationship": "decreasing potentially pathogenic gastro-intestinal microorganisms",
 "status": "non-authorised"
 },
 {
-"substance": "Galactoligo-saccharide   (Arabino-galactans or Gum Acacia)",
+"substance": "Galactoligo-saccharide (Arabino-galactans or Gum Acacia)",
 "claim": "Contains Prebiotic\nPromotes growth of healthy organisms",
 "relationship": "increasing numbers of gastro-intestinal microorganisms",
 "status": "non-authorised"
 },
 {
-"substance": "Galactoligo-saccharide   (Arabino-galactans or Gum Acacia)",
+"substance": "Galactoligo-saccharide (Arabino-galactans or Gum Acacia)",
 "claim": "Helps maintain a healthy balance of beneficial bacteria Promotes the positive balance of the intestinal flora • maintains a healthy gut • maintains a healthy intestinal environment • Stimulates the growth of bifidobacteria",
 "relationship": "decreasing potentially pathogenic gastro-intestinal microorganisms",
 "status": "non-authorised"
 },
 {
-"substance": "Galactoligo-saccharide   (Arabino-galactans or Gum Acacia)",
+"substance": "Galactoligo-saccharide (Arabino-galactans or Gum Acacia)",
 "claim": "Helps maintain a healthy balance of beneficial bacteria Promotes the positive balance of the intestinal flora • maintains a healthy gut • maintains a healthy intestinal environment • Stimulates the growth of bifidobacteria",
 "relationship": "increasing numbers of gastro-intestinal microorganisms",
 "status": "non-authorised"
@@ -4976,7 +4976,7 @@
 {
 "substance": "Gamma – linolenic acid",
 "claim": "1. Helps maintain functions and structure of the body and organ cell membranes\n2. Evening primrose oil contains polyunsaturated fatty acids which are necessary for cell membranes\n3. Supports the integrity and the fluidity of the cell membrane\n4. Omega-6 fatty acids participate in cell growing and renewal processes\n5. Being present in cell membranes they are necessary for wholesome cell structure and function",
-"relationship": "\"Function of the cell membrane\"",
+"relationship": "Function of the cell membrane",
 "status": "non-authorised"
 },
 {
@@ -5424,7 +5424,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "GlycoLiteTM  – A proprietary standardised aqueous extract from white kidney bean (Phaseolus vulgaris L.)",
+"substance": "GlycoLiteTM – A proprietary standardised aqueous extract from white kidney bean (Phaseolus vulgaris L.)",
 "claim": "GlycoLite™ helps to reduce body weight",
 "relationship": "nan",
 "status": "non-authorised"
@@ -5575,7 +5575,7 @@
 },
 {
 "substance": "Gélatine",
-"claim": "Promote keratin formation.                         \nStrength hair.                   \nHair is more resistant and thick.                          \nIncrease hair resistance.",
+"claim": "Promote keratin formation. \nStrength hair. \nHair is more resistant and thick. \nIncrease hair resistance.",
 "relationship": "Maintenance of normal structure and appearance of hair and nails",
 "status": "non-authorised"
 },
@@ -5767,7 +5767,7 @@
 },
 {
 "substance": "Huile d'olive",
-"claim": "\"régule le niveau de sucre dans le sang\"",
+"claim": "régule le niveau de sucre dans le sang",
 "relationship": "maintenance of normal blood glucose concentrations",
 "status": "non-authorised"
 },
@@ -5862,13 +5862,13 @@
 "status": "non-authorised"
 },
 {
-"substance": "Hyperproteins pasta                 (FPP-P-0702)",
+"substance": "Hyperproteins pasta (FPP-P-0702)",
 "claim": "* Foods rich in protein help you to feel you satiate longer so as to help you to manage your weight. * Proteins promotes satiety. * Diets rich in protein and poor in carbohydrate affect positively body mass and body composition. * Loss higher in fat and loss limited in muscle mass. * Diets with high protein/carbohydrate ratio have a positive effect on body composition.",
 "relationship": "contribution to the maintenance or achievement of a normal body weight",
 "status": "non-authorised"
 },
 {
-"substance": "Hyperproteins pasta                 (FPP-P-0702)",
+"substance": "Hyperproteins pasta (FPP-P-0702)",
 "claim": "* Foods rich in protein help you to feel you satiate longer so as to help you to manage your weight. * Proteins promotes satiety. * Diets rich in protein and poor in carbohydrate affect positively body mass and body composition. * Loss higher in fat and loss limited in muscle mass. * Diets with high protein/carbohydrate ratio have a positive effect on body composition.",
 "relationship": "increase in satiety leading to a reduction in energy intake",
 "status": "non-authorised"
@@ -6541,7 +6541,7 @@
 },
 {
 "substance": "Lactic acid bacteria/ Entero coccus faecium",
-"claim": "•\tHelps balancing intestinal activity.\n•\tHelps decreasing the number of loose stools\n•\tHelps decreasing the number of loose stools in connection with use of antibiotics",
+"claim": "• Helps balancing intestinal activity.\n• Helps decreasing the number of loose stools\n• Helps decreasing the number of loose stools in connection with use of antibiotics",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -6589,7 +6589,7 @@
 },
 {
 "substance": "Lactobacillus acidophilus bar 13 (CNCM-I-3857) and Bifidobacterium longum bar 33 (CNCM-I-3858)- mix 1:1",
-"claim": "-helps to improve the level of natural good bacteria in your body;\n-helps to aid digestion and well-being;\n-helps to reduce gastro-intestinal discomfort;\n-maintains the balance of healthy microflora;\n-beneficially affects the intestinal flora;\n-helps to support your natural defences;\n-helps to strenghten the natural defense;                                                                                                                           \n-helps to stimulate the immune system.",
+"claim": "-helps to improve the level of natural good bacteria in your body;\n-helps to aid digestion and well-being;\n-helps to reduce gastro-intestinal discomfort;\n-maintains the balance of healthy microflora;\n-beneficially affects the intestinal flora;\n-helps to support your natural defences;\n-helps to strenghten the natural defense; \n-helps to stimulate the immune system.",
 "relationship": "Maintains the balance of healthy microbiota that helps to strengthen the natural defence",
 "status": "non-authorised"
 },
@@ -6600,13 +6600,13 @@
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus acidophilus CUL21 NCIMB 30156 Lactobacillus acidophilus CUL 60  NCIMB 30157 Bifibobacterium adolescentis CUL 20 NCIMB 30153 Bifiidobacterium lactis (animalis ssp. lactis) CUL 34 NCIMB 30172",
+"substance": "Lactobacillus acidophilus CUL21 NCIMB 30156 Lactobacillus acidophilus CUL 60 NCIMB 30157 Bifibobacterium adolescentis CUL 20 NCIMB 30153 Bifiidobacterium lactis (animalis ssp. lactis) CUL 34 NCIMB 30172",
 "claim": "'- probiotic\n-improves intestinal environment and functionality;\n-maintains healthy digestive system;\n-supports good digestive function;\n-maintains balance of healthy microflora;",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus acidophilus CUL21 NCIMB 30156 Lactobacillus acidophilus CUL 60  NCIMB 30157 Bifibobacterium adolescentis CUL 20 NCIMB 30153 Bifiidobacterium lactis (animalis ssp. lactis) CUL 34 NCIMB 30172",
+"substance": "Lactobacillus acidophilus CUL21 NCIMB 30156 Lactobacillus acidophilus CUL 60 NCIMB 30157 Bifibobacterium adolescentis CUL 20 NCIMB 30153 Bifiidobacterium lactis (animalis ssp. lactis) CUL 34 NCIMB 30172",
 "claim": "-helps to improve the body’s natural defences;\n-helps to strengthen the immune system;\n-helps to maintain a dominance of friendly bacteria particularly in the elderly \n-helps to boost the natural defenses among the elderly.",
 "relationship": "not validated",
 "status": "non-authorised"
@@ -6618,14 +6618,14 @@
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus acidophilus LA 02 (LMG P-21381)+Lactobacillus plantarum  LP 01 (LMG P-21021)",
-"claim": "- favorisce il mantenimento dell'omeostasi intestinale; - contribuisce a ridurre il discomfort gastro-intestinale; - riduce la flatulenza ed il gonfiore addominale; - riequilibria la funzione motoria intestinale; - ottimizza il transito intestinale; - riequilibria la composizione della microflora dopo    trattamento con antibiotici.",
+"substance": "Lactobacillus acidophilus LA 02 (LMG P-21381)+Lactobacillus plantarum LP 01 (LMG P-21021)",
+"claim": "- favorisce il mantenimento dell'omeostasi intestinale; - contribuisce a ridurre il discomfort gastro-intestinale; - riduce la flatulenza ed il gonfiore addominale; - riequilibria la funzione motoria intestinale; - ottimizza il transito intestinale; - riequilibria la composizione della microflora dopo trattamento con antibiotici.",
 "relationship": "A combination of Lactobacillus acidophilus LA02 and Lactobacillus plantarum LP01 related to the following claimed effect: 'relief of abdominal discomfort and pain'",
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus acidophilus LA 02 (LMG P-21381)+Lactobacillus plantarum  LP 01 (LMG P-21021)",
-"claim": "- supports the maintenance of intestinal homeostasis;- supports the maintenance of intestinal homeostasis in   children;- contributes to reducing gastro-intestinal discomfort;- contributes to reducing gastro-intestinal discomfort in   children;- reduces f",
+"substance": "Lactobacillus acidophilus LA 02 (LMG P-21381)+Lactobacillus plantarum LP 01 (LMG P-21021)",
+"claim": "- supports the maintenance of intestinal homeostasis;- supports the maintenance of intestinal homeostasis in children;- contributes to reducing gastro-intestinal discomfort;- contributes to reducing gastro-intestinal discomfort in children;- reduces f",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -6703,7 +6703,7 @@
 },
 {
 "substance": "Lactobacillus acidophilus THT 030102",
-"claim": "* Maintains/restores the balance of intestinal flora\n* Promotes intestinal comfort      \n* Strengthens resistance of organism \n* Promotes intestinal well-being      \n* Improves digestive health",
+"claim": "* Maintains/restores the balance of intestinal flora\n* Promotes intestinal comfort \n* Strengthens resistance of organism \n* Promotes intestinal well-being \n* Improves digestive health",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -6721,7 +6721,7 @@
 },
 {
 "substance": "Lactobacillus acidophilus, Bifidobacterium infantis, Bifidobacterium bifidum",
-"claim": "Probiotics (Lactobacillus acidophilus, Bifidobacterium infantis, Bifidobacterium bifidum) help to maintain property functioning of  immune system",
+"claim": "Probiotics (Lactobacillus acidophilus, Bifidobacterium infantis, Bifidobacterium bifidum) help to maintain property functioning of immune system",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -6739,7 +6739,7 @@
 },
 {
 "substance": "Lactobacillus casei 101/37 (LMG P-17504)",
-"claim": "*Help to strenghten immune system  * help to strenghten the body's natural defenses *  favours a barrier effect before potentially pathogenic  microorganisms * balances the intestinal microflora *  contribute to maintain the intestinal natural flora.",
+"claim": "*Help to strenghten immune system * help to strenghten the body's natural defenses * favours a barrier effect before potentially pathogenic microorganisms * balances the intestinal microflora * contribute to maintain the intestinal natural flora.",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -6769,7 +6769,7 @@
 },
 {
 "substance": "Lactobacillus casei LC 01(CNCM I-1572)",
-"claim": "- contributes to the  rebalancing of intestinal microflora;- rebalances the intestinal motility function;- supports the maintenance of intestinal homeostasis;- promotes the wellbeing of the intestine;- contributes to reducing gastro-intestinal discomfort;",
+"claim": "- contributes to the rebalancing of intestinal microflora;- rebalances the intestinal motility function;- supports the maintenance of intestinal homeostasis;- promotes the wellbeing of the intestine;- contributes to reducing gastro-intestinal discomfort;",
 "relationship": "Lactobacillus casei DG CNCM I-1572 and decreasing potentially pathogenic gastro-intestinal microorganisms",
 "status": "non-authorised"
 },
@@ -6835,7 +6835,7 @@
 },
 {
 "substance": "Lactobacillus delbrucki bulgaricus THT 030301",
-"claim": "* Helps to strengthen natural defences  \n* Stimulates immune system    \n* Strengthens resistance of organism",
+"claim": "* Helps to strengthen natural defences \n* Stimulates immune system \n* Strengthens resistance of organism",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -6919,13 +6919,13 @@
 },
 {
 "substance": "Lactobacillus delbruekii (lactis)",
-"claim": "•\tSupports your natural defences\n•\tHelps to regulate the body’s immune response\n•\tHelps to maintain the immune balance\n•\tHelps maintain a healthy immune system",
+"claim": "• Supports your natural defences\n• Helps to regulate the body’s immune response\n• Helps to maintain the immune balance\n• Helps maintain a healthy immune system",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Lactobacillus delbruekii(lactis)",
-"claim": "•\tHelps maintain a healthy balance of beneficial bacteria\n•\tpromotes the positive balance of the intestinal flora\n•\tmaintains a healthy gut  & gut digestion\n•\tmaintains a healthy intestinal environment",
+"claim": "• Helps maintain a healthy balance of beneficial bacteria\n• promotes the positive balance of the intestinal flora\n• maintains a healthy gut & gut digestion\n• maintains a healthy intestinal environment",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -6943,19 +6943,13 @@
 },
 {
 "substance": "Lactobacillus fermentum LF 10 (DSM 19187)",
-"claim": "- produces natural substances that protect the intestine    from harmful yeasts, in particular those of the Candida   type;- supports the maintenance of intestinal homeostasis;- contributes to restoring the natural barrier effect of the   intestinal wall.",
+"claim": "- produces natural substances that protect the intestine from harmful yeasts, in particular those of the Candida type;- supports the maintenance of intestinal homeostasis;- contributes to restoring the natural barrier effect of the intestinal wall.",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Lactobacillus fermentum LF 11(DSM 19188)",
-"claim": "- produces natural substances that protect the intestine       from harmful yeasts, in particular those of the Candida   type;- supports the maintenance of intestinal homeostasis;- contributes to restoring the natural barrier effect of the     intestinal",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus gasseri  PA 16/8 and Bifidobacterium bifidum MF 20/5",
-"claim": "- probiotic\n-helps to maintain a healthy gut flora;\n-beneficial for maintaining a healthy intestinal flora;\n'-contributes to a healthy digestive system by supporting a well-balanced gut flora through an increased number of beneficial bacteria in the gut.",
+"claim": "- produces natural substances that protect the intestine from harmful yeasts, in particular those of the Candida type;- supports the maintenance of intestinal homeostasis;- contributes to restoring the natural barrier effect of the intestinal",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -7023,6 +7017,12 @@
 "substance": "Lactobacillus gasseri P 18137",
 "claim": "Favorisce l'equilibrio dell'ecosistema intestinale. Regola la funzionalità intestinale, ripristinando la normale microflora. Influisce positivamente sul benessere dell'organismo. Ripristina la naturale microflora dopo trattamento antibiotico/antimicotico.",
 "relationship": "Reduction of gastro-intestinal discomfort",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus gasseri PA 16/8 and Bifidobacterium bifidum MF 20/5",
+"claim": "- probiotic\n-helps to maintain a healthy gut flora;\n-beneficial for maintaining a healthy intestinal flora;\n'-contributes to a healthy digestive system by supporting a well-balanced gut flora through an increased number of beneficial bacteria in the gut.",
+"relationship": "not validated",
 "status": "non-authorised"
 },
 {
@@ -7171,164 +7171,32 @@
 },
 {
 "substance": "Lactobacillus LA-5",
-"claim": "[In german : ]  Begünstigt die Darmflora",
+"claim": "[In german : ] Begünstigt die Darmflora",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus paracasei  8700:2 (DSM 13434, 240HI)",
+"substance": "Lactobacillus paracasei 8700:2 (DSM 13434, 240HI)",
 "claim": "Supports your natural / body defence Supports a healthy intestinal flora",
 "relationship": "decreasing potentially pathogenic intestinal microorganisms",
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus paracasei  B21060*",
+"substance": "Lactobacillus paracasei B21060*",
 "claim": "Favorisce il riequilibrio dell’ecosistema intestinale\nClarification provided\n- contributes to the rebalancing of intestinal microflora;\n- reduces gastro-intestinal discomfort in Irritable Bowel Syndrome;\n- reduces gastro-intestinal discomfort in functional disorders of the gut;\n- reduces gastro-intestinal symptoms in Irritable Bowel Syndrome, especially in IBS-predominant diarrhea;\n- reduces gastro-intestinal symptoms in functional disorders of the gut, especially in IBS-predominant diarrhea.",
 "relationship": "Decreasing potentially pathogenic gastro-intestinal microorganisms",
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus paracasei  B21060*",
+"substance": "Lactobacillus paracasei B21060*",
 "claim": "Favorisce il riequilibrio dell’ecosistema intestinale\nClarification provided\n- contributes to the rebalancing of intestinal microflora;\n- reduces gastro-intestinal discomfort in Irritable Bowel Syndrome;\n- reduces gastro-intestinal discomfort in functional disorders of the gut;\n- reduces gastro-intestinal symptoms in Irritable Bowel Syndrome, especially in IBS-predominant diarrhea;\n- reduces gastro-intestinal symptoms in functional disorders of the gut, especially in IBS-predominant diarrhea.",
 "relationship": "maintenance of a normal intestinal transit time",
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus paracasei  B21060*",
+"substance": "Lactobacillus paracasei B21060*",
 "claim": "Favorisce il riequilibrio dell’ecosistema intestinale\nClarification provided\n- contributes to the rebalancing of intestinal microflora;\n- reduces gastro-intestinal discomfort in Irritable Bowel Syndrome;\n- reduces gastro-intestinal discomfort in functional disorders of the gut;\n- reduces gastro-intestinal symptoms in Irritable Bowel Syndrome, especially in IBS-predominant diarrhea;\n- reduces gastro-intestinal symptoms in functional disorders of the gut, especially in IBS-predominant diarrhea.",
 "relationship": "reducing gastro-intestinal discomfort",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  I1687",
-"claim": "Aiuta a rinforzare le difese naturali. Aiuta a modulare la risposta immunitaria. Riequilibra la risposta immunitaria nei soggetti sensibili a reazioni  allergiche. Coadiuva la risposta immunitaria anche nei casi di infezione virale.",
-"relationship": "Increasing IL-10 production and/or enhancing the activity of natural killer cells",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  I1687",
-"claim": "Favorisce l'equilibrio dell'ecosistema intestinale. Regola la funzionalità intestinale, ripristinando la normale microflora. Influisce positivamente sul benessere dell'organismo. Ripristina la naturale microflora dopo trattamento antibiotico/antimicotico.",
-"relationship": "Decreasing potentially pathogenic gastro-intestinal microorganisms",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  I1687",
-"claim": "Favorisce l'equilibrio dell'ecosistema intestinale. Regola la funzionalità intestinale, ripristinando la normale microflora. Influisce positivamente sul benessere dell'organismo. Ripristina la naturale microflora dopo trattamento antibiotico/antimicotico.",
-"relationship": "Improved lactose digestion",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  I1687",
-"claim": "Favorisce l'equilibrio dell'ecosistema intestinale. Regola la funzionalità intestinale, ripristinando la normale microflora. Influisce positivamente sul benessere dell'organismo. Ripristina la naturale microflora dopo trattamento antibiotico/antimicotico.",
-"relationship": "Reduction of gastro-intestinal discomfort",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  I1688",
-"claim": "Aiuta a rinforzare le difese naturali.Aiuta a modulare la risposta immunitaria.Aiuta a regolare la risposta immunitaria nei soggetti che potrebbero manifestare  reazioni  infiammatorie.",
-"relationship": "Increasing IL-10 production and/or enhancing the activity of natural killer cells",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  I1688",
-"claim": "Favorisce l'equilibrio dell'ecosistema intestinale.Regola la funzionalità intestinale, ripristinando la normale microflora.Influisce positivamente sul benessere dell'organismo.Ripristina la naturale microflora dopo trattamento antibiotico.E' utile nella digestione del lattosio.",
-"relationship": "Decreasing potentially pathogenic gastro-intestinal microorganisms",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  I1688",
-"claim": "Favorisce l'equilibrio dell'ecosistema intestinale.Regola la funzionalità intestinale, ripristinando la normale microflora.Influisce positivamente sul benessere dell'organismo.Ripristina la naturale microflora dopo trattamento antibiotico.E' utile nella digestione del lattosio.",
-"relationship": "Improved lactose digestion",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  I1688",
-"claim": "Favorisce l'equilibrio dell'ecosistema intestinale.Regola la funzionalità intestinale, ripristinando la normale microflora.Influisce positivamente sul benessere dell'organismo.Ripristina la naturale microflora dopo trattamento antibiotico.E' utile nella digestione del lattosio.",
-"relationship": "Reduction of gastro-intestinal discomfort",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  LMG P-22043",
-"claim": "One of the methods to preserve vegetable is to use lactic acid bacteria. Scientific evidences demonstrate that the product (artichoke) contains Lactobacillus paracasei LMG P-22043, which is able to reach the intestine alive and in viable form. The consumption of 100 grams portion of product (approx 2 pieces) for not less than following 10 days supports to ensure the presence in the gut of Lactobacillus paracasei LMG P- 22043.\nTwo artichokes carry at least 1 billion of Lactobacillus paracasei LMG P- 22043 live cells.\nArtichokes are a natural source of fibers, including inuline and FOS, prebiotic substances able to improve the intestinal microflora composition”.\nIf the strain is ingested as an ingredient for artichokes or other preserved vegetables:\n- Beneficially affects the intestinal flora;\n- Supports a healthy intestinal flora;\n- Modulates bowel activity.",
-"relationship": "Reduction of gastro-intestinal discomfort",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  LMG P-22043",
-"claim": "One of the methods to preserve vegetable is to use lactic acid bacteria. Scientific evidences demonstrate that the product (artichoke) contains Lactobacillus paracasei LMG P-22043, which is able to reach the intestine alive and in viable form. The consumption of 100 grams portion of product (approx 2 pieces) for not less than following 10 days supports to ensure the presence in the gut of Lactobacillus paracasei LMG P- 22043.\nTwo artichokes carry at least 1 billion of Lactobacillus paracasei LMG P- 22043 live cells.\nArtichokes are a natural source of fibers, including inuline and FOS, prebiotic substances able to improve the intestinal microflora composition”.\nIf the strain is ingested as an ingredient for artichokes or other preserved vegetables:\n- Beneficially affects the intestinal flora;\n- Supports a healthy intestinal flora;\n- Modulates bowel activity.",
-"relationship": "decreasing potentially pathogenic gastro-intestinal microorganisms",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  LPC 01(CNCM I-1390)",
-"claim": "- contributes to the  rebalancing of intestinal microflora;- supports the maintenance of intestinal homeostasis;- promotes the wellbeing of the intestine;- contributes to reducing gastro-intestinal discomfort;- improves the metabolic activity of intestinal microflora.",
-"relationship": "L. paracasei LPC 01 (CNCM I-1390) and 'relieve symptoms typically associated with Irritable Bowel Syndrome (IBS), especially diarrhoea-predominant IBS, and to help reduce the daily number of bowel movements as well as improve the consistency of faeces in adult subjects reporting acute diarrhoea'",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  Lpc-37 (ATCC SD5275)",
-"claim": "- probiotic\n- helps body's natural defences;\n'- helps to strenghten the natural defenses;",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  NCC 2461 (ST11) (Pasteur culture collection CNCM I-2116)",
-"claim": "- probiotic\n-balances your intestinal flora;\n-supports digestive system;\n-improves digestive comfort;\n-reduces/ relieves bloating.",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  NCC 2461 (ST11) (Pasteur culture collection CNCM I-2116)",
-"claim": "- probiotic\n-increases your natural defences;\n-actively supports your immune system;\n-strengthens your immune defences;",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  NCC 2461 (ST11) (Pasteur culture collection CNCM I-2116)",
-"claim": "- probiotic\n-ST11 helps to reinforce skin barrier function;\n-ST11 helps to reduce the reactivity of skin;\n-ST11 helps to reduce the sensitivity of skin;\n-ST11 helps to preserve skin health.",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  ssp. paracasei CRL-431",
-"claim": "'- probiotic\n-strenghten/ support your body's natural defence;\n-strengthens and protects from inside\n-supports the balance of the intestinal flora thereby supporting the body's defence system",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  ssp. paracasei CRL-431 (=L. casei 431) and Lactobacillus acidophilus LA-5",
-"claim": "Helps balance the intestinal microflora\nHealthy bowel function\nHelps improve bowel function\nNormalises bowel movements/function\nHelps relieve gastro-intestinal discomfort",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  ssp. paracasei CRL-431 (=L. casei 431)and Lactobacillus acidophilus",
-"claim": "Strengthens/supports your body's natural defence\nStrengthens/supports the immune system\nStrengthens and protects from inside",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  subsp. paracasei  LPC 00 (LMG P-21380)",
-"claim": "- produces riboflavin;- promotes the wellbeing of the intestine;- supports the maintenance of intestinal homeostasis.",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  subsp. paracasei  LPC 00(LMG P-21380)+ Lactobacillus rhamnosus LR 04(DSM 16605)+Bifidobacterium breve BR 03 (DSM 16604)",
-"claim": "- produces riboflavin;- promotes the wellbeing of the intestine;- supports the maintenance of intestinal homeostasis.- assists autochthonous intestinal flora in controlling    episodes of diarrhoea;-  rebalances the intestinal motility function, especiall",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  subsp. paracasei  LPC 00(LMG P-21380)+Lactobacillus rhamnosus LR 04(DSM 16605)+Bifidobacterium breve BR 03 (DSM 16604)",
-"claim": "- produces riboflavin;- promotes the wellbeing of the intestine;- supports the maintenance of intestinal homeostasis.- rebalances the composition of microflora after  treatment with antibiotics;- contributes to the rebalancing of intestinal microflora;- i",
-"relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus paracasei  subsp. paracasei CRL 1289",
-"claim": "- produces high quantities hydrogen peroxide that     protects oropharyngeal cavity from harmful   microrganisms;- helps to restore and maintain normal vaginal microflora;- assists the direct defensive response against harmful microrganisms;- inhibits the",
-"relationship": "not validated",
 "status": "non-authorised"
 },
 {
@@ -7338,21 +7206,147 @@
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus parcasei 02A        (DSM 13432)",
+"substance": "Lactobacillus paracasei I1687",
+"claim": "Aiuta a rinforzare le difese naturali. Aiuta a modulare la risposta immunitaria. Riequilibra la risposta immunitaria nei soggetti sensibili a reazioni allergiche. Coadiuva la risposta immunitaria anche nei casi di infezione virale.",
+"relationship": "Increasing IL-10 production and/or enhancing the activity of natural killer cells",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei I1687",
+"claim": "Favorisce l'equilibrio dell'ecosistema intestinale. Regola la funzionalità intestinale, ripristinando la normale microflora. Influisce positivamente sul benessere dell'organismo. Ripristina la naturale microflora dopo trattamento antibiotico/antimicotico.",
+"relationship": "Decreasing potentially pathogenic gastro-intestinal microorganisms",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei I1687",
+"claim": "Favorisce l'equilibrio dell'ecosistema intestinale. Regola la funzionalità intestinale, ripristinando la normale microflora. Influisce positivamente sul benessere dell'organismo. Ripristina la naturale microflora dopo trattamento antibiotico/antimicotico.",
+"relationship": "Improved lactose digestion",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei I1687",
+"claim": "Favorisce l'equilibrio dell'ecosistema intestinale. Regola la funzionalità intestinale, ripristinando la normale microflora. Influisce positivamente sul benessere dell'organismo. Ripristina la naturale microflora dopo trattamento antibiotico/antimicotico.",
+"relationship": "Reduction of gastro-intestinal discomfort",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei I1688",
+"claim": "Aiuta a rinforzare le difese naturali.Aiuta a modulare la risposta immunitaria.Aiuta a regolare la risposta immunitaria nei soggetti che potrebbero manifestare reazioni infiammatorie.",
+"relationship": "Increasing IL-10 production and/or enhancing the activity of natural killer cells",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei I1688",
+"claim": "Favorisce l'equilibrio dell'ecosistema intestinale.Regola la funzionalità intestinale, ripristinando la normale microflora.Influisce positivamente sul benessere dell'organismo.Ripristina la naturale microflora dopo trattamento antibiotico.E' utile nella digestione del lattosio.",
+"relationship": "Decreasing potentially pathogenic gastro-intestinal microorganisms",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei I1688",
+"claim": "Favorisce l'equilibrio dell'ecosistema intestinale.Regola la funzionalità intestinale, ripristinando la normale microflora.Influisce positivamente sul benessere dell'organismo.Ripristina la naturale microflora dopo trattamento antibiotico.E' utile nella digestione del lattosio.",
+"relationship": "Improved lactose digestion",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei I1688",
+"claim": "Favorisce l'equilibrio dell'ecosistema intestinale.Regola la funzionalità intestinale, ripristinando la normale microflora.Influisce positivamente sul benessere dell'organismo.Ripristina la naturale microflora dopo trattamento antibiotico.E' utile nella digestione del lattosio.",
+"relationship": "Reduction of gastro-intestinal discomfort",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei LMG P-22043",
+"claim": "One of the methods to preserve vegetable is to use lactic acid bacteria. Scientific evidences demonstrate that the product (artichoke) contains Lactobacillus paracasei LMG P-22043, which is able to reach the intestine alive and in viable form. The consumption of 100 grams portion of product (approx 2 pieces) for not less than following 10 days supports to ensure the presence in the gut of Lactobacillus paracasei LMG P- 22043.\nTwo artichokes carry at least 1 billion of Lactobacillus paracasei LMG P- 22043 live cells.\nArtichokes are a natural source of fibers, including inuline and FOS, prebiotic substances able to improve the intestinal microflora composition”.\nIf the strain is ingested as an ingredient for artichokes or other preserved vegetables:\n- Beneficially affects the intestinal flora;\n- Supports a healthy intestinal flora;\n- Modulates bowel activity.",
+"relationship": "Reduction of gastro-intestinal discomfort",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei LMG P-22043",
+"claim": "One of the methods to preserve vegetable is to use lactic acid bacteria. Scientific evidences demonstrate that the product (artichoke) contains Lactobacillus paracasei LMG P-22043, which is able to reach the intestine alive and in viable form. The consumption of 100 grams portion of product (approx 2 pieces) for not less than following 10 days supports to ensure the presence in the gut of Lactobacillus paracasei LMG P- 22043.\nTwo artichokes carry at least 1 billion of Lactobacillus paracasei LMG P- 22043 live cells.\nArtichokes are a natural source of fibers, including inuline and FOS, prebiotic substances able to improve the intestinal microflora composition”.\nIf the strain is ingested as an ingredient for artichokes or other preserved vegetables:\n- Beneficially affects the intestinal flora;\n- Supports a healthy intestinal flora;\n- Modulates bowel activity.",
+"relationship": "decreasing potentially pathogenic gastro-intestinal microorganisms",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei LPC 01(CNCM I-1390)",
+"claim": "- contributes to the rebalancing of intestinal microflora;- supports the maintenance of intestinal homeostasis;- promotes the wellbeing of the intestine;- contributes to reducing gastro-intestinal discomfort;- improves the metabolic activity of intestinal microflora.",
+"relationship": "L. paracasei LPC 01 (CNCM I-1390) and 'relieve symptoms typically associated with Irritable Bowel Syndrome (IBS), especially diarrhoea-predominant IBS, and to help reduce the daily number of bowel movements as well as improve the consistency of faeces in adult subjects reporting acute diarrhoea'",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei Lpc-37 (ATCC SD5275)",
+"claim": "- probiotic\n- helps body's natural defences;\n'- helps to strenghten the natural defenses;",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei NCC 2461 (ST11) (Pasteur culture collection CNCM I-2116)",
+"claim": "- probiotic\n-balances your intestinal flora;\n-supports digestive system;\n-improves digestive comfort;\n-reduces/ relieves bloating.",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei NCC 2461 (ST11) (Pasteur culture collection CNCM I-2116)",
+"claim": "- probiotic\n-increases your natural defences;\n-actively supports your immune system;\n-strengthens your immune defences;",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei NCC 2461 (ST11) (Pasteur culture collection CNCM I-2116)",
+"claim": "- probiotic\n-ST11 helps to reinforce skin barrier function;\n-ST11 helps to reduce the reactivity of skin;\n-ST11 helps to reduce the sensitivity of skin;\n-ST11 helps to preserve skin health.",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei ssp. paracasei CRL-431",
+"claim": "'- probiotic\n-strenghten/ support your body's natural defence;\n-strengthens and protects from inside\n-supports the balance of the intestinal flora thereby supporting the body's defence system",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei ssp. paracasei CRL-431 (=L. casei 431) and Lactobacillus acidophilus LA-5",
+"claim": "Helps balance the intestinal microflora\nHealthy bowel function\nHelps improve bowel function\nNormalises bowel movements/function\nHelps relieve gastro-intestinal discomfort",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei ssp. paracasei CRL-431 (=L. casei 431)and Lactobacillus acidophilus",
+"claim": "Strengthens/supports your body's natural defence\nStrengthens/supports the immune system\nStrengthens and protects from inside",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei subsp. paracasei CRL 1289",
+"claim": "- produces high quantities hydrogen peroxide that protects oropharyngeal cavity from harmful microrganisms;- helps to restore and maintain normal vaginal microflora;- assists the direct defensive response against harmful microrganisms;- inhibits the",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei subsp. paracasei LPC 00 (LMG P-21380)",
+"claim": "- produces riboflavin;- promotes the wellbeing of the intestine;- supports the maintenance of intestinal homeostasis.",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei subsp. paracasei LPC 00(LMG P-21380)+ Lactobacillus rhamnosus LR 04(DSM 16605)+Bifidobacterium breve BR 03 (DSM 16604)",
+"claim": "- produces riboflavin;- promotes the wellbeing of the intestine;- supports the maintenance of intestinal homeostasis.- assists autochthonous intestinal flora in controlling episodes of diarrhoea;- rebalances the intestinal motility function, especiall",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus paracasei subsp. paracasei LPC 00(LMG P-21380)+Lactobacillus rhamnosus LR 04(DSM 16605)+Bifidobacterium breve BR 03 (DSM 16604)",
+"claim": "- produces riboflavin;- promotes the wellbeing of the intestine;- supports the maintenance of intestinal homeostasis.- rebalances the composition of microflora after treatment with antibiotics;- contributes to the rebalancing of intestinal microflora;- i",
+"relationship": "not validated",
+"status": "non-authorised"
+},
+{
+"substance": "Lactobacillus parcasei 02A (DSM 13432)",
 "claim": "Supports a healthy intestinal flora",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Lactobacillus plantarum\nLB3e DSM 17852",
-"claim": "Normalizes the bacterial flora in the intestine    \nBalances and strengthen the bacterial flora in the intestine\nSupports a healthy intestinal flora\n(Helps to) strengthen the natural defences",
+"claim": "Normalizes the bacterial flora in the intestine \nBalances and strengthen the bacterial flora in the intestine\nSupports a healthy intestinal flora\n(Helps to) strengthen the natural defences",
 "relationship": "not validated",
-"status": "non-authorised"
-},
-{
-"substance": "Lactobacillus plantarum  LP 01 (LMG P-21021)",
-"claim": "- riequilibria la funzione motoria intestinale; - contribuisce a ridurre il discomfort gastro-intestinale; - riduce la flatulenza ed il gonfiore addominale; - contribuisce a reintegrare la flora batterica intestinale; - ottimizza il transito intestinale nell'anziano.",
-"relationship": "Lactobacillus plantarum LP01 related to the following claimed effect: 'intestinal mobility'",
 "status": "non-authorised"
 },
 {
@@ -7369,7 +7363,7 @@
 },
 {
 "substance": "Lactobacillus plantarum 299v",
-"claim": "Lactobacillus plantarum 299v (Lp299v) increases non-haem iron absorption",
+"claim": "Lactobacillus plantarum 299v (Lp299v) increases non-haem iron absorption",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -7400,7 +7394,7 @@
 {
 "substance": "Lactobacillus plantarum 299v (DSM 9843)",
 "claim": "Supports your natural/body defence",
-"relationship": "\"Immune system\"",
+"relationship": "Immune system",
 "status": "non-authorised"
 },
 {
@@ -7435,7 +7429,7 @@
 },
 {
 "substance": "Lactobacillus plantarum LB7c DSM 17853",
-"claim": "Normalizes the bacterial flora in the intestine    \nBalances and strengthen the bacterial flora in the intestine\nSupports a healthy intestinal flora\n(Helps to) strengthen the natural defences",
+"claim": "Normalizes the bacterial flora in the intestine \nBalances and strengthen the bacterial flora in the intestine\nSupports a healthy intestinal flora\n(Helps to) strengthen the natural defences",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -7446,37 +7440,43 @@
 "status": "non-authorised"
 },
 {
+"substance": "Lactobacillus plantarum LP 01 (LMG P-21021)",
+"claim": "- riequilibria la funzione motoria intestinale; - contribuisce a ridurre il discomfort gastro-intestinale; - riduce la flatulenza ed il gonfiore addominale; - contribuisce a reintegrare la flora batterica intestinale; - ottimizza il transito intestinale nell'anziano.",
+"relationship": "Lactobacillus plantarum LP01 related to the following claimed effect: 'intestinal mobility'",
+"status": "non-authorised"
+},
+{
 "substance": "Lactobacillus plantarum LP 01(LMG P-21021)+ Bifidobacterium lactis BS 01(LMG P-21384)",
-"claim": "- rebalances the intestinal motility function;- rebalances the composition of microflora after treatment   with antibiotics;- improves the metabolic activity of intestinal microflora; - promotes the wellbeing of the intestine.",
+"claim": "- rebalances the intestinal motility function;- rebalances the composition of microflora after treatment with antibiotics;- improves the metabolic activity of intestinal microflora; - promotes the wellbeing of the intestine.",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus plantarum LP 01(LMG P-21021)+Bifidobacterium adolescentis  EI-18 -MB 227-BA05(DSM 18352)",
-"claim": "- rebalances the intestinal motility function;- rebalances the intestinal motility function in children;- contributes to reducing gastro-intestinal discomfort;- contributes to reducing gastro-intestinal discomfort in   children;- reduces flatulence and ab",
+"substance": "Lactobacillus plantarum LP 01(LMG P-21021)+Bifidobacterium adolescentis EI-18 -MB 227-BA05(DSM 18352)",
+"claim": "- rebalances the intestinal motility function;- rebalances the intestinal motility function in children;- contributes to reducing gastro-intestinal discomfort;- contributes to reducing gastro-intestinal discomfort in children;- reduces flatulence and ab",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Lactobacillus plantarum LP 01(LMG P-21021)+Bifidobacterium lactis BS 01(LMG P-21384)",
-"claim": "- rebalances the intestinal motility function;- rebalances the intestinal motility function in children;- rebalances the composition of microflora after treatment   with antibiotics;- rebalances the composition of microflora after treatment   with antibio",
+"claim": "- rebalances the intestinal motility function;- rebalances the intestinal motility function in children;- rebalances the composition of microflora after treatment with antibiotics;- rebalances the composition of microflora after treatment with antibio",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus plantarum LP 01(LMG P-21021)+Bifidobacteriumadolescentis  EI-18 -MB 227-BA05(DSM 18352)",
+"substance": "Lactobacillus plantarum LP 01(LMG P-21021)+Bifidobacteriumadolescentis EI-18 -MB 227-BA05(DSM 18352)",
 "claim": "- rebalances the intestinal motility function;- contributes to reducing gastro-intestinal discomfort;- reduces flatulence and abdominal bloating;- contributes to restoring intestinal bacterial flora;- optimizes intestinal transit in the elderly;- produces",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus plantarum LP 01(LMG P-21021)+Lactobacillus plantarum  LP 02(LMG P-21020)+Lactobacillus rhamnosus LR 04(DSM 16605) +Lactobacillus rhamnosus LR 05(DSM 19739) +Bifidobacterium  lactis BS 01(LMG P-21384)",
+"substance": "Lactobacillus plantarum LP 01(LMG P-21021)+Lactobacillus plantarum LP 02(LMG P-21020)+Lactobacillus rhamnosus LR 04(DSM 16605) +Lactobacillus rhamnosus LR 05(DSM 19739) +Bifidobacterium lactis BS 01(LMG P-21384)",
 "claim": "- produces folic acid and riboflavin;- supports the maintenance of intestinal homeostasis;- contributes to the rebalancing of intestinal microflora;- promotes the wellbeing of the intestine.",
 "relationship": "A combination of Bifidobacterium animalis subsp. lactis BS01, Lactobacillus rhamnosus LR04, Lactobacillus rhamnosus LR05, Lactobacillus plantarum LP01, Lactobacillus plantarum LP02 and short-chain fructo-oligosaccharides or galacto-oligosaccharides related to the following claimed effect: 'defence against upper respiratory tract infections'",
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus plantarum LP 01(LMG P-21021)+Lactobacillus plantarum  LP 02(LMG P-21020)+Lactobacillus rhamnosus LR 04(DSM 16605) +Lactobacillus rhamnosus LR 05(DSM 19739) +Bifidobacterium  lactis BS 01(LMG P-21384)",
+"substance": "Lactobacillus plantarum LP 01(LMG P-21021)+Lactobacillus plantarum LP 02(LMG P-21020)+Lactobacillus rhamnosus LR 04(DSM 16605) +Lactobacillus rhamnosus LR 05(DSM 19739) +Bifidobacterium lactis BS 01(LMG P-21384)",
 "claim": "- supports the natural defences of the organism;- supports the natural defences of children;- strengthens natural defences;- strengthens natural defences of children;- contributes to the maintenance of intestinal wellbeing;- contributes to the maintenance",
 "relationship": "not validated",
 "status": "non-authorised"
@@ -7633,7 +7633,7 @@
 },
 {
 "substance": "Lactobacillus rhamnosus",
-"claim": "Attraverso il riequilibro della flora intestinale contribuisce a migliorare il benessere della pelle e quindi anche la salute del cuoio capellutoe  dei capelli. . Agisce a alivello inetstinale favorendo il miglior assorbimento di tutti i componenti contenuti in Bioscalin antiforfora, migliorandio così la loro disponibilità.",
+"claim": "Attraverso il riequilibro della flora intestinale contribuisce a migliorare il benessere della pelle e quindi anche la salute del cuoio capellutoe dei capelli. . Agisce a alivello inetstinale favorendo il miglior assorbimento di tutti i componenti contenuti in Bioscalin antiforfora, migliorandio così la loro disponibilità.",
 "relationship": "Lactobacillus rhamnosus LR04 related to the following claimed effect: 'balancing intestinal flora, improves skin, scalp and hair health'",
 "status": "non-authorised"
 },
@@ -7662,7 +7662,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Lactobacillus rhamnosus GR 1 (ATCC 55826) and Lactobacilus reuteri RC  14 (ATCC 55845)",
+"substance": "Lactobacillus rhamnosus GR 1 (ATCC 55826) and Lactobacilus reuteri RC 14 (ATCC 55845)",
 "claim": "Helps to restore and maintain a normal vaginal microflora",
 "relationship": "defence against vaginal pathogens by increasing the proportion of lactobacilli and/or decreasing the proportion of potentially pathogenic bacteria and/or yeasts",
 "status": "non-authorised"
@@ -7687,7 +7687,7 @@
 },
 {
 "substance": "Lactobacillus rhamnosus LB21 NCIMB 40564",
-"claim": "Normalizes the bacterial flora in the intestine    \nBalances and strengthen the bacterial flora in the intestine\nSupports a healthy intestinal flora\n(Helps to) strengthen the natural defences\nSupport gastrointestinal conditions during antibiotic treatment",
+"claim": "Normalizes the bacterial flora in the intestine \nBalances and strengthen the bacterial flora in the intestine\nSupports a healthy intestinal flora\n(Helps to) strengthen the natural defences\nSupport gastrointestinal conditions during antibiotic treatment",
 "relationship": "Digestive health",
 "status": "non-authorised"
 },
@@ -7711,13 +7711,13 @@
 },
 {
 "substance": "Lactobacillus rhamnosus LR 04 (DSM 16605)",
-"claim": "- assists autochthonous intestinal flora in controlling    episodes of diarrhoea;- assists autochthonous intestinal flora in controlling    episodes of diarrhoea in children;-  rebalances the intestinal motility function;-  rebalances the intestinal motil",
+"claim": "- assists autochthonous intestinal flora in controlling episodes of diarrhoea;- assists autochthonous intestinal flora in controlling episodes of diarrhoea in children;- rebalances the intestinal motility function;- rebalances the intestinal motil",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
 "substance": "Lactobacillus rhamnosus LR 04 (DSM 16605)",
-"claim": "- coadiuva la flora intestinale autoctona nella regolazione   delle situazioni diarroiche; -  riequilibria la funzione motoria intestinale, in    particolare nelle donne e nell'anziano; - favorisce il mantenimento dell'omeostasi intestinale; - riequilibria la composizione della microflora dopo   trattamento con antibiotici.",
+"claim": "- coadiuva la flora intestinale autoctona nella regolazione delle situazioni diarroiche; - riequilibria la funzione motoria intestinale, in particolare nelle donne e nell'anziano; - favorisce il mantenimento dell'omeostasi intestinale; - riequilibria la composizione della microflora dopo trattamento con antibiotici.",
 "relationship": "Lactobacillus rhamnosus LR04 related to the following claimed effect: 'reduce the daily number of bowel movements'",
 "status": "non-authorised"
 },
@@ -7747,7 +7747,7 @@
 },
 {
 "substance": "Lactobacillus salivarius I1794",
-"claim": "Aiuta a rinforzare le difese naturali. Aiuta a modulare la risposta immunitaria. Riequilibra la risposta immunitaria nei soggetti sensibili a reazioni  allergiche. Coadiuva la risposta immunitaria anche nei casi di infezione virale.",
+"claim": "Aiuta a rinforzare le difese naturali. Aiuta a modulare la risposta immunitaria. Riequilibra la risposta immunitaria nei soggetti sensibili a reazioni allergiche. Coadiuva la risposta immunitaria anche nei casi di infezione virale.",
 "relationship": "Increasing IL-10 production and/or enhancing the activity of natural killer cells",
 "status": "non-authorised"
 },
@@ -7807,7 +7807,7 @@
 },
 {
 "substance": "Lactococcus lactis L1A NCIMB 40157",
-"claim": "Normalizes the bacterial flora in the intestine                                                                                                                                                                 Supports a healthy intestinal flora\nBalances an",
+"claim": "Normalizes the bacterial flora in the intestine Supports a healthy intestinal flora\nBalances an",
 "relationship": "not validated",
 "status": "non-authorised"
 },
@@ -7873,7 +7873,7 @@
 },
 {
 "substance": "Lactotripeptides",
-"claim": "Can help  to maintain a healthy blood pressure/can contribute to a healthy blood pressure",
+"claim": "Can help to maintain a healthy blood pressure/can contribute to a healthy blood pressure",
 "relationship": "Maintenance of normal blood pressure",
 "status": "non-authorised"
 },
@@ -7944,14 +7944,14 @@
 "status": "non-authorised"
 },
 {
-"substance": "lecithin   phosphatidyl choline",
-"claim": "Helps to keep normal cholesterol level",
+"substance": "Lecithin -/phosphatidyl choline",
+"claim": "Promotes the good heart functioning and a balanced level of blood lipids.",
 "relationship": "maintenance of normal blood cholesterol concentrations",
 "status": "non-authorised"
 },
 {
-"substance": "Lecithin -/phosphatidyl choline",
-"claim": "Promotes the good heart functioning and a balanced level of blood lipids.",
+"substance": "lecithin phosphatidyl choline",
+"claim": "Helps to keep normal cholesterol level",
 "relationship": "maintenance of normal blood cholesterol concentrations",
 "status": "non-authorised"
 },
@@ -8071,7 +8071,7 @@
 },
 {
 "substance": "Lozenges with two Lactobacillus reuteri strains:\nLactobacillus reuteri DSM 17938 and Lactobacillus reuteri ATCC PTA 5289, approximately equal amount of each strain (total minimum amount of 1 × 108 CFU/lozenge of each bacterial strain)",
-"claim": "Lozenges containing Lactobacillus reuteri DSM 17938 and Lactobacillus reuteri ATCC PTA 5289 support normal gum function",
+"claim": "Lozenges containing Lactobacillus reuteri DSM 17938 and Lactobacillus reuteri ATCC PTA 5289 support normal gum function",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -8564,7 +8564,7 @@
 {
 "substance": "Melon extract (containing SOD) /Wheat Gliadin",
 "claim": "- Reinforces the body’s own natural defences.\n- Promotes the whole natural defences against free radicals in excess\n- Helps maintain the immune system",
-"relationship": "\"effects on immune system\"",
+"relationship": "effects on immune system",
 "status": "non-authorised"
 },
 {
@@ -8658,7 +8658,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "milk phospholipids                                  \n milk fat globule membrane",
+"substance": "milk phospholipids \n milk fat globule membrane",
 "claim": "Helps to strengthen the natural defences. Helps to support the natural defences. Helps to support the body's defences. Helps to strengthen the body's defences. les phospholipides laitiers participent aux défenses naturelles",
 "relationship": "“immune function/immune system”",
 "status": "non-authorised"
@@ -8684,7 +8684,7 @@
 {
 "substance": "Mineralwasser/\nNatriumchlorid",
 "claim": "[In German:] zur Anregung des Appetits.\nClarification provided\nTo stimulate the appetite.",
-"relationship": "increase in appetite after unintentional weight loss leading to an increase in energy  intake",
+"relationship": "increase in appetite after unintentional weight loss leading to an increase in energy intake",
 "status": "non-authorised"
 },
 {
@@ -9132,7 +9132,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Natural mineral water: Sulphates as Mg-, Na- salts:  MgSO4, Na2SO4",
+"substance": "Natural mineral water: Sulphates as Mg-, Na- salts: MgSO4, Na2SO4",
 "claim": "Sulphates promote emptying of bowel.",
 "relationship": "changes in bowel function",
 "status": "non-authorised"
@@ -9312,7 +9312,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Nüsse -  Erdnüsse, Haselnüsse, Pekanüsse, Walnüsse und Pistazien,; KEINE Paranüsse, Macadamianüsse und Cashewkerne",
+"substance": "Nüsse - Erdnüsse, Haselnüsse, Pekanüsse, Walnüsse und Pistazien,; KEINE Paranüsse, Macadamianüsse und Cashewkerne",
 "claim": "[In German:] Der Verzehr von 30g Nüssen pro Tag im Rahmen einer ausgewogenen Ernährung kann zum Gewichtsverlust und zur Erhaltung des Gewichts beitragen.",
 "relationship": "not validated",
 "status": "non-authorised"
@@ -9398,7 +9398,7 @@
 {
 "substance": "Oligomères\nProcyanidoliques\n(OPC) de raisin",
 "claim": "Soutient les performances visuelles Renforce les fonctions visuelles\nClarification provided\nGrapeseeds extract improve visual adaptation to low luminance /participate to the visual performance/protect cornea/supports visual function.",
-"relationship": "improvement of visual  adaptation to the dark",
+"relationship": "improvement of visual adaptation to the dark",
 "status": "non-authorised"
 },
 {
@@ -9542,7 +9542,7 @@
 {
 "substance": "Omega-3 fatty acids/alpha-linoleic acid",
 "claim": "Omega-3 fatty acids are needed for growth and development.\nOmega-3 fatty acids are needed as building material for cells.\nOmega-3 fatty acids have an effect on vision.\nOmega-3 fatty acids have an effect on skin condition.\nOmega-3 fatty acids have an effect on blood pressure and regulation of nervous system activity.",
-"relationship": "\"Nutrient tasks and interactions\"",
+"relationship": "Nutrient tasks and interactions",
 "status": "non-authorised"
 },
 {
@@ -9560,7 +9560,7 @@
 {
 "substance": "Omega-3 fish body oil - PUFAs",
 "claim": "May help maintain a healthy digestive system Gentle on the stomach Appearance of skin, healthy looking skin, a part of your daily skin care routine, helps maintain a good complexion.",
-"relationship": "\"Skin and digestive tract epithelial cells maintenance”",
+"relationship": "Skin and digestive tract epithelial cells maintenance”",
 "status": "non-authorised"
 },
 {
@@ -9595,6 +9595,12 @@
 },
 {
 "substance": "OptiEFAX™",
+"claim": "OptiEFAX™ helps to maintain healthy blood levels of HDL cholesterol",
+"relationship": "nan",
+"status": "non-authorised"
+},
+{
+"substance": "OptiEFAX™",
 "claim": "OptiEFAX™ helps to maintain healthy blood levels of LDL cholesterol",
 "relationship": "nan",
 "status": "non-authorised"
@@ -9606,12 +9612,6 @@
 "status": "non-authorised"
 },
 {
-"substance": "OptiEFAX™",
-"claim": "OptiEFAX™ helps to maintain healthy blood levels of HDL cholesterol",
-"relationship": "nan",
-"status": "non-authorised"
-},
-{
 "substance": "Ornithine",
 "claim": "Ornithine helps to normalize hepatic function through regulation of urea cycle.",
 "relationship": "contribution to the regulation of the urea cycle",
@@ -9619,7 +9619,7 @@
 },
 {
 "substance": "OXY 280",
-"claim": "OXY 280 helps to lose weight",
+"claim": "OXY 280 helps to lose weight",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -10050,7 +10050,7 @@
 "status": "authorised"
 },
 {
-"substance": "Plant sterols in combination with Cholesternorm®mix",
+"substance": "Plant sterols in combination with Cholesternorm®mix",
 "claim": "Actively lowers cholesterol.",
 "relationship": "nan",
 "status": "non-authorised"
@@ -10543,7 +10543,7 @@
 },
 {
 "substance": "Prolibra®",
-"claim": "Helps to reduce body fat while preserving lean muscle",
+"claim": "Helps to reduce body fat while preserving lean muscle",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -10741,13 +10741,13 @@
 },
 {
 "substance": "Prunus cerasus - common name : Sour cherry",
-"claim": "\"Traditionally used to enhance the renal elimination of water\" / \"Traditionally used to facilitate the elimination functions of the organism\" / \"Used to enhance the renal elimination of water\" / \"Used to facilitate the elimination functions of the organism\" / \"Used for the drainage of the organism\" / \"Diuretic effect\" / \"Stimulates the elimination function of the organism\" / \"Contributes to the functionary of the urinary tract\"",
+"claim": "Traditionally used to enhance the renal elimination of water\" / \"Traditionally used to facilitate the elimination functions of the organism\" / \"Used to enhance the renal elimination of water\" / \"Used to facilitate the elimination functions of the organism\" / \"Used for the drainage of the organism\" / \"Diuretic effect\" / \"Stimulates the elimination function of the organism\" / \"Contributes to the functionary of the urinary tract",
 "relationship": "Increase in renal water elimination",
 "status": "non-authorised"
 },
 {
 "substance": "Prunus cerasus - common name : Sour cherry",
-"claim": "\"Traditionally used to facilitate the digestion\" / \"Used to facilitate the digestion\" / \"Contributes to the digestive comfort\" / \"Helps to support the digestion\" / \"Contributes to support the digestion\".",
+"claim": "Traditionally used to facilitate the digestion\" / \"Used to facilitate the digestion\" / \"Contributes to the digestive comfort\" / \"Helps to support the digestion\" / \"Contributes to support the digestion\".",
 "relationship": "“Digestive function”",
 "status": "non-authorised"
 },
@@ -10758,25 +10758,25 @@
 "status": "non-authorised"
 },
 {
-"substance": "PSMIX®, miscela di Lactobacillus paracasei  I1688 e Lactobacillus salivarius I1794",
-"claim": "PSMIX® aiuta a rinforzare le difese naturali. PSMIX® aiuta a modulare la risposta immunitaria. PSMIX® riequilibra la risposta immunitaria nei soggetti sensibili a reazioni  allergiche. PSMIX® coadiuva la risposta immunitaria anche nei casi di infezione virale.",
+"substance": "PSMIX®, miscela di Lactobacillus paracasei I1688 e Lactobacillus salivarius I1794",
+"claim": "PSMIX® aiuta a rinforzare le difese naturali. PSMIX® aiuta a modulare la risposta immunitaria. PSMIX® riequilibra la risposta immunitaria nei soggetti sensibili a reazioni allergiche. PSMIX® coadiuva la risposta immunitaria anche nei casi di infezione virale.",
 "relationship": "Decreasing potentially pathogenic gastro-intestinal microorganisms",
 "status": "non-authorised"
 },
 {
-"substance": "PSMIX®, miscela di Lactobacillus paracasei  I1688 e Lactobacillus salivarius I1794",
-"claim": "PSMIX® aiuta a rinforzare le difese naturali. PSMIX® aiuta a modulare la risposta immunitaria. PSMIX® riequilibra la risposta immunitaria nei soggetti sensibili a reazioni  allergiche. PSMIX® coadiuva la risposta immunitaria anche nei casi di infezione virale.",
+"substance": "PSMIX®, miscela di Lactobacillus paracasei I1688 e Lactobacillus salivarius I1794",
+"claim": "PSMIX® aiuta a rinforzare le difese naturali. PSMIX® aiuta a modulare la risposta immunitaria. PSMIX® riequilibra la risposta immunitaria nei soggetti sensibili a reazioni allergiche. PSMIX® coadiuva la risposta immunitaria anche nei casi di infezione virale.",
 "relationship": "Improved lactose digestion",
 "status": "non-authorised"
 },
 {
-"substance": "PSMIX®, miscela di Lactobacillus paracasei  I1688 e Lactobacillus salivarius I1794",
-"claim": "PSMIX® aiuta a rinforzare le difese naturali. PSMIX® aiuta a modulare la risposta immunitaria. PSMIX® riequilibra la risposta immunitaria nei soggetti sensibili a reazioni  allergiche. PSMIX® coadiuva la risposta immunitaria anche nei casi di infezione virale.",
+"substance": "PSMIX®, miscela di Lactobacillus paracasei I1688 e Lactobacillus salivarius I1794",
+"claim": "PSMIX® aiuta a rinforzare le difese naturali. PSMIX® aiuta a modulare la risposta immunitaria. PSMIX® riequilibra la risposta immunitaria nei soggetti sensibili a reazioni allergiche. PSMIX® coadiuva la risposta immunitaria anche nei casi di infezione virale.",
 "relationship": "Reduction of gastro-intestinal discomfort",
 "status": "non-authorised"
 },
 {
-"substance": "PSMIX®, miscela di Lactobacillus paracasei  I1688 e Lactobacillus salivarius I1794",
+"substance": "PSMIX®, miscela di Lactobacillus paracasei I1688 e Lactobacillus salivarius I1794",
 "claim": "PSMIX® favorisce l'equilibrio dell'ecosistema intestinale. PSMIX® regola la funzionalità intestinale, ripristinando la normale microflora. PSMIX® influisce positivamente sul benessere dell'organismo. PSMIX® ripristina la naturale microflora dopo trattamento antibiotico/antimicotico. PSMIX® è utile nella digestione del lattosio.",
 "relationship": "Increasing IL-10 production",
 "status": "non-authorised"
@@ -10896,8 +10896,8 @@
 "status": "non-authorised"
 },
 {
-"substance": "Raphanus sativus  - common name : radish, black radish, Japanese radish, Daikon",
-"claim": "\"Used to facilitate the digestion\"\n\"Helps to support normal liver function\"\n\"Contributes to the stimulation of the production of the digestive body fluids\"\n\"Supports the liver and biliary function\"\n\"Contributes to the digestive comfort\"\n\"Helps to facilitate fat digestion\"\n\"Contributes to better fat digestion\"\n\"Helps to support the digestion\"\n\"Contributes to support the digestion\".",
+"substance": "Raphanus sativus - common name : radish, black radish, Japanese radish, Daikon",
+"claim": "Used to facilitate the digestion\"\n\"Helps to support normal liver function\"\n\"Contributes to the stimulation of the production of the digestive body fluids\"\n\"Supports the liver and biliary function\"\n\"Contributes to the digestive comfort\"\n\"Helps to facilitate fat digestion\"\n\"Contributes to better fat digestion\"\n\"Helps to support the digestion\"\n\"Contributes to support the digestion\".",
 "relationship": "“Digestive function”",
 "status": "non-authorised"
 },
@@ -10920,13 +10920,13 @@
 "status": "non-authorised"
 },
 {
-"substance": "Raw or processed food products of animal origin, plus bread and panification  products  (cow’s, goat’s and ewe’s  milk and related products ( milk, cream, butter, cheese, yoghurt, fresh dairy products); hen’s and quail’s eggs; beef’s, veal’s and lamb’s me",
+"substance": "Raw or processed food products of animal origin, plus bread and panification products (cow’s, goat’s and ewe’s milk and related products ( milk, cream, butter, cheese, yoghurt, fresh dairy products); hen’s and quail’s eggs; beef’s, veal’s and lamb’s me",
 "claim": "* The Tradilin network makes it possible to obtain products which fit into a diet naturally rich in omega 3 which participates to improve/decrease carbohydrate metabolic disorders\nLa filière Tradilin permet d’obtenir des produits qui s’intègrent dans une alimentation riche en Oméga 3 qui participe diminuer les désordres du métabolisme des carbohydrates\n* The Tradilin network makes it possible to obtain products which fit into a diet naturally rich in omega 3 which participates in the control of parameters of the metabolic syndrome\nLa filière Tradilin permet d’obtenir des produits qui s’intègrent dans une alimentation riche en Oméga 3 qui participe au contrôle des paramètres du syndrome métabolique\n* This product participates/contributes/helps to regulate carbohydrate metabolism\nCe produit participe à la régulation du métabolisme glucidique\n* This product, from the Tradilin network, helps to better to regulate carbohydrate metabolism/ control the parameters on the metabolic syndrome\nCe produit, issu de la filière Tradilin, s’intègre dans une alimentation riche en Oméga 3 qui participe à diminuer les désordres du métabolisme des carbohydrates/à contrôler les paramètres du syndrome métabolique",
 "relationship": "not validated",
 "status": "non-authorised"
 },
 {
-"substance": "Raw or processed food products of animal origin, plus bread and panification  products  (cow’s, goat’s and ewe’s  milk and related products ( milk, cream, butter, cheese, yoghurt, fresh dairy products); hen’s and quail’s eggs; beef’s, veal’s and lamb’s me",
+"substance": "Raw or processed food products of animal origin, plus bread and panification products (cow’s, goat’s and ewe’s milk and related products ( milk, cream, butter, cheese, yoghurt, fresh dairy products); hen’s and quail’s eggs; beef’s, veal’s and lamb’s me",
 "claim": "* The Tradilin network makes it possible to obtain products which fit into a diet naturally rich in omega 3, which favors the balance/a good balance of blood lipids\nLa filière Bleu-Blanc-Coeur / Tradilin permet d’obtenir des produits qui s’intègrent dans une alimentation naturellement riche en oméga 3, qui favorise l’équilibre des lipides sanguins\n* A diet which includes products from the Tradilin network favours a good balance of blood lipids.\nS’alimenter avec des produits, issus de la filière Tradilin favorise l’équilibre des lipides sanguins\n* This product participates/ contributes to improve the balance of blood lipids.\nCe produit contribue/participe à l’amélioration de l’équilibre des lipides sanguins\n* This product, from de Tradilin network fits in a diet naturally increased in Omega 3, which favors the balance of blood lipids\nCe produit, issu de la filière Tradilin s’intègre dans une alimentation naturellement riche en Oméga 3, qui favorise l’équilibre des lipides sanguins",
 "relationship": "not validated",
 "status": "non-authorised"
@@ -11108,7 +11108,7 @@
 {
 "substance": "Royal jelly",
 "claim": "Reconstituent and tonic",
-"relationship": "\"tonic\"",
+"relationship": "tonic",
 "status": "non-authorised"
 },
 {
@@ -11126,7 +11126,7 @@
 {
 "substance": "Royal jelly, lyophilized",
 "claim": "It nourishes the human body and supplies energy. It supplies vitamins and minerals from natural sources. It has positive effects during menopause and for overall rejuvenation of the skin and human body.",
-"relationship": "\"stimulant\"",
+"relationship": "stimulant",
 "status": "non-authorised"
 },
 {
@@ -11136,7 +11136,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Rubus idaeas  (Raspberry) extract - BERI-08",
+"substance": "Rubus idaeas (Raspberry) extract - BERI-08",
 "claim": "Helps to enhance the thermogenesis production, wich in turn helps weight control\nHelps to control the appetit\nNaturally supports feeling of fullness after a meal\nHelps to manage appetit and hunger\nHelps to loose weight\nContributes to loose weight\nUsed to facilitate the weight loss\nHelps in weight control\nContributes to body weight management",
 "relationship": "contribution to the maintenance or achievement of a normal body weight",
 "status": "non-authorised"
@@ -11198,18 +11198,18 @@
 {
 "substance": "Saccharomyces boulardii ATY-SB-101",
 "claim": "-Helps to reinforce the natural defenses;\n-Stimulates the immune system;",
-"relationship": "Saccharomyces boulardii ATY-SB-101 (BCCM/MUCL 53837) related to the following claimed effects: \"\"modulating both innate and adaptive host immunity to respond against pathogen infection\"\"",
+"relationship": "Saccharomyces boulardii ATY-SB-101 (BCCM/MUCL 53837) related to the following claimed effects: \"\"modulating both innate and adaptive host immunity to respond against pathogen infection",
 "status": "non-authorised"
 },
 {
 "substance": "Saccharomyces boulardii ATY-SB-101",
 "claim": "-Maintains intestinal microflora's balance;\n- probiotic\n-regulates your intestinal transit;\n-balances your intestinal flora;\n-supports healthy digestive system.",
-"relationship": "Saccharomyces boulardii ATY-SB-101 (BCCM/MUCL 53837) related to the following claimed effects: \"\"maintains and restores the natural flora\"\"",
+"relationship": "Saccharomyces boulardii ATY-SB-101 (BCCM/MUCL 53837) related to the following claimed effects: \"\"maintains and restores the natural flora",
 "status": "non-authorised"
 },
 {
 "substance": "Saccharomyces cerevisiae var. boulardii CNCM I-3799",
-"claim": "Saccharomyces cerevisiae var. boulardii CNCM I-3799 helps maintain intestinal comfort",
+"claim": "Saccharomyces cerevisiae var. boulardii CNCM I-3799 helps maintain intestinal comfort",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -11472,15 +11472,15 @@
 "status": "non-authorised"
 },
 {
-"substance": "Sinapis alba  (Common Name : White mustard)",
+"substance": "Sinapis alba (Common Name : White mustard)",
 "claim": "Contributes to appetite / helps to support the digestion / helps to support the digestive juice flow / contributes to the gastro-intestinal movement.",
 "relationship": "changes in bowel function",
 "status": "non-authorised"
 },
 {
-"substance": "Sinapis alba  (Common Name : White mustard)",
+"substance": "Sinapis alba (Common Name : White mustard)",
 "claim": "Contributes to appetite / helps to support the digestion / helps to support the digestive juice flow / contributes to the gastro-intestinal movement.",
-"relationship": "increase in appetite after unintentional weight loss leading to an increase in energy  intake",
+"relationship": "increase in appetite after unintentional weight loss leading to an increase in energy intake",
 "status": "non-authorised"
 },
 {
@@ -11731,7 +11731,7 @@
 },
 {
 "substance": "Spermidine",
-"claim": "Spermidine prolongs the growing phase (anagen) of the hair cycle",
+"claim": "Spermidine prolongs the growing phase (anagen) of the hair cycle",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -11839,7 +11839,7 @@
 },
 {
 "substance": "Streptococcus thermophilus P18807",
-"claim": "La miscela coadiuva la maturazione del sistema immunitario, soprattutto nei soggetti sensibili a reazioni  allergiche.",
+"claim": "La miscela coadiuva la maturazione del sistema immunitario, soprattutto nei soggetti sensibili a reazioni allergiche.",
 "relationship": "Reduction in numbers of circulating CD34+ cells",
 "status": "non-authorised"
 },
@@ -11905,13 +11905,13 @@
 },
 {
 "substance": "Sugar beet fibre",
-"claim": "Sugar beet fibre contributes to an increase in faecal bulk",
+"claim": "Sugar beet fibre contributes to an increase in faecal bulk",
 "relationship": "nan",
 "status": "authorised"
 },
 {
 "substance": "Sugar beet fibre",
-"claim": "\"- The combination of soluble / insoluble fibre in Sugar beet fibre makes the stomach work properly.\n- Dietary fibre helps to maintain bowel/colonic function\n- Dietary fibre promotes regularity\n- Ensures a healthy digestive system/function\"",
+"claim": "- The combination of soluble / insoluble fibre in Sugar beet fibre makes the stomach work properly.\n- Dietary fibre helps to maintain bowel/colonic function\n- Dietary fibre promotes regularity\n- Ensures a healthy digestive system/function",
 "relationship": "Changes in bowel function",
 "status": "non-authorised"
 },
@@ -11953,13 +11953,13 @@
 },
 {
 "substance": "Sugar replacers, i.e. intense sweeteners;\nxylitol, sorbitol, mannitol, maltitol, lactitol, isomalt, erythritol, sucralose and polydextrose; D-tagatose and isomaltulose",
-"claim": "Consumption of foods/drinks containing <name of sugar replacer> instead of sugar* contributes to the maintenance of tooth mineralisation\n* In the case of D-tagatose and isomaltulose this should read \"other sugars\"",
+"claim": "Consumption of foods/drinks containing <name of sugar replacer> instead of sugar* contributes to the maintenance of tooth mineralisation\n* In the case of D-tagatose and isomaltulose this should read \"other sugars",
 "relationship": "maintenance of tooth mineralisation by decreasing tooth demineralisation",
 "status": "authorised"
 },
 {
 "substance": "Sugar replacers, i.e. intense sweeteners;\nxylitol, sorbitol, mannitol, maltitol, lactitol, isomalt, erythritol, sucralose and polydextrose; D-tagatose and isomaltulose",
-"claim": "Consumption of foods/drinks containing <name of sugar replacer> instead of sugar* induces a lower blood glucose rise after their consumption compared to sugar-containing foods/drinks\n* In the case of D-tagatose and isomaltulose this should read \"other sugars\"",
+"claim": "Consumption of foods/drinks containing <name of sugar replacer> instead of sugar* induces a lower blood glucose rise after their consumption compared to sugar-containing foods/drinks\n* In the case of D-tagatose and isomaltulose this should read \"other sugars",
 "relationship": "reduction of post-prandial glycaemic responses",
 "status": "authorised"
 },
@@ -12162,8 +12162,8 @@
 "status": "non-authorised"
 },
 {
-"substance": "Symbiosal®’ (a food supplement containing sea salt (97 %) plus chitosan (3 %))",
-"claim": "Symbiosal® has been shown to lower the rising of blood pressure when used as a replacement of traditional table salt. The rising of blood pressure is a risk factor for high blood pressure (hypertension).",
+"substance": "Symbiosal®’ (a food supplement containing sea salt (97 %) plus chitosan (3 %))",
+"claim": "Symbiosal® has been shown to lower the rising of blood pressure when used as a replacement of traditional table salt. The rising of blood pressure is a risk factor for high blood pressure (hypertension).",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -12174,7 +12174,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Synbio, a combination of two probiotic bacterial strains Lactobacillus rhamnosus IMC 501® and Lactobacillus paracasei  IMC 502®",
+"substance": "Synbio, a combination of two probiotic bacterial strains Lactobacillus rhamnosus IMC 501® and Lactobacillus paracasei IMC 502®",
 "claim": "Synbio persists in the intestinal tract and favours the natural regularity contributing to maintain and improve human intestinal well-being",
 "relationship": "nan",
 "status": "non-authorised"
@@ -12242,7 +12242,7 @@
 {
 "substance": "Taurine",
 "claim": "Amino acid that plays an important role in the immune system.",
-"relationship": "\"immune system protection\"",
+"relationship": "immune system protection",
 "status": "non-authorised"
 },
 {
@@ -12277,7 +12277,7 @@
 },
 {
 "substance": "Teestar™, a fenugreek seed extract standardised by its content of galactomannan",
-"claim": "Teestar™ lowers blood glucose levels",
+"claim": "Teestar™ lowers blood glucose levels",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -12408,7 +12408,7 @@
 "status": "non-authorised"
 },
 {
-"substance": "Unsaturated  fats/fatty acids",
+"substance": "Unsaturated fats/fatty acids",
 "claim": "-help to maintain the function and fluidity of the cellular menbranes.",
 "relationship": "“function of the cell membrane”",
 "status": "non-authorised"
@@ -12500,7 +12500,7 @@
 {
 "substance": "Vegetables of 5 colors",
 "claim": "Eating a variety of colorful vegetables helps to protect your health. Eating vegetables of all the available colors helps to get all the nutrients and protective substances that will contribute to the wellbeing of your body.",
-"relationship": "\"general health\"",
+"relationship": "general health",
 "status": "non-authorised"
 },
 {
@@ -12559,7 +12559,7 @@
 },
 {
 "substance": "Vichy Catalan carbonated natural mineral water",
-"claim": "Vichy Catalan, a bicarbonated natural mineral water rich in mineral salts, contributes to reduce blood triglycerides rise during digestion",
+"claim": "Vichy Catalan, a bicarbonated natural mineral water rich in mineral salts, contributes to reduce blood triglycerides rise during digestion",
 "relationship": "nan",
 "status": "non-authorised"
 },
@@ -12638,7 +12638,7 @@
 {
 "substance": "Vitamin A",
 "claim": "Necessary to maintain energy and general vitality",
-"relationship": "\"energy and vitality\"",
+"relationship": "energy and vitality",
 "status": "non-authorised"
 },
 {
@@ -12692,7 +12692,7 @@
 {
 "substance": "Vitamin B1",
 "claim": "Necessary to maintain energy and general vitality",
-"relationship": "\"energy and vitality\"",
+"relationship": "energy and vitality",
 "status": "non-authorised"
 },
 {
@@ -12776,7 +12776,7 @@
 {
 "substance": "Vitamin B12",
 "claim": "Necessary to maintain energy and general vitality",
-"relationship": "\"energy and vitality\"",
+"relationship": "energy and vitality",
 "status": "non-authorised"
 },
 {
@@ -12866,7 +12866,7 @@
 {
 "substance": "Vitamin B5",
 "claim": "Necessary to maintain energy and general vitality",
-"relationship": "\"energy and vitality\"",
+"relationship": "energy and vitality",
 "status": "non-authorised"
 },
 {
@@ -13064,7 +13064,7 @@
 {
 "substance": "Vitamin C",
 "claim": "Necessary to maintain energy and general vitality",
-"relationship": "\"energy and vitality\"",
+"relationship": "energy and vitality",
 "status": "non-authorised"
 },
 {
@@ -13208,7 +13208,7 @@
 {
 "substance": "Vitamin E",
 "claim": "Necessary to maintain energy and general vitality",
-"relationship": "\"energy and vitality\"",
+"relationship": "energy and vitality",
 "status": "non-authorised"
 },
 {
@@ -13580,7 +13580,7 @@
 {
 "substance": "Wheat germ oil",
 "claim": "Strengthens the digestive system.",
-"relationship": "\"digestive system\"",
+"relationship": "digestive system",
 "status": "non-authorised"
 },
 {
@@ -13849,7 +13849,7 @@
 },
 {
 "substance": "Yeo Valley yoghurt products containing the probiotic bacteria Bifidobacterium animalis ssp. lactis BB-12 ® and Lactobacillus acidophilus LA-5 ®",
-"claim": "It’s Bio-Live.  Each spoonful contains millions of bacteria that help to maintain the balance of natural flora in your body, which can aid digestion and general well-being.  \nHelps to maintain harmony in your digestive system\nHelps to maintain a healthy d",
+"claim": "It’s Bio-Live. Each spoonful contains millions of bacteria that help to maintain the balance of natural flora in your body, which can aid digestion and general well-being. \nHelps to maintain harmony in your digestive system\nHelps to maintain a healthy d",
 "relationship": "not validated",
 "status": "non-authorised"
 },
