@@ -158,7 +158,7 @@ summary::-webkit-details-marker { display:none; }
 .company-note .address { font-family:var(--sans); font-size:16px; line-height:1.6; color:var(--ink); margin:8px 0 24px; font-style:normal; padding-top:20px; border-top:1px solid var(--line); }
 .company-note .address small { display:block; font-size:15px; color:var(--muted); margin-top:6px; }
 .company-note .copy p { font-size:18px; line-height:1.7; color:var(--ink); }
-.persian-name { font-size:22px; color:var(--lapis-deep); direction:rtl; display:block; margin-bottom:14px; text-align:left; font-family:'Vazirmatn','Noto Naskh Arabic',sans-serif; font-weight:500; }
+.persian-name { font-size:22px; color:var(--lapis-deep); direction:rtl; display:block; margin-bottom:14px; text-align:center; font-family:'Vazirmatn','Noto Naskh Arabic',sans-serif; font-weight:500; }
 
 /* Steps — the one real sequence */
 .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:48px; counter-reset:step; list-style:none; padding:0; margin:0; }
