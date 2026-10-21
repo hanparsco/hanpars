@@ -1,17 +1,18 @@
 ---
 import Photo from './Photo.astro';
 interface Props { category?: string; title: string; description: string; action?: string; href?: string; dark?: boolean; photo?: string; photoAlt?: string; }
-const { category = 'Hanpars', title, description, action = 'Start an enquiry', href = '/contact-us-1', dark = false, photo, photoAlt = '' } = Astro.props;
+const { category = 'Hanpars', title, description, action = 'Start an enquiry', href = '/contact-us-1', photo, photoAlt = '' } = Astro.props;
 const external = href.startsWith('https://');
 ---
-<section class:list={['page-hero', { 'page-hero-dark': dark }]}>
-  <div class="container">
-    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>{category}</span></nav>
-    <div class="page-hero-inner">
-      <div><h1>{title}</h1><p class="lede">{description}</p></div>
-      <a class:list={['button', dark ? 'button-light' : 'button-navy']} href={href} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}>{action}</a>
+<section class:list={['hero', 'page-hero', { 'hero-split': !!photo }]}>
+  <div class:list={['container', { 'hero-grid': !!photo }]}>
+    <div class="hero-main">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>{category}</span></nav>
+      <h1>{title}</h1>
+      <p class="lede">{description}</p>
+      <div class="hero-actions"><a class="button button-light" href={href} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}>{action}</a></div>
     </div>
-    <slot />
+    {photo && <Photo name={photo} class="hero-photo" alt={photoAlt} priority />}
   </div>
+  <slot />
 </section>
-{photo && <div class="container-wide"><Photo name={photo} alt={photoAlt} class="page-photo" priority /></div>}

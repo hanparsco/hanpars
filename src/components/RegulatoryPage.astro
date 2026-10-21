@@ -4,7 +4,7 @@ import CTA from './CTA.astro';
 import data from '../data/regulatory.json';
 ---
 <PageHero title="Regulatory affairs" category="Services" description={data.intro} action="Request an assessment" href="/contact-us-1?type=regulatory" dark photo="lab-instrument" photoAlt="Analyst operating a laboratory instrument in a quality-control lab">
-  <div class="scope-strip">{data.facts.map(fact=><div class="scope-item"><small>{fact.label}</small><strong>{fact.value}</strong></div>)}</div>
+  <div class="container"><div class="scope-strip">{data.facts.map(fact=><div class="scope-item"><small>{fact.label}</small><strong>{fact.value}</strong></div>)}</div></div>
 </PageHero>
 <section class="section"><div class="container content-split"><h2>{data.whyTitle}</h2><div class="content-copy">{data.why.map(p=><p>{p}</p>)}</div></div></section>
 <section class="section section-paper" id="services"><div class="container"><div class="section-head"><h2>What we cover</h2><p class="lede">Engage us for a single module or for the whole registration programme.</p></div><div class="detail-grid">{data.services.map(service=><article class="detail-item"><h3>{service.title}</h3><p>{service.description}</p></article>)}</div></div></section>
