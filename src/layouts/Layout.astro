@@ -3,7 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 interface Props { title?: string; description?: string; noindex?: boolean; }
-const socialImage = new URL('/brand/hanpars-logo-transparent.png', Astro.site ?? 'https://hanpars.teohan.com').href;
+const socialImage = new URL('/brand/hanpars-logo-transparent.png', Astro.site ?? 'https://hanpars.com').href;
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
 const { title = 'Hanpars | Pharmaceutical sourcing and regulatory affairs, Tehran', description = 'Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients for Iran and prepares their IFDA registration. Based in Tehran.', noindex = false } = Astro.props;
 ---
