@@ -243,6 +243,11 @@ summary::-webkit-details-marker { display:none; }
 .faq-list p { color:var(--muted); line-height:1.75; padding-right:40px; margin-bottom:26px; font-size:17px; max-width:40em; }
 .check-list { list-style:none; padding:0; margin:0; border-top:1px solid var(--line); }
 .check-list li { padding:16px 0; border-bottom:1px solid var(--line); font-size:18px; color:var(--ink); }
+.link-list { list-style:none; padding:0; margin:0; border-top:1px solid var(--line); }
+.link-list li { border-bottom:1px solid var(--line); }
+.link-list a { display:flex; justify-content:space-between; gap:16px; padding:16px 0; font-family:var(--display); font-weight:500; font-size:17px; color:var(--black); transition:color .2s,padding-left .3s var(--ease); }
+.link-list a:hover { color:var(--lapis); padding-left:6px; }
+.link-list small { font-family:var(--sans); color:var(--muted); font-size:14.5px; align-self:center; text-align:right; }
 .database-card { padding:48px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:grid; grid-template-columns:minmax(0,1fr) auto; gap:40px; align-items:center; }
 .database-card h2 { font-size:28px; margin-bottom:12px; }
 .database-card p { color:var(--muted); max-width:36em; margin-bottom:0; }
@@ -385,7 +390,7 @@ summary::-webkit-details-marker { display:none; }
   h1 { font-size:34px; } h2 { font-size:28px; }
   .hero h1 { font-size:34px; } .hero-main { padding:64px 0 56px; }
   .hero-actions { flex-direction:column; align-items:stretch; gap:16px; } .hero-actions .button { width:100%; }
-  .hero-meta-inner { grid-template-columns:1fr; } .hero-meta a { border-right:0; padding-left:0!important; }
+  .hero-meta-inner { grid-template-columns:1fr; } .hero-meta a:nth-child(n) { border-right:0; padding-left:0!important; }
   .hero-meta a:nth-child(2),.hero-meta a:nth-child(3) { border-bottom:1px solid var(--line-dark); }
   .spotlight-figure { gap:28px; } .spotlight-figure strong { font-size:40px; }
   .insight-row { grid-template-columns:1fr; gap:6px; padding:22px 0; }
