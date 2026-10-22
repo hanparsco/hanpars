@@ -36,7 +36,24 @@ jobs:
           git commit -m "Add photographs fetched by CI [skip ci]"
           git push
       - run: pnpm install --frozen-lockfile
-      - run: pnpm check
+      - name: Type check
+        id: check
+        shell: bash
+        run: |
+          set -o pipefail
+          pnpm check 2>&1 | tee check.log
+      - name: Publish check log on failure
+        if: failure() && steps.check.outcome == 'failure'
+        run: |
+          git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
+          git fetch -q origin ci-report || true
+          git checkout -q -B ci-report
+          git rm -rq --cached . >/dev/null 2>&1 || true
+          mkdir -p /tmp/report && cp check.log /tmp/report/check.log
+          git clean -fdxq -e node_modules >/dev/null 2>&1 || true
+          cp /tmp/report/check.log ./check.log
+          git add check.log && git commit -qm "check log $(date -u +%FT%TZ) for ${GITHUB_SHA::7}" || true
+          git push -f -q origin ci-report
       - run: pnpm build
         env:
           PUBLIC_WEB3FORMS_KEY: ${{ vars.PUBLIC_WEB3FORMS_KEY }}
