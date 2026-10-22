@@ -49,7 +49,7 @@ const entries = [
       <div class="trio-top"><span class="trio-icon" aria-hidden="true" set:html={trioIcons[i]}/><span class="trio-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span></div>
       <h3>{item.title}</h3>
       <p>{item.text}</p>
-      <a class="trio-link" href={L(item.href)}><span>{item.link}</span><span class="trio-arrow" aria-hidden="true">{lang === 'fa' ? '←' : '→'}</span></a>
+      <div class="trio-links"><a class="trio-link" href={L(item.href)}><span>{item.link}</span><span class="trio-arrow" aria-hidden="true">{lang === 'fa' ? '←' : '→'}</span></a>{(item as any).link2 && <a class="trio-link" href={L((item as any).href2)}><span>{(item as any).link2}</span><span class="trio-arrow" aria-hidden="true">{lang === 'fa' ? '←' : '→'}</span></a>}</div>
     </article>)}</div>
   </div>
 </section>

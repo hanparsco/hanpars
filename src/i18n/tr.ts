@@ -49,7 +49,7 @@ export const tr: UI = {
       threeTitle: 'Çoğunlukla birlikte yürüttüğümüz üç iş.',
       threeLede: 'Bir tedarik anlaşması, ürün onaylanıp rafa çıktığında anlam kazanır; bu yüzden tedarik, ruhsatlandırma ve proje koordinasyonu aynı ekipte buluşur.',
       three: [
-        { title: 'İthalat ve tedarik', text: 'Birlikte çalıştığımız üreticilerden etkin maddeler, yardımcı maddeler ve bitmiş ürünler; otoritenin beklediği sertifikalar ve stabilite verileriyle İran’a getirilir.', link: 'API referans yelpazesi', href: '/api' },
+        { title: 'İthalat ve tedarik', text: 'Birlikte çalıştığımız üreticilerden etkin maddeler, yardımcı maddeler ve bitmiş ürünler; otoritenin beklediği sertifikalar ve stabilite verileriyle İran’a getirilir.', link: 'API referans yelpazesi', href: '/api', link2: 'FDF referans listesi', href2: '/fdf#fdf-reference' },
         { title: 'Ruhsatlandırma ve regülasyon', text: 'İlk çalışmadan önce strateji. Kanıtların dosyaya işlenmesi. Onayın alınması. Her değişiklikte ruhsatın sürdürülmesi.', link: 'Neleri kapsıyoruz', href: '/regulatory-affairs' },
         { title: 'Geliştirme ortaklıkları', text: 'Bitmiş ürün formu projelerinde geliştirme ve üretim ortaklarını koordine eder, sorumlulukları en baştan yazılı hale getiririz. Projeyi biz yürütürüz; tesisi ortaklar işletir.', link: 'Bir proje nasıl başlar', href: '/fdf-cdmo' },
       ],

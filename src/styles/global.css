@@ -179,7 +179,8 @@ html[lang=fa] .dropdown-label,html[lang=zh-Hans] .dropdown-label { letter-spacin
 .trio-num { font-family:var(--display); font-weight:700; font-size:44px; line-height:1; color:#ece8df; letter-spacing:-.04em; }
 .trio-card h3 { font-size:22px; margin-bottom:14px; }
 .trio-card p { color:var(--muted); font-size:16px; line-height:1.65; margin-bottom:24px; }
-.trio-link { margin-top:auto; display:flex; justify-content:space-between; align-items:center; padding:13px 18px; border-radius:14px; background:var(--paper); color:var(--navy); font-family:var(--display); font-weight:600; font-size:14.5px; transition:background .2s,color .2s; }
+.trio-links { margin-top:auto; display:grid; gap:8px; }
+.trio-link { display:flex; justify-content:space-between; align-items:center; padding:13px 18px; border-radius:14px; background:var(--paper); color:var(--navy); font-family:var(--display); font-weight:600; font-size:14.5px; transition:background .2s,color .2s; }
 .trio-link:hover { background:var(--black); color:#fff; }
 .trio-arrow { color:var(--lapis); transition:transform .25s var(--ease); }
 .trio-link:hover .trio-arrow { color:var(--glacier); transform:translateX(4px); }

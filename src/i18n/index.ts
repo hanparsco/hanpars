@@ -95,7 +95,7 @@ const base = {
       threeTitle: 'Three things we do, usually together.',
       threeLede: 'A supply agreement is only useful once the product is approved and on the shelf, so sourcing, registration and project coordination sit with the same people.',
       three: [
-        { title: 'Import and sourcing', text: 'APIs, excipients and finished products from manufacturers we already work with, brought into Iran with the certificates and stability data the authority expects.', link: 'API reference range', href: '/api' },
+        { title: 'Import and sourcing', text: 'APIs, excipients and finished products from manufacturers we already work with, brought into Iran with the certificates and stability data the authority expects.', link: 'API reference range', href: '/api', link2: 'FDF reference range', href2: '/fdf#fdf-reference' },
         { title: 'Regulatory affairs', text: 'Strategy before the first study. Evidence built into the dossier. Approval secured. Authorisation maintained through every change.', link: 'What we cover', href: '/regulatory-affairs' },
         { title: 'Development partnerships', text: 'For finished dosage-form projects we coordinate development and manufacturing partners, with responsibilities written down at the start. We run the project; partners run the plant.', link: 'How a project begins', href: '/fdf-cdmo' },
       ],
@@ -306,7 +306,7 @@ const base = {
       threeTitle: 'سه کاری که انجام می‌دهیم؛ معمولاً با هم.',
       threeLede: 'قرارداد تأمین وقتی ارزش دارد که محصول تأیید شده و روی قفسه باشد؛ به همین دلیل تأمین، ثبت و هماهنگی پروژه نزد یک تیم است.',
       three: [
-        { title: 'واردات و تأمین', text: 'مواد مؤثره، مواد جانبی و داروهای ساخته‌شده از تولیدکنندگانی که با آن‌ها کار می‌کنیم، همراه با گواهی‌ها و داده‌های پایداری که سازمان انتظار دارد، وارد ایران می‌شود.', link: 'فهرست مرجع مواد مؤثره', href: '/api' },
+        { title: 'واردات و تأمین', text: 'مواد مؤثره، مواد جانبی و داروهای ساخته‌شده از تولیدکنندگانی که با آن‌ها کار می‌کنیم، همراه با گواهی‌ها و داده‌های پایداری که سازمان انتظار دارد، وارد ایران می‌شود.', link: 'فهرست مرجع مواد مؤثره', href: '/api', link2: 'فهرست مرجع داروهای ساخته‌شده', href2: '/fdf#fdf-reference' },
         { title: 'امور رگولاتوری', text: 'راهبرد پیش از نخستین مطالعه. شواهدی که در پرونده نهادینه می‌شود. تأییدیه‌ای که به دست می‌آید. مجوزی که در هر تغییر پابرجا می‌ماند.', link: 'آنچه پوشش می‌دهیم', href: '/regulatory-affairs' },
         { title: 'همکاری در توسعه و تولید', text: 'در پروژه‌های داروی ساخته‌شده، شرکای توسعه و تولید را هماهنگ می‌کنیم و مسئولیت‌ها از ابتدا مکتوب می‌شود. پروژه را ما اداره می‌کنیم؛ کارخانه را شرکا.', link: 'یک پروژه چگونه آغاز می‌شود', href: '/fdf-cdmo' },
       ],
