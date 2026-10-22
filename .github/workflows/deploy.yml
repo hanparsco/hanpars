@@ -88,3 +88,12 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh api repos/${GITHUB_REPOSITORY}/pages --jq '{cname, https_enforced, cert: .https_certificate.state}' || true
+
+  indexnow:
+    if: github.ref == 'refs/heads/main'
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Notify search engines (IndexNow)
+        run: sleep 60 && python3 scripts/indexnow.py
