@@ -54,9 +54,23 @@ jobs:
           cp /tmp/report/check.log ./check.log
           git add check.log && git commit -qm "check log $(date -u +%FT%TZ) for ${GITHUB_SHA::7}" || true
           git push -f -q origin ci-report
-      - run: pnpm build
+      - name: Build
+        id: build
+        shell: bash
         env:
           PUBLIC_WEB3FORMS_KEY: ${{ vars.PUBLIC_WEB3FORMS_KEY }}
+          NODE_OPTIONS: --max-old-space-size=6144
+        run: |
+          set -o pipefail
+          pnpm build 2>&1 | tee build.log
+      - name: Publish build log on failure
+        if: failure() && steps.build.outcome == 'failure'
+        run: |
+          git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
+          tail -n 300 build.log > /tmp/build.log
+          git fetch -q origin ci-report && git worktree add -q /tmp/rep origin/ci-report
+          cp /tmp/build.log /tmp/rep/build.log
+          cd /tmp/rep && git add build.log && git commit -qm "build log ${GITHUB_SHA::7}" && git push -q origin HEAD:ci-report || true
       - name: SEO audit (report to ci-report branch)
         if: github.ref == 'refs/heads/main'
         continue-on-error: true
