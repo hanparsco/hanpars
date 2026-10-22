@@ -752,25 +752,7 @@
 },
 "bismuth subcitrate equ to bismuth oxide": {
 "generic": "Bismuth Subsalicylate",
-"brand": "Stomach Relief",
-"pharmClass": [
-"Bismuth [EPC]"
-],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Uses relieves travelers' diarrhea diarrhea upset stomach due to overindulgence in food and drink, including: heartburn indigestion nausea gas belching fullness",
-"dosage": "Directions chew or dissolve in mouth adults and children 12 years and over: 2 tablets every 1/2 to 1 hour as needed do not exceed 8 doses (16 tablets) in 24 hours use until diarrhea stops but not more than 2 days children under 12 years: ask a doctor drink plenty of clear fluids to help prevent dehydration caused by diarrhea",
-"contraindications": "",
-"warnings": "Warnings Reye’s syndrome Children and teenagers who have or are recovering from chicken pox or flu-like symptoms should not use this product. When using this product, if changes in behavior with nausea and vomiting occur, consult a doctor because these symptoms could be an early sign of Reye’s syndrome, a rare but serious illness. Allergy alert: Contains salicylate. Do not take if you are allergic to salicylates (including aspirin) taking other salicylate products",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "01a4782f-93af-4d30-8ca3-7b39c272f60e",
-"effective": "20171128"
+"missing": true
 },
 "bisoprolol": {
 "generic": "Bisoprolol Fumarate",
@@ -2120,23 +2102,7 @@
 },
 "diclofenac diethylammonium": {
 "generic": "Diclofenac Sodium",
-"brand": "Diclofenac Sodium",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "Mechanism of Action Diclofenac has analgesic, anti-inflammatory, and antipyretic properties. The mechanism of action of diclofenac sodium topical solution, like that of other NSAIDs, is not completely understood but involves inhibition of cyclooxygenase (COX-1 and COX-2). Diclofenac is a potent inhibitor of prostaglandin synthesis in vitro . Diclofenac concentrations reached during therapy have produced in vivo effects. Prostaglandins sensitize afferent nerves and potentiate the action of bradykinin in inducing pain in animal models. Prostaglandins are mediators of inflammation.",
-"indications": "Diclofenac sodium topical solution is indicated for the treatment of the pain of osteoarthritis of the knee(s). Diclofenac sodium topical solution is a nonsteroidal anti-inflammatory drug indicated for the treatment of the pain of osteoarthritis of the knee(s).",
-"dosage": "Use the lowest effective dosage for the shortest duration consistent with individual patient treatment goals. The recommended dose is 2 pump actuations on each painful knee, 2 times a day. Apply diclofenac sodium topical solution, to clean, dry skin. Dispense 40 mg (2 pump actuations) directly onto the knee or first into the hand and then onto the knee. Spread evenly around front, back and sides of the knee. Wash hands completely after administering the product. Wait until the area is completely dry before covering with clothing or applying sunscreen, insect repellent, cosmetics, topical medications, or other substances.",
-"contraindications": "Diclofenac sodium topical solution is contraindicated in the following patients: Known hypersensitivity (e.g., anaphylactic reactions and serious skin reactions) to diclofenac or any components of the drug product [ see Warnings and Precautions ( 5.7 , 5.9 ) ] History of asthma, urticaria, or other allergic-type reactions after taking aspirin or other NSAIDs.",
-"warnings": "Hepatotoxicity : Inform patients of warning signs and symptoms of hepatotoxicity. Discontinue if abnormal liver tests persist or worsen or if clinical signs and symptoms of liver disease develop Hypertension : Patients taking some antihypertensive medications may have impaired response to these therapies when taking NSAIDs.Monitor blood pressure ( 5.4 , 7 ) Heart Failure and Edema : Avoid use of diclofenac sodium topical solution in patients with severe heart failure unless benefits are expected to outweigh risk of worsening heart failure Renal Toxicity : Monitor renal function in patients wit…",
-"boxed": "WARNING: RISK OF SERIOUS CARDIOVASCULAR AND GASTROINTESTINAL EVENTS Cardiovascular Thrombotic Events Nonsteroidal anti-inflammatory drugs (NSAIDs) cause an increased risk of serious cardiovascular thrombotic events, including myocardial infarction, and stroke, which can be fatal. This risk may occur early in treatment and may increase with duration of use. [ see Warnings and Precautions ].",
-"pregnancy": "Pregnancy Risk Summary Use of NSAIDs, including diclofenac sodium topical solution, can cause premature closure of the fetal ductus arteriosus and fetal renal dysfunction leading to oligohydramnios and, in some cases, neonatal renal impairment.",
-"storage": "Diclofenac sodium topical solution USP, 2% w/w, is supplied as a clear, colorless to faintly pink or orange solution containing 20 mg of diclofenac sodium per gram of solution, in a white polypropylene-dose pump bottle with a clear cap. Each pump actuation delivers 20 mg of diclofenac sodium in 1 gram of solution.",
-"setId": "02e90e33-384f-4e29-b508-2503def22214",
-"effective": "20250117"
+"missing": true
 },
 "diclofenac": {
 "generic": "Diclofenac Sodium",
@@ -3282,7 +3248,6 @@
 "contraindications": "CONTRAINDICATIONS Ibuprofen tablets are contraindicated in patients with known hypersensitivity to Ibuprofen. Ibuprofen tablets should not be given to patients who have experienced asthma, urticaria, or allergic-type reactions after taking aspirin or other NSAIDs. Severe, rarely fatal, anaphylactic-like reactions to NSAIDs have been reported in such patients (see WARNINGS , Anaphylactoid Reactions , and PRECAUTIONS , Preexisting Asthma ).",
 "warnings": "WARNINGS Cardiovascular Effects Cardiovascular Thrombotic Events Clinical trials of several COX-2 selective and nonselective NSAIDs of up to three years duration have shown an increased risk of serious cardiovascular (CV) thrombotic events, including myocardial infarction (MI) and stroke, which can be fatal. Based on available data, it is unclear that the risk for CV thrombotic events is similar for all NSAIDs.",
 "boxed": "Cardiovascular Thrombotic Events Nonsteroidal anti-inflammatory drugs (NSAIDs) cause an increased risk of serious cardiovascular thrombotic events, including myocardial infarction and stroke, which can be fatal. This risk may occur early in treatment and may increase with duration of use . Ibuprofen tablets are contraindicated in the setting of coronary artery bypass graft (CABG) surgery .",
-"pregnancy": "Information for Patients Patients should be informed of the following information before initiating therapy with an NSAID and periodically during the course of ongoing therapy. Patients should also be encouraged to read the NSAID Medication Guide that accompanies each prescription dispensed.",
 "storage": "HOW SUPPLIED Ibuprofen tablets USP are available in the following strengths, colors and sizes: Ibuprofen Tablets USP, 400 mg are white to off-white, film-coated, oval shaped tablets debossed with ‘I4’ on one side and plain on the other side.",
 "setId": "00872852-680a-41b3-901b-b991b12a176d",
 "effective": "20250214"
@@ -4303,7 +4268,6 @@
 "warnings": "• Abrupt cessation may exacerbate myocardial ischemia. • Heart Failure: Worsening cardiac failure may occur. • Bronchospastic Disease: Avoid beta-blockers. • Pheochromocytoma: Initiate therapy with an alpha blocker. • Major Surgery: Avoid initiation of high-dose extended-release metoprolol in patients undergoing non-cardiac surgery. Do not routinely withdraw chronic beta-blocker therapy prior to surgery. ( 5.5 , 6.1 ) • Diabetes: May mask symptoms of hypoglycemia. • Thyrotoxicosis: Abrupt withdrawal in patients with thyrotoxicosis might precipitate a thyroid storm.",
 "boxed": "",
 "pregnancy": "Pregnancy Risk Summary Available data from published observational studies have not demonstrated an association of adverse developmental outcomes with maternal use of metoprolol during pregnancy ( see Data).",
-"storage": "Metformin hydrochloride extended-release tablets USP, 500 mg are oval white tablets, with \"OE\" debossed on one side and \"584\" debossed on the other side. NDC 71335-3159-1: 30 Tablets in a BOTTLE NDC 71335-3159-2: 100 Tablets in a BOTTLE NDC 71335-3159-3: 60 Tablets in a BOTTLE NDC 71335-3159-4: 90 Tablets in a BOTTLE NDC 71335-3159-5: 180 Tablets i…",
 "setId": "00940cc5-d2eb-4841-9138-de97d7b1c674",
 "effective": "20260727"
 },
@@ -4972,25 +4936,7 @@
 },
 "paclitaxel nano": {
 "generic": "Paclitaxel",
-"brand": "Paclitaxel",
-"pharmClass": [
-"Microtubule Inhibitor [EPC]"
-],
-"moaClass": [],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) is a microtubule inhibitor that promotes the assembly of microtubules from tubulin dimers and stabilizes microtubules by preventing depolymerization. This stability results in the inhibition of the normal dynamic reorganization of the microtubule network that is essential for vital interphase and mitotic cellular functions. Paclitaxel induces abnormal arrays or “bundles” of microtubules throughout the cell cycle and multiple asters of microtubules during mitosis.",
-"indications": "Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) is a microtubule inhibitor indicated for the treatment of: Metastatic breast cancer, after failure of combination chemotherapy for metastatic disease or relapse within 6 months of adjuvant chemotherapy. Prior therapy should have included an anthracycline unless clinically contraindicated. Locally advanced or metastatic non-small cell lung cancer (NSCLC), as first-line treatment in combination with carboplatin, in patients who are not candidates for curative surgery or radiation therapy. Metastatic adenocarcinoma of the pancreas as first-line treatment, in combination with gemcitabine. Metastatic Breast Cancer Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) is indicated for the treatment of breast cancer after failure of combination chemotherapy for metastatic disease or relapse within 6 months of adjuvant chemotherapy. Prior therapy should have included an anthracycline unless clinically contraindicated.",
-"dosage": "Do not substitute Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) for other paclitaxel products. Extravasation: Closely monitor the infusion site for extravasation and infiltration. Metastatic Breast Cancer (MBC) : Recommended dosage of Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) is 260 mg/m 2 intravenously over 30 minutes every 3 weeks. Non-Small Cell Lung Cancer (NSCLC) : Recommended dosage of Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) is 100 mg/m 2 intravenously over 30 minutes on Days 1, 8, and 15 of each 21-day cycle.",
-"contraindications": "Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) is contraindicated in patients with: Baseline neutrophil counts of <1,500 cells/mm 3 A history of severe hypersensitivity reactions to protein bound paclitaxel Neutrophil counts of <1,500 cells/mm 3 . Severe hypersensitivity reactions to protein bound paclitaxel.",
-"warnings": "Sensory neuropathy occurs frequently and may require dose reduction or treatment interruption. Sepsis occurred in patients who received Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound); interrupt Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) until sepsis resolves, and if neutropenia, until neutrophils are at least 1500 cells/mm 3 , then resume treatment at reduced dose levels. Pneumonitis occurred with the use of protein bound paclitaxel in combination with gemcitabine.",
-"boxed": "WARNING: SEVERE MYELOSUPPRESSION Do not administer Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) therapy to patients who have baseline neutrophil counts of less than 1,500 cells/mm 3 . . Monitor for neutropenia, which may be severe and result in infection or sepsis, .",
-"pregnancy": "Pregnancy Risk Summary Based on its mechanism of action and findings in animals, Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) can cause fetal harm when administered to a pregnant woman .",
-"storage": "Paclitaxel Protein-Bound Particles for Injectable Suspension (albumin-bound) is supplied as a white to yellow, sterile, lyophilized powder for reconstitution and is available as follows: NDC 0480-3290-01 100 mg of paclitaxel in a single-dose vial, individually packaged in a carton. Store vial in original carton at 20°C to 25°C (68°F to 77°F) .",
-"setId": "15dd51ed-29e8-468b-b6d1-21b1f84d6f2e",
-"effective": "20231101"
+"missing": true
 },
 "paclitaxel": {
 "generic": "Paclitaxel",
@@ -5800,23 +5746,7 @@
 },
 "selenium sulfide": {
 "generic": "Selenium Sulfide",
-"brand": "Dermoia Seborrheic Dermatitis Selenium Sulfide",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Use(s) Helps prevent sunburn. If used as directed with other sun protection measures (see Directions ), decreases the risk of skin cancer and early skin aging caused by the sun",
-"dosage": "Directions • Wet hair. • Applied and then washed off after brief • Rinse thoroughly. • For best results, use at least twice a week or as directed by a doctor.",
-"contraindications": "",
-"warnings": "Warnings: For external use only Use caution in exposing skin to sunlight after applying this product. It may increase your tendency to sunburn for up to 24 hours after application Do not use • before consulting a doctor if the condition covers a large area of the body.•for prolonged periods without consulting a doctor. When using this product Avoid contact with the eyes. If contact occurs, rinse eyes thoroughly with water. Stop use and ask a doctor if rash or irritation develops and lasts. Keep out of reach of children.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "04b8532e-44a7-4eaf-a46d-87611ec93c24",
-"effective": "20260623"
+"missing": true
 },
 "sertaconazole": {
 "generic": "Sertaconazole Nitrate",
@@ -6113,8 +6043,6 @@
 "contraindications": "• Administration of tadalafil tablets to patients using any form of organic nitrate is contraindicated. Tadalafil tablets were shown to potentiate the hypotensive effect of nitrates . • History of known serious hypersensitivity reaction to tadalafil tablets or ADCIRCA ® . • Administration with guanylate cyclase (GC) stimulators, such as riociguat .",
 "warnings": "Evaluation of erectile dysfunction and BPH should include an appropriate medical assessment to identify potential underlying causes, as well as treatment options. Before prescribing tadalafil tablets, it is important to note the following: • Patients should not use tadalafil tablets if sex is inadvisable due to cardiovascular status . • Use of tadalafil tablets with alpha-blockers, antihypertensives or substantial amounts of alcohol (≥5 units) may lead to hypotension ( 5.6 , 5.9 ).",
 "boxed": "",
-"pregnancy": "Renal Impairment In clinical pharmacology studies using single-dose tadalafil (5 to 10 mg), tadalafil exposure (AUC) doubled in subjects with creatinine clearance 30 to 80 mL/min.",
-"storage": "PATIENT INFORMATION Tadalafil (ta da’ la fil) Tablets Read this important information before you start taking tadalafil tablets and each time you get a refill. There may be new information. You may also find it helpful to share this information with your partner. This information does not take the place of talking with your healthcare provider.",
 "setId": "05640a4d-afb7-42ae-a5bb-77dbc8412356",
 "effective": "20250831"
 },
@@ -6804,23 +6732,7 @@
 },
 "water": {
 "generic": "Water",
-"brand": "Eyes Alive Eye Wash",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"OPHTHALMIC"
-],
-"forms": [],
-"moa": "",
-"indications": "Uses For flushing the eye to help relieve irritation, discomfort, burning, stinging or itching by removing loose foreign material, air pollutants (smog or pollen) or chlorinated water.",
-"dosage": "Directions Flush the affected eye as needed, controlling the rate of flow of solution by pressure on the bottle Do not touch bottle tip to eye",
-"contraindications": "",
-"warnings": "Warnings For external use only To avoid contamination, do not touch tip of bottle to any surface Do not reuse Once opened, discard Do not use If solution changes colors or becomes cloudy With contact lenses If bottle is opened or seal is broken Stop use and consult a doctor if you experience Eye pain Changes in vision Continued redness or irritation of the eye or if the condition worsen or persists. Obtain immediate medical treatment for all open wounds in or near the eyes. Keep out of reach of children If swallowed, get medical help or contact a Poison Control Center right away.",
-"boxed": "",
-"pregnancy": "",
-"storage": "Other Information Tamper-evident cap: Do not use if twist off top is broken or missing Twist cap to open Use before expiration date marked on bottle Store at room temperature, 15°-30° C (59° to 86°F).",
-"setId": "081079f4-1c06-4054-b771-00fedaa666f6",
-"effective": "20240605"
+"missing": true
 },
 "zoledronic acid": {
 "generic": "Zoledronic Acid",
@@ -7232,23 +7144,7 @@
 },
 "allogenic skin derived keratinocyte": {
 "generic": "Allogenic Thymocyte-Depleted Thymus Tissue-Agdc",
-"brand": "Rethymic",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"INTRAMUSCULAR"
-],
-"forms": [],
-"moa": "Mechanism of Action RETHYMIC is intended to reconstitute immunity in patients who are athymic. The proposed mechanism of action involves the migration of recipient T cell progenitors from the bone marrow to the implanted RETHYMIC slices, where they develop into naïve immunocompetent recipient T cells. Evidence of thymic function can be observed with the development of naïve T cells in the peripheral blood; this is unlikely to be observed prior to 6-12 months after treatment with RETHYMIC.",
-"indications": "® is indicated for immune reconstitution in pediatric patients with congenital athymia. RETHYMIC is indicated for immune reconstitution in pediatric patients with congenital athymia. Limitations of Use : RETHYMIC is not indicated for the treatment of patients with severe combined immunodeficiency (SCID). Limitations of Use RETHYMIC is not indicated for the treatment of patients with severe combined immunodeficiency (SCID).",
-"dosage": "is administered by a surgical procedure. The recommended dose range is 5,000 to 22,000 mm 2 of RETHYMIC/m 2 recipient body surface area (BSA). Immunosuppressive therapy is recommended for patients receiving RETHYMIC based on disease phenotype and PHA levels. Dosage RETHYMIC is administered by a surgical procedure. The dosage is determined by the total surface area of the RETHYMIC slices and recipient body surface area (BSA). A RETHYMIC slice is defined as the contents on a single filter membrane; the RETHYMIC slices are variable in size and shape. The recommended dose range is 5,000 to 22,000 mm 2 of RETHYMIC surface area/m 2 recipient BSA.",
-"contraindications": "None. None.",
-"warnings": "Immune reconstitution sufficient to protect from infection is unlikely to develop prior to 6 to 12 months after treatment with RETHYMIC. Given the immunocompromised condition of athymic patients, infection control measures should be followed until the development of thymic function can be established. Monitor and treat patients at risk for the development of graft versus host disease (GVHD). Monitor for the development of autoimmune disorders, including complete blood counts with differential, liver enzymes, serum creatinine, urinalysis, and thyroid function.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary There are no clinical data with RETHYMIC in pregnant women. No animal reproductive and developmental toxicity studies have been conducted with RETHYMIC. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2-4% and 15-20%, respectively.",
-"storage": "Storage and Handling Use RETHYMIC prior to the time and date of expiration printed on the polycarbonate container. Store RETHYMIC at room temperature in the polycarbonate container in the insulated shipping box until ready for use. Do not refrigerate, freeze, agitate, or sterilize RETHYMIC.",
-"setId": "e0022c28-8cda-4f1e-bcf1-1f440d37ec4a",
-"effective": "20251031"
+"missing": true
 },
 "alpelisib": {
 "generic": "Alpelisib",
@@ -7342,7 +7238,6 @@
 "generic": "Glucose Drops",
 "brand": "Glucose Drops 2031",
 "pharmClass": [
-"Standardized Chemical Allergen [EPC]",
 "Vitamin B6 Analog [EPC]"
 ],
 "moaClass": [],
@@ -7453,26 +7348,7 @@
 },
 "amphotericin b nanoliposomal": {
 "generic": "Amphotericin B",
-"brand": "Amphotericin B",
-"pharmClass": [
-"Lipid-based Polyene Antifungal [EPC]",
-"Polyene Antifungal [EPC]"
-],
-"moaClass": [],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Amphotericin B, the active ingredient of amphotericin B liposome for injection, acts by binding to the sterol component, ergosterol, of the cell membrane of susceptible fungi. It forms transmembrane channels leading to alterations in cell permeability through which monovalent ions (Na + , K + , H + , and Cl - ) leak out of the cell resulting in cell death. While amphotericin B has a higher affinity for the ergosterol component of the fungal cell membrane, it can also bind to the cholesterol component of the mammalian cell leading to cytotoxicity.",
-"indications": "INDICATIONS AND USAGE Amphotericin B liposome for injection is indicated for the following: Empirical therapy for presumed fungal infection in febrile, neutropenic patients. Treatment of Cryptococcal Meningitis in HIV-infected patients (see DESCRIPTION OF CLINICAL STUDIES ). Treatment of patients with Aspergillus species, Candida species and/or Cryptococcus species infections (see above for the treatment of Cryptococcal Meningitis) refractory to amphotericin B deoxycholate, or in patients where renal impairment or unacceptable toxicity precludes the use of amphotericin B deoxycholate. Treatment of visceral leishmaniasis. In immunocompromised patients with visceral leishmaniasis treated with amphotericin B liposome for injection, relapse rates were high following initial clearance of parasites (see DESCRIPTION OF CLINICAL STUDIES ). See DOSAGE AND ADMINISTRATION for recommended doses by indication. DESCRIPTION OF CLINICAL STUDIES Eleven clinical studies supporting the efficacy and safety of amphotericin B liposome for injection were conducted.",
-"dosage": "DOSAGE AND ADMINISTRATION Amphotericin B liposome for injection is not interchangeable or substitutable on a mg per mg basis with other amphotericin B products. Different amphotericin B products are not equivalent in terms of pharmacodynamics, pharmacokinetics and dosing. Amphotericin B liposome for injection should be administered by intravenous infusion, using a controlled infusion device, over a period of approximately 120 minutes. An in-line membrane filter may be used for the intravenous infusion of amphotericin B liposome for injection, provided THE MEAN PORE DIAMETER OF THE FILTER IS NOT LESS THAN MICRON.",
-"contraindications": "CONTRAINDICATIONS Amphotericin B liposome for injection is contraindicated in those patients who have demonstrated or have a known hypersensitivity to amphotericin B deoxycholate or any other constituents of the product unless, in the opinion of the treating physician, the benefit of therapy outweighs the risk.",
-"warnings": "WARNINGS Anaphylaxis has been reported with amphotericin B deoxycholate and other amphotericin B-containing drugs, including amphotericin B liposome for injection. If a severe anaphylactic reaction occurs, the infusion should be immediately discontinued and the patient should not receive further infusions of amphotericin B liposome for injection.",
-"boxed": "",
-"pregnancy": "Pregnancy There have been no adequate and well-controlled studies of amphotericin B liposome for injection in pregnant women. Systemic fungal infections have been successfully treated in pregnant women with amphotericin B deoxycholate, but the number of cases reported has been small.",
-"storage": "HOW SUPPLIED Amphotericin B liposome for injection is available as an individual carton (NDC 23155-594-31). Each carton contains one pre-packaged, disposable sterile 5 micron filter. Manufactured by: Emcure Pharmaceuticals Ltd., Plot No. SM-14, 15 & 16/1, GIDC, Sanand - II, Charal, Tal - Sanand, Ahmedabad, Gujarat 382110, India.",
-"setId": "2b2f3ff5-9d62-4ad2-8eac-1181e5911513",
-"effective": "20250603"
+"missing": true
 },
 "amyl nitrite": {
 "generic": "Amyl Nitrite",
@@ -7548,29 +7424,7 @@
 },
 "anticoagulant": {
 "generic": "Anticoagulant Citrate Phosphate Dextrose Adenine",
-"brand": "Cpda-1",
-"pharmClass": [
-"Calculi Dissolution Agent [EPC]",
-"Anti-coagulant [EPC]"
-],
-"moaClass": [
-"Acidifying Activity [MoA]",
-"Calcium Chelating Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "",
-"indications": "",
-"dosage": "",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "051f7347-5a76-4664-8fe2-e61b3dfcb0e4",
-"effective": "20140827"
+"missing": true
 },
 "antihemorrhoid": {
 "generic": "Antihemorrhoid",
@@ -7699,50 +7553,17 @@
 },
 "artificial saliva": {
 "generic": "Artificial Sweetener Detox",
-"brand": "Artificial Sweetener Detox 6034",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS For the temporary relief of occasional headache, bloating, nausea or vomiting, diarrhea, difficulty breathing, cough, runny nose, skin irritation, itchy eyes, or irritability due to sensitivity to or exposure to artificial sweeteners.*",
-"dosage": "DIRECTIONS Place drops under tongue 30 minutes before/after meals. Adults and children 12 years and over: Take 10 drops up to 3 times per day. Consult a physician for use in children under 12 years of age.",
-"contraindications": "",
-"warnings": "WARNINGS Consult a doctor if condition worsens or symptoms persist. Keep out of the reach of children. In case of overdose, get medical help or contact a poison control center right away. If pregnant or breastfeeding, ask a healthcare professional before use. Keep out of the reach of children. If pregnant or breastfeeding, ask a healthcare professional before use.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "38f2ae0b-2b1f-4b49-934d-fe1556f84d93",
-"effective": "20260108"
+"missing": true
 },
 "artificial tear": {
 "generic": "Artificial Sweetener Detox",
-"brand": "Artificial Sweetener Detox 6034",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS For the temporary relief of occasional headache, bloating, nausea or vomiting, diarrhea, difficulty breathing, cough, runny nose, skin irritation, itchy eyes, or irritability due to sensitivity to or exposure to artificial sweeteners.*",
-"dosage": "DIRECTIONS Place drops under tongue 30 minutes before/after meals. Adults and children 12 years and over: Take 10 drops up to 3 times per day. Consult a physician for use in children under 12 years of age.",
-"contraindications": "",
-"warnings": "WARNINGS Consult a doctor if condition worsens or symptoms persist. Keep out of the reach of children. In case of overdose, get medical help or contact a poison control center right away. If pregnant or breastfeeding, ask a healthcare professional before use. Keep out of the reach of children. If pregnant or breastfeeding, ask a healthcare professional before use.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "38f2ae0b-2b1f-4b49-934d-fe1556f84d93",
-"effective": "20260108"
+"missing": true
 },
 "artificial tears": {
 "generic": "Artificial Tears",
 "brand": "Artificial Tears",
 "pharmClass": [
-"Plasma Volume Expander [EPC]",
-"Non-Standardized Chemical Allergen [EPC]"
+"Plasma Volume Expander [EPC]"
 ],
 "moaClass": [
 "Osmotic Activity [MoA]"
@@ -7764,23 +7585,7 @@
 },
 "artificial tears hyaluronate": {
 "generic": "Artificial Sweetener Detox",
-"brand": "Artificial Sweetener Detox 6034",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS For the temporary relief of occasional headache, bloating, nausea or vomiting, diarrhea, difficulty breathing, cough, runny nose, skin irritation, itchy eyes, or irritability due to sensitivity to or exposure to artificial sweeteners.*",
-"dosage": "DIRECTIONS Place drops under tongue 30 minutes before/after meals. Adults and children 12 years and over: Take 10 drops up to 3 times per day. Consult a physician for use in children under 12 years of age.",
-"contraindications": "",
-"warnings": "WARNINGS Consult a doctor if condition worsens or symptoms persist. Keep out of the reach of children. In case of overdose, get medical help or contact a poison control center right away. If pregnant or breastfeeding, ask a healthcare professional before use. Keep out of the reach of children. If pregnant or breastfeeding, ask a healthcare professional before use.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "38f2ae0b-2b1f-4b49-934d-fe1556f84d93",
-"effective": "20260108"
+"missing": true
 },
 "ts polysaccaride": {
 "generic": "Ts-Polysaccaride)",
@@ -7801,7 +7606,6 @@
 "contraindications": "CONTRAINDICATIONS Enalapril maleate tablets are contraindicated in patients who are hypersensitive to this product and in patients with a history of angioedema related to previous treatment with an angiotensin-converting enzyme inhibitor and in patients with hereditary or idiopathic angioedema. Do not coadminister aliskiren with enalapril maleate tablets in patients with diabetes (see PRECAUTIONS, Drug Interactions ).",
 "warnings": "WARNINGS Anaphylactoid and Possibly Related Reactions Presumably because angiotensin-converting enzyme inhibitors affect the metabolism of eicosanoids and polypeptides, including endogenous bradykinin, patients receiving ACE inhibitors (including enalapril maleate tablets) may be subject to a variety of adverse reactions, some of them serious. Head and Neck Angioedema Angioedema of the face, extremities, lips, tongue, glottis and/or larynx has been reported in patients treated with angiotensin-converting enzyme inhibitors, including enalapril maleate tablets.",
 "boxed": "WARNING: FETAL TOXICITY See full prescribing information for complete boxed warning. When pregnancy is detected, discontinue enalapril maleate tablets as soon as possible. Drugs that act directly on the renin-angiotensin system can cause injury and death to the developing fetus. (See WARNINGS, Fetal Toxicity .)",
-"pregnancy": "Pregnancy Nursing Mothers Enalapril and enalaprilat have been detected in human breast milk. Because of the potential for serious adverse reactions in nursing infants from enalapril, a decision should be made whether to discontinue nursing or to discontinue enalapril maleate tablets, taking into account the importance of the drug to the mother.",
 "storage": "HOW SUPPLIED 10 mg (with desiccant) Red, rounded triangle shaped scored tablet debossed with “S 7” on one side and scored on the other side. NDC 68071-3537-3 BOTTLES OF 30 Storage Store at 20 o to 25 o C (68 o to 77 o F); excursions permitted to 15° to 30°C (59° to 86°F) . Keep container tightly closed. Protect from moisture.",
 "setId": "0b3dbe11-ff75-cb98-e063-6294a90ad2e9",
 "effective": "20250203"
@@ -8162,9 +7966,7 @@
 "benzocaine": {
 "generic": "Benzocaine",
 "brand": "Primo Topical Anesthetic",
-"pharmClass": [
-"Standardized Chemical Allergen [EPC]"
-],
+"pharmClass": [],
 "moaClass": [],
 "routes": [
 "DENTAL"
@@ -8457,127 +8259,23 @@
 },
 "blood and blood forming organs": {
 "generic": "Blood Stim Liquescence",
-"brand": "Blood Stim Liquescence 3004",
-"pharmClass": [
-"Non-Standardized Food Allergenic Extract [EPC]",
-"Non-Standardized Plant Allergenic Extract [EPC]",
-"Parenteral Iron Replacement [EPC]"
-],
-"moaClass": [
-"Phosphate Chelating Activity [MoA]"
-],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS For the temporary relief of fatigue, weakness, exhaustion, flushed skin, muscle twitches, shortness of breath, trouble concentrating, occasional headache, or feelings of discomfort or uneasiness.*",
-"dosage": "DIRECTIONS Place drops under tongue 30 minutes before/after meals. Adults and children 12 years and over: Take one full dropper up to 2 times per day. Consult a physician for use in children under 12 years of age.",
-"contraindications": "",
-"warnings": "WARNINGS Consult a doctor if condition worsens or if symptoms persist. Keep out of the reach of children. In case of overdose, get medical help or contact a poison control center right away. If pregnant or breastfeeding, ask a healthcare professional before use. Keep out of the reach of children. If pregnant or breastfeeding, ask a healthcare professional before use.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "24a47e6f-8b6d-4f42-b395-6cf116a8196f",
-"effective": "20260108"
+"missing": true
 },
 "blood plasma fresh frozen": {
 "generic": "Blood Stim Liquescence",
-"brand": "Blood Stim Liquescence 3004",
-"pharmClass": [
-"Non-Standardized Food Allergenic Extract [EPC]",
-"Non-Standardized Plant Allergenic Extract [EPC]",
-"Parenteral Iron Replacement [EPC]"
-],
-"moaClass": [
-"Phosphate Chelating Activity [MoA]"
-],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS For the temporary relief of fatigue, weakness, exhaustion, flushed skin, muscle twitches, shortness of breath, trouble concentrating, occasional headache, or feelings of discomfort or uneasiness.*",
-"dosage": "DIRECTIONS Place drops under tongue 30 minutes before/after meals. Adults and children 12 years and over: Take one full dropper up to 2 times per day. Consult a physician for use in children under 12 years of age.",
-"contraindications": "",
-"warnings": "WARNINGS Consult a doctor if condition worsens or if symptoms persist. Keep out of the reach of children. In case of overdose, get medical help or contact a poison control center right away. If pregnant or breastfeeding, ask a healthcare professional before use. Keep out of the reach of children. If pregnant or breastfeeding, ask a healthcare professional before use.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "24a47e6f-8b6d-4f42-b395-6cf116a8196f",
-"effective": "20260108"
+"missing": true
 },
 "blood plasma fresh frozen leucocyte reduced": {
 "generic": "Blood Stim Liquescence",
-"brand": "Blood Stim Liquescence 3004",
-"pharmClass": [
-"Non-Standardized Food Allergenic Extract [EPC]",
-"Non-Standardized Plant Allergenic Extract [EPC]",
-"Parenteral Iron Replacement [EPC]"
-],
-"moaClass": [
-"Phosphate Chelating Activity [MoA]"
-],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS For the temporary relief of fatigue, weakness, exhaustion, flushed skin, muscle twitches, shortness of breath, trouble concentrating, occasional headache, or feelings of discomfort or uneasiness.*",
-"dosage": "DIRECTIONS Place drops under tongue 30 minutes before/after meals. Adults and children 12 years and over: Take one full dropper up to 2 times per day. Consult a physician for use in children under 12 years of age.",
-"contraindications": "",
-"warnings": "WARNINGS Consult a doctor if condition worsens or if symptoms persist. Keep out of the reach of children. In case of overdose, get medical help or contact a poison control center right away. If pregnant or breastfeeding, ask a healthcare professional before use. Keep out of the reach of children. If pregnant or breastfeeding, ask a healthcare professional before use.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "24a47e6f-8b6d-4f42-b395-6cf116a8196f",
-"effective": "20260108"
+"missing": true
 },
 "blood plasma phresis antirabies": {
 "generic": "Blood Stim Liquescence",
-"brand": "Blood Stim Liquescence 3004",
-"pharmClass": [
-"Non-Standardized Food Allergenic Extract [EPC]",
-"Non-Standardized Plant Allergenic Extract [EPC]",
-"Parenteral Iron Replacement [EPC]"
-],
-"moaClass": [
-"Phosphate Chelating Activity [MoA]"
-],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS For the temporary relief of fatigue, weakness, exhaustion, flushed skin, muscle twitches, shortness of breath, trouble concentrating, occasional headache, or feelings of discomfort or uneasiness.*",
-"dosage": "DIRECTIONS Place drops under tongue 30 minutes before/after meals. Adults and children 12 years and over: Take one full dropper up to 2 times per day. Consult a physician for use in children under 12 years of age.",
-"contraindications": "",
-"warnings": "WARNINGS Consult a doctor if condition worsens or if symptoms persist. Keep out of the reach of children. In case of overdose, get medical help or contact a poison control center right away. If pregnant or breastfeeding, ask a healthcare professional before use. Keep out of the reach of children. If pregnant or breastfeeding, ask a healthcare professional before use.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "24a47e6f-8b6d-4f42-b395-6cf116a8196f",
-"effective": "20260108"
+"missing": true
 },
 "boric acid alcohol": {
 "generic": "Boric Acid",
-"brand": "V-Bella",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"VAGINAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Uses treats and relieves symptoms of vaginal and urinary infections. rebalances vaginal pH and restores normal vaginal health. helps relieve symptoms of external and internal vaginal burning, itching, irritation and dryness. helps reduce vaginal odor due to vaginal infections.",
-"dosage": "Directions before using this product, read all consumer information provided on carton and insert, Adults and children 12 years of age and over: place vaginal capsule suppository in applicator and gently insert into the vagina. for acute infection, use one capsule suppository a day for three days for chronic infection, use an additional package of three vaginal capsule suppositories throw applicator away after each use Children under 12 years of age: ask a doctor",
-"contraindications": "",
-"warnings": "Warnings For vaginal use only",
-"boxed": "",
-"pregnancy": "",
-"storage": "Other information Store between 15-30C (59-86F) Avoid freezing and excessive heat above 40C (104F)",
-"setId": "3c3a423c-805d-4146-b16e-0138617a8dc6",
-"effective": "20221117"
+"missing": true
 },
 "bosutinib": {
 "generic": "Bosutinib",
@@ -8848,23 +8546,7 @@
 },
 "folinate": {
 "generic": "Calcium Folinate",
-"brand": "Lederle Leucovorin",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "",
-"dosage": "",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "4457d4e3-5942-1a73-e063-6394a90abb24",
-"effective": "20251124"
+"missing": true
 },
 "calfactant": {
 "generic": "Calfactant",
@@ -9450,23 +9132,7 @@
 },
 "collagenase clostridium histolyticum": {
 "generic": "Collagenase Santyl",
-"brand": "Collagenase Santyl",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS AND USAGE Collagenase Santyl ◊ Ointment is indicated for debriding chronic dermal ulcers 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 and severely burned areas. 3, 4, 5, 7, 16, 19, 20, 21",
-"dosage": "DOSAGE AND ADMINISTRATION Collagenase Santyl ◊ Ointment should be applied once daily (or more frequently if the dressing becomes soiled, as from incontinence). When clinically indicated, crosshatching thick eschar with a #10 blade allows Collagenase Santyl ◊ Ointment more surface contact with necrotic debris. It is also desirable to remove, with forceps and scissors, as much loosened detritus as can be done readily.",
-"contraindications": "CONTRAINDICATIONS Collagenase Santyl ◊ Ointment is contraindicated in patients who have shown local or systemic hypersensitivity to collagenase.",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "HOW SUPPLIED Collagenase Santyl ◊ Ointment contains 250 units of collagenase enzyme per gram of white petrolatum USP. Do not store above 25°C (77°F). Sterility guaranteed until tube is opened.",
-"setId": "6b6fbfc6-98fa-46aa-88ef-ab00fbb08ffd",
-"effective": "20190517"
+"missing": true
 },
 "contraceptive hd": {
 "generic": "Contraceptive Hd",
@@ -9482,23 +9148,7 @@
 },
 "zinc": {
 "generic": "Zinc Oxide",
-"brand": "Attitude Diaper Cream Zinc Unscented",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Helps prevent diaper rash. Protects chafed irritated skin due to diaper rash. Helps protect from wetness that causes diaper rash. Temporarily protects and helps relieve minor skin irritation due to diaper rash. Helps treat/heal diaper rash.",
-"dosage": "Change wet and soiled diapers promptly, cleanser the diaper area, and allow to dry. Push on the bottom to release the product. Heat the product for a few seconds on your hands and apply on baby's bottom. Apply product liberally as often as necessary, with each diaper change, especially at bedtime or anytime when exposure to wet diapers may be prolonged. If necessary, after use, wipe off the excess on the tube contour before closing it.",
-"contraindications": "",
-"warnings": "Allergens: almond For external use only. When using this product avoid contact with eyes. If contact occurs, rinse thoroughly with water. Stop use and consult a doctor if symptoms worsen or last for more than 7 days. Keep out of reach of children. If swallowed, call a poison control centre or get edical help right away.",
-"boxed": "",
-"pregnancy": "",
-"storage": "Store at temperatures below 90 F (32 C).",
-"setId": "00283894-ddc6-0faa-e063-6394a90ae47c",
-"effective": "20241002"
+"missing": true
 },
 "covid vaccine": {
 "generic": "Covid-19 Vaccine (1) (Adenovirus Viral Vector)",
@@ -10200,10 +9850,7 @@
 "digestive": {
 "generic": "Digestive Enzyme Liquescence",
 "brand": "Digestive Enzyme Liquescence 3007",
-"pharmClass": [
-"Non-Standardized Food Allergenic Extract [EPC]",
-"Non-Standardized Plant Allergenic Extract [EPC]"
-],
+"pharmClass": [],
 "moaClass": [],
 "routes": [
 "ORAL"
@@ -10244,25 +9891,7 @@
 },
 "digoxin specific antibody": {
 "generic": "Digoxin",
-"brand": "Digoxin",
-"pharmClass": [
-"Cardiac Glycoside [EPC]"
-],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "Mechanism of Action All of digoxin’s actions are mediated through its effects on NaK–ATPase. This enzyme, the “sodium pump,” is responsible for maintaining the intracellular milieu throughout the body by moving sodium ions out of and potassium ions into cells. By inhibiting NaK–ATPase, digoxin • causes increased availability of intracellular calcium in the myocardium and conduction system, with consequent increased inotropy, increased automaticity, and reduced conduction velocity; • indirectly causes parasympathetic stimulation of the autonomic nervous system, with consequent effects on the sino-atrial (SA) and atrioventricular (AV) nodes.",
-"indications": "Digoxin is a cardiac glycoside indicated in adults for the treatment of mild to moderate heart failure and for the control of resting ventricular rate in patients with chronic atrial fibrillation. ( 1.1 , 1.3 ) In pediatric patients with heart failure, digoxin is indicated to increase myocardial contractility. Heart Failure in Adults Digoxin Oral Solution is indicated for the treatment of mild to moderate heart failure. Digoxin increases left ventricular ejection fraction and improves heart failure symptoms as evidenced by increased exercise capacity and decreased heart failure-related hospitalizations and emergency care, while having no effect on mortality. Where possible, digoxin should be used with a diuretic and an angiotensin-converting enzyme inhibitor, but an optimal order for starting these three drugs cannot be specified. Heart Failure in Pediatric Patients Digoxin is indicated to increase myocardial contractility in pediatric patients with heart failure.",
-"dosage": "Toxic levels of digoxin are only slightly higher than therapeutic levels. The pharmacokinetics of digoxin are complex and dose determination should take into account patient-specific factors (age, lean body weight, renal function, etc.). ( 2.4 , 2.5 ) Patients should be monitored for toxicity and therapeutic effect and doses should be adjusted, accordingly. General Dosing Considerations The dose of digoxin should be based on clinical assessment but individual patient factors should be taken into consideration.",
-"contraindications": "Allergy to digoxin is rare. Digoxin is contraindicated in patients with a known hypersensitivity to digoxin or other forms of digitalis. Digitalis glycosides, such as digoxin, are contraindicated in ventricular fibrillation. • Known hypersensitivity to digoxin or other forms of digitalis. • Ventricular fibrillation.",
-"warnings": "• Accessory AV Pathway: Increased risk of rapid ventricular response leading to ventricular fibrillation. • Sinus Node Disease and AV Block: Digoxin use can exacerbate the condition and may cause advanced or complete heart block. • Misidentification of Digoxin Toxicity: Signs and symptoms of digoxin toxicity may be mistaken for worsening symptoms of congestive heart failure. • Preserved Left Ventricular Systolic Function: Patients with heart failure with preserved left ventricular ejection fraction may be more susceptible to digoxin toxicity.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Experience with digoxin in pregnant women over several decades, based on published retrospective clinical studies and case reports, has not led to the identification of a drug associated risk of major birth defects, miscarriage or adverse maternal and fetal outcomes.",
-"storage": "Digoxin Oral Solution, USP 50 mcg per 1 mL is supplied as a (lime-flavored) clear, colorless solution. NDC 0054-0057-46: Bottle of 60 mL with a calibrated oral syringe Storage Store at 20° to 25°C (68° to 77°F). Protect from light.",
-"setId": "1b7e5c6e-e052-41b0-a4ce-05dfe62faaaf",
-"effective": "20250410"
+"missing": true
 },
 "dihydroergotamine": {
 "generic": "Dihydroergotamine Mesylate",
@@ -10362,23 +9991,7 @@
 },
 "ammonium": {
 "generic": "Ammonium Bromatum",
-"brand": "Ammonium Bromatum",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "",
-"dosage": "",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "00537772-4bcf-36ee-e063-6294a90a3d66",
-"effective": "20230712"
+"missing": true
 },
 "diphtheria": {
 "generic": "Diphtheria",
@@ -11066,7 +10679,6 @@
 "moa": "Mechanism of Action Epoprostenol has 2 major pharmacological actions: direct vasodilation of pulmonary and systemic arterial vascular beds, and inhibition of platelet aggregation.",
 "indications": "Epoprostenol for injection is indicated for the treatment of pulmonary arterial hypertension (PAH) (WHO Group 1) to improve exercise capacity. Studies establishing effectiveness included predominantly patients with NYHA Functional Class III-IV symptoms and etiologies of idiopathic or heritable PAH or PAH associated with connective tissue diseases. Epoprostenol for injection is a prostacyclin vasodilator indicated for the treatment of pulmonary arterial hypertension (PAH) (WHO Group 1) to improve exercise capacity. Studies establishing effectiveness included predominantly patients with NYHA Functional Class III-IV symptoms and etiologies of idiopathic or heritable PAH or PAH associated with connective tissue diseases.",
 "dosage": "Important Note: Reconstitute Epoprostenol for Injection only as directed with Sterile Water for Injection, USP, or Sodium Chloride 0.9% Injection, USP. Do not dilute reconstituted solutions of epoprostenol for injection or administer it with other parenteral solutions or medications . • Dosage - Infusion of epoprostenol for injection should be initiated at 2 ng/kg/min and increased in increments of 2 ng/kg/min every 15 minutes or longer until dose-limiting pharmacologic effects are elicited or until a tolerance limit to the drug is established.",
-"contraindications": "large study evaluating the effect of epoprostenol on survival in NYHA Class III and IV patients with congestive heart failure due to severe left ventricular systolic dysfunction was terminated after an interim analysis of 471 patients revealed a higher mortality in patients receiving epoprostenol plus conventional therapy than in those receiving conventional therapy alone.",
 "warnings": "• Do not abruptly lower the dose or withdraw dosing. All dosing initiation and changes should be closely monitored. ( 5.2 , 5.3 ) Dose Initiation Epoprostenol is a potent pulmonary and systemic vasodilator. Initiate epoprostenol in a setting with adequate personnel and equipment for physiologic monitoring and emergency care. Dose initiation has been performed during right heart catheterization and without cardiac catheterization. During dose initiation, asymptomatic increases in pulmonary artery pressure coincident with increases in cardiac output occurred rarely.",
 "boxed": "",
 "pregnancy": "Pregnancy Risk Summary Limited published data from case series and case reports with epoprostenol have not established a drug associated risk of major birth defects, miscarriage or adverse maternal or fetal outcomes when used during pregnancy.",
@@ -11689,25 +11301,7 @@
 },
 "follitropin beta": {
 "generic": "Follitropin",
-"brand": "Follistim Aq",
-"pharmClass": [
-"Gonadotropin [EPC]"
-],
-"moaClass": [],
-"routes": [
-"SUBCUTANEOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Women: Follicle-stimulating hormone (FSH), the active component in FOLLISTIM AQ Cartridge, is required for normal follicular growth, maturation, and gonadal steroid production. In women, the level of FSH is critical for the onset and duration of follicular development, and consequently for the timing and number of follicles reaching maturity. FOLLISTIM AQ Cartridge stimulates ovarian follicular growth in women who do not have primary ovarian failure.",
-"indications": "® AQ Cartridge (follitropin beta) injection, is indicated: In Women for: FOLLISTIM AQ Cartridge is a gonadotropin indicated: In Women for: Induction of Ovulation and Pregnancy in Anovulatory Infertile Women in Whom the Cause of Infertility is Functional and Not Due to Primary Ovarian Failure Pregnancy in Normal Ovulatory Women Undergoing Controlled Ovarian Stimulation as Part of an In Vitro Fertilization (IVF) or Intracytoplasmic Sperm Injection (ICSI) Cycle In Men for: Induction of Spermatogenesis in Men with Primary and Secondary Hypogonadotropic Hypogonadism (HH) in Whom the Cause of Infertility is Not Due to Primary Testicular Failure Induction of Ovulation and Pregnancy in Anovulatory Infertile Women in Whom the Cause of Infertility is Functional and Not Due to Primary Ovarian Failure Prior to initiation of treatment with FOLLISTIM AQ Cartridge: Women should have a complete gynecologic and endocrinologic evaluation. Primary ovarian failure should be excluded. The possibility of pregnancy should be excluded. Tubal patency should be demonstrated.",
-"dosage": "See Dose Conversion Table 1 for FOLLISTIM AQ Cartridge with Pen Injector In Anovulatory Women Undergoing Ovulation Induction : Starting daily dose of 50 international units of FOLLISTIM AQ Cartridge is administered subcutaneously for at least the first 7 days. The dose is increased by 25 or 50 international units at weekly intervals until follicular growth and/or serum estradiol levels indicate an adequate response. When an acceptable pre-ovulatory state is achieved, final oocyte maturation is achieved with 5,000 to 10,000 international units of urinary human chorionic gonadotropin (hCG).",
-"contraindications": "Cartridge is contraindicated in women and men who exhibit: Prior hypersensitivity to recombinant hFSH products or any component of FOLLISTIM AQ Cartridge. Reactions including anaphylaxis have been reported High levels of FSH indicating primary gonadal failure Presence of uncontrolled non-gonadal endocrinopathies (e.g., thyroid, adrenal, or pituitary disorders) Hypersensitivity reactions to streptomycin or neomycin.",
-"warnings": "Cartridge should be used only by physicians who are experienced in infertility treatment. FOLLISTIM AQ Cartridge contains a potent gonadotropic substance capable of causing Ovarian Hyperstimulation Syndrome (OHSS) with or without pulmonary or vascular complications and multiple births . Gonadotropin therapy requires the availability of appropriate monitoring facilities . Careful attention should be given to the diagnosis of infertility and in the selection of candidates for FOLLISTIM AQ Cartridge therapy .",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary FOLLISTIM AQ Cartridge is contraindicated for use in pregnant women. The incidence of congenital malformations after some Assisted Reproductive Technology, specifically in vitro fertilization (IVF) or intracytoplasmic sperm injection (ICSI)], may be slightly higher than that after spontaneous conception.",
-"storage": "Pharmacy Storage: Store refrigerated 36°F to 46°F (2°C to 8°C) until dispensed. Do not freeze. Patient Storage: Store unused cartridge refrigerated at 36°F to 46°F (2°C to 8°C) until the expiration date, or at room temperature at up to 77°F (25°C) for 3 months or until expiration date, whichever occurs first.",
-"setId": "48489027-e52b-4b10-ae74-4ba03839150c",
-"effective": "20260526"
+"missing": true
 },
 "fomepizole": {
 "generic": "Fomepizole",
@@ -11869,43 +11463,11 @@
 },
 "gallium dotatate": {
 "generic": "Gallium Citrate Ga-67",
-"brand": "Gallium Citrate Ga-67",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS AND USAGE Gallium Citrate Ga 67 Injection may be useful to demonstrate the presence and extent of Hodgkin's disease, lymphoma, and bronchogenic carcinoma. Positive gallium Ga-67 uptake in the absence of prior symptoms warrants follow-up as an indication of a potential disease state. Gallium Citrate Ga 67 Injection may be useful as an aid in detecting some acute inflammatory lesions.",
-"dosage": "DOSAGE AND ADMINISTRATION The recommended adult (70 kg) dose of Gallium Citrate Ga 67 Injection is 74 to 185 megabecquerels (2 to 5 millicuries). Gallium Citrate Ga 67 Injection is intended for intravenous administration only. Approximately 10 percent of the administered dose is excreted in the feces during the first week after injection. Daily laxatives and/or enemas are recommended from the day of injection until the final images are obtained in order to cleanse the bowel of radioactive material and minimize the possibility of false positive studies. Studies indicate the optimal tumor to background concentration ratios are often obtained 48 hours post injection.",
-"contraindications": "CONTRAINDICATIONS None.",
-"warnings": "WARNINGS None known.",
-"boxed": "",
-"pregnancy": "Pregnancy Animal reproductive studies have not been conducted with Gallium Citrate Ga 67. It is also not known whether Gallium Citrate Ga 67 can cause fetal harm when administered to a pregnant woman or can affect reproduction capacity. Gallium Citrate Ga 67 should be given to a pregnant woman only if clearly needed.",
-"storage": "Storage and Handling The contents of the vial are radioactive, and adequate shielding and handling precautions must be maintained. Store at controlled room temperature 20° to 25°C (68° to 77°F) .",
-"setId": "5f670c12-cca5-4d73-8a88-241f753d1bc7",
-"effective": "20250813"
+"missing": true
 },
 "gallium prostate specific membrane antigen": {
 "generic": "Gallium Citrate Ga-67",
-"brand": "Gallium Citrate Ga-67",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS AND USAGE Gallium Citrate Ga 67 Injection may be useful to demonstrate the presence and extent of Hodgkin's disease, lymphoma, and bronchogenic carcinoma. Positive gallium Ga-67 uptake in the absence of prior symptoms warrants follow-up as an indication of a potential disease state. Gallium Citrate Ga 67 Injection may be useful as an aid in detecting some acute inflammatory lesions.",
-"dosage": "DOSAGE AND ADMINISTRATION The recommended adult (70 kg) dose of Gallium Citrate Ga 67 Injection is 74 to 185 megabecquerels (2 to 5 millicuries). Gallium Citrate Ga 67 Injection is intended for intravenous administration only. Approximately 10 percent of the administered dose is excreted in the feces during the first week after injection. Daily laxatives and/or enemas are recommended from the day of injection until the final images are obtained in order to cleanse the bowel of radioactive material and minimize the possibility of false positive studies. Studies indicate the optimal tumor to background concentration ratios are often obtained 48 hours post injection.",
-"contraindications": "CONTRAINDICATIONS None.",
-"warnings": "WARNINGS None known.",
-"boxed": "",
-"pregnancy": "Pregnancy Animal reproductive studies have not been conducted with Gallium Citrate Ga 67. It is also not known whether Gallium Citrate Ga 67 can cause fetal harm when administered to a pregnant woman or can affect reproduction capacity. Gallium Citrate Ga 67 should be given to a pregnant woman only if clearly needed.",
-"storage": "Storage and Handling The contents of the vial are radioactive, and adequate shielding and handling precautions must be maintained. Store at controlled room temperature 20° to 25°C (68° to 77°F) .",
-"setId": "5f670c12-cca5-4d73-8a88-241f753d1bc7",
-"effective": "20250813"
+"missing": true
 },
 "gallium sup": {
 "generic": "Gallium Citrate Ga-67",
@@ -12269,67 +11831,15 @@
 },
 "allogenic umbilical cord tissue derived mesenchymal stromal cells": {
 "generic": "Allogenic Thymocyte-Depleted Thymus Tissue-Agdc",
-"brand": "Rethymic",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"INTRAMUSCULAR"
-],
-"forms": [],
-"moa": "Mechanism of Action RETHYMIC is intended to reconstitute immunity in patients who are athymic. The proposed mechanism of action involves the migration of recipient T cell progenitors from the bone marrow to the implanted RETHYMIC slices, where they develop into naïve immunocompetent recipient T cells. Evidence of thymic function can be observed with the development of naïve T cells in the peripheral blood; this is unlikely to be observed prior to 6-12 months after treatment with RETHYMIC.",
-"indications": "® is indicated for immune reconstitution in pediatric patients with congenital athymia. RETHYMIC is indicated for immune reconstitution in pediatric patients with congenital athymia. Limitations of Use : RETHYMIC is not indicated for the treatment of patients with severe combined immunodeficiency (SCID). Limitations of Use RETHYMIC is not indicated for the treatment of patients with severe combined immunodeficiency (SCID).",
-"dosage": "is administered by a surgical procedure. The recommended dose range is 5,000 to 22,000 mm 2 of RETHYMIC/m 2 recipient body surface area (BSA). Immunosuppressive therapy is recommended for patients receiving RETHYMIC based on disease phenotype and PHA levels. Dosage RETHYMIC is administered by a surgical procedure. The dosage is determined by the total surface area of the RETHYMIC slices and recipient body surface area (BSA). A RETHYMIC slice is defined as the contents on a single filter membrane; the RETHYMIC slices are variable in size and shape. The recommended dose range is 5,000 to 22,000 mm 2 of RETHYMIC surface area/m 2 recipient BSA.",
-"contraindications": "None. None.",
-"warnings": "Immune reconstitution sufficient to protect from infection is unlikely to develop prior to 6 to 12 months after treatment with RETHYMIC. Given the immunocompromised condition of athymic patients, infection control measures should be followed until the development of thymic function can be established. Monitor and treat patients at risk for the development of graft versus host disease (GVHD). Monitor for the development of autoimmune disorders, including complete blood counts with differential, liver enzymes, serum creatinine, urinalysis, and thyroid function.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary There are no clinical data with RETHYMIC in pregnant women. No animal reproductive and developmental toxicity studies have been conducted with RETHYMIC. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2-4% and 15-20%, respectively.",
-"storage": "Storage and Handling Use RETHYMIC prior to the time and date of expiration printed on the polycarbonate container. Store RETHYMIC at room temperature in the polycarbonate container in the insulated shipping box until ready for use. Do not refrigerate, freeze, agitate, or sterilize RETHYMIC.",
-"setId": "e0022c28-8cda-4f1e-bcf1-1f440d37ec4a",
-"effective": "20251031"
+"missing": true
 },
 "autologous cultured fibroblast cells": {
 "generic": "Autologous Cultured Chondrocytes",
-"brand": "Maci",
-"pharmClass": [
-"Autologous Cultured Cell [EPC]"
-],
-"moaClass": [],
-"routes": [
-"INTRA-ARTICULAR"
-],
-"forms": [],
-"moa": "Mechanism of Action No clinical pharmacology studies have been conducted with MACI and a mechanism of action has not been established.",
-"indications": "® (autologous cultured chondrocytes on porcine collagen membrane) is an autologous cellularized scaffold product indicated for the repair of single or multiple symptomatic, full-thickness cartilage defects of the knee with or without bone involvement in adults. Limitations of Use Effectiveness of MACI in joints other than the knee has not been established. Safety and effectiveness of MACI in patients over the age of 55 years have not been established. MACI ® is an autologous cellularized scaffold product indicated for the repair of symptomatic, single or multiple full-thickness cartilage defects of the knee with or without bone involvement in adults. Limitations of Use Effectiveness of MACI in joints other than the knee has not been established. Safety and effectiveness of MACI in patients over the age of 55 years have not been established.",
-"dosage": "For Autologous Implantation Only. Contact Vericel at 1-800-453-6948 or www.MACI.com regarding training materials for surgical implantation of MACI. For autologous implantation only. Contact Vericel at 1-800-453-6948 or www.MACI.com regarding training materials for surgical implantation of MACI. The amount of MACI implanted depends on the size (surface area in cm 2 ) of the cartilage defect. MACI should be cut to the size and shape of the defect and implanted with the cell-side down. Dosage The amount of MACI implanted depends on the size (surface area in cm 2 ) of the cartilage defect.",
-"contraindications": "is contraindicated in patients with the following conditions: Known history of hypersensitivity to gentamicin, other aminoglycosides, or products of porcine or bovine origin. Severe osteoarthritis of the knee (Kellgren-Lawrence grade 3 or 4). Inflammatory arthritis, inflammatory joint disease, or uncorrected congenital blood coagulation disorders. Prior knee surgery (6 months), excluding surgery to procure a biopsy or a concomitant procedure to prepare the knee for a MACI implant.",
-"warnings": "Malignancy: The risk of malignancy in the area of cartilage biopsy or implant is unknown. Expansion of malignant or dysplastic cells present in biopsy tissue during manufacture and subsequent implantation may be possible. Transmissible infectious diseases: Because patients undergoing procedures associated with MACI are not routinely tested for transmissible infectious diseases, cartilage biopsy and MACI implant may carry risk of transmitting infectious diseases.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary MACI implantation requires invasive surgical procedures; therefore use during pregnancy is not recommended. Limited clinical data on patients exposed to MACI during pregnancy are available. There are insufficient data with MACI use in pregnant women to inform a product-associated risk.",
-"storage": "How Supplied A single patient order may contain one or two implants, each in its own bottle and shipper, depending on lesion size and number of lesions. MACI - One Implant MACI, NDC69866-1030-5 (outer box), contains one implant supplied ready for use as a single cellular sheet approximately 3 x 5 cm, in a sterile, sealed, translucent perfluoroalkox…",
-"setId": "0c336c02-8c4c-4aa8-a992-9d2890a2539c",
-"effective": "20260309"
+"missing": true
 },
 "autologous skin melanocyte keratinocyte cells": {
 "generic": "Autologous Cultured Chondrocytes",
-"brand": "Maci",
-"pharmClass": [
-"Autologous Cultured Cell [EPC]"
-],
-"moaClass": [],
-"routes": [
-"INTRA-ARTICULAR"
-],
-"forms": [],
-"moa": "Mechanism of Action No clinical pharmacology studies have been conducted with MACI and a mechanism of action has not been established.",
-"indications": "® (autologous cultured chondrocytes on porcine collagen membrane) is an autologous cellularized scaffold product indicated for the repair of single or multiple symptomatic, full-thickness cartilage defects of the knee with or without bone involvement in adults. Limitations of Use Effectiveness of MACI in joints other than the knee has not been established. Safety and effectiveness of MACI in patients over the age of 55 years have not been established. MACI ® is an autologous cellularized scaffold product indicated for the repair of symptomatic, single or multiple full-thickness cartilage defects of the knee with or without bone involvement in adults. Limitations of Use Effectiveness of MACI in joints other than the knee has not been established. Safety and effectiveness of MACI in patients over the age of 55 years have not been established.",
-"dosage": "For Autologous Implantation Only. Contact Vericel at 1-800-453-6948 or www.MACI.com regarding training materials for surgical implantation of MACI. For autologous implantation only. Contact Vericel at 1-800-453-6948 or www.MACI.com regarding training materials for surgical implantation of MACI. The amount of MACI implanted depends on the size (surface area in cm 2 ) of the cartilage defect. MACI should be cut to the size and shape of the defect and implanted with the cell-side down. Dosage The amount of MACI implanted depends on the size (surface area in cm 2 ) of the cartilage defect.",
-"contraindications": "is contraindicated in patients with the following conditions: Known history of hypersensitivity to gentamicin, other aminoglycosides, or products of porcine or bovine origin. Severe osteoarthritis of the knee (Kellgren-Lawrence grade 3 or 4). Inflammatory arthritis, inflammatory joint disease, or uncorrected congenital blood coagulation disorders. Prior knee surgery (6 months), excluding surgery to procure a biopsy or a concomitant procedure to prepare the knee for a MACI implant.",
-"warnings": "Malignancy: The risk of malignancy in the area of cartilage biopsy or implant is unknown. Expansion of malignant or dysplastic cells present in biopsy tissue during manufacture and subsequent implantation may be possible. Transmissible infectious diseases: Because patients undergoing procedures associated with MACI are not routinely tested for transmissible infectious diseases, cartilage biopsy and MACI implant may carry risk of transmitting infectious diseases.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary MACI implantation requires invasive surgical procedures; therefore use during pregnancy is not recommended. Limited clinical data on patients exposed to MACI during pregnancy are available. There are insufficient data with MACI use in pregnant women to inform a product-associated risk.",
-"storage": "How Supplied A single patient order may contain one or two implants, each in its own bottle and shipper, depending on lesion size and number of lesions. MACI - One Implant MACI, NDC69866-1030-5 (outer box), contains one implant supplied ready for use as a single cellular sheet approximately 3 x 5 cm, in a sterile, sealed, translucent perfluoroalkox…",
-"setId": "0c336c02-8c4c-4aa8-a992-9d2890a2539c",
-"effective": "20260309"
+"missing": true
 },
 "hydralazine": {
 "generic": "Hydralazine Hydrochloride",
@@ -12701,47 +12211,11 @@
 },
 "insulin biphasic isophane": {
 "generic": "Insulin Glargine",
-"brand": "Basaglar Kwikpen",
-"pharmClass": [
-"Insulin Analog [EPC]"
-],
-"moaClass": [],
-"routes": [
-"SUBCUTANEOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action The primary activity of insulin, including insulin glargine, is regulation of glucose metabolism. Insulin and its analog lower blood glucose by stimulating peripheral glucose uptake, especially by skeletal muscle and fat, and by inhibiting hepatic glucose production. Insulin inhibits lipolysis and proteolysis, and enhances protein synthesis.",
-"indications": "® is indicated to improve glycemic control in adults and pediatric patients with type 1 diabetes mellitus and in adults with type 2 diabetes mellitus. BASAGLAR ® is a long-acting human insulin analog indicated to improve glycemic control in adults and pediatric patients with type 1 diabetes mellitus and in adults with type 2 diabetes mellitus. Limitations of Use : Not recommended for treating diabetic ketoacidosis. Limitations of Use BASAGLAR is not recommended for the treatment of diabetic ketoacidosis.",
-"dosage": "Individualize dosage based on metabolic needs, blood glucose monitoring, glycemic control, type of diabetes, prior insulin use. ( 2.2 , 2.3 , 2.4 ) Administer subcutaneously once daily at any time of day, but at the same time every day. Rotate injection sites into the abdominal area, thigh, or deltoid to reduce the risk of lipodystrophy and localized cutaneous amyloidosis. Closely monitor glucose when converting to BASAGLAR and during initial weeks thereafter. Do not dilute or mix with any other insulin or solution. Important Administration Instructions Always check insulin labels before administration .",
-"contraindications": "is contraindicated: During episodes of hypoglycemia . In patients with hypersensitivity to insulin glargine or any of the excipients in BASAGLAR . During episodes of hypoglycemia. Hypersensitivity to BASAGLAR or any of its excipients.",
-"warnings": "Never share a BASAGLAR prefilled pen between patients, even if the needle is changed. Hyperglycemia or hypoglycemia with changes in insulin regimen: Make changes to a patient's insulin regimen (e.g., insulin strength, manufacturer, type, injection site or method of administration) under close medical supervision with increased frequency of blood glucose monitoring. Hypoglycemia: May be life-threatening. Increase frequency of glucose monitoring with changes to: insulin dosage, co-administered glucose lowering medications, meal pattern, physical activity.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Published studies with use of insulin glargine products during pregnancy have not reported a clear association with insulin glargine products and adverse developmental outcomes (see Data). There are risks to the mother and fetus associated with poorly controlled diabetes in pregnancy (see Clinical Considerations).",
-"storage": "Storage and Handling Dispense in the original sealed carton with the enclosed Instructions for Use. Protect BASAGLAR from heat and light. Do not freeze BASAGLAR. In-use BASAGLAR prefilled pens must be used within 28 days or be discarded, even if they still contain BASAGLAR.",
-"setId": "0ad21db3-2b1c-4ed9-a687-bdd6a74d0aae",
-"effective": "20260616"
+"missing": true
 },
 "insulin biphasic lispro": {
 "generic": "Insulin Glargine",
-"brand": "Basaglar Kwikpen",
-"pharmClass": [
-"Insulin Analog [EPC]"
-],
-"moaClass": [],
-"routes": [
-"SUBCUTANEOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action The primary activity of insulin, including insulin glargine, is regulation of glucose metabolism. Insulin and its analog lower blood glucose by stimulating peripheral glucose uptake, especially by skeletal muscle and fat, and by inhibiting hepatic glucose production. Insulin inhibits lipolysis and proteolysis, and enhances protein synthesis.",
-"indications": "® is indicated to improve glycemic control in adults and pediatric patients with type 1 diabetes mellitus and in adults with type 2 diabetes mellitus. BASAGLAR ® is a long-acting human insulin analog indicated to improve glycemic control in adults and pediatric patients with type 1 diabetes mellitus and in adults with type 2 diabetes mellitus. Limitations of Use : Not recommended for treating diabetic ketoacidosis. Limitations of Use BASAGLAR is not recommended for the treatment of diabetic ketoacidosis.",
-"dosage": "Individualize dosage based on metabolic needs, blood glucose monitoring, glycemic control, type of diabetes, prior insulin use. ( 2.2 , 2.3 , 2.4 ) Administer subcutaneously once daily at any time of day, but at the same time every day. Rotate injection sites into the abdominal area, thigh, or deltoid to reduce the risk of lipodystrophy and localized cutaneous amyloidosis. Closely monitor glucose when converting to BASAGLAR and during initial weeks thereafter. Do not dilute or mix with any other insulin or solution. Important Administration Instructions Always check insulin labels before administration .",
-"contraindications": "is contraindicated: During episodes of hypoglycemia . In patients with hypersensitivity to insulin glargine or any of the excipients in BASAGLAR . During episodes of hypoglycemia. Hypersensitivity to BASAGLAR or any of its excipients.",
-"warnings": "Never share a BASAGLAR prefilled pen between patients, even if the needle is changed. Hyperglycemia or hypoglycemia with changes in insulin regimen: Make changes to a patient's insulin regimen (e.g., insulin strength, manufacturer, type, injection site or method of administration) under close medical supervision with increased frequency of blood glucose monitoring. Hypoglycemia: May be life-threatening. Increase frequency of glucose monitoring with changes to: insulin dosage, co-administered glucose lowering medications, meal pattern, physical activity.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Published studies with use of insulin glargine products during pregnancy have not reported a clear association with insulin glargine products and adverse developmental outcomes (see Data). There are risks to the mother and fetus associated with poorly controlled diabetes in pregnancy (see Clinical Considerations).",
-"storage": "Storage and Handling Dispense in the original sealed carton with the enclosed Instructions for Use. Protect BASAGLAR from heat and light. Do not freeze BASAGLAR. In-use BASAGLAR prefilled pens must be used within 28 days or be discarded, even if they still contain BASAGLAR.",
-"setId": "0ad21db3-2b1c-4ed9-a687-bdd6a74d0aae",
-"effective": "20260616"
+"missing": true
 },
 "insulin detemir": {
 "generic": "Insulin Detemir",
@@ -12812,25 +12286,7 @@
 },
 "insulin isophane": {
 "generic": "Insulin Glargine",
-"brand": "Basaglar Kwikpen",
-"pharmClass": [
-"Insulin Analog [EPC]"
-],
-"moaClass": [],
-"routes": [
-"SUBCUTANEOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action The primary activity of insulin, including insulin glargine, is regulation of glucose metabolism. Insulin and its analog lower blood glucose by stimulating peripheral glucose uptake, especially by skeletal muscle and fat, and by inhibiting hepatic glucose production. Insulin inhibits lipolysis and proteolysis, and enhances protein synthesis.",
-"indications": "® is indicated to improve glycemic control in adults and pediatric patients with type 1 diabetes mellitus and in adults with type 2 diabetes mellitus. BASAGLAR ® is a long-acting human insulin analog indicated to improve glycemic control in adults and pediatric patients with type 1 diabetes mellitus and in adults with type 2 diabetes mellitus. Limitations of Use : Not recommended for treating diabetic ketoacidosis. Limitations of Use BASAGLAR is not recommended for the treatment of diabetic ketoacidosis.",
-"dosage": "Individualize dosage based on metabolic needs, blood glucose monitoring, glycemic control, type of diabetes, prior insulin use. ( 2.2 , 2.3 , 2.4 ) Administer subcutaneously once daily at any time of day, but at the same time every day. Rotate injection sites into the abdominal area, thigh, or deltoid to reduce the risk of lipodystrophy and localized cutaneous amyloidosis. Closely monitor glucose when converting to BASAGLAR and during initial weeks thereafter. Do not dilute or mix with any other insulin or solution. Important Administration Instructions Always check insulin labels before administration .",
-"contraindications": "is contraindicated: During episodes of hypoglycemia . In patients with hypersensitivity to insulin glargine or any of the excipients in BASAGLAR . During episodes of hypoglycemia. Hypersensitivity to BASAGLAR or any of its excipients.",
-"warnings": "Never share a BASAGLAR prefilled pen between patients, even if the needle is changed. Hyperglycemia or hypoglycemia with changes in insulin regimen: Make changes to a patient's insulin regimen (e.g., insulin strength, manufacturer, type, injection site or method of administration) under close medical supervision with increased frequency of blood glucose monitoring. Hypoglycemia: May be life-threatening. Increase frequency of glucose monitoring with changes to: insulin dosage, co-administered glucose lowering medications, meal pattern, physical activity.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Published studies with use of insulin glargine products during pregnancy have not reported a clear association with insulin glargine products and adverse developmental outcomes (see Data). There are risks to the mother and fetus associated with poorly controlled diabetes in pregnancy (see Clinical Considerations).",
-"storage": "Storage and Handling Dispense in the original sealed carton with the enclosed Instructions for Use. Protect BASAGLAR from heat and light. Do not freeze BASAGLAR. In-use BASAGLAR prefilled pens must be used within 28 days or be discarded, even if they still contain BASAGLAR.",
-"setId": "0ad21db3-2b1c-4ed9-a687-bdd6a74d0aae",
-"effective": "20260616"
+"missing": true
 },
 "insulin lispro": {
 "generic": "Insulin Lispro-Aabc",
@@ -12857,25 +12313,7 @@
 },
 "insulin regular": {
 "generic": "Insulin Glargine",
-"brand": "Basaglar Kwikpen",
-"pharmClass": [
-"Insulin Analog [EPC]"
-],
-"moaClass": [],
-"routes": [
-"SUBCUTANEOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action The primary activity of insulin, including insulin glargine, is regulation of glucose metabolism. Insulin and its analog lower blood glucose by stimulating peripheral glucose uptake, especially by skeletal muscle and fat, and by inhibiting hepatic glucose production. Insulin inhibits lipolysis and proteolysis, and enhances protein synthesis.",
-"indications": "® is indicated to improve glycemic control in adults and pediatric patients with type 1 diabetes mellitus and in adults with type 2 diabetes mellitus. BASAGLAR ® is a long-acting human insulin analog indicated to improve glycemic control in adults and pediatric patients with type 1 diabetes mellitus and in adults with type 2 diabetes mellitus. Limitations of Use : Not recommended for treating diabetic ketoacidosis. Limitations of Use BASAGLAR is not recommended for the treatment of diabetic ketoacidosis.",
-"dosage": "Individualize dosage based on metabolic needs, blood glucose monitoring, glycemic control, type of diabetes, prior insulin use. ( 2.2 , 2.3 , 2.4 ) Administer subcutaneously once daily at any time of day, but at the same time every day. Rotate injection sites into the abdominal area, thigh, or deltoid to reduce the risk of lipodystrophy and localized cutaneous amyloidosis. Closely monitor glucose when converting to BASAGLAR and during initial weeks thereafter. Do not dilute or mix with any other insulin or solution. Important Administration Instructions Always check insulin labels before administration .",
-"contraindications": "is contraindicated: During episodes of hypoglycemia . In patients with hypersensitivity to insulin glargine or any of the excipients in BASAGLAR . During episodes of hypoglycemia. Hypersensitivity to BASAGLAR or any of its excipients.",
-"warnings": "Never share a BASAGLAR prefilled pen between patients, even if the needle is changed. Hyperglycemia or hypoglycemia with changes in insulin regimen: Make changes to a patient's insulin regimen (e.g., insulin strength, manufacturer, type, injection site or method of administration) under close medical supervision with increased frequency of blood glucose monitoring. Hypoglycemia: May be life-threatening. Increase frequency of glucose monitoring with changes to: insulin dosage, co-administered glucose lowering medications, meal pattern, physical activity.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Published studies with use of insulin glargine products during pregnancy have not reported a clear association with insulin glargine products and adverse developmental outcomes (see Data). There are risks to the mother and fetus associated with poorly controlled diabetes in pregnancy (see Clinical Considerations).",
-"storage": "Storage and Handling Dispense in the original sealed carton with the enclosed Instructions for Use. Protect BASAGLAR from heat and light. Do not freeze BASAGLAR. In-use BASAGLAR prefilled pens must be used within 28 days or be discarded, even if they still contain BASAGLAR.",
-"setId": "0ad21db3-2b1c-4ed9-a687-bdd6a74d0aae",
-"effective": "20260616"
+"missing": true
 },
 "iobenguane sup": {
 "generic": "Iobenguane I-123",
@@ -13625,75 +13063,15 @@
 },
 "lutetium dotatate": {
 "generic": "Lutetium Lu 177 Vipivotide Tetraxetan",
-"brand": "Pluvicto",
-"pharmClass": [
-"Radioligand Therapeutic Agent [EPC]"
-],
-"moaClass": [
-"Radioligand Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Lutetium Lu 177 vipivotide tetraxetan is a radioligand therapeutic agent. The active moiety of lutetium Lu 177 vipivotide tetraxetan is the radionuclide lutetium-177 which is linked to a moiety that binds to PSMA, a transmembrane protein that is expressed in prostate cancer. Upon binding of lutetium Lu 177 vipivotide tetraxetan to PSMA-expressing cells, the beta-minus emission from lutetium-177 delivers radiation to PSMA-expressing cells, as well as to surrounding cells, and induces DNA damage which can lead to cell death.",
-"indications": "is a radioligand therapeutic agent indicated: Metastatic Androgen Pathway Modulation-Naïve or -Sensitive (mAPMN/S) Prostate Cancer in combination with androgen receptor pathway inhibitor (ARPI) therapy for the treatment of adult patients with prostate-specific membrane antigen (PSMA)-positive metastatic androgen pathway modulation-naïve or -sensitive (mAPMN/S) prostate cancer. Metastatic Androgen Pathway Modulation-Resistant (mAPMR) Prostate Cancer for the treatment of adult patients with PSMA-positive metastatic androgen pathway modulation-resistant (mAPMR) prostate cancer who have been treated with ARPI therapy, and are considered appropriate to delay taxane-based chemotherapy, or have received prior taxane-based chemotherapy. Metastatic Androgen Pathway Modulation-Naïve or -Sensitive Prostate Cancer PLUVICTO is indicated in combination with androgen receptor pathway inhibitor (ARPI) therapy for the treatment of adult patients with prostate-specific membrane antigen (PSMA)-positive metastatic androgen pathway modulation-naïve or -sensitive (mAPMN/S) prostate cancer.",
-"dosage": "Select patients for treatment using LOCAMETZ ® or another approved PSMA positron emission tomography (PET) product based on PSMA expression in tumors. mAPMN/S Prostate Cancer : The recommended dosage of PLUVICTO in combination with ARPI is GBq (200 mCi) every 6 weeks for 6 doses, or until disease progression or unacceptable toxicity. mAPMR Prostate Cancer : The recommended dosage of PLUVICTO is GBq (200 mCi) every 6 weeks for 6 doses, or until disease progression or unacceptable toxicity. Dose interruption, reduction, or permanent discontinuation may be required due to adverse reactions. Important Safety Instructions PLUVICTO is a radiopharmaceutical.",
-"contraindications": "None. None.",
-"warnings": "Risk From Radiation Exposure : Minimize radiation exposure during and after treatment with PLUVICTO consistent with institutional good radiation safety practices and patient treatment procedures. Ensure patients increase oral fluid intake and advise patients to void as often as possible to reduce bladder radiation. Myelosuppression : Perform complete blood counts. Withhold, reduce dose, or permanently discontinue PLUVICTO based on severity. ( 2.4 , 5.2 ) Renal Toxicity : Advise patients to remain well hydrated and to urinate frequently. Perform kidney function laboratory tests.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary The safety and efficacy of PLUVICTO have not been established in females. Based on its mechanism of action, PLUVICTO can cause fetal harm . There are no available data on PLUVICTO use in pregnant females.",
-"storage": "Injection containing 1,000 MBq/mL (27 mCi/mL) of lutetium Lu 177 vipivotide tetraxetan at calibration time is a sterile, preservative-free and clear, colorless to slightly yellow solution for intravenous use supplied in a clear, colorless Type I glass 30 mL single-dose vial containing GBq (200 mCi) ± 10% of lutetium Lu 177 vipivotide tetraxetan at …",
-"setId": "14908037-2892-4d98-a053-253ce35afb1a",
-"effective": "20260812"
+"missing": true
 },
 "lutetium edtmp": {
 "generic": "Lutetium Lu 177 Vipivotide Tetraxetan",
-"brand": "Pluvicto",
-"pharmClass": [
-"Radioligand Therapeutic Agent [EPC]"
-],
-"moaClass": [
-"Radioligand Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Lutetium Lu 177 vipivotide tetraxetan is a radioligand therapeutic agent. The active moiety of lutetium Lu 177 vipivotide tetraxetan is the radionuclide lutetium-177 which is linked to a moiety that binds to PSMA, a transmembrane protein that is expressed in prostate cancer. Upon binding of lutetium Lu 177 vipivotide tetraxetan to PSMA-expressing cells, the beta-minus emission from lutetium-177 delivers radiation to PSMA-expressing cells, as well as to surrounding cells, and induces DNA damage which can lead to cell death.",
-"indications": "is a radioligand therapeutic agent indicated: Metastatic Androgen Pathway Modulation-Naïve or -Sensitive (mAPMN/S) Prostate Cancer in combination with androgen receptor pathway inhibitor (ARPI) therapy for the treatment of adult patients with prostate-specific membrane antigen (PSMA)-positive metastatic androgen pathway modulation-naïve or -sensitive (mAPMN/S) prostate cancer. Metastatic Androgen Pathway Modulation-Resistant (mAPMR) Prostate Cancer for the treatment of adult patients with PSMA-positive metastatic androgen pathway modulation-resistant (mAPMR) prostate cancer who have been treated with ARPI therapy, and are considered appropriate to delay taxane-based chemotherapy, or have received prior taxane-based chemotherapy. Metastatic Androgen Pathway Modulation-Naïve or -Sensitive Prostate Cancer PLUVICTO is indicated in combination with androgen receptor pathway inhibitor (ARPI) therapy for the treatment of adult patients with prostate-specific membrane antigen (PSMA)-positive metastatic androgen pathway modulation-naïve or -sensitive (mAPMN/S) prostate cancer.",
-"dosage": "Select patients for treatment using LOCAMETZ ® or another approved PSMA positron emission tomography (PET) product based on PSMA expression in tumors. mAPMN/S Prostate Cancer : The recommended dosage of PLUVICTO in combination with ARPI is GBq (200 mCi) every 6 weeks for 6 doses, or until disease progression or unacceptable toxicity. mAPMR Prostate Cancer : The recommended dosage of PLUVICTO is GBq (200 mCi) every 6 weeks for 6 doses, or until disease progression or unacceptable toxicity. Dose interruption, reduction, or permanent discontinuation may be required due to adverse reactions. Important Safety Instructions PLUVICTO is a radiopharmaceutical.",
-"contraindications": "None. None.",
-"warnings": "Risk From Radiation Exposure : Minimize radiation exposure during and after treatment with PLUVICTO consistent with institutional good radiation safety practices and patient treatment procedures. Ensure patients increase oral fluid intake and advise patients to void as often as possible to reduce bladder radiation. Myelosuppression : Perform complete blood counts. Withhold, reduce dose, or permanently discontinue PLUVICTO based on severity. ( 2.4 , 5.2 ) Renal Toxicity : Advise patients to remain well hydrated and to urinate frequently. Perform kidney function laboratory tests.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary The safety and efficacy of PLUVICTO have not been established in females. Based on its mechanism of action, PLUVICTO can cause fetal harm . There are no available data on PLUVICTO use in pregnant females.",
-"storage": "Injection containing 1,000 MBq/mL (27 mCi/mL) of lutetium Lu 177 vipivotide tetraxetan at calibration time is a sterile, preservative-free and clear, colorless to slightly yellow solution for intravenous use supplied in a clear, colorless Type I glass 30 mL single-dose vial containing GBq (200 mCi) ± 10% of lutetium Lu 177 vipivotide tetraxetan at …",
-"setId": "14908037-2892-4d98-a053-253ce35afb1a",
-"effective": "20260812"
+"missing": true
 },
 "lutetium ethylenediamine tetramethylene": {
 "generic": "Lutetium Lu 177 Vipivotide Tetraxetan",
-"brand": "Pluvicto",
-"pharmClass": [
-"Radioligand Therapeutic Agent [EPC]"
-],
-"moaClass": [
-"Radioligand Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Lutetium Lu 177 vipivotide tetraxetan is a radioligand therapeutic agent. The active moiety of lutetium Lu 177 vipivotide tetraxetan is the radionuclide lutetium-177 which is linked to a moiety that binds to PSMA, a transmembrane protein that is expressed in prostate cancer. Upon binding of lutetium Lu 177 vipivotide tetraxetan to PSMA-expressing cells, the beta-minus emission from lutetium-177 delivers radiation to PSMA-expressing cells, as well as to surrounding cells, and induces DNA damage which can lead to cell death.",
-"indications": "is a radioligand therapeutic agent indicated: Metastatic Androgen Pathway Modulation-Naïve or -Sensitive (mAPMN/S) Prostate Cancer in combination with androgen receptor pathway inhibitor (ARPI) therapy for the treatment of adult patients with prostate-specific membrane antigen (PSMA)-positive metastatic androgen pathway modulation-naïve or -sensitive (mAPMN/S) prostate cancer. Metastatic Androgen Pathway Modulation-Resistant (mAPMR) Prostate Cancer for the treatment of adult patients with PSMA-positive metastatic androgen pathway modulation-resistant (mAPMR) prostate cancer who have been treated with ARPI therapy, and are considered appropriate to delay taxane-based chemotherapy, or have received prior taxane-based chemotherapy. Metastatic Androgen Pathway Modulation-Naïve or -Sensitive Prostate Cancer PLUVICTO is indicated in combination with androgen receptor pathway inhibitor (ARPI) therapy for the treatment of adult patients with prostate-specific membrane antigen (PSMA)-positive metastatic androgen pathway modulation-naïve or -sensitive (mAPMN/S) prostate cancer.",
-"dosage": "Select patients for treatment using LOCAMETZ ® or another approved PSMA positron emission tomography (PET) product based on PSMA expression in tumors. mAPMN/S Prostate Cancer : The recommended dosage of PLUVICTO in combination with ARPI is GBq (200 mCi) every 6 weeks for 6 doses, or until disease progression or unacceptable toxicity. mAPMR Prostate Cancer : The recommended dosage of PLUVICTO is GBq (200 mCi) every 6 weeks for 6 doses, or until disease progression or unacceptable toxicity. Dose interruption, reduction, or permanent discontinuation may be required due to adverse reactions. Important Safety Instructions PLUVICTO is a radiopharmaceutical.",
-"contraindications": "None. None.",
-"warnings": "Risk From Radiation Exposure : Minimize radiation exposure during and after treatment with PLUVICTO consistent with institutional good radiation safety practices and patient treatment procedures. Ensure patients increase oral fluid intake and advise patients to void as often as possible to reduce bladder radiation. Myelosuppression : Perform complete blood counts. Withhold, reduce dose, or permanently discontinue PLUVICTO based on severity. ( 2.4 , 5.2 ) Renal Toxicity : Advise patients to remain well hydrated and to urinate frequently. Perform kidney function laboratory tests.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary The safety and efficacy of PLUVICTO have not been established in females. Based on its mechanism of action, PLUVICTO can cause fetal harm . There are no available data on PLUVICTO use in pregnant females.",
-"storage": "Injection containing 1,000 MBq/mL (27 mCi/mL) of lutetium Lu 177 vipivotide tetraxetan at calibration time is a sterile, preservative-free and clear, colorless to slightly yellow solution for intravenous use supplied in a clear, colorless Type I glass 30 mL single-dose vial containing GBq (200 mCi) ± 10% of lutetium Lu 177 vipivotide tetraxetan at …",
-"setId": "14908037-2892-4d98-a053-253ce35afb1a",
-"effective": "20260812"
+"missing": true
 },
 "lutetium prostate specific membrane antigen": {
 "generic": "Lutetium Lu 177 Vipivotide Tetraxetan",
@@ -13839,43 +13217,11 @@
 },
 "measles": {
 "generic": "Measles Virus",
-"brand": "Morbillinum",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Rx Only*",
-"dosage": "Adults and children: At the onset of symptoms, dissolve 5 pellets under the tongue 3 times a day until symptoms are relieved or as directed by a doctor.",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "7d7a5168-2908-f72a-e053-2991aa0a2e2b",
-"effective": "20231114"
+"missing": true
 },
 "measles vaccine monovalent": {
 "generic": "Measles Virus",
-"brand": "Morbillinum",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Rx Only*",
-"dosage": "Adults and children: At the onset of symptoms, dissolve 5 pellets under the tongue 3 times a day until symptoms are relieved or as directed by a doctor.",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "7d7a5168-2908-f72a-e053-2991aa0a2e2b",
-"effective": "20231114"
+"missing": true
 },
 "mebendazole": {
 "generic": "Mebendazole",
@@ -13969,25 +13315,7 @@
 },
 "compound": {
 "generic": "Compound Oyster Peptide",
-"brand": "Compound Oyster Peptide",
-"pharmClass": [
-"Non-Standardized Food Allergenic Extract [EPC]"
-],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Thisproductisuable for men.Long em use helpsnouish the kidneys antvila energyenhancephyskcal igoimprowve thequalty of sexual le,imprvemornimg erecions and hardnes,andeeve postcoita fatigue. This product ispurely derived from botanical extracls, making it suitable for long-term use withno reported adverse side effects",
-"dosage": "Dosage:2-4 tablets per day",
-"contraindications": "",
-"warnings": "Not suitable for individuals under 18years of age Do not use if you have a seafood allergy.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "3b778dc1-d1ac-1415-e063-6394a90aeb39",
-"effective": "20250803"
+"missing": true
 },
 "meningococcal polysaccharide conjugate vaccine a c y w x": {
 "generic": "Meningococcal Polysaccharide Conjugate Vaccine A,C,Y,W,X",
@@ -14515,23 +13843,7 @@
 },
 "morphine hydrocholoride": {
 "generic": "Morphine Sulfate",
-"brand": "Morphine Sulfate",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "Mechanism of Action Morphine is a full opioid agonist and is relatively selective for the mu-opioid receptor, although it can bind to other opioid receptors at higher doses. The principal therapeutic action of morphine is analgesia. Like all full opioid agonists, there is no ceiling effect for analgesia with morphine. Clinically, dosage is titrated to provide adequate analgesia and may be limited by adverse reactions, including respiratory and CNS depression. The precise mechanism of the analgesic action is unknown.",
-"indications": "Morphine sulfate tablets are indicated for the management of: adult and pediatric patients weighing at least 50 kg and above with acute pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate. adults with chronic pain severe enough to require an opioid analgesic and for which alternative treatments are inadequate. Limitations of Use: Because of the risks of addiction, abuse, and misuse with opioids, which can occur at any dosage or duration, , reserve morphine sulfate tablets for use in patients for whom alternative treatment options (e.g., non-opioid analgesics or opioid combination products): Have not been tolerated or are not expected to be tolerated, Have not provided adequate analgesia or are not expected to provide adequate analgesia Morphine sulfate tablets should not be used for an extended period of time unless the pain remains severe enough to require an opioid analgesic and for which alternative treatment options continue to be inadequate.",
-"dosage": "Morphine sulfate tablets should be prescribed only by healthcare professionals who are knowledgeable about the use of opioids and how to mitigate the associated risks. Use the lowest effective dosage for the shortest duration of time consistent with individual patient treatment goals. Reserve titration to higher doses of morphine sulfate tablets for patients in whom lower doses are insufficiently effective and in whom the expected benefits of using a higher dose opioid clearly outweigh the substantial risks.",
-"contraindications": "Morphine sulfate tablets are contraindicated in patients with: Significant respiratory depression . Acute or severe bronchial asthma in an unmonitored setting or in the absence of resuscitative equipment . Concurrent use of monoamine oxidase inhibitors (MAOIs) or use of MAOIs within the last 14 days . Known or suspected gastrointestinal obstruction, including paralytic ileus . Hypersensitivity to morphine (e.g., anaphylaxis) . Significant respiratory depression.",
-"warnings": "Opioid-Induced Hyperalgesia and Allodynia: Opioid-Induced Hyperalgesia (OIH) occurs when an opioid analgesic paradoxically causes an increase in pain, or an increase in sensitivity to pain. If OIH is suspected, carefully consider appropriately decreasing the dose of the current opioid analgesic or opioid rotation. Life-Threatening Respiratory Depression in Patients with Chronic Pulmonary Disease or in Elderly, Cachectic, or Debilitated Patients: Regularly evaluate, particularly during initiation and titration.",
-"boxed": "WARNING: SERIOUS AND LIFE-THREATENING RISKS FROM USE OF MORPHINE SULFATE TABLETS Addiction, Abuse, and Misuse Because the use of morphine sulfate tablets exposes patients and other users to the risks of opioid addiction, abuse, and misuse, which can lead to overdose and death, assess each patient’s risk prior to prescribing and reassess all patients regularly for the development of these behaviors…",
-"pregnancy": "Pregnancy Risk Summary: U se of opioid analgesics for an extended period of time during pregnancy can cause neonatal opioid withdrawal syndrome . There are no available data with morphine sulfate tablets in pregnant women to inform a drug-associated risk for major birth defects and miscarriage.",
-"storage": "Morphine sulfate tablets 15 mg : Each tablet contains 15 mg morphine sulfate, USP (equivalent to 11.25 mg morphine) and is a white, round, biconvex tablet, scored on one side and debossed “M 15” on other side.",
-"setId": "07593aa4-f2c4-4d6e-b186-ab2a4ecaa38a",
-"effective": "20251010"
+"missing": true
 },
 "nadolol": {
 "generic": "Nadolol",
@@ -14821,23 +14133,7 @@
 },
 "nintedanib esilate": {
 "generic": "Nintedanib",
-"brand": "Nintedanib",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "Mechanism of Action Nintedanib is a small molecule that inhibits multiple receptor tyrosine kinases (RTKs) and non-receptor tyrosine kinases (nRTKs). Nintedanib inhibits the following RTKs: platelet-derived growth factor receptor (PDGFR) α and β, fibroblast growth factor receptor (FGFR) 1-3, vascular endothelial growth factor receptor (VEGFR) 1-3, colony stimulating factor 1 receptor (CSF1R), and Fms-like tyrosine kinase-3 (FLT-3). These kinases except for FLT-3 have been implicated in pathogenesis of interstitial lung diseases (ILD).",
-"indications": "Nintedanib is a kinase inhibitor indicated in adults for: Treatment of idiopathic pulmonary fibrosis (IPF). Treatment of chronic fibrosing interstitial lung diseases (ILDs) with a progressive phenotype. Slowing the rate of decline in pulmonary function in patients with systemic sclerosis-associated interstitial lung disease (SSc-ILD). Idiopathic Pulmonary Fibrosis Nintedanib capsule is indicated for the treatment of adults with idiopathic pulmonary fibrosis (IPF). Chronic Fibrosing Interstitial Lung Diseases with a Progressive Phenotype Nintedanib capsule is indicated for the treatment of adults with chronic fibrosing interstitial lung diseases (ILDs) with a progressive phenotype . Systemic Sclerosis-Associated Interstitial Lung Disease Nintedanib capsule is indicated to slow the rate of decline in pulmonary function in adult patients with systemic sclerosis-associated interstitial lung disease (SSc-ILD).",
-"dosage": "Recommended dosage: 150 mg taken orally twice daily approximately 12 hours apart taken with food. Recommended dosage in patients with mild hepatic impairment (Child Pugh A): 100 mg taken orally twice daily approximately 12 hours apart taken with food. ( 2.3 , 8.6 ) Consider temporary dose reduction to 100 mg, treatment interruption, or discontinuation for management of adverse reactions. ( 2.4 , 5.2 , 5.3 , 6 ) Prior to treatment initiation, conduct liver function tests in all patients and a pregnancy test in females of reproductive potential.",
-"contraindications": "None None",
-"warnings": "Hepatic impairment: Nintedanib capsules is not recommended for use in patients with moderate or severe hepatic impairment. In patients with mild hepatic impairment (Child Pugh A), the recommended dosage is 100 mg twice daily approximately 12 hours apart taken with food. Consider treatment interruption, or discontinuation for management of adverse reactions in these patients. ( 2.3 , 2.4 , 5.1 , 8.6 , 12.3 ) Elevated liver enzymes and drug-induced liver injury: ALT, AST, and bilirubin elevations have occurred with nintedanib capsules, including cases of drug-induced liver injury.",
-"boxed": "",
-"pregnancy": "",
-"storage": "150 mg: Fluorescent yellow colored homogeneous dispersion filled in light brown, opaque, oblong, soft gelatin capsules imprinted with 'C639'. They are packaged in HDPE bottles with a child-resistant closure, available as follows: Bottles of 60's NDC: 69097-639-03.",
-"setId": "4d017c42-a823-452d-bc6f-0491dd9823e3",
-"effective": "20260402"
+"missing": true
 },
 "niraparib": {
 "generic": "Niraparib",
@@ -14937,23 +14233,7 @@
 },
 "nitrous oxide": {
 "generic": "Nitrous Oxide",
-"brand": "Nitrous Oxide",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"RESPIRATORY (INHALATION)"
-],
-"forms": [],
-"moa": "",
-"indications": "",
-"dosage": "",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "02a3cf7f-d0a5-4edd-bc84-d9162558434b",
-"effective": "20260206"
+"missing": true
 },
 "norepinephrine": {
 "generic": "Norepinephrine Bitartrate",
@@ -15456,49 +14736,11 @@
 },
 "peginterferon alfa a": {
 "generic": "Peginterferon Beta-1A",
-"brand": "Plegridy Pen",
-"pharmClass": [
-"Interferon beta [EPC]"
-],
-"moaClass": [],
-"routes": [
-"SUBCUTANEOUS",
-"INTRAMUSCULAR"
-],
-"forms": [],
-"moa": "Mechanism of Action The mechanism by which PLEGRIDY exerts its effects in patients with multiple sclerosis is unknown.",
-"indications": "is indicated for the treatment of relapsing forms of multiple sclerosis (MS), to include clinically isolated syndrome, relapsing-remitting disease, and active secondary progressive disease, in adults. PLEGRIDY is an interferon beta indicated for the treatment of relapsing forms of multiple sclerosis (MS), to include clinically isolated syndrome, relapsing-remitting disease, and active secondary progressive disease, in adults",
-"dosage": "For subcutaneous or intramuscular use only Recommended dose: 125 micrograms every 14 days PLEGRIDY dose should be titrated, starting with 63 micrograms on day 1, 94 micrograms on day 15, and 125 micrograms (full dose) on day 29 A healthcare professional should train patients in the proper technique for self-administering subcutaneous injections using the prefilled pen or syringe or intramuscular injections using the prefilled syringe Analgesics and/or antipyretics on treatment days may help ameliorate flu-like symptoms Dosing Information PLEGRIDY may only be administered subcutaneously (SC) or intramuscularly (IM).",
-"contraindications": "is contraindicated in patients with a history of hypersensitivity to natural or recombinant interferon beta or peginterferon, or any other component of PLEGRIDY . History of hypersensitivity to natural or recombinant interferon beta or peginterferon, or any other component of PLEGRIDY",
-"warnings": "Hepatic injury: monitor liver function tests; monitor patients for signs and symptoms of hepatic injury; consider discontinuation of PLEGRIDY if hepatic injury occurs Depression and suicide: advise patients to report immediately any symptom of depression or suicidal ideation to their healthcare provider; consider discontinuation of PLEGRIDY if depression occurs Anaphylaxis and other allergic reactions: Discontinue PLEGRIDY if a serious allergic reaction occurs Injection site reactions: Do not administer PLEGRIDY into affected area until fully healed.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Data from a large population-based cohort study, as well as other published studies over several decades, have not identified a drug-associated risk of major birth defects with the use of interferon beta products during early pregnancy.",
-"storage": "Storage and Handling Store PLEGRIDY prefilled pens and prefilled syringes in a refrigerator between 2°C to 8°C (36°F to 46°F) in the closed original carton to protect from light until ready for injection. Do not freeze. Discard if frozen.",
-"setId": "08f0ea03-4e6d-195d-aef4-886e32befa95",
-"effective": "20251112"
+"missing": true
 },
 "peginterferon alfa b": {
 "generic": "Peginterferon Beta-1A",
-"brand": "Plegridy Pen",
-"pharmClass": [
-"Interferon beta [EPC]"
-],
-"moaClass": [],
-"routes": [
-"SUBCUTANEOUS",
-"INTRAMUSCULAR"
-],
-"forms": [],
-"moa": "Mechanism of Action The mechanism by which PLEGRIDY exerts its effects in patients with multiple sclerosis is unknown.",
-"indications": "is indicated for the treatment of relapsing forms of multiple sclerosis (MS), to include clinically isolated syndrome, relapsing-remitting disease, and active secondary progressive disease, in adults. PLEGRIDY is an interferon beta indicated for the treatment of relapsing forms of multiple sclerosis (MS), to include clinically isolated syndrome, relapsing-remitting disease, and active secondary progressive disease, in adults",
-"dosage": "For subcutaneous or intramuscular use only Recommended dose: 125 micrograms every 14 days PLEGRIDY dose should be titrated, starting with 63 micrograms on day 1, 94 micrograms on day 15, and 125 micrograms (full dose) on day 29 A healthcare professional should train patients in the proper technique for self-administering subcutaneous injections using the prefilled pen or syringe or intramuscular injections using the prefilled syringe Analgesics and/or antipyretics on treatment days may help ameliorate flu-like symptoms Dosing Information PLEGRIDY may only be administered subcutaneously (SC) or intramuscularly (IM).",
-"contraindications": "is contraindicated in patients with a history of hypersensitivity to natural or recombinant interferon beta or peginterferon, or any other component of PLEGRIDY . History of hypersensitivity to natural or recombinant interferon beta or peginterferon, or any other component of PLEGRIDY",
-"warnings": "Hepatic injury: monitor liver function tests; monitor patients for signs and symptoms of hepatic injury; consider discontinuation of PLEGRIDY if hepatic injury occurs Depression and suicide: advise patients to report immediately any symptom of depression or suicidal ideation to their healthcare provider; consider discontinuation of PLEGRIDY if depression occurs Anaphylaxis and other allergic reactions: Discontinue PLEGRIDY if a serious allergic reaction occurs Injection site reactions: Do not administer PLEGRIDY into affected area until fully healed.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Data from a large population-based cohort study, as well as other published studies over several decades, have not identified a drug-associated risk of major birth defects with the use of interferon beta products during early pregnancy.",
-"storage": "Storage and Handling Store PLEGRIDY prefilled pens and prefilled syringes in a refrigerator between 2°C to 8°C (36°F to 46°F) in the closed original carton to protect from light until ready for injection. Do not freeze. Discard if frozen.",
-"setId": "08f0ea03-4e6d-195d-aef4-886e32befa95",
-"effective": "20251112"
+"missing": true
 },
 "peginterferon beta a": {
 "generic": "Peginterferon Beta-1A",
@@ -15608,23 +14850,7 @@
 },
 "penicillin v benzathine": {
 "generic": "Penicillin V Potassium",
-"brand": "Penicillin V Potassium",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS AND USAGE To reduce the development of drug-resistant bacteria and maintain the effectiveness of penicillin V potassium and other antibacterial drugs, penicillin V potassium should be used only to treat or prevent infections that are proven or strongly suspected to be caused by susceptible bacteria. When culture and susceptibility information are available, they should be considered in selecting or modifying antibacterial therapy. In the absence of such data, local epidemiology and susceptibility patterns may contribute to the empiric selection of therapy. Penicillin V potassium tablets are indicated in the treatment of mild to moderately severe infections due to penicillin G-sensitive microorganisms. Therapy should be guided by bacteriologic studies (including sensitivity tests) and by clinical response. NOTE: Severe pneumonia, empyema, bacteremia, pericarditis, meningitis, and arthritis should not be treated with penicillin V during the acute stage. Indicated surgical procedures should be performed.",
-"dosage": "DOSAGE AND ADMINISTRATION The dosage of Penicillin V should be determined according to the sensitivity of the causative microorganisms and the severity of infection, and adjusted to the clinical response of the patient. The usual dosage recommendations for adults and children 12 years and over are as follows: Streptococcal Infections Mild to moderately severe - of the upper respiratory tract and including scarlet fever and erysipelas: 125 to 250 mg (200,000 to 400,000 units) every 6 to 8 hours for 10 days.",
-"contraindications": "CONTRAINDICATIONS A previous hypersensitivity reaction to any penicillin is a contraindication.",
-"warnings": "WARNINGS SERIOUS AND OCCASIONALLY FATAL HYPERSENSITIVITY (anaphylactic) REACTIONS HAVE BEEN REPORTED IN PATIENTS ON PENICILLIN THERAPY. THESE REACTIONS ARE MORE LIKELY TO OCCUR IN INDIVIDUALS WITH A HISTORY OF PENICILLIN HYPERSENSITIVITY AND/OR A HISTORY OF SENSITIVITY TO MULTIPLE ALLERGENS. THERE HAVE BEEN REPORTS OF INDIVIDUALS WITH A HISTORY OF PENICILLIN HYPERSENSITIVITY WHO HAVE EXPERIENCED SEVERE REACTIONS WHEN TREATED WITH CEPHALOSPORINS.",
-"boxed": "",
-"pregnancy": "",
-"storage": "HOW SUPPLIED Penicillin V Potassium Tablets USP, 250 mg (400,000 units) are white to off-white, round shaped, biconvex, film-coated tablets debossed with ‘E’ and ‘84’ on one side and break line on the other side. Bottles of 40 NDC 68071-3562-4 Store at 20° to 25°C (68° to 77°F); excursions permitted to 15° to 30°C (59° to 86°F) .",
-"setId": "0fb8ab8a-5aa7-e6f4-e063-6294a90a1af6",
-"effective": "20240124"
+"missing": true
 },
 "pentosan polysulfate": {
 "generic": "Pentosan Polysulfate Sodium",
@@ -15789,9 +15015,6 @@
 "phenol glycerin": {
 "generic": "Phenol Glycerin",
 "brand": "Sore Throat",
-"pharmClass": [
-"Non-Standardized Chemical Allergen [EPC]"
-],
 "moaClass": [],
 "routes": [
 "ORAL"
@@ -17000,23 +16223,7 @@
 },
 "salicylic acid compound": {
 "generic": "Salicylic Acid",
-"brand": "Cerave Developed With Dermatologists Acne Control Cleanser",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Uses clears acne blemishes and allows skin to heal helps prevent new acne blemishes from forming",
-"dosage": "Directions use twice daily shake well, wet face, then work product into a lather massage onto face avoiding the eyes rinse well",
-"contraindications": "",
-"warnings": "Warnings For external use only",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "00203b2a-74dd-45a5-977a-3ef4eb314577",
-"effective": "20231231"
+"missing": true
 },
 "salicylic acid": {
 "generic": "Salicylic Acid",
@@ -17287,26 +16494,7 @@
 },
 "simple eye": {
 "generic": "Simple Chlorinated Combination",
-"brand": "Simple Chlorinated Combination 9315",
-"pharmClass": [
-"Non-Standardized Plant Allergenic Extract [EPC]",
-"Antiseptic [EPC]"
-],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS For the temporary relief of cough, sneezing, runny nose, occasional headache, nausea, or weakness.*",
-"dosage": "DIRECTIONS Place drops under tongue 30 minutes before/after meals. Adults and children 12 years and over: Take 10 drops up to 3 times per day. Consult a physician for use in children under 12 years of age.",
-"contraindications": "",
-"warnings": "WARNINGS Consult a doctor if condition worsens or if symptoms persist. Keep out of the reach of children. In case of overdose, get medical help or contact a poison control center right away. If pregnant or breastfeeding, ask a healthcare professional before use. Keep out of the reach of children. If pregnant or breastfeeding, ask a healthcare professional before use.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "c1ab9a34-8a22-4840-ab8b-ef666dca155a",
-"effective": "20260108"
+"missing": true
 },
 "siponimod": {
 "generic": "Siponimod",
@@ -17756,123 +16944,23 @@
 },
 "technetium ethylenedicysteune": {
 "generic": "Technetium Tc 99M Sestamibi",
-"brand": "Technetium Tc 99M Sestamibi",
-"pharmClass": [
-"Radioactive Diagnostic Agent [EPC]"
-],
-"moaClass": [
-"Radiopharmaceutical Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Technetium Tc 99m Sestamibi is a cationic Tc 99m complex which has been found to accumulate in viable myocardial tissue in a manner analogous to that of thallous chloride TI-201. Scintigraphic images obtained in humans after the intravenous administration of the drug have been comparable to those obtained with thallous chloride TI-201 in normal and abnormal myocardial tissue. Animal studies have shown that myocardial uptake is not blocked when the sodium pump mechanism is inhibited.",
-"indications": "Myocardial Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is a myocardial perfusion agent that is indicated for detecting coronary artery disease by localizing myocardial ischemia (reversible defects) and infarction (non-reversible defects), in evaluating myocardial function and developing information for use in patient management decisions. Technetium Tc 99m Sestamibi evaluation of myocardial ischemia can be accomplished with rest and cardiovascular stress techniques (e.g., exercise or pharmacologic stress in accordance with the pharmacologic stress agents labeling). It is usually not possible to determine the age of a myocardial infarction or to differentiate a recent myocardial infarction from ischemia. Breast Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is indicated for planar imaging as a second line diagnostic drug after mammography to assist in the evaluation of breast lesions in patients with an abnormal mammogram or a palpable breast mass.",
-"dosage": "For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi). For Breast Imaging: The recommended dose range for I.V. administration of Technetium Tc 99m Sestamibi is a single dose of 740 to 1110 MBq (20 to 30 mCi). For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi) . For Breast Imaging: The recommended dose range for I.V.",
-"contraindications": "None known. None known .",
-"warnings": "Pharmacologic induction of cardiovascular stress may be associated with serious adverse events such as myocardial infarction, arrhythmia, hypotension, bronchoconstriction and cerebrovascular events . Technetium Tc 99m Sestamibi has been rarely associated with acute severe allergic and anaphylactic events of angioedema and generalized urticaria. In some patients the allergic symptoms developed on the second injection during Technetium Tc 99m Sestamibi imaging . Caution should be exercised and emergency equipment should be available when administering Technetium Tc 99m Sestamibi .",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Limited available data with Technetium Tc 99m Sestamibi use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes. Animal reproduction and teratogenicity studies have not been conducted with Technetium Tc 99m Sestamibi.",
-"storage": "Kit for the Preparation of Technetium Tc 99m Sestamibi Injection is supplied as a 10 mL vial in kits of five (NDC # 45548-141-05), ten (NDC # 45548-141-10) and thirty (NDC # 45548-141-30), sterile and non pyrogenic. The patient dose should be measured by a suitable radioactivity calibration system immediately prior to patient administration.",
-"setId": "07c893fc-cfba-1d98-0232-6448463afb87",
-"effective": "20211022"
+"missing": true
 },
 "technetium hynic psma": {
 "generic": "Technetium Tc 99M Sestamibi",
-"brand": "Technetium Tc 99M Sestamibi",
-"pharmClass": [
-"Radioactive Diagnostic Agent [EPC]"
-],
-"moaClass": [
-"Radiopharmaceutical Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Technetium Tc 99m Sestamibi is a cationic Tc 99m complex which has been found to accumulate in viable myocardial tissue in a manner analogous to that of thallous chloride TI-201. Scintigraphic images obtained in humans after the intravenous administration of the drug have been comparable to those obtained with thallous chloride TI-201 in normal and abnormal myocardial tissue. Animal studies have shown that myocardial uptake is not blocked when the sodium pump mechanism is inhibited.",
-"indications": "Myocardial Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is a myocardial perfusion agent that is indicated for detecting coronary artery disease by localizing myocardial ischemia (reversible defects) and infarction (non-reversible defects), in evaluating myocardial function and developing information for use in patient management decisions. Technetium Tc 99m Sestamibi evaluation of myocardial ischemia can be accomplished with rest and cardiovascular stress techniques (e.g., exercise or pharmacologic stress in accordance with the pharmacologic stress agents labeling). It is usually not possible to determine the age of a myocardial infarction or to differentiate a recent myocardial infarction from ischemia. Breast Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is indicated for planar imaging as a second line diagnostic drug after mammography to assist in the evaluation of breast lesions in patients with an abnormal mammogram or a palpable breast mass.",
-"dosage": "For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi). For Breast Imaging: The recommended dose range for I.V. administration of Technetium Tc 99m Sestamibi is a single dose of 740 to 1110 MBq (20 to 30 mCi). For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi) . For Breast Imaging: The recommended dose range for I.V.",
-"contraindications": "None known. None known .",
-"warnings": "Pharmacologic induction of cardiovascular stress may be associated with serious adverse events such as myocardial infarction, arrhythmia, hypotension, bronchoconstriction and cerebrovascular events . Technetium Tc 99m Sestamibi has been rarely associated with acute severe allergic and anaphylactic events of angioedema and generalized urticaria. In some patients the allergic symptoms developed on the second injection during Technetium Tc 99m Sestamibi imaging . Caution should be exercised and emergency equipment should be available when administering Technetium Tc 99m Sestamibi .",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Limited available data with Technetium Tc 99m Sestamibi use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes. Animal reproduction and teratogenicity studies have not been conducted with Technetium Tc 99m Sestamibi.",
-"storage": "Kit for the Preparation of Technetium Tc 99m Sestamibi Injection is supplied as a 10 mL vial in kits of five (NDC # 45548-141-05), ten (NDC # 45548-141-10) and thirty (NDC # 45548-141-30), sterile and non pyrogenic. The patient dose should be measured by a suitable radioactivity calibration system immediately prior to patient administration.",
-"setId": "07c893fc-cfba-1d98-0232-6448463afb87",
-"effective": "20211022"
+"missing": true
 },
 "technetium hynic ubiquicidine": {
 "generic": "Technetium Tc 99M Sestamibi",
-"brand": "Technetium Tc 99M Sestamibi",
-"pharmClass": [
-"Radioactive Diagnostic Agent [EPC]"
-],
-"moaClass": [
-"Radiopharmaceutical Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Technetium Tc 99m Sestamibi is a cationic Tc 99m complex which has been found to accumulate in viable myocardial tissue in a manner analogous to that of thallous chloride TI-201. Scintigraphic images obtained in humans after the intravenous administration of the drug have been comparable to those obtained with thallous chloride TI-201 in normal and abnormal myocardial tissue. Animal studies have shown that myocardial uptake is not blocked when the sodium pump mechanism is inhibited.",
-"indications": "Myocardial Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is a myocardial perfusion agent that is indicated for detecting coronary artery disease by localizing myocardial ischemia (reversible defects) and infarction (non-reversible defects), in evaluating myocardial function and developing information for use in patient management decisions. Technetium Tc 99m Sestamibi evaluation of myocardial ischemia can be accomplished with rest and cardiovascular stress techniques (e.g., exercise or pharmacologic stress in accordance with the pharmacologic stress agents labeling). It is usually not possible to determine the age of a myocardial infarction or to differentiate a recent myocardial infarction from ischemia. Breast Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is indicated for planar imaging as a second line diagnostic drug after mammography to assist in the evaluation of breast lesions in patients with an abnormal mammogram or a palpable breast mass.",
-"dosage": "For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi). For Breast Imaging: The recommended dose range for I.V. administration of Technetium Tc 99m Sestamibi is a single dose of 740 to 1110 MBq (20 to 30 mCi). For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi) . For Breast Imaging: The recommended dose range for I.V.",
-"contraindications": "None known. None known .",
-"warnings": "Pharmacologic induction of cardiovascular stress may be associated with serious adverse events such as myocardial infarction, arrhythmia, hypotension, bronchoconstriction and cerebrovascular events . Technetium Tc 99m Sestamibi has been rarely associated with acute severe allergic and anaphylactic events of angioedema and generalized urticaria. In some patients the allergic symptoms developed on the second injection during Technetium Tc 99m Sestamibi imaging . Caution should be exercised and emergency equipment should be available when administering Technetium Tc 99m Sestamibi .",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Limited available data with Technetium Tc 99m Sestamibi use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes. Animal reproduction and teratogenicity studies have not been conducted with Technetium Tc 99m Sestamibi.",
-"storage": "Kit for the Preparation of Technetium Tc 99m Sestamibi Injection is supplied as a 10 mL vial in kits of five (NDC # 45548-141-05), ten (NDC # 45548-141-10) and thirty (NDC # 45548-141-30), sterile and non pyrogenic. The patient dose should be measured by a suitable radioactivity calibration system immediately prior to patient administration.",
-"setId": "07c893fc-cfba-1d98-0232-6448463afb87",
-"effective": "20211022"
+"missing": true
 },
 "technetium tyrosine octreotide": {
 "generic": "Technetium Tc 99M Sestamibi",
-"brand": "Technetium Tc 99M Sestamibi",
-"pharmClass": [
-"Radioactive Diagnostic Agent [EPC]"
-],
-"moaClass": [
-"Radiopharmaceutical Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Technetium Tc 99m Sestamibi is a cationic Tc 99m complex which has been found to accumulate in viable myocardial tissue in a manner analogous to that of thallous chloride TI-201. Scintigraphic images obtained in humans after the intravenous administration of the drug have been comparable to those obtained with thallous chloride TI-201 in normal and abnormal myocardial tissue. Animal studies have shown that myocardial uptake is not blocked when the sodium pump mechanism is inhibited.",
-"indications": "Myocardial Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is a myocardial perfusion agent that is indicated for detecting coronary artery disease by localizing myocardial ischemia (reversible defects) and infarction (non-reversible defects), in evaluating myocardial function and developing information for use in patient management decisions. Technetium Tc 99m Sestamibi evaluation of myocardial ischemia can be accomplished with rest and cardiovascular stress techniques (e.g., exercise or pharmacologic stress in accordance with the pharmacologic stress agents labeling). It is usually not possible to determine the age of a myocardial infarction or to differentiate a recent myocardial infarction from ischemia. Breast Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is indicated for planar imaging as a second line diagnostic drug after mammography to assist in the evaluation of breast lesions in patients with an abnormal mammogram or a palpable breast mass.",
-"dosage": "For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi). For Breast Imaging: The recommended dose range for I.V. administration of Technetium Tc 99m Sestamibi is a single dose of 740 to 1110 MBq (20 to 30 mCi). For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi) . For Breast Imaging: The recommended dose range for I.V.",
-"contraindications": "None known. None known .",
-"warnings": "Pharmacologic induction of cardiovascular stress may be associated with serious adverse events such as myocardial infarction, arrhythmia, hypotension, bronchoconstriction and cerebrovascular events . Technetium Tc 99m Sestamibi has been rarely associated with acute severe allergic and anaphylactic events of angioedema and generalized urticaria. In some patients the allergic symptoms developed on the second injection during Technetium Tc 99m Sestamibi imaging . Caution should be exercised and emergency equipment should be available when administering Technetium Tc 99m Sestamibi .",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Limited available data with Technetium Tc 99m Sestamibi use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes. Animal reproduction and teratogenicity studies have not been conducted with Technetium Tc 99m Sestamibi.",
-"storage": "Kit for the Preparation of Technetium Tc 99m Sestamibi Injection is supplied as a 10 mL vial in kits of five (NDC # 45548-141-05), ten (NDC # 45548-141-10) and thirty (NDC # 45548-141-30), sterile and non pyrogenic. The patient dose should be measured by a suitable radioactivity calibration system immediately prior to patient administration.",
-"setId": "07c893fc-cfba-1d98-0232-6448463afb87",
-"effective": "20211022"
+"missing": true
 },
 "technetium hynic bombesin": {
 "generic": "Technetium Tc 99M Sestamibi",
-"brand": "Technetium Tc 99M Sestamibi",
-"pharmClass": [
-"Radioactive Diagnostic Agent [EPC]"
-],
-"moaClass": [
-"Radiopharmaceutical Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Technetium Tc 99m Sestamibi is a cationic Tc 99m complex which has been found to accumulate in viable myocardial tissue in a manner analogous to that of thallous chloride TI-201. Scintigraphic images obtained in humans after the intravenous administration of the drug have been comparable to those obtained with thallous chloride TI-201 in normal and abnormal myocardial tissue. Animal studies have shown that myocardial uptake is not blocked when the sodium pump mechanism is inhibited.",
-"indications": "Myocardial Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is a myocardial perfusion agent that is indicated for detecting coronary artery disease by localizing myocardial ischemia (reversible defects) and infarction (non-reversible defects), in evaluating myocardial function and developing information for use in patient management decisions. Technetium Tc 99m Sestamibi evaluation of myocardial ischemia can be accomplished with rest and cardiovascular stress techniques (e.g., exercise or pharmacologic stress in accordance with the pharmacologic stress agents labeling). It is usually not possible to determine the age of a myocardial infarction or to differentiate a recent myocardial infarction from ischemia. Breast Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is indicated for planar imaging as a second line diagnostic drug after mammography to assist in the evaluation of breast lesions in patients with an abnormal mammogram or a palpable breast mass.",
-"dosage": "For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi). For Breast Imaging: The recommended dose range for I.V. administration of Technetium Tc 99m Sestamibi is a single dose of 740 to 1110 MBq (20 to 30 mCi). For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi) . For Breast Imaging: The recommended dose range for I.V.",
-"contraindications": "None known. None known .",
-"warnings": "Pharmacologic induction of cardiovascular stress may be associated with serious adverse events such as myocardial infarction, arrhythmia, hypotension, bronchoconstriction and cerebrovascular events . Technetium Tc 99m Sestamibi has been rarely associated with acute severe allergic and anaphylactic events of angioedema and generalized urticaria. In some patients the allergic symptoms developed on the second injection during Technetium Tc 99m Sestamibi imaging . Caution should be exercised and emergency equipment should be available when administering Technetium Tc 99m Sestamibi .",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Limited available data with Technetium Tc 99m Sestamibi use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes. Animal reproduction and teratogenicity studies have not been conducted with Technetium Tc 99m Sestamibi.",
-"storage": "Kit for the Preparation of Technetium Tc 99m Sestamibi Injection is supplied as a 10 mL vial in kits of five (NDC # 45548-141-05), ten (NDC # 45548-141-10) and thirty (NDC # 45548-141-30), sterile and non pyrogenic. The patient dose should be measured by a suitable radioactivity calibration system immediately prior to patient administration.",
-"setId": "07c893fc-cfba-1d98-0232-6448463afb87",
-"effective": "20211022"
+"missing": true
 },
 "technetium sup m": {
 "generic": "Technetium Tc 99M Sestamibi",
@@ -17948,51 +17036,11 @@
 },
 "technetium mtc antimony trisulfide": {
 "generic": "Technetium Tc 99M Sestamibi",
-"brand": "Technetium Tc 99M Sestamibi",
-"pharmClass": [
-"Radioactive Diagnostic Agent [EPC]"
-],
-"moaClass": [
-"Radiopharmaceutical Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Technetium Tc 99m Sestamibi is a cationic Tc 99m complex which has been found to accumulate in viable myocardial tissue in a manner analogous to that of thallous chloride TI-201. Scintigraphic images obtained in humans after the intravenous administration of the drug have been comparable to those obtained with thallous chloride TI-201 in normal and abnormal myocardial tissue. Animal studies have shown that myocardial uptake is not blocked when the sodium pump mechanism is inhibited.",
-"indications": "Myocardial Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is a myocardial perfusion agent that is indicated for detecting coronary artery disease by localizing myocardial ischemia (reversible defects) and infarction (non-reversible defects), in evaluating myocardial function and developing information for use in patient management decisions. Technetium Tc 99m Sestamibi evaluation of myocardial ischemia can be accomplished with rest and cardiovascular stress techniques (e.g., exercise or pharmacologic stress in accordance with the pharmacologic stress agents labeling). It is usually not possible to determine the age of a myocardial infarction or to differentiate a recent myocardial infarction from ischemia. Breast Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is indicated for planar imaging as a second line diagnostic drug after mammography to assist in the evaluation of breast lesions in patients with an abnormal mammogram or a palpable breast mass.",
-"dosage": "For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi). For Breast Imaging: The recommended dose range for I.V. administration of Technetium Tc 99m Sestamibi is a single dose of 740 to 1110 MBq (20 to 30 mCi). For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi) . For Breast Imaging: The recommended dose range for I.V.",
-"contraindications": "None known. None known .",
-"warnings": "Pharmacologic induction of cardiovascular stress may be associated with serious adverse events such as myocardial infarction, arrhythmia, hypotension, bronchoconstriction and cerebrovascular events . Technetium Tc 99m Sestamibi has been rarely associated with acute severe allergic and anaphylactic events of angioedema and generalized urticaria. In some patients the allergic symptoms developed on the second injection during Technetium Tc 99m Sestamibi imaging . Caution should be exercised and emergency equipment should be available when administering Technetium Tc 99m Sestamibi .",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Limited available data with Technetium Tc 99m Sestamibi use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes. Animal reproduction and teratogenicity studies have not been conducted with Technetium Tc 99m Sestamibi.",
-"storage": "Kit for the Preparation of Technetium Tc 99m Sestamibi Injection is supplied as a 10 mL vial in kits of five (NDC # 45548-141-05), ten (NDC # 45548-141-10) and thirty (NDC # 45548-141-30), sterile and non pyrogenic. The patient dose should be measured by a suitable radioactivity calibration system immediately prior to patient administration.",
-"setId": "07c893fc-cfba-1d98-0232-6448463afb87",
-"effective": "20211022"
+"missing": true
 },
 "technetium m trodat": {
 "generic": "Technetium Tc 99M Sestamibi",
-"brand": "Technetium Tc 99M Sestamibi",
-"pharmClass": [
-"Radioactive Diagnostic Agent [EPC]"
-],
-"moaClass": [
-"Radiopharmaceutical Activity [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Technetium Tc 99m Sestamibi is a cationic Tc 99m complex which has been found to accumulate in viable myocardial tissue in a manner analogous to that of thallous chloride TI-201. Scintigraphic images obtained in humans after the intravenous administration of the drug have been comparable to those obtained with thallous chloride TI-201 in normal and abnormal myocardial tissue. Animal studies have shown that myocardial uptake is not blocked when the sodium pump mechanism is inhibited.",
-"indications": "Myocardial Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is a myocardial perfusion agent that is indicated for detecting coronary artery disease by localizing myocardial ischemia (reversible defects) and infarction (non-reversible defects), in evaluating myocardial function and developing information for use in patient management decisions. Technetium Tc 99m Sestamibi evaluation of myocardial ischemia can be accomplished with rest and cardiovascular stress techniques (e.g., exercise or pharmacologic stress in accordance with the pharmacologic stress agents labeling). It is usually not possible to determine the age of a myocardial infarction or to differentiate a recent myocardial infarction from ischemia. Breast Imaging: Kit for the preparation of Technetium Tc 99m Sestamibi Injection is indicated for planar imaging as a second line diagnostic drug after mammography to assist in the evaluation of breast lesions in patients with an abnormal mammogram or a palpable breast mass.",
-"dosage": "For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi). For Breast Imaging: The recommended dose range for I.V. administration of Technetium Tc 99m Sestamibi is a single dose of 740 to 1110 MBq (20 to 30 mCi). For Myocardial Imaging: The suggested dose range for I.V. administration of Technetium Tc 99m Sestamibi in a single dose to be employed in the average patient (70 kg) is 370 to 1110 MBq (10 to 30 mCi) . For Breast Imaging: The recommended dose range for I.V.",
-"contraindications": "None known. None known .",
-"warnings": "Pharmacologic induction of cardiovascular stress may be associated with serious adverse events such as myocardial infarction, arrhythmia, hypotension, bronchoconstriction and cerebrovascular events . Technetium Tc 99m Sestamibi has been rarely associated with acute severe allergic and anaphylactic events of angioedema and generalized urticaria. In some patients the allergic symptoms developed on the second injection during Technetium Tc 99m Sestamibi imaging . Caution should be exercised and emergency equipment should be available when administering Technetium Tc 99m Sestamibi .",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Limited available data with Technetium Tc 99m Sestamibi use in pregnant women have not identified a drug-associated risk of major birth defects, miscarriage, or adverse maternal or fetal outcomes. Animal reproduction and teratogenicity studies have not been conducted with Technetium Tc 99m Sestamibi.",
-"storage": "Kit for the Preparation of Technetium Tc 99m Sestamibi Injection is supplied as a 10 mL vial in kits of five (NDC # 45548-141-05), ten (NDC # 45548-141-10) and thirty (NDC # 45548-141-30), sterile and non pyrogenic. The patient dose should be measured by a suitable radioactivity calibration system immediately prior to patient administration.",
-"setId": "07c893fc-cfba-1d98-0232-6448463afb87",
-"effective": "20211022"
+"missing": true
 },
 "teclistamab": {
 "generic": "Teclistamab-Cqyv",
@@ -18264,23 +17312,7 @@
 },
 "thallium sup": {
 "generic": "Thallium",
-"brand": "Thallium Metallicum",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Rx Only*",
-"dosage": "Adults and children: At the onset of symptoms, dissolve 5 pellets under the tongue 3 times a day until symptoms are relieved or as directed by a doctor.",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "8772e0cf-6028-3718-e053-2995a90a530c",
-"effective": "20231115"
+"missing": true
 },
 "suptl": {
 "generic": "Suptl) Chloride",
@@ -18592,23 +17624,7 @@
 },
 "tolnaftate": {
 "generic": "Tolnaftate",
-"brand": "Mycozyl Al",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS AND USAGE: Mycozyl AL™ is effective in the treatment of most skin infections such as athlete's foot (tinea pedis) and ringworm (tinea corporis). Mycozyl AL™ has been designed to reach skin areas around and under the nails while it relives burning, cracking, scaling and discomfort which accompany these conditions. Mycozyl AL™ is an antifungal that works by preventing and eliminating the growth of fungus on fingers, toes and around the nails. It eliminates and helps stop the spread of fungal infections on cuticles around nail edges and under the nail tips where reachable with applicator brush. Mycozyl AL™ cures and prevents fungal infections from coming back with daily use.",
-"dosage": "DOSAGE AND ADMINISTRATION: • Clean the affected area with soap and warm water and dry thoroughly • Apply a thin layer of product over affected area twice daily (morning and night) paying special attention to the edges of the nail, cuticles and skin around the nails or as directed by a doctor • The brush applicator allows for easy application on skin around the nail and cuticle areas. • For athlete's foot, pay special attention to spaces between the toes, wear well-fitting,ventilated shoes, and change shoes and socks at least once daily. • For athlete's foot and ringworm, use daily for 4 weeks. • Supervise children in the use of this product.",
-"contraindications": "CONTRAINDICATIONS: Tolnaftate topically applied is not likely to affect drugs taken or injected, but many drugs can interact with each other.",
-"warnings": "WARNINGS: For External Use Only. Not For Ophthalmic Use",
-"boxed": "",
-"pregnancy": "Pregnancy: Teratogenic effects - There is currently no published human data available on the teratogenic and fetotoxic effects of tolnaftate.",
-"storage": "HOW SUPPLIED: Mycozyl AL™ is supplied in: 10 mL glass bottle with a screw cap fitted with a brush applicator (NDC 59088-443-01). Store at 20º-25ºC (68º-77ºF) . Protect from freezing and excessive heat. Keep container tightly closed. Do not use if package is damaged. Keep out of reach of children.",
-"setId": "07edd043-4ac4-b2de-e063-6394a90af25d",
-"effective": "20231017"
+"missing": true
 },
 "tolvaptan": {
 "generic": "Tolvaptan",
@@ -18725,23 +17741,7 @@
 },
 "trace metal combination": {
 "generic": "Trace Elements Injection 4",
-"brand": "Multrys",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Zinc Zinc functions as a cofactor of various enzymes including DNA polymerases, RNA polymerases, alcohol dehydrogenase, and alkaline phosphatases. Zinc is a coordinator of protein structural folding that interacts with a variety of proteins, lipids, and nucleic acids. In addition, zinc is a catalyst of essential biochemical reactions, including activation of substrates of carbonic anhydrase in erythrocyte. Copper Copper is a cofactor for many metalloenzymes acting as an oxidase to achieve reduction of molecular oxygen.",
-"indications": "Multrys is indicated in neonatal and pediatric patients weighing less than 10 kg as a source of zinc, copper, manganese, and selenium for parenteral nutrition when oral or enteral nutrition is not possible, insufficient, or contraindicated. Multrys is a combination of trace elements (zinc sulfate, cupric sulfate, manganese sulfate, and selenious acid) indicated in neonatal and pediatric patients weighing less than 10 kg as a source of zinc, copper, manganese, and selenium for parenteral nutrition when oral or enteral nutrition is not possible, insufficient, or contraindicated.",
-"dosage": "Single-dose vial, for admixture use only. See full prescribing information for information on preparation, administration and general dosing considerations. ( 2.1 , 2.2 , 2.3 , 2.4 ) Recommended Dosage Each mL of Multrys provides zinc 1,000 mcg, copper 60 mcg, manganese 3 mcg, and selenium 6 mcg. Multrys is recommended only for pediatric patients who require supplementation with all four of the individual trace elements (i.e., zinc, copper, manganese, and selenium) to meet daily requirements.",
-"contraindications": "Multrys is contraindicated in patients with hypersensitivity to zinc or copper . Hypersensitivity to zinc or copper ( 4, 5.7 )",
-"warnings": "Pulmonary Embolism due to Pulmonary Vascular Precipitates : If signs of pulmonary distress occur, stop the infusion and initiate a medical evaluation. Vein Damage and Thrombosis :Solutions with osmolarity of 900 mOsmol/L or more must be infused through a central catheter. ( 2.1 , 5.2 ) Neurologic Toxicity with Manganese :Monitor for clinical signs and symptoms of neurotoxicity, whole blood manganese concentrations, and liver function tests in patients receiving long-term Multrys.Discontinue Multrys and consider brain magnetic resonance imaging (MRI) if toxicity is suspected.",
-"boxed": "",
-"pregnancy": "",
-"storage": "Multrys (trace elements injection 4*, USP) is a clear, colorless to slightly blue solution supplied in: 1 mL single-dose vial (NDC 0517-9302-01) and packaged in trays containing 25 vials per tray (NDC 0517-9302-25). *Each mL of Multrys contains zinc 1,000 mcg, copper 60 mcg, manganese 3 mcg, and selenium 6 mcg.",
-"setId": "995f1efa-aca0-4b6c-9099-f8e757c2133a",
-"effective": "20240701"
+"missing": true
 },
 "trametinib": {
 "generic": "Trametinib",
@@ -18808,28 +17808,7 @@
 },
 "triamcinolone hexacetonide": {
 "generic": "Triamcinolone Acetonide",
-"brand": "Triamcinolone Acetonide",
-"pharmClass": [
-"Corticosteroid [EPC]"
-],
-"moaClass": [
-"Corticosteroid Hormone Receptor Agonists [MoA]"
-],
-"routes": [
-"INTRA-ARTICULAR",
-"INTRAMUSCULAR"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS AND USAGE Intramuscular Where oral therapy is not feasible, injectable corticosteroid therapy, including triamcinolone acetonide injectable suspension is indicated for intramuscular use as follows: Allergic states: Control of severe or incapacitating allergic conditions intractable to adequate trials of conventional treatment in asthma, atopic dermatitis, contact dermatitis, drug hypersensitivity reactions, perennial or seasonal allergic rhinitis, serum sickness, transfusion reactions. Dermatologic diseases: Bullous dermatitis herpetiformis, exfoliative erythroderma, mycosis fungoides, pemphigus, severe erythema multiforme (Stevens-Johnson syndrome). Endocrine disorders: Primary or secondary adrenocortical insufficiency (hydrocortisone or cortisone is the drug of choice; synthetic analogs may be used in conjunction with mineralocorticoids where applicable; in infancy, mineralocorticoid supplementation is of particular importance), congenital adrenal hyperplasia, hypercalcemia associated with cancer, nonsuppurative thyroiditis.",
-"dosage": "DOSAGE AND ADMINISTRATION General NOTE: CONTAINS BENZYL ALCOHOL (see PRECAUTIONS). The initial dose of triamcinolone acetonide injectable suspension may vary from 2.5 mg to 100 mg per day depending on the specific disease entity being treated (see Dosage section below). However, in certain overwhelming, acute, life-threatening situations, administration in dosages exceeding the usual dosages may be justified and may be in multiples of the oral dosages. IT SHOULD BE EMPHASIZED THAT DOSAGE REQUIREMENTS ARE VARIABLE AND MUST BE INDIVIDUALIZED ON THE BASIS OF THE DISEASE UNDER TREATMENT AND THE RESPONSE OF THE PATIENT.",
-"contraindications": "CONTRAINDICATIONS Triamcinolone acetonide injectable suspension is contraindicated in patients who are hypersensitive to any components of this product (see WARNINGS: General ). Intramuscular corticosteroid preparations are contraindicated for idiopathic thrombocytopenic purpura.",
-"warnings": "WARNINGS Serious Neurologic Adverse Reactions with Epidural Administration Serious neurologic events, some resulting in death, have been reported with epidural injection of corticosteroids (see WARNINGS: Neurologic ). Specific events reported include, but are not limited to, spinal cord infarction, paraplegia, quadriplegia, cortical blindness, and stroke. These serious neurologic events have been reported with and without use of fluoroscopy. The safety and effectiveness of epidural administration of corticosteroids have not been established, and corticosteroids are not approved for this use.",
-"boxed": "",
-"pregnancy": "Neuro-Psychiatric Although controlled clinical trials have shown corticosteroids to be effective in speeding the resolution of acute exacerbations of multiple sclerosis, they do not show that they affect the ultimate outcome or natural history of the disease.",
-"storage": "HOW SUPPLIED Triamcinolone acetonide injectable suspension, USP is a white to off white aqueous suspension, free from foreign particulate matter supplied in vials providing 40 mg triamcinolone acetonide per mL.",
-"setId": "05c2a9cf-a018-48c0-9c73-2d59d52211d2",
-"effective": "20251103"
+"missing": true
 },
 "triamcinolone nn": {
 "generic": "Triamcinolone Acetonide",
@@ -18972,23 +17951,7 @@
 },
 "triple sulfa": {
 "generic": "Triple Antibiotic Ointment",
-"brand": "Aerosoothe",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Indications & Usage FIRST AID TO HELP PREVENT INFECTION IN MINOR SCRAPES, CUTS AND BURNS.",
-"dosage": "DIRECTIONS CLEAN AFFECTED AREA APPPLY A SMALL AMOUNT 1 TO 3 TIMES DAILY MAY COVER WITH A STERILE BANDAGE",
-"contraindications": "",
-"warnings": "Warnings: For external use only. Do not use: in eyes over large areas of the body or on puncture wounds, animal bites or serious burns for more than 1 week unless directed by a doctor if you are allergic to any of the ingredients due to anaphylactic shock",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "2287a31c-750c-728d-e054-00144ff88e88",
-"effective": "20250829"
+"missing": true
 },
 "tropicamide": {
 "generic": "Tropicamide",
@@ -19020,26 +17983,7 @@
 },
 "tuberculin ppd": {
 "generic": "Tuberculin Purified Protein Derivative",
-"brand": "Tubersol",
-"pharmClass": [
-"Skin Test Antigen [EPC]",
-"Tuberculosis Skin Test [EPC]"
-],
-"moaClass": [],
-"routes": [
-"INTRADERMAL"
-],
-"forms": [],
-"moa": "Mechanism of Action The sensitization following infection with mycobacteria occurs primarily in the regional lymph nodes. Small lymphocytes (T lymphocytes) proliferate in response to the antigenic stimulus to give rise to specifically sensitized lymphocytes. After 3-8 weeks, these lymphocytes enter the blood stream and circulate for years. Subsequent restimulation of these sensitized lymphocytes with the same or a similar antigen, such as the intradermal injection of TUBERSOL, evokes a local reaction mediated by these cells. Characteristically, delayed hypersensitivity reactions to tuberculin begin at 5 to 6 hours, are maximal at 48 to 72 hours and subside over a period of days.",
-"indications": "INDICATIONS AND USAGE TUBERSOL Tuberculin Purified Protein Derivative (Mantoux), is indicated to aid diagnosis of tuberculosis infection (TB) in persons at increased risk of developing active disease. The Centers for Disease Control and Prevention (CDC) have published guidelines regarding populations that would benefit from tuberculin skin testing (TST). Current recommendations can be accessed at: http://www.cdc.gov/tb/publications/factsheets/testing.htm. Previous BCG vaccination is not a contraindication to tuberculin testing. The skin-test results of BCG vaccinated persons can be used to support or exclude the diagnosis of TB infection. However, an FDA-approved interferon gamma release assay is preferred over tuberculin skin test for persons 5 years of age and older who were previously vaccinated with BCG.",
-"dosage": "DOSAGE AND ADMINISTRATION Dosage Five tuberculin units (TU) per test dose of 0.1 mL is the standard strength used for intradermal (Mantoux) testing. Method of Administration TUBERSOL is indicated for intradermal injection only. Do not inject intravenously, intramuscularly, or subcutaneously . If subcutaneous injection occurs, the test cannot be interpreted. Inspect for extraneous particulate matter and/or discoloration before use. If these conditions exist, do not administer the product. Use a separate syringe and needle for each injection. The following procedure is recommended for performing the Mantoux test: The preferred site of the test is the volar aspect of the forearm.",
-"contraindications": "CONTRAINDICATIONS Allergy to any component of TUBERSOL or an anaphylactic or other allergic reaction to a previous test of tuberculin PPD is a contraindication to the use of TUBERSOL. (See DESCRIPTION and HOW SUPPLIED .) TUBERSOL should not be administered to: Persons who have had a severe reaction (e.g., necrosis, blistering, anaphylactic shock, or ulcerations) to a previous TST, Persons with documented active tuberculosis or a clear history of treatment for TB infection or disease, Persons wit…",
-"warnings": "WARNINGS Hypersensitivity Allergic reactions may occur following the use of TUBERSOL even in persons with no prior history of hypersensitivity to the product components. Epinephrine injection (1:1,000) and other appropriate agents used for the control of immediate allergic reactions must be immediately available. Syncope Syncope (fainting) can occur in association with administration of injectable medicines, including TUBERSOL. Procedures should be in place to avoid falling injury and to restore cerebral perfusion following syncope.",
-"boxed": "",
-"pregnancy": "Pregnancy Animal reproduction studies have not been conducted with TUBERSOL. It is also not known whether TUBERSOL can cause fetal harm when administered to a pregnant woman or can affect reproduction capacity. TUBERSOL should be given to a pregnant woman only if clearly needed.",
-"storage": "HOW SUPPLIED Product: 50090-0261 NDC: 50090-0261-0 1 mL in a VIAL, MULTI-DOSE / 1 in a CARTON",
-"setId": "261efc52-a105-4c2c-a8ce-9eee20b62efc",
-"effective": "20230615"
+"missing": true
 },
 "tucatinib": {
 "generic": "Tucatinib",
@@ -19047,23 +17991,7 @@
 },
 "tungsten": {
 "generic": "Tungsten Sulphuratum",
-"brand": "Tungsten Sulphuratum",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "",
-"dosage": "",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "02e9bc35-4a24-4ef5-e063-6394a90a3e42",
-"effective": "20230814"
+"missing": true
 },
 "ulipristal": {
 "generic": "Ulipristal Acetate",
@@ -19111,23 +18039,7 @@
 },
 "valproate semisodium": {
 "generic": "Valproate Sodium",
-"brand": "Valproate Sodium",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Valproate sodium exists as the valproate ion in the blood. The mechanisms by which valproate exerts its therapeutic effects have not been established. It has been suggested that its activity in epilepsy is related to increased brain concentrations of gamma-aminobutyric acid (GABA).",
-"indications": "Valproate sodium injection is indicated as an intravenous alternative in patients in whom oral administration of valproate products is temporarily not feasible in the following conditions: • Monotherapy and adjunctive therapy of complex partial seizures and simple and complex absence seizures; adjunctive therapy in patients with multiple seizure types that include absence seizures Epilepsy Valproate sodium injection is indicated as an intravenous alternative in patients for whom oral administration of valproate products is temporarily not feasible in the following conditions: Valproate sodium injection is indicated as monotherapy and adjunctive therapy in the treatment of patients with complex partial seizures that occur either in isolation or in association with other types of seizures. Valproate sodium injection is also indicated for use as sole and adjunctive therapy in the treatment of patients with simple and complex absence seizures, and adjunctively in patients with multiple seizure types that include absence seizures.",
-"dosage": "Valproate sodium injection is intended for intravenous use only. • Epilepsy o Complex Partial Seizures in Adults and Children 10 years of age or older: Initial dose is 10 to 15 mg/kg/day, increasing at 1 week intervals by 5 to 10 mg/kg/day to achieve optimal clinical response. Maximum recommended dose is 60 mg/kg/day . o Simple and Complex Absence Seizures: Initial dose is 10 to 15 mg/kg/day, increasing at 1 week intervals by 5 to 10 mg/kg/day to achieve optimal clinical response. Maximum recommended dose is 60 mg/kg/day . Epilepsy Valproate sodium injection is for intravenous use only. Use of valproate sodium injection for periods of more than 14 days has not been studied.",
-"contraindications": "• Valproate sodium injection should not be administered to patients with hepatic disease or significant hepatic dysfunction . • Valproate sodium injection is contraindicated in patients known to have mitochondrial disorders caused by mutations in mitochondrial DNA polymerase γ (POLG; e.g., Alpers-Huttenlocher Syndrome) and children under two years of age who are suspected of having a POLG-related disorder .",
-"warnings": "• Hepatotoxicity; evaluate high risk populations and monitor serum liver tests • Birth defects, decreased IQ, and neurodevelopmental disorders following in utero exposure; should not be used to treat women with epilepsy or bipolar disorder who are pregnant or who plan to become pregnant or to treat a woman of childbearing potential unless other medications have failed to provide adequate symptom control or are otherwise unacceptable ( 5.2 , 5.3 , 5.4 ) • Pancreatitis; valproate sodium should ordinarily be discontinued • Bleeding and other hematopoietic disorders.",
-"boxed": "WARNING: LIFE THREATENING ADVERSE REACTIONS WARNING: LIFE THREATENING ADVERSE REACTIONS See full prescribing information for complete boxed warning. • Hepatotoxicity, including fatalities, usually during the first 6 months of treatment. Children under the age of two years and patients with mitochondrial disorders are at higher risk.",
-"pregnancy": "Pregnancy Pregnancy Exposure Registry There is a pregnancy exposure registry that monitors pregnancy outcomes in women exposed to antiepileptic drugs (AEDs), including Valproate sodium, during pregnancy.",
-"storage": "Valproate Sodium Injection, equivalent to 100 mg of valproic acid per mL, is a clear, colorless solution supplied as: Manufacturer Product Number Unit of Sale Strength Each Unit PRX439405 NDC 63323-494-16 Available in trays of 10 vials. 500 mg per 5 mL (100 mg per mL) NDC 63323-494-41 5 mL Single-dose Vial Store at 20°C to 25°C (68°F to 77°F) .",
-"setId": "3dfb6da1-f66a-4618-9f74-d2d6c16c0b58",
-"effective": "20241215"
+"missing": true
 },
 "vandetanib": {
 "generic": "Vandetanib",
@@ -19456,27 +18368,7 @@
 },
 "zolbetuximab clzb": {
 "generic": "Zolbetuximab",
-"brand": "Vyloy",
-"pharmClass": [
-"Claudin 18.2-directed Cytolytic Antibody [EPC]"
-],
-"moaClass": [
-"Claudin 18.2-directed Antibody Interactions [MoA]"
-],
-"routes": [
-"INTRAVENOUS"
-],
-"forms": [],
-"moa": "Mechanism of Action Zolbetuximab-clzb is a claudin 18.2 (CLDN18.2)-directed cytolytic antibody that depletes CLDN18.2-positive cells via antibody-dependent cellular cytotoxicity (ADCC) and complement-dependent cytotoxicity (CDC). Zolbetuximab-clzb in combination with chemotherapy had increased antitumor activity in CLDN18.2-expressing mouse tumor models compared to zolbetuximab-clzb or chemotherapy alone.",
-"indications": "VYLOY, in combination with fluoropyrimidine- and platinum-containing chemotherapy, is indicated for the first-line treatment of adults with locally advanced unresectable or metastatic human epidermal growth factor receptor 2 (HER2)‑negative gastric or gastroesophageal junction (GEJ) adenocarcinoma whose tumors are claudin (CLDN) 18.2 positive as determined by an FDA-approved test . VYLOY is a claudin 18.2-directed cytolytic antibody and is indicated in combination with fluoropyrimidine- and platinum-containing chemotherapy for the first-line treatment of adults with locally advanced unresectable or metastatic human epidermal growth factor receptor 2 (HER2)-negative gastric or gastroesophageal junction adenocarcinoma whose tumors are claudin (CLDN) 18.2 positive as determined by an FDA-approved test .",
-"dosage": "• Administer by intravenous infusion only . Do not administer VYLOY as an intravenous push or bolus. • The recommended first dose of VYLOY is 800 mg/m 2 followed by 600 mg/m 2 every 3 weeks or 400 mg/m 2 every 2 weeks. Patient Selection Select adult patients with locally advanced unresectable or metastatic HER2-negative gastric or GEJ adenocarcinoma whose tumors are CLDN18.2 positive (defined as ≥75% of tumor cells demonstrating moderate to strong membranous CLDN18 immunohistochemical staining) for treatment with VYLOY in combination with fluoropyrimidine- and platinum-containing chemotherapy using an FDA-approved test .",
-"contraindications": "None. None.",
-"warnings": "• Hypersensitivity reactions including serious anaphylaxis reactions and serious and fatal infusion-related reactions have occurred. Monitor patients during and for at least 2 hours after infusion with VYLOY. Interrupt, slow the rate of infusion or permanently discontinue VYLOY based on severity and type of reaction. Premedicate with antihistamines for subsequent infusions after a hypersensitivity reaction. ( 2.4 , 5.1 ) • Severe nausea and vomiting: Premedicate patients with antiemetics prior to each infusion.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary There are no data with VYLOY use in pregnant women to inform any drug-associated risks. Embryo-fetal toxicity was not observed in pregnant mice intravenously administered zolbetuximab-clzb . VYLOY should only be given to a pregnant woman if the benefit outweighs the potential risk.",
-"storage": "",
-"setId": "e7695a21-abb6-47ac-93f8-0ece5a9c4409",
-"effective": "20260811"
+"missing": true
 },
 "zolmitriptan": {
 "generic": "Zolmitriptan",
@@ -19645,25 +18537,7 @@
 },
 "vitamin c": {
 "generic": "Vitamin C",
-"brand": "Vitamin C Serum",
-"pharmClass": [
-"Vitamin C [EPC]"
-],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS & USAGE SECTION INDICATIONS & USAGE SECTION INDICATIONS & USAGE SECTION",
-"dosage": "DOSAGE & ADMINISTRATION SECTION DOSAGE & ADMINISTRATION SECTION DOSAGE & ADMINISTRATION SECTION",
-"contraindications": "",
-"warnings": "WANRNING SECTION WANRNING SECTION WANRNING SECTION",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "496e7d41-2176-7b0c-e063-6394a90a98f1",
-"effective": "20260128"
+"missing": true
 },
 "acetaminophen + caffeine + chlorpheniramine + vitamin c": {
 "generic": "Acetaminophen / Caffeine / Chlorpheniramine / Vitamin C",
@@ -19799,13 +18673,10 @@
 "ORAL"
 ],
 "forms": [],
-"moa": "Mechanism of Action Click here to enter Mechanism of Action",
 "indications": "Acetaminophen and Codeine Phosphate Tablets, USP are indicated for the relief of mild to moderately severe pain.",
 "dosage": "Dosage should be adjusted according to severity of pain and response of the patient. The usual adult dosage is: Single Doses Maximum Range 24-Hour Dose Codeine Phosphate 15mg to 60mg 360 mg Acetaminophen 300 mg to 1000 mg 4000 mg The usual dose of codeine phosphate in children is 0.5 mg/kg. Doses may be repeated up to every 4 hours. The prescriber must determine the number of tablets per dose, and the maximum number of tablets per 24 hours, based upon the above dosage guidance. This information should be conveyed in the prescription. It should be kept in mind, however, that tolerance to codeine can develop with continued use and that the incidence of untoward effects is dose related.",
 "contraindications": "Codeine-containing products are contraindicated for post-operative pain management in children who have undergone tonsillectomy and/or adenoidectomy. Acetaminophen and Codeine Phosphate Tablets should not be administered to patients who have previously exhibited hypersensitivity to codeine or acetaminophen.",
-"warnings": "Click here to enter Warnings and Precautions",
 "boxed": "WARNING: Death Related to Ultra-Rapid Metabolism of Codeine to Morphine Respiratory depression and death have occurred in children who received codeine following tonsillectomy and/or adenoidectomy and had evidence of being ultra-rapid metabolizers of codeine due to a CYP2D6 polymorphism.",
-"pregnancy": "Pregnancy Click here to enter Pregnancy",
 "storage": "Acetaminophen and Codeine Phosphate Tablets, USP 300 mg /30 mg are white, round, flat, beveled edged tablets debossed “IP 33” on obverse and “3” on reverse. They are available as follows: Bottles of 20: NDC 63187-491-20 Bottles of 30: NDC 63187-491-30 Bottles of 60 : NDC 63187-491-60 Bottles of 90 : NDC 63187-491-90 Store Acetaminophen and Codeine …",
 "setId": "2472bb8a-88b7-4eec-8806-34adef0c9ab9",
 "effective": "20210101"
@@ -20697,45 +19568,11 @@
 },
 "betamethasone + betamethasone la betamethasone as": {
 "generic": "Calcipotriene And Betamethasone Dipropionate",
-"brand": "Calcipotriene And Betamethasone Dipropionate",
-"pharmClass": [
-"Vitamin D Analog [EPC]"
-],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "Mechanism of Action Calcipotriene and betamethasone dipropionate topical suspension combines the pharmacological effects of calcipotriene as a synthetic vitamin D 3 analog and betamethasone dipropionate as a synthetic corticosteroid. However, while their pharmacologic and clinical effects are known, the exact mechanisms of their actions in the treatment of plaque psoriasis of the scalp and body are unknown.",
-"indications": "Calcipotriene and betamethasone dipropionate topical suspension is indicated for the topical treatment of plaque psoriasis of the scalp in patients 12 years and older and plaque psoriasis of the scalp and body in patients 18 years and older. Additional pediatric use information is approved for LEO Pharma A/S’s Taclonex® (calcipotriene and betamethasone dipropionate) Topical Suspension. However, due to LEO Pharma A/S’s marketing exclusivity rights, this drug product is not labeled with that information. Calcipotriene and betamethasone dipropionate topical suspension is a combination of calcipotriene, a vitamin D analog, and betamethasone dipropionate, a corticosteroid, indicated for the topical treatment of plaque psoriasis of the scalp in patients 12 years and older and plaque psoriasis of the scalp and body in patients age 18 years and older.",
-"dosage": "Instruct patients to shake bottle prior to using calcipotriene and betamethasone dipropionate topical suspension. Apply calcipotriene and betamethasone dipropionate topical suspension to affected areas on the scalp and body once daily for up to 8 weeks. Calcipotriene and betamethasone dipropionate topical suspension should be discontinued when control is achieved. Instruct patients to wash their hands after applying the product. Inform patients that they should not take a bath or shower or wash their hair right after application of calcipotriene and betamethasone dipropionate topical suspension.",
-"contraindications": "None. None.",
-"warnings": "Hypercalcemia and Hypercalciuria: Hypercalcemia and hypercalciuria have been reported. If either occurs, discontinue until parameters of calcium metabolism normalize. Effects on Endocrine System: Can cause reversible hypothalamic-pituitary-adrenal (HPA) axis suppression with the potential for glucocorticosteroid insufficiency during and after withdrawal of treatment. Risk factors include the use of high-potency topical corticosteroid, use over a large surface area or to areas under occlusion, prolonged use, altered skin barrier, liver failure, and use in pediatric patients.",
-"boxed": "",
-"pregnancy": "Pregnancy Risk Summary Available data with calcipotriene and betamethasone dipropionate topical suspension are not sufficient to evaluate a drug-associated risk for major birth defects, miscarriages, or adverse maternal or fetal outcomes.",
-"storage": "Calcipotriene and betamethasone dipropionate topical suspension is a viscous, nearly odorless, almost clear, colorless to slightly off-white suspension. It is available as: 60 gram bottle (NDC 0713-0848-60) 120 gram (2 bottles of 60 grams) (NDC 0713-0848-92) Store between 20°C - 25°C (68°F - 77°F).",
-"setId": "1eba330b-ce18-6b12-e063-6294a90a8763",
-"effective": "20240813"
+"missing": true
 },
 "biotin": {
 "generic": "Biotin Drops",
-"brand": "Biotin Drops 2081",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS For the temporary relief of general weakness or fatigue, difficulty losing weight, dry or cracked skin, feeling cold, physical stiffness, inflexibility, or sugar cravings due to slow metabolism.*",
-"dosage": "DIRECTIONS Place drops under tongue 30 minutes before/after meals. Adults and children 12 years and over: Take 10 drops up to 3 times per day. Consult a physician for use in children under 12 years of age.",
-"contraindications": "",
-"warnings": "WARNINGS In case of overdose, get medical help or contact a poison control center right away. Keep out of the reach of children. If pregnant or breastfeeding, ask a healthcare professional before use.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "eb9df7b0-4140-4e96-86cf-f87500c374b6",
-"effective": "20260108"
+"missing": true
 },
 "bisoprolol + hydrochlorothiazide": {
 "generic": "Bisoprolol Fumarate And Hydrochlorothiazide",
@@ -21342,27 +20179,7 @@
 },
 "sofosbuvir": {
 "generic": "Sofosbuvir",
-"brand": "Sovaldi",
-"pharmClass": [
-"Hepatitis C Virus Nucleotide Analog NS5B Polymerase Inhibitor [EPC]"
-],
-"moaClass": [
-"RNA Replicase Inhibitors [MoA]"
-],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "Mechanism of Action Sofosbuvir is a direct-acting antiviral agent against the hepatitis C virus .",
-"indications": "is a hepatitis C virus (HCV) nucleotide analog NS5B polymerase inhibitor indicated for the treatment of: Adult patients with genotype 1, 2, 3 or 4 chronic HCV infection without cirrhosis or with compensated cirrhosis as a component of a combination antiviral treatment regimen. Pediatric patients 3 years of age and older with genotype 2 or 3 chronic HCV infection without cirrhosis or with compensated cirrhosis in combination with ribavirin. Adult Patients: SOVALDI is indicated for the treatment of adult patients with chronic hepatitis C virus (HCV) infection as a component of a combination antiviral treatment regimen : genotype 1 or 4 infection without cirrhosis or with compensated cirrhosis for use in combination with pegylated interferon and ribavirin genotype 2 or 3 infection without cirrhosis or with compensated cirrhosis for use in combination with ribavirin.",
-"dosage": "Testing Prior to the Initiation of Therapy: Test all patients for HBV infection by measuring HBsAg and anti-HBc. Recommended dosage in adults: One 400 mg tablet taken once daily with or without food. Recommended dosage in pediatric patients 3 years of age and older: Recommended dosage of SOVALDI in pediatric patients 3 years of age and older with genotype 2 or 3 HCV using SOVALDI tablets or oral pellets is based on weight. Refer to Table 3 of the full prescribing information for specific dosing guidelines based on body weight. HCV/HIV-1 coinfection: For adult and pediatric patients with HCV/HIV-1 coinfection, follow the dosage recommendations in the tables below, respectively.",
-"contraindications": "When SOVALDI is used in combination with ribavirin or peginterferon alfa/ribavirin, the contraindications applicable to those agents are applicable to combination therapies. Refer to the prescribing information of peginterferon alfa and ribavirin for a list of their contraindications. When used in combination with peginterferon alfa/ribavirin or ribavirin alone, all contraindications to peginterferon alfa and/or ribavirin also apply to SOVALDI combination therapy.",
-"warnings": "Risk of Hepatitis B Virus Reactivation: Test all patients for evidence of current or prior HBV infection before initiation of HCV treatment. Monitor HCV/HBV coinfected patients for HBV reactivation and hepatitis flare during HCV treatment and post-treatment follow-up. Initiate appropriate patient management for HBV infection as clinically indicated.",
-"boxed": "WARNING: RISK OF HEPATITIS B VIRUS REACTIVATION IN PATIENTS COINFECTED WITH HCV AND HBV Test all patients for evidence of current or prior hepatitis B virus (HBV) infection before initiating treatment with SOVALDI.",
-"pregnancy": "Pregnancy Risk Summary If SOVALDI is administered with ribavirin or peginterferon alfa and ribavirin, the combination regimen is contraindicated in pregnant women and in men whose female partners are pregnant.",
-"storage": "Store below 30 °C (86 °F). Dispense only in original container Do not use if seal over bottle opening is broken or missing",
-"setId": "80beab2c-396e-4a37-a4dc-40fdb62859cf",
-"effective": "20241226"
+"missing": true
 },
 "daclatasvir + sofosbuvir": {
 "generic": "Daclatasvir / Sofosbuvir",
@@ -22161,23 +20978,7 @@
 },
 "estradiol hemihydrate": {
 "generic": "Estradiol",
-"brand": "Estradiol Vaginal Inserts",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"VAGINAL"
-],
-"forms": [],
-"moa": "Mechanism of Action Endogenous estrogens are largely responsible for the development and maintenance of the female reproductive system and secondary sexual characteristics. Although circulating estrogens exist in a dynamic equilibrium of metabolic interconversions, estradiol is the principal intracellular human estrogen and is substantially more potent than its metabolites, estrone and estriol, at the receptor level. The primary source of estrogen in normally cycling adult women is the ovarian follicle, which secretes 70 to 500 mcg of estradiol daily, depending on the phase of the menstrual cycle.",
-"indications": "Estradiol vaginal inserts are an estrogen indicated for the treatment of atrophic vaginitis due to menopause Treatment of Atrophic Vaginitis due to Menopause .",
-"dosage": "Generally, when estrogen is prescribed for a postmenopausal woman with a uterus, consider addition of a progestogen to reduce the risk of endometrial cancer. Generally, a woman without a uterus does not need to use a progestogen in addition to her estrogen therapy. In some cases, however, hysterectomized women with a history of endometriosis may need a progestogen . Use estrogen-alone, or in combination with a progestogen, at the lowest effective dose and for the shortest duration consistent with treatment goals and risks for the individual woman. Reevaluate postmenopausal women periodically as clinically appropriate to determine if treatment is still necessary.",
-"contraindications": "Estradiol is contraindicated in women with any of the following conditions: Undiagnosed abnormal genital bleeding . Breast cancer or a history of breast cancer . Estrogen-dependent neoplasia . Active DVT, PE, or history of these conditions . Active arterial thromboembolic disease (for example, stroke or MI), or a history of these conditions . Known anaphylactic reaction, or angioedema, or hypersensitivity to estradiol . Hepatic impairment or disease.",
-"warnings": "Estrogens increase the risk of gallbladder disease Discontinue estrogen if severe hypercalcemia, loss of vision, severe hypertriglyceridemia or cholestatic jaundice occurs ( 5.6 , 5.7 , 5.10 , 5.11 ) The estradiol vaginal inserts applicator may cause vaginal abrasion Monitor thyroid function in women on thyroid replacement therapy ( 5.12 , 5.19 ) Risks from Systemic Absorption Estradiol vaginal inserts are intended only for vaginal administration. Systemic absorption occurs with the use of estradiol.",
-"boxed": "WARNING: ENDOMETRIAL CANCER, CARDIOVASCULAR DISORDERS, PROBABLE DEMENTIA, and BREAST CANCER Estrogen-Alone Therapy Endometrial Cancer There is an increased risk of endometrial cancer in a woman with a uterus who uses unopposed estrogens. Adding a progestogen to estrogen therapy has been shown to reduce the risk of endometrial hyperplasia, which may be a precursor to endometrial cancer.",
-"pregnancy": "Pregnancy Risk Summary Estradiol is not indicated for use in pregnancy. There are no data with the use of estradiol in pregnant women; however, epidemiologic studies and meta-analyses have not found an increased risk of genital or nongenital birth defects (including cardiac anomalies and limb-reduction defects) following exposure to combined hormon…",
-"storage": "How Supplied Each Estradiol Vaginal Inserts USP, 10 mcg, is round, white to off-white, film-coated tablet debossed with “S” on one side and “10” on other side, contained in a disposable, single-use applicator, packaged in a blister pack. Cartons contain 8 or 18 applicators with inset inserts.",
-"setId": "6247e329-e20e-4ea5-9cc1-b593bd494577",
-"effective": "20250923"
+"missing": true
 },
 "levonorgestrel": {
 "generic": "Levonorgestrel",
@@ -22338,8 +21139,6 @@
 ],
 "forms": [],
 "moa": "",
-"indications": "SUGGESTED USE Adults: One tablet daily, preferably after meals or as directed by the doctor. Children: As directed by the doctor.",
-"dosage": "DOSAGE AND ADMINISTRATION Each tablet contains: Calcium 20 mg (2% daily value) Store in a dry place at controlled room temperature at 15-30 °C (59°-86° F). Do not expose to excessive heat or moisture.",
 "contraindications": "",
 "warnings": "WARNING: Accidental overdose of iron containing products is a leading cause of fatal poisoning in children under 6. Keep this product out of reach of children . In case of accidental overdose, call a doctor or Poison Control Center immediately. WARNINGS: Do not exceed recommended dosage. The treatment of any anemic condition should be under the advice and supervision of doctor. Occasional gastrointestinal discomfort (such as nausea) may be minimized by taking with meals. Iron-containing medication may occasionally cause constipation or diarrhea.",
 "boxed": "",
@@ -22526,23 +21325,7 @@
 },
 "germanium": {
 "generic": "Germanium Muriaticum",
-"brand": "Germanium Muriaticum",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "",
-"dosage": "",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "07526641-587b-e5aa-e063-6294a90a7408",
-"effective": "20231009"
+"missing": true
 },
 "gallium + germanium": {
 "generic": "Germanium (68 Ge) / Gallium (68 Ga)",
@@ -22577,9 +21360,7 @@
 "glycerin": {
 "generic": "Glycerin 20%",
 "brand": "Hydro Gel",
-"pharmClass": [
-"Non-Standardized Chemical Allergen [EPC]"
-],
+"pharmClass": [],
 "moaClass": [],
 "routes": [
 "TOPICAL"
@@ -22630,27 +21411,7 @@
 },
 "hepatitis b virus": {
 "generic": "Hepatitis B Immune Globulin (Human)",
-"brand": "Nabi-Hb",
-"pharmClass": [
-"Human Immunoglobulin [EPC]"
-],
-"moaClass": [
-"Virus Neutralization [MoA]"
-],
-"routes": [
-"INTRAMUSCULAR"
-],
-"forms": [],
-"moa": "",
-"indications": "INDICATIONS AND USAGE Nabi-HB, Hepatitis B Immune Globulin (Human), is indicated for treatment of acute exposure to blood containing HBsAg, perinatal exposure of infants born to HBsAg-positive mothers, sexual exposure to HBsAg-positive persons and household exposure to persons with acute HBV infec- tion in the following settings: Acute Exposure to Blood Containing HBsAg: Following either parenteral exposure (needlestick, bite, sharps), direct mucous membrane contact (accidental splash), or oral ingestion (pipetting accident), involving HBsAg-positive materials such as blood, plasma, or serum. Perinatal Exposure of Infants Born to HBsAg-positive Mothers: Infants born to mothers positive for HBsAg with or without HBeAg 12 . Sexual Exposure to HBsAg-positive Persons: Sexual partners of HBsAg-positive persons. Household Exposure to Persons with Acute HBV Infection: Infants less than 12 months old whose mother or primary caregiver is positive for HBsAg. Other household contacts with an identifiable blood exposure to the index patient. Nabi-HB is indicated for intramuscular use only.",
-"dosage": "DOSAGE AND ADMINISTRATION This product is for intramuscular use only. The use of this product by the intravenous route is not indicated. Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration. It is important to use a separate vial, sterile syringe, and needle for each individual patient, in order to prevent transmission of infectious agents from one person to another. Any vial of Nabi-HB, Hepatitis B Immune Globulin (Human) that has been entered should be used promptly. Do not reuse or save for future use. This product contains no preservative; therefore, partially used vials should be discarded immediately.",
-"contraindications": "CONTRAINDICATIONS Individuals known to have had an anaphylactic or severe systemic reaction to human globulin should not receive Nabi-HB, Hepatitis B Immune Globulin (Human), or any other human immune globulin. Nabi-HB contains not more than 40 micrograms per mL IgA. Individuals who are deficient in IgA have the potential to develop antibodies against IgA and anaphylactic reactions.",
-"warnings": "WARNINGS In patients who have severe thrombocytopenia or any coagulation disorder that would contraindicate intramuscular injections, Nabi-HB, Hepatitis B Immune Globulin (Human), should be given only if the expected benefits outweigh the potential risks. Nabi-HB is made from human plasma. Products made from human plasma may contain infectious agents, e.g., viruses, and theoretically, the Creutzfeldt-Jakob disease (CJD) agent.",
-"boxed": "",
-"pregnancy": "Pregnancy Category C Animal reproduction studies have not been conducted with Nabi-HB. It is also not known whether Nabi-HB can cause fetal harm when administered to a pregnant woman or can affect a woman’s ability to conceive. Nabi-HB should be given to a pregnant woman only if clearly indicated.",
-"storage": "STORAGE Refrigerate between 2 to 8 °C (36 to 46 °F). Do not freeze. Do not use after expiration date. Use within 6 hours after the vial has been entered.",
-"setId": "47fe1a99-5078-4b89-84fa-9e8387baec5c",
-"effective": "20250410"
+"missing": true
 },
 "homatropine": {
 "generic": "Homatropine",
@@ -22932,7 +21693,6 @@
 "moa": "Mechanism of Action The circulating iron released from iron dextran, which is subject to physiological control, replenishes hemoglobin and depleted iron stores.",
 "indications": "INFeD is indicated for treatment of adult and pediatric patients of age 4 months and older with documented iron deficiency who have intolerance to oral iron or have had an unsatisfactory response to oral iron. INFeD, an iron replacement product, is indicated for treatment of adult and pediatric patients of age 4 months and older with documented iron deficiency who have intolerance to oral iron or an unsatisfactory response to oral iron.",
 "dosage": "See Full Prescribing Information for weight-based dosing and administration information. Weight in Kg Weight in Kg INFeD dose volume Important Pre-Treatment Information Discontinue administration of any iron-containing products prior to administration of INFeD. Assess baseline hematologic (hemoglobin and hematocrit) and iron storage parameters (serum iron, total iron binding capacity, and percent saturation of transferrin) to monitor response to therapy. Administer a test dose of INFeD prior to administration of therapeutic dose . 2. 2 Recommended Dosage for Iron Deficiency Anemia Calculate the INFeD dose based upon Table 1 and formulas below.",
-"contraindications": "INFeD is contraindicated in patients who have demonstrated a previous hypersensitivity to iron dextran . Known hypersensitivity to INFeD",
 "warnings": "Delayed Reactions: May occur with large intravenous doses. Increased Risk of Toxicity in Patients with Underlying Conditions: Monitor for toxicity in these patients. Iron Overload: Excessive therapy can lead to iatrogenic hemosiderosis. Do not administer to patients with iron overload. Periodically monitor hematologic and iron parameters. Hypersensitivity Reactions Serious hypersensitivity reactions, including anaphylactic-type reactions, some of which have been life-threatening and fatal, have been reported following the parenteral administration of iron dextran products, including INFeD.",
 "boxed": "WARNING: RISK FOR ANAPHYLACTIC-TYPE REACTIONS Anaphylactic-type reactions, including fatalities, have been reported following the parenteral administration of iron dextran injection. Have resuscitation equipment and personnel trained in the detection and treatment of anaphylactic-type reactions readily available during INFeD administration.",
 "pregnancy": "Pregnancy Risk Summary Parenteral iron administration may be associated with hypersensitivity reactions , which may have serious consequences, such as fetal bradycardia (see Clinical Considerations). Advise pregnant persons of the potential risk to the fetus.",
@@ -23135,7 +21895,6 @@
 "indications": "INDICATIONS AND USAGE Entacapone tablets USP are indicated as an adjunct to levodopa and carbidopa to treat end-of-dose \"wearing-off\" in patients with Parkinson's disease (see CLINICAL PHARMACOLOGY, Clinical Studies ). Entacapone's effectiveness has not been systematically evaluated in patients with Parkinson's disease who do not experience end-of-dose \"wearing-off\".",
 "dosage": "DOSAGE AND ADMINISTRATION The recommended dose of entacapone is one 200 mg tablet administered concomitantly with each levodopa and carbidopa dose to a maximum of 8 times daily (200 mg × 8 = 1,600 mg per day). Clinical experience with daily doses above 1,600 mg is limited. Entacapone should always be administered in association with levodopa and carbidopa. Entacapone has no antiparkinsonian effect of its own. In clinical studies, the majority of patients required a decrease in daily levodopa dose if their daily dose of levodopa had been greater than or equal to 800 mg or if patients had moderate or severe dyskinesia before beginning treatment.",
 "contraindications": "CONTRAINDICATIONS Entacapone is contraindicated in patients who have demonstrated hypersensitivity to the drug or its ingredients.",
-"warnings": "WARNINGS Monoamine oxidase (MAO) and COMT are the two major enzyme systems involved in the metabolism of catecholamines. It is theoretically possible, therefore, that the combination of entacapone and a non-selective MAO inhibitor (e.g., phenelzine and tranylcypromine) would result in inhibition of the majority of the pathways responsible for normal catecholamine metabolism. For this reason, patients should ordinarily not be treated concomitantly with entacapone and a non-selective MAO inhibitor. Entacapone can be taken concomitantly with a selective MAO-B inhibitor (e.g., selegiline).",
 "boxed": "",
 "pregnancy": "Pregnancy Pregnancy Category C In embryofetal development studies, entacapone was administered to pregnant animals throughout organogenesis at doses of up to 1,000 mg/kg/day in rats and 300 mg/kg/day in rabbits.",
 "storage": "Store at 20º to 25ºC (68º to 77ºF); excursions permitted to 15°C to 30°C (59°F to 86°F).",
@@ -23719,23 +22478,7 @@
 },
 "molybdenum": {
 "generic": "Molybdenum Phosphoratum",
-"brand": "Molybdenum Phosphoratum",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "",
-"dosage": "",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "04d0b06f-5dc6-0198-e063-6294a90a47aa",
-"effective": "20230907"
+"missing": true
 },
 "molybdenum + technetium m": {
 "generic": "Molybdenum-99 / Technetium-99M",
@@ -23956,23 +22699,7 @@
 },
 "oxygen": {
 "generic": "Oxygen",
-"brand": "Oxygen",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"RESPIRATORY (INHALATION)"
-],
-"forms": [],
-"moa": "",
-"indications": "",
-"dosage": "",
-"contraindications": "",
-"warnings": "",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "01a2d234-eac6-4cdd-a736-adce7268865b",
-"effective": "20251017"
+"missing": true
 },
 "nitrous oxide + oxygen": {
 "generic": "Nitrous Oxide / Oxygen",
@@ -24174,27 +22901,7 @@
 },
 "polyethylene glycol": {
 "generic": "Polyethylene Glycol 3350",
-"brand": "Gavilax",
-"pharmClass": [
-"Osmotic Laxative [EPC]"
-],
-"moaClass": [
-"Osmotic Activity [MoA]"
-],
-"routes": [
-"ORAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Directions do not take more than directed unless advised by your doctor the bottle top is a measuring cap marked to contain 17 grams of powder when filled to the indicated line. adults and children 17 years of age and older: use once a day fill to top of line in cap which is marked to indicate the correct dose (17 g) stir and dissolve in any 4 to 8 ounces of beverage (cold, hot or room temperature) then drink do not combine with starch-based thickeners used for difficulty swallowing ensure that the powder is fully dissolved before drinking do not drink if there are any clumps do not use more than 7 days children 16 years of age or under: ask a doctor Other Information store at 20°- 25°C (68°– 77°F) tamper-evident: do not use if printed foil seal under cap, printed with \"SEALED for YOUR PROTECTION\" is missing, open or broken",
-"dosage": "Stop use and ask a doctor if you have rectal bleeding or your nausea, bloating, cramping or abdominal pain gets worse. These may be signs of a serious condition. you get diarrhea you need to use a laxative for longer than 1 week If pregnant or breast-feeding, ask a health professional before use.",
-"contraindications": "",
-"warnings": "WARNINGS Allergy alert: Do not use if you are allergic to polyethylene glycol Do not use if you have kidney disease, except under the advice and supervision of a doctor",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "19672e23-1606-497e-a112-939af33af195",
-"effective": "20251208"
+"missing": true
 },
 "hydrocortisone + neomycin + polymyxin b": {
 "generic": "Neomycin Sulfate, Polymyxin B Sulfate, Hydrocortisone",
@@ -25122,23 +23829,7 @@
 },
 "vitamin a + vitamin d": {
 "generic": "Vitamin A And D",
-"brand": "Vitamin A And D",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "",
-"indications": "Uses helps treat and prevent diaper rash temporarily protects minor cuts, scrapes and burns temporarily protects and helps relieve chapped, chafed or cracked skin and lips protects chafed skin due to diaper rash and helps seal out wetness",
-"dosage": "Directions Apply generously and massage until absorbed. Repeat as necessary.",
-"contraindications": "",
-"warnings": "Warnings For external use only",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "1d0ebe9a-cbc5-1765-e063-6294a90aa476",
-"effective": "20240718"
+"missing": true
 },
 "vitamin b complex": {
 "generic": "Vitamin B Complex",
@@ -25150,23 +23841,7 @@
 },
 "vitamin e": {
 "generic": "Vitamin E Vitalizing Sunscreen",
-"brand": "Cosrx",
-"pharmClass": [],
-"moaClass": [],
-"routes": [
-"TOPICAL"
-],
-"forms": [],
-"moa": "",
-"indications": "COSRX Airy-Light Clear Sunscreen Stick -Helps prevent sunburn. COSRX Vitamin E Vitalizing Sunscreen -Helps prevent sunburn. -If used as directed with other sun protection measures (see Directions), decreases the risk of skin cancer and early skin aging caused by the sun.",
-"dosage": "COSRX Airy-Light Clear Sunscreen Stick Broad Spectrum SPF 50 19 g / 0.67 oz. Directions Apply liberally 15 minutes before sun exposure Reapply : . After 80 minutes of swimming or sweating . Immediately after towel drying . At least every 2 hours Sun Protection Measures. Spending time in the sun increases your risk of skin cancer and early skin aging. To decrease this risk, regularly use a sunscreen with a Broad Spectrum SPF value of 15 or higher and other sun protection measures including: . Limit time in the sun, especially from 10 a.m. -2 p.m .",
-"contraindications": "",
-"warnings": "For external use only. Do not use on damaged or broken skin. When using this product keep out of eyes. Rinse with water to remove. Stop use and ask a doctor if rash occurs.",
-"boxed": "",
-"pregnancy": "",
-"storage": "",
-"setId": "4df77564-9da0-7e48-e063-6294a90a5e6b",
-"effective": "20260326"
+"missing": true
 },
 "vitamin k": {
 "generic": "Vitamin K1 (Phytomenadione)",
