@@ -1,0 +1,75 @@
+---
+import CTA from './CTA.astro';
+import molecules from '../data/molecules.json';
+import { langFromPath, localePath, t } from '../i18n';
+interface Props { slug: string }
+const { slug } = Astro.props;
+const lang = langFromPath(Astro.url.pathname);
+const s = t(lang);
+const m = s.molecule;
+const L = (p: string) => localePath(p, lang);
+type Mol = { name:string; cas:string; cid:number|null; formula?:string; mw?:string; iupac?:string; smiles?:string; inchikey?:string; xlogp?:number|null; hbd?:number|null; hba?:number|null; tpsa?:number|null; rotb?:number|null; synonyms?:string[]; otherCas?:string[]; description?:string; descriptionSource?:string; image?:string; parentMatch?:boolean; matched?:string };
+const all = molecules as Record<string, Mol>;
+const mol = all[slug];
+const title = mol.name.replace(/\bHCl\b/g, 'HCl');
+const pretty = (n: string) => n.charAt(0) + n.slice(1).toLowerCase().replace(/\bhcl\b/g, 'HCl').replace(/\bdihcl\b/g, 'DiHCl');
+const displayName = /[a-z]/.test(mol.name) ? mol.name : pretty(mol.name);
+const formulaHtml = (mol.formula || '').replace(/(\d+)/g, '<sub>$1</sub>').replace(/([+-])$/, '<sup>$1</sup>');
+const mw = mol.mw ? Number(mol.mw).toLocaleString('en-US', { maximumFractionDigits: 2 }) : '';
+const stem = slug.split('-')[0];
+const related = Object.entries(all).filter(([k, v]) => k !== slug && k.split('-')[0] === stem && v.cid).slice(0, 8);
+const enquiry = L(`/contact-us-1?type=sourcing&product=${encodeURIComponent(mol.name)}`);
+const num = (v: number | null | undefined, d = 1) => (v === null || v === undefined) ? '—' : Number(v).toLocaleString('en-US', { maximumFractionDigits: d });
+---
+<section class="hero page-hero mol-hero"><div class="container mol-grid">
+  <div class="hero-main">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={L('/')}>{s.breadcrumbHome}</a><span aria-hidden="true">/</span><a href={L('/api')}>{m.range}</a><span aria-hidden="true">/</span><span lang="en" dir="ltr">{displayName}</span></nav>
+    <p class="kicker kicker-light">{m.kicker}</p>
+    <h1 lang="en" dir="ltr">{displayName}</h1>
+    <dl class="mol-keyfacts" lang="en" dir="ltr">
+      {mol.cas && <div><dt>{m.cas}</dt><dd>{mol.cas}</dd></div>}
+      {mol.formula && <div><dt>{m.formula}</dt><dd set:html={formulaHtml}/></div>}
+      {mw && <div><dt>{m.mw}</dt><dd>{mw} g/mol</dd></div>}
+    </dl>
+    <div class="hero-actions"><a class="button button-light" href={enquiry}>{m.enquire}</a><a class="text-link" href={L('/api')}>{m.back}</a></div>
+  </div>
+  <figure class="mol-structure">{mol.image ? <img src={mol.image} alt={`${displayName} — 2D structure`} width="320" height="320" loading="eager" decoding="async"/> : <div class="mol-nostructure">{m.noStructure}</div>}<figcaption>{m.structureCaption}</figcaption></figure>
+</div></section>
+
+{mol.cid && <section class="section"><div class="container mol-body">
+  <div class="mol-main">
+    {mol.description && <div class="mol-about"><h2>{m.about}</h2><p lang="en" dir="ltr">{mol.description}</p>{mol.descriptionSource && <p class="form-hint">{m.source}: {mol.descriptionSource}, via PubChem.</p>}</div>}
+    {mol.parentMatch && <p class="archive-note">{m.parentNote(mol.matched || '')}</p>}
+    <h2>{m.identifiers}</h2>
+    <dl class="mol-table" lang="en" dir="ltr">
+      {mol.iupac && <div><dt>{m.iupac}</dt><dd class="mol-wrap">{mol.iupac}</dd></div>}
+      {mol.inchikey && <div><dt>InChIKey</dt><dd class="mol-mono">{mol.inchikey}</dd></div>}
+      {mol.smiles && <div><dt>SMILES</dt><dd class="mol-mono mol-wrap">{mol.smiles}</dd></div>}
+      {mol.otherCas && mol.otherCas.length > 0 && <div><dt>{m.otherCas}</dt><dd>{mol.otherCas.join(' · ')}</dd></div>}
+      <div><dt>PubChem CID</dt><dd><a class="text-link" href={`https://pubchem.ncbi.nlm.nih.gov/compound/${mol.cid}`} target="_blank" rel="noopener noreferrer">{mol.cid}</a></dd></div>
+    </dl>
+    {mol.synonyms && mol.synonyms.length > 0 && <><h2>{m.synonyms}</h2><p class="mol-synonyms" lang="en" dir="ltr">{mol.synonyms.join(' · ')}</p></>}
+  </div>
+  <aside class="mol-aside">
+    <h3>{m.properties}</h3>
+    <dl class="mol-props" lang="en" dir="ltr">
+      <div><dt>XLogP</dt><dd>{num(mol.xlogp)}</dd></div>
+      <div><dt>TPSA</dt><dd>{num(mol.tpsa)} Å²</dd></div>
+      <div><dt>{m.hbd}</dt><dd>{num(mol.hbd, 0)}</dd></div>
+      <div><dt>{m.hba}</dt><dd>{num(mol.hba, 0)}</dd></div>
+      <div><dt>{m.rotb}</dt><dd>{num(mol.rotb, 0)}</dd></div>
+    </dl>
+    <p class="form-hint">{m.propsNote}</p>
+    <h3>{m.sourcing}</h3>
+    <ul class="check-list mol-checks">{m.sourcingPoints.map(p => <li>{p}</li>)}</ul>
+    <a class="button button-navy" href={enquiry}>{m.enquire}</a>
+  </aside>
+</div></section>}
+
+{related.length > 0 && <section class="section section-paper section-tight"><div class="container">
+  <div class="section-head"><h2>{m.related}</h2></div>
+  <ul class="link-list" lang="en" dir="ltr">{related.map(([k, v]) => <li><a href={L(`/api/${k}`)}>{/[a-z]/.test(v.name) ? v.name : pretty(v.name)}<small>{v.cas}</small></a></li>)}</ul>
+</div></section>}
+
+<section class="section-tight"><div class="container"><p class="reference-note">{m.note}</p></div></section>
+<CTA title={m.ctaTitle} />

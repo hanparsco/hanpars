@@ -453,6 +453,35 @@ summary::-webkit-details-marker { display:none; }
 html[lang=fa] .exc-tile-head strong { font-size:16px; }
 @media(max-width:1000px) { .exc-index { grid-template-columns:1fr 1fr; } }
 @media(max-width:640px) { .exc-index { grid-template-columns:1fr; } .exc-tile a { padding:16px 16px 18px; } }
+/* ---------- Molecule pages ---------- */
+.mol-grid { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr); gap:56px; align-items:center; }
+.mol-hero h1 { font-size:clamp(32px,4vw,52px); overflow-wrap:anywhere; }
+.mol-keyfacts { display:flex; flex-wrap:wrap; gap:28px 40px; margin:28px 0 36px; }
+.mol-keyfacts div { display:flex; flex-direction:column; gap:4px; }
+.mol-keyfacts dt { font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--glacier); }
+.mol-keyfacts dd { margin:0; font-size:18px; color:#fff; }
+.mol-structure { margin:0; justify-self:end; width:min(100%,340px); background:var(--white); padding:22px; border-radius:var(--radius); box-shadow:0 30px 80px #00000066; }
+.mol-structure img { width:100%; height:auto; display:block; }
+.mol-structure figcaption { margin-top:12px; font-size:12.5px; color:var(--muted); text-align:center; }
+.mol-nostructure { aspect-ratio:1; display:grid; place-items:center; color:var(--muted); font-size:14px; }
+.mol-body { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,.8fr); gap:64px; align-items:start; }
+.mol-main h2 { font-size:24px; margin:0 0 18px; } .mol-main h2 + .mol-table,.mol-about { margin-bottom:40px; }
+.mol-about p { font-size:17.5px; line-height:1.7; max-width:46em; }
+.mol-table { margin:0 0 40px; border-top:1px solid var(--line); }
+.mol-table div { display:grid; grid-template-columns:180px minmax(0,1fr); gap:24px; padding:14px 0; border-bottom:1px solid var(--line); }
+.mol-table dt { font-size:14px; color:var(--muted); } .mol-table dd { margin:0; font-size:15.5px; }
+.mol-mono { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:13.5px; } .mol-wrap { overflow-wrap:anywhere; }
+.mol-synonyms { color:var(--muted); font-size:15.5px; line-height:1.7; }
+.mol-aside { position:sticky; top:120px; border-top:1px solid var(--black); padding-top:22px; }
+.mol-aside h3 { font-size:17px; margin:0 0 16px; } .mol-aside h3 + .mol-props + .form-hint { margin-bottom:34px; display:block; }
+.mol-props { margin:0 0 10px; } .mol-props div { display:flex; justify-content:space-between; gap:16px; padding:9px 0; border-bottom:1px solid var(--line); font-size:14.5px; }
+.mol-props dt { color:var(--muted); } .mol-props dd { margin:0; font-family:var(--display); font-weight:600; color:var(--navy); }
+.mol-checks { margin:0 0 22px; } .mol-checks li { font-size:15px; }
+.mol-aside .button { width:100%; }
+.table-link { color:var(--navy); border-bottom:1px solid var(--line); transition:color .2s,border-color .2s; } .table-link:hover { color:var(--lapis); border-color:var(--lapis); }
+.table-link-muted { color:var(--muted); border-bottom-color:transparent; }
+@media(max-width:1000px) { .mol-grid { grid-template-columns:1fr; gap:36px; } .mol-structure { justify-self:start; margin-bottom:40px; } .mol-body { grid-template-columns:1fr; gap:40px; } .mol-aside { position:static; } }
+@media(max-width:560px) { .mol-table div { grid-template-columns:1fr; gap:4px; } .mol-keyfacts { gap:18px 28px; } }
 /* ---------- Daily news ---------- */
 .news-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px 32px; }
 .news-card { display:flex; flex-direction:column; border-top:1px solid var(--line); padding-top:22px; }

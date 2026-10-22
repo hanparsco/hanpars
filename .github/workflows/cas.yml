@@ -4,6 +4,9 @@ on:
 permissions:
   contents: write
   actions: write
+concurrency:
+  group: pubchem
+  cancel-in-progress: false
 jobs:
   cas:
     runs-on: ubuntu-latest

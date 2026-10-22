@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MoleculePage from '../../components/MoleculePage.astro';
+import molecules from '../../data/molecules.json';
+export function getStaticPaths() {
+  return Object.keys(molecules).map(slug => ({ params: { slug } }));
+}
+const { slug } = Astro.params;
+const mol = (molecules as Record<string, { name:string; cas:string; formula?:string }>)[slug!];
+const title = `${mol.name} | API reference | Hanpars`;
+const description = `${mol.name}${mol.cas ? ` (CAS ${mol.cas})` : ''}${mol.formula ? `, ${mol.formula}` : ''}: structure, identifiers and properties, with a Hanpars sourcing enquiry.`;
+---
+<Layout title={title} description={description}><MoleculePage slug={slug!} /></Layout>
