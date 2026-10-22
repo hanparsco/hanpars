@@ -5,6 +5,8 @@ import Catalogue from './Catalogue.astro';
 import FdfPortfolio from './FdfPortfolio.astro';
 import SupplementCatalogue from './SupplementCatalogue.astro';
 import ExcipientCategories from './ExcipientCategories.astro';
+import ApiClasses from './ApiClasses.astro';
+import apiClasses from '../data/api-classes.json';
 import excCats from '../data/excipient-categories.json';
 import { pages, type PageKey } from '../data/pages';
 import { pagesFa } from '../data/pages.fa';
@@ -33,7 +35,8 @@ const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.sta
 <section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map(p=><p>{p}</p>)}</div></div></section>
 {page==='fdf'&&<FdfPortfolio/>}
 {page==='excipient'&&<ExcipientCategories/>}
-{(page==='fdf'||page==='api'||page==='excipient')&&<section class="section section-paper" id={page==='fdf'?'fdf-reference':undefined} style="scroll-margin-top:40px"><div class="container"><Catalogue type={page==='excipient'?'exc':page} filters={page==='excipient'?[['',s.excipientCats.all],...excCats.map(c=>[c.id,lang==='fa'?c.fa:c.en] as [string,string]),['other',s.excipientCats.other]]:[]} entries={page==='fdf'?fdf:page==='excipient'?excipients.map(e=>({name:e.name,code:e.cas,extra:e.function,group:e.group})):apis.map(a=>({name:a.name,code:a.cas,slug:a.name.normalize('NFKD').replace(/[^\x00-\x7F]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'').toLowerCase()}))}/>{database&&<p style="margin-top:28px"><a class="text-link" href={database} target="_blank" rel="noopener noreferrer">{databaseLabel}</a> <span class="form-hint" style="display:inline;margin-inline-start:10px">{s.catalogue.externalNote}</span></p>}</div></section>}
+{page==='api'&&<ApiClasses/>}
+{(page==='fdf'||page==='api'||page==='excipient')&&<section class="section section-paper" id={page==='fdf'?'fdf-reference':undefined} style="scroll-margin-top:40px"><div class="container"><Catalogue type={page==='excipient'?'exc':page} filters={page==='excipient'?[['',s.excipientCats.all],...excCats.map(c=>[c.id,lang==='fa'?c.fa:c.en] as [string,string]),['other',s.excipientCats.other]]:page==='api'?[['',s.excipientCats.all],...apiClasses.map(c=>[c.id,`${c.id} — ${lang==='fa'?c.fa:c.en}`] as [string,string]),['other',s.apiClasses.unclassified]]:[]} entries={page==='fdf'?fdf:page==='excipient'?excipients.map(e=>({name:e.name,code:e.cas,extra:e.function,group:e.group})):apis.map(a=>({name:a.name,code:a.cas,group:(a as any).class||'other',slug:a.name.normalize('NFKD').replace(/[^\x00-\x7F]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'').toLowerCase()}))}/>{database&&<p style="margin-top:28px"><a class="text-link" href={database} target="_blank" rel="noopener noreferrer">{databaseLabel}</a> <span class="form-hint" style="display:inline;margin-inline-start:10px">{s.catalogue.externalNote}</span></p>}</div></section>}
 {page==='nutrition'&&<section class="section section-paper"><div class="container"><SupplementCatalogue/></div></section>}
 {cards.length>0&&<section class="section section-paper"><div class="container"><div class="section-head"><h2>{s.standard.cardsTitle[page]}</h2></div><div class="detail-grid">{cards.map(card=><article class="detail-item"><h3>{card.title}</h3><p>{card.text}</p>{card.href&&card.link&&<a class="text-link" href={L(card.href)}>{card.link}</a>}</article>)}</div></div></section>}
 {isProduct&&<section class="section"><div class="container content-split"><h2>{s.standard.easyTitle}</h2><ul class="check-list">{s.standard.easy.map(item=><li>{item}</li>)}</ul></div></section>}

@@ -40,6 +40,16 @@
 "cas": "34381-68-5"
 },
 {
+"name": "ACECLOFENAC",
+"cas": "",
+"class": "M"
+},
+{
+"name": "ACENOCOUMAROL",
+"cas": "",
+"class": "B"
+},
+{
 "name": "ACETAMINOPHEN",
 "cas": "103-90-2"
 },
@@ -52,6 +62,11 @@
 "cas": "616-91-1"
 },
 {
+"name": "ACETYLSALICYLIC ACID",
+"cas": "",
+"class": "B"
+},
+{
 "name": "ACITRETIN",
 "cas": "55079-83-9"
 },
@@ -62,6 +77,11 @@
 {
 "name": "ACRIVASTINE",
 "cas": "87848-99-5"
+},
+{
+"name": "ACTIVATED CHARCOAL",
+"cas": "",
+"class": "V"
 },
 {
 "name": "ACYCLOVIR",
@@ -88,6 +108,11 @@
 "cas": "850140-73-7"
 },
 {
+"name": "AGOMELATINE",
+"cas": "",
+"class": "N"
+},
+{
 "name": "ALBENDAZOLE",
 "cas": "54965-21-8"
 },
@@ -110,6 +135,21 @@
 {
 "name": "ALENDRONATE SODIUM",
 "cas": "121268-17-5"
+},
+{
+"name": "ALENDRONIC ACID",
+"cas": "",
+"class": "M"
+},
+{
+"name": "ALFACALCIDOL",
+"cas": "",
+"class": "A"
+},
+{
+"name": "ALFUZOSIN",
+"cas": "",
+"class": "G"
 },
 {
 "name": "ALITRETINOIN",
@@ -152,6 +192,11 @@
 "cas": "177036-94-1"
 },
 {
+"name": "AMBROXOL",
+"cas": "",
+"class": "R"
+},
+{
 "name": "AMIFAMPRIDINE PHOSPHATE",
 "cas": "446254-47-3"
 },
@@ -162,6 +207,11 @@
 {
 "name": "AMIKACIN SULFATE",
 "cas": "39831-55-5"
+},
+{
+"name": "AMILORIDE",
+"cas": "",
+"class": "C"
 },
 {
 "name": "AMINO ACID",
@@ -178,6 +228,11 @@
 {
 "name": "AMINOCAPROIC ACID",
 "cas": "60-32-2"
+},
+{
+"name": "AMINOPHYLLINE",
+"cas": "",
+"class": "R"
 },
 {
 "name": "AMIODARONE HCl",
@@ -198,6 +253,11 @@
 {
 "name": "AMMONIUM LACTATE",
 "cas": "515-98-0"
+},
+{
+"name": "AMODIAQUINE",
+"cas": "",
+"class": "P"
 },
 {
 "name": "AMOXCILLIN TRIHYDRATE",
@@ -252,6 +312,11 @@
 "cas": "50-99-7"
 },
 {
+"name": "ANIDULAFUNGIN",
+"cas": "",
+"class": "J"
+},
+{
 "name": "APALUTAMIDE",
 "cas": "956104-40-8"
 },
@@ -298,6 +363,16 @@
 {
 "name": "ARSENIC TRIOXIDE",
 "cas": "1327-53-3"
+},
+{
+"name": "ARTEMETHER",
+"cas": "",
+"class": "P"
+},
+{
+"name": "ARTESUNATE",
+"cas": "",
+"class": "P"
 },
 {
 "name": "ARTICAINE HCl",
@@ -448,8 +523,18 @@
 "cas": "1187594-09-7"
 },
 {
+"name": "BARIUM SULFATE",
+"cas": "",
+"class": "V"
+},
+{
 "name": "BECLOMETHASONE DIPROPIONATE",
 "cas": "5534-09-8"
+},
+{
+"name": "BEDAQUILINE",
+"cas": "",
+"class": "J"
 },
 {
 "name": "BELUMOSUDIL MESYLATE",
@@ -470,6 +555,16 @@
 {
 "name": "BENDAMUSTINE HCl",
 "cas": "3543-75-7"
+},
+{
+"name": "BENZATHINE BENZYLPENICILLIN",
+"cas": "",
+"class": "J"
+},
+{
+"name": "BENZNIDAZOLE",
+"cas": "",
+"class": "P"
 },
 {
 "name": "BENZONATATE",
@@ -502,6 +597,11 @@
 {
 "name": "BETA METHYL VINYL PHOSPHATE",
 "cas": "154634-04-5"
+},
+{
+"name": "BETAHISTINE",
+"cas": "",
+"class": "N"
 },
 {
 "name": "BETAINE ANHYDROUS",
@@ -558,6 +658,16 @@
 {
 "name": "BIOTIN",
 "cas": "58-85-5"
+},
+{
+"name": "BIPERIDEN",
+"cas": "",
+"class": "N"
+},
+{
+"name": "BISACODYL",
+"cas": "",
+"class": "A"
 },
 {
 "name": "BISMUTH SUBCITRATE POTASSIUM",
@@ -622,6 +732,11 @@
 {
 "name": "BROMFENAC SODIUM SESQUIHYDRATE",
 "cas": "120638-55-3"
+},
+{
+"name": "BROMHEXINE",
+"cas": "",
+"class": "R"
 },
 {
 "name": "BROMOCRIPTINE MESYLATE",
@@ -800,8 +915,18 @@
 "cas": "28860-95-9"
 },
 {
+"name": "CARBIMAZOLE",
+"cas": "",
+"class": "H"
+},
+{
 "name": "CARBINOXAMINE MALEATE",
 "cas": "3505-38-2"
+},
+{
+"name": "CARBOCISTEINE",
+"cas": "",
+"class": "R"
 },
 {
 "name": "CARBOPLATIN",
@@ -856,6 +981,11 @@
 "cas": "179463-17-3"
 },
 {
+"name": "CEFACLOR",
+"cas": "",
+"class": "J"
+},
+{
 "name": "CEFAZOLIN SODIUM",
 "cas": "27164-46-1"
 },
@@ -880,8 +1010,18 @@
 "cas": ""
 },
 {
+"name": "CEFIDEROCOL",
+"cas": "",
+"class": "J"
+},
+{
 "name": "CEFIXIME",
 "cas": "79350-37-1"
+},
+{
+"name": "CEFOTAXIME",
+"cas": "",
+"class": "J"
 },
 {
 "name": "CEFPODOXIME PROXETIL",
@@ -902,6 +1042,11 @@
 {
 "name": "CEFTRIAXONE SODIUM",
 "cas": "74578-69-1"
+},
+{
+"name": "CEFUROXIME",
+"cas": "",
+"class": "J"
 },
 {
 "name": "CELECOXIB",
@@ -946,6 +1091,11 @@
 {
 "name": "CHLORAMBUCIL",
 "cas": "305-03-3"
+},
+{
+"name": "CHLORAMPHENICOL",
+"cas": "",
+"class": "J"
 },
 {
 "name": "CHLORDIAZEPOXIDE",
@@ -1000,6 +1150,11 @@
 "cas": ""
 },
 {
+"name": "CICLESONIDE",
+"cas": "",
+"class": "R"
+},
+{
 "name": "CICLOPIROX",
 "cas": "29342-05-0"
 },
@@ -1026,6 +1181,11 @@
 {
 "name": "CINACALCET HCl",
 "cas": "364782-34-3"
+},
+{
+"name": "CINNARIZINE",
+"cas": "",
+"class": "N"
 },
 {
 "name": "CIPROFLOXACIN",
@@ -1148,6 +1308,11 @@
 "cas": "23593-75-1"
 },
 {
+"name": "CLOXACILLIN",
+"cas": "",
+"class": "J"
+},
+{
 "name": "CLOZAPINE",
 "cas": "5786-21-0"
 },
@@ -1180,6 +1345,11 @@
 "cas": "64-86-8"
 },
 {
+"name": "COLECALCIFEROL",
+"cas": "",
+"class": "A"
+},
+{
 "name": "COLESEVELAM HCl",
 "cas": ""
 },
@@ -1194,6 +1364,11 @@
 {
 "name": "COLISTIN SULFATE",
 "cas": "1264-72-8"
+},
+{
+"name": "CONJUGATED ESTROGENS",
+"cas": "",
+"class": "G"
 },
 {
 "name": "CRISABOROLE",
@@ -1404,6 +1579,11 @@
 "cas": "934016-19-0"
 },
 {
+"name": "DELAMANID",
+"cas": "",
+"class": "J"
+},
+{
 "name": "DEMECLOCYCLINE HCl",
 "cas": "64-73-3"
 },
@@ -1588,6 +1768,11 @@
 "cas": "65928-58-7"
 },
 {
+"name": "DIETHYLCARBAMAZINE",
+"cas": "",
+"class": "P"
+},
+{
 "name": "DIETHYLPROPION HCl",
 "cas": "134-80-5"
 },
@@ -1616,8 +1801,18 @@
 "cas": "20830-75-5"
 },
 {
+"name": "DIHYDROARTEMISININ",
+"cas": "",
+"class": "P"
+},
+{
 "name": "DIHYDROERGOTAMINE MESYLATE",
 "cas": "6190-39-2"
+},
+{
+"name": "DILOXANIDE",
+"cas": "",
+"class": "P"
 },
 {
 "name": "DILTIAZEM HCl",
@@ -1636,8 +1831,18 @@
 "cas": "55-63-0"
 },
 {
+"name": "DIMERCAPROL",
+"cas": "",
+"class": "V"
+},
+{
 "name": "DIMETHYL FUMARATE",
 "cas": "624-49-7"
+},
+{
+"name": "DINOPROSTONE",
+"cas": "",
+"class": "G"
 },
 {
 "name": "DIPHENHYDRAMINE CITRATE",
@@ -1706,6 +1911,11 @@
 {
 "name": "DOLUTEGRAVIR SODIUM A",
 "cas": ""
+},
+{
+"name": "DOMPERIDONE",
+"cas": "",
+"class": "A"
 },
 {
 "name": "DONEPEZIL",
@@ -2100,8 +2310,18 @@
 "cas": "57-63-6"
 },
 {
+"name": "ETHINYLESTRADIOL",
+"cas": "",
+"class": "G"
+},
+{
 "name": "ETHIODIZED OIL",
 "cas": ""
+},
+{
+"name": "ETHIONAMIDE",
+"cas": "",
+"class": "J"
 },
 {
 "name": "ETHOSUXIMIDE",
@@ -2126,6 +2346,11 @@
 {
 "name": "ETOPOSIDE",
 "cas": "33419-42-0"
+},
+{
+"name": "ETORICOXIB",
+"cas": "",
+"class": "M"
 },
 {
 "name": "ETRAVIRINE",
@@ -2216,12 +2441,27 @@
 "cas": "20344-49-4"
 },
 {
+"name": "FERROUS FUMARATE",
+"cas": "",
+"class": "B"
+},
+{
+"name": "FERROUS SULFATE",
+"cas": "",
+"class": "B"
+},
+{
 "name": "FERUMOXYTOL",
 "cas": "722492-56-0"
 },
 {
 "name": "FESOTERODINE FUMARATE",
 "cas": "286930-03-8"
+},
+{
+"name": "FEXINIDAZOLE",
+"cas": "",
+"class": "P"
 },
 {
 "name": "FEXOFENADINE HCl",
@@ -2256,6 +2496,11 @@
 "cas": "54143-56-5"
 },
 {
+"name": "FLUCLOXACILLIN",
+"cas": "",
+"class": "J"
+},
+{
 "name": "FLUCONAZOLE",
 "cas": "86386-73-4"
 },
@@ -2278,6 +2523,11 @@
 {
 "name": "FLUMETHASONE",
 "cas": "2135-17-3"
+},
+{
+"name": "FLUNARIZINE",
+"cas": "",
+"class": "N"
 },
 {
 "name": "FLUNISOLIDE ANHYDROUS",
@@ -2334,6 +2584,11 @@
 {
 "name": "FLURBIPROFEN",
 "cas": "5104-49-4"
+},
+{
+"name": "FLUTAMIDE",
+"cas": "",
+"class": "L"
 },
 {
 "name": "FLUTICASONE FUROATE",
@@ -2418,6 +2673,11 @@
 {
 "name": "FUROSEMIDE",
 "cas": "54-31-9"
+},
+{
+"name": "FUSIDIC ACID",
+"cas": "",
+"class": "D"
 },
 {
 "name": "GABAPENTIN",
@@ -2508,6 +2768,16 @@
 "cas": ""
 },
 {
+"name": "GLECAPREVIR",
+"cas": "",
+"class": "J"
+},
+{
+"name": "GLICLAZIDE",
+"cas": "",
+"class": "A"
+},
+{
 "name": "GLIMEPIRIDE",
 "cas": "93479-97-1"
 },
@@ -2520,12 +2790,27 @@
 "cas": "9007-92-5"
 },
 {
+"name": "GLUCOSAMINE",
+"cas": "",
+"class": "M"
+},
+{
+"name": "GLUCOSE",
+"cas": "",
+"class": "B"
+},
+{
 "name": "GLYBURIDE",
 "cas": "10238-21-8"
 },
 {
 "name": "GLYCEROL PHENYLBUTYRATE",
 "cas": "611168-24-2"
+},
+{
+"name": "GLYCERYL TRINITRATE",
+"cas": "",
+"class": "C"
 },
 {
 "name": "GLYCINE",
@@ -2564,6 +2849,11 @@
 "cas": "1364645-74-8"
 },
 {
+"name": "GRISEOFULVIN",
+"cas": "",
+"class": "J"
+},
+{
 "name": "GUAIFENESIN",
 "cas": "93-14-1"
 },
@@ -2586,6 +2876,11 @@
 {
 "name": "HALOPERIDOL DECANOATE",
 "cas": "74050-97-8"
+},
+{
+"name": "HALOTHANE",
+"cas": "",
+"class": "N"
 },
 {
 "name": "HEPARIN SODIUM",
@@ -2684,6 +2979,11 @@
 "cas": "138926-19-9"
 },
 {
+"name": "IBANDRONIC ACID",
+"cas": "",
+"class": "M"
+},
+{
 "name": "IBRUTINIB",
 "cas": "936563-96-1"
 },
@@ -2740,8 +3040,23 @@
 "cas": "64221-86-9"
 },
 {
+"name": "IMIPRAMINE",
+"cas": "",
+"class": "N"
+},
+{
 "name": "IMIQUIMOD",
 "cas": "99011-02-6"
+},
+{
+"name": "INDACATEROL",
+"cas": "",
+"class": "R"
+},
+{
+"name": "INDAPAMIDE",
+"cas": "",
+"class": "C"
 },
 {
 "name": "INDIGOTINDISULFONATE SODIUM",
@@ -2764,6 +3079,11 @@
 "cas": "75567-37-2"
 },
 {
+"name": "IODINE",
+"cas": "",
+"class": "A"
+},
+{
 "name": "IODIXANOL",
 "cas": "92339-11-2"
 },
@@ -2774,6 +3094,16 @@
 {
 "name": "IOPAMIDOL",
 "cas": "60166-93-0"
+},
+{
+"name": "IOPROMIDE",
+"cas": "",
+"class": "V"
+},
+{
+"name": "IOVERSOL",
+"cas": "",
+"class": "V"
 },
 {
 "name": "IPRATROPIUM BROMIDE",
@@ -2814,6 +3144,16 @@
 {
 "name": "ISOPROTERENOL HCl",
 "cas": "51-30-9"
+},
+{
+"name": "ISOSORBIDE DINITRATE",
+"cas": "",
+"class": "C"
+},
+{
+"name": "ISOSORBIDE MONONITRATE",
+"cas": "",
+"class": "C"
 },
 {
 "name": "ISOSULFAN BLUE",
@@ -3028,6 +3368,11 @@
 "cas": "860005-21-6"
 },
 {
+"name": "LEDIPASVIR",
+"cas": "",
+"class": "J"
+},
+{
 "name": "LEFLUNOMIDE",
 "cas": "75706-12-6"
 },
@@ -3076,8 +3421,18 @@
 "cas": "50293-90-8"
 },
 {
+"name": "LEVAMISOLE",
+"cas": "",
+"class": "P"
+},
+{
 "name": "LEVETIRACETAM",
 "cas": "102767-28-2"
+},
+{
+"name": "LEVOBUPIVACAINE",
+"cas": "",
+"class": "N"
 },
 {
 "name": "LEVOCARNITINE",
@@ -3122,6 +3477,11 @@
 {
 "name": "LEVORPHANOL TARTRATE SPECIAL",
 "cas": ""
+},
+{
+"name": "LEVOSIMENDAN",
+"cas": "",
+"class": "C"
 },
 {
 "name": "LEVOTHYROXINE SODIUM",
@@ -3244,6 +3604,11 @@
 "cas": "1187020-80-9"
 },
 {
+"name": "LUMEFANTRINE",
+"cas": "",
+"class": "P"
+},
+{
 "name": "LURASIDONE HCl",
 "cas": "367514-88-3"
 },
@@ -3254,6 +3619,11 @@
 {
 "name": "MACITENTAN",
 "cas": "441798-33-0"
+},
+{
+"name": "MACROGOL 3350",
+"cas": "",
+"class": "A"
 },
 {
 "name": "MAFENIDE ACETATE",
@@ -3280,6 +3650,11 @@
 "cas": "82316-98-1"
 },
 {
+"name": "MAGNESIUM SULFATE",
+"cas": "",
+"class": "A"
+},
+{
 "name": "MAGNESIUM SULFATE DRIED",
 "cas": ""
 },
@@ -3296,6 +3671,11 @@
 "cas": "7785-87-7"
 },
 {
+"name": "MANNITOL",
+"cas": "",
+"class": "C"
+},
+{
 "name": "MARAVIROC",
 "cas": "376348-65-1"
 },
@@ -3306,6 +3686,11 @@
 {
 "name": "MEBENDAZOLE A",
 "cas": ""
+},
+{
+"name": "MEBEVERINE",
+"cas": "",
+"class": "A"
 },
 {
 "name": "MECLIZINE HCl",
@@ -3324,12 +3709,32 @@
 "cas": "61-68-7"
 },
 {
+"name": "MEFLOQUINE",
+"cas": "",
+"class": "P"
+},
+{
 "name": "MEGESTROL ACETATE",
 "cas": "595-33-5"
 },
 {
 "name": "MEGLUMINE",
 "cas": "6284-40-8"
+},
+{
+"name": "MEGLUMINE AMIDOTRIZOATE",
+"cas": "",
+"class": "V"
+},
+{
+"name": "MEGLUMINE ANTIMONIATE",
+"cas": "",
+"class": "P"
+},
+{
+"name": "MELATONIN",
+"cas": "",
+"class": "N"
 },
 {
 "name": "MELOXICAM",
@@ -3552,6 +3957,11 @@
 "cas": "78415-72-2"
 },
 {
+"name": "MILTEFOSINE",
+"cas": "",
+"class": "P"
+},
+{
 "name": "MINOCYCLINE HCl",
 "cas": "13614-98-7"
 },
@@ -3708,6 +4118,11 @@
 "cas": "26159-34-2"
 },
 {
+"name": "NATAMYCIN",
+"cas": "",
+"class": "S"
+},
+{
 "name": "NATEGLINIDE",
 "cas": "105816-04-4"
 },
@@ -3772,6 +4187,16 @@
 "cas": "54527-84-3"
 },
 {
+"name": "NICLOSAMIDE",
+"cas": "",
+"class": "P"
+},
+{
+"name": "NICOTINAMIDE",
+"cas": "",
+"class": "A"
+},
+{
 "name": "NICOTINE",
 "cas": "54-11-5"
 },
@@ -3782,6 +4207,11 @@
 {
 "name": "NIFEDIPINE",
 "cas": "21829-25-4"
+},
+{
+"name": "NIFURTIMOX",
+"cas": "",
+"class": "P"
 },
 {
 "name": "NILOTINIB",
@@ -3824,6 +4254,11 @@
 "cas": "1038915-73-9"
 },
 {
+"name": "NIRMATRELVIR",
+"cas": "",
+"class": "J"
+},
+{
 "name": "NISOLDIPINE",
 "cas": "63675-72-9"
 },
@@ -3848,6 +4283,11 @@
 "cas": "67-20-9"
 },
 {
+"name": "NITROUS OXIDE",
+"cas": "",
+"class": "N"
+},
+{
 "name": "NIZATIDINE",
 "cas": "76963-41-2"
 },
@@ -3870,6 +4310,16 @@
 {
 "name": "NORETHINDRONE ACETATE",
 "cas": "51-98-9"
+},
+{
+"name": "NORETHISTERONE",
+"cas": "",
+"class": "G"
+},
+{
+"name": "NORFLOXACIN",
+"cas": "",
+"class": "J"
 },
 {
 "name": "NORGESTIMATE",
@@ -3980,6 +4430,11 @@
 "cas": ""
 },
 {
+"name": "OXAMNIQUINE",
+"cas": "",
+"class": "P"
+},
+{
 "name": "OXANDROLONE",
 "cas": "53-39-4"
 },
@@ -4052,6 +4507,11 @@
 "cas": "135729-62-3"
 },
 {
+"name": "PAMIDRONATE",
+"cas": "",
+"class": "L"
+},
+{
 "name": "PAMIDRONIC ACID",
 "cas": "40391-99-9"
 },
@@ -4064,8 +4524,18 @@
 "cas": "164579-32-2"
 },
 {
+"name": "PARA-AMINOSALICYLIC ACID",
+"cas": "",
+"class": "J"
+},
+{
 "name": "PARICALCITOL",
 "cas": "131918-61-1"
+},
+{
+"name": "PAROMOMYCIN",
+"cas": "",
+"class": "P"
 },
 {
 "name": "PAROXETINE HCl HEMIHYDRATE",
@@ -4192,6 +4662,11 @@
 "cas": "63-92-3"
 },
 {
+"name": "PHENOXYMETHYLPENICILLIN",
+"cas": "",
+"class": "J"
+},
+{
 "name": "PHENTERMINE HCl",
 "cas": "1197-21-3"
 },
@@ -4224,6 +4699,11 @@
 "cas": "84-80-0"
 },
 {
+"name": "PIBRENTASVIR",
+"cas": "",
+"class": "J"
+},
+{
 "name": "PILOCARPINE HCl",
 "cas": "54-71-7"
 },
@@ -4250,6 +4730,11 @@
 {
 "name": "PIPERACILLIN",
 "cas": "61477-96-1"
+},
+{
+"name": "PIPERAQUINE",
+"cas": "",
+"class": "P"
 },
 {
 "name": "PIRFENIDONE",
@@ -4290,6 +4775,11 @@
 {
 "name": "PLERIXAFOR",
 "cas": "110078-46-1"
+},
+{
+"name": "PODOPHYLLOTOXIN",
+"cas": "",
+"class": "D"
 },
 {
 "name": "POLIDOCANOL",
@@ -4456,6 +4946,11 @@
 "cas": "614-39-1"
 },
 {
+"name": "PROCARBAZINE",
+"cas": "",
+"class": "L"
+},
+{
 "name": "PROCHLORPERAZINE",
 "cas": "58-38-8"
 },
@@ -4504,8 +4999,18 @@
 "cas": ""
 },
 {
+"name": "PROXYMETACAINE",
+"cas": "",
+"class": "S"
+},
+{
 "name": "PRUCALOPRIDE SUINATE",
 "cas": ""
+},
+{
+"name": "PRUSSIAN BLUE",
+"cas": "",
+"class": "V"
 },
 {
 "name": "PSEUDOEPHEDRINE",
@@ -4522,6 +5027,11 @@
 {
 "name": "PURIFIED OXYCODONE",
 "cas": ""
+},
+{
+"name": "PYRANTEL",
+"cas": "",
+"class": "P"
 },
 {
 "name": "PYRAZINAMIDE",
@@ -4580,6 +5090,11 @@
 "cas": ""
 },
 {
+"name": "RALTEGRAVIR",
+"cas": "",
+"class": "J"
+},
+{
 "name": "RAMELTEON",
 "cas": "196597-26-9"
 },
@@ -4636,6 +5151,11 @@
 "cas": "50-55-5"
 },
 {
+"name": "RETINOL",
+"cas": "",
+"class": "A"
+},
+{
 "name": "REVEFENACIN",
 "cas": "864750-70-9"
 },
@@ -4650,6 +5170,11 @@
 {
 "name": "RIBOCICLIB SUINATE",
 "cas": ""
+},
+{
+"name": "RIBOFLAVIN",
+"cas": "",
+"class": "A"
 },
 {
 "name": "RIFABUTIN",
@@ -4792,6 +5317,11 @@
 "cas": "202825-46-5"
 },
 {
+"name": "SALICYLIC ACID",
+"cas": "",
+"class": "D"
+},
+{
 "name": "SALMETEROL XINAFOATE",
 "cas": "94749-08-3"
 },
@@ -4830,6 +5360,11 @@
 {
 "name": "SELENIOUS ACID",
 "cas": "7783-00-8"
+},
+{
+"name": "SELENIUM SULFIDE",
+"cas": "",
+"class": "D"
 },
 {
 "name": "SELEXIPAG",
@@ -4956,6 +5491,11 @@
 "cas": "15826-37-6"
 },
 {
+"name": "SODIUM NITRITE",
+"cas": "",
+"class": "V"
+},
+{
 "name": "SODIUM NITROPRUSSIDE",
 "cas": ""
 },
@@ -5002,6 +5542,11 @@
 {
 "name": "SODIUM RISEDRONATE HYDRATE",
 "cas": "329003-65-8"
+},
+{
+"name": "SODIUM STIBOGLUCONATE",
+"cas": "",
+"class": "P"
 },
 {
 "name": "SODIUM SULFATE",
@@ -5072,6 +5617,16 @@
 "cas": "49763-96-4"
 },
 {
+"name": "STREPTOMYCIN",
+"cas": "",
+"class": "J"
+},
+{
+"name": "SUCCIMER",
+"cas": "",
+"class": "V"
+},
+{
 "name": "SUCCINYLCHOLINE CHLORIDE",
 "cas": "71-27-2"
 },
@@ -5116,6 +5671,11 @@
 "cas": "68-35-9"
 },
 {
+"name": "SULFADOXINE",
+"cas": "",
+"class": "P"
+},
+{
 "name": "SULFAMETHOXAZOLE",
 "cas": "723-46-6"
 },
@@ -5158,6 +5718,11 @@
 {
 "name": "TAFAMIDIS MEGLUMINE",
 "cas": "951395-08-7"
+},
+{
+"name": "TAFENOQUINE",
+"cas": "",
+"class": "P"
 },
 {
 "name": "TAFLUPROST",
@@ -5206,6 +5771,11 @@
 {
 "name": "TEDUGLUTIDE",
 "cas": "197922-42-2"
+},
+{
+"name": "TEICOPLANIN",
+"cas": "",
+"class": "J"
 },
 {
 "name": "TELAPREVIR",
@@ -5328,6 +5898,11 @@
 "cas": "67-03-8"
 },
 {
+"name": "THIOPENTAL",
+"cas": "",
+"class": "N"
+},
+{
 "name": "THIOTEPA",
 "cas": "52-24-4"
 },
@@ -5360,8 +5935,18 @@
 "cas": "26921-17-5"
 },
 {
+"name": "TINIDAZOLE",
+"cas": "",
+"class": "J"
+},
+{
 "name": "TIOCONAZOLE",
 "cas": "65899-73-2"
+},
+{
+"name": "TIOGUANINE",
+"cas": "",
+"class": "L"
 },
 {
 "name": "TIOPRONIN",
@@ -5430,6 +6015,11 @@
 {
 "name": "TOPOTECAN HCl",
 "cas": "119413-54-6"
+},
+{
+"name": "TORASEMIDE",
+"cas": "",
+"class": "C"
 },
 {
 "name": "TOREMIFENE CITRATE",
@@ -5508,6 +6098,11 @@
 "cas": "28911-01-5"
 },
 {
+"name": "TRICLABENDAZOLE",
+"cas": "",
+"class": "P"
+},
+{
 "name": "TRIENTINE HCl",
 "cas": "38260-01-4"
 },
@@ -5532,6 +6127,11 @@
 "cas": "620-67-7"
 },
 {
+"name": "TRIHEXYPHENIDYL",
+"cas": "",
+"class": "N"
+},
+{
 "name": "TRILACICLIB",
 "cas": "1374743-00-6"
 },
@@ -5542,6 +6142,11 @@
 {
 "name": "TRILACICLIB DiHCl DIHYDRATE",
 "cas": "2519335-12-5"
+},
+{
+"name": "TRIMETAZIDINE",
+"cas": "",
+"class": "C"
 },
 {
 "name": "TRIMETHOBENZAMIDE HCl",
@@ -5558,6 +6163,11 @@
 {
 "name": "TRIPOTASSIUM CITRATE",
 "cas": "866-84-2"
+},
+{
+"name": "TRIPTORELIN",
+"cas": "",
+"class": "L"
 },
 {
 "name": "TRISODIUM CITRATE DIHYDRATE",
@@ -5610,6 +6220,11 @@
 {
 "name": "URSODIOL",
 "cas": "128-13-2"
+},
+{
+"name": "VALACICLOVIR",
+"cas": "",
+"class": "J"
 },
 {
 "name": "VALACYCLOVIR HCl",
@@ -5684,6 +6299,11 @@
 "cas": "1350653-20-1"
 },
 {
+"name": "VERTEPORFIN",
+"cas": "",
+"class": "S"
+},
+{
 "name": "VIBEGRON",
 "cas": "1190389-15-1"
 },
@@ -5700,12 +6320,22 @@
 "cas": "163521-08-2"
 },
 {
+"name": "VILDAGLIPTIN",
+"cas": "",
+"class": "A"
+},
+{
 "name": "VILOXAZINE HCl",
 "cas": "35604-67-2"
 },
 {
 "name": "VINBLASTIN SULFATE",
 "cas": ""
+},
+{
+"name": "VINBLASTINE",
+"cas": "",
+"class": "L"
 },
 {
 "name": "VINCRISTINE SULFATE",
@@ -5748,8 +6378,23 @@
 "cas": "129-06-6"
 },
 {
+"name": "XYLOMETAZOLINE",
+"cas": "",
+"class": "R"
+},
+{
+"name": "ZAFIRLUKAST",
+"cas": "",
+"class": "R"
+},
+{
 "name": "ZALEPLON",
 "cas": "151319-34-5"
+},
+{
+"name": "ZANAMIVIR",
+"cas": "",
+"class": "J"
 },
 {
 "name": "ZANUBRUTINIB",

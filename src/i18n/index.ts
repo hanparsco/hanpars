@@ -32,7 +32,7 @@ export const ui = {
     groups: [
       { label: 'Products', items: [
         { label: 'Finished dosage forms', href: '/fdf', note: 'The registered portfolio and the reference list' },
-        { label: 'Active pharmaceutical ingredients', href: '/api', note: 'A reference range of 1,453 substances' },
+        { label: 'Active pharmaceutical ingredients', href: '/api', note: 'A reference range of 1,582 substances' },
         { label: 'Excipients', href: '/excipient', note: 'Formulation materials by grade' },
         { label: 'Nutrition and supplements', href: '/nutrition', note: 'Supplement ingredients, by group' },
       ] },
@@ -98,7 +98,7 @@ export const ui = {
       fdfTitle: 'Finished product reference list', apiTitle: 'API reference range', excTitle: 'Excipient reference list',
       entries: 'entries', inList: 'in the list', matching: 'matching your search',
       searchFdf: 'Search by name, strength or code', searchApi: 'Search by substance or CAS number', searchExc: 'Search by name, function or CAS number',
-      product: 'Product', substance: 'Substance', ingredient: 'Excipient', function: 'Function', filterBy: 'Category', showAll: 'Show all', code: 'Code', cas: 'CAS number', enquiry: 'Enquiry', enquire: 'Enquire',
+      product: 'Product', substance: 'Substance', ingredient: 'Excipient', function: 'Function', filterBy: 'Category', filterByClass: 'Therapeutic class', showAll: 'Show all', code: 'Code', cas: 'CAS number', enquiry: 'Enquiry', enquire: 'Enquire',
       noteExc: 'Excipients and formulation materials we can source on request, with principal function and CAS number where recorded; compiled from pharmacopoeial monographs (USP-NF, Ph. Eur.) and our own working list. Ready-to-use coating systems, flavours, colourants and capsule shells are listed as families and specified per enquiry. Not a statement of stock or guaranteed availability.',
       empty: 'Nothing in the list matches that. Try another name or code, or', askDirect: 'ask us directly',
       allAvailable: (n: string) => `All ${n} original entries available`, showingTpl: 'Showing {a}–{b} of {n} entries', none: 'No matching entries',
@@ -167,7 +167,7 @@ export const ui = {
       nextTitle: 'Where to go next',
       nextLinks: [
         { href: '/fdf', label: 'Finished dosage forms', note: 'Registered portfolio and reference list' },
-        { href: '/api', label: 'Active ingredients', note: '1,453 substances' },
+        { href: '/api', label: 'Active ingredients', note: '1,582 substances' },
         { href: '/regulatory-affairs', label: 'Regulatory affairs', note: 'Dossiers and IFDA submissions' },
         { href: '/fdf-cdmo', label: 'Development projects', note: 'Partner-coordinated FDF work' },
       ],
@@ -214,6 +214,10 @@ export const ui = {
       parentNote: (q: string) => `Structure and properties shown are for the parent compound (${q}); the salt or hydrate form in our list may differ in molecular weight and CAS number.`,
       ctaTitle: 'Tell us the grade, the quantity and the market.',
     },
+    apiClasses: {
+      title: 'APIs by therapeutic class', lede: 'The range grouped by ATC anatomical main group, with the molecules most often requested in each. Select a class to filter the list below.',
+      inList: (n: string) => `${n} in list`, unclassified: 'Not yet classified',
+    },
     notFound: { title: "That page isn't here.", text: 'The address may have changed, or it never led anywhere. The products, services and contact details are all a click away.', home: 'Back to the homepage', contact: 'Contact Hanpars' },
     dateLocale: 'en-GB',
   },
@@ -226,7 +230,7 @@ export const ui = {
     groups: [
       { label: 'محصولات', items: [
         { label: 'داروهای ساخته‌شده (FDF)', href: '/fdf', note: 'سبد ثبت‌شده و فهرست مرجع' },
-        { label: 'مواد مؤثرهٔ دارویی (API)', href: '/api', note: 'فهرست مرجع ۱٬۴۵۳ ماده' },
+        { label: 'مواد مؤثرهٔ دارویی (API)', href: '/api', note: 'فهرست مرجع ۱٬۵۸۲ ماده' },
         { label: 'مواد جانبی (اکسیپیان)', href: '/excipient', note: 'مواد فرمولاسیون بر اساس گرید' },
         { label: 'مکمل و تغذیه', href: '/nutrition', note: 'مواد اولیهٔ مکمل، بر اساس گروه' },
       ] },
@@ -292,7 +296,7 @@ export const ui = {
       fdfTitle: 'فهرست مرجع داروهای ساخته‌شده', apiTitle: 'فهرست مرجع مواد مؤثره', excTitle: 'فهرست مرجع مواد جانبی',
       entries: 'مورد', inList: 'در فهرست', matching: 'مطابق جست‌وجوی شما',
       searchFdf: 'جست‌وجو بر اساس نام، دوز یا کد', searchApi: 'جست‌وجو بر اساس نام ماده یا شمارهٔ CAS', searchExc: 'جست‌وجو بر اساس نام، کاربرد یا شمارهٔ CAS',
-      product: 'محصول', substance: 'ماده', ingredient: 'مادهٔ جانبی', function: 'کاربرد', filterBy: 'دسته', showAll: 'نمایش همه', code: 'کد', cas: 'شمارهٔ CAS', enquiry: 'استعلام', enquire: 'استعلام',
+      product: 'محصول', substance: 'ماده', ingredient: 'مادهٔ جانبی', function: 'کاربرد', filterBy: 'دسته', filterByClass: 'گروه درمانی', showAll: 'نمایش همه', code: 'کد', cas: 'شمارهٔ CAS', enquiry: 'استعلام', enquire: 'استعلام',
       noteExc: 'مواد جانبی و مواد فرمولاسیونی که می‌توانیم به درخواست شما تأمین کنیم، همراه با کاربرد اصلی و شمارهٔ CAS در مواردی که ثبت شده است؛ گردآوری‌شده از مونوگراف‌های فارماکوپه‌ای (USP-NF، Ph. Eur.) و فهرست کاری خودمان. سامانه‌های پوشش آماده، طعم‌دهنده‌ها، رنگ‌ها و پوستهٔ کپسول به صورت خانواده فهرست شده و در هر استعلام مشخص می‌شوند. اعلام موجودی یا تضمین تأمین نیست.',
       empty: 'موردی مطابق با جست‌وجوی شما نیست. نام یا کد دیگری را امتحان کنید، یا', askDirect: 'مستقیماً از ما بپرسید',
       allAvailable: (n: string) => `همهٔ ${n} مورد اصلی در دسترس است`, showingTpl: 'نمایش {a} تا {b} از {n} مورد', none: 'موردی یافت نشد',
@@ -361,7 +365,7 @@ export const ui = {
       nextTitle: 'قدم بعدی',
       nextLinks: [
         { href: '/fdf', label: 'داروهای ساخته‌شده', note: 'سبد ثبت‌شده و فهرست مرجع' },
-        { href: '/api', label: 'مواد مؤثره', note: '۱٬۴۵۳ ماده' },
+        { href: '/api', label: 'مواد مؤثره', note: '۱٬۵۸۲ ماده' },
         { href: '/regulatory-affairs', label: 'امور رگولاتوری', note: 'پرونده و ثبت در سازمان غذا و دارو' },
         { href: '/fdf-cdmo', label: 'پروژه‌های توسعه', note: 'کار FDF با هماهنگی شرکا' },
       ],
@@ -407,6 +411,10 @@ export const ui = {
       related: 'موارد مرتبط در فهرست', note: 'داده‌های شیمیایی این صفحه از PubChem (کتابخانهٔ ملی پزشکی آمریکا) گرفته شده و فقط برای شناسایی است. هانیا پرسان دارو موجودی همهٔ مواد فهرست را ندارد؛ موجودی، گرید، مستندات و وضعیت رگولاتوری برای هر استعلام تأیید می‌شود.',
       parentNote: (q: string) => `ساختار و ویژگی‌های نمایش‌داده‌شده مربوط به ترکیب مادر (${q}) است؛ شکل نمک یا هیدرات موجود در فهرست ما ممکن است وزن مولکولی و شمارهٔ CAS متفاوتی داشته باشد.`,
       ctaTitle: 'گرید، مقدار و بازار را به ما بگویید.',
+    },
+    apiClasses: {
+      title: 'مواد مؤثره بر اساس گروه درمانی', lede: 'فهرست بر اساس گروه اصلی ATC، همراه با مولکول‌هایی که در هر گروه بیش از همه درخواست می‌شوند. برای فیلتر کردن فهرست زیر، یک گروه را انتخاب کنید.',
+      inList: (n: string) => `${n} مورد در فهرست`, unclassified: 'هنوز طبقه‌بندی‌نشده',
     },
     notFound: { title: 'این صفحه اینجا نیست.', text: 'نشانی شاید تغییر کرده یا هرگز وجود نداشته است. محصولات، خدمات و راه‌های تماس یک کلیک فاصله دارند.', home: 'بازگشت به صفحهٔ اصلی', contact: 'تماس با هانیا پرسان دارو' },
     dateLocale: 'fa-IR',

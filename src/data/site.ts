@@ -6,7 +6,7 @@ export const formAccessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY || '2713f108-a
 export const groups = [
   { label: 'Products', items: [
     { label: 'Finished dosage forms', href: '/fdf', note: 'The registered portfolio and the reference list' },
-    { label: 'Active pharmaceutical ingredients', href: '/api', note: 'A reference range of 1,453 substances' },
+    { label: 'Active pharmaceutical ingredients', href: '/api', note: 'A reference range of 1,582 substances' },
     { label: 'Excipients', href: '/excipient', note: 'Formulation materials by grade' },
     { label: 'Nutrition', href: '/nutrition', note: 'Vitamins and nutrition ingredients' },
   ] },

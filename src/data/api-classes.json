@@ -1,0 +1,240 @@
+[
+ {
+  "id": "A",
+  "en": "Alimentary tract and metabolism",
+  "fa": "گوارش و متابولیسم",
+  "top": [
+   "Omeprazole",
+   "Pantoprazole",
+   "Esomeprazole",
+   "Metformin",
+   "Sitagliptin",
+   "Empagliflozin",
+   "Ondansetron",
+   "Mesalazine",
+   "Ursodeoxycholic acid",
+   "Colecalciferol"
+  ]
+ },
+ {
+  "id": "B",
+  "en": "Blood and blood-forming organs",
+  "fa": "خون و اندام‌های خون‌ساز",
+  "top": [
+   "Enoxaparin sodium",
+   "Heparin sodium",
+   "Rivaroxaban",
+   "Apixaban",
+   "Clopidogrel",
+   "Ticagrelor",
+   "Warfarin",
+   "Tranexamic acid",
+   "Iron sucrose",
+   "Deferasirox"
+  ]
+ },
+ {
+  "id": "C",
+  "en": "Cardiovascular system",
+  "fa": "قلب و عروق",
+  "top": [
+   "Atorvastatin",
+   "Rosuvastatin",
+   "Amlodipine",
+   "Losartan",
+   "Valsartan",
+   "Bisoprolol",
+   "Carvedilol",
+   "Furosemide",
+   "Spironolactone",
+   "Amiodarone"
+  ]
+ },
+ {
+  "id": "D",
+  "en": "Dermatologicals",
+  "fa": "پوست",
+  "top": [
+   "Clotrimazole",
+   "Terbinafine",
+   "Mupirocin",
+   "Adapalene",
+   "Tretinoin",
+   "Isotretinoin",
+   "Benzoyl peroxide",
+   "Clobetasol",
+   "Mometasone",
+   "Permethrin"
+  ]
+ },
+ {
+  "id": "G",
+  "en": "Genito-urinary system and sex hormones",
+  "fa": "ادراری‌تناسلی و هورمون‌های جنسی",
+  "top": [
+   "Estradiol",
+   "Progesterone",
+   "Levonorgestrel",
+   "Medroxyprogesterone",
+   "Misoprostol",
+   "Tamsulosin",
+   "Finasteride",
+   "Solifenacin",
+   "Tadalafil",
+   "Letrozole"
+  ]
+ },
+ {
+  "id": "H",
+  "en": "Systemic hormonal preparations",
+  "fa": "هورمون‌های سیستمیک",
+  "top": [
+   "Levothyroxine sodium",
+   "Prednisolone",
+   "Methylprednisolone",
+   "Dexamethasone",
+   "Hydrocortisone",
+   "Triamcinolone",
+   "Methimazole",
+   "Octreotide",
+   "Desmopressin",
+   "Cinacalcet"
+  ]
+ },
+ {
+  "id": "J",
+  "en": "Anti-infectives for systemic use",
+  "fa": "ضدعفونت‌های سیستمیک",
+  "top": [
+   "Amoxicillin",
+   "Ceftriaxone",
+   "Meropenem",
+   "Azithromycin",
+   "Vancomycin",
+   "Linezolid",
+   "Levofloxacin",
+   "Fluconazole",
+   "Voriconazole",
+   "Tenofovir"
+  ]
+ },
+ {
+  "id": "L",
+  "en": "Antineoplastic and immunomodulating agents",
+  "fa": "ضدسرطان و تعدیل‌کننده‌های ایمنی",
+  "top": [
+   "Paclitaxel",
+   "Docetaxel",
+   "Carboplatin",
+   "Oxaliplatin",
+   "Capecitabine",
+   "Imatinib",
+   "Bortezomib",
+   "Lenalidomide",
+   "Abiraterone",
+   "Tacrolimus"
+  ]
+ },
+ {
+  "id": "M",
+  "en": "Musculo-skeletal system",
+  "fa": "عضلانی‌اسکلتی",
+  "top": [
+   "Ibuprofen",
+   "Diclofenac",
+   "Naproxen",
+   "Celecoxib",
+   "Meloxicam",
+   "Allopurinol",
+   "Febuxostat",
+   "Colchicine",
+   "Baclofen",
+   "Rocuronium"
+  ]
+ },
+ {
+  "id": "N",
+  "en": "Nervous system",
+  "fa": "سیستم عصبی",
+  "top": [
+   "Paracetamol",
+   "Pregabalin",
+   "Gabapentin",
+   "Levetiracetam",
+   "Sertraline",
+   "Escitalopram",
+   "Quetiapine",
+   "Olanzapine",
+   "Propofol",
+   "Fentanyl"
+  ]
+ },
+ {
+  "id": "P",
+  "en": "Antiparasitic products",
+  "fa": "ضدانگل‌ها",
+  "top": [
+   "Albendazole",
+   "Mebendazole",
+   "Ivermectin",
+   "Praziquantel",
+   "Artemether",
+   "Artesunate",
+   "Lumefantrine",
+   "Chloroquine",
+   "Primaquine",
+   "Atovaquone"
+  ]
+ },
+ {
+  "id": "R",
+  "en": "Respiratory system",
+  "fa": "سیستم تنفسی",
+  "top": [
+   "Salbutamol",
+   "Budesonide",
+   "Fluticasone propionate",
+   "Formoterol",
+   "Tiotropium bromide",
+   "Montelukast",
+   "Cetirizine",
+   "Loratadine",
+   "Acetylcysteine",
+   "Dextromethorphan"
+  ]
+ },
+ {
+  "id": "S",
+  "en": "Sensory organs",
+  "fa": "اندام‌های حسی",
+  "top": [
+   "Timolol",
+   "Latanoprost",
+   "Dorzolamide",
+   "Brimonidine",
+   "Moxifloxacin",
+   "Olopatadine",
+   "Prednisolone acetate",
+   "Atropine",
+   "Tropicamide",
+   "Sodium hyaluronate"
+  ]
+ },
+ {
+  "id": "V",
+  "en": "Diagnostics, antidotes and others",
+  "fa": "تشخیصی، پادزهر و سایر",
+  "top": [
+   "Iohexol",
+   "Iopamidol",
+   "Iodixanol",
+   "Sevelamer",
+   "Lanthanum carbonate",
+   "Acetylcysteine",
+   "Naloxone",
+   "Flumazenil",
+   "Fomepizole",
+   "Methylthioninium chloride"
+  ]
+ }
+]
