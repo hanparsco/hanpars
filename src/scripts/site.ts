@@ -64,7 +64,25 @@ if (guide) {
   installTabKeys(tabs);
 }
 
-for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]')) {
+const escHtml = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+async function loadCatalogueRows(catalogue: HTMLElement) {
+  const src = catalogue.dataset.src; if (!src) return;
+  const tbody = catalogue.querySelector('tbody'); if (!tbody) return;
+  try {
+    const data = await fetch(src).then(r => r.json()) as [string, string, string, string][];
+    const base = catalogue.dataset.base || ''; const type = catalogue.dataset.type || 'fdf';
+    const enq = (JSON.parse(catalogue.dataset.i18n || '{}').enquire) || 'Enquire';
+    tbody.innerHTML = data.map(([n, c, g, sl], i) => {
+      const href = sl ? `${base}/${type === 'fdf' ? 'fdf' : 'api'}/${sl}` : '';
+      const name = href ? `<a class="table-link" href="${href}">${escHtml(n)}</a>` : escHtml(n);
+      const code = href && c ? `<a class="table-link table-link-muted" href="${href}">${escHtml(c)}</a>` : escHtml(c || '—');
+      return `<tr data-catalogue-row data-status="${escHtml(g)}" data-search="${escHtml((n + ' ' + c).toLowerCase())}" data-index="${i}"><td dir="ltr">${name}</td><td class="table-code" dir="ltr">${code}</td><td><a class="table-request" href="${base}/contact-us-1?type=sourcing&product=${encodeURIComponent(n)}">${escHtml(enq)}</a></td></tr>`;
+    }).join('');
+  } catch { /* keep server-rendered rows */ }
+}
+for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]')) { void initCatalogue(catalogue); }
+async function initCatalogue(catalogue: HTMLElement) {
+  await loadCatalogueRows(catalogue);
   const rows = Array.from(catalogue.querySelectorAll<HTMLTableRowElement>('[data-catalogue-row]'));
   const input = catalogue.querySelector<HTMLInputElement>('[data-catalogue-search]');
   const pageSize = Number(catalogue.dataset.pageSize || '25');

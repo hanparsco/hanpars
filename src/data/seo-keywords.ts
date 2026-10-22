@@ -1,0 +1,38 @@
+/** Keyword sets per page (meta keywords; also the vocabulary used in titles, descriptions and copy). */
+const brandFa = ['هانیا پرسان دارو', 'شرکت هانیا پرسان دارو', 'هانپارس', 'Hanpars'];
+const brandEn = ['Hanpars', 'HANPARS', 'Haniya Parsan Darou', 'Haniya Parsan Darou Co.', 'هانیا پرسان دارو'];
+
+const fa: Record<string, string[]> = {
+  home: ['واردات دارو', 'واردکننده دارو', 'شرکت واردات دارو', 'واردات فوریتی دارو', 'داروی فوریتی', 'تأمین دارو', 'تامین دارو', 'بازرگانی دارویی', 'شرکت بازرگانی دارو', 'مواد اولیه دارویی', 'ماده موثره دارویی', 'API', 'مواد جانبی دارویی', 'مواد اولیه مکمل', 'ثبت دارو', 'ثبت دارو در سازمان غذا و دارو', 'امور رگولاتوری', 'داروی بیمارستانی', 'داروی تخصصی', 'واردات دارو از ترکیه', 'واردات دارو از چین', 'واردات دارو از هند', 'واردات دارو از اروپا', 'شرکت دارویی تهران'],
+  fdf: ['داروهای ساخته شده', 'داروی ساخته‌شده', 'FDF', 'واردات فوریتی دارو', 'داروی فوریتی', 'داروهای کمیاب', 'کمبود دارو', 'داروی بیمارستانی', 'داروی تخصصی', 'داروی ژنریک', 'داروی خارجی', 'خرید دارو عمده', 'استعلام قیمت دارو', 'فهرست داروهای ایران', 'لیست داروهای رسمی ایران', 'داروی تزریقی', 'قرص', 'کپسول', 'آمپول', 'ویال', 'سرم'],
+  api: ['مواد اولیه دارویی', 'ماده اولیه دارو', 'ماده موثره', 'مادهٔ مؤثرهٔ دارویی', 'API', 'Active Pharmaceutical Ingredient', 'واردات مواد اولیه دارویی', 'خرید مواد اولیه دارویی', 'قیمت مواد اولیه دارویی', 'تامین کننده مواد اولیه دارویی', 'مواد اولیه دارویی چین', 'مواد اولیه دارویی هند', 'شماره CAS', 'DMF', 'CEP', 'GMP', 'پودر دارویی'],
+  excipient: ['مواد جانبی دارویی', 'اکسیپیان', 'اکسیپیانت', 'Excipient', 'مواد کمکی دارویی', 'پرکننده قرص', 'اتصال دهنده', 'بایندر', 'بازکننده', 'دیس‌اینتگرنت', 'روان کننده', 'منیزیم استئارات', 'میکروکریستالین سلولز', 'لاکتوز', 'پوویدون', 'HPMC', 'پوشش فیلم قرص', 'خرید مواد جانبی دارویی', 'واردات مواد جانبی'],
+  nutrition: ['مواد اولیه مکمل', 'مکمل غذایی', 'مکمل دارویی', 'ویتامین', 'مواد معدنی', 'امگا ۳', 'پروبیوتیک', 'کلاژن', 'عصاره گیاهی', 'نوتراسوتیکال', 'ویتامین D3', 'ویتامین C', 'روی', 'منیزیم', 'آهن', 'خرید مواد اولیه مکمل', 'واردات مکمل'],
+  'regulatory-affairs': ['امور رگولاتوری', 'رگولاتوری دارو', 'ثبت دارو', 'ثبت دارو در ایران', 'ثبت دارو در سازمان غذا و دارو', 'کد IRC', 'پروانه ورود دارو', 'تشکیل پرونده دارو', 'CTD', 'eCTD', 'GMP', 'ثبت مواد اولیه دارویی', 'مشاوره رگولاتوری', 'ثبت دارو در ترکیه', 'TİTCK', 'EMA', 'FDA', 'فارماکوویژیلانس'],
+  'fdf-cdmo': ['CDMO', 'تولید قراردادی دارو', 'تولید دارو سفارشی', 'توسعه فرمولاسیون', 'تولید تحت لیسانس', 'انتقال تکنولوژی دارو', 'تولید دارو در ترکیه', 'تولید دارو در چین'],
+  'about-us': ['شرکت هانیا پرسان دارو', 'درباره هانیا پرسان دارو', 'واردکننده دارو تهران', 'شرکت بازرگانی دارویی تهران'],
+  markets: ['واردات دارو از ترکیه', 'واردات دارو از چین', 'واردات دارو از هند', 'واردات دارو از اروپا', 'تامین کنندگان دارو', 'پخش دارو'],
+  culture: ['شرکت دارویی معتبر', 'تامین دارو با مستندات'],
+  'contact-us-1': ['تماس با هانیا پرسان دارو', 'استعلام قیمت دارو', 'استعلام مواد اولیه دارویی', 'سفارش دارو', 'آدرس شرکت دارویی تهران'],
+  news: ['اخبار دارو', 'اخبار داروسازی', 'اخبار صنعت داروسازی', 'اخبار مواد اولیه دارویی چین', 'اخبار FDA'],
+  'blog-1': ['مقالات دارویی', 'بازار مواد اولیه دارویی چین', 'صنعت API چین'],
+};
+const en: Record<string, string[]> = {
+  home: ['pharmaceutical importer Iran', 'drug importer Iran', 'medicine import Iran', 'urgent medicine import', 'emergency drug import Iran', 'API supplier Iran', 'active pharmaceutical ingredients', 'excipients supplier', 'supplement ingredients', 'drug registration Iran', 'IFDA registration', 'Iran FDA', 'regulatory affairs Iran', 'pharmaceutical trading company Tehran', 'hospital medicines', 'specialty medicines'],
+  fdf: ['finished dosage forms', 'FDF', 'urgent medicine import', 'emergency drug import Iran', 'hospital medicines Iran', 'specialty drugs Iran', 'generic medicines', 'drug shortage Iran', 'Iran drug list', 'medicine supplier Iran', 'injectables', 'tablets', 'capsules'],
+  api: ['active pharmaceutical ingredient', 'API', 'API supplier', 'API supplier Iran', 'API import', 'pharmaceutical raw materials', 'drug substance', 'CAS number', 'DMF', 'CEP', 'GMP API manufacturer', 'China API', 'India API'],
+  excipient: ['pharmaceutical excipients', 'excipient supplier', 'fillers', 'binders', 'disintegrants', 'lubricants', 'magnesium stearate', 'microcrystalline cellulose', 'lactose', 'povidone', 'HPMC', 'film coating'],
+  nutrition: ['supplement ingredients', 'nutraceutical ingredients', 'vitamins', 'minerals', 'omega-3', 'probiotics', 'collagen', 'botanical extracts', 'vitamin D3', 'food supplement raw materials'],
+  'regulatory-affairs': ['regulatory affairs', 'drug registration Iran', 'IFDA', 'Iran FDA registration', 'IRC code', 'CTD', 'eCTD', 'dossier preparation', 'GMP', 'EMA', 'FDA', 'TİTCK', 'pharmacovigilance', 'regulatory consulting'],
+  'fdf-cdmo': ['CDMO', 'contract manufacturing', 'contract development', 'formulation development', 'technology transfer', 'licensed manufacturing'],
+  'about-us': ['Hanpars', 'Haniya Parsan Darou', 'pharmaceutical importer Tehran'],
+  markets: ['pharmaceutical suppliers China', 'India', 'Türkiye', 'Europe', 'drug distribution Iran'],
+  culture: ['pharmaceutical sourcing', 'documented supply'],
+  'contact-us-1': ['contact Hanpars', 'medicine enquiry', 'API enquiry', 'pharmaceutical quote Iran'],
+  news: ['pharma news', 'pharmaceutical industry news', 'China API news', 'FDA news'],
+  'blog-1': ['China API market', 'pharmaceutical market insights'],
+};
+export function pageKeywords(page: string, lang: 'en' | 'fa'): string {
+  const list = (lang === 'fa' ? fa : en)[page] || [];
+  return [...new Set([...list, ...(lang === 'fa' ? brandFa : brandEn)])].join(lang === 'fa' ? '، ' : ', ');
+}

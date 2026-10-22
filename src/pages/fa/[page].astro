@@ -7,6 +7,7 @@ import InsightsPage from '../../components/InsightsPage.astro';
 import NewsPage from '../../components/NewsPage.astro';
 import { pages, type PageKey } from '../../data/pages';
 import { pagesFa } from '../../data/pages.fa';
+import { pageKeywords } from '../../data/seo-keywords';
 
 export function getStaticPaths() {
   return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news'].map(page=>({params:{page}}));
@@ -18,7 +19,7 @@ const special: Record<string, { title: string; description: string }> = {
   'excipient': { title: 'مواد جانبی دارویی (اکسیپیان) | تأمین و واردات | هانیا پرسان دارو', description: 'تأمین و واردات مواد جانبی دارویی (اکسیپیان): پرکننده، اتصال‌دهنده، بازکننده، روان‌کننده، پوشش‌دهنده و حلال؛ فهرست ۱٬۲۴۱ ماده با کاربرد و شمارهٔ CAS.' },
   'nutrition': { title: 'مواد اولیهٔ مکمل و غذایی | ویتامین، مواد معدنی، امگا-۳، پروبیوتیک | هانیا پرسان دارو', description: 'تأمین و واردات مواد اولیهٔ مکمل‌های دارویی و غذایی: ویتامین‌ها، مواد معدنی، امگا-۳، پروبیوتیک، عصاره‌های گیاهی و نوتراسوتیکال؛ فهرست ۲۹۵ مادهٔ مکمل.' },
   'fdf-cdmo': { title: 'توسعه و تولید قراردادی دارو (CDMO) | هانیا پرسان دارو', description: 'هماهنگی پروژه‌های توسعه و تولید قراردادی داروی ساخته‌شده (FDF CDMO) با شرکای تولیدی دارای GMP، از فرمولاسیون تا ثبت در سازمان غذا و دارو.' },
-  'about-us': { title: 'دربارهٔ شرکت هانیا پرسان دارو | واردات و ثبت دارو، تهران', description: 'شرکت هانیا پرسان دارو، واردکنندهٔ دارو، مواد اولیهٔ دارویی، مواد جانبی و مکمل در تهران؛ دارندهٔ پروانهٔ داروهای وارداتی بیمارستانی و داروخانه‌ای و رابط رگولاتوری تولیدکنندگان خارجی.' },
+  'about-us': { title: 'دربارهٔ شرکت هانیا پرسان دارو | واردات و ثبت دارو، تهران', description: 'شرکت هانیا پرسان دارو، واردکنندهٔ دارو، مواد اولیهٔ دارویی، مواد جانبی و مکمل در تهران و رابط رگولاتوری تولیدکنندگان خارجی در ایران.' },
   'markets': { title: 'بازارها و تأمین‌کنندگان | واردات دارو از چین، هند، ترکیه و اروپا | هانیا پرسان دارو', description: 'شبکهٔ تأمین هانیا پرسان دارو: تولیدکنندگان دارای گواهی GMP در چین، هند، ترکیه و اروپا و توزیع سراسری در ایران از طریق پخش‌های معتبر دارویی.' },
   'culture': { title: 'شیوهٔ کار ما | هانیا پرسان دارو', description: 'اصولی که هانیا پرسان دارو در هر درخواست تأمین، واردات و ثبت دارو به کار می‌گیرد: شفافیت، مستندات کامل و یک مسئول پاسخ‌گو.' },
   'regulatory-affairs': { title: 'امور رگولاتوری و ثبت دارو در سازمان غذا و دارو | هانیا پرسان دارو', description: 'ثبت دارو و مادهٔ مؤثره در سازمان غذا و داروی ایران (IRC)، تدوین پرونده CTD/eCTD، GMP، تغییرات و تمدید، و ثبت در EMA، FDA، TİTCK و مراجع منطقه‌ای.' },
@@ -31,6 +32,6 @@ const data = pagesFa[page as PageKey];
 const seo = special[page] || {title:`${data?.title} | هانیا پرسان دارو`,description:data?.meta};
 const crumbs = [{ name: 'خانه', path: '/fa' }, { name: crumbName[page] || data?.title || page, path: `/fa/${page}` }];
 ---
-<Layout title={seo.title} description={seo.description} breadcrumbs={crumbs} brand={page==='regulatory-affairs'?'regulatory':'default'}>
+<Layout title={seo.title} description={seo.description} breadcrumbs={crumbs} keywords={pageKeywords(page, 'fa')} brand={page==='regulatory-affairs'?'regulatory':'default'}>
   {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:<StandardPage page={page as PageKey}/>}
 </Layout>

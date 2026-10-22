@@ -15,4 +15,4 @@ const seo = moleculeSeo(slug!, mol, lang, faDesc);
 const base = lang === 'fa' ? '/fa' : '';
 const crumbs = [{ name: lang === 'fa' ? 'خانه' : 'Home', path: base || '/' }, { name: lang === 'fa' ? 'مواد مؤثرهٔ دارویی' : 'Active pharmaceutical ingredients', path: base + '/api' }, { name: seo.name, path: base + '/api/' + slug }];
 ---
-<Layout title={seo.title} description={seo.description} schema={seo.schema ? [seo.schema] : []} breadcrumbs={crumbs} image={mol.image || undefined}><MoleculePage slug={slug!} /></Layout>
+<Layout title={seo.title} description={seo.description} keywords={seo.keywords} schema={seo.schema ? [seo.schema] : []} breadcrumbs={crumbs} image={mol.image || undefined}><MoleculePage slug={slug!} /></Layout>

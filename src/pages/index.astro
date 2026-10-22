@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Home from '../components/Home.astro';
+import { pageKeywords } from '../data/seo-keywords';
 ---
-<Layout><Home /></Layout>
+<Layout title="Hanpars | Pharmaceutical importer and API supplier in Iran" description="Hanpars (Haniya Parsan Darou) imports medicines, APIs, excipients and supplement ingredients for Iran and registers them with the Iran FDA. Tehran." keywords={pageKeywords('home', 'en')}><Home /></Layout>

@@ -29,7 +29,7 @@ const cards = lang === 'fa' && fa.cards ? fa.cards.map((c, i) => ({ ...c, href: 
 const database = 'database' in en ? en.database : '';
 const databaseLabel = lang === 'fa' && fa.databaseLabel ? fa.databaseLabel : ('databaseLabel' in en ? en.databaseLabel : '');
 const photo = 'photo' in en ? en.photo : undefined;
-const photoAlt = 'photoAlt' in en ? en.photoAlt : '';
+const photoAlt = lang === 'fa' ? `${data.title} — هانیا پرسان دارو` : ('photoAlt' in en ? en.photoAlt : '');
 const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.standard.prepare : s.standard.startConversation;
 ---
 <PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':'sourcing'}`} action={action} photo={photo} photoAlt={photoAlt}/>
