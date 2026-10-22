@@ -125,7 +125,7 @@ if (insightsSearch) {
     let matches = 0;
     cards.forEach(card => { const match = (card.dataset.search || '').includes(query); card.hidden = !match; if (match) matches++; });
     const count = document.getElementById('insights-count');
-    if (count) count.textContent = num((insightsSearch.dataset.countTpl || '{n} archived articles').replace('{n}', String(matches)) + (query ? (insightsSearch.dataset.matching || ' matching your search') : '');
+    if (count) count.textContent = num((insightsSearch.dataset.countTpl || '{n} archived articles').replace('{n}', String(matches))) + (query ? (insightsSearch.dataset.matching || ' matching your search') : '');
     const empty = document.getElementById('insights-empty');
     if (empty) empty.hidden = matches !== 0;
   });
