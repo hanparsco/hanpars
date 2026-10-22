@@ -27,21 +27,25 @@ GLOBAL_FEEDS = [
     ('Pharmaceutical Technology', 'https://www.pharmaceutical-technology.com/feed/'),
     ('STAT', 'https://www.statnews.com/category/pharma/feed/'),
     ('Pharmaphorum', 'https://pharmaphorum.com/feed'),
-    ('Reuters via Google News', 'https://news.google.com/rss/search?q=pharmaceutical+when:2d+site:reuters.com&hl=en-US&gl=US&ceid=US:en'),
+    ('Google News', 'https://news.google.com/rss/search?q=pharmaceutical+(FDA+OR+EMA+OR+acquisition+OR+shortage+OR+recall+OR+tariff)+when:2d&hl=en-US&gl=US&ceid=US:en'),
 ]
 CHINA_FEEDS = GLOBAL_FEEDS + [
     ('BioSpectrum Asia', 'https://www.biospectrumasia.com/rss'),
-    ('Google News', 'https://news.google.com/rss/search?q=China+(API+OR+%22active+pharmaceutical+ingredient%22+OR+generic+OR+%22finished+dosage%22+OR+pharmaceutical+manufacturing)+when:3d&hl=en-US&gl=US&ceid=US:en'),
+    ('Google News', 'https://news.google.com/rss/search?q=China+%22active+pharmaceutical+ingredient%22+OR+%22API+manufacturer%22+OR+%22API+exports%22+when:4d&hl=en-US&gl=US&ceid=US:en'),
+    ('Google News', 'https://news.google.com/rss/search?q=China+generic+drugs+(NMPA+OR+manufacturing+OR+exports+OR+procurement+OR+GMP)+when:4d&hl=en-US&gl=US&ceid=US:en'),
+    ('Google News', 'https://news.google.com/rss/search?q=Chinese+pharmaceutical+(plant+OR+factory+OR+CDMO+OR+tariff+OR+%22supply+chain%22)+when:4d&hl=en-US&gl=US&ceid=US:en'),
 ]
 
 CHINA_TERMS = ['china', 'chinese', 'beijing', 'shanghai', 'nmpa', 'sinopharm', 'hengrui', 'wuxi', 'beigene', 'zhejiang',
                'jiangsu', 'guangdong', 'hong kong', 'shenzhen', 'hangzhou', 'cspc', 'fosun', 'zhongshan', 'prc', 'suzhou', 'qilu', 'huadong', 'hansoh', 'innovent', 'junshi', 'akeso', 'kelun', 'shijiazhuang']
-APIFDF_TERMS = ['api', 'active pharmaceutical ingredient', 'active ingredient', 'generic', 'generics', 'formulation', 'finished dosage',
-                'manufactur', 'plant', 'facility', 'cdmo', 'cmo', 'biosimilar', 'supply', 'export', 'tariff', 'gmp', 'quality', 'raw material', 'intermediate', 'drug', 'pharma']
+APIFDF_TERMS = [' api', 'apis', 'active pharmaceutical ingredient', 'active ingredient', 'generic', 'formulation', 'finished dosage', 'dosage form',
+                'manufactur', 'plant', 'factory', 'facility', 'cdmo', 'cmo', 'biosimilar', 'supply chain', 'export', 'tariff', 'gmp', 'inspection',
+                'raw material', 'intermediate', 'procurement', 'vbp', 'nmpa', 'price cut', 'production', 'capacity', 'shortage', 'quality']
 GOOD = {'approv': 5, 'fda': 4, 'ema': 4, 'chmp': 4, 'mhra': 3, 'who ': 2, 'acqui': 4, 'buy': 3, 'deal': 3, 'billion': 4, 'merger': 4,
         'recall': 4, 'shortage': 5, 'warning letter': 5, 'import alert': 5, 'gmp': 4, 'inspection': 3, 'tariff': 4, 'price': 3,
         'biosimilar': 3, 'generic': 3, 'api': 3, 'launch': 3, 'phase 3': 2, 'phase iii': 2, 'supply': 3, 'manufactur': 3, 'plant': 2, 'export': 2, 'sanction': 3, 'ban': 2}
-BAD = {'webinar': -10, 'sponsored': -10, 'podcast': -8, 'whitepaper': -10, 'white paper': -10, 'opinion': -3, 'job': -4, 'conference': -4, 'award': -4, 'event': -3, 'newsletter': -6}
+BAD = {'webinar': -10, 'sponsored': -10, 'podcast': -8, 'whitepaper': -10, 'white paper': -10, 'opinion': -3, 'job': -4, 'conference': -4, 'award': -4, 'event': -3, 'newsletter': -6,
+       'pharmalittle': -12, "we're reading": -12, 'we’re reading': -12, 'roundup': -8, 'round-up': -8, 'things to know': -8, 'weekly': -5, 'digest': -8, 'stat+': -6, 'q&a': -5, 'interview': -4, 'stock': -3, 'shares': -2}
 
 
 def fetch(url: str, timeout: int = 25) -> bytes:
@@ -130,10 +134,42 @@ def score(item, china=False):
         s -= 2
     if china:
         if not any(k in t for k in CHINA_TERMS): return -100
-        if not any(k in t for k in APIFDF_TERMS): s -= 4
-        s += 3
+        if not any(k in t for k in APIFDF_TERMS): return -100
+        s += sum(2 for k in APIFDF_TERMS if k in t)
+        for k in ('biotech', 'clinical data', 'phase 1', 'phase 2', 'rna', 'licensing', 'antibody', 'oncology'):
+            if k in t: s -= 3
     if item['image']: s += 1
     return s
+
+
+def resolve_google(url: str) -> str:
+    """Turn a news.google.com/rss/articles/... link into the publisher URL."""
+    if 'news.google.com' not in url: return url
+    try:
+        import base64
+        m = re.search(r'/articles/([^?/]+)', url)
+        if not m: return url
+        gid = m.group(1)
+        raw = base64.urlsafe_b64decode(gid + '=' * (-len(gid) % 4))
+        if not raw.startswith(b'AU_yqL'):
+            # legacy format: length-prefixed url inside the protobuf
+            txt = raw.decode('latin-1')
+            found = re.findall(r'https?://[\x21-\x7e]+', txt)
+            if found: return found[0]
+        page = fetch(f'https://news.google.com/articles/{gid}', 20).decode('utf-8', 'ignore')
+        sig = re.search(r'data-n-a-sg="([^"]+)"', page); ts = re.search(r'data-n-a-ts="([^"]+)"', page)
+        if not (sig and ts): return url
+        payload = json.dumps([[['Fbv4je', json.dumps(['garturlreq', [['X', 'X', ['X', 'X'], None, None, 1, 1, 'US:en', None, 1, None, None, None, None, None, 0, 1], 'X', 'X', 1, [1, 1, 1], 1, 1, None, 0, 0, None, 0], gid, ts.group(1), sig.group(1)]), None, 'generic']]])
+        body = urllib.parse.urlencode({'f.req': payload}).encode()
+        req = urllib.request.Request('https://news.google.com/_/DotsSplashUi/data/batchexecute', data=body,
+                                     headers={'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            resp = r.read().decode('utf-8', 'ignore')
+        m2 = re.search(r'"(https?://[^"\\]+)"', resp.split('\n', 2)[-1])
+        return m2.group(1) if m2 else url
+    except Exception as e:
+        print(f'  ! google resolve: {e}', file=sys.stderr)
+        return url
 
 
 def og_image(url: str) -> str:
@@ -171,12 +207,22 @@ def save_image(url: str, slug: str) -> str:
 
 def pick(items, n, china=False):
     ranked = sorted(((score(i, china), i) for i in items), key=lambda x: -x[0])
-    out, seen_src, seen_title = [], set(), set()
+    shortlist, seen_title = [], set()
     for s, it in ranked:
-        if s <= -50: break
+        if s <= -50 or len(shortlist) >= 12: break
         key = re.sub(r'[^a-z0-9]', '', it['title'].lower())[:50]
-        if key in seen_title or it['source'] in seen_src: continue
-        seen_title.add(key); seen_src.add(it['source'])
+        if key in seen_title: continue
+        seen_title.add(key)
+        it['url'] = resolve_google(it['url'])
+        if 'news.google.com' in it['url']: continue
+        if not it['image']: it['image'] = og_image(it['url'])
+        shortlist.append((s + (3 if it['image'] else -6), it))
+    shortlist.sort(key=lambda x: -x[0])
+    out, seen_src, seen_host = [], set(), set()
+    for s, it in shortlist:
+        host = urllib.parse.urlparse(it['url']).hostname or ''
+        if it['source'] in seen_src or host in seen_host: continue
+        seen_src.add(it['source']); seen_host.add(host)
         out.append(it)
         if len(out) == n: break
     return out
@@ -214,8 +260,10 @@ def main():
             image = prev['image'] if prev and prev.get('image') and (ROOT / 'public' / prev['image'].lstrip('/')).exists() else ''
             if not image:
                 image = save_image(it['image'] or og_image(it['url']), slug)
+            source = it['source']
+            if source in ('Google News', '') : source = (urllib.parse.urlparse(it['url']).hostname or '').replace('www.', '')
             done.append({
-                'title': it['title'], 'url': it['url'], 'source': it['source'],
+                'title': it['title'], 'url': it['url'], 'source': source,
                 'date': it['date'].strftime('%Y-%m-%d') if it['date'] else NOW.strftime('%Y-%m-%d'),
                 'summary': (it['summary'][:280] + ('…' if len(it['summary']) > 280 else '')) if it['summary'] else '',
                 'image': image,
