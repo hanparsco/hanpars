@@ -46,7 +46,7 @@ const dailymed = main?.setId ? `https://dailymed.nlm.nih.gov/dailymed/drugInfo.c
     <dl class="mol-keyfacts" lang="en" dir="ltr">
       <div><dt>{m.code}</dt><dd>{entry.code}</dd></div>
       {p.salt && <div><dt>{m.salt}</dt><dd>{prettyName(p.salt)}</dd></div>}
-      {main?.pharmClass && main.pharmClass.length > 0 && <div><dt>{m.class}</dt><dd>{main.pharmClass.map(c => c.replace(/\s*\[EPC\]/, '')).join(' · ')}</dd></div>}
+      {fa.pharmClass ? <div lang="fa" dir="rtl"><dt>{m.class}</dt><dd>{fa.pharmClass}</dd></div> : (main?.pharmClass && main.pharmClass.length > 0 && <div><dt>{m.class}</dt><dd>{main.pharmClass.map(c => c.replace(/\s*\[EPC\]/, '')).join(' · ')}</dd></div>)}
     </dl>
     <div class="hero-actions"><a class="button button-light" href={enquiry}>{m.enquire}</a><a class="text-link" href={L('/fdf#fdf-reference')}>{m.back}</a></div>
   </div>
