@@ -40,8 +40,10 @@ export function fdfSlug(entry: { name: string; code: string }): string {
 export function infoKey(ingredient: string): string {
   const k = ingredient.toLowerCase()
     .replace(/\(.*?\)/g, '')
+    .replace(/\bvitamin ([a-z])(\d+)\b/g, (_m, l, d) => `vitamin ${l}qzq${d.replace(/\d/g, (c: string) => 'abcdefghij'[+c])}`)
     .replace(/\b(sodium|potassium|calcium|magnesium|hydrochloride|dihydrochloride|hydrobromide|mesylate|mesilate|maleate|fumarate|tartrate|bitartrate|succinate|citrate|acetate|sulfate|sulphate|phosphate|besylate|besilate|tosylate|monohydrate|dihydrate|trihydrate|anhydrous|disodium|bromide|chloride|nitrate|lactate|gluconate|pamoate|decanoate|palmitate|valerate|propionate|benzoate|hyclate|xinafoate|furoate|axetil|proxetil|pivoxil|medoxomil|etexilate|alafenamide|disoproxil|malate|camsylate|oxalate|trometamol|tromethamine|meglumine|dimaleate|hydrate|liposome|liposomal|pegylated|human|recombinant)\b/g, '')
-    .replace(/[^a-z]+/g, ' ').trim();
+    .replace(/[^a-z]+/g, ' ').trim()
+    .replace(/qzq([a-j]+)\b/g, (_m, d) => d.replace(/[a-j]/g, (c: string) => String('abcdefghij'.indexOf(c))));
   return k || ingredient.toLowerCase().replace(/[^a-z]+/g, ' ').trim();
 }
 

@@ -28,8 +28,10 @@ US = {'paracetamol': 'acetaminophen', 'aciclovir': 'acyclovir', 'salbutamol': 'a
 
 def key_of(ingredient):
     k = re.sub(r'\(.*?\)', '', ingredient.lower())
+    k = re.sub(r'\bvitamin ([a-z])(\d+)\b', lambda m: 'vitamin ' + m[1] + 'qzq' + ''.join('abcdefghij'[int(c)] for c in m[2]), k)
     k = re.sub(SALTS, '', k)
     k = re.sub(r'[^a-z]+', ' ', k).strip()
+    k = re.sub(r'qzq([a-j]+)\b', lambda m: ''.join(str('abcdefghij'.index(c)) for c in m[1]), k)
     return k or re.sub(r'[^a-z]+', ' ', ingredient.lower()).strip()
 
 
