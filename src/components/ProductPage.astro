@@ -54,7 +54,7 @@ const dailymed = main?.setId ? `https://dailymed.nlm.nih.gov/dailymed/drugInfo.c
     <dl class="mol-keyfacts" lang="en" dir="ltr">
       <div><dt>{m.code}</dt><dd>{entry.code}</dd></div>
       {p.salt && <div><dt>{m.salt}</dt><dd>{prettyName(p.salt)}</dd></div>}
-      {fa.pharmClass ? <div lang="fa" dir="rtl"><dt>{m.class}</dt><dd>{fa.pharmClass}</dd></div> : (main?.pharmClass && main.pharmClass.length > 0 && <div><dt>{m.class}</dt><dd>{main.pharmClass.map(c => c.replace(/\s*\[EPC\]/, '')).join(' · ')}</dd></div>)}
+      {fa.pharmClass ? <div lang="fa" dir="rtl"><dt>{m.class}</dt><dd>{fa.pharmClass}</dd></div> : (main?.pharmClass && main.pharmClass.length > 0 && <div><dt>{m.class}</dt><dd>{main.pharmClass.map((c: string) => c.replace(/\s*\[EPC\]/, '')).join(' · ')}</dd></div>)}
     </dl>
     <div class="hero-actions"><a class="button button-light" href={enquiry}>{m.enquire}</a><a class="text-link" href={L('/fdf#fdf-reference')}>{m.back}</a></div>
   </div>
@@ -64,7 +64,7 @@ const dailymed = main?.setId ? `https://dailymed.nlm.nih.gov/dailymed/drugInfo.c
   <div class="mol-main prod-main">
     {main ? <>
       {sec.boxed.text && <div class="prod-boxed" {...L1(sec.boxed)}><strong>{m.boxed}</strong><p>{sec.boxed.text}</p></div>}
-      {(sec.moa.text || main.moaClass?.length) && <><h2>{m.what}</h2>{sec.moa.text && <p {...L1(sec.moa)}>{sec.moa.text}</p>}{main.moaClass && main.moaClass.length > 0 && <p class="form-hint" lang="en" dir="ltr">{m.moaClass}: {main.moaClass.map(c => c.replace(/\s*\[MoA\]/, '')).join(' · ')}</p>}</>}
+      {(sec.moa.text || main.moaClass?.length) && <><h2>{m.what}</h2>{sec.moa.text && <p {...L1(sec.moa)}>{sec.moa.text}</p>}{main.moaClass && main.moaClass.length > 0 && <p class="form-hint" lang="en" dir="ltr">{m.moaClass}: {main.moaClass.map((c: string) => c.replace(/\s*\[MoA\]/, '')).join(' · ')}</p>}</>}
       {sec.indications.text && <><h2>{m.indications}</h2><p {...L1(sec.indications)}>{sec.indications.text}</p></>}
       {sec.dosage.text && <><h2>{m.dosage}</h2><p {...L1(sec.dosage)}>{sec.dosage.text}</p></>}
       {sec.contraindications.text && <><h2>{m.contra}</h2><p {...L1(sec.contraindications)}>{sec.contraindications.text}</p></>}
