@@ -1,0 +1,184 @@
+{
+ "pages": 22002,
+ "indexable": 21620,
+ "issues": [
+  {
+   "name": "title missing",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "title > 65 chars",
+   "count": 1547,
+   "sample": [
+    "/api/amifampridine-phosphate (66) Amifampridine phosphate (CAS 446254-47-3) | API supplier | Hanpars",
+    "/api/eletriptan-hydrobromide (66) Eletriptan hydrobromide (CAS 177834-92-3) | API supplier | Hanpars",
+    "/api/eliglustat-hemitartrate (66) Eliglustat hemitartrate (CAS 928659-70-5) | API supplier | Hanpars",
+    "/api/erythromycin-lactobionate (66) Erythromycin lactobionate (CAS 3847-29-8) | API supplier | Hanpars",
+    "/api/eslicarbazepine-acetate (66) Eslicarbazepine acetate (CAS 236395-14-5) | API supplier | Hanpars",
+    "/api/glycerol-phenylbutyrate (66) Glycerol phenylbutyrate (CAS 611168-24-2) | API supplier | Hanpars",
+    "/api/glycopyrrolate-tosylate (66) Glycopyrrolate tosylate (CAS 873295-46-6) | API supplier | Hanpars",
+    "/api/hydroxocobalamin-acetate (66) Hydroxocobalamin acetate (CAS 22465-48-1) | API supplier | Hanpars",
+    "/api/hydroxychloroquine-sulfate (66) Hydroxychloroquine sulfate (CAS 747-36-4) | API supplier | Hanpars",
+    "/api/isavuconazonium-sulfate (66) Isavuconazonium sulfate (CAS 946075-13-4) | API supplier | Hanpars",
+    "/api/medroxyprogesterone-acetate (66) Medroxyprogesterone acetate (CAS 71-58-9) | API supplier | Hanpars",
+    "/api/methylergonovine-maleate (66) Methylergonovine maleate (CAS 57432-61-8) | API supplier | Hanpars",
+    "/api/nilotinib-hcl-dihydrate (66) NILOTINIB HCl DIHYDRATE (CAS 923289-71-8) | API supplier | Hanpars",
+    "/api/noradrenaline-bitartrate (66) Noradrenaline bitartrate (CAS 69815-49-2) | API supplier | Hanpars",
+    "/api/siponimod-fumaric-acid (66) Siponimod fumaric acid (CAS 1234627-85-0) | API supplier | Hanpars"
+   ]
+  },
+  {
+   "name": "title < 25 chars",
+   "count": 20,
+   "sample": [
+    "/zh/about-us 关于 Hanpars | Hanpars",
+    "/zh/api 原料药 | Hanpars",
+    "/zh/blog-1 洞察存档 | Hanpars",
+    "/zh/contact-us-1 告诉我们您在寻找什么。 | Hanpars",
+    "/zh/culture 工作方式 | Hanpars",
+    "/zh/excipient 药用辅料 | Hanpars",
+    "/zh/fdf/-51992  乳膏 200 % | Hanpars",
+    "/zh/fdf/-51993  乳膏 400 % | Hanpars",
+    "/zh/fdf/-52309  乳膏 100 % | Hanpars",
+    "/zh/fdf/blood-and-blood-forming-organs-whole-blood-52983 全血 注射液 | Hanpars",
+    "/zh/fdf/erythrocytes-red-blood-cell-irradiated-52976 辐照红细胞 注射液 | Hanpars",
+    "/zh/fdf/erythrocytes-red-blood-cell-leucocyte-reduced-52981 去白细胞红细胞 注射液 | Hanpars",
+    "/zh/fdf/potassium-aminobenzoic-acid-potaba-1026 氨苯甲酸钾 片 500 mg | Hanpars",
+    "/zh/fdf/thrombocytes-platelet-phresis-and-irradiated-52967 单采辐照血小板 注射液 | Hanpars",
+    "/zh/fdf-cdmo 制剂开发 | Hanpars"
+   ]
+  },
+  {
+   "name": "description missing",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "description > 165 chars",
+   "count": 10,
+   "sample": [
+    "/tr/about-us (192)",
+    "/tr/blog-1 (175)",
+    "/tr/contact-us-1 (185)",
+    "/tr/excipient (188)",
+    "/tr/fdf (200)",
+    "/tr/markets (181)",
+    "/tr/news (183)",
+    "/tr/nutrition (200)",
+    "/tr/regulatory-affairs (183)",
+    "/tr (200)"
+   ]
+  },
+  {
+   "name": "description < 70 chars",
+   "count": 2913,
+   "sample": [
+    "/api/paliperidone-palmitate Paliperidone palmitate, CAS 199739-10-1, C39H57FN4O4.…",
+    "/tr/api/avanafil avanafil (Avanafil), CAS 330784-47-9, C23H26ClN7O3. Avanafil,…",
+    "/tr/api/remdesivir remdesivir (Remdesivir), CAS 1809249-37-3, C27H35N6O8P. Remdesivir,…",
+    "/zh/api/abacavir-sulfate 硫酸阿巴卡韦（Abacavir sulfate），CAS 号 188062-50-2，分子式…",
+    "/zh/api/abaloparatide 阿巴洛肽（Abaloparatide），CAS 号 247062-33-5，分子式…",
+    "/zh/api/abemaciclib 阿贝西利（Abemaciclib），CAS 号 1231929-97-7，分子式…",
+    "/zh/api/abiraterone-acetate 醋酸阿比特龙（Abiraterone acetate），CAS 号 154229-18-2，分子式…",
+    "/zh/api/acalabrutinib-maleate 马来酸阿卡替尼（Acalabrutinib maleate），CAS 号 2242394-65-4，分子式…",
+    "/zh/api/acalabrutinib 阿卡替尼（Acalabrutinib），CAS 号 1420477-60-6，分子式…",
+    "/zh/api/acarbose 阿卡波糖（Acarbose），CAS 号 56180-94-0，分子式…",
+    "/zh/api/acebutolol-hcl 盐酸醋丁洛尔（ACEBUTOLOL HCl），CAS 号 34381-68-5，分子式…",
+    "/zh/api/acebutolol 醋丁洛尔（Acebutolol），CAS 号 37517-30-9，分子式…",
+    "/zh/api/aceclofenac 阿西克洛芬（Aceclofenac），CAS 号 89796-99-6，分子式…",
+    "/zh/api/acenocoumarol 醋硝香豆素（Acenocoumarol），CAS 号 152-72-7，分子式…",
+    "/zh/api/acetaminophen 对乙酰氨基酚（Acetaminophen），CAS 号 103-90-2，分子式…"
+   ]
+  },
+  {
+   "name": "duplicate titles",
+   "count": 73,
+   "sample": [
+    "2× آمفوتریسین B تزریقی لیوفیلیزه 50 mg | هانیا پرسان دارو :: /fa/fdf/amphotericin-b-52653, /fa/fdf/amphotericin-b-79",
+    "2× پلاسمای تازهٔ منجمد تزریقی | تأمین و واردات | هانیا پرسان دارو :: /fa/fdf/blood-plasma-fresh-frozen-52962, /fa/fdf/plasma-fresh-frozen-51566",
+    "2× feksofenadin hidroklorür | Etkin madde tedariki | Hanpars :: /tr/api/fexofenadine-hcl-a, /tr/api/fexofenadine-hcl-l",
+    "2× ivermektin | Etkin madde tedariki | Hanpars :: /tr/api/ivermectin-fur, /tr/api/ivermectin",
+    "2× parasetamol / kafein / ibuprofen kapsül 325 mg/40 mg/200 mg :: /tr/fdf/acetaminophen-caffeine-ibuprofen-21742, /tr/fdf/acetaminophen-caffeine-ibuprofen-8979",
+    "3× parasetamol / klorfeniramin / dekstrometorfan / fenilefrin şurup 160 mg/1 mg/5 mg/2.5 mg/5mL :: /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50341, /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50378, /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-51915",
+    "3× parasetamol / difenhidramin / fenilefrin şurup 160 mg/12.5 mg/2.5 mg/5mL :: /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-21832, /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-52273, /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-52274",
+    "3× parasetamol / guaifenezin / fenilefrin şurup 125 mg/50 mg/2.5 mg/5mL :: /tr/fdf/acetaminophen-guaifenesin-phenylephrine-22078, /tr/fdf/acetaminophen-guaifenesin-phenylephrine-52271, /tr/fdf/acetaminophen-guaifenesin-phenylephrine-52665",
+    "2× alüminyum hidroksit / magnezyum hidroksit / simetikon süspansiyon 225 mg/200 mg/25 mg/5mL :: /tr/fdf/aluminium-hydroxide-magnesium-hydroxide-simethicone-49, /tr/fdf/aluminium-hydroxide-magnesium-hydroxide-simethicone-51880",
+    "3× amino asit %10 (2) enjeksiyonluk çözelti 5 mg/8.9 mg/5.74 mg/3.12 mg/4.4 mg/4.7 mg/4.2 mg/1.6 mg/6.2 mg/11.5 mg/3 mg/10.5 mg/12 mg/5.6 mg/7.2 mg/5.5 mg/2.3 mg/0.4 mg/1mL :: /tr/fdf/amino-acid-10-2-14115, /tr/fdf/amino-acid-10-2-52272, /tr/fdf/amino-acid-10-2-52340",
+    "2× amino asit %10 (3) enjeksiyonluk çözelti 5.8 mg/12 mg/16.925 mg/2 mg/3.5 mg/8.2 mg/3 mg/8.7 mg/8.2 mg/9.8 mg/6.2 mg/0.4 mg/5.305 mg/3 mg/7.6 mg/0.6 mg/3.155 mg/2.01 mg/1mL :: /tr/fdf/amino-acid-10-3-52896, /tr/fdf/amino-acid-10-3-52897",
+    "2× pediyatrik amino asit %10 (1) enjeksiyonluk çözelti 8 mg/13 mg/8.51 mg/3.12 mg/3.75 mg/4.4 mg/2.01 mg/9 mg/7.5 mg/4.76 mg/9.3 mg/4.15 mg/0.7 mg/2.3 mg/1.6 mg/9.71 mg/7.67 mg/5.176 mg/2.26 mg/0.4 mg/1 mL/1mL :: /tr/fdf/amino-acid-10-paediatric-1-53310, /tr/fdf/amino-acid-10-paediatric-1-56",
+    "2× pediyatrik amino asit %10 (2) enjeksiyonluk çözelti 5.1 mg/7.6 mg/8.8 mg/2 mg/3.1 mg/5.1 mg/4 mg/6.1 mg/9.1 mg/4.6 mg/15.9 mg/2 mg/6.6 mg/9.3 mg/6.1 mg/2 mg/1.3 mg/0.7 mg/0.3 mg/1 mL :: /tr/fdf/amino-acid-10-paediatric-2-52022, /tr/fdf/amino-acid-10-paediatric-2-52023",
+    "2× elektrolitli amino asit %10 enjeksiyonluk çözelti 5 mg/8.9 mg/8.56 mg/4.4 mg/4.7 mg/4.2 mg/1.6 mg/6.2 mg/11.5 mg/3 mg/10.5 mg/12 mg/5.6 mg/7.2 mg/5.5 mg/2.3 mg/0.4 mg/2.858 mg/0.36 mg/2.453 mg/0.508 mg/3.581 mg/1mL :: /tr/fdf/amino-acid-10-with-electrolyte-19892, /tr/fdf/amino-acid-10-with-electrolyte-52095",
+    "2× elektrolitli amino asit %5 enjeksiyonluk çözelti 2.5 mg/4.45 mg/4.28 mg/2.2 mg/2.35 mg/2.1 mg/0.8 mg/3.1 mg/5.75 mg/1.5 mg/5.25 mg/6 mg/2.8 mg/3.6 mg/2.75 mg/1.15 mg/0.4 mg/1.361 mg/0.964 mg/0.14 mg/2.453 mg/0.508 mg/3.581 mg/1mL :: /tr/fdf/amino-acid-5-with-electrolyte-19923, /tr/fdf/amino-acid-5-with-electrolyte-19926"
+   ]
+  },
+  {
+   "name": "duplicate descriptions",
+   "count": 9,
+   "sample": [
+    "2× واکسن دیفتری / هموفیلوس آنفلوانزای نوع b / سیاه‌سرفه / فلج اطفال / کزاز / هپاتیت :: /fa/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53418, /fa/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53419",
+    "3× واکسن توکسوئید دیفتری / توکسوئید کزاز / سیاه‌سرفه / هموفیلوس آنفلوانزای نوع b /  :: /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461",
+    "2× difteri / Haemophilus influenzae tip b / boğmaca / çocuk felci / tetanoz / hepat :: /tr/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53418, /tr/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53419",
+    "3× difteri toksoidi / tetanoz toksoidi / boğmaca / Haemophilus influenzae tip b / h :: /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461",
+    "2× insan allojenik umbilikal kordon dokusu kaynaklı mezenkimal stromal hücreler (Hu :: /tr/fdf/human-allogenic-umbilical-cord-tissue-derived-mesenchymal-st-53517, /tr/fdf/human-allogenic-umbilical-cord-tissue-derived-mesenchymal-st-53663",
+    "2× Haniya Parsan Darou Co., İran pazarı için ilaç hammaddelerini ve bitmiş ilaçları :: /tr/news, /tr/regulatory-affairs",
+    "2× 白喉/b型流感嗜血杆菌/百日咳/脊髓灰质炎/破伤风/乙型肝炎疫苗（Diphtheria / Hemophilus Influenzae B / Pertussi :: /zh/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53418, /zh/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53419",
+    "3× 白喉类毒素/破伤风类毒素/百日咳/b型流感嗜血杆菌/乙型肝炎疫苗（Diphtheria Toxoid / Tetanus Toxoid / Pertussis  :: /zh/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /zh/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /zh/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461",
+    "2× Haniya Parsan Darou Co. 为伊朗市场进口药用原料和成品药，并为其注册提供支持。办事处设于德黑兰、伊斯坦布尔和上海。 :: /zh/news, /zh/regulatory-affairs"
+   ]
+  },
+  {
+   "name": "h1 count != 1",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "images without alt",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "canonical mismatch",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "no hreflang",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "JSON-LD parse errors",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "thin pages (< 150 words)",
+   "count": 117,
+   "sample": [
+    "/zh/api/albuterol-salbutamol-sulphate (138)",
+    "/zh/api/amino-acid (135)",
+    "/zh/api/amoxcillin-trihydrate (131)",
+    "/zh/api/amphetamine-l-aspartate (141)",
+    "/zh/api/angiotensin (128)",
+    "/zh/api/aripiprazole-i (137)",
+    "/zh/api/atorvastatin-calcium-i (142)",
+    "/zh/api/azelastine-hcl-daito (138)",
+    "/zh/api/aztreonam-alfa (134)",
+    "/zh/api/bendamustine-hci (135)",
+    "/zh/api/benzoyl-peroxide-hydrous (134)",
+    "/zh/api/betaine-pharmaceutical (135)",
+    "/zh/api/carbowax-polyethylene-glycol (134)",
+    "/zh/api/cefepime-l-arginine (140)",
+    "/zh/api/ceftaroline-fosamil-arginine (134)"
+   ]
+  },
+  {
+   "name": "heavy pages (> 600 KB)",
+   "count": 1,
+   "sample": [
+    "/tr/excipient (595 KB)"
+   ]
+  }
+ ]
+}
