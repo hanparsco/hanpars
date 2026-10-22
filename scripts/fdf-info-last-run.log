@@ -1,51 +1,25 @@
-  ! probenecid: HTTPError: HTTP Error 500: Internal Server Error
-  ! procainamide: HTTPError: HTTP Error 500: Internal Server Error
-  ! procarbazine: HTTPError: HTTP Error 500: Internal Server Error
-  ! propylthiouracil: HTTPError: HTTP Error 500: Internal Server Error
-  ! prostaglandin e: HTTPError: HTTP Error 500: Internal Server Error
-  ! protamine: HTTPError: HTTP Error 500: Internal Server Error
-  ! gimeracil: HTTPError: HTTP Error 500: Internal Server Error
-1362 ingredients, 961 to fetch
-  0/961 ok=1
-  25/961 ok=24
-  50/961 ok=45
-  75/961 ok=60
-  100/961 ok=82
-  125/961 ok=105
-  150/961 ok=124
-  175/961 ok=144
-  200/961 ok=163
-  225/961 ok=179
-  250/961 ok=203
-  275/961 ok=221
-  300/961 ok=245
-  325/961 ok=267
-  350/961 ok=287
-  375/961 ok=306
-  400/961 ok=327
-  425/961 ok=342
-  450/961 ok=361
-  475/961 ok=384
-  500/961 ok=405
-  525/961 ok=426
-  550/961 ok=444
-  575/961 ok=467
-  600/961 ok=488
-  625/961 ok=507
-  650/961 ok=524
-  675/961 ok=541
-  700/961 ok=562
-  725/961 ok=576
-  750/961 ok=597
-  775/961 ok=613
-  800/961 ok=633
-  825/961 ok=652
-  850/961 ok=664
-  875/961 ok=680
-  900/961 ok=701
-  925/961 ok=721
-  950/961 ok=743
-done: 752 found, 238 without a label
+1573 ingredients, 482 to fetch
+  0/482 ok=0
+  25/482 ok=13
+  50/482 ok=21
+  75/482 ok=36
+  100/482 ok=50
+  125/482 ok=61
+  150/482 ok=73
+  175/482 ok=78
+  200/482 ok=95
+  225/482 ok=104
+  250/482 ok=114
+  275/482 ok=121
+  300/482 ok=133
+  325/482 ok=146
+  350/482 ok=161
+  375/482 ok=170
+  400/482 ok=178
+  425/482 ok=186
+  450/482 ok=192
+  475/482 ok=204
+done: 205 found, 515 without a label
   - agomelatine
   - atezolizumab
   - betahistine
@@ -284,3 +258,280 @@ done: 752 found, 238 without a label
   - vildagliptin
   - vinflunine ditartrate
   - zanubrutinib
+  - f fbp
+  - f fes
+  - f fet
+  - f fpsma
+  - ac dotatate
+  - ac psma
+  - acetaminophen + caffeine + chlorpheniramine + vitamin c
+  - acetaminophen + caffeine + codeine
+  - acetaminophen + caffeine + ibuprofen
+  - acetaminophen + ascorbic acid + chlorpheniramine + dextromethorphan + phenylephrine
+  - acetaminophen + chlorpheniramine + dextromethorphan + phenylephrine
+  - acetaminophen + diphenhydramine + phenylephrine
+  - acetaminophen + guaifenesin + phenylephrine
+  - acetaminophen + tramadol
+  - acetylcysteine + ascorbic acid
+  - acetylsalicylic acid + clopidogrel
+  - activated prothrombin complex
+  - adult cold preparation
+  - adult cold preparations
+  - colecalciferol
+  - alendronic acid + colecalciferol
+  - allogeneic cultured keratinocytes and fibroblasts in bovine collagen
+  - aluminium hydroxide
+  - aluminium hydroxide + hydroxide + simethicone
+  - aluminium hydroxide + hydroxide
+  - amiloride + hyrochlorothiazide
+  - amino acid
+  - amino acid + glucose + lipid
+  - amino acid paediatric
+  - amino acid with electrolyte
+  - amlodipine + bisoprolol
+  - sulbactam
+  - anti d immunoglobulin
+  - artemether
+  - lumefantrine
+  - articaine
+  - trehalose
+  - artificial tears hyaluronate + trehalose
+  - artificial tears hyaluronate + ts polysaccaride
+  - asa + ascorbic acid
+  - asa + atorvastatin + enalapril + hydrochlorothiazide
+  - asa + atorvastatin + hydrochlorothiazide + valsartan
+  - asa + codeine
+  - atazanavir + ritonavir
+  - atorvastatin + ezetimibe
+  - bcg
+  - beclomethasone dipropionate + formoterol + glycopyrronium
+  - beclomethasone dipropionate + formoterol
+  - belladonna pb
+  - betamethasone + fusidic acid
+  - brinzolamide + timolol
+  - budesonide + formoterol + glycopyrronium
+  - bupropion + naltrexone
+  - c urea
+  - c estrase inhibitor
+  - c estrase inhibitor plasma derived
+  - betamethasone dipropionate + calcipotriol
+  - pantothenate
+  - avibactam
+  - ceftolozane
+  - tazobactam
+  - charcoal activated
+  - children cold
+  - chlormadinone + ethinylestradiol
+  - citicoline
+  - clidinium
+  - clindamycin + clotrimazole
+  - clotrimazole + hydrocortisone
+  - co amoxiclav
+  - co trimoxazole
+  - coagulation factor viii
+  - coagulation factor viii + von willebrand factor
+  - coagulation factor viii long acting
+  - codeine + guaifenesin + phenylephrine
+  - copper + zinc
+  - daclatasvir + sofosbuvir
+  - desogestrel
+  - vitamin b
+  - dexamethasone + lidocaine + vitamin b + vitamin b
+  - dextromethorphan + guaifenesin + pseudoephedrine
+  - dextromethorphan + pseudoephedrine
+  - dextrose + ethanol
+  - dienogest
+  - dienogest + ethinylestradiol
+  - dimethylglycine
+  - ammonium + diphenhydramine
+  - diphenoxylate
+  - pertussis
+  - poliomyelitis
+  - tetanus
+  - hepatitis b vaccine
+  - diphtheria + hemophilus influenzae b + hepatitis b vaccine + pertussis + poliomyelitis + tetanus
+  - tetanus toxoid
+  - haemophilus influenzae type b
+  - diphtheria toxoid + haemophilus influenzae type b + hepatitis b vaccine + pertussis + tetanus toxoid
+  - haemophilus influenzae type b vaccine
+  - diphtheria toxoid + haemophilus influenzae type b vaccine + pertussis + tetanus toxoid
+  - pertussis vaccine
+  - diphtheria toxoid + pertussis vaccine + tetanus toxoid
+  - tetanus toxoid adsorbed vaccine
+  - diphtheria toxoid + tetanus toxoid adsorbed vaccine
+  - tetanus toxoids adsorbed vaccine
+  - diphtheria toxoid + tetanus toxoids adsorbed vaccine
+  - drospirenone + ethinylestradiol
+  - elbasvir
+  - grazoprevir
+  - caffeine + ergotamine
+  - estradiol hemihydrate + levonorgestrel
+  - ethambutol + isoniazid + pyrazinamide + rifampicin
+  - ethambutol + isoniazid + rifampicin
+  - expectorant codeine
+  - expectorant
+  - ezetimibe + rosuvastatin
+  - factor ix
+  - factor vii
+  - factor viia
+  - factor viii
+  - factor viii + von willebrand factor
+  - factor xiii
+  - carbonate + famotidine + hydroxide
+  - fenofibrate + simvastatin
+  - ferrous glycine
+  - fibrinogen
+  - desoxyribonuclease + fibrinolysin
+  - fluocinolone + hydroquinone + tretinoin
+  - follitropin alfa + lutropin alfa
+  - fusidic acid + hydrocortisone
+  - ga fap
+  - ga fapi
+  - ga pentixafor
+  - gallium sup + supga
+  - gelatin modified
+  - gallium + germanium
+  - glycerin iodine
+  - chlorpheniramine + guaifenesin + phenylephrine
+  - hemodiafiltration + hemofiltration
+  - hepatitis a inactivated whole virus
+  - homatropine
+  - papillomavirus vaccine
+  - ibuprofen + methocarbamol
+  - ibuprofen + oxycodone
+  - imipenem
+  - cilastatin
+  - immune globulin
+  - influenza vaccine inactivated tetravalent
+  - influenza vaccine inactivated trivalent
+  - influenza vaccine tetravalent
+  - inosine monophosphate
+  - insulin aspart + insulin degludec
+  - lixisenatide
+  - interferon alfa b
+  - interferon beta a
+  - interferon beta b
+  - interferon gamma b
+  - iobenguane sup + supi
+  - iodoquinol
+  - fenoterol + ipratropium
+  - isoniazid + rifampicin
+  - tezacaftor
+  - elexacaftor
+  - elexacaftor + ivacaftor + tezacaftor
+  - l carnitine
+  - latanoprost + timolol
+  - ledipasvir
+  - benserazide + levodopa
+  - carbidopa forte
+  - carbidopa forte + levodopa
+  - chlorhexidine + lidocaine
+  - hydrocortisone + lidocaine
+  - lopinavir
+  - lu fap
+  - lu pentixather
+  - lumacaftor
+  - mumps
+  - rubella vaccine
+  - measles + mumps + rubella vaccine
+  - measles + rubella vaccine
+  - estradiol cypionate + medroxyprogesterone
+  - calamine + menthol + zinc oxide
+  - menthol salicylate
+  - mequinol + tretinoin
+  - metformin + pioglitazone
+  - midostaurin
+  - azelaic acid + betamethasone + minoxidil
+  - azelaic acid + betamethasone + minoxidil + tretinoin
+  - molybdenum + technetium m
+  - multivitamin adult
+  - multivitamin therapeutic
+  - antazoline
+  - antazoline + naphazoline
+  - nicotinic acid
+  - nitrous oxide + oxygen
+  - ophthalmic bath
+  - opium
+  - pancreatin
+  - para aminobenzoic acid
+  - pediatric grippe
+  - penicillin g procaine
+  - pentazocine
+  - pertuzumab + trastuzumab
+  - phenylephrine + zinc
+  - phenobarbital + phenytoin
+  - phosphorous p chromic colloid
+  - piperacillin
+  - placenta derived stromal mesenchymal cells
+  - poliomyelitis vaccine
+  - polyethylene glycol electrolyte
+  - polysaccharide iron complex
+  - aminobenzoic acid
+  - pralidoxime iodide
+  - felypressin + prilocaine
+  - pyrimethamine + sulfadoxine
+  - ra dichloride
+  - rabies immune globulin
+  - rabies vaccine
+  - rhenium sulfide colloid
+  - rhenium sup
+  - rhenium sup + supre etidronic acid
+  - rhenium sup + supre hedp
+  - rhenium sup + supre sulfide colloid
+  - krypton + rubidium
+  - sacubitril
+  - beclomethasone dipropionate + salbutamol
+  - samarium sup
+  - samarium sup + supsm lexidronam
+  - egf + silver sulfadiazine
+  - acid
+  - fluoride sup
+  - fluoride sup + supf
+  - iodide sup + supi
+  - nitrite
+  - sup
+  - sup + supp
+  - dibasic heptahydrate
+  - dibasic heptahydrate + monobasic
+  - picosulfate
+  - oxide
+  - citric acid + oxide + picosulfate
+  - velpatasvir
+  - solifenacin + tamsulosin
+  - naproxen + sumatriptan
+  - suptc bicisate + technetium sup m
+  - suptc exametazime hmpao wbc + technetium sup m
+  - suptc macrosalb + technetium sup m
+  - suptc mebrofenin + technetium sup m
+  - suptc medronic acid + technetium sup m
+  - suptc pentetic acid + technetium sup m
+  - suptc pertechnetate + technetium sup m
+  - suptc phytate + technetium sup m
+  - suptc pyrophosphate + technetium sup m
+  - suptc sestamibi + technetium sup m
+  - suptc stannous agent labelled cells + technetium sup m
+  - suptc succimer + technetium sup m
+  - gimeracil + oteracil + tegafur
+  - dolutegravir + lamivudine + tenofovir
+  - tetanus immune globulin
+  - suptl + thallium sup
+  - guaifenesin + theophylline
+  - naloxone + tilidine
+  - total parentral nutrition
+  - trastuzumab deruxtecan
+  - trastuzumab emtansine
+  - tipiracil
+  - rhenium
+  - rhenium + tungsten
+  - vilanterol
+  - varicella virus vaccine
+  - varicella live attenuated
+  - vitamin a
+  - vitamin b complex
+  - vitamin b + vitamin b + vitamin b
+  - vitamin k
+  - xanomeline
+  - yellow fever vaccine
+  - yohimbine
+  - zoster vaccine live attenuated
+  - zoster vaccine
