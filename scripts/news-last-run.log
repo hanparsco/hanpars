@@ -1,0 +1,27 @@
+  ! European Pharmaceutical Review: HTTP Error 404: Not Found
+  ! Pharmaphorum: not well-formed (invalid token): line 6, column 14
+  ! European Pharmaceutical Review: HTTP Error 404: Not Found
+  ! Pharmaphorum: not well-formed (invalid token): line 6, column 14
+  ! BioSpectrum Asia: HTTP Error 404: Not Found
+global feeds
+  Fierce Pharma: 0 items
+  BioPharma Dive: 10 items
+  Endpoints News: 24 items
+  Pharmaceutical Technology: 10 items
+  STAT: 20 items
+  Google News: 39 items
+china feeds
+  Fierce Pharma: 0 items
+  BioPharma Dive: 10 items
+  Endpoints News: 24 items
+  Pharmaceutical Technology: 10 items
+  STAT: 20 items
+  Google News: 39 items
+  Google News: 3 items
+  Google News: 32 items
+  Google News: 16 items
+global
+  - Endpoints News | Alcon and OpenAI make acquisitions; Tezspire's latest Phase 3 win | img
+  - Pharmaceutical Technology | FDA approves Cosette’s Evoxac oral solution for Sjögren’s disease | img
+  - BioPharma Dive | GSK, Ionis win US approval for first-of-its-kind hepatitis B drug | no image
+china
