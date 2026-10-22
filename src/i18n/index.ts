@@ -97,7 +97,7 @@ export const ui = {
     catalogue: {
       fdfTitle: 'Finished product reference list', apiTitle: 'API reference range', excTitle: 'Excipient reference list',
       entries: 'entries', inList: 'in the list', matching: 'matching your search',
-      searchFdf: 'Search by name, strength or code', searchApi: 'Search for a substance', searchExc: 'Search by name, function or CAS number',
+      searchFdf: 'Search by name, strength or code', searchApi: 'Search by substance or CAS number', searchExc: 'Search by name, function or CAS number',
       product: 'Product', substance: 'Substance', ingredient: 'Excipient', function: 'Function', code: 'Code', cas: 'CAS number', enquiry: 'Enquiry', enquire: 'Enquire',
       noteExc: 'Excipients and formulation materials we can source on request, with principal function and CAS number where recorded; compiled from pharmacopoeial monographs (USP-NF, Ph. Eur.) and our own working list. Ready-to-use coating systems, flavours, colourants and capsule shells are listed as families and specified per enquiry. Not a statement of stock or guaranteed availability.',
       empty: 'Nothing in the list matches that. Try another name or code, or', askDirect: 'ask us directly',
@@ -281,7 +281,7 @@ export const ui = {
     catalogue: {
       fdfTitle: 'فهرست مرجع داروهای ساخته‌شده', apiTitle: 'فهرست مرجع مواد مؤثره', excTitle: 'فهرست مرجع مواد جانبی',
       entries: 'مورد', inList: 'در فهرست', matching: 'مطابق جست‌وجوی شما',
-      searchFdf: 'جست‌وجو بر اساس نام، دوز یا کد', searchApi: 'جست‌وجوی ماده', searchExc: 'جست‌وجو بر اساس نام، کاربرد یا شمارهٔ CAS',
+      searchFdf: 'جست‌وجو بر اساس نام، دوز یا کد', searchApi: 'جست‌وجو بر اساس نام ماده یا شمارهٔ CAS', searchExc: 'جست‌وجو بر اساس نام، کاربرد یا شمارهٔ CAS',
       product: 'محصول', substance: 'ماده', ingredient: 'مادهٔ جانبی', function: 'کاربرد', code: 'کد', cas: 'شمارهٔ CAS', enquiry: 'استعلام', enquire: 'استعلام',
       noteExc: 'مواد جانبی و مواد فرمولاسیونی که می‌توانیم به درخواست شما تأمین کنیم، همراه با کاربرد اصلی و شمارهٔ CAS در مواردی که ثبت شده است؛ گردآوری‌شده از مونوگراف‌های فارماکوپه‌ای (USP-NF، Ph. Eur.) و فهرست کاری خودمان. سامانه‌های پوشش آماده، طعم‌دهنده‌ها، رنگ‌ها و پوستهٔ کپسول به صورت خانواده فهرست شده و در هر استعلام مشخص می‌شوند. اعلام موجودی یا تضمین تأمین نیست.',
       empty: 'موردی مطابق با جست‌وجوی شما نیست. نام یا کد دیگری را امتحان کنید، یا', askDirect: 'مستقیماً از ما بپرسید',
