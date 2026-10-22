@@ -76,7 +76,7 @@ export const ui = {
       threeLede: 'A supply agreement is only useful once the product is approved and on the shelf, so sourcing, registration and project coordination sit with the same people.',
       three: [
         { title: 'Import and sourcing', text: 'APIs, excipients and finished products from manufacturers we already work with, brought into Iran with the certificates and stability data the authority expects.', link: 'API reference range', href: '/api' },
-        { title: 'Regulatory affairs', text: 'CTD, eCTD and ACTD dossiers, IFDA and TİTCK submissions, authority correspondence and lifecycle maintenance. On its own, or with the products we supply.', link: 'What we cover', href: '/regulatory-affairs' },
+        { title: 'Regulatory affairs', text: 'Strategy before the first study. Evidence built into the dossier. Approval secured. Authorisation maintained through every change.', link: 'What we cover', href: '/regulatory-affairs' },
         { title: 'Development partnerships', text: 'For finished dosage-form projects we coordinate development and manufacturing partners, with responsibilities written down at the start. We run the project; partners run the plant.', link: 'How a project begins', href: '/fdf-cdmo' },
       ],
       portfolioTitle: 'The Finished Dosage Form Portfolio',
