@@ -14,7 +14,7 @@ export const pages = {
     introTitle: 'Two lists, one starting point.',
     intro: ['The first list is our own portfolio: medicines for which Hanpars holds the Iranian marketing authorisation, grouped by therapeutic area with licensed dosage forms, strengths and ATC codes.', 'The second is a longer reference list of finished products we can enquire about on your behalf. Names and codes are kept exactly as recorded.'],
     database: '', databaseLabel: '',
-    photo: 'blister-packs', photoAlt: 'Blister packs of tablets on a pale blue surface',
+    photo: 'fdf-portfolio', photoAlt: 'Finished medicines from the Hanpars portfolio: clopidogrel, sertraline and olanzapine tablets',
   },
   excipient: {
     title: 'Excipients', category: 'Products',
