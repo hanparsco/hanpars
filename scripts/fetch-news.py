@@ -47,7 +47,7 @@ GOOD = {'approv': 5, 'fda': 4, 'ema': 4, 'chmp': 4, 'mhra': 3, 'who ': 2, 'acqui
         'recall': 4, 'shortage': 5, 'warning letter': 5, 'import alert': 5, 'gmp': 4, 'inspection': 3, 'tariff': 4, 'price': 3,
         'biosimilar': 3, 'generic': 3, 'api': 3, 'launch': 3, 'phase 3': 2, 'phase iii': 2, 'supply': 3, 'manufactur': 3, 'plant': 2, 'export': 2, 'sanction': 3, 'ban': 2}
 BAD = {'webinar': -10, 'sponsored': -10, 'podcast': -8, 'whitepaper': -10, 'white paper': -10, 'opinion': -3, 'job': -4, 'conference': -4, 'award': -4, 'event': -3, 'newsletter': -6,
-       'pharmalittle': -12, "we're reading": -12, 'we’re reading': -12, 'roundup': -8, 'round-up': -8, 'things to know': -8, 'weekly': -5, 'digest': -8, 'stat+': -6, 'q&a': -5, 'interview': -4, 'stock': -3, 'shares': -2}
+       'pharmalittle': -12, "we're reading": -12, 'we’re reading': -12, 'roundup': -8, 'round-up': -8, 'things to know': -8, 'weekly': -5, 'digest': -8, 'stat+': -6, 'q&a': -5, 'interview': -4, 'stock': -3, 'shares': -2, 'veterinary': -8, 'animal health': -6, 'make acquisitions;': -4}
 
 
 def fetch(url: str, timeout: int = 25) -> bytes:
@@ -113,6 +113,7 @@ def parse_feed(source: str, url: str):
         if 'Google News' in source and gsrc: src = gsrc
         if 'Google News' in source:
             title = re.sub(r'\s+-\s+[^-]+$', '', title)  # strip " - Publisher"
+        title = re.sub(r'\s+\|\s+[^|]+$', '', title)  # strip " | Publisher"
         img = ''
         for child in item.iter():
             t = child.tag.split('}')[-1]
