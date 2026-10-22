@@ -17,6 +17,12 @@ const fmt = (n:number) => n.toLocaleString(numLocale(lang));
 const pl = lang === 'en' ? null : portfolioL[lang];
 const snapshot = pl ? pl.snapshot : portfolio.snapshot;
 const groupTitle = (id:string, title:string) => pl ? ((pl.groups as any)[id]?.title ?? title) : title;
+const tsv = (d: string) => `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+const trioIcons = [
+  tsv('<path d="M3 16h18l-2 4H5z"/><path d="M6 16V9h6v7M12 12h5l2 4"/><path d="M8 6h2v3H8z"/>'),
+  tsv('<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13l2 2 4-4"/>'),
+  tsv('<path d="M3 21V10l5 3V10l5 3V6l8 4v11z"/><path d="M7 17h2M12 17h2M17 17h1"/>'),
+];
 const entries = [
   { href:'/fdf', name:s.home.entries.fdf, text:s.home.entries.fdfText(portfolio.counts.total, fmt(fdf.length)) },
   { href:'/api', name:s.home.entries.api, text:s.home.entries.apiText(fmt(apis.length)) },
@@ -36,10 +42,15 @@ const entries = [
   <div class="hero-meta"><div class="container hero-meta-inner">{entries.map(entry => <a href={L(entry.href)}><strong>{entry.name}</strong><span>{entry.text}</span></a>)}</div></div>
 </section>
 
-<section class="section">
+<section class="section section-paper trio-section">
   <div class="container">
-    <div class="section-head"><h2>{s.home.threeTitle}</h2><p class="lede">{s.home.threeLede}</p></div>
-    <div class="columns-3">{s.home.three.map(item => <article class="column-item"><h3>{item.title}</h3><p>{item.text}</p><a class="text-link" href={L(item.href)}>{item.link}</a></article>)}</div>
+    <div class="trio-head"><h2>{s.home.threeTitle}</h2><p class="lede">{s.home.threeLede}</p></div>
+    <div class="trio">{s.home.three.map((item, i) => <article class="trio-card">
+      <div class="trio-top"><span class="trio-icon" aria-hidden="true" set:html={trioIcons[i]}/><span class="trio-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span></div>
+      <h3>{item.title}</h3>
+      <p>{item.text}</p>
+      <a class="trio-link" href={L(item.href)}><span>{item.link}</span><span class="trio-arrow" aria-hidden="true">{lang === 'fa' ? '←' : '→'}</span></a>
+    </article>)}</div>
   </div>
 </section>
 
