@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import MoleculePage from '../../components/MoleculePage.astro';
 import molecules from '../../data/molecules.json';
 import moleculesFa from '../../data/molecules.fa.json';
-import { moleculeSeo } from '../../data/seo-schema';
+import { moleculeSeo, canonicalMolecule } from '../../data/seo-schema';
 export function getStaticPaths() {
   return Object.keys(molecules).map(slug => ({ params: { slug } }));
 }
@@ -12,7 +12,9 @@ const lang = 'en' as 'en' | 'fa';
 const mol = (molecules as Record<string, any>)[slug!];
 const faDesc = (moleculesFa as Record<string, string>)[slug!] || '';
 const seo = moleculeSeo(slug!, mol, lang, faDesc);
+const primary = canonicalMolecule(slug!, molecules as any);
+const isDup = primary !== slug;
 const base = lang === 'fa' ? '/fa' : '';
 const crumbs = [{ name: lang === 'fa' ? 'خانه' : 'Home', path: base || '/' }, { name: lang === 'fa' ? 'مواد مؤثرهٔ دارویی' : 'Active pharmaceutical ingredients', path: base + '/api' }, { name: seo.name, path: base + '/api/' + slug }];
 ---
-<Layout title={seo.title} description={seo.description} keywords={seo.keywords} schema={seo.schema ? [seo.schema] : []} breadcrumbs={crumbs} image={mol.image || undefined}><MoleculePage slug={slug!} /></Layout>
+<Layout title={seo.title} description={seo.description} keywords={seo.keywords} noindex={isDup} canonicalPath={isDup ? `/api/${primary}` : undefined} schema={seo.schema ? [seo.schema] : []} breadcrumbs={crumbs} image={mol.image || undefined}><MoleculePage slug={slug!} /></Layout>

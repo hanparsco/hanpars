@@ -32,8 +32,8 @@ export function productSeo(entry: { name: string; code: string }, lang: 'en' | '
   const ind0 = lang === 'fa' ? (fa?.indications || '') : (en?.indications || '');
   const ind = ind0.replace(/^\s*(موارد مصرف|Indications(?: and usage)?)\s*[:：]\s*/i, '');
   const description = lang === 'fa'
-    ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}، ${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '، ' + strength : ''}${p.pack ? '، ' + p.pack : ''}. ${ind ? 'موارد مصرف: ' + ind + ' ' : ''}تأمین و واردات توسط هانیا پرسان دارو، کد ${entry.code}.`, 158)
-    : clip(`${name} ${prettyName(p.form)}${strength ? ' ' + strength : ''}${p.pack ? ', ' + p.pack : ''}. ${ind ? 'Indications: ' + ind + ' ' : ''}Sourcing and import in Iran by Hanpars, code ${entry.code}.`, 158);
+    ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}، ${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '، ' + strength : ''}${p.pack ? '، ' + p.pack : ''}، کد ${entry.code}. ${ind ? 'موارد مصرف: ' + ind + ' ' : ''}تأمین و واردات توسط هانیا پرسان دارو.`, 158)
+    : clip(`${name} ${prettyName(p.form)}${strength ? ' ' + strength : ''}${p.pack ? ', ' + p.pack : ''}, code ${entry.code}. ${ind ? 'Indications: ' + ind + ' ' : ''}Sourcing and import in Iran by Hanpars.`, 158);
   const keywords = lang === 'fa'
     ? [nameFa, name, `${nameFa || name} ${fFormShort}`, `خرید ${nameFa || name}`, `قیمت ${nameFa || name}`, `واردات ${nameFa || name}`, `تأمین ${nameFa || name}`, `${nameFa || name} ${strength}`, 'واردات دارو', 'واردات فوریتی دارو', 'هانیا پرسان دارو'].filter(Boolean).join('، ')
     : [name, `${name} ${eForm}`, `${name} ${strength}`, `${name} supplier`, `${name} import Iran`, `buy ${name}`, 'pharmaceutical importer Iran', 'Hanpars'].join(', ');
@@ -86,4 +86,14 @@ function duplicateInfo(entry: { name: string; code: string }) {
   }
   const v = _dup.get(baseKey(entry))!; const p = parseFdf(entry.name).pack;
   return { pack: v.names > 1, code: (v.packs.get(p) || 0) > 1 };
+}
+
+/** Molecule entries that share a CAS number: the first slug (alphabetical) is canonical. */
+let _casPrimary: Map<string, string> | null = null;
+export function canonicalMolecule(slug: string, all: Record<string, { cas?: string; cid?: number | null }>): string {
+  if (!_casPrimary) {
+    _casPrimary = new Map();
+    for (const k of Object.keys(all).sort()) { const c = all[k].cas; if (c && all[k].cid && !_casPrimary.has(c)) _casPrimary.set(c, k); }
+  }
+  const c = all[slug]?.cas; return (c && _casPrimary.get(c)) || slug;
 }
