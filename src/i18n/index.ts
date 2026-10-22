@@ -79,7 +79,7 @@ export const ui = {
         { title: 'Regulatory affairs', text: 'CTD, eCTD and ACTD dossiers, IFDA and TİTCK submissions, authority correspondence and lifecycle maintenance. On its own, or with the products we supply.', link: 'What we cover', href: '/regulatory-affairs' },
         { title: 'Development partnerships', text: 'For finished dosage-form projects we coordinate development and manufacturing partners, with responsibilities written down at the start. We run the project; partners run the plant.', link: 'How a project begins', href: '/fdf-cdmo' },
       ],
-      portfolioTitle: 'The hospital and specialty portfolio',
+      portfolioTitle: 'The Finished Dosage Form Portfolio',
       figRegistered: 'medicines registered with the IFDA', figAvailable: 'available in Iran', figLaunching: 'launching',
       portfolioText: 'Contrast media, anaesthetics, antibiotics, hormones and biologics from GMP-certified manufacturers, distributed nationally through Pakhsh Razi, Darougostar Tooba and Dey Darou Omid. Hanpars is a contracted supplier to the national Strategic Medicine Reserve.',
       portfolioPrimary: 'See the portfolio', portfolioSecondary: 'Represent your products in Iran',
