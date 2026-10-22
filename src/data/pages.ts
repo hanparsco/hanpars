@@ -5,7 +5,7 @@ export const pages = {
     meta: 'Search the Hanpars API reference range of 1,453 substances and prepare a pharmaceutical sourcing enquiry with your specification and target market.',
     introTitle: 'Start with the substance.',
     intro: ['Search the list, then bring the pharmacopoeial grade, quantity, destination and the documents you will need: certificates of analysis, DMF or CEP references, GMP certificates.', 'Names are kept exactly as in our working list. An entry means we can enquire about it, not that it is in stock or registered.'],
-    database: 'https://hanparsco.github.io/api-list/', databaseLabel: 'Open the complete API database',
+    database: '', databaseLabel: '',
   },
   fdf: {
     title: 'Finished dosage forms', category: 'Products',
@@ -30,7 +30,7 @@ export const pages = {
     meta: 'Reference list of 295 supplement ingredients — vitamins, minerals, omega-3, probiotics, botanicals, nutraceuticals — with common forms and uses, and a Hanpars sourcing enquiry for each.',
     introTitle: 'Start with the ingredient.',
     intro: ['Our supplement work sits alongside pharmaceuticals, with the same attention to specification and documentation. The list below covers the main ingredients used in pharmaceutical and food supplements, grouped by type, with the forms usually traded and what each is used for.', 'Include the ingredient, grade, quantity, market and documentation needs when you enquire.'],
-    database: 'https://hanparsco.github.io/Nutrition/', databaseLabel: 'Explore the nutrition database',
+
   },
   'about-us': {
     title: 'About Hanpars', category: 'Company',
