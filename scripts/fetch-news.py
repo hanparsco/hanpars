@@ -100,7 +100,12 @@ def parse_feed(source: str, url: str):
         link = text(item, 'link')
         if not link:
             for child in item:
-                if child.tag.split('}')[-1] == 'link': link = child.get('href') or ''
+                if child.tag.split('}')[-1] == 'link':
+                    link = child.get('href') or (child.tail or '').strip() or ''
+                    if link: break
+        if not link:
+            g = text(item, 'guid')
+            if g.startswith('http'): link = g
         summary = strip_html(text(item, 'description', 'summary', 'content'))
         date = parse_date(text(item, 'pubDate', 'published', 'updated', 'date'))
         src = source
@@ -135,8 +140,10 @@ def score(item, china=False):
     else:
         s -= 2
     if china:
-        if not any(k in t for k in CHINA_TERMS): return -100
+        title = item['title'].lower()
+        if not any(k in title for k in CHINA_TERMS): return -100
         if not any(k in t for k in APIFDF_TERMS): return -100
+        if not any(k in title for k in ('pharma', 'drug', ' api', 'apis', 'generic', 'medicine', 'biosimilar', 'cdmo', 'ingredient', 'excipient', 'nmpa', 'gmp')): return -100
         s += sum(2 for k in APIFDF_TERMS if k in t)
         for k in ('biotech', 'clinical data', 'phase 1', 'phase 2', 'rna', 'licensing', 'antibody', 'oncology'):
             if k in t: s -= 3
