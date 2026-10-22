@@ -1,6 +1,22 @@
 {
- "updated": "2026-10-22T07:47:58Z",
+ "updated": "2026-10-22T19:29:35Z",
  "global": [
+  {
+   "title": "Recon: FDA approves GSK hepatitis B drug; EQT to buy molecular testing firm Qiagen for $10.8B",
+   "url": "https://www.raps.org/resource/recon-fda-approves-gsk-hepatitis-b-drug-eqt-to-buy-molecular-testing-firm-qiagen-for-10-8b.html",
+   "source": "RAPS",
+   "date": "2026-10-22",
+   "summary": "Recon: FDA approves GSK hepatitis B drug; EQT to buy molecular testing firm Qiagen for $10.8B RAPS",
+   "image": "/news/g-9bcc43ca9c.jpg"
+  },
+  {
+   "title": "FDA Grants Ultomiris Accelerated Approval in the U.S.",
+   "url": "https://www.pharmexec.com/view/daily-fda-grants-ultomiris-accelerated-approval-us-",
+   "source": "Pharmaceutical Executive",
+   "date": "2026-10-22",
+   "summary": "FDA Grants Ultomiris Accelerated Approval in the U.S. | PharmExec Pharmaceutical Executive",
+   "image": "/news/g-ec8aed7493.jpg"
+  },
   {
    "title": "Alcon and OpenAI make acquisitions; Tezspire's latest Phase 3 win",
    "url": "https://endpoints.news/alcon-and-openai-make-acquisitions-tezspires-latest-phase-3-win/",
@@ -8,48 +24,32 @@
    "date": "2026-10-21",
    "summary": "Alcon acquires Neurotech: The Swiss eye specialist paid $550 million upfront to acquire Neurotech Pharmaceuticals and could make additional payments if certain milestones are met. Alcon gains hold of an FDA-approved ...",
    "image": "/news/g-bc44f69e36.jpg"
-  },
-  {
-   "title": "FDA approves Cosette’s Evoxac oral solution for Sjögren’s disease",
-   "url": "https://www.pharmaceutical-technology.com/news/fda-cosettes-evoxac-sjogrens-disease/",
-   "source": "Pharmaceutical Technology",
-   "date": "2026-10-21",
-   "summary": "The FDA has granted approval for Cosette’s Evoxac oral solution to treat dry mouth symptoms in adults diagnosed with Sjögren’s disease.",
-   "image": "/news/g-1f85ce1ed5.jpg"
-  },
-  {
-   "title": "FDA Approves Hibsago",
-   "url": "https://www.pharmexec.com/view/daily-fda-approves-hibsago",
-   "source": "Pharmaceutical Executive",
-   "date": "2026-10-21",
-   "summary": "FDA Approves Hibsago | PharmExec Pharmaceutical Executive",
-   "image": "/news/g-34b7d4cd82.jpg"
   }
  ],
  "china": [
   {
-   "title": "ESTEVE CDMO Invests Over $80 Million to Expand Pharmaceutical Manufacturing Capabilities in China",
-   "url": "https://biopharmaapac.com/news/48/8594/esteve-cdmo-invests-over-80-million-to-expand-pharmaceutical-manufacturing-capabilities-in-china.html",
-   "source": "BioPharma APAC",
+   "title": "ProBio Successfully Completes NMPA Pre-Approval Inspection for Biologics Manufacturing Facility in Nanjing, China",
+   "url": "https://www.prnewswire.com/news-releases/probio-successfully-completes-nmpa-pre-approval-inspection-for-biologics-manufacturing-facility-in-nanjing-china-302912641.html",
+   "source": "PR Newswire",
+   "date": "2026-10-21",
+   "summary": "ProBio Successfully Completes NMPA Pre-Approval Inspection for Biologics Manufacturing Facility in Nanjing, China PR Newswire",
+   "image": "/news/c-4aedaac8e5.jpg"
+  },
+  {
+   "title": "ESTEVE CDMO Invests More Than $80 Million In New China Manufacturing Site",
+   "url": "https://pulse2.com/esteve-cdmo-invests-more-than-80-million-in-new-china-manufacturing-site/",
+   "source": "Pulse 2.0",
    "date": "2026-10-22",
-   "summary": "ESTEVE CDMO Invests Over $80 Million to Expand Pharmaceutical Manufacturing Capabilities in China BioPharma APAC",
-   "image": "/news/c-7e20ffb89c.jpg"
+   "summary": "ESTEVE CDMO Invests More Than $80 Million In New China Manufacturing Site Pulse 2.0",
+   "image": "/news/c-4c63b030b7.jpg"
   },
   {
-   "title": "Europe’s last penicillin plant faces a bitter fight against China’s cheaper drugs",
-   "url": "https://m.economictimes.com/news/international/business/europes-last-penicillin-plant-faces-a-bitter-fight-against-chinas-cheaper-drugs/amp_articleshow/135090347.cms",
-   "source": "The Economic Times",
-   "date": "2026-10-21",
-   "summary": "Europe’s last penicillin plant faces a bitter fight against China’s cheaper drugs The Economic Times",
-   "image": "/news/c-e7ff5b5b56.jpg"
-  },
-  {
-   "title": "Esteve CDMO will invest 75 million in a new industrial plant in China",
-   "url": "https://www.democrata.es/en/economy/esteve-cdmo-will-invest-75-million-in-a-new-industrial-plant-in-china/amp/",
-   "source": "Demócrata",
-   "date": "2026-10-21",
-   "summary": "Esteve CDMO will invest 75 million in a new industrial plant in China Demócrata",
-   "image": ""
+   "title": "Egypt and China explore new pharmaceutical manufacturing and technology partnerships",
+   "url": "https://fastcompanyme.com/news/egypt-and-china-explore-new-pharmaceutical-manufacturing-and-technology-partnerships/",
+   "source": "Fast Company Middle East",
+   "date": "2026-10-22",
+   "summary": "Egypt and China explore new pharmaceutical manufacturing and technology partnerships Fast Company Middle East",
+   "image": "/news/c-2c6c728fe2.jpg"
   }
  ]
 }

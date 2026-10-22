@@ -1,34 +1,36 @@
-  ! Reuters Health via Yahoo: HTTP Error 404: Not Found
   ! European Pharmaceutical Review: HTTP Error 404: Not Found
-  ! Reuters Health via Yahoo: HTTP Error 404: Not Found
+  ! in-Pharmatechnologist: HTTP Error 410: Gone
   ! European Pharmaceutical Review: HTTP Error 404: Not Found
-  ! BioSpectrum Asia: HTTP Error 404: Not Found
+  ! in-Pharmatechnologist: HTTP Error 410: Gone
 global feeds
-  Fierce Pharma: 0 items (root <rss>, 20529 bytes)
-  Pharmaceutical Executive: 0 items (root <rss>, 23440 bytes)
+  Fierce Pharma: 0 items (root <rss>, 20723 bytes, start b'<?xml version="1.0" encoding="utf-8"?>\n<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://www.fiercepharma.com/">\n  <channel>\n    <title>Fierce Pharma</title>\n    <link>https://www.fiercepharma.com/</link>\n    ')
+  Pharmaceutical Executive: 0 items (root <rss>, 23674 bytes, start b'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>PharmExec articles</title><description>PharmExec articles</description><link>https')
   BioPharma Dive: 10 items
   Endpoints News: 24 items
+  Google News: 53 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 39 items
+  Google News: 47 items
 china feeds
-  Fierce Pharma: 0 items (root <rss>, 20529 bytes)
-  Pharmaceutical Executive: 0 items (root <rss>, 23440 bytes)
+  Fierce Pharma: 0 items (root <rss>, 20723 bytes, start b'<?xml version="1.0" encoding="utf-8"?>\n<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://www.fiercepharma.com/">\n  <channel>\n    <title>Fierce Pharma</title>\n    <link>https://www.fiercepharma.com/</link>\n    ')
+  Pharmaceutical Executive: 0 items (root <rss>, 23674 bytes, start b'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>PharmExec articles</title><description>PharmExec articles</description><link>https')
   BioPharma Dive: 10 items
   Endpoints News: 24 items
+  Google News: 53 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 39 items
-  Google News: 3 items
-  Google News: 32 items
-  Google News: 18 items
+  Google News: 47 items
+  Google News: 40 items
+  Google News: 4 items
+  Google News: 31 items
+  Google News: 21 items
 global
+  - RAPS | Recon: FDA approves GSK hepatitis B drug; EQT to buy molecular testing | img
+  - Pharmaceutical Executive | FDA Grants Ultomiris Accelerated Approval in the U.S. | img
   - Endpoints News | Alcon and OpenAI make acquisitions; Tezspire's latest Phase 3 win | img
-  - Pharmaceutical Technology | FDA approves Cosette’s Evoxac oral solution for Sjögren’s disease | img
-  - Pharmaceutical Executive | FDA Approves Hibsago | img
 china
-  - BioPharma APAC | ESTEVE CDMO Invests Over $80 Million to Expand Pharmaceutical Manufact | img
-  - The Economic Times | Europe’s last penicillin plant faces a bitter fight against China’s ch | img
-  - Demócrata | Esteve CDMO will invest 75 million in a new industrial plant in China | no image
+  - PR Newswire | ProBio Successfully Completes NMPA Pre-Approval Inspection for Biologi | img
+  - Pulse 2.0 | ESTEVE CDMO Invests More Than $80 Million In New China Manufacturing S | img
+  - Fast Company Middle East | Egypt and China explore new pharmaceutical manufacturing and technolog | img
