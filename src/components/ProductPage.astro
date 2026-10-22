@@ -14,7 +14,7 @@ const s = t(lang);
 const m = s.product;
 const L = (p: string) => localePath(p, lang);
 const p0 = parseFdf(entry.name);
-const unit = (x: string) => x.replace(/(\d)\{dose\}/g, '$1 dose').replace(/\{dose\}/g, 'doses').replace(/\{([a-z]+)\}/g, '$1').replace(/\bug\b/g, 'µg');
+const unit = (x: string) => x.replace(/(\d)(dose|puff)/g, '$1 $2').replace(/(\d)\{dose\}/g, '$1 dose').replace(/\{dose\}/g, 'doses').replace(/\{([a-z]+)\}/g, '$1').replace(/\bug\b/g, 'µg');
 const p = { ...p0, strength: unit(p0.strength), pack: unit(p0.pack) };
 type Info = { generic:string; brand?:string; pharmClass?:string[]; moaClass?:string[]; routes?:string[]; forms?:string[]; moa?:string; indications?:string; dosage?:string; contraindications?:string; warnings?:string; boxed?:string; pregnancy?:string; storage?:string; setId?:string; effective?:string; missing?:boolean };
 const infos = info as Record<string, Info>;
@@ -69,12 +69,12 @@ const dailymed = main?.setId ? `https://dailymed.nlm.nih.gov/dailymed/drugInfo.c
   </div>
   <aside class="mol-aside">
     <h3>{m.thisEntry}</h3>
-    <dl class="mol-props" lang="en" dir="ltr">
-      <div><dt>{m.form}</dt><dd>{formLabel}</dd></div>
-      {routeLabel && <div><dt>{m.route}</dt><dd>{routeLabel}</dd></div>}
-      {p.strength && <div><dt>{m.strength}</dt><dd>{p.strength}</dd></div>}
-      {p.pack && <div><dt>{m.pack}</dt><dd>{p.pack}</dd></div>}
-      <div><dt>{m.code}</dt><dd>{entry.code}</dd></div>
+    <dl class="mol-props">
+      <div><dt>{m.form}</dt><dd dir="ltr" lang="en">{formLabel}</dd></div>
+      {routeLabel && <div><dt>{m.route}</dt><dd dir="ltr" lang="en">{routeLabel}</dd></div>}
+      {p.strength && <div><dt>{m.strength}</dt><dd dir="ltr" lang="en">{p.strength}</dd></div>}
+      {p.pack && <div><dt>{m.pack}</dt><dd dir="ltr" lang="en">{p.pack}</dd></div>}
+      <div><dt>{m.code}</dt><dd dir="ltr" lang="en">{entry.code}</dd></div>
     </dl>
     {molLinks.length > 0 && <><h3>{m.activeIngredient}</h3><ul class="link-list prod-links" lang="en" dir="ltr">{molLinks.map(l => <li><a href={l.href}>{l.name}<small>{l.cas}</small></a></li>)}</ul></>}
     <h3>{m.sourcing}</h3>

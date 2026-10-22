@@ -54,12 +54,12 @@ const num = (v: number | null | undefined, d = 1) => (v === null || v === undefi
   </div>
   <aside class="mol-aside">
     <h3>{m.properties}</h3>
-    <dl class="mol-props" lang="en" dir="ltr">
-      <div><dt>XLogP</dt><dd>{num(mol.xlogp)}</dd></div>
-      <div><dt>TPSA</dt><dd>{num(mol.tpsa)} Å²</dd></div>
-      <div><dt>{m.hbd}</dt><dd>{num(mol.hbd, 0)}</dd></div>
-      <div><dt>{m.hba}</dt><dd>{num(mol.hba, 0)}</dd></div>
-      <div><dt>{m.rotb}</dt><dd>{num(mol.rotb, 0)}</dd></div>
+    <dl class="mol-props">
+      <div><dt>XLogP</dt><dd dir="ltr" lang="en">{num(mol.xlogp)}</dd></div>
+      <div><dt>TPSA</dt><dd dir="ltr" lang="en">{num(mol.tpsa)} Å²</dd></div>
+      <div><dt>{m.hbd}</dt><dd dir="ltr" lang="en">{num(mol.hbd, 0)}</dd></div>
+      <div><dt>{m.hba}</dt><dd dir="ltr" lang="en">{num(mol.hba, 0)}</dd></div>
+      <div><dt>{m.rotb}</dt><dd dir="ltr" lang="en">{num(mol.rotb, 0)}</dd></div>
     </dl>
     <p class="form-hint">{m.propsNote}</p>
     <h3>{m.sourcing}</h3>

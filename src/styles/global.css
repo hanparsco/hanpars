@@ -475,7 +475,7 @@ html[lang=fa] .exc-tile-head strong { font-size:16px; }
 .mol-aside { position:sticky; top:120px; border-top:1px solid var(--black); padding-top:22px; }
 .mol-aside h3 { font-size:17px; margin:0 0 16px; } .mol-aside h3 + .mol-props + .form-hint { margin-bottom:34px; display:block; }
 .mol-props { margin:0 0 10px; } .mol-props div { display:flex; justify-content:space-between; gap:16px; padding:9px 0; border-bottom:1px solid var(--line); font-size:14.5px; }
-.mol-props dt { color:var(--muted); } .mol-props dd { margin:0; font-family:var(--display); font-weight:600; color:var(--navy); }
+.mol-props dt { color:var(--muted); } .mol-props dd { margin:0; font-family:var(--display); font-weight:600; color:var(--navy); unicode-bidi:isolate; text-align:end; }
 .mol-checks { margin:0 0 22px; } .mol-checks li { font-size:15px; }
 .mol-aside .button { width:100%; }
 .table-link { color:var(--navy); border-bottom:1px solid var(--line); transition:color .2s,border-color .2s; } .table-link:hover { color:var(--lapis); border-color:var(--lapis); }

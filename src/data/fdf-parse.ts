@@ -1,6 +1,6 @@
 /** Parse the finished-product list strings ("INGREDIENT (AS SALT) FORM ROUTE STRENGTH VOLUME") into fields. */
 const FORMS = ['NAIL LACQUER','SOLUTION/DROPS','SOAP','DOUCHE','STICK','DISC','GAS','LACQUER','INJECTABLE','INHALANT','TABLET','CAPSULE','INJECTION','POWDER','SOLUTION','SUSPENSION','SYRUP','CREAM','OINTMENT','GEL','DROPS','SPRAY','INHALER','AEROSOL','PATCH','SUPPOSITORY','EMULSION','LOTION','GRANULES','GRANULE','SACHET','KIT','IMPLANT','FILM','LOZENGE','PESSARY','ENEMA','CONCENTRATE','LIQUID','ELIXIR','SHAMPOO','FOAM','PASTE','INSERT','RING','DEVICE','VIAL','AMPOULE','PEN','CARTRIDGE','DISPERSION','PELLET','SYSTEM','STRIP','SWAB','LYOPHILISATE','MOUTHWASH','PLASTER','OIL','WAFER','GUM','BAR','SPONGE','TINCTURE','CHEWABLE','EFFERVESCENT','ORODISPERSIBLE','BAG','BOTTLE'];
-const ROUTES = ['ORAL','PARENTERAL','TOPICAL','RESPIRATORY','OPHTHALMIC','OTIC','NASAL','RECTAL','VAGINAL','TRANSDERMAL','SUBLINGUAL','BUCCAL','INTRAVESICAL','DENTAL','INHALATION','INTRATHECAL','INTRAVITREAL','CUTANEOUS','URETHRAL','IRRIGATION','HEMODIALYSIS','INTRAMUSCULAR','INTRAVENOUS','SUBCUTANEOUS'];
+const ROUTES = ['NOT APPLICABLE','AURICULAR \\(OTIC\\)','INTRAPERITONEAL','ENDOTRACHEAL','TRANSTRACHEAL','INTRADERMAL','PERCUTANEOUS','INTRASPINAL','INTRAEPIDERMAL','INTRACAVITARY','INTRA-ARTICULAR','EPIDURAL','INTRAOCULAR','INTRACAVERNOUS','INTRALESIONAL','INTRAUTERINE','PERIODONTAL','EXTRACORPOREAL','INFILTRATION','ORAL','PARENTERAL','TOPICAL','RESPIRATORY','OPHTHALMIC','OTIC','NASAL','RECTAL','VAGINAL','TRANSDERMAL','SUBLINGUAL','BUCCAL','INTRAVESICAL','DENTAL','INHALATION','INTRATHECAL','INTRAVITREAL','CUTANEOUS','URETHRAL','IRRIGATION','HEMODIALYSIS','INTRAMUSCULAR','INTRAVENOUS','SUBCUTANEOUS'];
 const formRe = new RegExp('\\b(' + FORMS.join('|').replace(/\//g, '\\/') + ')\\b');
 const routeRe = new RegExp('\\b(' + ROUTES.join('|') + ')\\b');
 
@@ -11,12 +11,15 @@ export function parseFdf(name: string): Parsed {
   const ingredientRaw = (m ? name.slice(0, m.index) : name).trim().replace(/,$/, '');
   const rest = m ? name.slice(m.index) : '';
   const r = routeRe.exec(rest);
-  const form = (r ? rest.slice(0, r.index) : rest).trim().replace(/,$/, '');
+  const form = (r ? rest.slice(0, r.index) : (rest.search(/\s\d/) >= 0 ? rest.slice(0, rest.search(/\s\d/)) : rest)).trim().replace(/,$/, '');
   const route = r ? r[1] : '';
-  const after = r ? rest.slice(r.index + r[1].length).trim() : '';
-  // strength = up to and including the first unit token; pack = what follows (e.g. "100 mL")
-  const sm = /^(.*?(?:mg|mcg|ug|µg|kg|g|IU|%|units?|MIU|mmol|mEq|mCi|MBq|GBq|mL|L|\{[a-z]+\})(?:\/\s?\d*\.?\d*\s?(?:mL|L|g|mg|ug|dose|\{dose\}|actuation|puff|spray|drop|h|hr))*)\s*(.*)$/i.exec(after);
-  const strength = sm ? sm[1].trim() : after;
+  const firstNum = rest.search(/\s\d/);
+  const after = r ? rest.slice(r.index + r[1].length).trim() : (firstNum >= 0 ? rest.slice(firstNum).trim() : '');
+  // strength = number+unit groups joined by '/', pack = what follows (e.g. "100 mL")
+  const norm = after.replace(/\[iU\]/gi, 'IU').replace(/\[PFU\]/gi, 'PFU').replace(/\{puff\}/gi, 'puff').replace(/\{dose\}/gi, 'dose').replace(/\{([^}]+)\}/g, '$1').replace(/\bmeq\b/g, 'mEq').replace(/\bug\b/g, 'µg');
+  const U = '(?:mg|mcg|µg|kg|g|IU|PFU|%|units?|U|TU|MIU|mmol|mEq|mCi|MBq|GBq|mL|L|dose|puff|actuation|cells|cm2?|h)';
+  const sm = new RegExp('^((?:[\\d.,]+\\s?' + U + ')(?:\\s?\\/\\s?(?:[\\d.,]*\\s?' + U + '))*)\\s*(.*)$', 'i').exec(norm);
+  const strength = sm ? sm[1].replace(/\s?\/\s?/g, '/').trim() : norm;
   const pack = sm ? sm[2].trim() : '';
   const salt = (/\(AS ([^)]+)\)/i.exec(ingredientRaw) || [, ''])[1] || '';
   const ingredient = ingredientRaw.replace(/\(AS [^)]+\)/gi, '').replace(/\s+/g, ' ').trim();
