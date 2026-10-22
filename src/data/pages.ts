@@ -22,7 +22,7 @@ export const pages = {
     meta: 'Search the Hanpars excipient reference list of 1,241 materials with CAS numbers and prepare an enquiry with the grade, specification and documentation your formulation requires.',
     introTitle: 'For excipients, the grade is the request.',
     intro: ['Two excipients with the same name can behave very differently, so tell us the grade, the pharmacopoeial specification, the application and the documents you need, and we will take that to suppliers.', 'The reference list below lists what we have sourced or been asked about before; it is a reference, not a stock list.'],
-    database: 'https://hanparsco.github.io/excipient_list/', databaseLabel: 'Explore the excipient database',
+    
   },
   nutrition: {
     title: 'Nutrition and supplement ingredients', category: 'Products',

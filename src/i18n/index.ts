@@ -201,8 +201,8 @@ export const ui = {
       note: 'The main active ingredients used in pharmaceutical and food supplements, with the forms usually traded. A reference for enquiries, not a statement of stock; grade, standardisation, documentation and the regulatory status of each ingredient in the target market are confirmed per request.',
     },
     excipientCats: {
-      title: 'Excipients by function', lede: 'The main categories and the materials most often specified in each. The full list, with function and CAS number, follows.',
-      seeAll: 'See all in the list', all: 'All', other: 'Other',
+      title: 'Excipients by function', lede: 'Eighteen categories, each with the materials most often specified. Select one to filter the full list below.',
+      seeAll: 'See all in the list', all: 'All', other: 'Other', inList: (n: string) => `${n} in list`,
     },
     notFound: { title: "That page isn't here.", text: 'The address may have changed, or it never led anywhere. The products, services and contact details are all a click away.', home: 'Back to the homepage', contact: 'Contact Hanpars' },
     dateLocale: 'en-GB',
@@ -385,8 +385,8 @@ export const ui = {
       note: 'مواد مؤثرهٔ اصلی مکمل‌های دارویی و غذایی، همراه با شکل‌هایی که معمولاً معامله می‌شوند. مرجع استعلام است، نه اعلام موجودی؛ گرید، استانداردسازی، مستندات و وضعیت رگولاتوری هر ماده در بازار هدف برای هر درخواست تأیید می‌شود.',
     },
     excipientCats: {
-      title: 'مواد جانبی بر اساس کاربرد', lede: 'دسته‌های اصلی و موادی که در هر دسته بیش از همه مشخص می‌شوند. فهرست کامل، با کاربرد و شمارهٔ CAS، در ادامه می‌آید.',
-      seeAll: 'همه در فهرست', all: 'همه', other: 'سایر',
+      title: 'مواد جانبی بر اساس کاربرد', lede: 'هجده دسته، هر یک با موادی که بیش از همه مشخص می‌شوند. برای فیلتر کردن فهرست کامل، یکی را انتخاب کنید.',
+      seeAll: 'همه در فهرست', all: 'همه', other: 'سایر', inList: (n: string) => `${n} مورد در فهرست`,
     },
     notFound: { title: 'این صفحه اینجا نیست.', text: 'نشانی شاید تغییر کرده یا هرگز وجود نداشته است. محصولات، خدمات و راه‌های تماس یک کلیک فاصله دارند.', home: 'بازگشت به صفحهٔ اصلی', contact: 'تماس با هانیا پرسان دارو' },
     dateLocale: 'fa-IR',
