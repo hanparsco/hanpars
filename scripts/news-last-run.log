@@ -1,7 +1,7 @@
   ! Reuters Health via Yahoo: HTTP Error 404: Not Found
-  ! European Pharmaceutical Review: no element found: line 1, column 0
+  ! European Pharmaceutical Review: HTTP Error 404: Not Found
   ! Reuters Health via Yahoo: HTTP Error 404: Not Found
-  ! European Pharmaceutical Review: no element found: line 1, column 0
+  ! European Pharmaceutical Review: HTTP Error 404: Not Found
   ! BioSpectrum Asia: HTTP Error 404: Not Found
 global feeds
   Fierce Pharma: 0 items (root <rss>, 20738 bytes)
@@ -11,7 +11,7 @@ global feeds
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 39 items
+  Google News: 40 items
 china feeds
   Fierce Pharma: 0 items (root <rss>, 20738 bytes)
   Pharmaceutical Executive: 0 items (root <rss>, 23440 bytes)
@@ -20,7 +20,7 @@ china feeds
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 39 items
+  Google News: 40 items
   Google News: 3 items
   Google News: 32 items
   Google News: 16 items
@@ -29,6 +29,6 @@ global
   - Pharmaceutical Technology | FDA approves Cosette’s Evoxac oral solution for Sjögren’s disease | img
   - Pharmaceutical Executive | FDA Approves Hibsago | PharmExec | img
 china
-  - The Times of India | American billionaire Mark Cuban strongly believes that manufacturing c | img
   - Voice of ASIA | ESTEVE CDMO expands its presence in Asia with a major investment and n | img
-  - India Shipping News | China’s non-tariff walls a major export hurdle: FM Nirmala Sitharaman | img
+  - The Economic Times | Europe’s last penicillin plant faces a bitter fight against China’s ch | img
+  - 24.KG | Kyrgyzstan to build veterinary drug plant with Chinese partners | img

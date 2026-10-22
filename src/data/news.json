@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T01:47:19Z",
+ "updated": "2026-10-22T01:59:59Z",
  "global": [
   {
    "title": "Alcon and OpenAI make acquisitions; Tezspire's latest Phase 3 win",
@@ -28,14 +28,6 @@
  ],
  "china": [
   {
-   "title": "American billionaire Mark Cuban strongly believes that manufacturing can return to the US from China; it",
-   "url": "https://timesofindia.indiatimes.com/technology/tech-news/american-billionaire-mark-cuban-strongly-believes-that-manufacturing-can-return-to-the-us-from-china-it-is-really-simple-all-that-americans-need-is-/articleshow/135050004.cms",
-   "source": "The Times of India",
-   "date": "2026-10-19",
-   "summary": "American billionaire Mark Cuban strongly believes that manufacturing can return to the US from China; it The Times of India",
-   "image": "/news/c-136bb3a3de.jpg"
-  },
-  {
    "title": "ESTEVE CDMO expands its presence in Asia with a major investment and new manufacturing site in China",
    "url": "https://voiceofasean.com/newsroom/pr-gov/esteve-cdmo-expands-its-presence-in-asia-with-a-major-investment-and-new-manufacturing-site-in-china/",
    "source": "Voice of ASIA",
@@ -44,12 +36,20 @@
    "image": "/news/c-442f8175e8.jpg"
   },
   {
-   "title": "China’s non-tariff walls a major export hurdle: FM Nirmala Sitharaman",
-   "url": "https://indiashippingnews.com/export/chinas-non-tariff-walls-a-major-export-hurdle-fm-nirmala-sitharaman/",
-   "source": "India Shipping News",
-   "date": "2026-10-19",
-   "summary": "China’s non-tariff walls a major export hurdle: FM Nirmala Sitharaman India Shipping News",
-   "image": "/news/c-44f20c1612.jpg"
+   "title": "Europe’s last penicillin plant faces a bitter fight against China’s cheaper drugs",
+   "url": "https://m.economictimes.com/news/international/business/europes-last-penicillin-plant-faces-a-bitter-fight-against-chinas-cheaper-drugs/amp_articleshow/135090347.cms",
+   "source": "The Economic Times",
+   "date": "2026-10-21",
+   "summary": "Europe’s last penicillin plant faces a bitter fight against China’s cheaper drugs The Economic Times",
+   "image": "/news/c-e7ff5b5b56.jpg"
+  },
+  {
+   "title": "Kyrgyzstan to build veterinary drug plant with Chinese partners",
+   "url": "https://24.kg/en/article/kyrgyzstan-to-build-veterinary-drug-plant-with-chinese-partners",
+   "source": "24.KG",
+   "date": "2026-10-20",
+   "summary": "Kyrgyzstan to build veterinary drug plant with Chinese partners 24.KG",
+   "image": "/news/c-84443d5220.jpg"
   }
  ]
 }
