@@ -1,0 +1,18 @@
+---
+import { langFromPath, t } from '../i18n';
+interface Props { item: { title:string; url:string; source:string; date:string; summary:string; image:string }; dark?: boolean; eager?: boolean; }
+const { item, dark = false, eager = false } = Astro.props;
+const lang = langFromPath(Astro.url.pathname);
+const s = t(lang).news;
+const date = item.date ? new Date(item.date + 'T00:00:00Z').toLocaleDateString(lang === 'fa' ? 'fa-IR' : 'en-GB', { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' }) : '';
+const host = (() => { try { return new URL(item.url).hostname.replace(/^www\./,''); } catch { return ''; } })();
+---
+<article class:list={['news-card', { 'news-card-dark': dark }]}>
+  <a href={item.url} target="_blank" rel="noopener noreferrer" class="news-figure" tabindex="-1" aria-hidden="true">{item.image ? <img src={item.image} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" width="1200" height="750"/> : <span class="news-placeholder"/>}</a>
+  <div class="news-body" lang="en" dir="ltr">
+    <p class="news-meta"><span class="news-source">{item.source}</span><time datetime={item.date}>{date}</time></p>
+    <h3><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a></h3>
+    {item.summary && <p class="news-summary">{item.summary}</p>}
+    <a class="text-link news-link" href={item.url} target="_blank" rel="noopener noreferrer">{s.readAt} {host}</a>
+  </div>
+</article>

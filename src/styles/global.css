@@ -431,6 +431,8 @@ summary::-webkit-details-marker { display:none; }
 .claims-status { display:inline-block; white-space:nowrap; font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:4px 10px; border:1px solid var(--line); border-radius:var(--radius); color:var(--muted); }
 .claims-status.authorised { color:var(--lapis-deep); border-color:var(--lapis); }
 .claims-panel .catalogue-scroll { max-height:760px; }
+.table-function { color:var(--muted); font-size:14.5px; } .table-name { min-width:220px; }
+.home-news .news-grid { margin-top:8px; }
 /* ---------- Daily news ---------- */
 .news-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px 32px; }
 .news-card { display:flex; flex-direction:column; border-top:1px solid var(--line); padding-top:22px; }

@@ -1,6 +1,7 @@
 ---
 import PageHero from './PageHero.astro';
 import CTA from './CTA.astro';
+import NewsCard from './NewsCard.astro';
 import news from '../data/news.json';
 import { langFromPath, localePath, t } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
@@ -11,18 +12,17 @@ const global = (news.global || []) as Story[];
 const china = (news.china || []) as Story[];
 const fmt = (d: string) => d ? new Date(d + 'T00:00:00Z').toLocaleDateString(lang === 'fa' ? 'fa-IR' : 'en-GB', { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' }) : '';
 const updated = news.updated ? new Date(news.updated).toLocaleDateString(lang === 'fa' ? 'fa-IR' : 'en-GB', { day:'numeric', month:'long', year:'numeric', timeZone:'Asia/Tehran' }) : '';
-const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./,''); } catch { return ''; } };
 ---
 <PageHero title={s.title} category={s.category} description={updated ? s.lede(updated) : s.ledeEmpty} action={s.action} href="/blog-1"/>
 
 <section class="section" id="global"><div class="container">
   <div class="section-head"><h2>{s.globalTitle}</h2><p class="lede">{s.globalLede}</p></div>
-  {global.length ? <div class="news-grid">{global.map((item, i) => <article class="news-card"><a href={item.url} target="_blank" rel="noopener noreferrer" class="news-figure">{item.image ? <img src={item.image} alt="" loading={i===0?'eager':'lazy'} decoding="async" width="1200" height="750"/> : <span class="news-placeholder" aria-hidden="true"/>}</a><div class="news-body" lang="en" dir="ltr"><p class="news-meta"><span class="news-source">{item.source}</span><time datetime={item.date}>{fmt(item.date)}</time></p><h3><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a></h3>{item.summary && <p class="news-summary">{item.summary}</p>}<a class="text-link news-link" href={item.url} target="_blank" rel="noopener noreferrer">{s.readAt} {host(item.url)}</a></div></article>)}</div> : <p class="archive-note">{s.empty}</p>}
+  {global.length ? <div class="news-grid">{global.map((item, i) => <NewsCard item={item} eager={i===0}/>)}</div> : <p class="archive-note">{s.empty}</p>}
 </div></section>
 
 <section class="section section-navy" id="china"><div class="container">
   <div class="section-head"><p class="kicker kicker-light">{s.chinaKicker}</p><h2>{s.chinaTitle}</h2><p class="lede">{s.chinaLede}</p></div>
-  {china.length ? <div class="news-grid">{china.map(item => <article class="news-card news-card-dark"><a href={item.url} target="_blank" rel="noopener noreferrer" class="news-figure">{item.image ? <img src={item.image} alt="" loading="lazy" decoding="async" width="1200" height="750"/> : <span class="news-placeholder" aria-hidden="true"/>}</a><div class="news-body" lang="en" dir="ltr"><p class="news-meta"><span class="news-source">{item.source}</span><time datetime={item.date}>{fmt(item.date)}</time></p><h3><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a></h3>{item.summary && <p class="news-summary">{item.summary}</p>}<a class="text-link news-link" href={item.url} target="_blank" rel="noopener noreferrer">{s.readAt} {host(item.url)}</a></div></article>)}</div> : <p class="archive-note archive-note-dark">{s.empty}</p>}
+  {china.length ? <div class="news-grid">{china.map(item => <NewsCard item={item} dark/>)}</div> : <p class="archive-note archive-note-dark">{s.empty}</p>}
 </div></section>
 
 <section class="section-tight"><div class="container"><p class="reference-note">{s.note} <a class="text-link" href={L('/blog-1')}>{s.archiveLink}</a></p></div></section>
