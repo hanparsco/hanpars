@@ -4,20 +4,22 @@ import StandardPage from '../components/StandardPage.astro';
 import RegulatoryPage from '../components/RegulatoryPage.astro';
 import ContactPage from '../components/ContactPage.astro';
 import InsightsPage from '../components/InsightsPage.astro';
+import NewsPage from '../components/NewsPage.astro';
 import { pages, type PageKey } from '../data/pages';
 
 export function getStaticPaths() {
-  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1'].map(page=>({params:{page}}));
+  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news'].map(page=>({params:{page}}));
 }
 const page = Astro.params.page!;
 const special = {
   'regulatory-affairs': {title:'Regulatory affairs | Hanpars',description:'Dossier compilation, IFDA and TİTCK submissions and lifecycle maintenance for APIs and finished dosage forms, from the Hanpars regulatory team in Tehran.'},
   'contact-us-1': {title:'Contact Hanpars',description:'Write a sourcing, regulatory or CDMO brief and send it through the Hanpars contact form, or reach the Tehran office by telephone or email.'},
+  'news': {title:'Pharma news today | Hanpars',description:'Three global pharmaceutical stories and three FDF/API stories from China, selected automatically every morning with source and link.'},
   'blog-1': {title:'Insights archive | Hanpars',description:'Archived Hanpars articles on the pharmaceutical market, sourcing and regulation, kept with their original 2025 publication dates.'},
 };
 const data = pages[page as PageKey];
 const seo = special[page as keyof typeof special] || {title:`${data?.title} | Hanpars`,description:data?.meta};
 ---
 <Layout title={seo.title} description={seo.description} brand={page==='regulatory-affairs'?'regulatory':'default'}>
-  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:<StandardPage page={page as PageKey}/>}
+  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:<StandardPage page={page as PageKey}/>}
 </Layout>

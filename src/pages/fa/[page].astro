@@ -4,21 +4,23 @@ import StandardPage from '../../components/StandardPage.astro';
 import RegulatoryPage from '../../components/RegulatoryPage.astro';
 import ContactPage from '../../components/ContactPage.astro';
 import InsightsPage from '../../components/InsightsPage.astro';
+import NewsPage from '../../components/NewsPage.astro';
 import { pages, type PageKey } from '../../data/pages';
 import { pagesFa } from '../../data/pages.fa';
 
 export function getStaticPaths() {
-  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1'].map(page=>({params:{page}}));
+  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news'].map(page=>({params:{page}}));
 }
 const page = Astro.params.page!;
 const special = {
   'regulatory-affairs': {title:'امور رگولاتوری | هانیا پرسان دارو',description:'تدوین پرونده، ثبت در سازمان غذا و دارو و TİTCK و نگه‌داری چرخهٔ عمر مواد مؤثره و داروهای ساخته‌شده، از تیم رگولاتوری هانیا پرسان دارو در تهران.'},
   'contact-us-1': {title:'تماس با هانیا پرسان دارو',description:'درخواست تأمین، رگولاتوری یا CDMO خود را از طریق فرم تماس هانیا پرسان دارو بفرستید، یا با دفتر تهران تلفنی یا با ایمیل در تماس باشید.'},
+  'news': {title:'اخبار امروز دارو | هانیا پرسان دارو',description:'سه خبر جهانی دارو و سه خبر داروهای ساخته‌شده و مواد مؤثرهٔ چین، هر صبح به‌صورت خودکار با منبع و پیوند.'},
   'blog-1': {title:'آرشیو مقالات | هانیا پرسان دارو',description:'مقالات آرشیوی هانیا پرسان دارو دربارهٔ بازار دارو، تأمین و رگولاتوری، با تاریخ انتشار اصلی ۲۰۲۵.'},
 };
 const data = pagesFa[page as PageKey];
 const seo = special[page as keyof typeof special] || {title:`${data?.title} | هانیا پرسان دارو`,description:data?.meta};
 ---
 <Layout title={seo.title} description={seo.description} brand={page==='regulatory-affairs'?'regulatory':'default'}>
-  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:<StandardPage page={page as PageKey}/>}
+  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:<StandardPage page={page as PageKey}/>}
 </Layout>

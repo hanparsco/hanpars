@@ -17,10 +17,9 @@ const other = lang === 'fa' ? path : localePath(path, 'fa');
     <nav id="main-nav" class="main-nav" aria-label="Main navigation">
       <a class:list={['nav-link', { active: path === '/' || path === '/home' }]} href={L('/')}>{s.nav.home}</a>
       {s.groups.map((group) => <details class="nav-dropdown">
-        <summary class:list={['nav-link', { active: group.items.some((item) => item.href === path) }]}>{group.label}<Icon name="down" size={13}/></summary>
+        <summary class:list={['nav-link', { active: group.items.some((item) => item.href === path) || (group.items.some((item) => item.href === '/blog-1') && path.startsWith('/insights/')) }]}>{group.label}<Icon name="down" size={13}/></summary>
         <div class="dropdown-panel">{group.items.map((item) => <a href={L(item.href)}><strong>{item.label}</strong><small>{item.note}</small></a>)}</div>
       </details>)}
-      <a class:list={['nav-link', { active: path === '/blog-1' || path.startsWith('/insights/') }]} href={L('/blog-1')}>{s.nav.insights}</a>
       <a class:list={['nav-link', { active: path === '/contact-us-1' }]} href={L('/contact-us-1')}>{s.nav.contact}</a>
       <a class="nav-link nav-lang" href={other} hreflang={lang === 'fa' ? 'en' : 'fa'} lang={lang === 'fa' ? 'en' : 'fa'} title={s.switchTitle}>{s.switchLabel}</a>
       <a class="button button-ghost nav-cta" href={L('/contact-us-1')}>{s.nav.enquiry}</a>

@@ -4,14 +4,14 @@ import InsightRow from './InsightCard.astro';
 import Icon from './Icon.astro';
 import CTA from './CTA.astro';
 import articles from '../data/articles.json';
-import { langFromPath, t } from '../i18n';
+import { langFromPath, localePath, t } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang).insights;
 const sorted = [...articles].sort((a,b)=>new Date(b.date).getTime()-new Date(a.date).getTime());
 ---
 <PageHero title={s.title} category={s.category} description={s.lede} action={s.action}/>
 <section class="section"><div class="container">
-  <div class="archive-note">{s.note}</div>
+  <div class="archive-note">{s.note} <a class="text-link" href={localePath('/news', lang)}>{s.newsLink}</a></div>
   <div class="section-head"><p class="catalogue-count" id="insights-count" aria-live="polite">{s.count(sorted.length)}</p><label class="search-input"><Icon name="search" size={18}/><input type="search" aria-label={s.search} placeholder={s.search} id="insights-search" data-count-tpl={s.count(0).replace('0','{n}')} data-matching={lang==='fa'?' مطابق جست‌وجو':' matching your search'}/></label></div>
   <div class="insight-grid">{sorted.map(article=><div data-insight-card data-search={`${article.title} ${article.category} ${article.excerpt}`.toLowerCase()}><InsightRow article={article}/></div>)}</div>
   <div class="no-results" id="insights-empty" hidden>{s.empty}</div>

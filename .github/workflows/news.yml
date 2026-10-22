@@ -1,0 +1,43 @@
+name: Daily pharma news
+
+on:
+  schedule:
+    - cron: '30 2 * * *'   # 06:00 Tehran (UTC+3:30)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: news
+  cancel-in-progress: false
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet pillow
+      - name: Fetch and rank today's stories
+        run: python scripts/fetch-news.py
+      - name: Commit the digest
+        id: commit
+        run: |
+          git config user.name "hanpars-news-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add src/data/news.json public/news
+          if git diff --cached --quiet; then echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "News digest $(date -u +%F)"
+          git push
+          echo "changed=1" >> "$GITHUB_OUTPUT"
+      - name: Rebuild and deploy the site
+        if: steps.commit.outputs.changed == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main
