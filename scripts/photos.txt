@@ -6,3 +6,7 @@ lab-pipette.jpg | photo-1579165466949-3180a3d056d5 | https://unsplash.com/photos
 container-ship.jpg | photo-1700114339471-9e90a155d4b7 | https://unsplash.com/photos/ecvpiAz-oyA
 blister-packs.jpg | photo-1584308666744-24d5c474f2ae | https://unsplash.com/photos/jwWtZrm67VI
 dossier-archive.jpg | photo-1583521214690-73421a1829a9 | https://unsplash.com/photos/snNHKZ-mGfE
+cand-archive-boxes.jpg | photo-1568667256549-094345857637 | https://unsplash.com/photos/candidate
+cand-files-rows.jpg | photo-1586281380349-632531db7ed4 | https://unsplash.com/photos/candidate
+cand-signing.jpg | photo-1450101499163-c8848c66ca85 | https://unsplash.com/photos/candidate
+cand-library.jpg | photo-1521587760476-6c12a4b040da | https://unsplash.com/photos/candidate
