@@ -14,7 +14,9 @@
    "Calcium carbonate",
    "Isomalt",
    "Dextrates"
-  ]
+  ],
+  "zh": "稀释剂和填充剂",
+  "tr": "Seyrelticiler ve dolgu maddeleri"
  },
  {
   "id": "binders",
@@ -31,7 +33,9 @@
    "Acacia",
    "Maltodextrin",
    "Polyethylene glycol"
-  ]
+  ],
+  "zh": "黏合剂",
+  "tr": "Bağlayıcılar"
  },
  {
   "id": "disintegrants",
@@ -48,7 +52,9 @@
    "Polacrilin potassium",
    "Calcium carboxymethylcellulose",
    "Magnesium aluminum silicate"
-  ]
+  ],
+  "zh": "崩解剂",
+  "tr": "Parçalayıcılar"
  },
  {
   "id": "lubricants",
@@ -65,7 +71,9 @@
    "Hydrogenated vegetable oil",
    "Polyethylene glycol 6000",
    "Sodium lauryl sulfate"
-  ]
+  ],
+  "zh": "润滑剂和助流剂",
+  "tr": "Kayganlaştırıcılar ve akışkanlaştırıcılar"
  },
  {
   "id": "coatings",
@@ -82,7 +90,9 @@
    "Shellac",
    "Polyethylene oxide",
    "Ready-to-use systems (Opadry® and equivalents)"
-  ]
+  ],
+  "zh": "薄膜包衣及释放控制聚合物",
+  "tr": "Film kaplama ve salım kontrol polimerleri"
  },
  {
   "id": "plasticisers",
@@ -99,7 +109,9 @@
    "Diethyl phthalate",
    "Tributyl citrate",
    "Castor oil"
-  ]
+  ],
+  "zh": "增塑剂",
+  "tr": "Plastikleştiriciler"
  },
  {
   "id": "solvents",
@@ -116,7 +128,9 @@
    "Dimethyl sulfoxide",
    "Diethylene glycol monoethyl ether (Transcutol®)",
    "Medium-chain triglycerides"
-  ]
+  ],
+  "zh": "溶剂和助溶剂",
+  "tr": "Çözücüler ve yardımcı çözücüler"
  },
  {
   "id": "surfactants",
@@ -133,7 +147,9 @@
    "Macrogol 15 hydroxystearate",
    "Vitamin E TPGS",
    "Cyclodextrins (HP-β-CD, SBE-β-CD)"
-  ]
+  ],
+  "zh": "表面活性剂、乳化剂和增溶剂",
+  "tr": "Yüzey aktif maddeler, emülgatörler ve çözündürücüler"
  },
  {
   "id": "preservatives",
@@ -150,7 +166,9 @@
    "Chlorobutanol",
    "Benzoic acid",
    "Chlorhexidine"
-  ]
+  ],
+  "zh": "抗菌防腐剂",
+  "tr": "Antimikrobiyal koruyucular"
  },
  {
   "id": "antioxidants",
@@ -167,7 +185,9 @@
    "Ascorbyl palmitate",
    "Monothioglycerol",
    "Citric acid"
-  ]
+  ],
+  "zh": "抗氧剂和螯合剂",
+  "tr": "Antioksidanlar ve şelatlayıcı ajanlar"
  },
  {
   "id": "buffers",
@@ -184,7 +204,9 @@
    "Acetic acid / sodium acetate",
    "Meglumine",
    "Tartaric acid"
-  ]
+  ],
+  "zh": "pH调节剂和缓冲剂",
+  "tr": "pH ayarlayıcılar ve tamponlar"
  },
  {
   "id": "sweeteners",
@@ -201,7 +223,9 @@
    "Menthol",
    "Vanillin",
    "Pharmaceutical flavours (fruit, mint, masking)"
-  ]
+  ],
+  "zh": "甜味剂和矫味剂",
+  "tr": "Tatlandırıcılar ve aroma verici maddeler"
  },
  {
   "id": "colourants",
@@ -218,7 +242,9 @@
    "Aluminium lakes",
    "Carmine",
    "Riboflavin / curcumin / caramel (natural)"
-  ]
+  ],
+  "zh": "着色剂和遮光剂",
+  "tr": "Renklendiriciler ve opaklaştırıcılar"
  },
  {
   "id": "thickeners",
@@ -235,7 +261,9 @@
    "Carrageenan",
    "Bentonite / magnesium aluminum silicate",
    "Gelatin"
-  ]
+  ],
+  "zh": "助悬剂、胶凝剂和增稠剂",
+  "tr": "Süspansiyon, jelleştirici ve viskozite artırıcı maddeler"
  },
  {
   "id": "bases",
@@ -252,7 +280,9 @@
    "Polyethylene glycol 1500/4000",
    "Lanolin",
    "Beeswax (white / yellow)"
-  ]
+  ],
+  "zh": "软膏、乳膏和栓剂基质",
+  "tr": "Merhem, krem ve fitil bazları"
  },
  {
   "id": "capsules",
@@ -269,7 +299,9 @@
    "Glycerin / sorbitol (softgel plasticiser)",
    "Empty hard capsules, printed",
    "Enteric capsules"
-  ]
+  ],
+  "zh": "胶囊壳和丸芯",
+  "tr": "Kapsül kabukları ve pelet çekirdekleri"
  },
  {
   "id": "parenteral",
@@ -286,7 +318,9 @@
    "Arginine",
    "Sodium chloride",
    "Benzyl alcohol / m-cresol"
-  ]
+  ],
+  "zh": "注射用及生物制品用辅料",
+  "tr": "Parenteral ve biyolojik ürün yardımcı maddeleri"
  },
  {
   "id": "propellants",
@@ -303,6 +337,8 @@
    "Leucine",
    "Nitrogen",
    "Carbon dioxide"
-  ]
+  ],
+  "zh": "抛射剂和吸入载体",
+  "tr": "İtici gazlar ve inhalasyon taşıyıcıları"
  }
 ]

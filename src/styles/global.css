@@ -576,14 +576,21 @@ html[lang=fa] .article-body,html[lang=fa] .article-body p,html[lang=fa] .insight
 html[lang=fa] .insight-row h3,html[lang=fa] .article-body h2,html[lang=fa] .article-body h3,html[lang=fa] .page-hero h1[lang=en] { font-family:'Montserrat',sans-serif; letter-spacing:-.02em; }
 html[lang=fa] .insight-row { text-align:left; }
 html[lang=fa] .catalogue-table td,html[lang=fa] .catalogue-table th,html[lang=fa] .catalogue-table .table-code { font-family:'Source Sans 3',sans-serif; }
+html[lang=zh-Hans] body { font-family:'Source Sans 3','PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif; }
+html[lang=zh-Hans] h1,html[lang=zh-Hans] h2,html[lang=zh-Hans] h3,html[lang=zh-Hans] h4,html[lang=zh-Hans] .button,html[lang=zh-Hans] .nav-link { font-family:'Montserrat','PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif; letter-spacing:0; }
 html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] select { font-family:inherit; }
 [dir=rtl] .hero:before { -webkit-mask-image:linear-gradient(-100deg,transparent 38%,#000 70%,#000 100%); mask-image:linear-gradient(-100deg,transparent 38%,#000 70%,#000 100%); }
 [dir=rtl] .hero-split:before { -webkit-mask-image:linear-gradient(-100deg,transparent 30%,#000 55%,#000 100%); mask-image:linear-gradient(-100deg,transparent 30%,#000 55%,#000 100%); }
 [dir=rtl] .skip-link { left:auto; right:20px; }
 [dir=rtl] .botcheck { left:auto; right:-9999px; }
-[dir=rtl] .nav-lang,[dir=ltr] .nav-lang { font-family:'Samarqand','Montserrat',sans-serif; }
-[dir=ltr] .nav-lang { font-size:15px; }
-[dir=rtl] .nav-lang { font-family:'Montserrat',sans-serif; letter-spacing:.04em; font-size:13px; }
+.nav-lang { display:inline-flex; align-items:center; gap:6px; font-size:14px; }
+.nav-lang>svg:first-child { opacity:.8; }
+.lang-panel { min-width:180px; inset-inline-start:auto; inset-inline-end:-14px; padding:8px; }
+.lang-panel a { padding:10px 14px; }
+.lang-panel a strong { font-weight:500; }
+.lang-panel a[lang=fa] strong { font-family:'Samarqand',sans-serif; }
+.lang-panel a.current { background:var(--paper); }
+.lang-panel a.current strong:after { content:' ✓'; color:var(--lapis); }
 [dir=rtl] .breadcrumbs { direction:rtl; }
 [dir=rtl] .catalogue-table td[dir=ltr] { text-align:left; }
 @media(max-width:1000px) { [dir=rtl] .hero:before { -webkit-mask-image:linear-gradient(180deg,transparent 45%,#000 100%); mask-image:linear-gradient(180deg,transparent 45%,#000 100%); } }

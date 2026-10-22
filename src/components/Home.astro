@@ -5,18 +5,18 @@ import NewsCard from './NewsCard.astro';
 import FaqFa from './FaqFa.astro';
 import news from '../data/news.json';
 import portfolio from '../data/portfolio.json';
-import { portfolioFa } from '../data/portfolio.fa';
+import { portfolioL } from '../data/locale';
 import fdf from '../data/fdf.json';
 import apis from '../data/apis.json';
-import { langFromPath, localePath, t } from '../i18n';
+import { langFromPath, localePath, t, numLocale } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
 const L = (p: string) => localePath(p, lang);
-const fa = lang === 'fa';
 const todayNews = [...(news.global || []).slice(0,2), ...(news.china || []).slice(0,1)];
-const fmt = (n:number) => n.toLocaleString(fa ? 'fa-IR' : 'en-US');
-const snapshot = fa ? portfolioFa.snapshot : portfolio.snapshot;
-const groupTitle = (id:string, title:string) => fa ? (portfolioFa.groups[id]?.title ?? title) : title;
+const fmt = (n:number) => n.toLocaleString(numLocale(lang));
+const pl = lang === 'en' ? null : portfolioL[lang];
+const snapshot = pl ? pl.snapshot : portfolio.snapshot;
+const groupTitle = (id:string, title:string) => pl ? ((pl.groups as any)[id]?.title ?? title) : title;
 const entries = [
   { href:'/fdf', name:s.home.entries.fdf, text:s.home.entries.fdfText(portfolio.counts.total, fmt(fdf.length)) },
   { href:'/api', name:s.home.entries.api, text:s.home.entries.apiText(fmt(apis.length)) },
@@ -82,5 +82,5 @@ const entries = [
     {todayNews.length > 0 && <div class="news-grid">{todayNews.map((item, i) => <NewsCard item={item} eager={false}/>)}</div>}
   </div>
 </section>
-{lang === 'fa' && <FaqFa />}
+{lang !== 'en' && <FaqFa />}
 <CTA />

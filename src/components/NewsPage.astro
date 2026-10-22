@@ -3,15 +3,15 @@ import PageHero from './PageHero.astro';
 import CTA from './CTA.astro';
 import NewsCard from './NewsCard.astro';
 import news from '../data/news.json';
-import { langFromPath, localePath, t } from '../i18n';
+import { langFromPath, localePath, t, dateLocale } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang).news;
 const L = (p: string) => localePath(p, lang);
 type Story = { title:string; url:string; source:string; date:string; summary:string; image:string };
 const global = (news.global || []) as Story[];
 const china = (news.china || []) as Story[];
-const fmt = (d: string) => d ? new Date(d + 'T00:00:00Z').toLocaleDateString(lang === 'fa' ? 'fa-IR' : 'en-GB', { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' }) : '';
-const updated = news.updated ? new Date(news.updated).toLocaleDateString(lang === 'fa' ? 'fa-IR' : 'en-GB', { day:'numeric', month:'long', year:'numeric', timeZone:'Asia/Tehran' }) : '';
+const fmt = (d: string) => d ? new Date(d + 'T00:00:00Z').toLocaleDateString(dateLocale(lang), { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' }) : '';
+const updated = news.updated ? new Date(news.updated).toLocaleDateString(dateLocale(lang), { day:'numeric', month:'long', year:'numeric', timeZone:'Asia/Tehran' }) : '';
 ---
 <PageHero title={s.title} category={s.category} description={updated ? s.lede(updated) : s.ledeEmpty} action={s.action} href="/blog-1"/>
 

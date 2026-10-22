@@ -1,17 +1,30 @@
-export type Lang = 'en' | 'fa';
-export const langs: Lang[] = ['en', 'fa'];
+export type Lang = 'en' | 'fa' | 'zh' | 'tr';
+export const langs: Lang[] = ['en', 'fa', 'zh', 'tr'];
+/** Languages served under a path prefix (/fa, /zh, /tr). English has no prefix. */
+export const prefixed: Lang[] = ['fa', 'zh', 'tr'];
+export const langNames: Record<Lang, string> = { en: 'English', fa: 'فارسی', zh: '中文', tr: 'Türkçe' };
+/** BCP-47 tags: html lang, hreflang, og:locale, number and date formatting. */
+export const htmlLang: Record<Lang, string> = { en: 'en', fa: 'fa', zh: 'zh-Hans', tr: 'tr' };
+export const hreflangOf: Record<Lang, string> = { en: 'en', fa: 'fa-IR', zh: 'zh-Hans', tr: 'tr-TR' };
+export const ogLocale: Record<Lang, string> = { en: 'en_GB', fa: 'fa_IR', zh: 'zh_CN', tr: 'tr_TR' };
+export const numLocale = (lang: Lang) => ({ en: 'en-US', fa: 'fa-IR', zh: 'zh-CN', tr: 'tr-TR' })[lang];
+export const dateLocale = (lang: Lang) => ({ en: 'en-GB', fa: 'fa-IR', zh: 'zh-CN', tr: 'tr-TR' })[lang];
 
-/** Language from a pathname: /fa/... → fa, else en. */
+/** Language from a pathname: /fa/... → fa, /zh/... → zh, /tr/... → tr, else en. */
 const tidy = (p: string) => p.replace(/\.html$/, '').replace(/\/index$/, '');
 export function langFromPath(pathname: string): Lang {
   const p = tidy(pathname);
-  return p === '/fa' || p.startsWith('/fa/') ? 'fa' : 'en';
+  for (const l of prefixed) if (p === `/${l}` || p.startsWith(`/${l}/`)) return l;
+  return 'en';
 }
 /** Strip the language prefix. */
 export function stripLang(pathname: string): string {
   const p = tidy(pathname).replace(/\/$/, '') || '/';
-  if (p === '/fa') return '/';
-  return p.startsWith('/fa/') ? p.slice(3) : p;
+  for (const l of prefixed) {
+    if (p === `/${l}`) return '/';
+    if (p.startsWith(`/${l}/`)) return p.slice(l.length + 1);
+  }
+  return p;
 }
 /** Localise an English path for a language. */
 export function localePath(path: string, lang: Lang): string {
@@ -19,10 +32,17 @@ export function localePath(path: string, lang: Lang): string {
   if (path.startsWith('http') || path.startsWith('mailto:') || path.startsWith('tel:') || path.startsWith('#')) return path;
   const [p, hash] = path.split('#');
   const [base, query] = p.split('?');
-  const out = base === '/' ? '/fa' : `/fa${base}`;
+  const out = base === '/' ? `/${lang}` : `/${lang}${base}`;
   return out + (query ? `?${query}` : '') + (hash ? `#${hash}` : '');
 }
 export const dir = (lang: Lang) => (lang === 'fa' ? 'rtl' : 'ltr');
+/** Pick the value for a language from a per-language map, falling back to English. */
+export function pick<T>(lang: Lang, map: Partial<Record<Lang, T>>, fallback?: T): T {
+  return (map[lang] ?? map.en ?? fallback) as T;
+}
+
+import { zh } from './zh';
+import { tr } from './tr';
 
 export const ui = {
   en: {
@@ -447,6 +467,8 @@ export const ui = {
     notFound: { title: 'این صفحه اینجا نیست.', text: 'نشانی شاید تغییر کرده یا هرگز وجود نداشته است. محصولات، خدمات و راه‌های تماس یک کلیک فاصله دارند.', home: 'بازگشت به صفحهٔ اصلی', contact: 'تماس با هانیا پرسان دارو' },
     dateLocale: 'fa-IR',
   },
+  zh,
+  tr,
 };
 export type UI = typeof ui.en;
 export const t = (lang: Lang): UI => ui[lang] as UI;

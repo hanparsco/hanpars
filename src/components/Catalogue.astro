@@ -16,7 +16,7 @@ const pageFor = (slug?: string) => !slug ? '' : type==='fdf' ? L(`/fdf/${slug}`)
 const i18n = JSON.stringify({ inList: s.inList, matching: s.matching, none: s.none, showing: s.showingTpl, enquire: s.enquire });
 const lazy = entries.length > 800 && type !== 'exc';
 const shown = lazy ? entries.slice(0, 50) : entries;
-const base = lang === 'fa' ? '/fa' : '';
+const base = lang === 'en' ? '' : `/${lang}`;
 ---
 <div class="catalogue-panel" id={type==='exc'?'excipient-list':type==='api'?'api-list':undefined} style={type!=='fdf'?'scroll-margin-top:40px':undefined} data-catalogue data-page-size="25" data-i18n={i18n} data-src={lazy ? `/data/${type}.json` : undefined} data-base={base} data-type={type} data-total={entries.length}>
   <div class="catalogue-toolbar"><div><h2>{title}</h2><p class="catalogue-count"><span data-filter-count>{total}</span> {s.entries} <span data-count-suffix>{s.inList}</span></p></div><label class="search-input"><Icon name="search" size={18}/><input type="search" placeholder={search} aria-label={search} data-catalogue-search autocomplete="off"/></label></div>

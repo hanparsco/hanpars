@@ -14,7 +14,9 @@
    "Mesalazine",
    "Ursodeoxycholic acid",
    "Colecalciferol"
-  ]
+  ],
+  "zh": "消化道和代谢",
+  "tr": "Sindirim sistemi ve metabolizma"
  },
  {
   "id": "B",
@@ -31,7 +33,9 @@
    "Tranexamic acid",
    "Iron sucrose",
    "Deferasirox"
-  ]
+  ],
+  "zh": "血液和造血器官",
+  "tr": "Kan ve kan yapıcı organlar"
  },
  {
   "id": "C",
@@ -48,7 +52,9 @@
    "Furosemide",
    "Spironolactone",
    "Amiodarone"
-  ]
+  ],
+  "zh": "心血管系统",
+  "tr": "Kardiyovasküler sistem"
  },
  {
   "id": "D",
@@ -65,7 +71,9 @@
    "Clobetasol",
    "Mometasone",
    "Permethrin"
-  ]
+  ],
+  "zh": "皮肤病用药",
+  "tr": "Dermatolojikler"
  },
  {
   "id": "G",
@@ -82,7 +90,9 @@
    "Solifenacin",
    "Tadalafil",
    "Letrozole"
-  ]
+  ],
+  "zh": "泌尿生殖系统和性激素",
+  "tr": "Genitoüriner sistem ve cinsiyet hormonları"
  },
  {
   "id": "H",
@@ -99,7 +109,9 @@
    "Octreotide",
    "Desmopressin",
    "Cinacalcet"
-  ]
+  ],
+  "zh": "全身用激素类制剂",
+  "tr": "Sistemik hormonal preparatlar"
  },
  {
   "id": "J",
@@ -116,7 +128,9 @@
    "Fluconazole",
    "Voriconazole",
    "Tenofovir"
-  ]
+  ],
+  "zh": "全身用抗感染药",
+  "tr": "Sistemik kullanılan anti-enfektifler"
  },
  {
   "id": "L",
@@ -133,7 +147,9 @@
    "Lenalidomide",
    "Abiraterone",
    "Tacrolimus"
-  ]
+  ],
+  "zh": "抗肿瘤药和免疫调节剂",
+  "tr": "Antineoplastik ve immünomodülatör ajanlar"
  },
  {
   "id": "M",
@@ -150,7 +166,9 @@
    "Colchicine",
    "Baclofen",
    "Rocuronium"
-  ]
+  ],
+  "zh": "肌肉-骨骼系统",
+  "tr": "Kas-iskelet sistemi"
  },
  {
   "id": "N",
@@ -167,7 +185,9 @@
    "Olanzapine",
    "Propofol",
    "Fentanyl"
-  ]
+  ],
+  "zh": "神经系统",
+  "tr": "Sinir sistemi"
  },
  {
   "id": "P",
@@ -184,7 +204,9 @@
    "Chloroquine",
    "Primaquine",
    "Atovaquone"
-  ]
+  ],
+  "zh": "抗寄生虫药",
+  "tr": "Antiparaziter ürünler"
  },
  {
   "id": "R",
@@ -201,7 +223,9 @@
    "Loratadine",
    "Acetylcysteine",
    "Dextromethorphan"
-  ]
+  ],
+  "zh": "呼吸系统",
+  "tr": "Solunum sistemi"
  },
  {
   "id": "S",
@@ -218,7 +242,9 @@
    "Atropine",
    "Tropicamide",
    "Sodium hyaluronate"
-  ]
+  ],
+  "zh": "感觉器官",
+  "tr": "Duyu organları"
  },
  {
   "id": "V",
@@ -235,6 +261,8 @@
    "Flumazenil",
    "Fomepizole",
    "Methylthioninium chloride"
-  ]
+  ],
+  "zh": "诊断用药、解毒剂及其他",
+  "tr": "Tanı ajanları, antidotlar ve diğerleri"
  }
 ]

@@ -1,12 +1,11 @@
 ---
 import PageHero from './PageHero.astro';
 import CTA from './CTA.astro';
-import dataEn from '../data/regulatory.json';
-import dataFa from '../data/regulatory.fa.json';
+import { regulatoryL } from '../data/locale';
 import { langFromPath, localePath, t } from '../i18n';
 import { raEmail } from '../data/site';
 const lang = langFromPath(Astro.url.pathname);
-const data = lang === 'fa' ? dataFa : dataEn;
+const data = regulatoryL[lang];
 const r = t(lang).regulatory;
 const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a, tierName: tier.name, tierNum: tier.num })));
 ---

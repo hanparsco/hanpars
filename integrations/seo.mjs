@@ -1,4 +1,4 @@
-/** After build: sitemap.xml (with en/fa hreflang alternates) and robots.txt. */
+/** After build: sitemap index + one sitemap per language (with hreflang alternates) and robots.txt. */
 import { readdir, readFile, writeFile, mkdir, access } from 'node:fs/promises';
 import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -31,21 +31,35 @@ export default function seo({ site }) {
           if (canon && new URL(canon).pathname !== rel) continue; // only canonical URLs
           pages.set(rel, true);
         }
-        const prio = (p) => p === '/' || p === '/fa' ? '1.0' : /^\/(fa\/)?(fdf|api|excipient|nutrition|regulatory-affairs|contact-us-1|about-us|fdf-cdmo)$/.test(p) ? '0.9' : /^\/(fa\/)?(news)$/.test(p) ? '0.8' : /^\/(fa\/)?(fdf|api)\//.test(p) ? '0.6' : '0.5';
-        const freq = (p) => /news/.test(p) ? 'daily' : /^\/(fa\/)?(fdf|api)\//.test(p) ? 'monthly' : 'weekly';
-        const rows = [];
+        const LANGS = [['en', 'en', ''], ['fa', 'fa-IR', '/fa'], ['zh', 'zh-Hans', '/zh'], ['tr', 'tr-TR', '/tr']];
+        const langOf = (p) => (LANGS.find(([, , pre]) => pre && (p === pre || p.startsWith(pre + '/'))) || LANGS[0]);
+        const strip = (p) => { const [, , pre] = langOf(p); return pre ? (p === pre ? '/' : p.slice(pre.length)) : p; };
+        const withPre = (pre, en) => (pre ? (en === '/' ? pre : pre + en) : en);
+        const top = /^\/(fdf|api|excipient|nutrition|regulatory-affairs|contact-us-1|about-us|fdf-cdmo)$/;
+        const prio = (p) => { const e = strip(p); return e === '/' ? '1.0' : top.test(e) ? '0.9' : e === '/news' ? '0.8' : /^\/(fdf|api)\//.test(e) ? '0.6' : '0.5'; };
+        const freq = (p) => { const e = strip(p); return e === '/news' ? 'daily' : /^\/(fdf|api)\//.test(e) ? 'monthly' : 'weekly'; };
+        const loc = (p) => esc(site + (p === '/' ? '' : p));
+        const byLang = Object.fromEntries(LANGS.map(([l]) => [l, []]));
         for (const p of [...pages.keys()].sort()) {
-          const en = p.startsWith('/fa') ? (p === '/fa' ? '/' : p.slice(3)) : p;
-          const fa = en === '/' ? '/fa' : '/fa' + en;
-          const alts = [pages.has(en) ? `<xhtml:link rel="alternate" hreflang="en" href="${esc(site + (en === '/' ? '' : en))}"/>` : '', pages.has(fa) ? `<xhtml:link rel="alternate" hreflang="fa-IR" href="${esc(site + fa)}"/>` : '', pages.has(en) ? `<xhtml:link rel="alternate" hreflang="x-default" href="${esc(site + (en === '/' ? '' : en))}"/>` : ''].join('');
-          rows.push(`<url><loc>${esc(site + (p === '/' ? '' : p))}</loc><lastmod>${today}</lastmod><changefreq>${freq(p)}</changefreq><priority>${prio(p)}</priority>${alts}</url>`);
+          const en = strip(p);
+          const alts = LANGS.map(([, tag, pre]) => { const q = withPre(pre, en); return pages.has(q) ? `<xhtml:link rel="alternate" hreflang="${tag}" href="${loc(q)}"/>` : ''; }).join('')
+            + (pages.has(en) ? `<xhtml:link rel="alternate" hreflang="x-default" href="${loc(en)}"/>` : '');
+          byLang[langOf(p)[0]].push(`<url><loc>${loc(p)}</loc><lastmod>${today}</lastmod><changefreq>${freq(p)}</changefreq><priority>${prio(p)}</priority>${alts}</url>`);
         }
-        await writeFile(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${rows.join('\n')}\n</urlset>\n`);
+        const head = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
+        const index = [];
+        for (const [l] of LANGS) {
+          if (!byLang[l].length) continue;
+          await writeFile(join(root, `sitemap-${l}.xml`), head + byLang[l].join('\n') + '\n</urlset>\n');
+          index.push(`<sitemap><loc>${site}/sitemap-${l}.xml</loc><lastmod>${today}</lastmod></sitemap>`);
+        }
+        await writeFile(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${index.join('\n')}\n</sitemapindex>\n`);
+        const rows = Object.values(byLang).flat();
         await writeFile(join(root, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\n`);
         // trailing-slash stubs: /x/ -> /x (earlier crawls used slash URLs; GitHub Pages cannot send 301s)
         let stubs = 0;
         for (const p of pages.keys()) {
-          if (p === '/') continue;
+          if (p === '/' || /^\/(zh|tr)(\/|$)/.test(p)) continue;
           const dirIdx = join(root, p.slice(1), 'index.html');
           try { await access(dirIdx); continue; } catch {}
           const target = site + p;

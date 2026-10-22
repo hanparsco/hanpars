@@ -1,13 +1,13 @@
 import { parseFdf, infoKey, prettyName } from './fdf-parse';
 import fdfAll from './fdf.json';
 import editorialAll from './fdf-editorial.json';
-import { formFa, ROUTE_FA } from './seo-fa';
-import namesFa from './names.fa.json';
-export const faName = (en: string) => ((namesFa as Record<string, string>)[en] || '').trim();
+import { formL, ROUTE_L, locName } from './locale';
+import { hreflangOf, type Lang } from '../i18n';
+export const faName = (en: string) => locName('fa', en).trim();
 
 const clip = (s: string, n: number) => { const t = s.replace(/\s+/g, ' ').trim(); return t.length <= n ? t : t.slice(0, t.lastIndexOf(' ', n)) + '…'; };
 
-export function productSeo(entry: { name: string; code: string }, lang: 'en' | 'fa', info: Record<string, any>, infoFa: Record<string, any>) {
+export function productSeo(entry: { name: string; code: string }, lang: Lang, info: Record<string, any>, infoFa: Record<string, any>) {
   const p = parseFdf(entry.name);
   const name = prettyName(p.ingredient);
   const strength = p.strength.replace(/\bug\b/g, 'µg');
@@ -16,11 +16,11 @@ export function productSeo(entry: { name: string; code: string }, lang: 'en' | '
   const edAll = editorialAll as Record<string, any>;
   const edKey = keys[0];
   const en = key ? info[key] : (edAll[edKey]?.en || null);
-  const fa = key ? infoFa[key] : (edAll[edKey]?.fa || null);
-  const fForm = formFa(p.form);
-  const fRouteRaw = ROUTE_FA[p.route] || '';
+  const fa = lang === 'en' ? null : key ? infoFa[key] : (edAll[edKey]?.[lang] || null);
+  const fForm = lang === 'en' ? '' : formL[lang](p.form);
+  const fRouteRaw = lang === 'en' ? '' : (ROUTE_L[lang][p.route] || '');
   const fRoute = fForm.includes(fRouteRaw) ? '' : fRouteRaw;
-  const nameFa = faName(name);
+  const nameFa = locName(lang, name).trim();
   const fFormShort = fForm || prettyName(p.form).split(',')[0];
   const eForm = prettyName(p.form).split(',')[0];
   const dupe = duplicateInfo(entry);
@@ -29,15 +29,29 @@ export function productSeo(entry: { name: string; code: string }, lang: 'en' | '
   const pick = (c: string[]) => c.find(x => x.length <= 66) || c[c.length - 1];
   const core = `${nameFa || name} ${fFormShort}${strength ? ' ' + strength : ''}${extraFa}${codeFa}`.replace(/\s+/g, ' ').trim();
   const coreEn = `${name} ${eForm}${strength ? ' ' + strength : ''}${extraEn}${codeEn}`.replace(/\s+/g, ' ').trim();
-  const title = lang === 'fa'
+  const sz = strength ? ' ' + strength : '';
+  const title = lang === 'zh'
+    ? pick([nameFa ? `${nameFa}（${name}）${fFormShort}${sz}${extraFa}${dupe.code ? ' 编号' + entry.code : ''} | 伊朗供应 | Hanpars` : '', `${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' 编号' + entry.code : ''} | Hanpars`].filter(Boolean))
+    : lang === 'tr'
+    ? pick([`${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' kod ' + entry.code : ''} | İran tedarikçisi | Hanpars`, `${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' kod ' + entry.code : ''} | Hanpars`, `${nameFa || name} ${fFormShort}${sz}`])
+    : lang === 'fa'
     ? pick([nameFa ? `${nameFa} (${name}) ${fFormShort}${strength ? ' ' + strength : ''}${extraFa}${codeFa} | هانیا پرسان دارو` : '', `${core} | تأمین و واردات | هانیا پرسان دارو`, `${core} | هانیا پرسان دارو`, `${core} | تأمین و واردات`, core].filter(Boolean))
     : pick([`${coreEn} | Supplier in Iran | Hanpars`, `${coreEn} | Hanpars`, coreEn]);
-  const ind0 = lang === 'fa' ? (fa?.indications || '') : (en?.indications || '');
-  const ind = ind0.replace(/^\s*(موارد مصرف|Indications(?: and usage)?)\s*[:：]\s*/i, '');
-  const description = lang === 'fa'
+  const ind0 = lang === 'en' ? (en?.indications || '') : (fa?.indications || en?.indications || '');
+  const ind = ind0.replace(/^\s*(موارد مصرف|适应症|Endikasyonlar|Indications(?: and usage)?)\s*[:：]\s*/i, '');
+  const description = lang === 'zh'
+    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}，编号 ${entry.code}，${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '，' + strength : ''}${p.pack ? '，' + p.pack : ''}。${ind ? '适应症：' + ind + ' ' : ''}Hanpars 负责伊朗市场的采购与进口。`, 110)
+    : lang === 'tr'
+    ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}, kod ${entry.code}, ${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? ', ' + strength : ''}${p.pack ? ', ' + p.pack : ''}. ${ind ? 'Endikasyonlar: ' + ind + ' ' : ''}İran’da tedarik ve ithalat: Hanpars.`, 158)
+    : lang === 'fa'
     ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}، کد ${entry.code}، ${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '، ' + strength : ''}${p.pack ? '، ' + p.pack : ''}. ${ind ? 'موارد مصرف: ' + ind + ' ' : ''}تأمین و واردات توسط هانیا پرسان دارو.`, 158)
     : clip(`${name} (code ${entry.code}) ${prettyName(p.form)}${strength ? ' ' + strength : ''}${p.pack ? ', ' + p.pack : ''}. ${ind ? 'Indications: ' + ind + ' ' : ''}Sourcing and import in Iran by Hanpars.`, 158);
-  const keywords = lang === 'fa'
+  const nl = nameFa || name;
+  const keywords = lang === 'zh'
+    ? [nameFa, name, `${nl}${fFormShort}`, `${nl}供应商`, `${nl}出口伊朗`, `伊朗${nl}进口`, `${nl} ${strength}`, '伊朗药品进口', '伊朗药品注册', 'Hanpars'].filter(Boolean).join('，')
+    : lang === 'tr'
+    ? [nameFa, name, `${nl} ${fFormShort}`, `${nl} tedarikçisi`, `${nl} İran ihracatı`, `${nl} ${strength}`, 'İran’a ilaç ihracatı', 'İran ilaç ithalatı', 'Hanpars'].filter(Boolean).join(', ')
+    : lang === 'fa'
     ? [nameFa, name, `${nameFa || name} ${fFormShort}`, `خرید ${nameFa || name}`, `قیمت ${nameFa || name}`, `واردات ${nameFa || name}`, `تأمین ${nameFa || name}`, `${nameFa || name} ${strength}`, 'واردات دارو', 'واردات فوریتی دارو', 'هانیا پرسان دارو'].filter(Boolean).join('، ')
     : [name, `${name} ${eForm}`, `${name} ${strength}`, `${name} supplier`, `${name} import Iran`, `buy ${name}`, 'pharmaceutical importer Iran', 'Hanpars'].join(', ');
   const schema = {
@@ -45,34 +59,46 @@ export function productSeo(entry: { name: string; code: string }, lang: 'en' | '
     nonProprietaryName: name, activeIngredient: p.ingredients.map(i => prettyName(i)).join(', '),
     dosageForm: prettyName(p.form), administrationRoute: p.route ? prettyName(p.route) : undefined, availableStrength: strength ? { '@type': 'DrugStrength', description: strength } : undefined,
     drugClass: en?.pharmClass?.length ? { '@type': 'DrugClass', name: (Array.isArray(en.pharmClass) ? en.pharmClass[0] : en.pharmClass).replace(/\s*\[EPC\]/, '') } : undefined,
-    description: ind ? clip(ind, 300) : undefined, inLanguage: lang === 'fa' ? 'fa-IR' : 'en', identifier: entry.code,
+    description: ind ? clip(ind, 300) : undefined, inLanguage: hreflangOf[lang], identifier: entry.code,
     manufacturer: undefined, offers: { '@type': 'Offer', availability: 'https://schema.org/InStoreOnly', seller: { '@id': 'https://hanpars.com/#organization' } },
   };
-  if (nameFa && lang === 'fa') (schema as any).alternateName = nameFa;
+  if (nameFa && lang !== 'en') (schema as any).alternateName = nameFa;
   return { title, description, schema, name, nameFa, keywords };
 }
 
-export function moleculeSeo(slug: string, mol: any, lang: 'en' | 'fa', faDesc: string) {
+export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) {
   const pretty = (n: string) => /[a-z]/.test(n) ? n : n.charAt(0) + n.slice(1).toLowerCase().replace(/\bhcl\b/g, 'HCl');
   const name = pretty(mol.name);
-  const nameFa = faName(name);
+  const nameFa = locName(lang, name).trim() || locName(lang, mol.name).trim();
   const pick = (c: string[]) => c.find(x => x.length <= 66) || c[c.length - 1];
   const cas = mol.cas ? ` CAS ${mol.cas}` : '';
-  const title = lang === 'fa'
+  const title = lang === 'zh'
+    ? pick([nameFa ? `${nameFa}（${name}）${cas} | 原料药供应 | Hanpars` : '', `${nameFa || name}${cas} | 原料药 | Hanpars`, `${nameFa || name}${cas}`].filter(Boolean))
+    : lang === 'tr'
+    ? pick([`${nameFa || name}${cas} | Etkin madde tedariki | Hanpars`, `${nameFa || name}${cas} | Hanpars`, `${nameFa || name}${cas}`])
+    : lang === 'fa'
     ? pick([nameFa ? `${nameFa} (${name})${cas} | تأمین API | هانیا پرسان دارو` : '', nameFa ? `${nameFa} (${name})${cas} | تأمین API` : '', `${nameFa || name}${cas} | مادهٔ مؤثره | هانیا پرسان دارو`, `${nameFa || name}${cas} | تأمین API`, `${nameFa || name}${cas}`].filter(Boolean))
     : pick([`${name}${cas ? ' (' + cas.trim() + ')' : ''} | API supplier | Hanpars`, `${name}${cas ? ' (' + cas.trim() + ')' : ''} | Hanpars`, `${name}${cas ? ' (' + cas.trim() + ')' : ''}`]);
-  const keywords = lang === 'fa'
+  const keywords = lang === 'zh'
+    ? [nameFa, name, mol.cas, `${nameFa || name}原料药`, `${nameFa || name}原料药供应商`, `${nameFa || name} CAS ${mol.cas || ''}`.trim(), `${nameFa || name}出口伊朗`, '原料药出口伊朗', 'Hanpars'].filter(Boolean).join('，')
+    : lang === 'tr'
+    ? [nameFa, name, mol.cas, `${nameFa || name} etkin madde`, `${nameFa || name} tedarikçisi`, `${nameFa || name} CAS ${mol.cas || ''}`.trim(), 'İran’a hammadde ihracatı', 'Hanpars'].filter(Boolean).join(', ')
+    : lang === 'fa'
     ? [nameFa, name, mol.cas, `خرید ${nameFa || name}`, `قیمت ${nameFa || name}`, `ماده اولیه ${nameFa || name}`, `پودر ${nameFa || name}`, `API ${name}`, 'مواد اولیه دارویی', 'تأمین API', 'هانیا پرسان دارو'].filter(Boolean).join('، ')
     : [name, mol.cas, `${name} API`, `${name} API supplier`, `${name} powder`, `${name} CAS ${mol.cas || ''}`.trim(), `${name} manufacturer`, 'API supplier Iran', 'Hanpars'].filter(Boolean).join(', ');
-  const description = lang === 'fa'
+  const description = lang === 'zh'
+    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。${faDesc ? faDesc + ' ' : ''}Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。`, 110)
+    : lang === 'tr'
+    ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}. ${faDesc ? faDesc + ' ' : ''}DMF/CEP ve GMP belgeli etkin madde tedariki: Hanpars.`, 158)
+    : lang === 'fa'
     ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? '، شمارهٔ CAS ' + mol.cas : ''}${mol.formula ? '، فرمول ' + mol.formula : ''}. ${faDesc ? faDesc + ' ' : ''}تأمین مادهٔ مؤثره (API) با مستندات DMF/CEP و GMP توسط هانیا پرسان دارو.`, 158)
     : clip(`${name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}. ${mol.description ? mol.description + ' ' : ''}API sourcing with DMF/CEP and GMP documentation by Hanpars.`, 158);
   const schema = mol.cid ? {
     '@context': 'https://schema.org', '@type': 'ChemicalSubstance', name, identifier: mol.cas || undefined,
     alternateName: [...(nameFa ? [nameFa] : []), ...(mol.synonyms || []).slice(0, 5)], molecularFormula: mol.formula || undefined, molecularWeight: mol.mw ? `${mol.mw} g/mol` : undefined,
     iupacName: mol.iupac || undefined, inChIKey: mol.inchikey || undefined, image: mol.image ? `https://hanpars.com${mol.image}` : undefined,
-    description: (lang === 'fa' ? faDesc : mol.description) ? clip(lang === 'fa' ? faDesc : mol.description, 300) : undefined,
-    sameAs: [`https://pubchem.ncbi.nlm.nih.gov/compound/${mol.cid}`], inLanguage: lang === 'fa' ? 'fa-IR' : 'en',
+    description: (lang !== 'en' && faDesc ? faDesc : mol.description) ? clip(lang !== 'en' && faDesc ? faDesc : mol.description, 300) : undefined,
+    sameAs: [`https://pubchem.ncbi.nlm.nih.gov/compound/${mol.cid}`], inLanguage: lang !== 'en' && faDesc ? hreflangOf[lang] : 'en',
   } : null;
   return { title, description, schema, name, nameFa, keywords };
 }

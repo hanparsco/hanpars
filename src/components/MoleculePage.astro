@@ -1,9 +1,9 @@
 ---
 import CTA from './CTA.astro';
 import molecules from '../data/molecules.json';
-import moleculesFa from '../data/molecules.fa.json';
-import { langFromPath, localePath, t } from '../i18n';
-import { faName } from '../data/seo-schema';
+import { molDescL } from '../data/locale-info';
+import { langFromPath, localePath, t, htmlLang } from '../i18n';
+import { locName } from '../data/locale';
 interface Props { slug: string }
 const { slug } = Astro.props;
 const lang = langFromPath(Astro.url.pathname);
@@ -13,7 +13,7 @@ const L = (p: string) => localePath(p, lang);
 type Mol = { name:string; cas:string; cid:number|null; formula?:string; mw?:string; iupac?:string; smiles?:string; inchikey?:string; xlogp?:number|null; hbd?:number|null; hba?:number|null; tpsa?:number|null; rotb?:number|null; synonyms?:string[]; otherCas?:string[]; description?:string; descriptionSource?:string; image?:string; parentMatch?:boolean; matched?:string };
 const all = molecules as Record<string, Mol>;
 const mol = all[slug];
-const faDesc = lang === 'fa' ? (moleculesFa as Record<string, string>)[slug] || '' : '';
+const faDesc = lang === 'en' ? '' : molDescL[lang][slug] || '';
 const title = mol.name.replace(/\bHCl\b/g, 'HCl');
 const pretty = (n: string) => n.charAt(0) + n.slice(1).toLowerCase().replace(/\bhcl\b/g, 'HCl').replace(/\bdihcl\b/g, 'DiHCl');
 const displayName = /[a-z]/.test(mol.name) ? mol.name : pretty(mol.name);
@@ -29,7 +29,7 @@ const num = (v: number | null | undefined, d = 1) => (v === null || v === undefi
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={L('/')}>{s.breadcrumbHome}</a><span aria-hidden="true">/</span><a href={L('/api')}>{m.range}</a><span aria-hidden="true">/</span><span lang="en" dir="ltr">{displayName}</span></nav>
     <p class="kicker kicker-light">{m.kicker}</p>
     <h1 lang="en" dir="ltr">{displayName}</h1>
-    {lang === 'fa' && faName(displayName) && <p class="prod-fa-name">{faName(displayName)}</p>}
+    {lang !== 'en' && (locName(lang, displayName) || locName(lang, mol.name)) && <p class="prod-fa-name" lang={htmlLang[lang]}>{locName(lang, displayName) || locName(lang, mol.name)}</p>}
     <dl class="mol-keyfacts" lang="en" dir="ltr">
       {mol.cas && <div><dt>{m.cas}</dt><dd>{mol.cas}</dd></div>}
       {mol.formula && <div><dt>{m.formula}</dt><dd set:html={formulaHtml}/></div>}

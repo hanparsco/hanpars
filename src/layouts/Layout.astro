@@ -1,13 +1,15 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { langFromPath, stripLang, localePath, dir } from '../i18n';
+import { langFromPath, stripLang, localePath, dir, langs, htmlLang, hreflangOf, ogLocale, t, type Lang } from '../i18n';
 import '../styles/global.css';
-interface Props { title?: string; description?: string; noindex?: boolean; brand?: 'default' | 'regulatory'; schema?: Record<string, unknown>[]; breadcrumbs?: { name: string; path: string }[]; canonicalPath?: string; ogType?: string; image?: string; onlyLang?: 'en' | 'fa'; keywords?: string; }
+interface Props { title?: string; description?: string; noindex?: boolean; brand?: 'default' | 'regulatory'; schema?: Record<string, unknown>[]; breadcrumbs?: { name: string; path: string }[]; canonicalPath?: string; ogType?: string; image?: string; onlyLang?: Lang; keywords?: string; }
 const lang = langFromPath(Astro.url.pathname);
 const rtl = lang === 'fa';
 const defaults = {
   en: { title: 'Hanpars | Pharmaceutical sourcing and regulatory affairs, Tehran', description: 'Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients for Iran and prepares their IFDA registration. Based in Tehran.' },
+  zh: { title: 'Hanpars | 伊朗药品进口、原料药供应与药品注册服务（德黑兰）', description: 'Hanpars（Haniya Parsan Darou）为伊朗市场进口原料药、制剂、药用辅料和营养原料，并负责伊朗食品药品监督管理局（IFDA）注册。总部位于德黑兰。' },
+  tr: { title: 'Hanpars | İran’a ilaç ithalatı, etkin madde tedariki ve ruhsatlandırma, Tahran', description: 'Hanpars (Haniya Parsan Darou), İran pazarı için etkin madde, bitmiş ürün, yardımcı madde ve besin takviyesi hammaddeleri ithal eder ve İran Gıda ve İlaç İdaresi (IFDA) ruhsatlarını hazırlar. Merkez: Tahran.' },
   fa: { title: 'هانیا پرسان دارو | واردات دارو، مواد اولیهٔ دارویی و امور رگولاتوری', description: 'هانیا پرسان دارو مواد مؤثره، داروهای ساخته‌شده، مواد جانبی و مواد اولیهٔ غذایی و مکمل را برای ایران وارد می‌کند و ثبت آن‌ها در سازمان غذا و دارو را انجام می‌دهد. مستقر در تهران.' },
 };
 const { title = defaults[lang].title, description = defaults[lang].description, noindex = false, brand = 'default', schema = [], breadcrumbs = [], canonicalPath, ogType = 'website', image, onlyLang, keywords } = Astro.props;
@@ -22,16 +24,16 @@ const org = {
   name: rtl ? 'شرکت هانیا پرسان دارو' : 'Haniya Parsan Darou Co.', alternateName: ['Hanpars', 'HANPARS', 'هانیا پرسان دارو', 'Haniya Parsan Darou'],
   url: site.origin, logo: new URL('/brand/hanpars-logo-transparent.png', site).href, email: 'contact@hanpars.com', telephone: '+98-21-8888-3325',
   address: { '@type': 'PostalAddress', streetAddress: rtl ? 'بلوار آفریقا، خیابان ظفر، پلاک ۳۲۶، طبقهٔ سوم' : '3rd floor, No. 326, Zafar Street, Africa Boulevard', addressLocality: rtl ? 'تهران' : 'Tehran', postalCode: '1968734974', addressCountry: 'IR' },
-  contactPoint: [{ '@type': 'ContactPoint', telephone: '+98-21-8888-3325', email: 'contact@hanpars.com', contactType: 'sales', availableLanguage: ['fa', 'en'] }, { '@type': 'ContactPoint', email: 'RA@hanpars.com', contactType: 'regulatory affairs', availableLanguage: ['fa', 'en'] }],
+  contactPoint: [{ '@type': 'ContactPoint', telephone: '+98-21-8888-3325', email: 'contact@hanpars.com', contactType: 'sales', availableLanguage: ['fa', 'en', 'zh', 'tr'] }, { '@type': 'ContactPoint', email: 'RA@hanpars.com', contactType: 'regulatory affairs', availableLanguage: ['fa', 'en', 'zh', 'tr'] }],
 };
-const website = { '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${site.origin}/#website`, url: site.origin, name: siteName, inLanguage: rtl ? 'fa-IR' : 'en', publisher: { '@id': `${site.origin}/#organization` } };
+const website = { '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${site.origin}/#website`, url: site.origin, name: siteName, inLanguage: hreflangOf[lang], publisher: { '@id': `${site.origin}/#organization` } };
 const crumbs = breadcrumbs.length ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: breadcrumbs.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: new URL(b.path, site).href })) } : null;
 const ldBlocks = [org, website, ...(crumbs ? [crumbs] : []), ...schema];
 const altEn = new URL(cleanPath(basePath), site).href;
-const altFa = new URL(cleanPath(localePath(cleanPath(basePath), 'fa')), site).href;
+const alternates = langs.filter(l => !onlyLang || l === onlyLang).map(l => ({ l, href: new URL(cleanPath(localePath(cleanPath(basePath), l)), site).href }));
 ---
 <!doctype html>
-<html lang={lang} dir={dir(lang)}>
+<html lang={htmlLang[lang]} dir={dir(lang)}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -43,8 +45,8 @@ const altFa = new URL(cleanPath(localePath(cleanPath(basePath), 'fa')), site).hr
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content={siteName} />
-    <meta property="og:locale" content={rtl ? 'fa_IR' : 'en_GB'} />
-    <meta property="og:locale:alternate" content={rtl ? 'en_GB' : 'fa_IR'} />
+    <meta property="og:locale" content={ogLocale[lang]} />
+    {langs.filter(l => l !== lang).map(l => <meta property="og:locale:alternate" content={ogLocale[l]} />)}
     <meta property="og:image" content={socialImage} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
@@ -52,8 +54,7 @@ const altFa = new URL(cleanPath(localePath(cleanPath(basePath), 'fa')), site).hr
     <meta name="twitter:image" content={socialImage} />
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'} />
     <link rel="canonical" href={canonical} />
-    {!noindex && onlyLang !== 'fa' && <link rel="alternate" hreflang="en" href={altEn} />}
-    {!noindex && onlyLang !== 'en' && <link rel="alternate" hreflang="fa-IR" href={altFa} />}
+    {!noindex && alternates.map(a => <link rel="alternate" hreflang={hreflangOf[a.l]} href={a.href} />)}
     {!noindex && <link rel="alternate" hreflang="x-default" href={altEn} />}
     {ldBlocks.map(b => <script type="application/ld+json" set:html={JSON.stringify(b)} />)}
     <link rel="icon" href="/brand/hanpars-logo-transparent.png" type="image/png" />
@@ -65,7 +66,7 @@ const altFa = new URL(cleanPath(localePath(cleanPath(basePath), 'fa')), site).hr
     <title>{title}</title>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">{rtl ? 'رفتن به محتوای اصلی' : 'Skip to main content'}</a>
+    <a class="skip-link" href="#main-content">{t(lang).skip}</a>
     <Header brand={brand} />
     <main id="main-content"><slot /></main>
     <Footer brand={brand} />
