@@ -495,6 +495,8 @@ html[lang=fa] .exc-tile-head strong { font-size:16px; }
   .catalogue-table-exc td.table-code { grid-column:1; font-size:13px; }
   .catalogue-table-exc td:last-child { grid-column:2; grid-row:1 / span 3; align-self:start; text-align:end; padding-inline-end:0; }
   .exc-tile .exc-tile-head { flex-direction:column; gap:2px; }
+  .exc-top { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  #categories + .section { padding-top:0; }
 }
 @media(max-width:560px) { .mol-table div { grid-template-columns:1fr; gap:4px; } .mol-keyfacts { gap:18px 28px; } }
 /* ---------- Daily news ---------- */
