@@ -154,30 +154,21 @@
   },
   {
    "name": "thin pages (< 150 words)",
-   "count": 117,
+   "count": 6,
    "sample": [
-    "/zh/api/albuterol-salbutamol-sulphate (138)",
-    "/zh/api/amino-acid (135)",
-    "/zh/api/amoxcillin-trihydrate (131)",
-    "/zh/api/amphetamine-l-aspartate (141)",
-    "/zh/api/angiotensin (128)",
-    "/zh/api/aripiprazole-i (137)",
-    "/zh/api/atorvastatin-calcium-i (142)",
-    "/zh/api/azelastine-hcl-daito (138)",
-    "/zh/api/aztreonam-alfa (134)",
-    "/zh/api/bendamustine-hci (135)",
-    "/zh/api/benzoyl-peroxide-hydrous (134)",
-    "/zh/api/betaine-pharmaceutical (135)",
-    "/zh/api/carbowax-polyethylene-glycol (134)",
-    "/zh/api/cefepime-l-arginine (140)",
-    "/zh/api/ceftaroline-fosamil-arginine (134)"
+    "/zh/api/angiotensin (149)",
+    "/zh/api/cetrimide (149)",
+    "/zh/api/ivermectin (149)",
+    "/zh/api/sucralfate (149)",
+    "/zh/api/vasopressin (149)",
+    "/zh/api/verteporfin (149)"
    ]
   },
   {
    "name": "heavy pages (> 600 KB)",
    "count": 1,
    "sample": [
-    "/tr/excipient (595 KB)"
+    "/tr/excipient (599 KB)"
    ]
   }
  ]
