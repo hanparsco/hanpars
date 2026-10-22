@@ -1,0 +1,14 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import ProductPage from '../../../components/ProductPage.astro';
+import fdf from '../../../data/fdf.json';
+import { fdfSlug, parseFdf, prettyName } from '../../../data/fdf-parse';
+export function getStaticPaths() {
+  return (fdf as { name: string; code: string }[]).map(entry => ({ params: { slug: fdfSlug(entry) }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const p = parseFdf(entry.name);
+const title = `${prettyName(p.ingredient)} ${prettyName(p.form)}${p.strength ? ' ' + p.strength : ''} | داروهای ساخته‌شده | هانیا پرسان دارو`;
+const description = `${prettyName(entry.name)}: معرفی، موارد مصرف، شکل دارویی و ثبت درخواست تأمین — فهرست مرجع داروهای ساخته‌شدهٔ هانیا پرسان دارو، کد ${entry.code}.`;
+---
+<Layout title={title} description={description}><ProductPage entry={entry} /></Layout>

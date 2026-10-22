@@ -499,6 +499,15 @@ html[lang=fa] .exc-tile-head strong { font-size:16px; }
   #categories + .section { padding-top:0; }
 }
 @media(max-width:560px) { .mol-table div { grid-template-columns:1fr; gap:4px; } .mol-keyfacts { gap:18px 28px; } }
+.prod-hero h1 { font-size:clamp(30px,3.6vw,48px); }
+.prod-hero .lede { color:var(--on-navy-muted); }
+.prod-main h2 { font-size:21px; margin:34px 0 12px; } .prod-main h2:first-child { margin-top:0; }
+.prod-main p { font-size:16.5px; line-height:1.7; max-width:46em; }
+.prod-boxed { border:1px solid var(--navy); border-inline-start-width:4px; padding:16px 20px; margin-bottom:28px; }
+.prod-boxed strong { display:block; font-family:var(--display); font-size:12px; letter-spacing:.12em; text-transform:uppercase; margin-bottom:8px; }
+.prod-boxed p { margin:0; font-size:15px; }
+.prod-source { margin-top:34px; display:block; }
+.prod-links { margin:0 0 28px; } .prod-links a { font-size:15.5px; padding:12px 0; }
 /* ---------- Daily news ---------- */
 .news-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px 32px; }
 .news-card { display:flex; flex-direction:column; border-top:1px solid var(--line); padding-top:22px; }

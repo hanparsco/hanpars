@@ -12,7 +12,7 @@ const title = type==='fdf'?s.fdfTitle:type==='exc'?s.excTitle:s.apiTitle;
 const search = type==='fdf'?s.searchFdf:type==='exc'?s.searchExc:s.searchApi;
 const hasCode = true;
 const mols = molecules as Record<string, { cid?: number|null }>;
-const pageFor = (slug?: string) => slug && mols[slug] && mols[slug].cid ? L(`/api/${slug}`) : '';
+const pageFor = (slug?: string) => !slug ? '' : type==='fdf' ? L(`/fdf/${slug}`) : (mols[slug] && mols[slug].cid ? L(`/api/${slug}`) : '');
 const i18n = JSON.stringify({ inList: s.inList, matching: s.matching, none: s.none, showing: s.showingTpl });
 ---
 <div class="catalogue-panel" id={type==='exc'?'excipient-list':type==='api'?'api-list':undefined} style={type!=='fdf'?'scroll-margin-top:40px':undefined} data-catalogue data-page-size="25" data-i18n={i18n}>

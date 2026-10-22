@@ -1,0 +1,23 @@
+name: Finished-product pages data (FDA labels)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  fdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: python scripts/fetch-fdf-info.py 2>&1 | tee scripts/fdf-info-last-run.log
+      - env: { GH_TOKEN: '${{ secrets.GITHUB_TOKEN }}' }
+        run: |
+          git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
+          git add src/data/fdf-info.json scripts/fdf-info-last-run.log
+          git diff --cached --quiet && exit 0
+          git commit -m "Finished-product information from FDA labelling" && git pull --rebase origin main && git push
+          gh workflow run deploy.yml --ref main

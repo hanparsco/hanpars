@@ -1,0 +1,14 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProductPage from '../../components/ProductPage.astro';
+import fdf from '../../data/fdf.json';
+import { fdfSlug, parseFdf, prettyName } from '../../data/fdf-parse';
+export function getStaticPaths() {
+  return (fdf as { name: string; code: string }[]).map(entry => ({ params: { slug: fdfSlug(entry) }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const p = parseFdf(entry.name);
+const title = `${prettyName(p.ingredient)} ${prettyName(p.form)}${p.strength ? ' ' + p.strength : ''} | Finished products | Hanpars`;
+const description = `${prettyName(entry.name)}: what it is, indications, dosage form and sourcing enquiry — Hanpars finished product reference, code ${entry.code}.`;
+---
+<Layout title={title} description={description}><ProductPage entry={entry} /></Layout>
