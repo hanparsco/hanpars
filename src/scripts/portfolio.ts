@@ -1,3 +1,5 @@
+const FA_DIGITS = document.documentElement.lang === 'fa';
+const num = (s: string | number) => { const t = String(s); return FA_DIGITS ? t.replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]) : t; };
 const portfolio = document.querySelector<HTMLElement>('[data-portfolio]');
 
 if (portfolio) {
@@ -30,7 +32,7 @@ if (portfolio) {
       const visible = Array.from(group.querySelectorAll<HTMLElement>('[data-portfolio-card]')).filter(card => !card.hidden).length;
       group.hidden = visible === 0;
       const groupCount = group.querySelector<HTMLElement>('[data-portfolio-group-count]');
-      if (groupCount) groupCount.textContent = String(visible);
+      if (groupCount) groupCount.textContent = num(visible);
       const groupLabel = group.querySelector<HTMLElement>('[data-portfolio-group-label]');
       if (groupLabel) groupLabel.textContent = visible === 1 ? (i18n.molecule || 'molecule') : (i18n.molecules || 'molecules');
     });
@@ -39,7 +41,7 @@ if (portfolio) {
     if (cardView) cardView.hidden = view !== 'cards' || count === 0;
     if (tableView) tableView.hidden = view !== 'table' || count === 0;
     if (empty) empty.hidden = count !== 0;
-    if (counter) counter.textContent = (i18n.count || '{n} molecules across {a} therapeutic areas').replace('{n}', String(count)).replace('{a}', String(visibleAreas.size)) + (query || area!=='all' ? (i18n.filtered || ' matching your filters') : '');
+    if (counter) counter.textContent = num((i18n.count || '{n} molecules across {a} therapeutic areas').replace('{n}', String(count)).replace('{a}', String(visibleAreas.size))) + (query || area!=='all' ? (i18n.filtered || ' matching your filters') : '');
   }
 
   areaButtons.forEach(button => button.addEventListener('click', () => { area = button.dataset.portfolioArea || 'all'; apply(); }));
