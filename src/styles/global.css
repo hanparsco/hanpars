@@ -403,7 +403,7 @@ summary::-webkit-details-marker { display:none; }
   .section { padding-block:64px; }
   h1 { font-size:34px; } h2 { font-size:28px; }
   .hero h1 { font-size:34px; } .hero-main { padding:64px 0 56px; }
-  .hero-actions { flex-direction:column; align-items:stretch; gap:16px; } .hero-actions .button { width:100%; }
+  .hero-actions { flex-direction:column; align-items:stretch; gap:16px; } .hero-actions .button { width:100%; } .hero-actions .text-link { align-self:flex-start; }
   .hero-meta-inner { grid-template-columns:1fr; } .hero-meta a:nth-child(n) { border-inline-end:0; padding-inline-start:0!important; }
   .hero-meta a:nth-child(2),.hero-meta a:nth-child(3) { border-bottom:1px solid var(--line-dark); }
   .spotlight-figure { gap:28px; } .spotlight-figure strong { font-size:40px; }
