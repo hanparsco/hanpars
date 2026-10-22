@@ -1,6 +1,7 @@
 ---
 import CTA from './CTA.astro';
 import molecules from '../data/molecules.json';
+import moleculesFa from '../data/molecules.fa.json';
 import { langFromPath, localePath, t } from '../i18n';
 interface Props { slug: string }
 const { slug } = Astro.props;
@@ -11,6 +12,7 @@ const L = (p: string) => localePath(p, lang);
 type Mol = { name:string; cas:string; cid:number|null; formula?:string; mw?:string; iupac?:string; smiles?:string; inchikey?:string; xlogp?:number|null; hbd?:number|null; hba?:number|null; tpsa?:number|null; rotb?:number|null; synonyms?:string[]; otherCas?:string[]; description?:string; descriptionSource?:string; image?:string; parentMatch?:boolean; matched?:string };
 const all = molecules as Record<string, Mol>;
 const mol = all[slug];
+const faDesc = lang === 'fa' ? (moleculesFa as Record<string, string>)[slug] || '' : '';
 const title = mol.name.replace(/\bHCl\b/g, 'HCl');
 const pretty = (n: string) => n.charAt(0) + n.slice(1).toLowerCase().replace(/\bhcl\b/g, 'HCl').replace(/\bdihcl\b/g, 'DiHCl');
 const displayName = /[a-z]/.test(mol.name) ? mol.name : pretty(mol.name);
@@ -38,7 +40,7 @@ const num = (v: number | null | undefined, d = 1) => (v === null || v === undefi
 
 {mol.cid && <section class="section"><div class="container mol-body">
   <div class="mol-main">
-    {mol.description && <div class="mol-about"><h2>{m.about}</h2><p lang="en" dir="ltr">{mol.description}</p>{mol.descriptionSource && <p class="form-hint">{m.source}: {mol.descriptionSource}, via PubChem.</p>}</div>}
+    {(faDesc || mol.description) && <div class="mol-about"><h2>{m.about}</h2>{faDesc ? <p>{faDesc}</p> : <p lang="en" dir="ltr">{mol.description}</p>}{mol.descriptionSource && <p class="form-hint">{m.source}: {mol.descriptionSource}, via PubChem.</p>}</div>}
     {mol.parentMatch && <p class="archive-note">{m.parentNote(mol.matched || '')}</p>}
     <h2>{m.identifiers}</h2>
     <dl class="mol-table" lang="en" dir="ltr">
