@@ -4,31 +4,31 @@
   ! European Pharmaceutical Review: HTTP Error 404: Not Found
   ! BioSpectrum Asia: HTTP Error 404: Not Found
 global feeds
-  Fierce Pharma: 0 items (root <rss>, 20738 bytes)
+  Fierce Pharma: 0 items (root <rss>, 20529 bytes)
   Pharmaceutical Executive: 0 items (root <rss>, 23440 bytes)
   BioPharma Dive: 10 items
   Endpoints News: 24 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 40 items
+  Google News: 39 items
 china feeds
-  Fierce Pharma: 0 items (root <rss>, 20738 bytes)
+  Fierce Pharma: 0 items (root <rss>, 20529 bytes)
   Pharmaceutical Executive: 0 items (root <rss>, 23440 bytes)
   BioPharma Dive: 10 items
   Endpoints News: 24 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 40 items
+  Google News: 39 items
   Google News: 3 items
   Google News: 32 items
-  Google News: 16 items
+  Google News: 18 items
 global
   - Endpoints News | Alcon and OpenAI make acquisitions; Tezspire's latest Phase 3 win | img
   - Pharmaceutical Technology | FDA approves Cosette’s Evoxac oral solution for Sjögren’s disease | img
-  - Pharmaceutical Executive | FDA Approves Hibsago | PharmExec | img
+  - Pharmaceutical Executive | FDA Approves Hibsago | img
 china
-  - Voice of ASIA | ESTEVE CDMO expands its presence in Asia with a major investment and n | img
+  - BioPharma APAC | ESTEVE CDMO Invests Over $80 Million to Expand Pharmaceutical Manufact | img
   - The Economic Times | Europe’s last penicillin plant faces a bitter fight against China’s ch | img
-  - 24.KG | Kyrgyzstan to build veterinary drug plant with Chinese partners | img
+  - Demócrata | Esteve CDMO will invest 75 million in a new industrial plant in China | no image
