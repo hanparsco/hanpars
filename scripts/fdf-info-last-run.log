@@ -1,0 +1,48 @@
+401 ingredients, 401 to fetch
+  0/401 ok=1
+  25/401 ok=25
+  50/401 ok=46
+  75/401 ok=69
+  100/401 ok=94
+  125/401 ok=113
+  150/401 ok=135
+  175/401 ok=159
+  200/401 ok=182
+  225/401 ok=207
+  250/401 ok=229
+  275/401 ok=254
+  300/401 ok=278
+  325/401 ok=301
+  350/401 ok=324
+  375/401 ok=348
+  400/401 ok=372
+done: 372 found, 29 without a label
+  - agomelatine
+  - atezolizumab
+  - betahistine
+  - bilastine
+  - biperiden
+  - dobesilate
+  - ceftizoxime
+  - contraceptive de
+  - corifollitropin alfa
+  - cyproterone
+  - cyproterone compound
+  - dapoxetine
+  - daratumumab
+  - domperidone
+  - ethinylestradiol
+  - dydrogesterone
+  - fampridine
+  - gliclazide
+  - hyoscine n butyl
+  - leuprorelin
+  - benserazide
+  - mebeverine
+  - osimertinib
+  - piracetam
+  - pneumococcal vaccine valent
+  - reteplase
+  - risdiplam
+  - teicoplanin
+  - urofollitropin
