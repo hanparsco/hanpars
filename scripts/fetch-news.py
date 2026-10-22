@@ -21,16 +21,18 @@ MAX_AGE_DAYS = 4
 
 GLOBAL_FEEDS = [
     ('Fierce Pharma', 'https://www.fiercepharma.com/rss/xml'),
+    ('Pharmaceutical Executive', 'https://www.pharmexec.com/rss'),
+    ('Reuters Health via Yahoo', 'https://finance.yahoo.com/rss/topic/healthcare'),
     ('BioPharma Dive', 'https://www.biopharmadive.com/feeds/news/'),
     ('Endpoints News', 'https://endpts.com/feed/'),
-    ('European Pharmaceutical Review', 'https://www.europeanpharmaceuticalreview.com/feed/'),
+    ('European Pharmaceutical Review', 'https://www.europeanpharmaceuticalreview.com/feed'),
     ('Pharmaceutical Technology', 'https://www.pharmaceutical-technology.com/feed/'),
     ('STAT', 'https://www.statnews.com/category/pharma/feed/'),
-    ('Pharmaphorum', 'https://pharmaphorum.com/feed'),
+    ('Pharmaphorum', 'https://pharmaphorum.com/rss.xml'),
     ('Google News', 'https://news.google.com/rss/search?q=pharmaceutical+(FDA+OR+EMA+OR+acquisition+OR+shortage+OR+recall+OR+tariff)+when:2d&hl=en-US&gl=US&ceid=US:en'),
 ]
 CHINA_FEEDS = GLOBAL_FEEDS + [
-    ('BioSpectrum Asia', 'https://www.biospectrumasia.com/rss'),
+    ('BioSpectrum Asia', 'https://www.biospectrumasia.com/rss/feed'),
     ('Google News', 'https://news.google.com/rss/search?q=China+%22active+pharmaceutical+ingredient%22+OR+%22API+manufacturer%22+OR+%22API+exports%22+when:4d&hl=en-US&gl=US&ceid=US:en'),
     ('Google News', 'https://news.google.com/rss/search?q=China+generic+drugs+(NMPA+OR+manufacturing+OR+exports+OR+procurement+OR+GMP)+when:4d&hl=en-US&gl=US&ceid=US:en'),
     ('Google News', 'https://news.google.com/rss/search?q=Chinese+pharmaceutical+(plant+OR+factory+OR+CDMO+OR+tariff+OR+%22supply+chain%22)+when:4d&hl=en-US&gl=US&ceid=US:en'),
@@ -115,7 +117,7 @@ def parse_feed(source: str, url: str):
                 img = child.get('url'); break
         if title and link:
             items.append({'title': title, 'url': link, 'summary': summary, 'date': date, 'source': src, 'image': img})
-    print(f'  {source}: {len(items)} items')
+    print(f'  {source}: {len(items)} items' + ('' if items else f' (root <{root.tag}>, {len(raw)} bytes)'))
     return items
 
 
@@ -165,10 +167,18 @@ def resolve_google(url: str) -> str:
                                      headers={'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'})
         with urllib.request.urlopen(req, timeout=20) as r:
             resp = r.read().decode('utf-8', 'ignore')
-        m2 = re.search(r'"(https?://[^"\\]+)"', resp.split('\n', 2)[-1])
-        return m2.group(1) if m2 else url
+        body_txt = resp.split('\n', 2)[-1]
+        try:
+            outer = json.loads(body_txt)
+            inner = json.loads(outer[0][2])
+            return inner[1]
+        except Exception:
+            m2 = re.search(r'https?:\\?/\\?/[^"\\\s]+', body_txt)
+            if m2 and 'google.com' not in m2.group(0): return m2.group(0).replace('\\/', '/')
+            print(f'  ! google resolve: no url in response for {gid[:12]}…: {body_txt[:160]!r}', file=sys.stderr)
+            return url
     except Exception as e:
-        print(f'  ! google resolve: {e}', file=sys.stderr)
+        print(f'  ! google resolve: {type(e).__name__}: {e}', file=sys.stderr)
         return url
 
 
