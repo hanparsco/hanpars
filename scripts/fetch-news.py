@@ -22,17 +22,18 @@ MAX_AGE_DAYS = 4
 GLOBAL_FEEDS = [
     ('Fierce Pharma', 'https://www.fiercepharma.com/rss/xml'),
     ('Pharmaceutical Executive', 'https://www.pharmexec.com/rss'),
-    ('Reuters Health via Yahoo', 'https://finance.yahoo.com/rss/topic/healthcare'),
     ('BioPharma Dive', 'https://www.biopharmadive.com/feeds/news/'),
     ('Endpoints News', 'https://endpts.com/feed/'),
-    ('European Pharmaceutical Review', 'https://www.europeanpharmaceuticalreview.com/feed'),
+    ('European Pharmaceutical Review', 'https://www.europeanpharmaceuticalreview.com/rss'),
+    ('in-Pharmatechnologist', 'https://www.in-pharmatechnologist.com/var/wrbm_gb_food_pharma/storage/static/rss/in-pharmatechnologist.com.xml'),
+    ('Google News', 'https://news.google.com/rss/search?q=pharma+OR+drugmaker+(Reuters+OR+%22Financial+Times%22)+when:2d&hl=en-US&gl=US&ceid=US:en'),
     ('Pharmaceutical Technology', 'https://www.pharmaceutical-technology.com/feed/'),
     ('STAT', 'https://www.statnews.com/category/pharma/feed/'),
     ('Pharmaphorum', 'https://pharmaphorum.com/rss.xml'),
     ('Google News', 'https://news.google.com/rss/search?q=pharmaceutical+(FDA+OR+EMA+OR+acquisition+OR+shortage+OR+recall+OR+tariff)+when:2d&hl=en-US&gl=US&ceid=US:en'),
 ]
 CHINA_FEEDS = GLOBAL_FEEDS + [
-    ('BioSpectrum Asia', 'https://www.biospectrumasia.com/rss/feed'),
+    ('Google News', 'https://news.google.com/rss/search?q=China+pharmaceutical+(API+OR+generic+OR+NMPA+OR+%22volume-based+procurement%22)+when:7d&hl=en-US&gl=US&ceid=US:en'),
     ('Google News', 'https://news.google.com/rss/search?q=China+%22active+pharmaceutical+ingredient%22+OR+%22API+manufacturer%22+OR+%22API+exports%22+when:4d&hl=en-US&gl=US&ceid=US:en'),
     ('Google News', 'https://news.google.com/rss/search?q=China+generic+drugs+(NMPA+OR+manufacturing+OR+exports+OR+procurement+OR+GMP)+when:4d&hl=en-US&gl=US&ceid=US:en'),
     ('Google News', 'https://news.google.com/rss/search?q=Chinese+pharmaceutical+(plant+OR+factory+OR+CDMO+OR+tariff+OR+%22supply+chain%22)+when:4d&hl=en-US&gl=US&ceid=US:en'),
@@ -123,7 +124,7 @@ def parse_feed(source: str, url: str):
                 img = child.get('url'); break
         if title and link:
             items.append({'title': title, 'url': link, 'summary': summary, 'date': date, 'source': src, 'image': img})
-    print(f'  {source}: {len(items)} items' + ('' if items else f' (root <{root.tag}>, {len(raw)} bytes)'))
+    print(f'  {source}: {len(items)} items' + ('' if items else f' (root <{root.tag}>, {len(raw)} bytes, start {raw[:240]!r})'))
     return items
 
 
@@ -223,11 +224,34 @@ def save_image(url: str, slug: str) -> str:
         return ''
 
 
-def pick(items, n, china=False):
+GENERIC = set('''a an the and or of in on for to with by from at as is are be will new over after amid into its their than more
+fda ema nmpa who chmp mhra eu us usa uk china chinese india indian europe european global world drug drugs drugmaker drugmakers pharma pharmaceutical
+pharmaceuticals medicine medicines generic generics biosimilar api apis cdmo cmo plant plants factory facility site manufacturing manufacturer
+production capacity supply chain export exports import imports tariff tariffs price prices deal deals billion million invest invests investment
+expand expands expansion approve approves approved approval launch launches phase trial data study company companies market markets report
+says said year years first make makes inc ltd co corp group biotech treatment therapy patients disease cancer'''.split())
+
+
+STOP = set('the and for with from into over after amid its their than more will new says said this that how why what are has have was not but'.split())
+
+
+def _toks(title):
+    return {w.rstrip('s') for w in re.findall(r'[a-z0-9]+', title.lower()) if len(w) > 2 and not w.isdigit() and w not in STOP}
+
+
+def same_story(a, b):
+    ta, tb = _toks(a), _toks(b)
+    if not ta or not tb: return False
+    shared = ta & tb
+    distinct = {w for w in shared if w not in GENERIC and w.rstrip('s') not in GENERIC}
+    return bool(distinct) and len(shared) / min(len(ta), len(tb)) >= 0.35
+
+
+def pick(items, n, china=False, exclude_titles=()):
     ranked = sorted(((score(i, china), i) for i in items), key=lambda x: -x[0])
     shortlist, seen_title = [], set()
     for s, it in ranked:
-        if s <= -50 or len(shortlist) >= 12: break
+        if s <= -50 or len(shortlist) >= 16: break
         key = re.sub(r'[^a-z0-9]', '', it['title'].lower())[:50]
         if key in seen_title: continue
         seen_title.add(key)
@@ -237,9 +261,12 @@ def pick(items, n, china=False):
         shortlist.append((s + (3 if it['image'] else -6), it))
     shortlist.sort(key=lambda x: -x[0])
     out, seen_src, seen_host = [], set(), set()
+    # a story with a photo always beats one without
+    shortlist.sort(key=lambda x: (0 if x[1]['image'] else 1, -x[0]))
     for s, it in shortlist:
         host = urllib.parse.urlparse(it['url']).hostname or ''
         if it['source'] in seen_src or host in seen_host: continue
+        if any(same_story(it['title'], o['title']) for o in out) or any(same_story(it['title'], t) for t in exclude_titles): continue
         seen_src.add(it['source']); seen_host.add(host)
         out.append(it)
         if len(out) == n: break
@@ -247,6 +274,15 @@ def pick(items, n, china=False):
 
 
 def main():
+    import os
+    tehran_today = (NOW + dt.timedelta(hours=3, minutes=30)).strftime('%Y-%m-%d')
+    if OUT_JSON.exists() and os.environ.get('FORCE') != '1':
+        try:
+            upd = dt.datetime.fromisoformat(json.load(open(OUT_JSON))['updated'].replace('Z', '+00:00'))
+            if (upd + dt.timedelta(hours=3, minutes=30)).strftime('%Y-%m-%d') == tehran_today:
+                print(f'digest already updated today ({tehran_today}, Tehran); nothing to do')
+                return 0
+        except Exception: pass
     print('global feeds')
     g_items = [i for s, u in GLOBAL_FEEDS for i in parse_feed(s, u)]
     print('china feeds')
@@ -261,7 +297,7 @@ def main():
     g_items, c_items = dedupe(g_items), dedupe(c_items)
     china = pick(c_items, 3, china=True)
     china_urls = {i['url'] for i in china}
-    world = pick([i for i in g_items if i['url'] not in china_urls], 3)
+    world = pick([i for i in g_items if i['url'] not in china_urls], 3, exclude_titles=[i['title'] for i in china])
 
     previous = {}
     if OUT_JSON.exists():
@@ -289,6 +325,16 @@ def main():
         return done
 
     data = {'updated': NOW.strftime('%Y-%m-%dT%H:%M:%SZ'), 'global': finish(world, 'g'), 'china': finish(china, 'c')}
+    # thin day: keep the freshest earlier stories (up to 7 days old, with photo) so each section stays at 3
+    try:
+        old = json.load(open(OUT_JSON)) if OUT_JSON.exists() else {}
+    except Exception: old = {}
+    for sec in ('global', 'china'):
+        for it in old.get(sec, []):
+            if len(data[sec]) >= 3: break
+            fresh = (NOW.date() - dt.date.fromisoformat(it['date'])).days <= 7
+            if fresh and it.get('image') and all(it['url'] != o['url'] and not same_story(it['title'], o['title']) for s2 in ('global', 'china') for o in data[s2]):
+                data[sec].append(it)
     if not data['global'] and not data['china']:
         print('nothing fetched; keeping previous file', file=sys.stderr)
         return 0
