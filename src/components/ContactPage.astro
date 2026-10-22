@@ -36,7 +36,7 @@ const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, se
     </form>
   </div>
   <aside class="contact-aside"><h3>{c.asideTitle}</h3><p>{c.asideText}</p>
-    <div class="contact-detail"><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr">+98 21 8888 3325</a></p></div>
+    <div class="contact-detail"><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></p></div>
     <div class="contact-detail"><strong>{c.email}</strong><p><a href={`mailto:${contactEmail}`} dir="ltr">{contactEmail}</a></p></div>
     <div class="contact-detail"><strong>{c.office}</strong><p>{lang === 'fa' ? 'هانیا پرسان دارو' : 'Haniya Parsan Darou'}<br/>{lang === 'fa' ? 'تهران، بلوار آفریقا، خیابان ظفر' : '3rd floor, No. 326, Zafar Street'}<br/>{lang === 'fa' ? 'پلاک ۳۲۶، طبقهٔ سوم' : 'Africa Boulevard, Tehran 1968734974'}<br/>{lang === 'fa' ? 'کد پستی ۱۹۶۸۷۳۴۹۷۴' : 'Iran'}</p></div>
     <div class="contact-detail"><strong>{c.hours}</strong><p>{c.hoursText}</p><span class="form-hint">{c.confirmVisit}</span></div>

@@ -541,6 +541,7 @@ html[lang=fa] .lede,html[lang=fa] p { line-height:1.9; }
 html[lang=fa] .num,html[lang=fa] .spotlight-figure strong { letter-spacing:0; }
 html[lang=fa] .persian-name { font-family:var(--display); }
 html[lang=fa] [dir=ltr],html[lang=fa] [lang=en] { font-family:'Montserrat','Source Sans 3',sans-serif; }
+html[lang=fa] [data-fa-digits] { font-family:var(--display); letter-spacing:0; unicode-bidi:isolate; }
 html[lang=fa] .article-body,html[lang=fa] .article-body p,html[lang=fa] .insight-row h3,html[lang=fa] .insight-row p { font-family:'Source Sans 3',sans-serif; line-height:1.6; }
 html[lang=fa] .insight-row h3,html[lang=fa] .article-body h2,html[lang=fa] .article-body h3,html[lang=fa] .page-hero h1[lang=en] { font-family:'Montserrat',sans-serif; letter-spacing:-.02em; }
 html[lang=fa] .insight-row { text-align:left; }

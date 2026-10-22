@@ -16,6 +16,7 @@ export function convertHtml(html) {
   let i = 0;
   const stack = []; // {tag, skip}
   let skipDepth = 0;
+  let forceDepth = 0;
   let rawUntil = null;
   while (i < html.length) {
     if (rawUntil) {
@@ -25,7 +26,7 @@ export function convertHtml(html) {
     }
     const lt = html.indexOf('<', i);
     const text = html.slice(i, lt === -1 ? html.length : lt);
-    out += skipDepth > 0 ? text : toFa(text);
+    out += (skipDepth > 0 && forceDepth === 0) ? text : toFa(text);
     if (lt === -1) break;
     const gt = html.indexOf('>', lt);
     const tagStr = html.slice(lt, gt + 1);
@@ -41,14 +42,17 @@ export function convertHtml(html) {
       for (let k = stack.length - 1; k >= 0; k--) {
         const f = stack.pop();
         if (f.skip) skipDepth--;
+        if (f.force) forceDepth--;
         if (f.tag === tag) break;
       }
       continue;
     }
     if (VOID.has(tag) || tagStr.endsWith('/>')) continue;
-    const skip = /\slang=["']en["']/i.test(tagStr) || /\sdir=["']ltr["']/i.test(tagStr) || /\sdata-latin\b/i.test(tagStr) || tag === 'code' || tag === 'pre' || tag === 'svg' || tag === 'math';
-    stack.push({ tag, skip });
+    const forceFa = /\sdata-fa-digits\b/i.test(tagStr);
+    const skip = !forceFa && (/\slang=["']en["']/i.test(tagStr) || /\sdir=["']ltr["']/i.test(tagStr) || /\sdata-latin\b/i.test(tagStr) || tag === 'code' || tag === 'pre' || tag === 'svg' || tag === 'math');
+    stack.push({ tag, skip, force: forceFa });
     if (skip) skipDepth++;
+    if (forceFa) forceDepth++;
     if (tag === 'script' || tag === 'style' || tag === 'textarea') rawUntil = `</${tag}`;
   }
   return out;
