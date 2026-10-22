@@ -170,7 +170,7 @@ export const ui = {
       ctaProduct: 'Tell us the product and the market. We will tell you the next step.', ctaCdmo: 'Tell us where the project stands.',
     },
     regulatory: {
-      title: 'Regulatory affairs', category: 'Services', action: 'Request an assessment', photoAlt: 'Analyst operating a laboratory instrument in a quality-control lab',
+      title: 'Regulatory affairs', category: 'Services', action: 'Request an assessment', photoAlt: 'Stacks of paper dossiers and file folders in an archive',
       cover: 'What we cover', file: 'Where we file', intel: 'Regulatory intelligence and AI in regulatory', principle: 'Our principle on AI',
       watch: 'What changed in the agencies', watchLede: (d: string) => `Regulatory watch, as of ${d}. Items are summarised from the agencies' own publications; follow the source for the full text.`,
       authorities: 'Authorities', routes: 'Submission routes we handle', format: 'Dossier format', source: 'Source',
@@ -331,7 +331,7 @@ export const ui = {
       ctaProduct: 'محصول و بازار را به ما بگویید؛ قدم بعدی را ما می‌گوییم.', ctaCdmo: 'بگویید پروژه در چه مرحله‌ای است.',
     },
     regulatory: {
-      title: 'امور رگولاتوری', category: 'خدمات', action: 'درخواست ارزیابی', photoAlt: 'کارشناس در حال کار با دستگاه آزمایشگاهی در آزمایشگاه کنترل کیفیت',
+      title: 'امور رگولاتوری', category: 'خدمات', action: 'درخواست ارزیابی', photoAlt: 'انبوه پرونده‌ها و پوشه‌های کاغذی در بایگانی',
       cover: 'آنچه پوشش می‌دهیم', file: 'کجا ثبت می‌کنیم', intel: 'هوش رگولاتوری و هوش مصنوعی در رگولاتوری', principle: 'اصل ما دربارهٔ هوش مصنوعی',
       watch: 'در سازمان‌ها چه تغییر کرد', watchLede: (d: string) => `پایش رگولاتوری، تا ${d}. موارد از انتشارات خود سازمان‌ها خلاصه شده‌اند؛ متن کامل را در منبع ببینید.`,
       authorities: 'مراجع', routes: 'مسیرهای ثبتی که انجام می‌دهیم', format: 'قالب پرونده', source: 'منبع',
