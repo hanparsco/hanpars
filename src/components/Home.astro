@@ -2,6 +2,7 @@
 import CTA from './CTA.astro';
 import Photo from './Photo.astro';
 import NewsCard from './NewsCard.astro';
+import FaqFa from './FaqFa.astro';
 import news from '../data/news.json';
 import portfolio from '../data/portfolio.json';
 import { portfolioFa } from '../data/portfolio.fa';
@@ -81,4 +82,5 @@ const entries = [
     {todayNews.length > 0 && <div class="news-grid">{todayNews.map((item, i) => <NewsCard item={item} eager={false}/>)}</div>}
   </div>
 </section>
+{lang === 'fa' && <FaqFa />}
 <CTA />
