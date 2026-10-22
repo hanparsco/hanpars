@@ -14,7 +14,7 @@ const fmt = (n: number) => n.toLocaleString(lang === 'fa' ? 'fa-IR' : 'en-US');
 </div></section>
 <script>
   document.querySelectorAll<HTMLAnchorElement>('[data-exc-filter]').forEach(a => a.addEventListener('click', () => {
-    const btn = document.querySelector<HTMLButtonElement>(`[data-catalogue] [data-catalogue-filter="${a.dataset.excFilter}"]`);
-    if (btn) btn.click();
+    const list = document.getElementById('excipient-list') as (HTMLElement & { setFilter?: (v: string) => void }) | null;
+    if (list?.setFilter) list.setFilter(a.dataset.excFilter || '');
   }));
 </script>

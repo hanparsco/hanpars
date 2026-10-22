@@ -431,6 +431,12 @@ summary::-webkit-details-marker { display:none; }
 .claims-status { display:inline-block; white-space:nowrap; font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:4px 10px; border:1px solid var(--line); border-radius:var(--radius); color:var(--muted); }
 .claims-status.authorised { color:var(--lapis-deep); border-color:var(--lapis); }
 .claims-panel .catalogue-scroll { max-height:760px; }
+.catalogue-filterbar { display:flex; align-items:center; gap:18px; padding:0 0 18px; flex-wrap:wrap; }
+.catalogue-select { display:inline-flex; align-items:center; gap:12px; font-size:14px; color:var(--muted); }
+.catalogue-select select { appearance:none; -webkit-appearance:none; font:inherit; font-family:var(--display); font-weight:500; font-size:14px; color:var(--navy); background:var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23141414' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center; border:1px solid var(--line); border-radius:var(--radius); padding:10px 40px 10px 16px; min-width:280px; max-width:100%; cursor:pointer; }
+[dir=rtl] .catalogue-select select { background-position:left 14px center; padding:10px 16px 10px 40px; }
+.catalogue-select select:focus { outline:none; border-color:var(--navy); }
+.catalogue-reset { background:none; border:0; padding:0; font-family:var(--display); font-size:13.5px; font-weight:600; color:var(--lapis); border-bottom:1px solid var(--lapis); cursor:pointer; }
 .table-function { color:var(--muted); font-size:14.5px; } .table-name { min-width:220px; }
 .home-news .news-grid { margin-top:8px; }
 .exc-index { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border-top:1px solid var(--line); border-inline-start:1px solid var(--line); }

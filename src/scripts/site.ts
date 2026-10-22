@@ -71,6 +71,8 @@ for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]
   let page = 0;
   let statusFilter = '';
   const filters = Array.from(catalogue.querySelectorAll<HTMLButtonElement>('[data-catalogue-filter]'));
+  const select = catalogue.querySelector<HTMLSelectElement>('[data-catalogue-filter-select]');
+  const reset = catalogue.querySelector<HTMLButtonElement>('[data-catalogue-reset]');
   const status = catalogue.querySelector<HTMLElement>('[data-catalogue-status]');
   const count = catalogue.querySelector<HTMLElement>('[data-filter-count]');
   const suffix = catalogue.querySelector<HTMLElement>('[data-count-suffix]');
@@ -105,6 +107,9 @@ for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]
     filters.forEach(b => b.setAttribute('aria-pressed', String(b === button)));
     applyFilters();
   }));
+  select?.addEventListener('change', () => { statusFilter = select.value; if (reset) reset.hidden = !statusFilter; applyFilters(); });
+  reset?.addEventListener('click', () => { if (select) select.value = ''; statusFilter = ''; reset.hidden = true; applyFilters(); });
+  (catalogue as HTMLElement & { setFilter?: (v: string) => void }).setFilter = (v: string) => { if (select) { select.value = v; select.dispatchEvent(new Event('change')); } };
   prev?.addEventListener('click', () => { if (page > 0) { page--; render(); } });
   next?.addEventListener('click', () => { if ((page+1)*pageSize < matching.length) { page++; render(); } });
   render();
