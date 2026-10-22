@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T01:45:45Z",
+ "updated": "2026-10-22T01:47:19Z",
  "global": [
   {
    "title": "Alcon and OpenAI make acquisitions; Tezspire's latest Phase 3 win",
@@ -18,13 +18,38 @@
    "image": "/news/g-1f85ce1ed5.jpg"
   },
   {
-   "title": "GSK, Ionis win US approval for first-of-its-kind hepatitis B drug",
-   "url": "https://www.biopharmadive.com/news/gsk-ionis-fda-approve-hibsago-chronic-hepatitis-b-bepirovirsen/833541/",
-   "source": "BioPharma Dive",
+   "title": "FDA Approves Hibsago | PharmExec",
+   "url": "https://www.pharmexec.com/view/daily-fda-approves-hibsago",
+   "source": "Pharmaceutical Executive",
    "date": "2026-10-21",
-   "summary": "Hibsago is viewed as a potential “functional cure” for chronic infections and an important part of the British drugmaker’s goal of reaching £40 billion in annual revenue by 2031.",
-   "image": ""
+   "summary": "FDA Approves Hibsago | PharmExec Pharmaceutical Executive",
+   "image": "/news/g-34b7d4cd82.jpg"
   }
  ],
- "china": []
+ "china": [
+  {
+   "title": "American billionaire Mark Cuban strongly believes that manufacturing can return to the US from China; it",
+   "url": "https://timesofindia.indiatimes.com/technology/tech-news/american-billionaire-mark-cuban-strongly-believes-that-manufacturing-can-return-to-the-us-from-china-it-is-really-simple-all-that-americans-need-is-/articleshow/135050004.cms",
+   "source": "The Times of India",
+   "date": "2026-10-19",
+   "summary": "American billionaire Mark Cuban strongly believes that manufacturing can return to the US from China; it The Times of India",
+   "image": "/news/c-136bb3a3de.jpg"
+  },
+  {
+   "title": "ESTEVE CDMO expands its presence in Asia with a major investment and new manufacturing site in China",
+   "url": "https://voiceofasean.com/newsroom/pr-gov/esteve-cdmo-expands-its-presence-in-asia-with-a-major-investment-and-new-manufacturing-site-in-china/",
+   "source": "Voice of ASIA",
+   "date": "2026-10-21",
+   "summary": "ESTEVE CDMO expands its presence in Asia with a major investment and new manufacturing site in China Voice of ASIA",
+   "image": "/news/c-442f8175e8.jpg"
+  },
+  {
+   "title": "China’s non-tariff walls a major export hurdle: FM Nirmala Sitharaman",
+   "url": "https://indiashippingnews.com/export/chinas-non-tariff-walls-a-major-export-hurdle-fm-nirmala-sitharaman/",
+   "source": "India Shipping News",
+   "date": "2026-10-19",
+   "summary": "China’s non-tariff walls a major export hurdle: FM Nirmala Sitharaman India Shipping News",
+   "image": "/news/c-44f20c1612.jpg"
+  }
+ ]
 }

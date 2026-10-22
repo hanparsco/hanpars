@@ -1,21 +1,25 @@
-  ! European Pharmaceutical Review: HTTP Error 404: Not Found
-  ! Pharmaphorum: not well-formed (invalid token): line 6, column 14
-  ! European Pharmaceutical Review: HTTP Error 404: Not Found
-  ! Pharmaphorum: not well-formed (invalid token): line 6, column 14
+  ! Reuters Health via Yahoo: HTTP Error 404: Not Found
+  ! European Pharmaceutical Review: no element found: line 1, column 0
+  ! Reuters Health via Yahoo: HTTP Error 404: Not Found
+  ! European Pharmaceutical Review: no element found: line 1, column 0
   ! BioSpectrum Asia: HTTP Error 404: Not Found
 global feeds
-  Fierce Pharma: 0 items
+  Fierce Pharma: 0 items (root <rss>, 20738 bytes)
+  Pharmaceutical Executive: 0 items (root <rss>, 23440 bytes)
   BioPharma Dive: 10 items
   Endpoints News: 24 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
+  Pharmaphorum: 10 items
   Google News: 39 items
 china feeds
-  Fierce Pharma: 0 items
+  Fierce Pharma: 0 items (root <rss>, 20738 bytes)
+  Pharmaceutical Executive: 0 items (root <rss>, 23440 bytes)
   BioPharma Dive: 10 items
   Endpoints News: 24 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
+  Pharmaphorum: 10 items
   Google News: 39 items
   Google News: 3 items
   Google News: 32 items
@@ -23,5 +27,8 @@ china feeds
 global
   - Endpoints News | Alcon and OpenAI make acquisitions; Tezspire's latest Phase 3 win | img
   - Pharmaceutical Technology | FDA approves Cosette’s Evoxac oral solution for Sjögren’s disease | img
-  - BioPharma Dive | GSK, Ionis win US approval for first-of-its-kind hepatitis B drug | no image
+  - Pharmaceutical Executive | FDA Approves Hibsago | PharmExec | img
 china
+  - The Times of India | American billionaire Mark Cuban strongly believes that manufacturing c | img
+  - Voice of ASIA | ESTEVE CDMO expands its presence in Asia with a major investment and n | img
+  - India Shipping News | China’s non-tariff walls a major export hurdle: FM Nirmala Sitharaman | img
