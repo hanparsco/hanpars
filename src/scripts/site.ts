@@ -7,7 +7,11 @@ menuButton?.addEventListener('click', () => {
   menuButton.setAttribute('aria-expanded', String(open));
   menuButton.setAttribute('aria-label', open ? (menuButton.dataset.labelClose || 'Close navigation') : (menuButton.dataset.labelOpen || 'Open navigation'));
   nav?.classList.toggle('is-open', open);
+  document.documentElement.classList.toggle('nav-open', open);
 });
+const siteHeader = document.querySelector('.site-header');
+const onScroll = () => siteHeader?.classList.toggle('is-scrolled', window.scrollY > 8);
+window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 const dropdowns = Array.from(document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown'));
 dropdowns.forEach((dropdown) => dropdown.addEventListener('toggle', () => {
   if (dropdown.open) dropdowns.forEach(other => { if (other !== dropdown) other.open = false; });
@@ -23,6 +27,7 @@ document.addEventListener('keydown', (event) => {
     opened?.querySelector<HTMLElement>('summary')?.focus();
     if (menuButton?.getAttribute('aria-expanded') === 'true') {
       nav?.classList.remove('is-open');
+      document.documentElement.classList.remove('nav-open');
       menuButton.setAttribute('aria-expanded', 'false');
       menuButton.setAttribute('aria-label', menuButton.dataset.labelOpen || 'Open navigation');
       menuButton.focus();
