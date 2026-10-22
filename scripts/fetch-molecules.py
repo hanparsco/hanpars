@@ -15,7 +15,7 @@ OUT = ROOT / 'src/data/molecules.json'
 IMG = ROOT / 'public/molecules'
 UA = 'HanparsCatalogue/1.0 (+https://hanpars.com; contact@hanpars.com)'
 CAS = re.compile(r'^\d{2,7}-\d{2}-\d$')
-PROPS = 'MolecularFormula,MolecularWeight,IUPACName,CanonicalSMILES,InChIKey,XLogP,HBondDonorCount,HBondAcceptorCount,TPSA,RotatableBondCount,Charge'
+PROPS = 'MolecularFormula,MolecularWeight,IUPACName,SMILES,InChIKey,XLogP,HBondDonorCount,HBondAcceptorCount,TPSA,RotatableBondCount,Charge'
 
 
 def slugify(name: str) -> str:
@@ -95,12 +95,16 @@ def description(cid):
     time.sleep(0.22)
     if not data: return '', ''
     best = None
-    for sec in data.get('Record', {}).get('Section', []):
+    def walk(sec):
+        nonlocal best
         for info in sec.get('Information', []):
+            if info.get('Name') and info.get('Name') not in ('Record Description', 'Description', 'Ontology Summary', 'Physical Description'): continue
             txt = ' '.join(m.get('String', '') for m in info.get('Value', {}).get('StringWithMarkup', []))
             src = info.get('ReferenceNumber')
-            if txt and len(txt) > 40 and (best is None or len(txt) > len(best[0])) and len(txt) < 900:
+            if txt and len(txt) > 40 and len(txt) < 900 and (best is None or len(txt) > len(best[0])):
                 best = (txt, src)
+        for sub in sec.get('Section', []): walk(sub)
+    walk(data.get('Record', {}))
     if not best: return '', ''
     refs = {r['ReferenceNumber']: r.get('SourceName', '') for r in data['Record'].get('Reference', [])}
     return best[0].strip(), refs.get(best[1], '')
@@ -133,7 +137,7 @@ def main():
             out[slug] = {
                 'name': a['name'], 'cas': cas, 'cid': cid, 'matched': q, 'parentMatch': parent,
                 'formula': rec.get('MolecularFormula', ''), 'mw': rec.get('MolecularWeight', ''), 'iupac': rec.get('IUPACName', ''),
-                'smiles': rec.get('CanonicalSMILES', ''), 'inchikey': rec.get('InChIKey', ''), 'xlogp': rec.get('XLogP'),
+                'smiles': rec.get('SMILES') or rec.get('ConnectivitySMILES') or rec.get('CanonicalSMILES', ''), 'inchikey': rec.get('InChIKey', ''), 'xlogp': rec.get('XLogP'),
                 'hbd': rec.get('HBondDonorCount'), 'hba': rec.get('HBondAcceptorCount'), 'tpsa': rec.get('TPSA'), 'rotb': rec.get('RotatableBondCount'),
                 'synonyms': syn, 'otherCas': [c for c in cas_list if c != cas][:4], 'description': desc, 'descriptionSource': src,
                 'image': f'/molecules/{cid}.png' if png.exists() else '',
@@ -147,9 +151,27 @@ def main():
             print(f'  {n}/{len(todo)} fetched={done}')
             OUT.write_text(json.dumps(out, ensure_ascii=False, indent=0) + '\n')
             APIS.write_text(json.dumps(apis, ensure_ascii=False, indent=0) + '\n')
+    # fill pass: entries fetched earlier that still lack a description or SMILES
+    fill = [m for m in out.values() if m.get('cid') and (not m.get('description') or not m.get('smiles'))]
+    print(f'fill pass: {len(fill)} entries')
+    for n, m in enumerate(fill):
+        try:
+            if not m.get('description'):
+                m['description'], m['descriptionSource'] = description(m['cid'])
+            if not m.get('smiles'):
+                d = get(f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{m['cid']}/property/SMILES,ConnectivitySMILES/JSON")
+                time.sleep(0.22)
+                if d:
+                    pr = d['PropertyTable']['Properties'][0]
+                    m['smiles'] = pr.get('SMILES') or pr.get('ConnectivitySMILES') or ''
+        except Exception as e:
+            print(f"  ! fill {m['name']}: {type(e).__name__}: {e}", file=sys.stderr)
+        if n % 100 == 0:
+            print(f'  fill {n}/{len(fill)}')
+            OUT.write_text(json.dumps(out, ensure_ascii=False, indent=0) + '\n')
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=0) + '\n')
     APIS.write_text(json.dumps(apis, ensure_ascii=False, indent=0) + '\n')
-    print(f'done: fetched {done}, failed {len(failed)}')
+    print(f'done: fetched {done}, failed {len(failed)}, with description {sum(1 for m in out.values() if m.get("description"))}')
     for f in failed[:60]: print('  -', f)
 
 
