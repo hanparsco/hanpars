@@ -49,7 +49,7 @@ export function convertHtml(html) {
     }
     if (VOID.has(tag) || tagStr.endsWith('/>')) continue;
     const forceFa = /\sdata-fa-digits\b/i.test(tagStr);
-    const skip = !forceFa && (/\slang=["']en["']/i.test(tagStr) || /\sdir=["']ltr["']/i.test(tagStr) || /\sdata-latin\b/i.test(tagStr) || tag === 'code' || tag === 'pre' || tag === 'svg' || tag === 'math');
+    const skip = !forceFa && (/\slang=["']en["']/i.test(tagStr) || /\sdir=["']ltr["']/i.test(tagStr) || /\sdata-latin\b/i.test(tagStr) || tag === 'code' || tag === 'pre' || tag === 'svg' || tag === 'math' || tag === 'title');
     stack.push({ tag, skip, force: forceFa });
     if (skip) skipDepth++;
     if (forceFa) forceDepth++;
