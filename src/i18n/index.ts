@@ -34,7 +34,7 @@ export const ui = {
         { label: 'Finished dosage forms', href: '/fdf', note: 'The registered portfolio and the reference list' },
         { label: 'Active pharmaceutical ingredients', href: '/api', note: 'A reference range of 1,453 substances' },
         { label: 'Excipients', href: '/excipient', note: 'Formulation materials by grade' },
-        { label: 'Nutrition', href: '/nutrition', note: 'Ingredients and the EU health-claims register' },
+        { label: 'Nutrition and supplements', href: '/nutrition', note: 'Supplement ingredients, by group' },
       ] },
       { label: 'Services', items: [
         { label: 'Regulatory Affairs', href: '/regulatory-affairs', note: 'Dossiers, IFDA submissions, lifecycle' },
@@ -69,7 +69,7 @@ export const ui = {
       lede: 'Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients, and registers them with the IFDA. Based in Tehran, with suppliers in Türkiye, China, India and Europe.',
       primary: 'Prepare a sourcing enquiry', secondary: 'Regulatory affairs',
       heroAlt: 'Hanpars medicines on the display shelves at the Tehran office',
-      entries: { fdf: 'Finished dosage forms', fdfText: (n: number, m: string) => `${n} registered medicines and ${m} reference products.`, api: 'Active ingredients', apiText: (m: string) => `${m} substances in the reference range.`, exc: 'Excipients', excText: '1,241 excipients, by function and grade.', nut: 'Nutrition ingredients', nutText: '267 authorised EU health claims.' },
+      entries: { fdf: 'Finished dosage forms', fdfText: (n: number, m: string) => `${n} registered medicines and ${m} reference products.`, api: 'Active ingredients', apiText: (m: string) => `${m} substances in the reference range.`, exc: 'Excipients', excText: '1,241 excipients, by function and grade.', nut: 'Nutrition ingredients', nutText: 'Vitamins, minerals, botanicals and more: 295 supplement ingredients.' },
       threeTitle: 'Three things we do, usually together.',
       threeLede: 'A supply agreement is only useful once the product is approved and on the shelf, so sourcing, registration and project coordination sit with the same people.',
       three: [
@@ -194,6 +194,12 @@ export const ui = {
       readAt: 'Read at', empty: 'The first digest will appear after the next scheduled update.',
       note: 'Updated every morning. Headlines, summaries and images belong to the publishers named; the selection is not a Hanpars opinion.', archiveLink: 'Our own articles are in the Insights archive.',
     },
+    supplements: {
+      title: 'Supplement ingredients reference list', entries: 'ingredients', search: 'Search by ingredient, form or use', filterLabel: 'Filter by group', all: 'All',
+      g: { vitamins: 'Vitamins', minerals: 'Minerals', lipids: 'Omega-3 and lipids', amino: 'Amino acids and proteins', gut: 'Probiotics, fibres and enzymes', botanicals: 'Botanicals and extracts', nutraceuticals: 'Nutraceuticals', blends: 'Blends and formats' },
+      ingredient: 'Ingredient', category: 'Category', forms: 'Common forms and sources', use: 'Typical use',
+      note: 'The main active ingredients used in pharmaceutical and food supplements, with the forms usually traded. A reference for enquiries, not a statement of stock; grade, standardisation, documentation and the regulatory status of each ingredient in the target market are confirmed per request.',
+    },
     notFound: { title: "That page isn't here.", text: 'The address may have changed, or it never led anywhere. The products, services and contact details are all a click away.', home: 'Back to the homepage', contact: 'Contact Hanpars' },
     dateLocale: 'en-GB',
   },
@@ -208,7 +214,7 @@ export const ui = {
         { label: 'داروهای ساخته‌شده (FDF)', href: '/fdf', note: 'سبد ثبت‌شده و فهرست مرجع' },
         { label: 'مواد مؤثرهٔ دارویی (API)', href: '/api', note: 'فهرست مرجع ۱٬۴۵۳ ماده' },
         { label: 'مواد جانبی (اکسیپیان)', href: '/excipient', note: 'مواد فرمولاسیون بر اساس گرید' },
-        { label: 'مکمل و تغذیه', href: '/nutrition', note: 'ویتامین‌ها و مواد اولیهٔ غذایی و مکمل' },
+        { label: 'مکمل و تغذیه', href: '/nutrition', note: 'مواد اولیهٔ مکمل، بر اساس گروه' },
       ] },
       { label: 'خدمات', items: [
         { label: 'امور رگولاتوری', href: '/regulatory-affairs', note: 'پرونده، ثبت در سازمان غذا و دارو، نگه‌داری مجوز' },
@@ -243,7 +249,7 @@ export const ui = {
       lede: 'شرکت هانیا پرسان دارو طیف گسترده‌ای از مواد مؤثره، داروهای ساخته‌شده، مواد جانبی و مواد اولیهٔ غذایی و مکمل را وارد می‌کند و آن‌ها را در سازمان غذا و دارو به ثبت می‌رساند. مستقر در تهران است و با همکاری تعداد زیادی از تأمین‌کنندگان در ترکیه، چین، هند و اروپا، در تلاش است راه‌حلی برای کاهش کمبودهای دارویی کشور ارائه دهد.',
       primary: 'ثبت درخواست تأمین', secondary: 'امور رگولاتوری',
       heroAlt: 'داروهای هانیا پرسان دارو در قفسه‌های نمایش دفتر تهران',
-      entries: { fdf: 'داروهای ساخته‌شده', fdfText: (n: number, m: string) => `${n} داروی فوریتی و ${m} محصول در فهرست مرجع.`, api: 'مواد مؤثره', apiText: (m: string) => `${m} ماده در فهرست مرجع.`, exc: 'مواد جانبی', excText: '۱٬۲۴۱ مادهٔ جانبی، بر اساس کاربرد و گرید.', nut: 'مواد غذایی و مکمل', nutText: '۲۶۷ ادعای سلامت مجاز اتحادیهٔ اروپا.' },
+      entries: { fdf: 'داروهای ساخته‌شده', fdfText: (n: number, m: string) => `${n} داروی فوریتی و ${m} محصول در فهرست مرجع.`, api: 'مواد مؤثره', apiText: (m: string) => `${m} ماده در فهرست مرجع.`, exc: 'مواد جانبی', excText: '۱٬۲۴۱ مادهٔ جانبی، بر اساس کاربرد و گرید.', nut: 'مواد غذایی و مکمل', nutText: 'ویتامین‌ها، مواد معدنی، گیاهی و بیشتر: ۲۹۵ مادهٔ مکمل.' },
       threeTitle: 'سه کاری که انجام می‌دهیم؛ معمولاً با هم.',
       threeLede: 'قرارداد تأمین وقتی ارزش دارد که محصول تأیید شده و روی قفسه باشد؛ به همین دلیل تأمین، ثبت و هماهنگی پروژه نزد یک تیم است.',
       three: [
@@ -367,6 +373,12 @@ export const ui = {
       chinaKicker: 'روند در چین', chinaTitle: 'اخبار داروهای ساخته‌شده و مواد مؤثرهٔ چین', chinaLede: 'داروهای ساخته‌شده و مواد مؤثره.',
       readAt: 'مطالعه در', empty: 'نخستین گزیدهٔ خبری پس از به‌روزرسانی زمان‌بندی‌شدهٔ بعدی نمایش داده می‌شود.',
       note: 'هر صبح به‌روز می‌شود. تیترها، خلاصه‌ها و تصاویر متعلق به ناشران نام‌برده است؛ انتخاب خبرها نظر هانیا پرسان دارو نیست.', archiveLink: 'مقالات خود ما در آرشیو مقالات است.',
+    },
+    supplements: {
+      title: 'فهرست مرجع مواد اولیهٔ مکمل', entries: 'ماده', search: 'جست‌وجو بر اساس نام، شکل یا کاربرد', filterLabel: 'فیلتر گروه', all: 'همه',
+      g: { vitamins: 'ویتامین‌ها', minerals: 'مواد معدنی', lipids: 'امگا-۳ و چربی‌ها', amino: 'اسیدهای آمینه و پروتئین‌ها', gut: 'پروبیوتیک، فیبر و آنزیم', botanicals: 'گیاهی و عصاره‌ها', nutraceuticals: 'نوتراسوتیکال', blends: 'ترکیب‌ها و فرم‌ها' },
+      ingredient: 'ماده', category: 'دسته', forms: 'شکل‌ها و منابع رایج', use: 'کاربرد معمول',
+      note: 'مواد مؤثرهٔ اصلی مکمل‌های دارویی و غذایی، همراه با شکل‌هایی که معمولاً معامله می‌شوند. مرجع استعلام است، نه اعلام موجودی؛ گرید، استانداردسازی، مستندات و وضعیت رگولاتوری هر ماده در بازار هدف برای هر درخواست تأیید می‌شود.',
     },
     notFound: { title: 'این صفحه اینجا نیست.', text: 'نشانی شاید تغییر کرده یا هرگز وجود نداشته است. محصولات، خدمات و راه‌های تماس یک کلیک فاصله دارند.', home: 'بازگشت به صفحهٔ اصلی', contact: 'تماس با هانیا پرسان دارو' },
     dateLocale: 'fa-IR',

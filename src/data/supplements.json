@@ -1,0 +1,2067 @@
+[
+{
+"name": "Vitamin A",
+"category": "Vitamin",
+"forms": "Retinyl acetate, retinyl palmitate, beta-carotene",
+"use": "Vision, immunity, skin",
+"group": "vitamins"
+},
+{
+"name": "Beta-carotene",
+"category": "Vitamin (provitamin A)",
+"forms": "Synthetic, Dunaliella, palm",
+"use": "Antioxidant, vitamin A source",
+"group": "vitamins"
+},
+{
+"name": "Vitamin B1 (thiamine)",
+"category": "Vitamin",
+"forms": "Thiamine hydrochloride, thiamine mononitrate, benfotiamine",
+"use": "Energy metabolism, nervous system",
+"group": "vitamins"
+},
+{
+"name": "Vitamin B2 (riboflavin)",
+"category": "Vitamin",
+"forms": "Riboflavin, riboflavin 5'-phosphate sodium",
+"use": "Energy metabolism, skin, eyes",
+"group": "vitamins"
+},
+{
+"name": "Vitamin B3 (niacin)",
+"category": "Vitamin",
+"forms": "Nicotinamide, nicotinic acid, inositol hexanicotinate",
+"use": "Energy metabolism, skin, lipids",
+"group": "vitamins"
+},
+{
+"name": "Vitamin B5 (pantothenic acid)",
+"category": "Vitamin",
+"forms": "Calcium D-pantothenate, panthenol",
+"use": "Energy metabolism, hormones",
+"group": "vitamins"
+},
+{
+"name": "Vitamin B6",
+"category": "Vitamin",
+"forms": "Pyridoxine hydrochloride, pyridoxal 5'-phosphate",
+"use": "Protein metabolism, nervous system",
+"group": "vitamins"
+},
+{
+"name": "Vitamin B7 (biotin)",
+"category": "Vitamin",
+"forms": "D-biotin",
+"use": "Hair, skin, nails, metabolism",
+"group": "vitamins"
+},
+{
+"name": "Vitamin B9 (folate)",
+"category": "Vitamin",
+"forms": "Folic acid, L-methylfolate calcium (5-MTHF), calcium folinate",
+"use": "Pregnancy, blood formation, homocysteine",
+"group": "vitamins"
+},
+{
+"name": "Vitamin B12",
+"category": "Vitamin",
+"forms": "Cyanocobalamin, methylcobalamin, hydroxocobalamin, adenosylcobalamin",
+"use": "Blood formation, nervous system, energy",
+"group": "vitamins"
+},
+{
+"name": "Choline",
+"category": "Vitamin-like",
+"forms": "Choline bitartrate, choline chloride, citicoline, alpha-GPC",
+"use": "Liver, cognition, pregnancy",
+"group": "vitamins"
+},
+{
+"name": "Inositol",
+"category": "Vitamin-like",
+"forms": "Myo-inositol, D-chiro-inositol",
+"use": "Metabolic and reproductive health",
+"group": "vitamins"
+},
+{
+"name": "Vitamin C",
+"category": "Vitamin",
+"forms": "Ascorbic acid, sodium ascorbate, calcium ascorbate, ascorbyl palmitate, liposomal",
+"use": "Immunity, antioxidant, collagen",
+"group": "vitamins"
+},
+{
+"name": "Vitamin D2 (ergocalciferol)",
+"category": "Vitamin",
+"forms": "Ergocalciferol",
+"use": "Bone health (plant-sourced option)",
+"group": "vitamins"
+},
+{
+"name": "Vitamin D3 (cholecalciferol)",
+"category": "Vitamin",
+"forms": "Cholecalciferol (lanolin or lichen), oil, powder (CWS), 100,000–40,000,000 IU/g",
+"use": "Bone, immunity, muscle",
+"group": "vitamins"
+},
+{
+"name": "Vitamin E",
+"category": "Vitamin",
+"forms": "D-alpha-tocopherol, DL-alpha-tocopheryl acetate, mixed tocopherols, tocotrienols",
+"use": "Antioxidant, skin, cardiovascular",
+"group": "vitamins"
+},
+{
+"name": "Vitamin K1 (phylloquinone)",
+"category": "Vitamin",
+"forms": "Phytonadione",
+"use": "Blood clotting",
+"group": "vitamins"
+},
+{
+"name": "Vitamin K2",
+"category": "Vitamin",
+"forms": "Menaquinone-7 (MK-7, natto or synthetic), menaquinone-4 (MK-4)",
+"use": "Bone and vascular health",
+"group": "vitamins"
+},
+{
+"name": "Calcium",
+"category": "Mineral",
+"forms": "Calcium carbonate, calcium citrate, calcium citrate malate, calcium lactate, calcium gluconate, calcium bisglycinate, coral and algal calcium",
+"use": "Bone, teeth, muscle",
+"group": "minerals"
+},
+{
+"name": "Magnesium",
+"category": "Mineral",
+"forms": "Magnesium oxide, citrate, bisglycinate, malate, taurate, L-threonate, lactate, chloride",
+"use": "Muscle, nerves, energy, sleep",
+"group": "minerals"
+},
+{
+"name": "Zinc",
+"category": "Mineral",
+"forms": "Zinc gluconate, citrate, picolinate, bisglycinate, sulfate, oxide, acetate",
+"use": "Immunity, skin, fertility",
+"group": "minerals"
+},
+{
+"name": "Iron",
+"category": "Mineral",
+"forms": "Ferrous sulfate, fumarate, gluconate, bisglycinate (Ferrochel®), iron polysaccharide, liposomal iron, sucrosomial iron",
+"use": "Anaemia, pregnancy",
+"group": "minerals"
+},
+{
+"name": "Selenium",
+"category": "Mineral",
+"forms": "L-selenomethionine, selenium yeast, sodium selenite, sodium selenate",
+"use": "Thyroid, antioxidant, immunity",
+"group": "minerals"
+},
+{
+"name": "Iodine",
+"category": "Mineral",
+"forms": "Potassium iodide, potassium iodate, kelp",
+"use": "Thyroid, pregnancy",
+"group": "minerals"
+},
+{
+"name": "Copper",
+"category": "Mineral",
+"forms": "Copper gluconate, copper bisglycinate, copper sulfate, copper citrate",
+"use": "Blood formation, connective tissue",
+"group": "minerals"
+},
+{
+"name": "Manganese",
+"category": "Mineral",
+"forms": "Manganese gluconate, sulfate, bisglycinate, citrate",
+"use": "Bone, antioxidant enzymes",
+"group": "minerals"
+},
+{
+"name": "Chromium",
+"category": "Mineral",
+"forms": "Chromium picolinate, chromium chloride, chromium yeast, chromium nicotinate",
+"use": "Glucose metabolism",
+"group": "minerals"
+},
+{
+"name": "Molybdenum",
+"category": "Mineral",
+"forms": "Sodium molybdate, molybdenum glycinate",
+"use": "Enzyme cofactor",
+"group": "minerals"
+},
+{
+"name": "Potassium",
+"category": "Mineral",
+"forms": "Potassium chloride, citrate, gluconate, bicarbonate",
+"use": "Electrolyte, blood pressure",
+"group": "minerals"
+},
+{
+"name": "Phosphorus",
+"category": "Mineral",
+"forms": "Dicalcium phosphate, potassium phosphate",
+"use": "Bone, energy",
+"group": "minerals"
+},
+{
+"name": "Boron",
+"category": "Mineral",
+"forms": "Boron citrate, calcium fructoborate, sodium borate",
+"use": "Bone and joint health",
+"group": "minerals"
+},
+{
+"name": "Silicon",
+"category": "Mineral",
+"forms": "Orthosilicic acid (choline-stabilised), bamboo extract, silica",
+"use": "Hair, skin, nails, bone",
+"group": "minerals"
+},
+{
+"name": "Fluoride",
+"category": "Mineral",
+"forms": "Sodium fluoride",
+"use": "Dental health (regulated)",
+"group": "minerals"
+},
+{
+"name": "Vanadium",
+"category": "Mineral",
+"forms": "Vanadyl sulfate",
+"use": "Glucose metabolism (trace)",
+"group": "minerals"
+},
+{
+"name": "Lithium (trace)",
+"category": "Mineral",
+"forms": "Lithium orotate",
+"use": "Mood (trace use)",
+"group": "minerals"
+},
+{
+"name": "Strontium",
+"category": "Mineral",
+"forms": "Strontium citrate",
+"use": "Bone (regulated)",
+"group": "minerals"
+},
+{
+"name": "Multimineral electrolytes",
+"category": "Mineral blend",
+"forms": "Sodium, potassium, magnesium, calcium, chloride salts",
+"use": "Rehydration, sports",
+"group": "minerals"
+},
+{
+"name": "Omega-3 fish oil",
+"category": "Fatty acid",
+"forms": "EPA/DHA triglyceride, ethyl ester, re-esterified TG, 18/12 to 90% concentrates",
+"use": "Heart, brain, inflammation",
+"group": "lipids"
+},
+{
+"name": "DHA (algal)",
+"category": "Fatty acid",
+"forms": "Schizochytrium oil",
+"use": "Pregnancy, infant, vegan omega-3",
+"group": "lipids"
+},
+{
+"name": "Krill oil",
+"category": "Fatty acid",
+"forms": "Phospholipid omega-3 with astaxanthin",
+"use": "Heart, joints",
+"group": "lipids"
+},
+{
+"name": "Cod liver oil",
+"category": "Fatty acid",
+"forms": "Natural oil with vitamins A and D",
+"use": "Traditional omega-3 source",
+"group": "lipids"
+},
+{
+"name": "Omega-6 GLA",
+"category": "Fatty acid",
+"forms": "Evening primrose oil, borage oil, blackcurrant seed oil",
+"use": "Skin, hormonal balance",
+"group": "lipids"
+},
+{
+"name": "Omega-7",
+"category": "Fatty acid",
+"forms": "Sea buckthorn oil, palmitoleic acid",
+"use": "Mucosa, skin",
+"group": "lipids"
+},
+{
+"name": "Omega-9 / olive oil",
+"category": "Fatty acid",
+"forms": "Extra-virgin olive oil, oleic acid",
+"use": "Cardiovascular",
+"group": "lipids"
+},
+{
+"name": "Flaxseed oil (ALA)",
+"category": "Fatty acid",
+"forms": "Cold-pressed linseed oil, ground flaxseed",
+"use": "Plant omega-3",
+"group": "lipids"
+},
+{
+"name": "Conjugated linoleic acid (CLA)",
+"category": "Fatty acid",
+"forms": "CLA triglyceride, free fatty acid",
+"use": "Body composition",
+"group": "lipids"
+},
+{
+"name": "Medium-chain triglycerides (MCT)",
+"category": "Fatty acid",
+"forms": "C8/C10 oil, MCT powder",
+"use": "Energy, ketogenic",
+"group": "lipids"
+},
+{
+"name": "Phosphatidylserine",
+"category": "Phospholipid",
+"forms": "Soy or sunflower phosphatidylserine",
+"use": "Memory, cognition",
+"group": "lipids"
+},
+{
+"name": "Phosphatidylcholine / lecithin",
+"category": "Phospholipid",
+"forms": "Soy, sunflower lecithin",
+"use": "Liver, cognition",
+"group": "lipids"
+},
+{
+"name": "Coenzyme Q10",
+"category": "Nutraceutical",
+"forms": "Ubiquinone, ubiquinol, water-dispersible",
+"use": "Heart, energy, statin users",
+"group": "nutraceuticals"
+},
+{
+"name": "PQQ (pyrroloquinoline quinone)",
+"category": "Nutraceutical",
+"forms": "PQQ disodium salt",
+"use": "Mitochondrial function",
+"group": "nutraceuticals"
+},
+{
+"name": "Alpha-lipoic acid",
+"category": "Nutraceutical",
+"forms": "R-ALA, racemic ALA, sodium R-lipoate",
+"use": "Antioxidant, nerve health, glucose",
+"group": "nutraceuticals"
+},
+{
+"name": "L-carnitine",
+"category": "Amino acid derivative",
+"forms": "L-carnitine L-tartrate, acetyl-L-carnitine, propionyl-L-carnitine, L-carnitine fumarate",
+"use": "Energy, sports, fertility",
+"group": "amino-protein"
+},
+{
+"name": "Creatine",
+"category": "Amino acid derivative",
+"forms": "Creatine monohydrate, creatine HCl, buffered creatine",
+"use": "Muscle strength, sports",
+"group": "amino-protein"
+},
+{
+"name": "Taurine",
+"category": "Amino acid",
+"forms": "Taurine",
+"use": "Energy drinks, heart, eyes",
+"group": "amino-protein"
+},
+{
+"name": "L-glutamine",
+"category": "Amino acid",
+"forms": "L-glutamine, L-alanyl-L-glutamine",
+"use": "Gut, recovery",
+"group": "amino-protein"
+},
+{
+"name": "L-arginine",
+"category": "Amino acid",
+"forms": "L-arginine base, L-arginine HCl, L-arginine alpha-ketoglutarate",
+"use": "Circulation, sports",
+"group": "amino-protein"
+},
+{
+"name": "L-citrulline",
+"category": "Amino acid",
+"forms": "L-citrulline, citrulline malate",
+"use": "Circulation, sports",
+"group": "amino-protein"
+},
+{
+"name": "Branched-chain amino acids (BCAA)",
+"category": "Amino acid",
+"forms": "L-leucine, L-isoleucine, L-valine (2:1:1, 4:1:1)",
+"use": "Muscle recovery",
+"group": "amino-protein"
+},
+{
+"name": "Essential amino acids (EAA)",
+"category": "Amino acid",
+"forms": "Nine essential amino acids blend",
+"use": "Muscle protein synthesis",
+"group": "amino-protein"
+},
+{
+"name": "L-lysine",
+"category": "Amino acid",
+"forms": "L-lysine HCl",
+"use": "Immunity, collagen",
+"group": "amino-protein"
+},
+{
+"name": "L-tyrosine",
+"category": "Amino acid",
+"forms": "L-tyrosine, N-acetyl-L-tyrosine",
+"use": "Focus, stress",
+"group": "amino-protein"
+},
+{
+"name": "L-tryptophan",
+"category": "Amino acid",
+"forms": "L-tryptophan, 5-HTP (Griffonia)",
+"use": "Sleep, mood",
+"group": "amino-protein"
+},
+{
+"name": "L-theanine",
+"category": "Amino acid",
+"forms": "L-theanine (Suntheanine® type)",
+"use": "Relaxation, focus",
+"group": "amino-protein"
+},
+{
+"name": "Glycine",
+"category": "Amino acid",
+"forms": "Glycine",
+"use": "Sleep, collagen",
+"group": "amino-protein"
+},
+{
+"name": "N-acetylcysteine (NAC)",
+"category": "Amino acid derivative",
+"forms": "N-acetyl-L-cysteine",
+"use": "Antioxidant, respiratory, liver",
+"group": "amino-protein"
+},
+{
+"name": "L-methionine",
+"category": "Amino acid",
+"forms": "L-methionine",
+"use": "Liver, methylation",
+"group": "amino-protein"
+},
+{
+"name": "S-adenosyl-L-methionine (SAMe)",
+"category": "Amino acid derivative",
+"forms": "SAMe tosylate disulfate",
+"use": "Mood, joints, liver",
+"group": "amino-protein"
+},
+{
+"name": "Beta-alanine",
+"category": "Amino acid",
+"forms": "Beta-alanine (CarnoSyn® type)",
+"use": "Sports endurance",
+"group": "amino-protein"
+},
+{
+"name": "Glutathione",
+"category": "Peptide",
+"forms": "Reduced L-glutathione, liposomal, S-acetyl glutathione",
+"use": "Antioxidant, liver, skin",
+"group": "amino-protein"
+},
+{
+"name": "Collagen peptides",
+"category": "Protein",
+"forms": "Bovine, marine, porcine hydrolysed collagen type I/III; undenatured type II (UC-II®)",
+"use": "Skin, joints, bone",
+"group": "amino-protein"
+},
+{
+"name": "Whey protein",
+"category": "Protein",
+"forms": "Whey concentrate, isolate, hydrolysate",
+"use": "Sports nutrition",
+"group": "amino-protein"
+},
+{
+"name": "Casein",
+"category": "Protein",
+"forms": "Micellar casein, calcium caseinate",
+"use": "Slow-release protein",
+"group": "amino-protein"
+},
+{
+"name": "Plant proteins",
+"category": "Protein",
+"forms": "Pea, rice, soy, hemp, pumpkin protein isolates",
+"use": "Vegan nutrition",
+"group": "amino-protein"
+},
+{
+"name": "Egg white protein",
+"category": "Protein",
+"forms": "Egg albumen powder",
+"use": "Sports nutrition",
+"group": "amino-protein"
+},
+{
+"name": "Spirulina",
+"category": "Algae",
+"forms": "Arthrospira platensis powder, tablets",
+"use": "Protein, antioxidants",
+"group": "botanicals"
+},
+{
+"name": "Chlorella",
+"category": "Algae",
+"forms": "Cracked-cell Chlorella vulgaris",
+"use": "Detox, chlorophyll",
+"group": "botanicals"
+},
+{
+"name": "Astaxanthin",
+"category": "Carotenoid",
+"forms": "Haematococcus pluvialis oleoresin 5–10%",
+"use": "Antioxidant, skin, eyes",
+"group": "botanicals"
+},
+{
+"name": "Lutein",
+"category": "Carotenoid",
+"forms": "Marigold (Tagetes erecta) extract, lutein esters, free lutein",
+"use": "Eye health (macula)",
+"group": "botanicals"
+},
+{
+"name": "Zeaxanthin",
+"category": "Carotenoid",
+"forms": "Marigold or paprika extract, meso-zeaxanthin",
+"use": "Eye health",
+"group": "botanicals"
+},
+{
+"name": "Lycopene",
+"category": "Carotenoid",
+"forms": "Tomato extract, synthetic 5–10%",
+"use": "Prostate, antioxidant",
+"group": "botanicals"
+},
+{
+"name": "Probiotics — Lactobacillus",
+"category": "Probiotic",
+"forms": "L. acidophilus, L. rhamnosus GG, L. plantarum, L. reuteri, L. casei, L. paracasei (10–500 billion CFU/g)",
+"use": "Gut and immune health",
+"group": "gut"
+},
+{
+"name": "Probiotics — Bifidobacterium",
+"category": "Probiotic",
+"forms": "B. lactis BB-12, B. longum, B. breve, B. bifidum, B. infantis",
+"use": "Gut, infant health",
+"group": "gut"
+},
+{
+"name": "Saccharomyces boulardii",
+"category": "Probiotic yeast",
+"forms": "S. boulardii CNCM I-745 and equivalents",
+"use": "Diarrhoea, gut",
+"group": "gut"
+},
+{
+"name": "Bacillus coagulans / B. subtilis",
+"category": "Spore probiotic",
+"forms": "Heat-stable spores (GanedenBC30® type)",
+"use": "Gut health, stable formats",
+"group": "gut"
+},
+{
+"name": "Lactobacillus (women's health strains)",
+"category": "Probiotic",
+"forms": "L. crispatus, L. rhamnosus GR-1, L. reuteri RC-14",
+"use": "Vaginal and urinary health",
+"group": "gut"
+},
+{
+"name": "Prebiotics — inulin / FOS",
+"category": "Prebiotic fibre",
+"forms": "Chicory inulin, oligofructose, short-chain FOS",
+"use": "Gut microbiota",
+"group": "gut"
+},
+{
+"name": "Galacto-oligosaccharides (GOS)",
+"category": "Prebiotic fibre",
+"forms": "GOS syrup/powder",
+"use": "Infant and gut health",
+"group": "gut"
+},
+{
+"name": "Human milk oligosaccharides (HMO)",
+"category": "Prebiotic",
+"forms": "2'-fucosyllactose (2'-FL), LNnT",
+"use": "Infant formula, gut",
+"group": "gut"
+},
+{
+"name": "Resistant dextrin / partially hydrolysed guar gum",
+"category": "Prebiotic fibre",
+"forms": "Fibersol®-2 type, PHGG",
+"use": "Gut regularity, glycaemia",
+"group": "gut"
+},
+{
+"name": "Psyllium husk",
+"category": "Fibre",
+"forms": "Plantago ovata husk powder 95–99%",
+"use": "Bowel regularity, cholesterol",
+"group": "gut"
+},
+{
+"name": "Beta-glucan (oat/barley)",
+"category": "Fibre",
+"forms": "Oat beta-glucan 70%, barley beta-glucan",
+"use": "Cholesterol, glycaemia",
+"group": "gut"
+},
+{
+"name": "Beta-glucan (yeast)",
+"category": "Immune polysaccharide",
+"forms": "Saccharomyces cerevisiae 1,3/1,6-beta-glucan",
+"use": "Immunity",
+"group": "nutraceuticals"
+},
+{
+"name": "Glucomannan",
+"category": "Fibre",
+"forms": "Konjac root glucomannan",
+"use": "Satiety, weight",
+"group": "gut"
+},
+{
+"name": "Acacia fibre",
+"category": "Fibre",
+"forms": "Gum arabic (soluble fibre)",
+"use": "Gut tolerance",
+"group": "gut"
+},
+{
+"name": "Apple pectin",
+"category": "Fibre",
+"forms": "Apple or citrus pectin",
+"use": "Gut, cholesterol",
+"group": "gut"
+},
+{
+"name": "Chia / flax seed",
+"category": "Fibre & omega-3",
+"forms": "Ground seed powders",
+"use": "Fibre, ALA",
+"group": "gut"
+},
+{
+"name": "Digestive enzymes",
+"category": "Enzyme",
+"forms": "Amylase, protease, lipase, lactase, alpha-galactosidase, bromelain, papain, pancreatin",
+"use": "Digestion, intolerance",
+"group": "gut"
+},
+{
+"name": "Lactase",
+"category": "Enzyme",
+"forms": "Lactase 9,000–100,000 ALU/g",
+"use": "Lactose intolerance",
+"group": "gut"
+},
+{
+"name": "Bromelain",
+"category": "Enzyme",
+"forms": "Pineapple stem bromelain 2,400 GDU/g",
+"use": "Inflammation, digestion",
+"group": "gut"
+},
+{
+"name": "Papain",
+"category": "Enzyme",
+"forms": "Papaya latex papain",
+"use": "Digestion",
+"group": "gut"
+},
+{
+"name": "Serrapeptase",
+"category": "Enzyme",
+"forms": "Serratiopeptidase enteric",
+"use": "Inflammation",
+"group": "gut"
+},
+{
+"name": "Nattokinase",
+"category": "Enzyme",
+"forms": "Natto-derived nattokinase 20,000 FU/g",
+"use": "Circulation",
+"group": "gut"
+},
+{
+"name": "Superoxide dismutase",
+"category": "Enzyme",
+"forms": "Melon SOD (GliSODin® type)",
+"use": "Antioxidant",
+"group": "gut"
+},
+{
+"name": "Glucosamine",
+"category": "Joint nutraceutical",
+"forms": "Glucosamine sulfate 2KCl, glucosamine HCl, vegetarian (Aspergillus)",
+"use": "Osteoarthritis, joints",
+"group": "nutraceuticals"
+},
+{
+"name": "Chondroitin sulfate",
+"category": "Joint nutraceutical",
+"forms": "Bovine, porcine, avian, marine chondroitin 90%",
+"use": "Joints",
+"group": "nutraceuticals"
+},
+{
+"name": "MSM (methylsulfonylmethane)",
+"category": "Joint nutraceutical",
+"forms": "OptiMSM® type",
+"use": "Joints, skin",
+"group": "nutraceuticals"
+},
+{
+"name": "Hyaluronic acid",
+"category": "Joint / skin nutraceutical",
+"forms": "Sodium hyaluronate (fermentation), low/high molecular weight",
+"use": "Skin hydration, joints",
+"group": "nutraceuticals"
+},
+{
+"name": "Boswellia serrata",
+"category": "Herbal",
+"forms": "Boswellic acids 65%, AKBA-standardised",
+"use": "Joints, inflammation",
+"group": "botanicals"
+},
+{
+"name": "Curcumin / turmeric",
+"category": "Herbal",
+"forms": "Curcuma longa 95% curcuminoids, bioavailable forms (phytosome, with piperine, micellar)",
+"use": "Inflammation, joints",
+"group": "botanicals"
+},
+{
+"name": "Ginger",
+"category": "Herbal",
+"forms": "Zingiber officinale 5% gingerols",
+"use": "Nausea, digestion",
+"group": "botanicals"
+},
+{
+"name": "Garlic",
+"category": "Herbal",
+"forms": "Allium sativum aged extract, allicin-standardised powder",
+"use": "Cardiovascular, immunity",
+"group": "botanicals"
+},
+{
+"name": "Ginkgo biloba",
+"category": "Herbal",
+"forms": "24% flavone glycosides, 6% terpene lactones (EGb 761 type)",
+"use": "Memory, circulation",
+"group": "botanicals"
+},
+{
+"name": "Panax ginseng",
+"category": "Herbal",
+"forms": "Korean red ginseng, ginsenosides 5–80%",
+"use": "Energy, cognition, immunity",
+"group": "botanicals"
+},
+{
+"name": "American ginseng",
+"category": "Herbal",
+"forms": "Panax quinquefolius, ginsenosides",
+"use": "Energy, glucose",
+"group": "botanicals"
+},
+{
+"name": "Siberian ginseng (Eleuthero)",
+"category": "Herbal",
+"forms": "Eleutherococcus senticosus, eleutherosides",
+"use": "Adaptogen",
+"group": "botanicals"
+},
+{
+"name": "Ashwagandha",
+"category": "Herbal",
+"forms": "Withania somnifera root extract, withanolides 1.5–5% (KSM-66®, Sensoril® types)",
+"use": "Stress, sleep",
+"group": "botanicals"
+},
+{
+"name": "Rhodiola rosea",
+"category": "Herbal",
+"forms": "3% rosavins, 1% salidroside",
+"use": "Fatigue, stress",
+"group": "botanicals"
+},
+{
+"name": "Bacopa monnieri",
+"category": "Herbal",
+"forms": "Bacosides 20–50%",
+"use": "Memory",
+"group": "botanicals"
+},
+{
+"name": "Gotu kola",
+"category": "Herbal",
+"forms": "Centella asiatica, triterpenes",
+"use": "Cognition, circulation, skin",
+"group": "botanicals"
+},
+{
+"name": "Lion's mane",
+"category": "Mushroom",
+"forms": "Hericium erinaceus fruiting body / mycelium, beta-glucans",
+"use": "Cognition, nerve",
+"group": "botanicals"
+},
+{
+"name": "Reishi",
+"category": "Mushroom",
+"forms": "Ganoderma lucidum extract, polysaccharides, triterpenes",
+"use": "Immunity, sleep",
+"group": "botanicals"
+},
+{
+"name": "Cordyceps",
+"category": "Mushroom",
+"forms": "Cordyceps militaris / sinensis CS-4, cordycepin",
+"use": "Energy, respiratory",
+"group": "botanicals"
+},
+{
+"name": "Shiitake / maitake / turkey tail",
+"category": "Mushroom",
+"forms": "Lentinula, Grifola, Trametes extracts",
+"use": "Immunity",
+"group": "botanicals"
+},
+{
+"name": "Chaga",
+"category": "Mushroom",
+"forms": "Inonotus obliquus extract",
+"use": "Antioxidant",
+"group": "botanicals"
+},
+{
+"name": "Echinacea",
+"category": "Herbal",
+"forms": "Echinacea purpurea / angustifolia herb and root extract",
+"use": "Immunity, colds",
+"group": "botanicals"
+},
+{
+"name": "Elderberry",
+"category": "Herbal",
+"forms": "Sambucus nigra fruit extract, anthocyanins",
+"use": "Immunity, colds",
+"group": "botanicals"
+},
+{
+"name": "Andrographis",
+"category": "Herbal",
+"forms": "Andrographis paniculata, andrographolides 10–30%",
+"use": "Colds, immunity",
+"group": "botanicals"
+},
+{
+"name": "Olive leaf",
+"category": "Herbal",
+"forms": "Olea europaea, oleuropein 6–40%",
+"use": "Immunity, cardiovascular",
+"group": "botanicals"
+},
+{
+"name": "Black seed oil",
+"category": "Herbal",
+"forms": "Nigella sativa oil, thymoquinone",
+"use": "Immunity, inflammation",
+"group": "botanicals"
+},
+{
+"name": "Milk thistle",
+"category": "Herbal",
+"forms": "Silybum marianum, silymarin 80%",
+"use": "Liver",
+"group": "botanicals"
+},
+{
+"name": "Artichoke leaf",
+"category": "Herbal",
+"forms": "Cynara scolymus, cynarin",
+"use": "Liver, digestion, cholesterol",
+"group": "botanicals"
+},
+{
+"name": "Dandelion",
+"category": "Herbal",
+"forms": "Taraxacum root/leaf",
+"use": "Liver, diuretic",
+"group": "botanicals"
+},
+{
+"name": "Berberine",
+"category": "Herbal alkaloid",
+"forms": "Berberine HCl 97% (Berberis aristata), dihydroberberine",
+"use": "Glucose, lipids, gut",
+"group": "botanicals"
+},
+{
+"name": "Cinnamon",
+"category": "Herbal",
+"forms": "Cinnamomum cassia / verum extract, water extract (Cinnulin PF® type)",
+"use": "Glucose",
+"group": "botanicals"
+},
+{
+"name": "Fenugreek",
+"category": "Herbal",
+"forms": "Trigonella foenum-graecum seed, 4-hydroxyisoleucine, saponins",
+"use": "Glucose, testosterone, lactation",
+"group": "botanicals"
+},
+{
+"name": "Gymnema sylvestre",
+"category": "Herbal",
+"forms": "Gymnemic acids 25–75%",
+"use": "Glucose, sugar craving",
+"group": "botanicals"
+},
+{
+"name": "Bitter melon",
+"category": "Herbal",
+"forms": "Momordica charantia extract",
+"use": "Glucose",
+"group": "botanicals"
+},
+{
+"name": "Banaba leaf",
+"category": "Herbal",
+"forms": "Lagerstroemia speciosa, corosolic acid",
+"use": "Glucose",
+"group": "botanicals"
+},
+{
+"name": "Red yeast rice",
+"category": "Fermented",
+"forms": "Monascus purpureus, monacolin K (regulated levels)",
+"use": "Cholesterol",
+"group": "botanicals"
+},
+{
+"name": "Plant sterols / stanols",
+"category": "Phytosterol",
+"forms": "Beta-sitosterol, sterol esters",
+"use": "Cholesterol",
+"group": "botanicals"
+},
+{
+"name": "Policosanol",
+"category": "Nutraceutical",
+"forms": "Sugar-cane policosanol",
+"use": "Cholesterol",
+"group": "nutraceuticals"
+},
+{
+"name": "Bergamot",
+"category": "Herbal",
+"forms": "Citrus bergamia polyphenols (BPF)",
+"use": "Cholesterol",
+"group": "botanicals"
+},
+{
+"name": "Hawthorn",
+"category": "Herbal",
+"forms": "Crataegus leaf and flower, vitexin, OPCs",
+"use": "Heart",
+"group": "botanicals"
+},
+{
+"name": "Grape seed extract",
+"category": "Polyphenol",
+"forms": "Vitis vinifera OPCs 95%",
+"use": "Circulation, antioxidant",
+"group": "botanicals"
+},
+{
+"name": "Pine bark extract",
+"category": "Polyphenol",
+"forms": "Pinus pinaster procyanidins (Pycnogenol® type)",
+"use": "Circulation, skin",
+"group": "botanicals"
+},
+{
+"name": "Resveratrol",
+"category": "Polyphenol",
+"forms": "Trans-resveratrol 98% (Polygonum cuspidatum), grape",
+"use": "Cardiovascular, ageing",
+"group": "botanicals"
+},
+{
+"name": "Quercetin",
+"category": "Flavonoid",
+"forms": "Quercetin dihydrate, quercetin phytosome, isoquercetin",
+"use": "Allergy, immunity, antioxidant",
+"group": "botanicals"
+},
+{
+"name": "Rutin / hesperidin / diosmin",
+"category": "Flavonoid",
+"forms": "Citrus bioflavonoids, diosmin 90%, micronised purified flavonoid fraction",
+"use": "Venous health",
+"group": "botanicals"
+},
+{
+"name": "Green tea extract",
+"category": "Polyphenol",
+"forms": "Camellia sinensis, EGCG 40–95%, decaffeinated",
+"use": "Weight, antioxidant",
+"group": "botanicals"
+},
+{
+"name": "Coffee bean (green)",
+"category": "Herbal",
+"forms": "Chlorogenic acids 45–50%",
+"use": "Weight, glucose",
+"group": "botanicals"
+},
+{
+"name": "Garcinia cambogia",
+"category": "Herbal",
+"forms": "Hydroxycitric acid 50–60%",
+"use": "Weight",
+"group": "botanicals"
+},
+{
+"name": "Caffeine",
+"category": "Stimulant",
+"forms": "Caffeine anhydrous, natural caffeine (guarana, green coffee)",
+"use": "Energy, sports",
+"group": "botanicals"
+},
+{
+"name": "Guarana",
+"category": "Herbal",
+"forms": "Paullinia cupana seed, 10–22% caffeine",
+"use": "Energy",
+"group": "botanicals"
+},
+{
+"name": "Yerba mate",
+"category": "Herbal",
+"forms": "Ilex paraguariensis",
+"use": "Energy",
+"group": "botanicals"
+},
+{
+"name": "Capsaicin / cayenne",
+"category": "Herbal",
+"forms": "Capsicum annuum extract, capsaicinoids",
+"use": "Thermogenesis",
+"group": "botanicals"
+},
+{
+"name": "Raspberry ketone",
+"category": "Nutraceutical",
+"forms": "Synthetic raspberry ketone",
+"use": "Weight (marketing)",
+"group": "nutraceuticals"
+},
+{
+"name": "Chitosan",
+"category": "Fibre",
+"forms": "Shellfish or fungal chitosan",
+"use": "Fat binding, cholesterol",
+"group": "gut"
+},
+{
+"name": "White kidney bean extract",
+"category": "Herbal",
+"forms": "Phaseolus vulgaris alpha-amylase inhibitor (Phase 2® type)",
+"use": "Carbohydrate blocking",
+"group": "botanicals"
+},
+{
+"name": "Apple cider vinegar",
+"category": "Food concentrate",
+"forms": "ACV powder, gummies",
+"use": "Digestion, glucose (consumer demand)",
+"group": "botanicals"
+},
+{
+"name": "Cranberry",
+"category": "Herbal",
+"forms": "Vaccinium macrocarpon, 36 mg PAC (Pacran®, Cran-Max® types)",
+"use": "Urinary tract",
+"group": "botanicals"
+},
+{
+"name": "D-mannose",
+"category": "Sugar",
+"forms": "D-mannose powder",
+"use": "Urinary tract",
+"group": "nutraceuticals"
+},
+{
+"name": "Saw palmetto",
+"category": "Herbal",
+"forms": "Serenoa repens 85–95% fatty acids",
+"use": "Prostate",
+"group": "botanicals"
+},
+{
+"name": "Pumpkin seed oil",
+"category": "Herbal",
+"forms": "Cucurbita pepo oil / extract",
+"use": "Prostate, bladder",
+"group": "botanicals"
+},
+{
+"name": "Pygeum",
+"category": "Herbal",
+"forms": "Prunus africana bark extract",
+"use": "Prostate",
+"group": "botanicals"
+},
+{
+"name": "Nettle root",
+"category": "Herbal",
+"forms": "Urtica dioica root extract",
+"use": "Prostate",
+"group": "botanicals"
+},
+{
+"name": "Beta-sitosterol",
+"category": "Phytosterol",
+"forms": "Beta-sitosterol 40–90%",
+"use": "Prostate, cholesterol",
+"group": "botanicals"
+},
+{
+"name": "Maca",
+"category": "Herbal",
+"forms": "Lepidium meyenii root powder/gelatinised",
+"use": "Energy, libido, fertility",
+"group": "botanicals"
+},
+{
+"name": "Tribulus terrestris",
+"category": "Herbal",
+"forms": "Saponins 40–90%",
+"use": "Libido, sports",
+"group": "botanicals"
+},
+{
+"name": "Tongkat ali",
+"category": "Herbal",
+"forms": "Eurycoma longifolia root 100:1",
+"use": "Testosterone, vitality",
+"group": "botanicals"
+},
+{
+"name": "Fenugreek (Testofen® type)",
+"category": "Herbal",
+"forms": "Fenuside-standardised extract",
+"use": "Testosterone",
+"group": "botanicals"
+},
+{
+"name": "Horny goat weed",
+"category": "Herbal",
+"forms": "Epimedium, icariin 10–60%",
+"use": "Libido",
+"group": "botanicals"
+},
+{
+"name": "Zinc + folate + CoQ10 (male fertility blends)",
+"category": "Blend",
+"forms": "Combination formulas",
+"use": "Sperm quality",
+"group": "blends-formats"
+},
+{
+"name": "Myo-inositol + folic acid (PCOS blends)",
+"category": "Blend",
+"forms": "40:1 myo/D-chiro inositol",
+"use": "PCOS, fertility",
+"group": "blends-formats"
+},
+{
+"name": "Chasteberry (Vitex)",
+"category": "Herbal",
+"forms": "Vitex agnus-castus fruit extract",
+"use": "PMS, cycle regulation",
+"group": "botanicals"
+},
+{
+"name": "Black cohosh",
+"category": "Herbal",
+"forms": "Actaea racemosa, triterpene glycosides 2.5%",
+"use": "Menopause",
+"group": "botanicals"
+},
+{
+"name": "Soy isoflavones",
+"category": "Phytoestrogen",
+"forms": "Genistein, daidzein 40%",
+"use": "Menopause, bone",
+"group": "botanicals"
+},
+{
+"name": "Red clover",
+"category": "Phytoestrogen",
+"forms": "Trifolium pratense isoflavones 8–40%",
+"use": "Menopause",
+"group": "botanicals"
+},
+{
+"name": "Evening primrose oil",
+"category": "Fatty acid",
+"forms": "GLA 9–10%",
+"use": "PMS, skin",
+"group": "lipids"
+},
+{
+"name": "Dong quai",
+"category": "Herbal",
+"forms": "Angelica sinensis root",
+"use": "Women's health (TCM)",
+"group": "botanicals"
+},
+{
+"name": "Shatavari",
+"category": "Herbal",
+"forms": "Asparagus racemosus root",
+"use": "Women's health (Ayurveda)",
+"group": "botanicals"
+},
+{
+"name": "Prenatal DHA / folate / iron (prenatal blends)",
+"category": "Blend",
+"forms": "Prenatal multivitamin matrices",
+"use": "Pregnancy",
+"group": "blends-formats"
+},
+{
+"name": "Melatonin",
+"category": "Hormone-like",
+"forms": "Melatonin 0.5–10 mg (regulated by market)",
+"use": "Sleep, jet lag",
+"group": "nutraceuticals"
+},
+{
+"name": "Valerian",
+"category": "Herbal",
+"forms": "Valeriana officinalis root, valerenic acids 0.8%",
+"use": "Sleep",
+"group": "botanicals"
+},
+{
+"name": "Passionflower",
+"category": "Herbal",
+"forms": "Passiflora incarnata, flavonoids 3.5%",
+"use": "Anxiety, sleep",
+"group": "botanicals"
+},
+{
+"name": "Lemon balm",
+"category": "Herbal",
+"forms": "Melissa officinalis, rosmarinic acid",
+"use": "Calm, sleep",
+"group": "botanicals"
+},
+{
+"name": "Chamomile",
+"category": "Herbal",
+"forms": "Matricaria chamomilla, apigenin",
+"use": "Calm, digestion",
+"group": "botanicals"
+},
+{
+"name": "Hops",
+"category": "Herbal",
+"forms": "Humulus lupulus extract",
+"use": "Sleep",
+"group": "botanicals"
+},
+{
+"name": "Lavender",
+"category": "Herbal",
+"forms": "Lavandula angustifolia oil (Silexan type)",
+"use": "Anxiety",
+"group": "botanicals"
+},
+{
+"name": "Magnesium bisglycinate + B6 (relaxation blends)",
+"category": "Blend",
+"forms": "Mineral–vitamin combinations",
+"use": "Stress, sleep",
+"group": "blends-formats"
+},
+{
+"name": "GABA",
+"category": "Amino acid",
+"forms": "Gamma-aminobutyric acid (PharmaGABA® type)",
+"use": "Relaxation",
+"group": "amino-protein"
+},
+{
+"name": "St John's wort",
+"category": "Herbal",
+"forms": "Hypericum perforatum, 0.3% hypericin (drug interactions)",
+"use": "Mood",
+"group": "botanicals"
+},
+{
+"name": "Saffron",
+"category": "Herbal",
+"forms": "Crocus sativus stigma, crocins / safranal (affron® type)",
+"use": "Mood, appetite, PMS",
+"group": "botanicals"
+},
+{
+"name": "Kava",
+"category": "Herbal",
+"forms": "Piper methysticum, kavalactones (restricted in some markets)",
+"use": "Anxiety",
+"group": "botanicals"
+},
+{
+"name": "Omega-3 EPA (high-EPA)",
+"category": "Fatty acid",
+"forms": "EPA ≥ 60% concentrates",
+"use": "Mood, inflammation",
+"group": "lipids"
+},
+{
+"name": "Phosphatidylserine + omega-3 (cognitive blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Memory",
+"group": "blends-formats"
+},
+{
+"name": "Huperzine A",
+"category": "Herbal alkaloid",
+"forms": "Huperzia serrata 1%",
+"use": "Memory (regulated)",
+"group": "botanicals"
+},
+{
+"name": "Vinpocetine",
+"category": "Semi-synthetic",
+"forms": "Vinpocetine (regulated)",
+"use": "Cerebral circulation",
+"group": "nutraceuticals"
+},
+{
+"name": "Citicoline",
+"category": "Nutraceutical",
+"forms": "Citicoline sodium (Cognizin® type)",
+"use": "Cognition",
+"group": "nutraceuticals"
+},
+{
+"name": "Alpha-GPC",
+"category": "Nutraceutical",
+"forms": "L-alpha-glycerylphosphorylcholine 50–99%",
+"use": "Cognition, sports",
+"group": "nutraceuticals"
+},
+{
+"name": "Acetyl-L-carnitine",
+"category": "Amino acid derivative",
+"forms": "ALCAR HCl",
+"use": "Cognition, nerves",
+"group": "amino-protein"
+},
+{
+"name": "Nicotinamide riboside / NMN",
+"category": "Vitamin B3 derivative",
+"forms": "NR chloride (Niagen® type), beta-NMN (regulatory status varies)",
+"use": "NAD+, ageing",
+"group": "vitamins"
+},
+{
+"name": "Spermidine",
+"category": "Nutraceutical",
+"forms": "Wheat-germ extract spermidine",
+"use": "Autophagy, ageing",
+"group": "nutraceuticals"
+},
+{
+"name": "Fisetin / apigenin / luteolin",
+"category": "Flavonoid",
+"forms": "Strawberry / parsley / peanut-shell extracts",
+"use": "Senolytic, antioxidant",
+"group": "botanicals"
+},
+{
+"name": "Urolithin A",
+"category": "Nutraceutical",
+"forms": "Synthetic urolithin A (Mitopure® type)",
+"use": "Mitochondria, muscle",
+"group": "nutraceuticals"
+},
+{
+"name": "Hydroxytyrosol",
+"category": "Polyphenol",
+"forms": "Olive fruit extract 10–40%",
+"use": "Cardiovascular, antioxidant",
+"group": "botanicals"
+},
+{
+"name": "Sulforaphane / broccoli",
+"category": "Herbal",
+"forms": "Broccoli seed extract, glucoraphanin 10–13%",
+"use": "Detox, antioxidant",
+"group": "botanicals"
+},
+{
+"name": "Chlorophyllin",
+"category": "Pigment",
+"forms": "Sodium copper chlorophyllin",
+"use": "Deodorising, antioxidant",
+"group": "botanicals"
+},
+{
+"name": "Activated charcoal",
+"category": "Adsorbent",
+"forms": "Coconut-shell activated charcoal",
+"use": "Gas, detox",
+"group": "gut"
+},
+{
+"name": "Bentonite / zeolite clays",
+"category": "Mineral",
+"forms": "Food-grade clays",
+"use": "Detox (consumer)",
+"group": "minerals"
+},
+{
+"name": "Aloe vera",
+"category": "Herbal",
+"forms": "Aloe barbadensis inner-leaf gel 200:1, acemannan",
+"use": "Digestion, skin",
+"group": "botanicals"
+},
+{
+"name": "Slippery elm / marshmallow root",
+"category": "Herbal",
+"forms": "Mucilage powders",
+"use": "Gut lining, throat",
+"group": "botanicals"
+},
+{
+"name": "Licorice (DGL)",
+"category": "Herbal",
+"forms": "Deglycyrrhizinated licorice",
+"use": "Stomach",
+"group": "botanicals"
+},
+{
+"name": "Mastic gum",
+"category": "Herbal",
+"forms": "Pistacia lentiscus resin",
+"use": "Stomach, H. pylori",
+"group": "botanicals"
+},
+{
+"name": "Peppermint oil",
+"category": "Herbal",
+"forms": "Enteric-coated peppermint oil 0.2 ml",
+"use": "IBS",
+"group": "botanicals"
+},
+{
+"name": "Caraway / fennel / anise",
+"category": "Herbal",
+"forms": "Seed extracts and oils",
+"use": "Digestion",
+"group": "botanicals"
+},
+{
+"name": "Zinc carnosine",
+"category": "Mineral complex",
+"forms": "Polaprezinc",
+"use": "Stomach lining",
+"group": "minerals"
+},
+{
+"name": "Butyrate",
+"category": "Short-chain fatty acid",
+"forms": "Sodium/calcium/magnesium butyrate, tributyrin",
+"use": "Gut lining",
+"group": "lipids"
+},
+{
+"name": "Colostrum",
+"category": "Dairy bioactive",
+"forms": "Bovine colostrum, IgG 20–40%",
+"use": "Immunity, gut",
+"group": "gut"
+},
+{
+"name": "Lactoferrin",
+"category": "Dairy bioactive",
+"forms": "Bovine lactoferrin",
+"use": "Immunity, iron",
+"group": "gut"
+},
+{
+"name": "Beta-hydroxy-beta-methylbutyrate (HMB)",
+"category": "Amino acid metabolite",
+"forms": "Calcium HMB, free-acid HMB",
+"use": "Muscle preservation",
+"group": "amino-protein"
+},
+{
+"name": "Electrolyte + carbohydrate (sports blends)",
+"category": "Blend",
+"forms": "Maltodextrin, dextrose, cyclic dextrin, salts",
+"use": "Sports hydration",
+"group": "blends-formats"
+},
+{
+"name": "Beetroot / nitrate",
+"category": "Herbal",
+"forms": "Beta vulgaris powder, nitrate-standardised",
+"use": "Sports, blood pressure",
+"group": "botanicals"
+},
+{
+"name": "Cordyceps + rhodiola (endurance blends)",
+"category": "Blend",
+"forms": "Adaptogen blends",
+"use": "Endurance",
+"group": "blends-formats"
+},
+{
+"name": "Tart cherry",
+"category": "Herbal",
+"forms": "Prunus cerasus (Montmorency) concentrate",
+"use": "Recovery, sleep, uric acid",
+"group": "botanicals"
+},
+{
+"name": "Celery seed",
+"category": "Herbal",
+"forms": "Apium graveolens extract, 3nB",
+"use": "Uric acid, blood pressure",
+"group": "botanicals"
+},
+{
+"name": "Collagen + vitamin C + hyaluronic acid (beauty blends)",
+"category": "Blend",
+"forms": "Beauty-from-within matrices",
+"use": "Skin, hair, nails",
+"group": "blends-formats"
+},
+{
+"name": "Biotin + zinc + selenium (hair blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Hair",
+"group": "blends-formats"
+},
+{
+"name": "Keratin (solubilised)",
+"category": "Protein",
+"forms": "Cynatine® type",
+"use": "Hair, nails",
+"group": "amino-protein"
+},
+{
+"name": "Ceramides (plant)",
+"category": "Lipid",
+"forms": "Wheat / rice ceramides (Ceramosides® type)",
+"use": "Skin hydration",
+"group": "lipids"
+},
+{
+"name": "Polypodium leucotomos",
+"category": "Herbal",
+"forms": "Fern extract",
+"use": "Skin photoprotection",
+"group": "botanicals"
+},
+{
+"name": "Horse chestnut",
+"category": "Herbal",
+"forms": "Aesculus hippocastanum, aescin 20%",
+"use": "Venous insufficiency",
+"group": "botanicals"
+},
+{
+"name": "Butcher's broom",
+"category": "Herbal",
+"forms": "Ruscus aculeatus, ruscogenins",
+"use": "Venous health",
+"group": "botanicals"
+},
+{
+"name": "Centella + diosmin (venous blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Leg circulation",
+"group": "blends-formats"
+},
+{
+"name": "Nattokinase + vitamin K2 (vascular blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Vascular",
+"group": "blends-formats"
+},
+{
+"name": "Bilberry",
+"category": "Herbal",
+"forms": "Vaccinium myrtillus, anthocyanins 25–36%",
+"use": "Eyes, circulation",
+"group": "botanicals"
+},
+{
+"name": "Eyebright / saffron / lutein (eye blends)",
+"category": "Blend",
+"forms": "AREDS-2 type formulas (vitamin C, E, zinc, copper, lutein, zeaxanthin)",
+"use": "Macular health",
+"group": "blends-formats"
+},
+{
+"name": "Omega-3 + lutein (dry-eye blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Dry eye",
+"group": "blends-formats"
+},
+{
+"name": "Cat's claw",
+"category": "Herbal",
+"forms": "Uncaria tomentosa bark",
+"use": "Immunity, joints",
+"group": "botanicals"
+},
+{
+"name": "Devil's claw",
+"category": "Herbal",
+"forms": "Harpagophytum procumbens, harpagosides",
+"use": "Joints",
+"group": "botanicals"
+},
+{
+"name": "White willow bark",
+"category": "Herbal",
+"forms": "Salix alba, salicin 15%",
+"use": "Pain",
+"group": "botanicals"
+},
+{
+"name": "PEA (palmitoylethanolamide)",
+"category": "Lipid mediator",
+"forms": "Micronised PEA",
+"use": "Pain, inflammation",
+"group": "lipids"
+},
+{
+"name": "Eggshell membrane",
+"category": "Animal-derived",
+"forms": "NEM® type",
+"use": "Joints",
+"group": "botanicals"
+},
+{
+"name": "Type II collagen (undenatured)",
+"category": "Protein",
+"forms": "UC-II® type 40 mg",
+"use": "Joints",
+"group": "amino-protein"
+},
+{
+"name": "Calcium + vitamin D3 + K2 (bone blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Bone",
+"group": "blends-formats"
+},
+{
+"name": "Vitamin D3 + K2 drops",
+"category": "Blend",
+"forms": "Oil-based drops",
+"use": "Bone, immunity",
+"group": "blends-formats"
+},
+{
+"name": "Multivitamin–mineral premix",
+"category": "Blend",
+"forms": "Customised premixes (adult, children, 50+, prenatal, men's, women's)",
+"use": "General nutrition",
+"group": "blends-formats"
+},
+{
+"name": "Children's vitamins (gummies, drops)",
+"category": "Blend",
+"forms": "Vitamin D drops, multivitamin gummies, iron drops",
+"use": "Paediatric nutrition",
+"group": "blends-formats"
+},
+{
+"name": "Oral rehydration salts (ORS)",
+"category": "Medical food",
+"forms": "WHO low-osmolarity formula",
+"use": "Dehydration",
+"group": "botanicals"
+},
+{
+"name": "Meal replacement / enteral nutrition",
+"category": "Medical food",
+"forms": "Protein–carbohydrate–fat–micronutrient powders",
+"use": "Clinical nutrition",
+"group": "botanicals"
+},
+{
+"name": "Infant formula ingredients",
+"category": "Infant nutrition",
+"forms": "Lactose, whey protein, vegetable oils, DHA/ARA, GOS/FOS, HMO, nucleotides",
+"use": "Infant formula",
+"group": "blends-formats"
+},
+{
+"name": "Nucleotides",
+"category": "Infant nutrition",
+"forms": "CMP, UMP, AMP, GMP, IMP sodium salts",
+"use": "Infant formula, immunity",
+"group": "blends-formats"
+},
+{
+"name": "Honey / royal jelly / propolis / bee pollen",
+"category": "Apitherapy",
+"forms": "Freeze-dried royal jelly 10-HDA 6%, propolis extract",
+"use": "Immunity, vitality",
+"group": "botanicals"
+},
+{
+"name": "Manuka honey",
+"category": "Food",
+"forms": "MGO-graded honey",
+"use": "Throat, immunity",
+"group": "botanicals"
+},
+{
+"name": "Sea moss / Irish moss",
+"category": "Algae",
+"forms": "Chondrus crispus gel/powder",
+"use": "Minerals (consumer demand)",
+"group": "botanicals"
+},
+{
+"name": "Moringa",
+"category": "Herbal",
+"forms": "Moringa oleifera leaf powder",
+"use": "General nutrition",
+"group": "botanicals"
+},
+{
+"name": "Wheatgrass / barley grass",
+"category": "Green food",
+"forms": "Juice powders",
+"use": "Greens blends",
+"group": "botanicals"
+},
+{
+"name": "Greens and reds powders",
+"category": "Blend",
+"forms": "Fruit and vegetable powder blends",
+"use": "General wellness",
+"group": "blends-formats"
+},
+{
+"name": "Fulvic / humic acid",
+"category": "Mineral",
+"forms": "Shilajit (Mumijo), fulvic acid",
+"use": "Energy, minerals",
+"group": "minerals"
+},
+{
+"name": "Shilajit",
+"category": "Mineral resin",
+"forms": "Purified shilajit, fulvic acid 50%",
+"use": "Energy, testosterone",
+"group": "minerals"
+},
+{
+"name": "Sea salt / Himalayan salt minerals",
+"category": "Mineral",
+"forms": "Trace-mineral drops",
+"use": "Electrolytes",
+"group": "minerals"
+},
+{
+"name": "Vitamin C + zinc + D3 (immune blends)",
+"category": "Blend",
+"forms": "Effervescent and sachet formats",
+"use": "Immunity",
+"group": "blends-formats"
+},
+{
+"name": "Zinc lozenges",
+"category": "Mineral",
+"forms": "Zinc gluconate/acetate lozenges",
+"use": "Cold symptoms",
+"group": "minerals"
+},
+{
+"name": "Elderberry + echinacea + vitamin C (cold blends)",
+"category": "Blend",
+"forms": "Syrups, gummies",
+"use": "Colds",
+"group": "blends-formats"
+},
+{
+"name": "Pelargonium sidoides",
+"category": "Herbal",
+"forms": "EPs 7630 type root extract",
+"use": "Respiratory infections",
+"group": "botanicals"
+},
+{
+"name": "Thyme / ivy leaf",
+"category": "Herbal",
+"forms": "Thymus vulgaris, Hedera helix extracts",
+"use": "Cough",
+"group": "botanicals"
+},
+{
+"name": "N-acetylcysteine + bromelain (respiratory blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Mucus, respiratory",
+"group": "blends-formats"
+},
+{
+"name": "Quercetin + bromelain (allergy blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Allergy",
+"group": "blends-formats"
+},
+{
+"name": "Butterbur",
+"category": "Herbal",
+"forms": "Petasites hybridus (PA-free)",
+"use": "Migraine, allergy",
+"group": "botanicals"
+},
+{
+"name": "Feverfew",
+"category": "Herbal",
+"forms": "Tanacetum parthenium, parthenolide 0.2–0.7%",
+"use": "Migraine",
+"group": "botanicals"
+},
+{
+"name": "Magnesium + riboflavin + CoQ10 (migraine blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Migraine",
+"group": "blends-formats"
+},
+{
+"name": "Chromium + cinnamon + berberine (glucose blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Glucose",
+"group": "blends-formats"
+},
+{
+"name": "Alpha-lipoic acid + B vitamins (neuropathy blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Nerve health",
+"group": "blends-formats"
+},
+{
+"name": "Benfotiamine",
+"category": "Vitamin B1 derivative",
+"forms": "Benfotiamine",
+"use": "Neuropathy, glucose",
+"group": "vitamins"
+},
+{
+"name": "Methylated B-complex",
+"category": "Vitamin blend",
+"forms": "Methylcobalamin, methylfolate, P5P, riboflavin 5'-phosphate",
+"use": "Methylation, energy",
+"group": "vitamins"
+},
+{
+"name": "Vitamin B-complex",
+"category": "Vitamin blend",
+"forms": "B1–B12 with biotin and folate",
+"use": "Energy, nervous system",
+"group": "vitamins"
+},
+{
+"name": "Iron + vitamin C + folate (anaemia blends)",
+"category": "Blend",
+"forms": "Combination",
+"use": "Anaemia",
+"group": "blends-formats"
+},
+{
+"name": "Vitamin D3 50,000 IU (pharmacy)",
+"category": "Vitamin",
+"forms": "High-dose weekly capsules",
+"use": "Deficiency correction (Rx/OTC)",
+"group": "vitamins"
+},
+{
+"name": "Calcium citrate + vitamin D (pharmacy)",
+"category": "Blend",
+"forms": "Tablets, effervescent, sachets",
+"use": "Osteoporosis support",
+"group": "blends-formats"
+},
+{
+"name": "Potassium citrate (pharmacy)",
+"category": "Mineral",
+"forms": "Effervescent / ER tablets",
+"use": "Kidney stones, alkalinisation",
+"group": "minerals"
+},
+{
+"name": "Magnesium citrate / oxide (pharmacy)",
+"category": "Mineral",
+"forms": "Effervescent, sachets, tablets",
+"use": "Deficiency, constipation",
+"group": "minerals"
+},
+{
+"name": "Zinc sulfate (pharmacy)",
+"category": "Mineral",
+"forms": "Syrup, tablets",
+"use": "Paediatric diarrhoea (WHO), deficiency",
+"group": "minerals"
+},
+{
+"name": "Folic acid 400 µg–5 mg (pharmacy)",
+"category": "Vitamin",
+"forms": "Tablets",
+"use": "Pregnancy, anaemia",
+"group": "vitamins"
+},
+{
+"name": "Vitamin B12 injection / high-dose oral",
+"category": "Vitamin",
+"forms": "Cyanocobalamin, hydroxocobalamin",
+"use": "Deficiency",
+"group": "vitamins"
+},
+{
+"name": "Omega-3 (pharmacy grade)",
+"category": "Fatty acid",
+"forms": "EPA/DHA ≥ 84% ethyl esters, icosapent ethyl",
+"use": "Hypertriglyceridaemia",
+"group": "lipids"
+},
+{
+"name": "Multivitamin infusions / parenteral vitamins",
+"category": "Vitamin",
+"forms": "Injectable multivitamin, trace elements",
+"use": "Clinical nutrition",
+"group": "vitamins"
+},
+{
+"name": "Trace element solutions",
+"category": "Mineral",
+"forms": "Zinc, copper, selenium, manganese, chromium injectables",
+"use": "Parenteral nutrition",
+"group": "minerals"
+},
+{
+"name": "Amino acid infusions",
+"category": "Amino acid",
+"forms": "Crystalline amino acid solutions",
+"use": "Parenteral nutrition",
+"group": "amino-protein"
+},
+{
+"name": "Lipid emulsions",
+"category": "Fatty acid",
+"forms": "Soybean, MCT/LCT, olive, fish-oil emulsions",
+"use": "Parenteral nutrition",
+"group": "lipids"
+},
+{
+"name": "Glucose solutions",
+"category": "Carbohydrate",
+"forms": "5–50% dextrose",
+"use": "Parenteral nutrition",
+"group": "blends-formats"
+},
+{
+"name": "Gummy / effervescent / sachet bases",
+"category": "Format excipients",
+"forms": "Pectin, gelatin, sugar alcohols, citric acid, sodium bicarbonate",
+"use": "Supplement dosage forms",
+"group": "blends-formats"
+},
+{
+"name": "Softgel shell materials",
+"category": "Format excipients",
+"forms": "Bovine, fish, porcine gelatin; vegetarian (carrageenan/starch)",
+"use": "Oil-based supplements",
+"group": "blends-formats"
+},
+{
+"name": "Microencapsulated / liposomal actives",
+"category": "Technology",
+"forms": "Liposomal vitamin C, iron, glutathione, curcumin; microencapsulated omega-3, iron",
+"use": "Bioavailability, taste masking",
+"group": "blends-formats"
+},
+{
+"name": "Sweeteners for supplements",
+"category": "Format excipients",
+"forms": "Sucralose, stevia (rebaudioside A/M), monk fruit, erythritol, xylitol",
+"use": "Taste",
+"group": "blends-formats"
+},
+{
+"name": "Natural flavours and colours",
+"category": "Format excipients",
+"forms": "Fruit flavours, beetroot red, spirulina blue, curcumin yellow, caramel",
+"use": "Taste, appearance",
+"group": "blends-formats"
+}
+]

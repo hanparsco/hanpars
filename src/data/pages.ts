@@ -25,11 +25,11 @@ export const pages = {
     database: 'https://hanparsco.github.io/excipient_list/', databaseLabel: 'Explore the excipient database',
   },
   nutrition: {
-    title: 'Nutrition ingredients', category: 'Products',
-    description: 'Vitamins and nutrition ingredients for supplements and fortified products, with the EU register of nutrition and health claims as a working reference.',
-    meta: 'Search the 267 authorised EU nutrition and health claims by substance, then prepare a Hanpars sourcing enquiry with your ingredient, specification and documentation needs.',
+    title: 'Nutrition and supplement ingredients', category: 'Products',
+    description: 'Vitamins, minerals, omega-3, probiotics, botanicals and the other ingredients behind pharmaceutical and food supplements, in the forms the market trades.',
+    meta: 'Reference list of 295 supplement ingredients — vitamins, minerals, omega-3, probiotics, botanicals, nutraceuticals — with common forms and uses, and a Hanpars sourcing enquiry for each.',
     introTitle: 'Start with the ingredient.',
-    intro: ['Our nutrition work sits alongside pharmaceuticals, with the same attention to specification and documentation. The reference below lists the authorised nutrition and health claims in the EU register, searchable by substance: the starting point for deciding what a supplement or fortified product may say on its label.', 'Include the ingredient, grade, quantity, market and documentation needs when you enquire.'],
+    intro: ['Our supplement work sits alongside pharmaceuticals, with the same attention to specification and documentation. The list below covers the main ingredients used in pharmaceutical and food supplements, grouped by type, with the forms usually traded and what each is used for.', 'Include the ingredient, grade, quantity, market and documentation needs when you enquire.'],
     database: 'https://hanparsco.github.io/Nutrition/', databaseLabel: 'Explore the nutrition database',
   },
   'about-us': {
