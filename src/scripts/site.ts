@@ -173,7 +173,7 @@ if (form) {
     const productLabel = document.querySelector<HTMLElement>('[data-product-label]');
     const specLabel = document.querySelector<HTMLElement>('[data-spec-label]');
     const messageLabel = document.querySelector<HTMLElement>('[data-message-label]');
-    if (productLabel) productLabel.textContent = labels[type].product + ' *';
+    if (productLabel) productLabel.textContent = labels[type].product;
     if (specLabel) specLabel.textContent = labels[type].specification;
     if (messageLabel) messageLabel.textContent = labels[type].message;
     const typeField = form!.querySelector<HTMLInputElement>('[data-type-field]');
@@ -191,6 +191,10 @@ if (form) {
   selectType(type);
   const product = document.getElementById('brief-product') as HTMLInputElement | null;
   if (product && parameters.get('product')) product.value = parameters.get('product')!.slice(0,500);
+  const chips = Array.from(form.querySelectorAll<HTMLButtonElement>('[data-chip-for]'));
+  const syncChips = () => chips.forEach(chip => { const input = document.getElementById(chip.dataset.chipFor || '') as HTMLInputElement | null; chip.setAttribute('aria-pressed', String(!!input && input.value === chip.dataset.chipValue)); });
+  chips.forEach(chip => chip.addEventListener('click', () => { const input = document.getElementById(chip.dataset.chipFor || '') as HTMLInputElement | null; if (!input) return; input.value = input.value === chip.dataset.chipValue ? '' : (chip.dataset.chipValue || ''); syncChips(); }));
+  chips.forEach(chip => document.getElementById(chip.dataset.chipFor || '')?.addEventListener('input', syncChips));
   const button = form.querySelector<HTMLButtonElement>('[data-send-brief]');
   form.addEventListener('submit', async event => {
     event.preventDefault();
@@ -205,7 +209,7 @@ if (form) {
       const response = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body:new FormData(form) });
       const result = await response.json().catch(() => ({}));
       if (response.ok && result.success !== false) {
-        form.reset(); selectType(type);
+        form.reset(); selectType(type); syncChips();
         if (status) status.textContent = formI18n.sent || 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
       } else {
         throw new Error(result.message || 'Submission failed');
