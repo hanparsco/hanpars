@@ -57,6 +57,16 @@ jobs:
       - run: pnpm build
         env:
           PUBLIC_WEB3FORMS_KEY: ${{ vars.PUBLIC_WEB3FORMS_KEY }}
+      - name: SEO audit (report to ci-report branch)
+        if: github.ref == 'refs/heads/main'
+        continue-on-error: true
+        run: |
+          node scripts/seo-audit.mjs dist
+          git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
+          cp seo-audit.json /tmp/seo-audit.json
+          git fetch -q origin ci-report && git worktree add -q /tmp/rep origin/ci-report
+          cp /tmp/seo-audit.json /tmp/rep/seo-audit.json
+          cd /tmp/rep && git add seo-audit.json && git commit -qm "seo audit ${GITHUB_SHA::7}" && git push -q origin HEAD:ci-report || true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
