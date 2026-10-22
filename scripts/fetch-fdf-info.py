@@ -63,18 +63,40 @@ def clean(txt, limit):
     return t
 
 
-def fetch_label(name):
-    q = urllib.parse.quote(f'openfda.generic_name:"{name}"')
-    data = get(f'https://api.fda.gov/drug/label.json?search={q}&limit=5')
-    time.sleep(0.3)
-    if not data or not data.get('results'):
-        q = urllib.parse.quote(f'openfda.substance_name:"{name}"')
-        data = get(f'https://api.fda.gov/drug/label.json?search={q}&limit=5')
+def components(generic):
+    g = generic.lower()
+    parts = re.split(r',\s*|\s+and\s+|\s*/\s*', g)
+    return sorted({key_of(p) for p in parts if key_of(p)})
+
+
+def matches(r, wanted):
+    """True when the label's active ingredients are exactly the wanted set (salts ignored)."""
+    of = r.get('openfda', {})
+    for g in of.get('generic_name', []):
+        comp = components(g)
+        if comp == wanted: return True
+        # tolerate first-word match per component (e.g. 'amlodipine' vs 'amlodipine besylate' already stripped)
+        if len(comp) == len(wanted) and all(any(c.split(' ')[0] == w.split(' ')[0] for c in comp) for w in wanted): return True
+    return False
+
+
+def fetch_label(name, wanted=None):
+    wanted = wanted or sorted({key_of(p) for p in re.split(r'\s+and\s+', name)})
+    found = []
+    for field in ('openfda.generic_name', 'openfda.substance_name'):
+        q = urllib.parse.quote(f'{field}:"{name}"')
+        data = get(f'https://api.fda.gov/drug/label.json?search={q}&limit=40')
         time.sleep(0.3)
-    if not data or not data.get('results'): return None
-    # prefer a human prescription label with indications
-    res = sorted(data['results'], key=lambda r: (0 if r.get('indications_and_usage') else 1, 0 if (r.get('openfda', {}).get('product_type', [''])[0] or '').startswith('HUMAN PRESCRIPTION') else 1, -len(r.get('indications_and_usage', [''])[0] if r.get('indications_and_usage') else '')))
-    r = res[0]
+        if data and data.get('results'):
+            found = [r for r in data['results'] if matches(r, wanted)]
+            if found: break
+    if not found: return None
+    def rank(r):
+        pt = (r.get('openfda', {}).get('product_type', [''])[0] or '')
+        return (0 if pt.startswith('HUMAN PRESCRIPTION') else 1, 0 if r.get('indications_and_usage') else 1, 0 if r.get('mechanism_of_action') else 1,
+                -len(r.get('indications_and_usage', [''])[0] if r.get('indications_and_usage') else ''))
+    r = sorted(found, key=rank)[0]
+    if 'HOMEOPATHIC' in ' '.join(r.get('openfda', {}).get('product_type', [])).upper(): return None
     of = r.get('openfda', {})
     return {
         'generic': (of.get('generic_name') or [name])[0].title(),
@@ -101,18 +123,31 @@ def main():
     for e in fdf:
         m = re.search(FORMS, e['name'])
         ing = (e['name'][:m.start()] if m else e['name']).strip(' ,')
-        for part in re.split(r'\s*/\s*', ing):
-            k = key_of(part)
-            if k: keys.setdefault(k, part)
+        parts = [p for p in re.split(r'\s*/\s*', ing) if key_of(p)]
+        for part in parts:
+            keys.setdefault(key_of(part), part)
+        if len(parts) > 1:
+            keys.setdefault(' + '.join(sorted(key_of(p) for p in parts)), ing)
+    # revalidate cached entries: a label whose ingredients differ from the key is refetched
+    for k, v in list(out.items()):
+        if v.get('missing'): continue
+        wanted = sorted(k.split(' + ')) if ' + ' in k else [k]
+        wanted = [key_of(US.get(w, w)) for w in wanted]
+        if components(v.get('generic', '')) != wanted and not (len(wanted) == 1 and components(v.get('generic', '')) and components(v.get('generic', ''))[0].split(' ')[0] == wanted[0].split(' ')[0] and len(components(v.get('generic', ''))) == 1):
+            del out[k]
     todo = [k for k in keys if k not in out]
     print(f'{len(keys)} ingredients, {len(todo)} to fetch')
     ok = 0
     for i, k in enumerate(todo):
-        name = US.get(k, k)
+        if ' + ' in k:
+            comps = [US.get(c, c) for c in k.split(' + ')]
+            name = ' and '.join(comps); wanted = sorted(key_of(c) for c in comps)
+        else:
+            name = US.get(k, k); wanted = [key_of(name)]
         try:
-            info = fetch_label(name)
-            if not info and ' ' in name:
-                info = fetch_label(name.split(' ')[0])
+            info = fetch_label(name, wanted)
+            if not info and ' + ' in k:
+                info = fetch_label(comps[0], wanted)
             out[k] = info or {'generic': keys[k].title(), 'missing': True}
             ok += bool(info)
         except Exception as e:

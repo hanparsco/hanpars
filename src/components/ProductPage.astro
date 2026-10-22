@@ -18,7 +18,8 @@ const unit = (x: string) => x.replace(/(\d)\{dose\}/g, '$1 dose').replace(/\{dos
 const p = { ...p0, strength: unit(p0.strength), pack: unit(p0.pack) };
 type Info = { generic:string; brand?:string; pharmClass?:string[]; moaClass?:string[]; routes?:string[]; forms?:string[]; moa?:string; indications?:string; dosage?:string; contraindications?:string; warnings?:string; boxed?:string; pregnancy?:string; storage?:string; setId?:string; effective?:string; missing?:boolean };
 const infos = info as Record<string, Info>;
-const parts = p.ingredients.map(i => ({ name: i, key: infoKey(i), info: infos[infoKey(i)] }));
+const comboKey = p.ingredients.length > 1 ? p.ingredients.map(i => infoKey(i)).sort().join(' + ') : '';
+const parts = [...(comboKey ? [{ name: p.ingredient, key: comboKey, info: infos[comboKey] }] : []), ...(p.ingredients.length > 1 ? [] : p.ingredients.map(i => ({ name: i, key: infoKey(i), info: infos[infoKey(i)] })))];
 const mainPart = parts.find(x => x.info && !x.info.missing);
 const main = mainPart?.info;
 type InfoFa = { moa?:string; indications?:string; dosage?:string; contraindications?:string; warnings?:string; boxed?:string; pregnancy?:string; storage?:string; pharmClass?:string };
