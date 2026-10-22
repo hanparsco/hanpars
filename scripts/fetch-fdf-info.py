@@ -29,7 +29,8 @@ US = {'paracetamol': 'acetaminophen', 'aciclovir': 'acyclovir', 'salbutamol': 'a
 def key_of(ingredient):
     k = re.sub(r'\(.*?\)', '', ingredient.lower())
     k = re.sub(SALTS, '', k)
-    return re.sub(r'[^a-z]+', ' ', k).strip()
+    k = re.sub(r'[^a-z]+', ' ', k).strip()
+    return k or re.sub(r'[^a-z]+', ' ', ingredient.lower()).strip()
 
 
 def get(url, tries=3):

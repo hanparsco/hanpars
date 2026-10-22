@@ -1,5 +1,6 @@
 import { parseFdf, infoKey, prettyName } from './fdf-parse';
 import fdfAll from './fdf.json';
+import editorialAll from './fdf-editorial.json';
 import { formFa, ROUTE_FA } from './seo-fa';
 import namesFa from './names.fa.json';
 export const faName = (en: string) => ((namesFa as Record<string, string>)[en] || '').trim();
@@ -12,8 +13,10 @@ export function productSeo(entry: { name: string; code: string }, lang: 'en' | '
   const strength = p.strength.replace(/\bug\b/g, 'µg');
   const keys = p.ingredients.length > 1 ? [p.ingredients.map(i => infoKey(i)).sort().join(' + ')] : [infoKey(p.ingredient)];
   const key = keys.find(k => info[k] && !info[k].missing);
-  const en = key ? info[key] : null;
-  const fa = key ? infoFa[key] : null;
+  const edAll = editorialAll as Record<string, any>;
+  const edKey = keys[0];
+  const en = key ? info[key] : (edAll[edKey]?.en || null);
+  const fa = key ? infoFa[key] : (edAll[edKey]?.fa || null);
   const fForm = formFa(p.form);
   const fRouteRaw = ROUTE_FA[p.route] || '';
   const fRoute = fForm.includes(fRouteRaw) ? '' : fRouteRaw;
@@ -41,7 +44,7 @@ export function productSeo(entry: { name: string; code: string }, lang: 'en' | '
     '@context': 'https://schema.org', '@type': 'Drug', name: `${name} ${prettyName(p.form)}${strength ? ' ' + strength : ''}`,
     nonProprietaryName: name, activeIngredient: p.ingredients.map(i => prettyName(i)).join(', '),
     dosageForm: prettyName(p.form), administrationRoute: p.route ? prettyName(p.route) : undefined, availableStrength: strength ? { '@type': 'DrugStrength', description: strength } : undefined,
-    drugClass: en?.pharmClass?.length ? { '@type': 'DrugClass', name: en.pharmClass[0].replace(/\s*\[EPC\]/, '') } : undefined,
+    drugClass: en?.pharmClass?.length ? { '@type': 'DrugClass', name: (Array.isArray(en.pharmClass) ? en.pharmClass[0] : en.pharmClass).replace(/\s*\[EPC\]/, '') } : undefined,
     description: ind ? clip(ind, 300) : undefined, inLanguage: lang === 'fa' ? 'fa-IR' : 'en', identifier: entry.code,
     manufacturer: undefined, offers: { '@type': 'Offer', availability: 'https://schema.org/InStoreOnly', seller: { '@id': 'https://hanpars.com/#organization' } },
   };
