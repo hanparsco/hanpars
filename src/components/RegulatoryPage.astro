@@ -9,7 +9,7 @@ const data = lang === 'fa' ? dataFa : dataEn;
 const r = t(lang).regulatory;
 const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a, tierName: tier.name, tierNum: tier.num })));
 ---
-<PageHero title={r.title} category={r.category} description={data.intro} action={r.action} href={localePath('/contact-us-1?type=regulatory', lang)} photo="dossier-archive" photoAlt={r.photoAlt}/>
+<PageHero title={r.title} category={r.category} description={data.intro} action={r.action} href={localePath('/contact-us-1?type=regulatory', lang)} photo="dossier-signing" photoAlt={r.photoAlt}/>
 
 <section class="section section-paper" id="services"><div class="container">
   <div class="section-head"><h2>{r.cover}</h2><p class="lede">{data.coverIntro}</p></div>
