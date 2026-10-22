@@ -1,5 +1,5 @@
 /** After build: sitemap.xml (with en/fa hreflang alternates) and robots.txt. */
-import { readdir, readFile, writeFile } from 'node:fs/promises';
+import { readdir, readFile, writeFile, mkdir, access } from 'node:fs/promises';
 import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -42,7 +42,18 @@ export default function seo({ site }) {
         }
         await writeFile(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${rows.join('\n')}\n</urlset>\n`);
         await writeFile(join(root, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\n`);
-        logger.info(`sitemap.xml with ${rows.length} URLs`);
+        // trailing-slash stubs: /x/ -> /x (earlier crawls used slash URLs; GitHub Pages cannot send 301s)
+        let stubs = 0;
+        for (const p of pages.keys()) {
+          if (p === '/') continue;
+          const dirIdx = join(root, p.slice(1), 'index.html');
+          try { await access(dirIdx); continue; } catch {}
+          const target = site + p;
+          await mkdir(join(root, p.slice(1)), { recursive: true });
+          await writeFile(dirIdx, `<!doctype html><html><head><meta charset="utf-8"><title>Redirect</title><link rel="canonical" href="${target}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=${target}"><script>location.replace(${JSON.stringify(target)})</script></head><body><a href="${target}">${target}</a></body></html>`);
+          stubs++;
+        }
+        logger.info(`sitemap.xml with ${rows.length} URLs; ${stubs} trailing-slash redirect stubs`);
       },
     },
   };
