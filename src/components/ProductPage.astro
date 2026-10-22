@@ -7,6 +7,7 @@ import molecules from '../data/molecules.json';
 import portfolio from '../data/portfolio.json';
 import { parseFdf, fdfSlug, infoKey, prettyName, slugify, sameIngredientIndex } from '../data/fdf-parse';
 import { langFromPath, localePath, t } from '../i18n';
+import { faName } from '../data/seo-schema';
 interface Props { entry: { name: string; code: string } }
 const { entry } = Astro.props;
 const lang = langFromPath(Astro.url.pathname);
@@ -43,6 +44,7 @@ const dailymed = main?.setId ? `https://dailymed.nlm.nih.gov/dailymed/drugInfo.c
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={L('/')}>{s.breadcrumbHome}</a><span aria-hidden="true">/</span><a href={L('/fdf#fdf-reference')}>{m.list}</a><span aria-hidden="true">/</span><span lang="en" dir="ltr">{title}</span></nav>
     <p class="kicker kicker-light">{m.kicker}{inPortfolio ? ` · ${m.registered}` : ''}</p>
     <h1 lang="en" dir="ltr">{title}</h1>
+    {lang === 'fa' && faName(title) && <p class="prod-fa-name">{faName(title)}</p>}
     <p class="lede" lang="en" dir="ltr">{formLabel}{routeLabel ? ` · ${routeLabel}` : ''}{p.strength ? ` · ${p.strength}` : ''}{p.pack ? ` · ${p.pack}` : ''}</p>
     <dl class="mol-keyfacts" lang="en" dir="ltr">
       <div><dt>{m.code}</dt><dd>{entry.code}</dd></div>

@@ -3,6 +3,7 @@ import CTA from './CTA.astro';
 import molecules from '../data/molecules.json';
 import moleculesFa from '../data/molecules.fa.json';
 import { langFromPath, localePath, t } from '../i18n';
+import { faName } from '../data/seo-schema';
 interface Props { slug: string }
 const { slug } = Astro.props;
 const lang = langFromPath(Astro.url.pathname);
@@ -28,6 +29,7 @@ const num = (v: number | null | undefined, d = 1) => (v === null || v === undefi
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={L('/')}>{s.breadcrumbHome}</a><span aria-hidden="true">/</span><a href={L('/api')}>{m.range}</a><span aria-hidden="true">/</span><span lang="en" dir="ltr">{displayName}</span></nav>
     <p class="kicker kicker-light">{m.kicker}</p>
     <h1 lang="en" dir="ltr">{displayName}</h1>
+    {lang === 'fa' && faName(displayName) && <p class="prod-fa-name">{faName(displayName)}</p>}
     <dl class="mol-keyfacts" lang="en" dir="ltr">
       {mol.cas && <div><dt>{m.cas}</dt><dd>{mol.cas}</dd></div>}
       {mol.formula && <div><dt>{m.formula}</dt><dd set:html={formulaHtml}/></div>}
