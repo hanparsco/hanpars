@@ -10,7 +10,7 @@ export function getStaticPaths() {
   return (fdf as { name: string; code: string }[]).map(entry => ({ params: { slug: fdfSlug(entry) }, props: { entry } }));
 }
 const { entry } = Astro.props;
-const lang = 'fa';
+const lang = 'fa' as 'en' | 'fa';
 const seo = productSeo(entry, lang, info as any, infoFa as any);
 const base = lang === 'fa' ? '/fa' : '';
 const crumbs = [{ name: lang === 'fa' ? 'خانه' : 'Home', path: base || '/' }, { name: lang === 'fa' ? 'داروهای ساخته‌شده' : 'Finished dosage forms', path: base + '/fdf' }, { name: seo.name, path: base + '/fdf/' + fdfSlug(entry) }];

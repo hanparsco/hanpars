@@ -8,7 +8,7 @@ export function getStaticPaths() {
   return Object.keys(molecules).map(slug => ({ params: { slug } }));
 }
 const { slug } = Astro.params;
-const lang = 'fa';
+const lang = 'fa' as 'en' | 'fa';
 const mol = (molecules as Record<string, any>)[slug!];
 const faDesc = (moleculesFa as Record<string, string>)[slug!] || '';
 const seo = moleculeSeo(slug!, mol, lang, faDesc);
