@@ -44,7 +44,7 @@ export function pick<T>(lang: Lang, map: Partial<Record<Lang, T>>, fallback?: T)
 import { zh } from './zh';
 import { tr } from './tr';
 
-export const ui = {
+const base = {
   en: {
     siteName: 'Hanpars',
     skip: 'Skip to main content',
@@ -467,8 +467,7 @@ export const ui = {
     notFound: { title: 'این صفحه اینجا نیست.', text: 'نشانی شاید تغییر کرده یا هرگز وجود نداشته است. محصولات، خدمات و راه‌های تماس یک کلیک فاصله دارند.', home: 'بازگشت به صفحهٔ اصلی', contact: 'تماس با هانیا پرسان دارو' },
     dateLocale: 'fa-IR',
   },
-  zh,
-  tr,
 };
-export type UI = typeof ui.en;
-export const t = (lang: Lang): UI => ui[lang] as UI;
+export type UI = typeof base.en;
+export const ui: Record<Lang, UI> = { en: base.en, fa: base.fa as UI, zh, tr };
+export const t = (lang: Lang): UI => ui[lang];
