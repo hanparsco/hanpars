@@ -24,7 +24,8 @@ const extra: Record<string, { title: string; description: string }> = {
   'news': { title: s.news.title, description: (s.news as any).lede || (s.news as any).intro || '' },
 };
 const name = data?.title || extra[page]?.title || page;
-const seo = { title: `${name} | Hanpars`, description: data?.meta || data?.description || extra[page]?.description || '' };
+const str = (...v: unknown[]) => (v.find(x => typeof x === 'string' && x) as string) || '';
+const seo = { title: `${name} | Hanpars`, description: str(data?.meta, data?.description, extra[page]?.description, s.footer.intro) };
 const crumbs = [{ name: s.breadcrumbHome, path: '/zh' }, { name, path: `/zh/${page}` }];
 ---
 <Layout title={seo.title} description={seo.description.slice(0, 200)} breadcrumbs={crumbs} keywords={pageKeywords(page, lang)} brand={page==='regulatory-affairs'?'regulatory':'default'}>
