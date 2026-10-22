@@ -7,3 +7,7 @@ lab-pipette.jpg —  https://unsplash.com/photos/_N7I1JyPYJw
 container-ship.jpg —  https://unsplash.com/photos/ecvpiAz-oyA
 blister-packs.jpg —  https://unsplash.com/photos/jwWtZrm67VI
 dossier-archive.jpg —  https://unsplash.com/photos/snNHKZ-mGfE
+cand-archive-boxes.jpg —  https://unsplash.com/photos/candidate
+cand-files-rows.jpg —  https://unsplash.com/photos/candidate
+cand-signing.jpg —  https://unsplash.com/photos/candidate
+cand-library.jpg —  https://unsplash.com/photos/candidate
