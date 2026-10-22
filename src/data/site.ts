@@ -1,4 +1,5 @@
 export const contactEmail = 'contact@hanpars.com';
+export const raEmail = 'RA@hanpars.com'; // regulatory affairs correspondence
 // Web3Forms relays submissions to contactEmail. The access key is public by design; replace once issued.
 export const formEndpoint = 'https://api.web3forms.com/submit';
 export const formAccessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY || '2713f108-a23c-4f52-8c09-d3a1902c45cc';

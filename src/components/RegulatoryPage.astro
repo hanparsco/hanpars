@@ -4,6 +4,7 @@ import CTA from './CTA.astro';
 import dataEn from '../data/regulatory.json';
 import dataFa from '../data/regulatory.fa.json';
 import { langFromPath, localePath, t } from '../i18n';
+import { raEmail } from '../data/site';
 const lang = langFromPath(Astro.url.pathname);
 const data = lang === 'fa' ? dataFa : dataEn;
 const r = t(lang).regulatory;
@@ -33,7 +34,7 @@ const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a
   <ul class="insight-list">{data.watch.map(item => <li><a class="insight-row ra-watch-row" href={item.url} target="_blank" rel="noopener noreferrer"><time dir="ltr">{item.date}</time><div><p class="ra-watch-agency"><span dir="ltr">{item.agency}</span> · {item.tag}</p><h3>{item.title}</h3><p>{item.summary}</p></div><span class="cat">{r.source}</span></a></li>)}</ul>
 </div></section>
 
-<CTA title={data.ctaTitle} description={data.ctaText}/>
+<CTA title={data.ctaTitle} description={data.ctaText} email={raEmail}/>
 
 <script>
   const root = document.querySelector('[data-ra-authorities]');

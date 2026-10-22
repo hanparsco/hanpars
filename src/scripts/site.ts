@@ -155,6 +155,11 @@ if (form) {
     const subject = form!.querySelector<HTMLInputElement>('[data-subject]');
     if (typeField) typeField.value = labels[type].heading;
     if (subject) subject.value = `${labels[type].heading} — website`;
+    const email = type === 'regulatory' ? (form!.dataset.raEmail || '') : (form!.dataset.email || '');
+    const cc = form!.querySelector<HTMLInputElement>('[data-cc-field]');
+    if (cc) cc.value = type === 'regulatory' ? (form!.dataset.raEmail || '') : '';
+    const orEmail = form!.querySelector<HTMLAnchorElement>('[data-or-email]');
+    if (orEmail && email) { orEmail.href = `mailto:${email}`; const span = orEmail.querySelector('span'); if (span) span.textContent = email; }
   }
   tabs.forEach(tab => tab.addEventListener('click', () => selectType(tab.dataset.enquiryType || 'sourcing')));
   installTabKeys(tabs);
