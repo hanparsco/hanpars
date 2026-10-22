@@ -18,5 +18,5 @@ jobs:
           git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
           git add src/data/apis.json scripts/cas-last-run.log
           git diff --cached --quiet && exit 0
-          git commit -m "API range: CAS numbers from PubChem" && git push
+          git commit -m "API range: CAS numbers from PubChem" && git pull --rebase origin main && git push
           gh workflow run deploy.yml --ref main
