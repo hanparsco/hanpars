@@ -4,7 +4,7 @@ import fdf from '../data/fdf.json';
 import info from '../data/fdf-info.json';
 import molecules from '../data/molecules.json';
 import portfolio from '../data/portfolio.json';
-import { parseFdf, fdfSlug, infoKey, prettyName, slugify } from '../data/fdf-parse';
+import { parseFdf, fdfSlug, infoKey, prettyName, slugify, sameIngredientIndex } from '../data/fdf-parse';
 import { langFromPath, localePath, t } from '../i18n';
 interface Props { entry: { name: string; code: string } }
 const { entry } = Astro.props;
@@ -12,7 +12,9 @@ const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
 const m = s.product;
 const L = (p: string) => localePath(p, lang);
-const p = parseFdf(entry.name);
+const p0 = parseFdf(entry.name);
+const unit = (x: string) => x.replace(/(\d)\{dose\}/g, '$1 dose').replace(/\{dose\}/g, 'doses').replace(/\{([a-z]+)\}/g, '$1').replace(/\bug\b/g, 'µg');
+const p = { ...p0, strength: unit(p0.strength), pack: unit(p0.pack) };
 type Info = { generic:string; brand?:string; pharmClass?:string[]; moaClass?:string[]; routes?:string[]; forms?:string[]; moa?:string; indications?:string; dosage?:string; contraindications?:string; warnings?:string; boxed?:string; pregnancy?:string; storage?:string; setId?:string; effective?:string; missing?:boolean };
 const infos = info as Record<string, Info>;
 const parts = p.ingredients.map(i => ({ name: i, key: infoKey(i), info: infos[infoKey(i)] }));
@@ -20,7 +22,7 @@ const main = parts.find(x => x.info && !x.info.missing)?.info;
 const title = prettyName(p.ingredient);
 const formLabel = prettyName(p.form);
 const routeLabel = p.route ? prettyName(p.route) : '';
-const sameIngredient = (fdf as { name: string; code: string }[]).filter(e => e.code !== entry.code && infoKey(parseFdf(e.name).ingredient) === infoKey(p.ingredient));
+const sameIngredient = (sameIngredientIndex(fdf as { name: string; code: string }[]).get(infoKey(p.ingredient)) || []).filter(e => e.code !== entry.code).slice(0, 40);
 const mols = molecules as Record<string, { cid?: number | null; name: string; cas?: string }>;
 const molLinks = p.ingredients.map(i => { const k = slugify(i); const hit = Object.keys(mols).find(sl => mols[sl].cid && (sl === k || sl.startsWith(k + '-') || k.startsWith(sl))); return hit ? { name: prettyName(i), href: L(`/api/${hit}`), cas: mols[hit].cas || '' } : null; }).filter(Boolean) as { name: string; href: string; cas: string }[];
 const inPortfolio = (portfolio as any).groups?.some((g: any) => g.products?.some((pr: any) => infoKey(pr.name || '') === infoKey(p.ingredient)));
@@ -75,7 +77,7 @@ const dailymed = main?.setId ? `https://dailymed.nlm.nih.gov/dailymed/drugInfo.c
 
 {sameIngredient.length > 0 && <section class="section section-paper section-tight"><div class="container">
   <div class="section-head"><h2>{m.otherForms}</h2></div>
-  <ul class="link-list" lang="en" dir="ltr">{sameIngredient.map(e => { const q = parseFdf(e.name); return <li><a href={L(`/fdf/${fdfSlug(e)}`)}>{prettyName(q.form)}{q.route ? ` · ${prettyName(q.route)}` : ''}{q.strength ? ` · ${q.strength}` : ''}{q.pack ? ` · ${q.pack}` : ''}<small>{e.code}</small></a></li>; })}</ul>
+  <ul class="link-list" lang="en" dir="ltr">{sameIngredient.map(e => { const q = parseFdf(e.name); return <li><a href={L(`/fdf/${fdfSlug(e)}`)}>{prettyName(q.form)}{q.route ? ` · ${prettyName(q.route)}` : ''}{q.strength ? ` · ${unit(q.strength)}` : ''}{q.pack ? ` · ${unit(q.pack)}` : ''}<small>{e.code}</small></a></li>; })}</ul>
 </div></section>}
 
 <section class="section-tight"><div class="container"><p class="reference-note">{m.note}</p></div></section>
