@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       force:
-        description: 'Rebuild even if today\'s digest exists'
+        description: "Rebuild even if today's digest exists"
         type: boolean
         default: true
 
