@@ -200,6 +200,10 @@ export const ui = {
       ingredient: 'Ingredient', category: 'Category', forms: 'Common forms and sources', use: 'Typical use',
       note: 'The main active ingredients used in pharmaceutical and food supplements, with the forms usually traded. A reference for enquiries, not a statement of stock; grade, standardisation, documentation and the regulatory status of each ingredient in the target market are confirmed per request.',
     },
+    excipientCats: {
+      title: 'Excipients by function', lede: 'The main categories and the materials most often specified in each. The full list, with function and CAS number, follows.',
+      seeAll: 'See all in the list', all: 'All', other: 'Other',
+    },
     notFound: { title: "That page isn't here.", text: 'The address may have changed, or it never led anywhere. The products, services and contact details are all a click away.', home: 'Back to the homepage', contact: 'Contact Hanpars' },
     dateLocale: 'en-GB',
   },
@@ -379,6 +383,10 @@ export const ui = {
       g: { vitamins: 'ویتامین‌ها', minerals: 'مواد معدنی', lipids: 'امگا-۳ و چربی‌ها', amino: 'اسیدهای آمینه و پروتئین‌ها', gut: 'پروبیوتیک، فیبر و آنزیم', botanicals: 'گیاهی و عصاره‌ها', nutraceuticals: 'نوتراسوتیکال', blends: 'ترکیب‌ها و فرم‌ها' },
       ingredient: 'ماده', category: 'دسته', forms: 'شکل‌ها و منابع رایج', use: 'کاربرد معمول',
       note: 'مواد مؤثرهٔ اصلی مکمل‌های دارویی و غذایی، همراه با شکل‌هایی که معمولاً معامله می‌شوند. مرجع استعلام است، نه اعلام موجودی؛ گرید، استانداردسازی، مستندات و وضعیت رگولاتوری هر ماده در بازار هدف برای هر درخواست تأیید می‌شود.',
+    },
+    excipientCats: {
+      title: 'مواد جانبی بر اساس کاربرد', lede: 'دسته‌های اصلی و موادی که در هر دسته بیش از همه مشخص می‌شوند. فهرست کامل، با کاربرد و شمارهٔ CAS، در ادامه می‌آید.',
+      seeAll: 'همه در فهرست', all: 'همه', other: 'سایر',
     },
     notFound: { title: 'این صفحه اینجا نیست.', text: 'نشانی شاید تغییر کرده یا هرگز وجود نداشته است. محصولات، خدمات و راه‌های تماس یک کلیک فاصله دارند.', home: 'بازگشت به صفحهٔ اصلی', contact: 'تماس با هانیا پرسان دارو' },
     dateLocale: 'fa-IR',

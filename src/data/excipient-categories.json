@@ -1,0 +1,308 @@
+[
+ {
+  "id": "diluents",
+  "en": "Diluents and fillers",
+  "fa": "پرکننده‌ها و رقیق‌کننده‌ها",
+  "top": [
+   "Lactose monohydrate",
+   "Microcrystalline cellulose",
+   "Dibasic calcium phosphate",
+   "Mannitol",
+   "Pregelatinized starch",
+   "Sucrose",
+   "Sorbitol",
+   "Calcium carbonate",
+   "Isomalt",
+   "Dextrates"
+  ]
+ },
+ {
+  "id": "binders",
+  "en": "Binders",
+  "fa": "اتصال‌دهنده‌ها",
+  "top": [
+   "Povidone (PVP)",
+   "Copovidone",
+   "Hypromellose (HPMC)",
+   "Hydroxypropyl cellulose",
+   "Methylcellulose",
+   "Pregelatinized starch",
+   "Gelatin",
+   "Acacia",
+   "Maltodextrin",
+   "Polyethylene glycol"
+  ]
+ },
+ {
+  "id": "disintegrants",
+  "en": "Disintegrants",
+  "fa": "بازکننده‌ها",
+  "top": [
+   "Croscarmellose sodium",
+   "Sodium starch glycolate",
+   "Crospovidone",
+   "Low-substituted hydroxypropyl cellulose",
+   "Starch",
+   "Pregelatinized starch",
+   "Alginic acid",
+   "Polacrilin potassium",
+   "Calcium carboxymethylcellulose",
+   "Magnesium aluminum silicate"
+  ]
+ },
+ {
+  "id": "lubricants",
+  "en": "Lubricants and glidants",
+  "fa": "روان‌کننده‌ها و لغزنده‌ها",
+  "top": [
+   "Magnesium stearate",
+   "Stearic acid",
+   "Sodium stearyl fumarate",
+   "Glyceryl behenate",
+   "Colloidal silicon dioxide",
+   "Talc",
+   "Calcium stearate",
+   "Hydrogenated vegetable oil",
+   "Polyethylene glycol 6000",
+   "Sodium lauryl sulfate"
+  ]
+ },
+ {
+  "id": "coatings",
+  "en": "Film-coating and release-controlling polymers",
+  "fa": "پوشش‌دهنده‌ها و پلیمرهای کنترل رهایش",
+  "top": [
+   "Hypromellose",
+   "Polyvinyl alcohol",
+   "Ethylcellulose",
+   "Methacrylic acid copolymers (Eudragit®)",
+   "Hypromellose acetate succinate",
+   "Cellulose acetate phthalate",
+   "Hypromellose phthalate",
+   "Shellac",
+   "Polyethylene oxide",
+   "Ready-to-use systems (Opadry® and equivalents)"
+  ]
+ },
+ {
+  "id": "plasticisers",
+  "en": "Plasticisers",
+  "fa": "نرم‌کننده‌ها",
+  "top": [
+   "Triethyl citrate",
+   "Polyethylene glycol 400",
+   "Triacetin",
+   "Dibutyl sebacate",
+   "Propylene glycol",
+   "Glycerin",
+   "Acetyltributyl citrate",
+   "Diethyl phthalate",
+   "Tributyl citrate",
+   "Castor oil"
+  ]
+ },
+ {
+  "id": "solvents",
+  "en": "Solvents and co-solvents",
+  "fa": "حلال‌ها و کمک‌حلال‌ها",
+  "top": [
+   "Purified water / water for injection",
+   "Ethanol",
+   "Propylene glycol",
+   "Glycerin",
+   "Polyethylene glycol 300/400",
+   "Isopropyl alcohol",
+   "Benzyl alcohol",
+   "Dimethyl sulfoxide",
+   "Diethylene glycol monoethyl ether (Transcutol®)",
+   "Medium-chain triglycerides"
+  ]
+ },
+ {
+  "id": "surfactants",
+  "en": "Surfactants, emulsifiers and solubilisers",
+  "fa": "سورفکتانت‌ها، امولسیفایرها و حلالیت‌افزاها",
+  "top": [
+   "Polysorbate 80 / 20",
+   "Sodium lauryl sulfate",
+   "Poloxamer 188 / 407",
+   "Polyoxyl 35 castor oil (Kolliphor® EL)",
+   "Polyoxyl 40 hydrogenated castor oil",
+   "Lecithin",
+   "Sorbitan esters (Span®)",
+   "Macrogol 15 hydroxystearate",
+   "Vitamin E TPGS",
+   "Cyclodextrins (HP-β-CD, SBE-β-CD)"
+  ]
+ },
+ {
+  "id": "preservatives",
+  "en": "Antimicrobial preservatives",
+  "fa": "نگهدارنده‌های ضدمیکروبی",
+  "top": [
+   "Methylparaben",
+   "Propylparaben",
+   "Benzalkonium chloride",
+   "Sodium benzoate",
+   "Potassium sorbate",
+   "Benzyl alcohol",
+   "Phenoxyethanol",
+   "Chlorobutanol",
+   "Benzoic acid",
+   "Chlorhexidine"
+  ]
+ },
+ {
+  "id": "antioxidants",
+  "en": "Antioxidants and chelating agents",
+  "fa": "آنتی‌اکسیدان‌ها و شلاته‌کننده‌ها",
+  "top": [
+   "Butylated hydroxytoluene (BHT)",
+   "Butylated hydroxyanisole (BHA)",
+   "Ascorbic acid",
+   "Sodium metabisulfite",
+   "Alpha-tocopherol",
+   "Propyl gallate",
+   "Disodium edetate (EDTA)",
+   "Ascorbyl palmitate",
+   "Monothioglycerol",
+   "Citric acid"
+  ]
+ },
+ {
+  "id": "buffers",
+  "en": "pH adjusters and buffers",
+  "fa": "تنظیم‌کننده‌های pH و بافرها",
+  "top": [
+   "Citric acid / sodium citrate",
+   "Sodium hydroxide",
+   "Hydrochloric acid",
+   "Sodium phosphate (mono/dibasic)",
+   "Potassium phosphate",
+   "Tromethamine",
+   "Sodium bicarbonate",
+   "Acetic acid / sodium acetate",
+   "Meglumine",
+   "Tartaric acid"
+  ]
+ },
+ {
+  "id": "sweeteners",
+  "en": "Sweeteners and flavours",
+  "fa": "شیرین‌کننده‌ها و طعم‌دهنده‌ها",
+  "top": [
+   "Sucralose",
+   "Aspartame",
+   "Acesulfame potassium",
+   "Saccharin sodium",
+   "Sucrose",
+   "Sorbitol / xylitol / mannitol",
+   "Stevia (rebaudioside A)",
+   "Menthol",
+   "Vanillin",
+   "Pharmaceutical flavours (fruit, mint, masking)"
+  ]
+ },
+ {
+  "id": "colourants",
+  "en": "Colourants and opacifiers",
+  "fa": "رنگ‌دهنده‌ها و کدرکننده‌ها",
+  "top": [
+   "Titanium dioxide",
+   "Iron oxide red / yellow / black",
+   "FD&C Blue No. 1",
+   "FD&C Yellow No. 6 (sunset yellow)",
+   "FD&C Red No. 40 (allura red)",
+   "Indigo carmine",
+   "Tartrazine",
+   "Aluminium lakes",
+   "Carmine",
+   "Riboflavin / curcumin / caramel (natural)"
+  ]
+ },
+ {
+  "id": "thickeners",
+  "en": "Suspending, gelling and viscosity agents",
+  "fa": "معلق‌کننده‌ها، ژل‌کننده‌ها و افزایندهٔ ویسکوزیته",
+  "top": [
+   "Xanthan gum",
+   "Carbomer (Carbopol®)",
+   "Carboxymethylcellulose sodium",
+   "Hydroxyethyl cellulose",
+   "Microcrystalline cellulose + CMC (Avicel® RC)",
+   "Guar gum",
+   "Sodium alginate",
+   "Carrageenan",
+   "Bentonite / magnesium aluminum silicate",
+   "Gelatin"
+  ]
+ },
+ {
+  "id": "bases",
+  "en": "Ointment, cream and suppository bases",
+  "fa": "پایه‌های پماد، کرم و شیاف",
+  "top": [
+   "White soft paraffin (petrolatum)",
+   "Liquid paraffin (mineral oil)",
+   "Cetostearyl alcohol",
+   "Cetyl alcohol",
+   "Stearyl alcohol",
+   "Glyceryl monostearate",
+   "Hard fat (Witepsol®, Suppocire®)",
+   "Polyethylene glycol 1500/4000",
+   "Lanolin",
+   "Beeswax (white / yellow)"
+  ]
+ },
+ {
+  "id": "capsules",
+  "en": "Capsule shells and pellet cores",
+  "fa": "پوستهٔ کپسول و هستهٔ پلت",
+  "top": [
+   "Gelatin (bovine, porcine, fish)",
+   "HPMC (vegetarian capsules)",
+   "Pullulan",
+   "Sugar spheres (nonpareils)",
+   "Microcrystalline cellulose spheres",
+   "Carrageenan (softgel)",
+   "Modified starch (softgel)",
+   "Glycerin / sorbitol (softgel plasticiser)",
+   "Empty hard capsules, printed",
+   "Enteric capsules"
+  ]
+ },
+ {
+  "id": "parenteral",
+  "en": "Parenteral and biologic excipients",
+  "fa": "مواد جانبی تزریقی و بیولوژیک",
+  "top": [
+   "Mannitol",
+   "Sucrose",
+   "Trehalose",
+   "Polysorbate 20 / 80",
+   "Human serum albumin",
+   "Histidine",
+   "Glycine",
+   "Arginine",
+   "Sodium chloride",
+   "Benzyl alcohol / m-cresol"
+  ]
+ },
+ {
+  "id": "propellants",
+  "en": "Propellants and inhalation carriers",
+  "fa": "پیشرانه‌ها و حامل‌های استنشاقی",
+  "top": [
+   "HFA 134a (tetrafluoroethane)",
+   "HFA 227 (heptafluoropropane)",
+   "HFA 152a",
+   "Lactose (inhalation grade)",
+   "Ethanol (MDI co-solvent)",
+   "Oleic acid (MDI surfactant)",
+   "Magnesium stearate (DPI)",
+   "Leucine",
+   "Nitrogen",
+   "Carbon dioxide"
+  ]
+ }
+]

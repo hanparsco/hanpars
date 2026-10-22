@@ -1,0 +1,16 @@
+---
+import cats from '../data/excipient-categories.json';
+import { langFromPath, t } from '../i18n';
+const lang = langFromPath(Astro.url.pathname);
+const s = t(lang).excipientCats;
+---
+<section class="section" id="categories"><div class="container">
+  <div class="section-head"><h2>{s.title}</h2><p class="lede">{s.lede}</p></div>
+  <div class="exc-cats">{cats.map(c => <article class="exc-cat"><h3>{lang === 'fa' ? c.fa : c.en}</h3><ul lang="en" dir="ltr">{c.top.map(x => <li>{x}</li>)}</ul><a class="text-link" href={`#excipient-list`} data-exc-filter={c.id}>{s.seeAll}</a></article>)}</div>
+</div></section>
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('[data-exc-filter]').forEach(a => a.addEventListener('click', () => {
+    const btn = document.querySelector<HTMLButtonElement>(`[data-catalogue] [data-catalogue-filter="${a.dataset.excFilter}"]`);
+    if (btn) btn.click();
+  }));
+</script>
