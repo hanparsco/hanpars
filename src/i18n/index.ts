@@ -2,12 +2,14 @@ export type Lang = 'en' | 'fa';
 export const langs: Lang[] = ['en', 'fa'];
 
 /** Language from a pathname: /fa/... → fa, else en. */
+const tidy = (p: string) => p.replace(/\.html$/, '').replace(/\/index$/, '');
 export function langFromPath(pathname: string): Lang {
-  return pathname === '/fa' || pathname.startsWith('/fa/') ? 'fa' : 'en';
+  const p = tidy(pathname);
+  return p === '/fa' || p.startsWith('/fa/') ? 'fa' : 'en';
 }
 /** Strip the language prefix. */
 export function stripLang(pathname: string): string {
-  const p = pathname.replace(/\/$/, '') || '/';
+  const p = tidy(pathname).replace(/\/$/, '') || '/';
   if (p === '/fa') return '/';
   return p.startsWith('/fa/') ? p.slice(3) : p;
 }

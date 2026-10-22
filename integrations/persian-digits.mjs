@@ -73,9 +73,10 @@ export default function persianDigits() {
       'astro:build:done': async ({ dir, logger }) => {
         const root = join(fileURLToPath(dir), 'fa');
         let files = [];
-        try { files = await walk(root); } catch { return; }
+        try { files = await walk(root); } catch { files = []; }
+        files.push(root + '.html');
         for (const f of files) {
-          const html = await readFile(f, 'utf8');
+          let html; try { html = await readFile(f, 'utf8'); } catch { continue; }
           await writeFile(f, convertHtml(html));
         }
         logger.info(`Persian digits applied to ${files.length} pages`);

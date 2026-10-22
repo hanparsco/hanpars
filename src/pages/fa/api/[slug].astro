@@ -2,12 +2,17 @@
 import Layout from '../../../layouts/Layout.astro';
 import MoleculePage from '../../../components/MoleculePage.astro';
 import molecules from '../../../data/molecules.json';
+import moleculesFa from '../../../data/molecules.fa.json';
+import { moleculeSeo } from '../../../data/seo-schema';
 export function getStaticPaths() {
   return Object.keys(molecules).map(slug => ({ params: { slug } }));
 }
 const { slug } = Astro.params;
-const mol = (molecules as Record<string, { name:string; cas:string; formula?:string }>)[slug!];
-const title = `${mol.name} | مواد مؤثره | هانیا پرسان دارو`;
-const description = `${mol.name}${mol.cas ? ` (CAS ${mol.cas})` : ''}: ساختار، شناسه‌ها و ویژگی‌ها، همراه با امکان ثبت درخواست تأمین.`;
+const lang = 'fa';
+const mol = (molecules as Record<string, any>)[slug!];
+const faDesc = (moleculesFa as Record<string, string>)[slug!] || '';
+const seo = moleculeSeo(slug!, mol, lang, faDesc);
+const base = lang === 'fa' ? '/fa' : '';
+const crumbs = [{ name: lang === 'fa' ? 'خانه' : 'Home', path: base || '/' }, { name: lang === 'fa' ? 'مواد مؤثرهٔ دارویی' : 'Active pharmaceutical ingredients', path: base + '/api' }, { name: seo.name, path: base + '/api/' + slug }];
 ---
-<Layout title={title} description={description}><MoleculePage slug={slug!} /></Layout>
+<Layout title={seo.title} description={seo.description} schema={seo.schema ? [seo.schema] : []} breadcrumbs={crumbs} image={mol.image || undefined}><MoleculePage slug={slug!} /></Layout>

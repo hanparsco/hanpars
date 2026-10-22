@@ -3,20 +3,32 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { langFromPath, stripLang, localePath, dir } from '../i18n';
 import '../styles/global.css';
-interface Props { title?: string; description?: string; noindex?: boolean; brand?: 'default' | 'regulatory'; }
+interface Props { title?: string; description?: string; noindex?: boolean; brand?: 'default' | 'regulatory'; schema?: Record<string, unknown>[]; breadcrumbs?: { name: string; path: string }[]; canonicalPath?: string; ogType?: string; image?: string; onlyLang?: 'en' | 'fa'; }
 const lang = langFromPath(Astro.url.pathname);
 const rtl = lang === 'fa';
 const defaults = {
   en: { title: 'Hanpars | Pharmaceutical sourcing and regulatory affairs, Tehran', description: 'Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients for Iran and prepares their IFDA registration. Based in Tehran.' },
-  fa: { title: 'هانیا پرسان دارو | تأمین دارو و امور رگولاتوری، تهران', description: 'هانیا پرسان دارو مواد مؤثره، داروهای ساخته‌شده، مواد جانبی و مواد اولیهٔ غذایی و مکمل را برای ایران وارد می‌کند و ثبت آن‌ها در سازمان غذا و دارو را انجام می‌دهد. مستقر در تهران.' },
+  fa: { title: 'هانیا پرسان دارو | واردات دارو، مواد اولیهٔ دارویی و امور رگولاتوری', description: 'هانیا پرسان دارو مواد مؤثره، داروهای ساخته‌شده، مواد جانبی و مواد اولیهٔ غذایی و مکمل را برای ایران وارد می‌کند و ثبت آن‌ها در سازمان غذا و دارو را انجام می‌دهد. مستقر در تهران.' },
 };
-const { title = defaults[lang].title, description = defaults[lang].description, noindex = false, brand = 'default' } = Astro.props;
+const { title = defaults[lang].title, description = defaults[lang].description, noindex = false, brand = 'default', schema = [], breadcrumbs = [], canonicalPath, ogType = 'website', image, onlyLang } = Astro.props;
 const site = Astro.site ?? new URL('https://hanpars.com');
-const socialImage = new URL('/brand/hanpars-logo-transparent.png', site).href;
+const socialImage = new URL(image || '/brand/hanpars-logo-transparent.png', site).href;
 const basePath = stripLang(Astro.url.pathname);
-const canonical = new URL(Astro.url.pathname.replace(/\/$/, '') || '/', site).href;
-const altEn = new URL(basePath, site).href;
-const altFa = new URL(localePath(basePath, 'fa'), site).href;
+const cleanPath = (p: string) => (p.replace(/\.html$/, '').replace(/\/index$/, '').replace(/\/$/, '') || '/');
+const canonical = new URL(cleanPath(canonicalPath || Astro.url.pathname), site).href;
+const siteName = rtl ? 'هانیا پرسان دارو' : 'Hanpars';
+const org = {
+  '@context': 'https://schema.org', '@type': 'Organization', '@id': `${site.origin}/#organization`,
+  name: rtl ? 'شرکت هانیا پرسان دارو' : 'Haniya Parsan Darou Co.', alternateName: ['Hanpars', 'HANPARS', 'هانیا پرسان دارو', 'Haniya Parsan Darou'],
+  url: site.origin, logo: new URL('/brand/hanpars-logo-transparent.png', site).href, email: 'contact@hanpars.com', telephone: '+98-21-8888-3325',
+  address: { '@type': 'PostalAddress', streetAddress: rtl ? 'بلوار آفریقا، خیابان ظفر، پلاک ۳۲۶، طبقهٔ سوم' : '3rd floor, No. 326, Zafar Street, Africa Boulevard', addressLocality: rtl ? 'تهران' : 'Tehran', postalCode: '1968734974', addressCountry: 'IR' },
+  contactPoint: [{ '@type': 'ContactPoint', telephone: '+98-21-8888-3325', email: 'contact@hanpars.com', contactType: 'sales', availableLanguage: ['fa', 'en'] }, { '@type': 'ContactPoint', email: 'RA@hanpars.com', contactType: 'regulatory affairs', availableLanguage: ['fa', 'en'] }],
+};
+const website = { '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${site.origin}/#website`, url: site.origin, name: siteName, inLanguage: rtl ? 'fa-IR' : 'en', publisher: { '@id': `${site.origin}/#organization` } };
+const crumbs = breadcrumbs.length ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: breadcrumbs.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: new URL(b.path, site).href })) } : null;
+const ldBlocks = [org, website, ...(crumbs ? [crumbs] : []), ...schema];
+const altEn = new URL(cleanPath(basePath), site).href;
+const altFa = new URL(cleanPath(localePath(cleanPath(basePath), 'fa')), site).href;
 ---
 <!doctype html>
 <html lang={lang} dir={dir(lang)}>
@@ -25,21 +37,24 @@ const altFa = new URL(localePath(basePath, 'fa'), site).href;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#141414" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:site_name" content="Hanpars" />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:locale" content={rtl ? 'fa_IR' : 'en_GB'} />
+    <meta property="og:locale:alternate" content={rtl ? 'en_GB' : 'fa_IR'} />
     <meta property="og:image" content={socialImage} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImage} />
-    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'} />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="en" href={altEn} />
-    <link rel="alternate" hreflang="fa" href={altFa} />
-    <link rel="alternate" hreflang="x-default" href={altEn} />
+    {!noindex && onlyLang !== 'fa' && <link rel="alternate" hreflang="en" href={altEn} />}
+    {!noindex && onlyLang !== 'en' && <link rel="alternate" hreflang="fa-IR" href={altFa} />}
+    {!noindex && <link rel="alternate" hreflang="x-default" href={altEn} />}
+    {ldBlocks.map(b => <script type="application/ld+json" set:html={JSON.stringify(b)} />)}
     <link rel="icon" href="/brand/hanpars-logo-transparent.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
