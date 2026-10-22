@@ -1,8 +1,0 @@
----
-/** Responsive photograph from public/photos (fetched by scripts/fetch-photos.sh). */
-interface Props { name:string; alt:string; class?:string; priority?:boolean; ratio?:string; }
-const { name, alt, class: className = '', priority = false, ratio } = Astro.props;
----
-<figure class:list={['photo', className]} style={ratio ? `aspect-ratio:${ratio}` : undefined}>
-  <img src={`/photos/${name}.jpg`} srcset={`/photos/${name}-900.jpg 900w, /photos/${name}.jpg 1800w`} sizes="(max-width: 860px) 100vw, 60vw" alt={alt} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : undefined} decoding="async" />
-</figure>
