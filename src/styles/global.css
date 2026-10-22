@@ -205,6 +205,9 @@ summary::-webkit-details-marker { display:none; }
 .footer-main { display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1.1fr; gap:48px; padding-bottom:64px; }
 .footer-intro p { margin:26px 0 0; color:var(--on-navy); font-size:16px; line-height:1.7; max-width:24em; }
 .footer-intro .brand { width:190px; }
+.brand.brand-regulatory { width:150px; } .brand.brand-regulatory .original-logo { width:150px; }
+@media(max-width:1000px) { .brand.brand-regulatory,.brand.brand-regulatory .original-logo { width:124px; } }
+@media(max-width:560px) { .brand.brand-regulatory,.brand.brand-regulatory .original-logo { width:118px; } }
 .footer-phone { display:inline-block; margin-top:18px; color:#fff; }
 .footer-group h3 { color:#fff; font-family:var(--display); font-size:12px; font-weight:600; margin:6px 0 20px; letter-spacing:.12em; text-transform:uppercase; }
 .footer-group>a { display:block; margin-bottom:12px; line-height:1.5; }

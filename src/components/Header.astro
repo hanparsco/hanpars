@@ -1,5 +1,7 @@
 ---
 import Brand from './Brand.astro';
+interface Props { brand?: 'default' | 'regulatory' }
+const { brand = 'default' } = Astro.props;
 import Icon from './Icon.astro';
 import { langFromPath, stripLang, localePath, t } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
@@ -10,7 +12,7 @@ const other = lang === 'fa' ? path : localePath(path, 'fa');
 ---
 <header class="site-header">
   <div class="container header-inner">
-    <Brand />
+    <Brand variant={brand} />
     <button class="menu-toggle" type="button" aria-label={s.openNav} aria-expanded="false" aria-controls="main-nav" data-label-open={s.openNav} data-label-close={s.closeNav}><Icon name="menu"/></button>
     <nav id="main-nav" class="main-nav" aria-label="Main navigation">
       <a class:list={['nav-link', { active: path === '/' || path === '/home' }]} href={L('/')}>{s.nav.home}</a>

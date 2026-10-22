@@ -18,6 +18,6 @@ const special = {
 const data = pages[page as PageKey];
 const seo = special[page as keyof typeof special] || {title:`${data?.title} | Hanpars`,description:data?.meta};
 ---
-<Layout title={seo.title} description={seo.description}>
+<Layout title={seo.title} description={seo.description} brand={page==='regulatory-affairs'?'regulatory':'default'}>
   {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:<StandardPage page={page as PageKey}/>}
 </Layout>

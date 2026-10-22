@@ -1,5 +1,7 @@
 ---
 import Brand from './Brand.astro';
+interface Props { brand?: 'default' | 'regulatory' }
+const { brand = 'default' } = Astro.props;
 import { langFromPath, localePath, t } from '../i18n';
 import { contactEmail } from '../data/site';
 const lang = langFromPath(Astro.url.pathname);
@@ -8,7 +10,7 @@ const L = (p: string) => localePath(p, lang);
 ---
 <footer class="site-footer">
   <div class="container footer-main">
-    <div class="footer-intro"><Brand /><p>{s.footer.intro}</p><a class="footer-phone" href="tel:+982188883325" dir="ltr">+98 21 8888 3325</a></div>
+    <div class="footer-intro"><Brand variant={brand} /><p>{s.footer.intro}</p><a class="footer-phone" href="tel:+982188883325" dir="ltr">+98 21 8888 3325</a></div>
     {s.groups.map(group => <div class="footer-group"><h3>{group.label}</h3>{group.items.map(item => <a href={L(item.href)}>{item.label}</a>)}</div>)}
     <div class="footer-group footer-connect"><h3>{s.footer.contact}</h3><a href={L('/contact-us-1')}>{s.footer.send}</a><a href={`mailto:${contactEmail}`} dir="ltr">{contactEmail}</a><a href={L('/blog-1')}>{s.footer.archive}</a></div>
   </div>
