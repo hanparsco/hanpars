@@ -69,7 +69,7 @@ export const ui = {
       lede: 'Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients, and registers them with the IFDA. Based in Tehran, with suppliers in Türkiye, China, India and Europe.',
       primary: 'Prepare a sourcing enquiry', secondary: 'Regulatory affairs',
       heroAlt: 'Hanpars medicines on the display shelves at the Tehran office',
-      entries: { fdf: 'Finished dosage forms', fdfText: (n: number, m: string) => `${n} registered medicines and ${m} reference products.`, api: 'Active ingredients', apiText: (m: string) => `${m} substances in the reference range.`, exc: 'Excipients', excText: '1,241 excipients, by function and grade.', nut: 'Nutrition ingredients', nutText: 'Vitamins, minerals, botanicals and more: 295 supplement ingredients.' },
+      entries: { fdf: 'Finished dosage forms', fdfText: (n: number, m: string) => `${n} registered URGENT medicines and ${m} reference products.`, api: 'Active ingredients', apiText: (m: string) => `${m} substances in the reference range.`, exc: 'Excipients', excText: '1,241 excipients, by function and grade.', nut: 'Nutrition ingredients', nutText: 'Vitamins, minerals, botanicals and more: 295 supplement ingredients.' },
       threeTitle: 'Three things we do, usually together.',
       threeLede: 'A supply agreement is only useful once the product is approved and on the shelf, so sourcing, registration and project coordination sit with the same people.',
       three: [

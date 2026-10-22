@@ -1,5 +1,5 @@
-const FA_DIGITS = document.documentElement.lang === 'fa';
-const num = (s: string | number) => { const t = String(s); return FA_DIGITS ? t.replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]) : t; };
+const siteFaDigits = document.documentElement.lang === 'fa';
+const siteNum = (s: string | number) => { const t = String(s); return siteFaDigits ? t.replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]) : t; };
 const nav = document.getElementById('main-nav');
 const menuButton = document.querySelector<HTMLButtonElement>('.menu-toggle');
 menuButton?.addEventListener('click', () => {
@@ -88,10 +88,10 @@ for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]
     const end = Math.min(start + pageSize, matching.length);
     rows.forEach(row => { row.hidden = true; });
     matching.slice(start, end).forEach(row => { row.hidden = false; });
-    if (count) count.textContent = num(matching.length.toLocaleString('en-US'));
+    if (count) count.textContent = siteNum(matching.length.toLocaleString('en-US'));
     if (suffix) suffix.textContent = (input?.value || statusFilter) ? (i18n.matching || 'matching your search') : (i18n.inList || 'in the list');
-    if (status) status.textContent = matching.length ? num((i18n.showing || 'Showing {a}–{b} of {n} entries').replace('{a}', String(start+1)).replace('{b}', String(end)).replace('{n}', matching.length.toLocaleString('en-US'))) : (i18n.none || 'No matching entries');
-    if (pageLabel) pageLabel.textContent = num(`${page+1} / ${Math.max(1,Math.ceil(matching.length/pageSize))}`);
+    if (status) status.textContent = matching.length ? siteNum((i18n.showing || 'Showing {a}–{b} of {n} entries').replace('{a}', String(start+1)).replace('{b}', String(end)).replace('{n}', matching.length.toLocaleString('en-US'))) : (i18n.none || 'No matching entries');
+    if (pageLabel) pageLabel.textContent = siteNum(`${page+1} / ${Math.max(1,Math.ceil(matching.length/pageSize))}`);
     if (empty) empty.hidden = matching.length !== 0;
     if (prev) prev.disabled = page === 0;
     if (next) next.disabled = end >= matching.length;
@@ -125,7 +125,7 @@ if (insightsSearch) {
     let matches = 0;
     cards.forEach(card => { const match = (card.dataset.search || '').includes(query); card.hidden = !match; if (match) matches++; });
     const count = document.getElementById('insights-count');
-    if (count) count.textContent = num((insightsSearch.dataset.countTpl || '{n} archived articles').replace('{n}', String(matches))) + (query ? (insightsSearch.dataset.matching || ' matching your search') : '');
+    if (count) count.textContent = siteNum((insightsSearch.dataset.countTpl || '{n} archived articles').replace('{n}', String(matches))) + (query ? (insightsSearch.dataset.matching || ' matching your search') : '');
     const empty = document.getElementById('insights-empty');
     if (empty) empty.hidden = matches !== 0;
   });
