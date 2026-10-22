@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T01:42:48Z",
+ "updated": "2026-10-22T01:44:31Z",
  "global": [
   {
    "title": "Alcon and OpenAI make acquisitions; Tezspire's latest Phase 3 win",
@@ -10,46 +10,21 @@
    "image": "/news/g-bc44f69e36.jpg"
   },
   {
-   "title": "STAT+: Pharmalittle: We’re reading about drug launch prices, an AstraZeneca AI deal, and more",
-   "url": "https://www.statnews.com/pharmalot/2026/10/20/drug-launch-prices-rose-astrazeneca-ai-deal/?utm_campaign=rss",
-   "source": "STAT",
-   "date": "2026-10-20",
-   "summary": "The median net price for newly launched medicines, when adjusted for inflation and manufacturer discounts, rose by 35% from 2022 to 2025.",
-   "image": "/news/g-ad2f304e1e.jpg"
+   "title": "FDA approves Cosette’s Evoxac oral solution for Sjögren’s disease",
+   "url": "https://www.pharmaceutical-technology.com/news/fda-cosettes-evoxac-sjogrens-disease/",
+   "source": "Pharmaceutical Technology",
+   "date": "2026-10-21",
+   "summary": "The FDA has granted approval for Cosette’s Evoxac oral solution to treat dry mouth symptoms in adults diagnosed with Sjögren’s disease.",
+   "image": "/news/g-1f85ce1ed5.jpg"
   },
   {
-   "title": "Cencora to buy American Oncology Network in $2.4 billion deal",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOU0t0eE9yUFVfcDRpdVY3aGtfTlpxV1VYdUltQjNMSUZaUFBtWU5MUWp6QXh1QmxHX1lnTm55X0FxX1c2azZvcFA4MkJLNktFRml0MnVQTlo5eTNHSmlCRmdLbXBiQngtTTZEcndhZi1jM2h1T1Q4T0VadDFVOGhTSmFBbUdwUTFwT21zRjdHd3RFNTd4RlFqSDV5VkJ1SXhQWkZ3T3puaHNEMnZmVGM4a21KZUhvMkFLdlNJaWxkcGh6a2ZHeGhCZQ?oc=5",
-   "source": "Reuters",
+   "title": "GSK, Ionis win US approval for first-of-its-kind hepatitis B drug",
+   "url": "https://www.biopharmadive.com/news/gsk-ionis-fda-approve-hibsago-chronic-hepatitis-b-bepirovirsen/833541/",
+   "source": "BioPharma Dive",
    "date": "2026-10-21",
-   "summary": "Cencora to buy American Oncology Network in $2.4 billion deal Reuters",
+   "summary": "Hibsago is viewed as a potential “functional cure” for chronic infections and an important part of the British drugmaker’s goal of reaching £40 billion in annual revenue by 2031.",
    "image": ""
   }
  ],
- "china": [
-  {
-   "title": "China biotech RiboX reveals first data of circular RNA therapies in people",
-   "url": "https://endpoints.news/china-biotech-ribox-reveals-first-data-of-circular-rna-therapies-in-people/",
-   "source": "Endpoints News",
-   "date": "2026-10-21",
-   "summary": "Biotech investors and pharma companies have poured billions into three Boston-region startups competing to develop a next-generation version of mRNA technology that could make for more durable and potent therapies. But now a relatively",
-   "image": "/news/c-3956629a47.jpg"
-  },
-  {
-   "title": "$1.1B China's First Large Generative AI-LNP Platform Overseas Export Deal Landed | Eli Lilly's Bulk Acquisition Logic Shift",
-   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE93RjZiNmxsWDlOV1RNWDNPa0RMT181OUNFS0kzNnpwZXhNcElTSXo1aWx3TGVxbFBRVEt4RGhFV01Xd2Z5amlFVGtLT29UamhJbVNj?oc=5",
-   "source": "36Kr",
-   "date": "2026-10-20",
-   "summary": "$1.1B China's First Large Generative AI-LNP Platform Overseas Export Deal Landed | Eli Lilly's Bulk Acquisition Logic Shift 36Kr",
-   "image": ""
-  },
-  {
-   "title": "China's Hansoh Pharma strikes drug deal with Roche worth over $15 billion",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcW14SThsMlZRc2JaU0w1R21WOHZxaWk5RGJwRkRkM0YxZFVUYll2ZXJXOGZuc1EtcFdqLWNJVmtoRzRvdVBTRUJUbVJVRVNYNzFwVkJNdUZ4Wjl4UXJBbUJEUDBKdmg3WEFKYXlqQUlkeng3YXZHdFlVcjRvaUExR3lzdTQ1QmR0NTFpd2RTN0pkWEtLN3ZwSmZpRkNfaGhVeFN4UDkzTHh6bWlvMEMxMjNzYWsxa1g0QnlyNFJBUDF0VXU2SWtYc2ZSTDZwU1V5SjNZcmNxY040T09TSmt3eWhmaknSAeQBQVVfeXFMT3FteEk4bDJWUXNiWlNMNUdtVjh2cWlpOURicEZEZDNGMWRVVGJZdmVyVzhmbnNRLXBXai1jSVZraEc0b3VQU0VCVG1SVUVTWDcxcFZCTXVGeFo5eFFyQW1CRFAwSnZoN1hBSmF5akFJZHp4N2F2R3RZVXI0b2lBMUd5c3U0NUJkdDUxaXdkUzdKZFhLSzd2cEpmaUZDX2hoVXhTeFA5M0x4em1pbzBDMTIzc2FrMWtYNEJ5cjRSQVAxdFV1NklrWHNmUkw2cFNVeUozWXJjcWNONE9PU0prd3loZmpJ?oc=5",
-   "source": "pharma.economictimes.indiatimes.com",
-   "date": "2026-10-21",
-   "summary": "China's Hansoh Pharma strikes drug deal with Roche worth over $15 billion pharma.economictimes.indiatimes.com",
-   "image": ""
-  }
- ]
+ "china": []
 }
