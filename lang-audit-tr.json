@@ -3,7 +3,7 @@
  "pages": 5500,
  "issues": {
   "description not in target language": {
-   "count": 143,
+   "count": 144,
    "sample": [
     "/tr/api/acalabrutinib-maleate :: akalabrutinib maleat (Acalabrutinib maleate), CAS 2242394-65-4, C30H27N7O6. Akalabrutinib maleat, an",
     "/tr/api/aripiprazole-lauroxil :: aripiprazol lauroksil (Aripiprazole lauroxil), CAS 1259305-29-7, C36H51Cl2N3O4. Aripiprazol lauroksi",
@@ -33,18 +33,18 @@
     "/tr/api/icosapent-ethyl :: ikosapent etil (Icosapent ethyl), CAS 86227-47-6, C22H34O2. Etil (5Z,8Z,11Z,14Z,17Z)-ikosapentaenoat",
     "/tr/api/lapatinib-ditosylate :: lapatinib ditosilat (Lapatinib ditosylate), CAS 388082-78-8, C43H44ClFN4O11S3. Lapatinib Ditosilat, ",
     "/tr/api/leflunomide :: leflunomid (Leflunomide), CAS 75706-12-6, C12H9F3N2O2. Leflunomid, 5-metil-1,2-oksazol-4-karboksilik",
-    "/tr/api/lidocaine :: lidokain (Lidocaine), CAS 137-58-6, C14H22N2O. Lidokain flaster, analjezik aktiviteye sahip sentetik",
     "/tr/api/lifitegrast :: lifitegrast (Lifitegrast), CAS 1025967-78-5, C29H24Cl2N2O7S. Lifitegrast,…",
     "/tr/api/loteprednol-etabonate :: loteprednol etabonat (Loteprednol etabonate), CAS 82034-46-6, C24H31ClO7. Loteprednol Etabonat, anti",
-    "/tr/api/mafenide-acetate :: mafenid asetat (Mafenide acetate), CAS 13009-99-9, C9H14N2O4S. Mafenid Asetat, topikal anti-enfektif",
     "/tr/api/medroxyprogesterone-acetate :: medroksiprogesteron asetat (Medroxyprogesterone acetate), CAS 71-58-9, C24H34O4. Medroksiprogesteron",
     "/tr/api/nafcillin-sodium :: nafsilin sodyum (Nafcillin sodium), CAS 985-16-0, C21H21N2NaO5S. Nafsilin sodyum anhidr, antibakteri",
     "/tr/api/norepinephrine-bitartrate :: norepinefrin bitartrat (Norepinephrine bitartrate), CAS 108341-18-0, C12H19NO10. Norepinefrin bitart",
-    "/tr/api/oxamniquine :: oksamnikin (Oxamniquine), CAS 21738-42-1, C14H21N3O3. {2-[(izopropilamino)metil]-7-nitro-1,2,3,4-tet",
     "/tr/api/paliperidone-palmitate :: paliperidon palmitat (Paliperidone palmitate), CAS 199739-10-1, C39H57FN4O4.…",
-    "/tr/api/pemetrexed-disodium :: pemetreksed disodyum (Pemetrexed disodium), CAS 150399-23-8, C20H19N5Na2O6. Pemetreksed disodyum,…",
+    "/tr/api/pemetrexed-disodium :: pemetreksed disodyum (Pemetrexed disodium), CAS 150399-23-8, C20H19N5Na2O6. Pemetrekset disodyum,…",
     "/tr/api/piroxicam :: piroksikam (Piroxicam), CAS 36322-90-4, C15H13N3O4S. Piroksikam, 4-hidroksi-2-metil-2H-1,2-benzotiya",
-    "/tr/api/regorafenib :: regorafenib (Regorafenib), CAS 755037-03-7, C21H15ClF4N4O3. Regorafenib,…"
+    "/tr/api/potassium-citrate :: potasyum sitrat (Potassium citrate), CAS 6100-05-6, C6H7K3O8. Potasyum sitrat (tripotasyum sitrat ol",
+    "/tr/api/regorafenib :: regorafenib (Regorafenib), CAS 755037-03-7, C21H15ClF4N4O3. Regorafenib,…",
+    "/tr/api/remdesivir :: remdesivir (Remdesivir), CAS 1809249-37-3, C27H35N6O8P. Remdesivir,…",
+    "/tr/api/rivaroxaban :: rivaroksaban (Rivaroxaban), CAS 366789-02-8, C19H18ClN3O5S. Rivaroksaban, 5-klorotiyofen-2-karboksil"
    ]
   },
   "title not in target language": {
@@ -75,18 +75,19 @@
   }
  },
  "englishLines": {
-  "distinct": 1004,
+  "distinct": 1010,
   "top": [
    "11001× Etkin maddeler (API) :: /tr/about-us, /tr/about-us, /tr/api/abacavir-sulfate",
    "10999× contact@hanpars.com :: /tr/about-us, /tr/about-us, /tr/api/abacavir-sulfate",
    "5500× 1.582 maddelik referans yelpazesi :: /tr/about-us, /tr/api/abacavir-sulfate, /tr/api/abaloparatide",
    "1584× API referans yelpazesi :: /tr/api/abacavir-sulfate, /tr/api/abaloparatide, /tr/api/abemaciclib",
-   "42× Seyreltici / dolgu maddesi :: /tr/excipient, /tr/excipient, /tr/excipient",
+   "27× Seyreltici / dolgu maddesi :: /tr/excipient, /tr/excipient, /tr/excipient",
+   "12× Film kaplama sistemi :: /tr/excipient, /tr/excipient, /tr/excipient",
    "11× budesonid / formoterol fumarat :: /tr/fdf/budesonide-formoterol-fumarate-16503, /tr/fdf/budesonide-formoterol-fumarate-16506, /tr/fdf/budesonide-formoterol-fumarate-21368",
    "9× salmeterol / flutikazon propiyonat :: /tr/fdf/salmeterol-fluticasone-propionate-18046, /tr/fdf/salmeterol-fluticasone-propionate-20184, /tr/fdf/salmeterol-fluticasone-propionate-20185",
    "8× parasetamol / kafein / ibuprofen :: /tr/fdf/acetaminophen-caffeine-ibuprofen-21742, /tr/fdf/acetaminophen-caffeine-ibuprofen-52399, /tr/fdf/acetaminophen-caffeine-ibuprofen-53025",
    "8× Gebelik: Bkz. UYARILAR. :: /tr/fdf/cytarabine-1454, /tr/fdf/cytarabine-375, /tr/fdf/cytarabine-50464",
-   "7× Sistemik fungal enfeksiyonlar. :: /tr/fdf/dexamethasone-17013, /tr/fdf/dexamethasone-398, /tr/fdf/dexamethasone-400",
+   "6× Antioksidan / indirgeyici ajan :: /tr/excipient, /tr/excipient, /tr/excipient",
    "6× parasetamol / klorfeniramin / dekstrometorfan / fenilefrin :: /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50341, /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50378, /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-51915",
    "6× parasetamol / kodein fosfat :: /tr/fdf/acetaminophen-codeine-phosphate-2243, /tr/fdf/acetaminophen-codeine-phosphate-52312, /tr/fdf/acetaminophen-codeine-phosphate-52500",
    "6× parasetamol / difenhidramin / fenilefrin :: /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-21832, /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-52273, /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-52274",
@@ -98,7 +99,6 @@
    "4× amlodipin / bisoprolol fumarat :: /tr/fdf/amlodipine-bisoprolol-fumarate-52829, /tr/fdf/amlodipine-bisoprolol-fumarate-52830, /tr/fdf/amlodipine-bisoprolol-fumarate-52831",
    "4× amlodipin / valsartan / hidroklorotiyazid :: /tr/fdf/amlodipine-valsartan-hydrochlorothiazide-50964, /tr/fdf/amlodipine-valsartan-hydrochlorothiazide-50965, /tr/fdf/amlodipine-valsartan-hydrochlorothiazide-50966",
    "4× Gebelik: Gebelik kategorisi D (bkz. UYARILAR). :: /tr/fdf/cisplatin-11867, /tr/fdf/cisplatin-11868, /tr/fdf/cisplatin-301",
-   "4× Dapson Jel %5, akne vulgarisin topikal tedavisinde endikedir. :: /tr/fdf/dapsone-1456, /tr/fdf/dapsone-383, /tr/fdf/dapsone-51371",
    "4× germanyum (68Ge) / galyum (68Ga) :: /tr/fdf/germanium-68-ge-gallium-68-ga-51249, /tr/fdf/germanium-68-ge-gallium-68-ga-53042, /tr/fdf/germanium-68-ge-gallium-68-ga-53043",
    "4× hemodiyaliz konsantresi II (asidik) :: /tr/fdf/hemodialysis-concentrated-ii-acidic-53569, /tr/fdf/hemodialysis-concentrated-ii-acidic-53659, /tr/fdf/hemodialysis-concentrated-ii-acidic-53754",
    "4× levodopa / karbidopa / entakapon :: /tr/fdf/levodopa-carbidopa-entacapone-12112, /tr/fdf/levodopa-carbidopa-entacapone-12482, /tr/fdf/levodopa-carbidopa-entacapone-19232",
@@ -108,6 +108,7 @@
    "3× demir (III) karboksimaltoz :: /tr/api/ferric-carboxymaltose, /tr/fdf/ferric-carboxymaltose-16954, /tr/fdf/ferric-carboxymaltose-53351",
    "3× tenofovir disoproksil fumarat :: /tr/api/tenofovir-disoproxil-fumarate, /tr/fdf/tenofovir-disoproxil-fumarate-13524, /tr/fdf/tenofovir-disoproxil-fumarate-52153",
    "3× RA@hanpars.com :: /tr/contact-us-1, /tr/regulatory-affairs, /tr/regulatory-affairs",
+   "3× Asitlendirici, aroma verici :: /tr/excipient, /tr/excipient, /tr/excipient",
    "3× amino asit / lipid / glukoz (1-2) :: /tr/fdf/amino-acid-lipid-glucose-1-2-19614, /tr/fdf/amino-acid-lipid-glucose-1-2-51054, /tr/fdf/amino-acid-lipid-glucose-1-2-51055",
    "3× amino asit / lipid / glukoz (2-2) :: /tr/fdf/amino-acid-lipid-glucose-2-2-51064, /tr/fdf/amino-acid-lipid-glucose-2-2-51065, /tr/fdf/amino-acid-lipid-glucose-2-2-51066",
    "3× amino asit / lipid / glukoz (3-2) :: /tr/fdf/amino-acid-lipid-glucose-3-2-51061, /tr/fdf/amino-acid-lipid-glucose-3-2-51062, /tr/fdf/amino-acid-lipid-glucose-3-2-51063",
@@ -115,6 +116,7 @@
    "3× Gebelik (bkz. UYARILAR). :: /tr/fdf/carboplatin-13830, /tr/fdf/carboplatin-214, /tr/fdf/carboplatin-215",
    "3× insan koryonik gonadotropini :: /tr/fdf/chorionic-gonadotrophin-human-284, /tr/fdf/chorionic-gonadotrophin-human-285, /tr/fdf/chorionic-gonadotrophin-human-286",
    "3× kodein fosfat / guaifenezin :: /tr/fdf/codeine-phosphate-guaifenesin-52185, /tr/fdf/codeine-phosphate-guaifenesin-53046, /tr/fdf/codeine-phosphate-guaifenesin-53047",
+   "3× Sistemik fungal enfeksiyonlar. :: /tr/fdf/dexamethasone-17013, /tr/fdf/dexamethasone-400, /tr/fdf/dexamethasone-52870",
    "3× dekstrometorfan / guaifenezin / fenilefrin :: /tr/fdf/dextromethorphan-guaifenesin-phenylephrine-52352, /tr/fdf/dextromethorphan-guaifenesin-phenylephrine-52877, /tr/fdf/dextromethorphan-guaifenesin-phenylephrine-53393",
    "3× Enbrel, sepsisi olan hastalarda kontrendikedir. :: /tr/fdf/etanercept-4008, /tr/fdf/etanercept-52294, /tr/fdf/etanercept-8170",
    "3× demir (III) derizomaltoz :: /tr/fdf/ferric-derisomaltose-21444, /tr/fdf/ferric-derisomaltose-53458, /tr/fdf/ferric-derisomaltose-53721",
@@ -128,9 +130,6 @@
    "2× monobazik sodyum fosfat :: /tr/api/sodium-phosphate-monobasic, /tr/excipient",
    "2× ziprasidon mesilat trihidrat :: /tr/api/ziprasidone-mesilate-trihydrate, /tr/api/ziprasidone-mesylate-trihydrate",
    "2× setil esterleri mumu :: /tr/excipient, /tr/excipient",
-   "2× Film kaplama sistemi :: /tr/excipient, /tr/excipient",
-   "2× Asitlendirici, aroma verici :: /tr/excipient, /tr/excipient",
-   "2× Antioksidan / indirgeyici ajan :: /tr/excipient, /tr/excipient",
    "2× parasetamol / kafein / klorfeniramin / C vitamini :: /tr/fdf/acetaminophen-caffeine-chlorpheniramine-vitamin-c-52636, /tr/fdf",
    "2× parasetamol / kafein / kodein fosfat :: /tr/fdf/acetaminophen-caffeine-codeine-phosphate-52159, /tr/fdf",
    "2× parasetamol / klorfeniramin / dekstrometorfan / fenilefrin / askorbik asit :: /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-53455, /tr/fdf",
@@ -147,6 +146,7 @@
    "2× beklometazon dipropiyonat / formoterol fumarat :: /tr/fdf/beclomethasone-dipropionate-formoterol-fumarate-52189, /tr/fdf/beclomethasone-dipropionate-formoterol-fumarate-52192",
    "2× Gebelik: Gebelik “Kategori D” (bkz. UYARILAR.) :: /tr/fdf/bleomycin-170, /tr/fdf/bleomycin-52471",
    "2× klindamisin fosfat / tretinoin :: /tr/fdf/clindamycin-phosphate-tretinoin-11269, /tr/fdf/clindamycin-phosphate-tretinoin-51995",
+   "2× Dapson Jel %5, akne vulgarisin topikal tedavisinde endikedir. :: /tr/fdf/dapsone-51371, /tr/fdf/dapsone-52409",
    "2× galyum (67Ga) sitrat :: /tr/fdf/gallium-sup67-supga-citrate-51078, /tr/fdf/gallium-sup67-supga-citrate-51079",
    "2× Haemophilus influenzae tip b :: /tr/fdf/haemophilus-influenzae-type-b-19959, /tr/fdf/haemophilus-influenzae-type-b-52106",
    "2× lutesyum (177Lu) dotatat :: /tr/fdf/lutetium-177lu-dotatate-52643, /tr/fdf/lutetium-177lu-dotatate-53594",
@@ -284,6 +284,7 @@
    "1× Anhydrous trisodium citrate :: /tr/excipient",
    "1× susuz trisodyum sitrat :: /tr/excipient",
    "1× Apricot kernel oil PEG-6 esters :: /tr/excipient",
+   "1× Lokal anestezik (analjezik) :: /tr/excipient",
    "1× Tampon, antimikrobiyal (oftalmik) :: /tr/excipient",
    "1× Brown iron oxide :: /tr/excipient",
    "1× kahverengi demir oksit :: /tr/excipient",
@@ -325,8 +326,7 @@
    "1× Cellulose acetate CA-320S :: /tr/excipient",
    "1× Cellulose acetate CA-398-10 :: /tr/excipient",
    "1× Cellulose acetate phthalate :: /tr/excipient",
-   "1× Cellulose microcrystalline/carboxymethylcellulose sodium :: /tr/excipient",
-   "1× Cellulose, microcrystalline and carboxymethylcellulose sodium (Avicel® RC/CL) :: /tr/excipient"
+   "1× Cellulose microcrystalline/carboxymethylcellulose sodium :: /tr/excipient"
   ]
  }
 }
