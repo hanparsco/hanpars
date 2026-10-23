@@ -1,17 +1,17 @@
 $ astro build
-04:50:13 [content] Syncing content
-04:50:13 [content] Synced content
-04:50:13 [types] Generated 39ms
-04:50:13 [build] output: "static"
-04:50:13 [build] mode: "static"
-04:50:13 [build] directory: /home/runner/work/hanpars/hanpars/dist/
-04:50:13 [build] Collecting build info...
-04:50:13 [build] ✓ Completed in 53ms.
-04:50:13 [build] Building static entrypoints...
-04:50:14 [ERROR] [vite] [31m✗[39m Build failed in 861ms
-Expected ")" but found "`<string, string>)[lang]</string,>`"
+21:42:50 [content] Syncing content
+21:42:50 [content] Synced content
+21:42:50 [types] Generated 54ms
+21:42:50 [build] output: "static"
+21:42:50 [build] mode: "static"
+21:42:50 [build] directory: /home/runner/work/hanpars/hanpars/dist/
+21:42:50 [build] Collecting build info...
+21:42:50 [build] ✓ Completed in 77ms.
+21:42:50 [build] Building static entrypoints...
+21:42:52 [ERROR] [vite] [31m✗[39m Build failed in 1.21s
+Expected ")" but found "`<string, string>)[lang]</string,>\n    \n    <div class=\"copy cn-copy\"> <span class=\"persian-name cn-name\" lang=\"fa\">شرکت هانیا پرسان دارو</span> ${"
   Location:
-    /home/runner/work/hanpars/hanpars/src/components/MoleculePage.astro:54:2081
+    /home/runner/work/hanpars/hanpars/src/components/Home.astro:60:3605
   Stack trace:
     at failureErrorWithLog (/home/runner/work/hanpars/hanpars/node_modules/.pnpm/esbuild@0.25.12/node_modules/esbuild/lib/main.js:1467:15)
     at responseCallbacks.<computed> (/home/runner/work/hanpars/hanpars/node_modules/.pnpm/esbuild@0.25.12/node_modules/esbuild/lib/main.js:603:9)
