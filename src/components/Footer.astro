@@ -1,19 +1,66 @@
 ---
-import Brand from './Brand.astro';
+import Icon from './Icon.astro';
 interface Props { brand?: 'default' | 'regulatory' }
 const { brand = 'default' } = Astro.props;
-import { langFromPath, localePath, t } from '../i18n';
+import { langFromPath, localePath, t, dir } from '../i18n';
 import { contactEmail, raEmail } from '../data/site';
 const email = brand === 'regulatory' ? raEmail : contactEmail;
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
 const L = (p: string) => localePath(p, lang);
+const f = ({
+  en: { name: 'Haniya Parsan Darou Co.', reach: 'Get in touch', phone: 'Telephone', email: 'Email', office: 'Head office', hoursLabel: 'Office hours', offices: 'Our offices', hq: 'Head office', partner: 'Partner office', cities: ['Tehran', 'Istanbul', 'Shanghai'], countries: ['Iran', 'Türkiye', 'China'], top: 'Back to top', enquire: 'Send an enquiry' },
+  fa: { name: 'شرکت هانیا پرسان دارو', reach: 'ارتباط با ما', phone: 'تلفن', email: 'ایمیل', office: 'دفتر مرکزی', hoursLabel: 'ساعت کاری', offices: 'دفاتر ما', hq: 'دفتر مرکزی', partner: 'دفتر شریک', cities: ['تهران', 'استانبول', 'شانگهای'], countries: ['ایران', 'ترکیه', 'چین'], top: 'بازگشت به بالا', enquire: 'ثبت درخواست' },
+  zh: { name: 'Haniya Parsan Darou Co.（Hanpars）', reach: '联系我们', phone: '电话', email: '电子邮件', office: '总部', hoursLabel: '办公时间', offices: '我们的办公室', hq: '总部', partner: '合作伙伴办公室', cities: ['德黑兰', '伊斯坦布尔', '上海'], countries: ['伊朗', '土耳其', '中国'], top: '返回顶部', enquire: '提交询价' },
+  tr: { name: 'Haniya Parsan Darou Co.', reach: 'Bize ulaşın', phone: 'Telefon', email: 'E-posta', office: 'Genel merkez', hoursLabel: 'Çalışma saatleri', offices: 'Ofislerimiz', hq: 'Genel merkez', partner: 'Ortak ofis', cities: ['Tahran', 'İstanbul', 'Şanghay'], countries: ['İran', 'Türkiye', 'Çin'], top: 'Başa dön', enquire: 'Talep gönderin' },
+} as const)[lang];
+const langs = [
+  { l: 'en', label: 'English', href: '/' }, { l: 'fa', label: 'فارسی', href: '/fa' },
+  { l: 'zh', label: '中文', href: '/zh' }, { l: 'tr', label: 'Türkçe', href: '/tr' },
+] as const;
 ---
-<footer class="site-footer">
-  <div class="container footer-main">
-    <div class="footer-intro"><Brand variant={brand} /><p>{s.footer.intro}</p><a class="footer-phone" href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></div>
-    {s.groups.map(group => <div class="footer-group"><h3>{group.label}</h3>{group.items.map(item => <a href={L(item.href)}>{item.label}</a>)}</div>)}
-    <div class="footer-group footer-connect"><h3>{s.footer.contact}</h3><a href={L('/contact-us-1')}>{s.footer.send}</a><a href={`mailto:${email}`} dir="ltr">{email}</a></div>
+<footer class="site-footer" dir={dir(lang)}>
+  <img class="ft-watermark" src={brand === 'regulatory' ? '/brand/hanpars-regulatory-light.png' : '/brand/hanpars-logo-transparent.png'} alt="" aria-hidden="true" width="222" height="123" loading="lazy" decoding="async" />
+  <div class="container ft-inner">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <p class="ft-name">{f.name}</p>
+        <p>{s.footer.intro}</p>
+        <a class="button button-light ft-cta" href={L('/contact-us-1')}>{f.enquire}<Icon name="arrow" size={18} class="ft-arrow" /></a>
+      </div>
+      <div class="ft-contact" aria-label={f.reach}>
+        <h2 class="ft-label">{f.reach}</h2>
+        <a class="ft-card" href="tel:+982188883325"><span class="ft-ico"><Icon name="phone" size={18} /></span><span><small>{f.phone}</small><strong dir="ltr" data-fa-digits>+98 21 8888 3325</strong></span></a>
+        <a class="ft-card" href={`mailto:${email}`}><span class="ft-ico"><Icon name="mail" size={18} /></span><span><small>{f.email}</small><strong dir="ltr" lang="en">{email}</strong></span></a>
+        <div class="ft-card"><span class="ft-ico"><Icon name="pin" size={18} /></span><span><small>{f.office}</small><strong>{s.footer.address}</strong></span></div>
+        <div class="ft-card"><span class="ft-ico"><Icon name="clock" size={18} /></span><span><small>{f.hoursLabel}</small><strong>{s.cta.hours}</strong></span></div>
+      </div>
+    </div>
+
+    <nav class="ft-links" aria-label="Footer">
+      {s.groups.map(group => (
+        <details class="ft-group" open>
+          <summary><h3>{group.label}</h3><Icon name="down" size={18} class="ft-chev" /></summary>
+          <ul>{group.items.map(item => <li><a href={L(item.href)}>{item.label}</a></li>)}</ul>
+        </details>
+      ))}
+    </nav>
+
+    <div class="ft-offices">
+      <span class="ft-label">{f.offices}</span>
+      <ul>{f.cities.map((c, i) => <li><strong>{c}</strong><span>{f.countries[i]} · {i === 0 ? f.hq : f.partner}</span></li>)}</ul>
+    </div>
+
+    <div class="ft-bottom">
+      <span>© {new Date().getFullYear()} {s.footer.rights}</span>
+      <ul class="ft-langs">{langs.map(x => <li><a href={x.href} lang={x.l} hreflang={x.l} aria-current={x.l === lang ? 'true' : undefined}>{x.label}</a></li>)}</ul>
+      <a class="ft-top-link" href="#">{f.top}<Icon name="down" size={16} class="ft-up" /></a>
+    </div>
   </div>
-  <div class="container footer-bottom"><span>© {new Date().getFullYear()} {s.footer.rights}</span><span>{s.footer.address}</span></div>
 </footer>
+<script>
+  // Link groups start open (no-JS and desktop); on phones they collapse into an accordion.
+  const mq = window.matchMedia('(max-width:700px)');
+  const sync = () => document.querySelectorAll<HTMLDetailsElement>('.ft-group').forEach(d => { d.open = !mq.matches; });
+  sync(); mq.addEventListener('change', sync);
+</script>
