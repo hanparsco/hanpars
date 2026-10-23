@@ -1020,3 +1020,10 @@ html[lang=fa] .imp-stats dt { font-size:clamp(18px,1.8vw,22px); }
 html[lang=fa] .imp-top .imp-stats dt { font-size:clamp(22px,2.2vw,28px); }
 html[lang=fa] .imp-bv { direction:rtl; unicode-bidi:embed; }
 @media(max-width:900px) { .imp-top .imp-stats { grid-template-columns:1fr 1fr; } .imp-top .imp-stats div:first-child { grid-column:1 / -1; } }
+/* Import activity: canvas 3-D bubble scene */
+.imp-bub3d { padding:0; overflow:hidden; background:#05080f; border-color:#1d2a40; box-shadow:0 30px 60px -30px #05080fb0; }
+.imp-canvas { display:block; width:100%; aspect-ratio:1 / 1; touch-action:pan-y; cursor:grab; }
+.imp-bub3d .imp-tip { background:#ffffffee; color:var(--black); box-shadow:0 8px 24px #0006; }
+.imp-hint { position:absolute; inset-inline-start:14px; bottom:12px; font-size:12px; color:#a9bdd6; letter-spacing:.02em; pointer-events:none; }
+.imp-sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; margin:0; padding:0; }
+@media(max-width:520px) { .imp-bub3d { padding:0; } }
