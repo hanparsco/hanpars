@@ -1,29 +1,29 @@
 {
- "updated": "2026-10-23T12:26:18Z",
+ "updated": "2026-10-23T23:27:26Z",
  "global": [
   {
-   "title": "Pharmaceutical Executive Daily: FDA Approves Hibsago",
-   "url": "https://www.pharmexec.com/view/daily-fda-approves-hibsago",
-   "source": "Pharmaceutical Executive",
-   "date": "2026-10-21",
-   "summary": "A new ICER and West Health report finds median drug launch prices climbed to $257,000, the FDA approves GSK’s Hibsago as the first functional-cure therapy for chronic hepatitis B, and CSL names Deborah Waterhouse as CEO and managing director.",
-   "image": "/news/g-34b7d4cd82.jpg"
-  },
-  {
-   "title": "FDA rebukes Baxter over 'repeated' production stumbles in new warning letter",
-   "url": "https://www.fiercepharma.com/manufacturing/fda-rebukes-baxter-warning-letter-ongoing-production-problems",
+   "title": "GSK's double FDA win, Roche's $15B deal and the rise of point-of-care marketing",
+   "url": "https://www.fiercepharma.com/pharma/gsks-double-fda-win-roches-15b-deal-and-rise-point-care-marketing",
    "source": "Fierce Pharma",
-   "date": "2026-10-22",
-   "summary": "The FDA rebuked Baxter in a lengthy warning letter that outlined a series of production violations that led to a trio of recalls earlier this year.",
-   "image": "/news/g-6746a80cb8.jpg"
+   "date": "2026-10-23",
+   "summary": "This week on \"The Top Line,\" we cover GSK's pair of FDA approvals, Roche's $15 billion ADC deal and the rise of point-of-care pharma marketing.",
+   "image": "/news/g-11677d4212.jpg"
   },
   {
-   "title": "Recon: FDA approves GSK hepatitis B drug; EQT to buy molecular testing firm Qiagen for $10.8B",
-   "url": "https://www.raps.org/resource/recon-fda-approves-gsk-hepatitis-b-drug-eqt-to-buy-molecular-testing-firm-qiagen-for-10-8b.html",
-   "source": "RAPS",
-   "date": "2026-10-22",
-   "summary": "Recon: FDA approves GSK hepatitis B drug; EQT to buy molecular testing firm Qiagen for $10.8B RAPS",
-   "image": "/news/g-9bcc43ca9c.jpg"
+   "title": "FDA Approves Subcutaneous Induction for Skyrizi in Crohn's Disease",
+   "url": "https://www.pharmexec.com/view/fda-approves-subcutaneous-induction-skyrizi-crohns-disease",
+   "source": "Pharmaceutical Executive",
+   "date": "2026-10-23",
+   "summary": "FDA approved an at-home induction option for risankizumab-rzaa in adults with moderate-to-severe Crohn's disease, based on the phase 3 AFFIRM trial.",
+   "image": "/news/g-7fd57dbcc3.jpg"
+  },
+  {
+   "title": "Pharmaceutical Supply Chains and Drug Shortages",
+   "url": "https://www.kingsresearch.com/blog/pharmaceutical-supply-chain-resilience",
+   "source": "Kings Research",
+   "date": "2026-10-23",
+   "summary": "Pharmaceutical Supply Chains and Drug Shortages Kings Research",
+   "image": "/news/g-1609d9e3e4.jpg"
   }
  ],
  "china": [
@@ -36,20 +36,20 @@
    "image": "/news/c-4aedaac8e5.jpg"
   },
   {
-   "title": "Harbour BioMed Receives China NMPA Approval of Batoclimab Injection (Subcutaneous Injection) for the Treatment of Generalized Myasthenia Gravis",
-   "url": "https://www.manilatimes.net/2026/10/23/tmt-newswire/pr-newswire/harbour-biomed-receives-china-nmpa-approval-of-batoclimab-injection-subcutaneous-injection-for-the-treatment-of-generalized-myasthenia-gravis/2452447",
-   "source": "The Manila Times",
+   "title": "ESTEVE CDMO invests $80m in new China API manufacturing site",
+   "url": "https://manufacturingchemist.com/esteve-cdmo-invests-80m-new-china-api-manufacturing",
+   "source": "Manufacturing Chemist",
    "date": "2026-10-23",
-   "summary": "Harbour BioMed Receives China NMPA Approval of Batoclimab Injection (Subcutaneous Injection) for the Treatment of Generalized Myasthenia Gravis The Manila Times",
-   "image": "/news/c-96b6b1a517.jpg"
+   "summary": "ESTEVE CDMO invests $80m in new China API manufacturing site Manufacturing Chemist",
+   "image": ""
   },
   {
-   "title": "ESTEVE CDMO Invests Over $80 Million to Expand Pharmaceutical Manufacturing Capabilities in China",
-   "url": "https://biopharmaapac.com/news/48/8594/esteve-cdmo-invests-over-80-million-to-expand-pharmaceutical-manufacturing-capabilities-in-china.html",
-   "source": "BioPharma APAC",
+   "title": "Egypt and China explore new pharmaceutical manufacturing and technology partnerships",
+   "url": "https://fastcompanyme.com/news/egypt-and-china-explore-new-pharmaceutical-manufacturing-and-technology-partnerships/",
+   "source": "Fast Company Middle East",
    "date": "2026-10-22",
-   "summary": "ESTEVE CDMO Invests Over $80 Million to Expand Pharmaceutical Manufacturing Capabilities in China BioPharma APAC",
-   "image": "/news/c-7e20ffb89c.jpg"
+   "summary": "Egypt and China explore new pharmaceutical manufacturing and technology partnerships Fast Company Middle East",
+   "image": "/news/c-2c6c728fe2.jpg"
   }
  ]
 }
