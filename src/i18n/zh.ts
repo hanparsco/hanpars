@@ -29,7 +29,7 @@ export const zh: UI = {
   footer: {
     intro: 'Haniya Parsan Darou Co. 为伊朗市场进口药用原料和成品药，并为其注册提供支持。办事处设于德黑兰、伊斯坦布尔、杭州和镇江。',
     contact: '联系方式', send: '发送询盘', news: '今日医药资讯', archive: '洞察存档',
-    rights: 'Hanpars Pharmaceutical Trading Co. 版权所有。',
+    rights: 'Haniya Parsan Darou Co. 版权所有。',
     address: '德黑兰非洲大道扎法尔街 326 号 3 层',
   },
   cta: {

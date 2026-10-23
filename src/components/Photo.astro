@@ -2,7 +2,10 @@
 /** Responsive photograph from public/photos (fetched by scripts/fetch-photos.sh). */
 interface Props { name:string; alt:string; class?:string; priority?:boolean; ratio?:string; }
 const { name, alt, class: className = '', priority = false, ratio } = Astro.props;
+// intrinsic sizes (prevents layout shift while the image loads)
+const DIMS: Record<string, [number, number]> = {"container-ship": [1800, 1200], "lab-instrument": [1800, 1200], "blister-packs": [1800, 1259], "hero-products": [1800, 1005], "fdf-portfolio": [1800, 1440], "tehran-alborz": [1800, 1200], "hero-cleanroom": [1800, 1200], "lab-pipette": [1800, 2700], "products-shelf-full": [1560, 2400], "dossier-signing": [1800, 1201]};
+const [w, h] = DIMS[name] || [1800, 1200];
 ---
 <figure class:list={['photo', className]} style={ratio ? `aspect-ratio:${ratio}` : undefined}>
-  <img src={`/photos/${name}.jpg`} srcset={`/photos/${name}-900.jpg 900w, /photos/${name}.jpg 1800w`} sizes="(max-width: 860px) 100vw, 60vw" alt={alt} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : undefined} decoding="async" />
+  <img src={`/photos/${name}.jpg`} srcset={`/photos/${name}-900.jpg 900w, /photos/${name}.jpg 1800w`} sizes="(max-width: 860px) 100vw, 60vw" alt={alt} width={w} height={h} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : undefined} decoding="async" />
 </figure>

@@ -22,7 +22,7 @@ export const portfolioTr = {
   forms: {
     'Powder for injection': 'Enjeksiyonluk çözelti için toz', 'Capsule': 'Kapsül', 'Metered-dose inhaler': 'Ölçülü dozlu inhaler', 'Gel': 'Jel', 'Tablet': 'Tablet', 'Solution for injection': 'Enjeksiyonluk çözelti', 'Extended-release Tablet': 'Uzatılmış salımlı tablet',
   } as Record<string, string>,
-  origins: { 'India': 'Hindistan', 'China': 'Çin', 'Türkiye': 'Türkiye', 'Origin on request': 'Menşe bilgisi talep üzerine' } as Record<string, string>,
+  origins: { 'India': 'Hindistan', 'China': 'Çin', 'Türkiye': 'Türkiye', 'Origin on request': 'Talep üzerine' } as Record<string, string>,
   manufacturer: {
     title: 'Üreticiler: ürünlerinizi tek bir iş ortağıyla İran’a taşıyın',
     description: 'Yetkilendirme Mektubu’ndan (LoA) eczane rafına kadar: HANPARS, IFDA dosyasını hazırlar ve sunar, IRC kodunu alır, döviz tahsisini ve ithalatı yönetir, ürünü ulusal dağıtım şirketleri aracılığıyla piyasaya sunar. Türkiye ve Avrupa’daki tedarikçi ağımızı aktif olarak genişletiyoruz.',

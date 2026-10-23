@@ -14,7 +14,7 @@ for hi in range(0xB0, 0xD8):
     for lo in range(0xA1, 0xFF):
         try: level1.append(bytes([hi, lo]).decode('gb2312'))
         except UnicodeDecodeError: pass
-base = [chr(c) for c in range(0x20, 0x7F)] + [chr(c) for c in range(0xA0, 0x180)] + list('–—‘’“”…·•→←✓°±×µ®™€')
+base = [chr(c) for c in range(0x20, 0x7F)] + [chr(c) for c in range(0xA0, 0x180)] + list('–—‘’“”…·•→←✓°±×µ®™€～（）：；，。、？！《》ﬂ')
 order, seen = [], set()
 for ch in base + used + level1:
     if ch not in seen: seen.add(ch); order.append(ch)

@@ -835,3 +835,14 @@ html[lang=fa] .catalogue-table .table-request { font-family:var(--sans); }
 .addr-sep { display:inline-block; margin-inline:.45em; }
 .menu-toggle .mt-close { display:none; } .menu-toggle[aria-expanded=true] .mt-open { display:none; } .menu-toggle[aria-expanded=true] .mt-close { display:block; }
 .content-split .link-list-solo { grid-column:1 / -1; }
+
+/* Chinese: phrase-aware line breaking in headings; CJK-friendly small labels; Latin-only faces not used for CJK text */
+html[lang=zh-Hans] :is(h1,h2,h3,.lede) { word-break:auto-phrase; line-break:strict; }
+html[lang=zh-Hans] .hero h1,html[lang=zh-Hans] .invite h2 { max-width:15em; }
+html[lang=zh-Hans] :is(.kicker,.footer-group h3,.ft-group h3,.ft-label,.mol-keyfacts dt,.prod-boxed strong,.brief-legend,.portfolio-kicker,.step:before,.ra-tier-num,.exc-num,.catalogue-table th) { letter-spacing:.04em; font-size:13px; text-transform:none; }
+html[lang=zh-Hans] :is(.news-card h3,.news-summary,.exc-top) { font-family:var(--sans); }
+html[lang=zh-Hans] .news-card h3 { font-family:var(--display); }
+/* dark sections: readable lede */
+.section-navy .lede { color:var(--on-navy-muted); }
+.form-field label .opt { white-space:nowrap; flex:none; }
+.search-input input { text-overflow:ellipsis; }

@@ -29,7 +29,7 @@ export const tr: UI = {
     footer: {
       intro: 'Haniya Parsan Darou Co., İran pazarı için ilaç hammaddelerini ve bitmiş ilaçları ithal eder ve bunların ruhsatlandırılmasını destekler. Tahran, İstanbul, Hangzhou ve Zhenjiang’da ofisleri vardır.',
       contact: 'İletişim', send: 'Talep gönderin', news: 'Bugün ilaç haberleri', archive: 'Görüşler arşivi',
-      rights: 'Hanpars Pharmaceutical Trading Co. Tüm hakları saklıdır.',
+      rights: 'Haniya Parsan Darou Co. Tüm hakları saklıdır.',
       address: 'Zafar Cad. No: 326, Kat: 3, Afrika Bulvarı, Tahran',
     },
     cta: {
@@ -73,7 +73,7 @@ export const tr: UI = {
     catalogue: {
       fdfTitle: 'Bitmiş ürün referans listesi', apiTitle: 'API referans yelpazesi', excTitle: 'Yardımcı madde referans listesi',
       entries: 'kayıt', inList: 'listede', matching: 'aramanızla eşleşiyor',
-      searchFdf: 'Ada, dozaj gücüne veya koda göre arayın', searchApi: 'Maddeye veya CAS numarasına göre arayın', searchExc: 'Ada, işleve veya CAS numarasına göre arayın',
+      searchFdf: 'Ad, doz veya kod ara', searchApi: 'Madde veya CAS no. ara', searchExc: 'Ad, işlev veya CAS no. ara',
       product: 'Ürün', substance: 'Madde', ingredient: 'Yardımcı madde', function: 'İşlev', filterBy: 'Kategori', filterByClass: 'Terapötik sınıf', showAll: 'Tümünü göster', code: 'Kod', cas: 'CAS numarası', enquiry: 'Talep', enquire: 'Talep oluştur',
       noteExc: 'Talep üzerine tedarik edebildiğimiz yardımcı maddeler ve formülasyon materyalleri; kayıtlı olduğu durumlarda temel işlevi ve CAS numarasıyla birlikte, farmakope monograflarından (USP-NF, Ph. Eur.) ve kendi çalışma listemizden derlenmiştir. Kullanıma hazır kaplama sistemleri, aromalar, renklendiriciler ve kapsül kabukları aileler halinde listelenmiş olup talep başına belirlenir. Stok veya kesin temin edilebilirlik beyanı değildir.',
       empty: 'Listede bununla eşleşen bir kayıt yok. Başka bir ad veya kod deneyin ya da', askDirect: 'doğrudan bize sorun',
@@ -84,7 +84,7 @@ export const tr: UI = {
     },
     portfolio: {
       title: 'Hanpars portföyü', discuss: 'Bir ürünü görüşün', skip: 'Tam referans listesine geç',
-      registered: 'Ruhsatlı ilaçlar', available: 'İran’da temin edilebilir', launching: 'Piyasaya çıkış aşamasında', areas: 'Terapötik alanlar',
+      registered: 'Ruhsatlı ilaçlar', available: 'İran’da temin edilebilir', launching: 'Lansman aşamasında', areas: 'Terapötik alanlar',
       browse: 'Terapötik alana göre göz atın', browseNote: (d: string) => `Dozaj formları, dozaj güçleri ve WHO ATC kodları ruhsatta belirtildiği şekildedir. Durum: ${d}.`,
       search: 'Moleküle, ATC koduna veya dozaj gücüne göre arayın', cards: 'Kartlar', table: 'Tablo', allAreas: 'Tüm alanlar',
       count: (n: number, a: number) => `${a} terapötik alanda ${n} molekül`, countFiltered: ' filtrelerinizle eşleşiyor', clear: 'Filtreleri temizle',
@@ -93,7 +93,7 @@ export const tr: UI = {
       emptyTitle: 'Eşleşen ürün yok', emptyText: 'Başka bir molekül, ATC kodu veya terapötik alan deneyin.',
       statusNote: (d: string) => `Portföy durumu, ${d} itibarıyla IFDA ruhsatlandırmasını ve ithalat planlamasını yansıtır. Dozaj formları ve dozaj güçleri IFDA tarafından ruhsatlandırıldığı şekildedir; üretici bilgileri ve sertifikalar, talep üzerine sağlık kuruluşlarına ve iş ortaklarına sunulur. Talepte bulunurken güncel temin durumunu ve piyasaya çıkış zamanlamasını teyit edin.`,
       represent: 'İran’da temsiliyeti görüşün', emailRa: 'Regülasyon ekibine e-posta gönderin',
-      statusAvailable: 'İran’da temin edilebilir', statusLaunching: 'Piyasaya çıkış aşamasında',
+      statusAvailable: 'İran’da temin edilebilir', statusLaunching: 'Lansman aşamasında',
     },
     contact: {
       title: 'Ne aradığınızı bize söyleyin.', category: 'İletişim',

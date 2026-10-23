@@ -8,7 +8,7 @@ import molecules from '../data/molecules.json';
 import portfolio from '../data/portfolio.json';
 import { parseFdf, fdfSlug, infoKey, prettyName, slugify, sameIngredientIndex, labelUsable } from '../data/fdf-parse';
 import { langFromPath, localePath, t, htmlLang, dir } from '../i18n';
-import { locName, catalogueName, formL } from '../data/locale';
+import { locName, catalogueName, formL, ROUTE_L } from '../data/locale';
 interface Props { entry: { name: string; code: string } }
 const { entry } = Astro.props;
 const lang = langFromPath(Astro.url.pathname);
@@ -36,6 +36,11 @@ const L1 = (x: { fa: boolean }) => x.fa ? { lang: htmlLang[lang], dir: dir(lang)
 const title = prettyName(p.ingredient);
 const formLabel = prettyName(p.form);
 const routeLabel = p.route ? prettyName(p.route) : '';
+// form and route in the page language (English data otherwise)
+const fL = (form: string, route?: string) => (lang === 'en' ? '' : formL[lang](form, route || '')) || prettyName(form);
+const rL = (route?: string) => !route ? '' : (lang === 'en' ? '' : ROUTE_L[lang][route.toUpperCase()]) || prettyName(route);
+const locLang = lang === 'en' ? {} : { lang: htmlLang[lang], dir: dir(lang) };
+const formShown = fL(p.form, p.route); const routeShown = rL(p.route);
 const sameIngredient = (sameIngredientIndex(fdf as { name: string; code: string }[]).get(infoKey(p.ingredient)) || []).filter(e => e.code !== entry.code).slice(0, 40);
 const mols = molecules as Record<string, { cid?: number | null; name: string; cas?: string }>;
 const molLinks = p.ingredients.map(i => { const k = slugify(i); const hit = Object.keys(mols).find(sl => mols[sl].cid && (sl === k || sl.startsWith(k + '-') || k.startsWith(sl))); return hit ? { name: prettyName(i), href: L(`/api/${hit}`), cas: mols[hit].cas || '' } : null; }).filter(Boolean) as { name: string; href: string; cas: string }[];
@@ -60,7 +65,7 @@ const seoNote = ({
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={L('/')}>{s.breadcrumbHome}</a><span aria-hidden="true">/</span><a href={L('/fdf#fdf-reference')}>{m.list}</a><span aria-hidden="true">/</span><span lang="en" dir="ltr">{title}</span></nav>
     <p class="kicker kicker-light">{m.kicker}{inPortfolio ? ` · ${m.registered}` : ''}</p>
     <h1>{locTitle ? <><span lang={htmlLang[lang]} dir={dir(lang)}>{locTitle}</span><span class="h1-en" lang="en" dir="ltr">{title}</span></> : <span lang="en" dir="ltr">{title}</span>}</h1>
-    <p class="lede" lang="en" dir="ltr">{formLabel}{routeLabel ? ` · ${routeLabel}` : ''}{p.strength ? ` · ${p.strength}` : ''}{p.pack ? ` · ${p.pack}` : ''}</p>
+    <p class="lede" {...locLang}>{formShown}{routeShown ? ` · ${routeShown}` : ''}{p.strength && <> · <bdi lang="en" dir="ltr">{p.strength}</bdi></>}{p.pack && <> · <bdi lang="en" dir="ltr">{p.pack}</bdi></>}</p>
     <dl class="mol-keyfacts">
       <div><dt>{m.code}</dt><dd lang="en" dir="ltr">{entry.code}</dd></div>
       {p.salt && <div><dt>{m.salt}</dt><dd lang="en" dir="ltr">{prettyName(p.salt)}</dd></div>}
@@ -89,8 +94,8 @@ const seoNote = ({
   <aside class="mol-aside">
     <h3>{m.thisEntry}</h3>
     <dl class="mol-props">
-      <div><dt>{m.form}</dt><dd dir="ltr" lang="en">{formLabel}</dd></div>
-      {routeLabel && <div><dt>{m.route}</dt><dd dir="ltr" lang="en">{routeLabel}</dd></div>}
+      <div><dt>{m.form}</dt><dd {...locLang}>{formShown}</dd></div>
+      {routeShown && <div><dt>{m.route}</dt><dd {...locLang}>{routeShown}</dd></div>}
       {p.strength && <div><dt>{m.strength}</dt><dd dir="ltr" lang="en">{p.strength}</dd></div>}
       {p.pack && <div><dt>{m.pack}</dt><dd dir="ltr" lang="en">{p.pack}</dd></div>}
       <div><dt>{m.code}</dt><dd dir="ltr" lang="en">{entry.code}</dd></div>
@@ -104,7 +109,7 @@ const seoNote = ({
 
 {sameIngredient.length > 0 && <section class="section section-paper section-tight"><div class="container">
   <div class="section-head"><h2>{m.otherForms}</h2></div>
-  <ul class="link-list" lang="en" dir="ltr">{sameIngredient.map(e => { const q = parseFdf(e.name); return <li><a href={L(`/fdf/${fdfSlug(e)}`)}>{prettyName(q.form)}{q.route ? ` · ${prettyName(q.route)}` : ''}{q.strength ? ` · ${unit(q.strength)}` : ''}{q.pack ? ` · ${unit(q.pack)}` : ''}<small>{e.code}</small></a></li>; })}</ul>
+  <ul class="link-list" {...locLang}>{sameIngredient.map(e => { const q = parseFdf(e.name); return <li><a href={L(`/fdf/${fdfSlug(e)}`)}>{fL(q.form, q.route)}{q.route ? ` · ${rL(q.route)}` : ''}{q.strength && <> · <bdi lang="en" dir="ltr">{unit(q.strength)}</bdi></>}{q.pack && <> · <bdi lang="en" dir="ltr">{unit(q.pack)}</bdi></>}<small dir="ltr">{e.code}</small></a></li>; })}</ul>
 </div></section>}
 
 <section class="section-tight"><div class="container"><p class="reference-note">{m.note}</p></div></section>
