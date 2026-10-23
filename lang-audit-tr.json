@@ -79,7 +79,6 @@
   "top": [
    "11001× Etkin maddeler (API) :: /tr/about-us, /tr/about-us, /tr/api/abacavir-sulfate",
    "5500× 1.582 maddelik referans yelpazesi :: /tr/about-us, /tr/api/abacavir-sulfate, /tr/api/abaloparatide",
-   "5500× contact@hanpars.com :: /tr/about-us, /tr/api/abacavir-sulfate, /tr/api/abaloparatide",
    "1584× API referans yelpazesi :: /tr/api/abacavir-sulfate, /tr/api/abaloparatide, /tr/api/abemaciclib",
    "392× burun spreyi · nazal ·   · :: /tr/fdf/azelastine-hydrochloride-21088, /tr/fdf/azelastine-hydrochloride-21088, /tr/fdf/azelastine-hydrochloride-21088",
    "194× gastro-rezistan tablet · oral · :: /tr/fdf/acamprosate-9245, /tr/fdf/asa-acetylsalicylic-acid-106, /tr/fdf/asa-acetylsalicylic-acid-106",
@@ -179,7 +178,7 @@
    "2× Potasyum dihidrojen fosfat :: /tr/api/monobasic-potassium-phosphate, /tr/fdf/phosphate-potassium-monobasic-998",
    "2× Susuz sitagliptin fosfat :: /tr/api/sitagliptin-phosphate-anhydrate, /tr/api/sitagliptin-phosphate-anhydrous",
    "2× Ziprasidon mesilat trihidrat :: /tr/api/ziprasidone-mesilate-trihydrate, /tr/api/ziprasidone-mesylate-trihydrate",
-   "2× RA@hanpars.com :: /tr/contact-us-1, /tr/regulatory-affairs",
+   "2× contact@hanpars.com :: /tr/contact-us-1, /tr/contact-us-1",
    "2× setil esterleri mumu :: /tr/excipient, /tr/excipient",
    "2× Parasetamol / kafein / asetilsalisilik asit :: /tr/fdf/acetaminophen-caffeine-asa-1, /tr/fdf/acetaminophen-caffeine-asa-17416",
    "2× Asetilsalisilik asit / klopidogrel :: /tr/fdf/acetylsalicylic-acid-clopidogrel-53292, /tr/fdf/acetylsalicylic-acid-clopidogrel-53293",
@@ -324,6 +323,7 @@
    "1× H — Sistemik hormonal preparatlar :: /tr/api",
    "1× ALBUTEROL SALBUTAMOL SULPHATE :: /tr/api",
    "1× FDF CDMO projesi :: /tr/contact-us-1",
+   "1× RA@hanpars.com :: /tr/contact-us-1",
    "1× Zafar Caddesi No: 326, Kat: 3 :: /tr/contact-us-1",
    "1× sitrik asit / sodyum sitrat · sodyum hidroksit · hidroklorik asit · sodyum fosfat (mono/di :: /tr/excipient",
    "1× 2-(4-styryl-3-sulfophenol)-6-methoxybenzotriazole :: /tr/excipient"
