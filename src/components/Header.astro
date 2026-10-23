@@ -29,7 +29,7 @@ const arrow = dir(lang) === 'rtl' ? '←' : '→';
 <header class="site-header">
   <div class="container header-inner">
     <Brand variant={brand} />
-    <button class="menu-toggle" type="button" aria-label={s.openNav} aria-expanded="false" aria-controls="main-nav" data-label-open={s.openNav} data-label-close={s.closeNav}><Icon name="menu"/></button>
+    <button class="menu-toggle" type="button" aria-label={s.openNav} aria-expanded="false" aria-controls="main-nav" data-label-open={s.openNav} data-label-close={s.closeNav}><Icon name="menu" class="mt-open"/><Icon name="close" class="mt-close"/></button>
     <nav id="main-nav" class="main-nav" aria-label="Main navigation">
       <a class:list={['nav-link', { active: path === '/' || path === '/home' }]} href={L('/')}>{s.nav.home}</a>
       {s.groups.map((group, gi) => <details class="nav-dropdown">

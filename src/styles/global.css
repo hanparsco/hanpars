@@ -833,3 +833,4 @@ html[lang=fa] .catalogue-table .table-request { font-family:var(--sans); }
 }
 .num .num-unit { font-size:.42em; font-weight:500; letter-spacing:0; margin-inline-start:.25em; opacity:.85; }
 .addr-sep { display:inline-block; margin-inline:.45em; }
+.menu-toggle .mt-close { display:none; } .menu-toggle[aria-expanded=true] .mt-open { display:none; } .menu-toggle[aria-expanded=true] .mt-close { display:block; }
