@@ -5,7 +5,7 @@ export const portfolioZh = {
   trust: [
     { title: '获IFDA许可的进口商', description: '清单中所有产品的上市许可持有人；注册资料、IRC许可和药物警戒均由公司内部完成。' },
     { title: '国家战略药品储备供应商', description: '依据国家储备计划，为IFDA供应纳洛酮、米索前列醇、氢化可的松、依托咪酯和造影剂的合同供应商。' },
-    { title: '全国分销', description: '通过Pakhsh Razi、Darougostar Tooba和Dey Darou Omid覆盖医院和药店。' },
+    { title: '全国分销', description: '通过伊朗主要医药分销商覆盖医院和药店。' },
     { title: '经审计的供应链', description: '货源均持有GMP证书，每批货物均留存批检验报告，生物制品和肝素采用冷链运输。' },
   ],
   groups: {

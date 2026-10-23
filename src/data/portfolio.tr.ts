@@ -5,7 +5,7 @@ export const portfolioTr = {
   trust: [
     { title: 'IFDA lisanslı ithalatçı', description: 'Listelenen tüm ürünlerin ruhsat sahibi; dosya, IRC lisanslaması ve farmakovijilans şirket içinde yürütülür.' },
     { title: 'Stratejik İlaç Rezervi tedarikçisi', description: 'Nalokson, misoprostol, hidrokortizon, etomidat ve kontrast maddeler için ulusal rezerv programı kapsamında IFDA’nın sözleşmeli tedarikçisi.' },
-    { title: 'Ülke çapında dağıtım', description: 'Pakhsh Razi, Darougostar Tooba ve Dey Darou Omid aracılığıyla hastanelere ve eczanelere ulaşan ülke çapında dağıtım.' },
+    { title: 'Ülke çapında dağıtım', description: 'İran’ın başlıca ilaç dağıtım şirketleri aracılığıyla hastanelere ve eczanelere ulaşan ülke çapında dağıtım.' },
     { title: 'Denetlenen tedarik zinciri', description: 'GMP sertifikalı kaynaklar, her sevkiyat için dosyada tutulan seri analiz sertifikaları, biyolojik ürünler ve heparin için soğuk zincir.' },
   ],
   groups: {

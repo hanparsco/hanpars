@@ -55,7 +55,7 @@ export const tr: UI = {
       ],
       portfolioTitle: 'Bitmiş Ürün Formu Portföyü',
       figRegistered: 'IFDA’da ruhsatlı ilaç', figAvailable: 'İran’da temin edilebilir', figLaunching: 'piyasaya çıkış aşamasında',
-      portfolioText: 'GMP sertifikalı üreticilerden kontrast maddeler, anestezikler, antibiyotikler, hormonlar ve biyolojik ürünler; Pakhsh Razi, Darougostar Tooba ve Dey Darou Omid aracılığıyla ülke genelinde dağıtılır. Hanpars, ulusal Stratejik İlaç Rezervi’nin sözleşmeli tedarikçisidir.',
+      portfolioText: 'Uluslararası GMP sertifikasına sahip üreticilerden kontrast maddeler, anestezikler, antibiyotikler, hormonlar, aşılar ve biyolojik ürünler; İran’ın başlıca ilaç dağıtım şirketleri aracılığıyla ülke genelinde dağıtılır. Hanpars, ulusal Stratejik İlaç Rezervi’nin sözleşmeli tedarikçisidir.',
       portfolioPrimary: 'Portföyü görün', portfolioSecondary: 'Ürünlerinizi İran’da temsil edelim',
       portfolioNote: (d: string) => `${d} itibarıyla durum; talepte bulunurken temin durumunu teyit edin.`,
       companyTitle: 'Kendi ruhsatlarına sahip, Tahran merkezli bir ticaret şirketi.',

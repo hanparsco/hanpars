@@ -55,7 +55,7 @@ export const zh: UI = {
     ],
     portfolioTitle: '制剂成品组合',
     figRegistered: '种药品已在 IFDA 注册', figAvailable: '种已在伊朗供应', figLaunching: '种即将上市',
-    portfolioText: '造影剂、麻醉药、抗生素、激素和生物制品，均来自通过 GMP 认证的生产商，并通过 Pakhsh Razi、Darougostar Tooba 和 Dey Darou Omid 在全国范围内分销。Hanpars 是国家战略药品储备的合同供应商。',
+    portfolioText: '造影剂、麻醉药、抗生素、激素、各类疫苗和生物制品，均来自持有国际 GMP 认证的生产商，并通过伊朗主要医药分销商在全国范围内分销。Hanpars 是国家战略药品储备的合同供应商。',
     portfolioPrimary: '查看产品组合', portfolioSecondary: '在伊朗代理您的产品',
     portfolioNote: (d: string) => `状态截至 ${d}；询盘时请确认供应情况。`,
     companyTitle: '德黑兰的贸易公司，自持各项许可。',
