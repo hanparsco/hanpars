@@ -115,21 +115,21 @@ const rtl = lang === 'fa';
     const font = getComputedStyle(document.body).fontFamily;
     const items = data.b.map((b, i) => ({
       ...b, rgb: rgb(b.c),
-      X: (b.x - 280) / 250, Y: (b.y - 281) / 250, Z: Math.sin(i * 2.399) * .75 * (1 - Math.min(b.r, 100) / 160),
+      X: (b.x - 280) / 250, Y: (b.y - 281) / 250, Z: Math.sin(i * 2.399) * 1.05 * (1 - Math.min(b.r, 100) / 190),
       R: b.r / 250, ph: i * 1.7, w: .35 + (i % 7) * .06, a: .035 + (i % 4) * .012,
       trail: [] as [number, number][], sx: 0, sy: 0, sr: 0, d: 0,
     }));
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let W = 0, H = 0, dpr = 1, yaw = .5, pitch = -.32, vYaw = .0016, drag: null | { x: number; y: number; yaw: number; pitch: number } = null;
+    let W = 0, H = 0, dpr = 1, yaw = .5, pitch = -.42, vYaw = .0016, drag: null | { x: number; y: number; yaw: number; pitch: number } = null;
     let running = false, raf = 0, frame = 0, t0 = performance.now(), hoverIt: any = null;
     const size = () => { dpr = Math.min(devicePixelRatio || 1, 2); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
-    const D = 3.4;
+    const D = 3.9;
     const proj = (x: number, y: number, z: number) => {
       const cy = Math.cos(yaw), sy = Math.sin(yaw), cp = Math.cos(pitch), sp = Math.sin(pitch);
       const x1 = x * cy - z * sy, z1 = x * sy + z * cy;
       const y2 = y * cp - z1 * sp, z2 = y * sp + z1 * cp;
-      const f = Math.min(W, H) * 1.18 / (D + z2);
-      return [W / 2 + x1 * f, H * .5 + y2 * f, f, z2] as const;
+      const f = Math.min(W, H) * .98 / (D + z2);
+      return [W / 2 + x1 * f, H * .47 + y2 * f, f, z2] as const;
     };
     const line = (a: readonly number[], b: readonly number[], alpha: number, w = 1) => { ctx.strokeStyle = `rgba(150,200,255,${alpha})`; ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); };
     const draw = (now: number) => {
@@ -144,7 +144,7 @@ const rtl = lang === 'fa';
       for (let i = 0; i <= N; i++) {
         const u = -G + (2 * G * i) / N;
         const a1 = proj(u, FY, -G), a2 = proj(u, FY, G), b1 = proj(-G, FY, u), b2 = proj(G, FY, u);
-        const edge = i === 0 || i === N ? .22 : .08;
+        const edge = i === 0 || i === N ? .3 : .12;
         line(a1, a2, edge); line(b1, b2, edge);
       }
       const o = proj(-G, FY, -G);
