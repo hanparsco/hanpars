@@ -1,6 +1,14 @@
 {
- "updated": "2026-10-23T07:29:11Z",
+ "updated": "2026-10-23T12:24:37Z",
  "global": [
+  {
+   "title": "FDA rebukes Baxter over 'repeated' production stumbles in new warning letter",
+   "url": "https://www.fiercepharma.com/manufacturing/fda-rebukes-baxter-warning-letter-ongoing-production-problems",
+   "source": "Fierce Pharma",
+   "date": "2026-10-22",
+   "summary": "The FDA rebuked Baxter in a lengthy warning letter that outlined a series of production violations that led to a trio of recalls earlier this year.",
+   "image": "/news/g-6746a80cb8.jpg"
+  },
   {
    "title": "Recon: FDA approves GSK hepatitis B drug; EQT to buy molecular testing firm Qiagen for $10.8B",
    "url": "https://www.raps.org/resource/recon-fda-approves-gsk-hepatitis-b-drug-eqt-to-buy-molecular-testing-firm-qiagen-for-10-8b.html",
@@ -10,20 +18,12 @@
    "image": "/news/g-9bcc43ca9c.jpg"
   },
   {
-   "title": "FDA Grants Ultomiris Accelerated Approval in the U.S.",
-   "url": "https://www.pharmexec.com/view/daily-fda-grants-ultomiris-accelerated-approval-us-",
-   "source": "Pharmaceutical Executive",
-   "date": "2026-10-22",
-   "summary": "FDA Grants Ultomiris Accelerated Approval in the U.S. | PharmExec Pharmaceutical Executive",
-   "image": "/news/g-ec8aed7493.jpg"
-  },
-  {
-   "title": "Ravulizumab's IgA Nephropathy Approval Expands Large-Molecule Biologic Demand",
-   "url": "https://www.pharmtech.com/view/ravulizumab-iga-nephropathy-approval-expands-large-molecule-biologic-demand",
-   "source": "PharmTech.com",
-   "date": "2026-10-22",
-   "summary": "Ravulizumab's IgA Nephropathy Approval Expands Large-Molecule Biologic Demand PharmTech.com",
-   "image": "/news/g-3b193e6360.jpg"
+   "title": "Influenza vaccine shortage hits Lahore markets following insulin supply crisis",
+   "url": "https://dailytimes.com.pk/1571215/influenza-vaccine-shortage-hits-lahore-markets-following-insulin-supply-crisis/",
+   "source": "Daily Times",
+   "date": "2026-10-23",
+   "summary": "Influenza vaccine shortage hits Lahore markets following insulin supply crisis Daily Times",
+   "image": "/news/g-c1c30ffd32.jpg"
   }
  ],
  "china": [
@@ -36,20 +36,20 @@
    "image": "/news/c-4aedaac8e5.jpg"
   },
   {
+   "title": "Harbour BioMed Receives China NMPA Approval of Batoclimab Injection (Subcutaneous Injection) for the Treatment of Generalized Myasthenia Gravis",
+   "url": "https://www.manilatimes.net/2026/10/23/tmt-newswire/pr-newswire/harbour-biomed-receives-china-nmpa-approval-of-batoclimab-injection-subcutaneous-injection-for-the-treatment-of-generalized-myasthenia-gravis/2452447",
+   "source": "The Manila Times",
+   "date": "2026-10-23",
+   "summary": "Harbour BioMed Receives China NMPA Approval of Batoclimab Injection (Subcutaneous Injection) for the Treatment of Generalized Myasthenia Gravis The Manila Times",
+   "image": "/news/c-96b6b1a517.jpg"
+  },
+  {
    "title": "ESTEVE CDMO Invests Over $80 Million to Expand Pharmaceutical Manufacturing Capabilities in China",
    "url": "https://biopharmaapac.com/news/48/8594/esteve-cdmo-invests-over-80-million-to-expand-pharmaceutical-manufacturing-capabilities-in-china.html",
    "source": "BioPharma APAC",
    "date": "2026-10-22",
    "summary": "ESTEVE CDMO Invests Over $80 Million to Expand Pharmaceutical Manufacturing Capabilities in China BioPharma APAC",
    "image": "/news/c-7e20ffb89c.jpg"
-  },
-  {
-   "title": "Egypt and China explore new pharmaceutical manufacturing and technology partnerships",
-   "url": "https://fastcompanyme.com/news/egypt-and-china-explore-new-pharmaceutical-manufacturing-and-technology-partnerships/",
-   "source": "Fast Company Middle East",
-   "date": "2026-10-22",
-   "summary": "Egypt and China explore new pharmaceutical manufacturing and technology partnerships Fast Company Middle East",
-   "image": "/news/c-2c6c728fe2.jpg"
   }
  ]
 }
