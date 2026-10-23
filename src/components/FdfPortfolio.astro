@@ -33,7 +33,7 @@ const i18n = JSON.stringify({ count: s.count(987654,123456).replace('987654','{n
   </div>
   <div class="portfolio-body">
     <div class="container">
-      <div class="portfolio-browse-heading"><h3>{s.browse}</h3><p>{s.browseNote(snapshot)}</p></div>
+      <div class="portfolio-browse-heading"><h3>{s.browse}</h3></div>
       <div class="portfolio-controls">
         <div class="portfolio-filter-row"><label class="search-input portfolio-search"><Icon name="search" size={18}/><input type="search" placeholder={s.search} aria-label={s.search} data-portfolio-search autocomplete="off"/></label><div class="portfolio-view" role="group" aria-label="View"><button type="button" data-portfolio-view="cards" aria-pressed="true" aria-controls="portfolio-cards">{s.cards}</button><button type="button" data-portfolio-view="table" aria-pressed="false" aria-controls="portfolio-table">{s.table}</button></div></div>
         <div class="portfolio-area-filters" role="group" aria-label={s.browse}><button type="button" data-portfolio-area="all" aria-pressed="true">{s.allAreas} <span>{portfolio.counts.total}</span></button>{portfolio.groups.map(group=><button type="button" data-portfolio-area={group.id} aria-pressed="false">{G(group).title}<span>{group.products.length}</span></button>)}</div>
