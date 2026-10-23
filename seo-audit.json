@@ -9,7 +9,7 @@
   },
   {
    "name": "title > 65 chars",
-   "count": 1548,
+   "count": 1666,
    "sample": [
     "/api/amifampridine-phosphate (66) Amifampridine phosphate (CAS 446254-47-3) | API supplier | Hanpars",
     "/api/eletriptan-hydrobromide (66) Eletriptan hydrobromide (CAS 177834-92-3) | API supplier | Hanpars",
@@ -67,7 +67,7 @@
     "/tr/news (183)",
     "/tr/nutrition (200)",
     "/tr/regulatory-affairs (183)",
-    "/tr (200)"
+    "/tr (216)"
    ]
   },
   {
@@ -93,17 +93,17 @@
   },
   {
    "name": "duplicate titles",
-   "count": 73,
+   "count": 104,
    "sample": [
     "2× آمفوتریسین B تزریقی لیوفیلیزه 50 mg | هانیا پرسان دارو :: /fa/fdf/amphotericin-b-52653, /fa/fdf/amphotericin-b-79",
     "2× پلاسمای تازهٔ منجمد تزریقی | تأمین و واردات | هانیا پرسان دارو :: /fa/fdf/blood-plasma-fresh-frozen-52962, /fa/fdf/plasma-fresh-frozen-51566",
     "2× feksofenadin hidroklorür | Etkin madde tedariki | Hanpars :: /tr/api/fexofenadine-hcl-a, /tr/api/fexofenadine-hcl-l",
     "2× ivermektin | Etkin madde tedariki | Hanpars :: /tr/api/ivermectin-fur, /tr/api/ivermectin",
-    "2× parasetamol / kafein / ibuprofen kapsül 325 mg/40 mg/200 mg :: /tr/fdf/acetaminophen-caffeine-ibuprofen-21742, /tr/fdf/acetaminophen-caffeine-ibuprofen-8979",
     "3× parasetamol / klorfeniramin / dekstrometorfan / fenilefrin şurup 160 mg/1 mg/5 mg/2.5 mg/5mL :: /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50341, /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50378, /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-51915",
     "3× parasetamol / difenhidramin / fenilefrin şurup 160 mg/12.5 mg/2.5 mg/5mL :: /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-21832, /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-52273, /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-52274",
     "3× parasetamol / guaifenezin / fenilefrin şurup 125 mg/50 mg/2.5 mg/5mL :: /tr/fdf/acetaminophen-guaifenesin-phenylephrine-22078, /tr/fdf/acetaminophen-guaifenesin-phenylephrine-52271, /tr/fdf/acetaminophen-guaifenesin-phenylephrine-52665",
-    "2× alüminyum hidroksit / magnezyum hidroksit / simetikon süspansiyon 225 mg/200 mg/25 mg/5mL :: /tr/fdf/aluminium-hydroxide-magnesium-hydroxide-simethicone-49, /tr/fdf/aluminium-hydroxide-magnesium-hydroxide-simethicone-51880",
+    "2× aflibersept infüzyonluk çözelti için konsantre 25 mg/1mL :: /tr/fdf/aflibercept-22456, /tr/fdf/aflibercept-52858",
+    "2× alüminyum hidroksit / magnezyum hidroksit / simetikon oral süspansiyon 225 mg/200 mg/25 mg/5mL :: /tr/fdf/aluminium-hydroxide-magnesium-hydroxide-simethicone-49, /tr/fdf/aluminium-hydroxide-magnesium-hydroxide-simethicone-51880",
     "3× amino asit %10 (2) enjeksiyonluk çözelti 5 mg/8.9 mg/5.74 mg/3.12 mg/4.4 mg/4.7 mg/4.2 mg/1.6 mg/6.2 mg/11.5 mg/3 mg/10.5 mg/12 mg/5.6 mg/7.2 mg/5.5 mg/2.3 mg/0.4 mg/1mL :: /tr/fdf/amino-acid-10-2-14115, /tr/fdf/amino-acid-10-2-52272, /tr/fdf/amino-acid-10-2-52340",
     "2× amino asit %10 (3) enjeksiyonluk çözelti 5.8 mg/12 mg/16.925 mg/2 mg/3.5 mg/8.2 mg/3 mg/8.7 mg/8.2 mg/9.8 mg/6.2 mg/0.4 mg/5.305 mg/3 mg/7.6 mg/0.6 mg/3.155 mg/2.01 mg/1mL :: /tr/fdf/amino-acid-10-3-52896, /tr/fdf/amino-acid-10-3-52897",
     "2× pediyatrik amino asit %10 (1) enjeksiyonluk çözelti 8 mg/13 mg/8.51 mg/3.12 mg/3.75 mg/4.4 mg/2.01 mg/9 mg/7.5 mg/4.76 mg/9.3 mg/4.15 mg/0.7 mg/2.3 mg/1.6 mg/9.71 mg/7.67 mg/5.176 mg/2.26 mg/0.4 mg/1 mL/1mL :: /tr/fdf/amino-acid-10-paediatric-1-53310, /tr/fdf/amino-acid-10-paediatric-1-56",
@@ -170,7 +170,7 @@
    "sample": [
     "/excipient (605 KB)",
     "/fa/excipient (609 KB)",
-    "/tr/excipient (624 KB)",
+    "/tr/excipient (743 KB)",
     "/zh/excipient (650 KB)"
    ]
   }
