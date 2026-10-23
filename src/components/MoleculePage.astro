@@ -9,6 +9,7 @@ const { slug } = Astro.props;
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
 const m = s.molecule;
+const viaPubchem: string = ({ en: ', via PubChem.', fa: '، به نقل از PubChem.', zh: '（经由 PubChem）。', tr: ' (PubChem üzerinden).' } as Record<string, string>)[lang];
 const L = (p: string) => localePath(p, lang);
 type Mol = { name:string; cas:string; cid:number|null; formula?:string; mw?:string; iupac?:string; smiles?:string; inchikey?:string; xlogp?:number|null; hbd?:number|null; hba?:number|null; tpsa?:number|null; rotb?:number|null; synonyms?:string[]; otherCas?:string[]; description?:string; descriptionSource?:string; image?:string; parentMatch?:boolean; matched?:string };
 const all = molecules as Record<string, Mol>;
@@ -42,7 +43,7 @@ const num = (v: number | null | undefined, d = 1) => (v === null || v === undefi
 
 {mol.cid && <section class="section"><div class="container mol-body">
   <div class="mol-main">
-    {(faDesc || mol.description) && <div class="mol-about"><h2>{m.about}</h2>{faDesc ? <p>{faDesc}</p> : <p lang="en" dir="ltr">{mol.description}</p>}{mol.descriptionSource && <p class="form-hint">{m.source}: {mol.descriptionSource}{({ en: ', via PubChem.', fa: '، به نقل از PubChem.', zh: '（经由 PubChem）。', tr: ' (PubChem üzerinden).' } as Record<string, string>)[lang]}</p>}</div>}
+    {(faDesc || mol.description) && <div class="mol-about"><h2>{m.about}</h2>{faDesc ? <p>{faDesc}</p> : <p lang="en" dir="ltr">{mol.description}</p>}{mol.descriptionSource && <p class="form-hint">{m.source}: {mol.descriptionSource}{viaPubchem}</p>}</div>}
     {mol.parentMatch && <p class="archive-note">{m.parentNote(mol.matched || '')}</p>}
     <h2>{m.identifiers}</h2>
     <dl class="mol-table" lang="en" dir="ltr">
