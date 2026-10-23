@@ -2,14 +2,36 @@ const siteFaDigits = document.documentElement.lang === 'fa';
 const siteNum = (s: string | number) => { const t = String(s); return siteFaDigits ? t.replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]) : t; };
 const nav = document.getElementById('main-nav');
 const menuButton = document.querySelector<HTMLButtonElement>('.menu-toggle');
-menuButton?.addEventListener('click', () => {
-  const open = menuButton.getAttribute('aria-expanded') !== 'true';
+const siteHeader = document.querySelector<HTMLElement>('.site-header');
+// Mobile menu. Scroll is locked by fixing <body> at the current offset (iOS Safari ignores overflow:hidden for
+// this and, worse, un-sticks the sticky header, which left the header and the menu off-screen mid-page).
+let lockedY = 0;
+function setMenu(open: boolean, restoreFocus = false) {
+  if (!menuButton) return;
+  const root = document.documentElement;
+  if (open === root.classList.contains('nav-open')) return;
   menuButton.setAttribute('aria-expanded', String(open));
   menuButton.setAttribute('aria-label', open ? (menuButton.dataset.labelClose || 'Close navigation') : (menuButton.dataset.labelOpen || 'Open navigation'));
-  nav?.classList.toggle('is-open', open);
-  document.documentElement.classList.toggle('nav-open', open);
-});
-const siteHeader = document.querySelector('.site-header');
+  if (open) {
+    lockedY = window.scrollY;
+    root.style.setProperty('--hdr-h', `${siteHeader?.offsetHeight || 0}px`);
+    document.body.style.top = `-${lockedY}px`;
+    root.classList.add('nav-open');
+    nav?.classList.add('is-open');
+  } else {
+    nav?.classList.remove('is-open');
+    root.classList.remove('nav-open');
+    document.body.style.top = '';
+    window.scrollTo({ top: lockedY, left: 0, behavior: 'instant' as ScrollBehavior });
+    if (restoreFocus) menuButton.focus();
+  }
+}
+menuButton?.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
+// close the menu when a link inside it is followed (same-page anchors otherwise leave it open over the target)
+nav?.addEventListener('click', (e) => { if ((e.target as HTMLElement).closest('a')) setMenu(false); });
+// close it when the viewport grows to the desktop layout
+window.matchMedia('(min-width:1001px)').addEventListener('change', (m) => { if (m.matches) setMenu(false); });
+window.addEventListener('pageshow', () => setMenu(false));
 const onScroll = () => siteHeader?.classList.toggle('is-scrolled', window.scrollY > 8);
 window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 const dropdowns = Array.from(document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown'));
@@ -25,13 +47,7 @@ document.addEventListener('keydown', (event) => {
     const opened = dropdowns.find(dropdown => dropdown.open);
     dropdowns.forEach(dropdown => { dropdown.open = false; });
     opened?.querySelector<HTMLElement>('summary')?.focus();
-    if (menuButton?.getAttribute('aria-expanded') === 'true') {
-      nav?.classList.remove('is-open');
-      document.documentElement.classList.remove('nav-open');
-      menuButton.setAttribute('aria-expanded', 'false');
-      menuButton.setAttribute('aria-label', menuButton.dataset.labelOpen || 'Open navigation');
-      menuButton.focus();
-    }
+    if (menuButton?.getAttribute('aria-expanded') === 'true') setMenu(false, true);
   }
 });
 

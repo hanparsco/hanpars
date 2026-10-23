@@ -503,7 +503,10 @@ html[lang=fa] .brief-legend { letter-spacing:0; font-size:14px; text-transform:n
   .mobile-langs a[lang=fa] { font-family:'Ravagh',sans-serif; }
   .mobile-langs a.current { background:var(--glacier); border-color:var(--glacier); color:var(--black); font-weight:600; }
   .nav-cta { display:flex; margin:14px 0 0; min-height:54px; font-size:16px; }
-  html.nav-open,html.nav-open body { overflow:hidden; }
+  /* open menu: page fixed in place (offset set in JS), header pinned to the screen, panel fills the rest */
+  html.nav-open body { position:fixed; left:0; right:0; width:100%; overflow:hidden; }
+  html.nav-open .site-header { position:fixed; top:0; left:0; right:0; }
+  html.nav-open .main-nav.is-open { position:fixed; top:var(--hdr-h,96px); left:0; right:0; bottom:0; height:auto; max-height:none; overscroll-behavior:contain; -webkit-overflow-scrolling:touch; z-index:41; }
 }
 @media(max-width:860px) {
   .container,.container-wide { width:calc(100% - 44px); }
