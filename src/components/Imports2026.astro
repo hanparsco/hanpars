@@ -11,7 +11,7 @@ const n1 = (v: number, d = 1) => digits(v.toFixed(d));
 
 const T = {
   en: {
-    name: 'Import activity', hint: 'Drag to rotate · tap a sphere', more: 'See the full import activity', title: 'Imports in 2026',
+    name: 'Import activity', yAxis: 'Units imported (log scale)', ticks: ['10 k', '100 k', '1 M', '10 M'], hint: 'Drag to rotate · tap a sphere', more: 'See the full import activity', title: 'Imports in 2026',
     p: ['HANPARS began importing at the end of 2025 with two emergency products, misoprostol and naloxone. Through 2026 the portfolio has grown steadily as new IRC licences were granted, and the pace of imports accelerated markedly in the second half of the year.',
         'In 2026 the company has imported more than 33 million euros’ worth of medicines — over 100 million units across 30 molecules, including contrast media, hormones, CNS medicines, anti-infectives and critical-care products — sourced from manufacturers in Türkiye, China and the United Kingdom. Further registered orders are scheduled for the coming months.'],
     stats: [['€33.4 M', 'total value of imports, 2026'], ['100.8 M', 'units imported'], ['30', 'molecules imported']],
@@ -22,7 +22,7 @@ const T = {
     groups: { contrast: 'Contrast media', hormones: 'Hormones & endocrinology', cns: 'CNS & psychiatry', cardio: 'Cardiovascular', antiinf: 'Anti-infectives', emergency: 'Emergency & critical care', immuno: 'Immunology & oncology support', other: 'Other specialties' },
   },
   fa: {
-    name: 'فعالیت واردات', hint: 'برای چرخاندن بکشید · روی هر گوی بزنید', more: 'مشاهدهٔ کامل فعالیت واردات', title: 'واردات ۲۰۲۶',
+    name: 'فعالیت واردات', yAxis: 'واحد وارداتی (مقیاس لگاریتمی)', ticks: ['۱۰ هزار', '۱۰۰ هزار', '۱ میلیون', '۱۰ میلیون'], hint: 'برای چرخاندن بکشید · روی هر گوی بزنید', more: 'مشاهدهٔ کامل فعالیت واردات', title: 'واردات ۲۰۲۶',
     p: ['هانیا پرسان دارو واردات را از اواخر سال ۲۰۲۵ با دو داروی فوریتی، میزوپروستول و نالوکسان، آغاز کرد. در طول ۲۰۲۶ با صدور کدهای IRC جدید، سبد وارداتی شرکت پیوسته گسترش یافت و در نیمهٔ دوم سال شتاب واردات به‌طور چشمگیری افزایش پیدا کرد.',
         'شرکت در سال ۲۰۲۶ بیش از ۳۳ میلیون یورو دارو وارد کرده است — بیش از ۱۰۰ میلیون واحد در ۳۰ مولکول، شامل داروهای حاجب، هورمون‌ها، داروهای اعصاب و روان، داروهای ضدعفونت و داروهای مراقبت‌های ویژه — که از تولیدکنندگانی در ترکیه، چین و انگلستان تأمین شده‌اند. سفارش‌های ثبت‌شدهٔ دیگری نیز برای ماه‌های آینده برنامه‌ریزی شده است.'],
     stats: [['۳۳٫۴ میلیون یورو', 'ارزش کل واردات، ۲۰۲۶'], ['۱۰۰٫۸ میلیون', 'واحد وارداتی'], ['۳۰', 'مولکول وارداتی']],
@@ -33,7 +33,7 @@ const T = {
     groups: { contrast: 'داروهای حاجب', hormones: 'هورمون‌ها و غدد درون‌ریز', cns: 'اعصاب و روان', cardio: 'قلب و عروق', antiinf: 'داروهای ضدعفونت', emergency: 'اورژانس و مراقبت‌های ویژه', immuno: 'ایمونولوژی و حمایت انکولوژی', other: 'سایر تخصص‌ها' },
   },
   zh: {
-    name: '进口动态', hint: '拖动旋转 · 点按气泡', more: '查看完整进口动态', title: '2026 年进口情况',
+    name: '进口动态', yAxis: '进口单位（对数刻度）', ticks: ['1 万', '10 万', '100 万', '1000 万'], hint: '拖动旋转 · 点按气泡', more: '查看完整进口动态', title: '2026 年进口情况',
     p: ['HANPARS 于 2025 年底开始进口，首批为米索前列醇和纳洛酮两种紧急药品。2026 年，随着新的 IRC 许可陆续获批，产品组合稳步扩大，下半年进口节奏明显加快。',
         '2026 年公司已进口逾 3,300 万欧元的药品——30 种分子、超过 1 亿单位，涵盖造影剂、激素、中枢神经系统药物、抗感染药和重症监护产品——货源来自土耳其、中国和英国的生产商。另有一批已登记订单计划于未来数月到货。'],
     stats: [['€3,340 万', '2026 年进口总值'], ['1.008 亿', '进口单位'], ['30', '种进口分子']],
@@ -44,7 +44,7 @@ const T = {
     groups: { contrast: '造影剂', hormones: '激素与内分泌', cns: '中枢神经与精神科', cardio: '心血管', antiinf: '抗感染', emergency: '急救与重症监护', immuno: '免疫与肿瘤支持', other: '其他专科' },
   },
   tr: {
-    name: 'İthalat faaliyeti', hint: 'Döndürmek için sürükleyin · bir küreye dokunun', more: 'İthalat faaliyetinin tamamını görün', title: '2026 ithalatı',
+    name: 'İthalat faaliyeti', yAxis: 'İthal edilen birim (logaritmik ölçek)', ticks: ['10 bin', '100 bin', '1 mn', '10 mn'], hint: 'Döndürmek için sürükleyin · bir küreye dokunun', more: 'İthalat faaliyetinin tamamını görün', title: '2026 ithalatı',
     p: ['HANPARS ithalata 2025 sonunda iki acil ürünle, misoprostol ve naloksonla başladı. 2026 boyunca yeni IRC lisansları verildikçe portföy istikrarlı biçimde büyüdü ve yılın ikinci yarısında ithalat temposu belirgin şekilde hızlandı.',
         'Şirket 2026’da 33 milyon euroyu aşan değerde ilaç ithal etti — 30 molekülde 100 milyonu aşkın birim; kontrast maddeler, hormonlar, MSS ilaçları, anti-enfektifler ve yoğun bakım ürünleri — Türkiye, Çin ve Birleşik Krallık’taki üreticilerden tedarik edildi. Kayıtlı yeni siparişler önümüzdeki aylar için planlandı.'],
     stats: [['33,4 mn €', 'toplam ithalat değeri, 2026'], ['100,8 mn', 'ithal edilen birim'], ['30', 'ithal edilen molekül']],
@@ -74,13 +74,13 @@ const rtl = lang === 'fa';
 <section class:list={['section', 'imp', { 'imp-solo': variant === 'bubbles' }]} id="imports-2026">
   <div class="container">
     {variant !== 'bubbles' && <div class="imp-top">
-      <div class="imp-copy">
+      <header class="imp-head">
         {variant === 'about' ? <><span class="kicker">{T.title}</span><h2>{T.name}</h2></> : <h2>{T.title}</h2>}
-        {T.p.map(p => <p>{p}</p>)}
-      </div>
-      <dl class="imp-stats">
+      </header>
+      <dl class="imp-band">
         {T.stats.map(([b, l]) => <div><dt>{b}</dt><dd>{l}</dd></div>)}
       </dl>
+      <div class="imp-text">{T.p.map(p => <p>{p}</p>)}</div>
     </div>}
 
     <div class="imp-mol">
@@ -91,7 +91,7 @@ const rtl = lang === 'fa';
           <canvas class="imp-canvas" aria-hidden="true"></canvas>
           <div class="imp-tip" role="status" aria-live="polite"></div>
           <span class="imp-hint" aria-hidden="true">{T.hint}</span>
-          <script is:inline type="application/json" class="imp-data" set:html={JSON.stringify({ rtl, b: bubbles.map(m => ({ n: m.name, l: m.label, g: m.group, c: COL[m.group], t: T.groups[m.group as keyof typeof T.groups], v: m.val, u: T.unitWord, x: m.cx, y: m.cy, r: m.r })) })} />
+          <script is:inline type="application/json" class="imp-data" set:html={JSON.stringify({ rtl, yAxis: T.yAxis, ticks: T.ticks, groups: Object.keys(COL), b: bubbles.map(m => ({ n: m.name, l: m.label, g: m.group, un: m.units, c: COL[m.group], t: T.groups[m.group as keyof typeof T.groups], v: m.val, u: T.unitWord, x: m.cx, y: m.cy, r: m.r })) })} />
         </figure>
         <ul class="imp-sr">{bubbles.map(m => <li>{m.name}: {m.val} {T.unitWord} ({T.groups[m.group as keyof typeof T.groups]})</li>)}</ul>
         <div class="imp-legend">
@@ -104,111 +104,167 @@ const rtl = lang === 'fa';
   </div>
 </section>
 <script>
-  // Canvas 3-D bubble scene: translucent glowing spheres orbiting in perspective over a coordinate grid,
-  // with motion trails and depth-of-field. Pauses off-screen; static frame for reduced motion.
-  type B = { n: string; l: string | null; c: string; t: string; v: string; u: string; x: number; y: number; r: number };
+  // Canvas 3-D bubble chart on a dark desk: translucent spheres float above the desk at the height of their
+  // import volume (log scale), grouped by therapeutic area, with contact shadows, light motion trails,
+  // a faint grid, precise axes and soft overhead light. Pauses off-screen; static frame for reduced motion.
+  type B = { n: string; l: string | null; g: string; un: number; c: string; t: string; v: string; u: string; r: number };
   document.querySelectorAll<HTMLElement>('#imports-2026 .imp-bub3d').forEach(fig => {
     const cv = fig.querySelector('canvas')!, tip = fig.querySelector<HTMLElement>('.imp-tip')!;
     const ctx = cv.getContext('2d')!;
-    const data = JSON.parse(fig.querySelector('.imp-data')!.textContent || '{}') as { rtl: boolean; b: B[] };
+    const data = JSON.parse(fig.querySelector('.imp-data')!.textContent || '{}') as { rtl: boolean; yAxis: string; ticks: string[]; groups: string[]; b: B[] };
     const rgb = (h: string) => h.match(/\w\w/g)!.map(x => parseInt(x, 16));
     const font = getComputedStyle(document.body).fontFamily;
-    const items = data.b.map((b, i) => ({
-      ...b, rgb: rgb(b.c),
-      X: (b.x - 280) / 250, Y: (b.y - 281) / 250, Z: Math.sin(i * 2.399) * 1.05 * (1 - Math.min(b.r, 100) / 190),
-      R: b.r / 250, ph: i * 1.7, w: .35 + (i % 7) * .06, a: .035 + (i % 4) * .012,
-      trail: [] as [number, number][], sx: 0, sy: 0, sr: 0, d: 0,
-    }));
+    const G = 1.25, FY = 1.0, TOP = -1.05;           // desk half-size, desk height, top of the y axis
+    const L0 = 4, L1 = 7.6;                           // log10 range: 10 k … 40 M units
+    const yOf = (u: number) => FY - ((Math.log10(Math.max(u, 1e4)) - L0) / (L1 - L0)) * (FY - TOP);
+    const gi = (g: string) => data.groups.indexOf(g);
+    const byGroup: Record<string, B[]> = {};
+    data.b.forEach(b => (byGroup[b.g] ||= []).push(b));
+    const items = data.b.map((b, i) => {
+      const list = byGroup[b.g], k = list.indexOf(b), n = list.length;
+      return {
+        ...b, rgb: rgb(b.c),
+        X: -1.0 + gi(b.g) * (2.0 / (data.groups.length - 1)) + (k % 2 ? .07 : -.07),
+        Y: yOf(b.un),
+        Z: n === 1 ? 0 : -.95 + (1.9 * k) / (n - 1),
+        R: Math.max(.035, b.r / 420),
+        ph: i * 1.7, w: .45 + (i % 7) * .07, a: .018 + (i % 4) * .006,
+        trail: [] as [number, number][], sx: 0, sy: 0, sr: 0, d: 0, fx: 0, fy: 0, fs: 0,
+      };
+    });
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let W = 0, H = 0, dpr = 1, yaw = .5, pitch = -.42, vYaw = .0016, drag: null | { x: number; y: number; yaw: number; pitch: number } = null;
-    let running = false, raf = 0, frame = 0, t0 = performance.now(), hoverIt: any = null;
+    let W = 0, H = 0, dpr = 1, yaw = .62, pitch = -.36, drag: null | { x: number; y: number; yaw: number; pitch: number } = null;
+    let base = .62, running = false, raf = 0, frame = 0, hoverIt: any = null;
+    const t0 = performance.now();
     const size = () => { dpr = Math.min(devicePixelRatio || 1, 2); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
-    const D = 3.9;
+    const D = 4.1;
     const proj = (x: number, y: number, z: number) => {
       const cy = Math.cos(yaw), sy = Math.sin(yaw), cp = Math.cos(pitch), sp = Math.sin(pitch);
       const x1 = x * cy - z * sy, z1 = x * sy + z * cy;
       const y2 = y * cp - z1 * sp, z2 = y * sp + z1 * cp;
-      const f = Math.min(W, H) * 1.12 / (D + z2);
-      return [W / 2 + x1 * f, H * .44 + y2 * f, f, z2] as const;
+      const f = Math.min(W, H) * 1.22 / (D + z2);
+      return [W / 2 + x1 * f, H * .47 + y2 * f, f, z2] as const;
     };
-    const line = (a: readonly number[], b: readonly number[], alpha: number, w = 1) => { ctx.strokeStyle = `rgba(150,200,255,${alpha})`; ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); };
+    const seg = (a: readonly number[], b: readonly number[], style: string, w = 1) => { ctx.strokeStyle = style; ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); };
+    const poly = (pts: (readonly number[])[]) => { ctx.beginPath(); pts.forEach((p, i) => i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])); ctx.closePath(); };
+    // desk grain: a tiny pre-rendered pattern of fine horizontal streaks
+    const grain = (() => {
+      const c = document.createElement('canvas'); c.width = 256; c.height = 256; const g = c.getContext('2d')!;
+      for (let i = 0; i < 140; i++) { g.strokeStyle = `rgba(${i % 3 ? '255,235,210' : '0,0,0'},${.018 + (i % 5) * .006})`; g.lineWidth = .6 + (i % 4) * .4; const y = (i * 37.3) % 256; g.beginPath(); g.moveTo(0, y); g.bezierCurveTo(80, y + 3, 170, y - 3, 256, y + 1); g.stroke(); }
+      return ctx.createPattern(c, 'repeat');
+    })();
     const draw = (now: number) => {
-      const t = (now - t0) / 1000;
-      if (!drag && !reduce) yaw += vYaw;
-      // cinematic background: deep navy, soft key light from above, vignette
-      const bg = ctx.createRadialGradient(W * .5, H * .18, 0, W * .5, H * .5, Math.max(W, H) * .85);
-      bg.addColorStop(0, '#1d3557'); bg.addColorStop(.45, '#0e1a2e'); bg.addColorStop(1, '#05080f');
-      ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
-      // coordinate system: floor grid + three axes
-      const G = 1.25, FY = 1.08, N = 10;
+      const t = reduce ? 0 : (now - t0) / 1000;
+      if (!drag && !reduce) yaw = base + Math.sin(t * .12) * .32;   // slow, gentle sway rather than a spin
+      // room: dark wall with a soft overhead light
+      const wall = ctx.createLinearGradient(0, 0, 0, H);
+      wall.addColorStop(0, '#191714'); wall.addColorStop(.55, '#100f0d'); wall.addColorStop(1, '#0a0908');
+      ctx.fillStyle = wall; ctx.fillRect(0, 0, W, H);
+      const halo = ctx.createRadialGradient(W * .5, -H * .05, 0, W * .5, -H * .05, H * .85);
+      halo.addColorStop(0, 'rgba(255,238,214,.16)'); halo.addColorStop(1, 'rgba(255,238,214,0)');
+      ctx.fillStyle = halo; ctx.fillRect(0, 0, W, H);
+      // desk surface
+      const E = G * 1.9;
+      const desk = [proj(-E, FY, -E), proj(E, FY, -E), proj(E, FY, E), proj(-E, FY, E)];
+      ctx.save(); poly(desk); ctx.clip();
+      const dg = ctx.createLinearGradient(0, H * .3, 0, H);
+      dg.addColorStop(0, '#1f1813'); dg.addColorStop(1, '#2b2119');
+      ctx.fillStyle = dg; ctx.fillRect(0, 0, W, H);
+      if (grain) { ctx.fillStyle = grain; ctx.fillRect(0, 0, W, H); }
+      const c0 = proj(0, FY, 0);
+      const pool = ctx.createRadialGradient(c0[0], c0[1], 0, c0[0], c0[1], Math.max(W, H) * .55);
+      pool.addColorStop(0, 'rgba(255,236,205,.20)'); pool.addColorStop(.6, 'rgba(255,236,205,.05)'); pool.addColorStop(1, 'rgba(0,0,0,.35)');
+      ctx.fillStyle = pool; ctx.fillRect(0, 0, W, H);
+      // faint grid on the desk
+      const N = 10;
       for (let i = 0; i <= N; i++) {
         const u = -G + (2 * G * i) / N;
-        const a1 = proj(u, FY, -G), a2 = proj(u, FY, G), b1 = proj(-G, FY, u), b2 = proj(G, FY, u);
-        const edge = i === 0 || i === N ? .3 : .12;
-        line(a1, a2, edge); line(b1, b2, edge);
+        seg(proj(u, FY, -G), proj(u, FY, G), 'rgba(235,220,200,.07)'); seg(proj(-G, FY, u), proj(G, FY, u), 'rgba(235,220,200,.07)');
       }
-      const o = proj(-G, FY, -G);
-      line(o, proj(G, FY, -G), .45, 1.3); line(o, proj(-G, FY, G), .45, 1.3); line(o, proj(-G, -1.15, -G), .45, 1.3);
-      for (let k = 1; k <= 4; k++) { const yy = FY - (k * (FY + 1.15)) / 4; line(proj(-G, yy, -G), proj(-G + .06, yy, -G), .5); }
-      // bubbles
+      // contact shadows (soft ellipses, darker when the sphere is lower)
       for (const it of items) {
-        const lt = reduce ? 0 : t;
-        const x = it.X + Math.cos(lt * it.w + it.ph) * it.a, y = it.Y + Math.sin(lt * it.w * .8 + it.ph) * it.a * .7, z = it.Z + Math.sin(lt * it.w + it.ph * 1.3) * it.a;
+        const p = proj(it.fx, FY, it.fs); const h = (FY - it.Y) / (FY - TOP);
+        const rx = it.R * p[2] * (1.05 + h * .6), ry = rx * (.22 + Math.abs(Math.sin(pitch)) * .5);
+        const sg = ctx.createRadialGradient(p[0], p[1], 0, p[0], p[1], rx);
+        sg.addColorStop(0, `rgba(0,0,0,${.5 - h * .3})`); sg.addColorStop(1, 'rgba(0,0,0,0)');
+        ctx.fillStyle = sg; ctx.beginPath(); ctx.ellipse(p[0], p[1], rx, ry, 0, 0, Math.PI * 2); ctx.fill();
+      }
+      ctx.restore();
+      // precise axes: x and z along the desk edges, y rising from the back corner, with log ticks
+      const o = proj(-G, FY, G * -1), ax = 'rgba(236,228,214,.75)';
+      seg(proj(-G, FY, -G), proj(G, FY, -G), ax, 1.2); seg(proj(-G, FY, -G), proj(-G, FY, G), ax, 1.2); seg(o, proj(-G, TOP, -G), ax, 1.2);
+      ctx.font = `500 11px ${font}`; ctx.fillStyle = 'rgba(236,228,214,.8)'; ctx.textBaseline = 'middle';
+      data.ticks.forEach((lab, k) => {
+        const yy = yOf(10 ** (L0 + k)); const a = proj(-G, yy, -G), b = proj(-G - .07, yy, -G);
+        seg(a, b, ax, 1.2);
+        seg(proj(-G, yy, -G), proj(G, yy, -G), 'rgba(236,228,214,.06)');            // faint reference line on the back plane
+        ctx.textAlign = 'right'; ctx.direction = data.rtl ? 'rtl' : 'ltr';
+        ctx.fillText(lab, b[0] - 6, b[1]);
+      });
+      // colour ticks for the therapeutic areas along the front x axis
+      data.groups.forEach((g, k) => { const x = -1.0 + k * (2.0 / (data.groups.length - 1)); const a = proj(x, FY, -G), b = proj(x, FY, -G - .08); seg(a, b, items.find(it => it.g === g)?.c || ax, 3); });
+      // y axis title
+      const top = proj(-G, TOP, -G);
+      ctx.font = `600 11.5px ${font}`; ctx.textAlign = 'left'; ctx.direction = data.rtl ? 'rtl' : 'ltr';
+      ctx.fillStyle = 'rgba(236,228,214,.9)'; ctx.textAlign = data.rtl ? 'right' : 'left';
+      ctx.fillText(data.yAxis, data.rtl ? top[0] + 8 + ctx.measureText(data.yAxis).width : top[0] + 8, top[1] - 12);
+      // spheres: positions, gentle motion, trails
+      for (const it of items) {
+        const x = it.X + Math.cos(t * it.w + it.ph) * it.a, y = it.Y + Math.sin(t * it.w * .9 + it.ph) * it.a * 1.4, z = it.Z + Math.sin(t * it.w * .7 + it.ph * 1.3) * it.a;
+        it.fx = x; it.fs = z;
         const [sx, sy, f, d] = proj(x, y, z);
         it.sx = sx; it.sy = sy; it.sr = it.R * f; it.d = d;
-        if (!reduce && frame % 2 === 0) { it.trail.push([sx, sy]); if (it.trail.length > 22) it.trail.shift(); }
+        if (!reduce && frame % 3 === 0) { it.trail.push([sx, sy]); if (it.trail.length > 16) it.trail.shift(); }
       }
       const order = [...items].sort((a, b) => b.d - a.d);
-      // trails first (behind everything)
       ctx.lineCap = 'round';
       for (const it of order) {
         const tr = it.trail; if (tr.length < 3) continue;
-        for (let k = 1; k < tr.length; k++) {
-          const a = k / tr.length;
-          ctx.strokeStyle = `rgba(${it.rgb},${a * .28})`; ctx.lineWidth = Math.max(1, it.sr * .12 * a);
-          ctx.beginPath(); ctx.moveTo(tr[k - 1][0], tr[k - 1][1]); ctx.lineTo(tr[k][0], tr[k][1]); ctx.stroke();
-        }
+        for (let k = 1; k < tr.length; k++) { const a = k / tr.length; ctx.strokeStyle = `rgba(${it.rgb},${a * .22})`; ctx.lineWidth = Math.max(1, it.sr * .16 * a); ctx.beginPath(); ctx.moveTo(tr[k - 1][0], tr[k - 1][1]); ctx.lineTo(tr[k][0], tr[k][1]); ctx.stroke(); }
       }
       for (const it of order) {
         const { sx, sy, sr, d, rgb: [r, g, b] } = it;
-        const blur = Math.max(0, Math.abs(d) - .35) * 3.2; // depth of field around the focal plane
-        const fogA = Math.max(.35, Math.min(1, 1 - d * .35));
+        // faint drop line to the desk: reads the height precisely
+        const foot = proj(it.fx, FY, it.fs);
+        seg([sx, sy + sr], foot, `rgba(${r},${g},${b},.28)`, 1);
+        const blur = Math.max(0, Math.abs(d) - .55) * 2.2;
         ctx.save();
-        if (blur > .3) ctx.filter = `blur(${blur.toFixed(1)}px)`;
-        ctx.globalAlpha = fogA * (hoverIt && hoverIt !== it ? .45 : 1);
-        // glow
-        ctx.shadowColor = `rgba(${r},${g},${b},.85)`; ctx.shadowBlur = sr * .55 + 6;
-        const body = ctx.createRadialGradient(sx - sr * .35, sy - sr * .4, sr * .05, sx, sy, sr);
-        body.addColorStop(0, `rgba(${Math.min(255, r + 120)},${Math.min(255, g + 120)},${Math.min(255, b + 120)},.85)`);
-        body.addColorStop(.5, `rgba(${r},${g},${b},.5)`);
-        body.addColorStop(1, `rgba(${r * .5 | 0},${g * .5 | 0},${b * .5 | 0},.62)`);
+        if (blur > .4) ctx.filter = `blur(${blur.toFixed(1)}px)`;
+        ctx.globalAlpha = hoverIt && hoverIt !== it ? .4 : 1;
+        // translucent body lit from above
+        const body = ctx.createRadialGradient(sx - sr * .15, sy - sr * .55, sr * .05, sx, sy, sr);
+        body.addColorStop(0, `rgba(${Math.min(255, r + 110)},${Math.min(255, g + 110)},${Math.min(255, b + 110)},.78)`);
+        body.addColorStop(.55, `rgba(${r},${g},${b},.55)`);
+        body.addColorStop(1, `rgba(${r * .45 | 0},${g * .45 | 0},${b * .45 | 0},.7)`);
+        ctx.shadowColor = `rgba(${r},${g},${b},.35)`; ctx.shadowBlur = sr * .25;
         ctx.fillStyle = body; ctx.beginPath(); ctx.arc(sx, sy, sr, 0, Math.PI * 2); ctx.fill();
         ctx.shadowBlur = 0;
-        // glowing rim + specular highlight
-        ctx.strokeStyle = `rgba(${Math.min(255, r + 90)},${Math.min(255, g + 90)},${Math.min(255, b + 90)},.9)`; ctx.lineWidth = Math.max(1, sr * .035); ctx.stroke();
-        const sp = ctx.createRadialGradient(sx - sr * .38, sy - sr * .45, 0, sx - sr * .38, sy - sr * .45, sr * .45);
-        sp.addColorStop(0, 'rgba(255,255,255,.75)'); sp.addColorStop(1, 'rgba(255,255,255,0)');
-        ctx.fillStyle = sp; ctx.beginPath(); ctx.arc(sx, sy, sr, 0, Math.PI * 2); ctx.fill();
+        ctx.strokeStyle = `rgba(255,255,255,.28)`; ctx.lineWidth = Math.max(.8, sr * .025); ctx.stroke();
+        // overhead highlight + bounce light from the desk
+        const hl = ctx.createRadialGradient(sx - sr * .12, sy - sr * .62, 0, sx - sr * .12, sy - sr * .62, sr * .5);
+        hl.addColorStop(0, 'rgba(255,250,240,.8)'); hl.addColorStop(1, 'rgba(255,250,240,0)');
+        ctx.fillStyle = hl; ctx.beginPath(); ctx.arc(sx, sy, sr, 0, Math.PI * 2); ctx.fill();
+        const bo = ctx.createRadialGradient(sx, sy + sr * .9, 0, sx, sy + sr * .9, sr * .7);
+        bo.addColorStop(0, 'rgba(255,215,170,.18)'); bo.addColorStop(1, 'rgba(255,215,170,0)');
+        ctx.fillStyle = bo; ctx.beginPath(); ctx.arc(sx, sy, sr, 0, Math.PI * 2); ctx.fill();
         ctx.restore();
-        // labels on spheres large enough to read
-        if (it.l && sr > 22 && blur < 1.6) {
-          ctx.save(); ctx.globalAlpha = fogA; ctx.fillStyle = '#fff'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-          ctx.shadowColor = 'rgba(0,0,0,.55)'; ctx.shadowBlur = 4;
-          let fs = Math.min(15, sr * .3); ctx.font = `600 ${fs}px ${font}`; ctx.direction = 'ltr';
+        if (it.l && sr > 19 && blur < 1.4) {
+          ctx.save(); ctx.fillStyle = '#fff'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.shadowColor = 'rgba(0,0,0,.6)'; ctx.shadowBlur = 4;
+          let fs = Math.min(14, sr * .32); ctx.font = `600 ${fs}px ${font}`; ctx.direction = 'ltr';
           const w = ctx.measureText(it.l).width; if (w > sr * 1.7) { fs *= sr * 1.7 / w; ctx.font = `600 ${fs}px ${font}`; }
-          const showV = sr > 34;
+          const showV = sr > 30;
           ctx.fillText(it.l, sx, showV ? sy - fs * .45 : sy);
           if (showV) {
-            let vs = Math.min(12.5, fs * .85); ctx.font = `400 ${vs}px ${font}`; ctx.direction = data.rtl ? 'rtl' : 'ltr';
+            let vs = Math.min(12, fs * .85); ctx.font = `400 ${vs}px ${font}`; ctx.direction = data.rtl ? 'rtl' : 'ltr';
             const vw = ctx.measureText(it.v).width; if (vw > sr * 1.6) { vs *= sr * 1.6 / vw; ctx.font = `400 ${vs}px ${font}`; }
-            ctx.globalAlpha = fogA * .9; ctx.fillText(it.v, sx, sy + fs * .75);
+            ctx.globalAlpha = .9; ctx.fillText(it.v, sx, sy + fs * .75);
           }
           ctx.restore();
         }
       }
-      // vignette
-      const vg = ctx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * .35, W / 2, H / 2, Math.max(W, H) * .75);
-      vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,.45)');
+      // soft vignette
+      const vg = ctx.createRadialGradient(W / 2, H * .45, Math.min(W, H) * .4, W / 2, H * .45, Math.max(W, H) * .8);
+      vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,.5)');
       ctx.fillStyle = vg; ctx.fillRect(0, 0, W, H);
       frame++;
     };
@@ -218,10 +274,9 @@ const rtl = lang === 'fa';
     size(); draw(performance.now());
     new ResizeObserver(() => { size(); draw(performance.now()); }).observe(cv);
     new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? start() : stop()), { threshold: .05 }).observe(cv);
-    // interaction: hover / tap for details, drag to rotate
     const hit = (cx: number, cy: number) => {
       const r = cv.getBoundingClientRect(), x = cx - r.left, y = cy - r.top;
-      return [...items].sort((a, b) => a.d - b.d).find(it => (x - it.sx) ** 2 + (y - it.sy) ** 2 <= it.sr ** 2) || null;
+      return [...items].sort((a, b) => a.d - b.d).find(it => (x - it.sx) ** 2 + (y - it.sy) ** 2 <= Math.max(it.sr, 8) ** 2) || null;
     };
     const show = (it: any, cx: number, cy: number) => {
       const r = fig.getBoundingClientRect();
@@ -235,7 +290,7 @@ const rtl = lang === 'fa';
       if (drag) {
         const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
         if (Math.abs(dx) + Math.abs(dy) > 4) { moved = true; hide(); }
-        yaw = drag.yaw + dx * .008; pitch = Math.max(-1, Math.min(.25, drag.pitch + dy * .005));
+        yaw = drag.yaw + dx * .008; pitch = Math.max(-.9, Math.min(-.08, drag.pitch + dy * .004));
         if (reduce) draw(performance.now());
         return;
       }
@@ -244,7 +299,9 @@ const rtl = lang === 'fa';
       it ? show(it, e.clientX, e.clientY) : hide();
     });
     cv.addEventListener('pointerup', e => {
-      const wasDrag = moved; drag = null;
+      const wasDrag = moved;
+      if (drag && wasDrag) base = yaw - Math.sin(((performance.now() - t0) / 1000) * .12) * .32; // keep the sway centred where the user left it
+      drag = null;
       if (!wasDrag) { const it = hit(e.clientX, e.clientY); if (it) { hoverIt = it; show(it, e.clientX, e.clientY); } else hide(); }
     });
     cv.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse' && !drag) hide(); });
