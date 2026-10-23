@@ -52,7 +52,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
     : lang === 'tr'
     ? [nameFa, name, `${nl} ${fFormShort}`, `${nl} tedarikçisi`, `${nl} İran ihracatı`, `${nl} ${strength}`, 'İran’a ilaç ihracatı', 'İran ilaç ithalatı', 'Hanpars'].filter(Boolean).join(', ')
     : lang === 'fa'
-    ? [nameFa, name, `${nameFa || name} ${fFormShort}`, `خرید ${nameFa || name}`, `قیمت ${nameFa || name}`, `واردات ${nameFa || name}`, `تأمین ${nameFa || name}`, `${nameFa || name} ${strength}`, 'واردات دارو', 'واردات فوریتی دارو', 'هانیا پرسان دارو'].filter(Boolean).join('، ')
+    ? [nameFa, name, `${nameFa || name} ${fFormShort}`, `خرید ${nameFa || name}`, `قیمت ${nameFa || name}`, `واردات ${nameFa || name}`, `تأمین ${nameFa || name}`, `${nameFa || name} ${strength}`, `داروی ${nameFa || name}`, `${nameFa || name} خارجی`, `${nameFa || name} اصل`, `موارد مصرف ${nameFa || name}`, `عوارض ${nameFa || name}`, `${name} ${fFormShort}`, 'واردات دارو', 'داروی خارجی', 'داروی فوریتی', 'لیست داروهای وارداتی', 'هانیا پرسان دارو'].filter(Boolean).join('، ')
     : [name, `${name} ${eForm}`, `${name} ${strength}`, `${name} supplier`, `${name} import Iran`, `buy ${name}`, 'pharmaceutical importer Iran', 'Hanpars'].join(', ');
   const schema = {
     '@context': 'https://schema.org', '@type': 'Drug', name: `${name} ${prettyName(p.form)}${strength ? ' ' + strength : ''}`,
@@ -84,7 +84,7 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
     : lang === 'tr'
     ? [nameFa, name, mol.cas, `${nameFa || name} etkin madde`, `${nameFa || name} tedarikçisi`, `${nameFa || name} CAS ${mol.cas || ''}`.trim(), 'İran’a hammadde ihracatı', 'Hanpars'].filter(Boolean).join(', ')
     : lang === 'fa'
-    ? [nameFa, name, mol.cas, `خرید ${nameFa || name}`, `قیمت ${nameFa || name}`, `ماده اولیه ${nameFa || name}`, `پودر ${nameFa || name}`, `API ${name}`, 'مواد اولیه دارویی', 'تأمین API', 'هانیا پرسان دارو'].filter(Boolean).join('، ')
+    ? [nameFa, name, mol.cas, `خرید ${nameFa || name}`, `قیمت ${nameFa || name}`, `ماده اولیه ${nameFa || name}`, `پودر ${nameFa || name}`, `API ${name}`, `${name} powder`, `واردات ${nameFa || name}`, `مادهٔ مؤثرهٔ ${nameFa || name}`, `${nameFa || name} CAS`, 'مواد اولیه دارویی', 'واردات مواد اولیه', 'تأمین API', 'هانیا پرسان دارو'].filter(Boolean).join('، ')
     : [name, mol.cas, `${name} API`, `${name} API supplier`, `${name} powder`, `${name} CAS ${mol.cas || ''}`.trim(), `${name} manufacturer`, 'API supplier Iran', 'Hanpars'].filter(Boolean).join(', ');
   const description = lang === 'zh'
     ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。${faDesc ? faDesc + ' ' : ''}Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。`, 110)
