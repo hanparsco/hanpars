@@ -3,7 +3,7 @@
  "pages": 5500,
  "issues": {
   "description not in target language": {
-   "count": 144,
+   "count": 147,
    "sample": [
     "/tr/api/acalabrutinib-maleate :: akalabrutinib maleat (Acalabrutinib maleate), CAS 2242394-65-4, C30H27N7O6. Akalabrutinib maleat, an",
     "/tr/api/aripiprazole-lauroxil :: aripiprazol lauroksil (Aripiprazole lauroxil), CAS 1259305-29-7, C36H51Cl2N3O4. Aripiprazol lauroksi",
@@ -116,7 +116,6 @@
    "3× Gebelik (bkz. UYARILAR). :: /tr/fdf/carboplatin-13830, /tr/fdf/carboplatin-214, /tr/fdf/carboplatin-215",
    "3× insan koryonik gonadotropini :: /tr/fdf/chorionic-gonadotrophin-human-284, /tr/fdf/chorionic-gonadotrophin-human-285, /tr/fdf/chorionic-gonadotrophin-human-286",
    "3× kodein fosfat / guaifenezin :: /tr/fdf/codeine-phosphate-guaifenesin-52185, /tr/fdf/codeine-phosphate-guaifenesin-53046, /tr/fdf/codeine-phosphate-guaifenesin-53047",
-   "3× Sistemik fungal enfeksiyonlar. :: /tr/fdf/dexamethasone-17013, /tr/fdf/dexamethasone-400, /tr/fdf/dexamethasone-52870",
    "3× dekstrometorfan / guaifenezin / fenilefrin :: /tr/fdf/dextromethorphan-guaifenesin-phenylephrine-52352, /tr/fdf/dextromethorphan-guaifenesin-phenylephrine-52877, /tr/fdf/dextromethorphan-guaifenesin-phenylephrine-53393",
    "3× Enbrel, sepsisi olan hastalarda kontrendikedir. :: /tr/fdf/etanercept-4008, /tr/fdf/etanercept-52294, /tr/fdf/etanercept-8170",
    "3× demir (III) derizomaltoz :: /tr/fdf/ferric-derisomaltose-21444, /tr/fdf/ferric-derisomaltose-53458, /tr/fdf/ferric-derisomaltose-53721",
@@ -147,6 +146,7 @@
    "2× Gebelik: Gebelik “Kategori D” (bkz. UYARILAR.) :: /tr/fdf/bleomycin-170, /tr/fdf/bleomycin-52471",
    "2× klindamisin fosfat / tretinoin :: /tr/fdf/clindamycin-phosphate-tretinoin-11269, /tr/fdf/clindamycin-phosphate-tretinoin-51995",
    "2× Dapson Jel %5, akne vulgarisin topikal tedavisinde endikedir. :: /tr/fdf/dapsone-51371, /tr/fdf/dapsone-52409",
+   "2× Sistemik fungal enfeksiyonlar. :: /tr/fdf/dexamethasone-400, /tr/fdf/dexamethasone-52870",
    "2× galyum (67Ga) sitrat :: /tr/fdf/gallium-sup67-supga-citrate-51078, /tr/fdf/gallium-sup67-supga-citrate-51079",
    "2× Haemophilus influenzae tip b :: /tr/fdf/haemophilus-influenzae-type-b-19959, /tr/fdf/haemophilus-influenzae-type-b-52106",
    "2× lutesyum (177Lu) dotatat :: /tr/fdf/lutetium-177lu-dotatate-52643, /tr/fdf/lutetium-177lu-dotatate-53594",
