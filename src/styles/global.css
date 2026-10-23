@@ -1,12 +1,11 @@
 
-/* Ravagh Pro — Persian */
+/* Latin faces (self-hosted) */
 @font-face { font-family:'Montserrat'; src:url('/fonts/latin/montserrat-var.woff') format('woff'); font-weight:100 900; font-display:swap; }
 @font-face { font-family:'Source Sans 3'; src:url('/fonts/latin/source-sans-3-var.woff') format('woff'); font-weight:200 900; font-display:swap; }
-@font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Light.woff2') format('woff2'); font-weight:300; font-display:swap; }
-@font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Regular.woff2') format('woff2'); font-weight:400; font-display:swap; }
-@font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Medium.woff2') format('woff2'); font-weight:500; font-display:swap; }
-@font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-SemiBold.woff2') format('woff2'); font-weight:600; font-display:swap; }
-@font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Bold.woff2') format('woff2'); font-weight:700; font-display:swap; }
+/* Narengi Pro (Persian-only cut, variable: weights 100–900) — Persian text; Latin runs fall through to the Latin faces */
+@font-face { font-family:'Narengi'; src:url('/fonts/narengi/NarengiNonEnVF.woff2') format('woff2'); font-weight:100 900; font-style:normal; font-display:swap; }
+/* tiny subset for the «فارسی» language label and the company name shown on non-Persian pages */
+@font-face { font-family:'NarengiLabel'; src:url('/fonts/narengi/narengi-langlabel.woff') format('woff'); font-weight:500; font-display:swap; }
 /* Hanpars — quiet, editorial design system
    Tokens */
 :root {
@@ -212,7 +211,7 @@ html[lang=fa] .dropdown-label,html[lang=zh-Hans] .dropdown-label { letter-spacin
 .company-note .address { font-family:var(--sans); font-size:16px; line-height:1.6; color:var(--ink); margin:8px 0 24px; font-style:normal; padding-top:20px; border-top:1px solid var(--line); }
 .company-note .address small { display:block; font-size:15px; color:var(--muted); margin-top:6px; }
 .company-note .copy p { font-size:18px; line-height:1.7; color:var(--ink); }
-.persian-name { font-size:22px; color:var(--lapis-deep); direction:rtl; display:block; margin-bottom:14px; text-align:start; font-family:'Vazirmatn','Noto Naskh Arabic',sans-serif; font-weight:500; }
+.persian-name { font-size:22px; color:var(--lapis-deep); direction:rtl; display:block; margin-bottom:14px; text-align:start; font-family:'NarengiLabel',Tahoma,sans-serif; font-weight:500; }
 
 /* Steps — the one real sequence */
 .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:48px; counter-reset:step; list-style:none; padding:0; margin:0; }
@@ -284,7 +283,7 @@ a.ft-card:hover { border-color:#ffffff33; background:#ffffff0d; }
 .ft-langs a { display:inline-block; padding:5px 11px; border-radius:999px; color:#9fb0c2; border:1px solid transparent; }
 .ft-langs a:hover { color:#fff; border-color:#ffffff26; }
 .ft-langs a[aria-current] { color:#fff; border-color:#ffffff33; background:#ffffff0a; }
-.ft-langs a[lang=fa] { font-family:'Ravagh',sans-serif; }
+.ft-langs a[lang=fa] { font-family:'NarengiLabel',Tahoma,sans-serif; font-weight:500; }
 .ft-top-link { display:inline-flex; align-items:center; gap:8px; color:#9fb0c2; }
 .ft-top-link:hover { color:#fff; }
 .ft-up { transform:rotate(180deg); }
@@ -500,7 +499,7 @@ html[lang=fa] .brief-legend { letter-spacing:0; font-size:14px; text-transform:n
   .nav-lang-menu { display:none; }
   .mobile-langs { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:10px; }
   .mobile-langs a { text-align:center; padding:12px 6px; border:1px solid #ffffff1f; border-radius:12px; color:var(--on-navy); font-size:15px; }
-  .mobile-langs a[lang=fa] { font-family:'Ravagh',sans-serif; }
+  .mobile-langs a[lang=fa] { font-family:'NarengiLabel',Tahoma,sans-serif; font-weight:500; }
   .mobile-langs a.current { background:var(--glacier); border-color:var(--glacier); color:var(--black); font-weight:600; }
   .nav-cta { display:flex; margin:14px 0 0; min-height:54px; font-size:16px; }
   /* open menu: page fixed in place (offset set in JS), header pinned to the screen, panel fills the rest */
@@ -670,7 +669,7 @@ html[lang=fa] .exc-tile-head strong { font-size:16px; }
 @media(max-width:640px) { .news-grid { grid-template-columns:1fr; gap:32px; } }
 
 /* ---------- Persian / RTL ---------- */
-html[lang=fa] { --display:'HpLatinD','Ravagh','Montserrat',system-ui,sans-serif; --sans:'HpLatin','Ravagh','Source Sans 3',system-ui,sans-serif; }
+html[lang=fa] { --display:'HpLatinD','Narengi','Montserrat',system-ui,sans-serif; --sans:'HpLatin','Narengi','Source Sans 3',system-ui,sans-serif; }
 html[lang=fa] body { font-size:17px; line-height:1.9; }
 html[lang=fa] h1,html[lang=fa] h2,html[lang=fa] h3,html[lang=fa] h4 { letter-spacing:0; line-height:1.4; font-weight:600; }
 html[lang=fa] h1 { font-size:clamp(32px,4vw,54px); line-height:1.35; }
@@ -705,7 +704,7 @@ html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] se
 .lang-panel a:hover { background:var(--paper); }
 .lang-panel a { padding:10px 14px; }
 .lang-panel a strong { font-weight:500; }
-.lang-panel a[lang=fa] strong { font-family:'Ravagh',sans-serif; }
+.lang-panel a[lang=fa] strong { font-family:'NarengiLabel',Tahoma,sans-serif; font-weight:500; }
 .lang-panel a.current { background:var(--paper); }
 .lang-panel a.current strong:after { content:' ✓'; color:var(--lapis); }
 [dir=rtl] .breadcrumbs { direction:rtl; }
@@ -717,7 +716,7 @@ html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] se
 h1 .h1-en { display: block; font-size: .5em; font-weight: 500; opacity: .78; margin-top: .35em; letter-spacing: 0; }
 .prod-seo-note { margin-top: 1.1rem; font-size: .9rem; line-height: 1.7; opacity: .82; max-width: 62ch; }
 
-/* Latin letters inside Persian text: use the Latin faces (Ravagh's Latin glyphs collide, and its % and · read as Persian signs) */
+/* Latin letters inside Persian text: use the Latin faces (the Persian font's Latin glyphs don't match, and its % and · read as Persian signs) */
 @font-face { font-family:'HpLatin'; src:url('/fonts/latin/source-sans-3-var.woff') format('woff'); font-weight:200 900; font-display:swap; unicode-range:U+0030-0039,U+002E,U+002F,U+0041-005A,U+0061-007A,U+00B5,U+00B7,U+00C0-024F,U+0025,U+03BC,U+2122,U+00AE; }
 @font-face { font-family:'HpLatinD'; src:url('/fonts/latin/montserrat-var.woff') format('woff'); font-weight:100 900; font-display:swap; unicode-range:U+0030-0039,U+002E,U+002F,U+0041-005A,U+0061-007A,U+00B5,U+00B7,U+00C0-024F,U+0025,U+03BC,U+2122,U+00AE; }
 /* Left-to-right runs (English names, codes, emails) inside right-to-left pages line up with the Persian text */
