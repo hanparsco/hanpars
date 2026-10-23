@@ -43,7 +43,7 @@ const watchDate = (d: string) => {
   <ul class="insight-list">{data.watch.map(item => <li><a class="insight-row ra-watch-row" href={item.url} target="_blank" rel="noopener noreferrer"><time dir={lang === 'fa' ? 'rtl' : 'ltr'}>{watchDate(item.date)}</time><div><p class="ra-watch-agency"><span dir="ltr">{item.agency}</span> · {item.tag}</p><h3>{item.title}</h3><p>{item.summary}</p></div><span class="cat">{r.source}</span></a></li>)}</ul>
 </div></section>
 
-<CTA title={data.ctaTitle} description={data.ctaText} email={raEmail}/>
+<CTA title={data.ctaTitle} description={data.ctaText} email={raEmail} regulatoryOnly />
 
 <script>
   const root = document.querySelector('[data-ra-authorities]');
