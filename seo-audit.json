@@ -9,7 +9,7 @@
   },
   {
    "name": "title > 65 chars",
-   "count": 1666,
+   "count": 1798,
    "sample": [
     "/api/amifampridine-phosphate (66) Amifampridine phosphate (CAS 446254-47-3) | API supplier | Hanpars",
     "/api/eletriptan-hydrobromide (66) Eletriptan hydrobromide (CAS 177834-92-3) | API supplier | Hanpars",
@@ -56,23 +56,12 @@
   },
   {
    "name": "description > 165 chars",
-   "count": 10,
-   "sample": [
-    "/tr/about-us (192)",
-    "/tr/blog-1 (175)",
-    "/tr/contact-us-1 (185)",
-    "/tr/excipient (188)",
-    "/tr/fdf (200)",
-    "/tr/markets (181)",
-    "/tr/news (183)",
-    "/tr/nutrition (200)",
-    "/tr/regulatory-affairs (183)",
-    "/tr (216)"
-   ]
+   "count": 0,
+   "sample": []
   },
   {
    "name": "description < 70 chars",
-   "count": 3572,
+   "count": 3578,
    "sample": [
     "/api/paliperidone-palmitate Paliperidone palmitate, CAS 199739-10-1, C39H57FN4O4.…",
     "/tr/api/avanafil avanafil (Avanafil), CAS 330784-47-9, C23H26ClN7O3. Avanafil,…",
@@ -93,12 +82,10 @@
   },
   {
    "name": "duplicate titles",
-   "count": 104,
+   "count": 102,
    "sample": [
-    "2× آمفوتریسین B تزریقی لیوفیلیزه 50 mg | هانیا پرسان دارو :: /fa/fdf/amphotericin-b-52653, /fa/fdf/amphotericin-b-79",
-    "2× پلاسمای تازهٔ منجمد تزریقی | تأمین و واردات | هانیا پرسان دارو :: /fa/fdf/blood-plasma-fresh-frozen-52962, /fa/fdf/plasma-fresh-frozen-51566",
-    "2× feksofenadin hidroklorür | Etkin madde tedariki | Hanpars :: /tr/api/fexofenadine-hcl-a, /tr/api/fexofenadine-hcl-l",
-    "2× ivermektin | Etkin madde tedariki | Hanpars :: /tr/api/ivermectin-fur, /tr/api/ivermectin",
+    "2× آمفوتریسین B پودر لیوفیلیزه برای تهیهٔ محلول تزریقی 50 mg :: /fa/fdf/amphotericin-b-52653, /fa/fdf/amphotericin-b-79",
+    "2× پلاسمای تازهٔ منجمد فرآوردهٔ تزریقی | هانیا پرسان دارو :: /fa/fdf/blood-plasma-fresh-frozen-52962, /fa/fdf/plasma-fresh-frozen-51566",
     "3× parasetamol / klorfeniramin / dekstrometorfan / fenilefrin şurup 160 mg/1 mg/5 mg/2.5 mg/5mL :: /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50341, /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50378, /tr/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-51915",
     "3× parasetamol / difenhidramin / fenilefrin şurup 160 mg/12.5 mg/2.5 mg/5mL :: /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-21832, /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-52273, /tr/fdf/acetaminophen-diphenhydramine-phenylephrine-52274",
     "3× parasetamol / guaifenezin / fenilefrin şurup 125 mg/50 mg/2.5 mg/5mL :: /tr/fdf/acetaminophen-guaifenesin-phenylephrine-22078, /tr/fdf/acetaminophen-guaifenesin-phenylephrine-52271, /tr/fdf/acetaminophen-guaifenesin-phenylephrine-52665",
@@ -109,22 +96,22 @@
     "2× pediyatrik amino asit %10 (1) enjeksiyonluk çözelti 8 mg/13 mg/8.51 mg/3.12 mg/3.75 mg/4.4 mg/2.01 mg/9 mg/7.5 mg/4.76 mg/9.3 mg/4.15 mg/0.7 mg/2.3 mg/1.6 mg/9.71 mg/7.67 mg/5.176 mg/2.26 mg/0.4 mg/1 mL/1mL :: /tr/fdf/amino-acid-10-paediatric-1-53310, /tr/fdf/amino-acid-10-paediatric-1-56",
     "2× pediyatrik amino asit %10 (2) enjeksiyonluk çözelti 5.1 mg/7.6 mg/8.8 mg/2 mg/3.1 mg/5.1 mg/4 mg/6.1 mg/9.1 mg/4.6 mg/15.9 mg/2 mg/6.6 mg/9.3 mg/6.1 mg/2 mg/1.3 mg/0.7 mg/0.3 mg/1 mL :: /tr/fdf/amino-acid-10-paediatric-2-52022, /tr/fdf/amino-acid-10-paediatric-2-52023",
     "2× elektrolitli amino asit %10 enjeksiyonluk çözelti 5 mg/8.9 mg/8.56 mg/4.4 mg/4.7 mg/4.2 mg/1.6 mg/6.2 mg/11.5 mg/3 mg/10.5 mg/12 mg/5.6 mg/7.2 mg/5.5 mg/2.3 mg/0.4 mg/2.858 mg/0.36 mg/2.453 mg/0.508 mg/3.581 mg/1mL :: /tr/fdf/amino-acid-10-with-electrolyte-19892, /tr/fdf/amino-acid-10-with-electrolyte-52095",
-    "2× elektrolitli amino asit %5 enjeksiyonluk çözelti 2.5 mg/4.45 mg/4.28 mg/2.2 mg/2.35 mg/2.1 mg/0.8 mg/3.1 mg/5.75 mg/1.5 mg/5.25 mg/6 mg/2.8 mg/3.6 mg/2.75 mg/1.15 mg/0.4 mg/1.361 mg/0.964 mg/0.14 mg/2.453 mg/0.508 mg/3.581 mg/1mL :: /tr/fdf/amino-acid-5-with-electrolyte-19923, /tr/fdf/amino-acid-5-with-electrolyte-19926"
+    "2× elektrolitli amino asit %5 enjeksiyonluk çözelti 2.5 mg/4.45 mg/4.28 mg/2.2 mg/2.35 mg/2.1 mg/0.8 mg/3.1 mg/5.75 mg/1.5 mg/5.25 mg/6 mg/2.8 mg/3.6 mg/2.75 mg/1.15 mg/0.4 mg/1.361 mg/0.964 mg/0.14 mg/2.453 mg/0.508 mg/3.581 mg/1mL :: /tr/fdf/amino-acid-5-with-electrolyte-19923, /tr/fdf/amino-acid-5-with-electrolyte-19926",
+    "2× amino asit / lipid / glukoz (1-1) enjeksiyonluk emülsiyon 32 g/8 g/6.41 g/4.34 g/1.28 g/2.21 g/3.07 g/2.64 g/2.21 g/3.07 g/3.48 g/2.21 g/3.07 g/2.64 g/1.75 g/2.21 g/0.74 g/0.11 g/2.83 g/1.5 g/3.67 g/2.24 g/0.81 g/0.52 g/140 g/1000 mL :: /tr/fdf/amino-acid-lipid-glucose-1-1-50180, /tr/fdf/amino-acid-lipid-glucose-1-1-50359",
+    "3× amino asit / lipid / glukoz (1-2) enjeksiyonluk emülsiyon 2.26 mg/3.01 mg/2.73 mg/1.88 mg/1.74 mg/2.5 mg/2.59 mg/1.62 mg/4.66 mg/1.58 mg/1.44 mg/3.37 mg/3.26 mg/2.88 mg/3.37 mg/0.54 mg/132 mg/0.781 mg/0.402 mg/0.222 mg/1.872 mg/2.747 mg/0.686 mg/0.47 mg/5.264 µg/20 mg/20 mg/1mL :: /tr/fdf/amino-acid-lipid-glucose-1-2-19614, /tr/fdf/amino-acid-lipid-glucose-1-2-51054, /tr/fdf/amino-acid-lipid-glucose-1-2-51055"
    ]
   },
   {
    "name": "duplicate descriptions",
-   "count": 9,
+   "count": 7,
    "sample": [
     "2× واکسن دیفتری / هموفیلوس آنفلوانزای نوع b / سیاه‌سرفه / فلج اطفال / کزاز / هپاتیت :: /fa/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53418, /fa/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53419",
     "3× واکسن توکسوئید دیفتری / توکسوئید کزاز / سیاه‌سرفه / هموفیلوس آنفلوانزای نوع b /  :: /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461",
     "2× difteri / Haemophilus influenzae tip b / boğmaca / çocuk felci / tetanoz / hepat :: /tr/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53418, /tr/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53419",
     "3× difteri toksoidi / tetanoz toksoidi / boğmaca / Haemophilus influenzae tip b / h :: /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461",
     "2× insan allojenik umbilikal kordon dokusu kaynaklı mezenkimal stromal hücreler (Hu :: /tr/fdf/human-allogenic-umbilical-cord-tissue-derived-mesenchymal-st-53517, /tr/fdf/human-allogenic-umbilical-cord-tissue-derived-mesenchymal-st-53663",
-    "2× Haniya Parsan Darou Co., İran pazarı için ilaç hammaddelerini ve bitmiş ilaçları :: /tr/news, /tr/regulatory-affairs",
     "2× 白喉/b型流感嗜血杆菌/百日咳/脊髓灰质炎/破伤风/乙型肝炎疫苗（Diphtheria / Hemophilus Influenzae B / Pertussi :: /zh/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53418, /zh/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53419",
-    "3× 白喉类毒素/破伤风类毒素/百日咳/b型流感嗜血杆菌/乙型肝炎疫苗（Diphtheria Toxoid / Tetanus Toxoid / Pertussis  :: /zh/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /zh/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /zh/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461",
-    "2× Haniya Parsan Darou Co. 为伊朗市场进口药用原料和成品药，并为其注册提供支持。办事处设于德黑兰、伊斯坦布尔和上海。 :: /zh/news, /zh/regulatory-affairs"
+    "3× 白喉类毒素/破伤风类毒素/百日咳/b型流感嗜血杆菌/乙型肝炎疫苗（Diphtheria Toxoid / Tetanus Toxoid / Pertussis  :: /zh/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /zh/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /zh/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461"
    ]
   },
   {
@@ -169,7 +156,7 @@
    "count": 4,
    "sample": [
     "/excipient (627 KB)",
-    "/fa/excipient (630 KB)",
+    "/fa/excipient (631 KB)",
     "/tr/excipient (764 KB)",
     "/zh/excipient (662 KB)"
    ]
