@@ -133,7 +133,7 @@ const rtl = lang === 'fa';
       };
     });
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let W = 0, H = 0, dpr = 1, yaw = .36, pitch = -.3, drag: null | { x: number; y: number; yaw: number; pitch: number } = null;
+    let W = 0, H = 0, dpr = 1, yaw = .36, pitch = .34, drag: null | { x: number; y: number; yaw: number; pitch: number } = null;
     let base = .36, running = false, raf = 0, frame = 0, hoverIt: any = null;
     const t0 = performance.now();
     const size = () => { dpr = Math.min(devicePixelRatio || 1, 2); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
@@ -143,7 +143,7 @@ const rtl = lang === 'fa';
       const x1 = x * cy - z * sy, z1 = x * sy + z * cy;
       const y2 = y * cp - z1 * sp, z2 = y * sp + z1 * cp;
       const f = Math.min(W, H) * 1.0 / (D + z2);
-      return [W / 2 + x1 * f, H * .55 + y2 * f, f, z2] as const;
+      return [W / 2 + x1 * f, H * .5 + y2 * f, f, z2] as const;
     };
     const seg = (a: readonly number[], b: readonly number[], style: string, w = 1) => { ctx.strokeStyle = style; ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); };
     const poly = (pts: (readonly number[])[]) => { ctx.beginPath(); pts.forEach((p, i) => i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])); ctx.closePath(); };
@@ -291,7 +291,7 @@ const rtl = lang === 'fa';
       if (drag) {
         const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
         if (Math.abs(dx) + Math.abs(dy) > 4) { moved = true; hide(); }
-        yaw = drag.yaw + dx * .008; pitch = Math.max(-.9, Math.min(-.08, drag.pitch + dy * .004));
+        yaw = drag.yaw + dx * .008; pitch = Math.max(.1, Math.min(.85, drag.pitch - dy * .004));
         if (reduce) draw(performance.now());
         return;
       }
