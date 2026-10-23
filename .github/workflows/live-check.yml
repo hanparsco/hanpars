@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '7 9 * * 1'   # weekly, Monday
 permissions:
-  contents: read
+  contents: write
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -14,7 +14,11 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/live-check.py | tee live-check.log
-      - uses: actions/upload-artifact@v4
-        with:
-          name: live-check
-          path: live-check.log
+      - name: Publish report to the ci-report branch
+        if: always()
+        run: |
+          git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
+          cp live-check.log /tmp/live-check.log
+          git fetch -q origin ci-report && git worktree add -q /tmp/rep origin/ci-report
+          cp /tmp/live-check.log /tmp/rep/live-check.log
+          cd /tmp/rep && git add live-check.log && git commit -qm "live check $(date -u +%FT%TZ)" && git push -q origin HEAD:ci-report || true

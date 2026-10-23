@@ -2,6 +2,7 @@
 import { readdir, readFile, writeFile, mkdir, access } from 'node:fs/promises';
 import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 async function walk(dir, acc = []) {
   for (const e of await readdir(dir, { withFileTypes: true })) {
@@ -29,29 +30,44 @@ export default function seo({ site }) {
           if (/<meta name="robots" content="noindex/.test(html)) continue;
           const canon = (/<link rel="canonical" href="([^"]+)"/.exec(html) || [])[1];
           if (canon && new URL(canon).pathname !== rel) continue; // only canonical URLs
-          pages.set(rel, true);
+          // fingerprint of the page's own content (main element, scripts and attributes stripped) for honest <lastmod>
+          const main = (/<main\b[\s\S]*?<\/main>/.exec(html) || [html])[0]
+            .replace(/<(script|style|svg)\b[\s\S]*?<\/\1>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+          pages.set(rel, createHash('sha1').update(main).digest('hex').slice(0, 16));
         }
+        // dates from the previous deploy: keep a page's date while its fingerprint is unchanged
+        let prev = {};
+        try {
+          const r = await fetch(`${site}/sitemap-lastmod.json`, { signal: AbortSignal.timeout(20000) });
+          if (r.ok) prev = await r.json();
+        } catch {}
+        const havePrev = Object.keys(prev).length > 0;
+        const lastmod = {};
+        for (const [p, h] of pages) {
+          const old = prev[p];
+          lastmod[p] = [h, old && old[0] === h ? old[1] : (havePrev ? today : (old ? old[1] : ''))];
+        }
+        if (!havePrev) logger.warn('no previous sitemap-lastmod.json: <lastmod> omitted this time');
+        await writeFile(join(root, 'sitemap-lastmod.json'), JSON.stringify(Object.fromEntries(Object.entries(lastmod).map(([p, [h, d]]) => [p, [h, d || today]]))));
         const LANGS = [['en', 'en', ''], ['fa', 'fa-IR', '/fa'], ['zh', 'zh-Hans', '/zh'], ['tr', 'tr-TR', '/tr']];
         const langOf = (p) => (LANGS.find(([, , pre]) => pre && (p === pre || p.startsWith(pre + '/'))) || LANGS[0]);
         const strip = (p) => { const [, , pre] = langOf(p); return pre ? (p === pre ? '/' : p.slice(pre.length)) : p; };
         const withPre = (pre, en) => (pre ? (en === '/' ? pre : pre + en) : en);
-        const top = /^\/(fdf|api|excipient|nutrition|regulatory-affairs|contact-us-1|about-us|fdf-cdmo)$/;
-        const prio = (p) => { const e = strip(p); return e === '/' ? '1.0' : top.test(e) ? '0.9' : e === '/news' ? '0.8' : /^\/(fdf|api)\//.test(e) ? '0.6' : '0.5'; };
-        const freq = (p) => { const e = strip(p); return e === '/news' ? 'daily' : /^\/(fdf|api)\//.test(e) ? 'monthly' : 'weekly'; };
-        const loc = (p) => esc(site + (p === '/' ? '' : p));
+        const loc = (p) => esc(site + p);
         const byLang = Object.fromEntries(LANGS.map(([l]) => [l, []]));
         for (const p of [...pages.keys()].sort()) {
           const en = strip(p);
           const alts = LANGS.map(([, tag, pre]) => { const q = withPre(pre, en); return pages.has(q) ? `<xhtml:link rel="alternate" hreflang="${tag}" href="${loc(q)}"/>` : ''; }).join('')
             + (pages.has(en) ? `<xhtml:link rel="alternate" hreflang="x-default" href="${loc(en)}"/>` : '');
-          byLang[langOf(p)[0]].push(`<url><loc>${loc(p)}</loc><lastmod>${today}</lastmod><changefreq>${freq(p)}</changefreq><priority>${prio(p)}</priority>${alts}</url>`);
+          const lm = lastmod[p][1];
+          byLang[langOf(p)[0]].push(`<url><loc>${loc(p)}</loc>${lm ? `<lastmod>${lm}</lastmod>` : ''}${alts}</url>`);
         }
         const head = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
         const index = [];
         for (const [l] of LANGS) {
           if (!byLang[l].length) continue;
           await writeFile(join(root, `sitemap-${l}.xml`), head + byLang[l].join('\n') + '\n</urlset>\n');
-          index.push(`<sitemap><loc>${site}/sitemap-${l}.xml</loc><lastmod>${today}</lastmod></sitemap>`);
+          index.push(`<sitemap><loc>${site}/sitemap-${l}.xml</loc></sitemap>`);
         }
         await writeFile(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${index.join('\n')}\n</sitemapindex>\n`);
         const rows = Object.values(byLang).flat();

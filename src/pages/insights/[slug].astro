@@ -8,4 +8,4 @@ export function getStaticPaths() {
 }
 const { article } = Astro.props;
 ---
-<Layout title={`${article.title} | Hanpars Insights`} description={articleSummary(article).slice(0,155)}><Article article={article}/></Layout>
+<Layout title={`${article.title} | Hanpars Insights`} description={articleSummary(article).slice(0,155)} onlyLang="en"><Article article={article}/></Layout>
