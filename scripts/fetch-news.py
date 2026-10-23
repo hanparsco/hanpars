@@ -86,7 +86,9 @@ def parse_date(s: str):
 
 
 def strip_html(s: str) -> str:
-    s = re.sub(r'<[^>]+>', ' ', s or '')
+    # some feeds (PharmExec) double-escape CDATA, so the wrapper arrives as literal text: keep its content
+    s = re.sub(r'<!\[CDATA\[(.*?)\]\]>', r'\1', s or '', flags=re.S)
+    s = re.sub(r'<[^>]+>', ' ', s)
     s = html.unescape(s)
     return re.sub(r'\s+', ' ', s).strip()
 
