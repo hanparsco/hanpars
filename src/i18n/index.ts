@@ -73,7 +73,7 @@ const base = {
       ] },
     ],
     footer: {
-      intro: 'Haniya Parsan Darou Co. imports pharmaceutical ingredients and finished medicines for the Iranian market and supports their registration. Offices in Tehran, Istanbul & Hangzhou.',
+      intro: 'Haniya Parsan Darou Co. imports pharmaceutical ingredients and finished medicines for the Iranian market and supports their registration. Offices in Tehran, Istanbul, Hangzhou & Zhenjiang.',
       contact: 'Contact', send: 'Send an enquiry', news: 'Pharma news today', archive: 'Insights archive',
       rights: 'Haniya Parsan Darou Co. All rights reserved.',
       address: '3rd floor, No. 326, Zafar St, Africa Blvd, Tehran',
@@ -284,7 +284,7 @@ const base = {
       ] },
     ],
     footer: {
-      intro: 'شرکت هانیا پرسان دارو واردکنندهٔ مواد اولیه و داروهای ساخته‌شده برای بازار ایران است. دفتر مرکزی ما در تهران است و دفتر شرکای نزدیک ما در هانگژو و استانبول قرار دارند.',
+      intro: 'شرکت هانیا پرسان دارو واردکنندهٔ مواد اولیه و داروهای ساخته‌شده برای بازار ایران است. دفتر مرکزی ما در تهران است و دفتر شرکای نزدیک ما در هانگژو و استانبول و دفتر عمده‌فروش انحصاری ما در ژن‌جیانگ قرار دارند.',
       contact: 'تماس', send: 'ثبت درخواست', news: 'اخبار امروز دارو', archive: 'آرشیو مقالات',
       rights: 'شرکت هانیا پرسان دارو. تمامی حقوق محفوظ است.',
       address: 'تهران، بلوار آفریقا، خیابان ظفر، پلاک ۳۲۶، طبقهٔ سوم',

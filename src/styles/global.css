@@ -817,3 +817,14 @@ html[lang=fa] .catalogue-table .table-request { font-family:var(--sans); }
 [dir=rtl] .catalogue-table .cat-cell { direction:rtl; text-align:right; }
 [dir=rtl] .catalogue-table .cat-cell .table-link,[dir=rtl] .catalogue-table .cat-cell .cat-plain { direction:ltr; unicode-bidi:isolate; }
 [dir=rtl] .catalogue-table .cat-cell .cat-text { align-items:flex-start; }
+.catalogue-table th { white-space:nowrap; }
+.cat-cell .cat-text { max-width:calc(100% - 52px); }
+.cat-cell { white-space:nowrap; } .cat-cell .cat-text { white-space:normal; }
+@media(max-width:760px) {
+  .catalogue-table td:not(.cat-cell):not(:last-child) { grid-column:1 / -1; }
+  [dir=rtl] .catalogue-table td:not(.cat-cell):not(:last-child) { padding-left:0!important; padding-right:46px!important; text-align:right; }
+  .claims-filters { flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; -webkit-overflow-scrolling:touch; mask-image:linear-gradient(90deg,#000 85%,transparent); }
+  [dir=rtl] .claims-filters { mask-image:linear-gradient(270deg,#000 85%,transparent); }
+  .claims-filters::-webkit-scrollbar { display:none; }
+  .claims-filters button { flex:none; white-space:nowrap; }
+}
