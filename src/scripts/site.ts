@@ -6,6 +6,9 @@ const siteHeader = document.querySelector<HTMLElement>('.site-header');
 // Mobile menu. Scroll is locked by fixing <body> at the current offset (iOS Safari ignores overflow:hidden for
 // this and, worse, un-sticks the sticky header, which left the header and the menu off-screen mid-page).
 let lockedY = 0;
+// focusing the button can scroll the page (it sits under scroll-padding-top), so read the offset at press time
+let pressY: number | null = null;
+menuButton?.addEventListener('pointerdown', () => { pressY = window.scrollY; });
 function setMenu(open: boolean, restoreFocus = false) {
   if (!menuButton) return;
   const root = document.documentElement;
@@ -13,7 +16,7 @@ function setMenu(open: boolean, restoreFocus = false) {
   menuButton.setAttribute('aria-expanded', String(open));
   menuButton.setAttribute('aria-label', open ? (menuButton.dataset.labelClose || 'Close navigation') : (menuButton.dataset.labelOpen || 'Open navigation'));
   if (open) {
-    lockedY = window.scrollY;
+    lockedY = pressY ?? window.scrollY; pressY = null;
     root.style.setProperty('--hdr-h', `${siteHeader?.offsetHeight || 0}px`);
     document.body.style.top = `-${lockedY}px`;
     root.classList.add('nav-open');
