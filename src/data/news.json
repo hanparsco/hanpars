@@ -1,6 +1,14 @@
 {
- "updated": "2026-10-23T12:24:37Z",
+ "updated": "2026-10-23T12:26:18Z",
  "global": [
+  {
+   "title": "Pharmaceutical Executive Daily: FDA Approves Hibsago",
+   "url": "https://www.pharmexec.com/view/daily-fda-approves-hibsago",
+   "source": "Pharmaceutical Executive",
+   "date": "2026-10-21",
+   "summary": "A new ICER and West Health report finds median drug launch prices climbed to $257,000, the FDA approves GSK’s Hibsago as the first functional-cure therapy for chronic hepatitis B, and CSL names Deborah Waterhouse as CEO and managing director.",
+   "image": "/news/g-34b7d4cd82.jpg"
+  },
   {
    "title": "FDA rebukes Baxter over 'repeated' production stumbles in new warning letter",
    "url": "https://www.fiercepharma.com/manufacturing/fda-rebukes-baxter-warning-letter-ongoing-production-problems",
@@ -16,14 +24,6 @@
    "date": "2026-10-22",
    "summary": "Recon: FDA approves GSK hepatitis B drug; EQT to buy molecular testing firm Qiagen for $10.8B RAPS",
    "image": "/news/g-9bcc43ca9c.jpg"
-  },
-  {
-   "title": "Influenza vaccine shortage hits Lahore markets following insulin supply crisis",
-   "url": "https://dailytimes.com.pk/1571215/influenza-vaccine-shortage-hits-lahore-markets-following-insulin-supply-crisis/",
-   "source": "Daily Times",
-   "date": "2026-10-23",
-   "summary": "Influenza vaccine shortage hits Lahore markets following insulin supply crisis Daily Times",
-   "image": "/news/g-c1c30ffd32.jpg"
   }
  ],
  "china": [
