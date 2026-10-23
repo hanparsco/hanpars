@@ -81,6 +81,16 @@ jobs:
           git fetch -q origin ci-report && git worktree add -q /tmp/rep origin/ci-report
           cp /tmp/seo-audit.json /tmp/rep/seo-audit.json
           cd /tmp/rep && git add seo-audit.json && git commit -qm "seo audit ${GITHUB_SHA::7}" && git push -q origin HEAD:ci-report || true
+      - name: Language audit (report to ci-report branch)
+        if: github.ref == 'refs/heads/main'
+        continue-on-error: true
+        run: |
+          for l in zh tr fa; do node scripts/lang-audit.mjs dist $l; done
+          git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/la && cp lang-audit-*.json /tmp/la/
+          git fetch -q origin ci-report && git worktree add -q /tmp/rep2 origin/ci-report
+          cp /tmp/la/*.json /tmp/rep2/
+          cd /tmp/rep2 && git add lang-audit-*.json && git commit -qm "language audit ${GITHUB_SHA::7}" && git push -q origin HEAD:ci-report || true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
