@@ -18,7 +18,7 @@ const T = {
     stats: [['€33.4 M', 'customs-cleared value, Jan–Oct 2026'], ['78', 'customs declarations'], ['€9.3 M', 'peak month (August)'], ['30', 'molecules imported']],
     m: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
     mFull: ['January 2026', 'February 2026', 'March 2026', 'April 2026', 'May 2026', 'June 2026', 'July 2026', 'August 2026', 'September 2026', 'October 2026 (to 14 Oct)'],
-    barTip: (v: number, d: number) => d ? `€${v.toFixed(2)} M · ${d} declaration${d > 1 ? 's' : ''}` : '—',
+    barTip: (v: number, d: number) => d ? `€${v.toFixed(2)} M|${d} declaration${d > 1 ? 's' : ''}` : '—',
     axis: 'Customs-cleared value per month, million euros · 2026',
     chartTitle: 'Customs-cleared imports by month, 2026, in million euros',
     src: 'Source: HANPARS customs declarations, 2026.', hatch: 'Hatched bar = month in progress (data to 14 October).',
@@ -36,7 +36,7 @@ const T = {
     stats: [['۳۳٫۴ میلیون یورو', 'ارزش ترخیص‌شده، ژانویه تا اکتبر ۲۰۲۶'], ['۷۸', 'اظهارنامهٔ گمرکی'], ['۹٫۳ میلیون یورو', 'ماه اوج (اوت)'], ['۳۰', 'مولکول وارداتی']],
     m: ['ژانویه', 'فوریه', 'مارس', 'آوریل', 'مه', 'ژوئن', 'ژوئیه', 'اوت', 'سپتامبر', 'اکتبر'],
     mFull: ['ژانویه ۲۰۲۶', 'فوریه ۲۰۲۶', 'مارس ۲۰۲۶', 'آوریل ۲۰۲۶', 'مه ۲۰۲۶', 'ژوئن ۲۰۲۶', 'ژوئیه ۲۰۲۶', 'اوت ۲۰۲۶', 'سپتامبر ۲۰۲۶', 'اکتبر ۲۰۲۶ (تا ۱۴ اکتبر)'],
-    barTip: (v: number, d: number) => d ? `${n1(v, 2)} میلیون یورو · ${digits(String(d))} اظهارنامه` : '—',
+    barTip: (v: number, d: number) => d ? `${n1(v, 2)} میلیون یورو|${digits(String(d))} اظهارنامه` : '—',
     axis: 'ارزش ترخیص گمرکی در هر ماه، میلیون یورو · ۲۰۲۶',
     chartTitle: 'ارزش ترخیص گمرکی واردات به تفکیک ماه، ۲۰۲۶، میلیون یورو',
     src: 'منبع: اظهارنامه‌های گمرکی هانیا پرسان دارو، ۲۰۲۶.', hatch: 'ستون هاشورخورده = ماه جاری (داده‌ها تا ۱۴ اکتبر).',
@@ -54,7 +54,7 @@ const T = {
     stats: [['€3,340 万', '2026 年 1–10 月清关总值'], ['78', '份报关单'], ['€933 万', '峰值月份（8 月）'], ['30', '种进口分子']],
     m: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月'],
     mFull: ['2026 年 1 月', '2026 年 2 月', '2026 年 3 月', '2026 年 4 月', '2026 年 5 月', '2026 年 6 月', '2026 年 7 月', '2026 年 8 月', '2026 年 9 月', '2026 年 10 月（截至 10 月 14 日）'],
-    barTip: (v: number, d: number) => d ? `${Math.round(v * 100)} 万欧元 · ${d} 份报关单` : '—',
+    barTip: (v: number, d: number) => d ? `${Math.round(v * 100)} 万欧元|${d} 份报关单` : '—',
     axis: '每月清关额（百万欧元）· 2026',
     chartTitle: '2026 年每月清关进口额（百万欧元）',
     src: '来源：HANPARS 2026 年报关单。', hatch: '斜纹柱 = 进行中的月份（数据截至 10 月 14 日）。',
@@ -72,7 +72,7 @@ const T = {
     stats: [['33,4 mn €', 'gümrükten çekilen değer, Ocak–Ekim 2026'], ['78', 'gümrük beyannamesi'], ['9,3 mn €', 'zirve ay (ağustos)'], ['30', 'ithal edilen molekül']],
     m: ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki'],
     mFull: ['Ocak 2026', 'Şubat 2026', 'Mart 2026', 'Nisan 2026', 'Mayıs 2026', 'Haziran 2026', 'Temmuz 2026', 'Ağustos 2026', 'Eylül 2026', 'Ekim 2026 (14 Ekim’e kadar)'],
-    barTip: (v: number, d: number) => d ? `${n1(v, 2)} mn € · ${d} beyanname` : '—',
+    barTip: (v: number, d: number) => d ? `${n1(v, 2)} mn €|${d} beyanname` : '—',
     axis: 'Aylık gümrükten çekilen değer, milyon euro · 2026',
     chartTitle: '2026’da aylara göre gümrükten çekilen ithalat, milyon euro',
     src: 'Kaynak: HANPARS gümrük beyannameleri, 2026.', hatch: 'Taralı sütun = devam eden ay (veriler 14 Ekim’e kadar).',
@@ -125,7 +125,7 @@ const bubbles = [...mols].sort((a, b) => b.r - a.r);
       <div class="imp-bwrap">
         <figure class="imp-fig imp-bub">
           <svg viewBox="0 0 560 563" role="img" aria-label={T.h3}>
-            {bubbles.map(m => <g class="imp-b" data-t={m.name} data-v={`${T.groups[m.group as keyof typeof T.groups]} · ${T.units(m.units)} ${T.unitWord} · ${T.ship(m.ship)}`} tabindex="0">
+            {bubbles.map(m => <g class="imp-b" data-t={m.name} data-v={`${T.groups[m.group as keyof typeof T.groups]}|${T.units(m.units)} ${T.unitWord}|${T.ship(m.ship)}`} tabindex="0">
               <circle cx={m.cx} cy={m.cy} r={m.r} fill={COL[m.group]} />
               {m.label && (m.showVal
                 ? <><text class="imp-bl" x={m.cx} y={m.cy - 2} style={`font-size:${m.fs}px`} lang="en">{m.label}</text><text class="imp-bv" x={m.cx} y={m.cy + 11} style={`font-size:${m.r > 34 ? 11 : 9.1}px`}>{T.units(m.units)}</text></>
@@ -148,7 +148,8 @@ const bubbles = [...mols].sort((a, b) => b.r - a.r);
     let pinned: Element | null = null;
     const show = (el: HTMLElement, x: number, y: number) => {
       const r = fig.getBoundingClientRect();
-      tip.replaceChildren(Object.assign(document.createElement('b'), { textContent: el.dataset.t || '' }), document.createElement('br'), document.createTextNode(el.dataset.v || ''));
+      tip.replaceChildren(Object.assign(document.createElement('b'), { textContent: el.dataset.t || '' }));
+      (el.dataset.v || '').split('|').forEach(line => tip.append(document.createElement('br'), line));
       const left = Math.min(Math.max(x - r.left, 90), r.width - 90);
       tip.style.left = left + 'px'; tip.style.top = (y - r.top - 10) + 'px'; tip.classList.add('on');
     };

@@ -953,7 +953,7 @@ html[lang=fa] .faq-list p { line-height:1.95; }
 .imp-copy p { font-size:16.5px; line-height:1.75; color:var(--ink); margin:0 0 14px; }
 .imp-stats { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:26px 0 0; }
 .imp-stats div { background:var(--white); border:1px solid var(--line); border-radius:14px; padding:16px 18px; border-inline-start:3px solid var(--lapis); }
-.imp-stats dt { font-family:var(--display); font-weight:700; font-size:clamp(22px,2.2vw,28px); color:var(--navy); line-height:1.15; }
+.imp-stats dt { font-family:var(--display); font-weight:700; font-size:clamp(19px,2vw,25px); color:var(--navy); line-height:1.15; }
 .imp-stats dd { margin:4px 0 0; font-size:13.5px; color:var(--muted); line-height:1.45; }
 .imp-fig { position:relative; margin:0; background:var(--white); border:1px solid var(--line); border-radius:20px; padding:20px 20px 14px; box-shadow:0 1px 2px #1015200a,0 18px 40px -28px #10152038; }
 .imp-fig svg { display:block; width:100%; height:auto; direction:ltr; overflow:visible; }
@@ -995,3 +995,5 @@ html[lang=fa] .faq-list p { line-height:1.95; }
   .imp-legend ul { grid-template-columns:1fr; }
   .imp-copy p { font-size:16px; }
 }
+html[lang=fa] .imp-stats dt { font-size:clamp(18px,1.8vw,22px); }
+.imp-tip b { font-weight:600; }
