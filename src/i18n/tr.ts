@@ -45,7 +45,7 @@ export const tr: UI = {
       lede: 'Hanpars; etkin maddeleri, bitmiş ilaçları, yardımcı maddeleri ve beslenme bileşenlerini ithal eder ve IFDA nezdinde ruhsatlandırır. Merkezi Tahran’dadır; tedarikçileri Türkiye, Çin, Hindistan ve Avrupa’dadır.',
       primary: 'Tedarik talebi hazırlayın', secondary: 'Ruhsatlandırma ve regülasyon',
       heroAlt: 'Hanpars’ın tedarik ettiği bitmiş ürünler: tabletler, enjeksiyonlar ve flakonlar',
-      entries: { fdf: 'Bitmiş ürün formları', fdfText: (n: number, m: string) => `${n} acil ithalat (URGENT) kapsamında ruhsatlı ilaç ve ${m} referans ürün.`, api: 'Etkin maddeler', apiText: (m: string) => `Referans yelpazesinde ${m} madde.`, exc: 'Yardımcı maddeler', excText: 'İşleve ve kaliteye göre 1.241 yardımcı madde.', nut: 'Beslenme bileşenleri', nutText: 'Vitaminler, mineraller, bitkisel ürünler ve daha fazlası: 295 takviye bileşeni.' },
+      entries: { fdf: 'Bitmiş ürün formları', fdfText: (n: number, m: string) => `${n} acil ithalat (URGENT) kapsamında ruhsatlı ilaç ve ${m} referans ürün.`, api: 'Etkin maddeler', apiText: (m: string) => `Referans yelpazesinde ${m} madde.`, exc: 'Yardımcı maddeler', excText: 'İşleve ve kaliteye göre 1.240 yardımcı madde.', nut: 'Beslenme bileşenleri', nutText: 'Vitaminler, mineraller, bitkisel ürünler ve daha fazlası: 295 takviye bileşeni.' },
       threeTitle: 'Çoğunlukla birlikte yürüttüğümüz üç iş.',
       threeLede: 'Bir tedarik anlaşması, ürün onaylanıp rafa çıktığında anlam kazanır; bu yüzden tedarik, ruhsatlandırma ve proje koordinasyonu aynı ekipte buluşur.',
       three: [

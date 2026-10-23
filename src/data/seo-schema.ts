@@ -75,7 +75,7 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
   const title = lang === 'zh'
     ? pick([nameFa ? `${nameFa}（${name}）${cas} | 原料药供应 | Hanpars` : '', `${nameFa || name}${cas} | 原料药 | Hanpars`, `${nameFa || name}${cas}`].filter(Boolean))
     : lang === 'tr'
-    ? pick([`${nameFa || name}${cas} | Etkin madde tedariki | Hanpars`, `${nameFa || name}${cas} | Hanpars`, `${nameFa || name}${cas}`])
+    ? pick([nameFa && nameFa.toLowerCase() !== name.toLowerCase() ? `${nameFa} (${name})${cas} | Hanpars` : '', `${nameFa || name}${cas} | Etkin madde tedariki | Hanpars`, `${nameFa || name}${cas} | Hanpars`, `${nameFa || name}${cas}`].filter(Boolean))
     : lang === 'fa'
     ? pick([nameFa ? `${nameFa} (${name})${cas} | تأمین API | هانیا پرسان دارو` : '', nameFa ? `${nameFa} (${name})${cas} | تأمین API` : '', `${nameFa || name}${cas} | مادهٔ مؤثره | هانیا پرسان دارو`, `${nameFa || name}${cas} | تأمین API`, `${nameFa || name}${cas}`].filter(Boolean))
     : pick([`${name}${cas ? ' (' + cas.trim() + ')' : ''} | API supplier | Hanpars`, `${name}${cas ? ' (' + cas.trim() + ')' : ''} | Hanpars`, `${name}${cas ? ' (' + cas.trim() + ')' : ''}`]);

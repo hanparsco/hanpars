@@ -18,10 +18,10 @@ const s = t(lang);
 const page = Astro.params.page!;
 const data = (pagesL[lang] as any)[page as PageKey];
 const extra: Record<string, { title: string; description: string }> = {
-  'regulatory-affairs': { title: s.regulatory.title, description: (s.regulatory as any).lede || '' },
-  'contact-us-1': { title: s.contact.title, description: (s.contact as any).lede || '' },
-  'blog-1': { title: s.insights.title, description: (s.insights as any).lede || '' },
-  'news': { title: s.news.title, description: (s.news as any).lede || (s.news as any).intro || '' },
+  'regulatory-affairs': { title: s.regulatory.title, description: '伊朗药品注册法规事务：IFDA注册策略、CTD资料、GMP检查准备及生命周期维护，服务进入伊朗市场的生产企业。' },
+  'contact-us-1': { title: s.contact.title, description: '联系德黑兰的Hanpars：制剂、原料药、辅料、营养原料及IFDA注册咨询。邮箱：contact@hanpars.com' },
+  'blog-1': { title: s.insights.title, description: '行业洞察档案：中国原料药与制剂产业、供应链及监管趋势分析，面向伊朗医药市场。' },
+  'news': { title: s.news.title, description: '每日全球医药要闻及中国制剂/原料药资讯，每天早晨更新，附来源与链接。' },
 };
 const name = data?.title || extra[page]?.title || page;
 const str = (...v: unknown[]) => (v.find(x => typeof x === 'string' && x) as string) || '';

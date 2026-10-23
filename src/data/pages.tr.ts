@@ -13,28 +13,28 @@ export const pagesTr: Record<PageKey, LPage> = {
   fdf: {
     title: 'Bitmiş ürünler (FDF)', category: 'Ürünler',
     description: 'Hanpars’ın İran’da ruhsatlandırdığı hastane ve uzmanlık ilaçları, ardından tedarik edebileceğimiz bitmiş ürünlerin daha kapsamlı referans listesi.',
-    meta: 'Hanpars’ın İran Gıda ve İlaç Kurumu (IFDA) tarafından ruhsatlandırılmış hastane ve uzmanlık ilaçları portföyüne ve 3.885 bitmiş ürün (FDF) içeren referans listesine göz atın, ardından bir tedarik talebi hazırlayın.',
+    meta: 'Hanpars’ın IFDA ruhsatlı hastane ve uzmanlık ilaçları portföyüne ve 3.885 bitmiş ürün (FDF) içeren referans listesine göz atın, tedarik talebi hazırlayın.',
     introTitle: 'İki liste, tek bir başlangıç noktası.',
     intro: ['İlk liste kendi portföyümüzdür: İran’daki ruhsatı Hanpars’a ait olan ilaçlar; terapötik alana göre gruplanmış, ruhsatlı farmasötik formları, yitilikleri ve ATC kodlarıyla birlikte.', 'İkinci liste, sizin adınıza tedarik talebinde bulunabileceğimiz bitmiş ürünlerin daha uzun bir referans listesidir. İsimler ve kodlar kayıtlı olduğu şekliyle aynen korunmuştur.'],
   },
   excipient: {
     title: 'Yardımcı maddeler', category: 'Ürünler',
-    description: 'Dolgu maddeleri, bağlayıcılar, kaplama maddeleri, çözücüler ve diğerleri: CAS numaralı 1.241 yardımcı maddeden oluşan bir referans listesi. Listede arama yapın, ardından formülasyonunuzun gerektirdiği kaliteyi ve spesifikasyonu bize iletin.',
-    meta: 'Hanpars’ın CAS numaralı 1.241 maddelik yardımcı madde referans listesinde arama yapın ve formülasyonunuzun gerektirdiği kalite, spesifikasyon ve dokümantasyonu içeren bir talep hazırlayın.',
+    description: 'Dolgu maddeleri, bağlayıcılar, kaplama maddeleri, çözücüler ve diğerleri: CAS numaralı 1.240 yardımcı maddeden oluşan bir referans listesi. Listede arama yapın, ardından formülasyonunuzun gerektirdiği kaliteyi ve spesifikasyonu bize iletin.',
+    meta: 'Hanpars’ın CAS numaralı 1.240 maddelik yardımcı madde referans listesinde arama yapın; kalite, spesifikasyon ve dokümantasyon içeren talep hazırlayın.',
     introTitle: 'Yardımcı maddelerde talebi belirleyen, kalite derecesidir.',
     intro: ['Aynı ada sahip iki yardımcı madde çok farklı davranabilir. Bu nedenle kalite derecesini, farmakope spesifikasyonunu, kullanım alanını ve ihtiyaç duyduğunuz belgeleri bildirin; biz de bunu tedarikçilere iletelim.', 'Aşağıdaki referans listesi, daha önce tedarik ettiğimiz veya hakkında talep aldığımız maddeleri içerir; bir referanstır, stok listesi değildir.'],
   },
   nutrition: {
     title: 'Beslenme ve takviye edici gıda hammaddeleri', category: 'Ürünler',
     description: 'Vitaminler, mineraller, omega-3, probiyotikler, bitkisel ekstreler ve ilaç ile gıda takviyelerinde kullanılan diğer hammaddeler; piyasada işlem gördükleri formlarda.',
-    meta: '295 takviye edici hammaddenin (vitaminler, mineraller, omega-3, probiyotikler, bitkisel ürünler, nutrasötikler) yaygın form ve kullanımlarıyla referans listesi ve her biri için Hanpars tedarik talebi.',
+    meta: '295 takviye hammaddesinin (vitamin, mineral, omega-3, probiyotik, bitkisel ürün, nutrasötik) referans listesi ve her biri için Hanpars tedarik talebi.',
     introTitle: 'Hammadde ile başlayın.',
     intro: ['Takviye edici ürünler alanındaki çalışmamız ilaç faaliyetlerimizle birlikte, aynı spesifikasyon ve dokümantasyon titizliğiyle yürütülür. Aşağıdaki liste, ilaç ve gıda takviyelerinde kullanılan başlıca hammaddeleri türlerine göre gruplandırır; genellikle işlem gördükleri formları ve her birinin kullanım amacını gösterir.', 'Talep ilettiğinizde hammaddeyi, kalite derecesini, miktarı, pazarı ve dokümantasyon ihtiyaçlarını belirtin.'],
   },
   'about-us': {
     title: 'Hanpars Hakkında', category: 'Şirket',
     description: 'Tahran merkezli, İran pazarı için ilaç ve hammaddeleri tedarik eden, ithal eden ve ruhsatlandıran bir ilaç ticaret şirketi.',
-    meta: 'Hanpars (Haniya Parsan Darou Co.) hakkında: İran için etkin madde (API), yardımcı madde ve bitmiş ilaçları tedarik eden, ithal eden ve ruhsatlandıran, Tahran merkezli bir ilaç ticaret şirketi.',
+    meta: 'Hanpars (Haniya Parsan Darou Co.): İran için etkin madde (API), yardımcı madde ve bitmiş ilaç tedarik eden ve ruhsatlandıran Tahran merkezli şirket.',
     introTitle: 'Kimiz ve kim değiliz.',
     intro: ['Hanpars, Tahran’da Zafar Caddesi’nde yer alan Haniya Parsan Darou Co. şirketinin ticari adıdır. İran için etkin madde, yardımcı madde ve bitmiş ürün tedarik ediyoruz, ithal ettiğimiz hastane ilaçlarının pazarlama ruhsatlarına sahibiz ve yurt dışındaki üreticilerin İran’daki yerel regülasyon muhatabı olarak görev yapıyoruz. Tedarikçilerimiz Çin, Hindistan, Türkiye ve Avrupa’da; müşterilerimiz ise hastaneler, ilaç dağıtım şirketleri ve kendi ürünlerini geliştiren firmalar.', 'Üretici değiliz. Tedarik eder, ruhsatlandırır ve koordine ederiz; bir proje için üretim tesisi gerektiğinde bir iş ortağını sürece dahil eder, kimin neyden sorumlu olduğunu yazılı hale getiririz.'],
     cards: [
@@ -58,7 +58,7 @@ export const pagesTr: Record<PageKey, LPage> = {
   markets: {
     title: 'Pazarlar ve Tedarik', category: 'Şirket',
     description: 'İran, tedarik ettiğimiz ve ruhsatlandırma yaptığımız pazardır. Tedarik ağımız Çin, Hindistan, Türkiye ve Avrupa’daki üreticilere uzanır.',
-    meta: 'Hanpars, İran’da ilaç ürünleri tedarik eder ve ruhsatlandırır; Çin, Hindistan, Türkiye ve Avrupa’daki üreticilerden temin eder. Pazara özel bir talepte nelerin yer alması gerektiği.',
+    meta: 'Hanpars, Çin, Hindistan, Türkiye ve Avrupa’daki üreticilerden İran için ilaç tedarik eder ve ruhsatlandırır. Pazara özel talepte nelerin yer alacağı.',
     introTitle: 'Tek bir ana pazar, birden çok kaynak.',
     intro: ['Her şey İran pazarı etrafında şekillenir: IFDA, dağıtım şirketleri ve hastaneler. Tedarik tarafında Çin, Hindistan, Türkiye ve Avrupa’daki üreticilerle çalışırız; bunları ürün ürün, fiyatları kadar dokümantasyonlarına bakarak seçeriz.', 'Varış yerini ve gerektirdiği belgeleri bize iletin; neler yapabileceğimizi somut olarak söyleyelim.'],
     cards: [

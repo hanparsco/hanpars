@@ -40,7 +40,7 @@
  {
   "id": "disintegrants",
   "en": "Disintegrants",
-  "fa": "بازکننده‌ها",
+  "fa": "متلاشی‌کننده‌ها (دیس‌اینتگرانت‌ها)",
   "top": [
    "Croscarmellose sodium",
    "Sodium starch glycolate",
@@ -59,7 +59,7 @@
  {
   "id": "lubricants",
   "en": "Lubricants and glidants",
-  "fa": "روان‌کننده‌ها و لغزنده‌ها",
+  "fa": "روان‌کننده‌ها و تسهیل‌کننده‌های جریان (گلایدنت‌ها)",
   "top": [
    "Magnesium stearate",
    "Stearic acid",
@@ -173,7 +173,7 @@
  {
   "id": "antioxidants",
   "en": "Antioxidants and chelating agents",
-  "fa": "آنتی‌اکسیدان‌ها و شلاته‌کننده‌ها",
+  "fa": "آنتی‌اکسیدان‌ها و عوامل شلات‌کننده",
   "top": [
    "Butylated hydroxytoluene (BHT)",
    "Butylated hydroxyanisole (BHA)",
@@ -249,7 +249,7 @@
  {
   "id": "thickeners",
   "en": "Suspending, gelling and viscosity agents",
-  "fa": "معلق‌کننده‌ها، ژل‌کننده‌ها و افزایندهٔ ویسکوزیته",
+  "fa": "معلق‌کننده‌ها، ژل‌کننده‌ها و افزاینده‌های ویسکوزیته",
   "top": [
    "Xanthan gum",
    "Carbomer (Carbopol®)",

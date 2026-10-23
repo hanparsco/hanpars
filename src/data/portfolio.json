@@ -32,7 +32,7 @@
       "id": "area-1",
       "title": "Contrast media",
       "kicker": "Diagnostic imaging",
-      "description": "Iodinated and ionic contrast agents for CT, angiography and urography, supplied to imaging centres and hospitals nationwide.",
+      "description": "Non-ionic and ionic iodinated contrast agents for CT, angiography and urography, supplied to imaging centres and hospitals nationwide.",
       "products": [
         {
           "name": "Iodixanol",
@@ -1030,7 +1030,7 @@
       "id": "area-8",
       "title": "Gastroenterology & women’s health",
       "kicker": "Hepatobiliary and obstetric care",
-      "description": "Bile-acid therapy and prostaglandin analogue for obstetric indications.",
+      "description": "Bile-acid therapy and a prostaglandin analogue for obstetric indications.",
       "products": [
         {
           "name": "Misoprostol",
@@ -1109,7 +1109,7 @@
   "statusNote": "Status reflects IFDA licensing and import scheduling as of October 2026 and is updated regularly. Dosage forms and strengths are as licensed by the IFDA; manufacturer details and certificates are available to healthcare institutions and partners on request.",
   "manufacturer": {
     "title": "Manufacturers: bring your products to Iran with one partner",
-    "description": "From Letter of Authorization to pharmacy shelf — HANPARS prepares and submits the IFDA dossier, obtains the IRC licence, manages currency allocation and import, and places the product with national distributors. We are actively expanding our Turkish and European supplier base.",
+    "description": "From Letter of Authorisation to pharmacy shelf — HANPARS prepares and submits the IFDA dossier, obtains the IRC licence, manages currency allocation and import, and places the product with national distributors. We are actively expanding our Turkish and European supplier base.",
     "services": [
       "Dossier preparation and IFDA submission",
       "IRC licensing and renewals",
@@ -1120,5 +1120,5 @@
     "contactHref": "mailto:RA@hanpars.com?subject=Representation%20in%20Iran",
     "contactLabel": "Talk to our regulatory team"
   },
-  "sourceFooter": "Haniya Parsan Darou Co. (HANPARS) · 3rd Floor, No. 326, Zafar St., Africa Blvd., Tehran 1968734974, Iran · +98 21 88883325 · contact@hanpars.com"
+  "sourceFooter": "Haniya Parsan Darou Co. (HANPARS) · 3rd floor, No. 326, Zafar Street, Africa Boulevard, Tehran 1968734974, Iran · +98 21 8888 3325 · contact@hanpars.com"
 }

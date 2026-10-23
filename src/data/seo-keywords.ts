@@ -31,7 +31,7 @@ const en: Record<string, string[]> = {
   'regulatory-affairs': ['regulatory affairs', 'drug registration Iran', 'IFDA', 'Iran FDA registration', 'IRC code', 'CTD', 'eCTD', 'dossier preparation', 'GMP', 'EMA', 'FDA', 'TİTCK', 'pharmacovigilance', 'regulatory consulting'],
   'fdf-cdmo': ['CDMO', 'contract manufacturing', 'contract development', 'formulation development', 'technology transfer', 'licensed manufacturing'],
   'about-us': ['Hanpars', 'Haniya Parsan Darou', 'pharmaceutical importer Tehran'],
-  markets: ['pharmaceutical suppliers China', 'India', 'Türkiye', 'Europe', 'drug distribution Iran'],
+  markets: ['pharmaceutical suppliers China', 'pharmaceutical suppliers India', 'pharmaceutical suppliers Türkiye', 'pharmaceutical suppliers Europe', 'drug distribution Iran'],
   culture: ['pharmaceutical sourcing', 'documented supply'],
   'contact-us-1': ['contact Hanpars', 'medicine enquiry', 'API enquiry', 'pharmaceutical quote Iran'],
   news: ['pharma news', 'pharmaceutical industry news', 'China API news', 'FDA news'],

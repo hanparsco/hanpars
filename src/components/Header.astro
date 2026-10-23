@@ -8,7 +8,8 @@ const lang = langFromPath(Astro.url.pathname);
 const path = stripLang(Astro.url.pathname);
 const s = t(lang);
 const L = (p: string) => localePath(p, lang);
-const others = langs.map(l => ({ l, href: localePath(path, l) }));
+const switchPath = /^\/(home|404)(\.html)?\/?$/.test(path) ? '/' : path;  // pages that exist only in English
+const others = langs.map(l => ({ l, href: localePath(switchPath, l) }));
 const sv = (d: string) => `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
 const icons: Record<string, string> = {
   '/fdf': sv('<rect x="3" y="8" width="18" height="8" rx="4"/><path d="M12 8v8"/>'),

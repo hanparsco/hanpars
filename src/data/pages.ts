@@ -18,10 +18,10 @@ export const pages = {
   },
   excipient: {
     title: 'Excipients', category: 'Products',
-    description: 'Fillers, binders, coatings, solvents and the rest: a reference list of 1,241 excipients with CAS numbers. Search it, then tell us the grade and specification your formulation needs.',
-    meta: 'Search the Hanpars excipient reference list of 1,241 materials with CAS numbers and prepare an enquiry with the grade, specification and documentation your formulation requires.',
+    description: 'Fillers, binders, coatings, solvents and the rest: a reference list of 1,240 excipients with CAS numbers. Search it, then tell us the grade and specification your formulation needs.',
+    meta: 'Search the Hanpars excipient reference list of 1,240 materials with CAS numbers and prepare an enquiry with the grade, specification and documentation your formulation requires.',
     introTitle: 'For excipients, the grade is the request.',
-    intro: ['Two excipients with the same name can behave very differently, so tell us the grade, the pharmacopoeial specification, the application and the documents you need, and we will take that to suppliers.', 'The reference list below lists what we have sourced or been asked about before; it is a reference, not a stock list.'],
+    intro: ['Two excipients with the same name can behave very differently, so tell us the grade, the pharmacopoeial specification, the application and the documents you need, and we will take that to suppliers.', 'The list below covers materials we have sourced or been asked about, alongside pharmacopoeial references; it is a reference, not a stock list.'],
     
   },
   nutrition: {
@@ -39,7 +39,7 @@ export const pages = {
     introTitle: 'Who we are, and what we are not.',
     intro: ['Hanpars is the trading name of Haniya Parsan Darou Co., on Zafar Street in Tehran. We source active ingredients, excipients and finished dosage forms for Iran, hold the marketing authorisations for the hospital medicines we import, and act as the in-country regulatory contact for manufacturers abroad. Suppliers are in China, India, Türkiye and Europe; customers are hospitals, distributors and companies developing their own products.', 'We are not a manufacturer. We source, register and coordinate; when a project needs a plant, we bring in a partner and write down who is responsible for what.'],
     cards: [
-      {title:'Products first',icon:'capsule',text:'APIs, excipients and finished dosage forms, every day. Nutrition ingredients have their own database and the same approach.',href:'/fdf',link:'See the portfolio'},
+      {title:'Products first',icon:'capsule',text:'APIs, excipients and finished dosage forms, every day. Nutrition ingredients have their own reference list and the same approach.',href:'/fdf',link:'See the portfolio'},
       {title:'Registration in-house',icon:'file',text:'Dossier, IRC licence and pharmacovigilance for our imports are handled by our own regulatory team, which also files for third parties.',href:'/regulatory-affairs',link:'Regulatory affairs'},
       {title:'One accountable contact',icon:'globe',text:'Each request has one person at Hanpars responsible for it, from first brief to delivery or approval.',href:'/contact-us-1',link:'Start a conversation'},
     ],

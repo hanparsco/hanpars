@@ -18,10 +18,10 @@ const s = t(lang);
 const page = Astro.params.page!;
 const data = (pagesL[lang] as any)[page as PageKey];
 const extra: Record<string, { title: string; description: string }> = {
-  'regulatory-affairs': { title: s.regulatory.title, description: (s.regulatory as any).lede || '' },
-  'contact-us-1': { title: s.contact.title, description: (s.contact as any).lede || '' },
-  'blog-1': { title: s.insights.title, description: (s.insights as any).lede || '' },
-  'news': { title: s.news.title, description: (s.news as any).lede || (s.news as any).intro || '' },
+  'regulatory-affairs': { title: s.regulatory.title, description: 'İran için düzenleyici işler: IFDA ruhsat stratejisi, CTD dosyaları, GMP denetim hazırlığı ve yaşam döngüsü yönetimi; İran pazarına girecek üreticiler için.' },
+  'contact-us-1': { title: s.contact.title, description: 'Hanpars Tahran’da: bitmiş ilaç, API, yardımcı madde, takviye hammaddeleri ve IFDA ruhsatlandırma talepleriniz için iletişime geçin. contact@hanpars.com' },
+  'blog-1': { title: s.insights.title, description: 'Bilgi arşivi: Çin API ve bitmiş doz sanayisi, tedarik zincirleri ve düzenleyici eğilimler üzerine İran ilaç pazarına yönelik analizler.' },
+  'news': { title: s.news.title, description: 'Günün önemli küresel ilaç haberleri ve Çin FDF/API gelişmeleri; her sabah kaynak ve bağlantıyla birlikte güncellenir.' },
 };
 const name = data?.title || extra[page]?.title || page;
 const str = (...v: unknown[]) => (v.find(x => typeof x === 'string' && x) as string) || '';

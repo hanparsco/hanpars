@@ -3089,7 +3089,7 @@
 "otherCas": [
 "16175-85-2"
 ],
-"description": "Atropine is an alkaloid originally synthesized from Atropa belladonna. It is a racemic mixture of d-and l-hyoscyamine, of which only l-hyoscyamine is pharmacologically active. Atropine is generally available as a sulfate salt and can be administered by intravenous, subcutaneous, intramuscular, intraosseous, endotracheal and ophthalmic methods. Oral atropine is only available in combination products. Atropine is a competitive, reversible antagonist of muscarinic receptors that blocks the effects of acetylcholine and other choline esters. It has a variety of therapeutic applications, including pupil dilation and the treatment of anticholinergic poisoning and symptomatic bradycardia in the absence of reversible causes. Atropine is a relatively inexpensive drug and is included in the World Health Organization List of Essential Medicines.",
+"description": "Atropine is an alkaloid originally synthesized from Atropa belladonna. It is a racemic mixture of d-and l-hyoscyamine, of which only l-hyoscyamine is pharmacologically active. Atropine is generally available as a sulfate salt and can be administered by intravenous, subcutaneous, intramuscular, intraosseous, endotracheal and ophthalmic methods. Oral atropine is only available in combination products. Atropine is a competitive, reversible antagonist of muscarinic receptors that blocks the effects of acetylcholine and other choline esters. It has a variety of therapeutic applications, including pupil dilation and the treatment of organophosphate (anticholinesterase) poisoning and symptomatic bradycardia in the absence of reversible causes. Atropine is a relatively inexpensive drug and is included in the World Health Organization List of Essential Medicines.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/174174.png"
 },
@@ -6206,7 +6206,7 @@
 "73837-24-8",
 "66772-14-3"
 ],
-"description": "Calcitriol or 1,25-dihydroxycholecalciferol (abbreviated 1,25-(OH)<sub>2</sub>-D3) is the active form of vitamin D found in the body (vitamin D3). Calcitriol is marketed under various trade names including Rocaltrol (Roche), Calcijex (Abbott) and Decostriol (Mibe, Jesalis). It is produced in the kidneys via 25-hydroxyvitamin D-1 &alpha;-hydroxylase by conversion from 25-hydroxycholecalciferol (calcidiol). This is stimulated by a decrease in serum calcium, phosphate (PO<sub>4</sub><sup>3-</sup>) and parathyroid hormone (PTH) levels. It regulates calcium levels by increasing the absorption of calcium and phosphate from the gastrointestinal tract, increasing calcium and phosphate reabsorption in the kidneys and inhibiting the release of PTH. Calcitriol is also commonly used as a medication in the treatment of hypocalcemia and osteoporosis.",
+"description": "Calcitriol or 1,25-dihydroxycholecalciferol (abbreviated 1,25-(OH)₂-D3) is the active form of vitamin D found in the body (vitamin D3). Calcitriol is marketed under various trade names including Rocaltrol (Roche), Calcijex (Abbott) and Decostriol (Mibe, Jesalis). It is produced in the kidneys via 25-hydroxyvitamin D-1 α-hydroxylase by conversion from 25-hydroxycholecalciferol (calcidiol). This is stimulated by low serum calcium and phosphate (PO₄³⁻) and by raised parathyroid hormone (PTH) levels. It regulates calcium levels by increasing the absorption of calcium and phosphate from the gastrointestinal tract, increasing calcium and phosphate reabsorption in the kidneys and inhibiting the release of PTH. Calcitriol is also commonly used as a medication in the treatment of hypocalcemia and osteoporosis.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/5280453.png"
 },
@@ -7799,7 +7799,7 @@
 "Allergy relief"
 ],
 "otherCas": [],
-"description": "Cetirizine is a medication used for the treatment of allergies, hay fever, angioedema, and hives. It is a second-generation H1-receptor antagonist antihistamine and works by blocking H1 histamine receptors. It is a major metabolite of hydroxyzine, and has the same basic side effects, including dry mouth. A potent second-generation histamine H1 antagonist that is effective in the treatment of allergic rhinitis, chronic urticaria, and pollen-induced asthma. Unlike many traditional antihistamines, it does not cause drowsiness or anticholinergic side effects. Cetirizine hydrochloride is a medication used for the treatment of allergies, hay fever, angioedema, and hives. It is a second-generation H1-receptor antagonist antihistamine and works by blocking H1 histamine receptors. It is a major metabolite of hydroxyzine, and has the same basic side effects, including dry mouth.",
+"description": "Cetirizine is a medication used for the treatment of allergies, hay fever, angioedema, and hives. It is a second-generation H1-receptor antagonist antihistamine and works by blocking H1 histamine receptors. It is a major metabolite of hydroxyzine, and has the same basic side effects, including dry mouth. A potent second-generation histamine H1 antagonist that is effective in the treatment of allergic rhinitis, chronic urticaria, and pollen-induced asthma. Unlike many traditional antihistamines, it causes less drowsiness and fewer anticholinergic side effects. Cetirizine hydrochloride is a medication used for the treatment of allergies, hay fever, angioedema, and hives. It is a second-generation H1-receptor antagonist antihistamine and works by blocking H1 histamine receptors. It is a major metabolite of hydroxyzine, and has the same basic side effects, including dry mouth.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/55182.png"
 },
@@ -9535,7 +9535,7 @@
 "Gen-xene"
 ],
 "otherCas": [],
-"description": "Clorazepate is only found in individuals that have used or taken this drug. It is a water-soluble benzodiazepine derivative effective in the treatment of anxiety. It has also muscle relaxant and anticonvulsant actions. [PubChem]Benzodiazepines bind nonspecifically to benzodiazepine receptors BNZ1, which mediates sleep, and BNZ2, which affects affects muscle relaxation, anticonvulsant activity, motor coordination, and memory. As benzodiazepine receptors are thought to be coupled to gamma-aminobutyric acid-A (GABA<sub>A</sub>) receptors, this enhances the effects of GABA by increasing GABA affinity for the GABA receptor. Binding of the inhibitory neurotransmitter GABA to the site opens the chloride channel, resulting in a hyperpolarized cell membrane that prevents further excitation of the cell.",
+"description": "Clorazepate is only found in individuals that have used or taken this drug. It is a water-soluble benzodiazepine derivative effective in the treatment of anxiety. It has also muscle relaxant and anticonvulsant actions. [PubChem]Benzodiazepines bind nonspecifically to benzodiazepine receptors BNZ1, which mediates sleep, and BNZ2, which affects affects muscle relaxation, anticonvulsant activity, motor coordination, and memory. As benzodiazepine receptors are thought to be coupled to gamma-aminobutyric acid-A (GABAA) receptors, this enhances the effects of GABA by increasing GABA affinity for the GABA receptor. Binding of the inhibitory neurotransmitter GABA to the site opens the chloride channel, resulting in a hyperpolarized cell membrane that prevents further excitation of the cell.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/167305.png"
 },
@@ -13206,7 +13206,7 @@
 "Diergo"
 ],
 "otherCas": [],
-"description": "Dihydroergotamine is only found in individuals that have used or taken this drug. It is a 9,10alpha-dihydro derivative of ergotamine. It is used as a vasoconstrictor, specifically for the therapy of migraine disorders. Two theories have been proposed to explain the efficacy of 5-HT<sub>1D</sub> receptor agonists in migraine: 1) activation of 5-HT<sub>1D</sub> receptors located on intracranial blood vessels, including those on arterio-venous anastomoses, leads to vasoconstriction, which correlates with the relief of migraine headache and 2) activation of 5-HT<sub>1D</sub> receptors on sensory nerve endings of the trigeminal system results in the inhibition of pro-inflammatory neuropeptide release.",
+"description": "Dihydroergotamine is only found in individuals that have used or taken this drug. It is a 9,10alpha-dihydro derivative of ergotamine. It is used as a vasoconstrictor, specifically for the therapy of migraine disorders. Two theories have been proposed to explain the efficacy of 5-HT₁D receptor agonists in migraine: 1) activation of 5-HT₁D receptors located on intracranial blood vessels, including those on arterio-venous anastomoses, leads to vasoconstriction, which correlates with the relief of migraine headache and 2) activation of 5-HT₁D receptors on sensory nerve endings of the trigeminal system results in the inhibition of pro-inflammatory neuropeptide release.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/71171.png"
 },
@@ -16305,7 +16305,7 @@
 "Alenia"
 ],
 "otherCas": [],
-"description": "Esomeprazole is only found in individuals that have used or taken this drug. It is a highly effective inhibitor of gastric acid secretion used in the therapy of stomach ulcers and Zollinger-Ellison syndrome. The drug inhibits the H(+)-K(+)-ATPase (H(+)-K(+)-exchanging ATPase) in the proton pump of gastric parietal cells. [PubChem]Esomeprazole is a proton pump inhibitor that suppresses gastric acid secretion by specific inhibition of the H<sup>+</sup>/K<sup>+</sup>-ATPase in the gastric parietal cell. By acting specifically on the proton pump, Esomeprazole blocks the final step in acid production, thus reducing gastric acidity.",
+"description": "Esomeprazole is only found in individuals that have used or taken this drug. It is a highly effective inhibitor of gastric acid secretion used in the therapy of stomach ulcers and Zollinger-Ellison syndrome. The drug inhibits the H(+)-K(+)-ATPase (H(+)-K(+)-exchanging ATPase) in the proton pump of gastric parietal cells. [PubChem]Esomeprazole is a proton pump inhibitor that suppresses gastric acid secretion by specific inhibition of the H⁺/K⁺-ATPase in the gastric parietal cell. By acting specifically on the proton pump, Esomeprazole blocks the final step in acid production, thus reducing gastric acidity.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/9568614.png"
 },
@@ -16428,7 +16428,7 @@
 "Esomeprazole sodium?"
 ],
 "otherCas": [],
-"description": "Esomeprazole is only found in individuals that have used or taken this drug. It is a highly effective inhibitor of gastric acid secretion used in the therapy of stomach ulcers and Zollinger-Ellison syndrome. The drug inhibits the H(+)-K(+)-ATPase (H(+)-K(+)-exchanging ATPase) in the proton pump of gastric parietal cells. [PubChem]Esomeprazole is a proton pump inhibitor that suppresses gastric acid secretion by specific inhibition of the H<sup>+</sup>/K<sup>+</sup>-ATPase in the gastric parietal cell. By acting specifically on the proton pump, Esomeprazole blocks the final step in acid production, thus reducing gastric acidity.",
+"description": "Esomeprazole is only found in individuals that have used or taken this drug. It is a highly effective inhibitor of gastric acid secretion used in the therapy of stomach ulcers and Zollinger-Ellison syndrome. The drug inhibits the H(+)-K(+)-ATPase (H(+)-K(+)-exchanging ATPase) in the proton pump of gastric parietal cells. [PubChem]Esomeprazole is a proton pump inhibitor that suppresses gastric acid secretion by specific inhibition of the H⁺/K⁺-ATPase in the gastric parietal cell. By acting specifically on the proton pump, Esomeprazole blocks the final step in acid production, thus reducing gastric acidity.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/23674541.png"
 },
@@ -16461,7 +16461,7 @@
 "otherCas": [
 "53180-72-6"
 ],
-"description": "Estazolam is only found in individuals that have used or taken this drug. It is a benzodiazepine with anticonvulsant, hypnotic, and muscle relaxant properties. It has been shown in some cases to be more potent than diazepam or nitrazepam. [PubChem] Benzodiazepines bind nonspecifically to benzodiazepine receptors, which affects affects muscle relaxation, anticonvulsant activity, motor coordination, and memory. As benzodiazepine receptors are thought to be coupled to gamma-aminobutyric acid-A (GABA<sub>A</sub>) receptors, this enhances the effects GABA by increasing GABA affinity for the GABA receptor. Binding of the inhibitory neurotransmitter GABA to the site opens the chloride channel, resulting in a hyperpolarized cell membrane that prevents further excitation of the cell.",
+"description": "Estazolam is only found in individuals that have used or taken this drug. It is a benzodiazepine with anticonvulsant, hypnotic, and muscle relaxant properties. It has been shown in some cases to be more potent than diazepam or nitrazepam. [PubChem] Benzodiazepines bind nonspecifically to benzodiazepine receptors, which affects affects muscle relaxation, anticonvulsant activity, motor coordination, and memory. As benzodiazepine receptors are thought to be coupled to gamma-aminobutyric acid-A (GABAA) receptors, this enhances the effects GABA by increasing GABA affinity for the GABA receptor. Binding of the inhibitory neurotransmitter GABA to the site opens the chloride channel, resulting in a hyperpolarized cell membrane that prevents further excitation of the cell.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/3261.png"
 },
@@ -18101,7 +18101,7 @@
 "otherCas": [
 "123631-92-5"
 ],
-"description": "Fluconazole is only found in individuals that have used or taken this drug. It is a triazole antifungal agent that is used to treat oropharyngeal candidiasis and cryptococcal meningitis in AIDS. Fluconazole interacts with 14-&alpha; demethylase, a cytochrome P-450 enzyme necessary to convert lanosterol to ergosterol. As ergosterol is an essential component of the fungal cell membrane, inhibition of its synthesis results in increased cellular permeability causing leakage of cellular contents. Fluconazole may also inhibit endogenous respiration, interact with membrane phospholipids, inhibit the transformation of yeasts to mycelial forms, inhibit purine uptake, and impair triglyceride and/or phospholipid biosynthesis.",
+"description": "Fluconazole is only found in individuals that have used or taken this drug. It is a triazole antifungal agent that is used to treat oropharyngeal candidiasis and cryptococcal meningitis in AIDS. Fluconazole interacts with 14-α demethylase, a cytochrome P-450 enzyme necessary to convert lanosterol to ergosterol. As ergosterol is an essential component of the fungal cell membrane, inhibition of its synthesis results in increased cellular permeability causing leakage of cellular contents. Fluconazole may also inhibit endogenous respiration, interact with membrane phospholipids, inhibit the transformation of yeasts to mycelial forms, inhibit purine uptake, and impair triglyceride and/or phospholipid biosynthesis.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/3365.png"
 },
@@ -22582,7 +22582,7 @@
 "Irbesartan teva"
 ],
 "otherCas": [],
-"description": "Irbesartan is a nonpeptide angiotensin II antagonist with antihypertensive activity. Irbesartan selectively and competitively blocks the binding of angiotensin II to the angiotensin I receptor. Angiotensin II stimulates aldosterone synthesis and secretion by adrenal cortex, which decreases the excretion of sodium and increases the excretion of potassium. Angiotensin II also acts as a vasoconstrictor in vascular smooth muscle. (NCI05)",
+"description": "Irbesartan is a nonpeptide angiotensin II antagonist with antihypertensive activity. Irbesartan selectively and competitively blocks the binding of angiotensin II to the angiotensin II type 1 (AT1) receptor. Angiotensin II stimulates aldosterone synthesis and secretion by adrenal cortex, which decreases the excretion of sodium and increases the excretion of potassium. Angiotensin II also acts as a vasoconstrictor in vascular smooth muscle. (NCI05)",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/3749.png"
 },
@@ -22714,7 +22714,7 @@
 "Compound 469"
 ],
 "otherCas": [],
-"description": "Isoflurane is only found in individuals that have used or taken this drug. It is a stable, non-explosive inhalation anesthetic, relatively free from significant side effects. [PubChem]Isoflurane induces a reduction in junctional conductance by decreasing gap junction channel opening times and increasing gap junction channel closing times. Isoflurane also activates calcium dependent ATPase in the sarcoplasmic reticulum by increasing the fluidity of the lipid membrane. Also appears to bind the D subunit of ATP synthase and NADH dehydogenase. Isoflurane also binds to the GABA receptor, the large conductance Ca<sup>2+</sup> activated potassium channel, the glutamate receptor and the glycine receptor.",
+"description": "Isoflurane is only found in individuals that have used or taken this drug. It is a stable, non-explosive inhalation anesthetic, relatively free from significant side effects. [PubChem]Isoflurane induces a reduction in junctional conductance by decreasing gap junction channel opening times and increasing gap junction channel closing times. Isoflurane also activates calcium dependent ATPase in the sarcoplasmic reticulum by increasing the fluidity of the lipid membrane. Also appears to bind the D subunit of ATP synthase and NADH dehydogenase. Isoflurane also binds to the GABA receptor, the large conductance Ca²⁺ activated potassium channel, the glutamate receptor and the glycine receptor.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/3763.png"
 },
@@ -23211,7 +23211,7 @@
 "142128-57-2",
 "72093-26-6"
 ],
-"description": "Ketoconazole is only found in individuals that have used or taken this drug. It is a broad spectrum antifungal agent used for long periods at high doses, especially in immunosuppressed patients. [PubChem]Ketoconazole interacts with 14-&alpha; demethylase, a cytochrome P-450 enzyme necessary for the conversion of lanosterol to ergosterol. This results in inhibition of ergosterol synthesis and increased fungal cellular permeability. Other mechanisms may involve the inhibition of endogenous respiration, interaction with membrane phospholipids, inhibition of yeast transformation to mycelial forms, inhibition of purine uptake, and impairment of triglyceride and/or phospholipid biosynthesis. Ketoconazole can also inhibit the synthesis of thromboxane and sterols such as aldosterone, cortisol, and testosterone.",
+"description": "Ketoconazole is only found in individuals that have used or taken this drug. It is a broad spectrum antifungal agent used for long periods at high doses, especially in immunosuppressed patients. [PubChem]Ketoconazole interacts with 14-α demethylase, a cytochrome P-450 enzyme necessary for the conversion of lanosterol to ergosterol. This results in inhibition of ergosterol synthesis and increased fungal cellular permeability. Other mechanisms may involve the inhibition of endogenous respiration, interaction with membrane phospholipids, inhibition of yeast transformation to mycelial forms, inhibition of purine uptake, and impairment of triglyceride and/or phospholipid biosynthesis. Ketoconazole can also inhibit the synthesis of thromboxane and sterols such as aldosterone, cortisol, and testosterone.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/47576.png"
 },
@@ -27651,7 +27651,7 @@
 "otherCas": [
 "18652-93-2"
 ],
-"description": "Methohexital is only found in individuals that have used or taken this drug. It is an intravenous anesthetic with a short duration of action that may be used for induction of anesthesia. Methohexital binds at a distinct binding site associated with a Cl<sup>-</sup> ionopore at the GABA<sub>A</sub> receptor, increasing the duration of time for which the Cl<sup>-</sup> ionopore is open. The post-synaptic inhibitory effect of GABA in the thalamus is, therefore, prolonged.",
+"description": "Methohexital is only found in individuals that have used or taken this drug. It is an intravenous anesthetic with a short duration of action that may be used for induction of anesthesia. Methohexital binds at a distinct binding site associated with a Cl⁻ ionopore at the GABAA receptor, increasing the duration of time for which the Cl⁻ ionopore is open. The post-synaptic inhibitory effect of GABA in the thalamus is, therefore, prolonged.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/9034.png"
 },
@@ -28407,7 +28407,7 @@
 "otherCas": [
 "75319-48-1"
 ],
-"description": "Miconazole is only found in individuals that have used or taken this drug. It is an imidazole antifungal agent that is used topically and by intravenous infusion. [PubChem] Miconazole interacts with 14-&alpha; demethylase, a cytochrome P-450 enzyme necessary to convert lanosterol to ergosterol. As ergosterol is an essential component of the fungal cell membrane, inhibition of its synthesis results in increased cellular permeability causing leakage of cellular contents. Miconazole may also inhibit endogenous respiration, interact with membrane phospholipids, inhibit the transformation of yeasts to mycelial forms, inhibit purine uptake, and impair triglyceride and/or phospholipid biosynthesis.",
+"description": "Miconazole is only found in individuals that have used or taken this drug. It is an imidazole antifungal agent that is used topically and by intravenous infusion. [PubChem] Miconazole interacts with 14-α demethylase, a cytochrome P-450 enzyme necessary to convert lanosterol to ergosterol. As ergosterol is an essential component of the fungal cell membrane, inhibition of its synthesis results in increased cellular permeability causing leakage of cellular contents. Miconazole may also inhibit endogenous respiration, interact with membrane phospholipids, inhibit the transformation of yeasts to mycelial forms, inhibit purine uptake, and impair triglyceride and/or phospholipid biosynthesis.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/68553.png"
 },
@@ -41961,7 +41961,7 @@
 "3-Hydroxydiazepam"
 ],
 "otherCas": [],
-"description": "Temazepam is only found in individuals that have used or taken this drug. It is a benzodiazepine that acts as a gamma-aminobutyric acid modulator and anti-anxiety agent. [PubChem]Benzodiazepines bind nonspecifically to benzodiazepine receptors, which affects muscle relaxation, anticonvulsant activity, motor coordination, and memory. As benzodiazepine receptors are thought to be coupled to gamma-aminobutyric acid-A (GABA<sub>A</sub>) receptors, this enhances the effects of GABA by increasing GABA affinity for the GABA receptor. Binding of the inhibitory neurotransmitter GABA to the site opens the chloride channel, resulting in a hyperpolarized cell membrane that prevents further excitation of the cell.",
+"description": "Temazepam is only found in individuals that have used or taken this drug. It is a benzodiazepine that acts as a gamma-aminobutyric acid modulator and anti-anxiety agent. [PubChem]Benzodiazepines bind nonspecifically to benzodiazepine receptors, which affects muscle relaxation, anticonvulsant activity, motor coordination, and memory. As benzodiazepine receptors are thought to be coupled to gamma-aminobutyric acid-A (GABAA) receptors, this enhances the effects of GABA by increasing GABA affinity for the GABA receptor. Binding of the inhibitory neurotransmitter GABA to the site opens the chloride channel, resulting in a hyperpolarized cell membrane that prevents further excitation of the cell.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/5391.png"
 },
@@ -44202,7 +44202,7 @@
 "Triazolam civ"
 ],
 "otherCas": [],
-"description": "Triazolam is only found in individuals that have used or taken this drug. It is withdrawn in the United Kingdom due to risk of psychiatric adverse drug reactions. This drug continues to be available in the U.S. Internationally, triazolam is a Schedule IV drug under the Convention on Psychotropic Substances.Benzodiazepines bind nonspecifically to bezodiazepine receptors BNZ1, which mediates sleep, and BNZ2, which affects affects muscle relaxation, anticonvulsant activity, motor coordination, and memory. As benzodiazepine receptors are thought to be coupled to gamma-aminobutyric acid-A (GABA<sub>A</sub>) receptors, this enhances the effects of GABA by increasing GABA affinity for the GABA receptor. Binding of GABA to the site opens the chloride channel, resulting in a hyperpolarized cell membrane that prevents further excitation of the cell.",
+"description": "Triazolam is only found in individuals that have used or taken this drug. It is withdrawn in the United Kingdom due to risk of psychiatric adverse drug reactions. This drug continues to be available in the U.S. Internationally, triazolam is a Schedule IV drug under the Convention on Psychotropic Substances.Benzodiazepines bind nonspecifically to bezodiazepine receptors BNZ1, which mediates sleep, and BNZ2, which affects affects muscle relaxation, anticonvulsant activity, motor coordination, and memory. As benzodiazepine receptors are thought to be coupled to gamma-aminobutyric acid-A (GABAA) receptors, this enhances the effects of GABA by increasing GABA affinity for the GABA receptor. Binding of GABA to the site opens the chloride channel, resulting in a hyperpolarized cell membrane that prevents further excitation of the cell.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/5556.png"
 },
@@ -45942,7 +45942,7 @@
 "otherCas": [
 "1217704-93-2"
 ],
-"description": "Vincristine is only found in individuals that have used or taken this drug. It is an antitumor alkaloid isolated from Vinca Rosea. (Merck, 11th ed.) The antitumor activity of Vincristine is thought to be due primarily to inhibition of mitosis at metaphase through its interaction with tubulin. Like other vinca alkaloids, Vincristine may also interfere with: 1) amino acid, cyclic AMP, and glutathione metabolism, 2) calmodulin-dependent Ca<sup>2+</sup>-transport ATPase activity, 3) cellular respiration, and 4) nucleic acid and lipid biosynthesis. Vincristine is indicated for the treatment of acute leukaemia, malignant lymphoma, Hodgkin's disease, acute erythraemia, and acute panmyelosis. Vincristine sulfate is often chosen as part of polychemotherapy because of lack of significant bone marrow suppression (at recommended doses) and of unique clinical toxicity (neuropathy).",
+"description": "Vincristine is only found in individuals that have used or taken this drug. It is an antitumor alkaloid isolated from Vinca Rosea. (Merck, 11th ed.) The antitumor activity of Vincristine is thought to be due primarily to inhibition of mitosis at metaphase through its interaction with tubulin. Like other vinca alkaloids, Vincristine may also interfere with: 1) amino acid, cyclic AMP, and glutathione metabolism, 2) calmodulin-dependent Ca²⁺-transport ATPase activity, 3) cellular respiration, and 4) nucleic acid and lipid biosynthesis. Vincristine is indicated for the treatment of acute leukaemia, malignant lymphoma, Hodgkin's disease, acute erythraemia, and acute panmyelosis. Vincristine sulfate is often chosen as part of polychemotherapy because of lack of significant bone marrow suppression (at recommended doses) and of unique clinical toxicity (neuropathy).",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/249332.png"
 },

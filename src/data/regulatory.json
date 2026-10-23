@@ -1,5 +1,5 @@
 {
- "intro": "Regulatory affairs is present at every stage of a medicine's life. We shape the development plan and regulatory strategy before the first study, build the CMC, non-clinical and clinical evidence into the dossier, steer the application through authority review to approval, and then keep the authorization current through every variation, renewal and change.",
+ "intro": "Regulatory affairs is present at every stage of a medicine's life. We shape the development plan and regulatory strategy before the first study, build the CMC, non-clinical and clinical evidence into the dossier, steer the application through authority review towards approval, and then keep the authorisation current through every variation, renewal and change.",
  "coverIntro": "End-to-end regulatory strategy for biologics, biosimilars and small molecules, from development through approval and beyond.",
  "services": [
   {
@@ -49,12 +49,12 @@
    ]
   }
  ],
- "fileIntro": "Select an authority to see the submission routes we handle there. Authorities are grouped the way the industry ranks them: WHO-Listed and ICH founding regulators first, then ICH members, regional procedures and national reliance routes.",
+ "fileIntro": "Select an authority to see the submission routes we handle there. Authorities are grouped the way the industry ranks them: WHO-Listed Authorities and long-standing ICH regulators first, then other ICH members and observers, regional procedures and national reliance routes.",
  "tiers": [
   {
    "num": "01",
    "name": "Stringent regulatory authorities",
-   "sub": "WHO-Listed · ICH founding regulators",
+   "sub": "WHO-Listed Authorities · established ICH regulators",
    "authorities": [
     {
      "id": "ema",
@@ -112,7 +112,7 @@
       },
       {
        "name": "BLA — 351(a) and 351(k)",
-       "note": "Biologics licence application; 351(k) is the biosimilar and interchangeable pathway."
+       "note": "Biologics License Application (the FDA's formal name); 351(k) is the biosimilar and interchangeable pathway."
       },
       {
        "name": "Pre-IND / Type B–C meetings",
@@ -160,7 +160,7 @@
      "procedures": [
       {
        "name": "Standard authorisation",
-       "note": "Full assessment of a new active substance or known substance."
+       "note": "Full assessment of a new active substance or a known active substance."
       },
       {
        "name": "Procedure with prior foreign approval (Art. 13 TPA)",
@@ -258,7 +258,7 @@
   },
   {
    "num": "02",
-   "name": "ICH regulatory members",
+   "name": "ICH members and observers",
    "sub": "WHO maturity level 3–4 national authorities",
    "authorities": [
     {
@@ -271,7 +271,7 @@
      "procedures": [
       {
        "name": "New medicine registration",
-       "note": "Full registration of a synthetic new molecule or new association."
+       "note": "Full registration of a new synthetic molecule or a new fixed-dose combination."
       },
       {
        "name": "Generic and similar medicines",
@@ -387,7 +387,7 @@
       },
       {
        "name": "Generic registration",
-       "note": "Bioequivalence-based registration against the Mexican reference."
+       "note": "Bioequivalence-based registration against the Mexican reference product."
       },
       {
        "name": "Biotechnological and biocomparable products",
@@ -626,7 +626,7 @@
     ]
    },
    {
-    "title": "AI in regulatory",
+    "title": "AI in regulatory work",
     "items": [
      "AI-assisted screening of dossiers against current guidelines and agency expectations before filing: a faster first pass that our assessors then verify",
      "Automated consistency checks across CTD modules: specifications, batch data, stability claims and cross-references",
@@ -647,7 +647,7 @@
    "date": "16 Oct 2026",
    "url": "https://www.pharmanow.live/latest-news/ema-chmp-october-2026-meeting-highlights-orforglipron-biosimilars",
    "title": "CHMP October meeting: six positive opinions, two of them biosimilars",
-   "summary": "Fovlussea (ranibizumab) and Neuzafy (filgrastim) recommended; refusal of Yartemlea (narsoplimab) confirmed after re-examination. Commission decisions expected within ~67 days."
+   "summary": "Fovlussea (ranibizumab) and Neuzafy (filgrastim) recommended; refusal of Yartemlea (narsoplimab) confirmed after re-examination. Commission decisions are expected within about 67 days."
   },
   {
    "agency": "FDA · CDER/CBER",

@@ -135,7 +135,7 @@
  {
   "id": "L",
   "en": "Antineoplastic and immunomodulating agents",
-  "fa": "ضدسرطان و تعدیل‌کننده‌های ایمنی",
+  "fa": "داروهای ضدسرطان و تعدیل‌کنندهٔ ایمنی",
   "top": [
    "Paclitaxel",
    "Docetaxel",
@@ -248,8 +248,8 @@
  },
  {
   "id": "V",
-  "en": "Diagnostics, antidotes and others",
-  "fa": "تشخیصی، پادزهر و سایر",
+  "en": "Various (contrast media, antidotes and others)",
+  "fa": "داروهای تشخیصی، پادزهرها و سایر داروها",
   "top": [
    "Iohexol",
    "Iopamidol",
