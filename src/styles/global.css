@@ -660,3 +660,7 @@ html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] se
 [dir=rtl] .catalogue-table td[dir=ltr] { text-align:left; }
 @media(max-width:1000px) { [dir=rtl] .hero:before { -webkit-mask-image:linear-gradient(180deg,transparent 45%,#000 100%); mask-image:linear-gradient(180deg,transparent 45%,#000 100%); } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*:before,*:after { transition:none!important; animation:none!important; } }
+
+/* Localised product/substance name in the H1 with the English name underneath */
+h1 .h1-en { display: block; font-size: .5em; font-weight: 500; opacity: .78; margin-top: .35em; letter-spacing: 0; }
+.prod-seo-note { margin-top: 1.1rem; font-size: .9rem; line-height: 1.7; opacity: .82; max-width: 62ch; }

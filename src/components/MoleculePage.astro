@@ -2,7 +2,7 @@
 import CTA from './CTA.astro';
 import molecules from '../data/molecules.json';
 import { molDescL } from '../data/locale-info';
-import { langFromPath, localePath, t, htmlLang } from '../i18n';
+import { langFromPath, localePath, t, htmlLang, dir } from '../i18n';
 import { locName } from '../data/locale';
 interface Props { slug: string }
 const { slug } = Astro.props;
@@ -24,18 +24,27 @@ const stem = slug.split('-')[0];
 const related = Object.entries(all).filter(([k, v]) => k !== slug && k.split('-')[0] === stem && v.cid).slice(0, 8);
 const enquiry = L(`/contact-us-1?type=sourcing&product=${encodeURIComponent(mol.name)}`);
 const num = (v: number | null | undefined, d = 1) => (v === null || v === undefined) ? '—' : Number(v).toLocaleString('en-US', { maximumFractionDigits: d });
+const locTitle = lang === 'en' ? '' : (locName(lang, displayName) || locName(lang, mol.name) || '');
+const nameBoth = locTitle ? `${locTitle} (${displayName})` : displayName;
+const seoNote = ({
+  en: `${displayName}${mol.cas ? ' (CAS ' + mol.cas + ')' : ''}: sourcing and import of this active pharmaceutical ingredient (API) for manufacturers in Iran, with DMF/CEP and GMP documentation, by Haniya Parsan Darou Co. (Hanpars), importer of pharmaceutical raw materials and excipients.`,
+  fa: `${nameBoth}${mol.cas ? '، شمارهٔ CAS ' + mol.cas : ''}: تأمین و واردات مادهٔ اولیهٔ دارویی (API) ${locTitle || displayName} با مستندات DMF/CEP و GMP برای تولیدکنندگان ایرانی؛ شرکت هانیا پرسان دارو واردکنندهٔ مواد اولیهٔ دارویی و مواد اولیهٔ جانبی (اکسیپینت) است.`,
+  zh: `${nameBoth}${mol.cas ? '，CAS号 ' + mol.cas : ''}：Hanpars（Haniya Parsan Darou）为伊朗制药企业采购和进口该原料药，并提供 DMF/CEP 和 GMP 文件。`,
+  tr: `${nameBoth}${mol.cas ? ', CAS ' + mol.cas : ''}: Bu etkin maddenin (API) İran’daki üreticiler için DMF/CEP ve GMP belgeleriyle tedariki ve ithalatı Haniya Parsan Darou Co. (Hanpars) tarafından yapılır.`,
+} as Record<string, string>)[lang];
+
 ---
 <section class="hero page-hero mol-hero"><div class="container mol-grid">
   <div class="hero-main">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={L('/')}>{s.breadcrumbHome}</a><span aria-hidden="true">/</span><a href={L('/api')}>{m.range}</a><span aria-hidden="true">/</span><span lang="en" dir="ltr">{displayName}</span></nav>
     <p class="kicker kicker-light">{m.kicker}</p>
-    <h1 lang="en" dir="ltr">{displayName}</h1>
-    {lang !== 'en' && (locName(lang, displayName) || locName(lang, mol.name)) && <p class="prod-fa-name" lang={htmlLang[lang]}>{locName(lang, displayName) || locName(lang, mol.name)}</p>}
+    <h1>{locTitle ? <><span lang={htmlLang[lang]} dir={dir(lang)}>{locTitle}</span><span class="h1-en" lang="en" dir="ltr">{displayName}</span></> : <span lang="en" dir="ltr">{displayName}</span>}</h1>
     <dl class="mol-keyfacts" lang="en" dir="ltr">
       {mol.cas && <div><dt>{m.cas}</dt><dd>{mol.cas}</dd></div>}
       {mol.formula && <div><dt>{m.formula}</dt><dd set:html={formulaHtml}/></div>}
       {mw && <div><dt>{m.mw}</dt><dd>{mw} g/mol</dd></div>}
     </dl>
+    <p class="prod-seo-note" lang={htmlLang[lang]} dir={dir(lang)}>{seoNote}</p>
     <div class="hero-actions"><a class="button button-light" href={enquiry}>{m.enquire}</a><a class="text-link" href={L('/api')}>{m.back}</a></div>
   </div>
   <figure class="mol-structure">{mol.image ? <img src={mol.image} alt={`${displayName} — 2D structure`} width="320" height="320" loading="eager" decoding="async"/> : <div class="mol-nostructure">{m.noStructure}</div>}<figcaption>{m.structureCaption}</figcaption></figure>
