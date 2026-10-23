@@ -5,6 +5,12 @@ import { langFromPath, t } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
 const c = t(lang).contact;
 const types = ['sourcing', 'regulatory', 'cdmo'] as const;
+const officeLines = {
+  fa: ['هانیا پرسان دارو', 'تهران، بلوار آفریقا، خیابان ظفر', 'پلاک ۳۲۶، طبقهٔ سوم', 'کد پستی ۱۹۶۸۷۳۴۹۷۴'],
+  zh: ['Haniya Parsan Darou', '伊朗德黑兰非洲大道', '扎法尔街 326 号 3 层', '邮编 1968734974'],
+  tr: ['Haniya Parsan Darou', 'Zafar Caddesi No. 326, Kat 3', 'Afrika Bulvarı, Tahran 1968734974', 'İran'],
+  en: ['Haniya Parsan Darou', '3rd floor, No. 326, Zafar Street', 'Africa Boulevard, Tehran 1968734974', 'Iran'],
+}[lang];
 const sv = (d: string) => `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
 const icons: Record<string, string> = {
   sourcing: sv('<path d="M9 3h6M10 3v5.5L5.2 17.4A2.4 2.4 0 0 0 7.3 21h9.4a2.4 2.4 0 0 0 2.1-3.6L14 8.5V3"/><path d="M7.5 14h9"/>'),
@@ -57,7 +63,7 @@ const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, se
   <aside class="contact-aside"><h3>{c.asideTitle}</h3><p>{c.asideText}</p>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.phone}/><div><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></p></div></div>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.mail}/><div><strong>{c.email}</strong><p><a href={`mailto:${contactEmail}`} dir="ltr">{contactEmail}</a><br/><a href={`mailto:${raEmail}`} dir="ltr">{raEmail}</a></p></div></div>
-    <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.pin}/><div><strong>{c.office}</strong><p>{lang === 'fa' ? 'هانیا پرسان دارو' : 'Haniya Parsan Darou'}<br/>{lang === 'fa' ? 'تهران، بلوار آفریقا، خیابان ظفر' : '3rd floor, No. 326, Zafar Street'}<br/>{lang === 'fa' ? 'پلاک ۳۲۶، طبقهٔ سوم' : 'Africa Boulevard, Tehran 1968734974'}<br/>{lang === 'fa' ? 'کد پستی ۱۹۶۸۷۳۴۹۷۴' : 'Iran'}</p></div></div>
+    <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.pin}/><div><strong>{c.office}</strong><p>{officeLines.map((l, n) => <>{n > 0 && <br/>}{l}</>)}</p></div></div>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.clock}/><div><strong>{c.hours}</strong><p>{c.hoursText}</p><span class="form-hint">{c.confirmVisit}</span></div></div>
   </aside>
 </div></section>

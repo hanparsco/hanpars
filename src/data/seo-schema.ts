@@ -17,7 +17,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const edKey = keys[0];
   const en = key ? info[key] : (edAll[edKey]?.en || null);
   const fa = lang === 'en' ? null : key ? infoFa[key] : (edAll[edKey]?.[lang] || null);
-  const fForm = lang === 'en' ? '' : formL[lang](p.form);
+  const fForm = lang === 'en' ? '' : formL[lang](p.form, p.route);
   const fRouteRaw = lang === 'en' ? '' : (ROUTE_L[lang][p.route] || '');
   const fRoute = fForm.includes(fRouteRaw) ? '' : fRouteRaw;
   const nameFa = locName(lang, name).trim();

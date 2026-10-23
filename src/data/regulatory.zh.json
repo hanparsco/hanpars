@@ -1,5 +1,5 @@
 {
- "intro": "注册事务贯穿药品的整个生命周期。我们在首次研究之前即参与制定研发计划和注册策略，将CMC、非临床和临床证据整合进申报资料，推动申请通过审评直至获批，并在获批后通过每一次变更、续展和变动，使批准文号持续保持有效。",
+ "intro": "注册事务贯穿药品的整个生命周期。我们在首次研究之前即参与制定研发计划和注册策略，将CMC、非临床和临床证据整合进申报资料，推动申请通过审评直至获批，并在获批后的每一次变更、续展及其他变动中持续维护上市许可的有效性。",
  "coverIntro": "面向生物制品、生物类似药和小分子药物的全流程注册策略，涵盖从研发到获批及上市后的各个阶段。",
  "services": [
   {
@@ -41,7 +41,7 @@
     "依据欧盟GMP（含附录1和附录2）、PIC/S和WHO要求，对生产及检验场地开展GMP差距评估",
     "检查准备：模拟检查、批准前检查准备，以及检查现场前后台辅导",
     "检查缺陷项的应对：根本原因分析、CAPA计划，以及向监管机构提交的后续证据资料",
-    "场地主文件、GMP证书和生产许可证申请；进口产品的QP声明",
+    "场地主文件、GMP证书和生产许可证申请；进口产品的质量受权人（QP）声明",
     "药品质量体系的设计与审核：变更控制、偏差、OOS、投诉和产品质量回顾",
     "数据完整性评估",
     "供应商和CMO的资质审核：审计、质量与技术协议，以及持续监督",
@@ -82,7 +82,7 @@
       },
       {
        "name": "科学建议与申报前沟通",
-       "note": "申报前的CHMP/SAWP科学建议、申报前会议和资格申请。"
+       "note": "申报前的CHMP/SAWP科学建议、申报前会议和集中程序准入资格申请。"
       },
       {
        "name": "CEP与ASMF（EDQM）",
@@ -115,7 +115,7 @@
        "note": "生物制品许可申请；351(k)为生物类似药及可互换生物类似药路径。"
       },
       {
-       "name": "Pre-IND / B–C类会议",
+       "name": "Pre-IND会议 / B类、C类会议",
        "note": "正式会议申请、沟通资料包和书面答复。"
       },
       {
@@ -127,10 +127,10 @@
     {
      "id": "mhra",
      "short": "MHRA",
-     "name": "英国药品和保健品管理局",
+     "name": "英国药品和保健产品监管局",
      "region": "英国",
      "format": "eCTD",
-     "footnote": "脱欧后适用于英国本土（大不列颠）和北爱尔兰的路径。",
+     "footnote": "脱欧后适用于大不列颠和北爱尔兰的路径。",
      "procedures": [
       {
        "name": "国家上市许可",
@@ -267,7 +267,7 @@
      "name": "巴西国家卫生监督局",
      "region": "巴西",
      "format": "CTD",
-     "footnote": "申报资料须使用葡萄牙文；所有生产场地须获得GMP认证是前提条件。",
+     "footnote": "申报资料须使用葡萄牙文；所有生产场地获得GMP认证是前提条件。",
      "procedures": [
       {
        "name": "新药注册",
@@ -312,8 +312,8 @@
        "note": "依据NMPA生物类似药指导原则、以可比性为基础的申请。"
       },
       {
-       "name": "原料药/辅料/包材登记平台备案",
-       "note": "在CDE平台进行DMF类登记，并与制剂申请关联。"
+       "name": "原料药、药用辅料和药包材登记",
+       "note": "在CDE原辅包登记平台进行类似DMF的登记，并与制剂注册申请关联审评。"
       },
       {
        "name": "申报前沟通交流",
@@ -369,7 +369,7 @@
       },
       {
        "name": "场地注册与GMP",
-       "note": "申报前完成生产场地注册和GMP放行。"
+       "note": "申报前完成生产场地注册和GMP符合性确认。"
       }
      ]
     },
@@ -460,7 +460,7 @@
    "authorities": [
     {
      "id": "gcc",
-     "short": "GCC centralised",
+     "short": "GCC集中注册",
      "name": "海湾合作委员会集中注册",
      "region": "沙特阿拉伯 · 阿联酋 · 科威特 · 卡塔尔 · 阿曼 · 巴林",
      "format": "eCTD",
@@ -468,7 +468,7 @@
      "procedures": [
       {
        "name": "集中注册（GCC-DR）",
-       "note": "一份申请面向所有成员国评审，随后办理各国的定价和挂网。"
+       "note": "一份申请面向所有成员国评审，随后在各国办理定价和目录准入。"
       },
       {
        "name": "国家注册",
@@ -479,14 +479,14 @@
        "note": "生产场地注册，包括GCC GMP检查。"
       },
       {
-       "name": "CPP与认证",
-       "note": "药品证书（CPP）及文件认证要求。"
+       "name": "CPP与领事认证",
+       "note": "药品证书（CPP）及文件领事认证要求。"
       }
      ]
     },
     {
      "id": "eaeu",
-     "short": "EAEU unified",
+     "short": "EAEU统一注册",
      "name": "欧亚经济联盟统一注册",
      "region": "俄罗斯 · 哈萨克斯坦 · 白俄罗斯 · 亚美尼亚 · 吉尔吉斯斯坦",
      "format": "eCTD",
@@ -497,7 +497,7 @@
        "note": "由参照国评审，所选的认可国予以认可。"
       },
       {
-       "name": "分散程序",
+       "name": "分散审评程序",
        "note": "由多个成员国同时评审。"
       },
       {
@@ -589,7 +589,7 @@
     },
     {
      "id": "africa",
-     "short": "Africa",
+     "short": "非洲",
      "name": "非洲各国及协作路径",
      "region": "NAFDAC · PPB · FDA Ghana · TMDA",
      "format": "CTD",
@@ -644,7 +644,7 @@
   {
    "agency": "EMA · CHMP",
    "tag": "批准",
-   "date": "16 Oct 2026",
+   "date": "2026年10月16日",
    "url": "https://www.pharmanow.live/latest-news/ema-chmp-october-2026-meeting-highlights-orforglipron-biosimilars",
    "title": "CHMP十月会议：六项积极意见，其中两项为生物类似药",
    "summary": "推荐Fovlussea（雷珠单抗）和Neuzafy（非格司亭）；Yartemlea（narsoplimab）经重新审议后确认拒绝批准。欧盟委员会决定预计在约67天内作出。"
@@ -652,7 +652,7 @@
   {
    "agency": "FDA · CDER/CBER",
    "tag": "最终指南",
-   "date": "13 Oct 2026",
+   "date": "2026年10月13日",
    "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20817/postapproval-manufacturing-changes-to-biosimilar-and-interchangeable-biosimilar-products-questions",
    "title": "生物类似药获批后生产变更：问答指南定稿",
    "summary": "2024年7月草案定稿；依据ICH Q5E原则，规定生物类似药及可互换产品获批后CMC变更的申报类别，并取代问答I.20。"
@@ -660,10 +660,10 @@
   {
    "agency": "PIC/S",
    "tag": "GMP",
-   "date": "24 Sep 2026",
+   "date": "2026年9月24日",
    "url": "https://picscheme.org/en/news/revision-of-pics-gmp-guide-pe-009-18",
    "title": "PIC/S GMP指南PE 009-18生效，附录19修订",
-   "summary": "对照品和留样：第9节针对平行进口、分销和贸易产品作出修订。自9月24日起适用于所有PIC/S成员机构。"
+   "summary": "对照样品和留样：第9节针对平行进口、分销和贸易产品作出修订。自9月24日起适用于所有PIC/S参与机构。"
   }
  ],
  "ctaTitle": "告诉我们产品和目标市场",

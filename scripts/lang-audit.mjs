@@ -33,8 +33,9 @@ for (const f of files) {
     if (hl < 5) add('hreflang set incomplete', `${rel} (${hl})`);
   }
   // links
-  for (const m of h.matchAll(/<a\b[^>]*href="([^"#?]+)[^"]*"/g)) {
-    const href = m[1];
+  for (const m of h.matchAll(/<a\b[^>]*>/g)) {
+    const hm = /href="([^"#?]+)/.exec(m[0]); if (!hm) continue;
+    const href = hm[1];
     if (!href.startsWith('/') || href.startsWith('//')) continue;
     if (/^\/(photos|brand|fonts|data|news)\//.test(href) || /\.(png|jpg|svg|pdf|txt|xml|json)$/.test(href)) continue;
     if (!href.startsWith(`/${lang}`) && !/hreflang=/.test(m[0]) && !/^\/insights\//.test(href)) add('link leaves the language', `${rel} -> ${href}`);

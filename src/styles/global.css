@@ -315,6 +315,8 @@ html[lang=fa] .dropdown-label,html[lang=zh-Hans] .dropdown-label { letter-spacin
 .search-input input::placeholder { color:var(--faint); }
 .search-input:focus-within { border-bottom-color:var(--lapis); }
 .catalogue-scroll { max-height:680px; overflow:auto; border-top:1px solid var(--line); }
+/* localized name under the Latin catalogue name */
+.cat-loc { display:block; font-size:13.5px; color:var(--muted); margin-top:3px; font-weight:400; }
 .catalogue-table { width:100%; border-collapse:collapse; text-align:start; font-size:16px; }
 .catalogue-table th { position:sticky; top:0; z-index:2; background:var(--white); font-size:13px; color:var(--muted); font-weight:500; padding:14px 0; padding-inline-end:20px; border-bottom:1px solid var(--line); letter-spacing:.02em; }
 .section-paper .catalogue-table th { background:var(--paper); }

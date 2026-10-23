@@ -74,14 +74,15 @@ async function loadCatalogueRows(catalogue: HTMLElement) {
   const src = catalogue.dataset.src; if (!src) return;
   const tbody = catalogue.querySelector('tbody'); if (!tbody) return;
   try {
-    const data = await fetch(src).then(r => r.json()) as [string, string, string, string][];
+    const data = await fetch(src).then(r => r.json()) as [string, string, string, string, string?][];
+    const locLang = catalogue.dataset.locLang || 'en';
     const base = catalogue.dataset.base || ''; const type = catalogue.dataset.type || 'fdf';
     const enq = (JSON.parse(catalogue.dataset.i18n || '{}').enquire) || 'Enquire';
-    tbody.innerHTML = data.map(([n, c, g, sl], i) => {
+    tbody.innerHTML = data.map(([n, c, g, sl, loc], i) => {
       const href = sl ? `${base}/${type === 'fdf' ? 'fdf' : 'api'}/${sl}` : '';
-      const name = href ? `<a class="table-link" href="${href}">${escHtml(n)}</a>` : escHtml(n);
+      const name = (href ? `<a class="table-link" href="${href}">${escHtml(n)}</a>` : escHtml(n)) + (loc ? `<span class="cat-loc" lang="${locLang}" dir="auto">${escHtml(loc)}</span>` : '');
       const code = href && c ? `<a class="table-link table-link-muted" href="${href}">${escHtml(c)}</a>` : escHtml(c || '—');
-      return `<tr data-catalogue-row data-status="${escHtml(g)}" data-search="${escHtml((n + ' ' + c).toLowerCase())}" data-index="${i}"><td dir="ltr">${name}</td><td class="table-code" dir="ltr">${code}</td><td><a class="table-request" href="${base}/contact-us-1?type=sourcing&product=${encodeURIComponent(n)}">${escHtml(enq)}</a></td></tr>`;
+      return `<tr data-catalogue-row data-status="${escHtml(g)}" data-search="${escHtml((n + ' ' + (loc || '') + ' ' + c).toLowerCase())}" data-index="${i}"><td dir="ltr">${name}</td><td class="table-code" dir="ltr">${code}</td><td><a class="table-request" href="${base}/contact-us-1?type=sourcing&product=${encodeURIComponent(n)}">${escHtml(enq)}</a></td></tr>`;
     }).join('');
   } catch { /* keep server-rendered rows */ }
 }
