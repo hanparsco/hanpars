@@ -72,7 +72,7 @@
   },
   {
    "name": "description < 70 chars",
-   "count": 3546,
+   "count": 3620,
    "sample": [
     "/api/paliperidone-palmitate Paliperidone palmitate, CAS 199739-10-1, C39H57FN4O4.…",
     "/tr/api/avanafil avanafil (Avanafil), CAS 330784-47-9, C23H26ClN7O3. Avanafil,…",
@@ -168,10 +168,10 @@
    "name": "heavy pages (> 600 KB)",
    "count": 4,
    "sample": [
-    "/excipient (605 KB)",
-    "/fa/excipient (609 KB)",
-    "/tr/excipient (743 KB)",
-    "/zh/excipient (650 KB)"
+    "/excipient (627 KB)",
+    "/fa/excipient (630 KB)",
+    "/tr/excipient (764 KB)",
+    "/zh/excipient (662 KB)"
    ]
   }
  ]
