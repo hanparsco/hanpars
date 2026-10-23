@@ -1,6 +1,7 @@
 ---
 import PageHero from './PageHero.astro';
 import CTA from './CTA.astro';
+import FaqFa from './FaqFa.astro';
 import Catalogue from './Catalogue.astro';
 import FdfPortfolio from './FdfPortfolio.astro';
 import SupplementCatalogue from './SupplementCatalogue.astro';
@@ -43,4 +44,5 @@ const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.sta
 {isProduct&&<section class="section"><div class="container content-split"><h2>{s.standard.easyTitle}</h2><ul class="check-list">{s.standard.easy.map(item=><li>{item}</li>)}</ul></div></section>}
 {page==='fdf-cdmo'&&<section class="section"><div class="container"><div class="section-head"><h2>{s.standard.cdmoTitle}</h2><p class="lede">{s.standard.cdmoLede}</p></div><ol class="steps steps-4">{s.standard.cdmoSteps.map(item=><li class="step"><h3>{item.title}</h3><p>{item.text}</p></li>)}</ol><p style="margin-top:40px"><a class="text-link" href={L('/regulatory-affairs')}>{s.standard.cdmoLink}</a></p></div></section>}
 {!isProduct&&page!=='fdf-cdmo'&&<section class="section"><div class="container content-split">{lang !== 'fa' && <h2>{s.standard.nextTitle}</h2>}<ul class:list={['link-list', { 'link-list-solo': lang === 'fa' }]}>{s.standard.nextLinks.map(item=><li><a href={L(item.href)}>{item.label}<small>{item.note}</small></a></li>)}</ul></div></section>}
+{page==='about-us'&&<FaqFa schema={false} />}
 <CTA title={isProduct?s.standard.ctaProduct:page==='fdf-cdmo'?s.standard.ctaCdmo:undefined}/>
