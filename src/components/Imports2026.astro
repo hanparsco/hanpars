@@ -133,8 +133,8 @@ const rtl = lang === 'fa';
       };
     });
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let W = 0, H = 0, dpr = 1, yaw = .62, pitch = -.36, drag: null | { x: number; y: number; yaw: number; pitch: number } = null;
-    let base = .62, running = false, raf = 0, frame = 0, hoverIt: any = null;
+    let W = 0, H = 0, dpr = 1, yaw = .36, pitch = -.3, drag: null | { x: number; y: number; yaw: number; pitch: number } = null;
+    let base = .36, running = false, raf = 0, frame = 0, hoverIt: any = null;
     const t0 = performance.now();
     const size = () => { dpr = Math.min(devicePixelRatio || 1, 2); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
     const D = 4.1;
@@ -142,8 +142,8 @@ const rtl = lang === 'fa';
       const cy = Math.cos(yaw), sy = Math.sin(yaw), cp = Math.cos(pitch), sp = Math.sin(pitch);
       const x1 = x * cy - z * sy, z1 = x * sy + z * cy;
       const y2 = y * cp - z1 * sp, z2 = y * sp + z1 * cp;
-      const f = Math.min(W, H) * 1.22 / (D + z2);
-      return [W / 2 + x1 * f, H * .47 + y2 * f, f, z2] as const;
+      const f = Math.min(W, H) * 1.0 / (D + z2);
+      return [W / 2 + x1 * f, H * .5 + y2 * f, f, z2] as const;
     };
     const seg = (a: readonly number[], b: readonly number[], style: string, w = 1) => { ctx.strokeStyle = style; ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); };
     const poly = (pts: (readonly number[])[]) => { ctx.beginPath(); pts.forEach((p, i) => i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])); ctx.closePath(); };
@@ -155,7 +155,7 @@ const rtl = lang === 'fa';
     })();
     const draw = (now: number) => {
       const t = reduce ? 0 : (now - t0) / 1000;
-      if (!drag && !reduce) yaw = base + Math.sin(t * .12) * .32;   // slow, gentle sway rather than a spin
+      if (!drag && !reduce) yaw = base + Math.sin(t * .12) * .22;   // slow, gentle sway rather than a spin
       // room: dark wall with a soft overhead light
       const wall = ctx.createLinearGradient(0, 0, 0, H);
       wall.addColorStop(0, '#191714'); wall.addColorStop(.55, '#100f0d'); wall.addColorStop(1, '#0a0908');
@@ -191,20 +191,20 @@ const rtl = lang === 'fa';
       }
       ctx.restore();
       // precise axes: x and z along the desk edges, y rising from the back corner, with log ticks
-      const o = proj(-G, FY, G * -1), ax = 'rgba(236,228,214,.75)';
-      seg(proj(-G, FY, -G), proj(G, FY, -G), ax, 1.2); seg(proj(-G, FY, -G), proj(-G, FY, G), ax, 1.2); seg(o, proj(-G, TOP, -G), ax, 1.2);
+      const o = proj(-G, FY, G), ax = 'rgba(236,228,214,.75)';
+      seg(o, proj(G, FY, G), ax, 1.2); seg(proj(-G, FY, -G), o, ax, 1.2); seg(o, proj(-G, TOP, G), ax, 1.2);
       ctx.font = `500 11px ${font}`; ctx.fillStyle = 'rgba(236,228,214,.8)'; ctx.textBaseline = 'middle';
       data.ticks.forEach((lab, k) => {
-        const yy = yOf(10 ** (L0 + k)); const a = proj(-G, yy, -G), b = proj(-G - .07, yy, -G);
+        const yy = yOf(10 ** (L0 + k)); const a = proj(-G, yy, G), b = proj(-G - .07, yy, G);
         seg(a, b, ax, 1.2);
-        seg(proj(-G, yy, -G), proj(G, yy, -G), 'rgba(236,228,214,.06)');            // faint reference line on the back plane
+        seg(proj(-G, yy, G), proj(G, yy, G), 'rgba(236,228,214,.08)'); seg(proj(-G, yy, G), proj(-G, yy, -G), 'rgba(236,228,214,.05)');            // faint reference line on the back plane
         ctx.textAlign = 'right'; ctx.direction = data.rtl ? 'rtl' : 'ltr';
         ctx.fillText(lab, b[0] - 6, b[1]);
       });
       // colour ticks for the therapeutic areas along the front x axis
       data.groups.forEach((g, k) => { const x = -1.0 + k * (2.0 / (data.groups.length - 1)); const a = proj(x, FY, -G), b = proj(x, FY, -G - .08); seg(a, b, items.find(it => it.g === g)?.c || ax, 3); });
       // y axis title
-      const top = proj(-G, TOP, -G);
+      const top = proj(-G, TOP, G);
       ctx.font = `600 11.5px ${font}`; ctx.textAlign = 'left'; ctx.direction = data.rtl ? 'rtl' : 'ltr';
       ctx.fillStyle = 'rgba(236,228,214,.9)'; ctx.textAlign = data.rtl ? 'right' : 'left';
       ctx.fillText(data.yAxis, data.rtl ? top[0] + 8 + ctx.measureText(data.yAxis).width : top[0] + 8, top[1] - 12);
@@ -227,7 +227,7 @@ const rtl = lang === 'fa';
         // faint drop line to the desk: reads the height precisely
         const foot = proj(it.fx, FY, it.fs);
         seg([sx, sy + sr], foot, `rgba(${r},${g},${b},.28)`, 1);
-        const blur = Math.max(0, Math.abs(d) - .55) * 2.2;
+        const blur = Math.max(0, Math.abs(d) - .75) * 2;
         ctx.save();
         if (blur > .4) ctx.filter = `blur(${blur.toFixed(1)}px)`;
         ctx.globalAlpha = hoverIt && hoverIt !== it ? .4 : 1;
