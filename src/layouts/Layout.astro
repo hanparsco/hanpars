@@ -68,10 +68,8 @@ if(t)location.replace('/'+t+location.search+location.hash)}catch(e){}})();`} />}
     {!noindex && <link rel="alternate" hreflang="x-default" href={altEn} />}
     {ldBlocks.map(b => <script type="application/ld+json" set:html={JSON.stringify(b)} />)}
     <link rel="icon" href="/brand/hanpars-logo-transparent.png" type="image/png" />
-    {lang === 'en' && <link rel="preload" href="/fonts/sora/Sora-SemiBold.woff2" as="font" type="font/woff2" crossorigin />}
-    {lang === 'en' && <link rel="preload" href="/fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />}
-    {lang === 'tr' && <link rel="preload" href="/fonts/latin/montserrat-var.woff" as="font" type="font/woff" crossorigin />}
-    {lang === 'tr' && <link rel="preload" href="/fonts/latin/source-sans-3-var.woff" as="font" type="font/woff" crossorigin />}
+    {(lang === 'en' || lang === 'tr') && <link rel="preload" href="/fonts/sora/Sora-SemiBold.woff2" as="font" type="font/woff2" crossorigin />}
+    {(lang === 'en' || lang === 'tr') && <link rel="preload" href="/fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />}
     {lang === 'zh' && <meta http-equiv="Content-Language" content="zh-CN" />}
     {lang === 'zh' && <link rel="preload" href="/fonts/puhuiti/regular-00.woff" as="font" type="font/woff" crossorigin />}
     {lang === 'zh' && <link rel="stylesheet" href="/fonts/puhuiti/puhuiti.css" />}
