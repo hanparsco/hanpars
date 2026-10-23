@@ -16,7 +16,7 @@ export const groups = [
   ] },
   { label: 'Company', items: [
     { label: 'About Hanpars', href: '/about-us', note: 'Who we are, and what we are not' },
-    { label: 'Import activity', href: '/import-activity', note: 'Our 2026 imports, month by month' },
+    { label: 'Import activity', href: '/import-activity', note: 'Our 2026 imports at a glance' },
     { label: 'How we work', href: '/culture', note: 'The habits behind every request' },
     { label: 'Markets and sourcing', href: '/markets', note: 'Iran at home, suppliers abroad' },
   ] },
