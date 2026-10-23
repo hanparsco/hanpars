@@ -56,8 +56,10 @@
   },
   {
    "name": "description > 165 chars",
-   "count": 0,
-   "sample": []
+   "count": 1,
+   "sample": [
+    "/import-activity (167)"
+   ]
   },
   {
    "name": "description < 70 chars",
