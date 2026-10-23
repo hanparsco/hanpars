@@ -16,7 +16,7 @@ const updated = news.updated ? new Date(news.updated).toLocaleDateString(dateLoc
 <PageHero title={s.title} category={s.category} description={updated ? s.lede(updated) : s.ledeEmpty} action={s.action} href="/blog-1"/>
 
 <section class="section" id="global"><div class="container">
-  <div class="section-head"><h2>{s.globalTitle}</h2><p class="lede">{s.globalLede}</p></div>
+  <div class="section-head"><h2>{s.globalTitle}</h2>{lang !== 'fa' && <p class="lede">{s.globalLede}</p>}</div>
   {global.length ? <div class="news-grid">{global.map((item, i) => <NewsCard item={item} eager={i===0}/>)}</div> : <p class="archive-note">{s.empty}</p>}
 </div></section>
 
