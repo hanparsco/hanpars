@@ -671,6 +671,8 @@ html[lang=fa] .exc-tile-head strong { font-size:16px; }
 /* ---------- Persian / RTL ---------- */
 html[lang=fa] { --display:'HpLatinD','Narengi','Montserrat',system-ui,sans-serif; --sans:'HpLatin','Narengi','Source Sans 3',system-ui,sans-serif; }
 html[lang=fa] body { font-size:17px; line-height:1.9; }
+/* Narengi's contextual alternates stretch some joins (تیـم، التـهاب); keep the plain, even forms */
+html[lang=fa] body,html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] select { font-feature-settings:"calt" 0; }
 html[lang=fa] h1,html[lang=fa] h2,html[lang=fa] h3,html[lang=fa] h4 { letter-spacing:0; line-height:1.4; font-weight:600; }
 html[lang=fa] h1 { font-size:clamp(32px,4vw,54px); line-height:1.35; }
 html[lang=fa] .hero h1 { line-height:1.35; max-width:15em; }
