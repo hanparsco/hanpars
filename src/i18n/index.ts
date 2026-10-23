@@ -100,7 +100,7 @@ const base = {
         { title: 'Development partnerships', text: 'For finished dosage-form projects we coordinate development and manufacturing partners, with responsibilities written down at the start. We run the project; partners run the plant.', link: 'How a project begins', href: '/fdf-cdmo' },
       ],
       portfolioTitle: 'The Finished Dosage Form Portfolio',
-      figRegistered: 'medicines registered with the IFDA', figAvailable: 'available in Iran', figLaunching: 'launching',
+      figRegistered: 'Urgent medicines registered with the IFDA', figAvailable: 'available in Iran', figLaunching: 'launching',
       portfolioText: 'Contrast media, anaesthetics, antibiotics, hormones, vaccines and biologics from manufacturers holding international GMP certification, distributed nationally through Iran’s main pharmaceutical distributors. Hanpars is a contracted supplier to the national Strategic Medicine Reserve.',
       portfolioPrimary: 'See the portfolio', portfolioSecondary: 'Represent your products in Iran',
       portfolioNote: (d: string) => `Status as of ${d}; confirm availability when you enquire.`,

@@ -1,17 +1,11 @@
 ---
 import { langFromPath, localePath, t } from '../i18n';
-import { contactEmail } from '../data/site';
-interface Props { title?: string; description?: string; email?: string; }
+interface Props { title?: string; description?: string; email?: string; }  // email kept for callers; contact details live in the footer
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
 const L = (p: string) => localePath(p, lang);
-const { title = s.cta.title, description = s.cta.text, email = contactEmail } = Astro.props;
+const { title = s.cta.title, description = s.cta.text } = Astro.props;
 ---
 <section class="invite"><div class="container invite-inner">
   <div><h2>{title}</h2><p class="lede">{description}</p><div class="actions"><a class="button button-navy" href={L('/contact-us-1?type=sourcing')}>{s.cta.primary}</a><a class="text-link" href={L('/contact-us-1?type=regulatory')}>{s.cta.secondary}</a></div></div>
-  <div class="invite-details">
-    <div><strong>{s.cta.phone}</strong><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a> · {s.cta.hours}</div>
-    <div><strong>{s.cta.office}</strong>{s.cta.addressLong}</div>
-    <div><strong>{s.cta.email}</strong><a href={`mailto:${email}`} dir="ltr">{email}</a></div>
-  </div>
 </div></section>

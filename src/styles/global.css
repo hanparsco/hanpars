@@ -251,7 +251,7 @@ html[lang=fa] .dropdown-label,html[lang=zh-Hans] .dropdown-label { letter-spacin
 
 /* Closing invitation */
 .invite { border-top:1px solid var(--line); background:var(--white); }
-.invite-inner { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr); gap:80px; align-items:end; padding-block:104px; }
+.invite-inner { display:block; padding-block:96px; }
 .invite h2 { font-size:clamp(30px,3.6vw,48px); margin-bottom:26px; max-width:13em; }
 .invite .lede { margin-bottom:40px; }
 .invite-details { font-size:16px; color:var(--muted); line-height:1.75; }
