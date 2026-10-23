@@ -901,8 +901,8 @@ main.hanpars-zh-hans { font-size:1.0625rem; line-height:1.8; }
 /* Secondary action next to a main button: a matching (outlined) button, not an underlined link */
 :is(.actions,.hero-actions) > .button + .text-link { display:inline-flex; justify-content:center; align-items:center; gap:10px; min-height:52px; padding:14px 28px; border:1px solid var(--navy); border-radius:var(--radius); background:transparent; color:var(--navy); font-family:var(--display); font-size:14.5px; font-weight:600; line-height:1.3; white-space:nowrap; transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease); }
 :is(.actions,.hero-actions) > .button + .text-link:hover { background:var(--navy); color:#fff; border-color:var(--navy); }
-:is(.hero,.section-navy,.page-hero,.invite-dark) :is(.actions,.hero-actions) > .button + .text-link { border-color:#ffffff59; color:#fff; }
-:is(.hero,.section-navy,.page-hero,.invite-dark) :is(.actions,.hero-actions) > .button + .text-link:hover { background:#fff; color:var(--black); border-color:#fff; }
+:is(.actions,.hero-actions) > .button-light + .text-link { border-color:#ffffff59; color:#fff; }
+:is(.actions,.hero-actions) > .button-light + .text-link:hover { background:#fff; color:var(--black); border-color:#fff; }
 :is(.actions,.hero-actions) { gap:14px 16px; }
 @media(max-width:560px) {
   :is(.actions,.hero-actions) > :is(.button,.button + .text-link) { width:100%; white-space:normal; text-align:center; }
