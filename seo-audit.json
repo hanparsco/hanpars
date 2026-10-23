@@ -9,7 +9,7 @@
   },
   {
    "name": "title > 65 chars",
-   "count": 1547,
+   "count": 1548,
    "sample": [
     "/api/amifampridine-phosphate (66) Amifampridine phosphate (CAS 446254-47-3) | API supplier | Hanpars",
     "/api/eletriptan-hydrobromide (66) Eletriptan hydrobromide (CAS 177834-92-3) | API supplier | Hanpars",
@@ -44,9 +44,9 @@
     "/zh/fdf/blood-and-blood-forming-organs-whole-blood-52983 全血 注射液 | Hanpars",
     "/zh/fdf/erythrocytes-red-blood-cell-irradiated-52976 辐照红细胞 注射液 | Hanpars",
     "/zh/fdf/erythrocytes-red-blood-cell-leucocyte-reduced-52981 去白细胞红细胞 注射液 | Hanpars",
-    "/zh/fdf/potassium-aminobenzoic-acid-potaba-1026 氨苯甲酸钾 片 500 mg | Hanpars",
+    "/zh/fdf/potassium-aminobenzoic-acid-potaba-50221 对氨基苯甲酸钾 散剂 3 g | Hanpars",
     "/zh/fdf/thrombocytes-platelet-phresis-and-irradiated-52967 单采辐照血小板 注射液 | Hanpars",
-    "/zh/fdf-cdmo 制剂开发 | Hanpars"
+    "/zh/fdf-cdmo 制剂成品开发 | Hanpars"
    ]
   },
   {
@@ -72,7 +72,7 @@
   },
   {
    "name": "description < 70 chars",
-   "count": 3563,
+   "count": 3546,
    "sample": [
     "/api/paliperidone-palmitate Paliperidone palmitate, CAS 199739-10-1, C39H57FN4O4.…",
     "/tr/api/avanafil avanafil (Avanafil), CAS 330784-47-9, C23H26ClN7O3. Avanafil,…",
@@ -81,12 +81,12 @@
     "/zh/api/abaloparatide 阿巴洛肽（Abaloparatide），CAS 号 247062-33-5，分子式…",
     "/zh/api/abemaciclib 阿贝西利（Abemaciclib），CAS 号 1231929-97-7，分子式…",
     "/zh/api/abiraterone-acetate 醋酸阿比特龙（Abiraterone acetate），CAS 号 154229-18-2，分子式…",
-    "/zh/api/acalabrutinib-maleate 马来酸阿卡替尼（Acalabrutinib maleate），CAS 号 2242394-65-4，分子式…",
-    "/zh/api/acalabrutinib 阿卡替尼（Acalabrutinib），CAS 号 1420477-60-6，分子式…",
+    "/zh/api/acalabrutinib-maleate 马来酸阿可替尼（Acalabrutinib maleate），CAS 号 2242394-65-4，分子式…",
+    "/zh/api/acalabrutinib 阿可替尼（Acalabrutinib），CAS 号 1420477-60-6，分子式…",
     "/zh/api/acarbose 阿卡波糖（Acarbose），CAS 号 56180-94-0，分子式…",
     "/zh/api/acebutolol-hcl 盐酸醋丁洛尔（ACEBUTOLOL HCl），CAS 号 34381-68-5，分子式…",
     "/zh/api/acebutolol 醋丁洛尔（Acebutolol），CAS 号 37517-30-9，分子式…",
-    "/zh/api/aceclofenac 阿西克洛芬（Aceclofenac），CAS 号 89796-99-6，分子式…",
+    "/zh/api/aceclofenac 醋氯芬酸（Aceclofenac），CAS 号 89796-99-6，分子式…",
     "/zh/api/acenocoumarol 醋硝香豆素（Acenocoumarol），CAS 号 152-72-7，分子式…",
     "/zh/api/acetaminophen 对乙酰氨基酚（Acetaminophen），CAS 号 103-90-2，分子式…"
    ]
@@ -166,9 +166,12 @@
   },
   {
    "name": "heavy pages (> 600 KB)",
-   "count": 1,
+   "count": 4,
    "sample": [
-    "/tr/excipient (599 KB)"
+    "/excipient (606 KB)",
+    "/fa/excipient (609 KB)",
+    "/tr/excipient (625 KB)",
+    "/zh/excipient (593 KB)"
    ]
   }
  ]
