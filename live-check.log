@@ -1,0 +1,26 @@
+== key URLs
+  ok  200 https://hanpars.com/
+  ok  301 http://hanpars.com/ -> https://hanpars.com/
+  ok  301 https://www.hanpars.com/ -> https://hanpars.com/
+  ok  200 https://hanpars.com/fa
+  ok  200 https://hanpars.com/zh
+  ok  200 https://hanpars.com/tr
+  ok  200 https://hanpars.com/fdf
+  ok  200 https://hanpars.com/api
+  ok  200 https://hanpars.com/fa/fdf
+  ok  200 https://hanpars.com/robots.txt
+  ok  200 https://hanpars.com/sitemap.xml
+  ok  404 https://hanpars.com/this-page-does-not-exist
+  info 200 https://hanpars.com/fdf/ (meta refresh)
+  info 200 https://hanpars.com/fa/ (meta refresh)
+  info 200 https://hanpars.com/fdf.html
+  info 200 https://hanpars.com/home
+== sitemaps
+  200 https://hanpars.com/sitemap-en.xml: 5420 URLs
+  200 https://hanpars.com/sitemap-fa.xml: 5400 URLs
+  200 https://hanpars.com/sitemap-zh.xml: 5400 URLs
+  200 https://hanpars.com/sitemap-tr.xml: 5400 URLs
+  total 21620 URLs, 21620 unique
+== sample of 200 sitemap URLs
+  checked 200 pages and 776 alternates
+== result: OK
