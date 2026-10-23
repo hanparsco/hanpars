@@ -227,3 +227,9 @@ if (form) {
     }
   });
 }
+
+// Remember a visitor's explicit language choice so the home page does not auto-redirect them again.
+const langCode = (tag: string) => (tag.startsWith('zh') ? 'zh' : tag.slice(0, 2));
+document.querySelectorAll<HTMLAnchorElement>('.lang-panel a[hreflang], .mobile-langs a[hreflang]').forEach(a => a.addEventListener('click', () => {
+  try { localStorage.setItem('hp-lang', langCode(a.getAttribute('hreflang') || 'en')); } catch { /* storage unavailable */ }
+}));

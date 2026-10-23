@@ -15,7 +15,9 @@ const defaults = {
 const { title = defaults[lang].title, description = defaults[lang].description, noindex = false, brand = 'default', schema = [], breadcrumbs = [], canonicalPath, ogType = 'website', image, onlyLang, keywords } = Astro.props;
 const site = Astro.site ?? new URL('https://hanpars.com');
 const socialImage = new URL(image || '/brand/hanpars-logo-transparent.png', site).href;
+const cleanPathEarly = (p: string) => (p.replace(/\.html$/, '').replace(/\/index$/, '').replace(/\/$/, '') || '/');
 const basePath = stripLang(Astro.url.pathname);
+const isEnHome = lang === 'en' && cleanPathEarly(Astro.url.pathname) === '/';
 const cleanPath = (p: string) => (p.replace(/\.html$/, '').replace(/\/index$/, '').replace(/\/$/, '') || '/');
 const canonical = new URL(cleanPath(canonicalPath || Astro.url.pathname), site).href;
 const siteName = rtl ? 'هانیا پرسان دارو' : 'Hanpars';
@@ -35,6 +37,14 @@ const alternates = langs.filter(l => !onlyLang || l === onlyLang).map(l => ({ l,
 <!doctype html>
 <html lang={htmlLang[lang]} dir={dir(lang)}>
   <head>
+    {isEnHome && <script is:inline set:html={`(function(){try{var p=null;try{p=localStorage.getItem('hp-lang')}catch(e){}
+if(p){if(p!=='en')location.replace('/'+p+location.search+location.hash);return}
+if(/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent))return;
+var tz=(Intl.DateTimeFormat().resolvedOptions().timeZone||'');var t=null;
+if(/^Asia\\/(Shanghai|Chongqing|Chungking|Harbin|Urumqi|Kashgar)$/.test(tz)||tz==='PRC')t='zh';
+else if(tz==='Europe/Istanbul'||tz==='Asia/Istanbul'||tz==='Turkey')t='tr';
+else if(tz==='Asia/Tehran'||tz==='Iran')t='fa';
+if(t)location.replace('/'+t+location.search+location.hash)}catch(e){}})();`} />}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
