@@ -2,6 +2,14 @@
 /* Latin faces (self-hosted) */
 @font-face { font-family:'Montserrat'; src:url('/fonts/latin/montserrat-var.woff') format('woff'); font-weight:100 900; font-display:swap; }
 @font-face { font-family:'Source Sans 3'; src:url('/fonts/latin/source-sans-3-var.woff') format('woff'); font-weight:200 900; font-display:swap; }
+/* Sora (headings) + Inter (text and interface) — English pages only; full official files, OFL (licences in /fonts/sora, /fonts/inter) */
+@font-face { font-family:'Sora'; src:url('/fonts/sora/Sora-SemiBold.woff2') format('woff2'); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:'Sora'; src:url('/fonts/sora/Sora-Bold.woff2') format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'Inter'; src:url('/fonts/inter/Inter-Regular.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Inter'; src:url('/fonts/inter/Inter-Medium.woff2') format('woff2'); font-weight:500; font-style:normal; font-display:swap; }
+@font-face { font-family:'Inter'; src:url('/fonts/inter/Inter-SemiBold.woff2') format('woff2'); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:'Inter'; src:url('/fonts/inter/Inter-Bold.woff2') format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'Inter'; src:url('/fonts/inter/Inter-Italic.woff2') format('woff2'); font-weight:400; font-style:italic; font-display:swap; }
 /* Narengi Pro (Persian-only cut, variable: weights 100–900) — Persian text; Latin runs fall through to the Latin faces */
 @font-face { font-family:'Narengi'; src:url('/fonts/narengi/NarengiNonEnVF.woff2') format('woff2'); font-weight:100 900; font-style:normal; font-display:swap; }
 /* tiny subset for the «فارسی» language label and the company name shown on non-Persian pages */
@@ -847,3 +855,22 @@ html[lang=zh-Hans] .news-card h3 { font-family:var(--display); }
 .section-navy .lede { color:var(--on-navy-muted); }
 .form-field label .opt { white-space:nowrap; flex:none; }
 .search-input input { text-overflow:ellipsis; }
+
+/* ================= English typography: Sora headings, Inter text and UI ================= */
+/* --display drives buttons, navigation, labels and figures site-wide, so on English pages it is Inter;
+   headings are set to Sora explicitly. Other languages keep their own faces. */
+html[lang=en] { --display:'Inter', Arial, sans-serif; --sans:'Inter', Arial, sans-serif; --serif:'Sora', Arial, sans-serif; }
+html[lang=en] body { font-family:var(--sans); font-size:1.125rem; font-weight:400; line-height:1.65; letter-spacing:normal; font-synthesis:none; }
+@media(max-width:40rem) { html[lang=en] body { font-size:1.0625rem; } }
+html[lang=en] :is(h1,h2,h3,h4,h5,h6) { font-family:'Sora', Arial, sans-serif; font-weight:600; font-style:normal; text-transform:none; overflow-wrap:break-word; }
+html[lang=en] h1 { letter-spacing:-.025em; } html[lang=en] h2 { letter-spacing:-.015em; } html[lang=en] h3 { letter-spacing:-.01em; }
+/* small uppercase group labels are interface labels, not headings */
+html[lang=en] :is(.ft-group h3,.dropdown-label) { font-family:var(--sans); font-weight:600; }
+html[lang=en] :is(strong,b) { font-weight:600; }
+html[lang=en] :is(.nav-link,.dropdown-panel strong) { font-weight:500; }
+html[lang=en] :is(button,.button,.table-request,.catalogue-pager button,.claims-filters button) { font-family:var(--sans); font-weight:600; }
+html[lang=en] label { font-weight:500; }
+html[lang=en] :is(input,textarea,select) { font-family:var(--sans); font-weight:400; }
+/* figures, codes and columns of numbers: equal-width digits */
+html[lang=en] :is(.num,.table-code,.cat-count-badge,.catalogue-count,.mol-keyfacts dd,.mol-table dd,.portfolio-table code,.portfolio-forms dd,.spotlight-figure strong,.hero-meta strong,.catalogue-foot) { font-variant-numeric:tabular-nums; }
+html[lang=en] :is(.news-summary,.exc-top) { font-family:var(--sans); }
