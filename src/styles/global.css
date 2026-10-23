@@ -232,7 +232,7 @@ html[lang=fa] .dropdown-label,html[lang=zh-Hans] .dropdown-label { letter-spacin
 .step:not(:last-child):after { content:''; position:absolute; top:46px; inset-inline-end:-21px; width:22px; height:2px; background:var(--line); }
 .step h3 { font-size:19px; line-height:1.3; margin-bottom:8px; }
 .step p { color:var(--muted); font-size:15.5px; line-height:1.6; margin:0; }
-.steps-4 { grid-template-columns:repeat(4,1fr); gap:36px; }
+.steps-4 { grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
 
 /* Insights list */
 .insight-list { list-style:none; padding:0; margin:0; border-top:1px solid var(--line); }
@@ -489,7 +489,7 @@ html[lang=fa] .brief-legend { letter-spacing:0; font-size:14px; text-transform:n
   .main-nav { gap:2px; } .nav-cta { display:none; } .nav-link { padding:0 11px; }
   .nav-link { font-size:15px; }
   .columns-3 { gap:36px; } .spotlight,.company-note,.content-split,.faq-layout,.contact-layout { gap:56px; }
-  .steps-4 { grid-template-columns:repeat(2,1fr); gap:40px; }
+  .steps-4 { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; } .steps-4 .step:nth-child(2n):after { display:none; }
 }
 @media(max-width:1000px) {
   .header-inner { min-height:96px; }
