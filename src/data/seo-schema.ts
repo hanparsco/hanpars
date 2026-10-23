@@ -1,4 +1,4 @@
-import { parseFdf, infoKey, prettyName } from './fdf-parse';
+import { parseFdf, infoKey, prettyName, labelFits } from './fdf-parse';
 import fdfAll from './fdf.json';
 import editorialAll from './fdf-editorial.json';
 import { formL, ROUTE_L, locName } from './locale';
@@ -12,7 +12,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const name = prettyName(p.ingredient);
   const strength = p.strength.replace(/\bug\b/g, 'µg');
   const keys = p.ingredients.length > 1 ? [p.ingredients.map(i => infoKey(i)).sort().join(' + ')] : [infoKey(p.ingredient)];
-  const key = keys.find(k => info[k] && !info[k].missing);
+  const key = keys.find(k => info[k] && !info[k].missing && labelFits(info[k].routes, p.route));
   const edAll = editorialAll as Record<string, any>;
   const edKey = keys[0];
   const en = key ? info[key] : (edAll[edKey]?.en || null);

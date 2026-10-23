@@ -2,14 +2,14 @@
  {
   "name": "1,2,6-hexanetriol",
   "cas": "106-69-4",
-  "function": "",
-  "group": "other"
+  "function": "Solvent, humectant",
+  "group": "solvents"
  },
  {
   "name": "1,2-distearoyl-sn-glycero-3-phosphocholine",
   "cas": "816-94-4",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier (parenteral emulsions, liposomes)",
+  "group": "parenteral"
  },
  {
   "name": "1,4-sorbitan",
@@ -20,20 +20,20 @@
  {
   "name": "2-(4-styryl-3-sulfophenol)-6-methoxybenzotriazole",
   "cas": "1333-65-9",
-  "function": "Antimicrobial preservative",
-  "group": "preservatives"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "2-ethylhexyl acrylate-glycidyl Methacrylate-2-hydroxyethyl acrylate-vinyl acetate copolymer (for duro-tak 387-2287)",
   "cas": "",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "2-ethylhexyl acrylate-vinyl acetate-aluminum acrylate copolymer (for duro-tak 87-2194)",
   "cas": "",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Acacia",
@@ -68,8 +68,8 @@
  {
   "name": "Acetic anhydride",
   "cas": "108-24-7",
-  "function": "",
-  "group": "other"
+  "function": "Processing reagent (acetylating agent)",
+  "group": "solvents"
  },
  {
   "name": "Acetone",
@@ -80,8 +80,8 @@
  {
   "name": "Acetonitrile",
   "cas": "75-05-8",
-  "function": "",
-  "group": "other"
+  "function": "Solvent",
+  "group": "solvents"
  },
  {
   "name": "Acetyltributyl citrate",
@@ -98,38 +98,38 @@
  {
   "name": "Acrylates copolymer",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "Acrylic Acid-2-ethylhexyl Acrylate-2-hydroxyethyl acrylate-vinyl acetate copolymer (for duro-tak 87-2070)",
   "cas": "",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Acrylic acid-isooctyl acrylate copolymer",
   "cas": "9017-68-9",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Acrylic adhesive 788",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Adcote 72A103",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Adhesive (laminating)",
+  "group": "coatings"
  },
  {
   "name": "Adhesive tape",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Adhesive / backing (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Adipic acid",
@@ -140,8 +140,8 @@
  {
   "name": "Advantia prime 190100BA01 white",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film-coating system",
+  "group": "coatings"
  },
  {
   "name": "Agar",
@@ -158,20 +158,20 @@
  {
   "name": "Albumins",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (biologics)",
+  "group": "parenteral"
  },
  {
   "name": "Alcloxa",
   "cas": "1317-25-5",
-  "function": "",
-  "group": "other"
+  "function": "Astringent, adjuvant",
+  "group": "bases"
  },
  {
   "name": "Alcohol (ethanol)",
   "cas": "64-17-5",
   "function": "Solvent, preservative",
-  "group": "preservatives"
+  "group": "solvents"
  },
  {
   "name": "Alcohol, dehydrated",
@@ -182,14 +182,14 @@
  {
   "name": "Alfadex",
   "cas": "10016-20-3",
-  "function": "",
-  "group": "other"
+  "function": "Solubiliser, complexing agent",
+  "group": "surfactants"
  },
  {
   "name": "Algeldrate",
   "cas": "1330-44-5",
-  "function": "",
-  "group": "other"
+  "function": "Adsorbent, diluent",
+  "group": "diluents"
  },
  {
   "name": "Alginic acid",
@@ -212,8 +212,8 @@
  {
   "name": "Allantoin",
   "cas": "97-59-6",
-  "function": "",
-  "group": "other"
+  "function": "Skin protectant / emollient",
+  "group": "bases"
  },
  {
   "name": "Almond oil",
@@ -230,7 +230,7 @@
  {
   "name": "Aluminum acetate",
   "cas": "139-12-8",
-  "function": "pH adjuster / buffer",
+  "function": "Astringent, adjuvant",
   "group": "buffers"
  },
  {
@@ -249,7 +249,7 @@
   "name": "Aluminum oxide",
   "cas": "1344-28-1",
   "function": "Adsorbent, abrasive",
-  "group": "other"
+  "group": "diluents"
  },
  {
   "name": "Aluminum phosphate adjuvant",
@@ -260,25 +260,25 @@
  {
   "name": "Aluminum polyester",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Backing membrane (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Aluminum silicate",
   "cas": "12141-46-7",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Adsorbent, diluent",
+  "group": "diluents"
  },
  {
   "name": "Aluminum silicate pentahydrate",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Adsorbent, diluent",
+  "group": "diluents"
  },
  {
   "name": "Aluminum starch octenylsuccinate",
   "cas": "9087-61-0",
-  "function": "Diluent / filler",
+  "function": "Diluent, adsorbent",
   "group": "diluents"
  },
  {
@@ -290,14 +290,14 @@
  {
   "name": "Aluminum sulfate",
   "cas": "17927-65-0",
-  "function": "Diluent / tonicity / stabiliser",
-  "group": "diluents"
+  "function": "Astringent, stabiliser",
+  "group": "buffers"
  },
  {
   "name": "Aluminum sulfate anhydrous",
   "cas": "10043-01-3",
-  "function": "Diluent / tonicity / stabiliser",
-  "group": "diluents"
+  "function": "Astringent, stabiliser",
+  "group": "buffers"
  },
  {
   "name": "Alzamer-50",
@@ -308,26 +308,26 @@
  {
   "name": "Amaranth",
   "cas": "915-67-3",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Amberlite",
   "cas": "9079-25-8",
-  "function": "",
-  "group": "other"
+  "function": "Ion-exchange resin (drug carrier, taste-masking)",
+  "group": "disintegrants"
  },
  {
   "name": "Amberlite XE-88",
   "cas": "9002-34-0",
-  "function": "",
-  "group": "other"
+  "function": "Ion-exchange resin (drug carrier, taste-masking)",
+  "group": "disintegrants"
  },
  {
   "name": "Amerchol-cab",
   "cas": "8029-04-7",
-  "function": "",
-  "group": "other"
+  "function": "Emollient, emulsifier",
+  "group": "bases"
  },
  {
   "name": "Aminobenzoate sodium",
@@ -338,8 +338,8 @@
  {
   "name": "Aminomethylpropanol",
   "cas": "124-68-5",
-  "function": "",
-  "group": "other"
+  "function": "pH adjuster",
+  "group": "buffers"
  },
  {
   "name": "Ammonia solution",
@@ -350,8 +350,8 @@
  {
   "name": "Ammonio methacrylate copolymer",
   "cas": "",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Ammonio methacrylate copolymer (Type A, Type B)",
@@ -362,14 +362,14 @@
  {
   "name": "Ammonio methacrylate copolymer type A",
   "cas": "33434-24-1",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Ammonio methacrylate copolymer type B",
   "cas": "33434-24-1",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Ammonium acetate",
@@ -416,8 +416,8 @@
  {
   "name": "Amphoteric-9",
   "cas": "627910-32-1",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Anethole",
@@ -429,7 +429,7 @@
   "name": "Anhydrous citric acid",
   "cas": "77-92-9",
   "function": "Acidulant, buffer, chelating agent",
-  "group": "antioxidants"
+  "group": "buffers"
  },
  {
   "name": "Anhydrous dextrose",
@@ -440,26 +440,26 @@
  {
   "name": "Anhydrous trisodium citrate",
   "cas": "68-04-2",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Buffer, alkaliser, sequestrant",
+  "group": "buffers"
  },
  {
   "name": "Anidrisorb 85/70",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Sweetener, humectant",
+  "group": "sweeteners"
  },
  {
   "name": "Anise",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Anise oil",
   "cas": "8007-70-3",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Anoxid sbn",
@@ -470,14 +470,14 @@
  {
   "name": "Antifoam",
   "cas": "8051-08-9",
-  "function": "",
-  "group": "other"
+  "function": "Antifoaming agent",
+  "group": "bases"
  },
  {
   "name": "Antipyrine",
   "cas": "60-80-0",
-  "function": "",
-  "group": "other"
+  "function": "Solubiliser, complexing agent",
+  "group": "surfactants"
  },
  {
   "name": "Apricot kernel oil PEG-6 esters",
@@ -488,20 +488,20 @@
  {
   "name": "Aquaphor",
   "cas": "8029-15-0",
-  "function": "",
-  "group": "other"
+  "function": "Ointment base",
+  "group": "bases"
  },
  {
   "name": "Arginine",
   "cas": "74-79-3",
-  "function": "",
-  "group": "other"
+  "function": "Buffer, alkaliser",
+  "group": "buffers"
  },
  {
   "name": "Arlacel",
   "cas": "8029-22-9",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier (w/o)",
+  "group": "surfactants"
  },
  {
   "name": "Ascorbic acid",
@@ -536,14 +536,14 @@
  {
   "name": "Balsam peru",
   "cas": "8007-00-9",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Beef tallow",
   "cas": "61789-97-7",
-  "function": "",
-  "group": "other"
+  "function": "Ointment base",
+  "group": "bases"
  },
  {
   "name": "Bentonite",
@@ -554,8 +554,8 @@
  {
   "name": "Benzaldehyde",
   "cas": "100-52-7",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Benzalkonium chloride",
@@ -578,14 +578,14 @@
  {
   "name": "Benzocaine",
   "cas": "94-09-7",
-  "function": "",
-  "group": "other"
+  "function": "Local anaesthetic (analgesic)",
+  "group": "bases"
  },
  {
   "name": "Benzododecinium bromide",
   "cas": "7281-04-1",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Benzoic acid",
@@ -596,14 +596,14 @@
  {
   "name": "Benzoin resin",
   "cas": "9000-05-9",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Benzoin, (+/-)-",
   "cas": "119-53-9",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Benzyl alcohol",
@@ -615,19 +615,19 @@
   "name": "Benzyl benzoate",
   "cas": "120-51-4",
   "function": "Solvent, plasticiser",
-  "group": "plasticisers"
+  "group": "solvents"
  },
  {
   "name": "Benzyl chloride",
   "cas": "100-44-7",
-  "function": "Solvent / vehicle",
+  "function": "Processing reagent (alkylating agent)",
   "group": "solvents"
  },
  {
   "name": "Beta carotene",
   "cas": "7235-40-7",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Betadex",
@@ -638,26 +638,26 @@
  {
   "name": "Betanaphthol",
   "cas": "135-19-3",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Bismuth subcarbonate",
   "cas": "5892-10-4",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Opacifier, astringent",
+  "group": "colourants"
  },
  {
   "name": "Black currant",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Black ink",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Printing ink for tablets and capsules",
+  "group": "colourants"
  },
  {
   "name": "Boric acid",
@@ -686,26 +686,26 @@
  {
   "name": "Butyl alcohol",
   "cas": "71-36-3",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Solvent",
+  "group": "solvents"
  },
  {
   "name": "Butyl ester of methyl vinyl ether/maleic anhydride copolymer (125000 MW)",
   "cas": "25119-68-0",
-  "function": "",
-  "group": "other"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "Butyl methacrylate and methyl methacrylate copolymer (3:1; 150000 MW)",
   "cas": "25608-33-7",
-  "function": "",
-  "group": "other"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "Butyl stearate",
   "cas": "123-95-5",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Plasticiser, solvent",
+  "group": "plasticisers"
  },
  {
   "name": "Butylated hydroxyanisole (bha)",
@@ -734,32 +734,32 @@
  {
   "name": "C12-15 alkyl lactate",
   "cas": "93925-36-1",
-  "function": "Buffer / chelating agent",
-  "group": "antioxidants"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "C13-14 isoparaffin/Laureth-7/polyacrylamide",
   "cas": "",
-  "function": "Surfactant / emulsifier / solubiliser",
-  "group": "surfactants"
+  "function": "Suspending agent, emulsifier",
+  "group": "thickeners"
  },
  {
   "name": "Caffeine",
   "cas": "58-08-2",
-  "function": "",
-  "group": "other"
+  "function": "Solubiliser, complexing agent",
+  "group": "surfactants"
  },
  {
   "name": "Calcium",
   "cas": "7440-70-2",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, stabiliser",
+  "group": "diluents"
  },
  {
   "name": "Calcium acetate",
   "cas": "62-54-4",
   "function": "Buffer, stabiliser",
-  "group": "thickeners"
+  "group": "buffers"
  },
  {
   "name": "Calcium alginate",
@@ -783,19 +783,19 @@
   "name": "Calcium chloride",
   "cas": "10043-52-4",
   "function": "Tonicity agent, desiccant",
-  "group": "buffers"
+  "group": "diluents"
  },
  {
   "name": "Calcium chloride anhydrous",
   "cas": "10043-52-4",
-  "function": "",
-  "group": "other"
+  "function": "Tonicity agent, desiccant",
+  "group": "diluents"
  },
  {
   "name": "Calcium citrate",
   "cas": "5785-44-4",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Buffer, stabiliser",
+  "group": "buffers"
  },
  {
   "name": "Calcium hydroxide",
@@ -848,20 +848,20 @@
  {
   "name": "Calcium polycarbophil",
   "cas": "126040-58-2",
-  "function": "",
-  "group": "other"
+  "function": "Bioadhesive, controlled release",
+  "group": "coatings"
  },
  {
   "name": "Calcium pyrophosphate",
   "cas": "7790-76-3",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Diluent / filler",
+  "group": "diluents"
  },
  {
   "name": "Calcium saccharate",
   "cas": "5793-89-5",
-  "function": "",
-  "group": "other"
+  "function": "Buffer, stabiliser",
+  "group": "buffers"
  },
  {
   "name": "Calcium silicate",
@@ -884,31 +884,31 @@
  {
   "name": "Calcium sulfate anhydrous",
   "cas": "7778-18-9",
-  "function": "Diluent / tonicity / stabiliser",
+  "function": "Diluent",
   "group": "diluents"
  },
  {
   "name": "Calcium sulfate dihydrate",
   "cas": "10101-41-4",
-  "function": "Diluent / tonicity / stabiliser",
+  "function": "Diluent",
   "group": "diluents"
  },
  {
   "name": "Camphor (synthetic)",
   "cas": "76-22-2",
-  "function": "",
-  "group": "other"
+  "function": "Flavour, penetration enhancer",
+  "group": "sweeteners"
  },
  {
   "name": "Canada balsam",
   "cas": "8007-47-4",
-  "function": "",
-  "group": "other"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "Candelilla wax",
   "cas": "8006-44-8",
-  "function": "Emollient / oleaginous vehicle / base",
+  "function": "Stiffening agent, coating",
   "group": "bases"
  },
  {
@@ -938,14 +938,14 @@
  {
   "name": "Capsicum oleoresin",
   "cas": "8023-77-6",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Captan",
   "cas": "133-06-2",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Caramel",
@@ -957,61 +957,61 @@
   "name": "Carbomer (Carbopol®)",
   "cas": "9003-01-4",
   "function": "Gelling agent, bioadhesive, controlled release",
-  "group": "coatings"
+  "group": "thickeners"
  },
  {
   "name": "Carbomer copolymer type A (allyl pentaerythritol crosslinked)",
   "cas": "",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Carbomer copolymer type B (allyl pentaerythritol crosslinked)",
   "cas": "",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Carbomer copolymer type C (allyl pentaerythritol crosslinked)",
   "cas": "146701-61-3",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Carbomer homopolymer",
   "cas": "",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Carbomer homopolymer type A (allyl pentaerythritol crosslinked)",
   "cas": "",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Carbomer homopolymer type B (allyl pentaerythritol crosslinked)",
   "cas": "",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Carbomer homopolymer type B (allyl pentaerythritol or allyl sucrose crosslinked)",
   "cas": "57916-92-4",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Carbomer homopolymer type B (allyl sucrose crosslinked)",
   "cas": "",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Carbomer homopolymer type C (allyl pentaerythritol crosslinked)",
   "cas": "",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Carbon dioxide",
@@ -1022,8 +1022,8 @@
  {
   "name": "Carboxymethyl starch",
   "cas": "9057-06-1",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Disintegrant",
+  "group": "disintegrants"
  },
  {
   "name": "Carboxymethylcellulose",
@@ -1070,20 +1070,20 @@
  {
   "name": "Carrageenan calcium",
   "cas": "9049-05-2",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Gelling agent, suspending agent",
+  "group": "thickeners"
  },
  {
   "name": "Carrageenan sodium",
   "cas": "9061-82-9",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Gelling agent, suspending agent",
+  "group": "thickeners"
  },
  {
   "name": "Castile soap",
   "cas": "8029-38-7",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Castor oil",
@@ -1112,14 +1112,14 @@
  {
   "name": "Cellulose acetate CA-320S",
   "cas": "",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Semipermeable membrane (osmotic systems), film former",
+  "group": "coatings"
  },
  {
   "name": "Cellulose acetate CA-398-10",
   "cas": "",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Semipermeable membrane (osmotic systems), film former",
+  "group": "coatings"
  },
  {
   "name": "Cellulose acetate phthalate",
@@ -1130,8 +1130,8 @@
  {
   "name": "Cellulose microcrystalline/carboxymethylcellulose sodium",
   "cas": "",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Suspending agent, stabiliser",
+  "group": "thickeners"
  },
  {
   "name": "Cellulose, microcrystalline",
@@ -1166,8 +1166,8 @@
  {
   "name": "Cellulosic polymers",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "Ceratonia (locust bean gum)",
@@ -1184,26 +1184,26 @@
  {
   "name": "Ceteareth-12",
   "cas": "68439-49-6",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Ceteareth-15",
   "cas": "68439-49-6",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Ceteareth-30",
   "cas": "68439-49-6",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Cetearyl alcohol/Ceteareth-20",
   "cas": "",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Emulsifier, stiffening agent",
+  "group": "bases"
  },
  {
   "name": "Ceteth-10",
@@ -1239,7 +1239,7 @@
   "name": "Cetrimide",
   "cas": "8044-71-1",
   "function": "Antimicrobial preservative, emulsifier",
-  "group": "surfactants"
+  "group": "preservatives"
  },
  {
   "name": "Cetyl alcohol",
@@ -1268,8 +1268,8 @@
  {
   "name": "Cherry",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Chitosan",
@@ -1292,8 +1292,8 @@
  {
   "name": "Chlorobutanol hemihydrate",
   "cas": "6001-64-5",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Chlorocresol",
@@ -1328,14 +1328,14 @@
  {
   "name": "Chondrus crispus",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Gelling agent, suspending agent",
+  "group": "thickeners"
  },
  {
   "name": "Chondrus extract",
   "cas": "8015-95-0",
-  "function": "",
-  "group": "other"
+  "function": "Gelling agent, suspending agent",
+  "group": "thickeners"
  },
  {
   "name": "Cinnamaldehyde",
@@ -1346,68 +1346,68 @@
  {
   "name": "Cinnamon",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Cinnamon oil",
   "cas": "8015-91-6",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Citric acid monohydrate",
   "cas": "5949-29-1",
   "function": "Acidulant, buffer, chelating agent",
-  "group": "antioxidants"
+  "group": "buffers"
  },
  {
   "name": "Citrus sinensis flower oil",
   "cas": "",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Clove oil",
   "cas": "8000-34-8",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Coco diethanolamide",
   "cas": "61791-31-9",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Coco monoethanolamide",
   "cas": "68140-00-1",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Coco-betaine",
   "cas": "68424-94-2",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Cocoa",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Cocoa butter",
   "cas": "8002-31-1",
-  "function": "",
-  "group": "other"
+  "function": "Suppository base",
+  "group": "bases"
  },
  {
   "name": "Coconut acid",
   "cas": "61788-47-4",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Coconut oil",
@@ -1424,32 +1424,32 @@
  {
   "name": "Cocoyl caprylocaprate",
   "cas": "52623-82-2",
-  "function": "",
-  "group": "other"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Coffee bean",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Cola nut",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Cold cream",
   "cas": "8050-76-8",
-  "function": "",
-  "group": "other"
+  "function": "Ointment base, emollient",
+  "group": "bases"
  },
  {
   "name": "Collagen",
   "cas": "9007-34-5",
-  "function": "",
-  "group": "other"
+  "function": "Film former, bioadhesive",
+  "group": "coatings"
  },
  {
   "name": "Colloidal silicon dioxide",
@@ -1460,8 +1460,8 @@
  {
   "name": "Coloring suspension",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Colourants: FD&C / D&C dyes and aluminium lakes, iron oxides, natural colours",
@@ -1472,8 +1472,8 @@
  {
   "name": "Compressible sugar",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, sweetener",
+  "group": "diluents"
  },
  {
   "name": "Copovidone",
@@ -1484,14 +1484,14 @@
  {
   "name": "Coriander oil",
   "cas": "8008-52-4",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Corn glycerides",
   "cas": "85536-08-9",
-  "function": "",
-  "group": "other"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Corn oil",
@@ -1514,8 +1514,8 @@
  {
   "name": "Corn syrup",
   "cas": "8029-43-4",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, humectant, sweetener",
+  "group": "sweeteners"
  },
  {
   "name": "Cottonseed oil",
@@ -1526,8 +1526,8 @@
  {
   "name": "Creatinine",
   "cas": "60-27-5",
-  "function": "",
-  "group": "other"
+  "function": "Buffer, stabiliser",
+  "group": "buffers"
  },
  {
   "name": "Cresol",
@@ -1556,20 +1556,20 @@
  {
   "name": "Cupric sulfate",
   "cas": "7758-99-8",
-  "function": "Diluent / tonicity / stabiliser",
-  "group": "diluents"
+  "function": "Antimicrobial",
+  "group": "preservatives"
  },
  {
   "name": "Cutina",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier, stiffening agent",
+  "group": "bases"
  },
  {
   "name": "Cyanocobalamin",
   "cas": "68-19-9",
-  "function": "",
-  "group": "other"
+  "function": "Vitamin (nutrient, colourant)",
+  "group": "diluents"
  },
  {
   "name": "Cyclodextrins (alpha, beta, gamma)",
@@ -1766,50 +1766,50 @@
  {
   "name": "Dc antifoam af trituration 1% on sucrose",
   "cas": "",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Antifoaming agent",
+  "group": "bases"
  },
  {
   "name": "Dehydag wax sx",
   "cas": "8023-40-3",
-  "function": "Emollient / oleaginous vehicle / base",
+  "function": "Emulsifier, stiffening agent",
   "group": "bases"
  },
  {
   "name": "Dehydroacetic acid",
   "cas": "520-45-6",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
- },
- {
-  "name": "Dehymuls E",
-  "cas": "",
-  "function": "",
-  "group": "other"
- },
- {
-  "name": "Denatonium benzoate",
-  "cas": "86398-53-0",
   "function": "Antimicrobial preservative",
   "group": "preservatives"
  },
  {
+  "name": "Dehymuls E",
+  "cas": "",
+  "function": "Emulsifier (w/o)",
+  "group": "surfactants"
+ },
+ {
+  "name": "Denatonium benzoate",
+  "cas": "86398-53-0",
+  "function": "Bitterant (denaturant)",
+  "group": "sweeteners"
+ },
+ {
   "name": "Detosu/triethylene glycol/triethylene glycol polyglycolide copolymer",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Biodegradable controlled-release polymer",
+  "group": "coatings"
  },
  {
   "name": "Dextran",
   "cas": "9004-54-0",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Stabiliser, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Dextran 40",
   "cas": "9004-54-0",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Stabiliser (lyophilisates, biologics), diluent",
+  "group": "parenteral"
  },
  {
   "name": "Dextrates",
@@ -1844,26 +1844,26 @@
  {
   "name": "Diacetylated monoglycerides",
   "cas": "8029-92-3",
-  "function": "Surfactant / emulsifier / solubiliser",
-  "group": "surfactants"
+  "function": "Plasticiser",
+  "group": "plasticisers"
  },
  {
   "name": "Diatomaceous earth",
   "cas": "61790-53-2",
-  "function": "",
-  "group": "other"
+  "function": "Adsorbent, diluent",
+  "group": "diluents"
  },
  {
   "name": "Diatrizoic acid",
   "cas": "117-96-4",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Radiopaque contrast agent",
+  "group": "parenteral"
  },
  {
   "name": "Diazolidinyl urea",
   "cas": "78491-02-8",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Dibutyl phthalate",
@@ -1880,14 +1880,14 @@
  {
   "name": "Dichlorobenzyl alcohol",
   "cas": "1777-82-8",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Dichlorodifluoromethane",
   "cas": "75-71-8",
-  "function": "",
-  "group": "other"
+  "function": "Propellant / gas",
+  "group": "propellants"
  },
  {
   "name": "Dichlorotetrafluoroethane",
@@ -1899,7 +1899,7 @@
   "name": "Diethanolamine",
   "cas": "111-42-2",
   "function": "Alkalising agent, emulsifier",
-  "group": "surfactants"
+  "group": "buffers"
  },
  {
   "name": "Diethyl phthalate",
@@ -1916,14 +1916,14 @@
  {
   "name": "Diethylene glycol mono- and dipalmitostearate",
   "cas": "85116-97-8",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emulsifier, stiffening agent",
+  "group": "bases"
  },
  {
   "name": "Diethylene glycol monoethyl ether (Transcutol®)",
   "cas": "111-90-0",
   "function": "Solvent, penetration enhancer",
-  "group": "surfactants"
+  "group": "solvents"
  },
  {
   "name": "Difluoroethane (HFA 152a)",
@@ -1946,20 +1946,20 @@
  {
   "name": "Diisopropanolamine",
   "cas": "110-97-4",
-  "function": "",
-  "group": "other"
+  "function": "pH adjuster",
+  "group": "buffers"
  },
  {
   "name": "Diisopropyl adipate",
   "cas": "6938-94-9",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Emollient, solvent",
+  "group": "bases"
  },
  {
   "name": "Diisopropylbenzothiazyl-2-sulfenamide",
   "cas": "95-29-4",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Processing aid (rubber closure component)",
+  "group": "plasticisers"
  },
  {
   "name": "Dimethicone",
@@ -1994,14 +1994,14 @@
  {
   "name": "Dimethiconol/trimethylsiloxysilicate crosspolymer (40/60 w/w; 1000000 pa.s)",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Dimethoxane",
   "cas": "828-00-2",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Dimethyl ether",
@@ -2012,8 +2012,8 @@
  {
   "name": "Dimethyl isosorbide",
   "cas": "5306-85-4",
-  "function": "",
-  "group": "other"
+  "function": "Solvent, penetration enhancer",
+  "group": "solvents"
  },
  {
   "name": "Dimethyl phthalate",
@@ -2025,7 +2025,7 @@
   "name": "Dimethyl sulfoxide",
   "cas": "67-68-5",
   "function": "Solvent, penetration enhancer",
-  "group": "surfactants"
+  "group": "solvents"
  },
  {
   "name": "Dimethylacetamide",
@@ -2036,38 +2036,32 @@
  {
   "name": "Dimethylaminoethyl methacrylate - butyl methacrylate - methyl methacrylate copolymer",
   "cas": "24938-16-7",
-  "function": "",
-  "group": "other"
- },
- {
-  "name": "Dinoseb-ammonium",
-  "cas": "6365-83-9",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "Dipalmitoylphosphatidylglycerol, DL-",
   "cas": "4537-77-3",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Emulsifier (parenteral emulsions, liposomes)",
+  "group": "parenteral"
  },
  {
   "name": "Dipropylene glycol",
   "cas": "25265-71-8",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Solvent, humectant",
+  "group": "solvents"
  },
  {
   "name": "Disodium citrate sesquihydrate",
   "cas": "6132-05-4",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Buffer, alkaliser, sequestrant",
+  "group": "buffers"
  },
  {
   "name": "Disodium cocoamphodiacetate",
   "cas": "68650-39-5",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Disodium edetate (edetate disodium)",
@@ -2078,8 +2072,8 @@
  {
   "name": "Disodium hydrogen citrate",
   "cas": "144-33-2",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Buffer, alkaliser, sequestrant",
+  "group": "buffers"
  },
  {
   "name": "Disodium laureth sulfosuccinate",
@@ -2096,38 +2090,38 @@
  {
   "name": "Distearoylphosphatidylcholine, DL-",
   "cas": "4539-70-2",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier (parenteral emulsions, liposomes)",
+  "group": "parenteral"
  },
  {
   "name": "Distearoylphosphatidylglycerol, DL-",
   "cas": "4537-78-4",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Emulsifier (parenteral emulsions, liposomes)",
+  "group": "parenteral"
  },
  {
   "name": "Dl-lactide and glycolide (50:50) copolymer 12000 acid",
   "cas": "26780-50-7",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Biodegradable controlled-release polymer",
+  "group": "coatings"
  },
  {
   "name": "Dl-lactide and glycolide (75:25) copolymer 20000 acid",
   "cas": "26780-50-7",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Biodegradable controlled-release polymer",
+  "group": "coatings"
  },
  {
   "name": "Dmdm hydantoin",
   "cas": "6440-58-0",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Docosanol",
   "cas": "661-19-8",
-  "function": "",
-  "group": "other"
+  "function": "Stiffening agent, emollient",
+  "group": "bases"
  },
  {
   "name": "Docusate sodium",
@@ -2138,8 +2132,8 @@
  {
   "name": "Docusate sodium/sodium benzoate",
   "cas": "121183-10-6",
-  "function": "Antimicrobial preservative",
-  "group": "preservatives"
+  "function": "Wetting agent, surfactant",
+  "group": "surfactants"
  },
  {
   "name": "Dri klear 042",
@@ -2150,26 +2144,26 @@
  {
   "name": "Duro-tak 280-2516",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Duro-tak 87-2296",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Duro-tak 87-2888",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Duro-tak 87-2979",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Edetate calcium disodium",
@@ -2210,14 +2204,14 @@
  {
   "name": "Egg phospholipids",
   "cas": "93685-90-6",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier (parenteral emulsions, liposomes)",
+  "group": "parenteral"
  },
  {
   "name": "Eiderdown soap",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Empty hard capsules (gelatin, HPMC, pullulan; all sizes and colours)",
@@ -2228,14 +2222,14 @@
  {
   "name": "Entsufon",
   "cas": "55837-16-6",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Entsufon sodium",
   "cas": "2917-94-4",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Erythorbic acid",
@@ -2252,20 +2246,20 @@
  {
   "name": "Erythrosine sodium anhydrous",
   "cas": "16423-68-0",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Essence lemon",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Essence orange",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Ethyl acetate",
@@ -2276,32 +2270,32 @@
  {
   "name": "Ethyl acrylate and methyl methacrylate copolymer (2:1; 600000 MW)",
   "cas": "9010-88-2",
-  "function": "",
-  "group": "other"
+  "function": "Sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Ethyl acrylate and methyl methacrylate copolymer (2:1; 750000 MW)",
   "cas": "9010-88-2",
-  "function": "",
-  "group": "other"
+  "function": "Sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Ethyl acrylate and methyl methacrylate copolymer dispersion (2:1; 750000 MW 30% aqueous)",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Ethyl acrylate and methyl methacrylate copolymer dispersion (2:1; 750000 MW 40% aqueous)",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Ethyl butyrate",
   "cas": "105-54-4",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Ethyl lactate",
@@ -2330,8 +2324,8 @@
  {
   "name": "Ethyl vanillate",
   "cas": "617-05-0",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Ethyl vanillin",
@@ -2343,73 +2337,73 @@
   "name": "Ethylcellulose",
   "cas": "9004-57-3",
   "function": "Sustained-release film former, binder",
-  "group": "binders"
+  "group": "coatings"
  },
  {
   "name": "Ethylcellulose (10 mPa·s)",
   "cas": "9004-57-3",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Sustained-release film former, binder",
+  "group": "coatings"
  },
  {
   "name": "Ethylcellulose (100 mPa·s)",
   "cas": "9004-57-3",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Sustained-release film former, binder",
+  "group": "coatings"
  },
  {
   "name": "Ethylcellulose (20 mPa·s)",
   "cas": "9004-57-3",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Sustained-release film former, binder",
+  "group": "coatings"
  },
  {
   "name": "Ethylcellulose (4 mPa·s)",
   "cas": "",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Sustained-release film former, binder",
+  "group": "coatings"
  },
  {
   "name": "Ethylcellulose (45 mPa·s)",
   "cas": "9004-57-3",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Sustained-release film former, binder",
+  "group": "coatings"
  },
  {
   "name": "Ethylcellulose (50 mPa·s)",
   "cas": "9004-57-3",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Sustained-release film former, binder",
+  "group": "coatings"
  },
  {
   "name": "Ethylcellulose (7 mPa·s)",
   "cas": "9004-57-3",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Sustained-release film former, binder",
+  "group": "coatings"
  },
  {
   "name": "Ethylcellulose aqueous dispersion type A",
   "cas": "",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Ethylcellulose aqueous dispersion type B",
   "cas": "9004-57-3",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Ethylene",
   "cas": "74-85-1",
-  "function": "",
-  "group": "other"
+  "function": "Propellant / gas",
+  "group": "propellants"
  },
  {
   "name": "Ethylene glycol",
   "cas": "107-21-1",
-  "function": "",
-  "group": "other"
+  "function": "Solvent",
+  "group": "solvents"
  },
  {
   "name": "Ethylene glycol and vinyl alcohol graft copolymer (Kollicoat® IR)",
@@ -2420,14 +2414,14 @@
  {
   "name": "Ethylene glycol monoethyl ether",
   "cas": "110-80-5",
-  "function": "",
-  "group": "other"
+  "function": "Solvent",
+  "group": "solvents"
  },
  {
   "name": "Ethylene oxide",
   "cas": "75-21-8",
-  "function": "",
-  "group": "other"
+  "function": "Sterilising gas (processing)",
+  "group": "propellants"
  },
  {
   "name": "Ethylene vinyl acetate",
@@ -2438,38 +2432,38 @@
  {
   "name": "Ethylene-propylene copolymer",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Membrane for transdermal/implant systems",
+  "group": "coatings"
  },
  {
   "name": "Ethylene-vinyl acetate copolymer (28% vinyl acetate)",
   "cas": "24937-78-8",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Membrane for transdermal/implant systems",
+  "group": "coatings"
  },
  {
   "name": "Ethylene-vinyl acetate copolymer (9% vinylacetate)",
   "cas": "24937-78-8",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Membrane for transdermal/implant systems",
+  "group": "coatings"
  },
  {
   "name": "Ethylenediamine",
   "cas": "107-15-3",
-  "function": "",
-  "group": "other"
+  "function": "Solubiliser, pH adjuster",
+  "group": "buffers"
  },
  {
   "name": "Ethylenediamine dihydrochloride",
   "cas": "333-18-6",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Solubiliser, pH adjuster",
+  "group": "buffers"
  },
  {
   "name": "Ethylhexyl hydroxystearate",
   "cas": "29383-26-4",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Ethylparaben",
@@ -2492,8 +2486,8 @@
  {
   "name": "Eucalyptus oil",
   "cas": "8000-48-4",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Ext. D&C yellow No. 7",
@@ -2504,26 +2498,26 @@
  {
   "name": "Fatty acid esters",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Fatty acid esters, saturated",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Fatty acid pentaerythriol ester",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Fatty acids",
   "cas": "67254-79-9",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier, lubricant",
+  "group": "lubricants"
  },
  {
   "name": "FD&C blue No. 1",
@@ -2630,8 +2624,8 @@
  {
   "name": "Ferrous oxide",
   "cas": "1345-25-1",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Film coating solution, aqueous IM-163",
@@ -2648,26 +2642,26 @@
  {
   "name": "Flour",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Diluent / filler",
+  "group": "diluents"
  },
  {
   "name": "Fluorochlorohydrocarbons",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Propellant",
+  "group": "propellants"
  },
  {
   "name": "Fluoropolymer coated release liner",
   "cas": "",
-  "function": "",
+  "function": "Release liner (transdermal)",
   "group": "other"
  },
  {
   "name": "Formaldehyde solution",
   "cas": "463-57-0",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial",
+  "group": "preservatives"
  },
  {
   "name": "Formic acid",
@@ -2708,20 +2702,20 @@
  {
   "name": "Gellan gum (low acyl)",
   "cas": "71010-52-1",
-  "function": "",
-  "group": "other"
+  "function": "Suspending agent, gelling agent",
+  "group": "thickeners"
  },
  {
   "name": "Gentisic acid",
   "cas": "490-79-9",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Antioxidant",
+  "group": "antioxidants"
  },
  {
   "name": "Ginger",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Gluconic acid",
@@ -2732,8 +2726,8 @@
  {
   "name": "Gluconolactone",
   "cas": "90-80-2",
-  "function": "",
-  "group": "other"
+  "function": "Acidulant, pH adjuster",
+  "group": "buffers"
  },
  {
   "name": "Glucose, liquid",
@@ -2744,20 +2738,20 @@
  {
   "name": "Glutamic acid hydrochloride",
   "cas": "138-15-8",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Acidifying agent",
+  "group": "buffers"
  },
  {
   "name": "Glutaral",
   "cas": "111-30-8",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial",
+  "group": "preservatives"
  },
  {
   "name": "Glycerin",
   "cas": "56-81-5",
   "function": "Humectant, solvent, plasticiser, sweetener",
-  "group": "plasticisers"
+  "group": "solvents"
  },
  {
   "name": "Glycerin polymer solution I-137",
@@ -2774,7 +2768,7 @@
  {
   "name": "Glyceryl 1-stearate",
   "cas": "123-94-4",
-  "function": "Lubricant / glidant",
+  "function": "Emulsifier, lubricant, sustained-release agent",
   "group": "lubricants"
  },
  {
@@ -2792,14 +2786,14 @@
  {
   "name": "Glyceryl distearate",
   "cas": "1323-83-7",
-  "function": "Lubricant / glidant",
+  "function": "Lubricant, sustained-release matrix",
   "group": "lubricants"
  },
  {
   "name": "Glyceryl isostearate",
   "cas": "66085-00-5",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Glyceryl laurate",
@@ -2816,7 +2810,7 @@
  {
   "name": "Glyceryl mono- and dipalmitostearate",
   "cas": "85251-77-0",
-  "function": "Lubricant / glidant",
+  "function": "Lubricant, sustained-release matrix",
   "group": "lubricants"
  },
  {
@@ -2888,25 +2882,25 @@
  {
   "name": "Glyceryl stearate se",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Glyceryl stearate/Peg-100 stearate",
   "cas": "84750-06-1",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Glyceryl stearate/Peg-40 stearate",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Glyceryl tristearate",
   "cas": "555-43-1",
-  "function": "Lubricant / glidant",
+  "function": "Lubricant, sustained-release matrix",
   "group": "lubricants"
  },
  {
@@ -2918,8 +2912,8 @@
  {
   "name": "Glycine hydrochloride",
   "cas": "6000-43-7",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Acidifying agent",
+  "group": "buffers"
  },
  {
   "name": "Glycofurol",
@@ -2930,14 +2924,14 @@
  {
   "name": "Glycol cetearate",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Stiffening agent, emollient, emulsifier",
+  "group": "bases"
  },
  {
   "name": "Glycol stearate",
   "cas": "111-60-4",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Stiffening agent, emollient",
+  "group": "bases"
  },
  {
   "name": "Guar gum",
@@ -2948,26 +2942,26 @@
  {
   "name": "Guinea green B",
   "cas": "4680-78-8",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Gum base, chewing",
   "cas": "",
-  "function": "",
+  "function": "Chewing gum base",
   "group": "other"
  },
  {
   "name": "Hamamelis virginiana top water",
   "cas": "",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Astringent, adjuvant",
+  "group": "other"
  },
  {
   "name": "Hard fat",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Suppository base",
+  "group": "bases"
  },
  {
   "name": "Hectorite",
@@ -2990,38 +2984,38 @@
  {
   "name": "Hexylene glycol",
   "cas": "107-41-5",
-  "function": "",
-  "group": "other"
+  "function": "Solvent, humectant",
+  "group": "solvents"
  },
  {
   "name": "High density polyethylene",
   "cas": "9002-88-4",
-  "function": "",
+  "function": "Packaging / device polymer",
   "group": "other"
  },
  {
   "name": "High fructose corn syrup",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Sweetener",
+  "group": "sweeteners"
  },
  {
   "name": "Histidine",
   "cas": "71-00-1",
-  "function": "",
-  "group": "other"
+  "function": "Buffer, stabiliser",
+  "group": "parenteral"
  },
  {
   "name": "Hornstedtia costata seed",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Hydrocarbon gel, plasticized",
   "cas": "8049-65-8",
-  "function": "",
-  "group": "other"
+  "function": "Ointment base",
+  "group": "bases"
  },
  {
   "name": "Hydrochloric acid",
@@ -3032,8 +3026,8 @@
  {
   "name": "Hydrogen peroxide",
   "cas": "7722-84-1",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial",
+  "group": "preservatives"
  },
  {
   "name": "Hydrogenated coconut oil",
@@ -3068,13 +3062,13 @@
  {
   "name": "Hydrogenated soybean phosphatidylcholine",
   "cas": "97281-48-6",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier (parenteral emulsions, liposomes)",
+  "group": "parenteral"
  },
  {
   "name": "Hydrogenated starch hydrolysate",
   "cas": "68425-17-2",
-  "function": "Diluent / filler",
+  "function": "Diluent, humectant, sweetener",
   "group": "diluents"
  },
  {
@@ -3086,8 +3080,8 @@
  {
   "name": "Hydroxyethyl cellulose",
   "cas": "9004-62-0",
-  "function": "Viscosity modifier, film former",
-  "group": "coatings"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Hydroxyethyl cellulose (100 mPa·s at 2%)",
@@ -3219,7 +3213,7 @@
   "name": "Hydroxypropyl cellulose, low-substituted",
   "cas": "9004-64-2",
   "function": "Disintegrant, binder",
-  "group": "binders"
+  "group": "disintegrants"
  },
  {
   "name": "Hydroxypropyl starch",
@@ -3230,8 +3224,8 @@
  {
   "name": "Hydroxypropyl γ-cyclodextrin",
   "cas": "128446-34-4",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Solubiliser, complexing agent",
+  "group": "surfactants"
  },
  {
   "name": "Hypromellose",
@@ -3356,20 +3350,20 @@
  {
   "name": "Hypromellose acetate succinate 06081-22-4 (3 mPa·s)",
   "cas": "71138-97-1",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Enteric film former, solid dispersions",
+  "group": "coatings"
  },
  {
   "name": "Hypromellose acetate succinate 12070-92-3 (3 mPa·s)",
   "cas": "71138-97-1",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Enteric film former, solid dispersions",
+  "group": "coatings"
  },
  {
   "name": "Hypromellose acetate succinate 16070-72-2 (3 mPa·s)",
   "cas": "71138-97-1",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Enteric film former, solid dispersions",
+  "group": "coatings"
  },
  {
   "name": "Hypromellose phthalate",
@@ -3380,26 +3374,26 @@
  {
   "name": "Hypromellose phthalate (24% phthalate, 55 cst)",
   "cas": "9050-31-1",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Enteric film former",
+  "group": "coatings"
  },
  {
   "name": "Hypromellose phthalate (31% phthalate, 170 cst)",
   "cas": "9050-31-1",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Enteric film former",
+  "group": "coatings"
  },
  {
   "name": "Hypromellose phthalate (31% phthalate, 40 cst)",
   "cas": "9050-31-1",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Enteric film former",
+  "group": "coatings"
  },
  {
   "name": "Hystrene",
   "cas": "8039-32-5",
-  "function": "",
-  "group": "other"
+  "function": "Lubricant",
+  "group": "lubricants"
  },
  {
   "name": "Icodextrin",
@@ -3428,13 +3422,13 @@
  {
   "name": "Invert sugar",
   "cas": "8013-17-0",
-  "function": "",
-  "group": "other"
+  "function": "Sweetener, humectant",
+  "group": "sweeteners"
  },
  {
   "name": "Iron",
   "cas": "7439-89-6",
-  "function": "",
+  "function": "Oxygen scavenger (packaging)",
   "group": "other"
  },
  {
@@ -3452,8 +3446,8 @@
  {
   "name": "Isoleucine",
   "cas": "73-32-5",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (biologics)",
+  "group": "parenteral"
  },
  {
   "name": "Isomalt",
@@ -3470,8 +3464,8 @@
  {
   "name": "Isopropyl isostearate",
   "cas": "68171-33-5",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emollient, solvent",
+  "group": "bases"
  },
  {
   "name": "Isopropyl myristate",
@@ -3488,8 +3482,8 @@
  {
   "name": "Isostearic acid",
   "cas": "30399-84-9",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emollient, emulsifier",
+  "group": "bases"
  },
  {
   "name": "Isostearyl alcohol",
@@ -3506,14 +3500,14 @@
  {
   "name": "Karaya gum",
   "cas": "9000-36-6",
-  "function": "",
-  "group": "other"
+  "function": "Suspending agent, gelling agent",
+  "group": "thickeners"
  },
  {
   "name": "Kollidon SR",
   "cas": "264876-68-8",
-  "function": "",
-  "group": "other"
+  "function": "Sustained-release film former, binder",
+  "group": "coatings"
  },
  {
   "name": "Lactic acid",
@@ -3524,14 +3518,14 @@
  {
   "name": "Lactic acid, DL-",
   "cas": "50-21-5",
-  "function": "",
-  "group": "other"
+  "function": "Acidulant, pH adjuster",
+  "group": "buffers"
  },
  {
   "name": "Lactic acid, L-",
   "cas": "79-33-4",
-  "function": "",
-  "group": "other"
+  "function": "Acidulant, pH adjuster",
+  "group": "buffers"
  },
  {
   "name": "Lactitol",
@@ -3542,8 +3536,8 @@
  {
   "name": "Lactitol monohydrate",
   "cas": "81025-04-9",
-  "function": "",
-  "group": "other"
+  "function": "Sweetener, diluent",
+  "group": "diluents"
  },
  {
   "name": "Lactobionic acid",
@@ -3614,7 +3608,7 @@
  {
   "name": "Lanolin cholesterols",
   "cas": "",
-  "function": "Emollient / oleaginous vehicle / base",
+  "function": "Emulsifier, emollient",
   "group": "bases"
  },
  {
@@ -3638,14 +3632,14 @@
  {
   "name": "Lanosterol",
   "cas": "79-63-0",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier, emollient",
+  "group": "bases"
  },
  {
   "name": "Lauramine oxide",
   "cas": "1643-20-5",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Laureth sulfate",
@@ -3680,20 +3674,20 @@
  {
   "name": "Lauric diethanolamide",
   "cas": "120-40-1",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Lauric myristic monoethanolamide",
   "cas": "",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Lauric/myristic diethanololamide",
   "cas": "97926-10-8",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Lauroyl PEG-32 glycerides",
@@ -3710,8 +3704,8 @@
  {
   "name": "Lauryl lactate",
   "cas": "6283-92-7",
-  "function": "Buffer / chelating agent",
-  "group": "antioxidants"
+  "function": "Emollient, penetration enhancer",
+  "group": "bases"
  },
  {
   "name": "Lauryl sulfate",
@@ -3722,8 +3716,8 @@
  {
   "name": "Lavender oil",
   "cas": "8000-28-0",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Lecithin",
@@ -3734,14 +3728,14 @@
  {
   "name": "Lemon oil, cold pressed",
   "cas": "8008-56-8",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Lemon tincture",
   "cas": "8028-38-4",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Leucine",
@@ -3764,14 +3758,14 @@
  {
   "name": "Light green cf yellowish",
   "cas": "6546-18-5",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Light green sf yellowish",
   "cas": "5141-20-8",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Light mineral oil",
@@ -3782,14 +3776,14 @@
  {
   "name": "Lime (calcium oxide)",
   "cas": "1305-78-8",
-  "function": "",
-  "group": "other"
+  "function": "pH adjuster",
+  "group": "buffers"
  },
  {
   "name": "Lime oil, cold pressed",
   "cas": "8008-26-2",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Limonene, (+)-",
@@ -3800,8 +3794,8 @@
  {
   "name": "Linear tridecyl benzene sulfonate",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Linoleic acid",
@@ -3812,62 +3806,62 @@
  {
   "name": "Liquid petroleum",
   "cas": "8002-05-9",
-  "function": "",
-  "group": "other"
+  "function": "Oleaginous vehicle, emollient",
+  "group": "bases"
  },
  {
   "name": "Low-substituted hydroxypropyl cellulose",
   "cas": "9004-64-2",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Disintegrant, binder",
+  "group": "disintegrants"
  },
  {
   "name": "Low-substituted hydroxypropyl cellulose (11% hydroxypropyl; 100000 MW)",
   "cas": "9004-64-2",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Disintegrant, binder",
+  "group": "disintegrants"
  },
  {
   "name": "Low-substituted hydroxypropyl cellulose (11% hydroxypropyl; 120000 MW)",
   "cas": "9004-64-2",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Disintegrant, binder",
+  "group": "disintegrants"
  },
  {
   "name": "Low-substituted hydroxypropyl cellulose (11% hydroxypropyl; 130000 MW)",
   "cas": "9004-64-2",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Disintegrant, binder",
+  "group": "disintegrants"
  },
  {
   "name": "Low-substituted hydroxypropyl cellulose (11% hydroxypropyl; 140000 MW)",
   "cas": "",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Disintegrant, binder",
+  "group": "disintegrants"
  },
  {
   "name": "Low-substituted hydroxypropyl cellulose (8% hydroxypropyl: 140000 MW)",
   "cas": "9004-64-2",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Disintegrant, binder",
+  "group": "disintegrants"
  },
  {
   "name": "Low-substituted hydroxypropyl cellulose (8% hydroxypropyl; 120000 MW)",
   "cas": "9004-64-2",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Disintegrant, binder",
+  "group": "disintegrants"
  },
  {
   "name": "Ludipress",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, binder (direct compression)",
+  "group": "diluents"
  },
  {
   "name": "Lysine",
   "cas": "56-87-1",
-  "function": "",
-  "group": "other"
+  "function": "pH adjuster / buffer",
+  "group": "buffers"
  },
  {
   "name": "Lysine acetate",
@@ -3878,14 +3872,14 @@
  {
   "name": "Lysine hydrochloride",
   "cas": "657-27-2",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "pH adjuster / buffer",
+  "group": "buffers"
  },
  {
   "name": "Lysine monohydrate",
   "cas": "39665-12-8",
-  "function": "",
-  "group": "other"
+  "function": "pH adjuster / buffer",
+  "group": "buffers"
  },
  {
   "name": "Macrogol 15 hydroxystearate (Kolliphor® HS 15)",
@@ -3902,14 +3896,14 @@
  {
   "name": "Magnesium aluminum silicate type ic",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Suspending agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Magnesium aluminum silicate type iia",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Suspending agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Magnesium carbonate",
@@ -3920,8 +3914,8 @@
  {
   "name": "Magnesium chloride",
   "cas": "7791-18-6",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Diluent / tonicity / stabiliser",
+  "group": "diluents"
  },
  {
   "name": "Magnesium hydroxide",
@@ -3980,8 +3974,8 @@
  {
   "name": "Malic acid, L-",
   "cas": "97-67-6",
-  "function": "",
-  "group": "other"
+  "function": "Acidulant, flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Maltitol",
@@ -4016,8 +4010,8 @@
  {
   "name": "Maltose monohydrate",
   "cas": "6363-53-7",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, sweetener",
+  "group": "diluents"
  },
  {
   "name": "Mannitol",
@@ -4028,13 +4022,13 @@
  {
   "name": "Medical antifoam emulsion C",
   "cas": "",
-  "function": "",
+  "function": "Antifoaming agent",
   "group": "other"
  },
  {
   "name": "Medical antiform a-f emulsion",
   "cas": "",
-  "function": "",
+  "function": "Antifoaming agent",
   "group": "other"
  },
  {
@@ -4053,7 +4047,7 @@
   "name": "Menthol",
   "cas": "89-78-1",
   "function": "Flavour, penetration enhancer",
-  "group": "surfactants"
+  "group": "sweeteners"
  },
  {
   "name": "Metacresol",
@@ -4070,26 +4064,26 @@
  {
   "name": "Methacrylic acid - ethyl acrylate copolymer (1:1) type A",
   "cas": "25212-88-8",
-  "function": "",
-  "group": "other"
+  "function": "Enteric film former",
+  "group": "coatings"
  },
  {
   "name": "Methacrylic acid - methyl methacrylate copolymer (1:1)",
   "cas": "25086-15-1",
-  "function": "",
-  "group": "other"
+  "function": "Enteric film former",
+  "group": "coatings"
  },
  {
   "name": "Methacrylic acid - methyl methacrylate copolymer (1:2)",
   "cas": "25086-15-1",
-  "function": "",
-  "group": "other"
+  "function": "Enteric film former",
+  "group": "coatings"
  },
  {
   "name": "Methacrylic acid copolymer",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Enteric film former",
+  "group": "coatings"
  },
  {
   "name": "Methanesulfonic acid",
@@ -4106,56 +4100,56 @@
  {
   "name": "Methyl acrylate - methyl methacrylate",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Methyl chloride",
   "cas": "74-87-3",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Propellant",
+  "group": "propellants"
  },
  {
   "name": "Methyl ethyl ketone",
   "cas": "78-93-3",
-  "function": "",
-  "group": "other"
+  "function": "Solvent",
+  "group": "solvents"
  },
  {
   "name": "Methyl Gluceth-10",
   "cas": "68239-42-9",
-  "function": "",
-  "group": "other"
+  "function": "Solvent, humectant",
+  "group": "solvents"
  },
  {
   "name": "Methyl Gluceth-20",
   "cas": "68239-42-9",
-  "function": "",
-  "group": "other"
+  "function": "Solvent, humectant",
+  "group": "solvents"
  },
  {
   "name": "Methyl glucose sesquistearate",
   "cas": "68936-95-8",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Methyl laurate",
   "cas": "111-82-0",
-  "function": "",
-  "group": "other"
+  "function": "Emollient, solvent",
+  "group": "bases"
  },
  {
   "name": "Methyl salicylate",
   "cas": "119-36-8",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Methyl stearate",
   "cas": "112-61-8",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Methylcellulose",
@@ -4190,14 +4184,14 @@
  {
   "name": "Methylchloroisothiazolinone/methylisothiazolinone mixture",
   "cas": "55965-84-9",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Methylene blue",
   "cas": "7220-79-3",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Methylparaben",
@@ -4220,14 +4214,14 @@
  {
   "name": "Microcrystalline cellulose",
   "cas": "9004-34-6",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Diluent, binder, disintegrant",
+  "group": "diluents"
  },
  {
   "name": "Milk protein concentrate",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, stabiliser",
+  "group": "diluents"
  },
  {
   "name": "Mineral oil",
@@ -4244,14 +4238,14 @@
  {
   "name": "Miripirium chloride",
   "cas": "2748-88-1",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Modified corn starch (1-octenyl succinic anhydride)",
   "cas": "",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Mono and diglyceride",
@@ -4268,8 +4262,8 @@
  {
   "name": "Monosodium citrate",
   "cas": "18996-35-5",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "pH adjuster / buffer",
+  "group": "buffers"
  },
  {
   "name": "Monosodium glutamate",
@@ -4280,8 +4274,8 @@
  {
   "name": "Monostearyl citrate",
   "cas": "1337-33-3",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Chelating agent",
+  "group": "antioxidants"
  },
  {
   "name": "Monothioglycerol",
@@ -4292,14 +4286,14 @@
  {
   "name": "Montan wax",
   "cas": "8002-53-7",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Stiffening agent, coating",
+  "group": "coatings"
  },
  {
   "name": "Multisterol extract",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier, emollient",
+  "group": "bases"
  },
  {
   "name": "Myristic acid",
@@ -4316,38 +4310,38 @@
  {
   "name": "Myristyl lactate",
   "cas": "1323-03-1",
-  "function": "Buffer / chelating agent",
-  "group": "antioxidants"
+  "function": "Emollient, penetration enhancer",
+  "group": "bases"
  },
  {
   "name": "Myvacet type 5-00",
   "cas": "8029-91-2",
-  "function": "",
-  "group": "other"
+  "function": "Plasticiser",
+  "group": "plasticisers"
  },
  {
   "name": "N-acetyl-d-alanine",
   "cas": "19436-52-3",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (biologics)",
+  "group": "parenteral"
  },
  {
   "name": "N-dodecyl β-d-maltoside",
   "cas": "69227-93-6",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "N-phenyl-1-napthylamine",
   "cas": "90-30-2",
-  "function": "",
-  "group": "other"
+  "function": "Antioxidant",
+  "group": "antioxidants"
  },
  {
   "name": "Naphthol blue black",
   "cas": "1064-48-8",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Neohesperidin dihydrochalcone",
@@ -4364,14 +4358,14 @@
  {
   "name": "Neutral oil",
   "cas": "",
-  "function": "Emollient / oleaginous vehicle / base",
+  "function": "Oleaginous vehicle",
   "group": "bases"
  },
  {
   "name": "Niacinamide",
   "cas": "98-92-0",
-  "function": "",
-  "group": "other"
+  "function": "Solubiliser / complexing agent",
+  "group": "surfactants"
  },
  {
   "name": "Nitric acid",
@@ -4394,26 +4388,26 @@
  {
   "name": "Noncrystallizing sorbitol solution",
   "cas": "",
-  "function": "Diluent / filler",
+  "function": "Diluent, humectant, sweetener",
   "group": "diluents"
  },
  {
   "name": "Nonoxynol-40",
   "cas": "26027-38-3",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Nonoxynol-9",
   "cas": "26027-38-3",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Nutmeg oil",
   "cas": "8008-45-5",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "O-tolyl biguanide",
@@ -4424,20 +4418,20 @@
  {
   "name": "Octisalate",
   "cas": "118-60-5",
-  "function": "",
+  "function": "UV absorber (sunscreen)",
   "group": "other"
  },
  {
   "name": "Octoxynol-40",
   "cas": "9002-93-1",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Octoxynol-9",
   "cas": "9002-93-1",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Octyldodecanol",
@@ -4490,86 +4484,86 @@
  {
   "name": "Opacoat NA4108 blue",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film-coating system",
+  "group": "coatings"
  },
  {
   "name": "Opacoat NA7013 clear",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film-coating system",
+  "group": "coatings"
  },
  {
   "name": "Opaque blue 100",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film-coating system",
+  "group": "coatings"
  },
  {
   "name": "Opaque blue 605",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film-coating system",
+  "group": "coatings"
  },
  {
   "name": "Opaque green 97",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film-coating system",
+  "group": "coatings"
  },
  {
   "name": "Opaque maroon 6 dar",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film-coating system",
+  "group": "coatings"
  },
  {
   "name": "Opaque white 002",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film-coating system",
+  "group": "coatings"
  },
  {
   "name": "Opaque white 8",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film-coating system",
+  "group": "coatings"
  },
  {
   "name": "Opatint DD-18-00-0 white",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Opatint DD-1800 white",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Orange juice",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Orange oil terpeneless",
   "cas": "68606-94-0",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Orange oil, cold pressed",
   "cas": "8008-57-9",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Orange peel",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Palm kernel oil",
@@ -4610,8 +4604,8 @@
  {
   "name": "Parfum creme 45/3",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Peanut oil",
@@ -4628,26 +4622,26 @@
  {
   "name": "Pectin, citrus",
   "cas": "9000-69-5",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Gelling agent, adsorbent",
+  "group": "thickeners"
  },
  {
   "name": "PEG 6-32 stearate/glycol stearate",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "PEG-100 monostearate",
   "cas": "9004-99-3",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "PEG-120 glyceryl stearate",
   "cas": "9011-21-6",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "PEG-120 methyl glucose dioleate",
@@ -4658,26 +4652,26 @@
  {
   "name": "PEG-20 methyl glucose sesquistearate",
   "cas": "72175-39-4",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "PEG-20 sorbitan isostearate",
   "cas": "66794-58-9",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "PEG-25 propylene glycol stearate",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "PEG-40 sorbitan diisostearate",
   "cas": "58205-96-2",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "PEG-5 oleate",
@@ -4688,8 +4682,8 @@
  {
   "name": "PEG-6 isostearate",
   "cas": "56002-14-3",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "PEG-60 hydrogenated castor oil",
@@ -4718,32 +4712,32 @@
  {
   "name": "PEG/PPG-18/18 dimethicone",
   "cas": "68937-55-3",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "PEG/PPG-4/30 copolymer",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Pegoxol 7 stearate",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Pentadecalactone",
   "cas": "106-02-5",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Pentaerythritol cocoate",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Pentasodium pentetate",
@@ -4760,8 +4754,8 @@
  {
   "name": "Peppermint oil",
   "cas": "8006-90-4",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Petrolatum",
@@ -4778,20 +4772,20 @@
  {
   "name": "Pharmaburst B1",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, binder, disintegrant",
+  "group": "diluents"
  },
  {
   "name": "Pharmaburst B2",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, binder, disintegrant",
+  "group": "diluents"
  },
  {
   "name": "Pharmaburst C1",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, binder, disintegrant",
+  "group": "diluents"
  },
  {
   "name": "Pharmaceutical flavours (fruit, mint, vanilla, cream, masking flavours; powder or liquid)",
@@ -4814,8 +4808,8 @@
  {
   "name": "Phenonip",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Phenoxyethanol",
@@ -4826,8 +4820,8 @@
  {
   "name": "Phenylalanine",
   "cas": "63-91-2",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (biologics)",
+  "group": "parenteral"
  },
  {
   "name": "Phenylethyl alcohol",
@@ -4856,8 +4850,8 @@
  {
   "name": "Phospholipid",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Phospholipids",
@@ -4874,38 +4868,38 @@
  {
   "name": "Pigmented polyethylene/polyester 1501 film",
   "cas": "",
-  "function": "",
+  "function": "Backing film (transdermal)",
   "group": "other"
  },
  {
   "name": "Pine needle oil (pinus sylvestris)",
   "cas": "8023-99-2",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Pineapple",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Piperazine",
   "cas": "110-85-0",
-  "function": "",
-  "group": "other"
+  "function": "pH adjuster / buffer",
+  "group": "buffers"
  },
  {
   "name": "Plasacryl T20",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Glidant, lubricant, anti-tacking agent",
+  "group": "lubricants"
  },
  {
   "name": "Plastibase-50w",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Ointment base",
+  "group": "bases"
  },
  {
   "name": "Polacrilin",
@@ -4922,14 +4916,14 @@
  {
   "name": "Polidronium chloride",
   "cas": "75345-27-6",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Polishing solution IM-182",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Glazing agent, coating",
+  "group": "coatings"
  },
  {
   "name": "Poloxamer (188, 407)",
@@ -4970,8 +4964,8 @@
  {
   "name": "Poly(methyl acrylate-co-methyl methacrylate-co-methacrylic acid 7:3:1; 280000 MW)",
   "cas": "26936-24-3",
-  "function": "",
-  "group": "other"
+  "function": "Enteric / sustained-release film former",
+  "group": "coatings"
  },
  {
   "name": "Poly(methyl vinyl ether/maleic anhydride)",
@@ -4982,8 +4976,8 @@
  {
   "name": "Polybutene (1400 MW)",
   "cas": "9003-29-6",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Polycarbophil",
@@ -5006,14 +5000,14 @@
  {
   "name": "Polyester",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Membrane for transdermal/implant systems",
+  "group": "coatings"
  },
  {
   "name": "Polyester polyamine copolymer",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Polyethylene glycol (Macrogol)",
@@ -5138,62 +5132,62 @@
  {
   "name": "Polyethylene oxide 100000",
   "cas": "25322-68-3",
-  "function": "",
-  "group": "other"
+  "function": "Controlled-release matrix, bioadhesive",
+  "group": "coatings"
  },
  {
   "name": "Polyethylene oxide 1000000",
   "cas": "25322-68-3",
-  "function": "",
-  "group": "other"
+  "function": "Controlled-release matrix, bioadhesive",
+  "group": "coatings"
  },
  {
   "name": "Polyethylene oxide 200000",
   "cas": "25322-68-3",
-  "function": "",
-  "group": "other"
+  "function": "Controlled-release matrix, bioadhesive",
+  "group": "coatings"
  },
  {
   "name": "Polyethylene oxide 2000000",
   "cas": "25322-68-3",
-  "function": "",
-  "group": "other"
+  "function": "Controlled-release matrix, bioadhesive",
+  "group": "coatings"
  },
  {
   "name": "Polyethylene oxide 4000000",
   "cas": "25322-68-3",
-  "function": "",
-  "group": "other"
+  "function": "Controlled-release matrix, bioadhesive",
+  "group": "coatings"
  },
  {
   "name": "Polyethylene oxide 5000000",
   "cas": "25322-68-3",
-  "function": "",
-  "group": "other"
+  "function": "Controlled-release matrix, bioadhesive",
+  "group": "coatings"
  },
  {
   "name": "Polyethylene oxide 600000",
   "cas": "25322-68-3",
-  "function": "",
-  "group": "other"
+  "function": "Controlled-release matrix, bioadhesive",
+  "group": "coatings"
  },
  {
   "name": "Polyethylene oxide 7000000",
   "cas": "25322-68-3",
-  "function": "",
-  "group": "other"
+  "function": "Controlled-release matrix, bioadhesive",
+  "group": "coatings"
  },
  {
   "name": "Polyethylene oxide 900000",
   "cas": "25322-68-3",
-  "function": "",
-  "group": "other"
+  "function": "Controlled-release matrix, bioadhesive",
+  "group": "coatings"
  },
  {
   "name": "Polyglactin",
   "cas": "26780-50-7",
-  "function": "",
-  "group": "other"
+  "function": "Biodegradable controlled-release polymer",
+  "group": "coatings"
  },
  {
   "name": "Polyglyceryl-3 oleate",
@@ -5204,38 +5198,38 @@
  {
   "name": "Polyisobutylene",
   "cas": "9003-27-4",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Polyisobutylene (1100000 MW)",
   "cas": "9003-27-4",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Polyisobutylene (55000 MW)",
   "cas": "9003-27-4",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Polyisobutylene/polybutene adhesive",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Polylactide",
   "cas": "26680-10-4",
-  "function": "",
-  "group": "other"
+  "function": "Biodegradable controlled-release polymer",
+  "group": "coatings"
  },
  {
   "name": "Polylactide (14000 MW)",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Biodegradable controlled-release polymer",
+  "group": "coatings"
  },
  {
   "name": "Polymethacrylates (Eudragit® L, S, E, RL, RS, NE)",
@@ -5246,8 +5240,8 @@
  {
   "name": "Polyoxyethylene alcohols",
   "cas": "9007-63-0",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Polyoxyethylene alkyl ethers (Brij®)",
@@ -5264,8 +5258,8 @@
  {
   "name": "Polyoxyethylene fatty acid esters",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier, solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Polyoxyethylene sorbitan fatty acid esters (polysorbates 20, 60, 80)",
@@ -5306,38 +5300,38 @@
  {
   "name": "Polyoxyl 40 stearate type i",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emulsifier, solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Polyoxyl 6 and polyoxyl 32 palmitostearate",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Polyoxyl distearate",
   "cas": "9005-08-7",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Polyoxyl glyceryl stearate",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Polyoxyl stearate",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emulsifier, solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Polypropylene",
   "cas": "9003-07-0",
-  "function": "",
-  "group": "other"
+  "function": "Membrane for transdermal/implant systems",
+  "group": "coatings"
  },
  {
   "name": "Polypropylene glycol",
@@ -5348,26 +5342,26 @@
  {
   "name": "Polypropylene glycol 11 stearyl ether",
   "cas": "25231-21-4",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Polypropylene glycol 15 stearyl ether",
   "cas": "25231-21-4",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Polyquaternium-10",
   "cas": "81859-24-7",
-  "function": "",
-  "group": "other"
+  "function": "Viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Polyquaternium-7 (70/30 acrylamide/dadmac; 1600000 MW)",
   "cas": "26590-05-6",
-  "function": "",
-  "group": "other"
+  "function": "Viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Polysiloxane",
@@ -5378,38 +5372,38 @@
  {
   "name": "Polysorb 85/70/00",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, humectant, sweetener",
+  "group": "diluents"
  },
  {
   "name": "Polysorbate 20",
   "cas": "9005-64-5",
-  "function": "Antimicrobial preservative",
-  "group": "preservatives"
+  "function": "Emulsifier, solubiliser, wetting agent",
+  "group": "surfactants"
  },
  {
   "name": "Polysorbate 40",
   "cas": "9005-66-7",
-  "function": "Antimicrobial preservative",
-  "group": "preservatives"
+  "function": "Emulsifier, solubiliser, wetting agent",
+  "group": "surfactants"
  },
  {
   "name": "Polysorbate 60",
   "cas": "9005-67-8",
-  "function": "Antimicrobial preservative",
-  "group": "preservatives"
+  "function": "Emulsifier, solubiliser, wetting agent",
+  "group": "surfactants"
  },
  {
   "name": "Polysorbate 80",
   "cas": "9005-65-6",
-  "function": "Antimicrobial preservative",
-  "group": "preservatives"
+  "function": "Emulsifier, solubiliser, wetting agent",
+  "group": "surfactants"
  },
  {
   "name": "Polystyrene sulfonic acid",
   "cas": "9002-23-7",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Solubiliser, complexing agent",
+  "group": "surfactants"
  },
  {
   "name": "Polyvinyl acetate dispersion (Kollicoat® SR 30 D)",
@@ -5432,20 +5426,20 @@
  {
   "name": "Polyvinyl alcohol (94000 MW)",
   "cas": "9002-89-5",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Film former, viscosity modifier",
+  "group": "coatings"
  },
  {
   "name": "Polyvinyl alcohol graft polyethylene glycol copolymer (3:1; 45000 MW)",
   "cas": "121786-16-1",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Immediate-release film former",
+  "group": "coatings"
  },
  {
   "name": "Polyvinyl alcohol/polyvinyl acetate copolymer (8:1; 18000 MW)",
   "cas": "9002-89-5",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "Polyvinyl alcohol–polyethylene glycol graft copolymer",
@@ -5456,14 +5450,14 @@
  {
   "name": "Polyvinyl chloride-polyvinyl acetate copolymer",
   "cas": "",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "Polyvinylacetal",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "Potassium acetate",
@@ -5612,20 +5606,20 @@
  {
   "name": "Povidone/eicosene copolymer",
   "cas": "28211-18-9",
-  "function": "Binder / viscosity modifier / film former",
-  "group": "binders"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "Ppg-12/smdi copolymer",
   "cas": "9042-82-4",
-  "function": "",
-  "group": "other"
+  "function": "Film former",
+  "group": "coatings"
  },
  {
   "name": "PPG-20 methyl glucose ether distearate",
   "cas": "93821-74-0",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "PPG-26 oleate",
@@ -5642,20 +5636,20 @@
  {
   "name": "Proline",
   "cas": "147-85-3",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (biologics)",
+  "group": "parenteral"
  },
  {
   "name": "Promulgen d",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier, stiffening agent",
+  "group": "bases"
  },
  {
   "name": "Promulgen g",
   "cas": "9009-61-4",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier, stiffening agent",
+  "group": "bases"
  },
  {
   "name": "Propane",
@@ -5672,8 +5666,8 @@
  {
   "name": "Propyl alcohol",
   "cas": "71-23-8",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Solvent",
+  "group": "solvents"
  },
  {
   "name": "Propyl gallate",
@@ -5690,8 +5684,8 @@
  {
   "name": "Propylene glycol",
   "cas": "57-55-6",
-  "function": "Solvent, humectant, preservative",
-  "group": "preservatives"
+  "function": "Solvent, humectant",
+  "group": "solvents"
  },
  {
   "name": "Propylene glycol - lecithin",
@@ -5714,8 +5708,8 @@
  {
   "name": "Propylene glycol dicaprylate",
   "cas": "7384-98-7",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Solvent, oleaginous vehicle",
+  "group": "bases"
  },
  {
   "name": "Propylene glycol dilaurate",
@@ -5726,8 +5720,8 @@
  {
   "name": "Propylene glycol monocaprylate",
   "cas": "31565-12-5",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Solubiliser, emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Propylene glycol monolaurate",
@@ -5738,14 +5732,14 @@
  {
   "name": "Propylene glycol monopalmitostearate",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emulsifier, stiffening agent",
+  "group": "bases"
  },
  {
   "name": "Propylene glycol monostearate",
   "cas": "1323-39-3",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emulsifier, stiffening agent",
+  "group": "bases"
  },
  {
   "name": "Propylparaben",
@@ -5762,20 +5756,20 @@
  {
   "name": "Prosolv ODT",
   "cas": "2379319-82-9",
-  "function": "",
-  "group": "other"
+  "function": "Diluent, binder (direct compression)",
+  "group": "diluents"
  },
  {
   "name": "Prosweet K",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Sweetener",
+  "group": "sweeteners"
  },
  {
   "name": "Protein hydrolysate",
   "cas": "9015-54-7",
-  "function": "",
-  "group": "other"
+  "function": "Flavour enhancer",
+  "group": "sweeteners"
  },
  {
   "name": "Pullulan",
@@ -5810,14 +5804,14 @@
  {
   "name": "Ricinoleic acid",
   "cas": "141-22-0",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Emulsifier, penetration enhancer",
+  "group": "surfactants"
  },
  {
   "name": "Rosin",
   "cas": "8050-09-7",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Saccharin",
@@ -5864,14 +5858,14 @@
  {
   "name": "Sassafras oil",
   "cas": "8006-80-2",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Scotchpak 1022",
   "cas": "156014-81-2",
-  "function": "",
-  "group": "other"
+  "function": "Membrane for transdermal/implant systems",
+  "group": "coatings"
  },
  {
   "name": "Sd alcohol 40",
@@ -5894,14 +5888,14 @@
  {
   "name": "Sepineo p 600",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Gelling agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Serine",
   "cas": "56-45-1",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (biologics)",
+  "group": "parenteral"
  },
  {
   "name": "Sesame oil",
@@ -5912,8 +5906,8 @@
  {
   "name": "Shea butter",
   "cas": "194043-92-0",
-  "function": "",
-  "group": "other"
+  "function": "Emollient / oleaginous vehicle / base",
+  "group": "bases"
  },
  {
   "name": "Shellac",
@@ -5924,44 +5918,44 @@
  {
   "name": "Shellac p.v.p. solution No. 4",
   "cas": "",
-  "function": "Capsule shell material",
-  "group": "capsules"
+  "function": "Printing ink for tablets and capsules",
+  "group": "coatings"
  },
  {
   "name": "Silastic medical adhesive,silicone type A",
   "cas": "",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Silicified microcrystalline cellulose (125 .micro.m)",
   "cas": "212693-81-7",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Diluent, binder (direct compression)",
+  "group": "diluents"
  },
  {
   "name": "Silicified microcrystalline cellulose (125 .micro.m, high-density)",
   "cas": "212693-81-7",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Diluent, binder (direct compression)",
+  "group": "diluents"
  },
  {
   "name": "Silicified microcrystalline cellulose (50 .micro.m)",
   "cas": "",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Diluent, binder (direct compression)",
+  "group": "diluents"
  },
  {
   "name": "Silicified microcrystalline cellulose (65 .micro.m)",
   "cas": "212693-81-7",
-  "function": "Viscosity modifier",
-  "group": "thickeners"
+  "function": "Diluent, binder (direct compression)",
+  "group": "diluents"
  },
  {
   "name": "Silicon",
   "cas": "7440-21-3",
-  "function": "",
-  "group": "other"
+  "function": "Glidant, adsorbent",
+  "group": "lubricants"
  },
  {
   "name": "Silicone",
@@ -5972,8 +5966,8 @@
  {
   "name": "Silicone adhesive 4302",
   "cas": "",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Silicone emulsion",
@@ -5984,14 +5978,14 @@
  {
   "name": "Silicone/polyester film strip",
   "cas": "",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Membrane for transdermal/implant systems",
+  "group": "coatings"
  },
  {
   "name": "Silodrate",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Adsorbent, suspending agent",
+  "group": "thickeners"
  },
  {
   "name": "Simethicone",
@@ -6008,14 +6002,14 @@
  {
   "name": "Soap",
   "cas": "8046-71-7",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Sodium 1,2-ethanedisulfonate",
   "cas": "5325-43-9",
-  "function": "",
-  "group": "other"
+  "function": "Buffer, stabiliser",
+  "group": "buffers"
  },
  {
   "name": "Sodium acetate",
@@ -6038,13 +6032,13 @@
  {
   "name": "Sodium alkyl sulfate",
   "cas": "8036-54-2",
-  "function": "Diluent / tonicity / stabiliser",
-  "group": "diluents"
+  "function": "Wetting agent, surfactant",
+  "group": "surfactants"
  },
  {
   "name": "Sodium aluminosilicate",
   "cas": "1344-00-9",
-  "function": "Lubricant / glidant",
+  "function": "Glidant, anticaking agent, adsorbent",
   "group": "lubricants"
  },
  {
@@ -6057,7 +6051,7 @@
   "name": "Sodium benzoate",
   "cas": "532-32-1",
   "function": "Antimicrobial preservative, lubricant",
-  "group": "lubricants"
+  "group": "preservatives"
  },
  {
   "name": "Sodium bicarbonate",
@@ -6068,14 +6062,14 @@
  {
   "name": "Sodium bisulfate",
   "cas": "7681-38-1",
-  "function": "Diluent / tonicity / stabiliser",
-  "group": "diluents"
+  "function": "Acidifying agent",
+  "group": "buffers"
  },
  {
   "name": "Sodium bisulfate acetone",
   "cas": "7546-12-5",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Antioxidant",
+  "group": "antioxidants"
  },
  {
   "name": "Sodium bisulfite",
@@ -6122,8 +6116,8 @@
  {
   "name": "Sodium cetostearyl sulfate",
   "cas": "59186-41-3",
-  "function": "Diluent / tonicity / stabiliser",
-  "group": "diluents"
+  "function": "Wetting agent, surfactant",
+  "group": "surfactants"
  },
  {
   "name": "Sodium chloride",
@@ -6134,14 +6128,14 @@
  {
   "name": "Sodium chlorite",
   "cas": "7758-19-2",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Sodium citrate dihydrate",
   "cas": "6132-04-3",
   "function": "Buffer, alkaliser, sequestrant",
-  "group": "antioxidants"
+  "group": "buffers"
  },
  {
   "name": "Sodium cocomonoglyceride sulfonate",
@@ -6170,8 +6164,8 @@
  {
   "name": "Sodium dithionate",
   "cas": "7631-94-9",
-  "function": "",
-  "group": "other"
+  "function": "Antioxidant / reducing agent",
+  "group": "antioxidants"
  },
  {
   "name": "Sodium dithionite",
@@ -6195,7 +6189,7 @@
   "name": "Sodium hyaluronate",
   "cas": "9067-32-7",
   "function": "Viscosity modifier, lubricant (ophthalmic)",
-  "group": "lubricants"
+  "group": "thickeners"
  },
  {
   "name": "Sodium hydroxide",
@@ -6243,13 +6237,13 @@
   "name": "Sodium lauryl sulfate",
   "cas": "151-21-3",
   "function": "Wetting agent, surfactant, lubricant",
-  "group": "lubricants"
+  "group": "surfactants"
  },
  {
   "name": "Sodium lauryl sulfoacetate",
   "cas": "1847-58-1",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Wetting agent, surfactant",
+  "group": "surfactants"
  },
  {
   "name": "Sodium metabisulfite",
@@ -6272,14 +6266,14 @@
  {
   "name": "Sodium n-(carbonyl-methoxypolyethylene glycol 2000)-1,2-distearoyl-sn-glycero-3-phosphoethanolamine",
   "cas": "247925-28-6",
-  "function": "Plasticiser / solvent / humectant",
-  "group": "plasticisers"
+  "function": "Emulsifier (parenteral emulsions, liposomes)",
+  "group": "parenteral"
  },
  {
   "name": "Sodium oleate",
   "cas": "143-19-1",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Sodium phosphate",
@@ -6380,8 +6374,8 @@
  {
   "name": "Sodium polymetaphosphate",
   "cas": "68915-31-1",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Chelating agent",
+  "group": "antioxidants"
  },
  {
   "name": "Sodium propionate",
@@ -6398,14 +6392,14 @@
  {
   "name": "Sodium pyrrolidone carboxylate",
   "cas": "54571-67-4",
-  "function": "Solvent / vehicle",
+  "function": "Solvent, humectant",
   "group": "solvents"
  },
  {
   "name": "Sodium silicate",
   "cas": "1344-09-8",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "pH adjuster",
+  "group": "buffers"
  },
  {
   "name": "Sodium starch glycolate",
@@ -6416,8 +6410,8 @@
  {
   "name": "Sodium starch glycolate type B",
   "cas": "9063-38-1",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Superdisintegrant",
+  "group": "disintegrants"
  },
  {
   "name": "Sodium stearate",
@@ -6434,8 +6428,8 @@
  {
   "name": "Sodium succinate hexahydrate",
   "cas": "6106-21-4",
-  "function": "Buffer / chelating agent",
-  "group": "antioxidants"
+  "function": "Buffer",
+  "group": "buffers"
  },
  {
   "name": "Sodium sulfate",
@@ -6476,8 +6470,8 @@
  {
   "name": "Sodium thiosulfate anhydrous",
   "cas": "7772-98-7",
-  "function": "Diluent / tonicity / stabiliser",
-  "group": "diluents"
+  "function": "Antioxidant, chelating agent",
+  "group": "antioxidants"
  },
  {
   "name": "Sodium tripolyphosphate",
@@ -6488,8 +6482,8 @@
  {
   "name": "Solvent orange 2",
   "cas": "2646-17-5",
-  "function": "",
-  "group": "other"
+  "function": "Colourant",
+  "group": "colourants"
  },
  {
   "name": "Sorbic acid",
@@ -6530,8 +6524,8 @@
  {
   "name": "Sorbitan monostearate",
   "cas": "1338-41-6",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emulsifier (w/o)",
+  "group": "surfactants"
  },
  {
   "name": "Sorbitan sesquioleate",
@@ -6548,8 +6542,8 @@
  {
   "name": "Sorbitan tristearate",
   "cas": "26658-19-5",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emulsifier (w/o)",
+  "group": "surfactants"
  },
  {
   "name": "Sorbitol",
@@ -6560,20 +6554,20 @@
  {
   "name": "Sorbitol solution",
   "cas": "",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Sweetener, humectant",
+  "group": "sweeteners"
  },
  {
   "name": "Sorbitol special polyol solution",
   "cas": "",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Sweetener, humectant",
+  "group": "sweeteners"
  },
  {
   "name": "Sorbitol-glycerin blend",
   "cas": "",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Sweetener, humectant",
+  "group": "sweeteners"
  },
  {
   "name": "Soybean lecithin",
@@ -6590,8 +6584,8 @@
  {
   "name": "Soybean phosphatidylcholine",
   "cas": "97281-47-5",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier (parenteral emulsions, liposomes)",
+  "group": "parenteral"
  },
  {
   "name": "Spearmint",
@@ -6602,8 +6596,8 @@
  {
   "name": "Spearmint oil",
   "cas": "8008-79-5",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Squalane",
@@ -6614,32 +6608,32 @@
  {
   "name": "Stannic chloride",
   "cas": "7646-78-8",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Acidifying agent",
+  "group": "buffers"
  },
  {
   "name": "Stannous chloride",
   "cas": "10025-69-1",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Antioxidant / reducing agent",
+  "group": "antioxidants"
  },
  {
   "name": "Stannous chloride anhydrous",
   "cas": "7772-99-8",
-  "function": "",
-  "group": "other"
+  "function": "Antioxidant / reducing agent",
+  "group": "antioxidants"
  },
  {
   "name": "Stannous fluoride",
   "cas": "7783-47-3",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial",
+  "group": "preservatives"
  },
  {
   "name": "Stannous tartrate",
   "cas": "815-85-0",
-  "function": "Acidulant / buffer",
-  "group": "buffers"
+  "function": "Antioxidant / reducing agent",
+  "group": "antioxidants"
  },
  {
   "name": "Starch",
@@ -6716,26 +6710,26 @@
  {
   "name": "Stear-o-wet C",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Lubricant",
+  "group": "lubricants"
  },
  {
   "name": "Stear-o-wet m",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Lubricant",
+  "group": "lubricants"
  },
  {
   "name": "Stearalkonium chloride",
   "cas": "122-19-0",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Antimicrobial preservative",
+  "group": "preservatives"
  },
  {
   "name": "Stearamidoethyl diethylamine",
   "cas": "16889-14-8",
-  "function": "",
-  "group": "other"
+  "function": "Emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Stearates",
@@ -6788,8 +6782,8 @@
  {
   "name": "Stearic diethanolamide",
   "cas": "93-82-3",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Stearic hydrazide",
@@ -6818,14 +6812,14 @@
  {
   "name": "Strawberry",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Styrene/isoprene/styrene block copolymer",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Succinic acid",
@@ -6848,8 +6842,8 @@
  {
   "name": "Sucrose distearate (hlb 5)",
   "cas": "27195-16-0",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Sucrose octaacetate",
@@ -6872,26 +6866,26 @@
  {
   "name": "Sugar liquid type No. 0",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Sweetener",
+  "group": "sweeteners"
  },
  {
   "name": "Sugar spheres",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Core for pellet coating",
+  "group": "capsules"
  },
  {
   "name": "Sugar spheres (nonpareils)",
   "cas": "",
   "function": "Core for pellet coating",
-  "group": "coatings"
+  "group": "capsules"
  },
  {
   "name": "Sugar/starch insert granules",
   "cas": "",
-  "function": "Diluent / filler",
-  "group": "diluents"
+  "function": "Core for pellet coating",
+  "group": "capsules"
  },
  {
   "name": "Sulfobutylether beta-cyclodextrin (Captisol®)",
@@ -6902,8 +6896,8 @@
  {
   "name": "Sulfur",
   "cas": "10544-50-0",
-  "function": "",
-  "group": "other"
+  "function": "Antimicrobial",
+  "group": "preservatives"
  },
  {
   "name": "Sulfur dioxide",
@@ -6920,8 +6914,8 @@
  {
   "name": "Sulfurous acid",
   "cas": "7782-99-2",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Antioxidant",
+  "group": "antioxidants"
  },
  {
   "name": "Sunflower oil",
@@ -6938,14 +6932,14 @@
  {
   "name": "Synchron oral carrier",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film former, binder, controlled-release matrix",
+  "group": "coatings"
  },
  {
   "name": "Synchron oral carrier vehicle type em",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film former, binder, controlled-release matrix",
+  "group": "coatings"
  },
  {
   "name": "Synthetic beeswax",
@@ -6962,8 +6956,8 @@
  {
   "name": "Tagatose",
   "cas": "87-81-0",
-  "function": "",
-  "group": "other"
+  "function": "Sweetener",
+  "group": "sweeteners"
  },
  {
   "name": "Talc",
@@ -6986,38 +6980,38 @@
  {
   "name": "Tegacid",
   "cas": "8049-07-8",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Emulsifier",
+  "group": "surfactants"
  },
  {
   "name": "Tenox",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Antioxidant",
+  "group": "antioxidants"
  },
  {
   "name": "Tenox-2",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Antioxidant",
+  "group": "antioxidants"
  },
  {
   "name": "Terpene resin",
   "cas": "9003-74-1",
-  "function": "",
-  "group": "other"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Tert-butyl alcohol",
   "cas": "75-65-0",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Solvent",
+  "group": "solvents"
  },
  {
   "name": "Tert-butylhydroquinone",
   "cas": "1948-33-0",
-  "function": "",
-  "group": "other"
+  "function": "Antioxidant",
+  "group": "antioxidants"
  },
  {
   "name": "Tetrafluoroethane (HFA 134a)",
@@ -7028,8 +7022,8 @@
  {
   "name": "Tetraxetan",
   "cas": "60239-18-1",
-  "function": "",
-  "group": "other"
+  "function": "Chelating agent",
+  "group": "antioxidants"
  },
  {
   "name": "Thaumatin",
@@ -7046,14 +7040,14 @@
  {
   "name": "Threonine",
   "cas": "72-19-5",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (biologics)",
+  "group": "parenteral"
  },
  {
   "name": "Thyme oil",
   "cas": "8007-46-3",
-  "function": "Emollient / oleaginous vehicle / base",
-  "group": "bases"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Thymol",
@@ -7064,8 +7058,8 @@
  {
   "name": "Timing solution clear N-7",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Film-coating system",
+  "group": "coatings"
  },
  {
   "name": "Titanium dioxide",
@@ -7083,7 +7077,7 @@
   "name": "Tragacanth",
   "cas": "9000-65-1",
   "function": "Suspending agent, emulsifier",
-  "group": "surfactants"
+  "group": "thickeners"
  },
  {
   "name": "Trehalose",
@@ -7094,8 +7088,8 @@
  {
   "name": "Trehalose dihydrate",
   "cas": "6138-23-4",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (lyophilisates, biologics), diluent",
+  "group": "parenteral"
  },
  {
   "name": "Triacetin",
@@ -7124,20 +7118,20 @@
  {
   "name": "Trichloroethane",
   "cas": "71-55-6",
-  "function": "",
-  "group": "other"
+  "function": "Solvent",
+  "group": "solvents"
  },
  {
   "name": "Trichloromonofluoromethane",
   "cas": "75-69-4",
-  "function": "",
-  "group": "other"
+  "function": "Propellant",
+  "group": "propellants"
  },
  {
   "name": "Trideceth-10",
   "cas": "24938-91-8",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Triethanolamine",
@@ -7160,32 +7154,32 @@
  {
   "name": "Trihydroxystearin",
   "cas": "139-44-6",
-  "function": "",
-  "group": "other"
+  "function": "Suspending agent, viscosity modifier",
+  "group": "thickeners"
  },
  {
   "name": "Trimethylsilyl treated dimethiconol/trimethylsiloxysilicate crosspolymer (35/65 w/w; 50000-00-0 pa.s)",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Trimethylsilyl treated dimethiconol/trimethylsiloxysilicate crosspolymer (40/60 w/w; 5000000 pa.s)",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Trimethylsilyl treated dimethiconol/trimethylsiloxysilicate crosspolymer (45/55 w/w; 100000 pa.s)",
   "cas": "",
-  "function": "Lubricant / glidant",
-  "group": "lubricants"
+  "function": "Pressure-sensitive adhesive (transdermal)",
+  "group": "coatings"
  },
  {
   "name": "Triolein",
   "cas": "122-32-7",
-  "function": "Solvent",
-  "group": "solvents"
+  "function": "Oleaginous vehicle",
+  "group": "bases"
  },
  {
   "name": "Trisodium hedta",
@@ -7202,8 +7196,8 @@
  {
   "name": "Tryptophan",
   "cas": "73-22-3",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (biologics)",
+  "group": "parenteral"
  },
  {
   "name": "Turpentine oil",
@@ -7214,26 +7208,26 @@
  {
   "name": "Tyloxapol",
   "cas": "25301-02-4",
-  "function": "",
-  "group": "other"
+  "function": "Surfactant / emulsifier / solubiliser",
+  "group": "surfactants"
  },
  {
   "name": "Urea",
   "cas": "57-13-6",
-  "function": "",
-  "group": "other"
+  "function": "Solubiliser, penetration enhancer",
+  "group": "surfactants"
  },
  {
   "name": "Valine",
   "cas": "72-18-4",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (biologics)",
+  "group": "parenteral"
  },
  {
   "name": "Vanilla bean",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Vanillin",
@@ -7262,14 +7256,14 @@
  {
   "name": "Vegetable shortening",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Ointment base",
+  "group": "bases"
  },
  {
   "name": "Versetamide",
   "cas": "129009-83-2",
-  "function": "",
-  "group": "other"
+  "function": "Chelating agent",
+  "group": "antioxidants"
  },
  {
   "name": "Vitamin E polyethylene glycol succinate (TPGS)",
@@ -7340,8 +7334,8 @@
  {
   "name": "Wecobee fs",
   "cas": "",
-  "function": "",
-  "group": "other"
+  "function": "Suppository base",
+  "group": "bases"
  },
  {
   "name": "White petrolatum",
@@ -7353,7 +7347,7 @@
   "name": "Xanthan gum",
   "cas": "11138-66-2",
   "function": "Suspending agent, viscosity modifier, controlled release",
-  "group": "coatings"
+  "group": "thickeners"
  },
  {
   "name": "Xylitol",
@@ -7382,26 +7376,26 @@
  {
   "name": "Zinc",
   "cas": "7440-66-6",
-  "function": "",
-  "group": "other"
+  "function": "Stabiliser (biologics)",
+  "group": "parenteral"
  },
  {
   "name": "Zinc acetate",
   "cas": "557-34-6",
   "function": "Astringent, stabiliser",
-  "group": "thickeners"
+  "group": "parenteral"
  },
  {
   "name": "Zinc carbonate",
   "cas": "5263-02-5",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Opacifier, astringent",
+  "group": "colourants"
  },
  {
   "name": "Zinc chloride",
   "cas": "7646-85-7",
-  "function": "Solvent / vehicle",
-  "group": "solvents"
+  "function": "Astringent, stabiliser",
+  "group": "parenteral"
  },
  {
   "name": "Zinc oxide",
@@ -7418,14 +7412,14 @@
  {
   "name": "Zinc sulfate",
   "cas": "",
-  "function": "Diluent / tonicity / stabiliser",
-  "group": "diluents"
+  "function": "Astringent, stabiliser",
+  "group": "parenteral"
  },
  {
   "name": "Α-terpineol",
   "cas": "98-55-5",
-  "function": "",
-  "group": "other"
+  "function": "Flavour",
+  "group": "sweeteners"
  },
  {
   "name": "Α-tocopherol",
@@ -7436,13 +7430,13 @@
  {
   "name": "Α-tocopherol acetate",
   "cas": "7695-91-2",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Antioxidant",
+  "group": "antioxidants"
  },
  {
   "name": "Α-tocopherol acetate, DL-",
   "cas": "52225-20-4",
-  "function": "pH adjuster / buffer",
-  "group": "buffers"
+  "function": "Antioxidant",
+  "group": "antioxidants"
  }
 ]

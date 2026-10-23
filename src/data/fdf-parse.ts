@@ -63,3 +63,25 @@ export function sameIngredientIndex(all: { name: string; code: string }[]) {
   }
   return _index;
 }
+
+/** Route families: an FDA label is only shown on a product of a compatible route (an oral label never on an injection, etc.). */
+const ROUTE_FAMILY: Record<string, string> = {
+  ORAL: 'oral', SUBLINGUAL: 'oral', BUCCAL: 'oral',
+  PARENTERAL: 'par', INTRAVENOUS: 'par', INTRAMUSCULAR: 'par', SUBCUTANEOUS: 'par', INTRADERMAL: 'par', INTRATHECAL: 'par', EPIDURAL: 'par',
+  'INTRA-ARTICULAR': 'par', INTRALESIONAL: 'par', INFILTRATION: 'par', INTRACAVERNOUS: 'par', INTRAPERITONEAL: 'par', INTRASPINAL: 'par',
+  'INTRA-ARTERIAL': 'par', INTRAVASCULAR: 'par', PERINEURAL: 'par', INTRACARDIAC: 'par', INTRAOSSEOUS: 'par', INTRAVITREAL: 'par', INTRAOCULAR: 'par',
+  INTRACAVITARY: 'par', INTRAPLEURAL: 'par', INTRAVENTRICULAR: 'par', INTRATYMPANIC: 'par', INTRABURSAL: 'par', 'SOFT TISSUE': 'par',
+  SUBMUCOSAL: 'par', INTRACAUDAL: 'par', RETROBULBAR: 'par', INTRALYMPHATIC: 'par', INTERSTITIAL: 'par',
+  OPHTHALMIC: 'eye', OTIC: 'ear', 'AURICULAR (OTIC)': 'ear', NASAL: 'nose',
+  RESPIRATORY: 'inh', INHALATION: 'inh', 'RESPIRATORY (INHALATION)': 'inh', ENDOTRACHEAL: 'inh', INTRATRACHEAL: 'inh', TRANSTRACHEAL: 'inh',
+  TOPICAL: 'skin', CUTANEOUS: 'skin', PERCUTANEOUS: 'skin', INTRAEPIDERMAL: 'skin', TRANSDERMAL: 'tdermal',
+  RECTAL: 'rect', VAGINAL: 'vag', INTRAUTERINE: 'vag', DENTAL: 'mouth', PERIODONTAL: 'mouth', OROPHARYNGEAL: 'mouth',
+  URETHRAL: 'uro', INTRAVESICAL: 'uro', IRRIGATION: 'irr', HEMODIALYSIS: 'dial', EXTRACORPOREAL: 'dial',
+};
+export function labelFits(labelRoutes: string[] | undefined, productRoute: string): boolean {
+  const pf = ROUTE_FAMILY[(productRoute || '').toUpperCase().trim()];
+  if (!pf) return true;
+  const lf = new Set((labelRoutes || []).map(r => ROUTE_FAMILY[r.toUpperCase().trim()]).filter(Boolean));
+  if (!lf.size || lf.has(pf)) return true;
+  return (pf === 'mouth' && lf.has('oral')) || (pf === 'oral' && lf.has('mouth'));
+}

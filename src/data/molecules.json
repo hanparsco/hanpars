@@ -1143,8 +1143,8 @@
 "Panretin Gel"
 ],
 "otherCas": [],
-"description": "Tretinoin, also known as all-trans-retinoic acid (ATRA), is a naturally occurring derivative of vitamin A (retinol). Retinoids such as tretinoin are important regulators of cell reproduction, proliferation, and differentiation and are used to treat acne and photodamaged skin and to manage keratinization disorders such as ichthyosis and keratosis follicularis. Tretinoin also represents the class of anticancer drugs called differentiating agents and is used in the treatment of acute promyelocytic leukemia (APL).",
-"descriptionSource": "Toxin and Toxin Target Database (T3DB)",
+"description": "Alitretinoin (9-cis-retinoic acid) is a naturally occurring retinoid, an endogenous derivative of vitamin A, that binds and activates both retinoic acid receptors (RARs) and retinoid X receptors (RXRs). Through these nuclear receptors it regulates gene expression involved in cell differentiation and proliferation. It is used topically for cutaneous lesions of AIDS-related Kaposi's sarcoma and orally for severe chronic hand eczema unresponsive to topical corticosteroids. As with other retinoids, it is teratogenic.",
+"descriptionSource": "",
 "image": "/molecules/449171.png"
 },
 "allopurinol": {
@@ -1604,34 +1604,29 @@
 },
 "amino-acids": {
 "name": "AMINO ACIDS",
-"cas": "1462470-54-7",
-"cid": 71263318,
+"cas": "",
+"cid": null,
 "matched": "AMINO ACIDS",
 "parentMatch": false,
-"formula": "C27H38N2O6",
-"mw": "486.6",
-"iupac": "2-[2-[2-[3-[[(7S)-3,4-dimethoxy-7-bicyclo[4.2.0]octa-1,3,5-trienyl]methyl-methylamino]propylamino]ethyl]-4,5-dimethoxyphenyl]acetic acid",
-"smiles": "CN(CCCNCCC1=CC(=C(C=C1CC(=O)O)OC)OC)C[C@H]2CC3=CC(=C(C=C23)OC)OC",
-"inchikey": "RPBKQHNGUAYMKY-OAQYLSRUSA-N",
-"xlogp": 0,
-"hbd": 2,
-"hba": 8,
-"tpsa": 89.5,
-"rotb": 15,
+"formula": "",
+"mw": "",
+"iupac": "",
+"smiles": "",
+"inchikey": "",
+"xlogp": null,
+"hbd": null,
+"hba": null,
+"tpsa": null,
+"rotb": null,
 "synonyms": [
-"Ivabradine Impurity 5",
-"IVABRADINE OPEN RING",
-"Ivabradine Impurity 13",
 "Amino acids",
-"seco-Ivabradine Amino Acid Sodium",
-"Ivabradine Impurity B",
-"Ivabradine USP  Rc Ivabradine Open Ring",
-"Ivabradine Impurity J pound BA-IBD-IM-J pound(c)"
+"Crystalline amino acids",
+"Amino acid solution for parenteral nutrition"
 ],
 "otherCas": [],
-"description": "Mixture of amino acids ; used for parenteral nutrition in infants.",
-"descriptionSource": "DrugBank",
-"image": "/molecules/71263318.png"
+"description": "Amino acid solutions are sterile mixtures of essential and non-essential crystalline L-amino acids used as the nitrogen (protein) source of parenteral nutrition. Given intravenously, alone or combined with glucose, lipid emulsions, electrolytes and micronutrients, they support protein synthesis and nitrogen balance in adults, children and neonates who cannot be adequately fed by mouth or enterally. Paediatric formulations are adapted to the needs of infants (for example with added taurine and cysteine).",
+"descriptionSource": "",
+"image": ""
 },
 "aminoacetic-acid": {
 "name": "AMINOACETIC ACID",
@@ -1886,8 +1881,8 @@
 "otherCas": [
 "52003-58-4"
 ],
-"description": "Based on the available information included in this report, the CIR Expert Panel concludes that Glycolic and Lactic Acid, their common salts and their simple esters, are safe for use in cosmetic products at concentrations less than or equal to 10%, at final formulation pH greater than or equal to 3.5, when formulated to avoid increasing sun sensitivity or when directions for use include the daily use of sun protection. These ingredients are safe for use in salon products at concentrations less than or equal to 30%, at final formulation pH greater than or equal to 3.0, in products designed for brief, discontinuous use followed by thorough rinsing from the skin, when applied by trained professionals, and when application is accompanied by directions for the daily use of sun protection...Ammonium Lactate...",
-"descriptionSource": "Cosmetic Ingredient Review (CIR)",
+"description": "Ammonium lactate is the ammonium salt of lactic acid, an alpha-hydroxy acid. Applied topically, it acts as a humectant and keratolytic that hydrates the skin and loosens the bonds between corneocytes, promoting shedding of excess stratum corneum. It is used in lotions and creams for dry, scaly skin conditions such as xerosis and ichthyosis vulgaris.",
+"descriptionSource": "",
 "image": "/molecules/62358.png"
 },
 "amodiaquine": {
@@ -3127,8 +3122,8 @@
 "otherCas": [
 "51-53-6"
 ],
-"description": "Atropine sulfate is an organic molecular entity. It has a role as a muscarinic agonist. It is functionally related to an atropine.",
-"descriptionSource": "ChEBI",
+"description": "Atropine sulfate is the sulfate salt of atropine, a tropane alkaloid that is a racemic mixture of d- and l-hyoscyamine. It is a competitive, reversible antagonist of muscarinic acetylcholine receptors (an antimuscarinic or anticholinergic agent). It is used to treat symptomatic bradycardia, to reduce secretions before anaesthesia, as an antidote in organophosphate and anticholinesterase poisoning, and topically in the eye for pupil dilation (mydriasis) and cycloplegia.",
+"descriptionSource": "",
 "image": "/molecules/60196398.png"
 },
 "avanafil": {
@@ -3862,7 +3857,7 @@
 "Becloforte"
 ],
 "otherCas": [],
-"description": "Beclomethasone dipropionate is a steroid ester comprising beclomethasone having propionyl groups at the 17- and 21-positions. It has a role as an anti-inflammatory drug, an anti-arrhythmia drug, an anti-asthmatic drug and a prodrug. It is a glucocorticoid, an 11beta-hydroxy steroid, a propanoate ester, a 20-oxo steroid, a steroid ester, a corticosteroid, an enone, a 3-oxo-Delta(1),Delta(4)-steroid and a chlorinated steroid. It is functionally related to a beclomethasone.",
+"description": "Beclomethasone dipropionate is a steroid ester comprising beclomethasone having propionyl groups at the 17- and 21-positions. It has a role as an anti-inflammatory drug, an anti-asthmatic drug and a prodrug, and is hydrolysed in the body to the active metabolite beclomethasone 17-monopropionate. It is a glucocorticoid, an 11beta-hydroxy steroid, a propanoate ester, a 20-oxo steroid, a steroid ester, a corticosteroid, an enone, a 3-oxo-Delta(1),Delta(4)-steroid and a chlorinated steroid. It is functionally related to a beclomethasone.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/21700.png"
 },
@@ -4366,8 +4361,8 @@
 "Glycocoll betaine"
 ],
 "otherCas": [],
-"description": "This fact sheet provides an overview of selected ingredients in dietary supplements designed or claimed to enhance exercise and athletic performance. Manufacturers and sellers promote these products, sometimes referred to as ergogenic aids, by claiming that they improve strength or endurance, increase exercise efficiency, achieve a performance goal more quickly, and increase tolerance for more intense training. These effects are the main focus of this fact sheet. Some people also use ergogenic aids to prepare the body for exercise, reduce the chance of injury during training, and enhance recovery from exercise .",
-"descriptionSource": "NIH Dietary Supplement Fact Sheets",
+"description": "Betaine (trimethylglycine, glycine betaine) is a naturally occurring N-trimethylated derivative of glycine that acts as an osmolyte and as a methyl-group donor. In the liver and kidney it donates a methyl group to homocysteine via betaine-homocysteine methyltransferase, forming methionine and lowering homocysteine levels. Anhydrous betaine is used as a medicine in the treatment of homocystinuria, and it is also taken as a dietary supplement.",
+"descriptionSource": "",
 "image": "/molecules/247.png"
 },
 "betaine-pharmaceutical": {
@@ -4683,7 +4678,7 @@
 "otherCas": [
 "1365263-66-6"
 ],
-"description": "Bimatoprost, also known as Latisse or Lumigan, belongs to a group of drugs called prostamides, which are synthetic structural analogs of prostaglandin. Bimatoprost, marketed by Allergan, is administered in both the ophthalmic solution and implant form. It has the ability to reduce ocular hypotension, proving effective in conditions such as ocular hypertension and glaucoma. Bimatoprost is also used to treat eyelash hypotrichosis, or sparse eyelash growth. It was initially approved by the FDA in 2001 for ocular hypertension and later approved for hypothrichosis in 2008, as eyelash growth became a desirable adverse effect for patients using this drug.",
+"description": "Bimatoprost, also known as Latisse or Lumigan, belongs to a group of drugs called prostamides, which are synthetic structural analogs of prostaglandin. Bimatoprost, marketed by Allergan, is administered in both the ophthalmic solution and implant form. It has the ability to lower intraocular pressure, proving effective in conditions such as ocular hypertension and glaucoma. Bimatoprost is also used to treat eyelash hypotrichosis, or sparse eyelash growth. It was initially approved by the FDA in 2001 for ocular hypertension and later approved for hypotrichosis in 2008, as eyelash growth became a desirable adverse effect for patients using this drug.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/5311027.png"
 },
@@ -5505,8 +5500,8 @@
 "38396-39-3",
 "119427-31-5"
 ],
-"description": "Liposomal Bupivacaine is a liposome-encapsulated formulation of bupivacaine, which is an amide-type, long-acting local anesthetic. Upon administration, bupivacaine reversibly binds to specific sodium ion channels in the neuronal membrane, resulting in both a decrease in the voltage-dependent membrane permeability to sodium ions and membrane stabilization. This leads to inhibition of both depolarization and nerve impulse conduction, and a reversible loss of sensation. Compared to bupivacaine alone, liposomal delivery increases the duration of local anesthetic action and delays the peak plasma concentration of bupivacaine due to its slow release from the liposome.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Bupivacaine is an amide-type, long-acting local anesthetic. It reversibly binds to voltage-gated sodium channels in the neuronal membrane, decreasing sodium permeability and stabilizing the membrane, which inhibits depolarization and nerve impulse conduction and produces a reversible loss of sensation. It is used for local infiltration, peripheral nerve block, epidural and spinal anesthesia, and postoperative analgesia; a liposomal formulation exists that prolongs the duration of action.",
+"descriptionSource": "",
 "image": "/molecules/2474.png"
 },
 "bupivacaine-hcl": {
@@ -6851,8 +6846,8 @@
 "Platinum,1-cyclobutanedicarboxylato(2-)-O,O')-, (SP-4-2)-"
 ],
 "otherCas": [],
-"description": "Carboplatin can cause developmental toxicity according to state or federal government labeling requirements.",
-"descriptionSource": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+"description": "Carboplatin is a platinum-based antineoplastic agent, a second-generation analogue of cisplatin. After intracellular aquation it forms reactive platinum species that cross-link DNA strands, inhibiting DNA replication and transcription and inducing apoptosis. It is used mainly in the treatment of ovarian, lung and other solid cancers, and is generally less nephrotoxic and emetogenic than cisplatin but more myelosuppressive.",
+"descriptionSource": "",
 "image": "/molecules/426756.png"
 },
 "carboprost-tromethamine": {
@@ -8068,8 +8063,8 @@
 "Contol"
 ],
 "otherCas": [],
-"description": "Chlordiazepoxide Hydrochloride can cause developmental toxicity according to state or federal government labeling requirements.",
-"descriptionSource": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+"description": "Chlordiazepoxide hydrochloride is the hydrochloride salt of chlordiazepoxide, a long-acting benzodiazepine. It acts as a positive allosteric modulator of GABA-A receptors, enhancing GABA-mediated chloride influx and neuronal inhibition, and has anxiolytic, sedative, anticonvulsant and muscle-relaxant effects. It is used in the treatment of anxiety and in the management of acute alcohol withdrawal.",
+"descriptionSource": "",
 "image": "/molecules/9916.png"
 },
 "chlorhexidine-gluconate": {
@@ -9792,8 +9787,8 @@
 "Codeine phosphate hydrate (JP18)"
 ],
 "otherCas": [],
-"description": "Codeine Phosphate can cause developmental toxicity according to state or federal government labeling requirements.",
-"descriptionSource": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+"description": "Codeine phosphate hemihydrate is the hydrated phosphate salt of codeine, a naturally occurring opium alkaloid and opioid analgesic. Codeine is a prodrug that is partly converted by CYP2D6 to morphine and acts as an agonist at mu-opioid receptors. It is used for the relief of mild to moderate pain, as an antitussive and as an antidiarrhoeal agent.",
+"descriptionSource": "",
 "image": "/molecules/6321303.png"
 },
 "codeine-sulfate": {
@@ -11035,7 +11030,7 @@
 "Daptomycin in Sodium Chloride"
 ],
 "otherCas": [],
-"description": "Daptomycin is a semi-synthetic cyclic lipopeptide antibiotic isolated form the bacterium Streptomyces roseosporus with broad-spectrum antibiotic activity against Gram-positive bacteria. Daptomycin has a distinct mechanism of action, in which it binds to bacterial membrane and causes rapid depolarization of the cell membrane due to calcium-dependant potassium efflux; the loss of membrane potential leads to inhibition of DNA, RNA and protein synthesis, resulting in bacterial cell death. This agent does not penetrate the outer membrane of gram-negative bacteria.",
+"description": "Daptomycin is a cyclic lipopeptide antibiotic isolated from the bacterium Streptomyces roseosporus with broad-spectrum antibiotic activity against Gram-positive bacteria. Daptomycin has a distinct mechanism of action, in which it binds to bacterial membrane and causes rapid depolarization of the cell membrane due to calcium-dependant potassium efflux; the loss of membrane potential leads to inhibition of DNA, RNA and protein synthesis, resulting in bacterial cell death. This agent does not penetrate the outer membrane of gram-negative bacteria.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/21585658.png"
 },
@@ -12931,7 +12926,7 @@
 "Diethylcarbamazinum"
 ],
 "otherCas": [],
-"description": "An anthelmintic used primarily as the citrate in the treatment of filariasis, particularly infestations with Wucheria bancrofti or Loa loa.",
+"description": "An anthelmintic used primarily as the citrate in the treatment of filariasis, particularly infestations with Wuchereria bancrofti or Loa loa.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/3052.png"
 },
@@ -14081,7 +14076,7 @@
 "otherCas": [
 "1200398-97-5"
 ],
-"description": "Dopamine Hydrochloride is the hydrochloride salt form of dopamine, a monoamine compound with positive inotropic activity. Dopamine is a naturally occurring catecholamine formed by decarboxylation of dehydroxyphenylalanine and a precursor of norepinephrine and epinephrine. Dopamine binds to alpha-1- and beta-1- adrenergic receptors. Mediated through myocardial beta-1-adrenergic receptors, dopamine increase heart rate and force, thereby increasing cardiac output. Alpha-1-adrenergic receptor stimulation on vascular smooth muscle, leads to vasoconstriction and results in an increase in systemic vascular resistance. Stimulation of dopaminergic receptors in renal vasculature, leads to renal blood vessel dilation, and an increase in glomerular filtration rate, renal blood flow, sodium excretion, and urine output.",
+"description": "Dopamine Hydrochloride is the hydrochloride salt form of dopamine, a monoamine compound with positive inotropic activity. Dopamine is a naturally occurring catecholamine formed by decarboxylation of dihydroxyphenylalanine and a precursor of norepinephrine and epinephrine. Dopamine binds to alpha-1- and beta-1- adrenergic receptors. Mediated through myocardial beta-1-adrenergic receptors, dopamine increase heart rate and force, thereby increasing cardiac output. Alpha-1-adrenergic receptor stimulation on vascular smooth muscle, leads to vasoconstriction and results in an increase in systemic vascular resistance. Stimulation of dopaminergic receptors in renal vasculature, leads to renal blood vessel dilation, and an increase in glomerular filtration rate, renal blood flow, sodium excretion, and urine output.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/65340.png"
 },
@@ -14365,8 +14360,8 @@
 "ADRIAMYCIN, HYDROCHLORIDE"
 ],
 "otherCas": [],
-"description": "Doxorubicin hydrochloride (liposomal) is an antineoplastic prescription medicine approved by the U.S. Food and Drug Administration (FDA) for the treatment of certain types of cancer, including ovarian cancer, multiple myeloma, and AIDS-related Kaposi sarcoma. Kaposi sarcoma is caused by infection with human herpesvirus-8 (HHV-8). HHV-8 infection can be an opportunistic infection (OI) of HIV.",
-"descriptionSource": "Drug Database, Clinicalinfo.hiv.gov",
+"description": "Doxorubicin hydrochloride is the hydrochloride salt of doxorubicin, an anthracycline antibiotic and antineoplastic agent. It intercalates into DNA and inhibits topoisomerase II, blocking DNA replication and transcription, and also generates free radicals. It is used for a range of cancers, including breast, bladder and ovarian carcinomas, lymphomas and sarcomas; a liposomal formulation is used for ovarian cancer, multiple myeloma and AIDS-related Kaposi sarcoma.",
+"descriptionSource": "",
 "image": "/molecules/443939.png"
 },
 "doxycycline": {
@@ -14638,7 +14633,7 @@
 "3916-18-5",
 "1260173-94-1"
 ],
-"description": "Droxidopa is a serine derivative that is L-serine substituted at the beta-position by a 3,4-dihydroxyphenyl group. A prodrug for noradrenalone, it is used for treatment of neurogenic orthostatic hypotension. It has a role as an antihypertensive agent, a prodrug and a vasoconstrictor agent. It is a L-tyrosine derivative and a member of catechols.",
+"description": "Droxidopa is a serine derivative that is L-serine substituted at the beta-position by a 3,4-dihydroxyphenyl group. A prodrug for noradrenaline (norepinephrine), it is used for treatment of neurogenic orthostatic hypotension. It has a role as a prodrug and a vasoconstrictor agent. It is a L-tyrosine derivative and a member of catechols.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/92974.png"
 },
@@ -14671,7 +14666,7 @@
 "otherCas": [
 "947316-47-4"
 ],
-"description": "Duloxetine (brand names Cymbalta, Yentreve, and in parts of Europe, Xeristar or Ariclaim) is a drug which primarily targets major depressive disorder (MDD), generalized anxiety disorder (GAD), pain related to diabetic peripheral neuropathy and in some countries stress urinary incontinence (SUI). It is manufactured and marketed by Eli Lilly and Company.\nDuloxetine has not yet been FDA approved for stress urinary incontinence or for fibromyalgia.\nDuloxetine is a selective SNRI (selective serotonin-norepinephrine reuptake inhibitor). Duloxetine is a systemic drug therapy which affects the body as a whole. Known also under the code name LY248686, it is a potent dual reuptake inhibitor of serotonin (5-hydroxytryptamine, 5-HT) and norepinephrine (NE), possessing comparable affinities in binding to NE- and 5-HT transporter sites. It is a less potent inhibitor of dopamine reuptake.",
+"description": "Duloxetine (brand names Cymbalta, Yentreve, and in parts of Europe, Xeristar or Ariclaim) is a drug which primarily targets major depressive disorder (MDD), generalized anxiety disorder (GAD), pain related to diabetic peripheral neuropathy and in some countries stress urinary incontinence (SUI). It is manufactured and marketed by Eli Lilly and Company.\nDuloxetine is not FDA approved for stress urinary incontinence but is approved for fibromyalgia.\nDuloxetine is a selective SNRI (selective serotonin-norepinephrine reuptake inhibitor). Duloxetine is a systemic drug therapy which affects the body as a whole. Known also under the code name LY248686, it is a potent dual reuptake inhibitor of serotonin (5-hydroxytryptamine, 5-HT) and norepinephrine (NE), possessing comparable affinities in binding to NE- and 5-HT transporter sites. It is a less potent inhibitor of dopamine reuptake.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/60834.png"
 },
@@ -14702,7 +14697,7 @@
 "dutasteridum"
 ],
 "otherCas": [],
-"description": "Dutasteride is an aza-steroid that is inasteride in which the tert-butyl group is replaced by a 2,5-bis(trifluoromethyl)phenyl group. A synthetic 4-azasteroid, dutasteride is a selective inhibitor of both the type 1 and type 2 isoforms of steroid 5alpha-reductase, an intracellular enzyme that converts testosterone to 5alpha-dihydrotestosterone. Dutasteride is used for the treatment of symptomatic benign prostatic hyperplasia in men with an enlarged prostate gland. It has a role as an EC 1.3.1.22 [3-oxo-5alpha-steroid 4-dehydrogenase (NADP(+))] inhibitor and an antihyperplasia drug. It is an aza-steroid, a delta-lactam and a member of (trifluoromethyl)benzenes. It derives from a hydride of a 5alpha-androstane.",
+"description": "Dutasteride is an aza-steroid that is finasteride in which the tert-butyl group is replaced by a 2,5-bis(trifluoromethyl)phenyl group. A synthetic 4-azasteroid, dutasteride is a selective inhibitor of both the type 1 and type 2 isoforms of steroid 5alpha-reductase, an intracellular enzyme that converts testosterone to 5alpha-dihydrotestosterone. Dutasteride is used for the treatment of symptomatic benign prostatic hyperplasia in men with an enlarged prostate gland. It has a role as an EC 1.3.1.22 [3-oxo-5alpha-steroid 4-dehydrogenase (NADP(+))] inhibitor and an antihyperplasia drug. It is an aza-steroid, a delta-lactam and a member of (trifluoromethyl)benzenes. It derives from a hydride of a 5alpha-androstane.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/6918296.png"
 },
@@ -14766,7 +14761,7 @@
 "otherCas": [
 "68797-31-9"
 ],
-"description": "Econazole is only found in individuals that have used or taken this drug. It is a broad spectrum antimycotic with some action against Gram positive bacteria. It is used topically in dermatomycoses also orally and parenterally. [PubChem] Econazole interacts with 14-alpha demethylase, a cytochrome P-450 enzyme necessary to convert lanosterol to ergosterol. As ergosterol is an essential component of the fungal cell membrane, inhibition of its synthesis results in increased cellular permeability causing leakage of cellular contents. Econazole may also inhibit endogenous respiration, interact with membrane phospholipids, inhibit the transformation of yeasts to mycelial forms, inhibit purine uptake, and impair triglyceride and/or phospholipid biosynthesis.",
+"description": "Econazole is a broad spectrum imidazole antimycotic with some action against Gram positive bacteria. It is used topically in dermatomycoses. Econazole interacts with 14-alpha demethylase, a cytochrome P-450 enzyme necessary to convert lanosterol to ergosterol. As ergosterol is an essential component of the fungal cell membrane, inhibition of its synthesis results in increased cellular permeability causing leakage of cellular contents. Econazole may also inhibit endogenous respiration, interact with membrane phospholipids, inhibit the transformation of yeasts to mycelial forms, inhibit purine uptake, and impair triglyceride and/or phospholipid biosynthesis.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/68589.png"
 },
@@ -15122,8 +15117,8 @@
 "Eltrombopagolamine"
 ],
 "otherCas": [],
-"description": "Eltrombopag olamine is an organic molecular entity.",
-"descriptionSource": "ChEBI",
+"description": "Eltrombopag olamine is the olamine (2-aminoethanol) salt of eltrombopag, an orally active, non-peptide thrombopoietin receptor agonist. It binds the transmembrane domain of the thrombopoietin receptor (c-Mpl), stimulating megakaryocyte proliferation and differentiation and increasing platelet production. It is used to treat immune thrombocytopenia, thrombocytopenia associated with chronic hepatitis C, and severe aplastic anaemia.",
+"descriptionSource": "",
 "image": "/molecules/135449331.png"
 },
 "eluxadoline": {
@@ -15153,7 +15148,7 @@
 "Eluxadoline deuterated"
 ],
 "otherCas": [],
-"description": "Eluxadoline is a mixed mu-opioid receptor agonist, kappa-opioid receptor agonist, and a-delta opioid receptor antagonist indicated for use in diarrhea-predominant irritable bowel syndrome (IBS-D). The mu-, kappa-, and delta-opioid receptors mediate endogenous and exogenous opioid response in the central nervous system and peripherally in the gastrointestinal system. Agonism of peripheral mu-opioid receptors results in reduced colonic motility, while antagonism of central delta-opioid receptors results in improved analgesia, making eluxadoline usable for the symptoms of both pain and diarrhea characteristic of IBS-D.   Marketed under the tradename Viberzi (FDA), eluxadoline is an antimotility agent that decreases bowel contractions, inhibits colonic transit, and reduces ﬂuid/ion secretion resulting in improved symptoms of abdominal pain and reductions in the Bristol Stool Scale.",
+"description": "Eluxadoline is a mixed mu-opioid receptor agonist, kappa-opioid receptor agonist, and a delta opioid receptor antagonist indicated for use in diarrhea-predominant irritable bowel syndrome (IBS-D). The mu-, kappa-, and delta-opioid receptors mediate endogenous and exogenous opioid response in the central nervous system and peripherally in the gastrointestinal system. Agonism of peripheral mu-opioid receptors results in reduced colonic motility, while antagonism of delta-opioid receptors in the gut may limit excessive mu-agonist-induced constipation, so that the combined actions address both the abdominal pain and diarrhea characteristic of IBS-D.   Marketed under the tradename Viberzi (FDA), eluxadoline is an antimotility agent that decreases bowel contractions, inhibits colonic transit, and reduces ﬂuid/ion secretion resulting in improved symptoms of abdominal pain and reductions in the Bristol Stool Scale.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/11250029.png"
 },
@@ -15475,7 +15470,7 @@
 "Entecavir Monohydrate?"
 ],
 "otherCas": [],
-"description": "Entecavir hydrate is the monohydrate form of entecavir. A synthetic analogue of 2'-deoxyguanosine, entecavir is a nucleoside reverse transcriptase inhibitor with selective antiviral activity against hepatitis B virus. It is phosphorylated intracellularly to the active triphosphate form, which competes with deoxyguanosine triphosphate, the natural substrate of hepatitis B virus reverse transcriptase, inhibiting every stage of the enzyme's activity, although it has no activity against HIV. Enteclavir is used for the treatment of chronic hepatitis B. It has a role as an antiviral drug and an EC 2.7.7.49 (RNA-directed DNA polymerase) inhibitor. It contains an entecavir (anhydrous).",
+"description": "Entecavir hydrate is the monohydrate form of entecavir. A synthetic analogue of 2'-deoxyguanosine, entecavir is a nucleoside reverse transcriptase inhibitor with selective antiviral activity against hepatitis B virus. It is phosphorylated intracellularly to the active triphosphate form, which competes with deoxyguanosine triphosphate, the natural substrate of hepatitis B virus reverse transcriptase, inhibiting every stage of the enzyme's activity, although it has no activity against HIV. Entecavir is used for the treatment of chronic hepatitis B. It has a role as an antiviral drug and an EC 2.7.7.49 (RNA-directed DNA polymerase) inhibitor. It contains an entecavir (anhydrous).",
 "descriptionSource": "ChEBI",
 "image": "/molecules/135526609.png"
 },
@@ -15537,8 +15532,8 @@
 "EMERPHED"
 ],
 "otherCas": [],
-"description": "Ephedrine sulfate is a white microcrystalline powder. Odorless. Central nervous system stimulant.",
-"descriptionSource": "CAMEO Chemicals",
+"description": "Ephedrine sulfate is the sulfate salt of ephedrine, a sympathomimetic amine. It acts both directly on alpha- and beta-adrenergic receptors and indirectly by promoting norepinephrine release from sympathetic nerve terminals. It is used as a vasopressor to treat hypotension during anaesthesia, and has also been used as a bronchodilator and nasal decongestant.",
+"descriptionSource": "",
 "image": "/molecules/5359318.png"
 },
 "epinastine-hcl": {
@@ -15769,7 +15764,7 @@
 "Prostacyclin sodium"
 ],
 "otherCas": [],
-"description": "Epoprostenol Sodium is the sodium salt form of epoprostenol, a synthetic prostacyclin, a member of the family of prostaglandins, with vasodilatory and anticoagulant activity. Epoprostenol sodium directly simulates prostaglandin receptors in arterial vascular smooth muscle, thereby causing vasodilatation. This agent also inhibits platelet aggregation by antagonizing platelet glycoprotein (GP) IIb/IIIa receptors, thereby preventing thrombus formation.",
+"description": "Epoprostenol Sodium is the sodium salt form of epoprostenol, a synthetic prostacyclin, a member of the family of prostaglandins, with vasodilatory and anticoagulant activity. Epoprostenol sodium directly stimulates prostacyclin (IP) receptors in arterial vascular smooth muscle, thereby causing vasodilatation. This agent also inhibits platelet aggregation by activating platelet IP receptors and raising intracellular cyclic AMP, thereby preventing thrombus formation.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/6364626.png"
 },
@@ -15809,7 +15804,7 @@
 "1248559-53-6",
 "157630-07-4"
 ],
-"description": "Eptifibatide is a synthetic homodetic cyclic peptide comprising Nalpha-(3-sulfanylpropanoyl)homoarginyl, glycyl, aspartyl, tryptophyl, prolyl and cysteinamide residues connected in sequence and cyclised via a disulfide bond. Derived from a protein found in the venom of the southeastern pygmy rattlesnake, Sistrurus miliarus barbouri, eptifibatide is an anti-coagulant that inhibits platelet aggregation by selectively blocking the platelet glycoprotein IIb/IIIa receptor, so preventing the binding of fibrinogen, von Willebrand factor, and other adhesive ligands. It is used in the management of unstable angina and in patients undergoing coronary angioplasty and stenting procedures. It has a role as an anticoagulant and a platelet aggregation inhibitor. It is a homodetic cyclic peptide, an organic disulfide and a macrocycle.",
+"description": "Eptifibatide is a synthetic homodetic cyclic peptide comprising Nalpha-(3-sulfanylpropanoyl)homoarginyl, glycyl, aspartyl, tryptophyl, prolyl and cysteinamide residues connected in sequence and cyclised via a disulfide bond. Derived from a protein found in the venom of the southeastern pygmy rattlesnake, Sistrurus miliarus barbouri, eptifibatide is an antiplatelet agent that inhibits platelet aggregation by selectively blocking the platelet glycoprotein IIb/IIIa receptor, so preventing the binding of fibrinogen, von Willebrand factor, and other adhesive ligands. It is used in the management of unstable angina and in patients undergoing coronary angioplasty and stenting procedures. It has a role as a platelet aggregation inhibitor. It is a homodetic cyclic peptide, an organic disulfide and a macrocycle.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/448812.png"
 },
@@ -15867,7 +15862,7 @@
 "Drisdol"
 ],
 "otherCas": [],
-"description": "Ergocalciferol is a form of Vitamin D, also called vitamin D2. It is created from viosterol, which in turn is created when ultraviolet light activates ergosterol. Ergocalciferol is used in the treatment of hypcalcemia and in dialysis-dependent renal failure. Ergoalcifediol is a fat soluble steroid hormone precursor of vitamin D that contributes to the maintenance of normal levels of calcium and phosphorus in the bloodstream. Vitamin D2 is the form of vitamin D most commonly added to foods and nutritional supplements. Vitamin D2 must be transformed (hydroxylated) into one of two active forms via the liver or kidney. Once transformed, it binds to the vitamin D receptor that then leads to a variety of regulatory roles.",
+"description": "Ergocalciferol is a form of Vitamin D, also called vitamin D2. It is created from viosterol, which in turn is created when ultraviolet light activates ergosterol. Ergocalciferol is used in the treatment of hypocalcemia and in dialysis-dependent renal failure. Ergocalciferol is a fat soluble steroid hormone precursor of vitamin D that contributes to the maintenance of normal levels of calcium and phosphorus in the bloodstream. Vitamin D2 is the form of vitamin D most commonly added to foods and nutritional supplements. Vitamin D2 must be transformed (hydroxylated) into one of two active forms via the liver or kidney. Once transformed, it binds to the vitamin D receptor that then leads to a variety of regulatory roles.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/5280793.png"
 },
@@ -15929,7 +15924,7 @@
 "Ergotamine bitartrate"
 ],
 "otherCas": [],
-"description": "Ergotamine is only found in individuals that have used or taken this drug. It is a vasoconstrictor found in ergot of Central Europe. It is an alpha-1 selective adrenergic agonist and is commonly used in the treatment of migraine disorders. Ergotamine acts on migraine by one of two proposed mechanisms: 1) activation of 5-HT<sub>1D</sub> receptors located on intracranial blood vessels, including those on arterio-venous anastomoses, leads to vasoconstriction, which correlates with the relief of migraine headache, and 2) activation of 5-HT<sub>1D</sub> receptors on sensory nerve endings of the trigeminal system results in the inhibition of pro-inflammatory neuropeptide release.",
+"description": "Ergotamine is a vasoconstrictor ergot alkaloid found in ergot of Central Europe. It is a partial agonist at serotonin and alpha-adrenergic receptors and is commonly used in the treatment of migraine disorders. Ergotamine acts on migraine by one of two proposed mechanisms: 1) activation of 5-HT1B/1D receptors located on intracranial blood vessels, including those on arterio-venous anastomoses, leads to vasoconstriction, which correlates with the relief of migraine headache, and 2) activation of 5-HT1B/1D receptors on sensory nerve endings of the trigeminal system results in the inhibition of pro-inflammatory neuropeptide release.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/9787.png"
 },
@@ -16021,7 +16016,7 @@
 "Ertapenem Sodium?"
 ],
 "otherCas": [],
-"description": "Ertapenem Sodium is the sodium salt of ertapenem, a 1-beta-methyl carbapenem and a broad-spectrum beta-lactam antibiotic with bactericidal activity. Ertapenem binds to penicillin binding proteins (PBPs) located on the bacterial cell wall, in particular PBPs 2 and 3, thereby inhibiting the final transpeptidation step in the synthesis of peptidoglycan, an essential component of the bacterial cell wall. Inhibition of peptidoglycan synthesis results in weakening and lysis of the cell wall and cell death. In vitro, this agent has shown activity against Gram-positive and Gram-negative aerobic and anaerobic bacteria. Erapenem is resistant to hydrolysis by a variety of beta-lactamases, including penicillinases, cephalosporinases and extended-spectrum beta-lactamases.",
+"description": "Ertapenem Sodium is the sodium salt of ertapenem, a 1-beta-methyl carbapenem and a broad-spectrum beta-lactam antibiotic with bactericidal activity. Ertapenem binds to penicillin binding proteins (PBPs) located on the bacterial cell wall, in particular PBPs 2 and 3, thereby inhibiting the final transpeptidation step in the synthesis of peptidoglycan, an essential component of the bacterial cell wall. Inhibition of peptidoglycan synthesis results in weakening and lysis of the cell wall and cell death. In vitro, this agent has shown activity against Gram-positive and Gram-negative aerobic and anaerobic bacteria. Ertapenem is resistant to hydrolysis by a variety of beta-lactamases, including penicillinases, cephalosporinases and extended-spectrum beta-lactamases.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/23674512.png"
 },
@@ -16124,7 +16119,7 @@
 "Erythromycin iactobionate"
 ],
 "otherCas": [],
-"description": "Erythromycin Lactobionate is the lactobionate salt form of erythromycin, a broad-spectrum, topical macrolide antibiotic with antibacterial activity. Erythromycin lactobionate diffuses through the bacterial cell membrane and reversibly binds to the 50S subunit of the bacterial ribosome. This prevents bacterial protein synthesis. Erythromycin lactobionate may be bacteriostatic or bactericidal in action, depending on the concentration of the drug at the site of infection and the susceptibility of the organism involved.",
+"description": "Erythromycin Lactobionate is the lactobionate salt form of erythromycin, a broad-spectrum macrolide antibiotic with antibacterial activity. Erythromycin lactobionate diffuses through the bacterial cell membrane and reversibly binds to the 50S subunit of the bacterial ribosome. This prevents bacterial protein synthesis. Erythromycin lactobionate may be bacteriostatic or bactericidal in action, depending on the concentration of the drug at the site of infection and the susceptibility of the organism involved.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/71469.png"
 },
@@ -16155,7 +16150,7 @@
 "Pfizer-E"
 ],
 "otherCas": [],
-"description": "Erythromycin Stearate is the stearate salt form of erythromycin, a broad-spectrum, topical macrolide antibiotic with antibacterial activity. Erythromycin stearate diffuses through the bacterial cell membrane and reversibly binds to the 50S subunit of the bacterial ribosome. This prevents bacterial protein synthesis. Erythromycin stearate may be bacteriostatic or bactericidal in action, depending on the concentration of the drug at the site of infection and the susceptibility of the organism involved.",
+"description": "Erythromycin Stearate is the stearate salt form of erythromycin, a broad-spectrum macrolide antibiotic with antibacterial activity. Erythromycin stearate diffuses through the bacterial cell membrane and reversibly binds to the 50S subunit of the bacterial ribosome. This prevents bacterial protein synthesis. Erythromycin stearate may be bacteriostatic or bactericidal in action, depending on the concentration of the drug at the site of infection and the susceptibility of the organism involved.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/12559.png"
 },
@@ -16535,7 +16530,7 @@
 "Estra-1,3,5(10)-triene-3,17beta-diol hydrate (2:1)"
 ],
 "otherCas": [],
-"description": "Generally refers to the 17-beta-isomer of estradiol, an aromatized C18 steroid with hydroxyl group at 3-beta- and 17-beta-position. Estradiol-17-beta is the most potent form of mammalian estrogenic steroids. In humans, it is produced primarily by the cyclic ovaries and the placenta. It is also produced by the adipose tissue of men and postmenopausal women. The 17-alpha-isomer of estradiol binds weakly to estrogen receptors (receptors, estrogen) and exhibits little estrogenic activity in estrogen-responsive tissues. Various isomers can be synthesized.",
+"description": "Generally refers to the 17-beta-isomer of estradiol, an aromatized C18 steroid with phenolic hydroxyl group at position 3 and a 17-beta hydroxyl group. Estradiol-17-beta is the most potent form of mammalian estrogenic steroids. In humans, it is produced primarily by the cyclic ovaries and the placenta. It is also produced by the adipose tissue of men and postmenopausal women. The 17-alpha-isomer of estradiol binds weakly to estrogen receptors (receptors, estrogen) and exhibits little estrogenic activity in estrogen-responsive tissues. Various isomers can be synthesized.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/154274.png"
 },
@@ -16692,7 +16687,7 @@
 "Edecril"
 ],
 "otherCas": [],
-"description": "Etacrynic acid is an aromatic ether that is phenoxyacetic acid in which the phenyl ring is substituted by chlorines at positions 2 and 3, and by a 2-methylidenebutanoyl group at position 4. It is a loop diuretic used to treat high blood pressure resulting from diseases such as congestive heart failure, liver failure, and kidney failure. It is also a glutathione S-transferase (EC 2.5.1.18) inhibitor. It has a role as an ion transport inhibitor, an EC 2.5.1.18 (glutathione transferase) inhibitor and a loop diuretic. It is a dichlorobenzene, a monocarboxylic acid, an aromatic ether and an aromatic ketone. It is functionally related to an acetic acid.",
+"description": "Etacrynic acid is an aromatic ether that is phenoxyacetic acid in which the phenyl ring is substituted by chlorines at positions 2 and 3, and by a 2-methylidenebutanoyl group at position 4. It is a loop diuretic used to treat edema associated with congestive heart failure, hepatic cirrhosis, and renal disease. It is also a glutathione S-transferase (EC 2.5.1.18) inhibitor. It has a role as an ion transport inhibitor, an EC 2.5.1.18 (glutathione transferase) inhibitor and a loop diuretic. It is a dichlorobenzene, a monocarboxylic acid, an aromatic ether and an aromatic ketone. It is functionally related to an acetic acid.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/3278.png"
 },
@@ -17021,7 +17016,7 @@
 "G03AC08"
 ],
 "otherCas": [],
-"description": "Etonogestrel is a synthetic form of the naturally occurring female sex hormone progesterone. Etonogestrel binds to the cytoplasmic progesterone receptors in the reproductive system and subsequently activates progesterone receptor mediated gene expression. As a result of the negative feedback mechanism, luteinizing hormone (LH) release is inhibited, which leads to an inhibition of ovulation and an alteration in the cervical mucus and endometrium.",
+"description": "Etonogestrel is a synthetic progestin, the biologically active metabolite of desogestrel. Etonogestrel binds to the cytoplasmic progesterone receptors in the reproductive system and subsequently activates progesterone receptor mediated gene expression. As a result of the negative feedback mechanism, luteinizing hormone (LH) release is inhibited, which leads to an inhibition of ovulation and an alteration in the cervical mucus and endometrium.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/6917715.png"
 },
@@ -17782,8 +17777,8 @@
 "otherCas": [
 "119683-68-0"
 ],
-"description": "Ferumoxides Non-Stoichiometric Magnetite is a non-stoichiometric magnetite core of superparamagnetic iron oxide (SPIO) that can be used as part of contrast media to enhance magnetic resonance imaging (MRI). Upon administration, ferumoxides non-stoichiometric magnetite is taken up by and accumulates in phagocytic reticuloendothelial system (RES) cells of the liver (Kupffer cells). When exposed to a strong external magnetic field, ferumoxides non-stoichiometric magnetite exhibits enhanced T2 relaxation, resulting in signal loss in normal tissues (image darkening) on mid T1/T2 or strongly T2-weighted images. Tissues with decreased RES function such as metastases, primary liver cancer, cysts, various benign tumors and hyperplasia, retain their native signal intensity, consequently the contrast between normal tissue (with image darkening) and abnormal tissue is increased.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Ferumoxytol is an intravenous iron replacement product consisting of superparamagnetic iron oxide nanoparticles coated with a carbohydrate shell (polyglucose sorbitol carboxymethylether). After administration it is taken up by the reticuloendothelial system, where the iron is released and becomes available for incorporation into haemoglobin. It is used to treat iron deficiency anaemia in adults with chronic kidney disease or intolerance to oral iron.",
+"descriptionSource": "",
 "image": "/molecules/6432052.png"
 },
 "fesoterodine-fumarate": {
@@ -17844,8 +17839,8 @@
 "Fexinidazole (Standard)"
 ],
 "otherCas": [],
-"description": "Fexinidazole is a Nitroimidazole Antimicrobial. The mechanism of action of fexinidazole is as a Cytochrome P450 1A2 Inhibitor, and Cytochrome P450 2B6 Inhibitor, and Cytochrome P450 2C19 Inhibitor, and Cytochrome P450 2D6 Inhibitor, and Cytochrome P450 3A4 Inhibitor, and Cytochrome P450 3A5 Inhibitor, and Cytochrome P450 1A2 Inducer, and Cytochrome P450 2B6 Inducer, and Organic Anion Transporting Polypeptide 1B1 Inhibitor, and Organic Anion Transporting Polypeptide 1B3 Inhibitor, and Organic Cation Transporter 2 Inhibitor, and Organic Anion Transporter 1 Inhibitor, and Organic Anion Transporter 3 Inhibitor, and Multidrug and Toxin Extrusion Transporter 1 Inhibitor, and Multidrug and Toxin Extrusion Transporter 2 K Inhibitor.",
-"descriptionSource": "FDA Pharm Classes",
+"description": "Fexinidazole is a 5-nitroimidazole antiprotozoal agent. It is a prodrug metabolised to active sulfoxide and sulfone derivatives; its trypanocidal action is thought to involve nitroreduction to reactive species that damage parasite DNA and proteins. It is the first all-oral treatment for human African trypanosomiasis (sleeping sickness) caused by Trypanosoma brucei gambiense.",
+"descriptionSource": "",
 "image": "/molecules/68792.png"
 },
 "fexofenadine-hcl": {
@@ -18265,7 +18260,7 @@
 "Flucort Tablets"
 ],
 "otherCas": [],
-"description": "Flumethasone is a moderately potent difluorinated corticosteroid ester with anti-inflammatory, antipruritic and vasoconstrictive properties. As it is a privalate salt, its anti-inflammatory action is concentrated at the site of application. This local effect on diseased areas results in a prompt decrease in inflammation, exudation and itching.",
+"description": "Flumethasone is a moderately potent difluorinated corticosteroid ester with anti-inflammatory, antipruritic and vasoconstrictive properties. When applied topically as the pivalate ester, its anti-inflammatory action is concentrated at the site of application. This local effect on diseased areas results in a prompt decrease in inflammation, exudation and itching.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/16490.png"
 },
@@ -18453,8 +18448,8 @@
 "Fluorescein, soluble"
 ],
 "otherCas": [],
-"description": "Fluorescein, disodium salt is an orange-red to dark red powder. Water-soluble form of fluorescein. Odorless and almost tasteless. pH (5% solution) 7.8. May be sensitive to prolonged exposure to light and to heat.",
-"descriptionSource": "CAMEO Chemicals",
+"description": "Fluorescein sodium is the water-soluble disodium salt of fluorescein, a xanthene dye that fluoresces strongly. It is used as a diagnostic dye in ophthalmology: intravenously for fluorescein angiography of the retina and choroid, and topically to detect corneal abrasions and ulcers and in applanation tonometry.",
+"descriptionSource": "",
 "image": "/molecules/10608.png"
 },
 "fluorometholone": {
@@ -18558,8 +18553,8 @@
 "otherCas": [
 "59333-67-4"
 ],
-"description": "N-methyl-3-phenyl-3-[4-(trifluoromethyl)phenoxy]-1-propanamine hydrochloride (1:1) is a hydrochloride and a N-methyl-3-phenyl-3-[4-(trifluoromethyl)phenoxy]propan-1-amine.",
-"descriptionSource": "ChEBI",
+"description": "Fluoxetine hydrochloride is the hydrochloride salt of fluoxetine, a selective serotonin reuptake inhibitor (SSRI) of the phenoxyphenylpropylamine class. It blocks reuptake of serotonin at the presynaptic neuronal membrane, increasing serotonergic neurotransmission. It is used to treat major depressive disorder, obsessive-compulsive disorder, bulimia nervosa, and panic disorder.",
+"descriptionSource": "",
 "image": "/molecules/62857.png"
 },
 "fluoxymesterone-active": {
@@ -18625,7 +18620,7 @@
 "Hydrochloride, Fluphenazine"
 ],
 "otherCas": [],
-"description": "Fluphenazine Hydrochloride is the hydrochloride salt of fluphenazine, a phenothiazine with antipsychotic activity and potential antineoplastic activity. Fluphenazine blocks postsynaptic dopamine D2 receptors in the limbic system, cortical system and basal ganglia, resulting in a reduction of schizophrenia-associated hallucinations and delusions. In addition, as a serotonin antagonist, this agent may inhibit lymphocyte and myeloma cell proliferation by blocking 5-hydroxytrptamine type 1B (5-HT type 1B) receptors for serotonin.",
+"description": "Fluphenazine Hydrochloride is the hydrochloride salt of fluphenazine, a phenothiazine with antipsychotic activity and potential antineoplastic activity. Fluphenazine blocks postsynaptic dopamine D2 receptors in the limbic system, cortical system and basal ganglia, resulting in a reduction of schizophrenia-associated hallucinations and delusions. In addition, as a serotonin antagonist, this agent may inhibit lymphocyte and myeloma cell proliferation by blocking 5-hydroxytryptamine type 2 (5-HT2) receptors for serotonin.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/67356.png"
 },
@@ -18689,8 +18684,8 @@
 "otherCas": [
 "51543-38-5"
 ],
-"description": "Flurbiprofen is a derivative of propionic acid, and a phenylalkanoic acid derivative of non-steroidal antiinflammatory drugs (NSAIDs) with analgesic, antiinflammatory and antipyretic effects. Flurbiprofen non-selectively binds to and inhibits cyclooxygenase (COX). This results in a reduction of arachidonic acid conversion into prostaglandins that are involved in the regulation of pain, inflammation and fever. This NSAID also inhibits carbonic anhydrase, thereby reducing the production of hydrogen and bicarbonate ions. Upon ocular administration, flurbiprofen may reduce bicarbonate ion concentrations leading to a decrease in the production of aqueous humor, thereby lowering intraocular pressure.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Flurbiprofen is a propionic acid derivative and phenylalkanoic acid non-steroidal anti-inflammatory drug (NSAID) with analgesic, anti-inflammatory and antipyretic effects. It non-selectively inhibits cyclooxygenase (COX-1 and COX-2), reducing the conversion of arachidonic acid into prostaglandins that mediate pain, inflammation and fever. It is used orally for the symptoms of rheumatoid arthritis and osteoarthritis, and as an ophthalmic solution to inhibit intraoperative miosis during eye surgery.",
+"descriptionSource": "",
 "image": "/molecules/3394.png"
 },
 "flutamide": {
@@ -19553,8 +19548,8 @@
 "Gd-dota meglumine"
 ],
 "otherCas": [],
-"description": "Gadoterate Meglumine is a gadolinium chelate paramagnetic contrast agent. When placed in a magnetic field, gadoterate meglumine produces a large magnetic moment and so a large local magnetic field, which can enhance the relaxation rate of nearby protons; as a result, the signal intensity of tissue images observed with magnetic resonance imaging (MRI) may be enhanced. Because this agent is preferentially taken up by normal functioning hepatocytes, normal hepatic tissue is enhanced with MRI while tumor tissue is unenhanced. In addition, because gadobenate dimeglumine is excreted in the bile, it may be used to visualize the biliary system using MRI.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Gadoterate meglumine is the meglumine salt of a macrocyclic, ionic gadolinium(III) chelate of DOTA (tetraazacyclododecane tetraacetic acid) used as a paramagnetic contrast agent for magnetic resonance imaging (MRI). The paramagnetic gadolinium ion shortens the relaxation times of nearby water protons, increasing signal intensity in tissues where it distributes. After intravenous injection it distributes in the extracellular fluid and is eliminated unchanged by glomerular filtration. It is used to enhance visualisation of lesions with abnormal vascularity or blood-brain barrier disruption in the central nervous system and other body regions.",
+"descriptionSource": "",
 "image": "/molecules/6918037.png"
 },
 "gadoteridol": {
@@ -20360,7 +20355,7 @@
 "Trinitroglycerol"
 ],
 "otherCas": [],
-"description": "Nitroglycerin, also known as glyceryl trinitrate, is an organic nitrate and a vasodilating agent that was first discovered in 1847. Originally used to dynamite, its antianginal effects were identified in the late 1860s after it produced headaches in factory workers while workers with angina pectoris or heart failure experienced relief from chest pain. Its use as a treatment for angina dates back to 1879 and is still used to treat and prevent angina. Nitroglycerin causes vasodilation in both arteries and veins.  Nitroglycerin is used in a variety of different conditions, including angina pectoris due to coronary artery disease, peri-operative hypertension, congestive heart failure, and chronic anal fissure. It is also used to induce intraoperative hypotension.",
+"description": "Nitroglycerin, also known as glyceryl trinitrate, is an organic nitrate and a vasodilating agent that was first discovered in 1847. Originally used in the manufacture of dynamite, its antianginal effects were identified in the late 1860s after it produced headaches in factory workers while workers with angina pectoris or heart failure experienced relief from chest pain. Its use as a treatment for angina dates back to 1879 and is still used to treat and prevent angina. Nitroglycerin causes vasodilation in both arteries and veins.  Nitroglycerin is used in a variety of different conditions, including angina pectoris due to coronary artery disease, peri-operative hypertension, congestive heart failure, and chronic anal fissure. It is also used to induce intraoperative hypotension.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/4510.png"
 },
@@ -21654,7 +21649,7 @@
 "Imbruvica (TN)"
 ],
 "otherCas": [],
-"description": "Ibrutinib is a small molecule that acts as an irreversible potent inhibitor of Burton's tyrosine kinase. It is designated as a targeted covalent drug and presented as a promising activity in B-cell malignancies in clinical trials. Ibrutinib was developed by Pharmacyclics Inc and was first approved by the FDA in November 2013 for the treatment of mantle cell lymphoma (MCL) under accelerated approval; however, in April 2023, the drug manufacturer withdrew the accelerated approvals for ibrutinib in the US.  Ibrutinib was approved by the EMA in October 2014 and by Health Canada in November 2014. It is currently approved for the treatment of various conditions, such as chronic lymphocytic leukemia (CLL), Waldenström's Macroglobulinemia, and chronic graft versus host disease (cGVHD) in August 2017. Notably, ibrutinib became the first FDA-approved cGVHD treatment for children in August 2017.",
+"description": "Ibrutinib is a small molecule that acts as an irreversible potent inhibitor of Bruton's tyrosine kinase. It is designated as a targeted covalent drug and presented as a promising activity in B-cell malignancies in clinical trials. Ibrutinib was developed by Pharmacyclics Inc and was first approved by the FDA in November 2013 for the treatment of mantle cell lymphoma (MCL) under accelerated approval; however, in April 2023, the drug manufacturer withdrew the accelerated approvals for ibrutinib in the US.  Ibrutinib was approved by the EMA in October 2014 and by Health Canada in November 2014. It is currently approved for the treatment of various conditions, such as chronic lymphocytic leukemia (CLL), Waldenström's Macroglobulinemia, and chronic graft versus host disease (cGVHD) in August 2017. Notably, ibrutinib became the first FDA-approved cGVHD treatment for children in August 2017.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/24821094.png"
 },
@@ -23251,7 +23246,7 @@
 "22161-86-0",
 "154907-35-4"
 ],
-"description": "Ketoprofen is a propionic acid derivate and nonsteroidal anti-inflammatory drug (NSAID) with anti-inflammatory, analgesic and antipyretic effects. Ketoprofen inhibits the activity of the enzymes cyclo-oxygenase I and II, resulting in a decreased formation of precursors of prostaglandins and thromboxanes. The resulting decrease in prostaglandin synthesis, by prostaglandin synthase, is responsible for the therapeutic effects of ibuprofen. Ketoprofen also causes a decrease in the formation of thromboxane A2 synthesis, by thromboxane synthase, thereby inhibiting platelet aggregation.",
+"description": "Ketoprofen is a propionic acid derivate and nonsteroidal anti-inflammatory drug (NSAID) with anti-inflammatory, analgesic and antipyretic effects. Ketoprofen inhibits the activity of the enzymes cyclo-oxygenase I and II, resulting in a decreased formation of precursors of prostaglandins and thromboxanes. The resulting decrease in prostaglandin synthesis, by prostaglandin synthase, is responsible for the therapeutic effects of ketoprofen. Ketoprofen also causes a decrease in the formation of thromboxane A2 synthesis, by thromboxane synthase, thereby inhibiting platelet aggregation.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/3825.png"
 },
@@ -23382,8 +23377,8 @@
 "otherCas": [
 "4455-52-1"
 ],
-"description": "This fact sheet provides an overview of selected ingredients in dietary supplements designed or claimed to enhance exercise and athletic performance. Manufacturers and sellers promote these products, sometimes referred to as ergogenic aids, by claiming that they improve strength or endurance, increase exercise efficiency, achieve a performance goal more quickly, and increase tolerance for more intense training. These effects are the main focus of this fact sheet. Some people also use ergogenic aids to prepare the body for exercise, reduce the chance of injury during training, and enhance recovery from exercise .",
-"descriptionSource": "NIH Dietary Supplement Fact Sheets",
+"description": "L-arginine is a conditionally essential proteinogenic amino acid with a guanidino side chain. It is a precursor for nitric oxide synthesis via nitric oxide synthase, and it takes part in the urea cycle and in the synthesis of creatine, ornithine and polyamines. It is used as a nutritional supplement and, intravenously, as a diagnostic agent for growth hormone secretion.",
+"descriptionSource": "",
 "image": "/molecules/6322.png"
 },
 "l-aspartic-acid": {
@@ -23584,8 +23579,8 @@
 "otherCas": [
 "1160211-67-5"
 ],
-"description": "This fact sheet provides an overview of selected ingredients in dietary supplements designed or claimed to enhance exercise and athletic performance. Manufacturers and sellers promote these products, sometimes referred to as ergogenic aids, by claiming that they improve strength or endurance, increase exercise efficiency, achieve a performance goal more quickly, and increase tolerance for more intense training. These effects are the main focus of this fact sheet. Some people also use ergogenic aids to prepare the body for exercise, reduce the chance of injury during training, and enhance recovery from exercise .",
-"descriptionSource": "NIH Dietary Supplement Fact Sheets",
+"description": "L-isoleucine is an essential, branched-chain proteinogenic amino acid that humans cannot synthesize and must obtain from the diet. It is a component of body proteins and is metabolized in muscle, where it contributes to energy production and glucose metabolism. It is used in nutritional and parenteral amino acid formulations.",
+"descriptionSource": "",
 "image": "/molecules/6306.png"
 },
 "l-leucine": {
@@ -23619,8 +23614,8 @@
 "25322-63-8",
 "71000-80-1"
 ],
-"description": "This fact sheet provides an overview of selected ingredients in dietary supplements designed or claimed to enhance exercise and athletic performance. Manufacturers and sellers promote these products, sometimes referred to as ergogenic aids, by claiming that they improve strength or endurance, increase exercise efficiency, achieve a performance goal more quickly, and increase tolerance for more intense training. These effects are the main focus of this fact sheet. Some people also use ergogenic aids to prepare the body for exercise, reduce the chance of injury during training, and enhance recovery from exercise .",
-"descriptionSource": "NIH Dietary Supplement Fact Sheets",
+"description": "L-leucine is an essential, branched-chain proteinogenic amino acid that humans must obtain from the diet. It is a component of body proteins and activates the mTOR signalling pathway, thereby stimulating muscle protein synthesis. It is used in nutritional and parenteral amino acid formulations.",
+"descriptionSource": "",
 "image": "/molecules/6106.png"
 },
 "l-lysine-acetate": {
@@ -23963,8 +23958,8 @@
 "otherCas": [
 "7004-03-7"
 ],
-"description": "This fact sheet provides an overview of selected ingredients in dietary supplements designed or claimed to enhance exercise and athletic performance. Manufacturers and sellers promote these products, sometimes referred to as ergogenic aids, by claiming that they improve strength or endurance, increase exercise efficiency, achieve a performance goal more quickly, and increase tolerance for more intense training. These effects are the main focus of this fact sheet. Some people also use ergogenic aids to prepare the body for exercise, reduce the chance of injury during training, and enhance recovery from exercise .",
-"descriptionSource": "NIH Dietary Supplement Fact Sheets",
+"description": "L-valine is an essential, branched-chain proteinogenic amino acid that humans must obtain from the diet. It is a component of body proteins, is metabolized mainly in muscle, and contributes to energy production and tissue repair. It is used in nutritional and parenteral amino acid formulations.",
+"descriptionSource": "",
 "image": "/molecules/6287.png"
 },
 "labetalol-hcl": {
@@ -24230,8 +24225,8 @@
 "otherCas": [
 "1261394-42-6"
 ],
-"description": "Lansoprazole is a substituted benzimidazole prodrug with selective and irreversible proton pump inhibitor activity. Lansoprazole prodrug is converted to an active sulfonamide derivative in the acidic environment of the gastric parietal cell; the sulfonamide derivative binds to the gastric proton pump H+/K+ ATPase and forms a stable disulfide bond with the sulfhydryl group near the potassium-binding site on the luminal side, resulting in inactivation of the ATPase and a reduction in gastric acid secretion. This agent does not have anticholinergic or histamine H2 -receptor antagonistic properties.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Lansoprazole is a substituted benzimidazole prodrug with selective and irreversible proton pump inhibitor activity. Lansoprazole prodrug is converted to an active sulfenamide derivative in the acidic environment of the gastric parietal cell; the sulfenamide derivative binds to the gastric proton pump H+/K+ ATPase and forms a stable disulfide bond with a cysteine sulfhydryl group on the luminal side, resulting in inactivation of the ATPase and a reduction in gastric acid secretion. This agent does not have anticholinergic or histamine H2-receptor antagonistic properties.",
+"descriptionSource": "",
 "image": "/molecules/3883.png"
 },
 "lanthanum-carbonate": {
@@ -24669,8 +24664,8 @@
 "Anhydrous calcium folinate"
 ],
 "otherCas": [],
-"description": "The active metabolite of Folic acid, Pteroyl-D-glutamic acid is used principally as its calcium salt as an antidote to folic acid antagonists which block the conversion of folic acid to folinic acid. Folic acid, a water-soluble B-complex vitamin, is found in foods such as liver, kidneys, yeast, and leafy, green vegetables. Folic acid is used to diagnose folate deficiency and to treat topical sprue and megaloblastic and macrocytic anemias, hematologic complications resulting from a deficiency in folic acid. A member of the vitamin B family that stimulates the hematopoietic system. It is present in the liver and kidney and is found in mushrooms, spinach, yeast, green leaves, and grasses (poaceae). Folic acid is used in the treatment and prevention of folate deficiencies and megaloblastic anemia.",
-"descriptionSource": "Toxin and Toxin Target Database (T3DB)",
+"description": "Leucovorin calcium is the calcium salt of leucovorin (folinic acid, 5-formyltetrahydrofolate), a reduced and active form of folic acid that does not require reduction by dihydrofolate reductase. It is used as an antidote to folate antagonists such as methotrexate, which block the conversion of dihydrofolate to tetrahydrofolate (rescue therapy). It is also used to treat megaloblastic anemias caused by folate deficiency and, in combination with fluorouracil, to enhance its antitumor activity.",
+"descriptionSource": "",
 "image": "/molecules/135403647.png"
 },
 "leuprolide-acetate": {
@@ -25031,7 +25026,7 @@
 "levoketoconazole": {
 "name": "LEVOKETOCONAZOLE",
 "cas": "65277-42-1",
-"cid": 47576,
+"cid": null,
 "matched": "LEVOKETOCONAZOLE",
 "parentMatch": false,
 "formula": "C26H28Cl2N4O4",
@@ -25045,21 +25040,17 @@
 "tpsa": 69.1,
 "rotb": 7,
 "synonyms": [
-"ketoconazole",
-"Nizoral",
-"Panfungol",
-"Ketoderm",
-"Fungarest",
-"Fungoral",
-"Ketoisdin",
-"Ketozole"
+"Levoketoconazole",
+"(2S,4R)-Ketoconazole",
+"COR-003",
+"Recorlev"
 ],
 "otherCas": [
 "79156-75-5",
 "142128-57-2",
 "72093-26-6"
 ],
-"description": "",
+"description": "Levoketoconazole is the 2S,4R enantiomer of ketoconazole, an imidazole that inhibits several steroidogenic cytochrome P450 enzymes, mainly CYP11B1 (11β-hydroxylase), CYP17A1 and CYP11A1, thereby reducing cortisol synthesis. It is taken orally to treat endogenous hypercortisolaemia in adults with Cushing’s syndrome for whom surgery is not an option or has not been curative. It carries risks of hepatotoxicity and QT prolongation that require monitoring.",
 "descriptionSource": "",
 "image": "/molecules/47576.png"
 },
@@ -25290,8 +25281,8 @@
 "otherCas": [
 "91484-71-8"
 ],
-"description": "Lidocaine Patch is a transdermal patch containing a 5 percent aqueous base solution of the synthetic amide-type anesthetic lidocaine with analgesic activity. Upon topical application and transdermal delivery, the active ingredient lidocaine binds to and blocks voltage-gated sodium channels in the neuronal cell membrane; lidocaine-mediated stabilization of neuronal membranes inhibits the initiation and conduction of nerve impulses and produces a reversible local anesthesia.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Lidocaine is a synthetic amide-type local anesthetic and class IB antiarrhythmic agent with analgesic activity. It binds to and blocks voltage-gated sodium channels in the neuronal cell membrane; this stabilizes the membrane, inhibits the initiation and conduction of nerve impulses and produces reversible local anesthesia. It is used topically, by infiltration and nerve block, and intravenously for ventricular arrhythmias.",
+"descriptionSource": "",
 "image": "/molecules/3676.png"
 },
 "lidocaine-hcl": {
@@ -26298,8 +26289,8 @@
 "Maphenide acetate"
 ],
 "otherCas": [],
-"description": "Mafenide Acetate is the acetate salt form of mafenide, a synthetic sulfonamide analog of para-aminobenzoic acid (PABA) with topical anti-infective activity. Mafenide acetate competes with PABA for the bacterial enzyme dihydropteroate synthase, thereby preventing the incorporation of PABA into dihydrofolic acid, thereby interferes with normal folic acid metabolism. As a result, de novo synthesis of pyrimidines, which requires folate metabolites, is impeded and subsequently DNA synthesis is affected. Mafenide acetate is bacteriostatic against many gram-negative and gram-positive organisms, including Pseudomonas aeruginosa and certain strains of anaerobes.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Mafenide acetate is the acetate salt of mafenide, a synthetic sulfonamide-type topical antimicrobial. Unlike the sulfonamide antibiotics, its antibacterial action is not reversed by para-aminobenzoic acid and its exact mechanism is not fully established. It is bacteriostatic against many gram-negative and gram-positive organisms, including Pseudomonas aeruginosa, and is applied topically to prevent and treat infection in burn wounds.",
+"descriptionSource": "",
 "image": "/molecules/25590.png"
 },
 "magnesium-chloride-hexahydrate": {
@@ -27727,7 +27718,7 @@
 "otherCas": [
 "15475-56-6"
 ],
-"description": "Methotrexate is only found in individuals that have used or taken this drug. It is an antineoplastic antimetabolite with immunosuppressant properties. It is an inhibitor of tetrahydrofolate dehydrogenase and prevents the formation of tetrahydrofolate, necessary for synthesis of thymidylate, an essential component of DNA. [PubChem]Methotrexate anti-tumor activity is a result of the inhibition of folic acid reductase, leading to inhibition of DNA synthesis and inhibition of cellular replication. The mechanism involved in its activity against rheumatoid arthritis is not known.",
+"description": "Methotrexate is only found in individuals that have used or taken this drug. It is an antineoplastic antimetabolite with immunosuppressant properties. It is an inhibitor of dihydrofolate reductase and prevents the formation of tetrahydrofolate, necessary for synthesis of thymidylate, an essential component of DNA. [PubChem]Methotrexate anti-tumor activity is a result of the inhibition of folic acid reductase, leading to inhibition of DNA synthesis and inhibition of cellular replication. The mechanism involved in its activity against rheumatoid arthritis is not known.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/11329481.png"
 },
@@ -27760,7 +27751,7 @@
 "otherCas": [
 "15475-56-6"
 ],
-"description": "Methotrexate is only found in individuals that have used or taken this drug. It is an antineoplastic antimetabolite with immunosuppressant properties. It is an inhibitor of tetrahydrofolate dehydrogenase and prevents the formation of tetrahydrofolate, necessary for synthesis of thymidylate, an essential component of DNA. [PubChem]Methotrexate anti-tumor activity is a result of the inhibition of folic acid reductase, leading to inhibition of DNA synthesis and inhibition of cellular replication. The mechanism involved in its activity against rheumatoid arthritis is not known.",
+"description": "Methotrexate is only found in individuals that have used or taken this drug. It is an antineoplastic antimetabolite with immunosuppressant properties. It is an inhibitor of dihydrofolate reductase and prevents the formation of tetrahydrofolate, necessary for synthesis of thymidylate, an essential component of DNA. [PubChem]Methotrexate anti-tumor activity is a result of the inhibition of folic acid reductase, leading to inhibition of DNA synthesis and inhibition of cellular replication. The mechanism involved in its activity against rheumatoid arthritis is not known.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/11329481.png"
 },
@@ -27794,7 +27785,7 @@
 "1246819-63-5",
 "12692-94-3"
 ],
-"description": "Methoxsalen is a member of the class of psoralens that is 7H-furo[3,2-g]chromen-7-one in which the 9 position is substituted by a methoxy group. It is a constituent of the fruits of Ammi majus. Like other psoralens, trioxsalen causes photosensitization of the skin. It is administered topically or orally in conjunction with UV-A for phototherapy treatment of vitiligo and severe psoriasis. It has a role as an antineoplastic agent, a photosensitizing agent, a dermatologic drug, a cross-linking reagent and a plant metabolite. It is a member of psoralens and an aromatic ether. It is functionally related to a psoralen.",
+"description": "Methoxsalen is a member of the class of psoralens that is 7H-furo[3,2-g]chromen-7-one in which the 9 position is substituted by a methoxy group. It is a constituent of the fruits of Ammi majus. Like other psoralens, methoxsalen causes photosensitization of the skin. It is administered topically or orally in conjunction with UV-A for phototherapy treatment of vitiligo and severe psoriasis. It has a role as an antineoplastic agent, a photosensitizing agent, a dermatologic drug, a cross-linking reagent and a plant metabolite. It is a member of psoralens and an aromatic ether. It is functionally related to a psoralen.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/4114.png"
 },
@@ -27959,8 +27950,8 @@
 "otherCas": [
 "7054-07-1"
 ],
-"description": "Methylergonovine is only found in individuals that have used or taken this drug. It is a homolog of ergonovine containing one more CH2 group (Merck Index, 11th ed). Methylergonovine acts directly on the smooth muscle of the uterus and increases the tone, rate, and amplitude of rhythmic contractions through binding and the resultant antagonism of the dopamine D1 receptor. Thus, it induces a rapid and sustained tetanic uterotonic effect which shortens the third stage of labor and reduces blood loss.",
-"descriptionSource": "Toxin and Toxin Target Database (T3DB)",
+"description": "Methylergonovine maleate is the maleate salt of methylergonovine, a semisynthetic ergot alkaloid and homolog of ergonovine containing one more CH2 group. It acts directly on uterine smooth muscle, probably through agonist activity at serotonergic (5-HT2) and alpha-adrenergic receptors, increasing the tone, rate and amplitude of rhythmic contractions. It induces a rapid and sustained uterotonic effect that shortens the third stage of labor and reduces postpartum blood loss.",
+"descriptionSource": "",
 "image": "/molecules/5281072.png"
 },
 "methylnaltrexone-bromide": {
@@ -28023,8 +28014,8 @@
 "Metilfenidato"
 ],
 "otherCas": [],
-"description": "Methylphenidate is only found in individuals that have used or taken this drug. It is a central nervous system stimulant used most commonly in the treatment of attention-deficit disorders in children and for narcolepsy. Its mechanisms appear to be similar to those of dextroamphetamine. Methylphenidate blocks dopamine uptake in central adrenergic neurons by blocking dopamine transport or carrier proteins. Methylphenidate acts at the brain stem arousal system and the cerebral cortex and causes increased sympathomimetic activity in the central nervous system. Alteration of serotonergic pathways via changes in dopamine transport may result.",
-"descriptionSource": "Toxin and Toxin Target Database (T3DB)",
+"description": "Methylphenidate is a central nervous system stimulant used most commonly in the treatment of attention-deficit/hyperactivity disorder and for narcolepsy. It blocks the reuptake of dopamine and norepinephrine by inhibiting their transporters, increasing the synaptic concentration of these catecholamines, with effects on the brain stem arousal system and cerebral cortex. Its mechanism is considered similar to that of amphetamines, although methylphenidate acts mainly as a reuptake inhibitor rather than a releasing agent.",
+"descriptionSource": "",
 "image": "/molecules/4158.png"
 },
 "methylphenidate-hcl": {
@@ -28056,8 +28047,8 @@
 "otherCas": [
 "29419-96-3"
 ],
-"description": "Methylphenidate is only found in individuals that have used or taken this drug. It is a central nervous system stimulant used most commonly in the treatment of attention-deficit disorders in children and for narcolepsy. Its mechanisms appear to be similar to those of dextroamphetamine. Methylphenidate blocks dopamine uptake in central adrenergic neurons by blocking dopamine transport or carrier proteins. Methylphenidate acts at the brain stem arousal system and the cerebral cortex and causes increased sympathomimetic activity in the central nervous system. Alteration of serotonergic pathways via changes in dopamine transport may result.",
-"descriptionSource": "Toxin and Toxin Target Database (T3DB)",
+"description": "Methylphenidate hydrochloride is the hydrochloride salt of methylphenidate, a central nervous system stimulant used most commonly in the treatment of attention-deficit/hyperactivity disorder and for narcolepsy. It blocks the reuptake of dopamine and norepinephrine by inhibiting their transporters, increasing the synaptic concentration of these catecholamines, with effects on the brain stem arousal system and cerebral cortex. Its mechanism is considered similar to that of amphetamines, although it acts mainly as a reuptake inhibitor rather than a releasing agent.",
+"descriptionSource": "",
 "image": "/molecules/9280.png"
 },
 "methylprednisolone": {
@@ -28118,7 +28109,7 @@
 "6alpha-Methylprednisolone acetate"
 ],
 "otherCas": [],
-"description": "Methylprednisolone Acetate is the acetate salt of a synthetic glucocorticoid receptor agonist with immunosuppressive and antiinflammatory effects. Methylprednisolone acetate is converted into active prednisolone in the body, which activates glucocorticoid receptor mediated gene expression. This includes inducing synthesis of anti-inflammatory protein IkappaB-alpha and inhibiting synthesis of nuclear factor kappaB (NF-kappaB). As a result, proinflammatory cytokine production such as IL-1, IL-2 and IL-6 is down-regulated and cytotoxic T-lymphocyte activation is inhibited. Therefore, an overall reduction in chronic inflammation and autoimmune reactions may be achieved.",
+"description": "Methylprednisolone Acetate is the acetate salt of a synthetic glucocorticoid receptor agonist with immunosuppressive and antiinflammatory effects. Methylprednisolone acetate is hydrolysed in the body to the active methylprednisolone, which activates glucocorticoid receptor mediated gene expression. This includes inducing synthesis of anti-inflammatory protein IkappaB-alpha and inhibiting synthesis of nuclear factor kappaB (NF-kappaB). As a result, proinflammatory cytokine production such as IL-1, IL-2 and IL-6 is down-regulated and cytotoxic T-lymphocyte activation is inhibited. Therefore, an overall reduction in chronic inflammation and autoimmune reactions may be achieved.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/5877.png"
 },
@@ -28680,8 +28671,8 @@
 "otherCas": [
 "175131-61-0"
 ],
-"description": "Milnacipran hydrochloride is a member of acetamides.",
-"descriptionSource": "ChEBI",
+"description": "Milnacipran hydrochloride is the hydrochloride salt of milnacipran, a serotonin-norepinephrine reuptake inhibitor (SNRI) that blocks reuptake of both neurotransmitters with similar potency. It is used for the management of fibromyalgia and, in some countries, as an antidepressant for major depressive disorder.",
+"descriptionSource": "",
 "image": "/molecules/163701.png"
 },
 "milrinone": {
@@ -28773,8 +28764,8 @@
 "Periocline"
 ],
 "otherCas": [],
-"description": "Minocycline Hydrochloride (internal use) can cause developmental toxicity according to state or federal government labeling requirements.",
-"descriptionSource": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+"description": "Minocycline Hydrochloride is the hydrochloride salt of minocycline, a semi-synthetic, second-generation tetracycline antibiotic. It inhibits bacterial protein synthesis by binding to the 30S ribosomal subunit and preventing aminoacyl-tRNA attachment, and is bacteriostatic against a broad range of Gram-positive and Gram-negative bacteria. It is used to treat bacterial infections such as respiratory and skin infections and inflammatory acne.",
+"descriptionSource": "",
 "image": "/molecules/54685925.png"
 },
 "minoxidil": {
@@ -28998,8 +28989,8 @@
 "MIVACRON IN DEXTROSE 5% IN PLASTIC CONTAINER"
 ],
 "otherCas": [],
-"description": "Mivacurium chloride is a member of isoquinolines.",
-"descriptionSource": "ChEBI",
+"description": "Mivacurium chloride is a short-acting, non-depolarising neuromuscular blocking agent of the benzylisoquinolinium class. It competitively antagonises acetylcholine at nicotinic receptors at the motor end plate, producing skeletal muscle relaxation during anaesthesia and facilitating tracheal intubation and mechanical ventilation. It is hydrolysed rapidly by plasma cholinesterase, which accounts for its brief duration of action.",
+"descriptionSource": "",
 "image": "/molecules/5281080.png"
 },
 "modafinil": {
@@ -29031,8 +29022,8 @@
 "otherCas": [
 "112111-49-6"
 ],
-"description": "Modafinil is a stimulant drug marketed as a 'wakefulness promoting agent' and is one of the stimulants used in the treatment of narcolepsy. Narcolepsy is caused by dysfunction of a family of wakefulness-promoting and sleep-suppressing peptides, the orexins, whose neurons are activated by modafinil. The prexin neuron activation is associated with psychoactivation and euphoria. The exact mechanism of action is unclear, although in vitro studies have shown it to inhibit the reuptake of dopamine by binding to the dopamine reuptake pump, and lead to an increase in extracellular dopamine. Modafinil activates glutamatergic circuits while inhibiting GABA.",
-"descriptionSource": "DrugBank",
+"description": "Modafinil is a wakefulness-promoting agent used in the treatment of excessive sleepiness associated with narcolepsy, obstructive sleep apnoea and shift-work disorder. Its exact mechanism of action is unclear; it binds to the dopamine transporter and inhibits dopamine reuptake, increasing extracellular dopamine, and it also influences orexin, histaminergic, glutamatergic and GABAergic signalling. It is a weaker stimulant than amphetamines and has a lower potential for abuse.",
+"descriptionSource": "",
 "image": "/molecules/4236.png"
 },
 "moexipril-hcl": {
@@ -29256,8 +29247,8 @@
 "Singulair"
 ],
 "otherCas": [],
-"description": "Montelukast sodium is an organic sodium salt. It contains a montelukast(1-).",
-"descriptionSource": "ChEBI",
+"description": "Montelukast sodium is the sodium salt of montelukast, a selective cysteinyl leukotriene receptor 1 (CysLT1) antagonist. By blocking the action of leukotriene D4 at this receptor it reduces bronchoconstriction, airway inflammation and nasal congestion. It is used for the prophylaxis and chronic treatment of asthma, exercise-induced bronchoconstriction and allergic rhinitis.",
+"descriptionSource": "",
 "image": "/molecules/23663996.png"
 },
 "morphine-sulfate": {
@@ -29543,8 +29534,8 @@
 "TYR-EXCEL"
 ],
 "otherCas": [],
-"description": "N-acetyltyrosine, also referred to as N-acetyl-L-tyrosine, is used in place of as a tyrosine precursor. [DB00135] is a non-essential amino acid with a polar side group. N-acetyltyrosine is administered as parenteral nutrition or intravenous infusion due to its enhanced solubility compared to tyrosine. It is typically administered as a source of nutritional support where oral nutrition is inadequate or cannot be tolerated.",
-"descriptionSource": "DrugBank",
+"description": "N-acetyl-L-tyrosine is the N-acetylated derivative of the amino acid L-tyrosine and is used as a tyrosine precursor. It is more soluble than tyrosine, so it is used in parenteral nutrition and intravenous infusion solutions as a source of tyrosine where oral nutrition is inadequate or cannot be tolerated.",
+"descriptionSource": "",
 "image": "/molecules/68310.png"
 },
 "nabumetone": {
@@ -29859,7 +29850,7 @@
 "Nemexin"
 ],
 "otherCas": [],
-"description": "Naltrexone is an organic heteropentacyclic compound that is naloxone substituted in which the allyl group attached to the nitrogen is replaced by a cyclopropylmethyl group. A -opioid receptor antagonist, it is used to treat alcohol dependence. It has a role as a central nervous system depressant, a xenobiotic, a mu-opioid receptor antagonist, an environmental contaminant and an antidote to opioid poisoning. It is an organic heteropentacyclic compound, a member of cyclopropanes and a morphinane-like compound. It is a conjugate base of a naltrexone(1+).",
+"description": "Naltrexone is an organic heteropentacyclic compound that is naloxone in which the allyl group attached to the nitrogen is replaced by a cyclopropylmethyl group. A mu-opioid receptor antagonist, it is used to treat alcohol dependence and to block the effects of opioids in opioid dependence. It has a role as a mu-opioid receptor antagonist and an antidote to opioid poisoning. It is a member of cyclopropanes and a morphinane-like compound, and is the conjugate base of naltrexone(1+).",
 "descriptionSource": "ChEBI",
 "image": "/molecules/5360515.png"
 },
@@ -30081,8 +30072,8 @@
 "(+)-Nebivolol Hydrochloride"
 ],
 "otherCas": [],
-"description": "(S,R,R,R)-nebivolol hydrochloride is a hydrochloride obtained by reaction of (S,R,R,R)-nebivolol with one equivalent of hydrochloric acid. It contains a (S,R,R,R)-nebivolol(1+). It is an enantiomer of a (R,S,S,S)-nebivolol hydrochloride.",
-"descriptionSource": "ChEBI",
+"description": "Nebivolol hydrochloride is the hydrochloride salt of nebivolol, a highly cardioselective beta-1 adrenergic receptor antagonist that also promotes nitric oxide-mediated vasodilation. It lowers heart rate and blood pressure and is used for the treatment of hypertension and heart failure. The marketed drug is a racemic mixture of the (S,R,R,R) and (R,S,S,S) enantiomers.",
+"descriptionSource": "",
 "image": "/molecules/24866733.png"
 },
 "nelarabine": {
@@ -30177,8 +30168,8 @@
 "Bloxiverz"
 ],
 "otherCas": [],
-"description": "Neostigmine methyl sulfate is an arylammonium sulfate salt. It has a role as an EC 3.1.1.8 (cholinesterase) inhibitor.",
-"descriptionSource": "ChEBI",
+"description": "Neostigmine methylsulfate is the methylsulfate salt of neostigmine, a synthetic quaternary ammonium reversible cholinesterase inhibitor. By inhibiting acetylcholinesterase it increases acetylcholine at the neuromuscular junction and at muscarinic synapses. It is used to treat myasthenia gravis, to reverse the effects of non-depolarising neuromuscular blocking agents after surgery, and to treat postoperative urinary retention and ileus.",
+"descriptionSource": "",
 "image": "/molecules/5824.png"
 },
 "nepafenac": {
@@ -31489,8 +31480,8 @@
 "otherCas": [
 "6533-00-2"
 ],
-"description": "Levonorgestrel is the levorotatory form of norgestrel and synthetic progestogen with progestational and androgenic activity. Levonorgestrel binds to the progesterone receptor in the nucleus of target cells, thereby stimulating the resulting hormone-receptor complex, initiating transcription, and increasing the synthesis of certain proteins. This results in a suppression of luteinizing hormone (LH) activity and an inhibition of ovulation, as well as an alteration in the cervical mucus and endometrium.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Norgestrel is a synthetic progestogen and a racemic mixture of levonorgestrel and dextronorgestrel; only the levorotatory enantiomer, levonorgestrel, is biologically active. It is a 19-nortestosterone derivative with progestational and some androgenic activity. It binds to the progesterone receptor, suppresses luteinizing hormone release and inhibits ovulation, and alters cervical mucus and the endometrium. It is used in hormonal contraception.",
+"descriptionSource": "",
 "image": "/molecules/13109.png"
 },
 "nortriptyline-hcl": {
@@ -31520,7 +31511,7 @@
 "Pamelor"
 ],
 "otherCas": [],
-"description": "Nortriptyline Hydrochloride is the hydrochloride salt form of nortriptyline, a tricyclic antidepressant agent used for short-term treatment of various forms of depression. Nortriptyline blocks the norepinephrine presynaptic receptors, thereby blocking the reuptake of this neurotransmitter and raising the concentration in the synaptic cleft in the CNS. Nortriptyline also binds to alpha-adrenergic, histaminergic and cholinergic receptors. Long-term treatment with nortriptyline produces a downregulation of adrenergic receptors due to the increased stimulation of these receptors.",
+"description": "Nortriptyline Hydrochloride is the hydrochloride salt form of nortriptyline, a tricyclic antidepressant agent used for short-term treatment of various forms of depression. Nortriptyline inhibits the presynaptic norepinephrine reuptake transporter, thereby blocking reuptake of this neurotransmitter and raising its concentration in the synaptic cleft in the CNS. Nortriptyline also binds to alpha-adrenergic, histaminergic and cholinergic receptors. Long-term treatment with nortriptyline produces a downregulation of adrenergic receptors due to the increased stimulation of these receptors.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/441358.png"
 },
@@ -31551,8 +31542,8 @@
 "Caswell No. 607B"
 ],
 "otherCas": [],
-"description": "Nystatin is a polyene antifungal drug that has broad-spectrum fungicidal and fungistatic activity against a number of yeasts and fungi, most notably Candida species. It is one of the most effective antifungal agents synthesized by bacteria, in this case a strain of Streptomyces noursei, and is closely related to [amphotericin B], differing only slightly in structure. Nystatin has a greater antifungal activity than amphotericin B - parenterally administered nystatin, however, is associated with significant toxicity and is not available in a formulation appropriate for systemic use. As it undergoes very little absorption following oral or topical administration, nystatin's efficacy is limited to the treatment/prevention of cutaneous, mucocutaneous, and gastrointestinal fungal infections.",
-"descriptionSource": "DrugBank",
+"description": "Nystatin is a polyene antifungal drug that has broad-spectrum fungicidal and fungistatic activity against a number of yeasts and fungi, most notably Candida species. It is produced by a strain of Streptomyces noursei and is closely related to amphotericin B, differing only slightly in structure. It binds ergosterol in the fungal cell membrane, forming pores and increasing permeability. Because parenteral nystatin is too toxic for systemic use and the drug is barely absorbed after oral or topical administration, its use is limited to the treatment and prevention of cutaneous, mucocutaneous and gastrointestinal fungal infections.",
+"descriptionSource": "",
 "image": "/molecules/6433272.png"
 },
 "obeticholic-acid": {
@@ -32007,8 +31998,8 @@
 "Zofran Zydis"
 ],
 "otherCas": [],
-"description": "Ondansetron hydrochloride is a member of carbazoles.",
-"descriptionSource": "ChEBI",
+"description": "Ondansetron hydrochloride dihydrate is the hydrochloride dihydrate salt of ondansetron, a carbazole derivative and selective serotonin 5-HT3 receptor antagonist. By blocking 5-HT3 receptors peripherally in the gastrointestinal tract and centrally in the chemoreceptor trigger zone, it suppresses nausea and vomiting. It is used to prevent chemotherapy-induced, radiotherapy-induced and postoperative nausea and vomiting.",
+"descriptionSource": "",
 "image": "/molecules/59774.png"
 },
 "orlistat": {
@@ -32259,8 +32250,8 @@
 "119678-90-9",
 "40247-39-0"
 ],
-"description": "{2-[(isopropylamino)methyl]-7-nitro-1,2,3,4-tetrahydroquinolin-6-yl}methanol is a member of the class of quinolines that is 1,2,3,4-tetrahydroquinoline which is substituted at positions 2, 6, and 7 by (isopropylamino)methyl, hydroxymethyl, and nitro groups, respectively. It is a member of quinolines, an aromatic primary alcohol, a C-nitro compound and a secondary amino compound.",
-"descriptionSource": "ChEBI",
+"description": "Oxamniquine is a tetrahydroquinoline derivative with a nitro group, used as an anthelmintic against Schistosoma mansoni infection (schistosomiasis). It is activated by a parasite sulfotransferase to an alkylating species that binds parasite DNA, which paralyses the worms and leads to their death. It is not effective against other Schistosoma species and has largely been replaced by praziquantel.",
+"descriptionSource": "",
 "image": "/molecules/4612.png"
 },
 "oxandrolone": {
@@ -32819,7 +32810,7 @@
 "Aloxi"
 ],
 "otherCas": [],
-"description": "Palonosetron Hydrochloride is the hydrochloride salt of palonosetron, a carbazole derivative and a selective serotonin receptor antagonist with antiemetic activity. Palonosetron competitively blocks the action of serotonin at 5-hydroxytryptamine type 3 (5-HT3) receptors located on vagal afferents in the chemoreceptor trigger zone (CTZ), resulting in suppression of chemotherapy-induced nausea and vomiting. The CTZ is located in the area postrema on the dorsal surface of the medulla oblongata at the caudal end of the fourth ventricle and outside the blood-brain barrier (BBB).",
+"description": "Palonosetron Hydrochloride is the hydrochloride salt of palonosetron, a tricyclic isoquinoline derivative and a selective serotonin receptor antagonist with antiemetic activity. Palonosetron competitively blocks the action of serotonin at 5-hydroxytryptamine type 3 (5-HT3) receptors located on vagal afferents in the chemoreceptor trigger zone (CTZ), resulting in suppression of chemotherapy-induced nausea and vomiting. The CTZ is located in the area postrema on the dorsal surface of the medulla oblongata at the caudal end of the fourth ventricle and outside the blood-brain barrier (BBB).",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/6918303.png"
 },
@@ -33173,7 +33164,7 @@
 "Tifolar"
 ],
 "otherCas": [],
-"description": "Pemetrexed disodium is an organic sodium salt that is the disodium salt of N-{4-[2-(2-amino-4-oxo-4,7-dihydro-1H-pyrrolo[2,3-d]pyrimidin-5-yl)ethyl]benzoyl}-L-glutamic acid. Inhibits thymidylate synthase (TS), 421 dihydrofolate reductase (DHFR), and glycinamide ribonucleotide formyltransferase (GARFT). It has a role as an antimetabolite, an antineoplastic agent, an EC 1.5.1.3 (dihydrofolate reductase) inhibitor, an EC 2.1.1.45 (thymidylate synthase) inhibitor and an EC 2.1.2.2 (phosphoribosylglycinamide formyltransferase) inhibitor. It contains a pemetrexed(2-).",
+"description": "Pemetrexed disodium is an organic sodium salt that is the disodium salt of N-{4-[2-(2-amino-4-oxo-4,7-dihydro-1H-pyrrolo[2,3-d]pyrimidin-5-yl)ethyl]benzoyl}-L-glutamic acid. It inhibits thymidylate synthase (TS), dihydrofolate reductase (DHFR), and glycinamide ribonucleotide formyltransferase (GARFT). It has a role as an antimetabolite, an antineoplastic agent, an EC 1.5.1.3 (dihydrofolate reductase) inhibitor, an EC 2.1.1.45 (thymidylate synthase) inhibitor and an EC 2.1.2.2 (phosphoribosylglycinamide formyltransferase) inhibitor.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/135413520.png"
 },
@@ -33295,7 +33286,7 @@
 "Sulfate, Penbutolol"
 ],
 "otherCas": [],
-"description": "Penbutolol Sulfate is the sulfate salt form of penbutolol, a lipophilic, nonselective beta-adrenergic receptor antagonist with anti-anginal and antihypertensive activities. Penbutolol competitively binds to and blocks beta-1 adrenergic receptors in the heart, thereby decreasing cardiac contractility and rate. This leads to a reduction in cardiac output and lowers blood pressure. In addition, bisoprolol prevents the release of renin, a hormone secreted by the kidneys that causes constriction of blood vessels.",
+"description": "Penbutolol Sulfate is the sulfate salt form of penbutolol, a lipophilic, nonselective beta-adrenergic receptor antagonist with anti-anginal and antihypertensive activities. Penbutolol competitively binds to and blocks beta-1 adrenergic receptors in the heart, thereby decreasing cardiac contractility and rate. This leads to a reduction in cardiac output and lowers blood pressure. In addition, penbutolol prevents the release of renin, a hormone secreted by the kidneys that causes constriction of blood vessels.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/38010.png"
 },
@@ -33390,7 +33381,7 @@
 "Sodium penicillin"
 ],
 "otherCas": [],
-"description": "Penicillin G Sodium is the sodium salt form of benzylpenicillin, a semi-synthetic, broad-spectrum penicillin antibiotic with bactericidal activity. Benzylpenicillin sodium binds to and inactivates penicillin-binding proteins (PBP) located on the inner membrane of the bacterial cell wall. Inactivation of PBPs interferes with the cross-linkage of peptidoglycan chains necessary for bacterial cell wall strength and rigidity. This results in the weakening of the bacterial cell wall and causes cell lysis.",
+"description": "Penicillin G Sodium is the sodium salt form of benzylpenicillin, a natural, narrow-spectrum penicillin antibiotic with bactericidal activity. Benzylpenicillin sodium binds to and inactivates penicillin-binding proteins (PBP) located on the inner membrane of the bacterial cell wall. Inactivation of PBPs interferes with the cross-linkage of peptidoglycan chains necessary for bacterial cell wall strength and rigidity. This results in the weakening of the bacterial cell wall and causes cell lysis.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/23668834.png"
 },
@@ -34988,7 +34979,7 @@
 "Potassium-cit"
 ],
 "otherCas": [],
-"description": "Potassium citrate (also known as tripotassium citrate) is a potassium salt of citric acid. It is a white, hygroscopic crystalline powder. It is odorless with a saline taste. It contains 38.3% potassium by mass. In the monohydrate form it is highly hygroscopic and deliquescent. Potassium citrate is used to treat a kidney stone condition called renal tubular acidosis. Potassium Citrate is indicated also for the management of Hypocitraturic calcium oxalate nephrolithiasis.",
+"description": "Potassium citrate (also known as tripotassium citrate) is a potassium salt of citric acid. It is a white, hygroscopic crystalline powder. It is odorless with a saline taste. It contains 38.3% potassium by mass. In the monohydrate form it is highly hygroscopic and deliquescent. Potassium citrate is used to treat renal tubular acidosis with calcium stones. Potassium Citrate is indicated also for the management of Hypocitraturic calcium oxalate nephrolithiasis.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/2735208.png"
 },
@@ -35019,8 +35010,8 @@
 "Hydroquinonesulfonic acid potassium salt"
 ],
 "otherCas": [],
-"description": "for topical treatment of actinic keratoses",
-"descriptionSource": "Medical Subject Headings (MeSH)",
+"description": "Potassium dobesilate is the potassium salt of 2,5-dihydroxybenzenesulfonic acid, a synthetic vasoprotective (angioprotective) agent. It is thought to reduce capillary permeability and blood viscosity and to act as an antioxidant and free-radical scavenger, and it inhibits platelet aggregation. It is used in some countries for chronic venous insufficiency, hemorrhoids and diabetic microangiopathy such as diabetic retinopathy.",
+"descriptionSource": "",
 "image": "/molecules/23672329.png"
 },
 "potassium-iodide": {
@@ -36456,7 +36447,7 @@
 "iron(3+) hexacyanoferrate(4-)"
 ],
 "otherCas": [],
-"description": "Prussian blue is described as a deep blue pigment that is produced when the oxidation of ferrous ferrocyanide salts occurs. It contains ferric hexacyanoferrate(II) in a cubic lattice crystal structure. It is insoluble in water but also tends to form a colloid thus can exist in either colloidal or water-soluble form, and an insoluble form. It is orally administered for clinical purposes to be used as an antidote for certain kinds of heavy metal poisoning, such as thallium and radioactive isotopes of caesium. Prussian blue is included in the World Health Organization Model List of Essential Medicines as a specific antidote used in poisonings to provide symptomatic and supportive treatment. It was also administered in individuals exposed to 137-Cs+ during Goiânia accident, one of the worst radioactive contamination incidents that occured in Brazil, 1983.",
+"description": "Prussian blue is described as a deep blue pigment that is produced when the oxidation of ferrous ferrocyanide salts occurs. It contains ferric hexacyanoferrate(II) in a cubic lattice crystal structure. It is insoluble in water but also tends to form a colloid thus can exist in either colloidal or water-soluble form, and an insoluble form. It is orally administered for clinical purposes to be used as an antidote for certain kinds of heavy metal poisoning, such as thallium and radioactive isotopes of caesium. Prussian blue is included in the World Health Organization Model List of Essential Medicines as a specific antidote used in poisonings to provide symptomatic and supportive treatment. It was also administered in individuals exposed to 137-Cs+ during Goiânia accident, one of the worst radioactive contamination incidents that occured in Brazil, 1987.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/2724251.png"
 },
@@ -37417,8 +37408,8 @@
 "enyglid"
 ],
 "otherCas": [],
-"description": "Repaglinide is a nonsulfonylurea insulin secretagogue belonging to the melgitinide class with hypoglycemic activity. Repaglinide is rapidly absorbed and has a rapid onset and short duration of action. This agent is metabolized in the liver by CYP2C8 and CYP3A4 and its metabolites are excreted in the bile. Repaglinide has a half-life of one hour.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Repaglinide is a nonsulfonylurea insulin secretagogue of the meglitinide class with hypoglycemic activity. It closes ATP-dependent potassium channels in pancreatic beta-cell membranes, causing depolarization, calcium influx and stimulation of insulin release, and it is used in the treatment of type 2 diabetes mellitus. Repaglinide is rapidly absorbed with a rapid onset and short duration of action, is metabolized in the liver mainly by CYP2C8 and CYP3A4, and its metabolites are excreted mainly in the bile.",
+"descriptionSource": "",
 "image": "/molecules/65981.png"
 },
 "reserpine": {
@@ -37610,8 +37601,8 @@
 "Beflavine"
 ],
 "otherCas": [],
-"description": "Riboflavin (also known as vitamin B2) is one of the B vitamins, which are all water soluble. Riboflavin is naturally present in some foods, added to some food products, and available as a dietary supplement. This vitamin is an essential component of two major coenzymes, flavin mononucleotide (FMN; also known as riboflavin-5'-phosphate) and flavin adenine dinucleotide (FAD). These coenzymes play major roles in energy production; cellular function, growth, and development; and metabolism of fats, drugs, and steroids . The conversion of the amino acid tryptophan to niacin (sometimes referred to as vitamin B3) requires FAD . Similarly, the conversion of vitamin B6 to the coenzyme pyridoxal 5'-phosphate needs FMN. In addition, riboflavin helps maintain normal levels of homocysteine, an amino acid in the blood .",
-"descriptionSource": "NIH Dietary Supplement Fact Sheets",
+"description": "Riboflavin (vitamin B2) is a water-soluble B vitamin consisting of an isoalloxazine ring linked to a ribityl side chain. It is the precursor of the coenzymes flavin mononucleotide (FMN) and flavin adenine dinucleotide (FAD), which act as electron carriers in oxidation-reduction reactions of energy, fat, drug and steroid metabolism. It is used to prevent and treat riboflavin deficiency and is present in foods and dietary supplements.",
+"descriptionSource": "",
 "image": "/molecules/493570.png"
 },
 "rifabutin": {
@@ -37955,7 +37946,7 @@
 "Risdiplam (JAN/USAN/INN)"
 ],
 "otherCas": [],
-"description": "Risdiplam is an orally bioavailable mRNA splicing modifier used for the treatment of spinal muscular atrophy (SMA). It increases systemic SMN protein concentrations by improving the efficiency of SMN2 gene transcription. This mechanism of action is similar to its predecessor [nusinersen], the biggest difference being their route of administration: nusinersen requires intrathecal administration, as does the one-time gene therapy [onasemnogene abeparvovec], whereas risdiplam offers the ease of oral bioavailability.  Risdiplam was approved by the FDA in August 2020 for the treatment of spinal muscular atrophy (SMA). Set to be substantially cheaper than other available SMA therapies, risdiplam appears to provide a novel and relatively accessible treatment option for patients with SMA regardless of severity or type.",
+"description": "Risdiplam is an orally bioavailable mRNA splicing modifier used for the treatment of spinal muscular atrophy (SMA). It increases systemic SMN protein concentrations by modifying the splicing of SMN2 pre-mRNA to increase inclusion of exon 7. This mechanism of action is similar to its predecessor [nusinersen], the biggest difference being their route of administration: nusinersen requires intrathecal administration, as does the one-time gene therapy [onasemnogene abeparvovec], whereas risdiplam offers the ease of oral bioavailability.  Risdiplam was approved by the FDA in August 2020 for the treatment of spinal muscular atrophy (SMA). Set to be substantially cheaper than other available SMA therapies, risdiplam appears to provide a novel and relatively accessible treatment option for patients with SMA regardless of severity or type.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/118513932.png"
 },
@@ -38022,7 +38013,7 @@
 "otherCas": [
 "1026102-43-1"
 ],
-"description": "Risperidone is a member of the class of pyridopyrimidines that is 2-methyl-6,7,8,9-tetrahydropyrido[1,2-a]pyrimidin-4-one carrying an additional 2-[4-(6-fluoro-1,2-benzoxazol-3-yl)piperidin-1-yl]ethyl group at position 2. It has a role as a psychotropic drug, an alpha-adrenergic antagonist, a H1-receptor antagonist, a serotonergic antagonist, a dopaminergic antagonist, a second generation antipsychotic and an EC 3.4.21.26 (prolyl oligopeptidase) inhibitor. It is an organofluorine compound, a pyridopyrimidine, a heteroarylpiperidine and a member of 1,2-benzoxazoles.",
+"description": "Risperidone is a member of the class of pyridopyrimidines that is 2-methyl-6,7,8,9-tetrahydropyrido[1,2-a]pyrimidin-4-one carrying an additional 2-[4-(6-fluoro-1,2-benzoxazol-3-yl)piperidin-1-yl]ethyl group at position 3. It has a role as a psychotropic drug, an alpha-adrenergic antagonist, a H1-receptor antagonist, a serotonergic antagonist, a dopaminergic antagonist, a second generation antipsychotic and an EC 3.4.21.26 (prolyl oligopeptidase) inhibitor. It is an organofluorine compound, a pyridopyrimidine, a heteroarylpiperidine and a member of 1,2-benzoxazoles.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/5073.png"
 },
@@ -38241,7 +38232,7 @@
 "Rocuronium (Bromide)"
 ],
 "otherCas": [],
-"description": "Rocuronium bromide is the organic bromide salt of a 5alpha androstane compound having 3alpha-hydroxy-, 17beta-acetoxy-, 2beta-morpholino- and 16beta-N-allyllyrrolidinium substituents. It has a role as a muscle relaxant and a neuromuscular agent. It is a quaternary ammonium salt and an organic bromide salt. It contains a rocuronium. It derives from a hydride of a 5alpha-androstane.",
+"description": "Rocuronium bromide is the organic bromide salt of a 5alpha androstane compound having 3alpha-hydroxy-, 17beta-acetoxy-, 2beta-morpholino- and 16beta-N-allylpyrrolidinium substituents. It has a role as a muscle relaxant and a neuromuscular agent. It is a quaternary ammonium salt and an organic bromide salt. It contains a rocuronium. It derives from a hydride of a 5alpha-androstane.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/441351.png"
 },
@@ -39838,8 +39829,8 @@
 "Benzoate, sodium"
 ],
 "otherCas": [],
-"description": "Benzoic acid, C6H5COOH, is a colourless crystalline solid and the simplest aromatic carboxylic acid. Benzoic acid occurs naturally free and bound as benzoic acid esters in many plant and animal species. Appreciable amounts have been found in most berries (around 0.05%). Cranberries contain as much as 300-1300 mg free benzoic acid per kg fruit. Benzoic acid is a fungistatic compound that is widely used as a food preservative. It often is conjugated to glycine in the liver and excreted as hippuric acid. Benzoic acid is a byproduct of phenylalanine metabolism in bacteria. It is also produced when gut bacteria process polyphenols (from ingested fruits or beverages).",
-"descriptionSource": "Toxin and Toxin Target Database (T3DB)",
+"description": "Sodium benzoate is the sodium salt of benzoic acid and is used as an antimicrobial preservative in foods, beverages and pharmaceutical products. In medicine it is used with sodium phenylacetate or phenylbutyrate as a nitrogen-scavenging agent in hyperammonaemia due to urea cycle disorders: benzoate is conjugated with glycine to form hippurate, which is excreted in the urine and provides an alternative route for waste nitrogen elimination.",
+"descriptionSource": "",
 "image": "/molecules/517055.png"
 },
 "sodium-bicarbonate": {
@@ -39869,8 +39860,8 @@
 "Meylon"
 ],
 "otherCas": [],
-"description": "This fact sheet provides an overview of selected ingredients in dietary supplements designed or claimed to enhance exercise and athletic performance. Manufacturers and sellers promote these products, sometimes referred to as ergogenic aids, by claiming that they improve strength or endurance, increase exercise efficiency, achieve a performance goal more quickly, and increase tolerance for more intense training. These effects are the main focus of this fact sheet. Some people also use ergogenic aids to prepare the body for exercise, reduce the chance of injury during training, and enhance recovery from exercise .",
-"descriptionSource": "NIH Dietary Supplement Fact Sheets",
+"description": "Sodium bicarbonate (sodium hydrogen carbonate) is an alkaline sodium salt of carbonic acid that dissociates in water to sodium and bicarbonate ions. It is used as an antacid, as a systemic alkalinising agent in metabolic acidosis, and for urinary alkalinisation. It is also widely used as a leavening agent (baking soda) and pH buffer.",
+"descriptionSource": "",
 "image": "/molecules/516892.png"
 },
 "sodium-chloride": {
@@ -40058,8 +40049,8 @@
 "Sodium oxybat"
 ],
 "otherCas": [],
-"description": "gamma-hydroxybutyric acid is a DEA Schedule I controlled substance. Substances in the DEA Schedule I have no currently accepted medical use in the United States, a lack of accepted safety for use under medical supervision, and a high potential for abuse. It is a Depressants substance.",
-"descriptionSource": "Drug Enforcement Administration (DEA)",
+"description": "Sodium oxybate is the sodium salt of gamma-hydroxybutyric acid (GHB), a central nervous system depressant. It acts as an agonist at GABA-B receptors and at GHB-specific receptors. It is approved for the treatment of cataplexy and excessive daytime sleepiness in narcolepsy, and is a tightly controlled substance because of its potential for abuse and misuse.",
+"descriptionSource": "",
 "image": "/molecules/23663870.png"
 },
 "sodium-phenylacetate": {
@@ -40279,8 +40270,8 @@
 "otherCas": [
 "1307301-38-7"
 ],
-"description": "contains two active ingredients, sodium picosulfate and magnesium citrate, which are both laxatives; structure",
-"descriptionSource": "Medical Subject Headings (MeSH)",
+"description": "Sodium picosulfate is a stimulant laxative of the diphenylmethane (triarylmethane) class. It is a prodrug that is hydrolysed by colonic bacteria to its active form, which stimulates colonic peristalsis and inhibits water absorption. It is used for the relief of constipation and, often combined with magnesium citrate, for bowel cleansing before colonoscopy or surgery.",
+"descriptionSource": "",
 "image": "/molecules/68654.png"
 },
 "sodium-polystyrene-sulfonate": {
@@ -40943,33 +40934,29 @@
 "sucroferric-oxyhydroxide": {
 "name": "SUCROFERRIC OXYHYDROXIDE",
 "cas": "",
-"cid": 91663255,
+"cid": null,
 "matched": "SUCROFERRIC OXYHYDROXIDE",
 "parentMatch": false,
-"formula": "C12H29Fe5Na2O23",
-"mw": "866.5",
-"iupac": "disodium;(2R,3R,4S,5S,6R)-2-[(2S,3S,4S,5R)-3,4-dihydroxy-2,5-bis(hydroxymethyl)oxolan-2-yl]oxy-6-(hydroxymethyl)oxane-3,4,5-triol;pentakis(iron(3+));octakis(oxygen(2-));hydroxide;trihydrate",
-"smiles": "C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CO)O)O)CO)O)O)O)O.O.O.O.[OH-].[O-2].[O-2].[O-2].[O-2].[O-2].[O-2].[O-2].[O-2].[Na+].[Na+].[Fe+3].[Fe+3].[Fe+3].[Fe+3].[Fe+3]",
-"inchikey": "FWZTTZUKDVJDCM-CEJAUHOTSA-M",
+"formula": "",
+"mw": "",
+"iupac": "",
+"smiles": "",
+"inchikey": "",
 "xlogp": null,
-"hbd": 12,
-"hba": 23,
-"tpsa": 202,
-"rotb": 5,
+"hbd": null,
+"hba": null,
+"tpsa": null,
+"rotb": null,
 "synonyms": [
-"Succharated ferric oxide",
 "Sucroferric oxyhydroxide",
-"Ferrivenin",
-"Feojectin",
-"Venoferrum",
-"Encifer",
-"Ferijet",
-"Hippiron"
+"PA21",
+"Velphoro",
+"Polynuclear iron(III)-oxyhydroxide, sucrose and starches"
 ],
 "otherCas": [],
-"description": "Iron sucrose (sucroferric oxyhydroxide or iron saccharate) is used as a source of iron in patients with iron deficiency anemia with chronic kidney disease (CKD), including those who are undergoing dialysis (hemodialysis or peritoneal) and those who do not require dialysis. Due to less side effects than iron dextran, iron sucrose is more preferred in chronic kidney disease patients.",
-"descriptionSource": "DrugBank",
-"image": "/molecules/91663255.png"
+"description": "Sucroferric oxyhydroxide is an iron-based, non-calcium phosphate binder composed of polynuclear iron(III)-oxyhydroxide, sucrose and starches. Taken orally with meals, it binds dietary phosphate in the gastrointestinal tract and reduces its absorption. It is used to control serum phosphate in adult and paediatric patients with chronic kidney disease on dialysis. It is distinct from iron sucrose, an intravenous iron replacement product.",
+"descriptionSource": "",
+"image": ""
 },
 "sugammadex-octasodium": {
 "name": "SUGAMMADEX OCTASODIUM",
@@ -41210,7 +41197,7 @@
 "otherCas": [
 "737754-28-8"
 ],
-"description": "Sulfasalazine is an azobenzene consisting of diphenyldiazene having a carboxy substituent at the 4-position, a hydroxy substituent at the 3-position and a 2-pyridylaminosulphonyl substituent at the 4'-position. It has a role as a ferroptosis inducer, an antiinfective agent, a non-steroidal anti-inflammatory drug, a gastrointestinal drug, an EC 2.5.1.18 (glutathione transferase) inhibitor and a drug allergen. It is a member of azobenzenes, a member of pyridines and a sulfonamide. It is functionally related to a sulfanilamide.",
+"description": "Sulfasalazine is an azobenzene consisting of diphenyldiazene having a carboxy substituent at the 3-position, a hydroxy substituent at the 4-position and a 2-pyridylaminosulphonyl substituent at the 4'-position. It has a role as a ferroptosis inducer, an antiinfective agent, a non-steroidal anti-inflammatory drug, a gastrointestinal drug, an EC 2.5.1.18 (glutathione transferase) inhibitor and a drug allergen. It is a member of azobenzenes, a member of pyridines and a sulfonamide. It is functionally related to a sulfanilamide.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/5339.png"
 },
@@ -42355,7 +42342,7 @@
 "otherCas": [
 "1050678-68-6"
 ],
-"description": "Testosterone is a steroid sex hormone indicated to treat primary hypogonadism and hypogonadotropic hypogonadism. Testosterone antagonizes the androgen receptor to induce gene expression that causes the growth and development of masculine sex organs and secondary sexual characteristics.  Testosterone was isolated from samples and also synthesized in 1935.",
+"description": "Testosterone is a steroid sex hormone indicated to treat primary hypogonadism and hypogonadotropic hypogonadism. Testosterone is an agonist of the androgen receptor and acts on it to induce gene expression that causes the growth and development of masculine sex organs and secondary sexual characteristics.  Testosterone was isolated from samples and also synthesized in 1935.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/6013.png"
 },
@@ -42513,7 +42500,7 @@
 "718635-93-9",
 "1381929-92-5"
 ],
-"description": "The vesicular monoamine transporter type 2 (VMAT2) inhibitors are agents that cause a depletion of neuroactive peptides such as dopamine in nerve terminals and are used to treat chorea due to neurodegenerative diseases (such as Huntington chorea) or dyskinesias due to neuroleptic medications (tardive dyskinesia). As of 2019, three VMAT2 inhibitors have become available in the United States for management of dyskinesia syndromes, each with a somewhat different spectrum of approved indications: tetrabenazine (Xenazine and generics: 2008), deutetrabenazine (Austedo: 2017) and valbenazine (Ingressa: 2017). The VMAT2 inihibitors have not been associated with serum enzyme elevations during therapy or linked to instances of clinically apparent liver injury, but they have had limited general clinical use.",
+"description": "The vesicular monoamine transporter type 2 (VMAT2) inhibitors are agents that cause a depletion of monoamines such as dopamine in nerve terminals and are used to treat chorea due to neurodegenerative diseases (such as Huntington chorea) or dyskinesias due to neuroleptic medications (tardive dyskinesia). As of 2019, three VMAT2 inhibitors have become available in the United States for management of dyskinesia syndromes, each with a somewhat different spectrum of approved indications: tetrabenazine (Xenazine and generics: 2008), deutetrabenazine (Austedo: 2017) and valbenazine (Ingrezza: 2017). The VMAT2 inhibitors have not been associated with serum enzyme elevations during therapy or linked to instances of clinically apparent liver injury, but they have had limited general clinical use.",
 "descriptionSource": "LiverTox",
 "image": "/molecules/6018.png"
 },
@@ -42639,8 +42626,8 @@
 "Achromycin hydrochloride"
 ],
 "otherCas": [],
-"description": "Tetracycline Hydrochloride (internal use) can cause developmental toxicity according to state or federal government labeling requirements.",
-"descriptionSource": "California Office of Environmental Health Hazard Assessment (OEHHA)",
+"description": "Tetracycline hydrochloride is the hydrochloride salt of tetracycline, a broad-spectrum polyketide antibiotic produced by Streptomyces species. It binds reversibly to the bacterial 30S ribosomal subunit and blocks attachment of aminoacyl-tRNA to the ribosomal A site, thereby inhibiting bacterial protein synthesis and exerting a bacteriostatic effect. It is used orally and topically for infections caused by susceptible Gram-positive and Gram-negative bacteria, rickettsiae, chlamydiae and mycoplasmas, and for acne. Use is avoided in pregnancy and in young children because of effects on developing teeth and bone.",
+"descriptionSource": "",
 "image": "/molecules/54704426.png"
 },
 "tezacaftor": {
@@ -43059,8 +43046,8 @@
 "otherCas": [
 "148159-84-6"
 ],
-"description": "Tinidazole is a 5-nitroimidazole derivative with antiprotozoal property. Although the mechanism of action has not been fully elucidated, it has been suggested that tinidazole is metabolized and yields nitrite anions and metronidazole. Metronidazole's nitro group in turn is reduced via the parasite ferredoxin, thereby generating a series of free nitro radicals including nitro anions. Toxicity is achieved via depletion of sulfhydryl groups and DNA strand breaks with multiple hits having an additive effect and ultimately leading to cell death.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Tinidazole is a 5-nitroimidazole derivative with antiprotozoal and antibacterial activity. Its nitro group is reduced by susceptible anaerobic organisms (for example via ferredoxin-linked electron transport), generating reactive nitro radical anions and other short-lived intermediates. These damage DNA, causing strand breaks and loss of helical structure, which leads to cell death. It is used to treat trichomoniasis, giardiasis, amoebiasis and bacterial vaginosis.",
+"descriptionSource": "",
 "image": "/molecules/5479.png"
 },
 "tioconazole": {
@@ -43283,8 +43270,8 @@
 "C22H37ClN2O5S"
 ],
 "otherCas": [],
-"description": "Tirofiban Hydrochloride is the hydrochloride salt form of tirofiban, a non-peptide tyrosine derivative with anticoagulant property. Tirofiban antagonizes fibrinogen binding to the platelet cell surface receptor, glycoprotein (GP) IIb/IIIA complex, one of the two purinergic receptors activated by ADP. The antagonism prevents adenylyl cyclase activation, which mediated via GP IIb/IIIa receptor complex, and results in decreased levels of cAMP and thereby interferes with platelet membrane function and subsequent platelet-platelet interaction, release of platelet granule constituents and prolongation of bleeding time.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Tirofiban hydrochloride is the hydrochloride salt of tirofiban, a non-peptide tyrosine derivative that acts as a reversible antagonist of the platelet glycoprotein (GP) IIb/IIIa receptor. By blocking fibrinogen and von Willebrand factor binding to activated GP IIb/IIIa, it inhibits the final common pathway of platelet aggregation and thrombus formation, prolonging bleeding time. It is an intravenous antiplatelet agent used in acute coronary syndromes, including patients undergoing percutaneous coronary intervention.",
+"descriptionSource": "",
 "image": "/molecules/64781.png"
 },
 "tivozanib-hcl": {
@@ -43378,7 +43365,7 @@
 "Aktob"
 ],
 "otherCas": [],
-"description": "Tobramycin is an aminoglycoside antibiotic derived from Streptomyces tenebrarius with bacteriostatic activity. Following active transport into the cell, tobramycin binds irreversibly to a specific aminoglycoside receptor on the bacterial 30S ribosomal subunit and interferes with the initiation complex between messenger RNA and the 30S subunit, thereby inhibiting initiation of protein synthesis, consequently leading to bacterial cell death. In addition, tobramycin induces misreading of the mRNA template causing incorrect amino acids to be incorporated into the growing polypeptide chain, consequently interfering with protein elongation.",
+"description": "Tobramycin is an aminoglycoside antibiotic derived from Streptomyces tenebrarius with bactericidal activity. Following active transport into the cell, tobramycin binds irreversibly to a specific aminoglycoside receptor on the bacterial 30S ribosomal subunit and interferes with the initiation complex between messenger RNA and the 30S subunit, thereby inhibiting initiation of protein synthesis, consequently leading to bacterial cell death. In addition, tobramycin induces misreading of the mRNA template causing incorrect amino acids to be incorporated into the growing polypeptide chain, consequently interfering with protein elongation.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/36294.png"
 },
@@ -43600,7 +43587,7 @@
 "Topiramatum"
 ],
 "otherCas": [],
-"description": "Topiramate is a sulfamate-substituted monosaccharide with anticonvulsant property. Although the mechanism of action has not been fully elucidated, topiramate antagonizes kainate/AMPA subtype of the glutamate receptors, which are ligand-activated cation channels that mediate the fast component of excitatory postsynaptic currents in neurons of the central nervous system. This antagonistic action results in stabilizing hyper-excited neural membranes, inhibiting repetitive neuronal firing, and decreasing propagation of synaptic impulses, thereby impedes seizure occurrences. In addition, this agent augments gamma-aminobenzoic acid (GABA) activity and thereby attenuating GABAnergic inhibitory transmission.",
+"description": "Topiramate is a sulfamate-substituted monosaccharide with anticonvulsant property. Although the mechanism of action has not been fully elucidated, topiramate antagonizes kainate/AMPA subtype of the glutamate receptors, which are ligand-activated cation channels that mediate the fast component of excitatory postsynaptic currents in neurons of the central nervous system. This antagonistic action results in stabilizing hyper-excited neural membranes, inhibiting repetitive neuronal firing, and decreasing propagation of synaptic impulses, thereby impedes seizure occurrences. In addition, this agent augments gamma-aminobutyric acid (GABA) activity, thereby enhancing GABAergic inhibitory transmission.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/5284627.png"
 },
@@ -43793,8 +43780,8 @@
 "194602-08-9",
 "53611-16-8"
 ],
-"description": "(R,R)-tramadol hydrochloride is a hydrochloride resulting from the reaction of (R,R)-tramadol with 1 molar equivalent of hydrogen chloride; the (R,R)-enantiomer of the racemic opioid analgesic tramadol hydrochloride, it exhibits ten-fold higher analgesic potency than the (S,S)-enantiomer. It has a role as an opioid analgesic, an adrenergic uptake inhibitor, a serotonergic antagonist, a muscarinic antagonist, a nicotinic antagonist, a serotonin uptake inhibitor, an antitussive, a mu-opioid receptor agonist, a kappa-opioid receptor agonist, a NMDA receptor antagonist, a delta-opioid receptor agonist and a capsaicin receptor antagonist. It contains a (R,R)-tramadol(1+). It is an enantiomer of a (S,S)-tramadol hydrochloride.",
-"descriptionSource": "ChEBI",
+"description": "Tramadol hydrochloride is the hydrochloride salt of tramadol, a centrally acting synthetic opioid analgesic marketed as a racemic mixture of the (1R,2R) and (1S,2S) enantiomers. It acts as a weak mu-opioid receptor agonist, mainly through its active metabolite O-desmethyltramadol (M1), and also inhibits neuronal reuptake of serotonin and norepinephrine, the two enantiomers contributing complementary effects. It is used for the treatment of moderate to moderately severe pain.",
+"descriptionSource": "",
 "image": "/molecules/63013.png"
 },
 "trametinib-acetic-acid": {
@@ -43996,8 +43983,8 @@
 "15AU81"
 ],
 "otherCas": [],
-"description": "Treprostinil is a carboxylic acid and a carbotricyclic compound. It has a role as a cardiovascular drug, a vasodilator agent, an antihypertensive agent, a platelet aggregation inhibitor, a vitamin K antagonist and a human blood serum metabolite.",
-"descriptionSource": "ChEBI",
+"description": "Treprostinil is a stable synthetic tricyclic analogue of prostacyclin (prostaglandin I2). It activates prostacyclin (IP) receptors, and also EP2 and DP1 receptors, causing direct vasodilation of pulmonary and systemic arterial vascular beds and inhibition of platelet aggregation. It is used for the treatment of pulmonary arterial hypertension, by subcutaneous or intravenous infusion, inhalation or oral administration depending on the product.",
+"descriptionSource": "",
 "image": "/molecules/6918140.png"
 },
 "treprostinil-diethanolamine": {
@@ -44184,8 +44171,8 @@
 "Diurene"
 ],
 "otherCas": [],
-"description": "Triamterene is a pteridine derivative with potassium-sparing diuretic property. Triamterene blocks the sodium-potassium exchange pump (Na-K-ATPase) in the luminal membrane of principal cells in the late distal tubule, cortical collecting tubule and collecting duct in the kidney. This reversible inhibition of the electrogenic sodium transport decreases the lumen-negative transepithelial potential difference and thus reduces the driving force for K+ movement into the tubular lumen resulting in the inhibition of sodium reabsorption in exchange for K+ and H+.",
-"descriptionSource": "NCI Thesaurus (NCIt)",
+"description": "Triamterene is a pteridine derivative with potassium-sparing diuretic property. Triamterene directly blocks the epithelial sodium channel (ENaC) in the luminal membrane of principal cells in the late distal tubule and collecting duct of the kidney. This inhibition of electrogenic sodium entry decreases the lumen-negative transepithelial potential difference and thus reduces the driving force for K+ and H+ secretion, resulting in modest natriuresis with potassium retention. It is used with thiazide or loop diuretics for edema and hypertension.",
+"descriptionSource": "",
 "image": "/molecules/5546.png"
 },
 "triazolam": {
@@ -44688,7 +44675,7 @@
 "otherCas": [
 "7778-49-6"
 ],
-"description": "Potassium citrate (also known as tripotassium citrate) is a potassium salt of citric acid. It is a white, hygroscopic crystalline powder. It is odorless with a saline taste. It contains 38.3% potassium by mass. In the monohydrate form it is highly hygroscopic and deliquescent. Potassium citrate is used to treat a kidney stone condition called renal tubular acidosis. Potassium Citrate is indicated also for the management of Hypocitraturic calcium oxalate nephrolithiasis.",
+"description": "Potassium citrate (also known as tripotassium citrate) is a potassium salt of citric acid. It is a white, hygroscopic crystalline powder. It is odorless with a saline taste. It contains 38.3% potassium by mass. In the monohydrate form it is highly hygroscopic and deliquescent. Potassium citrate is used to manage kidney stones associated with renal tubular acidosis. Potassium Citrate is indicated also for the management of Hypocitraturic calcium oxalate nephrolithiasis.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/13344.png"
 },
@@ -44786,7 +44773,7 @@
 "126850-08-6",
 "126850-05-3"
 ],
-"description": "Tris is a primary amino compound that is tert-butylamine in which one hydrogen attached to each methyl group is replaced by a hydroxy group. A compound widely used as a biological buffer substance in the pH range 79; pKa = 8.3 at 20 C; pKa = 7.82 at 37 C. It has a role as a buffer. It is a triol and a primary amino compound. It is a conjugate base of a member of Htris.",
+"description": "Tris is a primary amino compound that is tert-butylamine in which one hydrogen attached to each methyl group is replaced by a hydroxy group. A compound widely used as a biological buffer substance in the pH range 7-9; pKa = 8.3 at 20 C; pKa = 7.82 at 37 C. It has a role as a buffer. It is a triol and a primary amino compound. It is a conjugate base of a member of Htris.",
 "descriptionSource": "ChEBI",
 "image": "/molecules/6503.png"
 },
@@ -44817,7 +44804,7 @@
 "Tropicamidum"
 ],
 "otherCas": [],
-"description": "Tropicamide is an alkaloid atropine‐derived anticholinergic drug and a non‐selective antagonist of muscarinic acetylcholine (mACh) receptors. Usually available in ophthalmic formulations, tropicamide is used to cause mydriasis and cycloplegia for eye exams or ocular procedures. It is also used in combination with [hydroxyamphetamine] for the same indication. Oral tropicamide has been investigated as a potential drug to relieve sialorrhea in patients with Parkinson's Disease.",
+"description": "Tropicamide is a synthetic anticholinergic drug, structurally related to atropine, and a non-selective antagonist of muscarinic acetylcholine (mACh) receptors. Usually available in ophthalmic formulations, tropicamide is used to cause mydriasis and cycloplegia for eye exams or ocular procedures. It is also used in combination with hydroxyamphetamine for the same indication. Oral tropicamide has been investigated as a potential drug to relieve sialorrhea in patients with Parkinson's Disease.",
 "descriptionSource": "DrugBank",
 "image": "/molecules/5593.png"
 },
@@ -45360,7 +45347,7 @@
 "otherCas": [
 "137863-60-6"
 ],
-"description": "Valsartan is an orally active nonpeptide triazole-derived antagonist of angiotensin (AT) II with antihypertensive properties. Valsartan selectively and competitively blocks the binding of angiotensin II to the AT1 subtype receptor in vascular smooth muscle and the adrenal gland, preventing AT II-mediated vasoconstriction, aldosterone synthesis and secretion, and renal reabsorption of sodium, and resulting in vasodilation, increased excretion of sodium and water, a reduction in plasma volume, and a reduction in blood pressure.",
+"description": "Valsartan is an orally active nonpeptide tetrazole-derived antagonist of angiotensin (AT) II with antihypertensive properties. Valsartan selectively and competitively blocks the binding of angiotensin II to the AT1 subtype receptor in vascular smooth muscle and the adrenal gland, preventing AT II-mediated vasoconstriction, aldosterone synthesis and secretion, and renal reabsorption of sodium, and resulting in vasodilation, increased excretion of sodium and water, a reduction in plasma volume, and a reduction in blood pressure.",
 "descriptionSource": "NCI Thesaurus (NCIt)",
 "image": "/molecules/60846.png"
 },
@@ -46416,7 +46403,7 @@
 "otherCas": [
 "399024-19-2"
 ],
-"description": "A dideoxynucleoside compound in which the 3&#39;-hydroxy group on the sugar moiety has been replaced by an azido group. This modification prevents the formation of phosphodiester linkages which are needed for the completion of nucleic acid chains. The compound is a potent inhibitor of HIV replication, acting as a chain-terminator of viral DNA during reverse transcription. It improves immunologic function, partially reverses the HIV-induced neurological dysfunction, and improves certain other clinical abnormalities associated with AIDS. Its principal toxic effect is dose-dependent suppression of bone marrow, resulting in anemia and leukopenia.",
+"description": "A dideoxynucleoside compound in which the 3'-hydroxy group on the sugar moiety has been replaced by an azido group. This modification prevents the formation of phosphodiester linkages which are needed for the completion of nucleic acid chains. The compound is a potent inhibitor of HIV replication, acting as a chain-terminator of viral DNA during reverse transcription. It improves immunologic function, partially reverses the HIV-induced neurological dysfunction, and improves certain other clinical abnormalities associated with AIDS. Its principal toxic effect is dose-dependent suppression of bone marrow, resulting in anemia and leukopenia.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/35370.png"
 },
@@ -46755,8 +46742,8 @@
 "Zonisamida"
 ],
 "otherCas": [],
-"description": "Zonisamide is a sulfonamide anticonvulsant used as an adjunctive therapy in adults with partial-onset seizures.  Zonisamide may act by blocking repetitive firing of voltage-gated sodium channels, leading to a reduction of T-type calcium channel currents or by binding allosterically to GABA receptors. This latter action may inhibit the uptake of the inhibitory neurotransmitter GABA while enhancing the uptake of the excitatory neurotransmitter glutamate. Zonisamide represents an alternative for patients that remain refractory to established antiepileptic drugs. In 1989, it was approved for commercial use in Japan. The US and Europe approved it in 2000 and 2005, respectively.",
-"descriptionSource": "DrugBank",
+"description": "Zonisamide is a sulfonamide anticonvulsant used as an adjunctive therapy in adults with partial-onset seizures. Zonisamide may act by blocking repetitive firing of voltage-gated sodium channels and by reducing T-type calcium channel currents, and it has weak carbonic anhydrase inhibitory activity. It may also modulate GABA-mediated neuronal inhibition, although the contribution of this action is uncertain. In 1989, it was approved for commercial use in Japan. The US and Europe approved it in 2000 and 2005, respectively.",
+"descriptionSource": "",
 "image": "/molecules/5734.png"
 },
 "zopiclone": {
@@ -46788,7 +46775,7 @@
 "otherCas": [
 "1169825-88-0"
 ],
-"description": "Zopiclone is only found in individuals that have used or taken this drug. It is a novel hypnotic agent used in the treatment of insomnia. Its mechanism of action is based on modulating benzodiazepine receptors. In addition to zopiclone's benzodiazepine pharmacological properties it also has some barbiturate like properties. Zopiclone exerts its action by binding on the benzodiazepine receptor complex and modulation of the GABA<sub>B</sub>Z receptor chloride channel macromolecular complex. Both zopiclone and benzodiazepines act indiscriminately at the benzodiazepine binding site on &#945;1, &#945;2, &#945;3 and &#945;5 GABA<sub>A</sub> containing receptors as full agonists causing an enhancement of the inhibitory actions of GABA to produce the therapeutic (hypnotic and anxiolytic) and adverse effects of zopiclone.",
+"description": "Zopiclone is a cyclopyrrolone (non-benzodiazepine) hypnotic agent used in the treatment of insomnia. Its mechanism of action is based on modulating benzodiazepine receptors. In addition to zopiclone's benzodiazepine pharmacological properties it also has some barbiturate like properties. Zopiclone exerts its action by binding on the benzodiazepine receptor complex and modulation of the GABA-A receptor chloride channel macromolecular complex. Both zopiclone and benzodiazepines act indiscriminately at the benzodiazepine binding site on alpha1, alpha2, alpha3 and alpha5 GABA-A containing receptors as full agonists causing an enhancement of the inhibitory actions of GABA to produce the therapeutic (hypnotic and anxiolytic) and adverse effects of zopiclone.",
 "descriptionSource": "Toxin and Toxin Target Database (T3DB)",
 "image": "/molecules/5735.png"
 }
