@@ -1,0 +1,20 @@
+name: Live site check
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 9 * * 1'   # weekly, Monday
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/live-check.py | tee live-check.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: live-check
+          path: live-check.log
