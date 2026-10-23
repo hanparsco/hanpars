@@ -1,6 +1,6 @@
 {
- "pages": 22002,
- "indexable": 21620,
+ "pages": 22006,
+ "indexable": 21624,
  "issues": [
   {
    "name": "title missing",
@@ -30,7 +30,7 @@
   },
   {
    "name": "title < 25 chars",
-   "count": 20,
+   "count": 21,
    "sample": [
     "/zh/about-us 关于 Hanpars | Hanpars",
     "/zh/api 原料药 | Hanpars",
@@ -61,7 +61,7 @@
   },
   {
    "name": "description < 70 chars",
-   "count": 3578,
+   "count": 3579,
    "sample": [
     "/api/paliperidone-palmitate Paliperidone palmitate, CAS 199739-10-1, C39H57FN4O4.…",
     "/tr/api/avanafil Avanafil (Avanafil), CAS 330784-47-9, C23H26ClN7O3. Avanafil,…",
