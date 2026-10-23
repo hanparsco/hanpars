@@ -39,9 +39,11 @@ export function locName(lang: Lang, name: string): string {
 /** Localised name for a catalogue row: FDF product (ingredient, combinations joined), API substance, or excipient. */
 const excNames: Partial<Record<'fa' | 'zh' | 'tr', Record<string, string>>> = { zh: excZh as Record<string, string> };
 const excFns: Partial<Record<'fa' | 'zh' | 'tr', Record<string, string>>> = { zh: excFnZh as Record<string, string> };
+const excLowerCache: Partial<Record<string, Record<string, string>>> = {};
+const excLower = (lang: 'fa' | 'zh' | 'tr') => (excLowerCache[lang] ??= Object.fromEntries(Object.entries(excNames[lang] || {}).map(([k, v]) => [k.toLowerCase(), v])));
 export function catalogueName(lang: Lang, type: 'fdf' | 'api' | 'exc', name: string): string {
   if (lang === 'en') return '';
-  if (type === 'exc') return excNames[lang]?.[name] || '';
+  if (type === 'exc') { const m = excNames[lang]; if (!m) return ''; return m[name] || excLower(lang)[name.toLowerCase()] || locName(lang, name); }
   if (type === 'api') return locName(lang, name);
   const p = parseFdf(name);
   const whole = locName(lang, p.ingredient);
