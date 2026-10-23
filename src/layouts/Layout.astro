@@ -71,8 +71,7 @@ if(t)location.replace('/'+t+location.search+location.hash)}catch(e){}})();`} />}
     {(lang === 'en' || lang === 'tr') && <link rel="preload" href="/fonts/sora/Sora-SemiBold.woff2" as="font" type="font/woff2" crossorigin />}
     {(lang === 'en' || lang === 'tr') && <link rel="preload" href="/fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />}
     {lang === 'zh' && <meta http-equiv="Content-Language" content="zh-CN" />}
-    {lang === 'zh' && <link rel="preload" href="/fonts/puhuiti/regular-00.woff" as="font" type="font/woff" crossorigin />}
-    {lang === 'zh' && <link rel="stylesheet" href="/fonts/puhuiti/puhuiti.css" />}
+    {lang === 'zh' && <link rel="stylesheet" href="/fonts/noto-sc/noto-sc.css" />}
     {lang === 'zh' && <meta name="applicable-device" content="pc,mobile" />}
     {rtl && <link rel="preload" href="/fonts/narengi/NarengiNonEnVF.woff2" as="font" type="font/woff2" crossorigin />}
     <title>{title}</title>
@@ -80,7 +79,7 @@ if(t)location.replace('/'+t+location.search+location.hash)}catch(e){}})();`} />}
   <body>
     <a class="skip-link" href="#main-content">{t(lang).skip}</a>
     <Header brand={brand} />
-    <main id="main-content"><slot /></main>
+    <main id="main-content" class:list={[{ 'hanpars-zh-hans': lang === 'zh' }]}><slot /></main>
     <Footer brand={brand} />
     <script>import '../scripts/site';</script>
   </body>

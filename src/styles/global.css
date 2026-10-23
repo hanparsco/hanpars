@@ -696,11 +696,6 @@ html[lang=fa] .article-body,html[lang=fa] .article-body p,html[lang=fa] .insight
 html[lang=fa] .insight-row[lang=en] h3,html[lang=fa] .article-body h2,html[lang=fa] .article-body h3,html[lang=fa] .page-hero h1[lang=en] { font-family:'Montserrat',sans-serif; letter-spacing:-.02em; }
 html[lang=fa] .insight-row[lang=en] { text-align:left; }
 html[lang=fa] .catalogue-table td,html[lang=fa] .catalogue-table th,html[lang=fa] .catalogue-table .table-code { font-family:'Source Sans 3',sans-serif; }
-html[lang=zh-Hans] { --display:'PuHuiTi','PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif; --sans:'PuHuiTi','PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif; }
-html[lang=zh-Hans] body { font-family:var(--sans); }
-html[lang=zh-Hans] input,html[lang=zh-Hans] textarea,html[lang=zh-Hans] button,html[lang=zh-Hans] select { font-family:inherit; }
-html[lang=zh-Hans] h1,html[lang=zh-Hans] h2,html[lang=zh-Hans] h3,html[lang=zh-Hans] h4,html[lang=zh-Hans] .button,html[lang=zh-Hans] .nav-link { font-family:var(--display); letter-spacing:0; }
-html[lang=zh-Hans] h1,html[lang=zh-Hans] h2 { font-weight:700; }
 html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] select { font-family:inherit; }
 [dir=rtl] .hero:before { -webkit-mask-image:linear-gradient(-100deg,transparent 38%,#000 70%,#000 100%); mask-image:linear-gradient(-100deg,transparent 38%,#000 70%,#000 100%); }
 [dir=rtl] .hero-split:before { -webkit-mask-image:linear-gradient(-100deg,transparent 30%,#000 55%,#000 100%); mask-image:linear-gradient(-100deg,transparent 30%,#000 55%,#000 100%); }
@@ -849,8 +844,6 @@ html[lang=fa] .catalogue-table .table-request { font-family:var(--sans); }
 html[lang=zh-Hans] :is(h1,h2,h3,.lede) { word-break:auto-phrase; line-break:strict; }
 html[lang=zh-Hans] .hero h1,html[lang=zh-Hans] .invite h2 { max-width:15em; }
 html[lang=zh-Hans] :is(.kicker,.footer-group h3,.ft-group h3,.ft-label,.mol-keyfacts dt,.prod-boxed strong,.brief-legend,.portfolio-kicker,.step:before,.ra-tier-num,.exc-num,.catalogue-table th) { letter-spacing:.04em; font-size:13px; text-transform:none; }
-html[lang=zh-Hans] :is(.news-card h3,.news-summary,.exc-top) { font-family:var(--sans); }
-html[lang=zh-Hans] .news-card h3 { font-family:var(--display); }
 /* dark sections: readable lede */
 .section-navy .lede { color:var(--on-navy-muted); }
 .form-field label .opt { white-space:nowrap; flex:none; }
@@ -874,3 +867,17 @@ html:is([lang=en],[lang=tr]) :is(input,textarea,select) { font-family:var(--sans
 /* figures, codes and columns of numbers: equal-width digits */
 html:is([lang=en],[lang=tr]) :is(.num,.table-code,.cat-count-badge,.catalogue-count,.mol-keyfacts dd,.mol-table dd,.portfolio-table code,.portfolio-forms dd,.spotlight-figure strong,.hero-meta strong,.catalogue-foot) { font-variant-numeric:tabular-nums; }
 html:is([lang=en],[lang=tr]) :is(.news-summary,.exc-top) { font-family:var(--sans); }
+
+/* ================= Simplified Chinese: Noto Serif SC (hero/intro headings) + Noto Sans SC (text, UI) =================
+   Scoped to .hanpars-zh-hans, which only the header, main and footer of /zh routes carry. Roles use weights 400/500/600 only. */
+.hanpars-zh-hans { --display:'Hanpars Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif; --sans:var(--display); --zh-serif:'Hanpars Noto Serif SC', 'Songti SC', 'SimSun', serif; font-family:var(--sans); font-synthesis:none; }
+main.hanpars-zh-hans { font-size:1.0625rem; line-height:1.8; }
+.hanpars-zh-hans :is(input,textarea,select,button) { font-family:var(--sans); font-synthesis:none; }
+.hanpars-zh-hans :is(h1,h2,h3,h4) { font-family:var(--sans); font-weight:600; letter-spacing:0; }
+/* restrained editorial accent: hero and introductory section headings only */
+.hanpars-zh-hans :is(.hero h1,.page-hero h1,.prod-hero h1,.section-head h2,.spotlight h2,.invite h2) { font-family:var(--zh-serif); font-weight:600; letter-spacing:0; line-height:1.3; }
+.hanpars-zh-hans :is(strong,b) { font-weight:600; }
+.hanpars-zh-hans :is(.nav-link,label,.dropdown-panel strong) { font-weight:500; }
+.hanpars-zh-hans :is(.button,.table-request,.catalogue-pager button,.claims-filters button,.portfolio-card-title h4,.news-card h3) { font-weight:600; }
+.hanpars-zh-hans :is(p,li,.lede) { letter-spacing:0; }
+.hanpars-zh-hans :is(.num,.table-code,.cat-count-badge,.mol-keyfacts dd,.portfolio-table code,.spotlight-figure strong) { font-variant-numeric:tabular-nums; letter-spacing:0; }

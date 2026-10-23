@@ -19,7 +19,7 @@ const langs = [
   { l: 'zh', label: '中文', href: '/zh' }, { l: 'tr', label: 'Türkçe', href: '/tr' },
 ] as const;
 ---
-<footer class="site-footer" dir={dir(lang)}>
+<footer class:list={['site-footer', { 'hanpars-zh-hans': lang === 'zh' }]} dir={dir(lang)}>
   <img class="ft-watermark" src={brand === 'regulatory' ? '/brand/hanpars-regulatory-light.png' : '/brand/hanpars-logo-transparent.png'} alt="" aria-hidden="true" width="222" height="123" loading="lazy" decoding="async" />
   <div class="container ft-inner">
     <div class="ft-top">
