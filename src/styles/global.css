@@ -250,7 +250,7 @@ html[lang=fa] .dropdown-label,html[lang=zh-Hans] .dropdown-label { letter-spacin
 /* Footer */
 .site-footer { position:relative; overflow:hidden; isolation:isolate; background:radial-gradient(120% 90% at 100% 0%,#1b2a3a 0%,var(--black) 55%); color:var(--on-navy-muted); padding-top:88px; font-size:15px; border-top:1px solid #ffffff10; }
 .ft-inner { position:relative; z-index:1; }
-.ft-watermark { position:absolute; z-index:0; inset-inline-end:-6%; bottom:-14%; width:min(980px,92vw); height:auto; opacity:.045; filter:grayscale(1) brightness(2.2); pointer-events:none; user-select:none; }
+.ft-watermark { position:absolute; z-index:0; inset-inline-end:-4%; bottom:-6%; width:min(980px,92vw); height:auto; opacity:.06; filter:grayscale(1) brightness(2.2); pointer-events:none; user-select:none; }
 .ft-label { display:block; color:var(--glacier); font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; margin:0 0 18px; }
 .ft-top { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); gap:64px; padding-bottom:56px; border-bottom:1px solid var(--line-dark); }
 .ft-name { margin:0 0 14px; color:#fff; font-family:var(--display); font-weight:600; font-size:24px; letter-spacing:-.01em; line-height:1.3; }
@@ -304,7 +304,7 @@ a.ft-card:hover { border-color:#ffffff33; background:#ffffff0d; }
   .ft-offices { flex-direction:column; align-items:flex-start; gap:18px; }
   .ft-offices ul { flex-direction:column; gap:16px; }
   .ft-bottom { flex-direction:column; align-items:flex-start; }
-  .ft-watermark { width:150vw; inset-inline-end:-30vw; bottom:-3%; opacity:.05; }
+  .ft-watermark { width:118vw; inset-inline-end:-14vw; bottom:6px; opacity:.07; }
 }
 html[lang=fa] .ft-label,html[lang=fa] .ft-group h3 { letter-spacing:0; text-transform:none; font-size:14px; }
 
