@@ -54,15 +54,21 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
     : lang === 'fa'
     ? [nameFa, name, `${nameFa || name} ${fFormShort}`, `خرید ${nameFa || name}`, `قیمت ${nameFa || name}`, `واردات ${nameFa || name}`, `تأمین ${nameFa || name}`, `${nameFa || name} ${strength}`, `داروی ${nameFa || name}`, `${nameFa || name} خارجی`, `${nameFa || name} اصل`, `موارد مصرف ${nameFa || name}`, `عوارض ${nameFa || name}`, `${name} ${fFormShort}`, 'واردات دارو', 'داروی خارجی', 'داروی فوریتی', 'لیست داروهای وارداتی', 'هانیا پرسان دارو'].filter(Boolean).join('، ')
     : [name, `${name} ${eForm}`, `${name} ${strength}`, `${name} supplier`, `${name} import Iran`, `buy ${name}`, 'pharmaceutical importer Iran', 'Hanpars'].join(', ');
+  // Not typed as Drug/Product: schema.org Drug is a Product subtype, and Google then demands a price, ratings and
+  // reviews (product snippets). Hanpars publishes no prices, so the page is described as a medical page about the medicine.
+  const drugName = `${name} ${prettyName(p.form)}${strength ? ' ' + strength : ''}`;
+  const facts = [prettyName(p.form), p.route ? prettyName(p.route) : '', strength, en?.pharmClass?.length ? (Array.isArray(en.pharmClass) ? en.pharmClass[0] : en.pharmClass).replace(/\s*\[EPC\]/, '') : ''].filter(Boolean).join(' · ');
   const schema = {
-    '@context': 'https://schema.org', '@type': 'Drug', name: `${name} ${prettyName(p.form)}${strength ? ' ' + strength : ''}`,
-    nonProprietaryName: name, activeIngredient: p.ingredients.map(i => prettyName(i)).join(', '),
-    dosageForm: prettyName(p.form), administrationRoute: p.route ? prettyName(p.route) : undefined, availableStrength: strength ? { '@type': 'DrugStrength', description: strength } : undefined,
-    drugClass: en?.pharmClass?.length ? { '@type': 'DrugClass', name: (Array.isArray(en.pharmClass) ? en.pharmClass[0] : en.pharmClass).replace(/\s*\[EPC\]/, '') } : undefined,
-    description: ind ? clip(ind, 300) : undefined, inLanguage: hreflangOf[lang], identifier: entry.code,
-    manufacturer: undefined, offers: { '@type': 'Offer', availability: 'https://schema.org/InStoreOnly', seller: { '@id': 'https://hanpars.com/#organization' } },
+    '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: drugName, inLanguage: hreflangOf[lang],
+    description: ind ? clip(ind, 300) : undefined, publisher: { '@id': 'https://hanpars.com/#organization' },
+    about: {
+      '@type': 'MedicalEntity', additionalType: 'https://schema.org/Drug', name: drugName, identifier: entry.code,
+      description: facts || undefined,
+      code: { '@type': 'MedicalCode', codeValue: entry.code, codingSystem: 'Iran drug list' },
+    },
+    mentions: p.ingredients.map(i => ({ '@type': 'ChemicalSubstance', name: prettyName(i) })),
   };
-  if (nameFa && lang !== 'en') (schema as any).alternateName = nameFa;
+  if (nameFa && lang !== 'en') (schema.about as any).alternateName = nameFa;
   return { title, description, schema, name, nameFa, keywords };
 }
 
