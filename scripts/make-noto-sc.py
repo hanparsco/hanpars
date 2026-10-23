@@ -33,6 +33,16 @@ for fam, alias, src, axis, weight in (
 ):
     font = TTFont(os.path.join(PACK, src))
     font = instancer.instantiateVariableFont(font, axis)
+    # name/weight records must describe the instanced default (the originals say Thin / ExtraLight)
+    style = 'SemiBold' if fam == 'serif' else 'Regular'
+    family = 'Noto Serif SC' if fam == 'serif' else 'Noto Sans SC'
+    font['OS/2'].usWeightClass = 600 if fam == 'serif' else 400
+    nm = font['name']
+    for rec in list(nm.names):
+        if rec.nameID in (2, 17): nm.setName(style, rec.nameID, rec.platformID, rec.platEncID, rec.langID)
+        elif rec.nameID == 4: nm.setName(f'{family} {style}', 4, rec.platformID, rec.platEncID, rec.langID)
+        elif rec.nameID == 6: nm.setName(f"{family.replace(' ', '')}-{style}", 6, rec.platformID, rec.platEncID, rec.langID)
+        elif rec.nameID in (1, 16): nm.setName(family, rec.nameID, rec.platformID, rec.platEncID, rec.langID)
     cmap = font.getBestCmap()
     order, seen = [], set()
     for ch in base + used + level1:
