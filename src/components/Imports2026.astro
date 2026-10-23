@@ -128,8 +128,8 @@ const rtl = lang === 'fa';
       const cy = Math.cos(yaw), sy = Math.sin(yaw), cp = Math.cos(pitch), sp = Math.sin(pitch);
       const x1 = x * cy - z * sy, z1 = x * sy + z * cy;
       const y2 = y * cp - z1 * sp, z2 = y * sp + z1 * cp;
-      const f = Math.min(W, H) * .98 / (D + z2);
-      return [W / 2 + x1 * f, H * .47 + y2 * f, f, z2] as const;
+      const f = Math.min(W, H) * 1.12 / (D + z2);
+      return [W / 2 + x1 * f, H * .44 + y2 * f, f, z2] as const;
     };
     const line = (a: readonly number[], b: readonly number[], alpha: number, w = 1) => { ctx.strokeStyle = `rgba(150,200,255,${alpha})`; ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); };
     const draw = (now: number) => {
