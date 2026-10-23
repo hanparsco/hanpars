@@ -22906,8 +22906,8 @@
 "Amnesteem"
 ],
 "otherCas": [],
-"description": "Tretinoin, also known as all-trans-retinoic acid (ATRA), is a naturally occurring derivative of vitamin A (retinol). Retinoids such as tretinoin are important regulators of cell reproduction, proliferation, and differentiation and are used to treat acne and photodamaged skin and to manage keratinization disorders such as ichthyosis and keratosis follicularis. Tretinoin also represents the class of anticancer drugs called differentiating agents and is used in the treatment of acute promyelocytic leukemia (APL).",
-"descriptionSource": "Toxin and Toxin Target Database (T3DB)",
+"description": "Isotretinoin (13-cis-retinoic acid) is an oral and topical retinoid, a stereoisomer of tretinoin. Taken orally it markedly reduces sebaceous gland size and sebum production, normalises follicular keratinisation and reduces Cutibacterium acnes colonisation and inflammation; it is used for severe nodular or recalcitrant acne. It is highly teratogenic, so systemic use requires a pregnancy prevention programme; topical gels are used for mild to moderate acne.",
+"descriptionSource": "",
 "image": "/molecules/5282379.png"
 },
 "isradipine": {

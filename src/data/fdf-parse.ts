@@ -1,4 +1,5 @@
 /** Parse the finished-product list strings ("INGREDIENT (AS SALT) FORM ROUTE STRENGTH VOLUME") into fields. */
+import labelExclude from './label-exclude.json';
 const FORMS = ['NAIL LACQUER','SOLUTION/DROPS','SOAP','DOUCHE','STICK','DISC','GAS','LACQUER','INJECTABLE','INHALANT','TABLET','CAPSULE','INJECTION','POWDER','SOLUTION','SUSPENSION','SYRUP','CREAM','OINTMENT','GEL','DROPS','SPRAY','INHALER','AEROSOL','PATCH','SUPPOSITORY','EMULSION','LOTION','GRANULES','GRANULE','SACHET','KIT','IMPLANT','FILM','LOZENGE','PESSARY','ENEMA','CONCENTRATE','LIQUID','ELIXIR','SHAMPOO','FOAM','PASTE','INSERT','RING','DEVICE','VIAL','AMPOULE','PEN','CARTRIDGE','DISPERSION','PELLET','SYSTEM','STRIP','SWAB','LYOPHILISATE','MOUTHWASH','PLASTER','OIL','WAFER','GUM','BAR','SPONGE','TINCTURE','CHEWABLE','EFFERVESCENT','ORODISPERSIBLE','BAG','BOTTLE'];
 const ROUTES = ['NOT APPLICABLE','AURICULAR \\(OTIC\\)','INTRAPERITONEAL','ENDOTRACHEAL','TRANSTRACHEAL','INTRADERMAL','PERCUTANEOUS','INTRASPINAL','INTRAEPIDERMAL','INTRACAVITARY','INTRA-ARTICULAR','EPIDURAL','INTRAOCULAR','INTRACAVERNOUS','INTRALESIONAL','INTRAUTERINE','PERIODONTAL','EXTRACORPOREAL','INFILTRATION','ORAL','PARENTERAL','TOPICAL','RESPIRATORY','OPHTHALMIC','OTIC','NASAL','RECTAL','VAGINAL','TRANSDERMAL','SUBLINGUAL','BUCCAL','INTRAVESICAL','DENTAL','INHALATION','INTRATHECAL','INTRAVITREAL','CUTANEOUS','URETHRAL','IRRIGATION','HEMODIALYSIS','INTRAMUSCULAR','INTRAVENOUS','SUBCUTANEOUS'];
 const formRe = new RegExp('\\b(' + FORMS.join('|').replace(/\//g, '\\/') + ')\\b');
@@ -84,4 +85,11 @@ export function labelFits(labelRoutes: string[] | undefined, productRoute: strin
   const lf = new Set((labelRoutes || []).map(r => ROUTE_FAMILY[r.toUpperCase().trim()]).filter(Boolean));
   if (!lf.size || lf.has(pf)) return true;
   return (pf === 'mouth' && lf.has('oral')) || (pf === 'oral' && lf.has('mouth'));
+}
+
+/** Product groups (form|route) reviewed as not described by the key's FDA label even though the route matches. */
+const EXCL = labelExclude as Record<string, string[]>;
+export function labelUsable(key: string, info: { routes?: string[]; missing?: boolean } | undefined, p: { form: string; route: string }): boolean {
+  if (!info || info.missing || !labelFits(info.routes, p.route)) return false;
+  return !(EXCL[key] || []).includes(`${p.form}|${p.route}`);
 }

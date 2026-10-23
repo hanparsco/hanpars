@@ -647,7 +647,8 @@
 "pregnancy": "",
 "storage": "",
 "setId": "7052c055-fedf-453b-86bc-01f5465eb157",
-"effective": "20220510"
+"effective": "20220510",
+"missing": true
 },
 "bendamustine": {
 "generic": "Bendamustine Hydrochloride",
@@ -8772,7 +8773,8 @@
 "pregnancy": "Pregnancy Pregnancy Category C – Animal reproduction studies have not been conducted with chloramphenicol. There are no adequate and well-controlled studies to establish safety of this drug in pregnancy. It is not known whether chloramphenicol can cause fetal harm when administered to a pregnant woman.",
 "storage": "HOW SUPPLIED: Chloramphenicol Sodium Succinate for Injection, USP is freeze-dried in the vial. When reconstituted as directed, each vial contains a sterile solution equivalent to 100 mg of chloramphenicol per mL (1 g/10 mL). Product No. NDC No. 1115 63323-011-15 Available in packages of 10 vials. Preservative Free.",
 "setId": "aed29594-211d-49ef-813f-131975a8d0e3",
-"effective": "20241010"
+"effective": "20241010",
+"missing": true
 },
 "chlormadinone": {
 "generic": "Chlormadinone",
@@ -21173,7 +21175,8 @@
 "pregnancy": "",
 "storage": "",
 "setId": "58dd4f30-980b-44bc-9f8e-8d4626854b91",
-"effective": "20241226"
+"effective": "20241226",
+"missing": true
 },
 "ferrous glycine": {
 "generic": "Ferrous-Glycine-Sulfate",

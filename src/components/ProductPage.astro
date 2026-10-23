@@ -6,7 +6,7 @@ import { infoL } from '../data/locale-info';
 import editorial from '../data/fdf-editorial.json';
 import molecules from '../data/molecules.json';
 import portfolio from '../data/portfolio.json';
-import { parseFdf, fdfSlug, infoKey, prettyName, slugify, sameIngredientIndex, labelFits } from '../data/fdf-parse';
+import { parseFdf, fdfSlug, infoKey, prettyName, slugify, sameIngredientIndex, labelUsable } from '../data/fdf-parse';
 import { langFromPath, localePath, t, htmlLang, dir } from '../i18n';
 import { locName } from '../data/locale';
 interface Props { entry: { name: string; code: string } }
@@ -22,7 +22,7 @@ type Info = { generic:string; brand?:string; pharmClass?:string[]; moaClass?:str
 const infos = info as Record<string, Info>;
 const comboKey = p.ingredients.length > 1 ? p.ingredients.map(i => infoKey(i)).sort().join(' + ') : '';
 const parts = [...(comboKey ? [{ name: p.ingredient, key: comboKey, info: infos[comboKey] }] : []), ...(p.ingredients.length > 1 ? [] : p.ingredients.map(i => ({ name: i, key: infoKey(i), info: infos[infoKey(i)] })))];
-const fdaPart = parts.find(x => x.info && !x.info.missing && labelFits(x.info.routes, p.route));
+const fdaPart = parts.find(x => labelUsable(x.key, x.info, p));
 const edKey = comboKey || infoKey(p.ingredient);
 const ed = !fdaPart ? (editorial as Record<string, any>)[edKey] : undefined;
 const isEditorial = !!ed;

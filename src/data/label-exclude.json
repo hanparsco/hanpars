@@ -1,0 +1,333 @@
+{
+ "acetaminophen": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "aflibercept": [
+  "INJECTION, SOLUTION, CONCENTRATE|PARENTERAL"
+ ],
+ "alprazolam": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "amphotericin b": [
+  "INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION|PARENTERAL"
+ ],
+ "barium": [
+  "POWDER, FOR SUSPENSION|ORAL",
+  "SUSPENSION|ORAL"
+ ],
+ "beclomethasone dipropionate": [
+  "INHALANT|RESPIRATORY"
+ ],
+ "betamethasone": [
+  "INJECTION|PARENTERAL"
+ ],
+ "bicarbonate": [
+  "CONCENTRATE POWDER|NOT APPLICABLE",
+  "POWDER|NOT APPLICABLE"
+ ],
+ "budesonide": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "bupivacaine": [
+  "INJECTION|INTRASPINAL"
+ ],
+ "bupropion": [
+  "TABLET|ORAL"
+ ],
+ "carbamazepine": [
+  "SUSPENSION|ORAL",
+  "TABLET|ORAL"
+ ],
+ "clonidine": [
+  "TABLET|ORAL"
+ ],
+ "dapagliflozin + metformin": [
+  "TABLET|ORAL"
+ ],
+ "deferasirox": [
+  "TABLET|ORAL"
+ ],
+ "deferiprone": [
+  "TABLET, DELAYED RELEASE|ORAL"
+ ],
+ "denosumab": [
+  "INJECTION, SOLUTION|PARENTERAL"
+ ],
+ "dexamethasone": [
+  "IMPLANT|INTRAVITREAL"
+ ],
+ "diclofenac": [
+  "PLASTER|TOPICAL",
+  "GEL|TOPICAL"
+ ],
+ "diltiazem": [
+  "TABLET|ORAL"
+ ],
+ "dextromethorphan": [
+  "CAPSULE, LIQUID FILLED|ORAL",
+  "SOLUTION, DROPS|ORAL",
+  "SYRUP|ORAL",
+  "TABLET|ORAL"
+ ],
+ "dorzolamide": [
+  "SOLUTION, DROPS|OPHTHALMIC"
+ ],
+ "doxorubicin": [
+  "INJECTABLE, LIPOSOMAL|PARENTERAL"
+ ],
+ "doxycycline": [
+  "CAPSULE, DELAYED RELEASE|ORAL"
+ ],
+ "empagliflozin + metformin": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "epinephrine": [
+  "INJECTION|PARENTERAL"
+ ],
+ "everolimus": [
+  "TABLET|ORAL"
+ ],
+ "finasteride": [
+  "TABLET|ORAL"
+ ],
+ "fluocinolone acetonide": [
+  "CREAM|TOPICAL",
+  "OINTMENT|TOPICAL"
+ ],
+ "fluoride": [
+  "MOUTHWASH|DENTAL",
+  "TABLET|ORAL"
+ ],
+ "fluoxetine": [
+  "CAPSULE, DELAYED RELEASE|ORAL"
+ ],
+ "fluvoxamine": [
+  "TABLET|ORAL"
+ ],
+ "formoterol": [
+  "AEROSOL, METERED|RESPIRATORY",
+  "CAPSULE|RESPIRATORY",
+  "POWDER|RESPIRATORY",
+  "SPRAY, METERED|RESPIRATORY"
+ ],
+ "galantamine": [
+  "SOLUTION|ORAL",
+  "TABLET|ORAL"
+ ],
+ "guaifenesin": [
+  "CAPSULE, GELATIN COATED|ORAL",
+  "SYRUP|ORAL"
+ ],
+ "hydrocortisone": [
+  "CREAM|TOPICAL",
+  "OINTMENT|TOPICAL"
+ ],
+ "hydroxyurea": [
+  "CAPSULE|ORAL"
+ ],
+ "ibuprofen": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "indapamide": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "indomethacin": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "insulin aspart": [
+  "INJECTION, SOLUTION|PARENTERAL"
+ ],
+ "ipratropium + salbutamol": [
+  "SOLUTION|RESPIRATORY"
+ ],
+ "ipratropium": [
+  "SOLUTION|RESPIRATORY"
+ ],
+ "irinotecan": [
+  "INJECTION|PARENTERAL"
+ ],
+ "isosorbide dinitrate": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "ketoconazole": [
+  "CREAM|TOPICAL",
+  "LOTION|TOPICAL"
+ ],
+ "lamivudine": [
+  "SOLUTION|ORAL"
+ ],
+ "levetiracetam": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "carbidopa + levodopa": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "lithium carbonate": [
+  "TABLET|ORAL"
+ ],
+ "loteprednol etabonate": [
+  "OINTMENT|OPHTHALMIC"
+ ],
+ "lutetium psma": [
+  "INJECTION, POWDER|PARENTERAL"
+ ],
+ "megestrol": [
+  "SUSPENSION|ORAL"
+ ],
+ "melphalan": [
+  "TABLET|ORAL"
+ ],
+ "memantine": [
+  "SOLUTION|ORAL",
+  "TABLET|ORAL"
+ ],
+ "mesalazine": [
+  "CAPSULE, EXTENDED RELEASE|ORAL",
+  "GRANULE, EXTENDED RELEASE|ORAL"
+ ],
+ "linagliptin + metformin": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "methylphenidate": [
+  "TABLET|ORAL"
+ ],
+ "metoprolol": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "mitomycin": [
+  "INJECTION, POWDER, FOR SOLUTION|INTRACAVITARY"
+ ],
+ "mupirocin": [
+  "OINTMENT|TOPICAL"
+ ],
+ "naproxen": [
+  "TABLET, EXTENDED RELEASE|ORAL",
+  "CAPSULE, LIQUID FILLED|ORAL"
+ ],
+ "dexamethasone + neomycin + polymyxin b": [
+  "SUSPENSION, DROPS|OPHTHALMIC"
+ ],
+ "nifedipine": [
+  "CAPSULE, LIQUID FILLED|ORAL",
+  "TABLET|ORAL"
+ ],
+ "nitroglycerin": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "octreotide": [
+  "INJECTION, POWDER, FOR SUSPENSION, EXTENDED RELEASE|PARENTERAL",
+  "INJECTION,POWDER,EXTENDED RELEASE|PARENTERAL"
+ ],
+ "ofatumumab": [
+  "INJECTION, SOLUTION, CONCENTRATE|PARENTERAL"
+ ],
+ "oxcarbazepine": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "oxybutynin": [
+  "TABLET|ORAL"
+ ],
+ "oxycodone": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "permethrin": [
+  "SHAMPOO|TOPICAL"
+ ],
+ "polidocanol": [
+  "INJECTION, SOLUTION|PARENTERAL"
+ ],
+ "iodide": [
+  "TABLET|ORAL"
+ ],
+ "povidone iodine": [
+  "SOLUTION|TOPICAL"
+ ],
+ "pramipexole": [
+  "TABLET|ORAL"
+ ],
+ "pseudoephedrine": [
+  "SYRUP|ORAL"
+ ],
+ "quetiapine": [
+  "TABLET|ORAL"
+ ],
+ "quinidine": [
+  "TABLET|ORAL"
+ ],
+ "ranibizumab": [
+  "INJECTION, SOLUTION|PARENTERAL"
+ ],
+ "salbutamol": [
+  "SOLUTION|RESPIRATORY"
+ ],
+ "fluticasone + salmeterol": [
+  "AEROSOL, METERED|RESPIRATORY"
+ ],
+ "salmeterol": [
+  "AEROSOL, METERED|RESPIRATORY"
+ ],
+ "semaglutide": [
+  "INJECTION, SOLUTION|PARENTERAL"
+ ],
+ "sildenafil": [
+  "TABLET, ORALLY DISINTEGRATING|ORAL"
+ ],
+ "metformin + sitagliptin": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "thiosulfate": [
+  "INJECTION|PARENTERAL"
+ ],
+ "sulfasalazine": [
+  "TABLET|ORAL"
+ ],
+ "sulfur": [
+  "SOAP|TOPICAL"
+ ],
+ "tacrolimus": [
+  "CAPSULE, EXTENDED RELEASE|ORAL"
+ ],
+ "theophylline": [
+  "TABLET|ORAL"
+ ],
+ "tiotropium": [
+  "CAPSULE|RESPIRATORY"
+ ],
+ "tolterodine": [
+  "TABLET|ORAL"
+ ],
+ "tramadol": [
+  "CAPSULE|ORAL",
+  "TABLET|ORAL"
+ ],
+ "triamcinolone acetonide": [
+  "INJECTION, SUSPENSION, EXTENDED RELEASE|INTRA-ARTICULAR"
+ ],
+ "trastuzumab": [
+  "INJECTION, SOLUTION|PARENTERAL"
+ ],
+ "ulipristal": [
+  "TABLET|ORAL"
+ ],
+ "vardenafil": [
+  "TABLET|ORAL"
+ ],
+ "venlafaxine": [
+  "CAPSULE|ORAL",
+  "TABLET|ORAL"
+ ],
+ "verapamil": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ],
+ "zoledronic acid": [
+  "INJECTION|PARENTERAL",
+  "INJECTION, POWDER, FOR SOLUTION|PARENTERAL"
+ ],
+ "zolpidem": [
+  "TABLET|ORAL",
+  "TABLET, ORALLY DISINTEGRATING|ORAL"
+ ],
+ "tofacitinib": [
+  "TABLET, EXTENDED RELEASE|ORAL"
+ ]
+}
