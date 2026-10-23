@@ -130,7 +130,7 @@ const base = {
     },
     portfolio: {
       title: 'The Hanpars portfolio', discuss: 'Discuss a product', skip: 'Skip to the full reference list',
-      registered: 'Medicines registered', available: 'Available in Iran', launching: 'Launching', areas: 'Therapeutic areas',
+      registered: 'Urgent Medicines registered', available: 'Available in Iran', launching: 'Launching', areas: 'Therapeutic areas',
       browse: 'Browse by therapeutic area', browseNote: (d: string) => `Dosage forms, strengths and WHO ATC codes as licensed. Status as of ${d}.`,
       search: 'Search by molecule, ATC code or strength', cards: 'Cards', table: 'Table', allAreas: 'All areas',
       count: (n: number, a: number) => `${n} molecules across ${a} therapeutic areas`, countFiltered: ' matching your filters', clear: 'Clear filters',
