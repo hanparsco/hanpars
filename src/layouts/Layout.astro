@@ -62,6 +62,8 @@ const alternates = langs.filter(l => !onlyLang || l === onlyLang).map(l => ({ l,
     {lang !== 'zh' && <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />}
     {lang !== 'zh' && <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />}
     {lang === 'zh' && <meta http-equiv="Content-Language" content="zh-CN" />}
+    {lang === 'zh' && <link rel="preload" href="/fonts/puhuiti/regular-00.woff" as="font" type="font/woff" crossorigin />}
+    {lang === 'zh' && <link rel="stylesheet" href="/fonts/puhuiti/puhuiti.css" />}
     {lang === 'zh' && <meta name="applicable-device" content="pc,mobile" />}
     {rtl && <link rel="preload" href="/fonts/Ravagh-Regular.woff2" as="font" type="font/woff2" crossorigin />}
     {rtl && <link rel="preload" href="/fonts/Ravagh-SemiBold.woff2" as="font" type="font/woff2" crossorigin />}
