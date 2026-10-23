@@ -75,7 +75,7 @@
   }
  },
  "englishLines": {
-  "distinct": 1145,
+  "distinct": 1156,
   "top": [
    "11003× Etkin maddeler (API) :: /tr/about-us, /tr/about-us, /tr/api/abacavir-sulfate",
    "5501× 1.582 maddelik referans yelpazesi :: /tr/about-us, /tr/api/abacavir-sulfate, /tr/api/abaloparatide",
@@ -133,6 +133,16 @@
    "4× Oksazolidinon grubu antibakteriyel :: /tr/fdf/linezolid-21942, /tr/fdf/linezolid-50114, /tr/fdf/linezolid-52928",
    "4× Sistemik antifungal; triazol :: /tr/fdf/posaconazole-50722, /tr/fdf/posaconazole-51840, /tr/fdf/voriconazole-6382",
    "4× parasetamol / kafein / ibuprofen :: /tr/fdf, /tr/fdf, /tr/fdf",
+   "3× Iodixanol: 181 bin birim (Kontrast maddeler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
+   "3× Iohexol: 330 bin birim (Kontrast maddeler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
+   "3× Ampicillin: 1,2 mn birim (Anti-enfektifler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
+   "3× Hydroxychloroquine sulfate: 10,0 mn birim (Anti-enfektifler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
+   "3× Meglumine compound: 70 bin birim (Kontrast maddeler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
+   "3× Cefuroxime (as axetil): 1,0 mn birim (Anti-enfektifler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
+   "3× Vancomycin (as hydrochloride): 200 bin birim (Anti-enfektifler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
+   "3× Chloroquine phosphate: 300 bin birim (Anti-enfektifler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
+   "3× Rifampicin: 1,2 mn birim (Anti-enfektifler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
+   "3× Ampicillin / sulbactam: 144 bin birim (Anti-enfektifler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
    "3× Edetat kalsiyum disodyum :: /tr/api/edetate-calcium-disodium, /tr/fdf/edetate-calcium-disodium-1485, /tr/fdf/edetate-calcium-disodium-50075",
    "3× Demir (III) karboksimaltoz :: /tr/api/ferric-carboxymaltose, /tr/fdf/ferric-carboxymaltose-16954, /tr/fdf/ferric-carboxymaltose-53351",
    "3× Tenofovir disoproksil fumarat :: /tr/api/tenofovir-disoproxil-fumarate, /tr/fdf/tenofovir-disoproxil-fumarate-13524, /tr/fdf/tenofovir-disoproxil-fumarate-52153",
@@ -173,6 +183,7 @@
    "3× parasetamol / kodein fosfat :: /tr/fdf, /tr/fdf, /tr/fdf",
    "3× parasetamol / difenhidramin / fenilefrin :: /tr/fdf, /tr/fdf, /tr/fdf",
    "3× parasetamol / guaifenezin / fenilefrin :: /tr/fdf, /tr/fdf, /tr/fdf",
+   "2× ithal edilen birim :: /tr/about-us, /tr/import-activity",
    "2× Dibazik potasyum fosfat :: /tr/api/dibasic-potassium-phosphate, /tr/api/potassium-phosphate-dibasic",
    "2× Dibazik sodyum fosfat :: /tr/api/dibasic-sodium-phosphate, /tr/api/sodium-phosphate-dibasic",
    "2× Potasyum dihidrojen fosfat :: /tr/api/monobasic-potassium-phosphate, /tr/fdf/phosphate-potassium-monobasic-998",
@@ -315,18 +326,7 @@
    "1× klotrimazol · terbinafin · mupirosin · adapalen · tretinoin · izotretinoin · benzoil perok :: /tr/api",
    "1× estradiol · progesteron · levonorgestrel · medroksiprogesteron · misoprostol · tamsulosin  :: /tr/api",
    "1× Sistemik hormonal preparatlar :: /tr/api",
-   "1× levotiroksin sodyum · prednizolon · metilprednizolon · deksametazon · hidrokortizon · tria :: /tr/api",
-   "1× amoksisilin · seftriakson · meropenem · azitromisin · vankomisin · linezolid · levofloksas :: /tr/api",
-   "1× paklitaksel · dosetaksel · karboplatin · oksaliplatin · kapesitabin · imatinib · bortezomi :: /tr/api",
-   "1× parasetamol · pregabalin · gabapentin · levetirasetam · sertralin · essitalopram · ketiapi :: /tr/api",
-   "1× albendazol · mebendazol · ivermektin · prazikuantel · artemeter · artesunat · lumefantrin  :: /tr/api",
-   "1× H — Sistemik hormonal preparatlar :: /tr/api",
-   "1× ALBUTEROL SALBUTAMOL SULPHATE :: /tr/api",
-   "1× FDF CDMO projesi :: /tr/contact-us-1",
-   "1× RA@hanpars.com :: /tr/contact-us-1",
-   "1× Zafar Caddesi No: 326, Kat: 3 :: /tr/contact-us-1",
-   "1× sitrik asit / sodyum sitrat · sodyum hidroksit · hidroklorik asit · sodyum fosfat (mono/di :: /tr/excipient",
-   "1× 2-(4-styryl-3-sulfophenol)-6-methoxybenzotriazole :: /tr/excipient"
+   "1× levotiroksin sodyum · prednizolon · metilprednizolon · deksametazon · hidrokortizon · tria :: /tr/api"
   ]
  }
 }
