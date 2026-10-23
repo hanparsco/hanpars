@@ -1,0 +1,166 @@
+---
+/** About page: 2026 import activity — monthly customs-cleared value (bars) and molecules (bubbles). Data from the owner's block. */
+import { langFromPath } from '../i18n';
+import mols from '../data/imports-2026.json';
+const lang = langFromPath(Astro.url.pathname) as 'en' | 'fa' | 'zh' | 'tr';
+const FA = '۰۱۲۳۴۵۶۷۸۹';
+const digits = (x: string) => lang === 'fa' ? x.replace(/[0-9]/g, d => FA[+d]).replace(/\./g, '٫') : lang === 'tr' ? x.replace(/\./g, ',') : x;
+const n1 = (v: number, d = 1) => digits(v.toFixed(d));
+
+const months = [0, 0.13, 0, 1.83, 1.87, 3.80, 3.50, 9.33, 6.85, 6.04];
+const decl = [0, 1, 0, 5, 6, 10, 10, 18, 13, 15];
+
+const T = {
+  en: {
+    kicker: 'Import activity', title: 'Imports in 2026, month by month',
+    p: ['HANPARS began importing at the end of 2025 with two emergency products, misoprostol and naloxone. Through the first months of 2026 the volume grew steadily as new IRC licences were granted, and from mid-year the pace changed: monthly customs clearances passed three million euros in June and reached a peak of more than nine million euros in August, with a second strong wave in September and October.',
+        'By mid-October 2026 the company had cleared 78 customs declarations worth over 33 million euros across 30 molecules — contrast media, hormones, CNS medicines, anti-infectives and critical-care products — sourced from manufacturers in Türkiye, China and India. A further pipeline of registered orders is scheduled for the coming months.'],
+    stats: [['€33.4 M', 'customs-cleared value, Jan–Oct 2026'], ['78', 'customs declarations'], ['€9.3 M', 'peak month (August)'], ['30', 'molecules imported']],
+    m: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+    mFull: ['January 2026', 'February 2026', 'March 2026', 'April 2026', 'May 2026', 'June 2026', 'July 2026', 'August 2026', 'September 2026', 'October 2026 (to 14 Oct)'],
+    barTip: (v: number, d: number) => d ? `€${v.toFixed(2)} M · ${d} declaration${d > 1 ? 's' : ''}` : '—',
+    axis: 'Customs-cleared value per month, million euros · 2026',
+    chartTitle: 'Customs-cleared imports by month, 2026, in million euros',
+    src: 'Source: HANPARS customs declarations, 2026.', hatch: 'Hatched bar = month in progress (data to 14 October).',
+    h3: 'What we import — by molecule',
+    sub: 'Each bubble is one generic molecule imported in 2026. Bubble size reflects the relative import volume; colour is the therapeutic area. Hover or tap a bubble for quantities and shipments.',
+    note: '30 molecules and 100.8 M units cleared through customs to 14 October 2026 in 80 shipments. Hydrocortisone, clopidogrel and sertraline are the largest lines, and the contrast media together form the fastest-turning part of the portfolio.',
+    units: (u: number) => u >= 1e6 ? `${(u / 1e6).toFixed(1)} M` : `${Math.round(u / 1e3)} k`, unitWord: 'units',
+    ship: (s: number) => `${s} shipment${s > 1 ? 's' : ''}`,
+    groups: { contrast: 'Contrast media', hormones: 'Hormones & endocrinology', cns: 'CNS & psychiatry', cardio: 'Cardiovascular', antiinf: 'Anti-infectives', emergency: 'Emergency & critical care', immuno: 'Immunology & oncology support', other: 'Other specialties' },
+  },
+  fa: {
+    kicker: 'فعالیت واردات', title: 'واردات ۲۰۲۶، ماه به ماه',
+    p: ['هانیا پرسان دارو واردات را از اواخر سال ۲۰۲۵ با دو داروی فوریتی، میزوپروستول و نالوکسان، آغاز کرد. در ماه‌های نخست ۲۰۲۶ با صدور کدهای IRC جدید، حجم واردات به‌تدریج افزایش یافت و از میانهٔ سال شتاب آن تغییر کرد: ارزش ترخیص گمرکی ماهانه در ژوئن از سه میلیون یورو گذشت و در اوت به اوج بیش از نه میلیون یورو رسید؛ موج قدرتمند دوم نیز در سپتامبر و اکتبر رقم خورد.',
+        'تا اواسط اکتبر ۲۰۲۶، شرکت ۷۸ اظهارنامهٔ گمرکی به ارزش بیش از ۳۳ میلیون یورو برای ۳۰ مولکول ترخیص کرده است — داروهای حاجب، هورمون‌ها، داروهای اعصاب و روان، داروهای ضدعفونت و داروهای مراقبت‌های ویژه — که از تولیدکنندگانی در ترکیه، چین و هند تأمین شده‌اند. مجموعهٔ دیگری از سفارش‌های ثبت‌شده برای ماه‌های آینده برنامه‌ریزی شده است.'],
+    stats: [['۳۳٫۴ میلیون یورو', 'ارزش ترخیص‌شده، ژانویه تا اکتبر ۲۰۲۶'], ['۷۸', 'اظهارنامهٔ گمرکی'], ['۹٫۳ میلیون یورو', 'ماه اوج (اوت)'], ['۳۰', 'مولکول وارداتی']],
+    m: ['ژانویه', 'فوریه', 'مارس', 'آوریل', 'مه', 'ژوئن', 'ژوئیه', 'اوت', 'سپتامبر', 'اکتبر'],
+    mFull: ['ژانویه ۲۰۲۶', 'فوریه ۲۰۲۶', 'مارس ۲۰۲۶', 'آوریل ۲۰۲۶', 'مه ۲۰۲۶', 'ژوئن ۲۰۲۶', 'ژوئیه ۲۰۲۶', 'اوت ۲۰۲۶', 'سپتامبر ۲۰۲۶', 'اکتبر ۲۰۲۶ (تا ۱۴ اکتبر)'],
+    barTip: (v: number, d: number) => d ? `${n1(v, 2)} میلیون یورو · ${digits(String(d))} اظهارنامه` : '—',
+    axis: 'ارزش ترخیص گمرکی در هر ماه، میلیون یورو · ۲۰۲۶',
+    chartTitle: 'ارزش ترخیص گمرکی واردات به تفکیک ماه، ۲۰۲۶، میلیون یورو',
+    src: 'منبع: اظهارنامه‌های گمرکی هانیا پرسان دارو، ۲۰۲۶.', hatch: 'ستون هاشورخورده = ماه جاری (داده‌ها تا ۱۴ اکتبر).',
+    h3: 'چه وارد می‌کنیم — به تفکیک مولکول',
+    sub: 'هر حباب یک مولکول ژنریک وارداتی در ۲۰۲۶ است. اندازهٔ حباب حجم نسبی واردات و رنگ آن حوزهٔ درمانی را نشان می‌دهد. برای دیدن مقدار و تعداد محموله‌ها، نشانگر را روی حباب ببرید یا روی آن بزنید.',
+    note: 'تا ۱۴ اکتبر ۲۰۲۶، ۳۰ مولکول و ۱۰۰٫۸ میلیون واحد در ۸۰ محموله از گمرک ترخیص شده است. هیدروکورتیزون، کلوپیدوگرل و سرترالین بزرگ‌ترین اقلام‌اند و داروهای حاجب در مجموع پرگردش‌ترین بخش سبد را تشکیل می‌دهند.',
+    units: (u: number) => u >= 1e6 ? `${n1(u / 1e6)} میلیون` : `${digits(String(Math.round(u / 1e3)))} هزار`, unitWord: 'واحد',
+    ship: (s: number) => `${digits(String(s))} محموله`,
+    groups: { contrast: 'داروهای حاجب', hormones: 'هورمون‌ها و غدد درون‌ریز', cns: 'اعصاب و روان', cardio: 'قلب و عروق', antiinf: 'داروهای ضدعفونت', emergency: 'اورژانس و مراقبت‌های ویژه', immuno: 'ایمونولوژی و حمایت انکولوژی', other: 'سایر تخصص‌ها' },
+  },
+  zh: {
+    kicker: '进口动态', title: '2026 年逐月进口情况',
+    p: ['HANPARS 于 2025 年底开始进口，首批为米索前列醇和纳洛酮两种紧急药品。2026 年头几个月，随着新的 IRC 许可陆续获批，进口量稳步增长；年中起节奏明显加快：6 月月度清关额突破 300 万欧元，8 月达到逾 900 万欧元的峰值，9 月和 10 月又迎来第二波强劲增长。',
+        '截至 2026 年 10 月中旬，公司已完成 78 份报关单的清关，总值逾 3,300 万欧元，涵盖 30 种分子——造影剂、激素、中枢神经系统药物、抗感染药和重症监护产品——货源来自土耳其、中国和印度的生产商。另有一批已登记订单计划于未来数月到货。'],
+    stats: [['€3,340 万', '2026 年 1–10 月清关总值'], ['78', '份报关单'], ['€933 万', '峰值月份（8 月）'], ['30', '种进口分子']],
+    m: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月'],
+    mFull: ['2026 年 1 月', '2026 年 2 月', '2026 年 3 月', '2026 年 4 月', '2026 年 5 月', '2026 年 6 月', '2026 年 7 月', '2026 年 8 月', '2026 年 9 月', '2026 年 10 月（截至 10 月 14 日）'],
+    barTip: (v: number, d: number) => d ? `${Math.round(v * 100)} 万欧元 · ${d} 份报关单` : '—',
+    axis: '每月清关额（百万欧元）· 2026',
+    chartTitle: '2026 年每月清关进口额（百万欧元）',
+    src: '来源：HANPARS 2026 年报关单。', hatch: '斜纹柱 = 进行中的月份（数据截至 10 月 14 日）。',
+    h3: '我们进口什么——按分子',
+    sub: '每个气泡代表 2026 年进口的一种通用名分子。气泡大小反映相对进口量，颜色代表治疗领域。将鼠标悬停或点按气泡可查看数量和批次。',
+    note: '截至 2026 年 10 月 14 日，共有 30 种分子、1.008 亿单位分 80 批完成清关。氢化可的松、氯吡格雷和舍曲林是最大的品种，造影剂整体则是组合中周转最快的部分。',
+    units: (u: number) => { const w = u / 1e4; return `${w >= 100 ? Math.round(w) : +w.toFixed(1)} 万`; }, unitWord: '单位',
+    ship: (s: number) => `${s} 批`,
+    groups: { contrast: '造影剂', hormones: '激素与内分泌', cns: '中枢神经与精神科', cardio: '心血管', antiinf: '抗感染', emergency: '急救与重症监护', immuno: '免疫与肿瘤支持', other: '其他专科' },
+  },
+  tr: {
+    kicker: 'İthalat faaliyeti', title: '2026 ithalatı, ay ay',
+    p: ['HANPARS ithalata 2025 sonunda iki acil ürünle, misoprostol ve naloksonla başladı. 2026’nın ilk aylarında yeni IRC lisansları verildikçe hacim istikrarlı biçimde arttı; yıl ortasından itibaren tempo değişti: aylık gümrük işlemleri haziranda üç milyon euroyu aştı, ağustosta dokuz milyon euroyu geçen bir zirveye ulaştı; eylül ve ekimde ise ikinci güçlü bir dalga yaşandı.',
+        'Ekim 2026 ortasına kadar şirket, 30 molekülde 33 milyon euroyu aşan değerde 78 gümrük beyannamesini tamamladı — kontrast maddeler, hormonlar, MSS ilaçları, anti-enfektifler ve yoğun bakım ürünleri — Türkiye, Çin ve Hindistan’daki üreticilerden tedarik edildi. Kayıtlı siparişlerden oluşan yeni bir dizi önümüzdeki aylar için planlandı.'],
+    stats: [['33,4 mn €', 'gümrükten çekilen değer, Ocak–Ekim 2026'], ['78', 'gümrük beyannamesi'], ['9,3 mn €', 'zirve ay (ağustos)'], ['30', 'ithal edilen molekül']],
+    m: ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki'],
+    mFull: ['Ocak 2026', 'Şubat 2026', 'Mart 2026', 'Nisan 2026', 'Mayıs 2026', 'Haziran 2026', 'Temmuz 2026', 'Ağustos 2026', 'Eylül 2026', 'Ekim 2026 (14 Ekim’e kadar)'],
+    barTip: (v: number, d: number) => d ? `${n1(v, 2)} mn € · ${d} beyanname` : '—',
+    axis: 'Aylık gümrükten çekilen değer, milyon euro · 2026',
+    chartTitle: '2026’da aylara göre gümrükten çekilen ithalat, milyon euro',
+    src: 'Kaynak: HANPARS gümrük beyannameleri, 2026.', hatch: 'Taralı sütun = devam eden ay (veriler 14 Ekim’e kadar).',
+    h3: 'Neler ithal ediyoruz — moleküle göre',
+    sub: 'Her balon, 2026’da ithal edilen bir jenerik molekülü gösterir. Balon büyüklüğü göreli ithalat hacmini, renk ise tedavi alanını yansıtır. Miktar ve sevkiyatlar için bir balonun üzerine gelin veya dokunun.',
+    note: '14 Ekim 2026’ya kadar 30 molekül ve 100,8 milyon birim, 80 sevkiyatta gümrükten çekildi. Hidrokortizon, klopidogrel ve sertralin en büyük kalemlerdir; kontrast maddeler ise birlikte portföyün en hızlı dönen bölümünü oluşturur.',
+    units: (u: number) => u >= 1e6 ? `${n1(u / 1e6)} mn` : `${Math.round(u / 1e3)} bin`, unitWord: 'birim',
+    ship: (s: number) => `${s} sevkiyat`,
+    groups: { contrast: 'Kontrast maddeler', hormones: 'Hormonlar ve endokrinoloji', cns: 'MSS ve psikiyatri', cardio: 'Kardiyovasküler', antiinf: 'Anti-enfektifler', emergency: 'Acil ve yoğun bakım', immuno: 'İmmünoloji ve onkoloji desteği', other: 'Diğer uzmanlık alanları' },
+  },
+}[lang];
+
+const COL: Record<string, string> = { contrast: '#2a78d6', hormones: '#eb6834', cns: '#1baf7a', cardio: '#eda100', antiinf: '#e87ba4', emergency: '#008300', immuno: '#6250d6', other: '#e34948' };
+const Y0 = 262, PX = 24; // 10 M€ = 240 px
+const bars = months.map((v, i) => ({ x: 62 + i * 48, h: v * PX, v, i }));
+const ticks = [0, 2.5, 5, 7.5, 10];
+const bubbles = [...mols].sort((a, b) => b.r - a.r);
+---
+<section class="section imp" id="imports-2026">
+  <div class="container">
+    <div class="imp-top">
+      <div class="imp-copy">
+        <span class="kicker">{T.kicker}</span>
+        <h2>{T.title}</h2>
+        {T.p.map(p => <p>{p}</p>)}
+        <dl class="imp-stats">
+          {T.stats.map(([b, l]) => <div><dt>{b}</dt><dd>{l}</dd></div>)}
+        </dl>
+      </div>
+      <figure class="imp-fig imp-bars">
+        <svg viewBox="0 0 560 320" role="img" aria-label={T.chartTitle}>
+          <defs><pattern id="imp-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#24657d"/><line x1="0" y1="0" x2="0" y2="6" stroke="#fff" stroke-width="2" opacity=".55"/></pattern></defs>
+          {ticks.map(t => <><line class="imp-grid" x1="48" x2="548" y1={Y0 - t * PX} y2={Y0 - t * PX}/><text class="imp-ay" x="42" y={Y0 - t * PX + 4}>{n1(t, t % 1 ? 1 : 0)}</text></>)}
+          {bars.map(b => <g class="imp-bar" data-t={T.mFull[b.i]} data-v={T.barTip(b.v, decl[b.i])} tabindex={b.v ? 0 : undefined}>
+            <rect class="imp-hit" x={b.x - 7} y="22" width="48" height="262" />
+            {b.v > 0 && <rect class:list={['imp-r', { 'imp-partial': b.i === 9 }]} x={b.x} y={Y0 - b.h} width="34" height={b.h} rx={b.h > 8 ? 4 : 2} />}
+            {b.v > 0 && <text class="imp-val" x={b.x + 17} y={Y0 - b.h - 7}>{n1(b.v)}</text>}
+          </g>)}
+          {bars.map(b => <text class="imp-ax" x={b.x + 17} y="284">{T.m[b.i]}</text>)}
+          <text class="imp-ax imp-axt" x="298" y="310">{T.axis}</text>
+        </svg>
+        <figcaption><span>{T.src}</span><span>{T.hatch}</span></figcaption>
+        <div class="imp-tip" role="status" aria-live="polite"></div>
+      </figure>
+    </div>
+
+    <div class="imp-mol">
+      <h3>{T.h3}</h3>
+      <p class="imp-sub">{T.sub}</p>
+      <div class="imp-bwrap">
+        <figure class="imp-fig imp-bub">
+          <svg viewBox="0 0 560 563" role="img" aria-label={T.h3}>
+            {bubbles.map(m => <g class="imp-b" data-t={m.name} data-v={`${T.groups[m.group as keyof typeof T.groups]} · ${T.units(m.units)} ${T.unitWord} · ${T.ship(m.ship)}`} tabindex="0">
+              <circle cx={m.cx} cy={m.cy} r={m.r} fill={COL[m.group]} />
+              {m.label && (m.showVal
+                ? <><text class="imp-bl" x={m.cx} y={m.cy - 2} style={`font-size:${m.fs}px`} lang="en">{m.label}</text><text class="imp-bv" x={m.cx} y={m.cy + 11} style={`font-size:${m.r > 34 ? 11 : 9.1}px`}>{T.units(m.units)}</text></>
+                : <text class="imp-bl" x={m.cx} y={m.cy + 3.5} style={`font-size:${m.fs}px`} lang="en">{m.label}</text>)}
+            </g>)}
+          </svg>
+          <div class="imp-tip" role="status" aria-live="polite"></div>
+        </figure>
+        <div class="imp-legend">
+          <ul>{Object.entries(T.groups).map(([k, v]) => <li><i style={`background:${COL[k]}`}></i>{v}</li>)}</ul>
+          <p>{T.note}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('#imports-2026 .imp-fig').forEach(fig => {
+    const tip = fig.querySelector<HTMLElement>('.imp-tip')!;
+    let pinned: Element | null = null;
+    const show = (el: HTMLElement, x: number, y: number) => {
+      const r = fig.getBoundingClientRect();
+      tip.replaceChildren(Object.assign(document.createElement('b'), { textContent: el.dataset.t || '' }), document.createElement('br'), document.createTextNode(el.dataset.v || ''));
+      const left = Math.min(Math.max(x - r.left, 90), r.width - 90);
+      tip.style.left = left + 'px'; tip.style.top = (y - r.top - 10) + 'px'; tip.classList.add('on');
+    };
+    const hide = () => { tip.classList.remove('on'); pinned = null; };
+    fig.querySelectorAll<HTMLElement>('[data-t]').forEach(el => {
+      if (el.dataset.v === '—') return;
+      el.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') show(el, e.clientX, e.clientY); });
+      el.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') hide(); });
+      el.addEventListener('click', e => { e.stopPropagation(); if (pinned === el) return hide(); pinned = el; show(el, e.clientX, e.clientY); });
+      el.addEventListener('focus', () => { const b = el.getBoundingClientRect(); show(el, b.left + b.width / 2, b.top); });
+      el.addEventListener('blur', hide);
+    });
+    document.addEventListener('click', hide);
+  });
+</script>

@@ -2,6 +2,7 @@
 import PageHero from './PageHero.astro';
 import CTA from './CTA.astro';
 import FaqFa from './FaqFa.astro';
+import Imports2026 from './Imports2026.astro';
 import Catalogue from './Catalogue.astro';
 import FdfPortfolio from './FdfPortfolio.astro';
 import SupplementCatalogue from './SupplementCatalogue.astro';
@@ -35,6 +36,7 @@ const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.sta
 ---
 <PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':'sourcing'}`} action={action} photo={photo} photoAlt={photoAlt}/>
 <section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map((p: string)=><p>{p}</p>)}</div></div></section>
+{page==='about-us'&&<Imports2026/>}
 {page==='fdf'&&<FdfPortfolio/>}
 {page==='excipient'&&<ExcipientCategories/>}
 {page==='api'&&<ApiClasses/>}
