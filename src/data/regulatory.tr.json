@@ -1,5 +1,5 @@
 {
- "intro": "Ruhsatlandırma ve regülasyon, bir ilacın yaşam döngüsünün her aşamasında devrededir. İlk çalışmadan önce geliştirme planını ve regülasyon stratejisini şekillendiririz; CMC, klinik dışı ve klinik kanıtları dosyaya yerleştiririz; başvuruyu otorite incelemesinden onaya kadar yönlendiririz; ardından her varyasyon, yenileme ve değişiklikte ruhsatı güncel tutarız.",
+ "intro": "Ruhsatlandırma ve regülasyon, bir ilacın yaşam döngüsünün her aşamasında devrededir. İlk çalışmadan önce geliştirme planını ve regülasyon stratejisini şekillendiririz; CMC, klinik olmayan ve klinik kanıtları dosyaya işleriz; başvuruyu otorite incelemesinden onaya kadar yönlendiririz; ardından her varyasyon, yenileme ve değişiklikte ruhsatı güncel tutarız.",
  "coverIntro": "Biyolojik ürünler, biyobenzerler ve küçük moleküller için, geliştirmeden onaya ve sonrasına uzanan uçtan uca regülasyon stratejisi.",
  "services": [
   {
@@ -7,11 +7,11 @@
    "items": [
     "Karşılaştırmalı çalışmaların regülasyon açısından tasarımı ve incelenmesi: biyolojik ürünler için analitik ve fonksiyonel biyobenzerlik çalışmaları; küçük moleküller için farmasötik eşdeğerlik ve biyoeşdeğerlik programları",
     "CMC geliştirmesinin regülasyon açısından gözetimi: hücre bankası karakterizasyonundan veya etkin madde sentez yolu seçiminden, spesifikasyon belirleme ve stabiliteye, proses validasyonu ve teknoloji transferine kadar",
-    "Hem biyolojik hem de sentetik ürünlerde proses, saha ve ölçek değişiklikleri için karşılaştırılabilirlik ve değişiklik kontrolü protokolleri"
+    "Hem biyolojik hem de sentetik ürünlerde proses, üretim yeri ve ölçek değişiklikleri için karşılaştırılabilirlik ve değişiklik kontrolü protokolleri"
    ]
   },
   {
-   "title": "Dosya hazırlama ve hazır olma",
+   "title": "Dosya hazırlama ve başvuruya hazırlık",
    "items": [
     "CTD teknik yazım ve inceleme, Modül 1–4; eCTD hazırlığı",
     "Başvuru öncesinde regülasyon ve kalite boşluk analizi",
@@ -31,21 +31,21 @@
    "items": [
     "Bölgeler genelinde varyasyonlar, tadiller ve yenilemeler",
     "Ruhsat sonrası taahhütler ve bunların otoritelerle takibi",
-    "Ruhsat sonrası proses, saha ve tedarikçi değişikliklerinin regülasyon açısından değerlendirilmesi"
+    "Ruhsat sonrası proses, üretim yeri ve tedarikçi değişikliklerinin regülasyon açısından değerlendirilmesi"
    ]
   },
   {
    "title": "GMP ve kalite uyumu",
    "kicker": "EU GMP · PIC/S · WHO GMP · ICH Q7–Q12",
    "items": [
-    "Üretim ve test sahalarının EU GMP (Ek 1 ve Ek 2 dahil), PIC/S ve WHO gereklilikleri açısından GMP boşluk değerlendirmesi",
-    "Denetime hazırlık: sahte denetimler, ruhsat öncesi denetim hazırlığı ve ön oda / arka oda koçluğu",
+    "Üretim ve test tesislerinin EU GMP (Ek 1 ve Ek 2 dahil), PIC/S ve WHO gereklilikleri açısından GMP boşluk değerlendirmesi",
+    "Denetime hazırlık: simülasyon (mock) denetimleri, ruhsat öncesi denetim hazırlığı ve denetim odası (front room) / destek odası (back room) koçluğu",
     "Denetim bulgularına yanıt: kök neden analizi, CAPA planları ve otoriteye sunulacak takip kanıt paketleri",
-    "Site Master File (Saha Ana Dosyası), GMP sertifikası ve üretim izni başvuruları; ithal ürünler için Nitelikli Kişi (QP) beyanları",
-    "İlaç kalite sistemi tasarımı ve incelemesi: değişiklik kontrolü, sapmalar, OOS, şikâyetler ve ürün kalite gözden geçirmesi",
+    "Tesis Ana Dosyası (Site Master File), GMP sertifikası ve üretim izni başvuruları; ithal ürünler için Yetkilendirilmiş Kişi (QP) beyanları",
+    "Farmasötik kalite sistemi tasarımı ve incelemesi: değişiklik kontrolü, sapmalar, OOS, şikâyetler ve ürün kalite değerlendirmesi",
     "Veri bütünlüğü değerlendirmesi",
     "Tedarikçi ve CMO yeterlilik değerlendirmesi: denetimler, kalite ve teknik anlaşmalar ve sürekli gözetim",
-    "GMP dokümantasyonunun dosyayla uyumlu hale getirilmesi: CTD’nin söylediğini söyleyen validasyon, stabilite ve seri kayıtları"
+    "GMP dokümantasyonunun dosyayla uyumlu hale getirilmesi: CTD’de beyan edilenlerle birebir örtüşen validasyon, stabilite ve seri kayıtları"
    ]
   }
  ],
@@ -163,7 +163,7 @@
        "note": "Yeni bir etkin maddenin veya bilinen bir maddenin tam değerlendirmesi."
       },
       {
-       "name": "Daha önce yabancı onay alınmış prosedür (TPA Md. 13)",
+       "name": "Yurt dışında onaylı ürünler için prosedür (TPA Md. 13)",
        "note": "Karşılaştırılabilir bir yabancı otoritenin ruhsatına dayanan azaltılmış değerlendirme."
       },
       {
@@ -405,7 +405,7 @@
      "name": "Egyptian Drug Authority",
      "region": "Mısır",
      "format": "CTD",
-     "footnote": "WHO olgunluk düzeyi 3 otorite.",
+     "footnote": "WHO olgunluk düzeyi 3 olan otorite.",
      "procedures": [
       {
        "name": "Ruhsat (pazarlama izni)",
@@ -428,7 +428,7 @@
     {
      "id": "sahpra",
      "short": "SAHPRA",
-     "name": "South African Health Products Regulatory Authority",
+     "name": "South Afrikan Health Products Regulatory Authority",
      "region": "Güney Afrika",
      "format": "eCTD",
      "footnote": "Dayanma ve iş birliğine dayalı inceleme yolları.",
@@ -438,7 +438,7 @@
        "note": "eCTD formatında tam ulusal değerlendirme."
       },
       {
-       "name": "Dayanmaya dayalı (kısaltılmış) inceleme",
+       "name": "Referans onaya dayalı (kısaltılmış) inceleme",
        "note": "Tanınmış bir düzenleyici otorite tarafından onaylanmış ürünler için azaltılmış değerlendirme."
       },
       {
@@ -568,7 +568,7 @@
     {
      "id": "cis",
      "short": "CIS",
-     "name": "BDT — AEB dışındaki ulusal otoriteler",
+     "name": "BDT — EAEU dışındaki ulusal otoriteler",
      "region": "Özbekistan · Azerbaycan · Gürcistan",
      "format": "CTD",
      "footnote": "Rusça dosyalar ve yerel referans gereklilikleri.",
@@ -589,7 +589,7 @@
     },
     {
      "id": "africa",
-     "short": "Africa",
+     "short": "Afrika",
      "name": "Afrika — ulusal ve iş birliğine dayalı yollar",
      "region": "NAFDAC · PPB · FDA Ghana · TMDA",
      "format": "CTD",
@@ -618,8 +618,8 @@
    {
     "title": "Regülasyon istihbaratı",
     "items": [
-     "EMA, FDA, MHRA, WHO, PMDA, TGA ve ICH kılavuz yayınlarının, kavram belgelerinin ve kamuya açık danışmaların, özellikle biyolojik ürünler, biyobenzerler ve GMP odağında sürekli izlenmesi",
-     "Her değişikliğin pipeline’ınız ve pazardaki ürünleriniz üzerindeki etkisinin değerlendirilmesi; önerilen eylem ve son tarihle birlikte",
+     "EMA, FDA, MHRA, WHO, PMDA, TGA ve ICH kılavuz yayınlarının, kavram belgelerinin (concept paper) ve kamuoyu görüşüne açılan taslakların, özellikle biyolojik ürünler, biyobenzerler ve GMP odağında sürekli izlenmesi",
+     "Her değişikliğin geliştirme portföyünüz (pipeline) ve pazardaki ürünleriniz üzerindeki etkisinin değerlendirilmesi; önerilen eylem ve son tarihle birlikte",
      "Pazara giriş kararları için ülke gereklilik haritalaması ve regülasyon ortamı raporları",
      "Emsal analizi: karşılaştırılabilir ürünlere ilişkin EPAR’lar, değerlendirme raporları, onay geçmişleri ve kamuya açık otorite yazışmaları",
      "Portföyünüze ve hedef bölgelere göre hazırlanmış periyodik istihbarat bilgilendirmeleri"
@@ -628,10 +628,10 @@
    {
     "title": "Regülasyonda yapay zekâ",
     "items": [
-     "Başvuru öncesinde dosyaların güncel kılavuzlara ve otorite beklentilerine göre yapay zekâ destekli taranması: değerlendiricilerimizin ardından doğruladığı, daha hızlı bir ilk geçiş",
+     "Başvuru öncesinde dosyaların güncel kılavuzlara ve otorite beklentilerine göre yapay zekâ destekli taranması: değerlendiricilerimizin ardından doğruladığı, daha hızlı bir ilk tarama",
      "CTD modülleri arasında otomatik tutarlılık kontrolleri: spesifikasyonlar, seri verileri, stabilite beyanları ve çapraz referanslar",
      "Kaynak verilerinizden oluşturulan ve bir regülasyon uzmanı tarafından sonlandırılan, otorite sorularına yönelik yapılandırılmış ilk taslak yanıtlar",
-     "GxP düzenlemeli çalışmalarda yapay zekâ kullanımına ilişkin danışmanlık: validasyon beklentileri, veri bütünlüğü güvenceleri ve gelişmekte olan EMA ve FDA kılavuzlarıyla uyumlu dokümantasyon",
+     "GxP kapsamındaki çalışmalarda yapay zekâ kullanımına ilişkin danışmanlık: validasyon beklentileri, veri bütünlüğü güvenceleri ve yeni oluşmakta olan EMA ve FDA kılavuzlarıyla uyumlu dokümantasyon",
      "Regülasyon verilerinin standardizasyonu: IDMP/SPOR’a hazır ürün verileri ve eCTD uyumlu yayımlama"
     ]
    }

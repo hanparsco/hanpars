@@ -18,6 +18,8 @@ import namesZh from './names.zh.json';
 import namesTr from './names.tr.json';
 import excZh from './excipients.zh.json';
 import excFnZh from './excipient-functions.zh.json';
+import excTr from './excipients.tr.json';
+import excFnTr from './excipient-functions.tr.json';
 import { parseFdf } from './fdf-parse';
 
 export const pagesL = { fa: pagesFa, zh: pagesZh, tr: pagesTr } as const;
@@ -37,8 +39,8 @@ export function locName(lang: Lang, name: string): string {
 }
 
 /** Localised name for a catalogue row: FDF product (ingredient, combinations joined), API substance, or excipient. */
-const excNames: Partial<Record<'fa' | 'zh' | 'tr', Record<string, string>>> = { zh: excZh as Record<string, string> };
-const excFns: Partial<Record<'fa' | 'zh' | 'tr', Record<string, string>>> = { zh: excFnZh as Record<string, string> };
+const excNames: Partial<Record<'fa' | 'zh' | 'tr', Record<string, string>>> = { zh: excZh as Record<string, string>, tr: excTr as Record<string, string> };
+const excFns: Partial<Record<'fa' | 'zh' | 'tr', Record<string, string>>> = { zh: excFnZh as Record<string, string>, tr: excFnTr as Record<string, string> };
 const excLowerCache: Partial<Record<string, Record<string, string>>> = {};
 const excLower = (lang: 'fa' | 'zh' | 'tr') => (excLowerCache[lang] ??= Object.fromEntries(Object.entries(excNames[lang] || {}).map(([k, v]) => [k.toLowerCase(), v])));
 export function catalogueName(lang: Lang, type: 'fdf' | 'api' | 'exc', name: string): string {

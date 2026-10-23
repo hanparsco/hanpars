@@ -112,9 +112,9 @@ async function initCatalogue(catalogue: HTMLElement) {
     const end = Math.min(start + pageSize, matching.length);
     rows.forEach(row => { row.hidden = true; });
     matching.slice(start, end).forEach(row => { row.hidden = false; });
-    if (count) count.textContent = siteNum(matching.length.toLocaleString('en-US'));
+    if (count) count.textContent = siteNum(matching.length.toLocaleString(document.documentElement.lang === 'tr' ? 'tr-TR' : 'en-US'));
     if (suffix) suffix.textContent = (input?.value || statusFilter) ? (i18n.matching || 'matching your search') : (i18n.inList || 'in the list');
-    if (status) status.textContent = matching.length ? siteNum((i18n.showing || 'Showing {a}–{b} of {n} entries').replace('{a}', String(start+1)).replace('{b}', String(end)).replace('{n}', matching.length.toLocaleString('en-US'))) : (i18n.none || 'No matching entries');
+    if (status) status.textContent = matching.length ? siteNum((i18n.showing || 'Showing {a}–{b} of {n} entries').replace('{a}', String(start+1)).replace('{b}', String(end)).replace('{n}', matching.length.toLocaleString(document.documentElement.lang === 'tr' ? 'tr-TR' : 'en-US'))) : (i18n.none || 'No matching entries');
     if (pageLabel) pageLabel.textContent = siteNum(`${page+1} / ${Math.max(1,Math.ceil(matching.length/pageSize))}`);
     if (empty) empty.hidden = matching.length !== 0;
     if (prev) prev.disabled = page === 0;

@@ -2,9 +2,10 @@
 import Icon from './Icon.astro';
 import rowsEn from '../data/supplements.json';
 import supZh from '../data/supplements.zh.json';
+import supTr from '../data/supplements.tr.json';
 import { langFromPath, localePath, t } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
-const locSup: Record<string, Record<string, { name?: string; category?: string; forms?: string; use?: string }>> = { zh: supZh as any };
+const locSup: Record<string, Record<string, { name?: string; category?: string; forms?: string; use?: string }>> = { zh: supZh as any, tr: supTr as any };
 const rows = rowsEn.map(r => { const z = locSup[lang]?.[r.name]; return { ...r, loc: z?.name || '', category: z?.category || r.category, forms: z?.forms || r.forms, use: z?.use || r.use }; });
 const localized = !!locSup[lang] && Object.keys(locSup[lang]).length > 0;
 const s = t(lang).supplements;

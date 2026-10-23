@@ -19,7 +19,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const fa = lang === 'en' ? null : key ? infoFa[key] : (edAll[edKey]?.[lang] || null);
   const fForm = lang === 'en' ? '' : formL[lang](p.form, p.route);
   const fRouteRaw = lang === 'en' ? '' : (ROUTE_L[lang][p.route] || '');
-  const fRoute = fForm.includes(fRouteRaw) ? '' : fRouteRaw;
+  const fRoute = lang === 'tr' || fForm.includes(fRouteRaw) ? '' : fRouteRaw;  // Turkish KÜB form names already carry the route
   const nameFa = locName(lang, name).trim();
   const fFormShort = fForm || prettyName(p.form).split(',')[0];
   const eForm = prettyName(p.form).split(',')[0];
