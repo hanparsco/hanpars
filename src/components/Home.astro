@@ -29,6 +29,7 @@ const entries = [
   { href:'/excipient', name:s.home.entries.exc, text:s.home.entries.excText },
   { href:'/nutrition', name:s.home.entries.nut, text:s.home.entries.nutText },
 ];
+const hqBadge = ({ en: 'Head office · Tehran', fa: 'دفتر مرکزی · تهران', zh: '总部 · 德黑兰', tr: 'Genel merkez · Tahran' } as Record<string, string>)[lang];
 ---
 <section class="hero hero-split">
   <div class="container hero-grid">
@@ -70,7 +71,7 @@ const entries = [
   <div class="container company-note">
     <figure class="cn-media">
       <Photo name="tehran-alborz" class="company-photo" alt={s.home.tehranAlt} />
-      <figcaption class="cn-badge"><Icon name="pin" size={15}/>{({ en: 'Head office · Tehran', fa: 'دفتر مرکزی · تهران', zh: '总部 · 德黑兰', tr: 'Genel merkez · Tahran' } as Record<string, string>)[lang]}</figcaption>
+      <figcaption class="cn-badge"><Icon name="pin" size={15}/>{hqBadge}</figcaption>
     </figure>
     <div class="copy cn-copy">
       <span class="persian-name cn-name" lang="fa">شرکت هانیا پرسان دارو</span>
