@@ -8,6 +8,11 @@ const lang = langFromPath(Astro.url.pathname);
 const data = regulatoryL[lang];
 const r = t(lang).regulatory;
 const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a, tierName: tier.name, tierNum: tier.num })));
+const watchDate = (d: string) => {
+  if (lang !== 'fa') return d;
+  const t = Date.parse(d + ' UTC');
+  return isNaN(t) ? d : new Date(t).toLocaleDateString('fa-IR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+};
 ---
 <PageHero title={r.title} category={r.category} description={data.intro} action={r.action} href="/contact-us-1?type=regulatory" photo="dossier-signing" photoAlt={r.photoAlt}/>
 
@@ -18,7 +23,7 @@ const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a
 
 <section class="section section-navy" id="markets" data-ra-authorities><div class="container">
   <div class="section-head"><h2>{r.file}</h2><p class="lede">{data.fileIntro}</p></div>
-  <div class="ra-tiers">{data.tiers.map(tier => <div class="ra-tier"><div class="ra-tier-head"><span class="ra-tier-num">{tier.num}</span><div><h3>{tier.name}</h3><p>{tier.sub}</p></div></div><div class="ra-chips" role="group" aria-label={`${r.authorities}: ${tier.name}`}>{tier.authorities.map(a => <button type="button" data-authority={a.id} aria-pressed={a.id === 'ema' ? 'true' : 'false'} dir="ltr">{a.short}</button>)}</div></div>)}</div>
+  <div class="ra-tiers">{data.tiers.map(tier => <div class="ra-tier"><div class="ra-tier-head"><span class="ra-tier-num">{lang === 'fa' ? String(tier.num).replace(/^0+/, '') : tier.num}</span><div><h3>{tier.name}</h3><p>{tier.sub}</p></div></div><div class="ra-chips" role="group" aria-label={`${r.authorities}: ${tier.name}`}>{tier.authorities.map(a => <button type="button" data-authority={a.id} aria-pressed={a.id === 'ema' ? 'true' : 'false'} dir="ltr">{a.short}</button>)}</div></div>)}</div>
   <div class="ra-detail" aria-live="polite">{authorities.map(a => <article class="ra-authority" data-authority-panel={a.id} hidden={a.id !== 'ema'}><p class="ra-authority-tier">{a.tierName}</p><h3 dir="ltr">{a.name}</h3><p class="ra-authority-meta"><span>{a.region}</span><span>{r.format}: <span dir="ltr">{a.format}</span></span></p><h4>{r.routes}</h4><dl class="ra-routes">{a.procedures.map(p => <div><dt>{p.name}</dt><dd>{p.note}</dd></div>)}</dl>{a.footnote && <p class="ra-footnote">{a.footnote}</p>}</article>)}</div>
 </div></section>
 
@@ -30,7 +35,7 @@ const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a
 
 <section class="section" id="watch"><div class="container">
   <div class="section-head"><h2>{r.watch}</h2><p class="lede">{r.watchLede(data.watchDate)}</p></div>
-  <ul class="insight-list">{data.watch.map(item => <li><a class="insight-row ra-watch-row" href={item.url} target="_blank" rel="noopener noreferrer"><time dir="ltr">{item.date}</time><div><p class="ra-watch-agency"><span dir="ltr">{item.agency}</span> · {item.tag}</p><h3>{item.title}</h3><p>{item.summary}</p></div><span class="cat">{r.source}</span></a></li>)}</ul>
+  <ul class="insight-list">{data.watch.map(item => <li><a class="insight-row ra-watch-row" href={item.url} target="_blank" rel="noopener noreferrer"><time dir={lang === 'fa' ? 'rtl' : 'ltr'}>{watchDate(item.date)}</time><div><p class="ra-watch-agency"><span dir="ltr">{item.agency}</span> · {item.tag}</p><h3>{item.title}</h3><p>{item.summary}</p></div><span class="cat">{r.source}</span></a></li>)}</ul>
 </div></section>
 
 <CTA title={data.ctaTitle} description={data.ctaText} email={raEmail}/>

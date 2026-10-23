@@ -20,7 +20,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const fForm = lang === 'en' ? '' : formL[lang](p.form, p.route);
   const fRouteRaw = lang === 'en' ? '' : (ROUTE_L[lang][p.route] || '');
   const fRoute = lang === 'tr' || fForm.includes(fRouteRaw) ? '' : fRouteRaw;  // Turkish KÜB form names already carry the route
-  const nameFa = locName(lang, name).trim();
+  const nameFa = (lang === 'tr' ? ((x: string) => x.charAt(0).toLocaleUpperCase('tr') + x.slice(1)) : (x: string) => x)(locName(lang, name).trim());
   const fFormShort = fForm || prettyName(p.form).split(',')[0];
   const eForm = prettyName(p.form).split(',')[0];
   const dupe = duplicateInfo(entry);
@@ -69,7 +69,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
 export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) {
   const pretty = (n: string) => /[a-z]/.test(n) ? n : n.charAt(0) + n.slice(1).toLowerCase().replace(/\bhcl\b/g, 'HCl');
   const name = pretty(mol.name);
-  const nameFa = locName(lang, name).trim() || locName(lang, mol.name).trim();
+  const nameFa = (lang === 'tr' ? ((x: string) => x.charAt(0).toLocaleUpperCase('tr') + x.slice(1)) : (x: string) => x)(locName(lang, name).trim() || locName(lang, mol.name).trim());
   const pick = (c: string[]) => c.find(x => x.length <= 66) || c[c.length - 1];
   const cas = mol.cas ? ` CAS ${mol.cas}` : '';
   const title = lang === 'zh'

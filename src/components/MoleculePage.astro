@@ -24,8 +24,9 @@ const stem = slug.split('-')[0];
 const related = Object.entries(all).filter(([k, v]) => k !== slug && k.split('-')[0] === stem && v.cid).slice(0, 8);
 const enquiry = L(`/contact-us-1?type=sourcing&product=${encodeURIComponent(mol.name)}`);
 const num = (v: number | null | undefined, d = 1) => (v === null || v === undefined) ? '—' : Number(v).toLocaleString('en-US', { maximumFractionDigits: d });
-const locTitle = lang === 'en' ? '' : (locName(lang, displayName) || locName(lang, mol.name) || '');
-const nameBoth = locTitle ? `${locTitle} (${displayName})` : displayName;
+const locTitle0 = lang === 'en' ? '' : (locName(lang, displayName) || locName(lang, mol.name) || '');
+const locTitle = lang === 'tr' && locTitle0 ? locTitle0.charAt(0).toLocaleUpperCase('tr') + locTitle0.slice(1) : locTitle0;
+const nameBoth = locTitle ? (lang === 'zh' ? `${locTitle}（${displayName}）` : `${locTitle} (${displayName})`) : displayName;
 const seoNote = ({
   en: `${displayName}${mol.cas ? ' (CAS ' + mol.cas + ')' : ''}: sourcing and import of this active pharmaceutical ingredient (API) for manufacturers in Iran, with DMF/CEP and GMP documentation, by Haniya Parsan Darou Co. (Hanpars), importer of pharmaceutical raw materials and excipients.`,
   fa: `${nameBoth}${mol.cas ? '، شمارهٔ CAS ' + mol.cas : ''}: تأمین و واردات مادهٔ اولیهٔ دارویی (API) ${locTitle || displayName} با مستندات DMF/CEP و GMP برای تولیدکنندگان ایرانی؛ شرکت هانیا پرسان دارو واردکنندهٔ مواد اولیهٔ دارویی و مواد اولیهٔ جانبی (اکسیپینت) است.`,
@@ -39,13 +40,13 @@ const seoNote = ({
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={L('/')}>{s.breadcrumbHome}</a><span aria-hidden="true">/</span><a href={L('/api')}>{m.range}</a><span aria-hidden="true">/</span><span lang="en" dir="ltr">{displayName}</span></nav>
     <p class="kicker kicker-light">{m.kicker}</p>
     <h1>{locTitle ? <><span lang={htmlLang[lang]} dir={dir(lang)}>{locTitle}</span><span class="h1-en" lang="en" dir="ltr">{displayName}</span></> : <span lang="en" dir="ltr">{displayName}</span>}</h1>
-    <dl class="mol-keyfacts" lang="en" dir="ltr">
-      {mol.cas && <div><dt>{m.cas}</dt><dd>{mol.cas}</dd></div>}
-      {mol.formula && <div><dt>{m.formula}</dt><dd set:html={formulaHtml}/></div>}
-      {mw && <div><dt>{m.mw}</dt><dd>{mw} g/mol</dd></div>}
+    <dl class="mol-keyfacts">
+      {mol.cas && <div><dt>{m.cas}</dt><dd lang="en" dir="ltr">{mol.cas}</dd></div>}
+      {mol.formula && <div><dt>{m.formula}</dt><dd lang="en" dir="ltr" set:html={formulaHtml}/></div>}
+      {mw && <div><dt>{m.mw}</dt><dd lang="en" dir="ltr">{mw} g/mol</dd></div>}
     </dl>
-    <p class="prod-seo-note" lang={htmlLang[lang]} dir={dir(lang)}>{seoNote}</p>
     <div class="hero-actions"><a class="button button-light" href={enquiry}>{m.enquire}</a><a class="text-link" href={L('/api')}>{m.back}</a></div>
+    <p class="prod-seo-note" lang={htmlLang[lang]} dir={dir(lang)}>{seoNote}</p>
   </div>
   <figure class="mol-structure">{mol.image ? <img src={mol.image} alt={`${displayName} — 2D structure`} width="320" height="320" loading="eager" decoding="async"/> : <div class="mol-nostructure">{m.noStructure}</div>}<figcaption>{m.structureCaption}</figcaption></figure>
 </div></section>
@@ -55,12 +56,12 @@ const seoNote = ({
     {(faDesc || mol.description) && <div class="mol-about"><h2>{m.about}</h2>{faDesc ? <p>{faDesc}</p> : <p lang="en" dir="ltr">{mol.description}</p>}{mol.descriptionSource && <p class="form-hint">{m.source}: {mol.descriptionSource}{viaPubchem}</p>}</div>}
     {mol.parentMatch && <p class="archive-note">{m.parentNote(mol.matched || '')}</p>}
     <h2>{m.identifiers}</h2>
-    <dl class="mol-table" lang="en" dir="ltr">
-      {mol.iupac && <div><dt>{m.iupac}</dt><dd class="mol-wrap">{mol.iupac}</dd></div>}
-      {mol.inchikey && <div><dt>InChIKey</dt><dd class="mol-mono">{mol.inchikey}</dd></div>}
-      {mol.smiles && <div><dt>SMILES</dt><dd class="mol-mono mol-wrap">{mol.smiles}</dd></div>}
-      {mol.otherCas && mol.otherCas.length > 0 && <div><dt>{m.otherCas}</dt><dd>{mol.otherCas.join(' · ')}</dd></div>}
-      {mol.cid && <div><dt>PubChem CID</dt><dd><a class="text-link" href={`https://pubchem.ncbi.nlm.nih.gov/compound/${mol.cid}`} target="_blank" rel="noopener noreferrer">{mol.cid}</a></dd></div>}
+    <dl class="mol-table">
+      {mol.iupac && <div><dt>{m.iupac}</dt><dd lang="en" dir="ltr" class="mol-wrap">{mol.iupac}</dd></div>}
+      {mol.inchikey && <div><dt>InChIKey</dt><dd lang="en" dir="ltr" class="mol-mono">{mol.inchikey}</dd></div>}
+      {mol.smiles && <div><dt>SMILES</dt><dd lang="en" dir="ltr" class="mol-mono mol-wrap">{mol.smiles}</dd></div>}
+      {mol.otherCas && mol.otherCas.length > 0 && <div><dt>{m.otherCas}</dt><dd lang="en" dir="ltr">{mol.otherCas.join(' · ')}</dd></div>}
+      {mol.cid && <div><dt>PubChem CID</dt><dd lang="en" dir="ltr"><a class="text-link" href={`https://pubchem.ncbi.nlm.nih.gov/compound/${mol.cid}`} target="_blank" rel="noopener noreferrer">{mol.cid}</a></dd></div>}
     </dl>
     {mol.synonyms && mol.synonyms.length > 0 && <><h2>{m.synonyms}</h2><p class="mol-synonyms" lang="en" dir="ltr">{mol.synonyms.join(' · ')}</p></>}
   </div>

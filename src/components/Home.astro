@@ -46,7 +46,7 @@ const entries = [
   <div class="container">
     <div class="trio-head"><h2>{s.home.threeTitle}</h2><p class="lede">{s.home.threeLede}</p></div>
     <div class="trio">{s.home.three.map((item, i) => <article class="trio-card">
-      <div class="trio-top"><span class="trio-icon" aria-hidden="true" set:html={trioIcons[i]}/><span class="trio-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span></div>
+      <div class="trio-top"><span class="trio-icon" aria-hidden="true" set:html={trioIcons[i]}/><span class="trio-num" aria-hidden="true">{(lang === 'fa' ? String(i + 1) : String(i + 1).padStart(2, '0'))}</span></div>
       <h3>{item.title}</h3>
       <p>{item.text}</p>
       <div class="trio-links"><a class="trio-link" href={L(item.href)}><span>{item.link}</span><span class="trio-arrow" aria-hidden="true">{lang === 'fa' ? '←' : '→'}</span></a>{(item as any).link2 && <a class="trio-link" href={L((item as any).href2)}><span>{(item as any).link2}</span><span class="trio-arrow" aria-hidden="true">{lang === 'fa' ? '←' : '→'}</span></a>}</div>

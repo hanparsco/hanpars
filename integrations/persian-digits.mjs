@@ -8,7 +8,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const FA = '۰۱۲۳۴۵۶۷۸۹';
-const toFa = (s) => s.replace(/[0-9]/g, (d) => FA[d.charCodeAt(0) - 48]);
+const toFa = (s) => s.replace(/(\d),(?=\d{3}(?!\d))/g, '$1٬').replace(/[0-9]/g, (d) => FA[d.charCodeAt(0) - 48]);
 const VOID = new Set(['area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr']);
 
 export function convertHtml(html) {

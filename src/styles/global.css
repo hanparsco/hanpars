@@ -1,5 +1,7 @@
 
 /* Ravagh Pro — Persian */
+@font-face { font-family:'Montserrat'; src:url('/fonts/latin/montserrat-var.woff') format('woff'); font-weight:100 900; font-display:swap; }
+@font-face { font-family:'Source Sans 3'; src:url('/fonts/latin/source-sans-3-var.woff') format('woff'); font-weight:200 900; font-display:swap; }
 @font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Light.woff2') format('woff2'); font-weight:300; font-display:swap; }
 @font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Regular.woff2') format('woff2'); font-weight:400; font-display:swap; }
 @font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Medium.woff2') format('woff2'); font-weight:500; font-display:swap; }
@@ -210,7 +212,7 @@ html[lang=fa] .dropdown-label,html[lang=zh-Hans] .dropdown-label { letter-spacin
 .company-note .address { font-family:var(--sans); font-size:16px; line-height:1.6; color:var(--ink); margin:8px 0 24px; font-style:normal; padding-top:20px; border-top:1px solid var(--line); }
 .company-note .address small { display:block; font-size:15px; color:var(--muted); margin-top:6px; }
 .company-note .copy p { font-size:18px; line-height:1.7; color:var(--ink); }
-.persian-name { font-size:22px; color:var(--lapis-deep); direction:rtl; display:block; margin-bottom:14px; text-align:center; font-family:'Vazirmatn','Noto Naskh Arabic',sans-serif; font-weight:500; }
+.persian-name { font-size:22px; color:var(--lapis-deep); direction:rtl; display:block; margin-bottom:14px; text-align:start; font-family:'Vazirmatn','Noto Naskh Arabic',sans-serif; font-weight:500; }
 
 /* Steps — the one real sequence */
 .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:48px; counter-reset:step; list-style:none; padding:0; margin:0; }
@@ -247,7 +249,7 @@ html[lang=fa] .dropdown-label,html[lang=zh-Hans] .dropdown-label { letter-spacin
 
 /* Footer */
 .site-footer { background:var(--black); color:var(--on-navy-muted); padding-top:80px; font-size:15px; border-top:1px solid #ffffff10; }
-.footer-main { display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1.1fr; gap:48px; padding-bottom:64px; }
+.footer-main { display:grid; grid-template-columns:1.4fr repeat(5,minmax(0,1fr)); gap:40px; padding-bottom:64px; }
 .footer-intro p { margin:26px 0 0; color:var(--on-navy); font-size:16px; line-height:1.7; max-width:24em; }
 .footer-intro .brand { width:219px; }
 .footer-phone { display:inline-block; margin-top:18px; color:#fff; }
@@ -320,13 +322,14 @@ html[lang=fa] .dropdown-label,html[lang=zh-Hans] .dropdown-label { letter-spacin
 .catalogue-table { width:100%; border-collapse:collapse; text-align:start; font-size:16px; }
 .catalogue-table th { position:sticky; top:0; z-index:2; background:var(--white); font-size:13px; color:var(--muted); font-weight:500; padding:14px 0; padding-inline-end:20px; border-bottom:1px solid var(--line); letter-spacing:.02em; }
 .section-paper .catalogue-table th { background:var(--paper); }
+.catalogue-table th { text-align:start; }
 .catalogue-table th { background:var(--white); }
-.catalogue-table td { padding:15px 20px 15px 0; border-bottom:1px solid var(--line); vertical-align:top; }
+.catalogue-table td { padding-block:15px; padding-inline:0 20px; border-bottom:1px solid var(--line); vertical-align:top; }
 .catalogue-table tbody tr:hover td { background:#ffffff80; }
 .catalogue-table td:last-child,.catalogue-table th:last-child { white-space:nowrap; padding-inline-end:0; text-align:end; }
 .catalogue-table .table-request { font-size:14.5px; color:var(--lapis); border-bottom:1px solid transparent; }
 .catalogue-table .table-request:hover { border-bottom-color:var(--lapis); }
-.catalogue-table .table-code { color:var(--muted); font-size:15px; }
+.catalogue-table .table-code { color:var(--muted); font-size:15px; white-space:nowrap; }
 .catalogue-empty { padding:50px 0; color:var(--muted); }
 .catalogue-foot { padding:18px 0; display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--line); font-size:14px; color:var(--muted); }
 .catalogue-pager { display:flex; gap:10px; align-items:center; }
@@ -537,7 +540,7 @@ html[lang=fa] .brief-legend { letter-spacing:0; font-size:14px; text-transform:n
 .exc-tile-head strong { font-family:var(--display); font-weight:600; font-size:15.5px; line-height:1.3; color:var(--navy); }
 .exc-tile-head small { font-size:12.5px; color:var(--faint); white-space:nowrap; }
 .exc-tile a:hover .exc-tile-head strong { color:var(--lapis); }
-.exc-top { font-family:'Source Sans 3',sans-serif; font-size:13.5px; line-height:1.55; color:var(--muted); text-align:left; }
+.exc-top { font-family:'Source Sans 3',system-ui,sans-serif; font-size:13.5px; line-height:1.55; color:var(--muted); text-align:start; }
 html[lang=fa] .exc-tile-head strong { font-size:16px; }
 @media(max-width:1000px) { .exc-index { grid-template-columns:1fr 1fr; } }
 @media(max-width:640px) { .exc-index { grid-template-columns:1fr; } .exc-tile a { padding:16px 16px 18px; } }
@@ -619,21 +622,22 @@ html[lang=fa] .exc-tile-head strong { font-size:16px; }
 @media(max-width:640px) { .news-grid { grid-template-columns:1fr; gap:32px; } }
 
 /* ---------- Persian / RTL ---------- */
-html[lang=fa] { --display:'Ravagh','Montserrat',sans-serif; --sans:'Ravagh','Source Sans 3',sans-serif; }
+html[lang=fa] { --display:'HpLatinD','Ravagh','Montserrat',system-ui,sans-serif; --sans:'HpLatin','Ravagh','Source Sans 3',system-ui,sans-serif; }
 html[lang=fa] body { font-size:17px; line-height:1.9; }
 html[lang=fa] h1,html[lang=fa] h2,html[lang=fa] h3,html[lang=fa] h4 { letter-spacing:0; line-height:1.4; font-weight:600; }
 html[lang=fa] h1 { font-size:clamp(32px,4vw,54px); line-height:1.35; }
-html[lang=fa] .hero h1 { line-height:1.35; }
+html[lang=fa] .hero h1 { line-height:1.35; max-width:15em; }
 html[lang=fa] .kicker,html[lang=fa] .footer-group h3,html[lang=fa] .step:before,html[lang=fa] .ra-tier-num { letter-spacing:0; text-transform:none; font-size:13.5px; }
 html[lang=fa] .button,html[lang=fa] .nav-link,html[lang=fa] .text-link,html[lang=fa] .area-list a,html[lang=fa] .link-list a { letter-spacing:0; }
 html[lang=fa] .lede,html[lang=fa] p { line-height:1.9; }
 html[lang=fa] .num,html[lang=fa] .spotlight-figure strong { letter-spacing:0; }
 html[lang=fa] .persian-name { font-family:var(--display); }
-html[lang=fa] [dir=ltr],html[lang=fa] [lang=en] { font-family:'Montserrat','Source Sans 3',sans-serif; }
+html[lang=fa] [dir=ltr],html[lang=fa] [lang=en] { font-family:'Montserrat','Source Sans 3',system-ui,sans-serif; }
+html[lang=fa] [lang=en] [lang=fa],html[lang=fa] [dir=ltr] [dir=rtl] { font-family:var(--sans); }
 html[lang=fa] [data-fa-digits] { font-family:var(--display); letter-spacing:0; unicode-bidi:isolate; }
-html[lang=fa] .article-body,html[lang=fa] .article-body p,html[lang=fa] .insight-row h3,html[lang=fa] .insight-row p { font-family:'Source Sans 3',sans-serif; line-height:1.6; }
-html[lang=fa] .insight-row h3,html[lang=fa] .article-body h2,html[lang=fa] .article-body h3,html[lang=fa] .page-hero h1[lang=en] { font-family:'Montserrat',sans-serif; letter-spacing:-.02em; }
-html[lang=fa] .insight-row { text-align:left; }
+html[lang=fa] .article-body,html[lang=fa] .article-body p,html[lang=fa] .insight-row[lang=en] h3,html[lang=fa] .insight-row[lang=en] p { font-family:'Source Sans 3',sans-serif; line-height:1.6; }
+html[lang=fa] .insight-row[lang=en] h3,html[lang=fa] .article-body h2,html[lang=fa] .article-body h3,html[lang=fa] .page-hero h1[lang=en] { font-family:'Montserrat',sans-serif; letter-spacing:-.02em; }
+html[lang=fa] .insight-row[lang=en] { text-align:left; }
 html[lang=fa] .catalogue-table td,html[lang=fa] .catalogue-table th,html[lang=fa] .catalogue-table .table-code { font-family:'Source Sans 3',sans-serif; }
 html[lang=zh-Hans] { --display:'PuHuiTi','PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif; --sans:'PuHuiTi','PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif; }
 html[lang=zh-Hans] body { font-family:var(--sans); }
@@ -657,10 +661,38 @@ html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] se
 .lang-panel a.current { background:var(--paper); }
 .lang-panel a.current strong:after { content:' ✓'; color:var(--lapis); }
 [dir=rtl] .breadcrumbs { direction:rtl; }
-[dir=rtl] .catalogue-table td[dir=ltr] { text-align:left; }
+[dir=rtl] .catalogue-table td[dir=ltr] { text-align:right; }
 @media(max-width:1000px) { [dir=rtl] .hero:before { -webkit-mask-image:linear-gradient(180deg,transparent 45%,#000 100%); mask-image:linear-gradient(180deg,transparent 45%,#000 100%); } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*:before,*:after { transition:none!important; animation:none!important; } }
 
 /* Localised product/substance name in the H1 with the English name underneath */
 h1 .h1-en { display: block; font-size: .5em; font-weight: 500; opacity: .78; margin-top: .35em; letter-spacing: 0; }
 .prod-seo-note { margin-top: 1.1rem; font-size: .9rem; line-height: 1.7; opacity: .82; max-width: 62ch; }
+
+/* Latin letters inside Persian text: use the Latin faces (Ravagh's Latin glyphs collide, and its % and · read as Persian signs) */
+@font-face { font-family:'HpLatin'; src:url('/fonts/latin/source-sans-3-var.woff') format('woff'); font-weight:200 900; font-display:swap; unicode-range:U+0041-005A,U+0061-007A,U+00B5,U+00B7,U+00C0-024F,U+0025,U+03BC,U+2122,U+00AE; }
+@font-face { font-family:'HpLatinD'; src:url('/fonts/latin/montserrat-var.woff') format('woff'); font-weight:100 900; font-display:swap; unicode-range:U+0041-005A,U+0061-007A,U+00B5,U+00B7,U+00C0-024F,U+0025,U+03BC,U+2122,U+00AE; }
+/* Left-to-right runs (English names, codes, emails) inside right-to-left pages line up with the Persian text */
+[dir=rtl] [dir=ltr]:not(td,th,input,textarea,pre,code,.mol-mono) { text-align:right; }
+[dir=rtl] .footer-group>a[dir=ltr] { text-align:right; }
+html[lang=fa] [data-fa-digits] { word-spacing:.3em; }
+html[lang=fa] .step:before { content:counter(step); }
+html[lang=fa] .mol-keyfacts dt,html[lang=fa] .prod-boxed strong,html[lang=fa] .portfolio-kicker,html[lang=fa] .dropdown-label,html[lang=fa] .ra-watch-agency { letter-spacing:0; text-transform:none; font-size:13.5px; }
+html[lang=fa] .link-list[lang=en] a,html[lang=fa] .link-list[lang=en] small { font-family:'Montserrat','Source Sans 3',system-ui,sans-serif; }
+html[lang=fa] .catalogue-table .cat-loc { font-family:var(--sans); }
+html[lang=fa] .form-field label .req { font-family:'Source Sans 3',system-ui,sans-serif; font-size:1.1em; }
+[dir=rtl] .h1-en { text-align:right; }
+@media(max-width:560px) { .breadcrumbs { flex-wrap:wrap; gap:4px 8px; } .breadcrumbs>span:last-child { flex-basis:100%; } }
+/* Supplement table: stacked rows on phones (same pattern as the excipient table) */
+@media(max-width:640px) {
+  .claims-table thead { display:none; }
+  .claims-table,.claims-table tbody { display:block; width:100%; }
+  .claims-table tr { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:4px 16px; padding:14px 0; border-bottom:1px solid var(--line); }
+  .claims-table tr[hidden] { display:none; }
+  .claims-table td { display:block; padding:0; border:0; min-width:0!important; text-align:start; }
+  .claims-table td.claims-substance { grid-column:1; font-weight:500; color:var(--navy); }
+  .claims-table td.claims-rel,.claims-table td.claims-claim { grid-column:1; font-size:13.5px; color:var(--muted); }
+  .claims-table td:last-child { grid-column:2; grid-row:1 / span 4; align-self:start; text-align:end; }
+  [dir=rtl] .catalogue-table-exc td,[dir=rtl] .catalogue-table-exc td[dir=ltr] { text-align:right; }
+  [dir=rtl] .catalogue-table-exc td:last-child { text-align:left; }
+}
