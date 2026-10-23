@@ -1,6 +1,6 @@
 {
  "lang": "tr",
- "pages": 5500,
+ "pages": 5501,
  "issues": {
   "description not in target language": {
    "count": 141,
@@ -77,8 +77,8 @@
  "englishLines": {
   "distinct": 1145,
   "top": [
-   "11001× Etkin maddeler (API) :: /tr/about-us, /tr/about-us, /tr/api/abacavir-sulfate",
-   "5500× 1.582 maddelik referans yelpazesi :: /tr/about-us, /tr/api/abacavir-sulfate, /tr/api/abaloparatide",
+   "11003× Etkin maddeler (API) :: /tr/about-us, /tr/about-us, /tr/api/abacavir-sulfate",
+   "5501× 1.582 maddelik referans yelpazesi :: /tr/about-us, /tr/api/abacavir-sulfate, /tr/api/abaloparatide",
    "1584× API referans yelpazesi :: /tr/api/abacavir-sulfate, /tr/api/abaloparatide, /tr/api/abemaciclib",
    "392× burun spreyi · nazal ·   · :: /tr/fdf/azelastine-hydrochloride-21088, /tr/fdf/azelastine-hydrochloride-21088, /tr/fdf/azelastine-hydrochloride-21088",
    "194× gastro-rezistan tablet · oral · :: /tr/fdf/acamprosate-9245, /tr/fdf/asa-acetylsalicylic-acid-106, /tr/fdf/asa-acetylsalicylic-acid-106",
