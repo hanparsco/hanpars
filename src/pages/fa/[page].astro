@@ -4,13 +4,14 @@ import StandardPage from '../../components/StandardPage.astro';
 import RegulatoryPage from '../../components/RegulatoryPage.astro';
 import ContactPage from '../../components/ContactPage.astro';
 import InsightsPage from '../../components/InsightsPage.astro';
+import ImportActivityPage from '../../components/ImportActivityPage.astro';
 import NewsPage from '../../components/NewsPage.astro';
 import { pages, type PageKey } from '../../data/pages';
 import { pagesFa } from '../../data/pages.fa';
 import { pageKeywords } from '../../data/seo-keywords';
 
 export function getStaticPaths() {
-  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news'].map(page=>({params:{page}}));
+  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news', 'import-activity'].map(page=>({params:{page}}));
 }
 const page = Astro.params.page!;
 const special: Record<string, { title: string; description: string }> = {
@@ -24,14 +25,15 @@ const special: Record<string, { title: string; description: string }> = {
   'culture': { title: 'شیوهٔ کار ما | هانیا پرسان دارو', description: 'اصولی که هانیا پرسان دارو در هر درخواست تأمین، واردات و ثبت دارو به کار می‌گیرد: شفافیت، مستندات کامل و یک مسئول پاسخ‌گو.' },
   'regulatory-affairs': { title: 'امور رگولاتوری و ثبت دارو در سازمان غذا و دارو | هانیا پرسان دارو', description: 'ثبت دارو و مادهٔ مؤثره در سازمان غذا و داروی ایران (IRC)، تدوین پرونده CTD/eCTD، GMP، تغییرات و تمدید، و ثبت در EMA، FDA، TİTCK و مراجع منطقه‌ای.' },
   'contact-us-1': { title: 'تماس با هانیا پرسان دارو | استعلام دارو و مواد اولیه', description: 'استعلام قیمت و تأمین دارو، مواد اولیهٔ دارویی، مواد جانبی و مکمل، یا درخواست خدمات رگولاتوری: فرم تماس، تلفن ‎+۹۸ ۲۱ ۸۸۸۸ ۳۳۲۵ و ایمیل.' },
+  'import-activity': { title: 'فعالیت واردات ۲۰۲۶ | واردات دارو ماه به ماه | هانیا پرسان دارو', description: 'فعالیت واردات هانیا پرسان دارو در ۲۰۲۶: ۷۸ اظهارنامهٔ گمرکی به ارزش بیش از ۳۳ میلیون یورو برای ۳۰ مولکول، ماه به ماه، از تولیدکنندگان ترکیه، چین و هند.' },
   'news': { title: 'اخبار امروز دارو | اخبار صنعت داروسازی جهان و چین | هانیا پرسان دارو', description: 'مهم‌ترین اخبار روز صنعت داروسازی جهان و اخبار داروهای ساخته‌شده و مواد مؤثرهٔ چین، هر صبح به‌روز، با منبع.' },
   'blog-1': { title: 'آرشیو مقالات | هانیا پرسان دارو', description: 'مقالات آرشیوی هانیا پرسان دارو دربارهٔ بازار دارو، صنعت مواد اولیهٔ دارویی چین، تأمین و رگولاتوری.' },
 };
-const crumbName: Record<string, string> = { fdf: 'داروهای ساخته‌شده', api: 'مواد مؤثرهٔ دارویی', excipient: 'مواد جانبی دارویی', nutrition: 'مواد اولیهٔ مکمل', 'fdf-cdmo': 'توسعه و تولید قراردادی', 'about-us': 'دربارهٔ ما', markets: 'بازارها و تأمین', culture: 'شیوهٔ کار ما', 'regulatory-affairs': 'امور رگولاتوری', 'contact-us-1': 'تماس', news: 'اخبار امروز دارو', 'blog-1': 'آرشیو مقالات' };
+const crumbName: Record<string, string> = { fdf: 'داروهای ساخته‌شده', api: 'مواد مؤثرهٔ دارویی', excipient: 'مواد جانبی دارویی', nutrition: 'مواد اولیهٔ مکمل', 'fdf-cdmo': 'توسعه و تولید قراردادی', 'about-us': 'دربارهٔ ما', markets: 'بازارها و تأمین', culture: 'شیوهٔ کار ما', 'regulatory-affairs': 'امور رگولاتوری', 'contact-us-1': 'تماس', news: 'اخبار امروز دارو', 'import-activity': 'فعالیت واردات', 'blog-1': 'آرشیو مقالات' };
 const data = pagesFa[page as PageKey];
 const seo = special[page] || {title:`${data?.title} | هانیا پرسان دارو`,description:data?.meta};
 const crumbs = [{ name: 'خانه', path: '/fa' }, { name: crumbName[page] || data?.title || page, path: `/fa/${page}` }];
 ---
 <Layout title={seo.title} description={seo.description} breadcrumbs={crumbs} keywords={pageKeywords(page, 'fa')} brand={page==='regulatory-affairs'?'regulatory':'default'}>
-  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:<StandardPage page={page as PageKey}/>}
+  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:page==='import-activity'?<ImportActivityPage/>:<StandardPage page={page as PageKey}/>}
 </Layout>

@@ -4,11 +4,12 @@ import StandardPage from '../components/StandardPage.astro';
 import RegulatoryPage from '../components/RegulatoryPage.astro';
 import ContactPage from '../components/ContactPage.astro';
 import InsightsPage from '../components/InsightsPage.astro';
+import ImportActivityPage from '../components/ImportActivityPage.astro';
 import NewsPage from '../components/NewsPage.astro';
 import { pages, type PageKey } from '../data/pages';
 
 export function getStaticPaths() {
-  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news'].map(page=>({params:{page}}));
+  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news', 'import-activity'].map(page=>({params:{page}}));
 }
 const page = Astro.params.page!;
 import { pageKeywords } from '../data/seo-keywords';
@@ -23,14 +24,15 @@ const special: Record<string, { title: string; description: string }> = {
   'culture': { title: 'How we work: sourcing, import and registration | Hanpars', description: 'The principles behind every Hanpars sourcing, import and registration request: clear scope, complete documentation and one accountable contact.' },
   'regulatory-affairs': { title: 'Regulatory affairs and drug registration in Iran (IFDA) | Hanpars', description: 'Drug and API registration with the Iran FDA (IRC), CTD/eCTD dossiers, GMP, variations and renewals, plus filings with EMA, FDA, TİTCK and regional authorities.' },
   'contact-us-1': { title: 'Contact Hanpars: medicine and API enquiries, Tehran', description: 'Send a sourcing, regulatory or CDMO enquiry for medicines, APIs, excipients or supplement ingredients, or call the Tehran office on +98 21 8888 3325.' },
+  'import-activity': { title: 'Import activity 2026: customs-cleared medicine imports | Hanpars', description: 'Hanpars import activity in 2026: 78 customs declarations worth over €33 million across 30 molecules, month by month, sourced from Türkiye, China and India.' },
   'news': { title: 'Pharma news today: global and China API/FDF | Hanpars', description: 'The day’s key global pharmaceutical stories and China FDF/API news, refreshed every morning with source and link.' },
   'blog-1': { title: 'Insights archive: China API market and sourcing | Hanpars', description: 'Archived Hanpars articles on the pharmaceutical market, China’s API industry, sourcing and regulation, with their original 2025 publication dates.' },
 };
-const crumbName: Record<string, string> = { fdf: 'Finished dosage forms', api: 'Active pharmaceutical ingredients', excipient: 'Excipients', nutrition: 'Supplement ingredients', 'fdf-cdmo': 'FDF CDMO', 'about-us': 'About us', markets: 'Markets and sourcing', culture: 'How we work', 'regulatory-affairs': 'Regulatory affairs', 'contact-us-1': 'Contact', news: 'Pharma news today', 'blog-1': 'Insights archive' };
+const crumbName: Record<string, string> = { fdf: 'Finished dosage forms', api: 'Active pharmaceutical ingredients', excipient: 'Excipients', nutrition: 'Supplement ingredients', 'fdf-cdmo': 'FDF CDMO', 'about-us': 'About us', markets: 'Markets and sourcing', culture: 'How we work', 'regulatory-affairs': 'Regulatory affairs', 'contact-us-1': 'Contact', news: 'Pharma news today', 'import-activity': 'Import activity', 'blog-1': 'Insights archive' };
 const data = pages[page as PageKey];
 const seo = special[page] || {title:`${data?.title} | Hanpars`,description:data?.meta};
 const crumbs = [{ name: 'Home', path: '/' }, { name: crumbName[page] || data?.title || page, path: `/${page}` }];
 ---
 <Layout title={seo.title} description={seo.description} breadcrumbs={crumbs} keywords={pageKeywords(page, 'en')} brand={page==='regulatory-affairs'?'regulatory':'default'}>
-  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:<StandardPage page={page as PageKey}/>}
+  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:page==='import-activity'?<ImportActivityPage/>:<StandardPage page={page as PageKey}/>}
 </Layout>

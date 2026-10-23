@@ -2,6 +2,9 @@
 /** About page: 2026 import activity — monthly customs-cleared value (bars) and molecules (bubbles). Data from the owner's block. */
 import { langFromPath } from '../i18n';
 import mols from '../data/imports-2026.json';
+import { localePath } from '../i18n';
+interface Props { variant?: 'about' | 'page' | 'bubbles' }
+const { variant = 'about' } = Astro.props;
 const lang = langFromPath(Astro.url.pathname) as 'en' | 'fa' | 'zh' | 'tr';
 const FA = '۰۱۲۳۴۵۶۷۸۹';
 const digits = (x: string) => lang === 'fa' ? x.replace(/[0-9]/g, d => FA[+d]).replace(/\./g, '٫') : lang === 'tr' ? x.replace(/\./g, ',') : x;
@@ -12,7 +15,7 @@ const decl = [0, 1, 0, 5, 6, 10, 10, 18, 13, 15];
 
 const T = {
   en: {
-    kicker: 'Import activity', title: 'Imports in 2026, month by month',
+    name: 'Import activity', more: 'See the full import activity', title: 'Imports in 2026, month by month',
     p: ['HANPARS began importing at the end of 2025 with two emergency products, misoprostol and naloxone. Through the first months of 2026 the volume grew steadily as new IRC licences were granted, and from mid-year the pace changed: monthly customs clearances passed three million euros in June and reached a peak of more than nine million euros in August, with a second strong wave in September and October.',
         'By mid-October 2026 the company had cleared 78 customs declarations worth over 33 million euros across 30 molecules — contrast media, hormones, CNS medicines, anti-infectives and critical-care products — sourced from manufacturers in Türkiye, China and India. A further pipeline of registered orders is scheduled for the coming months.'],
     stats: [['€33.4 M', 'customs-cleared value, Jan–Oct 2026'], ['78', 'customs declarations'], ['€9.3 M', 'peak month (August)'], ['30', 'molecules imported']],
@@ -30,7 +33,7 @@ const T = {
     groups: { contrast: 'Contrast media', hormones: 'Hormones & endocrinology', cns: 'CNS & psychiatry', cardio: 'Cardiovascular', antiinf: 'Anti-infectives', emergency: 'Emergency & critical care', immuno: 'Immunology & oncology support', other: 'Other specialties' },
   },
   fa: {
-    kicker: 'فعالیت واردات', title: 'واردات ۲۰۲۶، ماه به ماه',
+    name: 'فعالیت واردات', more: 'مشاهدهٔ کامل فعالیت واردات', title: 'واردات ۲۰۲۶، ماه به ماه',
     p: ['هانیا پرسان دارو واردات را از اواخر سال ۲۰۲۵ با دو داروی فوریتی، میزوپروستول و نالوکسان، آغاز کرد. در ماه‌های نخست ۲۰۲۶ با صدور کدهای IRC جدید، حجم واردات به‌تدریج افزایش یافت و از میانهٔ سال شتاب آن تغییر کرد: ارزش ترخیص گمرکی ماهانه در ژوئن از سه میلیون یورو گذشت و در اوت به اوج بیش از نه میلیون یورو رسید؛ موج قدرتمند دوم نیز در سپتامبر و اکتبر رقم خورد.',
         'تا اواسط اکتبر ۲۰۲۶، شرکت ۷۸ اظهارنامهٔ گمرکی به ارزش بیش از ۳۳ میلیون یورو برای ۳۰ مولکول ترخیص کرده است — داروهای حاجب، هورمون‌ها، داروهای اعصاب و روان، داروهای ضدعفونت و داروهای مراقبت‌های ویژه — که از تولیدکنندگانی در ترکیه، چین و هند تأمین شده‌اند. مجموعهٔ دیگری از سفارش‌های ثبت‌شده برای ماه‌های آینده برنامه‌ریزی شده است.'],
     stats: [['۳۳٫۴ میلیون یورو', 'ارزش ترخیص‌شده، ژانویه تا اکتبر ۲۰۲۶'], ['۷۸', 'اظهارنامهٔ گمرکی'], ['۹٫۳ میلیون یورو', 'ماه اوج (اوت)'], ['۳۰', 'مولکول وارداتی']],
@@ -48,7 +51,7 @@ const T = {
     groups: { contrast: 'داروهای حاجب', hormones: 'هورمون‌ها و غدد درون‌ریز', cns: 'اعصاب و روان', cardio: 'قلب و عروق', antiinf: 'داروهای ضدعفونت', emergency: 'اورژانس و مراقبت‌های ویژه', immuno: 'ایمونولوژی و حمایت انکولوژی', other: 'سایر تخصص‌ها' },
   },
   zh: {
-    kicker: '进口动态', title: '2026 年逐月进口情况',
+    name: '进口动态', more: '查看完整进口动态', title: '2026 年逐月进口情况',
     p: ['HANPARS 于 2025 年底开始进口，首批为米索前列醇和纳洛酮两种紧急药品。2026 年头几个月，随着新的 IRC 许可陆续获批，进口量稳步增长；年中起节奏明显加快：6 月月度清关额突破 300 万欧元，8 月达到逾 900 万欧元的峰值，9 月和 10 月又迎来第二波强劲增长。',
         '截至 2026 年 10 月中旬，公司已完成 78 份报关单的清关，总值逾 3,300 万欧元，涵盖 30 种分子——造影剂、激素、中枢神经系统药物、抗感染药和重症监护产品——货源来自土耳其、中国和印度的生产商。另有一批已登记订单计划于未来数月到货。'],
     stats: [['€3,340 万', '2026 年 1–10 月清关总值'], ['78', '份报关单'], ['€933 万', '峰值月份（8 月）'], ['30', '种进口分子']],
@@ -66,7 +69,7 @@ const T = {
     groups: { contrast: '造影剂', hormones: '激素与内分泌', cns: '中枢神经与精神科', cardio: '心血管', antiinf: '抗感染', emergency: '急救与重症监护', immuno: '免疫与肿瘤支持', other: '其他专科' },
   },
   tr: {
-    kicker: 'İthalat faaliyeti', title: '2026 ithalatı, ay ay',
+    name: 'İthalat faaliyeti', more: 'İthalat faaliyetinin tamamını görün', title: '2026 ithalatı, ay ay',
     p: ['HANPARS ithalata 2025 sonunda iki acil ürünle, misoprostol ve naloksonla başladı. 2026’nın ilk aylarında yeni IRC lisansları verildikçe hacim istikrarlı biçimde arttı; yıl ortasından itibaren tempo değişti: aylık gümrük işlemleri haziranda üç milyon euroyu aştı, ağustosta dokuz milyon euroyu geçen bir zirveye ulaştı; eylül ve ekimde ise ikinci güçlü bir dalga yaşandı.',
         'Ekim 2026 ortasına kadar şirket, 30 molekülde 33 milyon euroyu aşan değerde 78 gümrük beyannamesini tamamladı — kontrast maddeler, hormonlar, MSS ilaçları, anti-enfektifler ve yoğun bakım ürünleri — Türkiye, Çin ve Hindistan’daki üreticilerden tedarik edildi. Kayıtlı siparişlerden oluşan yeni bir dizi önümüzdeki aylar için planlandı.'],
     stats: [['33,4 mn €', 'gümrükten çekilen değer, Ocak–Ekim 2026'], ['78', 'gümrük beyannamesi'], ['9,3 mn €', 'zirve ay (ağustos)'], ['30', 'ithal edilen molekül']],
@@ -90,13 +93,16 @@ const Y0 = 262, PX = 24; // 10 M€ = 240 px
 const bars = months.map((v, i) => ({ x: 62 + i * 48, h: v * PX, v, i }));
 const ticks = [0, 2.5, 5, 7.5, 10];
 const bubbles = [...mols].sort((a, b) => b.r - a.r);
+// 3-D spheres: a radial gradient per therapeutic colour (light top-left, deep rim)
+const mix = (hex: string, to: string, t: number) => { const a = hex.match(/\w\w/g)!.map(h => parseInt(h, 16)), b = to.match(/\w\w/g)!.map(h => parseInt(h, 16)); return '#' + a.map((v, i) => Math.round(v + (b[i] - v) * t).toString(16).padStart(2, '0')).join(''); };
+const grads = Object.entries(COL).map(([k, c]) => ({ id: `imp-g-${k}`, hi: mix(c, '#ffffff', .62), mid: c, lo: mix(c, '#000000', .38) }));
+const L = (p: string) => localePath(p, lang);
 ---
-<section class="section imp" id="imports-2026">
+<section class:list={['section', 'imp', { 'imp-solo': variant === 'bubbles' }]} id="imports-2026">
   <div class="container">
-    <div class="imp-top">
+    {variant !== 'bubbles' && <div class="imp-top">
       <div class="imp-copy">
-        <span class="kicker">{T.kicker}</span>
-        <h2>{T.title}</h2>
+        {variant === 'about' ? <><span class="kicker">{T.title}</span><h2>{T.name}</h2></> : <h2>{T.title}</h2>}
         {T.p.map(p => <p>{p}</p>)}
         <dl class="imp-stats">
           {T.stats.map(([b, l]) => <div><dt>{b}</dt><dd>{l}</dd></div>)}
@@ -117,26 +123,29 @@ const bubbles = [...mols].sort((a, b) => b.r - a.r);
         <figcaption><span>{T.src}</span><span>{T.hatch}</span></figcaption>
         <div class="imp-tip" role="status" aria-live="polite"></div>
       </figure>
-    </div>
+    </div>}
 
     <div class="imp-mol">
-      <h3>{T.h3}</h3>
+      {variant === 'bubbles' ? <><span class="kicker">{T.name}</span><h2>{T.h3}</h2></> : <h3>{T.h3}</h3>}
       <p class="imp-sub">{T.sub}</p>
       <div class="imp-bwrap">
         <figure class="imp-fig imp-bub">
           <svg viewBox="0 0 560 563" role="img" aria-label={T.h3}>
-            {bubbles.map(m => <g class="imp-b" data-t={m.name} data-v={`${T.groups[m.group as keyof typeof T.groups]}|${T.units(m.units)} ${T.unitWord}|${T.ship(m.ship)}`} tabindex="0">
-              <circle cx={m.cx} cy={m.cy} r={m.r} fill={COL[m.group]} />
+            <defs>{grads.map(g => <radialGradient id={g.id} cx="36%" cy="30%" r="75%" fx="32%" fy="26%"><stop offset="0" stop-color={g.hi}/><stop offset=".48" stop-color={g.mid}/><stop offset="1" stop-color={g.lo}/></radialGradient>)}</defs>
+            {bubbles.map((m, i) => <g class="imp-b" data-t={m.name} data-v={`${T.groups[m.group as keyof typeof T.groups]}|${T.units(m.units)} ${T.unitWord}|${T.ship(m.ship)}`} tabindex="0"><g class="imp-ball" style={`--d:${-((i * 1.37) % 6).toFixed(2)}s;--t:${(5 + (i % 5) * .7).toFixed(1)}s;--a:${(m.r > 60 ? 2.5 : m.r > 25 ? 3.5 : 4.5)}px`}>
+              <circle cx={m.cx} cy={m.cy} r={m.r} fill={`url(#imp-g-${m.group})`} />
+              <ellipse class="imp-spec" cx={m.cx - m.r * .34} cy={m.cy - m.r * .42} rx={m.r * .32} ry={m.r * .19} transform={`rotate(-28 ${m.cx - m.r * .34} ${m.cy - m.r * .42})`} />
               {m.label && (m.showVal
                 ? <><text class="imp-bl" x={m.cx} y={m.cy - 2} style={`font-size:${m.fs}px`} lang="en">{m.label}</text><text class="imp-bv" x={m.cx} y={m.cy + 11} style={`font-size:${m.r > 34 ? 11 : 9.1}px`}>{T.units(m.units)}</text></>
                 : <text class="imp-bl" x={m.cx} y={m.cy + 3.5} style={`font-size:${m.fs}px`} lang="en">{m.label}</text>)}
-            </g>)}
+            </g></g>)}
           </svg>
           <div class="imp-tip" role="status" aria-live="polite"></div>
         </figure>
         <div class="imp-legend">
-          <ul>{Object.entries(T.groups).map(([k, v]) => <li><i style={`background:${COL[k]}`}></i>{v}</li>)}</ul>
+          <ul>{Object.entries(T.groups).map(([k, v]) => <li><i style={`background-color:${COL[k]}`}></i>{v}</li>)}</ul>
           <p>{T.note}</p>
+          {variant === 'bubbles' && <a class="button button-navy imp-more" href={L('/import-activity')}>{T.more}</a>}
         </div>
       </div>
     </div>

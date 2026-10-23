@@ -64,6 +64,7 @@ const base = {
       ] },
       { label: 'Company', items: [
         { label: 'About Hanpars', href: '/about-us', note: 'Who we are, and what we are not' },
+        { label: 'Import activity', href: '/import-activity', note: 'Our 2026 imports, month by month' },
         { label: 'How we work', href: '/culture', note: 'The habits behind every request' },
         { label: 'Markets and sourcing', href: '/markets', note: 'Iran at home, suppliers abroad' },
       ] },
@@ -275,6 +276,7 @@ const base = {
       ] },
       { label: 'شرکت', items: [
         { label: 'دربارهٔ هانیا پرسان دارو', href: '/about-us', note: 'کیستیم و چه نیستیم' },
+        { label: 'فعالیت واردات', href: '/import-activity', note: 'واردات ۲۰۲۶، ماه به ماه' },
         { label: 'شیوهٔ کار ما', href: '/culture', note: 'اصول پشت هر درخواست' },
         { label: 'بازارها و تأمین', href: '/markets', note: 'بازار ایران، تأمین‌کنندگان خارجی' },
       ] },

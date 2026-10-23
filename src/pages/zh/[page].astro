@@ -4,6 +4,7 @@ import StandardPage from '../../components/StandardPage.astro';
 import RegulatoryPage from '../../components/RegulatoryPage.astro';
 import ContactPage from '../../components/ContactPage.astro';
 import InsightsPage from '../../components/InsightsPage.astro';
+import ImportActivityPage from '../../components/ImportActivityPage.astro';
 import NewsPage from '../../components/NewsPage.astro';
 import { pages, type PageKey } from '../../data/pages';
 import { pagesL } from '../../data/locale';
@@ -11,7 +12,7 @@ import { pageKeywords } from '../../data/seo-keywords';
 import { t } from '../../i18n';
 
 export function getStaticPaths() {
-  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news'].map(page=>({params:{page}}));
+  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news', 'import-activity'].map(page=>({params:{page}}));
 }
 const lang = 'zh' as const;
 const s = t(lang);
@@ -21,6 +22,7 @@ const extra: Record<string, { title: string; description: string }> = {
   'regulatory-affairs': { title: s.regulatory.title, description: '伊朗药品注册法规事务：IFDA注册策略、CTD资料、GMP检查准备及生命周期维护，服务进入伊朗市场的生产企业。' },
   'contact-us-1': { title: s.contact.title, description: '联系德黑兰的Hanpars：制剂、原料药、辅料、营养原料及IFDA注册咨询。邮箱：contact@hanpars.com' },
   'blog-1': { title: s.insights.title, description: '行业洞察档案：中国原料药与制剂产业、供应链及监管趋势分析，面向伊朗医药市场。' },
+  'import-activity': { title: '进口动态', description: 'Hanpars 2026 年进口动态：78 份报关单、逾 3,300 万欧元、30 种分子，逐月清关数据，货源来自土耳其、中国和印度。' },
   'news': { title: s.news.title, description: '每日全球医药要闻及中国制剂/原料药资讯，每天早晨更新，附来源与链接。' },
 };
 const name = data?.title || extra[page]?.title || page;
@@ -29,5 +31,5 @@ const seo = { title: `${name} | Hanpars`, description: str(data?.meta, data?.des
 const crumbs = [{ name: s.breadcrumbHome, path: '/zh' }, { name, path: `/zh/${page}` }];
 ---
 <Layout title={seo.title} description={seo.description.slice(0, 200)} breadcrumbs={crumbs} keywords={pageKeywords(page, lang)} brand={page==='regulatory-affairs'?'regulatory':'default'}>
-  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:<StandardPage page={page as PageKey}/>}
+  {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:page==='import-activity'?<ImportActivityPage/>:<StandardPage page={page as PageKey}/>}
 </Layout>

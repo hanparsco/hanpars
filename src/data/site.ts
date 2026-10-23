@@ -16,6 +16,7 @@ export const groups = [
   ] },
   { label: 'Company', items: [
     { label: 'About Hanpars', href: '/about-us', note: 'Who we are, and what we are not' },
+    { label: 'Import activity', href: '/import-activity', note: 'Our 2026 imports, month by month' },
     { label: 'How we work', href: '/culture', note: 'The habits behind every request' },
     { label: 'Markets and sourcing', href: '/markets', note: 'Iran at home, suppliers abroad' },
   ] },
@@ -25,7 +26,7 @@ export const routes = [
   { path: '/fdf', title: 'Finished dosage forms' }, { path: '/api', title: 'Active pharmaceutical ingredients' },
   { path: '/excipient', title: 'Excipients' }, { path: '/nutrition', title: 'Nutrition' },
   { path: '/regulatory-affairs', title: 'Regulatory Affairs' }, { path: '/fdf-cdmo', title: 'FDF CDMO' },
-  { path: '/about-us', title: 'About Hanpars' }, { path: '/culture', title: 'How we work' },
+  { path: '/about-us', title: 'About Hanpars' }, { path: '/import-activity', title: 'Import activity' }, { path: '/culture', title: 'How we work' },
   { path: '/markets', title: 'Markets & sourcing' }, { path: '/blog-1', title: 'Insights' },
   { path: '/contact-us-1', title: 'Contact Hanpars' },
 ];

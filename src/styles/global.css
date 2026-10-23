@@ -997,3 +997,18 @@ html[lang=fa] .faq-list p { line-height:1.95; }
 }
 html[lang=fa] .imp-stats dt { font-size:clamp(18px,1.8vw,22px); }
 .imp-tip b { font-weight:600; }
+/* Import activity: 3-D floating spheres */
+.imp-solo { background:var(--white); }
+.imp-solo .imp-mol { margin-top:0; }
+.imp-solo .imp-mol h2 { font-size:clamp(24px,2.4vw,34px); margin:0 0 10px; }
+.imp-more { margin-top:22px; }
+.imp-b { transform-box:fill-box; transform-origin:center; transition:transform .25s var(--ease); }
+.imp-b:is(:hover,:focus-visible) { transform:scale(1.06); }
+.imp-ball { animation:imp-float var(--t,6s) ease-in-out var(--d,0s) infinite alternate; }
+@keyframes imp-float { from { transform:translate(0, calc(var(--a,3px) * -1)); } to { transform:translate(calc(var(--a,3px) * .4), var(--a,3px)); } }
+.imp-b circle { stroke:#ffffff80; stroke-width:1; }
+.imp-spec { fill:#fff; opacity:.38; pointer-events:none; }
+.imp-bl,.imp-bv { paint-order:stroke; stroke:#00000030; stroke-width:2px; stroke-linejoin:round; }
+.imp-bub { background:radial-gradient(120% 90% at 50% 0%, #fff 0%, var(--white) 55%, #efece5 100%); }
+.imp-legend i { background-image:radial-gradient(circle at 35% 30%, #ffffffa0, transparent 60%); box-shadow:inset 0 -2px 3px #00000030; }
+@media (prefers-reduced-motion:reduce) { .imp-ball { animation:none; } .imp-b { transition:none; } }

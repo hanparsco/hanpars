@@ -18,6 +18,7 @@ export const zh: UI = {
     ] },
     { label: '公司', items: [
       { label: '关于 Hanpars', href: '/about-us', note: '我们是谁，我们不是什么' },
+      { label: '进口动态', href: '/import-activity', note: '2026 年逐月进口情况' },
       { label: '工作方式', href: '/culture', note: '每一项需求背后的工作习惯' },
       { label: '市场与采购', href: '/markets', note: '深耕伊朗，货源遍及海外' },
     ] },

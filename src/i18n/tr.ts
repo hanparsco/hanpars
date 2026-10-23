@@ -18,6 +18,7 @@ export const tr: UI = {
       ] },
       { label: 'Şirket', items: [
         { label: 'Hanpars Hakkında', href: '/about-us', note: 'Kimiz ve ne değiliz' },
+        { label: 'İthalat faaliyeti', href: '/import-activity', note: '2026 ithalatımız, ay ay' },
         { label: 'Nasıl çalışıyoruz', href: '/culture', note: 'Her talebin ardındaki alışkanlıklar' },
         { label: 'Pazarlar ve tedarik', href: '/markets', note: 'Yurt içinde İran pazarı, yurt dışında tedarikçiler' },
       ] },
