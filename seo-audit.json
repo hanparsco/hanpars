@@ -168,10 +168,10 @@
    "name": "heavy pages (> 600 KB)",
    "count": 4,
    "sample": [
-    "/excipient (606 KB)",
+    "/excipient (605 KB)",
     "/fa/excipient (609 KB)",
-    "/tr/excipient (625 KB)",
-    "/zh/excipient (593 KB)"
+    "/tr/excipient (624 KB)",
+    "/zh/excipient (651 KB)"
    ]
   }
  ]
