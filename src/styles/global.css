@@ -1,10 +1,10 @@
 
-/* Samarqand Pro — Persian */
-@font-face { font-family:'Samarqand'; src:url('/fonts/Samarqand-Light.woff2') format('woff2'); font-weight:300; font-display:swap; }
-@font-face { font-family:'Samarqand'; src:url('/fonts/Samarqand-Regular.woff2') format('woff2'); font-weight:400; font-display:swap; }
-@font-face { font-family:'Samarqand'; src:url('/fonts/Samarqand-Medium.woff2') format('woff2'); font-weight:500; font-display:swap; }
-@font-face { font-family:'Samarqand'; src:url('/fonts/Samarqand-SemiBold.woff2') format('woff2'); font-weight:600; font-display:swap; }
-@font-face { font-family:'Samarqand'; src:url('/fonts/Samarqand-Bold.woff2') format('woff2'); font-weight:700; font-display:swap; }
+/* Ravagh Pro — Persian */
+@font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Light.woff2') format('woff2'); font-weight:300; font-display:swap; }
+@font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Regular.woff2') format('woff2'); font-weight:400; font-display:swap; }
+@font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Medium.woff2') format('woff2'); font-weight:500; font-display:swap; }
+@font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-SemiBold.woff2') format('woff2'); font-weight:600; font-display:swap; }
+@font-face { font-family:'Ravagh'; src:url('/fonts/Ravagh-Bold.woff2') format('woff2'); font-weight:700; font-display:swap; }
 /* Hanpars — quiet, editorial design system
    Tokens */
 :root {
@@ -449,7 +449,7 @@ html[lang=fa] .brief-legend { letter-spacing:0; font-size:14px; text-transform:n
   .nav-lang-menu { display:none; }
   .mobile-langs { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:10px; }
   .mobile-langs a { text-align:center; padding:12px 6px; border:1px solid #ffffff1f; border-radius:12px; color:var(--on-navy); font-size:15px; }
-  .mobile-langs a[lang=fa] { font-family:'Samarqand',sans-serif; }
+  .mobile-langs a[lang=fa] { font-family:'Ravagh',sans-serif; }
   .mobile-langs a.current { background:var(--glacier); border-color:var(--glacier); color:var(--black); font-weight:600; }
   .nav-cta { display:flex; margin:14px 0 0; min-height:54px; font-size:16px; }
   html.nav-open,html.nav-open body { overflow:hidden; }
@@ -619,7 +619,7 @@ html[lang=fa] .exc-tile-head strong { font-size:16px; }
 @media(max-width:640px) { .news-grid { grid-template-columns:1fr; gap:32px; } }
 
 /* ---------- Persian / RTL ---------- */
-html[lang=fa] { --display:'Samarqand','Montserrat',sans-serif; --sans:'Samarqand','Source Sans 3',sans-serif; }
+html[lang=fa] { --display:'Ravagh','Montserrat',sans-serif; --sans:'Ravagh','Source Sans 3',sans-serif; }
 html[lang=fa] body { font-size:17px; line-height:1.9; }
 html[lang=fa] h1,html[lang=fa] h2,html[lang=fa] h3,html[lang=fa] h4 { letter-spacing:0; line-height:1.4; font-weight:600; }
 html[lang=fa] h1 { font-size:clamp(32px,4vw,54px); line-height:1.35; }
@@ -650,7 +650,7 @@ html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] se
 .lang-panel a:hover { background:var(--paper); }
 .lang-panel a { padding:10px 14px; }
 .lang-panel a strong { font-weight:500; }
-.lang-panel a[lang=fa] strong { font-family:'Samarqand',sans-serif; }
+.lang-panel a[lang=fa] strong { font-family:'Ravagh',sans-serif; }
 .lang-panel a.current { background:var(--paper); }
 .lang-panel a.current strong:after { content:' ✓'; color:var(--lapis); }
 [dir=rtl] .breadcrumbs { direction:rtl; }
