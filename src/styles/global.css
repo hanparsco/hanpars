@@ -531,7 +531,7 @@ html[lang=fa] .brief-legend { letter-spacing:0; font-size:14px; text-transform:n
   .hero-meta a:nth-child(even) { padding-inline-start:20px!important; }
   .section-head { grid-template-columns:1fr; gap:18px; margin-bottom:40px; }
   .columns-3 { grid-template-columns:1fr; gap:40px; }
-  .spotlight,.company-note,.content-split,.faq-layout,.contact-layout,.invite-inner,.database-card { grid-template-columns:1fr; gap:40px; }
+  .spotlight,.company-note,.content-split,.faq-layout,.contact-layout,.invite-inner,.database-card { grid-template-columns:minmax(0,1fr); gap:40px; }
   .spotlight-figure strong { font-size:48px; }
   .area-list { columns:1; }
   .steps { grid-template-columns:1fr; gap:32px; } .steps-4 { grid-template-columns:1fr; }
@@ -554,7 +554,7 @@ html[lang=fa] .brief-legend { letter-spacing:0; font-size:14px; text-transform:n
   .hero-actions { flex-direction:column; align-items:stretch; gap:16px; } .hero-actions .button { width:100%; } .hero-actions .text-link { align-self:flex-start; }
   .hero-meta-inner { grid-template-columns:1fr; } .hero-meta a:nth-child(n) { border-inline-end:0; padding-inline-start:0!important; }
   .hero-meta a:nth-child(2),.hero-meta a:nth-child(3) { border-bottom:1px solid var(--line-dark); }
-  .spotlight-figure { gap:28px; } .spotlight-figure strong { font-size:40px; }
+  .spotlight-figure { gap:20px 24px; flex-wrap:wrap; } .spotlight-figure strong { font-size:40px; }
   .insight-row { grid-template-columns:1fr; gap:6px; padding:22px 0; }
   .page-hero h1 { font-size:30px; }
   .catalogue-table { font-size:15px; } .catalogue-scroll { max-height:560px; }
