@@ -24,8 +24,6 @@ GLOBAL_FEEDS = [
     ('Pharmaceutical Executive', 'https://www.pharmexec.com/rss'),
     ('BioPharma Dive', 'https://www.biopharmadive.com/feeds/news/'),
     ('Endpoints News', 'https://endpts.com/feed/'),
-    ('European Pharmaceutical Review', 'https://www.europeanpharmaceuticalreview.com/rss'),
-    ('in-Pharmatechnologist', 'https://www.in-pharmatechnologist.com/var/wrbm_gb_food_pharma/storage/static/rss/in-pharmatechnologist.com.xml'),
     ('Google News', 'https://news.google.com/rss/search?q=pharma+OR+drugmaker+(Reuters+OR+%22Financial+Times%22)+when:2d&hl=en-US&gl=US&ceid=US:en'),
     ('Pharmaceutical Technology', 'https://www.pharmaceutical-technology.com/feed/'),
     ('STAT', 'https://www.statnews.com/category/pharma/feed/'),
@@ -61,8 +59,9 @@ def text(el, *names):
     for n in names:
         for child in el.iter():
             tag = child.tag.split('}')[-1]
-            if tag == n and (child.text or '').strip():
-                return child.text.strip()
+            if tag == n:
+                t = ''.join(child.itertext()).strip()
+                if t: return t
     return ''
 
 
@@ -75,7 +74,13 @@ def parse_date(s: str):
         try:
             d = dt.datetime.fromisoformat(s.replace('Z', '+00:00'))
         except Exception:
-            return None
+            d = None
+            for fmt in ('%b %d, %Y %I:%M%p', '%B %d, %Y %I:%M%p', '%b %d, %Y', '%B %d, %Y', '%Y-%m-%d %H:%M:%S'):
+                try:
+                    d = dt.datetime.strptime(s.strip().upper().replace('  ', ' ').title().replace('Am', 'AM').replace('Pm', 'PM'), fmt); break
+                except Exception:
+                    continue
+            if d is None: return None
     if d.tzinfo is None: d = d.replace(tzinfo=dt.timezone.utc)
     return d.astimezone(dt.timezone.utc)
 
@@ -124,7 +129,10 @@ def parse_feed(source: str, url: str):
                 img = child.get('url'); break
         if title and link:
             items.append({'title': title, 'url': link, 'summary': summary, 'date': date, 'source': src, 'image': img})
-    print(f'  {source}: {len(items)} items' + ('' if items else f' (root <{root.tag}>, {len(raw)} bytes, start {raw[:240]!r})'))
+    n_el = sum(1 for e in root.iter() if e.tag.split('}')[-1] in ('item', 'entry'))
+    first = next((e for e in root.iter() if e.tag.split('}')[-1] in ('item', 'entry')), None)
+    why = '' if items else (f' ({n_el} <item> elements dropped; first: {ET.tostring(first)[:300]!r})' if first is not None else f' (no <item> elements; root <{root.tag}>, {len(raw)} bytes, start {raw[:240]!r})')
+    print(f'  {source}: {len(items)} items' + why)
     return items
 
 

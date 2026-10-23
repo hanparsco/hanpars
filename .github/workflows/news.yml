@@ -2,8 +2,13 @@ name: Daily pharma news
 
 on:
   schedule:
-    - cron: '17 2 * * *'   # ~05:47 Tehran (UTC+3:30)
-    - cron: '43 4 * * *'   # backup if GitHub skipped or delayed the first run (no-op when already updated today)
+    # GitHub often starts scheduled runs hours late, so several attempts are spread over the Tehran night/morning.
+    # The script is a no-op once today's (Tehran) digest exists, so extra attempts cost nothing.
+    - cron: '41 20 * * *'  # 00:11 Tehran
+    - cron: '23 22 * * *'  # 01:53 Tehran
+    - cron: '17 0 * * *'   # 03:47 Tehran
+    - cron: '17 2 * * *'   # 05:47 Tehran
+    - cron: '43 4 * * *'   # 08:13 Tehran
   workflow_dispatch:
     inputs:
       force:
@@ -41,8 +46,9 @@ jobs:
         run: |
           git config user.name "hanpars-news-bot"
           git config user.email "actions@users.noreply.github.com"
+          # a no-op run only rewrites the log: don't commit or redeploy for that
+          if git diff --quiet -- src/data/news.json && [ -z "$(git status --porcelain -- public/news)" ]; then echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
           git add src/data/news.json public/news scripts/news-last-run.log
-          if git diff --cached --quiet; then echo "changed=0" >> "$GITHUB_OUTPUT"; exit 0; fi
           git commit -m "News digest $(date -u +%F)"
           git pull --rebase origin main
           git push
