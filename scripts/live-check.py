@@ -91,7 +91,8 @@ for kind, eu in ext_urls:
         if isinstance(status, int) and 300 <= status < 400 and loc:
             eu = loc if loc.startswith('http') else urllib.parse.urljoin(eu, loc); continue
         break
-    tag = 'ok ' if status == 200 else ('blocked' if status in (401, 403, 429) else 'WARN')
+    botwall = status in (202, 401, 403, 429) or any(k in eu for k in ('apology', 'abuse-detection', 'captcha', 'challenge'))
+    tag = 'ok ' if status == 200 and not botwall else ('blocked' if botwall else 'WARN')
     print(f'  {tag} {status} [{kind}] {eu}')
     if tag == 'WARN': warnings.append(f'[{kind}] {eu} -> {status}')
 if warnings: print(f'  {len(warnings)} external link warning(s)')
