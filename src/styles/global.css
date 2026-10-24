@@ -1135,3 +1135,11 @@ html[lang=fa] .check-list.mol-checks li::before { content:counter(mc, persian); 
   .pm-actions { flex-direction:column; align-items:stretch; }
   .pm-actions > * { justify-content:center; text-align:center; }
 }
+.pm-card .pm-intro h3 { color:#fff; }
+.pm-card .pm-actions .button-light + .text-link, .pm-card .pm-actions .text-link { color:#fff; border-color:#ffffff59; background:transparent; }
+.pm-card .pm-actions .text-link:hover { background:#ffffff14; border-color:#fff; }
+.pm-steps li { grid-template-columns:44px minmax(0,1fr); grid-template-areas:"ico n" "ico t"; row-gap:2px; column-gap:16px; }
+.pm-steps .pm-ico { grid-area:ico; align-self:center; }
+.pm-steps .pm-n { grid-area:n; justify-self:start; padding:0; background:none; font-size:12px; letter-spacing:.08em; }
+.pm-steps .pm-t { grid-area:t; }
+@media(max-width:900px) { .pm-steps li { grid-template-columns:40px minmax(0,1fr); column-gap:12px; } }
