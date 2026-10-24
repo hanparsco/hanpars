@@ -1056,3 +1056,4 @@ html[lang=fa] .imp-bv { direction:rtl; unicode-bidi:embed; }
 .flag svg, [open] > summary .flag svg { transform:none !important; }
 .nav-mail { display:inline-flex; align-items:center; gap:7px; }
 .nav-mail > svg { opacity:.8; flex:none; }
+.main-nav .nav-mail { justify-content:flex-start; }
