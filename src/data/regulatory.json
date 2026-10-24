@@ -1,671 +1,644 @@
 {
- "intro": "Regulatory affairs is present at every stage of a medicine's life. We shape the development plan and regulatory strategy before the first study, build the CMC, non-clinical and clinical evidence into the dossier, steer the application through authority review towards approval, and then keep the authorisation current through every variation, renewal and change.",
- "coverIntro": "End-to-end regulatory strategy for biologics, biosimilars and small molecules, from development through approval and beyond.",
- "services": [
-  {
-   "title": "Development & CMC strategy",
-   "items": [
-    "Regulatory design and review of comparative studies: analytical and functional biosimilarity exercises for biologics; pharmaceutical equivalence and bioequivalence programmes for small molecules",
-    "Regulatory oversight of CMC development, from cell-bank characterisation or drug-substance route selection, through specification setting and stability, to process validation and technology transfer",
-    "Comparability and change-control protocols for process, site and scale changes, for both biological and synthetic products"
-   ]
-  },
-  {
-   "title": "Dossier authoring & readiness",
-   "items": [
-    "CTD technical authoring and review, Modules 1–4; eCTD preparation",
-    "Regulatory and quality gap analysis prior to filing",
-    "Pre-assessment review of dossiers from the assessor's perspective"
-   ]
-  },
-  {
-   "title": "Agency interaction & intelligence",
-   "items": [
-    "Scientific advice and pre-submission meeting strategy, briefing documents and preparation (EMA, MHRA, national agencies)",
-    "Structured responses to agency questions and deficiency letters",
-    "Local requirement mapping and regional regulatory intelligence"
-   ]
-  },
-  {
-   "title": "Post-approval & lifecycle",
-   "items": [
-    "Variations, amendments and renewals across regions",
-    "Post-approval commitments and their follow-up with agencies",
-    "Regulatory assessment of post-approval process, site and supplier changes"
-   ]
-  },
-  {
-   "title": "GMP & quality compliance",
-   "kicker": "EU GMP · PIC/S · WHO GMP · ICH Q7–Q12",
-   "items": [
-    "GMP gap assessment of manufacturing and testing sites against EU GMP (including Annex 1 and Annex 2), PIC/S and WHO requirements",
-    "Inspection readiness: mock inspections, pre-approval inspection preparation and front-room / back-room coaching",
-    "Response to inspection findings: root-cause analysis, CAPA plans and follow-up evidence packages for the agency",
-    "Site Master File, GMP certificate and manufacturing-authorisation applications; QP declarations for imported products",
-    "Pharmaceutical quality system design and review: change control, deviations, OOS, complaints and product quality review",
-    "Data integrity assessment",
-    "Supplier and CMO qualification: audits, quality and technical agreements, and ongoing oversight",
-    "Alignment of GMP documentation with the dossier: validation, stability and batch records that say the same thing the CTD says"
-   ]
-  }
- ],
- "fileIntro": "Select an authority to see the submission routes we handle there. Authorities are grouped the way the industry ranks them: WHO-Listed Authorities and long-standing ICH regulators first, then other ICH members and observers, regional procedures and national reliance routes.",
- "tiers": [
-  {
-   "num": "01",
-   "name": "Stringent regulatory authorities",
-   "sub": "WHO-Listed Authorities · established ICH regulators",
-   "authorities": [
+  "intro": "Regulatory affairs is present at every stage of a medicine's life. We shape the development plan and regulatory strategy before the first study, build the CMC, non-clinical and clinical evidence into the dossier, steer the application through authority review towards approval, and then keep the authorisation current through every variation, renewal and change.",
+  "coverIntro": "End-to-end regulatory strategy for biologics, biosimilars and small molecules, from development through approval and beyond.",
+  "services": [
     {
-     "id": "ema",
-     "short": "EMA",
-     "name": "European Medicines Agency",
-     "region": "European Union · EEA",
-     "format": "eCTD",
-     "footnote": "All EU procedures, including EDQM CEP and ASMF for active substances.",
-     "procedures": [
-      {
-       "name": "Centralised Procedure (CP)",
-       "note": "Single application assessed by CHMP; mandatory for biotech-derived products and biosimilars. One authorisation valid in all EU/EEA states."
-      },
-      {
-       "name": "Decentralised Procedure (DCP)",
-       "note": "Simultaneous application in several member states with a Reference Member State; the usual route for generics."
-      },
-      {
-       "name": "Mutual Recognition Procedure (MRP)",
-       "note": "Extension of an existing national authorisation to further member states."
-      },
-      {
-       "name": "National procedure",
-       "note": "Single-country authorisation where the product is not intended for other EU markets."
-      },
-      {
-       "name": "Scientific advice & pre-submission",
-       "note": "CHMP/SAWP scientific advice, pre-submission meetings and eligibility requests before filing."
-      },
-      {
-       "name": "CEP and ASMF (EDQM)",
-       "note": "Certificate of Suitability or Active Substance Master File so the API can be referenced in any EU dossier."
-      }
-     ]
+      "title": "Development & CMC strategy",
+      "items": [
+        "Regulatory design and review of comparative studies: analytical and functional biosimilarity exercises for biologics; pharmaceutical equivalence and bioequivalence programmes for small molecules",
+        "Regulatory oversight of CMC development, from cell-bank characterisation or drug-substance route selection, through specification setting and stability, to process validation and technology transfer",
+        "Comparability and change-control protocols for process, site and scale changes, for both biological and synthetic products"
+      ]
     },
     {
-     "id": "fda",
-     "short": "FDA",
-     "name": "U.S. Food and Drug Administration",
-     "region": "United States",
-     "format": "eCTD",
-     "footnote": "CDER and CBER routes; Type II DMFs for active substances.",
-     "procedures": [
-      {
-       "name": "NDA — 505(b)(1)",
-       "note": "Full new drug application with complete safety and efficacy data."
-      },
-      {
-       "name": "NDA — 505(b)(2)",
-       "note": "Relies in part on published data or a listed drug; the route for reformulations and new indications."
-      },
-      {
-       "name": "ANDA — 505(j)",
-       "note": "Abbreviated application for generics, demonstrating bioequivalence to the reference listed drug."
-      },
-      {
-       "name": "BLA — 351(a) and 351(k)",
-       "note": "Biologics License Application (the FDA's formal name); 351(k) is the biosimilar and interchangeable pathway."
-      },
-      {
-       "name": "Pre-IND / Type B–C meetings",
-       "note": "Formal meeting requests, briefing packages and written responses."
-      },
-      {
-       "name": "Drug Master File (Type II)",
-       "note": "Confidential API, intermediate or packaging information referenced by the applicant."
-      }
-     ]
+      "title": "Dossier authoring & readiness",
+      "items": [
+        "CTD technical authoring and review, Modules 1–4; eCTD preparation",
+        "Regulatory and quality gap analysis prior to filing",
+        "Pre-assessment review of dossiers from the assessor's perspective"
+      ]
     },
     {
-     "id": "mhra",
-     "short": "MHRA",
-     "name": "Medicines and Healthcare products Regulatory Agency",
-     "region": "United Kingdom",
-     "format": "eCTD",
-     "footnote": "Post-Brexit routes for Great Britain and Northern Ireland.",
-     "procedures": [
-      {
-       "name": "National marketing authorisation",
-       "note": "Full UK assessment under the 150-day national procedure."
-      },
-      {
-       "name": "International Recognition Procedure (IRP)",
-       "note": "Reliance on an approval from a Reference Regulator (EMA, FDA, Swissmedic, Health Canada, TGA and others); Route A or B."
-      },
-      {
-       "name": "Scientific advice",
-       "note": "MHRA scientific advice meetings and written advice before submission."
-      },
-      {
-       "name": "Variations and renewals",
-       "note": "Type IA/IB/II variations and renewals aligned to the EU framework."
-      }
-     ]
+      "title": "Agency interaction & intelligence",
+      "items": [
+        "Scientific advice and pre-submission meeting strategy, briefing documents and preparation (EMA, MHRA, national agencies)",
+        "Structured responses to agency questions and deficiency letters",
+        "Local requirement mapping and regional regulatory intelligence"
+      ]
     },
     {
-     "id": "swissmedic",
-     "short": "Swissmedic",
-     "name": "Swiss Agency for Therapeutic Products",
-     "region": "Switzerland",
-     "format": "eCTD",
-     "footnote": "Standard, fast-track and foreign-approval-based procedures.",
-     "procedures": [
-      {
-       "name": "Standard authorisation",
-       "note": "Full assessment of a new active substance or a known active substance."
-      },
-      {
-       "name": "Procedure with prior foreign approval (Art. 13 TPA)",
-       "note": "Reduced assessment relying on an authorisation from a comparable foreign authority."
-      },
-      {
-       "name": "Fast-track and temporary authorisation",
-       "note": "Accelerated routes for medicines meeting an urgent medical need."
-      },
-      {
-       "name": "Pre-submission meeting",
-       "note": "Scientific and procedural advice before filing."
-      }
-     ]
+      "title": "Post-approval & lifecycle",
+      "items": [
+        "Variations, amendments and renewals across regions",
+        "Post-approval commitments and their follow-up with agencies",
+        "Regulatory assessment of post-approval process, site and supplier changes"
+      ]
     },
     {
-     "id": "pmda",
-     "short": "PMDA",
-     "name": "Pharmaceuticals and Medical Devices Agency",
-     "region": "Japan",
-     "format": "eCTD",
-     "footnote": "PMDA review, MHLW approval; Japanese-language Module 1 and 2.",
-     "procedures": [
-      {
-       "name": "New drug application (J-NDA)",
-       "note": "Full application including Japanese bridging or local clinical data where required."
-      },
-      {
-       "name": "Biosimilar application",
-       "note": "Comparability-based application under the Japanese biosimilar guideline."
-      },
-      {
-       "name": "Generic application",
-       "note": "Bioequivalence-based application with Japanese specification requirements."
-      },
-      {
-       "name": "PMDA consultation",
-       "note": "Formal clinical and quality consultations before submission."
-      }
-     ]
-    },
-    {
-     "id": "hc",
-     "short": "Health Canada",
-     "name": "Health Canada",
-     "region": "Canada",
-     "format": "eCTD",
-     "footnote": "Common Electronic Submissions Gateway; bilingual labelling.",
-     "procedures": [
-      {
-       "name": "New Drug Submission (NDS)",
-       "note": "Full submission for a new active substance or new indication."
-      },
-      {
-       "name": "Abbreviated New Drug Submission (ANDS)",
-       "note": "Generic submission demonstrating bioequivalence to the Canadian reference product."
-      },
-      {
-       "name": "Biosimilar NDS",
-       "note": "Comparability-based submission under the Canadian biosimilar guidance."
-      },
-      {
-       "name": "Drug Master File",
-       "note": "API and other master files referenced in the submission."
-      }
-     ]
-    },
-    {
-     "id": "tga",
-     "short": "TGA",
-     "name": "Therapeutic Goods Administration",
-     "region": "Australia",
-     "format": "eCTD",
-     "footnote": "Registration on the ARTG; comparable-overseas-regulator reliance.",
-     "procedures": [
-      {
-       "name": "Category 1 registration",
-       "note": "Full evaluation of a new prescription medicine."
-      },
-      {
-       "name": "COR-A / COR-B reliance pathways",
-       "note": "Abbreviated evaluation relying on an unredacted assessment report from a comparable overseas regulator."
-      },
-      {
-       "name": "Generic registration",
-       "note": "Bioequivalence-based application against the Australian reference product."
-      },
-      {
-       "name": "Pre-submission planning form",
-       "note": "Mandatory pre-submission step defining the dossier and timetable."
-      }
-     ]
+      "title": "GMP & quality compliance",
+      "kicker": "EU GMP · PIC/S · WHO GMP · ICH Q7–Q12",
+      "items": [
+        "GMP gap assessment of manufacturing and testing sites against EU GMP (including Annex 1 and Annex 2), PIC/S and WHO requirements",
+        "Inspection readiness: mock inspections, pre-approval inspection preparation and front-room / back-room coaching",
+        "Response to inspection findings: root-cause analysis, CAPA plans and follow-up evidence packages for the agency",
+        "Site Master File, GMP certificate and manufacturing-authorisation applications; QP declarations for imported products",
+        "Pharmaceutical quality system design and review: change control, deviations, OOS, complaints and product quality review",
+        "Data integrity assessment",
+        "Supplier and CMO qualification: audits, quality and technical agreements, and ongoing oversight",
+        "Alignment of GMP documentation with the dossier: validation, stability and batch records that say the same thing the CTD says"
+      ]
     }
-   ]
-  },
-  {
-   "num": "02",
-   "name": "ICH members and observers",
-   "sub": "WHO maturity level 3–4 national authorities",
-   "authorities": [
-    {
-     "id": "anvisa",
-     "short": "ANVISA",
-     "name": "Agência Nacional de Vigilância Sanitária",
-     "region": "Brazil",
-     "format": "CTD",
-     "footnote": "Portuguese-language dossier; GMP certification of all sites is a prerequisite.",
-     "procedures": [
-      {
-       "name": "New medicine registration",
-       "note": "Full registration of a new synthetic molecule or a new fixed-dose combination."
-      },
-      {
-       "name": "Generic and similar medicines",
-       "note": "Bioequivalence and pharmaceutical equivalence against the Brazilian comparator."
-      },
-      {
-       "name": "Biological products",
-       "note": "Comparability (biosimilar) or individual development pathway."
-      },
-      {
-       "name": "Optimised analysis (reliance)",
-       "note": "Reduced assessment for products approved by an Equivalent Foreign Regulatory Authority."
-      },
-      {
-       "name": "Post-registration changes",
-       "note": "Variations and renewals under the ANVISA change categories."
-      }
-     ]
-    },
-    {
-     "id": "nmpa",
-     "short": "NMPA",
-     "name": "National Medical Products Administration",
-     "region": "China",
-     "format": "eCTD",
-     "footnote": "Chinese-language dossier; CDE technical review.",
-     "procedures": [
-      {
-       "name": "Imported drug registration (Class 5)",
-       "note": "Registration of a product already approved abroad, with Chinese clinical data where required."
-      },
-      {
-       "name": "New drug application (Class 1–2)",
-       "note": "Innovative or improved new drugs under the 2020 Drug Registration Regulation."
-      },
-      {
-       "name": "Biosimilar application",
-       "note": "Comparability-based application under NMPA biosimilar guidance."
-      },
-      {
-       "name": "API / excipient / packaging platform filing",
-       "note": "DMF-type registration on the CDE platform, linked to the drug application."
-      },
-      {
-       "name": "Pre-submission communication",
-       "note": "CDE consultation meetings before filing."
-      }
-     ]
-    },
-    {
-     "id": "titck",
-     "short": "TİTCK",
-     "name": "Türkiye İlaç ve Tıbbi Cihaz Kurumu",
-     "region": "Türkiye",
-     "format": "eCTD",
-     "footnote": "EU-aligned framework; on-site GMP inspection before authorisation.",
-     "procedures": [
-      {
-       "name": "Marketing authorisation application",
-       "note": "National application in CTD/eCTD format under the EU-aligned regulation."
-      },
-      {
-       "name": "Biosimilar application",
-       "note": "Comparability-based application under the Turkish biosimilar guideline."
-      },
-      {
-       "name": "GMP certificate application",
-       "note": "Inspection of foreign manufacturing sites as a prerequisite to authorisation."
-      },
-      {
-       "name": "Variations and renewals",
-       "note": "Type IA/IB/II variations mirroring the EU classification."
-      }
-     ]
-    },
-    {
-     "id": "sfda",
-     "short": "SFDA",
-     "name": "Saudi Food and Drug Authority",
-     "region": "Saudi Arabia",
-     "format": "eCTD",
-     "footnote": "National route alongside the GCC centralised procedure.",
-     "procedures": [
-      {
-       "name": "New drug registration",
-       "note": "Full national application for a new active substance."
-      },
-      {
-       "name": "Generic and biosimilar registration",
-       "note": "Bioequivalence or comparability-based applications."
-      },
-      {
-       "name": "Verification and abridged pathways",
-       "note": "Reduced review for products approved by a reference authority."
-      },
-      {
-       "name": "Site registration and GMP",
-       "note": "Registration of the manufacturing site and GMP clearance before filing."
-      }
-     ]
-    },
-    {
-     "id": "cofepris",
-     "short": "COFEPRIS",
-     "name": "Comisión Federal para la Protección contra Riesgos Sanitarios",
-     "region": "Mexico",
-     "format": "CTD",
-     "footnote": "Spanish-language dossier; equivalence agreements with reference regulators.",
-     "procedures": [
-      {
-       "name": "New molecule registration",
-       "note": "Full registration after the New Molecule Committee opinion."
-      },
-      {
-       "name": "Generic registration",
-       "note": "Bioequivalence-based registration against the Mexican reference product."
-      },
-      {
-       "name": "Biotechnological and biocomparable products",
-       "note": "Comparability-based application for biosimilars."
-      },
-      {
-       "name": "Equivalence-agreement reliance",
-       "note": "Expedited review for products approved by FDA, EMA, Health Canada, Swissmedic, TGA and others."
-      }
-     ]
-    },
-    {
-     "id": "eda",
-     "short": "EDA",
-     "name": "Egyptian Drug Authority",
-     "region": "Egypt",
-     "format": "CTD",
-     "footnote": "WHO maturity level 3 authority.",
-     "procedures": [
-      {
-       "name": "Marketing authorisation",
-       "note": "National registration in CTD format."
-      },
-      {
-       "name": "Biosimilar registration",
-       "note": "Comparability-based application under EDA biosimilar guidelines."
-      },
-      {
-       "name": "Reliance pathway",
-       "note": "Abridged review for products approved by a stringent authority."
-      },
-      {
-       "name": "Variations and re-registration",
-       "note": "Post-approval changes and periodic re-registration."
-      }
-     ]
-    },
-    {
-     "id": "sahpra",
-     "short": "SAHPRA",
-     "name": "South African Health Products Regulatory Authority",
-     "region": "South Africa",
-     "format": "eCTD",
-     "footnote": "Reliance and collaborative review routes.",
-     "procedures": [
-      {
-       "name": "New registration application",
-       "note": "Full national assessment in eCTD format."
-      },
-      {
-       "name": "Reliance (abridged) review",
-       "note": "Reduced assessment for products approved by a recognised regulatory authority."
-      },
-      {
-       "name": "Biosimilar application",
-       "note": "Comparability-based application under SAHPRA biosimilar guidance."
-      },
-      {
-       "name": "Amendments and renewals",
-       "note": "Post-registration changes and periodic renewals."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "num": "03",
-   "name": "Regional harmonised procedures",
-   "sub": "One dossier, several member states",
-   "authorities": [
-    {
-     "id": "gcc",
-     "short": "GCC centralised",
-     "name": "GCC Centralised Registration",
-     "region": "Saudi Arabia · UAE · Kuwait · Qatar · Oman · Bahrain",
-     "format": "eCTD",
-     "footnote": "GCC-DR centralised procedure with national filings alongside.",
-     "procedures": [
-      {
-       "name": "Centralised registration (GCC-DR)",
-       "note": "Single application assessed for all member states, followed by national pricing and listing."
-      },
-      {
-       "name": "National registration",
-       "note": "Direct filings with each national authority where the centralised route is not used."
-      },
-      {
-       "name": "Site registration and GMP",
-       "note": "Registration of manufacturing sites, including GCC GMP inspections."
-      },
-      {
-       "name": "CPP and legalisation",
-       "note": "Certificates of Pharmaceutical Product and document legalisation requirements."
-      }
-     ]
-    },
-    {
-     "id": "eaeu",
-     "short": "EAEU unified",
-     "name": "EAEU Unified Registration",
-     "region": "Russia · Kazakhstan · Belarus · Armenia · Kyrgyzstan",
-     "format": "eCTD",
-     "footnote": "Common rules of the Eurasian Economic Union.",
-     "procedures": [
-      {
-       "name": "Mutual recognition procedure",
-       "note": "Assessment by a Reference State, recognised by the chosen Recognition States."
-      },
-      {
-       "name": "Decentralised procedure",
-       "note": "Simultaneous assessment by several member states."
-      },
-      {
-       "name": "Bringing national registrations into line",
-       "note": "Transition of legacy national dossiers to the Union format."
-      },
-      {
-       "name": "GMP inspection (EAEU)",
-       "note": "Union GMP certificate as a prerequisite for registration."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "num": "04",
-   "name": "National authorities with reliance pathways",
-   "sub": "Build on a reference approval",
-   "authorities": [
-    {
-     "id": "latam",
-     "short": "LATAM",
-     "name": "Latin America — national authorities",
-     "region": "INVIMA · ANMAT · DIGEMID · ISP",
-     "format": "CTD",
-     "footnote": "Spanish-language dossiers; CPP and GMP certification required.",
-     "procedures": [
-      {
-       "name": "National registration",
-       "note": "Full application with each national authority."
-      },
-      {
-       "name": "Reliance and abridged review",
-       "note": "Reduced assessment relying on a stringent-authority approval and public assessment report."
-      },
-      {
-       "name": "Renewals and variations",
-       "note": "Country-specific post-approval change categories."
-      }
-     ]
-    },
-    {
-     "id": "mena",
-     "short": "MENA",
-     "name": "Middle East and North Africa — national authorities",
-     "region": "IFDA (Iran) · Iraq · Jordan · Lebanon",
-     "format": "CTD",
-     "footnote": "Including Iran’s IRC registration and emergency-import routes.",
-     "procedures": [
-      {
-       "name": "IFDA registration (IRC)",
-       "note": "Iranian registration via the IRC, including import licensing and pricing."
-      },
-      {
-       "name": "Emergency and unlicensed import",
-       "note": "Case-by-case import authorisation for urgently needed medicines."
-      },
-      {
-       "name": "National registration",
-       "note": "Direct filings with Iraqi, Jordanian and Lebanese authorities."
-      },
-      {
-       "name": "Variations and renewals",
-       "note": "Post-approval changes under each national framework."
-      }
-     ]
-    },
-    {
-     "id": "cis",
-     "short": "CIS",
-     "name": "CIS — national authorities outside the EAEU",
-     "region": "Uzbekistan · Azerbaijan · Georgia",
-     "format": "CTD",
-     "footnote": "Russian-language dossiers and local reference requirements.",
-     "procedures": [
-      {
-       "name": "National registration",
-       "note": "Full application under each national regulation."
-      },
-      {
-       "name": "Accelerated registration",
-       "note": "Reduced review for products approved by a stringent authority."
-      },
-      {
-       "name": "Re-registration",
-       "note": "Periodic renewal of national authorisations."
-      }
-     ]
-    },
-    {
-     "id": "africa",
-     "short": "Africa",
-     "name": "Africa — national and collaborative routes",
-     "region": "NAFDAC · PPB · FDA Ghana · TMDA",
-     "format": "CTD",
-     "footnote": "National and collaborative (ZaZiBoNa, AMA) assessment routes.",
-     "procedures": [
-      {
-       "name": "National registration",
-       "note": "Full application with each national authority."
-      },
-      {
-       "name": "Collaborative and joint assessment",
-       "note": "Work-sharing procedures such as ZaZiBoNa and African Medicines Agency initiatives."
-      },
-      {
-       "name": "Reliance on WHO prequalification or SRA approval",
-       "note": "Abridged review for prequalified or stringent-authority-approved products."
-      }
-     ]
-    }
-   ]
-  }
- ],
- "intelligence": {
-  "intro": "A dossier is only as good as the guidance it was written against. We track what the agencies change, and we use AI tools, under qualified human review, to turn that information into faster, more consistent regulatory work.",
-  "groups": [
-   {
-    "title": "Regulatory intelligence",
-    "items": [
-     "Continuous monitoring of EMA, FDA, MHRA, WHO, PMDA, TGA and ICH guideline publications, concept papers and public consultations, with a focus on biologics, biosimilars and GMP",
-     "Impact assessment of each change on your pipeline and marketed products, with a recommended action and deadline",
-     "Country requirement mapping and regulatory landscape reports for market-entry decisions",
-     "Precedent analysis: EPARs, assessment reports, approval histories and public agency correspondence on comparable products",
-     "Periodic intelligence briefings tailored to your portfolio and target regions"
-    ]
-   },
-   {
-    "title": "AI in regulatory work",
-    "items": [
-     "AI-assisted screening of dossiers against current guidelines and agency expectations before filing: a faster first pass that our assessors then verify",
-     "Automated consistency checks across CTD modules: specifications, batch data, stability claims and cross-references",
-     "Structured first drafts of responses to agency questions, built from your source data and finalised by a regulatory professional",
-     "Advice on using AI in GxP-regulated work: validation expectations, data-integrity safeguards and documentation in line with emerging EMA and FDA guidance",
-     "Regulatory data standardisation: IDMP/SPOR-ready product data and eCTD-compliant publishing"
-    ]
-   }
   ],
-  "principleTitle": "Human accountability, always.",
-  "principle": "AI accelerates review and drafting. It never decides. Every regulatory decision and every page that reaches an agency is owned, reviewed and signed off by a qualified regulatory professional."
- },
- "watchDate": "21 October 2026",
- "watch": [
-  {
-   "agency": "EMA · CHMP",
-   "tag": "Approvals",
-   "date": "16 Oct 2026",
-   "url": "https://www.pharmanow.live/latest-news/ema-chmp-october-2026-meeting-highlights-orforglipron-biosimilars",
-   "title": "CHMP October meeting: six positive opinions, two of them biosimilars",
-   "summary": "Fovlussea (ranibizumab) and Neuzafy (filgrastim) recommended; refusal of Yartemlea (narsoplimab) confirmed after re-examination. Commission decisions are expected within about 67 days."
+  "fileIntro": "Select an authority to see the submission routes we handle there. Authorities are grouped the way the industry ranks them: WHO-Listed Authorities and long-standing ICH regulators first, then other ICH members and observers, regional procedures and national reliance routes.",
+  "tiers": [
+    {
+      "num": "01",
+      "name": "Stringent regulatory authorities",
+      "sub": "WHO-Listed Authorities · established ICH regulators",
+      "authorities": [
+        {
+          "id": "ema",
+          "short": "EMA",
+          "name": "European Medicines Agency",
+          "region": "European Union · EEA",
+          "format": "eCTD",
+          "footnote": "All EU procedures, including EDQM CEP and ASMF for active substances.",
+          "procedures": [
+            {
+              "name": "Centralised Procedure (CP)",
+              "note": "Single application assessed by CHMP; mandatory for biotech-derived products and biosimilars. One authorisation valid in all EU/EEA states."
+            },
+            {
+              "name": "Decentralised Procedure (DCP)",
+              "note": "Simultaneous application in several member states with a Reference Member State; the usual route for generics."
+            },
+            {
+              "name": "Mutual Recognition Procedure (MRP)",
+              "note": "Extension of an existing national authorisation to further member states."
+            },
+            {
+              "name": "National procedure",
+              "note": "Single-country authorisation where the product is not intended for other EU markets."
+            },
+            {
+              "name": "Scientific advice & pre-submission",
+              "note": "CHMP/SAWP scientific advice, pre-submission meetings and eligibility requests before filing."
+            },
+            {
+              "name": "CEP and ASMF (EDQM)",
+              "note": "Certificate of Suitability or Active Substance Master File so the API can be referenced in any EU dossier."
+            }
+          ]
+        },
+        {
+          "id": "fda",
+          "short": "FDA",
+          "name": "U.S. Food and Drug Administration",
+          "region": "United States",
+          "format": "eCTD",
+          "footnote": "CDER and CBER routes; Type II DMFs for active substances.",
+          "procedures": [
+            {
+              "name": "NDA — 505(b)(1)",
+              "note": "Full new drug application with complete safety and efficacy data."
+            },
+            {
+              "name": "NDA — 505(b)(2)",
+              "note": "Relies in part on published data or a listed drug; the route for reformulations and new indications."
+            },
+            {
+              "name": "ANDA — 505(j)",
+              "note": "Abbreviated application for generics, demonstrating bioequivalence to the reference listed drug."
+            },
+            {
+              "name": "BLA — 351(a) and 351(k)",
+              "note": "Biologics License Application (the FDA's formal name); 351(k) is the biosimilar and interchangeable pathway."
+            },
+            {
+              "name": "Pre-IND / Type B–C meetings",
+              "note": "Formal meeting requests, briefing packages and written responses."
+            },
+            {
+              "name": "Drug Master File (Type II)",
+              "note": "Confidential API, intermediate or packaging information referenced by the applicant."
+            }
+          ]
+        },
+        {
+          "id": "mhra",
+          "short": "MHRA",
+          "name": "Medicines and Healthcare products Regulatory Agency",
+          "region": "United Kingdom",
+          "format": "eCTD",
+          "footnote": "Post-Brexit routes for Great Britain and Northern Ireland.",
+          "procedures": [
+            {
+              "name": "National marketing authorisation",
+              "note": "Full UK assessment under the 150-day national procedure."
+            },
+            {
+              "name": "International Recognition Procedure (IRP)",
+              "note": "Reliance on an approval from a Reference Regulator (EMA, FDA, Swissmedic, Health Canada, TGA and others); Route A or B."
+            },
+            {
+              "name": "Scientific advice",
+              "note": "MHRA scientific advice meetings and written advice before submission."
+            },
+            {
+              "name": "Variations and renewals",
+              "note": "Type IA/IB/II variations and renewals aligned to the EU framework."
+            }
+          ]
+        },
+        {
+          "id": "swissmedic",
+          "short": "Swissmedic",
+          "name": "Swiss Agency for Therapeutic Products",
+          "region": "Switzerland",
+          "format": "eCTD",
+          "footnote": "Standard, fast-track and foreign-approval-based procedures.",
+          "procedures": [
+            {
+              "name": "Standard authorisation",
+              "note": "Full assessment of a new active substance or a known active substance."
+            },
+            {
+              "name": "Procedure with prior foreign approval (Art. 13 TPA)",
+              "note": "Reduced assessment relying on an authorisation from a comparable foreign authority."
+            },
+            {
+              "name": "Fast-track and temporary authorisation",
+              "note": "Accelerated routes for medicines meeting an urgent medical need."
+            },
+            {
+              "name": "Pre-submission meeting",
+              "note": "Scientific and procedural advice before filing."
+            }
+          ]
+        },
+        {
+          "id": "pmda",
+          "short": "PMDA",
+          "name": "Pharmaceuticals and Medical Devices Agency",
+          "region": "Japan",
+          "format": "eCTD",
+          "footnote": "PMDA review, MHLW approval; Japanese-language Module 1 and 2.",
+          "procedures": [
+            {
+              "name": "New drug application (J-NDA)",
+              "note": "Full application including Japanese bridging or local clinical data where required."
+            },
+            {
+              "name": "Biosimilar application",
+              "note": "Comparability-based application under the Japanese biosimilar guideline."
+            },
+            {
+              "name": "Generic application",
+              "note": "Bioequivalence-based application with Japanese specification requirements."
+            },
+            {
+              "name": "PMDA consultation",
+              "note": "Formal clinical and quality consultations before submission."
+            }
+          ]
+        },
+        {
+          "id": "hc",
+          "short": "Health Canada",
+          "name": "Health Canada",
+          "region": "Canada",
+          "format": "eCTD",
+          "footnote": "Common Electronic Submissions Gateway; bilingual labelling.",
+          "procedures": [
+            {
+              "name": "New Drug Submission (NDS)",
+              "note": "Full submission for a new active substance or new indication."
+            },
+            {
+              "name": "Abbreviated New Drug Submission (ANDS)",
+              "note": "Generic submission demonstrating bioequivalence to the Canadian reference product."
+            },
+            {
+              "name": "Biosimilar NDS",
+              "note": "Comparability-based submission under the Canadian biosimilar guidance."
+            },
+            {
+              "name": "Drug Master File",
+              "note": "API and other master files referenced in the submission."
+            }
+          ]
+        },
+        {
+          "id": "tga",
+          "short": "TGA",
+          "name": "Therapeutic Goods Administration",
+          "region": "Australia",
+          "format": "eCTD",
+          "footnote": "Registration on the ARTG; comparable-overseas-regulator reliance.",
+          "procedures": [
+            {
+              "name": "Category 1 registration",
+              "note": "Full evaluation of a new prescription medicine."
+            },
+            {
+              "name": "COR-A / COR-B reliance pathways",
+              "note": "Abbreviated evaluation relying on an unredacted assessment report from a comparable overseas regulator."
+            },
+            {
+              "name": "Generic registration",
+              "note": "Bioequivalence-based application against the Australian reference product."
+            },
+            {
+              "name": "Pre-submission planning form",
+              "note": "Mandatory pre-submission step defining the dossier and timetable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": "02",
+      "name": "ICH members and observers",
+      "sub": "WHO maturity level 3–4 national authorities",
+      "authorities": [
+        {
+          "id": "anvisa",
+          "short": "ANVISA",
+          "name": "Agência Nacional de Vigilância Sanitária",
+          "region": "Brazil",
+          "format": "CTD",
+          "footnote": "Portuguese-language dossier; GMP certification of all sites is a prerequisite.",
+          "procedures": [
+            {
+              "name": "New medicine registration",
+              "note": "Full registration of a new synthetic molecule or a new fixed-dose combination."
+            },
+            {
+              "name": "Generic and similar medicines",
+              "note": "Bioequivalence and pharmaceutical equivalence against the Brazilian comparator."
+            },
+            {
+              "name": "Biological products",
+              "note": "Comparability (biosimilar) or individual development pathway."
+            },
+            {
+              "name": "Optimised analysis (reliance)",
+              "note": "Reduced assessment for products approved by an Equivalent Foreign Regulatory Authority."
+            },
+            {
+              "name": "Post-registration changes",
+              "note": "Variations and renewals under the ANVISA change categories."
+            }
+          ]
+        },
+        {
+          "id": "nmpa",
+          "short": "NMPA",
+          "name": "National Medical Products Administration",
+          "region": "China",
+          "format": "eCTD",
+          "footnote": "Chinese-language dossier; CDE technical review.",
+          "procedures": [
+            {
+              "name": "Imported drug registration (Class 5)",
+              "note": "Registration of a product already approved abroad, with Chinese clinical data where required."
+            },
+            {
+              "name": "New drug application (Class 1–2)",
+              "note": "Innovative or improved new drugs under the 2020 Drug Registration Regulation."
+            },
+            {
+              "name": "Biosimilar application",
+              "note": "Comparability-based application under NMPA biosimilar guidance."
+            },
+            {
+              "name": "API / excipient / packaging platform filing",
+              "note": "DMF-type registration on the CDE platform, linked to the drug application."
+            },
+            {
+              "name": "Pre-submission communication",
+              "note": "CDE consultation meetings before filing."
+            }
+          ]
+        },
+        {
+          "id": "titck",
+          "short": "TİTCK",
+          "name": "Türkiye İlaç ve Tıbbi Cihaz Kurumu",
+          "region": "Türkiye",
+          "format": "eCTD",
+          "footnote": "EU-aligned framework; on-site GMP inspection before authorisation.",
+          "procedures": [
+            {
+              "name": "Marketing authorisation application",
+              "note": "National application in CTD/eCTD format under the EU-aligned regulation."
+            },
+            {
+              "name": "Biosimilar application",
+              "note": "Comparability-based application under the Turkish biosimilar guideline."
+            },
+            {
+              "name": "GMP certificate application",
+              "note": "Inspection of foreign manufacturing sites as a prerequisite to authorisation."
+            },
+            {
+              "name": "Variations and renewals",
+              "note": "Type IA/IB/II variations mirroring the EU classification."
+            }
+          ]
+        },
+        {
+          "id": "sfda",
+          "short": "SFDA",
+          "name": "Saudi Food and Drug Authority",
+          "region": "Saudi Arabia",
+          "format": "eCTD",
+          "footnote": "National route alongside the GCC centralised procedure.",
+          "procedures": [
+            {
+              "name": "New drug registration",
+              "note": "Full national application for a new active substance."
+            },
+            {
+              "name": "Generic and biosimilar registration",
+              "note": "Bioequivalence or comparability-based applications."
+            },
+            {
+              "name": "Verification and abridged pathways",
+              "note": "Reduced review for products approved by a reference authority."
+            },
+            {
+              "name": "Site registration and GMP",
+              "note": "Registration of the manufacturing site and GMP clearance before filing."
+            }
+          ]
+        },
+        {
+          "id": "cofepris",
+          "short": "COFEPRIS",
+          "name": "Comisión Federal para la Protección contra Riesgos Sanitarios",
+          "region": "Mexico",
+          "format": "CTD",
+          "footnote": "Spanish-language dossier; equivalence agreements with reference regulators.",
+          "procedures": [
+            {
+              "name": "New molecule registration",
+              "note": "Full registration after the New Molecule Committee opinion."
+            },
+            {
+              "name": "Generic registration",
+              "note": "Bioequivalence-based registration against the Mexican reference product."
+            },
+            {
+              "name": "Biotechnological and biocomparable products",
+              "note": "Comparability-based application for biosimilars."
+            },
+            {
+              "name": "Equivalence-agreement reliance",
+              "note": "Expedited review for products approved by FDA, EMA, Health Canada, Swissmedic, TGA and others."
+            }
+          ]
+        },
+        {
+          "id": "eda",
+          "short": "EDA",
+          "name": "Egyptian Drug Authority",
+          "region": "Egypt",
+          "format": "CTD",
+          "footnote": "WHO maturity level 3 authority.",
+          "procedures": [
+            {
+              "name": "Marketing authorisation",
+              "note": "National registration in CTD format."
+            },
+            {
+              "name": "Biosimilar registration",
+              "note": "Comparability-based application under EDA biosimilar guidelines."
+            },
+            {
+              "name": "Reliance pathway",
+              "note": "Abridged review for products approved by a stringent authority."
+            },
+            {
+              "name": "Variations and re-registration",
+              "note": "Post-approval changes and periodic re-registration."
+            }
+          ]
+        },
+        {
+          "id": "sahpra",
+          "short": "SAHPRA",
+          "name": "South African Health Products Regulatory Authority",
+          "region": "South Africa",
+          "format": "eCTD",
+          "footnote": "Reliance and collaborative review routes.",
+          "procedures": [
+            {
+              "name": "New registration application",
+              "note": "Full national assessment in eCTD format."
+            },
+            {
+              "name": "Reliance (abridged) review",
+              "note": "Reduced assessment for products approved by a recognised regulatory authority."
+            },
+            {
+              "name": "Biosimilar application",
+              "note": "Comparability-based application under SAHPRA biosimilar guidance."
+            },
+            {
+              "name": "Amendments and renewals",
+              "note": "Post-registration changes and periodic renewals."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "Regional harmonised procedures",
+      "sub": "One dossier, several member states",
+      "authorities": [
+        {
+          "id": "gcc",
+          "short": "GCC centralised",
+          "name": "GCC Centralised Registration",
+          "region": "Saudi Arabia · UAE · Kuwait · Qatar · Oman · Bahrain",
+          "format": "eCTD",
+          "footnote": "GCC-DR centralised procedure with national filings alongside.",
+          "procedures": [
+            {
+              "name": "Centralised registration (GCC-DR)",
+              "note": "Single application assessed for all member states, followed by national pricing and listing."
+            },
+            {
+              "name": "National registration",
+              "note": "Direct filings with each national authority where the centralised route is not used."
+            },
+            {
+              "name": "Site registration and GMP",
+              "note": "Registration of manufacturing sites, including GCC GMP inspections."
+            },
+            {
+              "name": "CPP and legalisation",
+              "note": "Certificates of Pharmaceutical Product and document legalisation requirements."
+            }
+          ]
+        },
+        {
+          "id": "eaeu",
+          "short": "EAEU unified",
+          "name": "EAEU Unified Registration",
+          "region": "Russia · Kazakhstan · Belarus · Armenia · Kyrgyzstan",
+          "format": "eCTD",
+          "footnote": "Common rules of the Eurasian Economic Union.",
+          "procedures": [
+            {
+              "name": "Mutual recognition procedure",
+              "note": "Assessment by a Reference State, recognised by the chosen Recognition States."
+            },
+            {
+              "name": "Decentralised procedure",
+              "note": "Simultaneous assessment by several member states."
+            },
+            {
+              "name": "Bringing national registrations into line",
+              "note": "Transition of legacy national dossiers to the Union format."
+            },
+            {
+              "name": "GMP inspection (EAEU)",
+              "note": "Union GMP certificate as a prerequisite for registration."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "National authorities with reliance pathways",
+      "sub": "Build on a reference approval",
+      "authorities": [
+        {
+          "id": "latam",
+          "short": "LATAM",
+          "name": "Latin America — national authorities",
+          "region": "INVIMA · ANMAT · DIGEMID · ISP",
+          "format": "CTD",
+          "footnote": "Spanish-language dossiers; CPP and GMP certification required.",
+          "procedures": [
+            {
+              "name": "National registration",
+              "note": "Full application with each national authority."
+            },
+            {
+              "name": "Reliance and abridged review",
+              "note": "Reduced assessment relying on a stringent-authority approval and public assessment report."
+            },
+            {
+              "name": "Renewals and variations",
+              "note": "Country-specific post-approval change categories."
+            }
+          ]
+        },
+        {
+          "id": "mena",
+          "short": "MENA",
+          "name": "Middle East and North Africa — national authorities",
+          "region": "IFDA (Iran) · Iraq · Jordan · Lebanon",
+          "format": "CTD",
+          "footnote": "Including Iran’s IRC registration and emergency-import routes.",
+          "procedures": [
+            {
+              "name": "IFDA registration (IRC)",
+              "note": "Iranian registration via the IRC, including import licensing and pricing."
+            },
+            {
+              "name": "Emergency and unlicensed import",
+              "note": "Case-by-case import authorisation for urgently needed medicines."
+            },
+            {
+              "name": "National registration",
+              "note": "Direct filings with Iraqi, Jordanian and Lebanese authorities."
+            },
+            {
+              "name": "Variations and renewals",
+              "note": "Post-approval changes under each national framework."
+            }
+          ]
+        },
+        {
+          "id": "cis",
+          "short": "CIS",
+          "name": "CIS — national authorities outside the EAEU",
+          "region": "Uzbekistan · Azerbaijan · Georgia",
+          "format": "CTD",
+          "footnote": "Russian-language dossiers and local reference requirements.",
+          "procedures": [
+            {
+              "name": "National registration",
+              "note": "Full application under each national regulation."
+            },
+            {
+              "name": "Accelerated registration",
+              "note": "Reduced review for products approved by a stringent authority."
+            },
+            {
+              "name": "Re-registration",
+              "note": "Periodic renewal of national authorisations."
+            }
+          ]
+        },
+        {
+          "id": "africa",
+          "short": "Africa",
+          "name": "Africa — national and collaborative routes",
+          "region": "NAFDAC · PPB · FDA Ghana · TMDA",
+          "format": "CTD",
+          "footnote": "National and collaborative (ZaZiBoNa, AMA) assessment routes.",
+          "procedures": [
+            {
+              "name": "National registration",
+              "note": "Full application with each national authority."
+            },
+            {
+              "name": "Collaborative and joint assessment",
+              "note": "Work-sharing procedures such as ZaZiBoNa and African Medicines Agency initiatives."
+            },
+            {
+              "name": "Reliance on WHO prequalification or SRA approval",
+              "note": "Abridged review for prequalified or stringent-authority-approved products."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "intelligence": {
+    "intro": "A dossier is only as good as the guidance it was written against. We track what the agencies change, and we use AI tools, under qualified human review, to turn that information into faster, more consistent regulatory work.",
+    "groups": [
+      {
+        "title": "Regulatory intelligence",
+        "items": [
+          "Continuous monitoring of EMA, FDA, MHRA, WHO, PMDA, TGA and ICH guideline publications, concept papers and public consultations, with a focus on biologics, biosimilars and GMP",
+          "Impact assessment of each change on your pipeline and marketed products, with a recommended action and deadline",
+          "Country requirement mapping and regulatory landscape reports for market-entry decisions",
+          "Precedent analysis: EPARs, assessment reports, approval histories and public agency correspondence on comparable products",
+          "Periodic intelligence briefings tailored to your portfolio and target regions"
+        ]
+      },
+      {
+        "title": "AI in regulatory work",
+        "items": [
+          "AI-assisted screening of dossiers against current guidelines and agency expectations before filing: a faster first pass that our assessors then verify",
+          "Automated consistency checks across CTD modules: specifications, batch data, stability claims and cross-references",
+          "Structured first drafts of responses to agency questions, built from your source data and finalised by a regulatory professional",
+          "Advice on using AI in GxP-regulated work: validation expectations, data-integrity safeguards and documentation in line with emerging EMA and FDA guidance",
+          "Regulatory data standardisation: IDMP/SPOR-ready product data and eCTD-compliant publishing"
+        ]
+      }
+    ],
+    "principleTitle": "Human accountability, always.",
+    "principle": "AI accelerates review and drafting. It never decides. Every regulatory decision and every page that reaches an agency is owned, reviewed and signed off by a qualified regulatory professional."
   },
-  {
-   "agency": "FDA · CDER/CBER",
-   "tag": "Final guidance",
-   "date": "13 Oct 2026",
-   "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20817/postapproval-manufacturing-changes-to-biosimilar-and-interchangeable-biosimilar-products-questions",
-   "title": "Postapproval manufacturing changes to biosimilars: Q&A guidance finalised",
-   "summary": "Finalises the July 2024 draft; sets reporting categories for post-approval CMC changes to biosimilar and interchangeable products on ICH Q5E principles and supersedes Q&A I.20."
-  },
-  {
-   "agency": "PIC/S",
-   "tag": "GMP",
-   "date": "24 Sep 2026",
-   "url": "https://picscheme.org/en/news/revision-of-pics-gmp-guide-pe-009-18",
-   "title": "PIC/S GMP Guide PE 009-18 in force with revised Annex 19",
-   "summary": "Reference and retention samples: Section 9 revised for parallel-imported, distributed and traded products. Applies to all PIC/S participating authorities from 24 September."
-  }
- ],
- "ctaTitle": "Tell us the product and the market",
- "ctaText": "We will come back with the pathway, the document list and an indicative timeline, before any commitment."
+  "ctaTitle": "Tell us the product and the market",
+  "ctaText": "We will come back with the pathway, the document list and an indicative timeline, before any commitment."
 }

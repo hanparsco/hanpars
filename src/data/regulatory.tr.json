@@ -1,671 +1,644 @@
 {
- "intro": "Ruhsatlandırma ve regülasyon, bir ilacın yaşam döngüsünün her aşamasında devrededir. İlk çalışmadan önce geliştirme planını ve regülasyon stratejisini şekillendiririz; CMC, klinik olmayan ve klinik kanıtları dosyaya işleriz; başvuruyu otorite incelemesinden onaya kadar yönlendiririz; ardından her varyasyon, yenileme ve değişiklikte ruhsatı güncel tutarız.",
- "coverIntro": "Biyolojik ürünler, biyobenzerler ve küçük moleküller için, geliştirmeden onaya ve sonrasına uzanan uçtan uca regülasyon stratejisi.",
- "services": [
-  {
-   "title": "Geliştirme ve CMC stratejisi",
-   "items": [
-    "Karşılaştırmalı çalışmaların regülasyon açısından tasarımı ve incelenmesi: biyolojik ürünler için analitik ve fonksiyonel biyobenzerlik çalışmaları; küçük moleküller için farmasötik eşdeğerlik ve biyoeşdeğerlik programları",
-    "CMC geliştirmesinin regülasyon açısından gözetimi: hücre bankası karakterizasyonundan veya etkin madde sentez yolu seçiminden, spesifikasyon belirleme ve stabiliteye, proses validasyonu ve teknoloji transferine kadar",
-    "Hem biyolojik hem de sentetik ürünlerde proses, üretim yeri ve ölçek değişiklikleri için karşılaştırılabilirlik ve değişiklik kontrolü protokolleri"
-   ]
-  },
-  {
-   "title": "Dosya hazırlama ve başvuruya hazırlık",
-   "items": [
-    "CTD teknik yazım ve inceleme, Modül 1–4; eCTD hazırlığı",
-    "Başvuru öncesinde regülasyon ve kalite boşluk analizi",
-    "Dosyaların değerlendirici bakış açısıyla ön değerlendirmesi"
-   ]
-  },
-  {
-   "title": "Otorite iletişimi ve regülasyon istihbaratı",
-   "items": [
-    "Bilimsel danışma ve başvuru öncesi toplantı stratejisi, bilgilendirme dokümanları ve hazırlık (EMA, MHRA, ulusal otoriteler)",
-    "Otorite sorularına ve eksiklik yazılarına yapılandırılmış yanıtlar",
-    "Yerel gereklilik haritalaması ve bölgesel regülasyon istihbaratı"
-   ]
-  },
-  {
-   "title": "Ruhsat sonrası ve yaşam döngüsü",
-   "items": [
-    "Bölgeler genelinde varyasyonlar, tadiller ve yenilemeler",
-    "Ruhsat sonrası taahhütler ve bunların otoritelerle takibi",
-    "Ruhsat sonrası proses, üretim yeri ve tedarikçi değişikliklerinin regülasyon açısından değerlendirilmesi"
-   ]
-  },
-  {
-   "title": "GMP ve kalite uyumu",
-   "kicker": "EU GMP · PIC/S · WHO GMP · ICH Q7–Q12",
-   "items": [
-    "Üretim ve test tesislerinin EU GMP (Ek 1 ve Ek 2 dahil), PIC/S ve WHO gereklilikleri açısından GMP boşluk değerlendirmesi",
-    "Denetime hazırlık: simülasyon (mock) denetimleri, ruhsat öncesi denetim hazırlığı ve denetim odası (front room) / destek odası (back room) koçluğu",
-    "Denetim bulgularına yanıt: kök neden analizi, CAPA planları ve otoriteye sunulacak takip kanıt paketleri",
-    "Tesis Ana Dosyası (Site Master File), GMP sertifikası ve üretim izni başvuruları; ithal ürünler için Yetkilendirilmiş Kişi (QP) beyanları",
-    "Farmasötik kalite sistemi tasarımı ve incelemesi: değişiklik kontrolü, sapmalar, OOS, şikâyetler ve ürün kalite değerlendirmesi",
-    "Veri bütünlüğü değerlendirmesi",
-    "Tedarikçi ve CMO yeterlilik değerlendirmesi: denetimler, kalite ve teknik anlaşmalar ve sürekli gözetim",
-    "GMP dokümantasyonunun dosyayla uyumlu hale getirilmesi: CTD’de beyan edilenlerle birebir örtüşen validasyon, stabilite ve seri kayıtları"
-   ]
-  }
- ],
- "fileIntro": "Bir otorite seçerek orada yürüttüğümüz başvuru yollarını görüntüleyin. Otoriteler sektörün sıralama biçimine göre gruplandırılmıştır: önce WHO listesindeki ve ICH’nin kurucu düzenleyicileri, ardından ICH üyeleri, bölgesel prosedürler ve ulusal dayanma (reliance) yolları.",
- "tiers": [
-  {
-   "num": "01",
-   "name": "Sıkı düzenleyici otoriteler",
-   "sub": "WHO listesindekiler · ICH kurucu düzenleyicileri",
-   "authorities": [
+  "intro": "Ruhsatlandırma ve regülasyon, bir ilacın yaşam döngüsünün her aşamasında devrededir. İlk çalışmadan önce geliştirme planını ve regülasyon stratejisini şekillendiririz; CMC, klinik olmayan ve klinik kanıtları dosyaya işleriz; başvuruyu otorite incelemesinden onaya kadar yönlendiririz; ardından her varyasyon, yenileme ve değişiklikte ruhsatı güncel tutarız.",
+  "coverIntro": "Biyolojik ürünler, biyobenzerler ve küçük moleküller için, geliştirmeden onaya ve sonrasına uzanan uçtan uca regülasyon stratejisi.",
+  "services": [
     {
-     "id": "ema",
-     "short": "EMA",
-     "name": "European Medicines Agency",
-     "region": "Avrupa Birliği · AEA",
-     "format": "eCTD",
-     "footnote": "EDQM CEP ve etkin maddeler için ASMF dahil tüm AB prosedürleri.",
-     "procedures": [
-      {
-       "name": "Merkezi Prosedür (CP)",
-       "note": "CHMP tarafından değerlendirilen tek başvuru; biyoteknolojik kaynaklı ürünler ve biyobenzerler için zorunludur. Tüm AB/AEA ülkelerinde geçerli tek bir ruhsat."
-      },
-      {
-       "name": "Merkezi Olmayan Prosedür (DCP)",
-       "note": "Bir Referans Üye Ülke ile birlikte birden fazla üye ülkede eş zamanlı başvuru; jenerikler için olağan yol."
-      },
-      {
-       "name": "Karşılıklı Tanıma Prosedürü (MRP)",
-       "note": "Mevcut bir ulusal ruhsatın diğer üye ülkelere genişletilmesi."
-      },
-      {
-       "name": "Ulusal prosedür",
-       "note": "Ürünün diğer AB pazarları için öngörülmediği durumlarda tek ülkeli ruhsat."
-      },
-      {
-       "name": "Bilimsel danışma ve başvuru öncesi görüşme",
-       "note": "Başvuru öncesinde CHMP/SAWP bilimsel danışması, başvuru öncesi toplantılar ve uygunluk talepleri."
-      },
-      {
-       "name": "CEP ve ASMF (EDQM)",
-       "note": "Etkin maddenin herhangi bir AB dosyasında referans gösterilebilmesi için Uygunluk Sertifikası (CEP) veya Etkin Madde Ana Dosyası (ASMF)."
-      }
-     ]
+      "title": "Geliştirme ve CMC stratejisi",
+      "items": [
+        "Karşılaştırmalı çalışmaların regülasyon açısından tasarımı ve incelenmesi: biyolojik ürünler için analitik ve fonksiyonel biyobenzerlik çalışmaları; küçük moleküller için farmasötik eşdeğerlik ve biyoeşdeğerlik programları",
+        "CMC geliştirmesinin regülasyon açısından gözetimi: hücre bankası karakterizasyonundan veya etkin madde sentez yolu seçiminden, spesifikasyon belirleme ve stabiliteye, proses validasyonu ve teknoloji transferine kadar",
+        "Hem biyolojik hem de sentetik ürünlerde proses, üretim yeri ve ölçek değişiklikleri için karşılaştırılabilirlik ve değişiklik kontrolü protokolleri"
+      ]
     },
     {
-     "id": "fda",
-     "short": "FDA",
-     "name": "U.S. Food and Drug Administration",
-     "region": "Amerika Birleşik Devletleri",
-     "format": "eCTD",
-     "footnote": "CDER ve CBER yolları; etkin maddeler için Tip II DMF’ler.",
-     "procedures": [
-      {
-       "name": "NDA — 505(b)(1)",
-       "note": "Güvenlilik ve etkililik verilerinin tamamını içeren tam yeni ilaç başvurusu."
-      },
-      {
-       "name": "NDA — 505(b)(2)",
-       "note": "Kısmen yayımlanmış verilere veya listelenmiş bir ilaca dayanır; yeniden formülasyonlar ve yeni endikasyonlar için kullanılan yol."
-      },
-      {
-       "name": "ANDA — 505(j)",
-       "note": "Jenerikler için kısaltılmış başvuru; referans listelenmiş ilaca karşı biyoeşdeğerliğin gösterilmesi."
-      },
-      {
-       "name": "BLA — 351(a) ve 351(k)",
-       "note": "Biyolojik ürün lisans başvurusu; 351(k), biyobenzer ve birbirinin yerine kullanılabilir (interchangeable) ürünler için yoldur."
-      },
-      {
-       "name": "Pre-IND / Tip B–C toplantıları",
-       "note": "Resmi toplantı talepleri, bilgilendirme paketleri ve yazılı yanıtlar."
-      },
-      {
-       "name": "İlaç Ana Dosyası (Tip II)",
-       "note": "Başvuru sahibinin referans gösterdiği gizli etkin madde, ara ürün veya ambalaj bilgileri."
-      }
-     ]
+      "title": "Dosya hazırlama ve başvuruya hazırlık",
+      "items": [
+        "CTD teknik yazım ve inceleme, Modül 1–4; eCTD hazırlığı",
+        "Başvuru öncesinde regülasyon ve kalite boşluk analizi",
+        "Dosyaların değerlendirici bakış açısıyla ön değerlendirmesi"
+      ]
     },
     {
-     "id": "mhra",
-     "short": "MHRA",
-     "name": "Medicines and Healthcare products Regulatory Agency",
-     "region": "Birleşik Krallık",
-     "format": "eCTD",
-     "footnote": "Brexit sonrası Büyük Britanya ve Kuzey İrlanda yolları.",
-     "procedures": [
-      {
-       "name": "Ulusal ruhsat (pazarlama izni)",
-       "note": "150 günlük ulusal prosedür kapsamında tam Birleşik Krallık değerlendirmesi."
-      },
-      {
-       "name": "Uluslararası Tanıma Prosedürü (IRP)",
-       "note": "Bir Referans Düzenleyicinin (EMA, FDA, Swissmedic, Health Canada, TGA ve diğerleri) onayına dayanma; A veya B Yolu."
-      },
-      {
-       "name": "Bilimsel danışma",
-       "note": "Başvuru öncesinde MHRA bilimsel danışma toplantıları ve yazılı danışmanlık."
-      },
-      {
-       "name": "Varyasyonlar ve yenilemeler",
-       "note": "AB çerçevesiyle uyumlu Tip IA/IB/II varyasyonlar ve yenilemeler."
-      }
-     ]
+      "title": "Otorite iletişimi ve regülasyon istihbaratı",
+      "items": [
+        "Bilimsel danışma ve başvuru öncesi toplantı stratejisi, bilgilendirme dokümanları ve hazırlık (EMA, MHRA, ulusal otoriteler)",
+        "Otorite sorularına ve eksiklik yazılarına yapılandırılmış yanıtlar",
+        "Yerel gereklilik haritalaması ve bölgesel regülasyon istihbaratı"
+      ]
     },
     {
-     "id": "swissmedic",
-     "short": "Swissmedic",
-     "name": "Swiss Agency for Therapeutic Products",
-     "region": "İsviçre",
-     "format": "eCTD",
-     "footnote": "Standart, hızlandırılmış ve yabancı onaya dayalı prosedürler.",
-     "procedures": [
-      {
-       "name": "Standart ruhsat",
-       "note": "Yeni bir etkin maddenin veya bilinen bir maddenin tam değerlendirmesi."
-      },
-      {
-       "name": "Yurt dışında onaylı ürünler için prosedür (TPA Md. 13)",
-       "note": "Karşılaştırılabilir bir yabancı otoritenin ruhsatına dayanan azaltılmış değerlendirme."
-      },
-      {
-       "name": "Hızlandırılmış ve geçici ruhsat",
-       "note": "Acil tıbbi ihtiyacı karşılayan ilaçlar için hızlandırılmış yollar."
-      },
-      {
-       "name": "Başvuru öncesi toplantı",
-       "note": "Başvuru öncesinde bilimsel ve prosedürel danışmanlık."
-      }
-     ]
+      "title": "Ruhsat sonrası ve yaşam döngüsü",
+      "items": [
+        "Bölgeler genelinde varyasyonlar, tadiller ve yenilemeler",
+        "Ruhsat sonrası taahhütler ve bunların otoritelerle takibi",
+        "Ruhsat sonrası proses, üretim yeri ve tedarikçi değişikliklerinin regülasyon açısından değerlendirilmesi"
+      ]
     },
     {
-     "id": "pmda",
-     "short": "PMDA",
-     "name": "Pharmaceuticals and Medical Devices Agency",
-     "region": "Japonya",
-     "format": "eCTD",
-     "footnote": "PMDA incelemesi, MHLW onayı; Japonca Modül 1 ve 2.",
-     "procedures": [
-      {
-       "name": "Yeni ilaç başvurusu (J-NDA)",
-       "note": "Gerektiğinde Japonya’ya özgü köprüleme veya yerel klinik verileri içeren tam başvuru."
-      },
-      {
-       "name": "Biyobenzer başvurusu",
-       "note": "Japonya biyobenzer kılavuzu kapsamında karşılaştırılabilirliğe dayalı başvuru."
-      },
-      {
-       "name": "Jenerik başvurusu",
-       "note": "Japonya spesifikasyon gereklilikleriyle birlikte biyoeşdeğerliğe dayalı başvuru."
-      },
-      {
-       "name": "PMDA danışmanlığı",
-       "note": "Başvuru öncesinde resmi klinik ve kalite danışmanlıkları."
-      }
-     ]
-    },
-    {
-     "id": "hc",
-     "short": "Health Canada",
-     "name": "Health Canada",
-     "region": "Kanada",
-     "format": "eCTD",
-     "footnote": "Ortak Elektronik Başvuru Ağ Geçidi; iki dilli etiketleme.",
-     "procedures": [
-      {
-       "name": "Yeni İlaç Başvurusu (NDS)",
-       "note": "Yeni bir etkin madde veya yeni endikasyon için tam başvuru."
-      },
-      {
-       "name": "Kısaltılmış Yeni İlaç Başvurusu (ANDS)",
-       "note": "Kanada referans ürününe karşı biyoeşdeğerliği gösteren jenerik başvurusu."
-      },
-      {
-       "name": "Biyobenzer NDS",
-       "note": "Kanada biyobenzer kılavuzu kapsamında karşılaştırılabilirliğe dayalı başvuru."
-      },
-      {
-       "name": "İlaç Ana Dosyası",
-       "note": "Başvuruda referans gösterilen etkin madde ve diğer ana dosyalar."
-      }
-     ]
-    },
-    {
-     "id": "tga",
-     "short": "TGA",
-     "name": "Therapeutic Goods Administration",
-     "region": "Avustralya",
-     "format": "eCTD",
-     "footnote": "ARTG’ye kayıt; karşılaştırılabilir yurt dışı düzenleyicisine dayanma.",
-     "procedures": [
-      {
-       "name": "Kategori 1 kaydı",
-       "note": "Yeni bir reçeteli ilacın tam değerlendirmesi."
-      },
-      {
-       "name": "COR-A / COR-B dayanma yolları",
-       "note": "Karşılaştırılabilir bir yurt dışı düzenleyicisinin redakte edilmemiş değerlendirme raporuna dayanan kısaltılmış değerlendirme."
-      },
-      {
-       "name": "Jenerik kayıt",
-       "note": "Avustralya referans ürününe karşı biyoeşdeğerliğe dayalı başvuru."
-      },
-      {
-       "name": "Başvuru öncesi planlama formu",
-       "note": "Dosyayı ve takvimi tanımlayan zorunlu başvuru öncesi adım."
-      }
-     ]
+      "title": "GMP ve kalite uyumu",
+      "kicker": "EU GMP · PIC/S · WHO GMP · ICH Q7–Q12",
+      "items": [
+        "Üretim ve test tesislerinin EU GMP (Ek 1 ve Ek 2 dahil), PIC/S ve WHO gereklilikleri açısından GMP boşluk değerlendirmesi",
+        "Denetime hazırlık: simülasyon (mock) denetimleri, ruhsat öncesi denetim hazırlığı ve denetim odası (front room) / destek odası (back room) koçluğu",
+        "Denetim bulgularına yanıt: kök neden analizi, CAPA planları ve otoriteye sunulacak takip kanıt paketleri",
+        "Tesis Ana Dosyası (Site Master File), GMP sertifikası ve üretim izni başvuruları; ithal ürünler için Yetkilendirilmiş Kişi (QP) beyanları",
+        "Farmasötik kalite sistemi tasarımı ve incelemesi: değişiklik kontrolü, sapmalar, OOS, şikâyetler ve ürün kalite değerlendirmesi",
+        "Veri bütünlüğü değerlendirmesi",
+        "Tedarikçi ve CMO yeterlilik değerlendirmesi: denetimler, kalite ve teknik anlaşmalar ve sürekli gözetim",
+        "GMP dokümantasyonunun dosyayla uyumlu hale getirilmesi: CTD’de beyan edilenlerle birebir örtüşen validasyon, stabilite ve seri kayıtları"
+      ]
     }
-   ]
-  },
-  {
-   "num": "02",
-   "name": "ICH düzenleyici üyeleri",
-   "sub": "WHO olgunluk düzeyi 3–4 olan ulusal otoriteler",
-   "authorities": [
-    {
-     "id": "anvisa",
-     "short": "ANVISA",
-     "name": "Agência Nacional de Vigilância Sanitária",
-     "region": "Brezilya",
-     "format": "CTD",
-     "footnote": "Portekizce dosya; tüm sahaların GMP sertifikasyonu ön koşuldur.",
-     "procedures": [
-      {
-       "name": "Yeni ilaç kaydı",
-       "note": "Sentetik yeni bir molekülün veya yeni bir kombinasyonun tam kaydı."
-      },
-      {
-       "name": "Jenerik ve benzer ilaçlar",
-       "note": "Brezilya karşılaştırma ürününe karşı biyoeşdeğerlik ve farmasötik eşdeğerlik."
-      },
-      {
-       "name": "Biyolojik ürünler",
-       "note": "Karşılaştırılabilirlik (biyobenzer) veya bireysel geliştirme yolu."
-      },
-      {
-       "name": "Optimize edilmiş analiz (dayanma)",
-       "note": "Eşdeğer Yabancı Düzenleyici Otorite tarafından onaylanmış ürünler için azaltılmış değerlendirme."
-      },
-      {
-       "name": "Ruhsat sonrası değişiklikler",
-       "note": "ANVISA değişiklik kategorilerine göre varyasyonlar ve yenilemeler."
-      }
-     ]
-    },
-    {
-     "id": "nmpa",
-     "short": "NMPA",
-     "name": "National Medical Products Administration",
-     "region": "Çin",
-     "format": "eCTD",
-     "footnote": "Çince dosya; CDE teknik incelemesi.",
-     "procedures": [
-      {
-       "name": "İthal ilaç kaydı (Sınıf 5)",
-       "note": "Yurt dışında halihazırda onaylanmış bir ürünün, gerektiğinde Çin klinik verileriyle kaydı."
-      },
-      {
-       "name": "Yeni ilaç başvurusu (Sınıf 1–2)",
-       "note": "2020 İlaç Kayıt Yönetmeliği kapsamında yenilikçi veya geliştirilmiş yeni ilaçlar."
-      },
-      {
-       "name": "Biyobenzer başvurusu",
-       "note": "NMPA biyobenzer kılavuzu kapsamında karşılaştırılabilirliğe dayalı başvuru."
-      },
-      {
-       "name": "Etkin madde / yardımcı madde / ambalaj platformu başvurusu",
-       "note": "İlaç başvurusuna bağlı olarak CDE platformunda DMF türü kayıt."
-      },
-      {
-       "name": "Başvuru öncesi iletişim",
-       "note": "Başvuru öncesinde CDE danışma toplantıları."
-      }
-     ]
-    },
-    {
-     "id": "titck",
-     "short": "TİTCK",
-     "name": "Türkiye İlaç ve Tıbbi Cihaz Kurumu",
-     "region": "Türkiye",
-     "format": "eCTD",
-     "footnote": "AB ile uyumlu çerçeve; ruhsat öncesinde yerinde GMP denetimi.",
-     "procedures": [
-      {
-       "name": "Ruhsat (pazarlama izni) başvurusu",
-       "note": "AB ile uyumlu yönetmelik kapsamında CTD/eCTD formatında ulusal başvuru."
-      },
-      {
-       "name": "Biyobenzer başvurusu",
-       "note": "Türkiye biyobenzer kılavuzu kapsamında karşılaştırılabilirliğe dayalı başvuru."
-      },
-      {
-       "name": "GMP sertifikası başvurusu",
-       "note": "Ruhsatın ön koşulu olarak yurt dışı üretim sahalarının denetimi."
-      },
-      {
-       "name": "Varyasyonlar ve yenilemeler",
-       "note": "AB sınıflandırmasını yansıtan Tip IA/IB/II varyasyonlar."
-      }
-     ]
-    },
-    {
-     "id": "sfda",
-     "short": "SFDA",
-     "name": "Saudi Food and Drug Authority",
-     "region": "Suudi Arabistan",
-     "format": "eCTD",
-     "footnote": "GCC merkezi prosedürüne ek olarak ulusal yol.",
-     "procedures": [
-      {
-       "name": "Yeni ilaç kaydı",
-       "note": "Yeni bir etkin madde için tam ulusal başvuru."
-      },
-      {
-       "name": "Jenerik ve biyobenzer kaydı",
-       "note": "Biyoeşdeğerlik veya karşılaştırılabilirliğe dayalı başvurular."
-      },
-      {
-       "name": "Doğrulama ve kısaltılmış yollar",
-       "note": "Bir referans otorite tarafından onaylanmış ürünler için azaltılmış inceleme."
-      },
-      {
-       "name": "Saha kaydı ve GMP",
-       "note": "Başvuru öncesinde üretim sahasının kaydı ve GMP onayı."
-      }
-     ]
-    },
-    {
-     "id": "cofepris",
-     "short": "COFEPRIS",
-     "name": "Comisión Federal para la Protección contra Riesgos Sanitarios",
-     "region": "Meksika",
-     "format": "CTD",
-     "footnote": "İspanyolca dosya; referans düzenleyicilerle eşdeğerlik anlaşmaları.",
-     "procedures": [
-      {
-       "name": "Yeni molekül kaydı",
-       "note": "Yeni Molekül Komitesi görüşünden sonra tam kayıt."
-      },
-      {
-       "name": "Jenerik kayıt",
-       "note": "Meksika referansına karşı biyoeşdeğerliğe dayalı kayıt."
-      },
-      {
-       "name": "Biyoteknolojik ve biyokarşılaştırılabilir ürünler",
-       "note": "Biyobenzerler için karşılaştırılabilirliğe dayalı başvuru."
-      },
-      {
-       "name": "Eşdeğerlik anlaşmasına dayanma",
-       "note": "FDA, EMA, Health Canada, Swissmedic, TGA ve diğerleri tarafından onaylanmış ürünler için hızlandırılmış inceleme."
-      }
-     ]
-    },
-    {
-     "id": "eda",
-     "short": "EDA",
-     "name": "Egyptian Drug Authority",
-     "region": "Mısır",
-     "format": "CTD",
-     "footnote": "WHO olgunluk düzeyi 3 olan otorite.",
-     "procedures": [
-      {
-       "name": "Ruhsat (pazarlama izni)",
-       "note": "CTD formatında ulusal kayıt."
-      },
-      {
-       "name": "Biyobenzer kaydı",
-       "note": "EDA biyobenzer kılavuzları kapsamında karşılaştırılabilirliğe dayalı başvuru."
-      },
-      {
-       "name": "Dayanma yolu",
-       "note": "Sıkı bir otorite tarafından onaylanmış ürünler için kısaltılmış inceleme."
-      },
-      {
-       "name": "Varyasyonlar ve yeniden kayıt",
-       "note": "Ruhsat sonrası değişiklikler ve periyodik yeniden kayıt."
-      }
-     ]
-    },
-    {
-     "id": "sahpra",
-     "short": "SAHPRA",
-     "name": "South Afrikan Health Products Regulatory Authority",
-     "region": "Güney Afrika",
-     "format": "eCTD",
-     "footnote": "Dayanma ve iş birliğine dayalı inceleme yolları.",
-     "procedures": [
-      {
-       "name": "Yeni kayıt başvurusu",
-       "note": "eCTD formatında tam ulusal değerlendirme."
-      },
-      {
-       "name": "Referans onaya dayalı (kısaltılmış) inceleme",
-       "note": "Tanınmış bir düzenleyici otorite tarafından onaylanmış ürünler için azaltılmış değerlendirme."
-      },
-      {
-       "name": "Biyobenzer başvurusu",
-       "note": "SAHPRA biyobenzer kılavuzu kapsamında karşılaştırılabilirliğe dayalı başvuru."
-      },
-      {
-       "name": "Tadiller ve yenilemeler",
-       "note": "Ruhsat sonrası değişiklikler ve periyodik yenilemeler."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "num": "03",
-   "name": "Bölgesel uyumlaştırılmış prosedürler",
-   "sub": "Tek dosya, birden çok üye ülke",
-   "authorities": [
-    {
-     "id": "gcc",
-     "short": "GCC merkezi",
-     "name": "GCC Merkezi Kayıt",
-     "region": "Suudi Arabistan · BAE · Kuveyt · Katar · Umman · Bahreyn",
-     "format": "eCTD",
-     "footnote": "GCC-DR merkezi prosedürü ve buna ek ulusal başvurular.",
-     "procedures": [
-      {
-       "name": "Merkezi kayıt (GCC-DR)",
-       "note": "Tüm üye ülkeler için değerlendirilen tek başvuru; ardından ulusal fiyatlandırma ve listeye alma."
-      },
-      {
-       "name": "Ulusal kayıt",
-       "note": "Merkezi yolun kullanılmadığı durumlarda her ulusal otoriteye doğrudan başvuru."
-      },
-      {
-       "name": "Saha kaydı ve GMP",
-       "note": "GCC GMP denetimleri dahil üretim sahalarının kaydı."
-      },
-      {
-       "name": "CPP ve legalizasyon",
-       "note": "İlaç Ürün Sertifikaları (CPP) ve belge legalizasyonu gereklilikleri."
-      }
-     ]
-    },
-    {
-     "id": "eaeu",
-     "short": "EAEU birleşik",
-     "name": "EAEU Birleşik Kayıt",
-     "region": "Rusya · Kazakistan · Belarus · Ermenistan · Kırgızistan",
-     "format": "eCTD",
-     "footnote": "Avrasya Ekonomik Birliği’nin ortak kuralları.",
-     "procedures": [
-      {
-       "name": "Karşılıklı tanıma prosedürü",
-       "note": "Bir Referans Ülke tarafından yapılan ve seçilen Tanıyan Ülkeler tarafından tanınan değerlendirme."
-      },
-      {
-       "name": "Merkezi olmayan prosedür",
-       "note": "Birden fazla üye ülke tarafından eş zamanlı değerlendirme."
-      },
-      {
-       "name": "Ulusal kayıtların uyumlaştırılması",
-       "note": "Eski ulusal dosyaların Birlik formatına geçişi."
-      },
-      {
-       "name": "GMP denetimi (EAEU)",
-       "note": "Kayıt için ön koşul olarak Birlik GMP sertifikası."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "num": "04",
-   "name": "Dayanma yollarına sahip ulusal otoriteler",
-   "sub": "Bir referans onaya dayanın",
-   "authorities": [
-    {
-     "id": "latam",
-     "short": "LATAM",
-     "name": "Latin Amerika — ulusal otoriteler",
-     "region": "INVIMA · ANMAT · DIGEMID · ISP",
-     "format": "CTD",
-     "footnote": "İspanyolca dosyalar; CPP ve GMP sertifikasyonu gereklidir.",
-     "procedures": [
-      {
-       "name": "Ulusal kayıt",
-       "note": "Her ulusal otoriteye tam başvuru."
-      },
-      {
-       "name": "Dayanma ve kısaltılmış inceleme",
-       "note": "Sıkı bir otoritenin onayına ve kamuya açık değerlendirme raporuna dayanan azaltılmış değerlendirme."
-      },
-      {
-       "name": "Yenilemeler ve varyasyonlar",
-       "note": "Ülkeye özgü ruhsat sonrası değişiklik kategorileri."
-      }
-     ]
-    },
-    {
-     "id": "mena",
-     "short": "MENA",
-     "name": "Orta Doğu ve Kuzey Afrika — ulusal otoriteler",
-     "region": "IFDA (İran) · Irak · Ürdün · Lübnan",
-     "format": "CTD",
-     "footnote": "İran’ın IRC kaydı ve acil ithalat yolları dahil.",
-     "procedures": [
-      {
-       "name": "IFDA kaydı (IRC)",
-       "note": "İthalat lisanslaması ve fiyatlandırma dahil, IRC üzerinden İran kaydı."
-      },
-      {
-       "name": "Acil ve ruhsatsız ithalat",
-       "note": "Acilen ihtiyaç duyulan ilaçlar için vaka bazında ithalat izni."
-      },
-      {
-       "name": "Ulusal kayıt",
-       "note": "Irak, Ürdün ve Lübnan otoritelerine doğrudan başvurular."
-      },
-      {
-       "name": "Varyasyonlar ve yenilemeler",
-       "note": "Her ulusal çerçeve kapsamında ruhsat sonrası değişiklikler."
-      }
-     ]
-    },
-    {
-     "id": "cis",
-     "short": "CIS",
-     "name": "BDT — EAEU dışındaki ulusal otoriteler",
-     "region": "Özbekistan · Azerbaycan · Gürcistan",
-     "format": "CTD",
-     "footnote": "Rusça dosyalar ve yerel referans gereklilikleri.",
-     "procedures": [
-      {
-       "name": "Ulusal kayıt",
-       "note": "Her ulusal düzenleme kapsamında tam başvuru."
-      },
-      {
-       "name": "Hızlandırılmış kayıt",
-       "note": "Sıkı bir otorite tarafından onaylanmış ürünler için azaltılmış inceleme."
-      },
-      {
-       "name": "Yeniden kayıt",
-       "note": "Ulusal ruhsatların periyodik yenilenmesi."
-      }
-     ]
-    },
-    {
-     "id": "africa",
-     "short": "Afrika",
-     "name": "Afrika — ulusal ve iş birliğine dayalı yollar",
-     "region": "NAFDAC · PPB · FDA Ghana · TMDA",
-     "format": "CTD",
-     "footnote": "Ulusal ve iş birliğine dayalı (ZaZiBoNa, AMA) değerlendirme yolları.",
-     "procedures": [
-      {
-       "name": "Ulusal kayıt",
-       "note": "Her ulusal otoriteye tam başvuru."
-      },
-      {
-       "name": "İş birliğine dayalı ve ortak değerlendirme",
-       "note": "ZaZiBoNa ve Afrika İlaç Ajansı girişimleri gibi iş paylaşımı prosedürleri."
-      },
-      {
-       "name": "WHO ön yeterliliğine veya SRA onayına dayanma",
-       "note": "Ön yeterlilik almış veya sıkı bir otorite tarafından onaylanmış ürünler için kısaltılmış inceleme."
-      }
-     ]
-    }
-   ]
-  }
- ],
- "intelligence": {
-  "intro": "Bir dosya, ancak yazıldığı kılavuzlar kadar iyidir. Otoritelerin neyi değiştirdiğini izliyor, bu bilgiyi daha hızlı ve daha tutarlı regülasyon çalışmasına dönüştürmek için nitelikli insan incelemesi altında yapay zekâ araçları kullanıyoruz.",
-  "groups": [
-   {
-    "title": "Regülasyon istihbaratı",
-    "items": [
-     "EMA, FDA, MHRA, WHO, PMDA, TGA ve ICH kılavuz yayınlarının, kavram belgelerinin (concept paper) ve kamuoyu görüşüne açılan taslakların, özellikle biyolojik ürünler, biyobenzerler ve GMP odağında sürekli izlenmesi",
-     "Her değişikliğin geliştirme portföyünüz (pipeline) ve pazardaki ürünleriniz üzerindeki etkisinin değerlendirilmesi; önerilen eylem ve son tarihle birlikte",
-     "Pazara giriş kararları için ülke gereklilik haritalaması ve regülasyon ortamı raporları",
-     "Emsal analizi: karşılaştırılabilir ürünlere ilişkin EPAR’lar, değerlendirme raporları, onay geçmişleri ve kamuya açık otorite yazışmaları",
-     "Portföyünüze ve hedef bölgelere göre hazırlanmış periyodik istihbarat bilgilendirmeleri"
-    ]
-   },
-   {
-    "title": "Regülasyonda yapay zekâ",
-    "items": [
-     "Başvuru öncesinde dosyaların güncel kılavuzlara ve otorite beklentilerine göre yapay zekâ destekli taranması: değerlendiricilerimizin ardından doğruladığı, daha hızlı bir ilk tarama",
-     "CTD modülleri arasında otomatik tutarlılık kontrolleri: spesifikasyonlar, seri verileri, stabilite beyanları ve çapraz referanslar",
-     "Kaynak verilerinizden oluşturulan ve bir regülasyon uzmanı tarafından sonlandırılan, otorite sorularına yönelik yapılandırılmış ilk taslak yanıtlar",
-     "GxP kapsamındaki çalışmalarda yapay zekâ kullanımına ilişkin danışmanlık: validasyon beklentileri, veri bütünlüğü güvenceleri ve yeni oluşmakta olan EMA ve FDA kılavuzlarıyla uyumlu dokümantasyon",
-     "Regülasyon verilerinin standardizasyonu: IDMP/SPOR’a hazır ürün verileri ve eCTD uyumlu yayımlama"
-    ]
-   }
   ],
-  "principleTitle": "Sorumluluk her zaman insandadır.",
-  "principle": "Yapay zekâ incelemeyi ve taslak hazırlamayı hızlandırır. Asla karar vermez. Her regülasyon kararı ve bir otoriteye ulaşan her sayfa, nitelikli bir regülasyon uzmanı tarafından sahiplenilir, incelenir ve onaylanır."
- },
- "watchDate": "21 Ekim 2026",
- "watch": [
-  {
-   "agency": "EMA · CHMP",
-   "tag": "Onaylar",
-   "date": "16 Eki 2026",
-   "url": "https://www.pharmanow.live/latest-news/ema-chmp-october-2026-meeting-highlights-orforglipron-biosimilars",
-   "title": "CHMP Ekim toplantısı: altı olumlu görüş, ikisi biyobenzer",
-   "summary": "Fovlussea (ranibizumab) ve Neuzafy (filgrastim) için olumlu öneri; Yartemlea (narsoplimab) için ret kararı yeniden incelemenin ardından teyit edildi. Komisyon kararlarının yaklaşık 67 gün içinde beklendiği bildirildi."
+  "fileIntro": "Bir otorite seçerek orada yürüttüğümüz başvuru yollarını görüntüleyin. Otoriteler sektörün sıralama biçimine göre gruplandırılmıştır: önce WHO listesindeki ve ICH’nin kurucu düzenleyicileri, ardından ICH üyeleri, bölgesel prosedürler ve ulusal dayanma (reliance) yolları.",
+  "tiers": [
+    {
+      "num": "01",
+      "name": "Sıkı düzenleyici otoriteler",
+      "sub": "WHO listesindekiler · ICH kurucu düzenleyicileri",
+      "authorities": [
+        {
+          "id": "ema",
+          "short": "EMA",
+          "name": "European Medicines Agency",
+          "region": "Avrupa Birliği · AEA",
+          "format": "eCTD",
+          "footnote": "EDQM CEP ve etkin maddeler için ASMF dahil tüm AB prosedürleri.",
+          "procedures": [
+            {
+              "name": "Merkezi Prosedür (CP)",
+              "note": "CHMP tarafından değerlendirilen tek başvuru; biyoteknolojik kaynaklı ürünler ve biyobenzerler için zorunludur. Tüm AB/AEA ülkelerinde geçerli tek bir ruhsat."
+            },
+            {
+              "name": "Merkezi Olmayan Prosedür (DCP)",
+              "note": "Bir Referans Üye Ülke ile birlikte birden fazla üye ülkede eş zamanlı başvuru; jenerikler için olağan yol."
+            },
+            {
+              "name": "Karşılıklı Tanıma Prosedürü (MRP)",
+              "note": "Mevcut bir ulusal ruhsatın diğer üye ülkelere genişletilmesi."
+            },
+            {
+              "name": "Ulusal prosedür",
+              "note": "Ürünün diğer AB pazarları için öngörülmediği durumlarda tek ülkeli ruhsat."
+            },
+            {
+              "name": "Bilimsel danışma ve başvuru öncesi görüşme",
+              "note": "Başvuru öncesinde CHMP/SAWP bilimsel danışması, başvuru öncesi toplantılar ve uygunluk talepleri."
+            },
+            {
+              "name": "CEP ve ASMF (EDQM)",
+              "note": "Etkin maddenin herhangi bir AB dosyasında referans gösterilebilmesi için Uygunluk Sertifikası (CEP) veya Etkin Madde Ana Dosyası (ASMF)."
+            }
+          ]
+        },
+        {
+          "id": "fda",
+          "short": "FDA",
+          "name": "U.S. Food and Drug Administration",
+          "region": "Amerika Birleşik Devletleri",
+          "format": "eCTD",
+          "footnote": "CDER ve CBER yolları; etkin maddeler için Tip II DMF’ler.",
+          "procedures": [
+            {
+              "name": "NDA — 505(b)(1)",
+              "note": "Güvenlilik ve etkililik verilerinin tamamını içeren tam yeni ilaç başvurusu."
+            },
+            {
+              "name": "NDA — 505(b)(2)",
+              "note": "Kısmen yayımlanmış verilere veya listelenmiş bir ilaca dayanır; yeniden formülasyonlar ve yeni endikasyonlar için kullanılan yol."
+            },
+            {
+              "name": "ANDA — 505(j)",
+              "note": "Jenerikler için kısaltılmış başvuru; referans listelenmiş ilaca karşı biyoeşdeğerliğin gösterilmesi."
+            },
+            {
+              "name": "BLA — 351(a) ve 351(k)",
+              "note": "Biyolojik ürün lisans başvurusu; 351(k), biyobenzer ve birbirinin yerine kullanılabilir (interchangeable) ürünler için yoldur."
+            },
+            {
+              "name": "Pre-IND / Tip B–C toplantıları",
+              "note": "Resmi toplantı talepleri, bilgilendirme paketleri ve yazılı yanıtlar."
+            },
+            {
+              "name": "İlaç Ana Dosyası (Tip II)",
+              "note": "Başvuru sahibinin referans gösterdiği gizli etkin madde, ara ürün veya ambalaj bilgileri."
+            }
+          ]
+        },
+        {
+          "id": "mhra",
+          "short": "MHRA",
+          "name": "Medicines and Healthcare products Regulatory Agency",
+          "region": "Birleşik Krallık",
+          "format": "eCTD",
+          "footnote": "Brexit sonrası Büyük Britanya ve Kuzey İrlanda yolları.",
+          "procedures": [
+            {
+              "name": "Ulusal ruhsat (pazarlama izni)",
+              "note": "150 günlük ulusal prosedür kapsamında tam Birleşik Krallık değerlendirmesi."
+            },
+            {
+              "name": "Uluslararası Tanıma Prosedürü (IRP)",
+              "note": "Bir Referans Düzenleyicinin (EMA, FDA, Swissmedic, Health Canada, TGA ve diğerleri) onayına dayanma; A veya B Yolu."
+            },
+            {
+              "name": "Bilimsel danışma",
+              "note": "Başvuru öncesinde MHRA bilimsel danışma toplantıları ve yazılı danışmanlık."
+            },
+            {
+              "name": "Varyasyonlar ve yenilemeler",
+              "note": "AB çerçevesiyle uyumlu Tip IA/IB/II varyasyonlar ve yenilemeler."
+            }
+          ]
+        },
+        {
+          "id": "swissmedic",
+          "short": "Swissmedic",
+          "name": "Swiss Agency for Therapeutic Products",
+          "region": "İsviçre",
+          "format": "eCTD",
+          "footnote": "Standart, hızlandırılmış ve yabancı onaya dayalı prosedürler.",
+          "procedures": [
+            {
+              "name": "Standart ruhsat",
+              "note": "Yeni bir etkin maddenin veya bilinen bir maddenin tam değerlendirmesi."
+            },
+            {
+              "name": "Yurt dışında onaylı ürünler için prosedür (TPA Md. 13)",
+              "note": "Karşılaştırılabilir bir yabancı otoritenin ruhsatına dayanan azaltılmış değerlendirme."
+            },
+            {
+              "name": "Hızlandırılmış ve geçici ruhsat",
+              "note": "Acil tıbbi ihtiyacı karşılayan ilaçlar için hızlandırılmış yollar."
+            },
+            {
+              "name": "Başvuru öncesi toplantı",
+              "note": "Başvuru öncesinde bilimsel ve prosedürel danışmanlık."
+            }
+          ]
+        },
+        {
+          "id": "pmda",
+          "short": "PMDA",
+          "name": "Pharmaceuticals and Medical Devices Agency",
+          "region": "Japonya",
+          "format": "eCTD",
+          "footnote": "PMDA incelemesi, MHLW onayı; Japonca Modül 1 ve 2.",
+          "procedures": [
+            {
+              "name": "Yeni ilaç başvurusu (J-NDA)",
+              "note": "Gerektiğinde Japonya’ya özgü köprüleme veya yerel klinik verileri içeren tam başvuru."
+            },
+            {
+              "name": "Biyobenzer başvurusu",
+              "note": "Japonya biyobenzer kılavuzu kapsamında karşılaştırılabilirliğe dayalı başvuru."
+            },
+            {
+              "name": "Jenerik başvurusu",
+              "note": "Japonya spesifikasyon gereklilikleriyle birlikte biyoeşdeğerliğe dayalı başvuru."
+            },
+            {
+              "name": "PMDA danışmanlığı",
+              "note": "Başvuru öncesinde resmi klinik ve kalite danışmanlıkları."
+            }
+          ]
+        },
+        {
+          "id": "hc",
+          "short": "Health Canada",
+          "name": "Health Canada",
+          "region": "Kanada",
+          "format": "eCTD",
+          "footnote": "Ortak Elektronik Başvuru Ağ Geçidi; iki dilli etiketleme.",
+          "procedures": [
+            {
+              "name": "Yeni İlaç Başvurusu (NDS)",
+              "note": "Yeni bir etkin madde veya yeni endikasyon için tam başvuru."
+            },
+            {
+              "name": "Kısaltılmış Yeni İlaç Başvurusu (ANDS)",
+              "note": "Kanada referans ürününe karşı biyoeşdeğerliği gösteren jenerik başvurusu."
+            },
+            {
+              "name": "Biyobenzer NDS",
+              "note": "Kanada biyobenzer kılavuzu kapsamında karşılaştırılabilirliğe dayalı başvuru."
+            },
+            {
+              "name": "İlaç Ana Dosyası",
+              "note": "Başvuruda referans gösterilen etkin madde ve diğer ana dosyalar."
+            }
+          ]
+        },
+        {
+          "id": "tga",
+          "short": "TGA",
+          "name": "Therapeutic Goods Administration",
+          "region": "Avustralya",
+          "format": "eCTD",
+          "footnote": "ARTG’ye kayıt; karşılaştırılabilir yurt dışı düzenleyicisine dayanma.",
+          "procedures": [
+            {
+              "name": "Kategori 1 kaydı",
+              "note": "Yeni bir reçeteli ilacın tam değerlendirmesi."
+            },
+            {
+              "name": "COR-A / COR-B dayanma yolları",
+              "note": "Karşılaştırılabilir bir yurt dışı düzenleyicisinin redakte edilmemiş değerlendirme raporuna dayanan kısaltılmış değerlendirme."
+            },
+            {
+              "name": "Jenerik kayıt",
+              "note": "Avustralya referans ürününe karşı biyoeşdeğerliğe dayalı başvuru."
+            },
+            {
+              "name": "Başvuru öncesi planlama formu",
+              "note": "Dosyayı ve takvimi tanımlayan zorunlu başvuru öncesi adım."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": "02",
+      "name": "ICH düzenleyici üyeleri",
+      "sub": "WHO olgunluk düzeyi 3–4 olan ulusal otoriteler",
+      "authorities": [
+        {
+          "id": "anvisa",
+          "short": "ANVISA",
+          "name": "Agência Nacional de Vigilância Sanitária",
+          "region": "Brezilya",
+          "format": "CTD",
+          "footnote": "Portekizce dosya; tüm sahaların GMP sertifikasyonu ön koşuldur.",
+          "procedures": [
+            {
+              "name": "Yeni ilaç kaydı",
+              "note": "Sentetik yeni bir molekülün veya yeni bir kombinasyonun tam kaydı."
+            },
+            {
+              "name": "Jenerik ve benzer ilaçlar",
+              "note": "Brezilya karşılaştırma ürününe karşı biyoeşdeğerlik ve farmasötik eşdeğerlik."
+            },
+            {
+              "name": "Biyolojik ürünler",
+              "note": "Karşılaştırılabilirlik (biyobenzer) veya bireysel geliştirme yolu."
+            },
+            {
+              "name": "Optimize edilmiş analiz (dayanma)",
+              "note": "Eşdeğer Yabancı Düzenleyici Otorite tarafından onaylanmış ürünler için azaltılmış değerlendirme."
+            },
+            {
+              "name": "Ruhsat sonrası değişiklikler",
+              "note": "ANVISA değişiklik kategorilerine göre varyasyonlar ve yenilemeler."
+            }
+          ]
+        },
+        {
+          "id": "nmpa",
+          "short": "NMPA",
+          "name": "National Medical Products Administration",
+          "region": "Çin",
+          "format": "eCTD",
+          "footnote": "Çince dosya; CDE teknik incelemesi.",
+          "procedures": [
+            {
+              "name": "İthal ilaç kaydı (Sınıf 5)",
+              "note": "Yurt dışında halihazırda onaylanmış bir ürünün, gerektiğinde Çin klinik verileriyle kaydı."
+            },
+            {
+              "name": "Yeni ilaç başvurusu (Sınıf 1–2)",
+              "note": "2020 İlaç Kayıt Yönetmeliği kapsamında yenilikçi veya geliştirilmiş yeni ilaçlar."
+            },
+            {
+              "name": "Biyobenzer başvurusu",
+              "note": "NMPA biyobenzer kılavuzu kapsamında karşılaştırılabilirliğe dayalı başvuru."
+            },
+            {
+              "name": "Etkin madde / yardımcı madde / ambalaj platformu başvurusu",
+              "note": "İlaç başvurusuna bağlı olarak CDE platformunda DMF türü kayıt."
+            },
+            {
+              "name": "Başvuru öncesi iletişim",
+              "note": "Başvuru öncesinde CDE danışma toplantıları."
+            }
+          ]
+        },
+        {
+          "id": "titck",
+          "short": "TİTCK",
+          "name": "Türkiye İlaç ve Tıbbi Cihaz Kurumu",
+          "region": "Türkiye",
+          "format": "eCTD",
+          "footnote": "AB ile uyumlu çerçeve; ruhsat öncesinde yerinde GMP denetimi.",
+          "procedures": [
+            {
+              "name": "Ruhsat (pazarlama izni) başvurusu",
+              "note": "AB ile uyumlu yönetmelik kapsamında CTD/eCTD formatında ulusal başvuru."
+            },
+            {
+              "name": "Biyobenzer başvurusu",
+              "note": "Türkiye biyobenzer kılavuzu kapsamında karşılaştırılabilirliğe dayalı başvuru."
+            },
+            {
+              "name": "GMP sertifikası başvurusu",
+              "note": "Ruhsatın ön koşulu olarak yurt dışı üretim sahalarının denetimi."
+            },
+            {
+              "name": "Varyasyonlar ve yenilemeler",
+              "note": "AB sınıflandırmasını yansıtan Tip IA/IB/II varyasyonlar."
+            }
+          ]
+        },
+        {
+          "id": "sfda",
+          "short": "SFDA",
+          "name": "Saudi Food and Drug Authority",
+          "region": "Suudi Arabistan",
+          "format": "eCTD",
+          "footnote": "GCC merkezi prosedürüne ek olarak ulusal yol.",
+          "procedures": [
+            {
+              "name": "Yeni ilaç kaydı",
+              "note": "Yeni bir etkin madde için tam ulusal başvuru."
+            },
+            {
+              "name": "Jenerik ve biyobenzer kaydı",
+              "note": "Biyoeşdeğerlik veya karşılaştırılabilirliğe dayalı başvurular."
+            },
+            {
+              "name": "Doğrulama ve kısaltılmış yollar",
+              "note": "Bir referans otorite tarafından onaylanmış ürünler için azaltılmış inceleme."
+            },
+            {
+              "name": "Saha kaydı ve GMP",
+              "note": "Başvuru öncesinde üretim sahasının kaydı ve GMP onayı."
+            }
+          ]
+        },
+        {
+          "id": "cofepris",
+          "short": "COFEPRIS",
+          "name": "Comisión Federal para la Protección contra Riesgos Sanitarios",
+          "region": "Meksika",
+          "format": "CTD",
+          "footnote": "İspanyolca dosya; referans düzenleyicilerle eşdeğerlik anlaşmaları.",
+          "procedures": [
+            {
+              "name": "Yeni molekül kaydı",
+              "note": "Yeni Molekül Komitesi görüşünden sonra tam kayıt."
+            },
+            {
+              "name": "Jenerik kayıt",
+              "note": "Meksika referansına karşı biyoeşdeğerliğe dayalı kayıt."
+            },
+            {
+              "name": "Biyoteknolojik ve biyokarşılaştırılabilir ürünler",
+              "note": "Biyobenzerler için karşılaştırılabilirliğe dayalı başvuru."
+            },
+            {
+              "name": "Eşdeğerlik anlaşmasına dayanma",
+              "note": "FDA, EMA, Health Canada, Swissmedic, TGA ve diğerleri tarafından onaylanmış ürünler için hızlandırılmış inceleme."
+            }
+          ]
+        },
+        {
+          "id": "eda",
+          "short": "EDA",
+          "name": "Egyptian Drug Authority",
+          "region": "Mısır",
+          "format": "CTD",
+          "footnote": "WHO olgunluk düzeyi 3 olan otorite.",
+          "procedures": [
+            {
+              "name": "Ruhsat (pazarlama izni)",
+              "note": "CTD formatında ulusal kayıt."
+            },
+            {
+              "name": "Biyobenzer kaydı",
+              "note": "EDA biyobenzer kılavuzları kapsamında karşılaştırılabilirliğe dayalı başvuru."
+            },
+            {
+              "name": "Dayanma yolu",
+              "note": "Sıkı bir otorite tarafından onaylanmış ürünler için kısaltılmış inceleme."
+            },
+            {
+              "name": "Varyasyonlar ve yeniden kayıt",
+              "note": "Ruhsat sonrası değişiklikler ve periyodik yeniden kayıt."
+            }
+          ]
+        },
+        {
+          "id": "sahpra",
+          "short": "SAHPRA",
+          "name": "South Afrikan Health Products Regulatory Authority",
+          "region": "Güney Afrika",
+          "format": "eCTD",
+          "footnote": "Dayanma ve iş birliğine dayalı inceleme yolları.",
+          "procedures": [
+            {
+              "name": "Yeni kayıt başvurusu",
+              "note": "eCTD formatında tam ulusal değerlendirme."
+            },
+            {
+              "name": "Referans onaya dayalı (kısaltılmış) inceleme",
+              "note": "Tanınmış bir düzenleyici otorite tarafından onaylanmış ürünler için azaltılmış değerlendirme."
+            },
+            {
+              "name": "Biyobenzer başvurusu",
+              "note": "SAHPRA biyobenzer kılavuzu kapsamında karşılaştırılabilirliğe dayalı başvuru."
+            },
+            {
+              "name": "Tadiller ve yenilemeler",
+              "note": "Ruhsat sonrası değişiklikler ve periyodik yenilemeler."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": "03",
+      "name": "Bölgesel uyumlaştırılmış prosedürler",
+      "sub": "Tek dosya, birden çok üye ülke",
+      "authorities": [
+        {
+          "id": "gcc",
+          "short": "GCC merkezi",
+          "name": "GCC Merkezi Kayıt",
+          "region": "Suudi Arabistan · BAE · Kuveyt · Katar · Umman · Bahreyn",
+          "format": "eCTD",
+          "footnote": "GCC-DR merkezi prosedürü ve buna ek ulusal başvurular.",
+          "procedures": [
+            {
+              "name": "Merkezi kayıt (GCC-DR)",
+              "note": "Tüm üye ülkeler için değerlendirilen tek başvuru; ardından ulusal fiyatlandırma ve listeye alma."
+            },
+            {
+              "name": "Ulusal kayıt",
+              "note": "Merkezi yolun kullanılmadığı durumlarda her ulusal otoriteye doğrudan başvuru."
+            },
+            {
+              "name": "Saha kaydı ve GMP",
+              "note": "GCC GMP denetimleri dahil üretim sahalarının kaydı."
+            },
+            {
+              "name": "CPP ve legalizasyon",
+              "note": "İlaç Ürün Sertifikaları (CPP) ve belge legalizasyonu gereklilikleri."
+            }
+          ]
+        },
+        {
+          "id": "eaeu",
+          "short": "EAEU birleşik",
+          "name": "EAEU Birleşik Kayıt",
+          "region": "Rusya · Kazakistan · Belarus · Ermenistan · Kırgızistan",
+          "format": "eCTD",
+          "footnote": "Avrasya Ekonomik Birliği’nin ortak kuralları.",
+          "procedures": [
+            {
+              "name": "Karşılıklı tanıma prosedürü",
+              "note": "Bir Referans Ülke tarafından yapılan ve seçilen Tanıyan Ülkeler tarafından tanınan değerlendirme."
+            },
+            {
+              "name": "Merkezi olmayan prosedür",
+              "note": "Birden fazla üye ülke tarafından eş zamanlı değerlendirme."
+            },
+            {
+              "name": "Ulusal kayıtların uyumlaştırılması",
+              "note": "Eski ulusal dosyaların Birlik formatına geçişi."
+            },
+            {
+              "name": "GMP denetimi (EAEU)",
+              "note": "Kayıt için ön koşul olarak Birlik GMP sertifikası."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": "04",
+      "name": "Dayanma yollarına sahip ulusal otoriteler",
+      "sub": "Bir referans onaya dayanın",
+      "authorities": [
+        {
+          "id": "latam",
+          "short": "LATAM",
+          "name": "Latin Amerika — ulusal otoriteler",
+          "region": "INVIMA · ANMAT · DIGEMID · ISP",
+          "format": "CTD",
+          "footnote": "İspanyolca dosyalar; CPP ve GMP sertifikasyonu gereklidir.",
+          "procedures": [
+            {
+              "name": "Ulusal kayıt",
+              "note": "Her ulusal otoriteye tam başvuru."
+            },
+            {
+              "name": "Dayanma ve kısaltılmış inceleme",
+              "note": "Sıkı bir otoritenin onayına ve kamuya açık değerlendirme raporuna dayanan azaltılmış değerlendirme."
+            },
+            {
+              "name": "Yenilemeler ve varyasyonlar",
+              "note": "Ülkeye özgü ruhsat sonrası değişiklik kategorileri."
+            }
+          ]
+        },
+        {
+          "id": "mena",
+          "short": "MENA",
+          "name": "Orta Doğu ve Kuzey Afrika — ulusal otoriteler",
+          "region": "IFDA (İran) · Irak · Ürdün · Lübnan",
+          "format": "CTD",
+          "footnote": "İran’ın IRC kaydı ve acil ithalat yolları dahil.",
+          "procedures": [
+            {
+              "name": "IFDA kaydı (IRC)",
+              "note": "İthalat lisanslaması ve fiyatlandırma dahil, IRC üzerinden İran kaydı."
+            },
+            {
+              "name": "Acil ve ruhsatsız ithalat",
+              "note": "Acilen ihtiyaç duyulan ilaçlar için vaka bazında ithalat izni."
+            },
+            {
+              "name": "Ulusal kayıt",
+              "note": "Irak, Ürdün ve Lübnan otoritelerine doğrudan başvurular."
+            },
+            {
+              "name": "Varyasyonlar ve yenilemeler",
+              "note": "Her ulusal çerçeve kapsamında ruhsat sonrası değişiklikler."
+            }
+          ]
+        },
+        {
+          "id": "cis",
+          "short": "CIS",
+          "name": "BDT — EAEU dışındaki ulusal otoriteler",
+          "region": "Özbekistan · Azerbaycan · Gürcistan",
+          "format": "CTD",
+          "footnote": "Rusça dosyalar ve yerel referans gereklilikleri.",
+          "procedures": [
+            {
+              "name": "Ulusal kayıt",
+              "note": "Her ulusal düzenleme kapsamında tam başvuru."
+            },
+            {
+              "name": "Hızlandırılmış kayıt",
+              "note": "Sıkı bir otorite tarafından onaylanmış ürünler için azaltılmış inceleme."
+            },
+            {
+              "name": "Yeniden kayıt",
+              "note": "Ulusal ruhsatların periyodik yenilenmesi."
+            }
+          ]
+        },
+        {
+          "id": "africa",
+          "short": "Afrika",
+          "name": "Afrika — ulusal ve iş birliğine dayalı yollar",
+          "region": "NAFDAC · PPB · FDA Ghana · TMDA",
+          "format": "CTD",
+          "footnote": "Ulusal ve iş birliğine dayalı (ZaZiBoNa, AMA) değerlendirme yolları.",
+          "procedures": [
+            {
+              "name": "Ulusal kayıt",
+              "note": "Her ulusal otoriteye tam başvuru."
+            },
+            {
+              "name": "İş birliğine dayalı ve ortak değerlendirme",
+              "note": "ZaZiBoNa ve Afrika İlaç Ajansı girişimleri gibi iş paylaşımı prosedürleri."
+            },
+            {
+              "name": "WHO ön yeterliliğine veya SRA onayına dayanma",
+              "note": "Ön yeterlilik almış veya sıkı bir otorite tarafından onaylanmış ürünler için kısaltılmış inceleme."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "intelligence": {
+    "intro": "Bir dosya, ancak yazıldığı kılavuzlar kadar iyidir. Otoritelerin neyi değiştirdiğini izliyor, bu bilgiyi daha hızlı ve daha tutarlı regülasyon çalışmasına dönüştürmek için nitelikli insan incelemesi altında yapay zekâ araçları kullanıyoruz.",
+    "groups": [
+      {
+        "title": "Regülasyon istihbaratı",
+        "items": [
+          "EMA, FDA, MHRA, WHO, PMDA, TGA ve ICH kılavuz yayınlarının, kavram belgelerinin (concept paper) ve kamuoyu görüşüne açılan taslakların, özellikle biyolojik ürünler, biyobenzerler ve GMP odağında sürekli izlenmesi",
+          "Her değişikliğin geliştirme portföyünüz (pipeline) ve pazardaki ürünleriniz üzerindeki etkisinin değerlendirilmesi; önerilen eylem ve son tarihle birlikte",
+          "Pazara giriş kararları için ülke gereklilik haritalaması ve regülasyon ortamı raporları",
+          "Emsal analizi: karşılaştırılabilir ürünlere ilişkin EPAR’lar, değerlendirme raporları, onay geçmişleri ve kamuya açık otorite yazışmaları",
+          "Portföyünüze ve hedef bölgelere göre hazırlanmış periyodik istihbarat bilgilendirmeleri"
+        ]
+      },
+      {
+        "title": "Regülasyonda yapay zekâ",
+        "items": [
+          "Başvuru öncesinde dosyaların güncel kılavuzlara ve otorite beklentilerine göre yapay zekâ destekli taranması: değerlendiricilerimizin ardından doğruladığı, daha hızlı bir ilk tarama",
+          "CTD modülleri arasında otomatik tutarlılık kontrolleri: spesifikasyonlar, seri verileri, stabilite beyanları ve çapraz referanslar",
+          "Kaynak verilerinizden oluşturulan ve bir regülasyon uzmanı tarafından sonlandırılan, otorite sorularına yönelik yapılandırılmış ilk taslak yanıtlar",
+          "GxP kapsamındaki çalışmalarda yapay zekâ kullanımına ilişkin danışmanlık: validasyon beklentileri, veri bütünlüğü güvenceleri ve yeni oluşmakta olan EMA ve FDA kılavuzlarıyla uyumlu dokümantasyon",
+          "Regülasyon verilerinin standardizasyonu: IDMP/SPOR’a hazır ürün verileri ve eCTD uyumlu yayımlama"
+        ]
+      }
+    ],
+    "principleTitle": "Sorumluluk her zaman insandadır.",
+    "principle": "Yapay zekâ incelemeyi ve taslak hazırlamayı hızlandırır. Asla karar vermez. Her regülasyon kararı ve bir otoriteye ulaşan her sayfa, nitelikli bir regülasyon uzmanı tarafından sahiplenilir, incelenir ve onaylanır."
   },
-  {
-   "agency": "FDA · CDER/CBER",
-   "tag": "Nihai kılavuz",
-   "date": "13 Eki 2026",
-   "url": "https://www.federalregister.gov/documents/2026/10/13/2026-20817/postapproval-manufacturing-changes-to-biosimilar-and-interchangeable-biosimilar-products-questions",
-   "title": "Biyobenzerlerde ruhsat sonrası üretim değişiklikleri: Soru-Cevap kılavuzu kesinleşti",
-   "summary": "Temmuz 2024 taslağını kesinleştirir; biyobenzer ve birbirinin yerine kullanılabilir ürünlerde ruhsat sonrası CMC değişiklikleri için ICH Q5E ilkelerine dayalı bildirim kategorilerini belirler ve Soru-Cevap I.20’nin yerini alır."
-  },
-  {
-   "agency": "PIC/S",
-   "tag": "GMP",
-   "date": "24 Eyl 2026",
-   "url": "https://picscheme.org/en/news/revision-of-pics-gmp-guide-pe-009-18",
-   "title": "PIC/S GMP Kılavuzu PE 009-18, revize edilmiş Ek 19 ile yürürlükte",
-   "summary": "Referans ve saklama numuneleri: Bölüm 9, paralel ithal edilen, dağıtılan ve ticareti yapılan ürünler için revize edildi. 24 Eylül’den itibaren tüm PIC/S katılımcı otoritelerine uygulanır."
-  }
- ],
- "ctaTitle": "Ürünü ve pazarı bize iletin",
- "ctaText": "Herhangi bir taahhütten önce size yol haritasını, belge listesini ve tahmini bir takvimi iletelim."
+  "ctaTitle": "Ürünü ve pazarı bize iletin",
+  "ctaText": "Herhangi bir taahhütten önce size yol haritasını, belge listesini ve tahmini bir takvimi iletelim."
 }

@@ -11,11 +11,33 @@ const r = t(lang).regulatory;
 const svcIcons = ['molecule', 'file', 'globe', 'layers', 'shield'];
 const intelIcons = ['search', 'globe', 'file', 'layers'];
 const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a, tierName: tier.name, tierNum: tier.num })));
-const watchDate = (d: string) => {
-  if (lang !== 'fa') return d;
-  const t = Date.parse(d + ' UTC');
-  return isNaN(t) ? d : new Date(t).toLocaleDateString('fa-IR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+import watchData from '../data/regulatory-watch.json';
+// Regulatory watch: one shared file, refreshed daily by the "Regulatory Watch daily scan" scheduled task
+type WL = 'en' | 'fa' | 'zh' | 'tr';
+const wl = (['en', 'fa', 'zh', 'tr'].includes(lang) ? lang : 'en') as WL;
+const iso = (d: string) => new Date(d + 'T00:00:00Z');
+const fmtDay = (d: string, long = false) => {
+  const t = iso(d); if (isNaN(+t)) return d;
+  if (wl === 'fa') {
+    const p = t.toLocaleDateString('fa-IR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+    return long ? `${p} (${t.toLocaleDateString('fa-IR-u-ca-gregory', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })})` : p;
+  }
+  const loc = { en: 'en-GB', zh: 'zh-CN', tr: 'tr-TR' }[wl];
+  return t.toLocaleDateString(loc, { day: 'numeric', month: long || wl === 'zh' ? 'long' : 'short', year: 'numeric', timeZone: 'UTC' });
 };
+const TAGS: Record<string, Record<WL, string>> = {
+  final: { en: 'Final guidance', fa: 'راهنمای نهایی', zh: '最终指导原则', tr: 'Nihai kılavuz' },
+  draft: { en: 'Draft for comment', fa: 'پیش‌نویس برای نظرخواهی', zh: '征求意见稿', tr: 'Görüşe açık taslak' },
+  closing: { en: 'Consultation closing', fa: 'پایان مهلت نظرخواهی', zh: '征求意见即将截止', tr: 'Danışma kapanıyor' },
+  approval: { en: 'Approval', fa: 'تأییدیه', zh: '批准', tr: 'Onay' },
+  gmp: { en: 'GMP & inspections', fa: 'GMP و بازرسی', zh: 'GMP 与检查', tr: 'GMP ve denetimler' },
+  news: { en: 'Agency news', fa: 'خبر مرجع', zh: '监管动态', tr: 'Otorite haberi' },
+};
+const watchItems = (watchData.items as any[]).map(it => ({
+  date: fmtDay(it.date), agency: it.agency, url: it.url,
+  tag: TAGS[it.tag]?.[wl] || it.tag, title: it.title?.[wl] || it.title?.en, summary: it.summary?.[wl] || it.summary?.en,
+}));
+const watchAsOf = fmtDay(watchData.asOf, true);
 // Evidence-based record: English is the owner's text (verbatim); fa/zh/tr are translations of it
 const RECORD = {
   en: {
@@ -111,8 +133,8 @@ const record = {
 </div></section>
 
 <section class="section" id="watch"><div class="container">
-  <div class="section-head"><h2>{r.watch}</h2><p class="lede">{r.watchLede(data.watchDate)}</p></div>
-  <ul class="insight-list">{data.watch.map(item => <li><a class="insight-row ra-watch-row" href={item.url} target="_blank" rel="noopener noreferrer"><time dir={lang === 'fa' ? 'rtl' : 'ltr'}>{watchDate(item.date)}</time><div><p class="ra-watch-agency"><span dir="ltr">{item.agency}</span> · {item.tag}</p><h3>{item.title}</h3><p>{item.summary}</p></div><span class="cat">{r.source}</span></a></li>)}</ul>
+  <div class="section-head"><h2>{r.watch}</h2><p class="lede">{r.watchLede(watchAsOf)}</p></div>
+  <ul class="insight-list">{watchItems.map(item => <li><a class="insight-row ra-watch-row" href={item.url} target="_blank" rel="noopener noreferrer"><time dir={lang === 'fa' ? 'rtl' : 'ltr'}>{item.date}</time><div><p class="ra-watch-agency"><span dir="ltr">{item.agency}</span> · {item.tag}</p><h3>{item.title}</h3><p>{item.summary}</p></div><span class="cat">{r.source}</span></a></li>)}</ul>
 </div></section>
 
 <CTA title={data.ctaTitle} description={data.ctaText} email={raEmail} regulatoryOnly />

@@ -1,0 +1,120 @@
+{
+  "_about": "Regulatory watch on /regulatory-affairs (all languages). Written automatically by the daily 'Regulatory Watch daily scan' scheduled task from its dashboard ledger. asOf = scan date (YYYY-MM-DD). Each item: id, date (YYYY-MM-DD), agency, url (agency's own page), tag (one of: final, draft, closing, approval, gmp, news), title/summary in en, fa, zh, tr. Keep 6 items, newest first.",
+  "asOf": "2026-10-24",
+  "items": [
+    {
+      "id": "20261031-ema-biosimilar-concept-closing",
+      "date": "2026-10-31",
+      "agency": "EMA · CHMP",
+      "tag": "closing",
+      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/concept-paper-revision-guideline-similar-biological-medicinal-products-chmp-437-04-rev1_en.pdf",
+      "title": {
+        "en": "Biosimilar guideline revision: concept-paper consultation closes 31 October",
+        "fa": "بازنگری راهنمای بیوسیمیلارها: مهلت نظرخواهی دربارهٔ مقالهٔ مفهومی ۳۱ اکتبر به پایان می‌رسد",
+        "zh": "生物类似药指南修订：概念文件征求意见于 10 月 31 日截止",
+        "tr": "Biyobenzer kılavuzu revizyonu: kavram belgesi danışması 31 Ekim’de kapanıyor"
+      },
+      "summary": {
+        "en": "EMA is revising its overarching guideline on similar biological medicinal products (CHMP/437/04 Rev.1); a draft guideline is expected in Q2 2027.",
+        "fa": "EMA در حال بازنگری راهنمای کلی فرآورده‌های بیولوژیک مشابه (CHMP/437/04 Rev.1) است؛ پیش‌نویس راهنما در سه‌ماههٔ دوم ۲۰۲۷ انتظار می‌رود.",
+        "zh": "EMA 正在修订类似生物药品总体指南（CHMP/437/04 Rev.1），指南草案预计于 2027 年第二季度发布。",
+        "tr": "EMA, benzer biyolojik tıbbi ürünlere ilişkin genel kılavuzunu (CHMP/437/04 Rev.1) revize ediyor; taslak kılavuzun 2027’nin ikinci çeyreğinde yayımlanması bekleniyor."
+      }
+    },
+    {
+      "id": "20261023-ema-ama-bundibugyo-position",
+      "date": "2026-10-23",
+      "agency": "EMA · AMA",
+      "tag": "final",
+      "url": "https://www.ema.europa.eu/en/news/ama-ema-issue-joint-guidance-ebola-vaccine-development",
+      "title": {
+        "en": "EMA and the African Medicines Agency issue joint guidance on Bundibugyo Ebola vaccines",
+        "fa": "راهنمای مشترک EMA و آژانس داروی آفریقا دربارهٔ واکسن‌های ابولای بوندیبوگیو",
+        "zh": "EMA 与非洲药品管理局联合发布本迪布焦埃博拉疫苗开发指导",
+        "tr": "EMA ve Afrika İlaç Ajansı’ndan Bundibugyo Ebola aşıları için ortak kılavuz"
+      },
+      "summary": {
+        "en": "Sets minimum expectations for starting trials during the current outbreak: some non-clinical studies may be deferred for well-characterised platforms, and a randomised ring-vaccination Phase III design is proposed.",
+        "fa": "حداقل الزامات آغاز کارآزمایی‌ها در طغیان کنونی را تعیین می‌کند: برخی مطالعات غیربالینی برای پلتفرم‌های شناخته‌شده می‌تواند به تعویق بیفتد و طرح فاز ۳ تصادفی با واکسیناسیون حلقه‌ای پیشنهاد شده است.",
+        "zh": "规定了在当前疫情期间启动临床试验的最低要求：对已充分表征的平台可推迟部分非临床研究，并建议采用随机环形接种的 III 期设计。",
+        "tr": "Mevcut salgın sırasında denemelere başlamak için asgari beklentileri belirliyor: iyi tanımlanmış platformlarda bazı klinik dışı çalışmalar ertelenebilir; randomize halka aşılama tasarımlı bir Faz III öneriliyor."
+      }
+    },
+    {
+      "id": "20261023-cde-vaccine-nonclinical-draft",
+      "date": "2026-10-23",
+      "agency": "NMPA · CDE",
+      "tag": "draft",
+      "url": "https://www.cde.org.cn/main/news/viewInfoCommon/197073fbba8cbf3b314a80928f2e1b4b",
+      "title": {
+        "en": "China: draft general guideline on non-clinical studies of vaccines open for comment",
+        "fa": "چین: پیش‌نویس راهنمای کلی مطالعات غیربالینی واکسن‌ها برای نظرخواهی منتشر شد",
+        "zh": "中国：疫苗非临床研究通用技术指导原则草案公开征求意见",
+        "tr": "Çin: aşıların klinik dışı çalışmalarına ilişkin genel taslak kılavuz görüşe açıldı"
+      },
+      "summary": {
+        "en": "Covers the non-clinical pharmacology, toxicology and immunogenicity programme expected for preventive vaccines, complementing CDE's texts on mRNA, adjuvanted and therapeutic vaccines.",
+        "fa": "برنامهٔ فارماکولوژی، سم‌شناسی و ایمنی‌زایی غیربالینی مورد انتظار برای واکسن‌های پیشگیرانه را پوشش می‌دهد و مکمل راهنماهای CDE دربارهٔ واکسن‌های mRNA، ادجوانت‌دار و درمانی است.",
+        "zh": "涵盖预防性疫苗所需的非临床药理、毒理和免疫原性研究，与 CDE 关于 mRNA 疫苗、含佐剂疫苗和治疗性疫苗的指导原则相互补充。",
+        "tr": "Koruyucu aşılar için beklenen klinik dışı farmakoloji, toksikoloji ve immünojenisite programını kapsıyor; CDE’nin mRNA, adjuvanlı ve terapötik aşı metinlerini tamamlıyor."
+      }
+    },
+    {
+      "id": "20261023-mfds-kbio-rationalisation",
+      "date": "2026-10-23",
+      "agency": "MFDS",
+      "tag": "gmp",
+      "url": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50434",
+      "title": {
+        "en": "Korea: MFDS reform package for biologics manufacturing and CDMOs",
+        "fa": "کره: بستهٔ اصلاحات MFDS برای تولید داروهای بیولوژیک و CDMOها",
+        "zh": "韩国：MFDS 推出生物制品生产与 CDMO 监管改革措施",
+        "tr": "Kore: MFDS’den biyolojik ürün üretimi ve CDMO’lar için reform paketi"
+      },
+      "summary": {
+        "en": "Pre-approval batches made under GMP may be marketed once they meet the approved specification; the biopharma CDMO act takes effect on 31 December 2026, with GMP certification of biologics raw materials.",
+        "fa": "بچ‌های تولیدشده پیش از تأیید تحت GMP، در صورت انطباق با مشخصات تأییدشده، قابل عرضه خواهند بود؛ قانون ویژهٔ CDMO دارویی از ۳۱ دسامبر ۲۰۲۶ اجرا می‌شود و گواهی GMP مواد اولیهٔ بیولوژیک را نیز در بر می‌گیرد.",
+        "zh": "在 GMP 下生产的批准前批次，符合批准质量标准后可上市销售；生物医药 CDMO 特别法将于 2026 年 12 月 31 日施行，并纳入生物制品原材料的 GMP 认证。",
+        "tr": "GMP altında onay öncesi üretilen seriler onaylı spesifikasyonu karşıladığında piyasaya sürülebilecek; biyofarma CDMO yasası 31 Aralık 2026’da yürürlüğe giriyor ve biyolojik hammaddelerin GMP sertifikasyonunu da kapsıyor."
+      }
+    },
+    {
+      "id": "20261022-ema-cmdh-october-updates",
+      "date": "2026-10-22",
+      "agency": "HMA · CMDh",
+      "tag": "final",
+      "url": "https://www.hma.eu/human-medicines/cmdh/press-releases.html",
+      "title": {
+        "en": "CMDh revises eight MRP/DCP procedural documents and forms",
+        "fa": "CMDh هشت سند رویه‌ای و فرم MRP/DCP را بازنگری کرد",
+        "zh": "CMDh 修订八份 MRP/DCP 程序文件和表格",
+        "tr": "CMDh, sekiz MRP/DCP prosedür belgesini ve formunu revize etti"
+      },
+      "summary": {
+        "en": "Updates validation advice and data requirements for new applications and variations, including a new Type IA route for deleting a batch size and tighter expectations on reference-product, bioequivalence, ASMF and CEP details.",
+        "fa": "راهنمای اعتبارسنجی و الزامات داده برای درخواست‌های جدید و تغییرات به‌روز شد؛ از جمله مسیر جدید Type IA برای حذف یک اندازهٔ بچ و الزامات سخت‌گیرانه‌تر دربارهٔ فرآوردهٔ مرجع، هم‌ارزی زیستی، ASMF و CEP.",
+        "zh": "更新了新申请和变更的验证建议及资料要求，包括删除批量规模的新 IA 类变更途径，并对参比制剂、生物等效性、ASMF 和 CEP 信息提出更严格要求。",
+        "tr": "Yeni başvurular ve varyasyonlar için doğrulama önerileri ve veri gereklilikleri güncellendi; seri büyüklüğünün silinmesi için yeni bir Tip IA yolu ve referans ürün, biyoeşdeğerlik, ASMF ve CEP bilgilerinde daha sıkı beklentiler getirildi."
+      }
+    },
+    {
+      "id": "20261022-fda-keytruda-tmbh-traditional",
+      "date": "2026-10-22",
+      "agency": "FDA · CDER",
+      "tag": "approval",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-traditional-approval-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph",
+      "title": {
+        "en": "Pembrolizumab TMB-high indication converted to traditional approval, with a higher cut-off",
+        "fa": "اندیکاسیون TMB-high پمبرولیزوماب به تأیید عادی تبدیل شد، با آستانهٔ بالاتر",
+        "zh": "帕博利珠单抗 TMB-H 适应症转为常规批准，并提高阈值",
+        "tr": "Pembrolizumabın TMB-yüksek endikasyonu daha yüksek eşikle tam onaya dönüştürüldü"
+      },
+      "summary": {
+        "en": "FDA restricted the tissue-agnostic indication to tumours with at least 13 mutations per megabase when converting the accelerated approval; it also applies to the subcutaneous form.",
+        "fa": "FDA هنگام تبدیل تأیید تسریع‌شده، این اندیکاسیون مستقل از بافت را به تومورهایی با دست‌کم ۱۳ جهش در هر مگاباز محدود کرد؛ این تغییر شکل زیرجلدی را نیز شامل می‌شود.",
+        "zh": "FDA 在将加速批准转为常规批准时，将该不限瘤种适应症限定为每兆碱基至少 13 个突变的肿瘤，皮下剂型同样适用。",
+        "tr": "FDA, hızlandırılmış onayı dönüştürürken doku bağımsız endikasyonu megabaz başına en az 13 mutasyonlu tümörlerle sınırladı; bu, deri altı formu da kapsıyor."
+      }
+    }
+  ]
+}
