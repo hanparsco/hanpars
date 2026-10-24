@@ -51,7 +51,6 @@ const navGroups = s.groups.map(g => ({ ...g, items: [...(g.items as NavItem[]), 
         </div>
       </details>)}
       <a class:list={['nav-link', { active: path === '/contact-us-1' }]} href={L('/contact-us-1')}>{s.nav.contact}</a>
-      {showMail && <a class="nav-link nav-mail" href={mailUrl} target="_blank" rel="noopener noreferrer nofollow"><Icon name="mail" size={15}/><span>{mailLabel}</span></a>}
       <details class="nav-dropdown nav-lang-menu">
         <summary class="nav-link nav-lang" aria-label="Language"><Flag lang={lang} size={18}/><span>{langNames[lang]}</span><Icon name="down" size={13}/></summary>
         <div class="dropdown-panel lang-panel">{others.map(o => <a href={o.href} hreflang={htmlLang[o.l]} lang={htmlLang[o.l]} dir={dir(o.l)} aria-current={o.l === lang ? 'true' : undefined} class:list={{ current: o.l === lang }}><Flag lang={o.l} size={22}/><strong>{langNames[o.l]}</strong></a>)}</div>
