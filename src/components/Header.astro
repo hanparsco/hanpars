@@ -21,6 +21,7 @@ const icons: Record<string, string> = {
   '/fdf-cdmo': sv('<path d="M3 21V10l5 3V10l5 3V6l8 4v11z"/><path d="M7 17h2M12 17h2M17 17h1"/>'),
   '/about-us': sv('<path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6M9 10h.01M15 10h.01"/>'),
   '/import-activity': sv('<path d="M4 20h16"/><path d="M7 16v-4M12 16V8M17 16v-6"/><path d="m6 9 5-4 3 3 4-4"/>'),
+  'mail': sv('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>'),
   '/culture': sv('<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>'),
   '/markets': sv('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>'),
   '/news': sv('<path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2M8 9h5M8 13h5"/>'),
@@ -29,6 +30,11 @@ const icons: Record<string, string> = {
 const arrow = dir(lang) === 'rtl' ? '←' : '→';
 const mailUrl = 'https://secureserver.titan.email/mail/';
 const mailLabel = ({ en: 'Email Login', fa: 'ورود به ایمیل', zh: '邮箱登录', tr: 'E-posta girişi' } as Record<string, string>)[lang];
+const showMail = lang === 'en' || lang === 'fa';
+const mailNote = lang === 'fa' ? 'ایمیل سازمانی هانیا پرسان دارو' : 'Hanpars corporate webmail';
+// Company dropdown gets the webmail link too (English and Persian only); external, opens in a new tab
+type NavItem = { label: string; href: string; note: string; ext?: boolean };
+const navGroups = s.groups.map(g => ({ ...g, items: [...(g.items as NavItem[]), ...(showMail && g.items.some(i => i.href === '/about-us') ? [{ label: mailLabel, href: mailUrl, note: mailNote, ext: true }] : [])] }));
 ---
 <header class:list={['site-header', { 'hanpars-zh-hans': lang === 'zh' }]}>
   <div class="container header-inner">
@@ -36,16 +42,16 @@ const mailLabel = ({ en: 'Email Login', fa: 'ورود به ایمیل', zh: '邮
     <button class="menu-toggle" type="button" aria-label={s.openNav} aria-expanded="false" aria-controls="main-nav" data-label-open={s.openNav} data-label-close={s.closeNav}><Icon name="menu" class="mt-open"/><Icon name="close" class="mt-close"/></button>
     <nav id="main-nav" class="main-nav" aria-label="Main navigation">
       <a class:list={['nav-link', { active: path === '/' || path === '/home' }]} href={L('/')}>{s.nav.home}</a>
-      {s.groups.map((group, gi) => <details class="nav-dropdown">
+      {navGroups.map((group, gi) => <details class="nav-dropdown">
         <summary class:list={['nav-link', { active: group.items.some((item) => item.href === path) || (group.items.some((item) => item.href === '/blog-1') && path.startsWith('/insights/')) }]}>{group.label}<Icon name="down" size={13}/></summary>
         <div class:list={['dropdown-panel', { 'dropdown-wide': group.items.length > 3 }]}>
           <p class="dropdown-label">{group.label}</p>
-          <div class="dropdown-grid">{group.items.map((item) => <a href={L(item.href)} class:list={{ current: item.href === path }}><span class="dd-icon" set:html={icons[item.href] || ''}/><span class="dd-text"><strong>{item.label}</strong><small>{item.note}</small></span><span class="dd-arrow" aria-hidden="true">{arrow}</span></a>)}</div>
+          <div class="dropdown-grid">{group.items.map((item) => <a href={item.ext ? item.href : L(item.href)} target={item.ext ? '_blank' : undefined} rel={item.ext ? 'noopener noreferrer nofollow' : undefined} class:list={{ current: item.href === path }}><span class="dd-icon" set:html={item.ext ? icons['mail'] : (icons[item.href] || '')}/><span class="dd-text"><strong>{item.label}</strong><small>{item.note}</small></span><span class="dd-arrow" aria-hidden="true">{arrow}</span></a>)}</div>
           {gi === 0 && <a class="dropdown-foot" href={L('/contact-us-1?type=sourcing')}>{s.nav.enquiry}<span aria-hidden="true">{arrow}</span></a>}
         </div>
       </details>)}
       <a class:list={['nav-link', { active: path === '/contact-us-1' }]} href={L('/contact-us-1')}>{s.nav.contact}</a>
-      {(lang === 'en' || lang === 'fa') && <a class="nav-link nav-mail" href={mailUrl} target="_blank" rel="noopener noreferrer nofollow"><Icon name="mail" size={15}/><span>{mailLabel}</span></a>}
+      {showMail && <a class="nav-link nav-mail" href={mailUrl} target="_blank" rel="noopener noreferrer nofollow"><Icon name="mail" size={15}/><span>{mailLabel}</span></a>}
       <details class="nav-dropdown nav-lang-menu">
         <summary class="nav-link nav-lang" aria-label="Language"><Flag lang={lang} size={18}/><span>{langNames[lang]}</span><Icon name="down" size={13}/></summary>
         <div class="dropdown-panel lang-panel">{others.map(o => <a href={o.href} hreflang={htmlLang[o.l]} lang={htmlLang[o.l]} dir={dir(o.l)} aria-current={o.l === lang ? 'true' : undefined} class:list={{ current: o.l === lang }}><Flag lang={o.l} size={22}/><strong>{langNames[o.l]}</strong></a>)}</div>
