@@ -74,9 +74,9 @@ const seoNote = ({
 <section class="hero page-hero"><div class="container">
   <div class="hero-main prod-hero">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={L('/')}>{s.breadcrumbHome}</a><span aria-hidden="true">/</span><a href={L('/fdf#fdf-reference')}>{m.list}</a><span aria-hidden="true">/</span><span lang="en" dir="ltr">{title}</span></nav>
-    <p class="kicker kicker-light">{m.kicker}{inPortfolio ? ` · ${m.registered}` : ''}</p>
+    <p class="ph-badges"><span class="ph-badge">{m.kicker}</span>{inPortfolio && <span class="ph-badge ph-badge-ok"><Icon name="check" size={14}/>{m.registered}</span>}</p>
     <h1>{locTitle ? <><span lang={htmlLang[lang]} dir={dir(lang)}>{locTitle}</span><span class="h1-en" lang="en" dir="ltr">{title}</span></> : <span lang="en" dir="ltr">{title}</span>}</h1>
-    <p class="lede" {...locLang}>{formShown}{routeShown ? ` · ${routeShown}` : ''}{p.strength && <> · <bdi lang="en" dir="ltr">{p.strength}</bdi></>}{p.pack && <> · <bdi lang="en" dir="ltr">{p.pack}</bdi></>}</p>
+    <ul class="ph-chips" {...locLang}><li>{formShown}</li>{routeShown && <li>{routeShown}</li>}{p.strength && <li class="ph-chip-strong"><bdi lang="en" dir="ltr">{p.strength}</bdi></li>}{p.pack && <li><bdi lang="en" dir="ltr">{p.pack}</bdi></li>}</ul>
     <dl class="mol-keyfacts">
       <div><dt>{m.code}</dt><dd lang="en" dir="ltr">{entry.code}</dd></div>
       {p.salt && <div><dt>{m.salt}</dt><dd lang="en" dir="ltr">{prettyName(p.salt)}</dd></div>}
