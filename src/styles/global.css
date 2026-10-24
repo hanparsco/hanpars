@@ -1158,3 +1158,18 @@ html[lang=fa] .check-list.mol-checks li::before { content:counter(mc, persian); 
 .prod-main .prod-boxed { border-radius:20px; }
 .prod-main > .prod-source { margin:6px 2px 0; }
 @media(max-width:640px) { .pd-sec { padding:18px 18px 16px; border-radius:16px; } .pd-sec h2 { font-size:17.5px !important; } .pd-sec p { font-size:16px; } .pd-ico { width:32px; height:32px; } }
+/* Product pages: other forms of the same active ingredient as cards */
+.same-grid { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:12px; }
+.same-card { position:relative; display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:14px; height:100%; padding:16px 16px 16px 16px; border:1px solid var(--line); border-radius:18px; background:var(--white); color:var(--ink); transition:border-color .2s, box-shadow .2s, transform .2s var(--ease); }
+.same-card:hover { border-color:#cfe0ea; box-shadow:0 14px 30px -22px #1015205e; transform:translateY(-2px); }
+.same-ico { display:grid; place-items:center; width:46px; height:46px; border-radius:14px; background:#eaf3f8; color:var(--lapis-deep); }
+.same-ico svg { stroke:currentColor; }
+.same-body { display:grid; gap:7px; min-width:0; }
+.same-body strong { font-family:var(--display); font-weight:600; font-size:15.5px; line-height:1.35; color:var(--navy); }
+.same-tags { display:flex; flex-wrap:wrap; gap:6px; }
+.same-tags span { padding:3px 9px; border-radius:999px; background:var(--paper); font-size:13px; line-height:1.4; color:var(--ink); }
+.same-code { align-self:start; font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums; }
+.same-arrow { position:absolute; inset-inline-end:16px; bottom:16px; color:var(--lapis-deep); opacity:.55; transition:opacity .2s, transform .2s; }
+[dir=rtl] .same-arrow { transform:scaleX(-1); }
+.same-card:hover .same-arrow { opacity:1; }
+@media(max-width:640px) { .same-grid { grid-template-columns:minmax(0,1fr); gap:10px; } .same-card { padding:14px; border-radius:16px; } }

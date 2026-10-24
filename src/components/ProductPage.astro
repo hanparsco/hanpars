@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import DosageFormIcon from './DosageFormIcon.astro';
 import CTA from './CTA.astro';
 import fdf from '../data/fdf.json';
 import info from '../data/fdf-info.json';
@@ -42,6 +43,15 @@ const fL = (form: string, route?: string) => (lang === 'en' ? '' : formL[lang](f
 const rL = (route?: string) => !route ? '' : (lang === 'en' ? '' : ROUTE_L[lang][route.toUpperCase()]) || prettyName(route);
 const locLang = lang === 'en' ? {} : { lang: htmlLang[lang], dir: dir(lang) };
 const formShown = fL(p.form, p.route); const routeShown = rL(p.route);
+const formIcon = (form: string, route: string) => {
+  const f = (form + ' ' + route).toUpperCase();
+  if (/INHAL|AEROSOL|SPRAY|NEBUL/.test(f)) return 'inhaler';
+  if (/CREAM|OINTMENT|GEL|LOTION|PASTE|FOAM|SHAMPOO|PATCH|PLASTER/.test(f)) return 'gel';
+  if (/POWDER|GRANUL|SACHET|LYOPHIL/.test(f) && !/INJECT|INFUSION|INTRAVENOUS/.test(f)) return 'powder';
+  if (/CAPSULE/.test(f)) return 'capsule';
+  if (/TABLET|LOZENGE|PASTILLE|CHEWABLE|ORODISPERSIBLE/.test(f)) return 'tablet';
+  return 'vial';
+};
 const sameIngredient = (sameIngredientIndex(fdf as { name: string; code: string }[]).get(infoKey(p.ingredient)) || []).filter(e => e.code !== entry.code).slice(0, 40);
 const mols = molecules as Record<string, { cid?: number | null; name: string; cas?: string }>;
 const molLinks = p.ingredients.map(i => { const k = slugify(i); const hit = Object.keys(mols).find(sl => mols[sl].cid && (sl === k || sl.startsWith(k + '-') || k.startsWith(sl))); return hit ? { name: prettyName(i), href: L(`/api/${hit}`), cas: mols[hit].cas || '' } : null; }).filter(Boolean) as { name: string; href: string; cas: string }[];
@@ -110,7 +120,11 @@ const seoNote = ({
 
 {sameIngredient.length > 0 && <section class="section section-paper section-tight"><div class="container">
   <div class="section-head"><h2>{m.otherForms}</h2></div>
-  <ul class="link-list" {...locLang}>{sameIngredient.map(e => { const q = parseFdf(e.name); return <li><a href={L(`/fdf/${fdfSlug(e)}`)}>{fL(q.form, q.route)}{q.route ? ` · ${rL(q.route)}` : ''}{q.strength && <> · <bdi lang="en" dir="ltr">{unit(q.strength)}</bdi></>}{q.pack && <> · <bdi lang="en" dir="ltr">{unit(q.pack)}</bdi></>}<small dir="ltr">{e.code}</small></a></li>; })}</ul>
+  <ul class="same-grid" {...locLang}>{sameIngredient.map(e => { const q = parseFdf(e.name); return <li><a class="same-card" href={L(`/fdf/${fdfSlug(e)}`)}>
+    <span class="same-ico"><DosageFormIcon name={formIcon(q.form, q.route)} label={fL(q.form, q.route)} size={24}/></span>
+    <span class="same-body"><strong>{fL(q.form, q.route)}</strong><span class="same-tags">{q.route && <span>{rL(q.route)}</span>}{q.strength && <span><bdi lang="en" dir="ltr">{unit(q.strength)}</bdi></span>}{q.pack && <span><bdi lang="en" dir="ltr">{unit(q.pack)}</bdi></span>}</span></span>
+    <span class="same-code" dir="ltr">{e.code}</span><Icon name="arrow" size={16} class="same-arrow"/>
+  </a></li>; })}</ul>
 </div></section>}
 
 <section class="section-tight"><div class="container"><p class="reference-note">{m.note}</p></div></section>
