@@ -16,11 +16,11 @@
   info 200 https://hanpars.com/fdf.html
   info 200 https://hanpars.com/home
 == sitemaps
-  200 https://hanpars.com/sitemap-en.xml: 5420 URLs
-  200 https://hanpars.com/sitemap-fa.xml: 5400 URLs
-  200 https://hanpars.com/sitemap-zh.xml: 5400 URLs
-  200 https://hanpars.com/sitemap-tr.xml: 5400 URLs
-  total 21620 URLs, 21620 unique
+  200 https://hanpars.com/sitemap-en.xml: 5421 URLs
+  200 https://hanpars.com/sitemap-fa.xml: 5401 URLs
+  200 https://hanpars.com/sitemap-zh.xml: 5401 URLs
+  200 https://hanpars.com/sitemap-tr.xml: 5401 URLs
+  total 21624 URLs, 21624 unique
 == sample of 200 sitemap URLs
-  checked 200 pages and 776 alternates
+  checked 200 pages and 788 alternates
 == result: OK
