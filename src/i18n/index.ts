@@ -276,7 +276,7 @@ const base = {
       ] },
       { label: 'شرکت', items: [
         { label: 'دربارهٔ هانیا پرسان دارو', href: '/about-us', note: 'کیستیم و چه نیستیم' },
-        { label: 'فعالیت واردات', href: '/import-activity', note: 'نگاهی به واردات ۲۰۲۶' },
+        { label: 'گزارش فعالیت', href: '/import-activity', note: 'نگاهی به واردات ۲۰۲۶' },
         { label: 'شیوهٔ کار ما', href: '/culture', note: 'اصول پشت هر درخواست' },
         { label: 'بازارها و تأمین', href: '/markets', note: 'بازار ایران، تأمین‌کنندگان خارجی' },
       ] },
