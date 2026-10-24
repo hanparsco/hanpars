@@ -21,7 +21,7 @@ const updated = news.updated ? new Date(news.updated).toLocaleDateString(dateLoc
 </div></section>
 
 <section class="section section-navy" id="china"><div class="container">
-  <div class="section-head"><div><p class="kicker kicker-light">{s.chinaKicker}</p><h2>{s.chinaTitle}</h2></div><p class="lede">{s.chinaLede}</p></div>
+  <div class="section-head"><div><p class="kicker kicker-light">{s.chinaKicker}</p><h2>{s.chinaTitle}</h2></div></div>
   {china.length ? <div class="news-grid">{china.map(item => <NewsCard item={item} dark/>)}</div> : <p class="archive-note archive-note-dark">{s.empty}</p>}
 </div></section>
 
