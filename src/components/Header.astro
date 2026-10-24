@@ -27,6 +27,8 @@ const icons: Record<string, string> = {
   '/blog-1': sv('<path d="M4 4h6a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4zM20 4h-6a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h6z"/>'),
 };
 const arrow = dir(lang) === 'rtl' ? '←' : '→';
+const mailUrl = 'https://secureserver.titan.email/mail/';
+const mailLabel = ({ en: 'Email Login', fa: 'ورود به ایمیل', zh: '邮箱登录', tr: 'E-posta girişi' } as Record<string, string>)[lang];
 ---
 <header class:list={['site-header', { 'hanpars-zh-hans': lang === 'zh' }]}>
   <div class="container header-inner">
@@ -43,6 +45,7 @@ const arrow = dir(lang) === 'rtl' ? '←' : '→';
         </div>
       </details>)}
       <a class:list={['nav-link', { active: path === '/contact-us-1' }]} href={L('/contact-us-1')}>{s.nav.contact}</a>
+      <a class="nav-link nav-mail" href={mailUrl} target="_blank" rel="noopener noreferrer nofollow"><Icon name="mail" size={15}/><span>{mailLabel}</span></a>
       <details class="nav-dropdown nav-lang-menu">
         <summary class="nav-link nav-lang" aria-label="Language"><Flag lang={lang} size={18}/><span>{langNames[lang]}</span><Icon name="down" size={13}/></summary>
         <div class="dropdown-panel lang-panel">{others.map(o => <a href={o.href} hreflang={htmlLang[o.l]} lang={htmlLang[o.l]} dir={dir(o.l)} aria-current={o.l === lang ? 'true' : undefined} class:list={{ current: o.l === lang }}><Flag lang={o.l} size={22}/><strong>{langNames[o.l]}</strong></a>)}</div>
