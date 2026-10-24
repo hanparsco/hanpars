@@ -92,13 +92,21 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
     : lang === 'fa'
     ? [nameFa, name, mol.cas, `خرید ${nameFa || name}`, `قیمت ${nameFa || name}`, `ماده اولیه ${nameFa || name}`, `پودر ${nameFa || name}`, `API ${name}`, `${name} powder`, `واردات ${nameFa || name}`, `مادهٔ مؤثرهٔ ${nameFa || name}`, `${nameFa || name} CAS`, 'مواد اولیه دارویی', 'واردات مواد اولیه', 'تأمین API', 'هانیا پرسان دارو'].filter(Boolean).join('، ')
     : [name, mol.cas, `${name} API`, `${name} API supplier`, `${name} powder`, `${name} CAS ${mol.cas || ''}`.trim(), `${name} manufacturer`, 'API supplier Iran', 'Hanpars'].filter(Boolean).join(', ');
+  // head + (first sentence of the description, only if it fits whole) + sourcing line — never cut mid-sentence
+  const compose = (head: string, d: string, tail: string, n: number, sp = ' ') => {
+    const first = (d || '').replace(/\s+/g, ' ').trim().match(/^.*?[.。!?](?=\s|$)/)?.[0] || '';
+    const withD = `${head}${sp}${first}${sp}${tail}`.replace(/\s+/g, ' ').trim();
+    if (first && withD.length <= n) return withD;
+    const plain = `${head}${sp}${tail}`.trim();
+    return plain.length <= n ? plain : clip(plain, n);
+  };
   const description = lang === 'zh'
-    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。${faDesc ? faDesc + ' ' : ''}Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。`, 110)
+    ? compose(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。`, faDesc, 'Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。', 120, '')
     : lang === 'tr'
-    ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}. ${faDesc ? faDesc + ' ' : ''}DMF/CEP ve GMP belgeli etkin madde tedariki: Hanpars.`, 158)
+    ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, faDesc, 'DMF/CEP ve GMP belgeli etkin madde tedariki: Hanpars.', 160)
     : lang === 'fa'
-    ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? '، شمارهٔ CAS ' + mol.cas : ''}${mol.formula ? '، فرمول ' + mol.formula : ''}. ${faDesc ? faDesc + ' ' : ''}تأمین مادهٔ مؤثره (API) با مستندات DMF/CEP و GMP توسط هانیا پرسان دارو.`, 158)
-    : clip(`${name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}. ${mol.description ? mol.description + ' ' : ''}API sourcing with DMF/CEP and GMP documentation by Hanpars.`, 158);
+    ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? '، شمارهٔ CAS ' + mol.cas : ''}${mol.formula ? '، فرمول ' + mol.formula : ''}.`, faDesc, 'تأمین مادهٔ مؤثره (API) با مستندات DMF/CEP و GMP توسط هانیا پرسان دارو.', 160)
+    : compose(`${name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, mol.description, 'API sourcing with DMF/CEP and GMP documentation by Hanpars.', 160);
   const schema = mol.cid ? {
     '@context': 'https://schema.org', '@type': 'ChemicalSubstance', name, identifier: mol.cas || undefined,
     alternateName: [...(nameFa ? [nameFa] : []), ...(mol.synonyms || []).slice(0, 5)], molecularFormula: mol.formula || undefined, molecularWeight: mol.mw ? `${mol.mw} g/mol` : undefined,

@@ -8,7 +8,9 @@ const routeRe = new RegExp('\\b(' + ROUTES.join('|') + ')\\b');
 export type Parsed = { ingredient: string; ingredients: string[]; salt: string; form: string; route: string; strength: string; pack: string };
 
 export function parseFdf(name: string): Parsed {
-  const m = formRe.exec(name);
+  let m = formRe.exec(name);
+  // a product whose name starts with a form word ("CREAM BASE CREAM …"): use the next form word as the split
+  if (m && m.index === 0) { const re = new RegExp(formRe.source, 'g'); re.lastIndex = m[0].length; const m2 = re.exec(name); if (m2) m = m2; }
   const ingredientRaw = (m ? name.slice(0, m.index) : name).trim().replace(/,$/, '');
   const rest = m ? name.slice(m.index) : '';
   const r = routeRe.exec(rest);
