@@ -127,5 +127,5 @@ const seoNote = ({
   </a></li>; })}</ul>
 </div></section>}
 
-<section class="section-tight"><div class="container"><p class="reference-note">{m.note}</p></div></section>
+<section class="section-tight"><div class="container">{Array.isArray(m.note) ? <ul class="reference-note reference-note-list">{(m.note as string[]).map((x: string) => <li>{x}</li>)}</ul> : <p class="reference-note">{m.note}</p>}</div></section>
 <CTA title={m.ctaTitle} />
