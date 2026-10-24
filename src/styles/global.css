@@ -1059,3 +1059,5 @@ html[lang=fa] .imp-bv { direction:rtl; unicode-bidi:embed; }
 .main-nav .nav-mail { justify-content:flex-start; }
 .lang-panel a { direction:inherit; text-align:start; justify-content:flex-start; }
 .lang-panel a strong { unicode-bidi:isolate; }
+.ft-social { display:inline-grid; place-items:center; width:34px; height:34px; border-radius:50%; border:1px solid #ffffff26; color:var(--on-navy); transition:background .2s,color .2s,border-color .2s; }
+.ft-social:hover { background:#0a66c2; border-color:#0a66c2; color:#fff; }
