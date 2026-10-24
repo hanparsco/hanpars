@@ -1090,3 +1090,21 @@ html[lang=fa] .imp-bv { direction:rtl; unicode-bidi:embed; }
 .check-list.mol-checks li::before { content:counter(mc); position:static; flex:none; display:grid; place-items:center; width:26px; height:26px; margin-top:1px; border-radius:8px; background:var(--navy); color:#fff; font-family:var(--display); font-weight:700; font-size:12.5px; line-height:1; }
 html[lang=fa] .check-list.mol-checks li::before { content:counter(mc, persian); }
 .mol-aside .mol-checks + .button { width:100%; justify-content:center; }
+/* Product & API pages: sidebar as a card, facts as tiles, synonyms as chips */
+.mol-aside { border:1px solid var(--line); border-radius:22px; background:var(--white); padding:24px 22px 22px; box-shadow:0 1px 2px #1015200a,0 20px 44px -32px #10152045; }
+.mol-aside h3 { display:flex; align-items:center; gap:10px; font-size:16px; margin:0 0 14px; }
+.mol-aside h3::before { content:''; width:4px; height:18px; border-radius:2px; background:var(--lapis-deep); flex:none; }
+.mol-aside * + h3 { margin-top:26px; }
+.mol-props { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 0 10px; }
+.mol-props div { display:flex; flex-direction:column; justify-content:flex-start; gap:5px; padding:12px 14px; border:0; border-radius:14px; background:var(--paper); font-size:14px; min-width:0; }
+.mol-props dt { color:var(--muted); font-size:12.5px; line-height:1.35; }
+.mol-props dd { text-align:start; font-size:16px; line-height:1.3; overflow-wrap:anywhere; }
+.mol-aside h3 + .mol-props + .form-hint { margin-bottom:0; }
+.prod-links { margin:0 0 6px; border-top:0; display:grid; gap:8px; }
+.prod-links li { border:0; }
+.prod-links a { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 14px; border:1px solid var(--line); border-radius:14px; background:var(--white); font-family:var(--display); font-weight:600; font-size:15px; color:var(--navy); transition:border-color .2s, box-shadow .2s; }
+.prod-links a:hover { border-color:#cfe0ea; box-shadow:0 10px 24px -18px #10152052; }
+.prod-links a small { flex:none; padding:3px 9px; border-radius:999px; background:#eaf3f8; color:var(--lapis-deep); font-family:var(--sans); font-weight:500; font-size:12.5px; }
+.mol-syn-chips { list-style:none; margin:0 0 8px; padding:0; display:flex; flex-wrap:wrap; gap:8px; }
+.mol-syn-chips li { padding:6px 12px; border:1px solid var(--line); border-radius:999px; background:var(--white); color:var(--ink); font-size:14px; line-height:1.4; max-width:100%; overflow-wrap:anywhere; }
+@media(max-width:1000px) { .mol-aside { padding:20px 18px; } }
