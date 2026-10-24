@@ -30,7 +30,7 @@
   },
   {
    "name": "title < 25 chars",
-   "count": 21,
+   "count": 18,
    "sample": [
     "/zh/about-us 关于 Hanpars | Hanpars",
     "/zh/api 原料药 | Hanpars",
@@ -38,15 +38,15 @@
     "/zh/contact-us-1 告诉我们您在寻找什么。 | Hanpars",
     "/zh/culture 工作方式 | Hanpars",
     "/zh/excipient 药用辅料 | Hanpars",
-    "/zh/fdf/-51992  乳膏 200 % | Hanpars",
-    "/zh/fdf/-51993  乳膏 400 % | Hanpars",
-    "/zh/fdf/-52309  乳膏 100 % | Hanpars",
     "/zh/fdf/blood-and-blood-forming-organs-whole-blood-52983 全血 注射液 | Hanpars",
     "/zh/fdf/erythrocytes-red-blood-cell-irradiated-52976 辐照红细胞 注射液 | Hanpars",
     "/zh/fdf/erythrocytes-red-blood-cell-leucocyte-reduced-52981 去白细胞红细胞 注射液 | Hanpars",
     "/zh/fdf/potassium-aminobenzoic-acid-potaba-50221 对氨基苯甲酸钾 散剂 3 g | Hanpars",
     "/zh/fdf/thrombocytes-platelet-phresis-and-irradiated-52967 单采辐照血小板 注射液 | Hanpars",
-    "/zh/fdf-cdmo 制剂成品开发 | Hanpars"
+    "/zh/fdf-cdmo 制剂成品开发 | Hanpars",
+    "/zh/fdf 制剂成品 | Hanpars",
+    "/zh/import-activity 进口动态 | Hanpars",
+    "/zh/markets 市场与采购 | Hanpars"
    ]
   },
   {
@@ -56,30 +56,28 @@
   },
   {
    "name": "description > 165 chars",
-   "count": 1,
-   "sample": [
-    "/import-activity (167)"
-   ]
+   "count": 0,
+   "sample": []
   },
   {
    "name": "description < 70 chars",
-   "count": 3579,
+   "count": 2452,
    "sample": [
-    "/api/paliperidone-palmitate Paliperidone palmitate, CAS 199739-10-1, C39H57FN4O4.…",
-    "/tr/api/avanafil Avanafil (Avanafil), CAS 330784-47-9, C23H26ClN7O3. Avanafil,…",
-    "/tr/api/remdesivir Remdesivir (Remdesivir), CAS 1809249-37-3, C27H35N6O8P. Remdesivir,…",
-    "/zh/api/abacavir-sulfate 硫酸阿巴卡韦（Abacavir sulfate），CAS 号 188062-50-2，分子式…",
-    "/zh/api/abaloparatide 阿巴洛肽（Abaloparatide），CAS 号 247062-33-5，分子式…",
-    "/zh/api/abemaciclib 阿贝西利（Abemaciclib），CAS 号 1231929-97-7，分子式…",
-    "/zh/api/abiraterone-acetate 醋酸阿比特龙（Abiraterone acetate），CAS 号 154229-18-2，分子式…",
-    "/zh/api/acalabrutinib-maleate 马来酸阿可替尼（Acalabrutinib maleate），CAS 号 2242394-65-4，分子式…",
-    "/zh/api/acalabrutinib 阿可替尼（Acalabrutinib），CAS 号 1420477-60-6，分子式…",
-    "/zh/api/acarbose 阿卡波糖（Acarbose），CAS 号 56180-94-0，分子式…",
-    "/zh/api/acebutolol-hcl 盐酸醋丁洛尔（ACEBUTOLOL HCl），CAS 号 34381-68-5，分子式…",
-    "/zh/api/acebutolol 醋丁洛尔（Acebutolol），CAS 号 37517-30-9，分子式…",
-    "/zh/api/aceclofenac 醋氯芬酸（Aceclofenac），CAS 号 89796-99-6，分子式…",
-    "/zh/api/acenocoumarol 醋硝香豆素（Acenocoumarol），CAS 号 152-72-7，分子式…",
-    "/zh/api/acetaminophen 对乙酰氨基酚（Acetaminophen），CAS 号 103-90-2，分子式…"
+    "/zh/api/amino-acid 氨基酸（Amino acid）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/amino-acids 氨基酸（Amino acids）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/amoxcillin-trihydrate 阿莫西林三水合物（Amoxcillin trihydrate）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/amphetamine-l-aspartate 门冬氨酸苯丙胺（Amphetamine l aspartate）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/angiotensin 血管紧张素（Angiotensin）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/aripiprazole-i 阿立哌唑（Aripiprazole i）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/atorvastatin-calcium-i 阿托伐他汀钙（Atorvastatin calcium i）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/azelastine-hcl-daito 盐酸氮䓬斯汀（AZELASTINE HCl DAITO）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/aztreonam-alfa 氨曲南（Aztreonam alfa）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/bendamustine-hci 盐酸苯达莫司汀（Bendamustine hci）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/betaine-pharmaceutical 甜菜碱（Betaine pharmaceutical）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/calcium-cluconate 葡萄糖酸钙（Calcium cluconate）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/cefepime-l-arginine 头孢吡肟精氨酸（Cefepime l arginine）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/cetrimide 西曲溴铵（Cetrimide）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。",
+    "/zh/api/cholestyramine-resin 考来烯胺树脂（Cholestyramine resin）。Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。"
    ]
   },
   {
