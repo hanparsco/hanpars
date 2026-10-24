@@ -1,7 +1,7 @@
 
 /* Latin faces (self-hosted) */
-@font-face { font-family:'Montserrat'; src:url('/fonts/latin/montserrat-var.woff') format('woff'); font-weight:100 900; font-display:swap; }
-@font-face { font-family:'Source Sans 3'; src:url('/fonts/latin/source-sans-3-var.woff') format('woff'); font-weight:200 900; font-display:swap; }
+@font-face { font-family:'Montserrat'; src:url('/fonts/latin/montserrat-var.woff2') format('woff2'); font-weight:100 900; font-display:swap; }
+@font-face { font-family:'Source Sans 3'; src:url('/fonts/latin/source-sans-3-var.woff2') format('woff2'); font-weight:200 900; font-display:swap; }
 /* Sora (headings) + Inter (text and interface) — English and Turkish pages; full official files, OFL (licences in /fonts/sora, /fonts/inter) */
 @font-face { font-family:'Sora'; src:url('/fonts/sora/Sora-SemiBold.woff2') format('woff2'); font-weight:600; font-style:normal; font-display:swap; }
 @font-face { font-family:'Sora'; src:url('/fonts/sora/Sora-Bold.woff2') format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
@@ -25,7 +25,7 @@
   --black:#141414; --night:#0c0c0c; --navy:#141414; --glacier:#a8d4e6; --glacier-soft:#cfe6f0;
   --lapis:#2f7e9b; --lapis-deep:#24657d;
   --paper:#f1eee7; --paper-deep:#e5e1d8; --white:#faf8f4;
-  --ink:#1f2328; --muted:#646a70; --faint:#979ca2; --line:#dbd7ce; --line-dark:#ffffff16;
+  --ink:#1f2328; --muted:#646a70; --faint:#62676d; --line:#dbd7ce; --line-dark:#ffffff16;
   --on-navy:#d9d9d9; --on-navy-muted:#9b9b9b;
   --display:'Montserrat', 'Segoe UI', system-ui, sans-serif; --serif:var(--display);
   --sans:'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
@@ -53,7 +53,7 @@ h2 { font-size:clamp(28px,3vw,40px); }
 h3 { font-size:clamp(20px,1.7vw,23px); line-height:1.25; letter-spacing:-.015em; }
 h4 { font-size:19px; line-height:1.3; letter-spacing:-.01em; }
 .lede { font-size:clamp(18px,1.45vw,21px); line-height:1.6; color:var(--muted); max-width:34em; }
-.kicker { display:block; font-family:var(--display); font-weight:600; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--lapis); margin-bottom:18px; }
+.kicker { display:block; font-family:var(--display); font-weight:600; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--lapis-deep); margin-bottom:18px; }
 .measure { max-width:38em; }
 .serif { font-family:var(--serif); }
 .num { font-family:var(--display); font-weight:600; letter-spacing:-.04em; }
@@ -594,7 +594,7 @@ html[lang=fa] .brief-legend { letter-spacing:0; font-size:14px; text-transform:n
 .exc-tile { border-bottom:1px solid var(--line); border-inline-end:1px solid var(--line); }
 .exc-tile a { display:flex; gap:16px; padding:20px 22px 22px; height:100%; color:inherit; transition:background .25s var(--ease); }
 .exc-tile a:hover { background:var(--white); }
-.exc-num { font-family:var(--display); font-weight:600; font-size:12px; letter-spacing:.12em; color:var(--lapis); padding-top:4px; flex:none; }
+.exc-num { font-family:var(--display); font-weight:600; font-size:12px; letter-spacing:.12em; color:var(--lapis-deep); padding-top:4px; flex:none; }
 .exc-tile-body { display:flex; flex-direction:column; gap:8px; min-width:0; }
 .exc-tile-head { display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
 .exc-tile-head strong { font-family:var(--display); font-weight:600; font-size:15.5px; line-height:1.3; color:var(--navy); }
@@ -612,7 +612,7 @@ html[lang=fa] .exc-tile-head strong { font-size:16px; }
 .mol-keyfacts dt { font-family:var(--display); font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--glacier); }
 .mol-keyfacts dd { margin:0; font-size:18px; color:#fff; }
 .mol-structure { margin:0; justify-self:end; width:min(100%,340px); background:var(--white); padding:22px; border-radius:var(--radius); box-shadow:0 30px 80px #00000066; }
-.mol-structure img { width:100%; height:auto; display:block; }
+.mol-structure img { width:100%; height:auto; aspect-ratio:1 / 1; display:block; }
 .mol-structure figcaption { margin-top:12px; font-size:12.5px; color:var(--muted); text-align:center; }
 .mol-nostructure { aspect-ratio:1; display:grid; place-items:center; color:var(--muted); font-size:14px; }
 .mol-body { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,.8fr); gap:64px; align-items:start; }
@@ -727,8 +727,8 @@ h1 .h1-en { display: block; font-size: .5em; font-weight: 500; opacity: .78; mar
 .prod-seo-note { margin-top: 1.1rem; font-size: .9rem; line-height: 1.7; opacity: .82; max-width: 62ch; }
 
 /* Latin letters inside Persian text: use the Latin faces (the Persian font's Latin glyphs don't match, and its % and · read as Persian signs) */
-@font-face { font-family:'HpLatin'; src:url('/fonts/latin/source-sans-3-var.woff') format('woff'); font-weight:200 900; font-display:swap; unicode-range:U+0030-0039,U+002E,U+002F,U+0041-005A,U+0061-007A,U+00B5,U+00B7,U+00C0-024F,U+0025,U+03BC,U+2122,U+00AE; }
-@font-face { font-family:'HpLatinD'; src:url('/fonts/latin/montserrat-var.woff') format('woff'); font-weight:100 900; font-display:swap; unicode-range:U+0030-0039,U+002E,U+002F,U+0041-005A,U+0061-007A,U+00B5,U+00B7,U+00C0-024F,U+0025,U+03BC,U+2122,U+00AE; }
+@font-face { font-family:'HpLatin'; src:url('/fonts/latin/source-sans-3-var.woff2') format('woff2'); font-weight:200 900; font-display:swap; unicode-range:U+0030-0039,U+002E,U+002F,U+0041-005A,U+0061-007A,U+00B5,U+00B7,U+00C0-024F,U+0025,U+03BC,U+2122,U+00AE; }
+@font-face { font-family:'HpLatinD'; src:url('/fonts/latin/montserrat-var.woff2') format('woff2'); font-weight:100 900; font-display:swap; unicode-range:U+0030-0039,U+002E,U+002F,U+0041-005A,U+0061-007A,U+00B5,U+00B7,U+00C0-024F,U+0025,U+03BC,U+2122,U+00AE; }
 /* Left-to-right runs (English names, codes, emails) inside right-to-left pages line up with the Persian text */
 [dir=rtl] [dir=ltr]:not(td,th,input,textarea,pre,code,.mol-mono) { text-align:right; }
 html[lang=fa] [data-fa-digits] { word-spacing:.3em; }
@@ -767,7 +767,7 @@ html[lang=fa] .form-field label .req { font-family:'Source Sans 3',system-ui,san
 .claims-filters button { border-radius:999px; padding:7px 15px; background:#fff; }
 .catalogue-scroll { border-top:1px solid var(--tb-line); max-height:700px; scrollbar-width:thin; }
 .catalogue-table { font-size:15.5px; border-collapse:separate; border-spacing:0; }
-.catalogue-table th,.section-paper .catalogue-table th { background:var(--tb-head); color:#6b7685; font-family:var(--display); font-size:11.5px; font-weight:600; letter-spacing:.09em; text-transform:uppercase; padding-block:13px; border-bottom:1px solid var(--tb-line); }
+.catalogue-table th,.section-paper .catalogue-table th { background:var(--tb-head); color:#5d6775; font-family:var(--display); font-size:11.5px; font-weight:600; letter-spacing:.09em; text-transform:uppercase; padding-block:13px; border-bottom:1px solid var(--tb-line); }
 .catalogue-table th:first-child,.catalogue-table td:first-child { padding-inline-start:30px; }
 .catalogue-table th:last-child,.catalogue-table td:last-child { padding-inline-end:30px; }
 .catalogue-table td { padding-block:14px; border-bottom:1px solid #f0ede6; vertical-align:middle; transition:background .15s; }
@@ -790,7 +790,7 @@ html[lang=fa] .form-field label .req { font-family:'Source Sans 3',system-ui,san
 .catalogue-panel[data-type=fdf] .cat-ico { background:#fbf1ea; } .catalogue-panel[data-type=fdf] .cat-ico::before { background:#b8683a; }
 .catalogue-table .table-link,.catalogue-table .cat-plain { color:var(--navy); font-weight:500; border-bottom:0; }
 .catalogue-table .table-link:hover { color:var(--lapis); }
-.catalogue-table .cat-loc { display:block; font-size:13.5px; color:#7a8594; font-weight:400; margin:0; }
+.catalogue-table .cat-loc { display:block; font-size:13.5px; color:#5f6a78; font-weight:400; margin:0; }
 .catalogue-table .table-code,.catalogue-table .table-code a { font-variant-numeric:tabular-nums; }
 .catalogue-table td.table-code > *, .catalogue-table td.table-code { font-size:13.5px; }
 .catalogue-table td.table-code { color:#55606e; }
