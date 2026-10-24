@@ -39,7 +39,7 @@ const seoNote = ({
 <section class="hero page-hero mol-hero"><div class="container mol-grid">
   <div class="hero-main">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={L('/')}>{s.breadcrumbHome}</a><span aria-hidden="true">/</span><a href={L('/api')}>{m.range}</a><span aria-hidden="true">/</span><span lang="en" dir="ltr">{displayName}</span></nav>
-    <p class="kicker kicker-light">{m.kicker}</p>
+    <p class="ph-badges"><span class="ph-badge">{m.kicker}</span></p>
     <h1>{locTitle ? <><span lang={htmlLang[lang]} dir={dir(lang)}>{locTitle}</span><span class="h1-en" lang="en" dir="ltr">{displayName}</span></> : <span lang="en" dir="ltr">{displayName}</span>}</h1>
     <dl class="mol-keyfacts">
       {mol.cas && <div><dt>{m.cas}</dt><dd lang="en" dir="ltr">{mol.cas}</dd></div>}
