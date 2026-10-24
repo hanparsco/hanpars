@@ -1083,3 +1083,10 @@ html[lang=fa] .imp-bv { direction:rtl; unicode-bidi:embed; }
   .easy-ico { width:44px; height:44px; flex:none; }
   .easy-num { top:50%; transform:translateY(-50%); font-size:24px; inset-inline-end:16px; }
 }
+/* Product/API sidebar: "what we need for an enquiry" as numbered cards */
+.check-list.mol-checks { counter-reset:mc; display:grid; gap:8px; border-top:0; margin:0 0 20px; }
+.check-list.mol-checks li { counter-increment:mc; position:relative; display:flex; align-items:flex-start; gap:12px; padding:13px 14px; border:1px solid var(--line); border-radius:14px; background:var(--white); font-size:15px; line-height:1.6; box-shadow:0 1px 2px #1015200a; transition:border-color .2s, box-shadow .2s; }
+.check-list.mol-checks li:hover { border-color:#cfe0ea; box-shadow:0 10px 24px -18px #10152052; }
+.check-list.mol-checks li::before { content:counter(mc); position:static; flex:none; display:grid; place-items:center; width:26px; height:26px; margin-top:1px; border-radius:8px; background:var(--navy); color:#fff; font-family:var(--display); font-weight:700; font-size:12.5px; line-height:1; }
+html[lang=fa] .check-list.mol-checks li::before { content:counter(mc, persian); }
+.mol-aside .mol-checks + .button { width:100%; justify-content:center; }
