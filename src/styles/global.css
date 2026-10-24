@@ -1047,3 +1047,9 @@ html[lang=fa] .imp-bv { direction:rtl; unicode-bidi:embed; }
 .imp-hint { position:absolute; inset-inline-start:14px; bottom:12px; font-size:12px; color:#bfb3a2; letter-spacing:.02em; pointer-events:none; }
 .imp-sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; margin:0; padding:0; }
 @media(max-width:520px) { .imp-bub3d { padding:0; } }
+/* Language flags */
+.flag { display:inline-block; flex:none; width:var(--fw,18px); aspect-ratio:3 / 2; border-radius:3px; overflow:hidden; box-shadow:0 0 0 1px #0000001f, 0 1px 2px #00000026; line-height:0; vertical-align:middle; }
+.flag svg { display:block; width:100%; height:100%; }
+.lang-panel a { display:flex; align-items:center; gap:12px; }
+.mobile-langs a { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:7px; }
+.site-header .flag { box-shadow:0 0 0 1px #ffffff2e; }
