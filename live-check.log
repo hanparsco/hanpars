@@ -23,4 +23,21 @@
   total 21624 URLs, 21624 unique
 == sample of 200 sitemap URLs
   checked 200 pages and 788 alternates
+== external links (warnings only)
+  regulatory watch as of 2026-10-24: 6 items
+  news updated 2026-10-23T23:27:26Z
+  ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/concept-paper-revision-guideline-similar-biological-medicinal-products-chmp-437-04-rev1_en.pdf
+  ok  200 [watch] https://www.ema.europa.eu/en/news/ama-ema-issue-joint-guidance-ebola-vaccine-development
+  WARN 202 [watch] https://www.cde.org.cn/main/news/viewInfoCommon/197073fbba8cbf3b314a80928f2e1b4b
+  ok  200 [watch] https://www.mfds.go.kr/brd/m_99/view.do?seq=50434
+  ok  200 [watch] https://www.hma.eu/human-medicines/cmdh/press-releases.html
+  WARN 404 [watch] https://www.fda.gov/apology_objects/abuse-detection-apology.html
+  ok  200 [news] https://www.fiercepharma.com/pharma/gsks-double-fda-win-roches-15b-deal-and-rise-point-care-marketing
+  ok  200 [news] https://www.pharmexec.com/view/fda-approves-subcutaneous-induction-skyrizi-crohns-disease
+  ok  200 [news] https://www.kingsresearch.com/blog/pharmaceutical-supply-chain-resilience
+  ok  200 [news] https://www.prnewswire.com/news-releases/probio-successfully-completes-nmpa-pre-approval-inspection-for-biologics-manufacturing-facility-in-nanjing-china-302912641.html
+  ok  200 [news] https://manufacturingchemist.com/esteve-cdmo-invests-80m-new-china-api-manufacturing
+  ok  200 [news] https://fastcompanyme.com/news/egypt-and-china-explore-new-pharmaceutical-manufacturing-and-technology-partnerships/
+  ok  200 [webmail] https://secureserver.titan.email/mail/
+  2 external link warning(s)
 == result: OK
