@@ -2,7 +2,7 @@
 """Live crawl/index health check for hanpars.com (run by .github/workflows/live-check.yml).
 Checks status codes and redirects of key URLs, robots.txt, the sitemaps, and a random sample of sitemap URLs:
 each sampled page must answer 200, be indexable, carry a self-referencing canonical and hreflang alternates that answer 200."""
-import random, re, sys, urllib.request, urllib.error, http.client, ssl, json, time
+import urllib.parse, random, re, sys, urllib.request, urllib.error, http.client, ssl, json, time
 from urllib.parse import urlsplit
 BASE = 'https://hanpars.com'
 UA = 'Mozilla/5.0 (compatible; HanparsLiveCheck/1.0)'
@@ -67,5 +67,33 @@ for u in sample:
         except Exception as e: issues.append(f'hreflang {code} {href} {e}')
     if issues: problems.append(f'{u}: ' + '; '.join(issues)); print(f'  BAD {u}: ' + '; '.join(issues))
 print(f'  checked {len(sample)} pages and {len(alts_checked)} alternates')
+# External links shown on the site (regulatory watch, news, webmail): warnings only — many agency sites block bots,
+# so a 403/429 is reported as "blocked" rather than as a problem.
+print('== external links (warnings only)')
+ext_urls = []
+try:
+    w = json.load(open('src/data/regulatory-watch.json', encoding='utf-8'))
+    ext_urls += [('watch', i['url']) for i in w.get('items', [])]
+    print(f"  regulatory watch as of {w.get('asOf')}: {len(w.get('items', []))} items")
+except Exception as e: print('  could not read regulatory-watch.json', e)
+try:
+    n = json.load(open('src/data/news.json', encoding='utf-8'))
+    ext_urls += [('news', i['url']) for k in ('global', 'china') for i in n.get(k, [])]
+    print(f"  news updated {n.get('updated')}")
+except Exception as e: print('  could not read news.json', e)
+ext_urls.append(('webmail', 'https://secureserver.titan.email/mail/'))
+warnings = []
+for kind, eu in ext_urls:
+    status = None
+    for _ in range(3):  # follow up to 3 redirects
+        try: status, loc, _b = req(eu)
+        except Exception as e: status, loc = f'ERR {e.__class__.__name__}', ''
+        if isinstance(status, int) and 300 <= status < 400 and loc:
+            eu = loc if loc.startswith('http') else urllib.parse.urljoin(eu, loc); continue
+        break
+    tag = 'ok ' if status == 200 else ('blocked' if status in (401, 403, 429) else 'WARN')
+    print(f'  {tag} {status} [{kind}] {eu}')
+    if tag == 'WARN': warnings.append(f'[{kind}] {eu} -> {status}')
+if warnings: print(f'  {len(warnings)} external link warning(s)')
 print('== result:', 'OK' if not problems else f'{len(problems)} problem(s)')
 for p in problems: print('  -', p)
