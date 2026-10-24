@@ -53,7 +53,7 @@ const navGroups = s.groups.map(g => ({ ...g, items: [...(g.items as NavItem[]), 
       <a class:list={['nav-link', { active: path === '/contact-us-1' }]} href={L('/contact-us-1')}>{s.nav.contact}</a>
       <details class="nav-dropdown nav-lang-menu">
         <summary class="nav-link nav-lang" aria-label="Language"><Flag lang={lang} size={18}/><span>{langNames[lang]}</span><Icon name="down" size={13}/></summary>
-        <div class="dropdown-panel lang-panel">{others.map(o => <a href={o.href} hreflang={htmlLang[o.l]} lang={htmlLang[o.l]} dir={dir(o.l)} aria-current={o.l === lang ? 'true' : undefined} class:list={{ current: o.l === lang }}><Flag lang={o.l} size={22}/><strong>{langNames[o.l]}</strong></a>)}</div>
+        <div class="dropdown-panel lang-panel">{others.map(o => <a href={o.href} hreflang={htmlLang[o.l]} lang={htmlLang[o.l]} aria-current={o.l === lang ? 'true' : undefined} class:list={{ current: o.l === lang }}><Flag lang={o.l} size={22}/><strong>{langNames[o.l]}</strong></a>)}</div>
       </details>
       <div class="mobile-langs" role="group" aria-label="Language">{others.map(o => <a href={o.href} hreflang={htmlLang[o.l]} lang={htmlLang[o.l]} aria-current={o.l === lang ? 'true' : undefined} class:list={{ current: o.l === lang }}><Flag lang={o.l} size={20}/><span>{langNames[o.l]}</span></a>)}</div>
       <a class="button button-ghost nav-cta" href={L('/contact-us-1')}>{s.nav.enquiry}</a>

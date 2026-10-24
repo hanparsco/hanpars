@@ -1057,3 +1057,5 @@ html[lang=fa] .imp-bv { direction:rtl; unicode-bidi:embed; }
 .nav-mail { display:inline-flex; align-items:center; gap:7px; }
 .nav-mail > svg { opacity:.8; flex:none; }
 .main-nav .nav-mail { justify-content:flex-start; }
+.lang-panel a { direction:inherit; text-align:start; justify-content:flex-start; }
+.lang-panel a strong { unicode-bidi:isolate; }
