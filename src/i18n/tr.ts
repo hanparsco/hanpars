@@ -153,7 +153,7 @@ export const tr: UI = {
       ctaProduct: 'Ürünü ve pazarı bize söyleyin. Bir sonraki adımı biz söyleyelim.', ctaCdmo: 'Projenin hangi aşamada olduğunu bize söyleyin.',
     },
     regulatory: {
-      title: 'Ruhsatlandırma ve regülasyon', category: 'Hizmetler', action: 'Değerlendirme talep edin', photoAlt: 'Bir masada regülasyon belgesinin imzalanması',
+      title: 'Ruhsatlandırma ve regülasyon', category: 'Hizmetler', action: 'Değerlendirme talep edin', photoAlt: 'Camında küresel regülasyon veri akışı haritası görünen bir gözlük',
       cover: 'Neleri kapsıyoruz', file: 'Nerelere başvuruyoruz', intel: 'Regülasyon istihbaratı ve regülasyonda yapay zekâ', principle: 'Yapay zekâya ilişkin ilkemiz',
       watch: 'Otoritelerde neler değişti', watchLede: (d: string) => `Regülasyon takibi, ${d} itibarıyla. Maddeler, otoritelerin kendi yayınlarından özetlenmiştir; tam metin için kaynağa bakın.`,
       authorities: 'Otoriteler', routes: 'Yürüttüğümüz başvuru yolları', format: 'Dosya formatı', source: 'Kaynak',

@@ -76,7 +76,7 @@ const record = {
   ],
 };
 ---
-<PageHero title={r.title} category={r.category} description={data.intro} action={r.action} href="/contact-us-1?type=regulatory" photo="dossier-signing" photoAlt={r.photoAlt}/>
+<PageHero title={r.title} category={r.category} description={data.intro} action={r.action} href="/contact-us-1?type=regulatory" photo="ra-datastream" photoAlt={r.photoAlt}/>
 
 <nav class="ra-nav" aria-label={r.title}><div class="container"><ul>{[...(record ? [['#record', record.title]] : []), ['#services', r.cover], ['#markets', r.file], ['#intelligence', r.intel], ['#watch', r.watch]].map(([h, l]) => <li><a href={h}>{l}</a></li>)}</ul></div></nav>
 

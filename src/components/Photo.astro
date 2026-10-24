@@ -3,7 +3,7 @@
 interface Props { name:string; alt:string; class?:string; priority?:boolean; ratio?:string; }
 const { name, alt, class: className = '', priority = false, ratio } = Astro.props;
 // intrinsic sizes (prevents layout shift while the image loads)
-const DIMS: Record<string, [number, number]> = {"container-ship": [1800, 1200], "lab-instrument": [1800, 1200], "blister-packs": [1800, 1259], "hero-products": [1800, 1005], "fdf-portfolio": [1800, 1440], "tehran-alborz": [1800, 1200], "hero-cleanroom": [1800, 1200], "lab-pipette": [1800, 2700], "products-shelf-full": [1560, 2400], "dossier-signing": [1800, 1201]};
+const DIMS: Record<string, [number, number]> = {"container-ship": [1800, 1200], "lab-instrument": [1800, 1200], "blister-packs": [1800, 1259], "hero-products": [1800, 1005], "fdf-portfolio": [1800, 1440], "tehran-alborz": [1800, 1200], "hero-cleanroom": [1800, 1200], "lab-pipette": [1800, 2700], "products-shelf-full": [1560, 2400], "dossier-signing": [1800, 1201], "ra-datastream": [1800, 982]};
 const [w, h] = DIMS[name] || [1800, 1200];
 ---
 <figure class:list={['photo', className]} style={ratio ? `aspect-ratio:${ratio}` : undefined}>
