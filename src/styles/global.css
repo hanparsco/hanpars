@@ -1190,3 +1190,16 @@ html:is([lang=fa],[lang=zh-Hans]) .ph-badge { letter-spacing:0; text-transform:n
 .reference-note-list { list-style:none; padding:0; margin:0; display:grid; gap:6px; }
 .reference-note-list li { position:relative; padding-inline-start:16px; }
 .reference-note-list li::before { content:''; position:absolute; inset-inline-start:0; top:.75em; width:6px; height:6px; border-radius:50%; background:var(--lapis-deep); }
+/* API pages: main column as icon cards */
+.api-main { display:grid; gap:14px; align-content:start; }
+.api-main > .archive-note { margin:0; }
+.api-main .mol-about { margin-bottom:0; }
+.api-main .mol-about p { max-width:none; }
+.api-main .mol-about .form-hint { font-size:13px; margin-top:12px; }
+.api-ids .mol-table { margin:0; border-top:0; display:grid; gap:8px; }
+.api-ids .mol-table div { grid-template-columns:150px minmax(0,1fr); gap:16px; padding:12px 14px; border:0; border-radius:12px; background:var(--paper); align-items:start; }
+.api-ids .mol-table dt { font-size:13px; padding-top:2px; }
+.api-ids .mol-table dd { font-size:15px; min-width:0; }
+.api-ids .mol-mono { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13.5px; background:var(--white); border:1px solid var(--line); border-radius:8px; padding:6px 9px; display:block; overflow-wrap:anywhere; }
+.api-main .mol-syn-chips { margin:0; }
+@media(max-width:640px) { .api-ids .mol-table div { grid-template-columns:minmax(0,1fr); gap:6px; } }
