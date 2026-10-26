@@ -1,6 +1,6 @@
 ---
 import PageHero from './PageHero.astro';
-import { formEndpoint, formAccessKey, contactEmail, raEmail } from '../data/site';
+import { formEndpoint, formAccessKey, contactEmail, raEmail, mEnc, mShow } from '../data/site';
 import { langFromPath, t } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
 const c = t(lang).contact;
@@ -29,7 +29,7 @@ const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, se
     <div class="brief-head"><h2>{c.formTitle}</h2><p>{c.formLede}</p></div>
     <p class="brief-legend" id="enquiry-type-legend">{c.typeLegend}</p>
     <div class="enquiry-tabs" role="tablist" aria-labelledby="enquiry-type-legend">{types.map((k, i) => <button id={`enquiry-${k}`} type="button" class="enquiry-tab" role="tab" aria-selected={i === 0 ? 'true' : 'false'} aria-controls="brief-form" data-enquiry-type={k} tabindex={i === 0 ? 0 : -1}><span class="enquiry-icon" aria-hidden="true" set:html={icons[k]}/><span class="enquiry-text"><strong>{c.tabs[k]}</strong><small>{c.tabHints[k]}</small></span></button>)}</div>
-    <form id="brief-form" aria-labelledby="enquiry-sourcing" role="tabpanel" action={formEndpoint} method="POST" data-access-key={formAccessKey} data-i18n={i18n} data-email={contactEmail} data-ra-email={raEmail} novalidate>
+    <form id="brief-form" aria-labelledby="enquiry-sourcing" role="tabpanel" action={formEndpoint} method="POST" data-access-key={formAccessKey} data-i18n={i18n} data-email={mEnc(contactEmail)} data-ra-email={mEnc(raEmail)} data-t0="0" novalidate>
       <input type="hidden" name="access_key" value={formAccessKey} />
       <input type="hidden" name="subject" value="Website enquiry" data-subject />
       <input type="hidden" name="from_name" value="hanpars.com website" />
@@ -55,14 +55,14 @@ const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, se
           <div class="form-field"><label for="brief-phone">{c.phone}<small class="opt">{c.optional}</small></label><input id="brief-phone" name="phone" type="tel" maxlength="60" autocomplete="tel" dir="ltr"/></div>
         </div>
       </fieldset>
-      <div class="form-actions"><button class="button button-navy brief-submit" type="submit" data-send-brief>{c.send}</button><a class="text-link" href={`mailto:${contactEmail}`} data-or-email>{c.orEmail} <span dir="ltr">{contactEmail}</span></a></div>
+      <div class="form-actions"><button class="button button-navy brief-submit" type="submit" data-send-brief>{c.send}</button><a class="text-link" href="#brief-form" data-or-email data-m={mEnc(contactEmail)} rel="nofollow">{c.orEmail} <span dir="ltr" data-m-text>{mShow(contactEmail)}</span></a></div>
       <p class="form-status" id="brief-status" role="status" aria-live="polite"></p>
       <p class="form-disclaimer">{c.disclaimer}</p>
     </form>
   </div>
   <aside class="contact-aside"><h3>{c.asideTitle}</h3><p>{c.asideText}</p>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.phone}/><div><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></p></div></div>
-    <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.mail}/><div><strong>{c.email}</strong><p><a href={`mailto:${contactEmail}`} dir="ltr">{contactEmail}</a><br/><a href={`mailto:${raEmail}`} dir="ltr">{raEmail}</a></p></div></div>
+    <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.mail}/><div><strong>{c.email}</strong><p><a href="#brief-form" data-m={mEnc(contactEmail)} rel="nofollow" dir="ltr" data-m-text>{mShow(contactEmail)}</a><br/><a href="#brief-form" data-m={mEnc(raEmail)} rel="nofollow" dir="ltr" data-m-text>{mShow(raEmail)}</a></p></div></div>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.pin}/><div><strong>{c.office}</strong><p>{officeLines.map((l, n) => <>{n > 0 && <br/>}{l}</>)}</p></div></div>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.clock}/><div><strong>{c.hours}</strong><p>{c.hoursText}</p><span class="form-hint">{c.confirmVisit}</span></div></div>
   </aside>

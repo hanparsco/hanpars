@@ -1,3 +1,12 @@
+// Anti-harvesting e-mail addresses (see mEnc in src/data/site.ts): decode data-m into a mailto link and visible text.
+const mDec = (v: string) => { try { return atob(v).split('').reverse().join(''); } catch { return ''; } };
+const revealMail = () => document.querySelectorAll<HTMLElement>('[data-m]').forEach(el => {
+  const e = mDec(el.dataset.m || ''); if (!e) return;
+  if (el instanceof HTMLAnchorElement) el.href = `mailto:${e}${el.dataset.ms ? `?subject=${encodeURIComponent(el.dataset.ms)}` : ''}`;
+  if (el.hasAttribute('data-m-text')) el.textContent = e;
+  el.querySelectorAll<HTMLElement>('[data-m-text]').forEach(t => { t.textContent = e; });
+});
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', revealMail); else revealMail();
 const siteFaDigits = document.documentElement.lang === 'fa';
 const siteNum = (s: string | number) => { const t = String(s); return siteFaDigits ? t.replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]) : t; };
 const nav = document.getElementById('main-nav');
@@ -205,9 +214,9 @@ if (form) {
     const subject = form!.querySelector<HTMLInputElement>('[data-subject]');
     if (typeField) typeField.value = labels[type].heading;
     if (subject) subject.value = `${labels[type].heading} — website`;
-    const email = type === 'regulatory' ? (form!.dataset.raEmail || '') : (form!.dataset.email || '');
+    const email = mDec(type === 'regulatory' ? (form!.dataset.raEmail || '') : (form!.dataset.email || ''));
     const cc = form!.querySelector<HTMLInputElement>('[data-cc-field]');
-    if (cc) cc.value = type === 'regulatory' ? (form!.dataset.raEmail || '') : '';
+    if (cc) cc.value = type === 'regulatory' ? mDec(form!.dataset.raEmail || '') : '';
     const orEmail = form!.querySelector<HTMLAnchorElement>('[data-or-email]');
     if (orEmail && email) { orEmail.href = `mailto:${email}`; const span = orEmail.querySelector('span'); if (span) span.textContent = email; }
   }
@@ -221,9 +230,18 @@ if (form) {
   chips.forEach(chip => chip.addEventListener('click', () => { const input = document.getElementById(chip.dataset.chipFor || '') as HTMLInputElement | null; if (!input) return; input.value = input.value === chip.dataset.chipValue ? '' : (chip.dataset.chipValue || ''); syncChips(); }));
   chips.forEach(chip => document.getElementById(chip.dataset.chipFor || '')?.addEventListener('input', syncChips));
   const button = form.querySelector<HTMLButtonElement>('[data-send-brief]');
+  const formStart = Date.now();
   form.addEventListener('submit', async event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
+    // Bot filter: the hidden honeypot is ticked, or the form was "filled" faster than a person can (under 4 s).
+    // Pretend success so the bot learns nothing, and send nothing.
+    const trap = form.querySelector<HTMLInputElement>('.botcheck');
+    if ((trap && trap.checked) || Date.now() - formStart < 4000) {
+      form.reset(); selectType(type); syncChips();
+      if (status) status.textContent = formI18n.sent || 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
+      return;
+    }
     if (form.dataset.accessKey?.startsWith('PENDING')) {
       if (status) status.textContent = formI18n.notConnected || 'The form is not connected yet. Please email contact@hanpars.com for now.';
       return;

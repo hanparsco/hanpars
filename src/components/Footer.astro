@@ -3,7 +3,7 @@ import Icon from './Icon.astro';
 interface Props { brand?: 'default' | 'regulatory' }
 const { brand = 'default' } = Astro.props;
 import { langFromPath, localePath, t, dir } from '../i18n';
-import { contactEmail, raEmail } from '../data/site';
+import { contactEmail, raEmail, mEnc, mShow } from '../data/site';
 const email = brand === 'regulatory' ? raEmail : contactEmail;
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
@@ -31,7 +31,7 @@ const langs = [
       <div class="ft-contact" aria-label={f.reach}>
         <h2 class="ft-label">{f.reach}</h2>
         <a class="ft-card" href="tel:+982188883325"><span class="ft-ico"><Icon name="phone" size={18} /></span><span><small>{f.phone}</small><strong dir="ltr" data-fa-digits>+98 21 8888 3325</strong></span></a>
-        <a class="ft-card" href={`mailto:${email}`}><span class="ft-ico"><Icon name="mail" size={18} /></span><span><small>{f.email}</small><strong dir="ltr" lang="en">{email}</strong></span></a>
+        <a class="ft-card" href={L(brand === 'regulatory' ? '/contact-us-1?type=regulatory' : '/contact-us-1')} data-m={mEnc(email)} rel="nofollow"><span class="ft-ico"><Icon name="mail" size={18} /></span><span><small>{f.email}</small><strong dir="ltr" lang="en" data-m-text>{mShow(email)}</strong></span></a>
         <div class="ft-card"><span class="ft-ico"><Icon name="pin" size={18} /></span><span><small>{f.office}</small><strong>{s.footer.address}</strong></span></div>
         <div class="ft-card"><span class="ft-ico"><Icon name="clock" size={18} /></span><span><small>{s.contact.hours}</small><strong>{s.contact.hoursText}</strong></span></div>
       </div>
