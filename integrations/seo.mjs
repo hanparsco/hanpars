@@ -83,7 +83,17 @@ export default function seo({ site }) {
           await writeFile(dirIdx, `<!doctype html><html><head><meta charset="utf-8"><title>Redirect</title><link rel="canonical" href="${target}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=${target}"><script>location.replace(${JSON.stringify(target)})</script></head><body><a href="${target}">${target}</a></body></html>`);
           stubs++;
         }
-        logger.info(`sitemap.xml with ${rows.length} URLs; ${stubs} trailing-slash redirect stubs`);
+        // renamed pages: keep old URLs alive as redirects (Search Console otherwise reports 404s)
+        const MOVED = { '/fdf/-51992': '/fdf/cream-base-51992', '/fdf/-51993': '/fdf/cream-base-51993', '/fdf/-52309': '/fdf/cream-base-52309' };
+        let moved = 0;
+        for (const [from, to] of Object.entries(MOVED)) for (const pre of ['', '/fa', '/zh', '/tr']) {
+          const target = site + pre + to, file = join(root, (pre + from).slice(1) + '.html');
+          try { await access(file); continue; } catch {}
+          await mkdir(join(file, '..'), { recursive: true });
+          await writeFile(file, `<!doctype html><html><head><meta charset="utf-8"><title>Redirect</title><link rel="canonical" href="${target}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=${target}"><script>location.replace(${JSON.stringify(target)})</script></head><body><a href="${target}">${target}</a></body></html>`);
+          moved++;
+        }
+        logger.info(`sitemap.xml with ${rows.length} URLs; ${stubs} trailing-slash redirect stubs; ${moved} moved-page redirects`);
       },
     },
   };
