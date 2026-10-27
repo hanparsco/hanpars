@@ -33,9 +33,16 @@ const database = 'database' in en ? en.database : '';
 const databaseLabel = lang !== 'en' && fa.databaseLabel ? fa.databaseLabel : ('databaseLabel' in en ? en.databaseLabel : '');
 const photo = 'photo' in en ? en.photo : undefined;
 const photoAlt = lang === 'fa' ? `${data.title} — هانیا پرسان دارو` : lang !== 'en' ? `${data.title} — Hanpars` : ('photoAlt' in en ? en.photoAlt : '');
+const preorder = ['api','excipient','nutrition','precursors','supplies'].includes(page) ? ({
+  en: { t: 'Pre-order only', p: 'All products listed in this section are available on pre-order only.' },
+  fa: { t: 'فقط پیش‌سفارش', p: 'تمامی محصولات مندرج در این بخش فقط بر اساس پیش‌سفارش در دسترس خواهند بود.' },
+  zh: { t: '仅接受预订', p: '本栏目所列全部产品仅接受预订。' },
+  tr: { t: 'Yalnızca ön sipariş', p: 'Bu bölümde yer alan tüm ürünler yalnızca ön sipariş ile temin edilebilir.' },
+} as const)[lang] : null;
 const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.standard.prepare : s.standard.startConversation;
 ---
 <PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':'sourcing'}`} action={action} photo={photo} photoAlt={photoAlt} hideAction={lang === 'fa' && page === 'culture'}/>
+{preorder&&<div class="container"><aside class="preorder-note" role="note"><span class="preorder-ico"><Icon name="clock" size={22}/></span><p><strong>{preorder.t}</strong>{preorder.p}</p></aside></div>}
 <section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map((p: string)=><p>{p}</p>)}</div></div></section>
 {page==='about-us'&&<Imports2026/>}
 {page==='fdf'&&<FdfPortfolio/>}

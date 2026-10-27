@@ -1353,3 +1353,12 @@ main:has(.trio-section) .invite .lede { margin-bottom:26px; }
 .area-ico { flex:none; display:grid; place-items:center; width:34px; height:34px; border-radius:10px; background:#a8d4e614; border:1px solid #a8d4e62e; color:var(--glacier); transition:background .25s,color .25s; }
 .area-list a:hover .area-ico { background:var(--glacier); color:var(--black); }
 @media(max-width:760px) { .area-ico { width:28px; height:28px; border-radius:8px; } .area-ico svg { width:16px; height:16px; } }
+
+/* pre-order notice on ingredient/product-range pages */
+.preorder-note { position:relative; z-index:2; display:flex; align-items:center; gap:16px; margin:-28px 0 0; padding:18px 22px; border-radius:16px; background:#fff8e6; border:1px solid #f0d58a; border-inline-start:5px solid #e0a82e; box-shadow:0 14px 34px -20px #14141455; }
+.preorder-ico { flex:none; display:grid; place-items:center; width:44px; height:44px; border-radius:12px; background:#e0a82e; color:#1a1406; }
+.preorder-note p { margin:0; color:#3b2f12; font-size:16.5px; line-height:1.55; font-weight:500; }
+.preorder-note strong { display:block; font-family:var(--display); font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#8a5a00; margin-bottom:2px; }
+html[lang=fa] .preorder-note strong,html[lang=zh-Hans] .preorder-note strong { letter-spacing:0; text-transform:none; font-size:14px; }
+.preorder-note + * { }
+@media(max-width:760px) { .preorder-note { margin-top:18px; padding:14px 16px; gap:12px; } .preorder-ico { width:36px; height:36px; } .preorder-note p { font-size:15px; } }
