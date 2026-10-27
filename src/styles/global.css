@@ -1239,7 +1239,8 @@ html:is([lang=fa],[lang=zh-Hans]) .ph-badge { letter-spacing:0; text-transform:n
 
 /* phones: long card stacks become one swipeable row (next card peeks in) */
 @media(max-width:720px) {
-  :is(.trio,.news-grid,.ra-services,.ra-tiers,.insight-list) { display:flex !important; flex-direction:row !important; gap:12px !important; overflow-x:auto; scroll-snap-type:x mandatory; overscroll-behavior-x:contain; margin-inline:calc(50% - 50vw) !important; padding:4px calc(50vw - 50%) 18px !important; scroll-padding-inline:calc(50vw - 50%); scrollbar-width:none; }
+  :is(.trio,.news-grid,.ra-services,.ra-tiers,.insight-list) { display:flex !important; flex-direction:row !important; gap:12px !important; overflow-x:auto; scroll-snap-type:x mandatory; overscroll-behavior-x:contain; margin-inline:calc(50% - 50vw) !important; padding:4px calc(50vw - 50%) 18px !important; scroll-padding-inline:22px; scrollbar-width:none; }
   :is(.trio,.news-grid,.ra-services,.ra-tiers,.insight-list)::-webkit-scrollbar { display:none; }
   :is(.trio,.news-grid,.ra-services,.ra-tiers,.insight-list) > * { flex:0 0 84% !important; min-width:0; scroll-snap-align:start; margin:0 !important; }
 }
+@media(max-width:560px) { :is(.trio,.news-grid,.ra-services,.ra-tiers,.insight-list,.portfolio-card-grid) { scroll-padding-inline:18px !important; } }
