@@ -1205,3 +1205,4 @@ html:is([lang=fa],[lang=zh-Hans]) .ph-badge { letter-spacing:0; text-transform:n
 @media(max-width:640px) { .api-ids .mol-table div { grid-template-columns:minmax(0,1fr); gap:6px; } }
 .api-ids .mol-table { margin:0 !important; }
 .api-ids .mol-table dd[dir=ltr] { text-align:left; }
+.contact-layout.contact-layout-solo { grid-template-columns:minmax(0,1fr); max-width:880px; }
