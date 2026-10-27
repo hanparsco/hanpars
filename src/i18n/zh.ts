@@ -48,7 +48,7 @@ export const zh: UI = {
     lede: 'Hanpars 进口原料药、成品药、药用辅料和营养原料，并向 IFDA 办理注册。总部位于德黑兰，供应商分布于土耳其、中国、印度和欧洲。',
     primary: '提交采购询盘', secondary: '注册事务',
     heroAlt: 'Hanpars 供应的制剂产品：片剂、注射剂和西林瓶',
-    entries: { fdf: '制剂成品', fdfText: (n: number, m: string) => `${n} 个已注册的紧急进口药品，以及 ${m} 个参考产品。`, api: '原料药', apiText: (m: string) => `参考品种范围内共 ${m} 种物质。`, exc: '药用辅料', excText: '1,240 种辅料，按功能和规格等级分类。', nut: '营养原料', nutText: '维生素、矿物质、植物提取物等：共 295 种保健品原料。' },
+    entries: { fdf: '制剂成品', fdfText: (n: number, m: string) => `${n} 个已注册的紧急进口药品，以及 ${m} 个参考产品。`, api: '原料药', apiText: (m: string) => `参考品种范围内共 ${m} 种物质。`, exc: '药用辅料', excText: '1,240 种辅料，按功能和规格等级分类。', nut: '营养原料', nutText: '维生素、矿物质、植物提取物等：共 295 种保健品原料。' , pre: '化学前体', preText: '用于合成的起始物料、中间体和试剂。', sup: '药用物料', supText: '初级包装、空心胶囊和生产耗材。' },
     threeTitle: '我们的三项业务，通常协同开展。',
     threeLede: '供应协议只有在产品获批并上市后才有意义，因此采购、注册和项目协调由同一团队负责。',
     three: [

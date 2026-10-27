@@ -94,7 +94,7 @@ const base = {
       lede: 'Hanpars imports active ingredients, finished medicines, excipients and nutrition ingredients, and registers them with the IFDA. Based in Tehran, with suppliers in Türkiye, China, India and Europe.',
       primary: 'Prepare a sourcing enquiry', secondary: 'Regulatory affairs',
       heroAlt: 'Finished medicines supplied by Hanpars: tablets, injections and vials',
-      entries: { fdf: 'Finished dosage forms', fdfText: (n: number, m: string) => `${n} registered emergency-import medicines and ${m} reference products.`, api: 'Active ingredients', apiText: (m: string) => `${m} substances in the reference range.`, exc: 'Excipients', excText: '1,240 excipients, by function and grade.', nut: 'Nutrition ingredients', nutText: 'Vitamins, minerals, botanicals and more: 295 supplement ingredients.' },
+      entries: { fdf: 'Finished dosage forms', fdfText: (n: number, m: string) => `${n} registered emergency-import medicines and ${m} reference products.`, api: 'Active ingredients', apiText: (m: string) => `${m} substances in the reference range.`, exc: 'Excipients', excText: '1,240 excipients, by function and grade.', nut: 'Nutrition ingredients', nutText: 'Vitamins, minerals, botanicals and more: 295 supplement ingredients.' , pre: 'Chemical precursors', preText: 'Starting materials, intermediates and reagents for synthesis.', sup: 'Pharmaceutical supplies', supText: 'Primary packaging, empty capsules and production consumables.' },
       threeTitle: 'Three things we do, usually together.',
       threeLede: 'A supply agreement is only useful once the product is approved and on the shelf, so sourcing, registration and project coordination sit with the same people.',
       three: [
@@ -304,11 +304,11 @@ const base = {
     },
     breadcrumbHome: 'خانه',
     home: {
-      title: 'تأمین و ثبت\nدارو و مواد اولیهٔ دارویی برای ایران؛\nهمه با هم فقط با یک تیم.',
+      title: 'تامین فرآورده‌های دارویی و مواد اولیه دارویی\nهمه با هم فقط با یک تیم!',
       lede: 'شرکت هانیا پرسان دارو طیف گسترده‌ای از مواد مؤثره، فرآورده‌های دارویی، مواد جانبی و مواد اولیهٔ غذایی و مکمل را وارد می‌کند و آن‌ها را در سازمان غذا و دارو به ثبت می‌رساند. مستقر در تهران است و با همکاری تعداد زیادی از تأمین‌کنندگان در ترکیه، چین، هند و اروپا، در تلاش است راه‌حلی برای کاهش کمبودهای دارویی کشور ارائه دهد.',
       primary: 'ثبت درخواست تأمین', secondary: 'امور رگولاتوری',
       heroAlt: 'فرآورده‌های داروییٔ تأمین‌شده توسط هانیا پرسان دارو: قرص، تزریقی و ویال',
-      entries: { fdf: 'فرآورده‌های دارویی', fdfText: (n: number, m: string) => `${n} داروی فوریتی و ${m} محصول در فهرست مرجع.`, api: 'مواد مؤثره', apiText: (m: string) => `${m} ماده در فهرست مرجع.`, exc: 'مواد جانبی', excText: '۱٬۲۴۰ مادهٔ جانبی، بر اساس کاربرد و گرید.', nut: 'مواد غذایی و مکمل', nutText: 'ویتامین‌ها، مواد معدنی، گیاهی و بیشتر: ۲۹۵ مادهٔ مکمل.' },
+      entries: { fdf: 'فرآورده‌های دارویی', fdfText: (n: number, m: string) => `${n} داروی فوریتی و ${m} محصول در فهرست مرجع.`, api: 'مواد مؤثره', apiText: (m: string) => `${m} ماده در فهرست مرجع.`, exc: 'مواد جانبی', excText: '۱٬۲۴۰ مادهٔ جانبی، بر اساس کاربرد و گرید.', nut: 'مواد غذایی و مکمل', nutText: 'ویتامین‌ها، مواد معدنی، گیاهی و بیشتر: ۲۹۵ مادهٔ مکمل.' , pre: 'پیش‌سازهای شیمیایی', preText: 'مواد آغازین، حدواسط‌ها و معرف‌های سنتز دارویی.', sup: 'ملزومات دارویی', supText: 'بسته‌بندی اولیه، کپسول خالی و اقلام مصرفی تولید.' },
       threeTitle: 'سه کاری که انجام می‌دهیم؛ معمولاً هر سه باهم:',
       threeLede: 'قرارداد تأمین فرآوردهٔ دارویی و مواد اولیه دارویی در نهایت وقتی ارزش دارد که محصول تأیید شود و روی قفسه داروخانه قرارگیرد؛ به همین دلیل تأمین، ثبت و هماهنگی پروژه نزد یک تیم است: تیم هانیا پرسان دارو!',
       three: [
