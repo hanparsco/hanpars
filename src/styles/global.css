@@ -1236,3 +1236,10 @@ html:is([lang=fa],[lang=zh-Hans]) .ph-badge { letter-spacing:0; text-transform:n
 .hero-split .hero-main { padding:64px 0 60px; }
 .invite-inner { padding-block:64px; }
 @media(max-width:760px) { .hero-split .hero-main { padding:40px 0 36px; } .invite-inner { padding-block:44px; } }
+
+/* phones: long card stacks become one swipeable row (next card peeks in) */
+@media(max-width:720px) {
+  :is(.trio,.news-grid,.ra-services,.ra-tiers,.insight-list) { display:flex !important; flex-direction:row !important; gap:12px !important; overflow-x:auto; scroll-snap-type:x mandatory; overscroll-behavior-x:contain; margin-inline:calc(50% - 50vw); padding:4px calc(50vw - 50%) 18px; scroll-padding-inline:calc(50vw - 50%); scrollbar-width:none; }
+  :is(.trio,.news-grid,.ra-services,.ra-tiers,.insight-list)::-webkit-scrollbar { display:none; }
+  :is(.trio,.news-grid,.ra-services,.ra-tiers,.insight-list) > * { flex:0 0 84% !important; min-width:0; scroll-snap-align:start; margin:0 !important; }
+}
