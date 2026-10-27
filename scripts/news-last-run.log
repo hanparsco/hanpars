@@ -1,33 +1,32 @@
-  ! image /article-image-alias/esteve-cdmo-invests-80m-in-new.png: unknown url type: '/article-image-alias/esteve-cdmo-invests-80m-in-new.png'
 global feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 21 items
+  Google News: 19 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 41 items
+  Google News: 31 items
 china feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 21 items
+  Google News: 19 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 41 items
-  Google News: 42 items
-  Google News: 0 items (no <item> elements; root <rss>, 1281 bytes, start b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><generator>NFE/5.0</generator><title>"China "active pharmaceutical ingredient" OR "API manufacturer" OR "API expo')
-  Google News: 24 items
-  Google News: 27 items
+  Google News: 31 items
+  Google News: 19 items
+  Google News: 1 items
+  Google News: 21 items
+  Google News: 17 items
 global
-  - Fierce Pharma | GSK's double FDA win, Roche's $15B deal and the rise of point-of-care  | img
-  - Sahi | Sudeep Pharma Receives FDA Approval For 51,200 MT Greenfield Facility  | img
-  - Endpoints News | Roche’s changing plans show how MFN is complicating European drug laun | img
+  - Pharmaceutical Technology | Pfizer’s prostate cancer combo moves to earlier line on expanded US ap | img
+  - Endpoints News | After $1.9B impairment hit, Novartis stands by $12B bet on Avidity | img
+  - RAPS | Recon: FDA approves treatments for prostate cancer, Crohn’s disease; U | img
 china
-  - Manufacturing Chemist | ESTEVE CDMO invests $80m in new China API manufacturing site | no image
-  - BioPharma APAC | Harbour BioMed Secures China’s NMPA Approval for Batoclimab, Expanding | img
-  - openPR.com | China's Leading Smectite API Suppliers Attract Growing Global Market A | img
+  - WBOC TV | China’s Leading Smectite API Suppliers Attract Growing Global Market A | img
+  - Pharmaceutical Technology | China’s NMPA accepts Innovent application for sintilimab combo | img
+  - The Manila Times | New Indication Application for Sacituzumab Tirumotecan (sac-TMT) in Co | img

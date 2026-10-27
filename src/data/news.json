@@ -1,55 +1,55 @@
 {
- "updated": "2026-10-27T00:03:34Z",
+ "updated": "2026-10-27T23:58:02Z",
  "global": [
   {
-   "title": "GSK's double FDA win, Roche's $15B deal and the rise of point-of-care marketing",
-   "url": "https://www.fiercepharma.com/pharma/gsks-double-fda-win-roches-15b-deal-and-rise-point-care-marketing",
-   "source": "Fierce Pharma",
-   "date": "2026-10-23",
-   "summary": "This week on \"The Top Line,\" we cover GSK's pair of FDA approvals, Roche's $15 billion ADC deal and the rise of point-of-care pharma marketing.",
-   "image": "/news/g-11677d4212.jpg"
+   "title": "Pfizer’s prostate cancer combo moves to earlier line on expanded US approval",
+   "url": "https://www.pharmaceutical-technology.com/news/pfizer-talzenna-xtandi-prostate-cancer-fda-label-expansion/",
+   "source": "Pharmaceutical Technology",
+   "date": "2026-10-27",
+   "summary": "The FDA expands Talzenna-Xtandi's label as the cancer treatment paradigm shifts towards the use of mutation-specific targeted therapies.",
+   "image": "/news/g-0e79502242.jpg"
   },
   {
-   "title": "Sudeep Pharma Receives FDA Approval For 51,200 MT Greenfield Facility In Nandesari",
-   "url": "https://www.sahi.com/news/sudeep-pharma-receives-fda-approval-for-51-200-mt-greenfield-facility-in-nandesari",
-   "source": "Sahi",
-   "date": "2026-10-26",
-   "summary": "Sudeep Pharma Receives FDA Approval For 51,200 MT Greenfield Facility In Nandesari Sahi",
-   "image": "/news/g-9462d0f64a.jpg"
-  },
-  {
-   "title": "Roche’s changing plans show how MFN is complicating European drug launches",
-   "url": "https://endpoints.news/roches-changing-plans-show-how-mfn-is-complicating-european-drug-launches/",
+   "title": "After $1.9B impairment hit, Novartis stands by $12B bet on Avidity",
+   "url": "https://endpoints.news/novartis-stands-by-12b-bet-on-avidity-after-1-9b-impairment-hit/",
    "source": "Endpoints News",
-   "date": "2026-10-26",
-   "summary": "Roche will seek European approval for its promising new breast cancer pill giredestrant later than it once expected, highlighting how US drug pricing pressure may be affecting pharmaceutical companies’ launch strategies elsewhere. As recently as ...",
-   "image": "/news/g-f592ff7788.jpg"
+   "date": "2026-10-27",
+   "summary": "Novartis’ $12 billion acquisition of Avidity Biosciences “remains absolutely on track,” CEO Vas Narasimhan said, after the company disclosed a $1.9 billion impairment charge on a failed late-stage neuromuscular disease asset it ...",
+   "image": "/news/g-8df3dd341c.jpg"
+  },
+  {
+   "title": "Recon: FDA approves treatments for prostate cancer, Crohn’s disease; US judge refuses to halt Lilly weight-loss drug ads",
+   "url": "https://www.raps.org/resource/recon-fda-approves-treatments-for-prostate-cancer-crohn-s-disease-us-judge-refuses-to-halt-lilly-weight-loss-drug-ads.html",
+   "source": "RAPS",
+   "date": "2026-10-27",
+   "summary": "Recon: FDA approves treatments for prostate cancer, Crohn’s disease; US judge refuses to halt Lilly weight-loss drug ads RAPS",
+   "image": "/news/g-d11363ba4b.jpg"
   }
  ],
  "china": [
   {
-   "title": "ESTEVE CDMO invests $80m in new China API manufacturing site",
-   "url": "https://manufacturingchemist.com/esteve-cdmo-invests-80m-new-china-api-manufacturing",
-   "source": "Manufacturing Chemist",
-   "date": "2026-10-23",
-   "summary": "ESTEVE CDMO invests $80m in new China API manufacturing site Manufacturing Chemist",
-   "image": ""
+   "title": "China’s Leading Smectite API Suppliers Attract Growing Global Market Attention",
+   "url": "https://www.wboc.com/online_features/press_releases/china-s-leading-smectite-api-suppliers-attract-growing-global-market-attention/article_80812a7a-fe18-5588-8be0-aff50644e2b5.html",
+   "source": "WBOC TV",
+   "date": "2026-10-26",
+   "summary": "China’s Leading Smectite API Suppliers Attract Growing Global Market Attention WBOC TV",
+   "image": "/news/c-2221d8bb32.jpg"
   },
   {
-   "title": "Harbour BioMed Secures China’s NMPA Approval for Batoclimab, Expanding Treatment Options for Myasthenia Gravis",
-   "url": "https://biopharmaapac.com/news/32/8600/harbour-biomed-secures-chinas-nmpa-approval-for-batoclimab-expanding-treatment-options-for-myasthenia-gravis.html",
-   "source": "BioPharma APAC",
-   "date": "2026-10-26",
-   "summary": "Harbour BioMed Secures China’s NMPA Approval for Batoclimab, Expanding Treatment Options for Myasthenia Gravis BioPharma APAC",
-   "image": "/news/c-b2368766eb.jpg"
+   "title": "China’s NMPA accepts Innovent application for sintilimab combo",
+   "url": "https://www.pharmaceutical-technology.com/news/chinas-nmpa-innovent-sintilimab-combo/",
+   "source": "Pharmaceutical Technology",
+   "date": "2026-10-27",
+   "summary": "Innovent Biologics has received acceptance from China's NMPA to review its sintilimab and GC101 combination for advanced melanoma.",
+   "image": "/news/c-f376f5fe15.jpg"
   },
   {
-   "title": "China's Leading Smectite API Suppliers Attract Growing Global Market Attention",
-   "url": "https://www.openpr.com/news/4673042/china-s-leading-smectite-api-suppliers-attract-growing-global",
-   "source": "openPR.com",
-   "date": "2026-10-26",
-   "summary": "China's Leading Smectite API Suppliers Attract Growing Global Market Attention openPR.com",
-   "image": "/news/c-afc1a62f13.jpg"
+   "title": "New Indication Application for Sacituzumab Tirumotecan (sac-TMT) in Combination with Pembrolizumab as First-Line Treatment for PD-L1-Negative Non-Squamous NSCLC Accepted for Review by NMPA",
+   "url": "https://www.manilatimes.net/2026/10/27/tmt-newswire/pr-newswire/new-indication-application-for-sacituzumab-tirumotecan-sac-tmt-in-combination-with-pembrolizumab-as-first-line-treatment-for-pd-l1-negative-non-squamous-nsclc-accepted-for-review-by-nmpa/2455007",
+   "source": "The Manila Times",
+   "date": "2026-10-27",
+   "summary": "New Indication Application for Sacituzumab Tirumotecan (sac-TMT) in Combination with Pembrolizumab as First-Line Treatment for PD-L1-Negative Non-Squamous NSCLC Accepted for Review by NMPA The Manila Times",
+   "image": "/news/c-9a5da9c21b.jpg"
   }
  ]
 }
