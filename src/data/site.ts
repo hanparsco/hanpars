@@ -16,7 +16,7 @@ export const groups = [
   ] },
   { label: 'Services', items: [
     { label: 'Regulatory Affairs', href: '/regulatory-affairs', note: 'Dossiers, IFDA submissions, lifecycle' },
-    { label: 'FDF CDMO', href: '/fdf-cdmo', note: 'Development and manufacturing projects' },
+    { label: 'Finished Dosage Form CDMO', href: '/fdf-cdmo', note: 'Development and manufacturing projects' },
   ] },
   { label: 'Company', items: [
     { label: 'About Hanpars', href: '/about-us', note: 'Who we are, and what we are not' },
@@ -29,7 +29,7 @@ export const routes = [
   { path: '/', title: 'Hanpars — Home' }, { path: '/home', title: 'Hanpars — Home' },
   { path: '/fdf', title: 'Finished dosage forms' }, { path: '/api', title: 'Active pharmaceutical ingredients' },
   { path: '/excipient', title: 'Excipients' }, { path: '/nutrition', title: 'Nutrition' },
-  { path: '/regulatory-affairs', title: 'Regulatory Affairs' }, { path: '/fdf-cdmo', title: 'FDF CDMO' },
+  { path: '/regulatory-affairs', title: 'Regulatory Affairs' }, { path: '/fdf-cdmo', title: 'Finished Dosage Form CDMO' },
   { path: '/about-us', title: 'About Hanpars' }, { path: '/import-activity', title: 'Import activity' }, { path: '/culture', title: 'How we work' },
   { path: '/markets', title: 'Markets & sourcing' }, { path: '/blog-1', title: 'Insights' },
   { path: '/contact-us-1', title: 'Contact Hanpars' },
