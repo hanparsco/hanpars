@@ -60,10 +60,10 @@ const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, se
       <p class="form-disclaimer">{c.disclaimer}</p>
     </form>
   </div>
-  {lang !== 'fa' && <aside class="contact-aside">{lang !== 'fa' && <><h3>{c.asideTitle}</h3><p>{c.asideText}</p></>}
-    {lang !== 'fa' && <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.phone}/><div><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></p></div></div>}
+  {lang !== 'fa' && <aside class="contact-aside"><h3>{c.asideTitle}</h3><p>{c.asideText}</p>
+    <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.phone}/><div><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></p></div></div>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.mail}/><div><strong>{c.email}</strong><p><a href="#brief-form" data-m={mEnc(contactEmail)} rel="nofollow" dir="ltr" data-m-text>{mShow(contactEmail)}</a><br/><a href="#brief-form" data-m={mEnc(raEmail)} rel="nofollow" dir="ltr" data-m-text>{mShow(raEmail)}</a></p></div></div>
-    {lang !== 'fa' && <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.pin}/><div><strong>{c.office}</strong><p>{officeLines.map((l, n) => <>{n > 0 && <br/>}{l}</>)}</p></div></div>}
-    {lang !== 'fa' && <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.clock}/><div><strong>{c.hours}</strong><p>{c.hoursText}</p><span class="form-hint">{c.confirmVisit}</span></div></div>}
+    <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.pin}/><div><strong>{c.office}</strong><p>{officeLines.map((l, n) => <>{n > 0 && <br/>}{l}</>)}</p></div></div>
+    <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.clock}/><div><strong>{c.hours}</strong><p>{c.hoursText}</p><span class="form-hint">{c.confirmVisit}</span></div></div>
   </aside>}
 </div></section>
