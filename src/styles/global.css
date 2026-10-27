@@ -1346,3 +1346,10 @@ main:has(.trio-section) .invite .lede { margin-bottom:26px; }
   .ft-bottom { flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:space-between; padding-block:12px 14px; }
   .ft-bottom > span { width:100%; }
 }
+
+/* home: therapeutic-area icons */
+.area-list a { align-items:center; justify-content:flex-start; }
+.area-list .area-name { flex:1; min-width:0; }
+.area-ico { flex:none; display:grid; place-items:center; width:34px; height:34px; border-radius:10px; background:#a8d4e614; border:1px solid #a8d4e62e; color:var(--glacier); transition:background .25s,color .25s; }
+.area-list a:hover .area-ico { background:var(--glacier); color:var(--black); }
+@media(max-width:760px) { .area-ico { width:28px; height:28px; border-radius:8px; } .area-ico svg { width:16px; height:16px; } }
