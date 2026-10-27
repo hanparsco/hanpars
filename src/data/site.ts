@@ -13,6 +13,8 @@ export const groups = [
     { label: 'Active pharmaceutical ingredients', href: '/api', note: 'A reference range of 1,582 substances' },
     { label: 'Excipients', href: '/excipient', note: 'Formulation materials by grade' },
     { label: 'Nutrition', href: '/nutrition', note: 'Vitamins and nutrition ingredients' },
+    { label: 'Chemical precursors', href: '/precursors', note: 'Starting materials, intermediates, reagents' },
+    { label: 'Pharmaceutical supplies', href: '/supplies', note: 'Primary packaging, capsules, consumables' },
   ] },
   { label: 'Services', items: [
     { label: 'Regulatory Affairs', href: '/regulatory-affairs', note: 'Dossiers, IFDA submissions, lifecycle' },
@@ -28,7 +30,7 @@ export const groups = [
 export const routes = [
   { path: '/', title: 'Hanpars — Home' }, { path: '/home', title: 'Hanpars — Home' },
   { path: '/fdf', title: 'Finished dosage forms' }, { path: '/api', title: 'Active pharmaceutical ingredients' },
-  { path: '/excipient', title: 'Excipients' }, { path: '/nutrition', title: 'Nutrition' },
+  { path: '/excipient', title: 'Excipients' }, { path: '/nutrition', title: 'Nutrition' }, { path: '/precursors', title: 'Chemical precursors' }, { path: '/supplies', title: 'Pharmaceutical supplies' },
   { path: '/regulatory-affairs', title: 'Regulatory Affairs' }, { path: '/fdf-cdmo', title: 'Finished Dosage Form CDMO' },
   { path: '/about-us', title: 'About Hanpars' }, { path: '/import-activity', title: 'Import activity' }, { path: '/culture', title: 'How we work' },
   { path: '/markets', title: 'Markets & sourcing' }, { path: '/blog-1', title: 'Insights' },

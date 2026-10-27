@@ -31,6 +31,22 @@ export const pagesTr: Record<PageKey, LPage> = {
     introTitle: 'Hammadde ile başlayın.',
     intro: ['Takviye edici ürünler alanındaki çalışmamız ilaç faaliyetlerimizle birlikte, aynı spesifikasyon ve dokümantasyon titizliğiyle yürütülür. Aşağıdaki liste, ilaç ve gıda takviyelerinde kullanılan başlıca hammaddeleri türlerine göre gruplandırır; genellikle işlem gördükleri formları ve her birinin kullanım amacını gösterir.', 'Talep ilettiğinizde hammaddeyi, kalite derecesini, miktarı, pazarı ve dokümantasyon ihtiyaçlarını belirtin.'],
   },
+  precursors: {
+    title: 'Kimyasal öncüller', category: 'Ürünler',
+    description: 'Farmasötik sentez için başlangıç maddeleri, ara ürünler ve reaktifler; nitelikli üreticilerden, düzenlemeye tabi üretimin gerektirdiği belgelerle.',
+    meta: 'Hanpars, İran’daki ilaç üretimi için kimyasal öncüller tedarik eder: API başlangıç maddeleri, ileri ara ürünler ve reaktifler, nitelikli üreticilerden ve eksiksiz belgelerle.',
+    introTitle: 'Etkin maddeden bir adım önce.',
+    intro: ['İran’da etkin madde sentezleyen veya son işlemini yapan üreticiler için, başta Çin ve Hindistan olmak üzere nitelikli üreticilerden düzenleyici başlangıç maddeleri, ileri ara ürünler ve proses reaktifleri tedarik ediyoruz.', 'Maddeyi, CAS numarasını, saflığını veya spesifikasyonunu, miktarı ve varış yerini bildirin. Bir tedarikçiye bağlanmadan önce ihtiyaç duyduğunuz belgeleri kontrol ederiz: analiz sertifikası, sentez yolu ve gerektiğinde safsızlık bilgileri.', 'Kontrollü öncüller yalnızca İran’da ve menşe ülkede gerekli lisans ve izinlerle tedarik edilir.'],
+    cards: [{ title: 'API başlangıç maddeleri', text: 'Dosyanızda düzenleyici başlangıç maddesi olarak tanımlanan temel yapı taşları; spesifikasyonlar sipariş öncesinde netleştirilir.' }, { title: 'Ara ürünler', text: 'Sonraki sentez adımları için ileri ara ürünler; tedarikçinin sağladığı seri belgeleri ve safsızlık profilleriyle.' }, { title: 'Reaktifler ve çözücüler', text: 'Prosesinize ve kalite gereksinimlerinize uygun farmasötik veya analitik kalitede proses kimyasalları.' }],
+  },
+  supplies: {
+    title: 'Farmasötik malzemeler', category: 'Ürünler',
+    description: 'Birincil ambalaj, boş kapsüller ve ilaç üretiminin dayandığı diğer malzemeler; İran’daki üreticiler için spesifikasyona göre tedarik.',
+    meta: 'Hanpars İran için farmasötik malzeme tedarik eder: flakon, ampul, kapak ve blister folyo gibi birincil ambalaj, boş kapsül ve üretim sarf malzemeleri, spesifikasyona göre.',
+    introTitle: 'Bir formülasyonu ilaca dönüştüren malzemeler.',
+    intro: ['Hammaddelerin yanı sıra ilacı tamamlayan malzemeleri de tedarik ediyoruz: birincil ambalaj, boş kapsül kabukları ve üretim sarf malzemeleri.', 'Ürünü, spesifikasyonunu veya çizimini, malzeme kalitesini, miktarı ve varış yerini gönderin. Karşılayabilecek tedarikçileri ve sağladıkları belgeleri (analiz sertifikası, DMF mektubu veya gıda temas beyanı gibi) size iletiriz.'],
+    cards: [{ title: 'Birincil ambalaj', text: 'Cam flakon ve ampuller, kauçuk tıpalar ve kapaklar, blister ve strip folyolar, ilaçla doğrudan temas eden şişe ve kapaklar.' }, { title: 'Boş kapsüller', text: 'Standart boyut ve renklerde sert jelatin ve HPMC kapsül kabukları.' }, { title: 'Üretim sarf malzemeleri', text: 'Filtreler, laboratuvar ve kalite kontrol sarf malzemeleri ve üretim hattında kullanılan diğer malzemeler.' }],
+  },
   'about-us': {
     title: 'Hanpars Hakkında', category: 'Şirket',
     description: 'Tahran merkezli, İran pazarı için ilaç ve hammaddeleri tedarik eden, ithal eden ve ruhsatlandıran bir ilaç ticaret şirketi.',

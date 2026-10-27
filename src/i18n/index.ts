@@ -57,6 +57,8 @@ const base = {
         { label: 'Active pharmaceutical ingredients', href: '/api', note: 'A reference range of 1,582 substances' },
         { label: 'Excipients', href: '/excipient', note: 'Formulation materials by grade' },
         { label: 'Nutrition and supplements', href: '/nutrition', note: 'Supplement ingredients, by group' },
+        { label: 'Chemical precursors', href: '/precursors', note: 'Starting materials, intermediates, reagents' },
+        { label: 'Pharmaceutical supplies', href: '/supplies', note: 'Primary packaging, capsules, consumables' },
       ] },
       { label: 'Services', items: [
         { label: 'Regulatory affairs', href: '/regulatory-affairs', note: 'Dossiers, IFDA submissions, lifecycle' },
@@ -178,7 +180,7 @@ const base = {
     standard: {
       prepare: 'Prepare an enquiry', discussProject: 'Discuss a project', startConversation: 'Start a conversation',
       dbTitleExc: 'The excipient database', dbTitleNut: 'The nutrition database', dbText: 'Browse the existing reference, then come back with the ingredient and specification you need. It opens in a new tab.',
-      cardsTitle: { 'fdf-cdmo': 'Dosage forms we take on', 'about-us': 'What that looks like in practice', culture: 'Three habits', markets: 'What to include in an enquiry' } as Record<string, string>,
+      cardsTitle: { precursors: 'What we source', supplies: 'What we source', 'fdf-cdmo': 'Dosage forms we take on', 'about-us': 'What that looks like in practice', culture: 'Three habits', markets: 'What to include in an enquiry' } as Record<string, string>,
       easyTitle: 'What makes an enquiry easy to answer',
       easy: ['The product, ingredient or INN name', 'Specification, grade, dosage form or strength', 'Quantity, destination market and timing', 'Documentation and certificate requirements, where relevant'],
       cdmoTitle: 'What we ask at the first meeting', cdmoLede: 'The activities and partners depend on the answers, so we start here.',
@@ -269,6 +271,8 @@ const base = {
         { label: 'مواد مؤثرهٔ دارویی (API)', href: '/api', note: 'فهرست مرجع ۱٬۵۸۲ ماده' },
         { label: 'مواد جانبی (اکسیپیان)', href: '/excipient', note: 'مواد فرمولاسیون بر اساس گرید' },
         { label: 'مکمل و تغذیه', href: '/nutrition', note: 'مواد اولیهٔ مکمل، بر اساس گروه' },
+        { label: 'پیش‌سازهای شیمیایی', href: '/precursors', note: 'مواد آغازین، حدواسط‌ها، معرف‌ها' },
+        { label: 'ملزومات دارویی', href: '/supplies', note: 'بسته‌بندی اولیه، کپسول، اقلام مصرفی' },
       ] },
       { label: 'خدمات', items: [
         { label: 'امور رگولاتوری', href: '/regulatory-affairs', note: 'پرونده، ثبت در سازمان غذا و دارو، تمدید و تغییرات پروانه' },
@@ -390,7 +394,7 @@ const base = {
     standard: {
       prepare: 'ثبت درخواست', discussProject: 'گفت‌وگو دربارهٔ پروژه', startConversation: 'شروع گفت‌وگو',
       dbTitleExc: 'بانک اطلاعات مواد جانبی', dbTitleNut: 'بانک اطلاعات تغذیه', dbText: 'مرجع موجود را مرور کنید و سپس با مادهٔ اولیه و مشخصات مورد نیاز بازگردید. در برگهٔ جدید باز می‌شود.',
-      cardsTitle: { 'fdf-cdmo': 'شکل‌های دارویی که می‌پذیریم', 'about-us': 'در عمل چه می‌کنیم؟', culture: 'سه اصل کاری', markets: 'در استعلام چه اطلاعاتی بیاورید' } as Record<string, string>,
+      cardsTitle: { precursors: 'چه چیزهایی تأمین می‌کنیم', supplies: 'چه چیزهایی تأمین می‌کنیم', 'fdf-cdmo': 'شکل‌های دارویی که می‌پذیریم', 'about-us': 'در عمل چه می‌کنیم؟', culture: 'سه اصل کاری', markets: 'در استعلام چه اطلاعاتی بیاورید' } as Record<string, string>,
       easyTitle: 'چه چیزی پاسخ به استعلام را آسان می‌کند',
       easy: ['نام محصول، مادهٔ اولیه یا نام ژنریک', 'مشخصات، گرید، شکل دارویی یا دوز', 'مقدار، بازار مقصد و زمان‌بندی', 'الزامات مستندات و گواهی‌ها، در صورت لزوم'],
       cdmoTitle: 'در جلسهٔ اول چه می‌پرسیم', cdmoLede: 'فعالیت‌ها و شرکا به پاسخ‌ها بستگی دارد؛ پس از اینجا شروع می‌کنیم.',

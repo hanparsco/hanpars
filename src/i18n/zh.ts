@@ -11,6 +11,8 @@ export const zh: UI = {
       { label: '原料药', href: '/api', note: '涵盖 1,582 种物质的参考品种范围' },
       { label: '药用辅料', href: '/excipient', note: '按规格等级分类的制剂辅料' },
       { label: '营养与保健品', href: '/nutrition', note: '按类别划分的保健品原料' },
+      { label: '化学前体', href: '/precursors', note: '起始物料、中间体、试剂' },
+      { label: '药用物料', href: '/supplies', note: '初级包装、空心胶囊、耗材' },
     ] },
     { label: '服务', items: [
       { label: '注册事务', href: '/regulatory-affairs', note: '注册资料、IFDA 申报与生命周期管理' },
@@ -132,7 +134,7 @@ export const zh: UI = {
   standard: {
     prepare: '提交询盘', discussProject: '洽谈项目', startConversation: '开始沟通',
     dbTitleExc: '药用辅料数据库', dbTitleNut: '营养原料数据库', dbText: '先浏览现有参考资料，再带着您所需的原料和质量标准回来咨询。将在新标签页中打开。',
-    cardsTitle: { 'fdf-cdmo': '我们承接的剂型', 'about-us': '实际工作中的体现', culture: '三个习惯', markets: '询盘应包含的内容' } as Record<string, string>,
+    cardsTitle: { precursors: '我们采购的物料', supplies: '我们采购的物料', 'fdf-cdmo': '我们承接的剂型', 'about-us': '实际工作中的体现', culture: '三个习惯', markets: '询盘应包含的内容' } as Record<string, string>,
     easyTitle: '怎样的询盘便于快速答复',
     easy: ['产品、原料或 INN 名称', '质量标准、等级、剂型或规格', '数量、目标市场和时间要求', '相关的文件和证书要求（如适用）'],
     cdmoTitle: '首次会议上我们会问什么', cdmoLede: '具体工作和合作伙伴取决于这些问题的答案，因此我们从这里开始。',

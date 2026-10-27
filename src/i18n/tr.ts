@@ -11,6 +11,8 @@ export const tr: UI = {
         { label: 'Etkin maddeler (API)', href: '/api', note: '1.582 maddelik referans yelpazesi' },
         { label: 'Yardımcı maddeler', href: '/excipient', note: 'Kalite sınıfına göre formülasyon materyalleri' },
         { label: 'Beslenme ve takviyeler', href: '/nutrition', note: 'Takviye bileşenleri, gruplara göre' },
+        { label: 'Kimyasal öncüller', href: '/precursors', note: 'Başlangıç maddeleri, ara ürünler, reaktifler' },
+        { label: 'Farmasötik malzemeler', href: '/supplies', note: 'Birincil ambalaj, kapsül, sarf malzemeleri' },
       ] },
       { label: 'Hizmetler', items: [
         { label: 'Ruhsatlandırma ve regülasyon', href: '/regulatory-affairs', note: 'Dosyalar, IFDA başvuruları, yaşam döngüsü' },
@@ -132,7 +134,7 @@ export const tr: UI = {
     standard: {
       prepare: 'Talep hazırlayın', discussProject: 'Bir projeyi görüşün', startConversation: 'Görüşmeye başlayın',
       dbTitleExc: 'Yardımcı madde veritabanı', dbTitleNut: 'Beslenme veritabanı', dbText: 'Mevcut referansa göz atın, ardından ihtiyaç duyduğunuz hammadde ve spesifikasyonla geri dönün. Yeni sekmede açılır.',
-      cardsTitle: { 'fdf-cdmo': 'Üstlendiğimiz dozaj formları', 'about-us': 'Uygulamada bu neye benzer', culture: 'Üç alışkanlık', markets: 'Bir talepte nelere yer verilmeli' } as Record<string, string>,
+      cardsTitle: { precursors: 'Neler tedarik ediyoruz', supplies: 'Neler tedarik ediyoruz', 'fdf-cdmo': 'Üstlendiğimiz dozaj formları', 'about-us': 'Uygulamada bu neye benzer', culture: 'Üç alışkanlık', markets: 'Bir talepte nelere yer verilmeli' } as Record<string, string>,
       easyTitle: 'Bir talebi yanıtlamayı kolaylaştıranlar',
       easy: ['Ürün, hammadde veya INN adı', 'Spesifikasyon, kalite, dozaj formu veya dozaj gücü', 'Miktar, hedef pazar ve zamanlama', 'Gerekiyorsa belge ve sertifika gereksinimleri'],
       cdmoTitle: 'İlk görüşmede neler soruyoruz', cdmoLede: 'Faaliyetler ve ortaklar yanıtlara göre belirlenir; bu yüzden buradan başlıyoruz.',

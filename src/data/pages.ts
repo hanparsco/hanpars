@@ -32,6 +32,24 @@ export const pages = {
     intro: ['Our supplement work sits alongside pharmaceuticals, with the same attention to specification and documentation. The list below covers the main ingredients used in pharmaceutical and food supplements, grouped by type, with the forms usually traded and what each is used for.', 'Include the ingredient, grade, quantity, market and documentation needs when you enquire.'],
 
   },
+  precursors: {
+    title: 'Chemical precursors', category: 'Products',
+    description: 'Starting materials, intermediates and reagents for pharmaceutical synthesis, sourced from qualified manufacturers with the documentation regulated production requires.',
+    meta: 'Hanpars sources chemical precursors for pharmaceutical manufacturing in Iran: API starting materials, advanced intermediates and reagents from qualified manufacturers, with full documentation.',
+    introTitle: 'One step upstream of the active ingredient.',
+    intro: ['For manufacturers who synthesise or finish active ingredients in Iran, we source regulatory starting materials, advanced intermediates and process reagents from qualified producers, mainly in China and India.', 'Tell us the material, its CAS number, purity or specification, quantity and destination. Before we commit to a supplier we check the documents you need: certificate of analysis, route of synthesis and impurity information where relevant.', 'Controlled precursors are supplied only with the licences and permits required in Iran and in the country of origin.'],
+    cards: [{ title: 'API starting materials', text: 'Key building blocks defined in your dossier as regulatory starting materials, with specifications agreed before ordering.' }, { title: 'Intermediates', text: 'Advanced intermediates for later synthetic steps, with batch documentation and impurity profiles where the supplier provides them.' }, { title: 'Reagents and solvents', text: 'Process chemicals in pharmaceutical or analytical grades, matched to your process and quality requirements.' }],
+    database: '', databaseLabel: '',
+  },
+  supplies: {
+    title: 'Pharmaceutical supplies', category: 'Products',
+    description: 'Primary packaging, empty capsules and the other materials pharmaceutical production depends on, sourced to specification for manufacturers in Iran.',
+    meta: 'Hanpars sources pharmaceutical supplies for Iran: primary packaging such as vials, ampoules, closures and blister foil, empty capsule shells and production consumables, to specification.',
+    introTitle: 'What turns a formulation into a medicine.',
+    intro: ['Alongside ingredients, we source the materials that complete a medicine: primary packaging, empty capsule shells and production consumables.', 'Send the item, its specification or drawing, the material grade, quantity and destination. We come back with suppliers who can meet it and the documents they provide, such as certificates of analysis, DMF letters or food-contact declarations.'],
+    cards: [{ title: 'Primary packaging', text: 'Glass vials and ampoules, rubber closures and seals, blister and strip foils, bottles and caps in direct contact with the medicine.' }, { title: 'Empty capsules', text: 'Hard gelatin and HPMC capsule shells in standard sizes and colours.' }, { title: 'Production consumables', text: 'Filters, laboratory and quality-control consumables and other materials used on the production line.' }],
+    database: '', databaseLabel: '',
+  },
   'about-us': {
     title: 'About Hanpars', category: 'Company',
     description: 'A pharmaceutical trading company in Tehran that sources, imports and registers medicines and ingredients for the Iranian market.',

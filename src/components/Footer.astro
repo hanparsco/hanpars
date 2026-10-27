@@ -33,7 +33,7 @@ const langs = [
         {lang !== 'fa' && <a class="ft-card" href="tel:+982188883325"><span class="ft-ico"><Icon name="phone" size={18} /></span><span><small>{f.phone}</small><strong dir="ltr" data-fa-digits>+98 21 8888 3325</strong></span></a>}
         <a class="ft-card" href={L(brand === 'regulatory' ? '/contact-us-1?type=regulatory' : '/contact-us-1')} data-m={mEnc(email)} rel="nofollow"><span class="ft-ico"><Icon name="mail" size={18} /></span><span><small>{f.email}</small><strong dir="ltr" lang="en" data-m-text>{mShow(email)}</strong></span></a>
         {lang !== 'fa' && <div class="ft-card"><span class="ft-ico"><Icon name="pin" size={18} /></span><span><small>{f.office}</small><strong>{s.footer.address}</strong></span></div>}
-        <div class="ft-card"><span class="ft-ico"><Icon name="clock" size={18} /></span><span><small>{s.contact.hours}</small><strong>{s.contact.hoursText}</strong></span></div>
+        {lang !== 'fa' && <div class="ft-card"><span class="ft-ico"><Icon name="clock" size={18} /></span><span><small>{s.contact.hours}</small><strong>{s.contact.hoursText}</strong></span></div>}
       </div>
     </div>
 

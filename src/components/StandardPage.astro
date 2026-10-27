@@ -26,7 +26,7 @@ const L = (p: string) => localePath(p, lang);
 const en = pages[page];
 const fa: any = lang === 'en' ? {} : pagesL[lang][page];
 const data = lang === 'en' ? en : { ...en, ...fa };
-const isProduct = ['api','fdf','excipient','nutrition'].includes(page);
+const isProduct = ['api','fdf','excipient','nutrition','precursors','supplies'].includes(page);
 const enCards = 'cards' in en ? en.cards : [];
 const cards = lang !== 'en' && fa.cards ? fa.cards.map((c: any, i: number) => ({ ...c, href: enCards[i] && 'href' in enCards[i] ? (enCards[i] as any).href : undefined })) : enCards.map(c => ({ title:c.title, text:c.text, link:'link' in c ? c.link : undefined, href:'href' in c ? c.href : undefined }));
 const database = 'database' in en ? en.database : '';
