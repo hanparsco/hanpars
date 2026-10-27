@@ -1,10 +1,10 @@
 ---
 import Photo from './Photo.astro';
 import { langFromPath, localePath, t } from '../i18n';
-interface Props { category?: string; title: string; description: string; action?: string; href?: string; dark?: boolean; photo?: string; photoAlt?: string; titleLang?: string; }
+interface Props { category?: string; title: string; description: string; action?: string; href?: string; dark?: boolean; photo?: string; photoAlt?: string; titleLang?: string; hideAction?: boolean; }
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
-const { category = 'Hanpars', title, description, action = s.nav.enquiry, href = '/contact-us-1', photo, photoAlt = '', titleLang } = Astro.props;
+const { category = 'Hanpars', title, description, action = s.nav.enquiry, href = '/contact-us-1', photo, photoAlt = '', titleLang, hideAction = false } = Astro.props;
 const external = href.startsWith('https://');
 const target = external || href.startsWith('#') ? href : localePath(href, lang);
 ---
@@ -14,7 +14,7 @@ const target = external || href.startsWith('#') ? href : localePath(href, lang);
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={localePath('/', lang)}>{s.breadcrumbHome}</a><span aria-hidden="true">/</span><span>{category}</span></nav>
       <h1 lang={titleLang} dir={titleLang ? 'ltr' : undefined}>{title}</h1>
       <p class="lede">{description}</p>
-      <div class="hero-actions"><a class="button button-light" href={target} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}>{action}</a></div>
+      {!hideAction && <div class="hero-actions"><a class="button button-light" href={target} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}>{action}</a></div>}
     </div>
     {photo && <Photo name={photo} class="hero-photo" alt={photoAlt} priority />}
   </div>

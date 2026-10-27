@@ -35,7 +35,7 @@ const photo = 'photo' in en ? en.photo : undefined;
 const photoAlt = lang === 'fa' ? `${data.title} — هانیا پرسان دارو` : lang !== 'en' ? `${data.title} — Hanpars` : ('photoAlt' in en ? en.photoAlt : '');
 const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.standard.prepare : s.standard.startConversation;
 ---
-<PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':'sourcing'}`} action={action} photo={photo} photoAlt={photoAlt}/>
+<PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':'sourcing'}`} action={action} photo={photo} photoAlt={photoAlt} hideAction={lang === 'fa' && page === 'culture'}/>
 <section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map((p: string)=><p>{p}</p>)}</div></div></section>
 {page==='about-us'&&<Imports2026/>}
 {page==='fdf'&&<FdfPortfolio/>}
