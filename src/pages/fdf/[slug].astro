@@ -13,6 +13,6 @@ const { entry } = Astro.props;
 const lang = 'en' as 'en' | 'fa';
 const seo = productSeo(entry, lang, info as any, infoFa as any);
 const base = lang === 'fa' ? '/fa' : '';
-const crumbs = [{ name: lang === 'fa' ? 'خانه' : 'Home', path: base || '/' }, { name: lang === 'fa' ? 'داروهای ساخته‌شده' : 'Finished dosage forms', path: base + '/fdf' }, { name: seo.name, path: base + '/fdf/' + fdfSlug(entry) }];
+const crumbs = [{ name: lang === 'fa' ? 'خانه' : 'Home', path: base || '/' }, { name: lang === 'fa' ? 'فرآورده‌های دارویی' : 'Finished dosage forms', path: base + '/fdf' }, { name: seo.name, path: base + '/fdf/' + fdfSlug(entry) }];
 ---
 <Layout title={seo.title} description={seo.description} keywords={seo.keywords} schema={[seo.schema]} breadcrumbs={crumbs} ogType="product"><ProductPage entry={entry} /></Layout>

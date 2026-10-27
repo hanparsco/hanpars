@@ -65,7 +65,7 @@ const locTitle = lang === 'tr' && locTitle0 ? locTitle0.charAt(0).toLocaleUpperC
 const nameBoth = locTitle ? (lang === 'zh' ? `${locTitle}（${title}）` : `${locTitle} (${title})`) : title;
 const seoNote = ({
   en: `${title} ${formLabel.toLowerCase()}${p.strength ? ' ' + p.strength : ''}: import and supply of this medicine for the Iranian market by Haniya Parsan Darou Co. (Hanpars), pharmaceutical importer of finished medicines and APIs, including emergency (urgent) import on request.`,
-  fa: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}: واردات و تأمین این داروی خارجی برای بازار ایران توسط شرکت هانیا پرسان دارو، واردکنندهٔ دارو، داروی ساخته‌شده و مواد اولیهٔ دارویی؛ امکان استعلام برای واردات دارو به ایران، از جمله داروی فوریتی.`,
+  fa: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}: واردات و تأمین این داروی خارجی برای بازار ایران توسط شرکت هانیا پرسان دارو، واردکنندهٔ دارو، فرآوردهٔ دارویی و مواد اولیهٔ دارویی؛ امکان استعلام برای واردات دارو به ایران، از جمله داروی فوریتی.`,
   zh: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}：Hanpars（Haniya Parsan Darou）为伊朗市场进口和供应本品，并可应要求安排紧急进口。`,
   tr: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}: Bu ilacın İran pazarına ithalatı ve tedariki Haniya Parsan Darou Co. (Hanpars) tarafından yapılır; talep üzerine acil ithalat da mümkündür.`,
 } as Record<string, string>)[lang];
