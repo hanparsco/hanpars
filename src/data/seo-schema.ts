@@ -33,7 +33,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const title = lang === 'zh'
     ? pick([nameFa ? `${nameFa}（${name}）${fFormShort}${sz}${extraFa}${dupe.code ? ' 编号' + entry.code : ''} | 伊朗供应 | Hanpars` : '', `${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' 编号' + entry.code : ''} | Hanpars`].filter(Boolean))
     : lang === 'tr'
-    ? pick([`${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' kod ' + entry.code : ''} | İran tedarikçisi | Hanpars`, `${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' kod ' + entry.code : ''} | Hanpars`, `${nameFa || name} ${fFormShort}${sz}`])
+    ? pick([`${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' kod ' + entry.code : ''} | İran tedarikçisi | Hanpars`, `${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' kod ' + entry.code : ''} | Hanpars`, `${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' kod ' + entry.code : ''}`])
     : lang === 'fa'
     ? pick([nameFa ? `${nameFa} (${name}) ${fFormShort}${strength ? ' ' + strength : ''}${extraFa}${codeFa} | هانیا پرسان دارو` : '', `${core} | تأمین و واردات | هانیا پرسان دارو`, `${core} | هانیا پرسان دارو`, `${core} | تأمین و واردات`, core].filter(Boolean))
     : pick([`${coreEn} | Supplier in Iran | Hanpars`, `${coreEn} | Hanpars`, coreEn]);

@@ -1,6 +1,6 @@
 {
   "_about": "Regulatory watch on /regulatory-affairs (all languages). Written automatically by the daily 'Regulatory Watch daily scan' scheduled task from its dashboard ledger. asOf = scan date (YYYY-MM-DD). Each item: id, date (YYYY-MM-DD), agency, url (agency's own page), tag (one of: final, draft, closing, approval, gmp, news), title/summary in en, fa, zh, tr. Keep 6 items, newest first.",
-  "asOf": "2026-10-24",
+  "asOf": "2026-10-28",
   "items": [
     {
       "id": "20261031-ema-biosimilar-concept-closing",
@@ -22,98 +22,98 @@
       }
     },
     {
-      "id": "20261023-ema-ama-bundibugyo-position",
-      "date": "2026-10-23",
-      "agency": "EMA · AMA",
-      "tag": "final",
-      "url": "https://www.ema.europa.eu/en/news/ama-ema-issue-joint-guidance-ebola-vaccine-development",
-      "title": {
-        "en": "EMA and the African Medicines Agency issue joint guidance on Bundibugyo Ebola vaccines",
-        "fa": "راهنمای مشترک EMA و آژانس داروی آفریقا دربارهٔ واکسن‌های ابولای بوندیبوگیو",
-        "zh": "EMA 与非洲药品管理局联合发布本迪布焦埃博拉疫苗开发指导",
-        "tr": "EMA ve Afrika İlaç Ajansı’ndan Bundibugyo Ebola aşıları için ortak kılavuz"
-      },
-      "summary": {
-        "en": "Sets minimum expectations for starting trials during the current outbreak: some non-clinical studies may be deferred for well-characterised platforms, and a randomised ring-vaccination Phase III design is proposed.",
-        "fa": "حداقل الزامات آغاز کارآزمایی‌ها در طغیان کنونی را تعیین می‌کند: برخی مطالعات غیربالینی برای پلتفرم‌های شناخته‌شده می‌تواند به تعویق بیفتد و طرح فاز ۳ تصادفی با واکسیناسیون حلقه‌ای پیشنهاد شده است.",
-        "zh": "规定了在当前疫情期间启动临床试验的最低要求：对已充分表征的平台可推迟部分非临床研究，并建议采用随机环形接种的 III 期设计。",
-        "tr": "Mevcut salgın sırasında denemelere başlamak için asgari beklentileri belirliyor: iyi tanımlanmış platformlarda bazı klinik dışı çalışmalar ertelenebilir; randomize halka aşılama tasarımlı bir Faz III öneriliyor."
-      }
-    },
-    {
-      "id": "20261023-cde-vaccine-nonclinical-draft",
-      "date": "2026-10-23",
-      "agency": "NMPA · CDE",
+      "id": "20261027-fda-cber-genome-editing-ifs-draft",
+      "date": "2026-10-27",
+      "agency": "FDA · CBER",
       "tag": "draft",
-      "url": "https://www.cde.org.cn/main/news/viewInfoCommon/197073fbba8cbf3b314a80928f2e1b4b",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/individualized-human-genome-editing-products-considerations-bla-submission-and-postapproval",
       "title": {
-        "en": "China: draft general guideline on non-clinical studies of vaccines open for comment",
-        "fa": "چین: پیش‌نویس راهنمای کلی مطالعات غیربالینی واکسن‌ها برای نظرخواهی منتشر شد",
-        "zh": "中国：疫苗非临床研究通用技术指导原则草案公开征求意见",
-        "tr": "Çin: aşıların klinik dışı çalışmalarına ilişkin genel taslak kılavuz görüşe açıldı"
+        "en": "FDA draft guidance: one BLA for individualised genome-editing products",
+        "fa": "پیش‌نویس راهنمای FDA: یک BLA برای فرآورده‌های ویرایش ژنوم فردمحور",
+        "zh": "FDA 指南草案：个体化基因组编辑产品可通过一份 BLA 申报",
+        "tr": "FDA taslak kılavuzu: bireyselleştirilmiş genom düzenleme ürünleri için tek BLA"
       },
       "summary": {
-        "en": "Covers the non-clinical pharmacology, toxicology and immunogenicity programme expected for preventive vaccines, complementing CDE's texts on mRNA, adjuvanted and therapeutic vaccines.",
-        "fa": "برنامهٔ فارماکولوژی، سم‌شناسی و ایمنی‌زایی غیربالینی مورد انتظار برای واکسن‌های پیشگیرانه را پوشش می‌دهد و مکمل راهنماهای CDE دربارهٔ واکسن‌های mRNA، ادجوانت‌دار و درمانی است.",
-        "zh": "涵盖预防性疫苗所需的非临床药理、毒理和免疫原性研究，与 CDE 关于 mRNA 疫苗、含佐剂疫苗和治疗性疫苗的指导原则相互补充。",
-        "tr": "Koruyucu aşılar için beklenen klinik dışı farmakoloji, toksikoloji ve immünojenisite programını kapsıyor; CDE’nin mRNA, adjuvanlı ve terapötik aşı metinlerini tamamlıyor."
+        "en": "Sponsors could define an allowed range of patient-specific variants in a single BLA and add new variants after approval as manufacturing changes, supported by in-vitro data. Comments due around 27 November.",
+        "fa": "حامیان می‌توانند دامنهٔ مجاز واریانت‌های مختص بیمار را در یک BLA تعریف کنند و پس از تأیید، واریانت‌های جدید را به‌عنوان تغییر تولید با داده‌های آزمایشگاهی اضافه کنند. مهلت ارسال نظر حدود 27 نوامبر است.",
+        "zh": "申办者可在一份 BLA 中界定患者特异性变体的允许范围，获批后凭体外数据以生产变更方式新增变体。意见截止约为 11 月 27 日。",
+        "tr": "Sponsorlar hastaya özgü varyantların izin verilen aralığını tek bir BLA’da tanımlayabilecek, onaydan sonra yeni varyantları in vitro verilerle üretim değişikliği olarak ekleyebilecek. Görüşler için son tarih 27 Kasım civarı."
       }
     },
     {
-      "id": "20261023-mfds-kbio-rationalisation",
-      "date": "2026-10-23",
-      "agency": "MFDS",
-      "tag": "gmp",
-      "url": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50434",
-      "title": {
-        "en": "Korea: MFDS reform package for biologics manufacturing and CDMOs",
-        "fa": "کره: بستهٔ اصلاحات MFDS برای تولید داروهای بیولوژیک و CDMOها",
-        "zh": "韩国：MFDS 推出生物制品生产与 CDMO 监管改革措施",
-        "tr": "Kore: MFDS’den biyolojik ürün üretimi ve CDMO’lar için reform paketi"
-      },
-      "summary": {
-        "en": "Pre-approval batches made under GMP may be marketed once they meet the approved specification; the biopharma CDMO act takes effect on 31 December 2026, with GMP certification of biologics raw materials.",
-        "fa": "بچ‌های تولیدشده پیش از تأیید تحت GMP، در صورت انطباق با مشخصات تأییدشده، قابل عرضه خواهند بود؛ قانون ویژهٔ CDMO دارویی از ۳۱ دسامبر ۲۰۲۶ اجرا می‌شود و گواهی GMP مواد اولیهٔ بیولوژیک را نیز در بر می‌گیرد.",
-        "zh": "在 GMP 下生产的批准前批次，符合批准质量标准后可上市销售；生物医药 CDMO 特别法将于 2026 年 12 月 31 日施行，并纳入生物制品原材料的 GMP 认证。",
-        "tr": "GMP altında onay öncesi üretilen seriler onaylı spesifikasyonu karşıladığında piyasaya sürülebilecek; biyofarma CDMO yasası 31 Aralık 2026’da yürürlüğe giriyor ve biyolojik hammaddelerin GMP sertifikasyonunu da kapsıyor."
-      }
-    },
-    {
-      "id": "20261022-ema-cmdh-october-updates",
-      "date": "2026-10-22",
-      "agency": "HMA · CMDh",
-      "tag": "final",
-      "url": "https://www.hma.eu/human-medicines/cmdh/press-releases.html",
-      "title": {
-        "en": "CMDh revises eight MRP/DCP procedural documents and forms",
-        "fa": "CMDh هشت سند رویه‌ای و فرم MRP/DCP را بازنگری کرد",
-        "zh": "CMDh 修订八份 MRP/DCP 程序文件和表格",
-        "tr": "CMDh, sekiz MRP/DCP prosedür belgesini ve formunu revize etti"
-      },
-      "summary": {
-        "en": "Updates validation advice and data requirements for new applications and variations, including a new Type IA route for deleting a batch size and tighter expectations on reference-product, bioequivalence, ASMF and CEP details.",
-        "fa": "راهنمای اعتبارسنجی و الزامات داده برای درخواست‌های جدید و تغییرات به‌روز شد؛ از جمله مسیر جدید Type IA برای حذف یک اندازهٔ بچ و الزامات سخت‌گیرانه‌تر دربارهٔ فرآوردهٔ مرجع، هم‌ارزی زیستی، ASMF و CEP.",
-        "zh": "更新了新申请和变更的验证建议及资料要求，包括删除批量规模的新 IA 类变更途径，并对参比制剂、生物等效性、ASMF 和 CEP 信息提出更严格要求。",
-        "tr": "Yeni başvurular ve varyasyonlar için doğrulama önerileri ve veri gereklilikleri güncellendi; seri büyüklüğünün silinmesi için yeni bir Tip IA yolu ve referans ürün, biyoeşdeğerlik, ASMF ve CEP bilgilerinde daha sıkı beklentiler getirildi."
-      }
-    },
-    {
-      "id": "20261022-fda-keytruda-tmbh-traditional",
-      "date": "2026-10-22",
+      "id": "20261027-fda-wl-sanrace-biotechnology",
+      "date": "2026-10-27",
       "agency": "FDA · CDER",
-      "tag": "approval",
-      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-traditional-approval-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph",
+      "tag": "gmp",
+      "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/sanrace-biotechnology-co-ltd-737549-10222026",
       "title": {
-        "en": "Pembrolizumab TMB-high indication converted to traditional approval, with a higher cut-off",
-        "fa": "اندیکاسیون TMB-high پمبرولیزوماب به تأیید عادی تبدیل شد، با آستانهٔ بالاتر",
-        "zh": "帕博利珠单抗 TMB-H 适应症转为常规批准，并提高阈值",
-        "tr": "Pembrolizumabın TMB-yüksek endikasyonu daha yüksek eşikle tam onaya dönüştürüldü"
+        "en": "FDA warning letter to a Chinese manufacturer after a remote records review",
+        "fa": "نامهٔ هشدار FDA به یک تولیدکنندهٔ چینی پس از بررسی غیرحضوری سوابق",
+        "zh": "FDA 在远程记录审查后向一家中国生产商发出警告信",
+        "tr": "FDA’dan uzaktan kayıt incelemesi sonrası Çinli üreticiye uyarı mektubu"
       },
       "summary": {
-        "en": "FDA restricted the tissue-agnostic indication to tumours with at least 13 mutations per megabase when converting the accelerated approval; it also applies to the subcutaneous form.",
-        "fa": "FDA هنگام تبدیل تأیید تسریع‌شده، این اندیکاسیون مستقل از بافت را به تومورهایی با دست‌کم ۱۳ جهش در هر مگاباز محدود کرد؛ این تغییر شکل زیرجلدی را نیز شامل می‌شود.",
-        "zh": "FDA 在将加速批准转为常规批准时，将该不限瘤种适应症限定为每兆碱基至少 13 个突变的肿瘤，皮下剂型同样适用。",
-        "tr": "FDA, hızlandırılmış onayı dönüştürürken doku bağımsız endikasyonu megabaz başına en az 13 mutasyonlu tümörlerle sınırladı; bu, deri altı formu da kapsıyor."
+        "en": "Sanrace Biotechnology was cited for releasing components without identity testing, missing process validation and a weak quality unit; the firm is on Import Alert 66-40.",
+        "fa": "Sanrace Biotechnology به دلیل آزادسازی مواد اولیه بدون آزمون شناسایی، نبود اعتبارسنجی فرایند و ضعف واحد کیفیت مورد ایراد قرار گرفت؛ این شرکت در Import Alert 66-40 قرار دارد.",
+        "zh": "Sanrace Biotechnology 因组分未经鉴别检验即放行、缺少工艺验证及质量部门薄弱被列出缺陷；该企业已被列入 Import Alert 66-40。",
+        "tr": "Sanrace Biotechnology, bileşenleri kimlik testi yapmadan serbest bırakma, proses validasyonu eksikliği ve zayıf kalite birimi nedeniyle uyarıldı; firma Import Alert 66-40 listesinde."
+      }
+    },
+    {
+      "id": "20261026-who-ecbs-83-outcomes",
+      "date": "2026-10-26",
+      "agency": "WHO · ECBS",
+      "tag": "final",
+      "url": "https://www.who.int/publications/m/item/main-outcomes-of-the-83rd-meeting-of-the-who-expert-committee-on-biological-standardization-held-from-12-to-15-october-2026",
+      "title": {
+        "en": "WHO adopts one guideline on post-approval changes to biological products",
+        "fa": "WHO یک راهنمای واحد برای تغییرات پس از تأیید فرآورده‌های بیولوژیک تصویب کرد",
+        "zh": "WHO 通过生物制品批准后变更统一指南",
+        "tr": "WHO, biyolojik ürünlerde onay sonrası değişiklikler için tek kılavuz kabul etti"
+      },
+      "summary": {
+        "en": "The 83rd ECBS merged the vaccine and biotherapeutic change guidelines into one text that encourages reliance, and set 12 reference standards, including the first for ustekinumab.",
+        "fa": "هشتاد و سومین نشست ECBS راهنماهای تغییرات واکسن‌ها و داروهای بیولوژیک درمانی را در یک متن ادغام کرد که اتکای متقابل را تشویق می‌کند، و 12 استاندارد مرجع، از جمله نخستین استاندارد ustekinumab، را تعیین کرد.",
+        "zh": "第 83 届 ECBS 将疫苗和生物治疗产品变更指南合并为一份鼓励监管依赖的文本，并确立 12 项参比标准，包括首个 ustekinumab 国际标准。",
+        "tr": "83. ECBS, aşı ve bioterapötik değişiklik kılavuzlarını güvenmeyi teşvik eden tek bir metinde birleştirdi ve ilki ustekinumab için olmak üzere 12 referans standardı belirledi."
+      }
+    },
+    {
+      "id": "20261026-ema-semaglutide-tablet-be-draft",
+      "date": "2026-10-26",
+      "agency": "EMA · CHMP",
+      "tag": "draft",
+      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/semaglutide-tablet-15-4-9-25-50-mg-product-specific-bioequivalence-guidance_en.pdf",
+      "title": {
+        "en": "EMA consults on bioequivalence guidance for generic oral semaglutide",
+        "fa": "نظرخواهی EMA دربارهٔ راهنمای هم‌ارزی زیستی semaglutide خوراکی ژنریک",
+        "zh": "EMA 就口服司美格鲁肽仿制药生物等效性指南征求意见",
+        "tr": "EMA, jenerik oral semaglutid biyoeşdeğerlik kılavuzunu görüşe açtı"
+      },
+      "summary": {
+        "en": "The draft product-specific guidance for 1.5–50 mg tablets requires studies on the lowest and highest strengths and allows no BCS biowaiver. Comments until 31 January 2027.",
+        "fa": "پیش‌نویس راهنمای اختصاصی قرص‌های 1.5 تا 50 میلی‌گرم، مطالعه روی کمترین و بیشترین قدرت را الزامی می‌کند و معافیت BCS را نمی‌پذیرد. مهلت نظرخواهی تا 31 ژانویه 2027.",
+        "zh": "针对 1.5–50 mg 片剂的产品特异性指南草案要求对最低和最高规格开展研究，不接受 BCS 生物豁免。意见征集至 2027 年 1 月 31 日。",
+        "tr": "1,5–50 mg tabletler için ürüne özgü taslak kılavuz, en düşük ve en yüksek dozlarda çalışma istiyor ve BCS biyomuafiyetine izin vermiyor. Görüşler 31 Ocak 2027’ye kadar."
+      }
+    },
+    {
+      "id": "20261026-swissmedic-ectd4-guide-v2",
+      "date": "2026-10-26",
+      "agency": "Swissmedic",
+      "tag": "final",
+      "url": "https://www.swissmedic.ch/swissmedic/en/home/services/submissions/ectd-v4-0-2.html",
+      "title": {
+        "en": "Swissmedic publishes version 2.0 of its eCTD v4.0 implementation package",
+        "fa": "Swissmedic نسخهٔ 2.0 بستهٔ پیاده‌سازی eCTD v4.0 را منتشر کرد",
+        "zh": "Swissmedic 发布 eCTD v4.0 实施文件包 2.0 版",
+        "tr": "Swissmedic, eCTD v4.0 uygulama paketinin 2.0 sürümünü yayımladı"
+      },
+      "summary": {
+        "en": "The updated guide, vocabularies and validation criteria prepare a pilot and go-live in 2027; eCTD v3.2.2 stays accepted during a multi-year transition.",
+        "fa": "راهنما، واژگان کنترل‌شده و معیارهای اعتبارسنجی به‌روزشده، مقدمات اجرای آزمایشی و راه‌اندازی در 2027 را فراهم می‌کنند؛ eCTD v3.2.2 در دورهٔ گذار چندساله همچنان پذیرفته می‌شود.",
+        "zh": "更新后的指南、受控词表和验证标准为 2027 年试点和正式上线做准备；多年过渡期内仍接受 eCTD v3.2.2。",
+        "tr": "Güncellenen kılavuz, kontrollü sözlükler ve doğrulama kriterleri 2027’deki pilot ve geçişe hazırlık sağlıyor; eCTD v3.2.2 çok yıllık geçiş süresince kabul edilmeye devam ediyor."
       }
     }
   ]

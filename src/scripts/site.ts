@@ -8,7 +8,7 @@ const revealMail = () => document.querySelectorAll<HTMLElement>('[data-m]').forE
 });
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', revealMail); else revealMail();
 const siteFaDigits = document.documentElement.lang === 'fa';
-const siteNum = (s: string | number) => { const t = String(s); return siteFaDigits ? t.replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]) : t; };
+const siteNum = (s: string | number) => { const t = String(s); return siteFaDigits ? t.replace(/(\d),(?=\d{3}(?!\d))/g, '$1٬').replace(/[0-9]/g, d => '۰۱۲۳۴۵۶۷۸۹'[Number(d)]) : t; };
 const nav = document.getElementById('main-nav');
 const menuButton = document.querySelector<HTMLButtonElement>('.menu-toggle');
 const siteHeader = document.querySelector<HTMLElement>('.site-header');
