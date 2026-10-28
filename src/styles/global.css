@@ -1604,3 +1604,4 @@ html[lang=fa] .pc-moa-l,html[lang=zh-Hans] .pc-moa-l { letter-spacing:0; text-tr
 .pc-more .pc-more-moa { flex-direction:column; gap:2px; } .pc-more .pc-more-moa dd { text-align:start; font-weight:400; }
 .pc-more a { color:var(--lapis-deep); border-bottom:1px solid #cfe0ea; }
 .pc-source { margin:18px 0 0; font-size:12.5px; color:var(--muted); } .pc-source a { color:var(--lapis-deep); }
+@media(max-width:760px) { .imp-legend ul { display:grid !important; grid-template-columns:1fr 1fr; gap:8px 12px !important; } .imp-legend li { font-size:13px; } }
