@@ -1444,3 +1444,24 @@ html[lang=fa] .sp2-stat dd .num { letter-spacing:0; }
 }
 @media(max-width:700px) { .ft-group h3 { margin:0 !important; } .ft-group summary { padding-block:12px !important; align-items:center; } .ft-group ul { padding-bottom:10px; } }
 @media(max-width:700px) { .ft-links { gap:0 !important; } }
+
+/* ===== FAQ v2: compact two-column accordion ===== */
+.faq2 { padding-block:56px; }
+.faq2-head { display:flex; align-items:center; gap:14px; margin-bottom:22px; }
+.faq2-head h2 { margin:0; font-size:clamp(24px,2.4vw,32px); }
+.faq2-ico { flex:none; display:grid; place-items:center; width:44px; height:44px; border-radius:14px; background:var(--black); color:var(--glacier); }
+.faq2-count { margin-inline-start:auto; padding:5px 12px; border-radius:999px; background:#eaf3f8; color:var(--lapis-deep); font-size:13px; font-weight:500; white-space:nowrap; }
+.faq2-list { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; align-items:start; }
+.faq2-list details { position:relative; overflow:hidden; }
+.faq2-list details:before { content:''; position:absolute; inset-block:0; inset-inline-start:0; width:3px; background:var(--glacier); opacity:0; transition:opacity .2s; }
+.faq2-list details[open]:before,.faq2-list details:hover:before { opacity:1; }
+.faq2-list details:hover { border-color:#cfe0ea; }
+.faq2-list summary { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:12px; padding:13px 14px; font-size:15.5px; line-height:1.5; }
+.faq2-num { display:grid; place-items:center; width:30px; height:30px; border-radius:9px; background:var(--paper); color:var(--lapis-deep); font-family:var(--display); font-weight:600; font-size:13px; }
+.faq2-list details[open] .faq2-num { background:var(--black); color:var(--glacier); }
+.faq2-list summary:after { width:26px; height:26px; font-size:18px; }
+.faq2-list p { padding:0 14px 14px; padding-inline-start:56px; font-size:15px; line-height:1.75; }
+html[lang=fa] .faq2-list p { line-height:1.9; }
+html[lang=fa] .faq2-num { font-family:inherit; font-size:15px; }
+@media(max-width:860px) { .faq2-list { grid-template-columns:minmax(0,1fr); gap:8px; } }
+@media(max-width:560px) { .faq2 { padding-block:36px; } .faq2-head { margin-bottom:14px; gap:10px; } .faq2-ico { width:38px; height:38px; border-radius:12px; } .faq2-list summary { padding:11px 12px; gap:10px; font-size:14.5px; } .faq2-num { width:26px; height:26px; font-size:12px; } .faq2-list p { padding:0 12px 12px; padding-inline-start:48px; font-size:14.5px; } }

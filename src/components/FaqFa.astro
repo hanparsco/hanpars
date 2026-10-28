@@ -18,8 +18,8 @@ const faqs = lang === 'zh' ? faqZh : lang === 'tr' ? faqTr : lang === 'en' ? faq
 const heading = { fa: 'پرسش‌های متداول', zh: '常见问题', tr: 'Sık sorulan sorular', en: 'Frequently asked questions' }[lang];
 const schema = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: hreflangOf[lang], mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
 ---
-<section class="section"><div class="container content-split">
-  <h2>{heading}</h2>
-  <div class="faq-list">{faqs.map(f => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+<section class="section faq2"><div class="container">
+  <div class="faq2-head"><span class="faq2-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.1A8.5 8.5 0 1 1 21 12z"/><path d="M9.6 9.4a2.5 2.5 0 0 1 4.8 1c0 1.7-2.4 2.1-2.4 3.4"/><path d="M12 16.9h.01"/></svg></span><h2>{heading}</h2><span class="faq2-count">{lang === 'fa' ? '۵ پرسش' : lang === 'zh' ? '5 个问题' : lang === 'tr' ? '5 soru' : '5 questions'}</span></div>
+  <div class="faq-list faq2-list">{faqs.map((f, i) => <details><summary><span class="faq2-num" aria-hidden="true">{lang === 'fa' ? '۰۱۲۳۴۵۶۷۸۹'[i + 1] : String(i + 1).padStart(2, '0')}</span><span class="faq2-q">{f.q}</span></summary><p>{f.a}</p></details>)}</div>
 </div></section>
 {withSchema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
