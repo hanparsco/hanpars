@@ -1410,3 +1410,4 @@ html[lang=fa] .sp2-stat dd .num { letter-spacing:0; }
   .sp2-areas .sp2-name { padding-inline-end:22px; }
   .sp2-bar { inset-inline:10px; bottom:6px; }
 }
+.sp2-areas li:last-child:nth-child(odd) { grid-column:1/-1; }
