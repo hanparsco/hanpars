@@ -1443,3 +1443,4 @@ html[lang=fa] .sp2-stat dd .num { letter-spacing:0; }
   .ft-contact:has(.ft-card:only-of-type) { grid-column:1; grid-template-columns:minmax(0,320px) !important; margin-top:16px; }
 }
 @media(max-width:700px) { .ft-group h3 { margin:0 !important; } .ft-group summary { padding-block:12px !important; align-items:center; } .ft-group ul { padding-bottom:10px; } }
+@media(max-width:700px) { .ft-links { gap:0 !important; } }
