@@ -110,7 +110,7 @@ async function loadCatalogueRows(catalogue: HTMLElement) {
       const href = sl ? `${base}/${type === 'fdf' ? 'fdf' : 'api'}/${sl}` : '';
       const name = '<span class="cat-ico" aria-hidden="true"></span><span class="cat-text">' + (href ? `<a class="table-link" href="${href}">${escHtml(n)}</a>` : `<span class="cat-plain">${escHtml(n)}</span>`) + (loc ? `<span class="cat-loc" lang="${locLang}" dir="auto">${escHtml(loc)}</span>` : '') + '</span>';
       const code = href && c ? `<a class="table-link table-link-muted" href="${href}">${escHtml(c)}</a>` : escHtml(c || '—');
-      return `<tr data-catalogue-row data-status="${escHtml(g)}" data-search="${escHtml((n + ' ' + (loc || '') + ' ' + c).toLowerCase())}" data-index="${i}"><td dir="ltr" class="cat-cell">${name}</td><td class="table-code" dir="ltr">${code}</td><td><a class="table-request" href="${base}/contact-us-1?type=sourcing&product=${encodeURIComponent(n)}">${escHtml(enq)}</a></td></tr>`;
+      return `<tr data-catalogue-row data-status="${escHtml(g)}" data-search="${escHtml((n + ' ' + (loc || '') + ' ' + c).toLowerCase())}" data-index="${i}"><td dir="ltr" class="cat-cell">${name}</td><td class="table-code" dir="ltr">${code}</td><td><a class="table-request" rel="nofollow" href="${base}/contact-us-1?type=sourcing&product=${encodeURIComponent(n)}">${escHtml(enq)}</a></td></tr>`;
     }).join('');
   } catch { /* keep server-rendered rows */ }
 }

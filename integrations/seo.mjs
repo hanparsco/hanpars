@@ -20,6 +20,25 @@ export default function seo({ site }) {
       'astro:build:done': async ({ dir, logger }) => {
         const root = fileURLToPath(dir);
         const files = await walk(root);
+        // link hygiene: (a) internal links to duplicate API pages (noindex + canonical elsewhere) go straight to the canonical page;
+        // (b) enquiry links with query strings (/contact-us-1?...) get rel=nofollow (they are blocked in robots.txt too)
+        const dupTo = new Map();
+        for (const f of files) {
+          const rel0 = '/' + relative(root, f).split(sep).join('/').replace(/\.html$/, '');
+          if (!/^\/(?:(?:fa|zh|tr)\/)?api\//.test(rel0)) continue;
+          const h = await readFile(f, 'utf8');
+          if (/http-equiv="refresh"/.test(h) || !/<meta name="robots" content="noindex/.test(h)) continue;
+          const c = (/<link rel="canonical" href="([^"]+)"/.exec(h) || [])[1];
+          if (c && new URL(c).pathname !== rel0) dupTo.set(rel0, new URL(c).pathname);
+        }
+        let relinked = 0, nofollowed = 0;
+        for (const f of files) {
+          const h = await readFile(f, 'utf8');
+          let out = h.replace(/href="(\/(?:(?:fa|zh|tr)\/)?api\/[^"#?]+)"/g, (m, p) => dupTo.has(p) ? (relinked++, `href="${dupTo.get(p)}"`) : m);
+          out = out.replace(/<a\b([^>]*?)href="((?:\/(?:fa|zh|tr))?\/contact-us-1\?[^"]*)"([^>]*)>/g, (m, a, href, b) => /\brel=/.test(a + b) ? m : (nofollowed++, `<a${a}href="${href}" rel="nofollow"${b}>`));
+          if (out !== h) await writeFile(f, out);
+        }
+        logger.info(`link hygiene: ${relinked} links moved to canonical API pages, ${nofollowed} enquiry links nofollowed`);
         const pages = new Map();
         const today = new Date().toISOString().slice(0, 10);
         for (const f of files) {
@@ -71,7 +90,7 @@ export default function seo({ site }) {
         }
         await writeFile(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${index.join('\n')}\n</sitemapindex>\n`);
         const rows = Object.values(byLang).flat();
-        await writeFile(join(root, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\n`);
+        await writeFile(join(root, 'robots.txt'), `User-agent: *\nAllow: /\n# enquiry forms pre-filled from product links: one URL per product, all canonical to the plain contact page\nDisallow: /contact-us-1?\nDisallow: /fa/contact-us-1?\nDisallow: /zh/contact-us-1?\nDisallow: /tr/contact-us-1?\n\nSitemap: ${site}/sitemap.xml\n`);
         // trailing-slash stubs: /x/ -> /x (earlier crawls used slash URLs; GitHub Pages cannot send 301s)
         let stubs = 0;
         for (const p of pages.keys()) {
@@ -84,7 +103,7 @@ export default function seo({ site }) {
           stubs++;
         }
         // renamed pages: keep old URLs alive as redirects (Search Console otherwise reports 404s)
-        const MOVED = { '/fdf/-51992': '/fdf/cream-base-51992', '/fdf/-51993': '/fdf/cream-base-51993', '/fdf/-52309': '/fdf/cream-base-52309' };
+        const MOVED = { '/vitamin': '/nutrition', '/fdf/-51992': '/fdf/cream-base-51992', '/fdf/-51993': '/fdf/cream-base-51993', '/fdf/-52309': '/fdf/cream-base-52309' };
         let moved = 0;
         for (const [from, to] of Object.entries(MOVED)) for (const pre of ['', '/fa', '/zh', '/tr']) {
           const target = site + pre + to, file = join(root, (pre + from).slice(1) + '.html');
