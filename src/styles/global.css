@@ -1582,3 +1582,25 @@ main:has(#product-portfolio) .easy-sec { padding-block:44px; }
 @media(min-width:1001px) and (max-width:1320px) { .nav-social { gap:4px; margin-inline-start:2px; } .nav-social a { width:28px; height:28px; } .nav-social svg { width:13px; height:13px; } .header-inner { gap:20px; } }
 @media(min-width:1141px) and (max-width:1320px) { .nav-link { padding:0 10px; } .nav-cta { padding:9px 16px; margin-inline-start:6px; } }
 @media(min-width:1001px) and (max-width:1180px) { .nav-cta { display:none !important; } }
+
+/* FDF portfolio cards: ChEMBL facts */
+.pc-cx { margin:-2px 0 12px; display:grid; gap:8px; }
+.pc-moa { margin:0; font-size:13px; line-height:1.55; color:var(--ink); }
+.pc-moa-l { display:block; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin-bottom:2px; }
+html[lang=fa] .pc-moa-l,html[lang=zh-Hans] .pc-moa-l { letter-spacing:0; text-transform:none; font-size:12px; }
+.pc-chips { display:flex; flex-wrap:wrap; gap:6px; }
+.pc-chip { display:inline-flex; align-items:center; gap:5px; padding:3px 9px; border-radius:999px; background:#eef4f7; color:var(--lapis-deep); font-size:12px; line-height:1.5; }
+.pc-chip b { font-weight:600; }
+.pc-warn { background:#fdf0e6; color:#9a4b0b; }
+.pc-more { font-size:12.5px; }
+.pc-more summary { cursor:pointer; list-style:none; color:var(--lapis-deep); font-weight:500; display:inline-flex; align-items:center; gap:6px; }
+.pc-more summary::-webkit-details-marker { display:none; }
+.pc-more summary:after { content:'+'; display:grid; place-items:center; width:16px; height:16px; border-radius:50%; background:#eaf3f8; font-size:12px; line-height:1; }
+.pc-more[open] summary:after { content:'−'; }
+.pc-more dl { margin:8px 0 0; padding:8px 10px; border-radius:10px; background:var(--paper); display:grid; gap:4px; }
+.pc-more dl div { display:flex; justify-content:space-between; gap:12px; }
+.pc-more dt { color:var(--muted); }
+.pc-more dd { margin:0; text-align:end; color:var(--ink); font-weight:500; }
+.pc-more .pc-more-moa { flex-direction:column; gap:2px; } .pc-more .pc-more-moa dd { text-align:start; font-weight:400; }
+.pc-more a { color:var(--lapis-deep); border-bottom:1px solid #cfe0ea; }
+.pc-source { margin:18px 0 0; font-size:12.5px; color:var(--muted); } .pc-source a { color:var(--lapis-deep); }
