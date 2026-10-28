@@ -26,7 +26,7 @@ const langs = [
       <div class="ft-brand">
         <p class="ft-name">{f.name}</p>
         <p>{s.footer.intro}</p>
-        <a class="button button-light ft-cta" href={L('/contact-us-1')}>{f.enquire}<Icon name="arrow" size={18} class="ft-arrow" /></a>
+        {lang !== 'fa' && <a class="button button-light ft-cta" href={L('/contact-us-1')}>{f.enquire}<Icon name="arrow" size={18} class="ft-arrow" /></a>}
       </div>
       <div class="ft-contact" aria-label={f.reach}>
         <h2 class="ft-label">{f.reach}</h2>
