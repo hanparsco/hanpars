@@ -39,7 +39,7 @@ const areaIcons: Record<string, string> = {"area-1": "<path d=\"M4 8V5a1 1 0 0 1
     <div class="hero-main">
       <h1>{s.home.title.split('\n').map((line,i)=><>{i>0&&<br/>}{line}</>)}</h1>
       <p class="lede">{s.home.lede}</p>
-      <div class="hero-actions"><a class="button button-light" href={L('/contact-us-1?type=sourcing')}>{s.home.primary}</a></div>
+      {lang !== 'fa' && <div class="hero-actions"><a class="button button-light" href={L('/contact-us-1?type=sourcing')}>{s.home.primary}</a></div>}
     </div>
     <Photo name="hero-products" class="hero-photo hero-photo-tall" alt={s.home.heroAlt} priority />
   </div>
