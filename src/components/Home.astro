@@ -95,8 +95,8 @@ const areaIcons: Record<string, string> = {"area-1": "<path d=\"M4 8V5a1 1 0 0 1
 
 <section class="section">
   <div class="container">
-    <div class="section-head"><h2>{s.home.stepsTitle}</h2>{s.home.stepsLede && <p class="lede">{s.home.stepsLede}</p>}</div>
-    <ol class="steps">{s.home.steps.map(step => <li class="step"><h3>{step.title}</h3><p>{step.text}</p></li>)}</ol>
+    <div class="section-head steps2-head"><h2>{s.home.stepsTitle}</h2>{s.home.stepsLede && <p class="lede">{s.home.stepsLede}</p>}</div>
+    <ol class="steps2">{s.home.steps.map((step, i) => <li class="step2"><span class="step2-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" set:html={['<path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/>', '<circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M8.5 11l1.8 1.8 3.2-3.6"/>', '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 14l2 2 4-4"/>'][i % 3]}/></span><span class="step2-num" aria-hidden="true">{lang === 'fa' ? '۰۱۲۳۴۵۶۷۸۹'[i + 1] : String(i + 1).padStart(2, '0')}</span><div><h3>{step.title}</h3><p>{step.text}</p></div></li>)}</ol>
   </div>
 </section>
 

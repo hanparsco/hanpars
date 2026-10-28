@@ -1465,3 +1465,27 @@ html[lang=fa] .faq2-list p { line-height:1.9; }
 html[lang=fa] .faq2-num { font-family:inherit; font-size:15px; }
 @media(max-width:860px) { .faq2-list { grid-template-columns:minmax(0,1fr); gap:8px; } }
 @media(max-width:560px) { .faq2 { padding-block:36px; } .faq2-head { margin-bottom:14px; gap:10px; } .faq2-ico { width:38px; height:38px; border-radius:12px; } .faq2-list summary { padding:11px 12px; gap:10px; font-size:14.5px; } .faq2-num { width:26px; height:26px; font-size:12px; } .faq2-list p { padding:0 12px 12px; padding-inline-start:48px; font-size:14.5px; } }
+
+/* ===== Home: request steps v2 (compact band) ===== */
+.steps2-head { margin-bottom:20px !important; }
+.steps2-head h2 { font-size:clamp(24px,2.4vw,32px); }
+.steps2 { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border:1px solid var(--line); border-radius:20px; background:var(--white); overflow:hidden; box-shadow:0 1px 2px #1015200a,0 14px 32px -24px #10152040; }
+.step2 { position:relative; display:grid; grid-template-columns:auto minmax(0,1fr); gap:14px; align-items:start; padding:20px 22px 20px; }
+.step2 + .step2 { border-inline-start:1px solid var(--line); }
+.step2 + .step2:before { content:''; position:absolute; top:34px; inset-inline-start:-9px; width:16px; height:16px; border-radius:50%; background:var(--white); border:1px solid var(--line); box-shadow:inset 0 0 0 4px var(--white); background-color:var(--glacier); }
+.step2-ico { grid-row:1 / span 2; display:grid; place-items:center; width:42px; height:42px; border-radius:12px; background:var(--black); color:var(--glacier); }
+.step2-num { position:absolute; top:14px; inset-inline-end:18px; font-family:var(--display); font-weight:700; font-size:28px; line-height:1; color:#e9eef1; }
+html[lang=fa] .step2-num { font-family:inherit; font-size:30px; }
+.step2 h3 { font-size:17px; margin:2px 0 6px; padding-inline-end:36px; }
+.step2 p { margin:0; color:var(--muted); font-size:14.5px; line-height:1.65; }
+html[lang=fa] .step2 p { line-height:1.85; }
+@media(max-width:860px) {
+  .steps2 { grid-template-columns:minmax(0,1fr); border-radius:16px; }
+  .step2 { padding:14px 16px; gap:12px; }
+  .step2 + .step2 { border-inline-start:0; border-top:1px solid var(--line); }
+  .step2 + .step2:before { top:-9px; inset-inline-start:34px; }
+  .step2-ico { width:36px; height:36px; border-radius:10px; }
+  .step2-num { top:12px; font-size:22px; }
+  .step2 h3 { font-size:15.5px; margin-bottom:3px; }
+  .step2 p { font-size:14px; }
+}
