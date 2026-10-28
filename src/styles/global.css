@@ -1572,3 +1572,10 @@ main:has(#product-portfolio) .easy-sec { padding-block:44px; }
 
 .ft-socials { display:inline-flex; align-items:center; gap:8px; }
 .ft-social-tg:hover { background:#229ed9; border-color:#229ed9; color:#fff; }
+
+/* header social icons */
+.nav-social { display:inline-flex; align-items:center; gap:6px; margin-inline-start:6px; }
+.nav-social a { display:grid; place-items:center; width:32px; height:32px; border-radius:50%; border:1px solid #ffffff26; color:var(--on-navy); transition:background .2s,border-color .2s,color .2s; }
+.nav-social a:hover { background:#0a66c2; border-color:#0a66c2; color:#fff; }
+.nav-social a.ns-tg:hover { background:#229ed9; border-color:#229ed9; }
+@media(max-width:1000px) { .nav-social { margin:16px 0 0; gap:10px; justify-content:center; } .nav-social a { width:40px; height:40px; } }
