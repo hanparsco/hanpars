@@ -14,6 +14,7 @@ import excCats from '../data/excipient-categories.json';
 import { pages, type PageKey } from '../data/pages';
 import { pagesL } from '../data/locale';
 import fdf from '../data/fdf.json';
+import portfolioData from '../data/portfolio.json';
 import apis from '../data/apis.json';
 import excipients from '../data/excipients.json';
 import { langFromPath, localePath, t } from '../i18n';
@@ -39,11 +40,17 @@ const preorder = ['api','excipient','nutrition','precursors','supplies'].include
   zh: { t: '仅接受预订', p: '本栏目所列全部产品仅接受预订。' },
   tr: { t: 'Yalnızca ön sipariş', p: 'Bu bölümde yer alan tüm ürünler yalnızca ön sipariş ile temin edilebilir.' },
 } as const)[lang] : null;
+const jump = page === 'fdf' ? (() => { const n = portfolioData.counts.total.toLocaleString('en-US'), m = fdf.length.toLocaleString('en-US'); return ({
+  en: [['The Hanpars portfolio', `${n} registered medicines`], ['Reference list', `${m} finished products`]],
+  fa: [['سبد محصولات', `${n} داروی ثبت‌شده`], ['فهرست مرجع', `${m} فرآوردهٔ دارویی`]],
+  zh: [['Hanpars 产品组合', `${n} 个已注册药品`], ['参考清单', `${m} 个成品药`]],
+  tr: [['Hanpars portföyü', `${n} ruhsatlı ilaç`], ['Referans listesi', `${m} bitmiş ürün`]],
+} as Record<string, string[][]>)[lang]; })() : null;
 const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.standard.prepare : s.standard.startConversation;
 ---
 <PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':'sourcing'}`} action={action} photo={photo} photoAlt={photoAlt} hideAction={lang === 'fa' && page === 'culture'}/>
 {preorder&&<div class="container"><aside class="preorder-note" role="note"><span class="preorder-ico"><Icon name="clock" size={22}/></span><p><strong>{preorder.t}</strong>{preorder.p}</p></aside></div>}
-<section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map((p: string)=><p>{p}</p>)}</div></div></section>
+<section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map((p: string)=><p>{p}</p>)}{jump&&<div class="fdf-jump"><a href="#product-portfolio"><span class="fdf-jump-ico"><Icon name="capsule" size={20}/></span><span><strong>{jump[0][0]}</strong><small>{jump[0][1]}</small></span><Icon name="down" size={18} class="fdf-jump-arr"/></a><a href="#fdf-reference"><span class="fdf-jump-ico"><Icon name="layers" size={20}/></span><span><strong>{jump[1][0]}</strong><small>{jump[1][1]}</small></span><Icon name="down" size={18} class="fdf-jump-arr"/></a></div>}</div></div></section>
 {page==='about-us'&&<Imports2026/>}
 {page==='fdf'&&<FdfPortfolio/>}
 {page==='fdf'&&<Imports2026 variant="bubbles"/>}
@@ -59,4 +66,4 @@ const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.sta
 {page==='fdf-cdmo'&&<section class="section"><div class="container"><div class="section-head"><h2>{s.standard.cdmoTitle}</h2><p class="lede">{s.standard.cdmoLede}</p></div><ol class="steps steps-4">{s.standard.cdmoSteps.map(item=><li class="step"><h3>{item.title}</h3><p>{item.text}</p></li>)}</ol><p style="margin-top:40px"><a class="text-link" href={L('/regulatory-affairs')}>{s.standard.cdmoLink}</a></p></div></section>}
 {!isProduct&&page!=='fdf-cdmo'&&<section class="section"><div class="container content-split">{lang !== 'fa' && <h2>{s.standard.nextTitle}</h2>}<ul class:list={['link-list', { 'link-list-solo': lang === 'fa' }]}>{s.standard.nextLinks.map(item=><li><a href={L(item.href)}>{item.label}<small>{item.note}</small></a></li>)}</ul></div></section>}
 {page==='about-us'&&<FaqFa schema={false} />}
-{!(lang === 'fa' && page === 'culture') && <CTA title={isProduct?s.standard.ctaProduct:page==='fdf-cdmo'?s.standard.ctaCdmo:undefined}/>}
+{!(lang === 'fa' && (page === 'culture' || page === 'fdf')) && <CTA title={isProduct?s.standard.ctaProduct:page==='fdf-cdmo'?s.standard.ctaCdmo:undefined}/>}
