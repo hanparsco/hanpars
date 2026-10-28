@@ -24,7 +24,7 @@ const siteName = rtl ? 'هانیا پرسان دارو' : 'Hanpars';
 const org = {
   '@context': 'https://schema.org', '@type': 'Organization', '@id': `${site.origin}/#organization`,
   name: rtl ? 'شرکت هانیا پرسان دارو' : 'Haniya Parsan Darou Co.', alternateName: ['Hanpars', 'HANPARS', 'هانیا پرسان دارو', 'Haniya Parsan Darou'],
-  url: site.origin, logo: new URL('/brand/hanpars-logo-transparent.png', site).href, email: 'contact@hanpars.com', ...(rtl ? {} : { telephone: '+98-21-8888-3325' }), sameAs: ['https://www.linkedin.com/company/hanpars/'],
+  url: site.origin, logo: new URL('/brand/hanpars-logo-transparent.png', site).href, email: 'contact@hanpars.com', ...(rtl ? {} : { telephone: '+98-21-8888-3325' }), sameAs: ['https://www.linkedin.com/company/hanpars/', 'https://t.me/hanpars'],
   ...(rtl ? {} : { address: { '@type': 'PostalAddress', streetAddress: rtl ? 'بلوار آفریقا، خیابان ظفر، پلاک ۳۲۶، طبقهٔ سوم' : '3rd floor, No. 326, Zafar Street, Africa Boulevard', addressLocality: rtl ? 'تهران' : 'Tehran', postalCode: '1968734974', addressCountry: 'IR' } }),
   contactPoint: [{ '@type': 'ContactPoint', ...(rtl ? {} : { telephone: '+98-21-8888-3325' }), email: 'contact@hanpars.com', contactType: 'sales', availableLanguage: ['fa', 'en', 'zh', 'tr'] }, { '@type': 'ContactPoint', url: `${site.origin}/contact-us-1?type=regulatory`, contactType: 'regulatory affairs', availableLanguage: ['fa', 'en', 'zh', 'tr'] }],
 };

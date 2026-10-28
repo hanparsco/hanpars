@@ -1569,3 +1569,6 @@ main:has(#product-portfolio) .easy-sec { padding-block:44px; }
   .easy-num { font-size:20px !important; top:10px; }
 }
 @media(max-width:760px) { .easy-card p { padding-inline-end:0 !important; } .easy-num { transform:none !important; top:10px !important; inset-inline-end:12px !important; } }
+
+.ft-socials { display:inline-flex; align-items:center; gap:8px; }
+.ft-social-tg:hover { background:#229ed9; border-color:#229ed9; color:#fff; }
