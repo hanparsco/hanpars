@@ -2,6 +2,8 @@
 /** Import activity 2026 — overall figures and the molecule bubble chart (3-D floating spheres). Data from the owner's block. */
 import { langFromPath, localePath } from '../i18n';
 import mols from '../data/imports-2026.json';
+import portfolioData from '../data/portfolio.json';
+import { portfolioL } from '../data/locale';
 interface Props { variant?: 'about' | 'page' | 'bubbles' }
 const { variant = 'about' } = Astro.props;
 const lang = langFromPath(Astro.url.pathname) as 'en' | 'fa' | 'zh' | 'tr';
@@ -56,7 +58,11 @@ const T = {
   },
 }[lang];
 
-const COL: Record<string, string> = { contrast: '#2a78d6', hormones: '#eb6834', cns: '#1baf7a', cardio: '#eda100', antiinf: '#e87ba4', emergency: '#008300', immuno: '#6250d6', other: '#e34948' };
+const COL: Record<string, string> = { contrast: '#2a78d6', hormones: '#eb6834', cns: '#1baf7a', cardio: '#eda100', antiinf: '#e87ba4', emergency: '#008300', immuno: '#6250d6', gi: '#e34948', bone: '#a9b4c2' };
+// category names = the portfolio's own therapeutic-area titles, so the chart and the FDF portfolio always agree
+const AREA: Record<string, string> = { contrast: 'area-1', hormones: 'area-2', cns: 'area-3', cardio: 'area-4', antiinf: 'area-5', emergency: 'area-6', immuno: 'area-7', gi: 'area-8', bone: 'area-9' };
+const areaTitle = (id: string) => (lang === 'en' ? undefined : (portfolioL as any)[lang]?.groups?.[id]?.title) || portfolioData.groups.find(g => g.id === id)?.title || id;
+const GROUPS: Record<string, string> = Object.fromEntries(Object.keys(COL).filter(k => mols.some(m => m.group === k)).map(k => [k, areaTitle(AREA[k])]));
 // Label fitting: keep every name and value inside its sphere (≈ .58 em per Latin char, .62 for Persian/Chinese runs)
 const fit = (text: string, r: number, max: number, em = .58) => Math.max(6, Math.min(max, (1.62 * r) / (text.length * em)));
 const bubbles = [...mols].sort((a, b) => b.r - a.r).map((m, i) => {
@@ -91,11 +97,11 @@ const rtl = lang === 'fa';
           <canvas class="imp-canvas" aria-hidden="true"></canvas>
           <div class="imp-tip" role="status" aria-live="polite"></div>
           <span class="imp-hint" aria-hidden="true">{T.hint}</span>
-          <script is:inline type="application/json" class="imp-data" set:html={JSON.stringify({ rtl, yAxis: T.yAxis, ticks: T.ticks, groups: Object.keys(COL), b: bubbles.map(m => ({ n: m.name, l: m.label, g: m.group, un: m.units, c: COL[m.group], t: T.groups[m.group as keyof typeof T.groups], v: m.val, u: T.unitWord, x: m.cx, y: m.cy, r: m.r })) })} />
+          <script is:inline type="application/json" class="imp-data" set:html={JSON.stringify({ rtl, yAxis: T.yAxis, ticks: T.ticks, groups: Object.keys(COL), b: bubbles.map(m => ({ n: m.name, l: m.label, g: m.group, un: m.units, c: COL[m.group], t: GROUPS[m.group], v: m.val, u: T.unitWord, x: m.cx, y: m.cy, r: m.r })) })} />
         </figure>
-        <ul class="imp-sr">{bubbles.map(m => <li>{m.name}: {m.val} {T.unitWord} ({T.groups[m.group as keyof typeof T.groups]})</li>)}</ul>
+        <ul class="imp-sr">{bubbles.map(m => <li>{m.name}: {m.val} {T.unitWord} ({GROUPS[m.group]})</li>)}</ul>
         <div class="imp-legend">
-          <ul>{Object.entries(T.groups).map(([k, v]) => <li><i style={`background-color:${COL[k]}`}></i>{v}</li>)}</ul>
+          <ul>{Object.entries(GROUPS).map(([k, v]) => <li><i style={`background-color:${COL[k]}`}></i>{v}</li>)}</ul>
           <p>{T.note}</p>
           {variant === 'bubbles' && <a class="button button-navy imp-more" href={L('/import-activity')}>{T.more}</a>}
         </div>
