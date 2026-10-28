@@ -1581,3 +1581,4 @@ main:has(#product-portfolio) .easy-sec { padding-block:44px; }
 @media(max-width:1000px) { .nav-social { margin:16px 0 0; gap:10px; justify-content:center; } .nav-social a { width:40px; height:40px; } }
 @media(min-width:1001px) and (max-width:1320px) { .nav-social { gap:4px; margin-inline-start:2px; } .nav-social a { width:28px; height:28px; } .nav-social svg { width:13px; height:13px; } .header-inner { gap:20px; } }
 @media(min-width:1141px) and (max-width:1320px) { .nav-link { padding:0 10px; } .nav-cta { padding:9px 16px; margin-inline-start:6px; } }
+@media(min-width:1001px) and (max-width:1180px) { .nav-cta { display:none !important; } }
