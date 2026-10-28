@@ -31,7 +31,7 @@ const cxL = ({
 } as Record<string, any>)[lang];
 const esc = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 // Latin runs (5-HT2A, CYP19A1, P2Y12) inside Persian text stay left-to-right and keep Latin digits
-const moaHtml = (m: Record<string, string>) => fa ? esc(m.fa).replace(/([A-Za-z0-9][A-Za-z0-9\-/()αβδκμ]*[A-Za-z0-9)]|[A-Za-z])/g, '<bdi dir="ltr">$1</bdi>') : esc(m[lang] || m.en);
+const moaHtml = (m: Record<string, string>) => fa ? esc(m.fa).replace(/([A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9]|[A-Za-z])/g, '<bdi dir="ltr">$1</bdi>') : esc(m[lang] || m.en);
 const i18n = JSON.stringify({ count: s.count(987654,123456).replace('987654','{n}').replace('123456','{a}'), filtered: s.countFiltered, molecule: s.molecule, molecules: s.molecules });
 ---
 <section class="portfolio-section section-navy" id="product-portfolio" aria-labelledby="portfolio-title" data-portfolio data-i18n={i18n}>
@@ -54,7 +54,7 @@ const i18n = JSON.stringify({ count: s.count(987654,123456).replace('987654','{n
         {portfolio.groups.map(group=><section class="portfolio-group" data-portfolio-group={group.id} aria-labelledby={`portfolio-${group.id}`}><div class="portfolio-group-head"><div><h3 id={`portfolio-${group.id}`}>{G(group).title}</h3><p class="portfolio-kicker">{G(group).kicker}</p><p>{G(group).description}</p></div><span class="portfolio-group-count"><strong data-portfolio-group-count>{group.products.length}</strong> <span data-portfolio-group-label>{group.products.length===1?s.molecule:s.molecules}</span></span></div><div class="portfolio-card-grid">{group.products.map(product=>{
           const entry = {...product,area:G(group).title,areaId:group.id};
           return <article class="portfolio-product-card" data-portfolio-card data-area={group.id} data-search={searchText(entry)}><div class="portfolio-card-top"><span class="portfolio-form-icons">{product.formIcons.slice(0,2).map(icon=><DosageFormIcon name={icon.id} label={icon.label} size={24}/>)}</span><div class="portfolio-card-title"><h4 dir="ltr">{product.name}</h4>{lang !== 'en' && lang !== 'fa' && locName(lang, product.name.replace(/\s*\(.*\)\s*/g, '')) && <span class="portfolio-loc" lang={htmlLang[lang]}>{locName(lang, product.name.replace(/\s*\(.*\)\s*/g, ''))}</span>}<code class="portfolio-atc" dir="ltr">{product.atc}</code></div></div><dl class="portfolio-forms">{product.forms.map(form=><div><dt>{F(form.form)}</dt><dd dir="ltr">{form.strength}</dd></div>)}</dl>{(() => { const cx = CX[product.name]; if (!cx) return null; return <div class="pc-cx">
-            {cx.mech.length > 0 && <p class="pc-moa"><span class="pc-moa-l">{cxL.moa}</span><span set:html={cx.mech.slice(0, 2).map(moaHtml).join(' · ')} /></p>}
+            {cx.mech.length > 0 && <p class="pc-moa"><span class="pc-moa-l">{cxL.moa}</span><span set:html={cx.mech.slice(0, 2).map(moaHtml).join(fa ? '، ' : lang === 'zh' ? '；' : ' · ')} /></p>}
             <div class="pc-chips">{cx.year && <span class="pc-chip"><Icon name="clock" size={13}/>{cxL.since} <b>{cx.year}</b></span>}{cx.type && cx.type !== 'Small molecule' && <span class="pc-chip">{cxL.types[cx.type] || cx.type}</span>}{cx.prodrug && <span class="pc-chip">{cxL.prodrug}</span>}{cx.bbw && <span class="pc-chip pc-warn">{cxL.bbw}</span>}</div>
             <details class="pc-more"><summary>{cxL.more}</summary><dl>
               {cx.type && <div><dt>{cxL.type}</dt><dd>{cxL.types[cx.type] || cx.type}</dd></div>}
