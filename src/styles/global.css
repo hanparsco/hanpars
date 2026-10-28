@@ -1557,3 +1557,14 @@ html[lang=fa] #product-portfolio .portfolio-capabilities p { line-height:1.85; }
 .imp-solo .imp-mol h2 + p, .imp-solo .imp-mol .imp-sub { margin-bottom:18px; }
 @media(max-width:760px) { .imp-solo { padding-block:34px; } }
 main:has(#product-portfolio) .easy-sec { padding-block:44px; }
+/* product pages, phones: enquiry checklist as compact 2 x 2 */
+@media(max-width:760px) {
+  .easy-sec { padding-block:32px !important; }
+  .easy-head { margin-bottom:14px; gap:12px; }
+  .easy-head h2 { font-size:22px; }
+  .easy-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:8px !important; }
+  .easy-card { flex-direction:column !important; align-items:flex-start !important; gap:8px !important; padding:12px !important; border-radius:14px !important; }
+  .easy-card p { font-size:13.5px; line-height:1.55; margin:0; }
+  .easy-ico { width:32px; height:32px; }
+  .easy-num { font-size:20px !important; top:10px; }
+}
