@@ -1431,3 +1431,10 @@ html[lang=fa] .sp2-stat dd .num { letter-spacing:0; }
 .ft-bottom { padding-block:10px 12px; }
 @media(max-width:700px) { .site-footer { padding-top:24px !important; } .ft-top { gap:14px !important; padding-bottom:14px !important; } .ft-contact .ft-label { display:none; } }
 @media(min-width:1001px) { .ft-contact:has(.ft-card ~ .ft-card) { grid-template-columns:1fr 1fr; } }
+@media(min-width:1001px) {
+  .ft-top { display:contents !important; }
+  .ft-brand { grid-column:1; grid-row:1; }
+  .ft-links { grid-row:1; }
+  .ft-contact { grid-column:1/-1; grid-row:2; margin-top:24px; grid-template-columns:repeat(4,minmax(0,1fr)) !important; }
+  .ft-contact .ft-card { padding:10px 12px; }
+}
