@@ -1568,3 +1568,4 @@ main:has(#product-portfolio) .easy-sec { padding-block:44px; }
   .easy-ico { width:32px; height:32px; }
   .easy-num { font-size:20px !important; top:10px; }
 }
+@media(max-width:760px) { .easy-card p { padding-inline-end:0 !important; } .easy-num { transform:none !important; top:10px !important; inset-inline-end:12px !important; } }
