@@ -1611,3 +1611,20 @@ html[lang=fa] body { line-height:1.7; }
 html[lang=fa] :is(p, li, dt, dd:not(.num), td, th, blockquote, figcaption, label, summary, address, .lede, .content-copy, .copy) { line-height:1.7 !important; }
 html[lang=fa] :is(h1, h2, h3, h4) { line-height:1.35 !important; }
 html[lang=fa] :is(.num, .easy-num, .step2-num, .trio-num, .exc-num, .faq2-num, .pm-n) { line-height:1 !important; }
+
+/* A–Z browse pages + strip under the big catalogues */
+.az-strip { display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; margin:18px 0 0; font-size:14px; color:var(--muted); }
+.az-strip-l { display:flex; flex-wrap:wrap; gap:4px; }
+.az-strip a, .az-nav a { display:inline-grid; place-items:center; min-width:30px; height:30px; padding:0 6px; border-radius:8px; border:1px solid var(--line); background:var(--white); color:var(--navy); font-family:var(--display); font-weight:600; font-size:13px; }
+.az-strip a:hover, .az-nav a:hover, .az-nav a[aria-current] { background:var(--black); color:var(--glacier); border-color:var(--black); }
+.az-page { padding-block:44px; }
+.az-kicker { color:var(--lapis-deep); font-size:14px; margin:0 0 6px; }
+.az-h1 { font-size:clamp(34px,4vw,52px); margin:0 0 16px; }
+.az-nav { display:flex; flex-wrap:wrap; gap:4px; margin-bottom:14px; }
+.az-count { color:var(--muted); font-size:14px; margin:0 0 14px; }
+.az-list { list-style:none; margin:0; padding:0; columns:3 260px; column-gap:28px; }
+.az-list li { break-inside:avoid; border-bottom:1px solid var(--line); }
+.az-list a { display:block; padding:8px 0; color:var(--ink); font-size:14.5px; line-height:1.45; }
+.az-list a:hover { color:var(--lapis-deep); }
+.az-list small { display:block; color:var(--muted); font-size:13px; }
+.az-back { margin-top:24px; }

@@ -1,0 +1,26 @@
+---
+/** A–Z browse page (noindex, follow): crawlable links to every product / API page of one letter. */
+import { azGroups, azLoc } from '../data/az';
+import { langFromPath, localePath } from '../i18n';
+interface Props { type: 'fdf' | 'api'; letter: string }
+const { type, letter } = Astro.props;
+const lang = langFromPath(Astro.url.pathname);
+const L = (p: string) => localePath(p, lang);
+const groups = azGroups(type);
+const items = groups.get(letter) || [];
+const T = ({
+  en: { fdf: 'Finished products', api: 'Active ingredients', az: 'A–Z', back: type === 'fdf' ? 'Back to finished dosage forms' : 'Back to active ingredients', n: (k: number) => `${k} entries` },
+  fa: { fdf: 'فرآورده‌های دارویی', api: 'مواد مؤثره', az: 'فهرست الفبایی', back: type === 'fdf' ? 'بازگشت به فرآورده‌های دارویی' : 'بازگشت به مواد مؤثره', n: (k: number) => `${k} مورد` },
+  zh: { fdf: '成品药', api: '原料药', az: 'A–Z 索引', back: type === 'fdf' ? '返回制剂成品' : '返回原料药', n: (k: number) => `${k} 条` },
+  tr: { fdf: 'Bitmiş ürünler', api: 'Etkin maddeler', az: 'A–Z dizini', back: type === 'fdf' ? 'Bitmiş ürünlere dön' : 'Etkin maddelere dön', n: (k: number) => `${k} kayıt` },
+} as Record<string, any>)[lang];
+const label = letter === '0-9' ? '0–9' : letter.toUpperCase();
+---
+<section class="section az-page"><div class="container">
+  <p class="az-kicker">{T[type]} · {T.az}</p>
+  <h1 class="az-h1"><span dir="ltr">{label}</span></h1>
+  <nav class="az-nav" aria-label={T.az} dir="ltr">{[...groups.keys()].map(k => <a href={L(`/${type}/a-z/${k}`)} aria-current={k === letter ? 'page' : undefined}>{k === '0-9' ? '0–9' : k.toUpperCase()}</a>)}</nav>
+  <p class="az-count">{T.n(items.length)}</p>
+  <ul class="az-list">{items.map(it => { const loc = azLoc(lang, type, it.name); return <li><a href={L(`/${type}/${it.slug}`)}><span dir="ltr">{it.name}</span>{loc && <small>{loc}</small>}</a></li>; })}</ul>
+  <p class="az-back"><a class="text-link" href={L(`/${type}`)}>{T.back}</a></p>
+</div></section>

@@ -1,0 +1,24 @@
+# Hanpars (Haniya Parsan Darou Co.)
+
+> Tehran-based pharmaceutical trading company. Hanpars imports finished dosage forms (hospital and specialty medicines, including emergency "urgent" imports), active pharmaceutical ingredients (APIs), excipients, supplement ingredients, chemical precursors and pharmaceutical supplies into Iran, and registers them with the Iran Food and Drug Administration (IFDA). Partner offices in Istanbul and Hangzhou; exclusive wholesaler office in Zhenjiang. The site is available in English, Persian (/fa), Simplified Chinese (/zh) and Turkish (/tr).
+
+All product lists on this site are reference lists for enquiries, not statements of stock or price. Products other than those marked "Available in Iran" in the portfolio are supplied on pre-order only.
+
+## Main pages
+- [Finished dosage forms](https://hanpars.com/fdf): Hanpars' 46 IFDA-registered medicines by therapeutic area (with ChEMBL mechanism data) and a 3,885-item finished product reference list
+- [Active pharmaceutical ingredients](https://hanpars.com/api): reference range of 1,582 substances with CAS numbers and PubChem data
+- [Excipients](https://hanpars.com/excipient), [Supplement ingredients](https://hanpars.com/nutrition), [Chemical precursors](https://hanpars.com/precursors), [Pharmaceutical supplies](https://hanpars.com/supplies)
+- [Regulatory affairs](https://hanpars.com/regulatory-affairs): dossiers, IFDA submissions, IRC licensing, lifecycle; daily regulatory watch
+- [Finished dosage form CDMO](https://hanpars.com/fdf-cdmo)
+- [About Hanpars](https://hanpars.com/about-us), [Import activity 2026](https://hanpars.com/import-activity), [How we work](https://hanpars.com/culture), [Markets and sourcing](https://hanpars.com/markets)
+- [Pharma news today](https://hanpars.com/news), [Insights archive](https://hanpars.com/blog-1)
+- [Contact](https://hanpars.com/contact-us-1): contact@hanpars.com (regulatory: RA@hanpars.com)
+
+## Browse every product page
+- Finished products A–Z: https://hanpars.com/fdf/a-z/a (letters a–z and 0-9)
+- Active ingredients A–Z: https://hanpars.com/api/a-z/a
+- Sitemap: https://hanpars.com/sitemap.xml
+
+## Company
+- LinkedIn: https://www.linkedin.com/company/hanpars/
+- Telegram: https://t.me/hanpars

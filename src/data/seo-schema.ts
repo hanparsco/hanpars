@@ -40,7 +40,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const ind0 = lang === 'en' ? (en?.indications || '') : (fa?.indications || en?.indications || '');
   const ind = ind0.replace(/^\s*(موارد مصرف|适应症|Endikasyonlar|Indications(?: and usage)?)\s*[:：]\s*/i, '');
   const description = lang === 'zh'
-    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}，编号 ${entry.code}，${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '，' + strength : ''}${p.pack ? '，' + p.pack : ''}。${ind ? '适应症：' + ind + ' ' : ''}Hanpars 负责伊朗市场的采购与进口。`, 110)
+    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}，编号 ${entry.code}，${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '，' + strength : ''}${p.pack ? '，' + p.pack : ''}。${ind ? '适应症：' + ind + ' ' : ''}Hanpars 负责该产品在伊朗市场的采购、进口与注册，可提供紧急进口及相关文件支持。`, 150)
     : lang === 'tr'
     ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}, kod ${entry.code}, ${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? ', ' + strength : ''}${p.pack ? ', ' + p.pack : ''}. ${ind ? 'Endikasyonlar: ' + ind + ' ' : ''}İran’da tedarik ve ithalat: Hanpars.`, 158)
     : lang === 'fa'
@@ -93,20 +93,21 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
     ? [nameFa, name, mol.cas, `خرید ${nameFa || name}`, `قیمت ${nameFa || name}`, `ماده اولیه ${nameFa || name}`, `پودر ${nameFa || name}`, `API ${name}`, `${name} powder`, `واردات ${nameFa || name}`, `مادهٔ مؤثرهٔ ${nameFa || name}`, `${nameFa || name} CAS`, 'مواد اولیه دارویی', 'واردات مواد اولیه', 'تأمین API', 'هانیا پرسان دارو'].filter(Boolean).join('، ')
     : [name, mol.cas, `${name} API`, `${name} API supplier`, `${name} powder`, `${name} CAS ${mol.cas || ''}`.trim(), `${name} manufacturer`, 'API supplier Iran', 'Hanpars'].filter(Boolean).join(', ');
   // head + (first sentence of the description, only if it fits whole) + sourcing line — never cut mid-sentence
-  const compose = (head: string, d: string, tail: string, n: number, sp = ' ') => {
+  // tails: [long, short] — the long one is used whenever it fits, so short API descriptions are filled out with useful sourcing detail
+  const compose = (head: string, d: string, tails: string | string[], n: number, sp = ' ') => {
+    const ts = Array.isArray(tails) ? tails : [tails];
     const first = (d || '').replace(/\s+/g, ' ').trim().match(/^.*?[.。!?](?=\s|$)/)?.[0] || '';
-    const withD = `${head}${sp}${first}${sp}${tail}`.replace(/\s+/g, ' ').trim();
-    if (first && withD.length <= n) return withD;
-    const plain = `${head}${sp}${tail}`.trim();
-    return plain.length <= n ? plain : clip(plain, n);
+    for (const tail of ts) { const withD = `${head}${sp}${first}${sp}${tail}`.replace(/\s+/g, ' ').trim(); if (first && withD.length <= n) return withD; }
+    for (const tail of ts) { const plain = `${head}${sp}${tail}`.trim(); if (plain.length <= n) return plain; }
+    return clip(`${head}${sp}${ts[ts.length - 1]}`.trim(), n);
   };
   const description = lang === 'zh'
-    ? compose(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。`, faDesc, 'Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。', 120, '')
+    ? compose(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。`, faDesc, ['Hanpars 为伊朗制药企业采购该原料药，可提供 DMF/CEP、GMP 证书及分析证书（COA），并协助在伊朗食品药品监督管理局注册与进口。', 'Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。'], 120, '')
     : lang === 'tr'
-    ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, faDesc, 'DMF/CEP ve GMP belgeli etkin madde tedariki: Hanpars.', 160)
+    ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, faDesc, ['İran’daki ilaç üreticileri için DMF/CEP, GMP ve analiz sertifikalı etkin madde tedariki ve ithalatı: Hanpars.', 'DMF/CEP ve GMP belgeli etkin madde tedariki: Hanpars.'], 160)
     : lang === 'fa'
-    ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? '، شمارهٔ CAS ' + mol.cas : ''}${mol.formula ? '، فرمول ' + mol.formula : ''}.`, faDesc, 'تأمین مادهٔ مؤثره (API) با مستندات DMF/CEP و GMP توسط هانیا پرسان دارو.', 160)
-    : compose(`${name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, mol.description, 'API sourcing with DMF/CEP and GMP documentation by Hanpars.', 160);
+    ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? '، شمارهٔ CAS ' + mol.cas : ''}${mol.formula ? '، فرمول ' + mol.formula : ''}.`, faDesc, ['تأمین و واردات مادهٔ مؤثره (API) برای تولیدکنندگان دارو در ایران، با مستندات DMF/CEP، گواهی GMP و COA، توسط هانیا پرسان دارو.', 'تأمین مادهٔ مؤثره (API) با مستندات DMF/CEP و GMP توسط هانیا پرسان دارو.'], 160)
+    : compose(`${name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, mol.description, ['API sourcing for pharmaceutical manufacturers in Iran, with DMF/CEP, GMP and CoA documentation from qualified suppliers: Hanpars.', 'API sourcing with DMF/CEP and GMP documentation by Hanpars.'], 160);
   const schema = mol.cid ? {
     '@context': 'https://schema.org', '@type': 'ChemicalSubstance', name, identifier: mol.cas || undefined,
     alternateName: [...(nameFa ? [nameFa] : []), ...(mol.synonyms || []).slice(0, 5)], molecularFormula: mol.formula || undefined, molecularWeight: mol.mw ? `${mol.mw} g/mol` : undefined,

@@ -21,7 +21,7 @@ export default function seo({ site }) {
         const root = fileURLToPath(dir);
         const files = await walk(root);
         // link hygiene: (a) internal links to duplicate API pages (noindex + canonical elsewhere) go straight to the canonical page;
-        // (b) enquiry links with query strings (/contact-us-1?...) get rel=nofollow (they are blocked in robots.txt too)
+        // (b) enquiry links with query strings are left followable (robots.txt blocks /contact-us-1?…)
         const dupTo = new Map();
         for (const f of files) {
           const rel0 = '/' + relative(root, f).split(sep).join('/').replace(/\.html$/, '');
@@ -31,14 +31,14 @@ export default function seo({ site }) {
           const c = (/<link rel="canonical" href="([^"]+)"/.exec(h) || [])[1];
           if (c && new URL(c).pathname !== rel0) dupTo.set(rel0, new URL(c).pathname);
         }
-        let relinked = 0, nofollowed = 0;
+        let relinked = 0;
         for (const f of files) {
           const h = await readFile(f, 'utf8');
           let out = h.replace(/href="(\/(?:(?:fa|zh|tr)\/)?api\/[^"#?]+)"/g, (m, p) => dupTo.has(p) ? (relinked++, `href="${dupTo.get(p)}"`) : m);
-          out = out.replace(/<a\b([^>]*?)href="((?:\/(?:fa|zh|tr))?\/contact-us-1\?[^"]*)"([^>]*)>/g, (m, a, href, b) => /\brel=/.test(a + b) ? m : (nofollowed++, `<a${a}href="${href}" rel="nofollow"${b}>`));
+          // (enquiry links stay followable; robots.txt keeps crawlers off the /contact-us-1?… variants)
           if (out !== h) await writeFile(f, out);
         }
-        logger.info(`link hygiene: ${relinked} links moved to canonical API pages, ${nofollowed} enquiry links nofollowed`);
+        logger.info(`link hygiene: ${relinked} links moved to canonical API pages`);
         const pages = new Map();
         const today = new Date().toISOString().slice(0, 10);
         for (const f of files) {

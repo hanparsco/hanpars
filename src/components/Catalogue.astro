@@ -4,6 +4,7 @@ import { langFromPath, localePath, t } from '../i18n';
 import molecules from '../data/molecules.json';
 import { catalogueName, excipientFunction } from '../data/locale';
 import { htmlLang } from '../i18n';
+import { azGroups } from '../data/az';
 interface Props { entries: {name:string;code?:string;extra?:string;group?:string;slug?:string}[]; type:'fdf'|'api'|'exc'; filters?: [string,string][]; }
 const { entries, type, filters = [] } = Astro.props;
 const lang = langFromPath(Astro.url.pathname);
@@ -19,6 +20,8 @@ const i18n = JSON.stringify({ inList: s.inList, matching: s.matching, none: s.no
 const lazy = entries.length > 800 && type !== 'exc';
 const shown = (lazy ? entries.slice(0, 50) : entries).map(e => ({ ...e, loc: catalogueName(lang, type, e.name), fn: type === 'exc' ? excipientFunction(lang, e.extra || '') : '' }));
 const base = lang === 'en' ? '' : `/${lang}`;
+const azKeys = type === 'exc' ? [] : [...azGroups(type).keys()];
+const azLabel = ({ en: 'Browse A–Z', fa: 'فهرست الفبایی', zh: 'A–Z 索引', tr: 'A–Z dizini' } as Record<string, string>)[lang];
 ---
 <div class="catalogue-panel" id={type==='exc'?'excipient-list':type==='api'?'api-list':undefined} style={type!=='fdf'?'scroll-margin-top:40px':undefined} data-catalogue data-page-size="25" data-i18n={i18n} data-src={lazy ? `/data/${type}${lang === 'en' ? '' : '-' + lang}.json` : undefined} data-loc-lang={htmlLang[lang]} data-base={base} data-type={type} data-total={entries.length}>
   <div class="catalogue-toolbar"><div><h2>{title}</h2><p class="catalogue-count"><span class="cat-count-badge" data-filter-count>{total}</span> {s.entries} <span data-count-suffix>{s.inList}</span></p></div><label class="search-input"><Icon name="search" size={18}/><input type="search" placeholder={search} aria-label={search} data-catalogue-search autocomplete="off"/></label></div>
@@ -29,4 +32,5 @@ const base = lang === 'en' ? '' : `/${lang}`;
   </div>
   <div class="catalogue-foot"><span aria-live="polite" data-catalogue-status>{s.allAvailable(total)}</span><div class="catalogue-pager" data-catalogue-pager hidden><button type="button" data-catalogue-prev>{s.prev}</button><span data-page-label></span><button type="button" data-catalogue-next>{s.next}</button></div></div>
 </div>
+{azKeys.length > 0 && <nav class="az-strip" aria-label={azLabel}><span>{azLabel}</span><span class="az-strip-l" dir="ltr">{azKeys.map(k => <a href={L(`/${type}/a-z/${k}`)}>{k === '0-9' ? '0–9' : k.toUpperCase()}</a>)}</span></nav>}
 <p class="reference-note">{type==='exc'?s.noteExc:s.note}</p>

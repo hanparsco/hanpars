@@ -1,0 +1,9 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import AzIndex from '../../../../components/AzIndex.astro';
+import { azPaths } from '../../../../data/az';
+export function getStaticPaths() { return azPaths('fdf'); }
+const { letter } = Astro.params;
+const label = letter === '0-9' ? '0–9' : String(letter).toUpperCase();
+---
+<Layout noindex title={`فهرست الفبایی فرآورده‌های دارویی: ${label} | Hanpars`} description={`فرآورده‌های دارویی با حرف ${label}`}><AzIndex type="fdf" letter={letter!} /></Layout>
