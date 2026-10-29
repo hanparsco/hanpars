@@ -5,6 +5,7 @@ import NewsCard from './NewsCard.astro';
 import FaqFa from './FaqFa.astro';
 import Icon from './Icon.astro';
 import news from '../data/news.json';
+import newsFa from '../data/news-fa.json';
 import portfolio from '../data/portfolio.json';
 import { portfolioL } from '../data/locale';
 import fdf from '../data/fdf.json';
@@ -13,7 +14,7 @@ import { langFromPath, localePath, t, numLocale } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
 const L = (p: string) => localePath(p, lang);
-const todayNews = [...(news.global || []).slice(0,2), ...(news.china || []).slice(0,1)];
+const todayNews = lang === 'fa' ? (newsFa.items || []).slice(0,3) : [...(news.global || []).slice(0,2), ...(news.china || []).slice(0,1)];
 const fmt = (n:number) => n.toLocaleString(numLocale(lang));
 const pl = lang === 'en' ? null : portfolioL[lang];
 const groupTitle = (id:string, title:string) => pl ? ((pl.groups as any)[id]?.title ?? title) : title;
@@ -103,7 +104,7 @@ const areaIcons: Record<string, string> = {"area-1": "<path d=\"M4 8V5a1 1 0 0 1
 <section class="section section-paper section-tight">
   <div class="container">
     <div class="section-head"><h2>{s.home.newsTitle}</h2><a class="text-link" href={L('/news')}>{s.home.newsAll}</a></div>
-    {todayNews.length > 0 && <div class="news-grid">{todayNews.map((item, i) => <NewsCard item={item} eager={false}/>)}</div>}
+    {todayNews.length > 0 && <div class="news-grid">{todayNews.map((item, i) => <NewsCard item={item} eager={false} fa={lang === 'fa'}/>)}</div>}
   </div>
 </section>
 <FaqFa />
