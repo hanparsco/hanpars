@@ -32,7 +32,7 @@ const special: Record<string, { title: string; description: string }> = {
   'blog-1': { title: 'آرشیو مقالات | هانیا پرسان دارو', description: 'مقالات آرشیوی هانیا پرسان دارو دربارهٔ بازار دارو، صنعت مواد اولیهٔ دارویی چین، تأمین و رگولاتوری.' },
 };
 const crumbName: Record<string, string> = { fdf: 'فرآورده‌های دارویی', api: 'مواد مؤثرهٔ دارویی', excipient: 'مواد جانبی دارویی', nutrition: 'مواد اولیهٔ مکمل', precursors: 'پیش‌سازهای شیمیایی', supplies: 'ملزومات دارویی', 'fdf-cdmo': 'توسعه و تولید قراردادی', 'about-us': 'دربارهٔ ما', markets: 'بازارها و تأمین', culture: 'شیوهٔ کار ما', 'regulatory-affairs': 'امور رگولاتوری', 'contact-us-1': 'تماس', news: 'اخبار امروز دارو', 'import-activity': 'گزارش فعالیت', 'blog-1': 'آرشیو مقالات' };
-const data = pagesFa[page as PageKey];
+const data = (pagesFa as Record<string, any>)[page];
 const seo = special[page] || {title:`${data?.title} | هانیا پرسان دارو`,description:data?.meta};
 const crumbs = [{ name: 'خانه', path: '/fa' }, { name: crumbName[page] || data?.title || page, path: `/fa/${page}` }];
 ---

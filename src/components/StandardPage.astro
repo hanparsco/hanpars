@@ -27,7 +27,7 @@ const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
 const L = (p: string) => localePath(p, lang);
 const en = pages[page];
-const fa: any = lang === 'en' ? {} : pagesL[lang][page];
+const fa: any = lang === 'en' ? {} : ((pagesL[lang] as Record<string, any>)[page] || {});
 const data = lang === 'en' ? en : { ...en, ...fa };
 const isProduct = ['api','fdf','excipient','nutrition','precursors','supplies'].includes(page);
 const enCards = 'cards' in en ? en.cards : [];
