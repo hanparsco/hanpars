@@ -9,6 +9,7 @@ import FdfPortfolio from './FdfPortfolio.astro';
 import SupplementCatalogue from './SupplementCatalogue.astro';
 import ExcipientCategories from './ExcipientCategories.astro';
 import ApiClasses from './ApiClasses.astro';
+import CdmoPage from './CdmoPage.astro';
 import apiClasses from '../data/api-classes.json';
 import excCats from '../data/excipient-categories.json';
 import { pages, type PageKey } from '../data/pages';
@@ -50,7 +51,8 @@ const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.sta
 ---
 <PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':'sourcing'}`} action={action} photo={photo} photoAlt={photoAlt} hideAction={lang === 'fa' && page === 'culture'}/>
 {preorder&&<div class="container"><aside class="preorder-note" role="note"><span class="preorder-ico"><Icon name="clock" size={22}/></span><p><strong>{preorder.t}</strong>{preorder.p}</p></aside></div>}
-<section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map((p: string)=><p>{p}</p>)}{jump&&<div class="fdf-jump"><a href="#product-portfolio"><span class="fdf-jump-ico"><Icon name="capsule" size={20}/></span><span><strong>{jump[0][0]}</strong><small>{jump[0][1]}</small></span><Icon name="down" size={18} class="fdf-jump-arr"/></a><a href="#fdf-reference"><span class="fdf-jump-ico"><Icon name="layers" size={20}/></span><span><strong>{jump[1][0]}</strong><small>{jump[1][1]}</small></span><Icon name="down" size={18} class="fdf-jump-arr"/></a></div>}</div></div></section>
+{page!=='fdf-cdmo'&&<section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map((p: string)=><p>{p}</p>)}{jump&&<div class="fdf-jump"><a href="#product-portfolio"><span class="fdf-jump-ico"><Icon name="capsule" size={20}/></span><span><strong>{jump[0][0]}</strong><small>{jump[0][1]}</small></span><Icon name="down" size={18} class="fdf-jump-arr"/></a><a href="#fdf-reference"><span class="fdf-jump-ico"><Icon name="layers" size={20}/></span><span><strong>{jump[1][0]}</strong><small>{jump[1][1]}</small></span><Icon name="down" size={18} class="fdf-jump-arr"/></a></div>}</div></div></section>}
+{page==='fdf-cdmo'&&<CdmoPage/>}
 {page==='about-us'&&<Imports2026/>}
 {page==='fdf'&&<FdfPortfolio/>}
 {page==='fdf'&&<Imports2026 variant="bubbles"/>}
@@ -58,12 +60,11 @@ const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.sta
 {page==='api'&&<ApiClasses/>}
 {(page==='fdf'||page==='api'||page==='excipient')&&<section class="section section-paper" id={page==='fdf'?'fdf-reference':undefined} style="scroll-margin-top:40px"><div class="container"><Catalogue type={page==='excipient'?'exc':page} filters={page==='excipient'?[['',s.excipientCats.all],...excCats.map(c=>[c.id,(c as any)[lang]||c.en] as [string,string]),['other',s.excipientCats.other]]:page==='api'?[['',s.excipientCats.all],...apiClasses.map(c=>[c.id,`${c.id} — ${(c as any)[lang]||c.en}`] as [string,string]),['other',s.apiClasses.unclassified]]:[]} entries={page==='fdf'?(fdf as {name:string;code:string}[]).map(e=>({...e,slug:fdfSlug(e)})):page==='excipient'?excipients.map(e=>({name:e.name,code:e.cas,extra:e.function,group:e.group})):apis.map(a=>({name:a.name,code:a.cas,group:(a as any).class||'other',slug:a.name.normalize('NFKD').replace(/[^\x00-\x7F]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'').toLowerCase()}))}/>{database&&<p style="margin-top:28px"><a class="text-link" href={database} target="_blank" rel="noopener noreferrer">{databaseLabel}</a> <span class="form-hint" style="display:inline;margin-inline-start:10px">{s.catalogue.externalNote}</span></p>}</div></section>}
 {page==='nutrition'&&<section class="section section-paper"><div class="container"><SupplementCatalogue/></div></section>}
-{cards.length>0&&<section class="section section-paper"><div class="container"><div class="section-head"><h2>{s.standard.cardsTitle[page]}</h2></div><div class="detail-grid">{cards.map((card: any)=><article class="detail-item"><h3>{card.title}</h3><p>{card.text}</p>{card.href&&card.link&&<a class="text-link" href={L(card.href)}>{card.link}</a>}</article>)}</div></div></section>}
+{cards.length>0&&page!=='fdf-cdmo'&&<section class="section section-paper"><div class="container"><div class="section-head"><h2>{s.standard.cardsTitle[page]}</h2></div><div class="detail-grid">{cards.map((card: any)=><article class="detail-item"><h3>{card.title}</h3><p>{card.text}</p>{card.href&&card.link&&<a class="text-link" href={L(card.href)}>{card.link}</a>}</article>)}</div></div></section>}
 {isProduct&&<section class="section easy-sec"><div class="container">
   <div class="easy-head"><h2>{s.standard.easyTitle}</h2><a class="button button-navy easy-cta" href={L('/contact-us-1?type=sourcing')}>{s.nav.enquiry}<Icon name="arrow" size={17} class="easy-arrow"/></a></div>
   <ol class="easy-grid">{s.standard.easy.map((item, i)=><li class="easy-card"><span class="easy-ico"><Icon name={(['capsule','layers','globe','file'] as const)[i % 4]} size={22}/></span><span class="easy-num" aria-hidden="true">{lang === 'fa' ? String(i + 1) : String(i + 1).padStart(2, '0')}</span><p>{item}</p></li>)}</ol>
 </div></section>}
-{page==='fdf-cdmo'&&<section class="section"><div class="container"><div class="section-head"><h2>{s.standard.cdmoTitle}</h2><p class="lede">{s.standard.cdmoLede}</p></div><ol class="steps steps-4">{s.standard.cdmoSteps.map(item=><li class="step"><h3>{item.title}</h3><p>{item.text}</p></li>)}</ol><p style="margin-top:40px"><a class="text-link" href={L('/regulatory-affairs')}>{s.standard.cdmoLink}</a></p></div></section>}
 {!isProduct&&page!=='fdf-cdmo'&&<section class="section"><div class="container content-split">{lang !== 'fa' && <h2>{s.standard.nextTitle}</h2>}<ul class:list={['link-list', { 'link-list-solo': lang === 'fa' }]}>{s.standard.nextLinks.map(item=><li><a href={L(item.href)}>{item.label}<small>{item.note}</small></a></li>)}</ul></div></section>}
 {page==='about-us'&&<FaqFa schema={false} />}
-{!(lang === 'fa' && (page === 'culture' || page === 'fdf')) && <CTA title={isProduct?s.standard.ctaProduct:page==='fdf-cdmo'?s.standard.ctaCdmo:undefined}/>}
+{!(lang === 'fa' && (page === 'culture' || page === 'fdf')) && page!=='fdf-cdmo' && <CTA title={isProduct?s.standard.ctaProduct:page==='fdf-cdmo'?s.standard.ctaCdmo:undefined}/>}

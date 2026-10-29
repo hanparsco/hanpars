@@ -84,9 +84,9 @@ export const pagesTr: Record<PageKey, LPage> = {
     ],
   },
   'fdf-cdmo': {
-    title: 'Bitmiş Ürün Geliştirme', category: 'Hizmetler',
-    description: 'Tablet, kapsül, enjeksiyonluk, sıvı ve yarı katı formlar için geliştirme ve üretim iş birlikleri. Projeyi Hanpars koordine eder; üretimi iş ortakları yapar.',
-    meta: 'Hanpars ile bitmiş ürün CDMO projenizi görüşün: formülasyon, analitik geliştirme, ölçek büyütme, stabilite, teknoloji transferi ve iş ortağı koordinasyonu.',
+    title: 'Türk ilaç üreticileri için İran: ruhsat ve fason üretim', category: 'Hizmetler',
+    description: 'Türk ilaç üreticileri ve CDMO’lar için İran pazarına giriş: pazar değerlendirmesi, IFDA ruhsatı, ithalat ve gerektiğinde İran’da teknoloji transferi, tek ekipten.',
+    meta: 'Türk ilaç üreticileri için İran pazarı: Hanpars, İstanbul’daki ortak ofisiyle IFDA ruhsatı, CTD dosyasının uyarlanması, ithalat, lansman ve teknoloji transferini yönetir.',
     introTitle: 'Projeyi biz yürütürüz. Tesisi iş ortakları işletir.',
     intro: ['Formülasyon, analitik çalışmalar, ölçek büyütme, stabilite, ambalajlama ve teknoloji transferi nadiren tek çatı altında bulunur. Hanpars bunları geliştirme ve üretim ortakları arasında koordine eder; hedef pazarın regülasyon gereklilikleri ilk seriden itibaren göz önünde tutulur.', 'Hanpars’ın bir üretim tesisi ve dolayısıyla bir tesis adına GMP sertifikası yoktur; ruhsatlandırma sonucunu da garanti edemez. Sunduğumuz şey koordinasyon, iş ortağı ağı ve dosyadır.'],
     cards: [

@@ -1,0 +1,201 @@
+---
+import Icon from './Icon.astro';
+import { cdmo } from '../data/cdmo';
+import { langFromPath, localePath } from '../i18n';
+const lang = langFromPath(Astro.url.pathname) as 'en' | 'fa' | 'zh' | 'tr';
+const c = cdmo[lang] || cdmo.en;
+const L = (p: string) => localePath(p, lang);
+const num = (i: number) => (lang === 'fa' ? String(i + 1) : String(i + 1).padStart(2, '0'));
+const svcIcons = ['search', 'shield', 'molecule', 'layers', 'file', 'globe'];
+const formIcons = ['capsule', 'shield', 'box'];
+const routeIcons = ['globe', 'layers'];
+const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور رگولاتوری', zh: '注册事务服务', tr: 'Ruhsatlandırma hizmetleri' } as const)[lang];
+---
+<section class="section cd-intro">
+  <div class="container cd-intro-grid">
+    <div>
+      <p class="cd-kicker">{c.kicker}</p>
+      <h2>{c.introTitle}</h2>
+    </div>
+    <div class="cd-intro-copy">{c.intro.map((p) => <p>{p}</p>)}</div>
+  </div>
+</section>
+
+<section class="section section-paper cd-routes">
+  <div class="container">
+    <div class="section-head"><h2>{c.routesTitle}</h2><p class="lede">{c.routesLede}</p></div>
+    <div class="cd-route-grid">
+      {c.routes.map((r, i) => (
+        <article class="cd-route">
+          <div class="cd-route-top"><span class="cd-ico"><Icon name={routeIcons[i]} size={22} /></span><span class="cd-tag">{r.tag}</span></div>
+          <h3>{r.title}</h3>
+          <p>{r.text}</p>
+          <ul>{r.points.map((p) => <li><Icon name="check" size={17} class="cd-check" /><span>{p}</span></li>)}</ul>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="section cd-services">
+  <div class="container">
+    <div class="section-head"><h2>{c.servicesTitle}</h2></div>
+    <ol class="cd-svc-grid">
+      {c.services.map((s, i) => (
+        <li class="cd-svc">
+          <div class="cd-svc-head"><span class="cd-ico"><Icon name={svcIcons[i]} size={20} /></span><span class="cd-num" aria-hidden="true">{num(i)}</span></div>
+          <h3>{s.title}</h3>
+          <p>{s.text}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<section class="section cd-band">
+  <div class="container">
+    <div class="section-head"><h2>{c.stepsTitle}</h2><p class="lede">{c.stepsLede}</p></div>
+    <ol class="cd-steps">
+      {c.steps.map((s, i) => (
+        <li class="cd-step"><span class="cd-step-num" aria-hidden="true">{num(i)}</span><h3>{s.title}</h3><p>{s.text}</p></li>
+      ))}
+    </ol>
+  </div>
+</section>
+
+<section class="section cd-forms-sec">
+  <div class="container cd-split">
+    <div class="cd-forms">
+      <h2>{c.formsTitle}</h2>
+      <ul>{c.forms.map((f, i) => <li><span class="cd-ico"><Icon name={formIcons[i]} size={20} /></span><div><h3>{f.title}</h3><p>{f.text}</p></div></li>)}</ul>
+    </div>
+    <div class="cd-focus">
+      <h2>{c.focusTitle}</h2>
+      <p class="cd-focus-lede">{c.focusLede}</p>
+      <div class="cd-focus-grid">
+        {c.focus.map((f) => <div class="cd-stat"><strong>{f.value}</strong><span>{f.label}</span><p>{f.text}</p></div>)}
+      </div>
+      {c.focusNote && <p class="cd-note">{c.focusNote}</p>}
+    </div>
+  </div>
+</section>
+
+<section class="section section-paper cd-roles-sec">
+  <div class="container">
+    <div class="section-head"><h2>{c.rolesTitle}</h2></div>
+    <div class="cd-roles">
+      {[c.weDo, c.partnersDo].map((col, k) => (
+        <div class:list={['cd-role', { 'cd-role-dark': k === 0 }]}>
+          <h3>{col.title}</h3>
+          <ul>{col.items.map((it) => <li><Icon name="check" size={17} class="cd-check" /><span>{it}</span></li>)}</ul>
+        </div>
+      ))}
+    </div>
+    <aside class="cd-limits" role="note"><Icon name="shield" size={22} /><p>{c.limits}</p></aside>
+  </div>
+</section>
+
+<section class="section cd-brief-sec">
+  <div class="container cd-brief">
+    <div>
+      <h2>{c.briefTitle}</h2>
+      <ol>{c.brief.map((b, i) => <li><span aria-hidden="true">{num(i)}</span>{b}</li>)}</ol>
+    </div>
+    <div class="cd-brief-actions">
+      <a class="button button-navy" href={L('/contact-us-1?type=cdmo')}>{c.briefCta}<Icon name="arrow" size={17} class="cd-arrow" /></a>
+      <a class="text-link" href={L('/regulatory-affairs')}>{regLink}</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cd-kicker { margin:0 0 14px; font:600 13px/1.4 var(--sans); letter-spacing:.08em; text-transform:uppercase; color:var(--lapis); }
+  :global([dir=rtl]) .cd-kicker, :global(html[lang^=zh]) .cd-kicker { letter-spacing:0; text-transform:none; font-size:14px; }
+  .cd-intro-grid { display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:clamp(28px,5vw,72px); align-items:start; }
+  .cd-intro-copy p { font-size:18px; color:var(--ink); }
+  .cd-intro-copy p:last-child { margin-bottom:0; color:var(--muted); }
+
+  .cd-ico { display:inline-grid; place-items:center; width:42px; height:42px; flex:none; border-radius:12px; background:var(--glacier-soft); color:var(--lapis-deep); }
+  .cd-check { flex:none; margin-top:4px; color:var(--lapis); }
+
+  .cd-route-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+  .cd-route { display:flex; flex-direction:column; gap:14px; padding:28px; border:1px solid var(--line); border-radius:20px; background:var(--white); }
+  .cd-route-top { display:flex; align-items:center; gap:12px; }
+  .cd-tag { font-size:14px; font-weight:600; color:var(--lapis-deep); }
+  .cd-route p { margin:0; color:var(--muted); }
+  .cd-route ul, .cd-role ul { list-style:none; padding:0; display:grid; gap:10px; margin:6px 0 0; }
+  .cd-route li, .cd-role li { display:flex; gap:10px; align-items:flex-start; line-height:1.5; }
+  .cd-route ul { padding-top:16px; border-top:1px solid var(--line); }
+
+  .cd-svc-grid { list-style:none; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+  .cd-svc { display:flex; flex-direction:column; gap:10px; padding:22px 22px 24px; border:1px solid var(--line); border-radius:18px; background:var(--paper); transition:transform .25s var(--ease), box-shadow .25s var(--ease); }
+  .cd-svc:hover { transform:translateY(-3px); box-shadow:0 18px 36px -24px #10152059; }
+  .cd-svc-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:4px; }
+  .cd-num { font:600 15px/1 var(--display); color:var(--faint); }
+  .cd-svc h3 { font-size:19px; }
+  .cd-svc p { margin:0; font-size:16px; line-height:1.55; color:var(--muted); }
+
+  .cd-band { background:var(--black); color:var(--on-navy); }
+  .cd-band h2, .cd-band h3 { color:#fff; }
+  .cd-band .lede { color:var(--on-navy-muted); }
+  .cd-steps { list-style:none; padding:0; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:0; counter-reset:none; }
+  .cd-step { position:relative; padding:22px 20px 4px 0; border-top:1px solid #ffffff2e; }
+  :global([dir=rtl]) .cd-step { padding:22px 0 4px 20px; }
+  .cd-step::before { content:''; position:absolute; top:-5px; inset-inline-start:0; width:9px; height:9px; border-radius:50%; background:var(--glacier); }
+  .cd-step-num { display:block; margin:6px 0 12px; font:600 30px/1 var(--display); color:var(--glacier); }
+  .cd-step h3 { font-size:18px; margin-bottom:8px; }
+  .cd-step p { margin:0; font-size:15.5px; line-height:1.55; color:var(--on-navy-muted); }
+
+  .cd-split { display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:clamp(28px,5vw,64px); }
+  .cd-forms ul { list-style:none; padding:0; margin:24px 0 0; display:grid; gap:0; }
+  .cd-forms li { display:flex; gap:16px; padding:18px 0; border-top:1px solid var(--line); }
+  .cd-forms h3 { font-size:18px; margin-bottom:4px; }
+  .cd-forms p { margin:0; font-size:16px; line-height:1.55; color:var(--muted); }
+  .cd-focus { padding:30px; border-radius:22px; background:var(--paper); border:1px solid var(--line); }
+  .cd-focus-lede { color:var(--muted); margin:10px 0 22px; }
+  .cd-focus-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+  .cd-stat { display:flex; flex-direction:column; gap:4px; padding:18px; border-radius:16px; background:var(--white); border:1px solid var(--line); }
+  .cd-stat strong { font:600 clamp(22px,2.2vw,28px)/1.1 var(--display); color:var(--lapis-deep); letter-spacing:-.02em; }
+  .cd-stat span { font-weight:600; font-size:15px; color:var(--ink); }
+  .cd-stat p { margin:6px 0 0; font-size:14.5px; line-height:1.5; color:var(--muted); }
+  .cd-note { margin:18px 0 0; padding-top:16px; border-top:1px solid var(--line); font-size:15px; color:var(--muted); }
+
+  .cd-roles { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+  .cd-role { padding:28px; border-radius:20px; background:var(--white); border:1px solid var(--line); }
+  .cd-role h3 { margin-bottom:14px; }
+  .cd-role-dark { background:var(--black); border-color:var(--black); color:var(--on-navy); }
+  .cd-role-dark h3 { color:#fff; }
+  .cd-role-dark .cd-check { color:var(--glacier); }
+  .cd-limits { display:flex; gap:14px; align-items:flex-start; margin-top:20px; padding:18px 22px; border-radius:16px; border:1px dashed #b9b3a6; color:var(--ink); }
+  .cd-limits :global(svg) { flex:none; color:var(--lapis); margin-top:2px; }
+  .cd-limits p { margin:0; font-size:15.5px; line-height:1.6; }
+
+  .cd-brief { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:32px 48px; align-items:end; }
+  .cd-brief ol { list-style:none; padding:0; margin:22px 0 0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 28px; }
+  .cd-brief li { display:flex; gap:12px; align-items:baseline; padding:12px 0; border-bottom:1px solid var(--line); }
+  .cd-brief li span { font:600 14px/1 var(--display); color:var(--lapis); min-width:22px; }
+  .cd-brief-actions { display:flex; flex-direction:column; gap:16px; align-items:flex-start; }
+  .cd-arrow { margin-inline-start:10px; }
+  :global([dir=rtl]) .cd-arrow { transform:scaleX(-1); }
+
+  :global([dir=rtl]) .cd-intro-copy p, :global([dir=rtl]) .cd-route p, :global([dir=rtl]) .cd-svc p, :global([dir=rtl]) .cd-step p, :global([dir=rtl]) .cd-forms p, :global([dir=rtl]) .cd-stat p, :global([dir=rtl]) .cd-limits p, :global([dir=rtl]) .cd-role li, :global([dir=rtl]) .cd-route li { line-height:1.7; }
+
+  @media (max-width:1100px) {
+    .cd-steps { grid-template-columns:repeat(3,minmax(0,1fr)); row-gap:28px; }
+    .cd-split { grid-template-columns:1fr; }
+  }
+  @media (max-width:860px) {
+    .cd-intro-grid, .cd-route-grid, .cd-roles, .cd-brief { grid-template-columns:1fr; }
+    .cd-svc-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .cd-brief { align-items:start; }
+  }
+  @media (max-width:640px) {
+    .cd-svc-grid, .cd-focus-grid, .cd-brief ol { grid-template-columns:1fr; }
+    .cd-steps { grid-template-columns:1fr; row-gap:0; }
+    .cd-step, :global([dir=rtl]) .cd-step { padding:0 0 22px; padding-inline-start:28px; border-top:0; border-inline-start:1px solid #ffffff2e; }
+    .cd-step::before { top:4px; inset-inline-start:-5px; }
+    .cd-step-num { margin:0 0 8px; font-size:24px; }
+    .cd-route, .cd-role, .cd-focus { padding:22px; }
+    .cd-intro-copy p { font-size:17px; }
+  }
+</style>

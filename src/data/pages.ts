@@ -89,9 +89,9 @@ export const pages = {
     photo: 'container-ship', photoAlt: 'A container ship arriving at a port with mountains behind',
   },
   'fdf-cdmo': {
-    title: 'Finished dosage-form development', category: 'Services',
-    description: 'Development and manufacturing partnerships for tablets, capsules, injectables, liquids and semi-solids. Hanpars coordinates the project; partners manufacture.',
-    meta: 'Discuss a finished dosage-form CDMO project with Hanpars: formulation, analytical development, scale-up, stability, technology transfer and partner coordination.',
+    title: 'Finished dosage form CDMO', category: 'Services',
+    description: 'Contract development and manufacturing of finished dosage forms for the Iranian market: one project team from formulation and technology transfer to IFDA registration and supply.',
+    meta: 'Finished dosage form CDMO for Iran: formulation, analytical development, technology transfer, stability, CTD dossier and IFDA registration, coordinated by Hanpars with qualified GMP partners.',
     introTitle: 'We run the project. Partners run the plant.',
     intro: ['Formulation, analytical work, scale-up, stability, packaging and technology transfer rarely sit under one roof. Hanpars coordinates them across development and manufacturing partners, with the target market\'s regulatory requirements in view from the first batch.', 'Hanpars does not own a plant, does not hold a GMP certificate for one, and cannot guarantee a regulatory outcome. We offer the coordination, the partner network and the dossier.'],
     cards: [
