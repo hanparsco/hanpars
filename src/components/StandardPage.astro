@@ -67,4 +67,4 @@ const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.sta
 </div></section>}
 {!isProduct&&page!=='fdf-cdmo'&&<section class="section"><div class="container content-split">{lang !== 'fa' && <h2>{s.standard.nextTitle}</h2>}<ul class:list={['link-list', { 'link-list-solo': lang === 'fa' }]}>{s.standard.nextLinks.map(item=><li><a href={L(item.href)}>{item.label}<small>{item.note}</small></a></li>)}</ul></div></section>}
 {page==='about-us'&&<FaqFa schema={false} />}
-{!(lang === 'fa' && (page === 'culture' || page === 'fdf')) && page!=='fdf-cdmo' && <CTA title={isProduct?s.standard.ctaProduct:page==='fdf-cdmo'?s.standard.ctaCdmo:undefined}/>}
+{!(lang === 'fa' && (page === 'culture' || page === 'fdf')) && page!=='fdf-cdmo' && <CTA title={isProduct?s.standard.ctaProduct:undefined}/>}
