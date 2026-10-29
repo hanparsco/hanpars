@@ -5,7 +5,8 @@ import { formL, ROUTE_L, locName } from './locale';
 import { hreflangOf, type Lang } from '../i18n';
 export const faName = (en: string) => locName('fa', en).trim();
 
-const clip = (s: string, n: number) => { const t = s.replace(/\s+/g, ' ').trim(); return t.length <= n ? t : t.slice(0, t.lastIndexOf(' ', n)) + '…'; };
+// cut at the last space or Chinese punctuation before n (Chinese text has no spaces, so a space-only cut lost most of it)
+const clip = (s: string, n: number) => { const t = s.replace(/\s+/g, ' ').trim(); if (t.length <= n) return t; const head = t.slice(0, n); const cut = Math.max(head.lastIndexOf(' '), ...['，', '。', '；', '、', '：'].map(ch => head.lastIndexOf(ch))); return (cut > n * .6 ? t.slice(0, cut) : head).replace(/[，、：；,\s]+$/, '') + '…'; };
 
 export function productSeo(entry: { name: string; code: string }, lang: Lang, info: Record<string, any>, infoFa: Record<string, any>) {
   const p = parseFdf(entry.name);
@@ -107,7 +108,7 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
     ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, faDesc, ['İran’daki ilaç üreticileri için DMF/CEP, GMP ve analiz sertifikalı etkin madde tedariki ve ithalatı: Hanpars.', 'DMF/CEP ve GMP belgeli etkin madde tedariki: Hanpars.'], 160)
     : lang === 'fa'
     ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? '، شمارهٔ CAS ' + mol.cas : ''}${mol.formula ? '، فرمول ' + mol.formula : ''}.`, faDesc, ['تأمین و واردات مادهٔ مؤثره (API) برای تولیدکنندگان دارو در ایران، با مستندات DMF/CEP، گواهی GMP و COA، توسط هانیا پرسان دارو.', 'تأمین مادهٔ مؤثره (API) با مستندات DMF/CEP و GMP توسط هانیا پرسان دارو.'], 160)
-    : compose(`${name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, mol.description, ['API sourcing for pharmaceutical manufacturers in Iran, with DMF/CEP, GMP and CoA documentation from qualified suppliers: Hanpars.', 'API sourcing with DMF/CEP and GMP documentation by Hanpars.'], 160);
+    : compose(`${name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, mol.description, ['API sourcing for manufacturers in Iran, with DMF/CEP, GMP and CoA documentation from qualified suppliers: Hanpars.', 'API sourcing with DMF/CEP and GMP documentation by Hanpars.'], 160);
   const schema = mol.cid ? {
     '@context': 'https://schema.org', '@type': 'ChemicalSubstance', name, identifier: mol.cas || undefined,
     alternateName: [...(nameFa ? [nameFa] : []), ...(mol.synonyms || []).slice(0, 5)], molecularFormula: mol.formula || undefined, molecularWeight: mol.mw ? `${mol.mw} g/mol` : undefined,
