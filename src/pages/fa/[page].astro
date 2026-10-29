@@ -11,7 +11,7 @@ import { pagesFa } from '../../data/pages.fa';
 import { pageKeywords } from '../../data/seo-keywords';
 
 export function getStaticPaths() {
-  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news', 'import-activity'].map(page=>({params:{page}}));
+  return [...Object.keys(pages).filter(k => k !== 'partners'), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news', 'import-activity'].map(page=>({params:{page}}));
 }
 const page = Astro.params.page!;
 const special: Record<string, { title: string; description: string }> = {
@@ -21,7 +21,6 @@ const special: Record<string, { title: string; description: string }> = {
   'precursors': { title: 'واردات پیش‌سازهای شیمیایی و حدواسط‌های دارویی | هانیا پرسان دارو', description: 'تأمین مواد آغازین API، حدواسط‌های پیشرفته و معرف‌های فرایندی از تولیدکنندگان واجد شرایط، با گواهی آنالیز، مسیر سنتز و مجوزهای لازم برای پیش‌سازهای کنترل‌شده.' },
   'supplies': { title: 'تأمین ملزومات دارویی و بسته‌بندی اولیه | ویال، آمپول، کپسول خالی | هانیا پرسان دارو', description: 'ویال، آمپول، درپوش لاستیکی، فویل بلیستر، کپسول خالی ژلاتینی و HPMC و اقلام مصرفی تولید، مطابق مشخصات برای تولیدکنندگان دارو در ایران.' },
   'nutrition': { title: 'واردات ویتامین و مواد اولیهٔ مکمل | مواد معدنی، امگا-۳، پروبیوتیک | هانیا پرسان دارو', description: 'واردات ویتامین و مواد اولیهٔ مکمل‌های دارویی و غذایی: ویتامین‌ها، مواد معدنی، امگا-۳، پروبیوتیک، عصاره‌های گیاهی و نوتراسوتیکال؛ فهرست ۲۹۵ مادهٔ مکمل.' },
-  'partners': { title: 'همکاری با تولیدکنندگان خارجی دارو | هانیا پرسان دارو', description: 'واردکنندهٔ دارای مجوز سازمان غذا و دارو و دارندهٔ پروانه در ایران؛ ثبت و فارماکوویژیلانس در داخل شرکت، توزیع سراسری و مسئولیت‌های مکتوب.' },
   'fdf-cdmo': { title: 'توسعه و تولید قراردادی دارو (CDMO) | هانیا پرسان دارو', description: 'توسعه و تولید قراردادی فرآورده‌های دارویی با شرکای دارای GMP در چین، ترکیه و ایران؛ از فرمولاسیون و انتقال فناوری تا پروندهٔ CTD، ثبت در سازمان غذا و دارو و تأمین.' },
   'about-us': { title: 'دربارهٔ شرکت هانیا پرسان دارو | واردات و ثبت دارو، تهران', description: 'شرکت هانیا پرسان دارو، واردکنندهٔ دارو، مواد اولیهٔ دارویی، مواد جانبی و مکمل در تهران و رابط رگولاتوری تولیدکنندگان خارجی در ایران.' },
   'markets': { title: 'بازارها و تأمین‌کنندگان | واردات دارو از چین، هند، ترکیه و اروپا | هانیا پرسان دارو', description: 'شبکهٔ تأمین هانیا پرسان دارو: تولیدکنندگان دارای گواهی GMP در چین، هند، ترکیه و اروپا و توزیع سراسری در ایران از طریق پخش‌های معتبر دارویی.' },
@@ -32,7 +31,7 @@ const special: Record<string, { title: string; description: string }> = {
   'news': { title: 'اخبار امروز دارو | اخبار صنعت دارو و بازار داروی ایران | هانیا پرسان دارو', description: 'تازه‌ترین اخبار صنعت دارو و بازار داروی ایران از رسانه‌های تخصصی فارسی‌زبان؛ هر چهار ساعت به‌روز، با ذکر منبع.' },
   'blog-1': { title: 'آرشیو مقالات | هانیا پرسان دارو', description: 'مقالات آرشیوی هانیا پرسان دارو دربارهٔ بازار دارو، صنعت مواد اولیهٔ دارویی چین، تأمین و رگولاتوری.' },
 };
-const crumbName: Record<string, string> = { fdf: 'فرآورده‌های دارویی', api: 'مواد مؤثرهٔ دارویی', excipient: 'مواد جانبی دارویی', nutrition: 'مواد اولیهٔ مکمل', precursors: 'پیش‌سازهای شیمیایی', supplies: 'ملزومات دارویی', 'fdf-cdmo': 'توسعه و تولید قراردادی', partners: 'همکاری با تولیدکنندگان خارجی', 'about-us': 'دربارهٔ ما', markets: 'بازارها و تأمین', culture: 'شیوهٔ کار ما', 'regulatory-affairs': 'امور رگولاتوری', 'contact-us-1': 'تماس', news: 'اخبار امروز دارو', 'import-activity': 'گزارش فعالیت', 'blog-1': 'آرشیو مقالات' };
+const crumbName: Record<string, string> = { fdf: 'فرآورده‌های دارویی', api: 'مواد مؤثرهٔ دارویی', excipient: 'مواد جانبی دارویی', nutrition: 'مواد اولیهٔ مکمل', precursors: 'پیش‌سازهای شیمیایی', supplies: 'ملزومات دارویی', 'fdf-cdmo': 'توسعه و تولید قراردادی', 'about-us': 'دربارهٔ ما', markets: 'بازارها و تأمین', culture: 'شیوهٔ کار ما', 'regulatory-affairs': 'امور رگولاتوری', 'contact-us-1': 'تماس', news: 'اخبار امروز دارو', 'import-activity': 'گزارش فعالیت', 'blog-1': 'آرشیو مقالات' };
 const data = pagesFa[page as PageKey];
 const seo = special[page] || {title:`${data?.title} | هانیا پرسان دارو`,description:data?.meta};
 const crumbs = [{ name: 'خانه', path: '/fa' }, { name: crumbName[page] || data?.title || page, path: `/fa/${page}` }];

@@ -3,7 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { langFromPath, stripLang, localePath, dir, langs, htmlLang, hreflangOf, ogLocale, t, type Lang } from '../i18n';
 import '../styles/global.css';
-interface Props { title?: string; description?: string; noindex?: boolean; brand?: 'default' | 'regulatory'; schema?: Record<string, unknown>[]; breadcrumbs?: { name: string; path: string }[]; canonicalPath?: string; ogType?: string; image?: string; onlyLang?: Lang; keywords?: string; }
+interface Props { title?: string; description?: string; noindex?: boolean; brand?: 'default' | 'regulatory'; schema?: Record<string, unknown>[]; breadcrumbs?: { name: string; path: string }[]; canonicalPath?: string; ogType?: string; image?: string; onlyLang?: Lang; skipLangs?: Lang[]; keywords?: string; }
 const lang = langFromPath(Astro.url.pathname);
 const rtl = lang === 'fa';
 const defaults = {
@@ -12,7 +12,7 @@ const defaults = {
   tr: { title: 'Hanpars | İran’a ilaç ithalatı, etkin madde tedariki ve ruhsatlandırma, Tahran', description: 'Hanpars (Haniya Parsan Darou), İran pazarı için etkin madde, bitmiş ürün, yardımcı madde ve besin takviyesi hammaddeleri ithal eder ve İran Gıda ve İlaç Kurumu (IFDA) nezdinde ruhsat başvurularını hazırlar. Merkez: Tahran.' },
   fa: { title: 'هانیا پرسان دارو | واردات دارو، مواد اولیهٔ دارویی و امور رگولاتوری', description: 'هانیا پرسان دارو مواد مؤثره، فرآورده‌های دارویی، مواد جانبی و مواد اولیهٔ غذایی و مکمل را برای ایران وارد می‌کند و ثبت آن‌ها در سازمان غذا و دارو را انجام می‌دهد. مستقر در تهران.' },
 };
-const { title = defaults[lang].title, description = defaults[lang].description, noindex = false, brand = 'default', schema = [], breadcrumbs = [], canonicalPath, ogType = 'website', image, onlyLang, keywords } = Astro.props;
+const { title = defaults[lang].title, description = defaults[lang].description, noindex = false, brand = 'default', schema = [], breadcrumbs = [], canonicalPath, ogType = 'website', image, onlyLang, skipLangs = [], keywords } = Astro.props;
 const site = Astro.site ?? new URL('https://hanpars.com');
 const socialImage = new URL(image || '/brand/hanpars-logo-transparent.png', site).href;
 const cleanPathEarly = (p: string) => (p.replace(/\.html$/, '').replace(/\/index$/, '').replace(/\/$/, '') || '/');
@@ -32,7 +32,7 @@ const website = { '@context': 'https://schema.org', '@type': 'WebSite', '@id': `
 const crumbs = breadcrumbs.length ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: breadcrumbs.map((b, i) => ({ '@type': 'ListItem', position: i + 1, name: b.name, item: new URL(b.path, site).href })) } : null;
 const ldBlocks = [org, website, ...(crumbs ? [crumbs] : []), ...schema];
 const altEn = new URL(cleanPath(basePath), site).href;
-const alternates = langs.filter(l => !onlyLang || l === onlyLang).map(l => ({ l, href: new URL(cleanPath(localePath(cleanPath(basePath), l)), site).href }));
+const alternates = langs.filter(l => (!onlyLang || l === onlyLang) && !skipLangs.includes(l)).map(l => ({ l, href: new URL(cleanPath(localePath(cleanPath(basePath), l)), site).href }));
 ---
 <!doctype html>
 <html lang={htmlLang[lang]} dir={dir(lang)}>

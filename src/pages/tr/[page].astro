@@ -30,6 +30,6 @@ const str = (...v: unknown[]) => (v.find(x => typeof x === 'string' && x) as str
 const seo = { title: `${name} | Hanpars`, description: str(data?.meta, data?.description, extra[page]?.description, s.footer.intro) };
 const crumbs = [{ name: s.breadcrumbHome, path: '/tr' }, { name, path: `/tr/${page}` }];
 ---
-<Layout title={seo.title} description={seo.description.slice(0, 200)} breadcrumbs={crumbs} keywords={pageKeywords(page, lang)} brand={page==='regulatory-affairs'?'regulatory':'default'}>
+<Layout skipLangs={page==='partners'?['fa']:[]} title={seo.title} description={seo.description.slice(0, 200)} breadcrumbs={crumbs} keywords={pageKeywords(page, lang)} brand={page==='regulatory-affairs'?'regulatory':'default'}>
   {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:page==='import-activity'?<ImportActivityPage/>:<StandardPage page={page as PageKey}/>}
 </Layout>
