@@ -1628,3 +1628,4 @@ html[lang=fa] :is(.num, .easy-num, .step2-num, .trio-num, .exc-num, .faq2-num, .
 .az-list a:hover { color:var(--lapis-deep); }
 .az-list small { display:block; color:var(--muted); font-size:13px; }
 .az-back { margin-top:24px; }
+.form-privacy { font-size:13px; color:var(--muted); line-height:1.6; margin:8px 0 0; max-width:60em; }

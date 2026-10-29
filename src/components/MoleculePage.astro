@@ -19,7 +19,8 @@ const faDesc = lang === 'en' ? '' : molDescL[lang][slug] || '';
 const title = mol.name.replace(/\bHCl\b/g, 'HCl');
 const pretty = (n: string) => n.charAt(0) + n.slice(1).toLowerCase().replace(/\bhcl\b/g, 'HCl').replace(/\bdihcl\b/g, 'DiHCl');
 const displayName = /[a-z]/.test(mol.name) ? mol.name : pretty(mol.name);
-const formulaHtml = (mol.formula || '').replace(/(\d+)/g, '<sub>$1</sub>').replace(/([+-])$/, '<sup>$1</sup>');
+// formula from PubChem: keep only formula characters before adding <sub>/<sup>, so upstream data can never inject markup
+const formulaHtml = String(mol.formula || '').replace(/[^A-Za-z0-9().+\-·]/g, '').replace(/(\d+)/g, '<sub>$1</sub>').replace(/([+-])$/, '<sup>$1</sup>');
 const mw = mol.mw ? Number(mol.mw).toLocaleString('en-US', { maximumFractionDigits: 2 }) : '';
 const stem = slug.split('-')[0];
 const related = Object.entries(all).filter(([k, v]) => k !== slug && k.split('-')[0] === stem && v.cid).slice(0, 8);
@@ -30,10 +31,10 @@ const locTitle = lang === 'tr' && locTitle0 ? locTitle0.charAt(0).toLocaleUpperC
 const esc = (x: string) => x.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const nameBoth = locTitle ? (lang === 'zh' ? `${locTitle}（${displayName}）` : `${locTitle} (${displayName})`) : displayName;
 const seoNote = ({
-  en: `${displayName}${mol.cas ? ' (CAS ' + mol.cas + ')' : ''}: sourcing and import of this active pharmaceutical ingredient (API) for manufacturers in Iran, with DMF/CEP and GMP documentation, by Haniya Parsan Darou Co. (Hanpars), importer of pharmaceutical raw materials and excipients.`,
-  fa: `${esc(nameBoth)}${mol.cas ? '، شمارهٔ CAS <bdi lang="en" dir="ltr">' + esc(mol.cas) + '</bdi>' : ''}: تأمین و واردات مادهٔ اولیهٔ دارویی (API) ${esc(locTitle || displayName)} با مستندات DMF/CEP و GMP برای تولیدکنندگان ایرانی؛ شرکت هانیا پرسان دارو واردکنندهٔ مواد اولیهٔ دارویی و مواد اولیهٔ جانبی (اکسیپینت) است.`,
-  zh: `${nameBoth}${mol.cas ? '，CAS号 ' + mol.cas : ''}：Hanpars（Haniya Parsan Darou）为伊朗制药企业采购和进口该原料药，并提供 DMF/CEP 和 GMP 文件。`,
-  tr: `${nameBoth}${mol.cas ? ', CAS ' + mol.cas : ''}: Bu etkin maddenin (API) İran’daki üreticiler için DMF/CEP ve GMP belgeleriyle tedariki ve ithalatı Haniya Parsan Darou Co. (Hanpars) tarafından yapılır.`,
+  en: `${displayName}${mol.cas ? ' (CAS ' + mol.cas + ')' : ''}: sourcing and import of this active pharmaceutical ingredient (API) for manufacturers in Iran on request, with DMF/CEP and GMP documentation, through Haniya Parsan Darou Co. (Hanpars), importer of pharmaceutical raw materials and excipients. Availability is confirmed per enquiry.`,
+  fa: `${esc(nameBoth)}${mol.cas ? '، شمارهٔ CAS <bdi lang="en" dir="ltr">' + esc(mol.cas) + '</bdi>' : ''}: تأمین و واردات مادهٔ اولیهٔ دارویی (API) ${esc(locTitle || displayName)} با مستندات DMF/CEP و GMP برای تولیدکنندگان ایرانی، در صورت استعلام؛ شرکت هانیا پرسان دارو واردکنندهٔ مواد اولیهٔ دارویی و مواد اولیهٔ جانبی (اکسیپینت) است. موجود بودن هر ماده هنگام استعلام اعلام می‌شود.`,
+  zh: `${nameBoth}${mol.cas ? '，CAS号 ' + mol.cas : ''}：Hanpars（Haniya Parsan Darou）可应要求为伊朗制药企业采购和进口该原料药，并提供 DMF/CEP 和 GMP 文件；供应情况以询盘确认为准。`,
+  tr: `${nameBoth}${mol.cas ? ', CAS ' + mol.cas : ''}: Bu etkin maddenin (API) İran’daki üreticiler için DMF/CEP ve GMP belgeleriyle tedariki ve ithalatı talep üzerine Haniya Parsan Darou Co. (Hanpars) aracılığıyla yapılır; temin durumu her talepte teyit edilir.`,
 } as Record<string, string>)[lang];
 
 ---

@@ -98,3 +98,4 @@ for kind, eu in ext_urls:
 if warnings: print(f'  {len(warnings)} external link warning(s)')
 print('== result:', 'OK' if not problems else f'{len(problems)} problem(s)')
 for p in problems: print('  -', p)
+sys.exit(1 if problems else 0)

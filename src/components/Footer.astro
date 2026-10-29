@@ -2,7 +2,7 @@
 import Icon from './Icon.astro';
 interface Props { brand?: 'default' | 'regulatory' }
 const { brand = 'default' } = Astro.props;
-import { langFromPath, localePath, t, dir } from '../i18n';
+import { langFromPath, localePath, stripLang, t, dir } from '../i18n';
 import { contactEmail, raEmail, mEnc, mShow } from '../data/site';
 const email = brand === 'regulatory' ? raEmail : contactEmail;
 const lang = langFromPath(Astro.url.pathname);
@@ -14,10 +14,12 @@ const f = ({
   zh: { name: 'Haniya Parsan Darou Co.（Hanpars）', reach: '联系我们', phone: '电话', email: '电子邮件', office: '总部', hoursLabel: '办公时间', offices: '我们的办公室', hq: '总部', partner: '合作伙伴办公室', wholesaler: '我们的独家批发商办事处', cities: ['德黑兰', '伊斯坦布尔', '杭州', '镇江'], countries: ['伊朗', '土耳其', '中国', '中国'], top: '返回顶部', enquire: '提交询价' },
   tr: { name: 'Haniya Parsan Darou Co.', reach: 'Bize ulaşın', phone: 'Telefon', email: 'E-posta', office: 'Genel merkez', hoursLabel: 'Çalışma saatleri', offices: 'Ofislerimiz', hq: 'Genel merkez', partner: 'Ortak ofis', wholesaler: 'Münhasır toptancımızın ofisi', cities: ['Tahran', 'İstanbul', 'Hangzhou', 'Zhenjiang'], countries: ['İran', 'Türkiye', 'Çin', 'Çin'], top: 'Başa dön', enquire: 'Talep gönderin' },
 } as const)[lang];
-const langs = [
-  { l: 'en', label: 'English', href: '/' }, { l: 'fa', label: 'فارسی', href: '/fa' },
-  { l: 'zh', label: '中文', href: '/zh' }, { l: 'tr', label: 'Türkçe', href: '/tr' },
-] as const;
+const path0 = stripLang(Astro.url.pathname);
+const switchPath = /^\/(home|404)(\.html)?\/?$/.test(path0) ? '/' : path0;  // keep the same page when switching language
+const langs = ([
+  { l: 'en', label: 'English' }, { l: 'fa', label: 'فارسی' },
+  { l: 'zh', label: '中文' }, { l: 'tr', label: 'Türkçe' },
+] as const).map(x => ({ ...x, href: localePath(switchPath, x.l) }));
 ---
 <footer class:list={['site-footer', { 'hanpars-zh-hans': lang === 'zh' }]} dir={dir(lang)}>
   <img class="ft-watermark" src={brand === 'regulatory' ? '/brand/hanpars-regulatory-light.png' : '/brand/hanpars-logo-transparent.png'} alt="" aria-hidden="true" width="222" height="123" loading="lazy" decoding="async" />

@@ -1,0 +1,39 @@
+name: Pin Python dependencies
+# Manual: resolves the exact Pillow wheel the news robot uses and records its SHA-256, so the nightly job
+# installs only that verified file (pip --require-hashes). Re-run deliberately to upgrade.
+on:
+  workflow_dispatch:
+    inputs:
+      pillow:
+        description: Pillow version
+        default: '11.3.0'
+permissions:
+  contents: write
+jobs:
+  pin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with: { ref: main }
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with: { python-version: '3.12' }
+      - name: Download the wheel and write requirements with hashes
+        run: |
+          set -e
+          V="${{ inputs.pillow }}"
+          pip download --quiet --no-deps --only-binary=:all: "pillow==${V}" -d wheels
+          {
+            echo "# Generated $(date -u +%F) by pin-python-deps.yml — do not edit by hand."
+            printf 'pillow==%s' "$V"
+            for w in wheels/*.whl; do printf ' \\\n    --hash=sha256:%s' "$(sha256sum "$w" | cut -d' ' -f1)"; done
+            echo
+          } > scripts/requirements-news.txt
+          cat scripts/requirements-news.txt
+          pip install --dry-run --require-hashes --no-deps --only-binary=:all: -r scripts/requirements-news.txt
+      - name: Commit
+        run: |
+          git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
+          git add scripts/requirements-news.txt
+          git diff --cached --quiet && exit 0
+          git commit -qm "Pin Python dependencies (pillow ${{ inputs.pillow }}) [skip ci]"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done

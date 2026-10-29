@@ -112,7 +112,12 @@ async function loadCatalogueRows(catalogue: HTMLElement) {
       const code = href && c ? `<a class="table-link table-link-muted" href="${href}">${escHtml(c)}</a>` : escHtml(c || '—');
       return `<tr data-catalogue-row data-status="${escHtml(g)}" data-search="${escHtml((n + ' ' + (loc || '') + ' ' + c).toLowerCase())}" data-index="${i}"><td dir="ltr" class="cat-cell">${name}</td><td class="table-code" dir="ltr">${code}</td><td><a class="table-request" href="${base}/contact-us-1?type=sourcing&product=${encodeURIComponent(n)}">${escHtml(enq)}</a></td></tr>`;
     }).join('');
-  } catch { /* keep server-rendered rows */ }
+  } catch {
+    // keep the server-rendered rows and point to the plain A–Z pages that list every entry
+    const st = catalogue.querySelector('[data-catalogue-status]');
+    const lg = document.documentElement.lang.slice(0, 2);
+    if (st) st.textContent = ({ fa: 'فهرست کامل بارگیری نشد؛ همهٔ موارد در فهرست الفبایی پایین صفحه هست.', zh: '完整列表未能加载；全部条目见下方 A–Z 索引。', tr: 'Tam liste yüklenemedi; tüm kayıtlar aşağıdaki A–Z dizininde.' } as Record<string, string>)[lg] || 'The full list could not be loaded; every entry is in the A–Z index below.';
+  }
 }
 for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]')) { void initCatalogue(catalogue); }
 async function initCatalogue(catalogue: HTMLElement) {
@@ -237,9 +242,15 @@ if (form) {
     // Bot filter: the hidden honeypot is ticked, or the form was "filled" faster than a person can (under 4 s).
     // Pretend success so the bot learns nothing, and send nothing.
     const trap = form.querySelector<HTMLInputElement>('.botcheck');
-    if ((trap && trap.checked) || Date.now() - formStart < 4000) {
+    if (trap && trap.checked) {
       form.reset(); selectType(type); syncChips();
       if (status) status.textContent = formI18n.sent || 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
+      return;
+    }
+    // Sent within 4 s of opening the page (often autofill): keep everything and ask the visitor to send again — never a false "sent".
+    if (Date.now() - formStart < 4000) {
+      const wait = ({ fa: 'لطفاً اطلاعات را یک بار دیگر بررسی کنید و چند ثانیهٔ دیگر دوباره روی «ارسال درخواست» بزنید.', zh: '请再核对一下信息，几秒钟后再次点击发送。', tr: 'Lütfen bilgileri bir kez daha kontrol edip birkaç saniye sonra yeniden gönderin.' } as Record<string, string>)[document.documentElement.lang.slice(0, 2)] || 'Please check your details once more and press send again in a few seconds.';
+      if (status) status.textContent = wait;
       return;
     }
     if (form.dataset.accessKey?.startsWith('PENDING')) {

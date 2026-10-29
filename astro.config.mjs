@@ -7,7 +7,6 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'never',
   build: { format: 'file' },
-  server: { host: '0.0.0.0', port: 3000 },
-  vite: { server: { allowedHosts: true } },
+  server: { host: '127.0.0.1', port: 3000 },
   integrations: [persianDigits(), seo({ site: 'https://hanpars.com' })],
 });

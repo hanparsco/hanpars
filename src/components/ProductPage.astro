@@ -64,10 +64,10 @@ const locForm = lang === 'en' ? '' : formL[lang](p.form, p.route);
 const locTitle = lang === 'tr' && locTitle0 ? locTitle0.charAt(0).toLocaleUpperCase('tr') + locTitle0.slice(1) : locTitle0;
 const nameBoth = locTitle ? (lang === 'zh' ? `${locTitle}（${title}）` : `${locTitle} (${title})`) : title;
 const seoNote = ({
-  en: `${title} ${formLabel.toLowerCase()}${p.strength ? ' ' + p.strength : ''}: import and supply of this medicine for the Iranian market by Haniya Parsan Darou Co. (Hanpars), pharmaceutical importer of finished medicines and APIs, including emergency (urgent) import on request.`,
-  fa: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}: واردات و تأمین این داروی خارجی برای بازار ایران توسط شرکت هانیا پرسان دارو، واردکنندهٔ دارو، فرآوردهٔ دارویی و مواد اولیهٔ دارویی؛ امکان استعلام برای واردات دارو به ایران، از جمله داروی فوریتی.`,
-  zh: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}：Hanpars（Haniya Parsan Darou）为伊朗市场进口和供应本品，并可应要求安排紧急进口。`,
-  tr: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}: Bu ilacın İran pazarına ithalatı ve tedariki Haniya Parsan Darou Co. (Hanpars) tarafından yapılır; talep üzerine acil ithalat da mümkündür.`,
+  en: `${title} ${formLabel.toLowerCase()}${p.strength ? ' ' + p.strength : ''}: import of this medicine into the Iranian market can be arranged on request through Haniya Parsan Darou Co. (Hanpars), pharmaceutical importer of finished medicines and APIs, including emergency (urgent) import. Availability and registration status are confirmed per enquiry.`,
+  fa: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}: امکان واردات و تأمین این داروی خارجی برای بازار ایران از طریق شرکت هانیا پرسان دارو، واردکنندهٔ دارو، فرآوردهٔ دارویی و مواد اولیهٔ دارویی، در صورت استعلام؛ از جمله داروی فوریتی. موجود بودن و وضعیت ثبت هر دارو هنگام استعلام اعلام می‌شود.`,
+  zh: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}：可应要求由 Hanpars（Haniya Parsan Darou）安排进口至伊朗市场，包括紧急进口；供应情况与注册状态以询盘确认为准。`,
+  tr: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}: Talep üzerine Haniya Parsan Darou Co. (Hanpars) aracılığıyla İran pazarına ithal edilebilir, acil ithalat dahil; temin ve ruhsat durumu her talepte teyit edilir.`,
 } as Record<string, string>)[lang];
 
 ---

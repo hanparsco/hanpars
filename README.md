@@ -10,3 +10,9 @@ Static Astro site for the Hanpars redesign, deployed to **https://hanpars.com** 
 - Photographs: Unsplash (free licence); list in `scripts/photos.txt`, fetched by CI via `scripts/fetch-photos.sh` into `public/photos/`.
 - `public/photos/hero-products*.jpg` and `products-shelf-full.jpg` are Hanpars' own photographs (supplied by the owner, 21 Oct 2026).
 - Contact form: posts to Web3Forms (`src/data/site.ts`). Set the repository secret/variable `PUBLIC_WEB3FORMS_KEY` (or edit the constant) once the key for contact@hanpars.com is issued.
+
+## Custom domain (important for recovery)
+The site is published by GitHub Actions to GitHub Pages. In this mode the custom domain is controlled by the repository's
+**Settings → Pages → Custom domain** (`hanpars.com`, with *Enforce HTTPS*), not by `public/CNAME`; the file is kept only
+for static-host fallbacks. When restoring into a new repository, set the custom domain there and keep the GoDaddy DNS
+records (apex A → GitHub Pages IPs, `www` CNAME → `<owner>.github.io`).

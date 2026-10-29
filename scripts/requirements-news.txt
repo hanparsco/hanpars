@@ -1,0 +1,1 @@
+# Placeholder — regenerated with hashes by the "Pin Python dependencies" workflow (.github/workflows/pin-python-deps.yml).
