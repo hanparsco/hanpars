@@ -1,0 +1,24 @@
+name: Probe (temporary)
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Probe Persian news sources
+        run: |
+          {
+          for u in https://www.daroovasalamat.ir/ https://www.daroovasalamat.ir/rss https://www.daroovasalamat.ir/feed https://www.daroovasalamat.ir/rss.xml https://doshanbehayedarouei.ir/ https://doshanbehayedarouei.ir/feed/ https://doshanbehayedarouei.ir/robots.txt https://doshanbehayedarouei.ir/wp-json/wp/v2/posts?per_page=3; do
+            echo "== $u"
+            curl -sL -A "Mozilla/5.0 (compatible; HanparsNewsBot/1.0)" -m 25 -o /tmp/p.out -w "%{http_code} %{content_type} %{size_download}\n" "$u" || echo "curl failed"
+            head -c 4000 /tmp/p.out; echo
+          done
+          echo "== links daroovasalamat"; curl -sL -A "Mozilla/5.0" -m 25 https://www.daroovasalamat.ir/ | grep -oiE '(href|src)="[^"]*(rss|feed|xml|news|khabar|akhbar)[^"]*"' | sort -u | head -40
+          echo "== links doshanbe"; curl -sL -A "Mozilla/5.0" -m 25 https://doshanbehayedarouei.ir/ | grep -oiE '<link[^>]*alternate[^>]*>|href="https://doshanbehayedarouei.ir/[^"]*"' | sort -u | head -60
+          } > probe.log 2>&1 || true
+          git config user.name hanpars-ci && git config user.email ci@hanpars.com
+          git fetch -q origin ci-report && git worktree add -q /tmp/rep origin/ci-report
+          cp probe.log /tmp/rep/probe.log
+          cd /tmp/rep && git add probe.log && git commit -qm "probe" && git push -q origin HEAD:ci-report
