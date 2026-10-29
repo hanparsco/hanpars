@@ -22,6 +22,12 @@ const icons: Record<string, string> = {
   clock: sv('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'),
 };
 const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, sent: c.sent, failed: c.failed, sending: c.sending, send: c.send });
+const privacyNote = ({
+        en: 'Privacy: the details you enter are sent through Web3Forms, a form-relay service, to the office e-mail of Haniya Parsan Darou Co. (Hanpars) in Tehran and are used to answer your enquiry. To ask what we hold about you, or to have it deleted, send a request through this form.',
+        fa: 'حریم خصوصی: اطلاعاتی که وارد می‌کنید از طریق سرویس ارسال فرم Web3Forms به ایمیل دفتر شرکت هانیا پرسان دارو در تهران فرستاده می‌شود و برای پاسخ به درخواست شما به کار می‌رود. برای اطلاع از اطلاعات ثبت‌شده یا درخواست حذف آن، از همین فرم استفاده کنید.',
+        zh: '隐私说明：您填写的信息将通过表单转发服务 Web3Forms 发送至德黑兰 Haniya Parsan Darou Co.（Hanpars）的办公邮箱，仅用于答复您的询盘。如需了解我们保存的信息或要求删除，请通过本表单提出。',
+        tr: 'Gizlilik: Girdiğiniz bilgiler Web3Forms form aktarım hizmeti aracılığıyla Tahran’daki Haniya Parsan Darou Co. (Hanpars) ofis e-postasına gönderilir ve talebinizi yanıtlamak için kullanılır. Hakkınızda tutulan bilgileri öğrenmek veya silinmesini istemek için bu formu kullanın.',
+      } as Record<string, string>)[lang];
 ---
 <PageHero title={c.title} category={c.category} description={c.lede} action={c.action} href="#enquiry"/>
 <section class="section section-paper contact-section"><div class:list={['container', 'contact-layout', { 'contact-layout-solo': lang === 'fa' }]}>
@@ -58,12 +64,7 @@ const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, se
       <div class="form-actions"><button class="button button-navy brief-submit" type="submit" data-send-brief>{c.send}</button>{lang !== 'fa' && <a class="text-link" href="#brief-form" data-or-email data-m={mEnc(contactEmail)}>{c.orEmail} <span dir="ltr" data-m-text>{mShow(contactEmail)}</span></a>}</div>
       <p class="form-status" id="brief-status" role="status" aria-live="polite"></p>
       <p class="form-disclaimer">{c.disclaimer}</p>
-      <p class="form-privacy">{({
-        en: 'Privacy: the details you enter are sent through Web3Forms, a form-relay service, to the office e-mail of Haniya Parsan Darou Co. (Hanpars) in Tehran and are used to answer your enquiry. To ask what we hold about you, or to have it deleted, send a request through this form.',
-        fa: 'حریم خصوصی: اطلاعاتی که وارد می‌کنید از طریق سرویس ارسال فرم Web3Forms به ایمیل دفتر شرکت هانیا پرسان دارو در تهران فرستاده می‌شود و برای پاسخ به درخواست شما به کار می‌رود. برای اطلاع از اطلاعات ثبت‌شده یا درخواست حذف آن، از همین فرم استفاده کنید.',
-        zh: '隐私说明：您填写的信息将通过表单转发服务 Web3Forms 发送至德黑兰 Haniya Parsan Darou Co.（Hanpars）的办公邮箱，仅用于答复您的询盘。如需了解我们保存的信息或要求删除，请通过本表单提出。',
-        tr: 'Gizlilik: Girdiğiniz bilgiler Web3Forms form aktarım hizmeti aracılığıyla Tahran’daki Haniya Parsan Darou Co. (Hanpars) ofis e-postasına gönderilir ve talebinizi yanıtlamak için kullanılır. Hakkınızda tutulan bilgileri öğrenmek veya silinmesini istemek için bu formu kullanın.',
-      } as Record<string, string>)[lang]}</p>
+      <p class="form-privacy">{privacyNote}</p>
     </form>
   </div>
   {lang !== 'fa' && <aside class="contact-aside"><h3>{c.asideTitle}</h3><p>{c.asideText}</p>
