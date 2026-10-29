@@ -34,6 +34,8 @@ const en: Record<string, string[]> = {
   nutrition: ['supplement ingredients', 'nutraceutical ingredients', 'vitamins', 'minerals', 'omega-3', 'probiotics', 'collagen', 'botanical extracts', 'vitamin D3', 'food supplement raw materials'],
   'regulatory-affairs': ['regulatory affairs', 'drug registration Iran', 'IFDA', 'Iran FDA registration', 'IRC code', 'CTD', 'eCTD', 'dossier preparation', 'GMP', 'EMA', 'FDA', 'TİTCK', 'pharmacovigilance', 'regulatory consulting'],
   'fdf-cdmo': ['CDMO', 'contract manufacturing', 'contract development', 'formulation development', 'technology transfer', 'licensed manufacturing'],
+  'china-to-iran': ['export medicines to Iran', 'export API to Iran', 'China to Iran pharmaceutical export', 'Iran drug registration process', 'IFDA registration', 'IRC code Iran', 'Iran pharmaceutical importer', 'letter of authorisation Iran', 'CTD dossier Iran', 'Iran import licence medicines', 'Chinese pharmaceutical manufacturers Iran'],
+  partners: ['pharmaceutical importer Iran', 'marketing authorisation holder Iran', 'Iran registration partner', 'IFDA licensed importer', 'Iran market entry pharmaceuticals', 'distributor Iran medicines'],
   'about-us': ['Hanpars', 'Haniya Parsan Darou', 'pharmaceutical importer Tehran'],
   markets: ['pharmaceutical suppliers China', 'pharmaceutical suppliers India', 'pharmaceutical suppliers Türkiye', 'pharmaceutical suppliers Europe', 'drug distribution Iran'],
   culture: ['pharmaceutical sourcing', 'documented supply'],

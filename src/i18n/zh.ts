@@ -16,6 +16,7 @@ export const zh: UI = {
     ] },
     { label: '服务', items: [
       { label: '面向中国药企', href: '/partners', note: '您在伊朗的持牌进口商与合作伙伴' },
+      { label: '出口伊朗指南', href: '/china-to-iran', note: '中国药品与原料药如何进入伊朗' },
       { label: '注册事务', href: '/regulatory-affairs', note: '注册资料、IFDA 申报与生命周期管理' },
       { label: '制剂 CDMO', href: '/fdf-cdmo', note: '开发与生产项目' },
     ] },

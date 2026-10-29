@@ -26,6 +26,7 @@ const extra: Record<string, { title: string; description: string }> = {
   'news': { title: s.news.title, description: '每日全球医药要闻及中国制剂/原料药资讯，每天早晨更新，附来源与链接。' },
 };
 const zhTitle: Record<string, string> = {
+  'china-to-iran': '中国药品与原料药如何出口到伊朗：IFDA 注册、持牌进口商、所需资料 | Hanpars',
   partners: '中国药企出海伊朗：伊朗药品注册、进口与分销合作伙伴 | Hanpars',
   'fdf-cdmo': '伊朗药品合同生产与授权生产（CDMO）：中国制剂企业进入伊朗 | Hanpars',
   'regulatory-affairs': '伊朗药品注册代理（IFDA 注册、IRC 编码、CTD 资料）| Hanpars',
@@ -39,6 +40,6 @@ const str = (...v: unknown[]) => (v.find(x => typeof x === 'string' && x) as str
 const seo = { title: zhTitle[page] || `${name} | Hanpars`, description: str(data?.meta, data?.description, extra[page]?.description, s.footer.intro) };
 const crumbs = [{ name: s.breadcrumbHome, path: '/zh' }, { name, path: `/zh/${page}` }];
 ---
-<Layout skipLangs={page==='partners'?['fa']:[]} title={seo.title} description={seo.description.slice(0, 200)} breadcrumbs={crumbs} keywords={pageKeywords(page, lang)} brand={page==='regulatory-affairs'?'regulatory':'default'}>
+<Layout skipLangs={page==='partners'?['fa']:page==='china-to-iran'?['fa','tr']:[]} title={seo.title} description={seo.description.slice(0, 200)} breadcrumbs={crumbs} keywords={pageKeywords(page, lang)} brand={page==='regulatory-affairs'?'regulatory':'default'}>
   {page==='regulatory-affairs'?<RegulatoryPage/>:page==='contact-us-1'?<ContactPage/>:page==='blog-1'?<InsightsPage/>:page==='news'?<NewsPage/>:page==='import-activity'?<ImportActivityPage/>:<StandardPage page={page as PageKey}/>}
 </Layout>

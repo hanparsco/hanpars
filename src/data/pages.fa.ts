@@ -2,7 +2,7 @@ import type { PageKey } from './pages';
 
 type FaPage = { title:string; category:string; description:string; meta:string; introTitle:string; intro:readonly string[]; databaseLabel?:string; cards?:readonly {title:string; text:string; link?:string}[] };
 
-export const pagesFa: Record<Exclude<PageKey, 'partners'>, FaPage> = {
+export const pagesFa: Record<Exclude<PageKey, 'partners' | 'china-to-iran'>, FaPage> = {
   api: {
     title: 'مواد مؤثرهٔ دارویی', category: 'محصولات',
     description: 'فهرست مرجعی از موادی که بیشترین استعلام را دارند. مادهٔ خود را بیابید، مشخصات و مقصد را بگویید؛ ما با پیشنهاد تولیدکنندگان طرف همکاری‌مان به شما پاسخ می‌دهیم.',

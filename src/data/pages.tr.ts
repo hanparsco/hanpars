@@ -2,7 +2,7 @@ import type { PageKey } from './pages';
 
 type LPage = { title:string; category:string; description:string; meta:string; introTitle:string; intro:readonly string[]; databaseLabel?:string; cards?:readonly {title:string; text:string; link?:string}[] };
 
-export const pagesTr: Record<PageKey, LPage> = {
+export const pagesTr: Record<Exclude<PageKey, 'china-to-iran'>, LPage> = {
   api: {
     title: 'Etkin maddeler (API)', category: 'Ürünler',
     description: 'Hakkında en sık bilgi istenen maddelerden oluşan bir referans listesi. Maddenizi bulun, spesifikasyonu ve hedef pazarı bize iletin; üreticilerimizin neler sunabileceğiyle size geri dönelim.',

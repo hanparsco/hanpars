@@ -91,6 +91,14 @@ export const pagesZh: Record<PageKey, LPage> = {
     intro: ['Hanpars 持有进口许可和产品注册，自行编制注册资料，并以书面形式向您汇报。'],
     cards: [],
   },
+  'china-to-iran': {
+    title: '中国药品与原料药如何出口到伊朗', category: '指南',
+    description: '中国制剂和原料药进入伊朗的路径：IFDA 注册、所需资料、决定项目走向的事实，以及各方职责。',
+    meta: '中国药企出口伊朗指南：制剂（FDF）和原料药（API）如何通过 IFDA 持牌进口商在伊朗注册、取得 IRC 编码、办理进口；授权书、CTD 与 GMP 资料、进口许可、本地授权生产和常见误区。Hanpars（德黑兰）撰写，杭州、镇江设有办公室。',
+    introTitle: '中国药品和原料药如何进入伊朗',
+    intro: ['产品通过 IFDA 持牌进口商进入伊朗：由其注册、进口并持续负责。'],
+    cards: [],
+  },
   'fdf-cdmo': {
     title: '中国药企进入伊朗：注册与合同开发生产', category: '服务',
     description: '面向中国制剂企业和 CDMO：从市场评估、IFDA 注册、进口上市到伊朗本地技术转移，由 Hanpars 一个团队统筹。',

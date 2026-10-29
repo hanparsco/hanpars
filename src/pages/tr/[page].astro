@@ -12,12 +12,12 @@ import { pageKeywords } from '../../data/seo-keywords';
 import { t } from '../../i18n';
 
 export function getStaticPaths() {
-  return [...Object.keys(pages), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news', 'import-activity'].map(page=>({params:{page}}));
+  return [...Object.keys(pages).filter(k => k !== 'china-to-iran'), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news', 'import-activity'].map(page=>({params:{page}}));
 }
 const lang = 'tr' as const;
 const s = t(lang);
 const page = Astro.params.page!;
-const data = (pagesL[lang] as any)[page as PageKey];
+const data = (pagesL[lang] as any)[page];
 const extra: Record<string, { title: string; description: string }> = {
   'regulatory-affairs': { title: s.regulatory.title, description: 'İran için düzenleyici işler: IFDA ruhsat stratejisi, CTD dosyaları, GMP denetim hazırlığı ve yaşam döngüsü yönetimi; İran pazarına girecek üreticiler için.' },
   'contact-us-1': { title: s.contact.title, description: 'Hanpars Tahran’da: bitmiş ilaç, API, yardımcı madde, takviye hammaddeleri ve IFDA ruhsatlandırma talepleriniz için iletişime geçin. contact@hanpars.com' },

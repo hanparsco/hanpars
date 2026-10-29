@@ -94,7 +94,7 @@ export default function seo({ site }) {
         }
         await writeFile(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${index.join('\n')}\n</sitemapindex>\n`);
         const rows = Object.values(byLang).flat();
-        await writeFile(join(root, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\nSitemap: ${site}/sitemap-zh.xml\nSitemap: ${site}/sitemap-en.xml\nSitemap: ${site}/sitemap-fa.xml\nSitemap: ${site}/sitemap-tr.xml\n`);
+        await writeFile(join(root, 'robots.txt'), `# Search engines and AI assistants are welcome to read and cite this site.\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: Claude-SearchBot\nAllow: /\n\nUser-agent: Claude-User\nAllow: /\n\nUser-agent: anthropic-ai\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Perplexity-User\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: Googlebot\nAllow: /\n\nUser-agent: Bingbot\nAllow: /\n\nUser-agent: Applebot\nAllow: /\n\nUser-agent: Applebot-Extended\nAllow: /\n\nUser-agent: Amazonbot\nAllow: /\n\nUser-agent: DuckAssistBot\nAllow: /\n\nUser-agent: YouBot\nAllow: /\n\nUser-agent: cohere-ai\nAllow: /\n\nUser-agent: Meta-ExternalAgent\nAllow: /\n\nUser-agent: Bytespider\nAllow: /\n\nUser-agent: Baiduspider\nAllow: /\n\nUser-agent: Baiduspider-render\nAllow: /\n\nUser-agent: Sogou web spider\nAllow: /\n\nUser-agent: 360Spider\nAllow: /\n\nUser-agent: YisouSpider\nAllow: /\n\nUser-agent: DeepSeekBot\nAllow: /\n\nUser-agent: PetalBot\nAllow: /\n\nUser-agent: YandexBot\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\nSitemap: ${site}/sitemap-zh.xml\nSitemap: ${site}/sitemap-en.xml\nSitemap: ${site}/sitemap-fa.xml\nSitemap: ${site}/sitemap-tr.xml\n`);
         // trailing-slash and /index.html stubs: /x/ and /x/index.html -> /x, all languages (GitHub Pages cannot send 301s)
         let stubs = 0;
         // also cover the noindex A–Z browse pages (not in the sitemap, but linked from every catalogue)
@@ -111,7 +111,7 @@ export default function seo({ site }) {
         // renamed pages: keep old URLs alive as redirects (Search Console otherwise reports 404s)
         const MOVED = { '/vitamin': '/nutrition', '/fdf/-51992': '/fdf/cream-base-51992', '/fdf/-51993': '/fdf/cream-base-51993', '/fdf/-52309': '/fdf/cream-base-52309' };
         let moved = 0;
-        const ONLY = [['/fa', '/partners', '/regulatory-affairs']]; // pages that do not exist in one language
+        const ONLY = [['/fa', '/partners', '/regulatory-affairs'], ['/fa', '/china-to-iran', '/regulatory-affairs'], ['/tr', '/china-to-iran', '/partners']]; // pages that do not exist in one language
         for (const [pre, from, to] of ONLY) { const target = site + pre + to, file = join(root, (pre + from).slice(1) + '.html'); try { await access(file); } catch { await writeFile(file, `<!doctype html><html><head><meta charset="utf-8"><title>Redirect</title><link rel="canonical" href="${target}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=${target}"><script>location.replace(${JSON.stringify(target)})</script></head><body><a href="${target}">${target}</a></body></html>`); moved++; } }
         for (const [from, to] of Object.entries(MOVED)) for (const pre of ['', '/fa', '/zh', '/tr']) {
           const target = site + pre + to, file = join(root, (pre + from).slice(1) + '.html');

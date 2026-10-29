@@ -62,6 +62,7 @@ const base = {
       ] },
       { label: 'Services', items: [
         { label: 'For foreign manufacturers', href: '/partners', note: 'Your licensed importer and partner in Iran' },
+        { label: 'China to Iran: export guide', href: '/china-to-iran', note: 'How medicines and APIs from China enter Iran' },
         { label: 'Regulatory affairs', href: '/regulatory-affairs', note: 'Dossiers, IFDA submissions, lifecycle' },
         { label: 'Finished Dosage Form CDMO', href: '/fdf-cdmo', note: 'Development and manufacturing projects' },
       ] },

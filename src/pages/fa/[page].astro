@@ -11,7 +11,7 @@ import { pagesFa } from '../../data/pages.fa';
 import { pageKeywords } from '../../data/seo-keywords';
 
 export function getStaticPaths() {
-  return [...Object.keys(pages).filter(k => k !== 'partners'), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news', 'import-activity'].map(page=>({params:{page}}));
+  return [...Object.keys(pages).filter(k => k !== 'partners' && k !== 'china-to-iran'), 'regulatory-affairs', 'contact-us-1', 'blog-1', 'news', 'import-activity'].map(page=>({params:{page}}));
 }
 const page = Astro.params.page!;
 const special: Record<string, { title: string; description: string }> = {

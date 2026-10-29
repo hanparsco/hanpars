@@ -97,6 +97,15 @@ export const pages = {
     cards: [],
     photo: 'tehran-alborz', photoAlt: 'Tehran beneath the snow-covered Alborz mountains',
   },
+  'china-to-iran': {
+    title: 'Exporting medicines and APIs from China to Iran', category: 'Guide',
+    description: 'How finished medicines and active ingredients from China enter Iran: the IFDA route, the documents, the facts that shape a project, and who does what.',
+    meta: 'Guide for Chinese pharmaceutical manufacturers: how to export finished medicines (FDF) and APIs to Iran. IFDA registration through a licensed Iranian importer, IRC code, LoA, CTD and GMP documents, import licences, local manufacturing and common mistakes. By Hanpars, Tehran, with offices in Hangzhou and Zhenjiang.',
+    introTitle: 'How medicines and APIs from China reach Iran',
+    intro: ['Products enter through an IFDA-licensed importer that registers, imports and remains responsible for them.'],
+    cards: [],
+    photo: 'tehran-alborz', photoAlt: 'Tehran beneath the snow-covered Alborz mountains',
+  },
   'fdf-cdmo': {
     title: 'Finished dosage form CDMO', category: 'Services',
     description: 'Contract development and manufacturing of finished dosage forms for the Iranian market: one project team from formulation and technology transfer to IFDA registration and supply.',
