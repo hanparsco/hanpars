@@ -10,13 +10,13 @@ jobs:
       - name: Probe Persian news sources
         run: |
           {
-          for u in https://www.daroovasalamat.ir/ https://www.daroovasalamat.ir/rss https://www.daroovasalamat.ir/feed https://www.daroovasalamat.ir/rss.xml https://doshanbehayedarouei.ir/ https://doshanbehayedarouei.ir/feed/ https://doshanbehayedarouei.ir/robots.txt https://doshanbehayedarouei.ir/wp-json/wp/v2/posts?per_page=3; do
-            echo "== $u"
-            curl -sL -A "Mozilla/5.0 (compatible; HanparsNewsBot/1.0)" -m 25 -o /tmp/p.out -w "%{http_code} %{content_type} %{size_download}\n" "$u" || echo "curl failed"
-            head -c 4000 /tmp/p.out; echo
+          for u in https://www.daroovasalamat.ir/ http://www.daroovasalamat.ir/ https://daroovasalamat.ir/ http://daroovasalamat.ir/; do
+            echo "== $u"; curl -sSL -v -A "Mozilla/5.0" -m 30 -o /tmp/p.out "$u" 2>&1 | grep -vE "^\{|^\}|^\*  (CA|SSL|TLS|subject|start|expire|issuer|ALPN)" | head -30; echo "--- body:"; head -c 1500 /tmp/p.out 2>/dev/null; echo
           done
-          echo "== links daroovasalamat"; curl -sL -A "Mozilla/5.0" -m 25 https://www.daroovasalamat.ir/ | grep -oiE '(href|src)="[^"]*(rss|feed|xml|news|khabar|akhbar)[^"]*"' | sort -u | head -40
-          echo "== links doshanbe"; curl -sL -A "Mozilla/5.0" -m 25 https://doshanbehayedarouei.ir/ | grep -oiE '<link[^>]*alternate[^>]*>|href="https://doshanbehayedarouei.ir/[^"]*"' | sort -u | head -60
+          echo "== dns"; dig +short www.daroovasalamat.ir A; dig +short daroovasalamat.ir A; dig +short www.daroovasalamat.ir NS; dig +short daroovasalamat.ir NS
+          echo "== doshanbe categories"; curl -sL -A "Mozilla/5.0" -m 25 "https://doshanbehayedarouei.ir/wp-json/wp/v2/categories?per_page=50" | python3 -c "import json,sys;[print(c['id'],c['slug'],c['name'],c['count']) for c in json.load(sys.stdin)]"
+          echo "== doshanbe feed items"; curl -sL -A "Mozilla/5.0" -m 25 https://doshanbehayedarouei.ir/feed/ | grep -oE "<title>[^<]*</title>|<pubDate>[^<]*</pubDate>|<category><!\[CDATA\[[^]]*" | head -60
+          echo "== doshanbe post sample"; curl -sL -A "Mozilla/5.0" -m 25 "https://doshanbehayedarouei.ir/wp-json/wp/v2/posts?per_page=5&_fields=id,date_gmt,link,title,excerpt,jetpack_featured_media_url,featured_media,categories" 
           } > probe.log 2>&1 || true
           git config user.name hanpars-ci && git config user.email ci@hanpars.com
           git fetch -q origin ci-report && git worktree add -q /tmp/rep origin/ci-report
