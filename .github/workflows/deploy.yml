@@ -139,8 +139,18 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Check the live site after deployment
-        run: sleep 90 && python3 scripts/live-check.py
+        run: |
+          sleep 90
+          python3 scripts/live-check.py 2>&1 | tee live-check.log
+          exit ${PIPESTATUS[0]}
+      - name: Publish live-check log (ci-report branch)
+        if: always()
+        run: |
+          git config user.name hanpars-ci && git config user.email ci@hanpars.com
+          git fetch -q origin ci-report && git worktree add -q /tmp/rep origin/ci-report
+          cp live-check.log /tmp/rep/live-check.log
+          cd /tmp/rep && git add live-check.log && git commit -qm "live check ${GITHUB_SHA::7}" && git push -q origin HEAD:ci-report || true

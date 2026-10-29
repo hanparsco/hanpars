@@ -8,7 +8,7 @@ const L = (p: string) => localePath(p, lang);
 const num = (i: number) => (lang === 'fa' ? String(i + 1) : String(i + 1).padStart(2, '0'));
 const svcIcons = ['search', 'shield', 'molecule', 'layers', 'file', 'globe'];
 const formIcons = ['capsule', 'shield', 'box'];
-const routeIcons = ['globe', 'layers'];
+const routeIcons = ['globe', 'layers', 'shield'];
 const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور رگولاتوری', zh: '注册事务服务', tr: 'Ruhsatlandırma hizmetleri' } as const)[lang];
 ---
 <section class="section cd-intro">
@@ -80,6 +80,24 @@ const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور �
   </div>
 </section>
 
+<section class="section cd-lic" id="licensed-manufacturing">
+  <div class="container">
+    <div class="cd-lic-head"><span class="cd-tag cd-tag-light">{c.routes[2]?.tag}</span><h2>{c.licTitle}</h2><p class="cd-lic-lede">{c.licLede}</p></div>
+    <div class="cd-lic-why">
+      {c.licWhy.map((w, i) => <article class="cd-why"><span class="cd-num" aria-hidden="true">{num(i)}</span><h3>{w.title}</h3><p>{w.text}</p></article>)}
+    </div>
+    <div class="cd-lic-scope">
+      {c.licScope.map((col, k) => (
+        <div class:list={['cd-scope', { 'cd-scope-accent': k === 0 }]}>
+          <h3>{col.title}</h3>
+          <ul>{col.items.map((it) => <li><Icon name="check" size={17} class="cd-check" /><span>{it}</span></li>)}</ul>
+        </div>
+      ))}
+    </div>
+    <p class="cd-lic-note">{c.licNote}</p>
+  </div>
+</section>
+
 <section class="section section-paper cd-roles-sec">
   <div class="container">
     <div class="section-head"><h2>{c.rolesTitle}</h2></div>
@@ -118,8 +136,8 @@ const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور �
   .cd-ico { display:inline-grid; place-items:center; width:42px; height:42px; flex:none; border-radius:12px; background:var(--glacier-soft); color:var(--lapis-deep); }
   .cd-check { flex:none; margin-top:4px; color:var(--lapis); }
 
-  .cd-route-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
-  .cd-route { display:flex; flex-direction:column; gap:14px; padding:28px; border:1px solid var(--line); border-radius:20px; background:var(--white); }
+  .cd-route-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+  .cd-route { display:flex; flex-direction:column; gap:14px; padding:26px 24px; border:1px solid var(--line); border-radius:20px; background:var(--white); }
   .cd-route-top { display:flex; align-items:center; gap:12px; }
   .cd-tag { font-size:14px; font-weight:600; color:var(--lapis-deep); }
   .cd-route p { margin:0; color:var(--muted); }
@@ -161,6 +179,24 @@ const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور �
   .cd-stat p { margin:2px 0 0; font-size:14.5px; line-height:1.5; color:var(--muted); }
   .cd-note { margin:18px 0 0; padding-top:16px; border-top:1px solid var(--line); font-size:15px; color:var(--muted); }
 
+  .cd-lic { background:var(--black); color:var(--on-navy); }
+  .cd-lic h2, .cd-lic h3 { color:#fff; }
+  .cd-lic-head { max-width:860px; margin-bottom:36px; }
+  .cd-tag-light { display:inline-block; margin-bottom:14px; color:var(--glacier); }
+  .cd-lic-lede { margin:16px 0 0; font-size:18px; color:var(--on-navy); }
+  .cd-lic-why { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; margin-bottom:28px; }
+  .cd-why { padding:20px 0 0; border-top:1px solid #ffffff2e; }
+  .cd-why .cd-num { display:block; margin-bottom:12px; color:var(--glacier); }
+  .cd-why h3 { font-size:18px; margin-bottom:8px; }
+  .cd-why p { margin:0; font-size:15.5px; line-height:1.55; color:var(--on-navy-muted); }
+  .cd-lic-scope { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+  .cd-scope { padding:26px; border-radius:20px; border:1px solid #ffffff2e; }
+  .cd-scope-accent { background:#ffffff0d; border-color:#ffffff3d; }
+  .cd-scope h3 { margin-bottom:14px; font-size:19px; }
+  .cd-scope ul { list-style:none; padding:0; margin:0; display:grid; gap:10px; }
+  .cd-scope li { display:flex; gap:10px; align-items:flex-start; line-height:1.5; font-size:16px; }
+  .cd-scope .cd-check { color:var(--glacier); }
+  .cd-lic-note { margin:22px 0 0; padding-top:16px; border-top:1px solid #ffffff2e; font-size:15px; color:var(--on-navy-muted); max-width:860px; }
   .cd-roles { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
   .cd-role { padding:28px; border-radius:20px; background:var(--white); border:1px solid var(--line); }
   .cd-role h3 { margin-bottom:14px; }
@@ -179,14 +215,16 @@ const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور �
   .cd-arrow { margin-inline-start:10px; }
   :global([dir=rtl]) .cd-arrow { transform:scaleX(-1); }
 
-  :global([dir=rtl]) .cd-intro-copy p, :global([dir=rtl]) .cd-route p, :global([dir=rtl]) .cd-svc p, :global([dir=rtl]) .cd-step p, :global([dir=rtl]) .cd-forms p, :global([dir=rtl]) .cd-stat p, :global([dir=rtl]) .cd-limits p, :global([dir=rtl]) .cd-role li, :global([dir=rtl]) .cd-route li { line-height:1.7; }
+  :global([dir=rtl]) .cd-intro-copy p, :global([dir=rtl]) .cd-route p, :global([dir=rtl]) .cd-svc p, :global([dir=rtl]) .cd-step p, :global([dir=rtl]) .cd-forms p, :global([dir=rtl]) .cd-stat p, :global([dir=rtl]) .cd-limits p, :global([dir=rtl]) .cd-role li, :global([dir=rtl]) .cd-route li, :global([dir=rtl]) .cd-why p, :global([dir=rtl]) .cd-scope li, :global([dir=rtl]) .cd-lic-lede, :global([dir=rtl]) .cd-lic-note { line-height:1.7; }
 
   @media (max-width:1100px) {
+    .cd-lic-why { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .cd-route-grid { grid-template-columns:1fr; }
     .cd-steps { grid-template-columns:repeat(3,minmax(0,1fr)); row-gap:28px; }
     .cd-split { grid-template-columns:1fr; }
   }
   @media (max-width:860px) {
-    .cd-intro-grid, .cd-route-grid, .cd-roles, .cd-brief { grid-template-columns:1fr; }
+    .cd-intro-grid, .cd-roles, .cd-brief, .cd-lic-scope { grid-template-columns:1fr; }
     .cd-svc-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
     .cd-brief { align-items:start; }
   }
@@ -198,7 +236,9 @@ const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور �
     .cd-step, :global([dir=rtl]) .cd-step { padding:0 0 22px; padding-inline-start:28px; border-top:0; border-inline-start:1px solid #ffffff2e; }
     .cd-step::before { top:4px; inset-inline-start:-5px; }
     .cd-step-num { margin:0 0 8px; font-size:24px; }
-    .cd-route, .cd-role, .cd-focus { padding:22px; }
+    .cd-route, .cd-role, .cd-focus, .cd-scope { padding:22px; }
+    .cd-lic-why { grid-template-columns:1fr; gap:4px; }
+    .cd-lic-lede { font-size:17px; }
     .cd-intro-copy p { font-size:17px; }
   }
 </style>
