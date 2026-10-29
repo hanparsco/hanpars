@@ -8,13 +8,15 @@ BASE = 'https://hanpars.com'
 UA = 'Mozilla/5.0 (compatible; HanparsLiveCheck/1.0)'
 ctx = ssl.create_default_context()
 problems = []
-def req(url, method='GET'):
-    """No-redirect request: returns (status, location, body)."""
+def req(url, method='GET', _retry=2):
+    """No-redirect request: returns (status, location, body). A 5xx (GitHub Pages hiccup right after a deploy) is retried."""
     u = urlsplit(url)
     C = http.client.HTTPSConnection if u.scheme == 'https' else http.client.HTTPConnection
     c = C(u.netloc, timeout=30, **({'context': ctx} if u.scheme == 'https' else {}))
     c.request(method, (u.path or '/') + (('?' + u.query) if u.query else ''), headers={'User-Agent': UA})
     r = c.getresponse(); body = r.read() if method == 'GET' else b''
+    if r.status >= 500 and _retry > 0:
+        time.sleep(15); return req(url, method, _retry - 1)
     return r.status, r.getheader('Location') or '', body
 def expect(url, status, loc=None):
     try: s, l, b = req(url)
