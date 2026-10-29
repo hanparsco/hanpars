@@ -39,7 +39,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
     ? pick([nameFa ? `${nameFa} (${name}) ${fFormShort}${strength ? ' ' + strength : ''}${extraFa}${codeFa} | هانیا پرسان دارو` : '', `${core} | تأمین و واردات | هانیا پرسان دارو`, `${core} | هانیا پرسان دارو`, `${core} | تأمین و واردات`, core].filter(Boolean))
     : pick([`${coreEn} | Supplier in Iran | Hanpars`, `${coreEn} | Hanpars`, coreEn]);
   const ind0 = lang === 'en' ? (en?.indications || '') : (fa?.indications || en?.indications || '');
-  const ind = ind0.replace(/^\s*(موارد مصرف|适应症|Endikasyonlar|Indications(?: and usage)?)\s*[:：]\s*/i, '');
+  const ind = ind0.replace(/^\s*(موارد مصرف|适应症(?:与用法)?|Endikasyonlar(?: ve kullanım)?|Indications(?: and usage)?)\s*[:：]\s*/i, '');
   const description = lang === 'zh'
     ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}，编号 ${entry.code}，${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '，' + strength : ''}${p.pack ? '，' + p.pack : ''}。${ind ? '适应症：' + ind + ' ' : ''}Hanpars 负责该产品在伊朗市场的采购、进口与注册，可提供紧急进口及相关文件支持。`, 150)
     : lang === 'tr'
