@@ -17,7 +17,7 @@ const T = ({
 const label = letter === '0-9' ? '0–9' : letter.toUpperCase();
 ---
 <section class="section az-page"><div class="container">
-  <p class="az-kicker">{T[type]} · {T.az}</p>
+  <p class="az-kicker">{T[type]}{lang === 'fa' ? '، ' : ' · '}{T.az}</p>
   <h1 class="az-h1"><span dir="ltr">{label}</span></h1>
   <nav class="az-nav" aria-label={T.az} dir="ltr">{[...groups.keys()].map(k => <a href={L(`/${type}/a-z/${k}`)} aria-current={k === letter ? 'page' : undefined}>{k === '0-9' ? '0–9' : k.toUpperCase()}</a>)}</nav>
   <p class="az-count">{T.n(items.length)}</p>
