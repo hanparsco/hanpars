@@ -72,11 +72,12 @@ jobs:
           git fetch -q origin ci-report && git worktree add -q /tmp/rep origin/ci-report
           cp /tmp/build.log /tmp/rep/build.log
           cd /tmp/rep && git add build.log && git commit -qm "build log ${GITHUB_SHA::7}" && git push -q origin HEAD:ci-report || true
+      - name: SEO release gate (canonicals, hreflang, JSON-LD, sitemap/noindex, compatibility stubs)
+        run: node scripts/seo-audit.mjs dist --strict
       - name: SEO audit (report to ci-report branch)
         if: github.ref == 'refs/heads/main'
         continue-on-error: true
         run: |
-          node scripts/seo-audit.mjs dist
           git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
           cp seo-audit.json /tmp/seo-audit.json
           git fetch -q origin ci-report && git worktree add -q /tmp/rep origin/ci-report

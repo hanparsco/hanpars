@@ -69,6 +69,28 @@ for u in sample:
         except Exception as e: issues.append(f'hreflang {code} {href} {e}')
     if issues: problems.append(f'{u}: ' + '; '.join(issues)); print(f'  BAD {u}: ' + '; '.join(issues))
 print(f'  checked {len(sample)} pages and {len(alts_checked)} alternates')
+print('== repaired cohorts (regression fixtures)')
+for pre in ('', '/fa', '/zh', '/tr'):
+    for q in ('/api', '/fdf-cdmo', '/api/a-z/a', '/fdf/a-z/a'):
+        for u in (BASE + pre + q + '/', BASE + pre + q + '/index.html'):
+            try:
+                st, loc, body = req(u); h = body.decode('utf-8', 'replace')
+                ok = st == 200 and 'http-equiv="refresh"' in h and 'noindex' in h and f'href="{BASE}{pre}{q}"' in h
+                if not ok: problems.append(f'compat {u}: {st}')
+            except Exception as e: problems.append(f'compat {u}: {e}')
+    try:
+        st, loc, body = req(BASE + pre + '/contact-us-1?type=sourcing&product=Test')
+        h = body.decode('utf-8', 'replace'); canon = re.search(r'<link rel="canonical" href="([^"]+)"', h)
+        if st != 200 or not canon or canon.group(1) != BASE + pre + '/contact-us-1' or 'noindex' in h: problems.append(f'contact query canonical {pre}: {st} {canon.group(1) if canon else None}')
+    except Exception as e: problems.append(f'contact query {pre}: {e}')
+    for code in ('52309', '51992', '51993'):
+        u = f'{BASE}{pre}/fdf/cream-base-{code}'
+        try:
+            st, loc, body = req(u); h = body.decode('utf-8', 'replace')
+            if st != 200 or 'noindex' not in h: problems.append(f'placeholder {u}: {st} should be 200+noindex')
+            if u in urls: problems.append(f'placeholder {u} listed in sitemap')
+        except Exception as e: problems.append(f'placeholder {u}: {e}')
+print(f'  compat stubs, contact-query canonicals and placeholder policy checked in 4 languages')
 # External links shown on the site (regulatory watch, news, webmail): warnings only — many agency sites block bots,
 # so a 403/429 is reported as "blocked" rather than as a problem.
 print('== external links (warnings only)')

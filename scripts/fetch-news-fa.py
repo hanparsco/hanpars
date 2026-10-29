@@ -109,7 +109,7 @@ def parse_feed(source: str, url: str):
                 if c.tag.split('}')[-1] in ('content', 'thumbnail', 'enclosure') and c.get('url'):
                     img = c.get('url'); break
         if title and link:
-            items.append({'title': title, 'url': link.strip(), 'source': source, 'date': date, 'summary': strip_html(desc)[:260], 'image': img, 'cats': cats})
+            items.append({'title': title, 'url': link.strip(), 'source': source, 'date': date, 'summary': strip_html(desc)[:260], 'image': img, 'cats': cats, 'feed': url})
     print(f'  {source}: {len(items)} items from {url}')
     return items
 
@@ -196,7 +196,11 @@ def main():
         if prev and prev.get('image') and (ROOT / 'public' / prev['image'].lstrip('/')).exists(): image = prev['image']
         else: image = save_image(it['image'] or og_image(it['url']), slug)
         out.append({'title': it['title'], 'url': it['url'], 'source': it['source'], 'date': (it['date'] or NOW).astimezone(dt.timezone.utc).strftime('%Y-%m-%d'),
-                    'summary': it['summary'], 'image': image, 'category': next((c for c in it['cats'] if c in ('صنعت دارو', 'اخبار شرکت ها', 'اقتصاد و مدیریت')), '')})
+                    'summary': it['summary'], 'image': image, 'category': next((c for c in it['cats'] if c in ('صنعت دارو', 'اخبار شرکت ها', 'اقتصاد و مدیریت')), ''),
+                    # provenance: where and when the item was taken from, and the basis for showing the publisher's preview image
+                    'feed': it.get('feed', ''), 'retrieved': (prev or {}).get('retrieved') or NOW.strftime('%Y-%m-%dT%H:%M:%SZ'),
+                    'imageSource': (prev or {}).get('imageSource') or (it['image'] or '') or ('og:image of ' + it['url'] if image else ''),
+                    'imageBasis': 'publisher preview image (RSS/og:image), shown as a linked thumbnail with attribution; removed on request' if image else ''})
     old_urls = [it['url'] for it in previous.values()] if previous else []
     if [it['url'] for it in out] == old_urls and os.environ.get('FORCE') != '1':
         print('same six stories as before; nothing to write'); return 0

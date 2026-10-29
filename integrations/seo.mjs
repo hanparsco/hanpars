@@ -50,9 +50,13 @@ export default function seo({ site }) {
           const canon = (/<link rel="canonical" href="([^"]+)"/.exec(html) || [])[1];
           if (canon && new URL(canon).pathname !== rel) continue; // only canonical URLs
           // fingerprint of the page's own content (main element, scripts and attributes stripped) for honest <lastmod>
-          const main = (/<main\b[\s\S]*?<\/main>/.exec(html) || [html])[0]
-            .replace(/<(script|style|svg)\b[\s\S]*?<\/\1>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
-          pages.set(rel, createHash('sha1').update(main).digest('hex').slice(0, 16));
+          // fingerprint = visible text of <main> + its internal link targets + the page's JSON-LD (Google's examples of
+          // significant change: content, links, structured data); build hashes/asset names are excluded so a redeploy alone keeps the date
+          const mainHtml = (/<main\b[\s\S]*?<\/main>/.exec(html) || [html])[0];
+          const main = mainHtml.replace(/<(script|style|svg)\b[\s\S]*?<\/\1>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+          const links = [...mainHtml.matchAll(/href="(\/[^"#?]*)"/g)].map(m => m[1]).sort().join('|');
+          const ld = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => m[1]).join('');
+          pages.set(rel, createHash('sha1').update(main + '\n' + links + '\n' + ld).digest('hex').slice(0, 16));
         }
         // dates from the previous deploy: keep a page's date while its fingerprint is unchanged
         let prev = {};
