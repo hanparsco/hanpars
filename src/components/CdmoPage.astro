@@ -153,11 +153,12 @@ const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور �
   .cd-forms p { margin:0; font-size:16px; line-height:1.55; color:var(--muted); }
   .cd-focus { padding:30px; border-radius:22px; background:var(--paper); border:1px solid var(--line); }
   .cd-focus-lede { color:var(--muted); margin:10px 0 22px; }
-  .cd-focus-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
-  .cd-stat { display:flex; flex-direction:column; gap:4px; padding:18px; border-radius:16px; background:var(--white); border:1px solid var(--line); }
+  .cd-focus-grid { display:grid; gap:12px; }
+  .cd-stat { display:grid; grid-template-columns:minmax(120px,30%) 1fr; column-gap:20px; align-items:center; padding:18px 20px; border-radius:16px; background:var(--white); border:1px solid var(--line); }
   .cd-stat strong { font:600 clamp(22px,2.2vw,28px)/1.1 var(--display); color:var(--lapis-deep); letter-spacing:-.02em; }
+  .cd-stat strong { grid-row:span 2; }
   .cd-stat span { font-weight:600; font-size:15px; color:var(--ink); }
-  .cd-stat p { margin:6px 0 0; font-size:14.5px; line-height:1.5; color:var(--muted); }
+  .cd-stat p { margin:2px 0 0; font-size:14.5px; line-height:1.5; color:var(--muted); }
   .cd-note { margin:18px 0 0; padding-top:16px; border-top:1px solid var(--line); font-size:15px; color:var(--muted); }
 
   .cd-roles { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
@@ -190,7 +191,9 @@ const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور �
     .cd-brief { align-items:start; }
   }
   @media (max-width:640px) {
-    .cd-svc-grid, .cd-focus-grid, .cd-brief ol { grid-template-columns:1fr; }
+    .cd-svc-grid, .cd-brief ol { grid-template-columns:1fr; }
+    .cd-stat { grid-template-columns:1fr; }
+    .cd-stat strong { grid-row:auto; margin-bottom:4px; }
     .cd-steps { grid-template-columns:1fr; row-gap:0; }
     .cd-step, :global([dir=rtl]) .cd-step { padding:0 0 22px; padding-inline-start:28px; border-top:0; border-inline-start:1px solid #ffffff2e; }
     .cd-step::before { top:4px; inset-inline-start:-5px; }
