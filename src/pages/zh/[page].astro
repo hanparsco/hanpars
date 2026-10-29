@@ -25,9 +25,18 @@ const extra: Record<string, { title: string; description: string }> = {
   'import-activity': { title: '进口动态', description: 'Hanpars 2026 年进口动态：逾 3,300 万欧元、超过 1 亿单位药品，涵盖 30 种分子，货源来自土耳其、中国和英国。' },
   'news': { title: s.news.title, description: '每日全球医药要闻及中国制剂/原料药资讯，每天早晨更新，附来源与链接。' },
 };
+const zhTitle: Record<string, string> = {
+  partners: '中国药企出海伊朗：伊朗药品注册、进口与分销合作伙伴 | Hanpars',
+  'fdf-cdmo': '伊朗药品合同生产与授权生产（CDMO）：中国制剂企业进入伊朗 | Hanpars',
+  'regulatory-affairs': '伊朗药品注册代理（IFDA 注册、IRC 编码、CTD 资料）| Hanpars',
+  api: '原料药采购与伊朗进口：1,582 种原料药参考目录 | Hanpars',
+  fdf: '制剂进口伊朗：已注册医院用药组合与 3,885 种制剂参考清单 | Hanpars',
+  'about-us': '关于 Hanpars：伊朗德黑兰持牌药品进口商，杭州、镇江设有办公室',
+  markets: '伊朗医药市场与采购：中国、印度、土耳其、欧洲供应商 | Hanpars',
+};
 const name = data?.title || extra[page]?.title || page;
 const str = (...v: unknown[]) => (v.find(x => typeof x === 'string' && x) as string) || '';
-const seo = { title: `${name} | Hanpars`, description: str(data?.meta, data?.description, extra[page]?.description, s.footer.intro) };
+const seo = { title: zhTitle[page] || `${name} | Hanpars`, description: str(data?.meta, data?.description, extra[page]?.description, s.footer.intro) };
 const crumbs = [{ name: s.breadcrumbHome, path: '/zh' }, { name, path: `/zh/${page}` }];
 ---
 <Layout skipLangs={page==='partners'?['fa']:[]} title={seo.title} description={seo.description.slice(0, 200)} breadcrumbs={crumbs} keywords={pageKeywords(page, lang)} brand={page==='regulatory-affairs'?'regulatory':'default'}>

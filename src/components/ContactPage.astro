@@ -1,6 +1,6 @@
 ---
 import PageHero from './PageHero.astro';
-import { formEndpoint, formAccessKey, contactEmail, raEmail, mEnc, mShow } from '../data/site';
+import { formEndpoint, formAccessKey, contactEmail, raEmail, mEnc, mShow, wechatId } from '../data/site';
 import { langFromPath, t } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
 const c = t(lang).contact;
@@ -70,6 +70,7 @@ const privacyNote = ({
   {lang !== 'fa' && <aside class="contact-aside"><h3>{c.asideTitle}</h3><p>{c.asideText}</p>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.phone}/><div><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></p></div></div>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.mail}/><div><strong>{c.email}</strong><p><a href="#brief-form" data-m={mEnc(contactEmail)} dir="ltr" data-m-text>{mShow(contactEmail)}</a><br/><a href="#brief-form" data-m={mEnc(raEmail)} dir="ltr" data-m-text>{mShow(raEmail)}</a></p></div></div>
+    {lang === 'zh' && wechatId && <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.mail}/><div><strong>微信</strong><p><bdi dir="ltr">{wechatId}</bdi></p><span class="form-hint">添加时请注明公司与产品。</span></div></div>}
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.pin}/><div><strong>{c.office}</strong><p>{officeLines.map((l, n) => <>{n > 0 && <br/>}{l}</>)}</p></div></div>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.clock}/><div><strong>{c.hours}</strong><p>{c.hoursText}</p><span class="form-hint">{c.confirmVisit}</span></div></div>
   </aside>}

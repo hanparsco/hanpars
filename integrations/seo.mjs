@@ -94,7 +94,7 @@ export default function seo({ site }) {
         }
         await writeFile(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${index.join('\n')}\n</sitemapindex>\n`);
         const rows = Object.values(byLang).flat();
-        await writeFile(join(root, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\n`);
+        await writeFile(join(root, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\nSitemap: ${site}/sitemap-zh.xml\nSitemap: ${site}/sitemap-en.xml\nSitemap: ${site}/sitemap-fa.xml\nSitemap: ${site}/sitemap-tr.xml\n`);
         // trailing-slash and /index.html stubs: /x/ and /x/index.html -> /x, all languages (GitHub Pages cannot send 301s)
         let stubs = 0;
         // also cover the noindex A–Z browse pages (not in the sitemap, but linked from every catalogue)

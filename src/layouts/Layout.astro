@@ -1,4 +1,5 @@
 ---
+import { verification } from '../data/site';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { langFromPath, stripLang, localePath, dir, langs, htmlLang, hreflangOf, ogLocale, t, type Lang } from '../i18n';
@@ -74,6 +75,11 @@ if(t)location.replace('/'+t+location.search+location.hash)}catch(e){}})();`} />}
     {lang === 'zh' && <meta http-equiv="Content-Language" content="zh-CN" />}
     {lang === 'zh' && <link rel="stylesheet" href="/fonts/noto-sc/noto-sc.css" />}
     {lang === 'zh' && <meta name="applicable-device" content="pc,mobile" />}
+    {lang === 'zh' && <meta http-equiv="Cache-Control" content="no-transform" />}
+    {verification.baidu && <meta name="baidu-site-verification" content={verification.baidu} />}
+    {verification.bing && <meta name="msvalidate.01" content={verification.bing} />}
+    {verification.so360 && <meta name="360-site-verification" content={verification.so360} />}
+    {verification.sogou && <meta name="sogou_site_verification" content={verification.sogou} />}
     {rtl && <link rel="preload" href="/fonts/narengi/NarengiNonEn-Regular.woff2" as="font" type="font/woff2" crossorigin />}
     <title>{title}</title>
   </head>

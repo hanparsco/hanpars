@@ -7,6 +7,11 @@ export const mShow = (e: string) => e.replace('@', ' [at] ').replace(/\.(?=[^.]+
 // Web3Forms relays submissions to contactEmail. The access key is public by design; replace once issued.
 export const formEndpoint = 'https://api.web3forms.com/submit';
 export const formAccessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY || '2713f108-a23c-4f52-8c09-d3a1902c45cc';
+// Site-verification codes for search consoles. Paste the code each console issues; empty = tag not rendered.
+// Baidu 站长平台 (ziyuan.baidu.com) → baidu; Bing Webmaster → bing; 360 站长 → so360; Sogou 站长 → sogou.
+export const verification = { baidu: '', bing: '', so360: '', sogou: '' };
+// WeChat ID shown on the Chinese contact page (empty = not shown). A QR image can be dropped in public/wechat-qr.png.
+export const wechatId = '';
 export const groups = [
   { label: 'Products', items: [
     { label: 'Finished dosage forms', href: '/fdf', note: 'The registered portfolio and the reference list' },
