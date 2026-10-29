@@ -35,7 +35,8 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install pinned, hash-verified Python dependencies
-        run: pip install --quiet --require-hashes --no-deps --only-binary=:all: -r scripts/requirements-news.txt
+        run: |
+          pip install --quiet --require-hashes --no-deps --only-binary=:all: -r scripts/requirements-news.txt
       - name: Fetch and rank today's stories
         env:
           FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force && '1' || '0' }}
