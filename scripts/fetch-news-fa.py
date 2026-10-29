@@ -10,7 +10,7 @@ Sources are tried in order; a source that cannot be reached (an Iranian host tha
 Iranian IP addresses, say) is skipped and reported in the log, and the others are used.
 """
 from __future__ import annotations
-import json, re, html, hashlib, io, os, sys, datetime as dt, urllib.request, urllib.error
+import json, re, html, hashlib, io, os, sys, datetime as dt, urllib.request, urllib.error, urllib.parse
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -42,7 +42,14 @@ GOOD = {'کمبود': 5, 'واردات': 5, 'وارد': 3, 'سازمان غذا 
 BAD = {'تسلیت': -10, 'درگذشت': -8, 'تبریک': -8, 'انتصاب': -3, 'پژوهشگر': -3, 'مصاحبه': -2, 'یادداشت': -2, 'گفتگو': -2, 'گفت‌وگو': -2}
 
 
+def iri_to_uri(url: str) -> str:
+    """Percent-encode non-ASCII characters (Persian file names in image URLs) so urllib accepts the address."""
+    p = urllib.parse.urlsplit(url)
+    return urllib.parse.urlunsplit((p.scheme, p.netloc.encode('idna').decode(), urllib.parse.quote(p.path, safe='/%'), urllib.parse.quote(p.query, safe='=&%'), ''))
+
+
 def fetch(url: str, timeout: int = 25) -> bytes:
+    url = iri_to_uri(url)
     req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': '*/*'})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
@@ -167,8 +174,10 @@ def main():
         key = re.sub(r'[^\w]', '', it['title'])[:60]
         if it['url'] in seen or key in seen: continue
         seen.add(it['url']); seen.add(key); uniq.append(it)
-    ranked = sorted(uniq, key=score, reverse=True)
-    ranked = [it for it in ranked if score(it) > -100]
+    # newest first (by day, Tehran time); the relevance score only orders the stories of the same day
+    tehran = dt.timezone(dt.timedelta(hours=3, minutes=30))
+    ranked = [it for it in uniq if score(it) > -100]
+    ranked.sort(key=lambda it: ((it['date'] or NOW).astimezone(tehran).date(), score(it)), reverse=True)
     # at most 4 per source when more than one source answered, so one site does not fill the whole block
     chosen, per = [], {}
     for it in ranked:
