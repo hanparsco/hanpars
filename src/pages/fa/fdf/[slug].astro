@@ -1,4 +1,5 @@
 ---
+import { fdfHasInfo } from '../../../data/fdf-hasinfo';
 import Layout from '../../../layouts/Layout.astro';
 import ProductPage from '../../../components/ProductPage.astro';
 import fdf from '../../../data/fdf.json';
@@ -15,4 +16,4 @@ const seo = productSeo(entry, lang, info as any, infoFa as any);
 const base = lang === 'fa' ? '/fa' : '';
 const crumbs = [{ name: lang === 'fa' ? 'خانه' : 'Home', path: base || '/' }, { name: lang === 'fa' ? 'فرآورده‌های دارویی' : 'Finished dosage forms', path: base + '/fdf' }, { name: seo.name, path: base + '/fdf/' + fdfSlug(entry) }];
 ---
-<Layout title={seo.title} description={seo.description} keywords={seo.keywords} schema={[seo.schema]} breadcrumbs={crumbs} ogType="product"><ProductPage entry={entry} /></Layout>
+<Layout noindex={!fdfHasInfo(entry)} title={seo.title} description={seo.description} keywords={seo.keywords} schema={[seo.schema]} breadcrumbs={crumbs} ogType="product"><ProductPage entry={entry} /></Layout>

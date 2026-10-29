@@ -262,7 +262,7 @@ if (form) {
     try {
       const response = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body:new FormData(form) });
       const result = await response.json().catch(() => ({}));
-      if (response.ok && result.success !== false) {
+      if (response.ok && result && result.success === true) {
         form.reset(); selectType(type); syncChips();
         if (status) status.textContent = formI18n.sent || 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
       } else {

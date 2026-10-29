@@ -21,7 +21,7 @@ export default function seo({ site }) {
         const root = fileURLToPath(dir);
         const files = await walk(root);
         // link hygiene: (a) internal links to duplicate API pages (noindex + canonical elsewhere) go straight to the canonical page;
-        // (b) enquiry links with query strings are left followable (robots.txt blocks /contact-us-1?…)
+        // (b) enquiry links with query strings stay crawlable; every variant declares the plain contact page as canonical
         const dupTo = new Map();
         for (const f of files) {
           const rel0 = '/' + relative(root, f).split(sep).join('/').replace(/\.html$/, '');
@@ -35,7 +35,7 @@ export default function seo({ site }) {
         for (const f of files) {
           const h = await readFile(f, 'utf8');
           let out = h.replace(/href="(\/(?:(?:fa|zh|tr)\/)?api\/[^"#?]+)"/g, (m, p) => dupTo.has(p) ? (relinked++, `href="${dupTo.get(p)}"`) : m);
-          // (enquiry links stay followable; robots.txt keeps crawlers off the /contact-us-1?… variants)
+          // (enquiry links stay followable; their canonical points to the plain contact page)
           if (out !== h) await writeFile(f, out);
         }
         logger.info(`link hygiene: ${relinked} links moved to canonical API pages`);
@@ -90,11 +90,13 @@ export default function seo({ site }) {
         }
         await writeFile(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${index.join('\n')}\n</sitemapindex>\n`);
         const rows = Object.values(byLang).flat();
-        await writeFile(join(root, 'robots.txt'), `User-agent: *\nAllow: /\n# enquiry forms pre-filled from product links: one URL per product, all canonical to the plain contact page\nDisallow: /contact-us-1?\nDisallow: /fa/contact-us-1?\nDisallow: /zh/contact-us-1?\nDisallow: /tr/contact-us-1?\n\nSitemap: ${site}/sitemap.xml\n`);
-        // trailing-slash stubs: /x/ -> /x (earlier crawls used slash URLs; GitHub Pages cannot send 301s)
+        await writeFile(join(root, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\n`);
+        // trailing-slash and /index.html stubs: /x/ and /x/index.html -> /x, all languages (GitHub Pages cannot send 301s)
         let stubs = 0;
-        for (const p of pages.keys()) {
-          if (p === '/' || /^\/(zh|tr)(\/|$)/.test(p)) continue;
+        // also cover the noindex A–Z browse pages (not in the sitemap, but linked from every catalogue)
+        const azPaths = files.map(f => '/' + relative(root, f).split(sep).join('/').replace(/\.html$/, '')).filter(p => /^\/(?:(?:fa|zh|tr)\/)?(?:api|fdf)\/a-z\/[^/]+$/.test(p));
+        for (const p of [...pages.keys(), ...azPaths]) {
+          if (p === '/') continue;
           const dirIdx = join(root, p.slice(1), 'index.html');
           try { await access(dirIdx); continue; } catch {}
           const target = site + p;
