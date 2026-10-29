@@ -88,6 +88,15 @@ export const pages = {
     ],
     photo: 'container-ship', photoAlt: 'A container ship arriving at a port with mountains behind',
   },
+  'partners': {
+    title: 'For foreign manufacturers', category: 'Partnership',
+    description: 'Your licensed importer, registration holder and partner in Iran: in-house regulatory affairs, nationwide distribution, written responsibilities, offices in Istanbul, Hangzhou and Zhenjiang.',
+    meta: 'Hanpars for foreign pharmaceutical manufacturers: IFDA-licensed importer and marketing authorisation holder in Iran, in-house registration and pharmacovigilance, nationwide distribution, written responsibilities. Offices in Tehran, Istanbul, Hangzhou and Zhenjiang.',
+    introTitle: 'A licensed, accountable partner in Iran.',
+    intro: ['Hanpars holds the import licence and the product registrations, prepares the dossiers in-house and reports back in writing.'],
+    cards: [],
+    photo: 'tehran-alborz', photoAlt: 'Tehran beneath the snow-covered Alborz mountains',
+  },
   'fdf-cdmo': {
     title: 'Finished dosage form CDMO', category: 'Services',
     description: 'Contract development and manufacturing of finished dosage forms for the Iranian market: one project team from formulation and technology transfer to IFDA registration and supply.',

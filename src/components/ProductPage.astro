@@ -84,6 +84,7 @@ const seoNote = ({
     </dl>
     <div class="hero-actions"><a class="button button-light" href={enquiry}>{m.enquire}</a><a class="text-link" href={L('/fdf#fdf-reference')}>{m.back}</a></div>
     <p class="prod-seo-note" lang={htmlLang[lang]} dir={dir(lang)}>{seoNote}</p>
+    {lang === 'fa' && <p class="prod-patient-note" role="note"><Icon name="shield" size={16}/><span>این صفحه مرجع اطلاعات دارویی برای متخصصان و شرکای تجاری است و فروش به بیمار ندارد؛ برای تهیه و مصرف دارو به داروخانه و پزشک خود مراجعه کنید.</span></p>}
   </div>
 </div></section>
 

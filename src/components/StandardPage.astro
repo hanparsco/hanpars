@@ -10,6 +10,7 @@ import SupplementCatalogue from './SupplementCatalogue.astro';
 import ExcipientCategories from './ExcipientCategories.astro';
 import ApiClasses from './ApiClasses.astro';
 import CdmoPage from './CdmoPage.astro';
+import PartnersPage from './PartnersPage.astro';
 import apiClasses from '../data/api-classes.json';
 import excCats from '../data/excipient-categories.json';
 import { pages, type PageKey } from '../data/pages';
@@ -47,12 +48,13 @@ const jump = page === 'fdf' ? (() => { const n = portfolioData.counts.total.toLo
   zh: [['Hanpars 产品组合', `${n} 个已注册药品`], ['参考清单', `${m} 个成品药`]],
   tr: [['Hanpars portföyü', `${n} ruhsatlı ilaç`], ['Referans listesi', `${m} bitmiş ürün`]],
 } as Record<string, string[][]>)[lang]; })() : null;
-const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.standard.prepare : s.standard.startConversation;
+const action = page==='partners' ? s.standard.startConversation : page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.standard.prepare : s.standard.startConversation;
 ---
-<PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':'sourcing'}`} action={action} photo={photo} photoAlt={photoAlt} hideAction={lang === 'fa' && page === 'culture'}/>
+<PageHero title={data.title} category={data.category} description={data.description} href={`/contact-us-1?type=${page==='fdf-cdmo'?'cdmo':page==='partners'?'regulatory':'sourcing'}`} action={action} photo={photo} photoAlt={photoAlt} hideAction={lang === 'fa' && page === 'culture'}/>
 {preorder&&<div class="container"><aside class="preorder-note" role="note"><span class="preorder-ico"><Icon name="clock" size={22}/></span><p><strong>{preorder.t}</strong>{preorder.p}</p></aside></div>}
-{page!=='fdf-cdmo'&&<section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map((p: string)=><p>{p}</p>)}{jump&&<div class="fdf-jump"><a href="#product-portfolio"><span class="fdf-jump-ico"><Icon name="capsule" size={20}/></span><span><strong>{jump[0][0]}</strong><small>{jump[0][1]}</small></span><Icon name="down" size={18} class="fdf-jump-arr"/></a><a href="#fdf-reference"><span class="fdf-jump-ico"><Icon name="layers" size={20}/></span><span><strong>{jump[1][0]}</strong><small>{jump[1][1]}</small></span><Icon name="down" size={18} class="fdf-jump-arr"/></a></div>}</div></div></section>}
+{page!=='fdf-cdmo'&&page!=='partners'&&<section class="section"><div class="container content-split"><h2>{data.introTitle}</h2><div class="content-copy">{data.intro.map((p: string)=><p>{p}</p>)}{jump&&<div class="fdf-jump"><a href="#product-portfolio"><span class="fdf-jump-ico"><Icon name="capsule" size={20}/></span><span><strong>{jump[0][0]}</strong><small>{jump[0][1]}</small></span><Icon name="down" size={18} class="fdf-jump-arr"/></a><a href="#fdf-reference"><span class="fdf-jump-ico"><Icon name="layers" size={20}/></span><span><strong>{jump[1][0]}</strong><small>{jump[1][1]}</small></span><Icon name="down" size={18} class="fdf-jump-arr"/></a></div>}</div></div></section>}
 {page==='fdf-cdmo'&&<CdmoPage/>}
+{page==='partners'&&<PartnersPage/>}
 {page==='about-us'&&<Imports2026/>}
 {page==='fdf'&&<FdfPortfolio/>}
 {page==='fdf'&&<Imports2026 variant="bubbles"/>}
@@ -65,6 +67,6 @@ const action = page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.sta
   <div class="easy-head"><h2>{s.standard.easyTitle}</h2><a class="button button-navy easy-cta" href={L('/contact-us-1?type=sourcing')}>{s.nav.enquiry}<Icon name="arrow" size={17} class="easy-arrow"/></a></div>
   <ol class="easy-grid">{s.standard.easy.map((item, i)=><li class="easy-card"><span class="easy-ico"><Icon name={(['capsule','layers','globe','file'] as const)[i % 4]} size={22}/></span><span class="easy-num" aria-hidden="true">{lang === 'fa' ? String(i + 1) : String(i + 1).padStart(2, '0')}</span><p>{item}</p></li>)}</ol>
 </div></section>}
-{!isProduct&&page!=='fdf-cdmo'&&<section class="section"><div class="container content-split">{lang !== 'fa' && <h2>{s.standard.nextTitle}</h2>}<ul class:list={['link-list', { 'link-list-solo': lang === 'fa' }]}>{s.standard.nextLinks.map(item=><li><a href={L(item.href)}>{item.label}<small>{item.note}</small></a></li>)}</ul></div></section>}
+{!isProduct&&page!=='fdf-cdmo'&&page!=='partners'&&<section class="section"><div class="container content-split">{lang !== 'fa' && <h2>{s.standard.nextTitle}</h2>}<ul class:list={['link-list', { 'link-list-solo': lang === 'fa' }]}>{s.standard.nextLinks.map(item=><li><a href={L(item.href)}>{item.label}<small>{item.note}</small></a></li>)}</ul></div></section>}
 {page==='about-us'&&<FaqFa schema={false} />}
-{!(lang === 'fa' && (page === 'culture' || page === 'fdf')) && page!=='fdf-cdmo' && <CTA title={isProduct?s.standard.ctaProduct:undefined}/>}
+{!(lang === 'fa' && (page === 'culture' || page === 'fdf')) && page!=='fdf-cdmo' && page!=='partners' && <CTA title={isProduct?s.standard.ctaProduct:undefined}/>}

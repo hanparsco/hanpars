@@ -83,6 +83,14 @@ export const pagesZh: Record<PageKey, LPage> = {
       { title: '服务范围与下一步', text: '您希望 Hanpars 做什么：采购、注册、协调，或三者兼有。' },
     ],
   },
+  'partners': {
+    title: '面向中国药企：您在伊朗的合作伙伴', category: '合作',
+    description: '持牌进口商、注册持有人和您在伊朗的合作伙伴：自有注册团队、全国分销、书面职责，杭州和镇江设有办公室。',
+    meta: 'Hanpars 面向中国制药企业：IFDA 持牌进口商和伊朗上市许可持有人，自有注册与药物警戒团队，全国分销，书面职责；杭州、镇江设有办公室，可用中文沟通。',
+    introTitle: '中国药企在伊朗的持牌、可问责合作伙伴',
+    intro: ['Hanpars 持有进口许可和产品注册，自行编制注册资料，并以书面形式向您汇报。'],
+    cards: [],
+  },
   'fdf-cdmo': {
     title: '中国药企进入伊朗：注册与合同开发生产', category: '服务',
     description: '面向中国制剂企业和 CDMO：从市场评估、IFDA 注册、进口上市到伊朗本地技术转移，由 Hanpars 一个团队统筹。',

@@ -14,6 +14,11 @@ import { langFromPath, localePath, t, numLocale } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
 const L = (p: string) => localePath(p, lang);
+const partnerBand = ({
+  en: { title: 'Are you a pharmaceutical manufacturer looking at Iran?', text: 'Hanpars is an IFDA-licensed importer and registration holder with in-house regulatory affairs, nationwide distribution and offices in Istanbul, Hangzhou and Zhenjiang.', cta: 'For foreign manufacturers' },
+  zh: { title: '中国药企，正在考虑伊朗市场？', text: 'Hanpars 是 IFDA 持牌进口商和注册持有人，拥有自有注册团队和全国分销网络，并在杭州、镇江设有办公室。', cta: '面向中国药企' },
+  tr: { title: 'İran pazarını değerlendiren bir Türk ilaç üreticisi misiniz?', text: 'Hanpars, IFDA lisanslı ithalatçı ve ruhsat sahibidir; şirket içi ruhsatlandırma ekibi, ülke çapında dağıtım ve İstanbul’da ortak ofis.', cta: 'Türk üreticiler için' },
+} as Record<string, { title: string; text: string; cta: string }>)[lang];
 const todayNews = lang === 'fa' ? (newsFa.items || []).slice(0,3) : [...(news.global || []).slice(0,2), ...(news.china || []).slice(0,1)];
 const fmt = (n:number) => n.toLocaleString(numLocale(lang));
 const pl = lang === 'en' ? null : portfolioL[lang];
@@ -57,6 +62,7 @@ const areaIcons: Record<string, string> = {"area-1": "<path d=\"M4 8V5a1 1 0 0 1
       <div class="trio-links"><a class="trio-link" href={L(item.href)}><span>{item.link}</span><span class="trio-arrow" aria-hidden="true">{lang === 'fa' ? '←' : '→'}</span></a>{(item as any).link2 && <a class="trio-link" href={L((item as any).href2)}><span>{(item as any).link2}</span><span class="trio-arrow" aria-hidden="true">{lang === 'fa' ? '←' : '→'}</span></a>}</div>
     </article>)}</div>
     {lang === 'fa' && <p class="lede trio-after">{s.home.threeLede}</p>}
+    {partnerBand && <a class="partner-band" href={L('/partners')}><span class="partner-band-ico"><Icon name="shield" size={22}/></span><span class="partner-band-text"><strong>{partnerBand.title}</strong><span>{partnerBand.text}</span></span><span class="partner-band-cta">{partnerBand.cta}<Icon name="arrow" size={17} class="partner-band-arrow"/></span></a>}
   </div>
 </section>
 

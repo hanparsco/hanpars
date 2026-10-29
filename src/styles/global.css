@@ -725,6 +725,8 @@ html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] se
 /* Localised product/substance name in the H1 with the English name underneath */
 h1 .h1-en { display: block; font-size: .5em; font-weight: 500; opacity: .78; margin-top: .35em; letter-spacing: 0; }
 .prod-seo-note { margin-top: 1.1rem; font-size: .9rem; line-height: 1.7; opacity: .82; max-width: 62ch; }
+.prod-patient-note { display:flex; gap:10px; align-items:flex-start; margin:14px 0 0; padding:10px 14px; max-width:62ch; border:1px solid #ffffff2e; border-radius:12px; font-size:.9rem; line-height:1.7; color:var(--on-navy); }
+.prod-patient-note svg { flex:none; margin-top:5px; color:var(--glacier); }
 
 /* Latin letters inside Persian text: use the Latin faces (the Persian font's Latin glyphs don't match, and its % and · read as Persian signs) */
 @font-face { font-family:'HpLatin'; src:url('/fonts/latin/source-sans-3-var.woff2') format('woff2'); font-weight:200 900; font-display:swap; unicode-range:U+0030-0039,U+002E,U+002F,U+0041-005A,U+0061-007A,U+00B5,U+00B7,U+00C0-024F,U+0025,U+03BC,U+2122,U+00AE; }
@@ -1629,3 +1631,13 @@ html[lang=fa] :is(.num, .easy-num, .step2-num, .trio-num, .exc-num, .faq2-num, .
 .az-list small { display:block; color:var(--muted); font-size:13px; }
 .az-back { margin-top:24px; }
 .form-privacy { font-size:13px; color:var(--muted); line-height:1.6; margin:8px 0 0; max-width:60em; }
+
+/* home: band for foreign manufacturers (en/zh/tr) */
+.partner-band { display:grid; grid-template-columns:auto minmax(0,1fr) auto; gap:20px; align-items:center; margin-top:28px; padding:20px 24px; border-radius:18px; background:var(--black); color:var(--on-navy); transition:transform .25s var(--ease), box-shadow .25s var(--ease); }
+.partner-band:hover { transform:translateY(-2px); box-shadow:0 18px 36px -24px #10152099; }
+.partner-band-ico { display:grid; place-items:center; width:44px; height:44px; border-radius:12px; background:#ffffff14; color:var(--glacier); }
+.partner-band-text { display:flex; flex-direction:column; gap:4px; }
+.partner-band-text strong { color:#fff; font-family:var(--display); font-size:18px; line-height:1.3; }
+.partner-band-text span { font-size:15px; line-height:1.5; color:var(--on-navy-muted); }
+.partner-band-cta { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; font-weight:600; color:var(--glacier); }
+@media (max-width:760px) { .partner-band { grid-template-columns:auto minmax(0,1fr); } .partner-band-cta { grid-column:2; } }

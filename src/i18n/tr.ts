@@ -15,6 +15,7 @@ export const tr: UI = {
         { label: 'Farmasötik malzemeler', href: '/supplies', note: 'Birincil ambalaj, kapsül, sarf malzemeleri' },
       ] },
       { label: 'Hizmetler', items: [
+        { label: 'Türk üreticiler için', href: '/partners', note: 'İran’daki lisanslı ithalatçınız ve ortağınız' },
         { label: 'Ruhsatlandırma ve regülasyon', href: '/regulatory-affairs', note: 'Dosyalar, IFDA başvuruları, yaşam döngüsü' },
         { label: 'FDF CDMO', href: '/fdf-cdmo', note: 'Geliştirme ve üretim projeleri' },
       ] },

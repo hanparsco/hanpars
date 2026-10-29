@@ -83,6 +83,14 @@ export const pagesTr: Record<PageKey, LPage> = {
       { title: 'Kapsam ve sonraki adım', text: 'Hanpars’tan ne istediğiniz: tedarik, ruhsatlandırma, koordinasyon veya üçü birden.' },
     ],
   },
+  'partners': {
+    title: 'Türk ilaç üreticileri için: İran’daki ortağınız', category: 'İş birliği',
+    description: 'Lisanslı ithalatçınız, ruhsat sahibiniz ve İran’daki ortağınız: şirket içi ruhsatlandırma, ülke çapında dağıtım, yazılı sorumluluklar, İstanbul ortak ofisi.',
+    meta: 'Hanpars, Türk ilaç üreticileri için: IFDA lisanslı ithalatçı ve İran’da ruhsat sahibi, şirket içi ruhsatlandırma ve farmakovijilans, ülke çapında dağıtım, yazılı sorumluluklar; İstanbul’da ortak ofis, Türkçe konuşan ekip.',
+    introTitle: 'İran’da lisanslı ve hesap verebilir bir ortak',
+    intro: ['Hanpars ithalat iznini ve ürün ruhsatlarını kendi adına taşır, dosyaları şirket içinde hazırlar ve yazılı olarak rapor verir.'],
+    cards: [],
+  },
   'fdf-cdmo': {
     title: 'Türk ilaç üreticileri için İran: ruhsat ve fason üretim', category: 'Hizmetler',
     description: 'Türk ilaç üreticileri ve CDMO’lar için İran pazarına giriş: pazar değerlendirmesi, IFDA ruhsatı, ithalat ve gerektiğinde İran’da teknoloji transferi, tek ekipten.',

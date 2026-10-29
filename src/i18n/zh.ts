@@ -15,6 +15,7 @@ export const zh: UI = {
       { label: '药用物料', href: '/supplies', note: '初级包装、空心胶囊、耗材' },
     ] },
     { label: '服务', items: [
+      { label: '面向中国药企', href: '/partners', note: '您在伊朗的持牌进口商与合作伙伴' },
       { label: '注册事务', href: '/regulatory-affairs', note: '注册资料、IFDA 申报与生命周期管理' },
       { label: '制剂 CDMO', href: '/fdf-cdmo', note: '开发与生产项目' },
     ] },

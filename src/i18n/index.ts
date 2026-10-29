@@ -61,6 +61,7 @@ const base = {
         { label: 'Pharmaceutical supplies', href: '/supplies', note: 'Primary packaging, capsules, consumables' },
       ] },
       { label: 'Services', items: [
+        { label: 'For foreign manufacturers', href: '/partners', note: 'Your licensed importer and partner in Iran' },
         { label: 'Regulatory affairs', href: '/regulatory-affairs', note: 'Dossiers, IFDA submissions, lifecycle' },
         { label: 'Finished Dosage Form CDMO', href: '/fdf-cdmo', note: 'Development and manufacturing projects' },
       ] },
@@ -275,6 +276,7 @@ const base = {
         { label: 'ملزومات دارویی', href: '/supplies', note: 'بسته‌بندی اولیه، کپسول، اقلام مصرفی' },
       ] },
       { label: 'خدمات', items: [
+        { label: 'همکاری با تولیدکنندگان خارجی', href: '/partners', note: 'واردکننده و شریک دارای مجوز شما در ایران' },
         { label: 'امور رگولاتوری', href: '/regulatory-affairs', note: 'پرونده، ثبت در سازمان غذا و دارو، تمدید و تغییرات پروانه' },
         { label: 'تولید قراردادی (CDMO)', href: '/fdf-cdmo', note: 'پروژه‌های توسعه و تولید' },
       ] },
