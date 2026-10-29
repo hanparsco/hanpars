@@ -1,55 +1,55 @@
 {
- "updated": "2026-10-27T23:58:02Z",
+ "updated": "2026-10-29T00:21:42Z",
  "global": [
   {
-   "title": "Pfizer’s prostate cancer combo moves to earlier line on expanded US approval",
-   "url": "https://www.pharmaceutical-technology.com/news/pfizer-talzenna-xtandi-prostate-cancer-fda-label-expansion/",
-   "source": "Pharmaceutical Technology",
-   "date": "2026-10-27",
-   "summary": "The FDA expands Talzenna-Xtandi's label as the cancer treatment paradigm shifts towards the use of mutation-specific targeted therapies.",
-   "image": "/news/g-0e79502242.jpg"
+   "title": "What Outcomes Digital Twins Can be Used to Predict",
+   "url": "https://www.pharmexec.com/view/what-outcomes-digital-twins-used-predict",
+   "source": "Pharmaceutical Executive",
+   "date": "2026-10-28",
+   "summary": "Brox.AI’s Hamish Brocklebank on three levels of digital clone use cases — from HCP content testing and GLP-1 price sensitivity modeling to simulating physician adoption after FDA approval.",
+   "image": "/news/g-5130d6952d.jpg"
   },
   {
-   "title": "After $1.9B impairment hit, Novartis stands by $12B bet on Avidity",
-   "url": "https://endpoints.news/novartis-stands-by-12b-bet-on-avidity-after-1-9b-impairment-hit/",
+   "title": "FDA charts path for approval of individualized gene editing therapies",
+   "url": "https://endpoints.news/fda-charts-path-for-approval-of-individualized-gene-editing-therapies/",
    "source": "Endpoints News",
-   "date": "2026-10-27",
-   "summary": "Novartis’ $12 billion acquisition of Avidity Biosciences “remains absolutely on track,” CEO Vas Narasimhan said, after the company disclosed a $1.9 billion impairment charge on a failed late-stage neuromuscular disease asset it ...",
-   "image": "/news/g-8df3dd341c.jpg"
+   "date": "2026-10-28",
+   "summary": "The FDA has outlined steps drugmakers can take to seek regulatory approval for gene editing medicines tailored to fix a single person's disease-causing mutation. The announcement is part of an ongoing ...",
+   "image": "/news/g-53ae29a12a.jpg"
   },
   {
-   "title": "Recon: FDA approves treatments for prostate cancer, Crohn’s disease; US judge refuses to halt Lilly weight-loss drug ads",
-   "url": "https://www.raps.org/resource/recon-fda-approves-treatments-for-prostate-cancer-crohn-s-disease-us-judge-refuses-to-halt-lilly-weight-loss-drug-ads.html",
-   "source": "RAPS",
-   "date": "2026-10-27",
-   "summary": "Recon: FDA approves treatments for prostate cancer, Crohn’s disease; US judge refuses to halt Lilly weight-loss drug ads RAPS",
-   "image": "/news/g-d11363ba4b.jpg"
+   "title": "After GSK's Q3 approval spate, Hibsago preps for 'concentrated' US hep B launch",
+   "url": "https://www.fiercepharma.com/pharma/after-gsks-q3-approval-spate-hibsago-preps-concentrated-us-hep-b-launch",
+   "source": "Fierce Pharma",
+   "date": "2026-10-28",
+   "summary": "Armed with a trio of recent high-profile approvals, GSK is banking on its specialty medicines to drive its next wave of growth, even as investor enthusiasm cooled Wednesday morning amid reports of restructuring charges and a vaccine sales dip at the British drugmaker.",
+   "image": "/news/g-779ad65518.jpg"
   }
  ],
  "china": [
   {
-   "title": "China’s Leading Smectite API Suppliers Attract Growing Global Market Attention",
-   "url": "https://www.wboc.com/online_features/press_releases/china-s-leading-smectite-api-suppliers-attract-growing-global-market-attention/article_80812a7a-fe18-5588-8be0-aff50644e2b5.html",
-   "source": "WBOC TV",
+   "title": "Bio-Thera Announces Chinese Approval For The First Secukinumab Biosimilar",
+   "url": "https://insights.citeline.com/generics-bulletin/products/biosimilars/bio-thera-announces-chinese-approval-for-the-first-secukinumab-biosimilar-AUOIW2DI3VCY7DPKWKL2C2634E/",
+   "source": "insights.citeline.com",
+   "date": "2026-10-28",
+   "summary": "Bio-Thera Announces Chinese Approval For The First Secukinumab Biosimilar insights.citeline.com",
+   "image": "/news/c-b66d16358f.jpg"
+  },
+  {
+   "title": "Bayer Wins China Approval for Blood Thinner Asundexian as Xarelto Faces Generic Competition",
+   "url": "https://medicaldialogues.in/news/industry/pharma/bayer-wins-china-approval-for-blood-thinner-asundexian-as-xarelto-faces-generic-competition-182105",
+   "source": "Medical Dialogues",
+   "date": "2026-10-27",
+   "summary": "Bayer Wins China Approval for Blood Thinner Asundexian as Xarelto Faces Generic Competition Medical Dialogues",
+   "image": "/news/c-4c21043318.jpg"
+  },
+  {
+   "title": "Harbour BioMed Secures China’s NMPA Approval for Batoclimab, Expanding Treatment Options for Myasthenia Gravis",
+   "url": "https://biopharmaapac.com/news/32/8600/harbour-biomed-secures-chinas-nmpa-approval-for-batoclimab-expanding-treatment-options-for-myasthenia-gravis.html",
+   "source": "BioPharma APAC",
    "date": "2026-10-26",
-   "summary": "China’s Leading Smectite API Suppliers Attract Growing Global Market Attention WBOC TV",
-   "image": "/news/c-2221d8bb32.jpg"
-  },
-  {
-   "title": "China’s NMPA accepts Innovent application for sintilimab combo",
-   "url": "https://www.pharmaceutical-technology.com/news/chinas-nmpa-innovent-sintilimab-combo/",
-   "source": "Pharmaceutical Technology",
-   "date": "2026-10-27",
-   "summary": "Innovent Biologics has received acceptance from China's NMPA to review its sintilimab and GC101 combination for advanced melanoma.",
-   "image": "/news/c-f376f5fe15.jpg"
-  },
-  {
-   "title": "New Indication Application for Sacituzumab Tirumotecan (sac-TMT) in Combination with Pembrolizumab as First-Line Treatment for PD-L1-Negative Non-Squamous NSCLC Accepted for Review by NMPA",
-   "url": "https://www.manilatimes.net/2026/10/27/tmt-newswire/pr-newswire/new-indication-application-for-sacituzumab-tirumotecan-sac-tmt-in-combination-with-pembrolizumab-as-first-line-treatment-for-pd-l1-negative-non-squamous-nsclc-accepted-for-review-by-nmpa/2455007",
-   "source": "The Manila Times",
-   "date": "2026-10-27",
-   "summary": "New Indication Application for Sacituzumab Tirumotecan (sac-TMT) in Combination with Pembrolizumab as First-Line Treatment for PD-L1-Negative Non-Squamous NSCLC Accepted for Review by NMPA The Manila Times",
-   "image": "/news/c-9a5da9c21b.jpg"
+   "summary": "Harbour BioMed Secures China’s NMPA Approval for Batoclimab, Expanding Treatment Options for Myasthenia Gravis BioPharma APAC",
+   "image": "/news/c-b2368766eb.jpg"
   }
  ]
 }
