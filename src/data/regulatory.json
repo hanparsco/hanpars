@@ -52,7 +52,7 @@
  "fileIntro": "Select an authority to see the submission routes we handle there. Authorities are grouped the way the industry ranks them: WHO-Listed Authorities and long-standing ICH regulators first, then other ICH members and observers, regional procedures and national reliance routes.",
  "tiers": [
   {
-   "num": "00",
+   "num": "01",
    "name": "Home market: Iran",
    "sub": "Iran Food and Drug Administration · the authority we file with every week",
    "authorities": [
@@ -89,7 +89,7 @@
    ]
   },
   {
-   "num": "01",
+   "num": "02",
    "name": "Stringent regulatory authorities",
    "sub": "WHO-Listed Authorities · established ICH regulators",
    "authorities": [
@@ -294,7 +294,7 @@
    ]
   },
   {
-   "num": "02",
+   "num": "03",
    "name": "ICH members and observers",
    "sub": "WHO maturity level 3–4 national authorities",
    "authorities": [
@@ -491,7 +491,7 @@
    ]
   },
   {
-   "num": "03",
+   "num": "04",
    "name": "Regional harmonised procedures",
    "sub": "One dossier, several member states",
    "authorities": [
@@ -550,7 +550,7 @@
    ]
   },
   {
-   "num": "04",
+   "num": "05",
    "name": "National authorities with reliance pathways",
    "sub": "Build on a reference approval",
    "authorities": [

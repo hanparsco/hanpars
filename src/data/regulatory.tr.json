@@ -52,7 +52,7 @@
  "fileIntro": "Bir otorite seçerek orada yürüttüğümüz başvuru yollarını görüntüleyin. Otoriteler sektörün sıralama biçimine göre gruplandırılmıştır: önce WHO listesindeki ve ICH’nin kurucu düzenleyicileri, ardından ICH üyeleri, bölgesel prosedürler ve ulusal dayanma (reliance) yolları.",
  "tiers": [
   {
-   "num": "00",
+   "num": "01",
    "name": "İç pazar: İran",
    "sub": "İran Gıda ve İlaç İdaresi (IFDA): her hafta başvuru yaptığımız otorite",
    "authorities": [
@@ -89,7 +89,7 @@
    ]
   },
   {
-   "num": "01",
+   "num": "02",
    "name": "Sıkı düzenleyici otoriteler",
    "sub": "WHO listesindekiler · ICH kurucu düzenleyicileri",
    "authorities": [
@@ -294,7 +294,7 @@
    ]
   },
   {
-   "num": "02",
+   "num": "03",
    "name": "ICH düzenleyici üyeleri",
    "sub": "WHO olgunluk düzeyi 3–4 olan ulusal otoriteler",
    "authorities": [
@@ -491,7 +491,7 @@
    ]
   },
   {
-   "num": "03",
+   "num": "04",
    "name": "Bölgesel uyumlaştırılmış prosedürler",
    "sub": "Tek dosya, birden çok üye ülke",
    "authorities": [
@@ -550,7 +550,7 @@
    ]
   },
   {
-   "num": "04",
+   "num": "05",
    "name": "Dayanma yollarına sahip ulusal otoriteler",
    "sub": "Bir referans onaya dayanın",
    "authorities": [
