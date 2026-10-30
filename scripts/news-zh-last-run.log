@@ -1,18 +1,17 @@
-  ! google resolve: HTTPError: HTTP Error 429: Too Many Requests
   医药魔方: 100 results, 100 from the source itself
-  医药经济报: 2 results, 2 from the source itself
+  医药经济报: 3 results, 3 from the source itself
   同写意: 2 results, 0 from the source itself
-  E药经理人: 8 results, 0 from the source itself
+  E药经理人: 11 results, 0 from the source itself
   动脉网: 38 results, 38 from the source itself
   药智网: 1 results, 1 from the source itself
   生物谷: 100 results, 100 from the source itself
   财新: 9 results, 9 from the source itself
-  界面新闻: 91 results, 91 from the source itself
+  界面新闻: 75 results, 75 from the source itself
   36氪: 100 results, 100 from the source itself
   ! page fetch for image failed: https://www.yyjjb.com.cn RemoteDisconnected
-  2026-10-29 医药魔方: 速递｜诺和依柯胰岛素周制剂儿童适应证获FDA批准，10岁以上2型糖尿病患儿每周一针  [img]
-  2026-10-30 医药魔方: 复盘天价BD：ADC、双抗、GLP-1撑起国产药出海  [img]
+  2026-10-29 医药魔方: 速递｜诺和依柯胰岛素周制剂儿童适应证获FDA批准，10岁以上2型糖尿病患儿每周一针  [no img]
+  2026-10-30 医药魔方: 复盘天价BD：ADC、双抗、GLP-1撑起国产药出海  [no img]
   2026-10-30 动脉网: 18亿美元，一家AI药物平台被收购！  [img]
   2026-10-30 界面新闻: 国家医保局：合理调整医疗服务价格，将符合要求的疫苗和特医食品纳入医保个账支付白名单  [no img]
-  2026-10-30 动脉网: Anthropic收购生物医药初创Mithril  [img]
+  2026-10-30 动脉网: Anthropic收购生物医药初创Mithril  [no img]
   2026-10-28 医药经济报: 出海规则生变，临床数据多元化、国际开发能力成定盘星  [no img]
