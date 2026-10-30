@@ -1,15 +1,21 @@
 ---
 import { articleSummary } from '../data/text';
+import zhArt from '../data/articles.zh.json';
 import { langFromPath, localePath, dateLocale, htmlLang } from '../i18n';
 interface Props { article: { slug:string; title:string; date:string; category:string; excerpt:string; content:string }; index?:number; }
 const { article } = Astro.props;
 const lang = langFromPath(Astro.url.pathname);
 const date = new Date(article.date).toLocaleDateString(dateLocale(lang), { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' });
 const isoDate = new Date(article.date).toISOString().slice(0,10);
-const summary = articleSummary(article);
+const summary0 = articleSummary(article);
+const zh = lang === 'zh' ? (zhArt.articles as Record<string, { title: string; excerpt: string }>)[article.slug] : undefined;
+const title = zh?.title || article.title;
+const summary = zh?.excerpt || summary0;
+const category = lang === 'zh' ? ((zhArt.categories as Record<string, string>)[article.category] || article.category) : article.category;
+const rowLang = zh ? { lang: 'zh-Hans', dir: 'ltr' } : { lang: 'en', dir: 'ltr' };
 ---
-<a class="insight-row" href={localePath(`/insights/${article.slug}`, lang)} lang="en" dir="ltr" data-row-lang={lang}>
+<a class="insight-row" href={localePath(`/insights/${article.slug}`, lang)} {...rowLang} data-row-lang={lang}>
   <time datetime={isoDate} lang={htmlLang[lang]} dir={lang === 'fa' ? 'rtl' : 'ltr'}>{date}</time>
-  <div><h3>{article.title}</h3><p>{summary.slice(0,160)}{summary.length>160?'…':''}</p></div>
-  <span class="cat">{article.category}</span>
+  <div><h3>{title}</h3><p>{summary.slice(0,160)}{summary.length>160?'…':''}</p></div>
+  <span class="cat">{category}</span>
 </a>

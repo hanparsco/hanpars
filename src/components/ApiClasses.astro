@@ -12,7 +12,7 @@ const fmt = (n: number) => n.toLocaleString(numLocale(lang));
 ---
 <section class="section section-paper" id="categories"><div class="container">
   <div class="section-head"><h2>{s.title}</h2><p class="lede">{s.lede}</p></div>
-  <ol class="exc-index">{cats.map(c => <li class="exc-tile"><a href="#api-list" data-exc-filter={c.id}><span class="exc-num">{c.id}</span><span class="exc-tile-body"><span class="exc-tile-head"><strong>{(c as any)[lang] || c.en}</strong><small>{s.inList(fmt(counts[c.id] || 0))}</small></span><span class="exc-top" lang={topLoc ? htmlLang[lang] : "en"} dir="auto">{c.top.map((n: string) => (topLoc && catalogueName(lang, 'api', n)) || n).join(lang === 'zh' ? '、' : ' · ')}</span></span></a></li>)}</ol>
+  <ol class="exc-index">{cats.map(c => <li class="exc-tile"><a href="#api-list" data-exc-filter={c.id}><span class="exc-num">{c.id}</span><span class="exc-tile-body"><span class="exc-tile-head"><strong>{(c as any)[lang] || c.en}</strong></span><span class="exc-top" lang={topLoc ? htmlLang[lang] : "en"} dir="auto">{c.top.map((n: string) => (topLoc && catalogueName(lang, 'api', n)) || n).join(lang === 'zh' ? '、' : ' · ')}</span></span></a></li>)}</ol>
 </div></section>
 <script>
   document.querySelectorAll<HTMLAnchorElement>('[data-exc-filter]').forEach(a => a.addEventListener('click', () => {

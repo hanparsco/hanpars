@@ -1,0 +1,29 @@
+{
+ "_note": "Chinese titles and summaries for the 2025 insight archive (the article bodies remain in English). Keyed by slug.",
+ "categories": {
+  "Market Trends": "市场趋势", "Global Expansion": "国际化", "Innovation & Technology": "创新与技术", "API Trends": "原料药趋势", "Manufacturer Spotlight": "企业观察",
+  "Regulatory Updates": "监管动态", "Market Analysis": "市场分析", "Supply Chain": "供应链", "Therapeutic Focus": "治疗领域"
+ },
+ "articles": {
+  "key-trends-shaping-china-s-finished-dosage-formulation-market-in-2025-2026": { "title": "2025–2026 年中国制剂市场的主要趋势", "excerpt": "中国制剂行业正向高附加值、复杂制剂和创新产品转型，监管改革和集采持续重塑市场格局。" },
+  "chinese-finished-dosage-formulations-going-global-export-growth-and-international-impact": { "title": "中国制剂走向国际：出口增长与海外影响", "excerpt": "中国制剂企业通过质量升级和国际认证扩大出口，在新兴市场和规范市场的份额持续上升。" },
+  "china-as-an-innovator-in-finished-dosage-formulations-from-generics-to-cutting-edge-therapies": { "title": "从仿制到创新：中国制剂企业的技术升级", "excerpt": "生物类似药、复杂仿制药和新型给药系统成为中国制剂企业研发投入的重点。" },
+  "key-trends-in-china-s-api-market-for-2025-2026": { "title": "2025–2026 年中国原料药市场的主要趋势", "excerpt": "中国原料药行业在环保要求、复杂分子和监管接轨方面持续调整，产能向高质量产品集中。" },
+  "leading-api-manufacturers-in-china-profiles-and-innovations": { "title": "中国主要原料药企业概览", "excerpt": "浙江华海、石药集团等主要原料药生产企业的业务布局、认证情况与技术特点。" },
+  "global-impact-of-chinese-api-exports-and-supply-chain-dynamics": { "title": "中国原料药出口与全球供应链", "excerpt": "中国原料药支撑全球约三至四成的仿制药生产，出口在质量提升的同时持续增长。" },
+  "regulatory-changes-impacting-china-s-api-sector": { "title": "影响中国原料药行业的监管变化", "excerpt": "NMPA 的一系列改革推动中国原料药行业与国际标准接轨，带动质量和出口能力提升。" },
+  "sustainability-initiatives-in-chinese-api-production": { "title": "中国原料药生产中的绿色化学与可持续发展", "excerpt": "在环保压力下，中国原料药企业推进绿色化学、减排和废弃物管理。" },
+  "china-s-api-market-in-2025-a-15-97-billion-industry-poised-for-growth": { "title": "2025 年中国原料药市场：规模与增长前景", "excerpt": "中国原料药市场规模约 160 亿美元，增长动力来自出口、专利到期和高附加值产品。" },
+  "regulatory-evolution-how-china-s-new-api-policies-are-reshaping-the-global-pharmaceutical-landscape": { "title": "监管演进：中国原料药新政的国际影响", "excerpt": "登记备案制、关联审评和 GMP 检查的变化如何影响中国原料药在全球市场的地位。" },
+  "beyond-generics-china-s-strategic-pivot-to-high-value-api-production": { "title": "超越仿制：中国原料药向高附加值产品转型", "excerpt": "中国原料药企业从大宗产品转向特色原料药、高活性原料药和多肽等高附加值领域。" },
+  "capital-influx-major-investments-reshaping-china-s-api-manufacturing-capabilities": { "title": "资本投入重塑中国原料药产能", "excerpt": "近年的重大投资项目正在提升中国原料药行业的产能、自动化水平和合规能力。" },
+  "the-dragon-s-grip-how-china-dominates-global-pharmaceutical-supply-chains": { "title": "中国在全球医药供应链中的地位", "excerpt": "中国在原料药、中间体和起始物料供应中的份额，以及各国供应链多元化政策的影响。" },
+  "the-1-92-billion-opportunity-how-china-s-api-manufacturers-are-capitalizing-on-patent-expirations": { "title": "专利到期带来的机会：中国原料药企业的布局", "excerpt": "专利悬崖为中国原料药企业带来新的仿制药原料需求，领先企业已提前布局。" },
+  "disease-demographics-how-china-s-health-challenges-drive-api-innovation": { "title": "疾病谱变化如何推动中国原料药创新", "excerpt": "人口老龄化和慢性病负担推动中国原料药企业聚焦心血管、代谢和肿瘤领域。" },
+  "biological-revolution-china-s-emerging-leadership-in-biologic-apis": { "title": "生物制药原料：中国的新兴优势", "excerpt": "中国在生物类似药和生物药原液生产方面的能力快速提升。" },
+  "sustainable-synthesis-green-chemistry-initiatives-in-china-s-api-industry": { "title": "绿色合成：中国原料药行业的绿色化学实践", "excerpt": "连续流工艺、酶催化和溶剂回收等绿色化学技术在中国原料药企业中的应用。" },
+  "digital-transformation-how-ai-is-revolutionizing-api-development-in-china": { "title": "数字化转型：人工智能在中国原料药研发中的应用", "excerpt": "人工智能和数字化工具如何缩短中国原料药的工艺开发周期并提高质量控制水平。" },
+  "cooperation-competition-china-s-api-industry-on-the-world-stage": { "title": "合作与竞争：中国原料药行业的国际环境", "excerpt": "中国原料药企业与印度、欧洲同行的竞争与合作，以及对下游市场的影响。" },
+  "2030-vision-the-future-of-china-s-api-industry": { "title": "2030 年展望：中国原料药行业的未来", "excerpt": "未来五年中国原料药行业在技术、监管和国际化方面的可能走向。" }
+ }
+}

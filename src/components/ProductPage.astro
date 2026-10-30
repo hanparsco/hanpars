@@ -63,6 +63,13 @@ const locTitle0 = lang === 'en' ? '' : (locName(lang, title) || catalogueName(la
 const locForm = lang === 'en' ? '' : formL[lang](p.form, p.route);
 const locTitle = lang === 'tr' && locTitle0 ? locTitle0.charAt(0).toLocaleUpperCase('tr') + locTitle0.slice(1) : locTitle0;
 const nameBoth = locTitle ? (lang === 'zh' ? `${locTitle}（${title}）` : `${locTitle} (${title})`) : title;
+const labelName = main ? `${main.generic}${main.brand ? ` (${main.brand})` : ''}` : '';
+const srcLine = ({
+  en: `${m.source}: ${labelName} — US FDA prescribing information${effective ? `, ${effective}` : ''}`,
+  fa: `${m.source}: اطلاعات تجویز مصوب FDA آمریکا برای ${labelName}${effective ? `، نسخهٔ ${effective}` : ''}؛`,
+  zh: `${m.source}：美国 FDA 处方信息（${labelName}${effective ? `，${effective} 版` : ''}）`,
+  tr: `${m.source}: ${labelName} için ABD FDA reçeteleme bilgisi${effective ? `, ${effective}` : ''}`,
+} as Record<string, string>)[lang];
 const seoNote = ({
   en: `${title} ${formLabel.toLowerCase()}${p.strength ? ' ' + p.strength : ''}: import of this medicine into the Iranian market can be arranged on request through Haniya Parsan Darou Co. (Hanpars), pharmaceutical importer of finished medicines and APIs, including emergency (urgent) import. Availability and registration status are confirmed per enquiry.`,
   fa: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}: امکان واردات و تأمین این داروی خارجی برای بازار ایران از طریق شرکت هانیا پرسان دارو، واردکنندهٔ دارو، فرآوردهٔ دارویی و مواد اولیهٔ دارویی، در صورت استعلام؛ از جمله داروی فوریتی. موجود بودن و وضعیت ثبت هر دارو هنگام استعلام اعلام می‌شود.`,
@@ -92,7 +99,7 @@ const seoNote = ({
   <div class="mol-main prod-main">
     {main ? <>
       {sec.boxed.text && <div class="prod-boxed" {...L1(sec.boxed)}><strong>{m.boxed}</strong><p>{sec.boxed.text}</p></div>}
-      {(sec.moa.text || main.moaClass?.length) && <section class="pd-sec pd-moa"><h2><span class="pd-ico"><Icon name="molecule" size={18}/></span>{m.what}</h2>{sec.moa.text && <p {...L1(sec.moa)}>{sec.moa.text}</p>}{main.moaClass && main.moaClass.length > 0 && <p class="form-hint" lang="en" dir="ltr">{m.moaClass}: {main.moaClass.map((c: string) => c.replace(/\s*\[MoA\]/, '')).join(' · ')}</p>}</section>}
+      {(sec.moa.text || (main.moaClass?.length ?? 0) > 0) && <section class="pd-sec pd-moa"><h2><span class="pd-ico"><Icon name="molecule" size={18}/></span>{m.what}</h2>{sec.moa.text && <p {...L1(sec.moa)}>{sec.moa.text}</p>}{main.moaClass && main.moaClass.length > 0 && <p class="form-hint" lang="en" dir="ltr">{m.moaClass}: {main.moaClass.map((c: string) => c.replace(/\s*\[MoA\]/, '')).join(' · ')}</p>}</section>}
       {sec.indications.text && <section class="pd-sec pd-indications"><h2><span class="pd-ico"><Icon name="check" size={18}/></span>{m.indications}</h2><p {...L1(sec.indications)}>{sec.indications.text}</p></section>}
       {sec.dosage.text && <section class="pd-sec pd-dosage"><h2><span class="pd-ico"><Icon name="capsule" size={18}/></span>{m.dosage}</h2><p {...L1(sec.dosage)}>{sec.dosage.text}</p></section>}
       {sec.contraindications.text && <section class="pd-sec pd-contraindications"><h2><span class="pd-ico"><Icon name="close" size={18}/></span>{m.contra}</h2><p {...L1(sec.contraindications)}>{sec.contraindications.text}</p></section>}
@@ -100,7 +107,7 @@ const seoNote = ({
       {sec.pregnancy.text && <section class="pd-sec pd-pregnancy"><h2><span class="pd-ico"><Icon name="leaf" size={18}/></span>{m.pregnancy}</h2><p {...L1(sec.pregnancy)}>{sec.pregnancy.text}</p></section>}
       {sec.storage.text && <section class="pd-sec pd-storage"><h2><span class="pd-ico"><Icon name="box" size={18}/></span>{m.storage}</h2><p {...L1(sec.storage)}>{sec.storage.text}</p></section>}
       {isEditorial ? <p class="form-hint prod-source">{m.editorialSource}</p> :
-      <p class="form-hint prod-source" lang="en" dir="ltr">{m.source}: {main.generic}{main.brand ? ` (${main.brand})` : ''} — US FDA prescribing information{effective ? `, ${effective}` : ''}{dailymed && <>, <a class="text-link" href={dailymed} target="_blank" rel="noopener noreferrer">DailyMed</a></>}. {m.sourceNote}</p>}
+      <p class="form-hint prod-source" lang={htmlLang[lang]} dir={dir(lang)}>{srcLine}{dailymed && <>{' '}<a class="text-link" href={dailymed} target="_blank" rel="noopener noreferrer" lang="en" dir="ltr">DailyMed</a></>}{lang === 'en' ? '. ' : ' '}{m.sourceNote}</p>}
     </> : <p class="archive-note">{m.noInfo}</p>}
   </div>
   <aside class="mol-aside">

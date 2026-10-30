@@ -1,4 +1,5 @@
 ---
+import zhArt from '../../../data/articles.zh.json';
 import Layout from '../../../layouts/Layout.astro';
 import Article from '../../../components/ArticlePage.astro';
 import articles from '../../../data/articles.json';
@@ -8,4 +9,4 @@ export function getStaticPaths() {
 }
 const { article } = Astro.props;
 ---
-<Layout title={`${article.title} | Hanpars`} description={articleSummary(article).slice(0,155)} noindex canonicalPath={`/insights/${article.slug}`}><Article article={article}/></Layout>
+<Layout title={`${(zhArt.articles as Record<string, { title: string; excerpt: string }>)[article.slug]?.title || article.title} | 汉帕斯`} description={((zhArt.articles as Record<string, { title: string; excerpt: string }>)[article.slug]?.excerpt || articleSummary(article)).slice(0,155)} noindex canonicalPath={`/insights/${article.slug}`}><Article article={article}/></Layout>

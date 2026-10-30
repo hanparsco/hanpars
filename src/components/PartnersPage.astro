@@ -13,7 +13,7 @@ const fmt = (n: number) => n.toLocaleString(numLocale(lang));
 const million = ({ en: 'M', fa: ' میلیون', zh: ' 百万', tr: ' Mn' } as const)[lang];
 const values: Record<string, string> = {
   registered: fmt(portfolio.counts.total), available: fmt(portfolio.counts.available),
-  units: (units / 1e6).toLocaleString(numLocale(lang), { maximumFractionDigits: 1 }) + million, molecules: fmt(imports.length), shipments: fmt((imports as { ship?: number }[]).reduce((a, x) => a + (x.ship || 0), 0)),
+  units: lang === 'zh' ? (units / 1e8).toLocaleString('zh-CN', { maximumFractionDigits: 3 }) + ' 亿' : (units / 1e6).toLocaleString(numLocale(lang), { maximumFractionDigits: 1 }) + million, molecules: fmt(imports.length), shipments: fmt((imports as { ship?: number }[]).reduce((a, x) => a + (x.ship || 0), 0)),
 };
 const links = ({
   en: [['/fdf#product-portfolio', 'Registered portfolio'], ['/import-activity', 'Import activity 2026'], ['/regulatory-affairs', 'Regulatory affairs'], ['/fdf-cdmo', 'Licensed manufacturing in Iran']],
