@@ -14,7 +14,7 @@ export const verification = { baidu: '', bing: '', so360: '', sogou: '' };
 export const wechatId = 'hanparsco';
 // The link encoded in the account's own WeChat QR code (我的二维码 → https://u.wechat.com/…). When set, tapping the WeChat icon on a
 // phone opens WeChat directly on the add-contact page; desktop visitors get the QR to scan. Empty = dialog with the ID.
-export const wechatLink = '';
+export const wechatLink = 'https://u.wechat.com/kGcaqOFKknB_ovG_J2hFAOc?s=0';
 export const groups = [
   { label: 'Products', items: [
     { label: 'Finished dosage forms', href: '/fdf', note: 'The registered portfolio and the reference list' },
