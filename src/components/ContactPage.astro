@@ -7,7 +7,7 @@ const c = t(lang).contact;
 const types = ['sourcing', 'regulatory', 'cdmo'] as const;
 const officeLines = {
   fa: ['هانیا پرسان دارو', 'تهران، بلوار آفریقا، خیابان ظفر', 'پلاک ۳۲۶، طبقهٔ سوم', 'کد پستی ۱۹۶۸۷۳۴۹۷۴'],
-  zh: ['Haniya Parsan Darou', '伊朗德黑兰非洲大道', '扎法尔街 326 号 3 层', '邮编 1968734974'],
+  zh: ['汉尼亚帕尔桑药业有限公司', '伊朗德黑兰非洲大道', '扎法尔街 326 号 3 层', '邮编 1968734974'],
   tr: ['Haniya Parsan Darou', 'Zafar Caddesi No: 326, Kat: 3', 'Afrika Bulvarı, Tahran 1968734974', 'İran'],
   en: ['Haniya Parsan Darou', '3rd floor, No. 326, Zafar Street', 'Africa Boulevard, Tehran 1968734974', 'Iran'],
 }[lang];
@@ -25,7 +25,7 @@ const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, se
 const privacyNote = ({
         en: 'Privacy: the details you enter are sent through Web3Forms, a form-relay service, to the office e-mail of Haniya Parsan Darou Co. (Hanpars) in Tehran and are used to answer your enquiry. To ask what we hold about you, or to have it deleted, send a request through this form.',
         fa: 'حریم خصوصی: اطلاعاتی که وارد می‌کنید از طریق سرویس ارسال فرم Web3Forms به ایمیل دفتر شرکت هانیا پرسان دارو در تهران فرستاده می‌شود و برای پاسخ به درخواست شما به کار می‌رود. برای اطلاع از اطلاعات ثبت‌شده یا درخواست حذف آن، از همین فرم استفاده کنید.',
-        zh: '隐私说明：您填写的信息将通过表单转发服务 Web3Forms 发送至德黑兰 Haniya Parsan Darou Co.（Hanpars）的办公邮箱，仅用于答复您的询盘。如需了解我们保存的信息或要求删除，请通过本表单提出。',
+        zh: '隐私说明：您填写的信息将通过表单转发服务 Web3Forms 发送至德黑兰 汉尼亚帕尔桑药业有限公司（汉帕斯）的办公邮箱，仅用于答复您的询盘。如需了解我们保存的信息或要求删除，请通过本表单提出。',
         tr: 'Gizlilik: Girdiğiniz bilgiler Web3Forms form aktarım hizmeti aracılığıyla Tahran’daki Haniya Parsan Darou Co. (Hanpars) ofis e-postasına gönderilir ve talebinizi yanıtlamak için kullanılır. Hakkınızda tutulan bilgileri öğrenmek veya silinmesini istemek için bu formu kullanın.',
       } as Record<string, string>)[lang];
 ---

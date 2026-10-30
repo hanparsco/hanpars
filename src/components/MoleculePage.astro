@@ -33,7 +33,7 @@ const nameBoth = locTitle ? (lang === 'zh' ? `${locTitle}（${displayName}）` :
 const seoNote = ({
   en: `${displayName}${mol.cas ? ' (CAS ' + mol.cas + ')' : ''}: sourcing and import of this active pharmaceutical ingredient (API) for manufacturers in Iran on request, with DMF/CEP and GMP documentation, through Haniya Parsan Darou Co. (Hanpars), importer of pharmaceutical raw materials and excipients. Availability is confirmed per enquiry.`,
   fa: `${esc(nameBoth)}${mol.cas ? '، شمارهٔ CAS <bdi lang="en" dir="ltr">' + esc(mol.cas) + '</bdi>' : ''}: تأمین و واردات مادهٔ اولیهٔ دارویی (API) ${esc(locTitle || displayName)} با مستندات DMF/CEP و GMP برای تولیدکنندگان ایرانی، در صورت استعلام؛ شرکت هانیا پرسان دارو واردکنندهٔ مواد اولیهٔ دارویی و مواد اولیهٔ جانبی (اکسیپینت) است. موجود بودن هر ماده هنگام استعلام اعلام می‌شود.`,
-  zh: `${nameBoth}${mol.cas ? '，CAS号 ' + mol.cas : ''}：Hanpars（Haniya Parsan Darou）可应要求为伊朗制药企业采购和进口该原料药，并提供 DMF/CEP 和 GMP 文件；供应情况以询盘确认为准。`,
+  zh: `${nameBoth}${mol.cas ? '，CAS号 ' + mol.cas : ''}：汉帕斯（汉尼亚帕尔桑药业有限公司）可应要求为伊朗制药企业采购和进口该原料药，并提供 DMF/CEP 和 GMP 文件；供应情况以询盘确认为准。`,
   tr: `${nameBoth}${mol.cas ? ', CAS ' + mol.cas : ''}: Bu etkin maddenin (API) İran’daki üreticiler için DMF/CEP ve GMP belgeleriyle tedariki ve ithalatı talep üzerine Haniya Parsan Darou Co. (Hanpars) aracılığıyla yapılır; temin durumu her talepte teyit edilir.`,
 } as Record<string, string>)[lang];
 

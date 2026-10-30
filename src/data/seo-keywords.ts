@@ -3,7 +3,7 @@ import kwTr from './keywords.tr.json';
 import type { Lang } from '../i18n';
 /** Keyword sets per page (meta keywords; also the vocabulary used in titles, descriptions and copy). */
 const brandFa = ['هانیا پرسان دارو', 'شرکت هانیا پرسان دارو', 'هانپارس', 'Hanpars'];
-const brandZh = ['Hanpars', 'HANPARS', 'Haniya Parsan Darou', '伊朗 Hanpars', '哈尼亚·帕尔桑制药'];
+const brandZh = ['汉帕斯', '汉尼亚帕尔桑药业有限公司', 'Hanpars', 'HANPARS', 'Haniya Parsan Darou', '伊朗汉帕斯'];
 const brandTr = ['Hanpars', 'HANPARS', 'Haniya Parsan Darou', 'Hanpars İran'];
 const brandEn = ['Hanpars', 'HANPARS', 'Haniya Parsan Darou', 'Haniya Parsan Darou Co.', 'هانیا پرسان دارو'];
 
