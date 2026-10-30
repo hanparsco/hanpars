@@ -1,6 +1,7 @@
 ---
 import { verification } from '../data/site';
 import Header from '../components/Header.astro';
+import WeChatDialog from '../components/WeChatDialog.astro';
 import Footer from '../components/Footer.astro';
 import { langFromPath, stripLang, localePath, dir, langs, htmlLang, hreflangOf, ogLocale, t, type Lang } from '../i18n';
 import '../styles/global.css';
@@ -93,6 +94,7 @@ if(t)location.replace('/'+t+location.search+location.hash)}catch(e){}})();`} />}
     <Header brand={brand} />
     <main id="main-content" class:list={[{ 'hanpars-zh-hans': lang === 'zh' }]}><slot /></main>
     <Footer brand={brand} />
+    <WeChatDialog />
     <script>import '../scripts/site';</script>
   </body>
 </html>

@@ -1,0 +1,55 @@
+---
+/** WeChat has no public web link to a profile: tapping a WeChat icon therefore opens this small dialog with the ID,
+ *  a copy button, an "open WeChat" button on phones (weixin:// scheme) and, when /wechat-qr.png exists, the QR code. */
+import { wechatId } from '../data/site';
+import { langFromPath, dir } from '../i18n';
+import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+const lang = langFromPath(Astro.url.pathname);
+const hasQr = existsSync(fileURLToPath(new URL('../../public/wechat-qr.png', import.meta.url)));
+const t = ({
+  en: { title: 'WeChat', lead: 'Add us on WeChat by ID, or scan the QR code in the WeChat app.', id: 'WeChat ID', copy: 'Copy ID', copied: 'Copied', open: 'Open WeChat', how: 'In WeChat: Contacts → Add → search the ID. Please mention your company and product.', close: 'Close' },
+  fa: { title: 'وی‌چت', lead: 'ما را با شناسهٔ وی‌چت اضافه کنید یا کد QR را در برنامهٔ وی‌چت اسکن کنید.', id: 'شناسهٔ وی‌چت', copy: 'کپی شناسه', copied: 'کپی شد', open: 'باز کردن وی‌چت', how: 'در وی‌چت: مخاطبین ← افزودن ← جست‌وجوی شناسه. نام شرکت و محصول را ذکر کنید.', close: 'بستن' },
+  zh: { title: '微信', lead: '请在微信中搜索微信号添加我们，或扫描二维码。', id: '微信号', copy: '复制微信号', copied: '已复制', open: '打开微信', how: '微信 → 通讯录 → 添加朋友 → 搜索微信号。添加时请注明公司与产品。', close: '关闭' },
+  tr: { title: 'WeChat', lead: 'Bizi WeChat kimliğiyle ekleyin veya QR kodunu WeChat uygulamasında tarayın.', id: 'WeChat kimliği', copy: 'Kimliği kopyala', copied: 'Kopyalandı', open: 'WeChat’i aç', how: 'WeChat: Kişiler → Ekle → kimliği arayın. Lütfen şirketinizi ve ürününüzü belirtin.', close: 'Kapat' },
+} as const)[lang];
+---
+{wechatId && <dialog id="wechat-dialog" class="wx-dialog" dir={dir(lang)} aria-labelledby="wx-title">
+  <form method="dialog" class="wx-box">
+    <button class="wx-close" value="close" aria-label={t.close}>×</button>
+    <h2 id="wx-title">{t.title}</h2>
+    <p class="wx-lead">{t.lead}</p>
+    {hasQr && <img class="wx-qr" src="/wechat-qr.png" width="200" height="200" alt="" loading="lazy" />}
+    <p class="wx-id"><small>{t.id}</small><strong dir="ltr" lang="en" data-wx-id>{wechatId}</strong></p>
+    <div class="wx-actions">
+      <button type="button" class="button button-navy" data-wx-copy data-copied={t.copied}>{t.copy}</button>
+      <a class="button button-light wx-open" href={`weixin://dl/chat?${wechatId}`} data-wx-open>{t.open}</a>
+    </div>
+    <p class="wx-how">{t.how}</p>
+  </form>
+</dialog>}
+<script>
+  const dlg = document.getElementById('wechat-dialog') as HTMLDialogElement | null;
+  if (dlg) {
+    document.querySelectorAll<HTMLAnchorElement>('a[data-wechat]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); dlg.showModal(); }));
+    dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+    const copy = dlg.querySelector<HTMLButtonElement>('[data-wx-copy]'); const id = dlg.querySelector('[data-wx-id]')?.textContent || '';
+    copy?.addEventListener('click', async () => { try { await navigator.clipboard.writeText(id); const o = copy.textContent; copy.textContent = copy.dataset.copied || o; setTimeout(() => { copy.textContent = o; }, 1600); } catch {} });
+    // the weixin:// scheme only works where the WeChat app is installed (phones); hide the button elsewhere
+    const open = dlg.querySelector<HTMLElement>('[data-wx-open]');
+    if (open && !/Android|iPhone|iPad|HarmonyOS/i.test(navigator.userAgent)) open.hidden = true;
+  }
+</script>
+<style>
+  .wx-dialog { border:0; border-radius:22px; padding:0; max-width:min(92vw, 420px); background:var(--white); color:var(--ink); box-shadow:0 30px 80px -30px #000c; }
+  .wx-dialog::backdrop { background:#0c0c0cb3; backdrop-filter:blur(2px); }
+  .wx-box { position:relative; padding:30px 28px 26px; margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; text-align:center; }
+  .wx-close { position:absolute; top:10px; inset-inline-end:12px; border:0; background:transparent; font-size:26px; line-height:1; color:var(--muted); cursor:pointer; padding:6px 10px; }
+  .wx-box h2 { font-size:22px; }
+  .wx-lead { margin:0; color:var(--muted); font-size:15.5px; }
+  .wx-qr { width:200px; height:200px; border-radius:14px; border:1px solid var(--line); }
+  .wx-id { margin:4px 0 0; display:flex; flex-direction:column; gap:4px; }
+  .wx-id small { color:var(--muted); font-size:13px; } .wx-id strong { font:600 24px/1.2 var(--display); letter-spacing:.02em; color:var(--lapis-deep); }
+  .wx-actions { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .wx-how { margin:4px 0 0; font-size:14px; color:var(--muted); line-height:1.6; }
+</style>
