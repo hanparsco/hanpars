@@ -1,7 +1,7 @@
 ---
 /** WeChat has no public web link to a profile: tapping a WeChat icon therefore opens this small dialog with the ID,
  *  a copy button, an "open WeChat" button on phones (weixin:// scheme) and, when /wechat-qr.png exists, the QR code. */
-import { wechatId } from '../data/site';
+import { wechatId, wechatLink } from '../data/site';
 import { langFromPath, dir } from '../i18n';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -23,7 +23,7 @@ const t = ({
     <p class="wx-id"><small>{t.id}</small><strong dir="ltr" lang="en" data-wx-id>{wechatId}</strong></p>
     <div class="wx-actions">
       <button type="button" class="button button-navy" data-wx-copy data-copied={t.copied}>{t.copy}</button>
-      <a class="button button-light wx-open" href={`weixin://dl/chat?${wechatId}`} data-wx-open>{t.open}</a>
+      <a class="button button-light wx-open" href={wechatLink || `weixin://dl/chat?${wechatId}`} data-wx-open data-wx-link={wechatLink}>{t.open}</a>
     </div>
     <p class="wx-how">{t.how}</p>
   </form>
@@ -31,7 +31,14 @@ const t = ({
 <script>
   const dlg = document.getElementById('wechat-dialog') as HTMLDialogElement | null;
   if (dlg) {
-    document.querySelectorAll<HTMLAnchorElement>('a[data-wechat]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); dlg.showModal(); }));
+    const mobile = /Android|iPhone|iPad|HarmonyOS/i.test(navigator.userAgent);
+    const direct = dlg.querySelector<HTMLElement>('[data-wx-open]')?.dataset.wxLink || '';
+    document.querySelectorAll<HTMLAnchorElement>('a[data-wechat]').forEach(a => a.addEventListener('click', e => {
+      e.preventDefault();
+      // on a phone with the account's QR link known, go straight to WeChat's add-contact page; otherwise show the dialog
+      if (mobile && direct) { location.href = direct; return; }
+      dlg.showModal();
+    }));
     dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
     const copy = dlg.querySelector<HTMLButtonElement>('[data-wx-copy]'); const id = dlg.querySelector('[data-wx-id]')?.textContent || '';
     copy?.addEventListener('click', async () => { try { await navigator.clipboard.writeText(id); const o = copy.textContent; copy.textContent = copy.dataset.copied || o; setTimeout(() => { copy.textContent = o; }, 1600); } catch {} });

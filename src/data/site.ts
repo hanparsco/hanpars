@@ -12,6 +12,9 @@ export const formAccessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY || '2713f108-a
 export const verification = { baidu: '', bing: '', so360: '', sogou: '' };
 // WeChat ID shown on the Chinese contact page (empty = not shown). A QR image can be dropped in public/wechat-qr.png.
 export const wechatId = 'hanparsco';
+// The link encoded in the account's own WeChat QR code (我的二维码 → https://u.wechat.com/…). When set, tapping the WeChat icon on a
+// phone opens WeChat directly on the add-contact page; desktop visitors get the QR to scan. Empty = dialog with the ID.
+export const wechatLink = '';
 export const groups = [
   { label: 'Products', items: [
     { label: 'Finished dosage forms', href: '/fdf', note: 'The registered portfolio and the reference list' },
