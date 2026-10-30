@@ -131,7 +131,7 @@ def main():
         url = prev['url'] if prev else resolve_google(it['link'])
         if 'news.google.com' in url: url = it['source_url'] or url
         slug = 'zh-' + hashlib.sha1(url.encode()).hexdigest()[:10]
-        if prev and prev.get('image') and (ROOT / 'public' / prev['image'].lstrip('/')).exists(): image, img_src = prev['image'], prev.get('imageSource', '')
+        if prev and prev.get('image') and os.environ.get('FORCE') != '1' and (ROOT / 'public' / prev['image'].lstrip('/')).exists(): image, img_src = prev['image'], prev.get('imageSource', '')
         else:
             img_src = og_image(url) if 'news.google.com' not in url else ''
             image = _fn.save_image(img_src, slug) if img_src else ''
