@@ -11,7 +11,7 @@ export const formAccessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY || '2713f108-a
 // Baidu 站长平台 (ziyuan.baidu.com) → baidu; Bing Webmaster → bing; 360 站长 → so360; Sogou 站长 → sogou.
 export const verification = { baidu: '', bing: '', so360: '', sogou: '' };
 // WeChat ID shown on the Chinese contact page (empty = not shown). A QR image can be dropped in public/wechat-qr.png.
-export const wechatId = '';
+export const wechatId = 'mojdip';
 export const groups = [
   { label: 'Products', items: [
     { label: 'Finished dosage forms', href: '/fdf', note: 'The registered portfolio and the reference list' },

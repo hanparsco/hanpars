@@ -3,7 +3,7 @@ import Icon from './Icon.astro';
 interface Props { brand?: 'default' | 'regulatory' }
 const { brand = 'default' } = Astro.props;
 import { langFromPath, localePath, stripLang, t, dir } from '../i18n';
-import { contactEmail, raEmail, mEnc, mShow } from '../data/site';
+import { contactEmail, raEmail, mEnc, mShow, wechatId } from '../data/site';
 const email = brand === 'regulatory' ? raEmail : contactEmail;
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang);
@@ -34,6 +34,7 @@ const langs = ([
         <h2 class="ft-label">{f.reach}</h2>
         {lang !== 'fa' && <a class="ft-card" href="tel:+982188883325"><span class="ft-ico"><Icon name="phone" size={18} /></span><span><small>{f.phone}</small><strong dir="ltr" data-fa-digits>+98 21 8888 3325</strong></span></a>}
         <a class="ft-card" href={L(brand === 'regulatory' ? '/contact-us-1?type=regulatory' : '/contact-us-1')} data-m={mEnc(email)}><span class="ft-ico"><Icon name="mail" size={18} /></span><span><small>{f.email}</small><strong dir="ltr" lang="en" data-m-text>{mShow(email)}</strong></span></a>
+        {lang === 'zh' && wechatId && <div class="ft-card"><span class="ft-ico"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 4C5.4 4 2 6.7 2 10c0 1.8 1 3.4 2.6 4.5L4 17l2.8-1.4c.9.3 1.8.4 2.7.4h.4"/><path d="M22 14.5c0-2.9-2.8-5.2-6.3-5.2s-6.3 2.3-6.3 5.2 2.8 5.2 6.3 5.2c.8 0 1.5-.1 2.2-.3L20 20l-.5-1.9c1.5-.9 2.5-2.2 2.5-3.6Z"/><path d="M7.2 8.8h.01M11.2 8.8h.01M13.8 13.6h.01M17.6 13.6h.01"/></svg></span><span><small>微信</small><strong dir="ltr" lang="en">{wechatId}</strong></span></div>}
         {lang !== 'fa' && <div class="ft-card"><span class="ft-ico"><Icon name="pin" size={18} /></span><span><small>{f.office}</small><strong>{s.footer.address}</strong></span></div>}
         {lang !== 'fa' && <div class="ft-card"><span class="ft-ico"><Icon name="clock" size={18} /></span><span><small>{s.contact.hours}</small><strong>{s.contact.hoursText}</strong></span></div>}
       </div>
