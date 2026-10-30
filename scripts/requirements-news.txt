@@ -1,3 +1,0 @@
-# Generated 2026-10-29 by pin-python-deps.yml — do not edit by hand.
-pillow==11.3.0 \
-    --hash=sha256:676b2815362456b5b3216b4fd5bd89d362100dc6f4945154ff172e206a22c024

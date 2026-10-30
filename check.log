@@ -1,0 +1,73 @@
+$ astro check
+11:00:56 [content] Syncing content
+11:00:56 [content] Synced content
+11:00:56 [types] Generated 110ms
+11:00:56 [check] Getting diagnostics for Astro files in /home/runner/work/hanpars/hanpars...
+[96mscripts/seo-audit.mjs[0m:[93m39[0m:[93m57[0m - [93mwarning[0m[90m ts(6133): [0m't' is declared but its value is never read.
+
+[7m39[0m     issue('duplicate descriptions', [...descs].filter(([t, l]) => l.length > 1).map(([t, l]) => `${l.length}× ${t.slice(0, 80)} :: ${l.slice(0, 3).join(', ')}`)),
+[7m  [0m [93m                                                        ~[0m
+[96mscripts/seo-audit.mjs[0m:[93m38[0m:[93m52[0m - [93mwarning[0m[90m ts(6133): [0m't' is declared but its value is never read.
+
+[7m38[0m     issue('duplicate titles', [...titles].filter(([t, l]) => l.length > 1).map(([t, l]) => `${l.length}× ${t} :: ${l.slice(0, 3).join(', ')}`)),
+[7m  [0m [93m                                                   ~[0m
+
+[96msrc/components/Home.astro[0m:[93m114[0m:[93m75[0m - [93mwarning[0m[90m ts(6133): [0m'i' is declared but its value is never read.
+
+[7m114[0m     {todayNews.length > 0 && <div class="news-grid">{todayNews.map((item, i) => <NewsCard item={item} eager={false} fa={lang === 'fa'}/>)}</div>}
+[7m   [0m [93m                                                                          ~[0m
+
+[96msrc/components/Imports2026.astro[0m:[93m76[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'grads' is declared but its value is never read.
+
+[7m76[0m const grads = Object.entries(COL).map(([k, c]) => ({ id: `imp-g-${k}`, hi: mix(c, '#ffffff', .62), mid: c, lo: mix(c, '#000000', .38) }));
+[7m  [0m [93m      ~~~~~[0m
+
+[96msrc/components/MoleculePage.astro[0m:[93m19[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m19[0m const title = mol.name.replace(/\bHCl\b/g, 'HCl');
+[7m  [0m [93m      ~~~~~[0m
+
+[96msrc/components/NewsCard.astro[0m:[93m5[0m:[93m46[0m - [91merror[0m[90m ts(2454): [0mVariable 'lang' is used before being assigned.
+
+[7m5[0m const tl = fa ? { lang: 'fa', dir: 'rtl' } : lang === 'zh' && /[\u4e00-\u9fff]/.test(item.title) ? { lang: 'zh-Hans', dir: 'ltr' } : { lang: 'en', dir: 'ltr' };
+[7m [0m [91m                                             ~~~~[0m
+[96msrc/components/NewsCard.astro[0m:[93m5[0m:[93m46[0m - [91merror[0m[90m ts(2448): [0mBlock-scoped variable 'lang' used before its declaration.
+
+[7m5[0m const tl = fa ? { lang: 'fa', dir: 'rtl' } : lang === 'zh' && /[\u4e00-\u9fff]/.test(item.title) ? { lang: 'zh-Hans', dir: 'ltr' } : { lang: 'en', dir: 'ltr' };
+[7m [0m [91m                                             ~~~~[0m
+
+[96msrc/components/NewsPage.astro[0m:[93m18[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'fmt' is declared but its value is never read.
+
+[7m18[0m const fmt = (d: string) => d ? new Date(d + 'T00:00:00Z').toLocaleDateString(dateLocale(lang), { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' }) : '';
+[7m  [0m [93m      ~~~[0m
+
+[96msrc/components/ProductPage.astro[0m:[93m40[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'routeLabel' is declared but its value is never read.
+
+[7m40[0m const routeLabel = p.route ? prettyName(p.route) : '';
+[7m  [0m [93m      ~~~~~~~~~~[0m
+
+[96msrc/components/RegulatoryPage.astro[0m:[93m6[0m:[93m24[0m - [93mwarning[0m[90m ts(6133): [0m'localePath' is declared but its value is never read.
+
+[7m6[0m import { langFromPath, localePath, t } from '../i18n';
+[7m [0m [93m                       ~~~~~~~~~~[0m
+
+[96msrc/data/fdf-parse.ts[0m:[93m54[0m:[93m57[0m - [93mwarning[0m[90m ts(6133): [0m'm' is declared but its value is never read.
+
+[7m54[0m   return s.toLowerCase().replace(/(^|[\s(/])([a-z])/g, (m, a, b) => a + b.toUpperCase())
+[7m  [0m [93m                                                        ~[0m
+
+[96msrc/data/seo-schema.ts[0m:[93m127[0m:[93m54[0m - [93mwarning[0m[90m ts(6133): [0m'entry' is declared but its value is never read.
+
+[7m127[0m function localizedDuplicate(lang: Lang, key: string, entry: { name: string; code: string }): boolean {
+[7m   [0m [93m                                                     ~~~~~[0m
+[96msrc/data/seo-schema.ts[0m:[93m77[0m:[93m29[0m - [93mwarning[0m[90m ts(6133): [0m'slug' is declared but its value is never read.
+
+[7m77[0m export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) {
+[7m  [0m [93m                            ~~~~[0m
+
+Result (98 files): 
+- 2 errors
+- 0 warnings
+- 11 hints
+
+[ELIFECYCLE] Command failed with exit code 1.
