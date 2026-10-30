@@ -6,6 +6,7 @@ import FaqFa from './FaqFa.astro';
 import Icon from './Icon.astro';
 import news from '../data/news.json';
 import newsFa from '../data/news-fa.json';
+import newsZh from '../data/news-zh.json';
 import portfolio from '../data/portfolio.json';
 import { portfolioL } from '../data/locale';
 import fdf from '../data/fdf.json';
@@ -19,7 +20,7 @@ const partnerBand = ({
   zh: { title: '中国药企，正在考虑伊朗市场？', text: 'Hanpars 是 IFDA 持牌进口商和注册持有人，拥有自有注册团队和全国分销网络，并在杭州、镇江设有办公室。', cta: '面向中国药企' },
   tr: { title: 'İran pazarını değerlendiren bir Türk ilaç üreticisi misiniz?', text: 'Hanpars, IFDA lisanslı ithalatçı ve ruhsat sahibidir; şirket içi ruhsatlandırma ekibi, ülke çapında dağıtım ve İstanbul’da ortak ofis.', cta: 'Türk üreticiler için' },
 } as Record<string, { title: string; text: string; cta: string }>)[lang];
-const todayNews = lang === 'fa' ? (newsFa.items || []).slice(0,3) : [...(news.global || []).slice(0,2), ...(news.china || []).slice(0,1)];
+const todayNews = lang === 'fa' ? (newsFa.items || []).slice(0,3) : lang === 'zh' ? (newsZh.items || []).slice(0,3) : [...(news.global || []).slice(0,2), ...(news.china || []).slice(0,1)];
 const fmt = (n:number) => n.toLocaleString(numLocale(lang));
 const pl = lang === 'en' ? null : portfolioL[lang];
 const groupTitle = (id:string, title:string) => pl ? ((pl.groups as any)[id]?.title ?? title) : title;

@@ -27,7 +27,7 @@ export const zh: UI = {
       { label: '市场与采购', href: '/markets', note: '深耕伊朗，货源遍及海外' },
     ] },
     { label: '洞察', items: [
-      { label: '今日医药资讯', href: '/news', note: '每日清晨更新六条要闻' },
+      { label: '今日医药资讯', href: '/news', note: '来自中文医药媒体，每 4 小时更新' },
       { label: '洞察存档', href: '/blog-1', note: '2025 年发表的文章' },
     ] },
   ],
@@ -170,12 +170,12 @@ export const zh: UI = {
   },
   news: {
     title: '今日医药资讯', category: '洞察', action: '洞察存档',
-    lede: (d: string) => `今日全球及中国医药行业动态。${d}。`,
-    ledeEmpty: '今日全球及中国医药行业动态。',
-    globalTitle: '全球医药资讯', globalLede: '审批、交易、供应与监管。',
+    lede: (d: string) => `来自中文医药专业媒体的最新行业动态：出海、授权交易、审批、集采与供应链。更新时间：${d}。`,
+    ledeEmpty: '来自中文医药专业媒体的最新行业动态：出海、授权交易、审批、集采与供应链。',
+    globalTitle: '医药要闻', globalLede: '医药魔方、医药经济报、同写意、E药经理人、动脉网、药智网、生物谷、财新、界面新闻、36氪。',
     chinaKicker: '中国动态', chinaTitle: '来自中国的制剂与原料药资讯', chinaLede: '制剂与原料药。',
     readAt: '阅读来源：', empty: '首期摘要将在下一次定时更新后显示。',
-    note: '每日清晨更新。标题、摘要和图片归所列出版方所有；内容选择不代表 Hanpars 的观点。', archiveLink: '我们自己的文章见洞察存档。',
+    note: '每 4 小时自动更新。标题、摘要和图片归所列媒体所有；内容选择不代表 Hanpars 的观点。', archiveLink: '我们自己的文章见洞察存档。',
   },
   supplements: {
     title: '保健品原料参考清单', entries: '种原料', search: '按原料、形态或用途搜索', filterLabel: '按类别筛选', all: '全部',

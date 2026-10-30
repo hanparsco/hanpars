@@ -2,7 +2,7 @@
 import { langFromPath, t, dateLocale } from '../i18n';
 interface Props { item: { title:string; url:string; source:string; date:string; summary:string; image:string }; dark?: boolean; eager?: boolean; fa?: boolean; }
 const { item, dark = false, eager = false, fa = false } = Astro.props;
-const tl = fa ? { lang: 'fa', dir: 'rtl' } : { lang: 'en', dir: 'ltr' };
+const tl = fa ? { lang: 'fa', dir: 'rtl' } : lang === 'zh' && /[\u4e00-\u9fff]/.test(item.title) ? { lang: 'zh-Hans', dir: 'ltr' } : { lang: 'en', dir: 'ltr' };
 const lang = langFromPath(Astro.url.pathname);
 const s = t(lang).news;
 const date = item.date ? new Date(item.date + 'T00:00:00Z').toLocaleDateString(dateLocale(lang), { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' }) : '';

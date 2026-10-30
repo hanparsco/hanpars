@@ -24,10 +24,11 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const nameFa = (lang === 'tr' ? ((x: string) => x.charAt(0).toLocaleUpperCase('tr') + x.slice(1)) : (x: string) => x)(locName(lang, name).trim());
   const fFormShort = fForm || prettyName(p.form).split(',')[0];
   const eForm = prettyName(p.form).split(',')[0];
-  const dupe = duplicateInfo(entry);
+  const dupe0 = duplicateInfo(entry);
+  const dupe = { pack: dupe0.pack, code: dupe0.code || localizedDuplicate(lang, `${nameFa || name}|${fFormShort}|${strength}`, entry) };
   const extraFa = dupe.pack && p.pack ? ' ' + p.pack : ''; const extraEn = extraFa;
   const codeFa = dupe.code ? ` کد ${entry.code}` : ''; const codeEn = dupe.code ? ` (code ${entry.code})` : '';
-  const pick = (c: string[]) => c.find(x => x.length <= 66) || c[c.length - 1];
+  const pick = (c: string[]) => c.find(x => x.length <= 65) || c[c.length - 1];
   const core = `${nameFa || name} ${fFormShort}${strength ? ' ' + strength : ''}${extraFa}${codeFa}`.replace(/\s+/g, ' ').trim();
   const coreEn = `${name} ${eForm}${strength ? ' ' + strength : ''}${extraEn}${codeEn}`.replace(/\s+/g, ' ').trim();
   const sz = strength ? ' ' + strength : '';
@@ -77,7 +78,7 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
   const pretty = (n: string) => /[a-z]/.test(n) ? n : n.charAt(0) + n.slice(1).toLowerCase().replace(/\bhcl\b/g, 'HCl');
   const name = pretty(mol.name);
   const nameFa = (lang === 'tr' ? ((x: string) => x.charAt(0).toLocaleUpperCase('tr') + x.slice(1)) : (x: string) => x)(locName(lang, name).trim() || locName(lang, mol.name).trim());
-  const pick = (c: string[]) => c.find(x => x.length <= 66) || c[c.length - 1];
+  const pick = (c: string[]) => c.find(x => x.length <= 65) || c[c.length - 1];
   const cas = mol.cas ? ` CAS ${mol.cas}` : '';
   const title = lang === 'zh'
     ? pick([nameFa ? `${nameFa}（${name}）${cas} | 原料药供应 | Hanpars` : '', `${nameFa || name}${cas} | 原料药 | Hanpars`, `${nameFa || name}${cas}`].filter(Boolean))
@@ -121,6 +122,23 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
 
 let _dup: Map<string, { names: number; packs: Map<string, number> }> | null = null;
 function baseKey(e: { name: string }) { const p = parseFdf(e.name); return `${p.ingredient}|${p.form.split(',')[0].trim()}|${p.strength}`; }
+const _locDup = new Map<string, Map<string, number>>();
+/** Localized titles can collide where two English names share one translation (e.g. 'Plasma' and 'Blood plasma'). */
+function localizedDuplicate(lang: Lang, key: string, entry: { name: string; code: string }): boolean {
+  if (lang === 'en') return false;
+  if (!_locDup.has(lang)) {
+    const m = new Map<string, number>();
+    for (const e of fdfAll as { name: string; code: string }[]) {
+      const q = parseFdf(e.name); const n = prettyName(q.ingredient);
+      const nf = (lang === 'tr' ? ((x: string) => x.charAt(0).toLocaleUpperCase('tr') + x.slice(1)) : (x: string) => x)(locName(lang, n).trim());
+      const ff = formL[lang](q.form, q.route) || prettyName(q.form).split(',')[0];
+      const k = `${nf || n}|${ff}|${q.strength.replace(/\bug\b/g, 'µg')}`;
+      m.set(k, (m.get(k) || 0) + 1);
+    }
+    _locDup.set(lang, m);
+  }
+  return (_locDup.get(lang)!.get(key) || 0) > 1;
+}
 function duplicateInfo(entry: { name: string; code: string }) {
   if (!_dup) {
     _dup = new Map();
