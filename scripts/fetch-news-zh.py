@@ -7,7 +7,7 @@ Writes  src/data/news-zh.json  {updated, items:[{title,url,source,date,summary,i
 and     public/news/zh-<hash>.jpg.  Run by .github/workflows/news-zh.yml every four hours; stdlib + Pillow.
 """
 from __future__ import annotations
-import json, re, html, hashlib, os, sys, datetime as dt, urllib.parse, importlib.util
+import json, re, html, hashlib, os, sys, datetime as dt, urllib.parse, urllib.request, importlib.util
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -20,7 +20,28 @@ MAX_AGE_DAYS = 4
 N_ITEMS = 6
 # helpers shared with the English robot (Google-link resolution, og:image, image resizing)
 _spec = importlib.util.spec_from_file_location('fetch_news', ROOT / 'scripts/fetch-news.py'); _fn = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(_fn)  # type: ignore
-fetch, resolve_google, og_image = _fn.fetch, _fn.resolve_google, _fn.og_image
+fetch, resolve_google = _fn.fetch, _fn.resolve_google
+CHROME = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
+
+
+def og_image(url: str) -> str:
+    """Publisher preview image: og:image / twitter:image, else the first content image of the article (Chinese sites
+    often omit og tags or render them client-side)."""
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': CHROME, 'Accept': 'text/html,*/*', 'Accept-Language': 'zh-CN,zh;q=0.9', 'Referer': 'https://www.google.com/'})
+        with urllib.request.urlopen(req, timeout=20) as r: raw = r.read()[:600_000].decode('utf-8', 'ignore')
+    except Exception as e:
+        print(f'  ! page fetch for image failed: {url[:60]} {type(e).__name__}'); return ''
+    for pat in (r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]+content=["\']([^"\']+)', r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image',
+                r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)', r'"(?:cover|coverImage|cover_img|thumb|image)"\s*:\s*"(https?:[^"]+\.(?:jpe?g|png|webp)[^"]*)"'):
+        m = re.search(pat, raw, re.I)
+        if m: return html.unescape(m.group(1)).replace('\\/', '/')
+    body = raw.split('<body', 1)[-1]
+    for m in re.finditer(r'<img[^>]+(?:data-src|data-original|src)=["\'](https?://[^"\']+\.(?:jpe?g|png|webp)[^"\']*)', body, re.I):
+        u = m.group(1)
+        if re.search(r'logo|icon|avatar|qrcode|qr_|banner|ad[sv]?[_/.-]|1x1|pixel|emoji', u, re.I): continue
+        return html.unescape(u)
+    return ''
 
 # (display name, Google News query, accepted <source> names or hosts). Order = editorial preference.
 SOURCES = [
@@ -39,7 +60,7 @@ GOOD = {'出海': 6, '授权': 4, 'License': 4, 'BD': 3, '海外': 4, '全球': 
         '制剂': 4, '出口': 5, '跨国': 3, '中东': 6, '伊朗': 8, '一带一路': 4, '注册': 3, 'GMP': 4, '产能': 3, '供应链': 4, '仿制药': 4, '生物类似药': 4, '疫苗': 3, '胰岛素': 3,
         '短缺': 4, '价格': 2, '政策': 2, '医保': 2, '临床': 1, '上市': 2, 'CDMO': 5, 'CRO': 2, '工厂': 3, '合作': 2, '协议': 2, '亿美元': 3, '首付款': 4, '里程碑': 3}
 BAD = {'ETF': -12, '板块': -10, '涨停': -12, '涨超': -10, '股价': -6, '研报': -6, '评级': -6, '主力资金': -12, '净流入': -12, '券商': -6, '大宗交易': -12, '龙虎榜': -12,
-       '招聘': -10, '峰会': -5, '论坛': -5, '报名': -10, '直播': -8, '征文': -10, '科普': -6, '减肥': -3, '论文': -6, 'Cell': -4, 'Nature': -3, 'Science': -3, '小鼠': -8, '机制': -3,
+       '招聘': -10, '活动': -10, '洽谈会': -10, '日报': -6, '早报': -6, '晚报': -6, '周报': -4, '盘点': -3, '峰会': -5, '论坛': -5, '报名': -10, '直播': -8, '征文': -10, '科普': -6, '减肥': -3, '论文': -6, 'Cell': -4, 'Nature': -3, 'Science': -3, '小鼠': -8, '机制': -3,
        '访谈': -3, '观点': -2, '广告': -10, '招商': -8, '免费': -8, '试用': -8, '课程': -10, 'AI营销': -6}
 
 
@@ -75,6 +96,7 @@ def score(it) -> float:
         s += max(0.0, 6 - 2 * age)
     else: s -= 3
     if len(it['title']) < 8: return -100
+    if not re.search(r'药|医药|制药|医疗|生物|疫苗|胰岛素|临床|FDA|EMA|NMPA|集采|医保|ADC|GLP|CDMO|CRO|仿制|单抗|双抗|细胞|基因|器械|诊断|中药|API|原料', t): return -100
     return s
 
 
