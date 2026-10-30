@@ -1,33 +1,24 @@
-import urllib.request, re, json, ssl, sys
+import urllib.request, urllib.parse, re, ssl
 UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36'
-C={
- 'pharmcube':['https://www.pharmcube.com/','https://www.pharmcube.com/news','https://news.pharmcube.com/','https://www.pharmcube.com/rss','https://www.pharmcube.com/feed'],
- 'tongxieyi':['https://www.tongxieyi.com/','https://tongxieyi.com/','https://www.tongxieyi.com/feed','https://www.tongxieyi.com/rss'],
- 'e-pharma':['https://www.y-lp.com/','https://y-lp.com/','https://www.y-lp.cn/','https://www.y-lp.com/feed'],
- 'yyjjb':['https://www.yyjjb.com.cn/','http://www.yyjjb.com.cn/','https://www.yyjjb.com.cn/rss.xml','https://www.yyjjb.com.cn/yyjjb/'],
- 'vbdata':['https://www.vbdata.cn/','https://vcbeat.top/','https://www.vbdata.cn/rss','https://vcbeat.top/feed'],
- 'yaozh':['https://news.yaozh.com/','https://www.yaozh.com/','https://news.yaozh.com/rss','https://news.yaozh.com/feed'],
- 'bioon':['https://news.bioon.com/','https://www.bioon.com/','https://news.bioon.com/rss','https://www.bioon.com/rss/','https://news.bioon.com/industry/'],
- 'caixin':['https://www.caixin.com/rss/','https://health.caixin.com/','https://www.caixin.com/rss/finance.xml','https://health.caixin.com/rss/'],
- 'jiemian':['https://www.jiemian.com/lists/3.html','https://www.jiemian.com/','https://a.jiemian.com/index.php?m=lists&a=rss&cid=3','https://www.jiemian.com/rss/health.xml'],
- '36kr':['https://36kr.com/feed','https://36kr.com/information/web_news/latest','https://36kr.com/feed-newsflash'],
-}
 ctx=ssl.create_default_context(); ctx.check_hostname=False; ctx.verify_mode=ssl.CERT_NONE
 def get(u):
-    r=urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':UA,'Accept':'*/*','Accept-Language':'zh-CN,zh;q=0.9'}),timeout=25,context=ctx)
-    return r.status, r.headers.get('content-type',''), r.read(400000), r.geturl()
-for name,urls in C.items():
-    for u in urls:
-        try:
-            st,ct,b,fin=get(u); t=b.decode('utf-8','replace')
-            kind='RSS' if ('<rss' in t[:2000] or '<feed' in t[:2000]) else 'HTML'
-            print(f'== {name} {u} -> {st} {ct[:40]} {len(b)}B {kind} final={fin}')
-            if kind=='RSS':
-                print('   items:',len(re.findall(r'<item>|<entry>',t)),'|',re.findall(r'<title>(?:<!\[CDATA\[)?([^<\]]{6,80})',t)[1:4])
-            else:
-                links=re.findall(r'<a[^>]+href="([^"]+)"[^>]*>([^<]{10,60})</a>',t)
-                links=[(h,x.strip()) for h,x in links if re.search(r'[一-鿿]{6,}',x)]
-                print('   article-like links:',len(links),links[:4])
-                print('   meta refresh/js-only:', 'http-equiv="refresh"' in t, '| <article>' in t, '| json-ld:', 'application/ld+json' in t)
-        except Exception as e:
-            print(f'== {name} {u} -> ERR {type(e).__name__}: {str(e)[:80]}')
+    r=urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':UA,'Accept':'*/*','Accept-Language':'zh-CN,zh;q=0.9'}),timeout=25,context=ctx); return r.read().decode('utf-8','replace')
+Q={'pharmcube':'site:pharmcube.com','tongxieyi':'同写意 医药','e-pharma':'E药经理人','yyjjb':'site:yyjjb.com.cn OR 医药经济报','vbdata':'site:vbdata.cn','yaozh':'site:yaozh.com','bioon':'site:bioon.com','caixin':'site:caixin.com 医药 OR 药企 OR 创新药','jiemian':'site:jiemian.com 医药 OR 药企','36kr':'site:36kr.com 医药 OR 药企 OR 创新药','mix':'(创新药 OR 原料药 OR 药企 OR 出海 OR 集采 OR NMPA) when:2d'}
+for k,q in Q.items():
+    u='https://news.google.com/rss/search?q='+urllib.parse.quote(q+' when:7d')+'&hl=zh-CN&gl=CN&ceid=CN:zh-Hans'
+    try:
+        t=get(u); items=re.findall(r'<item>(.*?)</item>',t,flags=re.S)
+        print(f'== {k}: {len(items)} items')
+        for it in items[:3]:
+            ti=re.search(r'<title>(.*?)</title>',it,flags=re.S); d=re.search(r'<pubDate>(.*?)</pubDate>',it); src=re.search(r'<source[^>]*>(.*?)</source>',it)
+            print('   ',(d.group(1)[5:16] if d else ''),'|',src.group(1) if src else '','|',ti.group(1)[:70] if ti else '')
+    except Exception as e: print('==',k,'ERR',str(e)[:80])
+# pharmcube own pages
+for u in ['https://www.pharmcube.com/','https://www.pharmcube.com/news/list','https://www.pharmcube.com/home/news','https://www.pharmcube.com/news/index']:
+    try:
+        t=get(u); print('== pc',u,len(t)); print('   hrefs:',sorted(set(re.findall(r'href="(/[a-zA-Z]+[^"]{0,40})"',t)))[:25])
+        m=re.search(r'<script type="application/ld\+json">(.*?)</script>',t,flags=re.S); print('   ld:',(m.group(1)[:300] if m else None))
+    except Exception as e: print('== pc',u,'ERR',str(e)[:60])
+# yaozh / bioon structure for dates
+for u in ['https://news.yaozh.com/','https://news.bioon.com/industry/']:
+    t=get(u); i=t.find('/archive/') if 'yaozh' in u else t.find('/article/'); print('== struct',u); print(t[max(0,i-600):i+300].replace('\n',' ')[:900])
