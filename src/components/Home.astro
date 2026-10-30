@@ -17,7 +17,7 @@ const s = t(lang);
 const L = (p: string) => localePath(p, lang);
 const partnerBand = ({
   en: { title: 'Are you a pharmaceutical manufacturer looking at Iran?', text: 'Hanpars is an IFDA-licensed importer and registration holder with in-house regulatory affairs, nationwide distribution and offices in Istanbul, Hangzhou and Zhenjiang.', cta: 'For foreign manufacturers' },
-  zh: { title: '中国药企，正在考虑伊朗市场？', text: '汉帕斯 是 IFDA 持牌进口商和注册持有人，拥有自有注册团队和全国分销网络，并在杭州、镇江设有办公室。', cta: '面向中国药企' },
+  zh: { title: '面向中国药企的伊朗市场服务', text: '汉帕斯是 IFDA 持牌进口商和注册持有人，设有自有注册团队和全国分销网络，并在杭州、镇江设有办事处。', cta: '面向中国药企' },
   tr: { title: 'İran pazarını değerlendiren bir Türk ilaç üreticisi misiniz?', text: 'Hanpars, IFDA lisanslı ithalatçı ve ruhsat sahibidir; şirket içi ruhsatlandırma ekibi, ülke çapında dağıtım ve İstanbul’da ortak ofis.', cta: 'Türk üreticiler için' },
 } as Record<string, { title: string; text: string; cta: string }>)[lang];
 const todayNews = lang === 'fa' ? (newsFa.items || []).slice(0,3) : lang === 'zh' ? (newsZh.items || []).slice(0,3) : [...(news.global || []).slice(0,2), ...(news.china || []).slice(0,1)];

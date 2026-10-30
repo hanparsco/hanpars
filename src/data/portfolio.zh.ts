@@ -6,7 +6,7 @@ export const portfolioZh = {
     { title: '获IFDA许可的进口商', description: '清单中所有产品的上市许可持有人；注册资料、IRC编码和药物警戒均由自有团队完成。' },
     { title: '国家战略药品储备供应商', description: '依据国家储备计划，为IFDA供应纳洛酮、米索前列醇、氢化可的松、依托咪酯和造影剂的合同供应商。' },
     { title: '全国分销', description: '通过伊朗主要医药分销商覆盖医院和药店。' },
-    { title: '经审计的供应链', description: '所有供应商均持有GMP证书，每批货物均留存批检验报告，生物制品和肝素采用冷链运输。' },
+    { title: '供应商经审计', description: '所有供应商均持有GMP证书，每批货物均留存批检验报告，生物制品和肝素采用冷链运输。' },
   ],
   groups: {
     'area-1': { title: '造影剂', kicker: '诊断影像', description: '用于CT、血管造影和尿路造影的含碘造影剂及离子型造影剂，供应全国影像中心和医院。' },
@@ -24,8 +24,8 @@ export const portfolioZh = {
   } as Record<string, string>,
   origins: { 'India': '印度', 'China': '中国', 'Türkiye': '土耳其', 'Origin on request': '产地可应要求提供' } as Record<string, string>,
   manufacturer: {
-    title: '致生产企业：一家合作伙伴，即可将您的产品引入伊朗',
-    description: '从授权书到药店货架：汉帕斯负责编制并向IFDA提交注册资料，办理IRC编码，管理外汇额度和进口事宜，并将产品交由全国性分销商销售。我们正在积极拓展土耳其和欧洲的供应商网络。',
+    title: '致生产企业',
+    description: '汉帕斯负责编制并向 IFDA 提交注册资料，办理 IRC 编码，安排外汇额度和进口，并通过全国性分销商销售。',
     services: ['注册资料编制及向IFDA提交', 'IRC编码办理及再注册', '外汇额度及进口物流', '通过全国性分销商分销', '上市后监测与报告'],
   },
 };

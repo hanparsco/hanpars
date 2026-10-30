@@ -40,13 +40,13 @@ const photoAlt = lang === 'fa' ? `${data.title} — هانیا پرسان دار
 const preorder = ['api','excipient','nutrition','precursors','supplies'].includes(page) ? ({
   en: { t: 'Pre-order only', p: 'All products listed in this section are available on pre-order only.' },
   fa: { t: 'فقط پیش‌سفارش', p: 'تمامی محصولات مندرج در این بخش فقط بر اساس پیش‌سفارش در دسترس خواهند بود.' },
-  zh: { t: '仅接受预订', p: '本栏目所列全部产品仅接受预订。' },
+  zh: { t: '按单采购', p: '本栏目所列产品均按订单采购，不备现货，供货情况以询盘确认为准。' },
   tr: { t: 'Yalnızca ön sipariş', p: 'Bu bölümde yer alan tüm ürünler yalnızca ön sipariş ile temin edilebilir.' },
 } as const)[lang] : null;
 const jump = page === 'fdf' ? (() => { const n = portfolioData.counts.total.toLocaleString('en-US'), m = fdf.length.toLocaleString('en-US'); return ({
   en: [['The Hanpars portfolio', `${n} registered medicines`], ['Reference list', `${m} finished products`]],
   fa: [['سبد محصولات', `${n} داروی ثبت‌شده`], ['فهرست مرجع', `${m} فرآوردهٔ دارویی`]],
-  zh: [['Hanpars 产品组合', `${n} 个已注册药品`], ['参考清单', `${m} 个成品药`]],
+  zh: [['汉帕斯产品组合', `${n} 个已注册药品`], ['参考清单', `${m} 个成品药`]],
   tr: [['Hanpars portföyü', `${n} ruhsatlı ilaç`], ['Referans listesi', `${m} bitmiş ürün`]],
 } as Record<string, string[][]>)[lang]; })() : null;
 const action = page==='partners'||page==='china-to-iran' ? s.standard.startConversation : page==='fdf-cdmo' ? s.standard.discussProject : isProduct ? s.standard.prepare : s.standard.startConversation;

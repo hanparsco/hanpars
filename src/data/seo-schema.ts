@@ -42,7 +42,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const ind0 = lang === 'en' ? (en?.indications || '') : (fa?.indications || en?.indications || '');
   const ind = ind0.replace(/^\s*(موارد مصرف|适应症(?:[与和及]用法(?:用量)?)?|Endikasyonlar(?: ve kullanım)?|Indications(?: and usage)?)\s*[:：]\s*/i, '');
   const description = lang === 'zh'
-    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}，编号 ${entry.code}，${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '，' + strength : ''}${p.pack ? '，' + p.pack : ''}。${ind ? '适应症：' + ind + ' ' : ''}汉帕斯 负责该产品在伊朗市场的采购、进口与注册，可提供紧急进口及相关文件支持。`, 150)
+    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}，编号 ${entry.code}，${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '，' + strength : ''}${p.pack ? '，' + p.pack : ''}。${ind ? '适应症：' + ind + ' ' : ''}汉帕斯负责该产品在伊朗市场的采购、进口与注册，可提供紧急进口及相关文件支持。`, 150)
     : lang === 'tr'
     ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}, kod ${entry.code}, ${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? ', ' + strength : ''}${p.pack ? ', ' + p.pack : ''}. ${ind ? 'Endikasyonlar: ' + ind + ' ' : ''}İran’da tedarik ve ithalat: Hanpars.`, 158)
     : lang === 'fa'
@@ -104,7 +104,7 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
     return clip(`${head}${sp}${ts[ts.length - 1]}`.trim(), n);
   };
   const description = lang === 'zh'
-    ? compose(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。`, faDesc, ['汉帕斯 为伊朗制药企业采购该原料药，可提供 DMF/CEP、GMP 证书及分析证书（COA），并协助在伊朗食品药品监督管理局注册与进口。', '汉帕斯 提供附 DMF/CEP 和 GMP 文件的原料药供应。'], 120, '')
+    ? compose(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。`, faDesc, ['汉帕斯为伊朗制药企业采购该原料药，可提供 DMF/CEP、GMP 证书及分析证书（COA），并协助在伊朗食品药品监督管理局注册与进口。', '汉帕斯提供附 DMF/CEP 和 GMP 文件的原料药供应。'], 120, '')
     : lang === 'tr'
     ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, faDesc, ['İran’daki ilaç üreticileri için DMF/CEP, GMP ve analiz sertifikalı etkin madde tedariki ve ithalatı: Hanpars.', 'DMF/CEP ve GMP belgeli etkin madde tedariki: Hanpars.'], 160)
     : lang === 'fa'
