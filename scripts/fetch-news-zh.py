@@ -35,12 +35,11 @@ def og_image(url: str) -> str:
     for pat in (r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]+content=["\']([^"\']+)', r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image',
                 r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)', r'"(?:cover|coverImage|cover_img|thumb|image)"\s*:\s*"(https?:[^"]+\.(?:jpe?g|png|webp)[^"]*)"'):
         m = re.search(pat, raw, re.I)
-        if m: return html.unescape(m.group(1)).replace('\\/', '/')
-    body = raw.split('<body', 1)[-1]
-    for m in re.finditer(r'<img[^>]+(?:data-src|data-original|src)=["\'](https?://[^"\']+\.(?:jpe?g|png|webp)[^"\']*)', body, re.I):
-        u = m.group(1)
-        if re.search(r'logo|icon|avatar|qrcode|qr_|banner|ad[sv]?[_/.-]|1x1|pixel|emoji', u, re.I): continue
-        return html.unescape(u)
+        if m:
+            u = html.unescape(m.group(1)).replace('\\/', '/')
+            if re.search(r'logo|icon|avatar|qrcode|default|placeholder|share\.(?:png|jpg)', u, re.I): continue
+            return u
+    # no <img> fallback: Chinese portals' first images are promo banners and logos, which mislead more than they help
     return ''
 
 # (display name, Google News query, accepted <source> names or hosts). Order = editorial preference.
@@ -137,7 +136,7 @@ def main():
             img_src = og_image(url) if 'news.google.com' not in url else ''
             image = _fn.save_image(img_src, slug) if img_src else ''
         out.append({'title': it['title'], 'url': url, 'source': it['display'], 'date': (it['date'] or NOW).astimezone(dt.timezone.utc).strftime('%Y-%m-%d'),
-                    'summary': it['summary'] if it['summary'] and it['summary'] != it['title'] else '', 'image': image,
+                    'summary': it['summary'] if it['summary'] and it['summary'] != it['title'] and len(it['summary']) >= 16 and it['summary'] not in (it['source'], it['display']) else '', 'image': image,
                     'feed': 'Google News RSS (zh-CN)', 'retrieved': (prev or {}).get('retrieved') or NOW.strftime('%Y-%m-%dT%H:%M:%SZ'),
                     'imageSource': img_src, 'imageBasis': 'publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request' if image else ''})
     if [o['url'] for o in out] == list(previous.keys()) and os.environ.get('FORCE') != '1':
