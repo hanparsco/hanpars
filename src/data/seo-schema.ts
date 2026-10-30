@@ -33,7 +33,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const coreEn = `${name} ${eForm}${strength ? ' ' + strength : ''}${extraEn}${codeEn}`.replace(/\s+/g, ' ').trim();
   const sz = strength ? ' ' + strength : '';
   const title = lang === 'zh'
-    ? pick([nameFa ? `${nameFa}（${name}）${fFormShort}${sz}${extraFa}${dupe.code ? ' 编号' + entry.code : ''} | 伊朗供应 | Hanpars` : '', `${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' 编号' + entry.code : ''} | Hanpars`].filter(Boolean))
+    ? pick([nameFa ? `${nameFa}（${name}）${fFormShort}${sz}${extraFa}${dupe.code ? ' 编号' + entry.code : ''} | 伊朗供应 | 汉帕斯` : '', `${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' 编号' + entry.code : ''} | 汉帕斯`].filter(Boolean))
     : lang === 'tr'
     ? pick([`${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' kod ' + entry.code : ''} | İran tedarikçisi | Hanpars`, `${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' kod ' + entry.code : ''} | Hanpars`, `${nameFa || name} ${fFormShort}${sz}${extraFa}${dupe.code ? ' kod ' + entry.code : ''}`])
     : lang === 'fa'
@@ -42,7 +42,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const ind0 = lang === 'en' ? (en?.indications || '') : (fa?.indications || en?.indications || '');
   const ind = ind0.replace(/^\s*(موارد مصرف|适应症(?:[与和及]用法(?:用量)?)?|Endikasyonlar(?: ve kullanım)?|Indications(?: and usage)?)\s*[:：]\s*/i, '');
   const description = lang === 'zh'
-    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}，编号 ${entry.code}，${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '，' + strength : ''}${p.pack ? '，' + p.pack : ''}。${ind ? '适应症：' + ind + ' ' : ''}Hanpars 负责该产品在伊朗市场的采购、进口与注册，可提供紧急进口及相关文件支持。`, 150)
+    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}，编号 ${entry.code}，${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '，' + strength : ''}${p.pack ? '，' + p.pack : ''}。${ind ? '适应症：' + ind + ' ' : ''}汉帕斯 负责该产品在伊朗市场的采购、进口与注册，可提供紧急进口及相关文件支持。`, 150)
     : lang === 'tr'
     ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}, kod ${entry.code}, ${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? ', ' + strength : ''}${p.pack ? ', ' + p.pack : ''}. ${ind ? 'Endikasyonlar: ' + ind + ' ' : ''}İran’da tedarik ve ithalat: Hanpars.`, 158)
     : lang === 'fa'
@@ -50,7 +50,7 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
     : clip(`${name} (code ${entry.code}) ${prettyName(p.form)}${strength ? ' ' + strength : ''}${p.pack ? ', ' + p.pack : ''}. ${ind ? 'Indications: ' + ind + ' ' : ''}Sourcing and import in Iran by Hanpars.`, 158);
   const nl = nameFa || name;
   const keywords = lang === 'zh'
-    ? [nameFa, name, `${nl}${fFormShort}`, `${nl}供应商`, `${nl}出口伊朗`, `伊朗${nl}进口`, `${nl} ${strength}`, '伊朗药品进口', '伊朗药品注册', 'Hanpars'].filter(Boolean).join('，')
+    ? [nameFa, name, `${nl}${fFormShort}`, `${nl}供应商`, `${nl}出口伊朗`, `伊朗${nl}进口`, `${nl} ${strength}`, '伊朗药品进口', '伊朗药品注册', '汉帕斯'].filter(Boolean).join('，')
     : lang === 'tr'
     ? [nameFa, name, `${nl} ${fFormShort}`, `${nl} tedarikçisi`, `${nl} İran ihracatı`, `${nl} ${strength}`, 'İran’a ilaç ihracatı', 'İran ilaç ithalatı', 'Hanpars'].filter(Boolean).join(', ')
     : lang === 'fa'
@@ -81,14 +81,14 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
   const pick = (c: string[]) => c.find(x => x.length <= 65) || c[c.length - 1];
   const cas = mol.cas ? ` CAS ${mol.cas}` : '';
   const title = lang === 'zh'
-    ? pick([nameFa ? `${nameFa}（${name}）${cas} | 原料药供应 | Hanpars` : '', `${nameFa || name}${cas} | 原料药 | Hanpars`, `${nameFa || name}${cas}`].filter(Boolean))
+    ? pick([nameFa ? `${nameFa}（${name}）${cas} | 原料药供应 | 汉帕斯` : '', `${nameFa || name}${cas} | 原料药 | 汉帕斯`, `${nameFa || name}${cas}`].filter(Boolean))
     : lang === 'tr'
     ? pick([nameFa && nameFa.toLowerCase() !== name.toLowerCase() ? `${nameFa} (${name})${cas} | Hanpars` : '', `${nameFa || name}${cas} | Etkin madde tedariki | Hanpars`, `${nameFa || name}${cas} | Hanpars`, `${nameFa || name}${cas}`].filter(Boolean))
     : lang === 'fa'
     ? pick([nameFa ? `${nameFa} (${name})${cas} | تأمین API | هانیا پرسان دارو` : '', nameFa ? `${nameFa} (${name})${cas} | تأمین API` : '', `${nameFa || name}${cas} | مادهٔ مؤثره | هانیا پرسان دارو`, `${nameFa || name}${cas} | تأمین API`, `${nameFa || name}${cas}`].filter(Boolean))
     : pick([`${name}${cas ? ' (' + cas.trim() + ')' : ''} | API supplier | Hanpars`, `${name}${cas ? ' (' + cas.trim() + ')' : ''} | Hanpars`, `${name}${cas ? ' (' + cas.trim() + ')' : ''}`]);
   const keywords = lang === 'zh'
-    ? [nameFa, name, mol.cas, `${nameFa || name}原料药`, `${nameFa || name}原料药供应商`, `${nameFa || name} CAS ${mol.cas || ''}`.trim(), `${nameFa || name}出口伊朗`, '原料药出口伊朗', 'Hanpars'].filter(Boolean).join('，')
+    ? [nameFa, name, mol.cas, `${nameFa || name}原料药`, `${nameFa || name}原料药供应商`, `${nameFa || name} CAS ${mol.cas || ''}`.trim(), `${nameFa || name}出口伊朗`, '原料药出口伊朗', '汉帕斯'].filter(Boolean).join('，')
     : lang === 'tr'
     ? [nameFa, name, mol.cas, `${nameFa || name} etkin madde`, `${nameFa || name} tedarikçisi`, `${nameFa || name} CAS ${mol.cas || ''}`.trim(), 'İran’a hammadde ihracatı', 'Hanpars'].filter(Boolean).join(', ')
     : lang === 'fa'
@@ -104,7 +104,7 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
     return clip(`${head}${sp}${ts[ts.length - 1]}`.trim(), n);
   };
   const description = lang === 'zh'
-    ? compose(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。`, faDesc, ['Hanpars 为伊朗制药企业采购该原料药，可提供 DMF/CEP、GMP 证书及分析证书（COA），并协助在伊朗食品药品监督管理局注册与进口。', 'Hanpars 提供附 DMF/CEP 和 GMP 文件的原料药供应。'], 120, '')
+    ? compose(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。`, faDesc, ['汉帕斯 为伊朗制药企业采购该原料药，可提供 DMF/CEP、GMP 证书及分析证书（COA），并协助在伊朗食品药品监督管理局注册与进口。', '汉帕斯 提供附 DMF/CEP 和 GMP 文件的原料药供应。'], 120, '')
     : lang === 'tr'
     ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, faDesc, ['İran’daki ilaç üreticileri için DMF/CEP, GMP ve analiz sertifikalı etkin madde tedariki ve ithalatı: Hanpars.', 'DMF/CEP ve GMP belgeli etkin madde tedariki: Hanpars.'], 160)
     : lang === 'fa'
