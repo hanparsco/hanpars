@@ -1643,3 +1643,7 @@ html[lang=fa] :is(.num, .easy-num, .step2-num, .trio-num, .exc-num, .faq2-num, .
 .partner-band-text span { font-size:15px; line-height:1.5; color:var(--on-navy-muted); }
 .partner-band-cta { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; font-weight:600; color:var(--glacier); }
 @media (max-width:760px) { .partner-band { grid-template-columns:auto minmax(0,1fr); } .partner-band-cta { grid-column:2; } }
+
+/* WeChat glyph (owner-supplied mark), coloured with currentColor via mask so it matches the Telegram icon */
+.wx-glyph { display:inline-block; width:16px; height:16px; background:currentColor; -webkit-mask:url('/icons/wechat-glyph.png') center/contain no-repeat; mask:url('/icons/wechat-glyph.png') center/contain no-repeat; }
+.wx-glyph-18 { width:18px; height:18px; } .wx-glyph-22 { width:22px; height:22px; }
