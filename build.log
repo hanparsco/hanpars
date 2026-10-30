@@ -1,0 +1,21 @@
+$ astro build
+13:41:12 [content] Syncing content
+13:41:12 [content] Synced content
+13:41:12 [types] Generated 42ms
+13:41:12 [build] output: "static"
+13:41:12 [build] mode: "static"
+13:41:12 [build] directory: /home/runner/work/hanpars/hanpars/dist/
+13:41:12 [build] Collecting build info...
+13:41:12 [build] ✓ Completed in 78ms.
+13:41:12 [build] Building static entrypoints...
+13:41:14 [ERROR] [vite] [31m✗[39m Build failed in 1.34s
+Expected ")" but found "`<string, string>)[lang]</string,>`"
+  Location:
+    /home/runner/work/hanpars/hanpars/src/components/ContactPage.astro:59:6763
+  Stack trace:
+    at failureErrorWithLog (/home/runner/work/hanpars/hanpars/node_modules/.pnpm/esbuild@0.25.12/node_modules/esbuild/lib/main.js:1467:15)
+    at responseCallbacks.<computed> (/home/runner/work/hanpars/hanpars/node_modules/.pnpm/esbuild@0.25.12/node_modules/esbuild/lib/main.js:603:9)
+    at Socket.readFromStdout (/home/runner/work/hanpars/hanpars/node_modules/.pnpm/esbuild@0.25.12/node_modules/esbuild/lib/main.js:581:7)
+    at addChunk (node:internal/streams/readable:561:12)
+    at Readable.push (node:internal/streams/readable:392:5)
+[ELIFECYCLE] Command failed with exit code 1.
