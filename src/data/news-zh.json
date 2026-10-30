@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T10:58:07Z",
+ "updated": "2026-10-30T10:59:47Z",
  "items": [
   {
    "title": "速递｜诺和依柯胰岛素周制剂儿童适应证获FDA批准，10岁以上2型糖尿病患儿每周一针",
@@ -7,11 +7,11 @@
    "source": "医药魔方",
    "date": "2026-10-29",
    "summary": "ByDrug",
-   "image": "",
+   "image": "/news/zh-60001d3e67.jpg",
    "feed": "Google News RSS (zh-CN)",
    "retrieved": "2026-10-30T10:58:07Z",
-   "imageSource": "",
-   "imageBasis": ""
+   "imageSource": "https://vcdn.pharmcube.com/images/common/free_common.png",
+   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
   },
   {
    "title": "复盘天价BD：ADC、双抗、GLP-1撑起国产药出海",
@@ -19,23 +19,11 @@
    "source": "医药魔方",
    "date": "2026-10-30",
    "summary": "ByDrug",
-   "image": "",
+   "image": "/news/zh-08b633ac68.jpg",
    "feed": "Google News RSS (zh-CN)",
    "retrieved": "2026-10-30T10:58:07Z",
-   "imageSource": "",
-   "imageBasis": ""
-  },
-  {
-   "title": "出海日报｜小鹏拓展非洲、中东等四国市场，众鑫股份拟投6000万美元在印尼建厂",
-   "url": "https://www.jiemian.com/article/15250633.html",
-   "source": "界面新闻",
-   "date": "2026-10-28",
-   "summary": "Jiemian.com",
-   "image": "",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-10-30T10:58:07Z",
-   "imageSource": "",
-   "imageBasis": ""
+   "imageSource": "https://vcdn.pharmcube.com/images/common/free_common.png",
+   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
   },
   {
    "title": "18亿美元，一家AI药物平台被收购！",
@@ -62,16 +50,28 @@
    "imageBasis": ""
   },
   {
-   "title": "36氪出海·活动 | 2026北京国际投资贸易洽谈会在京举办",
-   "url": "https://m.36kr.com/p/4047063490755074",
-   "source": "36氪",
-   "date": "2026-10-29",
-   "summary": "36Kr",
-   "image": "",
+   "title": "Anthropic收购生物医药初创Mithril",
+   "url": "https://www.vbdata.cn/intelDetail/1134022",
+   "source": "动脉网",
+   "date": "2026-10-30",
+   "summary": "动脉网",
+   "image": "/news/zh-c0f9f4feb4.jpg",
    "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-10-30T10:58:07Z",
-   "imageSource": "",
-   "imageBasis": ""
+   "retrieved": "2026-10-30T10:59:47Z",
+   "imageSource": "https://static-cdn.vcbeat.top/vbdata-ssr/pic/app-vb-logo.png",
+   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
+  },
+  {
+   "title": "Adv Sci：苏州大学孙兴伟团队发现消融后存在免疫窗口，把“烧肿瘤”变成“种疫苗”",
+   "url": "https://news.bioon.com/article/3e3c96089224.html",
+   "source": "生物谷",
+   "date": "2026-10-30",
+   "summary": "生物谷",
+   "image": "/news/zh-9d60271bff.jpg",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-10-30T10:59:47Z",
+   "imageSource": "https://static.medsci.cn/public-image/ms-image/56d2b9a0-203c-11ec-8e2f-1389d01aad85_bioon-top.png",
+   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
   }
  ]
 }
