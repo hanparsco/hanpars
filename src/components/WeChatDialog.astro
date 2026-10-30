@@ -8,10 +8,10 @@ import { fileURLToPath } from 'node:url';
 const lang = langFromPath(Astro.url.pathname);
 const hasQr = existsSync(fileURLToPath(new URL('../../public/wechat-qr.png', import.meta.url)));
 const t = ({
-  en: { title: 'WeChat', lead: 'Add us on WeChat by ID, or scan the QR code in the WeChat app.', id: 'WeChat ID', copy: 'Copy ID', copied: 'Copied', open: 'Open WeChat', how: 'In WeChat: Contacts → Add → search the ID. Please mention your company and product.', close: 'Close' },
-  fa: { title: 'وی‌چت', lead: 'ما را با شناسهٔ وی‌چت اضافه کنید یا کد QR را در برنامهٔ وی‌چت اسکن کنید.', id: 'شناسهٔ وی‌چت', copy: 'کپی شناسه', copied: 'کپی شد', open: 'باز کردن وی‌چت', how: 'در وی‌چت: مخاطبین ← افزودن ← جست‌وجوی شناسه. نام شرکت و محصول را ذکر کنید.', close: 'بستن' },
-  zh: { title: '微信', lead: '请在微信中搜索微信号添加我们，或扫描二维码。', id: '微信号', copy: '复制微信号', copied: '已复制', open: '打开微信', how: '微信 → 通讯录 → 添加朋友 → 搜索微信号。添加时请注明公司与产品。', close: '关闭' },
-  tr: { title: 'WeChat', lead: 'Bizi WeChat kimliğiyle ekleyin veya QR kodunu WeChat uygulamasında tarayın.', id: 'WeChat kimliği', copy: 'Kimliği kopyala', copied: 'Kopyalandı', open: 'WeChat’i aç', how: 'WeChat: Kişiler → Ekle → kimliği arayın. Lütfen şirketinizi ve ürününüzü belirtin.', close: 'Kapat' },
+  en: { title: 'WeChat', lead: 'WeChat does not allow web links to open its add-contact page; use either way below.', id: 'WeChat ID', copy: 'Copy ID', copied: 'Copied', open: 'Open WeChat', how: 'Tap “Open WeChat” (the ID is copied), then + → Add Contacts → paste the ID. Or long-press the QR code to save it and scan it from your album. Please mention your company and product.', close: 'Close' },
+  fa: { title: 'وی‌چت', lead: 'وی‌چت اجازه نمی‌دهد از صفحهٔ وب مستقیماً به صفحهٔ افزودن مخاطب رفت؛ از یکی از دو راه زیر استفاده کنید.', id: 'شناسهٔ وی‌چت', copy: 'کپی شناسه', copied: 'کپی شد', open: 'باز کردن وی‌چت', how: '«باز کردن وی‌چت» را بزنید (شناسه کپی می‌شود)، سپس + ← افزودن مخاطب ← شناسه را جای‌گذاری کنید؛ یا کد QR را نگه دارید، ذخیره و از آلبوم اسکن کنید. نام شرکت و محصول را ذکر کنید.', close: 'بستن' },
+  zh: { title: '微信', lead: '微信不支持从网页直接跳转到添加好友页面，请按以下任一方式添加。', id: '微信号', copy: '复制微信号', copied: '已复制', open: '打开微信', how: '点击“打开微信”（微信号已自动复制），然后 + → 添加朋友 → 粘贴微信号；或长按二维码保存后，用微信“扫一扫”从相册识别。添加时请注明公司与产品。', close: '关闭' },
+  tr: { title: 'WeChat', lead: 'WeChat, web bağlantısından kişi ekleme sayfasının açılmasına izin vermez; aşağıdaki yollardan birini kullanın.', id: 'WeChat kimliği', copy: 'Kimliği kopyala', copied: 'Kopyalandı', open: 'WeChat’i aç', how: '“WeChat’i aç”a dokunun (kimlik kopyalanır), sonra + → Kişi Ekle → kimliği yapıştırın; ya da QR koda basılı tutup kaydedin ve albümden taratın. Lütfen şirketinizi ve ürününüzü belirtin.', close: 'Kapat' },
 } as const)[lang];
 ---
 {wechatId && <dialog id="wechat-dialog" class="wx-dialog" dir={dir(lang)} aria-labelledby="wx-title">
@@ -23,7 +23,7 @@ const t = ({
     <p class="wx-id"><small>{t.id}</small><strong dir="ltr" lang="en" data-wx-id>{wechatId}</strong></p>
     <div class="wx-actions">
       <button type="button" class="button button-navy" data-wx-copy data-copied={t.copied}>{t.copy}</button>
-      <a class="button button-light wx-open" href={wechatLink || `weixin://dl/chat?${wechatId}`} data-wx-open data-wx-link={wechatLink}>{t.open}</a>
+      <a class="button button-light wx-open" href="weixin://" data-wx-open>{t.open}</a>
     </div>
     <p class="wx-how">{t.how}</p>
   </form>
@@ -32,18 +32,17 @@ const t = ({
   const dlg = document.getElementById('wechat-dialog') as HTMLDialogElement | null;
   if (dlg) {
     const mobile = /Android|iPhone|iPad|HarmonyOS/i.test(navigator.userAgent);
-    const direct = dlg.querySelector<HTMLElement>('[data-wx-open]')?.dataset.wxLink || '';
-    document.querySelectorAll<HTMLAnchorElement>('a[data-wechat]').forEach(a => a.addEventListener('click', e => {
+        document.querySelectorAll<HTMLAnchorElement>('a[data-wechat]').forEach(a => a.addEventListener('click', e => {
       e.preventDefault();
       // on a phone with the account's QR link known, go straight to WeChat's add-contact page; otherwise show the dialog
-      if (mobile && direct) { location.href = direct; return; }
       dlg.showModal();
     }));
     dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
     const copy = dlg.querySelector<HTMLButtonElement>('[data-wx-copy]'); const id = dlg.querySelector('[data-wx-id]')?.textContent || '';
     copy?.addEventListener('click', async () => { try { await navigator.clipboard.writeText(id); const o = copy.textContent; copy.textContent = copy.dataset.copied || o; setTimeout(() => { copy.textContent = o; }, 1600); } catch {} });
     // the weixin:// scheme only works where the WeChat app is installed (phones); hide the button elsewhere
-    const open = dlg.querySelector<HTMLElement>('[data-wx-open]');
+    const open = dlg.querySelector<HTMLAnchorElement>('[data-wx-open]');
+    open?.addEventListener('click', () => { try { navigator.clipboard.writeText(id); } catch {} });
     if (open && !/Android|iPhone|iPad|HarmonyOS/i.test(navigator.userAgent)) open.hidden = true;
   }
 </script>

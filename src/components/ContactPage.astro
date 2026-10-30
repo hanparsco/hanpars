@@ -5,6 +5,7 @@ import { langFromPath, t } from '../i18n';
 const lang = langFromPath(Astro.url.pathname);
 const c = t(lang).contact;
 const types = ['sourcing', 'regulatory', 'cdmo'] as const;
+const wxSvg = '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><defs><mask id="wxm-ct"><rect width="24" height="24" fill="#fff"/><ellipse cx="16.3" cy="14.9" rx="6.9" ry="5.7" fill="#000"/></mask></defs><path d="M1.80 8.60a7.40 5.90 0 1 0 14.80 0a7.40 5.90 0 1 0 -14.80 0ZM4.9 12.4L3.6 16.3L7.9 13.8ZM5.70 7.50a1.00 1.00 0 1 1 2.00 0a1.00 1.00 0 1 1 -2.00 0ZM10.60 7.50a1.00 1.00 0 1 1 2.00 0a1.00 1.00 0 1 1 -2.00 0Z" mask="url(#wxm-ct)"/><path d="M10.30 14.90a6.00 4.90 0 1 0 12.00 0a6.00 4.90 0 1 0 -12.00 0ZM19.4 18.6L21.0 21.2L17.2 19.5ZM13.45 14.00a0.85 0.85 0 1 1 1.70 0a0.85 0.85 0 1 1 -1.70 0ZM17.45 14.00a0.85 0.85 0 1 1 1.70 0a0.85 0.85 0 1 1 -1.70 0Z"/></svg>';
 const wxLabel = ({ en: 'WeChat', fa: 'وی‌چت', zh: '微信', tr: 'WeChat' } as Record<string, string>)[lang];
 const wxHint = ({ en: 'Please mention your company and product when adding us.', fa: 'هنگام افزودن، نام شرکت و محصول را ذکر کنید.', zh: '添加时请注明公司与产品。', tr: 'Eklerken lütfen şirketinizi ve ürününüzü belirtin.' } as Record<string, string>)[lang];
 const officeLines = {
@@ -73,7 +74,7 @@ const privacyNote = ({
   {lang !== 'fa' && <aside class="contact-aside"><h3>{c.asideTitle}</h3><p>{c.asideText}</p>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.phone}/><div><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></p></div></div>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.mail}/><div><strong>{c.email}</strong><p><a href="#brief-form" data-m={mEnc(contactEmail)} dir="ltr" data-m-text>{mShow(contactEmail)}</a><br/><a href="#brief-form" data-m={mEnc(raEmail)} dir="ltr" data-m-text>{mShow(raEmail)}</a></p></div></div>
-    {wechatId && <div class="contact-detail" id="wechat"><span class="cd-icon" aria-hidden="true" set:html={'<span class="wx-glyph wx-glyph-22" aria-hidden="true"></span>'}/><div><strong>{wxLabel}</strong><p><a href="#wechat" data-wechat><bdi dir="ltr" lang="en">{wechatId}</bdi></a></p><span class="form-hint">{wxHint}</span></div></div>}
+    {wechatId && <div class="contact-detail" id="wechat"><span class="cd-icon" aria-hidden="true" set:html={wxSvg}/><div><strong>{wxLabel}</strong><p><a href="#wechat" data-wechat><bdi dir="ltr" lang="en">{wechatId}</bdi></a></p><span class="form-hint">{wxHint}</span></div></div>}
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.pin}/><div><strong>{c.office}</strong><p>{officeLines.map((l, n) => <>{n > 0 && <br/>}{l}</>)}</p></div></div>
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.clock}/><div><strong>{c.hours}</strong><p>{c.hoursText}</p><span class="form-hint">{c.confirmVisit}</span></div></div>
   </aside>}
