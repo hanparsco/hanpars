@@ -1,0 +1,206 @@
+{
+ "pages": 22219,
+ "indexable": 21625,
+ "issues": [
+  {
+   "name": "title missing",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "title > 65 chars",
+   "count": 1226,
+   "sample": [
+    "/api (66) Active pharmaceutical ingredients (API) supplier in Iran | Hanpars",
+    "/china-to-iran (101) How to export medicines and APIs from China to Iran: IFDA registration, importer, documents | Hanpars",
+    "/fa/api (69) واردات مواد اولیه دارویی (API) | تأمین مادهٔ مؤثره | هانیا پرسان دارو",
+    "/fa/excipient (71) واردات اکسیپینت (اکسیپیان) | مواد اولیه جانبی دارویی | هانیا پرسان دارو",
+    "/fa/fdf/acetaminophen-caffeine-chlorpheniramine-vitamin-c-52636 (78) استامینوفن / کافئین / کلرفنیرامین / ویتامین C کپسول 200 mg/25 mg/2.5 mg/150 mg",
+    "/fa/fdf/acetaminophen-caffeine-ibuprofen-21742 (66) استامینوفن / کافئین / ایبوپروفن کپسول 325 mg/40 mg/200 mg کد 21742",
+    "/fa/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50341 (102) استامینوفن / کلرفنیرامین / دکسترومتورفان / فنیل‌افرین شربت 160 mg/1 mg/5 mg/2.5 mg/5mL 120 mL کد 50341",
+    "/fa/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50378 (102) استامینوفن / کلرفنیرامین / دکسترومتورفان / فنیل‌افرین شربت 160 mg/1 mg/5 mg/2.5 mg/5mL 200 mL کد 50378",
+    "/fa/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-51915 (101) استامینوفن / کلرفنیرامین / دکسترومتورفان / فنیل‌افرین شربت 160 mg/1 mg/5 mg/2.5 mg/5mL 60 mL کد 51915",
+    "/fa/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-53455 (102) استامینوفن / کلرفنیرامین / دکسترومتورفان / فنیل‌افرین / اسید آسکوربیک قرص 500 mg/2 mg/15 mg/5 mg/38 mg",
+    "/fa/fdf/acetaminophen-diphenhydramine-phenylephrine-21832 (85) استامینوفن / دیفن‌هیدرامین / فنیل‌افرین شربت 160 mg/12.5 mg/2.5 mg/5mL 60 mL کد 21832",
+    "/fa/fdf/acetaminophen-diphenhydramine-phenylephrine-52273 (86) استامینوفن / دیفن‌هیدرامین / فنیل‌افرین شربت 160 mg/12.5 mg/2.5 mg/5mL 120 mL کد 52273",
+    "/fa/fdf/acetaminophen-diphenhydramine-phenylephrine-52274 (86) استامینوفن / دیفن‌هیدرامین / فنیل‌افرین شربت 160 mg/12.5 mg/2.5 mg/5mL 200 mL کد 52274",
+    "/fa/fdf/acetaminophen-guaifenesin-phenylephrine-22078 (79) استامینوفن / گایفنزین / فنیل‌افرین شربت 125 mg/50 mg/2.5 mg/5mL 120 mL کد 22078",
+    "/fa/fdf/acetaminophen-guaifenesin-phenylephrine-52271 (79) استامینوفن / گایفنزین / فنیل‌افرین شربت 125 mg/50 mg/2.5 mg/5mL 200 mL کد 52271"
+   ]
+  },
+  {
+   "name": "title < 25 chars",
+   "count": 14,
+   "sample": [
+    "/zh/blog-1 洞察存档 | Hanpars",
+    "/zh/contact-us-1 告诉我们您的需求。 | Hanpars",
+    "/zh/culture 工作方式 | Hanpars",
+    "/zh/excipient 药用辅料 | Hanpars",
+    "/zh/fdf/blood-and-blood-forming-organs-whole-blood-52983 全血 注射液 | Hanpars",
+    "/zh/fdf/erythrocytes-red-blood-cell-irradiated-52976 辐照红细胞 注射液 | Hanpars",
+    "/zh/fdf/erythrocytes-red-blood-cell-leucocyte-reduced-52981 去白细胞红细胞 注射液 | Hanpars",
+    "/zh/fdf/potassium-aminobenzoic-acid-potaba-50221 对氨基苯甲酸钾 散剂 3 g | Hanpars",
+    "/zh/fdf/thrombocytes-platelet-phresis-and-irradiated-52967 单采辐照血小板 注射液 | Hanpars",
+    "/zh/import-activity 进口动态 | Hanpars",
+    "/zh/news 今日医药资讯 | Hanpars",
+    "/zh/nutrition 营养与保健品原料 | Hanpars",
+    "/zh/precursors 化学前体 | Hanpars",
+    "/zh/supplies 药用物料 | Hanpars"
+   ]
+  },
+  {
+   "name": "description missing",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "description > 165 chars",
+   "count": 6,
+   "sample": [
+    "/china-to-iran (222)",
+    "/fdf-cdmo (187)",
+    "/partners (210)",
+    "/precursors (166)",
+    "/tr/fdf-cdmo (170)",
+    "/tr/partners (200)"
+   ]
+  },
+  {
+   "name": "description < 70 chars",
+   "count": 12,
+   "sample": [
+    "/zh/api 检索 Hanpars 收录 1,582 种物质的原料药参考品种目录，并按您的质量标准和目标市场提交采购询盘。",
+    "/zh/blog-1 洞察存档：中国原料药与制剂产业、供应链及监管趋势分析，面向伊朗医药市场。",
+    "/zh/contact-us-1 联系 Hanpars（德黑兰）：制剂、原料药、药用辅料、营养原料及 IFDA 注册咨询。邮箱：contact@hanpars.com",
+    "/zh/culture Hanpars 的工作原则：需求清晰、职责明确，技术与商务问题在同一场沟通中解决。",
+    "/zh/excipient 检索 Hanpars 收录 1,240 种材料及 CAS 号的药用辅料参考清单，并按处方所需的等级、质量标准和文件提交询盘。",
+    "/zh/fdf 浏览 Hanpars 经 IFDA 注册的医院用药和专科用药产品组合，以及收录 3,885 种制剂的参考清单，并提交采购询盘。",
+    "/zh/import-activity Hanpars 2026 年进口动态：逾 3,300 万欧元、超过 1 亿单位药品，涵盖 30 种分子，货源来自土耳其、中国和英国。",
+    "/zh/markets Hanpars 在伊朗供应并注册药品，从中国、印度、土耳其和欧洲的生产企业采购。了解针对具体市场的询盘应包含哪些内容。",
+    "/zh/news 每日全球医药要闻及中国制剂、原料药资讯，每天清晨更新，附来源与链接。",
+    "/zh/precursors Hanpars 为伊朗药品生产采购化学前体：原料药起始物料、高级中间体和试剂，来自合格生产商，文件齐全。",
+    "/zh/regulatory-affairs 伊朗药品注册事务：IFDA 注册策略、CTD 资料、GMP 检查准备及生命周期维护，服务于进入伊朗市场的生产企业。",
+    "/zh/supplies Hanpars 为伊朗采购药用物料：西林瓶、安瓿、胶塞和泡罩铝箔等初级包装、空心胶囊及生产耗材，按规格供应。"
+   ]
+  },
+  {
+   "name": "duplicate titles",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "duplicate descriptions",
+   "count": 5,
+   "sample": [
+    "2× واکسن دیفتری / هموفیلوس آنفلوانزای نوع b / سیاه‌سرفه / فلج اطفال / کزاز / هپاتیت :: /fa/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53418, /fa/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53419",
+    "3× واکسن توکسوئید دیفتری / توکسوئید کزاز / سیاه‌سرفه / هموفیلوس آنفلوانزای نوع b /  :: /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461",
+    "2× Difteri / Haemophilus influenzae tip b / boğmaca / çocuk felci / tetanoz / hepat :: /tr/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53418, /tr/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53419",
+    "3× Difteri toksoidi / tetanoz toksoidi / boğmaca / Haemophilus influenzae tip b / h :: /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461",
+    "2× İnsan allojenik umbilikal kordon dokusu kaynaklı mezenkimal stromal hücreler (Hu :: /tr/fdf/human-allogenic-umbilical-cord-tissue-derived-mesenchymal-st-53517, /tr/fdf/human-allogenic-umbilical-cord-tissue-derived-mesenchymal-st-53663"
+   ]
+  },
+  {
+   "name": "h1 count != 1",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "images without alt",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "canonical mismatch",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "no hreflang",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "JSON-LD parse errors",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "thin pages (< 150 words)",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "heavy pages (> 600 KB)",
+   "count": 4,
+   "sample": [
+    "/excipient (791 KB)",
+    "/fa/excipient (904 KB)",
+    "/tr/excipient (928 KB)",
+    "/zh/excipient (826 KB)"
+   ]
+  }
+ ],
+ "gate": [
+  {
+   "name": "BLOCK title missing",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK description missing",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK h1 count != 1",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK canonical mismatch",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK no hreflang",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK JSON-LD parse errors",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK noindex page listed in sitemap",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK sitemap URL without a file",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK missing/invalid compatibility stub",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK placeholder FDF page policy",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK contact page canonical",
+   "count": 0,
+   "sample": []
+  },
+  {
+   "name": "BLOCK sitemap empty",
+   "count": 0,
+   "sample": []
+  }
+ ],
+ "sha": "d9e9765bbc7c151198f43fc408bfbdbcb307209f"
+}
