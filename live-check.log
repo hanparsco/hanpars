@@ -1,0 +1,44 @@
+== key URLs
+  ok  200 https://hanpars.com/
+  ok  301 http://hanpars.com/ -> https://hanpars.com/
+  ok  301 https://www.hanpars.com/ -> https://hanpars.com/
+  ok  200 https://hanpars.com/fa
+  ok  200 https://hanpars.com/zh
+  ok  200 https://hanpars.com/tr
+  ok  200 https://hanpars.com/fdf
+  ok  200 https://hanpars.com/api
+  ok  200 https://hanpars.com/fa/fdf
+  ok  200 https://hanpars.com/robots.txt
+  ok  200 https://hanpars.com/sitemap.xml
+  ok  404 https://hanpars.com/this-page-does-not-exist
+  info 200 https://hanpars.com/fdf/ (meta refresh)
+  info 200 https://hanpars.com/fa/ (meta refresh)
+  info 200 https://hanpars.com/fdf.html
+  info 200 https://hanpars.com/home
+== sitemaps
+  200 https://hanpars.com/sitemap-en.xml: 5422 URLs
+  200 https://hanpars.com/sitemap-fa.xml: 5400 URLs
+  200 https://hanpars.com/sitemap-zh.xml: 5402 URLs
+  200 https://hanpars.com/sitemap-tr.xml: 5401 URLs
+  total 21625 URLs, 21625 unique
+== sample of 200 sitemap URLs
+  checked 200 pages and 800 alternates
+== repaired cohorts (regression fixtures)
+  compat stubs, contact-query canonicals and placeholder policy checked in 4 languages
+== external links (warnings only)
+  regulatory watch as of 2026-10-29: 6 items
+  news updated 2026-10-30T00:22:40Z
+  ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/concept-paper-revision-guideline-similar-biological-medicinal-products-chmp-437-04-rev1_en.pdf
+  ok  200 [watch] https://picscheme.org/docview/11495
+  ok  200 [watch] https://health.ec.europa.eu/medicinal-products/falsified-medicines/importation-active-substances-listing-third-countries_en
+  ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/considerations-regarding-implementation-ich-m13b-bioequivalence-immediate-release-solid-oral-dosage-forms_en.pdf
+  blocked 404 [watch] https://www.fda.gov/apology_objects/abuse-detection-apology.html
+  ok  200 [watch] https://www.who.int/publications/m/item/main-outcomes-of-the-83rd-meeting-of-the-who-expert-committee-on-biological-standardization-held-from-12-to-15-october-2026
+  ok  200 [news] https://www.pharmexec.com/view/what-outcomes-digital-twins-used-predict
+  ok  200 [news] https://www.pharmaceutical-technology.com/analyst-comment/gaelic-labs-the-eu-critical-medicines-act-supply/
+  ok  200 [news] https://endpoints.news/fda-charts-path-for-approval-of-individualized-gene-editing-therapies/
+  ok  200 [news] https://insights.citeline.com/generics-bulletin/products/biosimilars/bio-thera-announces-chinese-approval-for-the-first-secukinumab-biosimilar-AUOIW2DI3VCY7DPKWKL2C2634E/
+  ok  200 [news] https://medicaldialogues.in/news/industry/pharma/bayer-wins-china-approval-for-blood-thinner-asundexian-as-xarelto-faces-generic-competition-182105
+  ok  200 [news] https://biopharmaapac.com/news/32/8600/harbour-biomed-secures-chinas-nmpa-approval-for-batoclimab-expanding-treatment-options-for-myasthenia-gravis.html
+  ok  200 [webmail] https://secureserver.titan.email/mail/
+== result: OK
