@@ -351,7 +351,8 @@ def main():
     # tidy image folder: keep only referenced images
     keep = {ROOT / 'public' / it['image'].lstrip('/') for sec in ('global', 'china') for it in data[sec] if it['image']}
     if IMG_DIR.exists():
-        for f in IMG_DIR.glob('*.jpg'):
+        # only this robot's own images (g-*, c-*); the Persian robot owns fa-*
+        for f in list(IMG_DIR.glob('g-*.jpg')) + list(IMG_DIR.glob('c-*.jpg')):
             if f not in keep: f.unlink()
     OUT_JSON.write_text(json.dumps(data, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     for sec in ('global', 'china'):
