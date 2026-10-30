@@ -67,6 +67,7 @@ const privacyNote = ({
       <p class="form-status" id="brief-status" role="status" aria-live="polite"></p>
       <p class="form-disclaimer">{c.disclaimer}</p>
       <p class="form-privacy">{privacyNote}</p>
+      {lang === 'fa' && wechatId && <p class="form-privacy" id="wechat">{wxLabel}: <bdi dir="ltr" lang="en">{wechatId}</bdi> — {wxHint}</p>}
     </form>
   </div>
   {lang !== 'fa' && <aside class="contact-aside"><h3>{c.asideTitle}</h3><p>{c.asideText}</p>
