@@ -9,7 +9,7 @@
   },
   {
    "name": "title > 65 chars",
-   "count": 1226,
+   "count": 1212,
    "sample": [
     "/api (66) Active pharmaceutical ingredients (API) supplier in Iran | Hanpars",
     "/china-to-iran (101) How to export medicines and APIs from China to Iran: IFDA registration, importer, documents | Hanpars",
@@ -30,22 +30,23 @@
   },
   {
    "name": "title < 25 chars",
-   "count": 14,
+   "count": 16,
    "sample": [
-    "/zh/blog-1 洞察存档 | Hanpars",
-    "/zh/contact-us-1 告诉我们您的需求。 | Hanpars",
-    "/zh/culture 工作方式 | Hanpars",
-    "/zh/excipient 药用辅料 | Hanpars",
-    "/zh/fdf/blood-and-blood-forming-organs-whole-blood-52983 全血 注射液 | Hanpars",
-    "/zh/fdf/erythrocytes-red-blood-cell-irradiated-52976 辐照红细胞 注射液 | Hanpars",
-    "/zh/fdf/erythrocytes-red-blood-cell-leucocyte-reduced-52981 去白细胞红细胞 注射液 | Hanpars",
-    "/zh/fdf/potassium-aminobenzoic-acid-potaba-50221 对氨基苯甲酸钾 散剂 3 g | Hanpars",
-    "/zh/fdf/thrombocytes-platelet-phresis-and-irradiated-52967 单采辐照血小板 注射液 | Hanpars",
-    "/zh/import-activity 进口动态 | Hanpars",
-    "/zh/news 今日医药资讯 | Hanpars",
-    "/zh/nutrition 营养与保健品原料 | Hanpars",
-    "/zh/precursors 化学前体 | Hanpars",
-    "/zh/supplies 药用物料 | Hanpars"
+    "/zh/blog-1 洞察存档 | 汉帕斯",
+    "/zh/contact-us-1 告诉我们您的需求。 | 汉帕斯",
+    "/zh/culture 工作方式 | 汉帕斯",
+    "/zh/excipient 药用辅料 | 汉帕斯",
+    "/zh/fdf/erythrocytes-red-blood-cell-leucocyte-reduced-52981 去白细胞红细胞 注射液 | 汉帕斯",
+    "/zh/fdf/erythrocytes-red-blood-cell-washed-53189 洗涤红细胞 注射液 270 mL | 汉帕斯",
+    "/zh/fdf/erythrocytes-red-blood-cell-washed-and-irradiated-52977 洗涤辐照红细胞 注射液 270 mL | 汉帕斯",
+    "/zh/fdf/potassium-aminobenzoic-acid-potaba-1026 对氨基苯甲酸钾 片 500 mg | 汉帕斯",
+    "/zh/fdf/simple-eye-1134 Simple Eye 软膏 3 g | 汉帕斯",
+    "/zh/fdf/sodium-acid-phosphate-phosphate-sodium-2397 磷酸二氢钠 泡腾片 500 mg | 汉帕斯",
+    "/zh/fdf/thrombocytes-platelet-phresis-and-irradiated-52967 单采辐照血小板 注射液 | 汉帕斯",
+    "/zh/import-activity 进口动态 | 汉帕斯",
+    "/zh/news 今日医药资讯 | 汉帕斯",
+    "/zh/nutrition 营养与保健品原料 | 汉帕斯",
+    "/zh/precursors 化学前体 | 汉帕斯"
    ]
   },
   {
@@ -67,20 +68,21 @@
   },
   {
    "name": "description < 70 chars",
-   "count": 12,
+   "count": 13,
    "sample": [
-    "/zh/api 检索 Hanpars 收录 1,582 种物质的原料药参考品种目录，并按您的质量标准和目标市场提交采购询盘。",
+    "/zh/about-us 关于 汉帕斯（汉尼亚帕尔桑药业有限公司）：德黑兰的医药贸易公司，为伊朗采购、进口并注册原料药、药用辅料和制剂。",
+    "/zh/api 检索 汉帕斯 收录 1,582 种物质的原料药参考品种目录，并按您的质量标准和目标市场提交采购询盘。",
     "/zh/blog-1 洞察存档：中国原料药与制剂产业、供应链及监管趋势分析，面向伊朗医药市场。",
-    "/zh/contact-us-1 联系 Hanpars（德黑兰）：制剂、原料药、药用辅料、营养原料及 IFDA 注册咨询。邮箱：contact@hanpars.com",
-    "/zh/culture Hanpars 的工作原则：需求清晰、职责明确，技术与商务问题在同一场沟通中解决。",
-    "/zh/excipient 检索 Hanpars 收录 1,240 种材料及 CAS 号的药用辅料参考清单，并按处方所需的等级、质量标准和文件提交询盘。",
-    "/zh/fdf 浏览 Hanpars 经 IFDA 注册的医院用药和专科用药产品组合，以及收录 3,885 种制剂的参考清单，并提交采购询盘。",
-    "/zh/import-activity Hanpars 2026 年进口动态：逾 3,300 万欧元、超过 1 亿单位药品，涵盖 30 种分子，货源来自土耳其、中国和英国。",
-    "/zh/markets Hanpars 在伊朗供应并注册药品，从中国、印度、土耳其和欧洲的生产企业采购。了解针对具体市场的询盘应包含哪些内容。",
+    "/zh/contact-us-1 联系 汉帕斯（德黑兰）：制剂、原料药、药用辅料、营养原料及 IFDA 注册咨询。邮箱：contact@hanpars.com",
+    "/zh/culture 汉帕斯 的工作原则：需求清晰、职责明确，技术与商务问题在同一场沟通中解决。",
+    "/zh/excipient 检索 汉帕斯 收录 1,240 种材料及 CAS 号的药用辅料参考清单，并按处方所需的等级、质量标准和文件提交询盘。",
+    "/zh/fdf 浏览 汉帕斯 经 IFDA 注册的医院用药和专科用药产品组合，以及收录 3,885 种制剂的参考清单，并提交采购询盘。",
+    "/zh/import-activity 汉帕斯 2026 年进口动态：逾 3,300 万欧元、超过 1 亿单位药品，涵盖 30 种分子，货源来自土耳其、中国和英国。",
+    "/zh/markets 汉帕斯 在伊朗供应并注册药品，从中国、印度、土耳其和欧洲的生产企业采购。了解针对具体市场的询盘应包含哪些内容。",
     "/zh/news 每日全球医药要闻及中国制剂、原料药资讯，每天清晨更新，附来源与链接。",
-    "/zh/precursors Hanpars 为伊朗药品生产采购化学前体：原料药起始物料、高级中间体和试剂，来自合格生产商，文件齐全。",
+    "/zh/precursors 汉帕斯 为伊朗药品生产采购化学前体：原料药起始物料、高级中间体和试剂，来自合格生产商，文件齐全。",
     "/zh/regulatory-affairs 伊朗药品注册事务：IFDA 注册策略、CTD 资料、GMP 检查准备及生命周期维护，服务于进入伊朗市场的生产企业。",
-    "/zh/supplies Hanpars 为伊朗采购药用物料：西林瓶、安瓿、胶塞和泡罩铝箔等初级包装、空心胶囊及生产耗材，按规格供应。"
+    "/zh/supplies 汉帕斯 为伊朗采购药用物料：西林瓶、安瓿、胶塞和泡罩铝箔等初级包装、空心胶囊及生产耗材，按规格供应。"
    ]
   },
   {
@@ -133,7 +135,7 @@
    "name": "heavy pages (> 600 KB)",
    "count": 4,
    "sample": [
-    "/excipient (791 KB)",
+    "/excipient (792 KB)",
     "/fa/excipient (904 KB)",
     "/tr/excipient (928 KB)",
     "/zh/excipient (826 KB)"
@@ -202,5 +204,5 @@
    "sample": []
   }
  ],
- "sha": "d9e9765bbc7c151198f43fc408bfbdbcb307209f"
+ "sha": "7742453b73da69f8c2a022f0b106b2d22182d280"
 }
