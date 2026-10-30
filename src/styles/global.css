@@ -1574,12 +1574,14 @@ main:has(#product-portfolio) .easy-sec { padding-block:44px; }
 
 .ft-socials { display:inline-flex; align-items:center; gap:8px; }
 .ft-social-tg:hover { background:#229ed9; border-color:#229ed9; color:#fff; }
+.ft-social-wx:hover { background:#07c160; border-color:#07c160; color:#fff; }
 
 /* header social icons */
 .nav-social { display:inline-flex; align-items:center; gap:6px; margin-inline-start:6px; }
 .nav-social a { display:grid; place-items:center; width:32px; height:32px; border-radius:50%; border:1px solid #ffffff26; color:var(--on-navy); transition:background .2s,border-color .2s,color .2s; }
 .nav-social a:hover { background:#0a66c2; border-color:#0a66c2; color:#fff; }
 .nav-social a.ns-tg:hover { background:#229ed9; border-color:#229ed9; }
+.nav-social a.ns-wx:hover { background:#07c160; border-color:#07c160; }
 @media(max-width:1000px) { .nav-social { margin:16px 0 0; gap:10px; justify-content:center; } .nav-social a { width:40px; height:40px; } }
 @media(min-width:1001px) and (max-width:1320px) { .nav-social { gap:4px; margin-inline-start:2px; } .nav-social a { width:28px; height:28px; } .nav-social svg { width:13px; height:13px; } .header-inner { gap:20px; } }
 @media(min-width:1141px) and (max-width:1320px) { .nav-link { padding:0 10px; } .nav-cta { padding:9px 16px; margin-inline-start:6px; } }
