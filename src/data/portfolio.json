@@ -111,7 +111,7 @@
       "products": [
         {
           "name": "Calcitonin",
-          "atc": "H05BA03",
+          "atc": "H05BA01",
           "formIcons": [
             {
               "id": "vial",

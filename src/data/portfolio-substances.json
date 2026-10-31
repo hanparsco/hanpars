@@ -48,15 +48,13 @@
  },
  "Calcitonin": {
   "kind": "biologic",
-  "dosed": "Calcitonin (salmon) — presumed",
+  "dosed": "Calcitonin (salmon)",
   "chembl": "CHEMBL3989767",
   "parent": "CHEMBL3989767",
-  "formula": null,
-  "mw": null,
+  "formula": "C145H240N44O48S2",
+  "mw": 3431.91,
   "parentFormula": null,
-  "parentMw": null,
-  "note": "NEEDS REVIEW: portfolio.json gives ATC H05BA03, which is calcitonin (pork natural). The ChEMBL record and the site's data are calcitonin salmon (ChEMBL ATC H05BA01). The formula shown is for salmon calcitonin. Confirm the API with the registration dossier and correct either the ATC or the substance.",
-  "hold": "ATC H05BA03 (pork) vs ChEMBL salmon record; no formula until dossier confirms."
+  "parentMw": null
  },
  "Cyproterone compound": {
   "kind": "combination",
@@ -293,15 +291,14 @@
   "note": ""
  },
  "Ampicillin": {
-  "kind": "molecule",
-  "dosed": "Ampicillin",
-  "chembl": "CHEMBL174",
+  "kind": "salt",
+  "dosed": "Ampicillin sodium",
+  "chembl": "CHEMBL1200758",
   "parent": "CHEMBL174",
-  "formula": "C16H19N3O4S",
-  "mw": 349.41,
+  "formula": "C16H18N3NaO4S",
+  "mw": 371.39,
   "parentFormula": "C16H19N3O4S",
-  "parentMw": 349.41,
-  "note": "Product name is the base molecule. A powder for injection is normally ampicillin sodium (CHEMBL1200758, C16H18N3NaO4S, 371.39); confirm from the label and switch to that salt record if so."
+  "parentMw": 349.41
  },
  "Ampicillin / sulbactam": {
   "kind": "combination",
@@ -314,20 +311,18 @@
   "parentMw": null,
   "components": [
    {
-    "dosed": "Ampicillin",
-    "chembl": "CHEMBL174",
-    "formula": "C16H19N3O4S",
-    "mw": 349.41
+    "dosed": "Ampicillin sodium",
+    "chembl": "CHEMBL1200758",
+    "formula": "C16H18N3NaO4S",
+    "mw": 371.39
    },
    {
-    "dosed": "Sulbactam",
-    "chembl": "CHEMBL403",
-    "formula": "C8H11NO5S",
-    "mw": 233.24
+    "dosed": "Sulbactam sodium",
+    "chembl": "CHEMBL1200944",
+    "formula": "C8H10NNaO5S",
+    "mw": 255.23
    }
-  ],
-  "note": "Powder for injection, 1 g / 0.5 g (strengths given as the free acids). Sodium salts are the standard sterile forms for injection; confirm against the SmPC.",
-  "moiety": true
+  ]
  },
  "Cefuroxime (as axetil)": {
   "kind": "ester",
@@ -408,26 +403,24 @@
  },
  "Atropine sulfate": {
   "kind": "salt",
-  "dosed": "Atropine sulfate",
+  "dosed": "Atropine sulfate monohydrate",
   "chembl": "CHEMBL2146146",
   "parent": "CHEMBL517712",
-  "formula": null,
-  "mw": null,
+  "formula": "(C17H23NO3)2·H2SO4·H2O",
+  "mw": 694.84,
   "parentFormula": "C17H23NO3",
   "parentMw": 289.38,
-  "note": "ChEMBL's record stores a 1:1 atropine:H2SO4 structure with no water. The pharmacopoeial substance is (atropine)2·H2SO4·H2O (monohydrate). ChEMBL has no separate record for that, so its 2:1 monohydrate weight is not given here. Confirm against the product label/CoA before publishing.",
-  "hold": "stoichiometry: Ph. Eur. substance is (atropine)2·H2SO4·H2O; ChEMBL record is 1:1 anhydrous. Showing active moiety only until CoA confirms."
+  "cas": "5908-99-6"
  },
  "Epinephrine": {
-  "kind": "molecule",
-  "dosed": "Epinephrine",
+  "kind": "salt",
+  "dosed": "Epinephrine salt",
   "chembl": "CHEMBL679",
   "parent": "CHEMBL679",
-  "formula": "C9H13NO3",
-  "mw": 183.21,
+  "formula": null,
+  "mw": null,
   "parentFormula": "C9H13NO3",
-  "parentMw": 183.21,
-  "note": "Product name is the base. 1 mg/mL injections are often made with epinephrine hydrochloride or bitartrate, with strength expressed as base; confirm from the label."
+  "parentMw": 183.21
  },
  "Etomidate": {
   "kind": "molecule",
@@ -497,7 +490,7 @@
   "mw": 363.84,
   "parentFormula": "C19H21NO4",
   "parentMw": 327.38,
-  "note": "Anhydrous record (exact pref_name match). ChEMBL also has NALOXONE HYDROCHLORIDE DIHYDRATE (CHEMBL5315056, C19H26ClNO6, 399.87), the Ph. Eur. form. Use that record if the CoA states dihydrate."
+  "cas": "357-08-4"
  },
  "Salbutamol (as sulfate)": {
   "kind": "salt",
@@ -556,13 +549,13 @@
  },
  "Alendronate (as sodium)": {
   "kind": "salt",
-  "dosed": "Alendronate sodium",
+  "dosed": "Alendronate sodium trihydrate",
   "chembl": "CHEMBL675",
   "parent": "CHEMBL870",
-  "formula": "C4H12NNaO7P2",
-  "mw": 271.08,
+  "formula": "C4H12NNaO7P2·3H2O",
+  "mw": 325.12,
   "parentFormula": "C4H13NO7P2",
   "parentMw": 249.1,
-  "note": "ChEMBL's record is anhydrous monosodium alendronate. The marketed API is usually the trihydrate (synonym 'Alendronate sodium trihydrate'), but ChEMBL has no separate trihydrate record, so no trihydrate formula/weight is given."
+  "cas": "121268-17-5"
  }
 }
