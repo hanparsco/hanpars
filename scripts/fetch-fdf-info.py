@@ -48,7 +48,7 @@ def get(url, tries=3):
         except Exception:
             if i == tries - 1: raise
             time.sleep(2)
-    return None
+    raise RuntimeError('rate limited (429) after retries')
 
 
 def clean(txt, limit):
@@ -154,8 +154,8 @@ def main():
             out[k] = info or {'generic': keys[k].title(), 'missing': True}
             ok += bool(info)
         except Exception as e:
-            print(f'  ! {k}: {type(e).__name__}: {e}', file=sys.stderr)
-            out[k] = {'generic': keys[k].title(), 'missing': True}
+            # transient (quota, network): leave the key unset so the next run retries it instead of caching "no label"
+            print(f'  ! {k}: {type(e).__name__}: {e} (will retry next run)', file=sys.stderr)
         if i % 25 == 0:
             print(f'  {i}/{len(todo)} ok={ok}')
             OUT.write_text(json.dumps(out, ensure_ascii=False, indent=0) + '\n')

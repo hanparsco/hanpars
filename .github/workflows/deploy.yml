@@ -47,14 +47,10 @@ jobs:
         if: failure() && steps.check.outcome == 'failure'
         run: |
           git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
-          git fetch -q origin ci-report || true
-          git checkout -q -B ci-report
-          git rm -rq --cached . >/dev/null 2>&1 || true
-          mkdir -p /tmp/report && cp check.log /tmp/report/check.log
-          git clean -fdxq -e node_modules >/dev/null 2>&1 || true
-          cp /tmp/report/check.log ./check.log
-          git add check.log && git commit -qm "check log $(date -u +%FT%TZ) for ${GITHUB_SHA::7}" || true
-          git push -f -q origin ci-report
+          cp check.log /tmp/check.log
+          git fetch -q origin ci-report && git worktree add -q /tmp/rep origin/ci-report
+          cp /tmp/check.log /tmp/rep/check.log
+          cd /tmp/rep && git add check.log && git commit -qm "check log $(date -u +%FT%TZ) for ${GITHUB_SHA::7}" && git push -q origin HEAD:ci-report || true
       - name: Build
         id: build
         shell: bash
@@ -107,7 +103,7 @@ jobs:
           git config user.email "actions@github.com"
           git add -A
           git commit -q -m "Preview build of ${GITHUB_REF_NAME} @ ${GITHUB_SHA::7}"
-          git push -f -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/$BR"
+          git push -f -q origin "HEAD:refs/heads/$BR"
 
   deploy:
     needs: build

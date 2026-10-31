@@ -185,6 +185,8 @@ def main():
         per[it['source']] = per.get(it['source'], 0) + 1
         chosen.append(it)
         if len(chosen) == N_ITEMS: break
+    if not chosen:
+        print('no fresh stories selected; keeping the previous file'); return 0
     previous = {}
     if OUT_JSON.exists():
         try: previous = {it['url']: it for it in json.load(open(OUT_JSON, encoding='utf-8')).get('items', [])}
