@@ -8,5 +8,7 @@ const regulatory = variant === 'regulatory';
 <a href={localePath('/', lang)} class:list={['brand', { 'brand-regulatory': regulatory }]} aria-label={regulatory ? 'Hanpars Regulatory — home' : 'Hanpars home'}>
   {regulatory
     ? <img src="/brand/hanpars-regulatory-light.png" alt="Hanpars Regulatory" width="811" height="539" class="original-logo" />
-    : <img src="/brand/hanpars-logo-transparent.png" alt="Hanpars" width="222" height="123" class="original-logo" />}
+    : lang === 'zh'
+      ? <img src="/brand/hanpars-logo-zh.png" alt="汉帕斯 HANPARS 汉尼亚帕尔桑药业有限公司" width="660" height="343" class="original-logo" />
+      : <img src="/brand/hanpars-logo-transparent.png" alt="Hanpars" width="222" height="123" class="original-logo" />}
 </a>

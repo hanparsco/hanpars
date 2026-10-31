@@ -24,7 +24,7 @@ const langs = ([
 ] as const).map(x => ({ ...x, href: localePath(switchPath, x.l) }));
 ---
 <footer class:list={['site-footer', { 'hanpars-zh-hans': lang === 'zh' }]} dir={dir(lang)}>
-  <img class="ft-watermark" src={brand === 'regulatory' ? '/brand/hanpars-regulatory-light.png' : '/brand/hanpars-logo-transparent.png'} alt="" aria-hidden="true" width="222" height="123" loading="lazy" decoding="async" />
+  <img class="ft-watermark" src={brand === 'regulatory' ? '/brand/hanpars-regulatory-light.png' : lang === 'zh' ? '/brand/hanpars-logo-zh.png' : '/brand/hanpars-logo-transparent.png'} alt="" aria-hidden="true" width="222" height="123" loading="lazy" decoding="async" />
   <div class="container ft-inner">
     <div class="ft-top">
       <div class="ft-brand">
