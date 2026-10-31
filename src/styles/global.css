@@ -1649,3 +1649,7 @@ html[lang=fa] :is(.num, .easy-num, .step2-num, .trio-num, .exc-num, .faq2-num, .
 
 .portfolio-verify { margin:14px 0 0; font-size:14px; line-height:1.6; color:var(--on-navy-muted); max-width:90ch; }
 [dir=rtl] .portfolio-verify { line-height:1.75; }
+/* Chinese bilingual logo carries a line of Chinese text: a little wider so it stays legible */
+html[lang^=zh] .brand, html[lang^=zh] .brand .original-logo { width:246px; }
+@media(max-width:1180px) { html[lang^=zh] .brand, html[lang^=zh] .brand .original-logo { width:210px; } }
+@media(max-width:560px) { html[lang^=zh] .brand, html[lang^=zh] .brand .original-logo { width:196px; } }
