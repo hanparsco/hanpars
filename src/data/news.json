@@ -1,6 +1,15 @@
 {
- "updated": "2026-10-31T00:04:21Z",
+ "updated": "2026-10-31T23:45:12Z",
  "global": [
+  {
+   "title": "NRx Pharmaceuticals Wins FDA Approval for Preservative-Free Generic Ketamine Injection",
+   "url": "https://www.citybiz.co/article/927034/nrx-pharmaceuticals-wins-fda-approval-for-preservative-free-generic-ketamine-injection/",
+   "source": "citybiz",
+   "date": "2026-10-30",
+   "summary": "NRx Pharmaceuticals Wins FDA Approval for Preservative-Free Generic Ketamine Injection citybiz",
+   "image": "/news/g-3e71992cd0.jpg",
+   "kind": "news"
+  },
   {
    "title": "Pfizer looks to reroute supply after flooding sidelined India injectables plant",
    "url": "https://www.fiercepharma.com/pharma/pfizer-eyes-multi-year-repairs-after-flooding-sidelined-india-injectables-plant",
@@ -22,12 +31,30 @@
  ],
  "china": [
   {
-   "title": "Bayer Wins China Approval for Blood Thinner Asundexian as Xarelto Faces Generic Competition",
-   "url": "https://medicaldialogues.in/news/industry/pharma/bayer-wins-china-approval-for-blood-thinner-asundexian-as-xarelto-faces-generic-competition-182105",
-   "source": "Medical Dialogues",
-   "date": "2026-10-27",
-   "summary": "Bayer Wins China Approval for Blood Thinner Asundexian as Xarelto Faces Generic Competition Medical Dialogues",
-   "image": "/news/c-4c21043318.jpg",
+   "title": "Altruist Biologics' Integrated CMC Platform Supports NMPA Acceptance of NDA for Localized Manufacturing of Multinational Client's Biologic",
+   "url": "https://www.morningstar.com/news/pr-newswire/20261029cn83385/altruist-biologics-integrated-cmc-platform-supports-nmpa-acceptance-of-nda-for-localized-manufacturing-of-multinational-clients-biologic",
+   "source": "Morningstar",
+   "date": "2026-10-29",
+   "summary": "Altruist Biologics' Integrated CMC Platform Supports NMPA Acceptance of NDA for Localized Manufacturing of Multinational Client's Biologic Morningstar",
+   "image": "/news/c-5617dcef88.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "Can India break its dependence on China for pharma APIs?",
+   "url": "https://www.itln.in/videos/can-india-break-its-dependence-on-china-for-pharma-apis-1361130",
+   "source": "Indian Transport & Logistics",
+   "date": "2026-10-28",
+   "summary": "Can India break its dependence on China for pharma APIs? Indian Transport & Logistics",
+   "image": "/news/c-2223e11366.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "“From Drug Development to Production”: Global Big Pharma Expands Investment in China, Accelerating Its Rise as a Biotech and Pharmaceutical Powerhouse",
+   "url": "https://economy.ac/market/2026/10/202610295931",
+   "source": "https://economy.ac/",
+   "date": "2026-10-28",
+   "summary": "“From Drug Development to Production”: Global Big Pharma Expands Investment in China, Accelerating Its Rise as a Biotech and Pharmaceutical Powerhouse https://economy.ac/",
+   "image": "/news/c-d7f0da07e5.jpg",
    "kind": "news"
   }
  ]
