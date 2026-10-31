@@ -9,6 +9,8 @@ on:
         default: '11.3.0'
 permissions:
   contents: write
+env:
+  PILLOW_VERSION: ${{ inputs.pillow }}
 jobs:
   pin:
     runs-on: ubuntu-latest
@@ -20,7 +22,7 @@ jobs:
       - name: Download the wheel and write requirements with hashes
         run: |
           set -e
-          V="${{ inputs.pillow }}"
+          V="$PILLOW_VERSION"
           pip download --quiet --no-deps --only-binary=:all: "pillow==${V}" -d wheels
           {
             echo "# Generated $(date -u +%F) by pin-python-deps.yml — do not edit by hand."
@@ -35,5 +37,5 @@ jobs:
           git config user.name "hanpars-bot"; git config user.email "actions@users.noreply.github.com"
           git add scripts/requirements-news.txt
           git diff --cached --quiet && exit 0
-          git commit -qm "Pin Python dependencies (pillow ${{ inputs.pillow }}) [skip ci]"
+          git commit -qm "Pin Python dependencies (pillow $PILLOW_VERSION) [skip ci]"
           for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
