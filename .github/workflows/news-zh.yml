@@ -2,7 +2,7 @@ name: Chinese pharma news (every 4 hours)
 
 on:
   schedule:
-    - cron: '47 */4 * * *'
+    - cron: '47 */2 * * *'
   workflow_dispatch:
     inputs:
       force:

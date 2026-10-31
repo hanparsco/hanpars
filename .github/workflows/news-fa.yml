@@ -2,7 +2,7 @@ name: Persian pharma news (every 4 hours)
 
 on:
   schedule:
-    - cron: '23 */4 * * *'
+    - cron: '23 */2 * * *'
   workflow_dispatch:
     inputs:
       force:

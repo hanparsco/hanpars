@@ -17,7 +17,8 @@ const global = isLocal ? localItems : (news.global || []) as Story[];
 const china = isLocal ? [] : (news.china || []) as Story[];
 const fmt = (d: string) => d ? new Date(d + 'T00:00:00Z').toLocaleDateString(dateLocale(lang), { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' }) : '';
 const upd = isFa ? newsFa.updated : lang === 'zh' ? newsZh.updated : news.updated;
-const updated = upd ? (isLocal ? new Date(upd).toLocaleString(dateLocale(lang), { day:'numeric', month:'long', hour:'2-digit', minute:'2-digit', timeZone:'Asia/Tehran' }) : new Date(upd).toLocaleDateString(dateLocale(lang), { day:'numeric', month:'long', year:'numeric', timeZone:'Asia/Tehran' })) : '';
+const newest = isLocal && localItems.length ? localItems.map(i => i.date).sort().slice(-1)[0] : '';
+const updated = upd ? (isLocal ? new Date((newest || upd.slice(0, 10)) + 'T00:00:00Z').toLocaleDateString(dateLocale(lang), { day:'numeric', month:'long', year:'numeric', timeZone:'UTC' }) : new Date(upd).toLocaleDateString(dateLocale(lang), { day:'numeric', month:'long', year:'numeric', timeZone:'Asia/Tehran' })) : '';
 ---
 <PageHero title={s.title} category={s.category} description={updated ? s.lede(updated) : s.ledeEmpty} action={s.action} href="/blog-1"/>
 
