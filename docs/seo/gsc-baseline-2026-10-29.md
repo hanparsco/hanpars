@@ -29,3 +29,11 @@ Devices: mobile CTR 5.1 % vs desktop 0.6 % (desktop impressions are mostly the e
 
 ## Next export
 Repeat on 2026-11-26 (28 days) and compare: non-brand clicks, B2B-intent positions, slash-variant consolidation, /fdf-cdmo position for "fdf cdmo services".
+
+## Update — export of 2026-10-31 (data through 2026-10-28)
+Totals: **236 clicks / 13,229 impressions** (was 188 / 9,244 two days earlier); 28 Oct alone 5,014 impressions, the highest day so far.
+- Persian FDF pages 108 → 143 clicks; Chinese FDF pages 3,451 → 5,525 impressions at average position ~8 (still 1 click). English FDF 6 → 11 clicks.
+- Non-brand: 28 → 31 clicks, 3,047 → 3,553 impressions. B2B-intent queries 36 → 44 (228 impressions, 1 click); "fdf cdmo services" 22 → 45 impressions, position 10.9 → 13.1 (the page was rebuilt on 29 Oct; Google has not re-ranked it yet).
+- Trailing-slash variants still 21 clicks (unchanged; consolidation takes weeks).
+- Countries: Iran 206 clicks, India 13, Turkey 4 (482 impressions), UK 2 (757), China 2 (550), US 1 (1,151).
+Reading: discovery continues to accelerate; nothing yet measurable from the 29–30 Oct changes (CDMO, partners, China guide, Chinese copy) — they need 2–4 weeks. Next comparison: 2026-11-14.
