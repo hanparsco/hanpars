@@ -1643,3 +1643,6 @@ html[lang=fa] :is(.num, .easy-num, .step2-num, .trio-num, .exc-num, .faq2-num, .
 .partner-band-text span { font-size:15px; line-height:1.5; color:var(--on-navy-muted); }
 .partner-band-cta { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; font-weight:600; color:var(--glacier); }
 @media (max-width:760px) { .partner-band { grid-template-columns:auto minmax(0,1fr); } .partner-band-cta { grid-column:2; } }
+
+.news-kind { display:inline-block; margin-inline-start:8px; padding:1px 8px; border-radius:999px; border:1px solid var(--line); font-size:12px; color:var(--muted); }
+.news-card-dark .news-kind { border-color:#ffffff33; color:var(--on-navy-muted); }

@@ -221,7 +221,7 @@ const base = {
       globalTitle: 'Global pharmaceutical news', globalLede: 'Approvals, deals, supply and regulation.',
       chinaKicker: 'Trend in China', chinaTitle: 'Finished dosage form and API news from China', chinaLede: 'Finished dosage forms and active ingredients.',
       readAt: 'Read at', empty: 'The first digest will appear after the next scheduled update.',
-      note: 'Updated every morning. Headlines, summaries and images belong to the publishers named; the selection is not a Hanpars opinion.', archiveLink: 'Our own articles are in the Insights archive.',
+      note: 'Updated every morning from trade and business media; company press releases are labelled as such and paid press-release sites are excluded. Headlines, summaries and images belong to the publishers named; the selection is not a Hanpars opinion.', archiveLink: 'Our own articles are in the Insights archive.',
     },
     supplements: {
       title: 'Supplement ingredients reference list', entries: 'ingredients', search: 'Search by ingredient, form or use', filterLabel: 'Filter by group', all: 'All',
@@ -287,7 +287,7 @@ const base = {
         { label: 'بازارها و تأمین', href: '/markets', note: 'بازار ایران، تأمین‌کنندگان خارجی' },
       ] },
       { label: 'مقالات', items: [
-        { label: 'اخبار امروز دارو', href: '/news', note: 'از رسانه‌های دارویی ایران، هر چهار ساعت به‌روز' },
+        { label: 'اخبار امروز دارو', href: '/news', note: 'از رسانه‌های دارویی ایران، هر دو ساعت به‌روز' },
         { label: 'آرشیو مقالات', href: '/blog-1', note: 'مقالات ۲۰۲۵ ما' },
       ] },
     ],

@@ -2,20 +2,13 @@
  "updated": "2026-10-31T00:04:21Z",
  "global": [
   {
-   "title": "Major FDA Victory; Preservative-Free Ketamine Approved Ahead of November 10 Goal Date as Commercial Launch Opportunity Comes Into Focus for NRx Pharma",
-   "url": "https://www.prlog.org/13180139-major-fda-victory-preservative-free-ketamine-approved-ahead-of-november-10-goal-date-as-commercial-launch-opportunity-comes-into-focus-for-nrx-pharma.html",
-   "source": "PRLog",
-   "date": "2026-10-30",
-   "summary": "Major FDA Victory; Preservative-Free Ketamine Approved Ahead of November 10 Goal Date as Commercial Launch Opportunity Comes Into Focus for NRx Pharma PRLog",
-   "image": "/news/g-121892c8a8.jpg"
-  },
-  {
    "title": "Pfizer looks to reroute supply after flooding sidelined India injectables plant",
    "url": "https://www.fiercepharma.com/pharma/pfizer-eyes-multi-year-repairs-after-flooding-sidelined-india-injectables-plant",
    "source": "Fierce Pharma",
    "date": "2026-10-30",
    "summary": "A Pfizer joint venture with Zydus Cadila in India that manufactures sterile injectables, including chemotherapy drugs for U.S. cancer patients, remains closed after severe flooding in July, with the company estimating that new supplies could begin returning in mid-to-late 2028 un…",
-   "image": "/news/g-dae348d487.jpg"
+   "image": "/news/g-dae348d487.jpg",
+   "kind": "news"
   },
   {
    "title": "FDA Approves Ilumya for Adults With Active Psoriatic Arthritis",
@@ -23,33 +16,19 @@
    "source": "Pharmaceutical Executive",
    "date": "2026-10-30",
    "summary": "Sun Pharma's IL-23 inhibitor tildrakizumab gains a psoriatic arthritis indication; the announcement cited no phase 3 efficacy figures.",
-   "image": "/news/g-d56d50b531.jpg"
+   "image": "/news/g-d56d50b531.jpg",
+   "kind": "news"
   }
  ],
  "china": [
-  {
-   "title": "Generic Brivaracetam Cuts Seizure Frequency in Chinese Phase III Trial",
-   "url": "https://bioengineer.org/generic-brivaracetam-cuts-seizure-frequency-in-chinese-phase-iii-trial/",
-   "source": "Bioengineer.org",
-   "date": "2026-10-30",
-   "summary": "Generic Brivaracetam Cuts Seizure Frequency in Chinese Phase III Trial Bioengineer.org",
-   "image": "/news/c-335a2d7031.jpg"
-  },
-  {
-   "title": "Altruist Biologics' Integrated CMC Platform Supports NMPA Acceptance of NDA for Localized Manufacturing of Multinational Client's Biologic",
-   "url": "https://pressreleasehub.pa.media/article/altruist-biologics-integrated-cmc-platform-supports-nmpa-acceptance-of-nda-for-localized-manufacturing-of-multinational-clients-biologic-87572.html",
-   "source": "Press Release Hub",
-   "date": "2026-10-29",
-   "summary": "Altruist Biologics' Integrated CMC Platform Supports NMPA Acceptance of NDA for Localized Manufacturing of Multinational Client's Biologic Press Release Hub",
-   "image": "/news/c-58239a461e.jpg"
-  },
   {
    "title": "Bayer Wins China Approval for Blood Thinner Asundexian as Xarelto Faces Generic Competition",
    "url": "https://medicaldialogues.in/news/industry/pharma/bayer-wins-china-approval-for-blood-thinner-asundexian-as-xarelto-faces-generic-competition-182105",
    "source": "Medical Dialogues",
    "date": "2026-10-27",
    "summary": "Bayer Wins China Approval for Blood Thinner Asundexian as Xarelto Faces Generic Competition Medical Dialogues",
-   "image": "/news/c-4c21043318.jpg"
+   "image": "/news/c-4c21043318.jpg",
+   "kind": "news"
   }
  ]
 }

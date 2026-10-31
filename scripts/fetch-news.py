@@ -138,7 +138,32 @@ def parse_feed(source: str, url: str):
     return items
 
 
+# Source policy. Paid-distribution press-release sites and machine-written aggregators are excluded; the major wire services
+# that carry company announcements are allowed but labelled "press release" and capped at one per section.
+BLOCK_HOSTS = ('prlog.org', 'einpresswire.com', 'openpr.com', 'pressreleasehub.pa.media', 'newswire.com', 'issuewire.com', '24-7pressrelease.com',
+               'pr.com', 'prfire.com', 'bioengineer.org', 'scienmag.com', 'newsbreak.com', 'msn.com', 'yahoo.com', 'marketscreener.com', 'benzinga.com',
+               'openpr.de', 'whatech.com', 'barchart.com', 'digitaljournal.com', 'medium.com')
+BLOCK_SOURCES = ('prlog', 'ein presswire', 'openpr', 'press release hub', 'newswire.com', 'bioengineer', 'scienmag', 'benzinga', 'barchart', 'digital journal')
+PRESS_HOSTS = ('businesswire.com', 'prnewswire.com', 'globenewswire.com', 'accesswire.com', 'newsfilecorp.com', 'stocktitan.net')
+
+
+def host_of(url: str) -> str:
+    h = (urllib.parse.urlparse(url).hostname or '').lower()
+    return h[4:] if h.startswith('www.') else h
+
+
+def blocked(item) -> bool:
+    src = (item.get('source') or '').lower(); h = host_of(item.get('url') or '')
+    return any(b in src for b in BLOCK_SOURCES) or any(h == b or h.endswith('.' + b) for b in BLOCK_HOSTS)
+
+
+def is_press(item) -> bool:
+    h = host_of(item.get('url') or ''); src = (item.get('source') or '').lower()
+    return any(h == b or h.endswith('.' + b) for b in PRESS_HOSTS) or any(w in src for w in ('business wire', 'pr newswire', 'globenewswire', 'accesswire'))
+
+
 def score(item, china=False):
+    if blocked(item): return -100
     t = (item['title'] + ' ' + item['summary'][:300]).lower()
     s = 0.0
     for k, v in GOOD.items():
@@ -266,17 +291,20 @@ def pick(items, n, china=False, exclude_titles=()):
         if key in seen_title: continue
         seen_title.add(key)
         it['url'] = resolve_google(it['url'])
-        if 'news.google.com' in it['url']: continue
+        if 'news.google.com' in it['url'] or blocked(it): continue
         if not it['image']: it['image'] = og_image(it['url'])
         shortlist.append((s + (3 if it['image'] else -6), it))
     shortlist.sort(key=lambda x: -x[0])
-    out, seen_src, seen_host = [], set(), set()
+    out, seen_src, seen_host, press = [], set(), set(), 0
     # a story with a photo always beats one without
     shortlist.sort(key=lambda x: (0 if x[1]['image'] else 1, -x[0]))
     for s, it in shortlist:
         host = urllib.parse.urlparse(it['url']).hostname or ''
         if it['source'] in seen_src or host in seen_host: continue
         if any(same_story(it['title'], o['title']) for o in out) or any(same_story(it['title'], t) for t in exclude_titles): continue
+        if is_press(it):
+            if press >= 1: continue
+            press += 1
         seen_src.add(it['source']); seen_host.add(host)
         out.append(it)
         if len(out) == n: break
@@ -331,6 +359,7 @@ def main():
                 'date': it['date'].strftime('%Y-%m-%d') if it['date'] else NOW.strftime('%Y-%m-%d'),
                 'summary': (it['summary'][:280] + ('…' if len(it['summary']) > 280 else '')) if it['summary'] else '',
                 'image': image,
+                'kind': 'press' if is_press(it) else 'news',
             })
         return done
 
@@ -343,7 +372,7 @@ def main():
         for it in old.get(sec, []):
             if len(data[sec]) >= 3: break
             fresh = (NOW.date() - dt.date.fromisoformat(it['date'])).days <= 7
-            if fresh and it.get('image') and all(it['url'] != o['url'] and not same_story(it['title'], o['title']) for s2 in ('global', 'china') for o in data[s2]):
+            if fresh and it.get('image') and not blocked(it) and all(it['url'] != o['url'] and not same_story(it['title'], o['title']) for s2 in ('global', 'china') for o in data[s2]):
                 data[sec].append(it)
     if not data['global'] and not data['china']:
         print('nothing fetched; keeping previous file', file=sys.stderr)
