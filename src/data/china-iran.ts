@@ -20,7 +20,7 @@ export const chinaIran: Record<'en' | 'zh', GuideContent> = {
   en: {
     kicker: 'Guide for Chinese manufacturers',
     quickTitle: 'Quick answer',
-    quick: 'A Chinese pharmaceutical manufacturer cannot sell medicines or APIs in Iran directly. Products enter through an importer licensed by the Iran Food and Drug Administration (IFDA), which registers the product in Iran (an IRC code), imports it, and remains responsible for it on the market. Hanpars (Haniya Parsan Darou Co., Tehran) is such an importer and registration holder, with offices in Hangzhou and Zhenjiang that work with Chinese manufacturers in Chinese.',
+    quick: 'A Chinese pharmaceutical manufacturer cannot sell medicines or APIs in Iran directly. Products enter through an importer licensed by the Iran Food and Drug Administration (IFDA), which registers the product in Iran (an IRC code), imports it, and remains responsible for it on the market. Hanpars (Haniya Parsan Darou Co., Tehran) is such an importer and registration holder, with a partner office in Hangzhou and an exclusive wholesaler’s office in Zhenjiang that work with Chinese manufacturers in Chinese.',
     introTitle: 'How medicines and APIs from China reach Iran',
     intro: [
       'Iran is a market of about 90 million people with a large domestic pharmaceutical industry and a regulator, the IFDA, that reviews every imported medicine and active ingredient before it can be sold. The country manufactures most of the medicines it uses, so imports concentrate on hospital and specialty products, shortages, and the APIs its own factories need.',
@@ -49,7 +49,7 @@ export const chinaIran: Record<'en' | 'zh', GuideContent> = {
     mistakesTitle: 'Common mistakes we see',
     mistakes: ['Quoting a price before the regulatory route and currency allocation are understood', 'Sending a dossier without a valid GMP certificate or with stability data for the wrong zone', 'Signing an exclusive authorisation without defining scope, term and reporting', 'Assuming the Iranian partner can promise a registration date', 'Shipping samples without the import permit needed for samples'],
     roleTitle: 'What Hanpars does in this process',
-    role: ['Acts as IFDA-licensed importer and registration holder (the IRC is obtained in our name under your authorisation)', 'Prepares and submits the dossier with our own regulatory team; answers IFDA questions', 'Arranges import licences, currency allocation, shipment, customs and distribution', 'Coordinates licensed manufacturing in Iranian GMP plants where that is the better route', 'Works with you in Chinese from Hangzhou and Zhenjiang, with written responsibilities from the first meeting'],
+    role: ['Acts as IFDA-licensed importer and registration holder (the IRC is obtained in our name under your authorisation)', 'Prepares and submits the dossier with our own regulatory team; answers IFDA questions', 'Arranges import licences, currency allocation, shipment, customs and distribution', 'Coordinates licensed manufacturing in Iranian GMP plants where that is the better route', 'Works with you in Chinese through the Hangzhou partner office and the Zhenjiang wholesaler’s office, with written responsibilities from the first meeting'],
     faqTitle: 'Questions Chinese exporters ask',
     faq: [
       { q: 'Can a Chinese company register a medicine in Iran in its own name?', a: 'No. Registration and import are done by an Iranian licence holder appointed by the manufacturer through a letter of authorisation. The product, brand and know-how stay with the manufacturer.' },
@@ -74,7 +74,7 @@ export const chinaIran: Record<'en' | 'zh', GuideContent> = {
   zh: {
     kicker: '中国药企出口指南',
     quickTitle: '要点',
-    quick: '中国制药企业不能直接在伊朗销售药品或原料药。产品需要通过伊朗食品药品监督管理局（IFDA）持牌的进口商进入伊朗：由该进口商在伊朗注册产品（取得 IRC 编码）、办理进口，并对产品在市场上的合规持续负责。汉帕斯（汉尼亚帕尔桑药业有限公司，德黑兰）即为此类持牌进口商和注册持有人，在杭州、镇江设有办事处，可用中文与中国企业直接对接。',
+    quick: '中国制药企业不能直接在伊朗销售药品或原料药。产品需要通过伊朗食品药品监督管理局（IFDA）持牌的进口商进入伊朗：由该进口商在伊朗注册产品（取得 IRC 编码）、办理进口，并对产品在市场上的合规持续负责。汉帕斯（汉尼亚帕尔桑药业有限公司，德黑兰）即为此类持牌进口商和注册持有人，在杭州设有合作伙伴办事处、在镇江设有独家批发合作方办事处，可用中文与中国企业直接对接。',
     introTitle: '中国药品和原料药如何进入伊朗',
     intro: [
       '伊朗人口约 9,000 万，本土制药工业规模较大，监管机构 IFDA 对每一种进口药品和原料药在上市前进行审评。伊朗所用药品大部分在本国生产，进口集中于医院用药和专科药、短缺药品，以及本土工厂需要的原料药。',
@@ -103,7 +103,7 @@ export const chinaIran: Record<'en' | 'zh', GuideContent> = {
     mistakesTitle: '常见误区',
     mistakes: ['报价前未确认注册路径和外汇配额', '递交的资料中 GMP 证书已过期，或稳定性数据不符合目标气候带', '签署独家授权却未约定范围、期限和汇报义务', '误以为伊朗合作方可以承诺注册时限', '未取得样品进口许可即发运样品'],
     roleTitle: '汉帕斯在流程中的角色',
-    role: ['作为 IFDA 持牌进口商和注册持有人（IRC 在贵公司授权下以汉帕斯名义取得）', '由自有注册团队编制并递交资料，答复 IFDA 问询', '办理进口许可、外汇配额、发运、清关和分销', '在本地生产更合适时，协调伊朗 GMP 工厂的授权生产', '通过杭州、镇江办事处用中文对接，自首次会议起书面明确各方职责'],
+    role: ['作为 IFDA 持牌进口商和注册持有人（IRC 在贵公司授权下以汉帕斯名义取得）', '由自有注册团队编制并递交资料，答复 IFDA 问询', '办理进口许可、外汇配额、发运、清关和分销', '在本地生产更合适时，协调伊朗 GMP 工厂的授权生产', '通过杭州合作伙伴办事处和镇江独家批发合作方办事处用中文对接，自首次会议起书面明确各方职责'],
     faqTitle: '中国出口企业常问的问题',
     faq: [
       { q: '中国企业能否以自身名义在伊朗注册药品？', a: '不能。注册和进口由生产企业通过授权书指定的伊朗持牌方办理，产品、品牌和专有技术仍归生产企业所有。' },

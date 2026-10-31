@@ -90,8 +90,8 @@ export const pages = {
   },
   'partners': {
     title: 'For foreign manufacturers', category: 'Partnership',
-    description: 'Your licensed importer, registration holder and partner in Iran: in-house regulatory affairs, nationwide distribution, written responsibilities, offices in Istanbul, Hangzhou and Zhenjiang.',
-    meta: 'Hanpars for foreign pharmaceutical manufacturers: IFDA-licensed importer and marketing authorisation holder in Iran, in-house registration and pharmacovigilance, nationwide distribution, written responsibilities. Offices in Tehran, Istanbul, Hangzhou and Zhenjiang.',
+    description: 'Your licensed importer, registration holder and partner in Iran: in-house regulatory affairs, nationwide distribution, written responsibilities; partner offices in Hangzhou and Istanbul, exclusive wholesaler’s office in Zhenjiang.',
+    meta: 'Hanpars for foreign pharmaceutical manufacturers: IFDA-licensed importer and marketing authorisation holder in Iran, in-house registration and pharmacovigilance, nationwide distribution, written responsibilities. Head office in Tehran; partner offices in Hangzhou and Istanbul; exclusive wholesaler’s office in Zhenjiang.',
     introTitle: 'A licensed, accountable partner in Iran.',
     intro: ['Hanpars holds the import licence and the product registrations, prepares the dossiers in-house and reports back in writing.'],
     cards: [],
@@ -100,7 +100,7 @@ export const pages = {
   'china-to-iran': {
     title: 'Exporting medicines and APIs from China to Iran', category: 'Guide',
     description: 'How finished medicines and active ingredients from China enter Iran: the IFDA route, the documents, the facts that shape a project, and who does what.',
-    meta: 'Guide for Chinese pharmaceutical manufacturers: how to export finished medicines (FDF) and APIs to Iran. IFDA registration through a licensed Iranian importer, IRC code, LoA, CTD and GMP documents, import licences, local manufacturing and common mistakes. By Hanpars, Tehran, with offices in Hangzhou and Zhenjiang.',
+    meta: 'Guide for Chinese pharmaceutical manufacturers: how to export finished medicines (FDF) and APIs to Iran. IFDA registration through a licensed Iranian importer, IRC code, LoA, CTD and GMP documents, import licences, local manufacturing and common mistakes. By Hanpars, Tehran, with a partner office in Hangzhou and an exclusive wholesaler’s office in Zhenjiang.',
     introTitle: 'How medicines and APIs from China reach Iran',
     intro: ['Products enter through an IFDA-licensed importer that registers, imports and remains responsible for them.'],
     cards: [],

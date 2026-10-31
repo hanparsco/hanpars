@@ -72,7 +72,7 @@ export const cdmo: Record<'en' | 'fa' | 'zh' | 'tr', CdmoContent> = {
     focusTitle: 'Where our partners are',
     focusLede: 'We work where the technology and the regulatory record are strongest for each product.',
     focus: [
-      { value: 'China', label: 'Hangzhou and Zhenjiang offices', text: 'Large-scale CDMO capacity and API integration; NMPA has been an ICH member since 2017.' },
+      { value: 'China', label: 'Hangzhou partner office, Zhenjiang wholesaler’s office', text: 'Large-scale CDMO capacity and API integration; NMPA has been an ICH member since 2017.' },
       { value: 'Türkiye', label: 'Istanbul partner office', text: 'TİTCK has been a PIC/S participating authority since 2018; short land logistics to Iran.' },
       { value: 'Iran', label: 'Tehran head office', text: 'Local GMP manufacturers for technology transfer and production under licence.' },
     ],
@@ -139,7 +139,7 @@ export const cdmo: Record<'en' | 'fa' | 'zh' | 'tr', CdmoContent> = {
     focusTitle: 'شبکهٔ شرکای ما',
     focusLede: 'برای هر فرآورده، با شریکی کار می‌کنیم که فناوری و سابقهٔ رگولاتوری آن برای همان فرآورده قوی‌تر است.',
     focus: [
-      { value: 'چین', label: 'دفاتر هانگژو و ژن‌جیانگ', text: 'ظرفیت گستردهٔ CDMO و دسترسی یکپارچه به مادهٔ مؤثره؛ سازمان دارویی چین (NMPA) از سال ۲۰۱۷ عضو ICH است.' },
+      { value: 'چین', label: 'دفتر شریک در هانگژو و دفتر عمده‌فروش در ژن‌جیانگ', text: 'ظرفیت گستردهٔ CDMO و دسترسی یکپارچه به مادهٔ مؤثره؛ سازمان دارویی چین (NMPA) از سال ۲۰۱۷ عضو ICH است.' },
       { value: 'ترکیه', label: 'دفتر شریک در استانبول', text: 'سازمان دارو و تجهیزات پزشکی ترکیه (TİTCK) از سال ۲۰۱۸ عضو PIC/S است؛ مسیر حمل زمینی کوتاه تا ایران.' },
       { value: 'ایران', label: 'دفتر مرکزی تهران', text: 'تولیدکنندگان داخلی دارای GMP برای انتقال فناوری و تولید تحت لیسانس.' },
     ],
@@ -170,7 +170,7 @@ export const cdmo: Record<'en' | 'fa' | 'zh' | 'tr', CdmoContent> = {
     introTitle: '中国药企进入伊朗市场，由汉帕斯统一负责',
     intro: [
       '伊朗人口约 9,000 万，医院用药和专科药需求稳定，药品注册采用 CTD 格式。已在中国或其他市场获批的制剂产品可以申报伊朗注册，但注册、定价、进口和上市各环节均需由伊朗持牌企业办理。',
-      '汉帕斯总部位于德黑兰，杭州设有办事处，镇江设有合作伙伴办事处。我们作为伊朗进口商和注册代理，为中国企业统一协调市场评估、伊朗食品药品监督管理局（IFDA）注册、进口和上市各环节；在当地政策倾向本地生产时，也可协调向伊朗 GMP 工厂的技术转移和授权生产。',
+      '汉帕斯总部位于德黑兰，在杭州设有合作伙伴办事处，在镇江设有独家批发合作方办事处。我们作为伊朗进口商和注册代理，为中国企业统一协调市场评估、伊朗食品药品监督管理局（IFDA）注册、进口和上市各环节；在当地政策倾向本地生产时，也可协调向伊朗 GMP 工厂的技术转移和授权生产。',
     ],
     routesTitle: '三种合作方式',
     routesLede: '三种方式的前提相同：明确的项目需求、合适的合作方和符合伊朗要求的注册资料。',
@@ -225,7 +225,7 @@ export const cdmo: Record<'en' | 'fa' | 'zh' | 'tr', CdmoContent> = {
     ],
     licNote: '汉帕斯是协调方，经约定也可作为被许可方或商业合作方；生产责任由持有生产许可证的伊朗工厂承担。',
     rolesTitle: '各方职责',
-    weDo: { title: '汉帕斯', items: ['伊朗市场评估与项目管理，单一对接窗口', 'IFDA 注册策略、资料本地化与申报', '进口、清关、首批供货与生命周期管理', '通过杭州、镇江办事处与中国团队直接沟通'] },
+    weDo: { title: '汉帕斯', items: ['伊朗市场评估与项目管理，单一对接窗口', 'IFDA 注册策略、资料本地化与申报', '进口、清关、首批供货与生命周期管理', '通过杭州合作伙伴办事处和镇江独家批发合作方办事处与中国团队直接沟通'] },
     partnersDo: { title: '生产企业与许可方', items: ['进口模式：中国企业在其 GMP 工厂完成开发、生产和质量控制，依据自身生产许可证放行批次，并接受现场检查', '授权本地生产模式：伊朗工厂负责转移批、工艺验证、稳定性研究、生产和批放行', '授权本地生产模式：中国许可方提供处方、质量标准、分析方法、对照品和人员培训', '两种模式下，变更控制和质量协议贯穿产品全生命周期'] },
     limits: '汉帕斯不拥有生产工厂，不持有任何工厂的 GMP 证书，也不能保证注册结果。各方职责在项目启动前写入质量协议和供货协议。',
     briefTitle: '初步评估需要的信息',

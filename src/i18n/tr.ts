@@ -31,7 +31,7 @@ export const tr: UI = {
       ] },
     ],
     footer: {
-      intro: 'Haniya Parsan Darou Co., İran pazarı için ilaç hammaddelerini ve bitmiş ilaçları ithal eder ve bunların ruhsatlandırılmasını destekler. Tahran, İstanbul, Hangzhou ve Zhenjiang’da ofisleri vardır.',
+      intro: 'Haniya Parsan Darou Co., İran pazarı için ilaç hammaddelerini ve bitmiş ilaçları ithal eder ve bunların ruhsatlandırılmasını destekler. Genel merkez Tahran’da; Hangzhou ve İstanbul’da ortak ofisler, Zhenjiang’da münhasır toptancı ofisi.',
       contact: 'İletişim', send: 'Talep gönderin', news: 'Bugün ilaç haberleri', archive: 'Görüşler arşivi',
       rights: 'Haniya Parsan Darou Co. Tüm hakları saklıdır.',
       address: 'Zafar Cad. No: 326, Kat: 3, Afrika Bulvarı, Tahran',

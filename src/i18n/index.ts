@@ -78,7 +78,7 @@ const base = {
       ] },
     ],
     footer: {
-      intro: 'Haniya Parsan Darou Co. imports pharmaceutical ingredients and finished medicines for the Iranian market and supports their registration. Offices in Tehran, Istanbul, Hangzhou & Zhenjiang.',
+      intro: 'Haniya Parsan Darou Co. imports pharmaceutical ingredients and finished medicines for the Iranian market and supports their registration. Head office in Tehran; partner offices in Hangzhou and Istanbul; exclusive wholesaler’s office in Zhenjiang.',
       contact: 'Contact', send: 'Send an enquiry', news: 'Pharma news today', archive: 'Insights archive',
       rights: 'Haniya Parsan Darou Co. All rights reserved.',
       address: '3rd floor, No. 326, Zafar St, Africa Blvd, Tehran',
