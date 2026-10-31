@@ -1,39 +1,47 @@
 {
- "updated": "2026-10-30T00:22:40Z",
+ "updated": "2026-10-31T00:04:21Z",
  "global": [
   {
-   "title": "What Outcomes Digital Twins Can be Used to Predict",
-   "url": "https://www.pharmexec.com/view/what-outcomes-digital-twins-used-predict",
+   "title": "Major FDA Victory; Preservative-Free Ketamine Approved Ahead of November 10 Goal Date as Commercial Launch Opportunity Comes Into Focus for NRx Pharma",
+   "url": "https://www.prlog.org/13180139-major-fda-victory-preservative-free-ketamine-approved-ahead-of-november-10-goal-date-as-commercial-launch-opportunity-comes-into-focus-for-nrx-pharma.html",
+   "source": "PRLog",
+   "date": "2026-10-30",
+   "summary": "Major FDA Victory; Preservative-Free Ketamine Approved Ahead of November 10 Goal Date as Commercial Launch Opportunity Comes Into Focus for NRx Pharma PRLog",
+   "image": "/news/g-121892c8a8.jpg"
+  },
+  {
+   "title": "Pfizer looks to reroute supply after flooding sidelined India injectables plant",
+   "url": "https://www.fiercepharma.com/pharma/pfizer-eyes-multi-year-repairs-after-flooding-sidelined-india-injectables-plant",
+   "source": "Fierce Pharma",
+   "date": "2026-10-30",
+   "summary": "A Pfizer joint venture with Zydus Cadila in India that manufactures sterile injectables, including chemotherapy drugs for U.S. cancer patients, remains closed after severe flooding in July, with the company estimating that new supplies could begin returning in mid-to-late 2028 un…",
+   "image": "/news/g-dae348d487.jpg"
+  },
+  {
+   "title": "FDA Approves Ilumya for Adults With Active Psoriatic Arthritis",
+   "url": "https://www.pharmexec.com/view/fda-approves-ilumya-tildrakizumab-active-psoriatic-arthritis",
    "source": "Pharmaceutical Executive",
-   "date": "2026-10-28",
-   "summary": "Brox.AI’s Hamish Brocklebank on three levels of digital clone use cases — from HCP content testing and GLP-1 price sensitivity modeling to simulating physician adoption after FDA approval.",
-   "image": "/news/g-5130d6952d.jpg"
-  },
-  {
-   "title": "Gaelic Labs: the EU Critical Medicines Act will have a positive impact on supply",
-   "url": "https://www.pharmaceutical-technology.com/analyst-comment/gaelic-labs-the-eu-critical-medicines-act-supply/",
-   "source": "Pharmaceutical Technology",
-   "date": "2026-10-29",
-   "summary": "Gaelic Labs is eyeing competitive benefits from its 2025 acquisition of fellow Irish beta-lactams manufacturer and further expansion.",
-   "image": "/news/g-b9785a1588.jpg"
-  },
-  {
-   "title": "FDA charts path for approval of individualized gene editing therapies",
-   "url": "https://endpoints.news/fda-charts-path-for-approval-of-individualized-gene-editing-therapies/",
-   "source": "Endpoints News",
-   "date": "2026-10-28",
-   "summary": "The FDA has outlined steps drugmakers can take to seek regulatory approval for gene editing medicines tailored to fix a single person's disease-causing mutation. The announcement is part of an ongoing ...",
-   "image": "/news/g-53ae29a12a.jpg"
+   "date": "2026-10-30",
+   "summary": "Sun Pharma's IL-23 inhibitor tildrakizumab gains a psoriatic arthritis indication; the announcement cited no phase 3 efficacy figures.",
+   "image": "/news/g-d56d50b531.jpg"
   }
  ],
  "china": [
   {
-   "title": "Bio-Thera Announces Chinese Approval For The First Secukinumab Biosimilar",
-   "url": "https://insights.citeline.com/generics-bulletin/products/biosimilars/bio-thera-announces-chinese-approval-for-the-first-secukinumab-biosimilar-AUOIW2DI3VCY7DPKWKL2C2634E/",
-   "source": "insights.citeline.com",
-   "date": "2026-10-28",
-   "summary": "Bio-Thera Announces Chinese Approval For The First Secukinumab Biosimilar insights.citeline.com",
-   "image": "/news/c-b66d16358f.jpg"
+   "title": "Generic Brivaracetam Cuts Seizure Frequency in Chinese Phase III Trial",
+   "url": "https://bioengineer.org/generic-brivaracetam-cuts-seizure-frequency-in-chinese-phase-iii-trial/",
+   "source": "Bioengineer.org",
+   "date": "2026-10-30",
+   "summary": "Generic Brivaracetam Cuts Seizure Frequency in Chinese Phase III Trial Bioengineer.org",
+   "image": "/news/c-335a2d7031.jpg"
+  },
+  {
+   "title": "Altruist Biologics' Integrated CMC Platform Supports NMPA Acceptance of NDA for Localized Manufacturing of Multinational Client's Biologic",
+   "url": "https://pressreleasehub.pa.media/article/altruist-biologics-integrated-cmc-platform-supports-nmpa-acceptance-of-nda-for-localized-manufacturing-of-multinational-clients-biologic-87572.html",
+   "source": "Press Release Hub",
+   "date": "2026-10-29",
+   "summary": "Altruist Biologics' Integrated CMC Platform Supports NMPA Acceptance of NDA for Localized Manufacturing of Multinational Client's Biologic Press Release Hub",
+   "image": "/news/c-58239a461e.jpg"
   },
   {
    "title": "Bayer Wins China Approval for Blood Thinner Asundexian as Xarelto Faces Generic Competition",
@@ -42,14 +50,6 @@
    "date": "2026-10-27",
    "summary": "Bayer Wins China Approval for Blood Thinner Asundexian as Xarelto Faces Generic Competition Medical Dialogues",
    "image": "/news/c-4c21043318.jpg"
-  },
-  {
-   "title": "Harbour BioMed Secures China’s NMPA Approval for Batoclimab, Expanding Treatment Options for Myasthenia Gravis",
-   "url": "https://biopharmaapac.com/news/32/8600/harbour-biomed-secures-chinas-nmpa-approval-for-batoclimab-expanding-treatment-options-for-myasthenia-gravis.html",
-   "source": "BioPharma APAC",
-   "date": "2026-10-26",
-   "summary": "Harbour BioMed Secures China’s NMPA Approval for Batoclimab, Expanding Treatment Options for Myasthenia Gravis BioPharma APAC",
-   "image": "/news/c-b2368766eb.jpg"
   }
  ]
 }
