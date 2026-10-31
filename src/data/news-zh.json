@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T18:50:26Z",
+ "updated": "2026-10-31T23:48:43Z",
  "items": [
   {
    "title": "7项FDA批准；1项NMPA创新产品批准，322个器械获NMPA批准注册文件——医疗器械获批周报（2026.10.23-2026.10.29）",
@@ -10,18 +10,6 @@
    "image": "",
    "feed": "Google News RSS (zh-CN)",
    "retrieved": "2026-10-31T06:22:13Z",
-   "imageSource": "",
-   "imageBasis": ""
-  },
-  {
-   "title": "速递｜诺和依柯胰岛素周制剂儿童适应证获FDA批准，10岁以上2型糖尿病患儿每周一针",
-   "url": "https://bydrug.pharmcube.com/news/detail/1ab0434c0bf3ab767d5a2f96166123e3",
-   "source": "医药魔方",
-   "date": "2026-10-29",
-   "summary": "",
-   "image": "",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-10-30T10:58:07Z",
    "imageSource": "",
    "imageBasis": ""
   },
@@ -50,18 +38,6 @@
    "imageBasis": ""
   },
   {
-   "title": "三季报 \"神仙交卷\"：有人净利猛增512%，有人海外授权亮眼",
-   "url": "https://www.yyjjb.com.cn/10/29/20261029103407347_28376.shtml",
-   "source": "医药经济报",
-   "date": "2026-10-29",
-   "summary": "",
-   "image": "",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-10-31T13:08:02Z",
-   "imageSource": "",
-   "imageBasis": ""
-  },
-  {
    "title": "6亿美元，AI制药公司计划收购10-15个药物项目！",
    "url": "https://bydrug.pharmcube.com/news/detail/5f9102afbcb1fbe2e0b24efc3e259e08",
    "source": "医药魔方",
@@ -70,6 +46,30 @@
    "image": "",
    "feed": "Google News RSS (zh-CN)",
    "retrieved": "2026-10-31T18:50:26Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
+   "title": "进医保只是开始， 医疗AI 正在迎来价值兑现",
+   "url": "https://bydrug.pharmcube.com/news?searchKey=%E5%8C%BB%E7%96%97AI",
+   "source": "医药魔方",
+   "date": "2026-10-31",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-10-31T23:48:43Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
+   "title": "出海规则生变，临床数据多元化、国际开发能力成定盘星",
+   "url": "https://www.yyjjb.com.cn/10/28/202610281010441044_28331.shtml",
+   "source": "医药经济报",
+   "date": "2026-10-28",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-10-31T23:48:43Z",
    "imageSource": "",
    "imageBasis": ""
   }
