@@ -97,13 +97,15 @@ jobs:
         run: |
           set -e
           BR="dist-${GITHUB_REF_NAME}"
+          # reuse the checkout's credential (actions/checkout stores it as an http.extraheader), so no token appears in a URL
+          AUTH="$(git config --get http.https://github.com/.extraheader)"
           cd dist
           git init -q -b "$BR"
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add -A
           git commit -q -m "Preview build of ${GITHUB_REF_NAME} @ ${GITHUB_SHA::7}"
-          git push -f -q origin "HEAD:refs/heads/$BR"
+          git -c "http.https://github.com/.extraheader=$AUTH" push -f -q "https://github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/$BR"
 
   deploy:
     needs: build
