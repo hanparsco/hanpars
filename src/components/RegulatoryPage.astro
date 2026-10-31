@@ -1,4 +1,6 @@
 ---
+import portfolioData from '../data/portfolio.json';
+import importsData from '../data/imports-2026.json';
 import PageHero from './PageHero.astro';
 import CTA from './CTA.astro';
 import Icon from './Icon.astro';
@@ -8,6 +10,7 @@ import { raEmail } from '../data/site';
 const lang = langFromPath(Astro.url.pathname);
 const data = regulatoryL[lang];
 const r = t(lang).regulatory;
+const L = (p: string) => localePath(p, lang);
 const svcIcons = ['molecule', 'file', 'globe', 'layers', 'shield'];
 const intelIcons = ['search', 'globe', 'file', 'layers'];
 const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a, tierName: tier.name, tierNum: tier.num })));
@@ -86,6 +89,17 @@ const RECORD = {
   },
 } as const;
 const R0 = RECORD[lang as keyof typeof RECORD] || RECORD.en;
+// Scope of the record above (it is the team's professional record, not the company's, which began importing in 2025),
+// and the company-level figures that anyone can check on this site.
+const SCOPE = ({
+  en: { scope: 'Scope: these figures are the cumulative professional record of the members of our regulatory team, including work done before they joined Hanpars. They are not outcomes of Haniya Parsan Darou Co. as a company, which began importing at the end of 2025. Details can be discussed with partners under a confidentiality agreement.', coTitle: 'Hanpars as a company', co: (r: string, a: string, u: string) => [`${r} medicines registered with IFDA under our licence`, `${a} of them on the Iranian market`, `${u} units imported in 2026`], links: [['/fdf#product-portfolio', 'Registered portfolio'], ['/import-activity', 'Import activity 2026']] },
+  fa: { scope: 'دامنه: این ارقام کارنامهٔ حرفه‌ای مجموع اعضای تیم رگولاتوری ما، از جمله سوابق پیش از پیوستن به هانیا پرسان دارو است و نتیجهٔ فعالیت شرکت هانیا پرسان دارو، که واردات را از اواخر ۲۰۲۵ آغاز کرده، نیست. جزئیات با شرکا در چارچوب توافق‌نامهٔ محرمانگی قابل ارائه است.', coTitle: 'هانیا پرسان دارو به‌عنوان شرکت', co: (r: string, a: string, u: string) => [`${r} داروی ثبت‌شده در سازمان غذا و دارو با پروانهٔ ما`, `${a} قلم از آن‌ها در بازار ایران`, `${u} واحد واردات در ۲۰۲۶`], links: [['/fdf#product-portfolio', 'سبد محصولات ثبت‌شده'], ['/import-activity', 'گزارش فعالیت ۲۰۲۶']] },
+  zh: { scope: '说明：以上数据为本公司注册团队成员的累计职业业绩，包括其加入汉帕斯之前的工作，并非汉尼亚帕尔桑药业有限公司本身的业绩；公司于 2025 年底开始进口。详细情况可在签署保密协议后向合作方说明。', coTitle: '公司层面的数据', co: (r: string, a: string, u: string) => [`以本公司许可在 IFDA 注册的药品 ${r} 个`, `其中 ${a} 个已在伊朗市场供应`, `2026 年进口 ${u} 单位`], links: [['/fdf#product-portfolio', '已注册产品组合'], ['/import-activity', '2026 年进口动态']] },
+  tr: { scope: 'Kapsam: bu rakamlar, ruhsatlandırma ekibimizin üyelerinin Hanpars’a katılmadan önceki çalışmaları da dahil toplam mesleki kayıtlarıdır; 2025 sonunda ithalata başlayan Haniya Parsan Darou Co. şirketinin sonuçları değildir. Ayrıntılar gizlilik sözleşmesi çerçevesinde ortaklarla paylaşılabilir.', coTitle: 'Şirket olarak Hanpars', co: (r: string, a: string, u: string) => [`lisansımız altında IFDA’da ruhsatlı ${r} ilaç`, `bunlardan ${a} tanesi İran pazarında`, `2026’da ithal edilen ${u} birim`], links: [['/fdf#product-portfolio', 'Ruhsatlı portföy'], ['/import-activity', '2026 ithalat faaliyeti']] },
+} as const)[lang as 'en' | 'fa' | 'zh' | 'tr'] || null;
+const unitsTotal = (importsData as { units: number }[]).reduce((a, x) => a + x.units, 0);
+const unitsStr = lang === 'zh' ? (unitsTotal / 1e8).toLocaleString('zh-CN', { maximumFractionDigits: 3 }) + ' 亿' : lang === 'fa' ? (unitsTotal / 1e6).toLocaleString('fa-IR', { maximumFractionDigits: 1 }) + ' میلیون' : lang === 'tr' ? (unitsTotal / 1e6).toLocaleString('tr-TR', { maximumFractionDigits: 1 }) + ' milyon' : (unitsTotal / 1e6).toLocaleString('en-US', { maximumFractionDigits: 1 }) + ' million';
+const coFacts = SCOPE ? SCOPE.co(portfolioData.counts.total.toLocaleString(lang === 'fa' ? 'fa-IR' : 'en-US'), portfolioData.counts.available.toLocaleString(lang === 'fa' ? 'fa-IR' : 'en-US'), unitsStr) : [];
 const record = {
   title: R0.title, lede: R0.lede, body: R0.body, note: R0.note,
   stats: [
@@ -109,6 +123,8 @@ const record = {
     {st.fig ? <strong class="rr-fig">{st.fig}</strong> : <span class="rr-ico"><Icon name={st.icon as any} size={22}/></span>}
     <span class="rr-text">{st.text}</span>
   </li>)}</ul>
+  {SCOPE && <p class="rr-scope"><Icon name="file" size={16}/><span>{SCOPE.scope}</span></p>}
+  {SCOPE && <div class="rr-company"><h3>{SCOPE.coTitle}</h3><ul>{coFacts.map(f => <li><Icon name="check" size={16}/><span>{f}</span></li>)}</ul><p>{SCOPE.links.map(([h, l], i) => <>{i > 0 && ' · '}<a class="text-link" href={L(h)}>{l}</a></>)}</p></div>}
   <div class="rr-lists">{record.lists.map(l => <article class="rr-card">
     <div class="rr-card-head"><span class="ra-ico"><Icon name={l.icon as any} size={20}/></span><h3>{l.title}</h3></div>
     <ul class="rr-chips">{l.items.map(i => <li>{i}</li>)}<li class="rr-more">{l.more}</li></ul>
@@ -218,6 +234,15 @@ const record = {
     .ra-principle { padding:22px; }
   }
   :global(html[lang=fa]) .ra-authority-tier,:global(html[lang=fa]) .ra-watch-agency { letter-spacing:0; text-transform:none; }
+  .rr-scope { display:flex; gap:10px; align-items:flex-start; margin:18px 0 0; padding:14px 18px; border-radius:14px; border:1px dashed #b9b3a6; font-size:15px; line-height:1.6; color:var(--ink); }
+  .rr-scope :global(svg) { flex:none; margin-top:3px; color:var(--lapis); }
+  .rr-company { margin-top:16px; padding:18px 20px; border-radius:16px; background:var(--paper); border:1px solid var(--line); }
+  .rr-company h3 { font-size:18px; margin-bottom:10px; }
+  .rr-company ul { list-style:none; padding:0; margin:0 0 10px; display:grid; gap:6px; }
+  .rr-company li { display:flex; gap:8px; align-items:flex-start; }
+  .rr-company li :global(svg) { flex:none; margin-top:4px; color:var(--lapis); }
+  .rr-company p { margin:0; font-size:15px; }
+  :global([dir=rtl]) .rr-scope, :global([dir=rtl]) .rr-company li { line-height:1.7; }
   /* evidence-based record (English owner text) */
   .ra-record { background:var(--white); }
   .rr-intro { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); gap:32px; align-items:end; margin:-24px 0 32px; }

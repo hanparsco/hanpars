@@ -1,0 +1,564 @@
+{
+  "Iodixanol": {
+    "kind": "molecule",
+    "dosed": "Iodixanol",
+    "chembl": "CHEMBL1200507",
+    "parent": "CHEMBL1200507",
+    "formula": "C35H44I6N6O15",
+    "mw": 1550.19,
+    "parentFormula": "C35H44I6N6O15",
+    "parentMw": 1550.19,
+    "note": ""
+  },
+  "Iohexol": {
+    "kind": "molecule",
+    "dosed": "Iohexol",
+    "chembl": "CHEMBL1200455",
+    "parent": "CHEMBL1200455",
+    "formula": "C19H26I3N3O9",
+    "mw": 821.14,
+    "parentFormula": "C19H26I3N3O9",
+    "parentMw": 821.14,
+    "note": ""
+  },
+  "Meglumine compound": {
+    "kind": "combination",
+    "dosed": "Meglumine diatrizoate (diatrizoate meglumine) + Sodium diatrizoate (diatrizoate sodium)",
+    "chembl": null,
+    "parent": null,
+    "formula": null,
+    "mw": null,
+    "parentFormula": null,
+    "parentMw": null,
+    "components": [
+      {
+        "dosed": "Meglumine diatrizoate (diatrizoate meglumine)",
+        "chembl": "CHEMBL1200839",
+        "formula": "C18H26I3N3O9",
+        "mw": 809.13
+      },
+      {
+        "dosed": "Sodium diatrizoate (diatrizoate sodium)",
+        "chembl": "CHEMBL1200581",
+        "formula": "C11H8I3N2NaO4",
+        "mw": 635.9
+      }
+    ],
+    "note": "Ionic contrast medium, 66% meglumine diatrizoate + 10% sodium diatrizoate. Both salts share the parent diatrizoic acid (CHEMBL1201220, C11H9I3N2O4, 613.91), which the site showed before as if it were the product."
+  },
+  "Calcitonin": {
+    "kind": "biologic",
+    "dosed": "Calcitonin (salmon) — presumed",
+    "chembl": "CHEMBL3989767",
+    "parent": "CHEMBL3989767",
+    "formula": "C145H240N44O48S2",
+    "mw": 3431.91,
+    "parentFormula": "C145H240N44O48S2",
+    "parentMw": 3431.91,
+    "note": "NEEDS REVIEW: portfolio.json gives ATC H05BA03, which is calcitonin (pork natural). The ChEMBL record and the site's data are calcitonin salmon (ChEMBL ATC H05BA01). The formula shown is for salmon calcitonin. Confirm the API with the registration dossier and correct either the ATC or the substance."
+  },
+  "Cyproterone compound": {
+    "kind": "combination",
+    "dosed": "Cyproterone acetate + Ethinylestradiol",
+    "chembl": null,
+    "parent": null,
+    "formula": null,
+    "mw": null,
+    "parentFormula": null,
+    "parentMw": null,
+    "components": [
+      {
+        "dosed": "Cyproterone acetate",
+        "chembl": "CHEMBL139835",
+        "formula": "C24H29ClO4",
+        "mw": 416.95
+      },
+      {
+        "dosed": "Ethinylestradiol",
+        "chembl": "CHEMBL691",
+        "formula": "C20H24O2",
+        "mw": 296.41
+      }
+    ],
+    "note": "2 mg / 0.035 mg tablet."
+  },
+  "Estradiol valerate": {
+    "kind": "ester",
+    "dosed": "Estradiol valerate",
+    "chembl": "CHEMBL1511",
+    "parent": "CHEMBL1511",
+    "formula": "C23H32O3",
+    "mw": 356.51,
+    "parentFormula": "C23H32O3",
+    "parentMw": 356.51,
+    "note": "Ester prodrug of estradiol (CHEMBL135). ChEMBL treats the ester as its own parent."
+  },
+  "Exemestane": {
+    "kind": "molecule",
+    "dosed": "Exemestane",
+    "chembl": "CHEMBL1200374",
+    "parent": "CHEMBL1200374",
+    "formula": "C20H24O2",
+    "mw": 296.41,
+    "parentFormula": "C20H24O2",
+    "parentMw": 296.41,
+    "note": ""
+  },
+  "Hydrocortisone (as sodium succinate)": {
+    "kind": "salt",
+    "dosed": "Hydrocortisone sodium succinate",
+    "chembl": "CHEMBL1200495",
+    "parent": "CHEMBL977",
+    "formula": "C25H33NaO8",
+    "mw": 484.52,
+    "parentFormula": "C25H34O8",
+    "parentMw": 462.54,
+    "note": "Ester salt. ChEMBL parent is hydrocortisone hemisuccinate (CHEMBL977, C25H34O8, 462.54); active moiety is hydrocortisone (CHEMBL389621, C21H30O5, 362.47), which is what the site showed before."
+  },
+  "Betahistine dihydrochloride": {
+    "kind": "salt",
+    "dosed": "Betahistine dihydrochloride",
+    "chembl": "CHEMBL1446813",
+    "parent": "CHEMBL24441",
+    "formula": "C8H14Cl2N2",
+    "mw": 209.12,
+    "parentFormula": "C8H12N2",
+    "parentMw": 136.2,
+    "note": "ChEMBL pref_name is 'BETAHISTINE HYDROCHLORIDE', but the record is the 2HCl salt (synonym 'Betahistine dihydrochloride')."
+  },
+  "Carbamazepine": {
+    "kind": "molecule",
+    "dosed": "Carbamazepine",
+    "chembl": "CHEMBL108",
+    "parent": "CHEMBL108",
+    "formula": "C15H12N2O",
+    "mw": 236.27,
+    "parentFormula": "C15H12N2O",
+    "parentMw": 236.27,
+    "note": ""
+  },
+  "Clomipramine hydrochloride": {
+    "kind": "salt",
+    "dosed": "Clomipramine hydrochloride",
+    "chembl": "CHEMBL1200710",
+    "parent": "CHEMBL415",
+    "formula": "C19H24Cl2N2",
+    "mw": 351.32,
+    "parentFormula": "C19H23ClN2",
+    "parentMw": 314.86,
+    "note": ""
+  },
+  "Clonazepam": {
+    "kind": "molecule",
+    "dosed": "Clonazepam",
+    "chembl": "CHEMBL452",
+    "parent": "CHEMBL452",
+    "formula": "C15H10ClN3O3",
+    "mw": 315.72,
+    "parentFormula": "C15H10ClN3O3",
+    "parentMw": 315.72,
+    "note": ""
+  },
+  "Clozapine": {
+    "kind": "molecule",
+    "dosed": "Clozapine",
+    "chembl": "CHEMBL42",
+    "parent": "CHEMBL42",
+    "formula": "C18H19ClN4",
+    "mw": 326.83,
+    "parentFormula": "C18H19ClN4",
+    "parentMw": 326.83,
+    "note": ""
+  },
+  "Escitalopram (as oxalate)": {
+    "kind": "salt",
+    "dosed": "Escitalopram oxalate",
+    "chembl": "CHEMBL1200322",
+    "parent": "CHEMBL1508",
+    "formula": "C22H23FN2O5",
+    "mw": 414.43,
+    "parentFormula": "C20H21FN2O",
+    "parentMw": 324.4,
+    "note": ""
+  },
+  "Olanzapine": {
+    "kind": "molecule",
+    "dosed": "Olanzapine",
+    "chembl": "CHEMBL715",
+    "parent": "CHEMBL715",
+    "formula": "C17H20N4S",
+    "mw": 312.44,
+    "parentFormula": "C17H20N4S",
+    "parentMw": 312.44,
+    "note": ""
+  },
+  "Perphenazine": {
+    "kind": "molecule",
+    "dosed": "Perphenazine",
+    "chembl": "CHEMBL567",
+    "parent": "CHEMBL567",
+    "formula": "C21H26ClN3OS",
+    "mw": 403.98,
+    "parentFormula": "C21H26ClN3OS",
+    "parentMw": 403.98,
+    "note": ""
+  },
+  "Pregabalin": {
+    "kind": "molecule",
+    "dosed": "Pregabalin",
+    "chembl": "CHEMBL1059",
+    "parent": "CHEMBL1059",
+    "formula": "C8H17NO2",
+    "mw": 159.23,
+    "parentFormula": "C8H17NO2",
+    "parentMw": 159.23,
+    "note": ""
+  },
+  "Quetiapine (as fumarate)": {
+    "kind": "salt",
+    "dosed": "Quetiapine fumarate",
+    "chembl": "CHEMBL3188993",
+    "parent": "CHEMBL716",
+    "formula": "C46H54N6O8S2",
+    "mw": 883.11,
+    "parentFormula": "C21H25N3O2S",
+    "parentMw": 383.52,
+    "note": "Hemifumarate: 2 quetiapine : 1 fumaric acid, so the formula holds two quetiapine units."
+  },
+  "Sertraline (as hydrochloride)": {
+    "kind": "salt",
+    "dosed": "Sertraline hydrochloride",
+    "chembl": "CHEMBL1709",
+    "parent": "CHEMBL809",
+    "formula": "C17H18Cl3N",
+    "mw": 342.7,
+    "parentFormula": "C17H17Cl2N",
+    "parentMw": 306.24,
+    "note": ""
+  },
+  "Topiramate": {
+    "kind": "molecule",
+    "dosed": "Topiramate",
+    "chembl": "CHEMBL220492",
+    "parent": "CHEMBL220492",
+    "formula": "C12H21NO8S",
+    "mw": 339.37,
+    "parentFormula": "C12H21NO8S",
+    "parentMw": 339.37,
+    "note": ""
+  },
+  "Trihexyphenidyl hydrochloride": {
+    "kind": "salt",
+    "dosed": "Trihexyphenidyl hydrochloride",
+    "chembl": "CHEMBL1092",
+    "parent": "CHEMBL1490",
+    "formula": "C20H32ClNO",
+    "mw": 337.94,
+    "parentFormula": "C20H31NO",
+    "parentMw": 301.47,
+    "note": ""
+  },
+  "Clopidogrel (as bisulfate)": {
+    "kind": "salt",
+    "dosed": "Clopidogrel bisulfate",
+    "chembl": "CHEMBL1083385",
+    "parent": "CHEMBL1771",
+    "formula": "C16H18ClNO6S2",
+    "mw": 419.91,
+    "parentFormula": "C16H16ClNO2S",
+    "parentMw": 321.83,
+    "note": ""
+  },
+  "Furosemide": {
+    "kind": "molecule",
+    "dosed": "Furosemide",
+    "chembl": "CHEMBL35",
+    "parent": "CHEMBL35",
+    "formula": "C12H11ClN2O5S",
+    "mw": 330.75,
+    "parentFormula": "C12H11ClN2O5S",
+    "parentMw": 330.75,
+    "note": ""
+  },
+  "Sotalol hydrochloride": {
+    "kind": "salt",
+    "dosed": "Sotalol hydrochloride",
+    "chembl": "CHEMBL1700",
+    "parent": "CHEMBL471",
+    "formula": "C12H21ClN2O3S",
+    "mw": 308.83,
+    "parentFormula": "C12H20N2O3S",
+    "parentMw": 272.37,
+    "note": ""
+  },
+  "Ampicillin": {
+    "kind": "molecule",
+    "dosed": "Ampicillin",
+    "chembl": "CHEMBL174",
+    "parent": "CHEMBL174",
+    "formula": "C16H19N3O4S",
+    "mw": 349.41,
+    "parentFormula": "C16H19N3O4S",
+    "parentMw": 349.41,
+    "note": "Product name is the base molecule. A powder for injection is normally ampicillin sodium (CHEMBL1200758, C16H18N3NaO4S, 371.39); confirm from the label and switch to that salt record if so."
+  },
+  "Ampicillin / sulbactam": {
+    "kind": "combination",
+    "dosed": "Ampicillin sodium + Sulbactam sodium",
+    "chembl": null,
+    "parent": null,
+    "formula": null,
+    "mw": null,
+    "parentFormula": null,
+    "parentMw": null,
+    "components": [
+      {
+        "dosed": "Ampicillin sodium",
+        "chembl": "CHEMBL1200758",
+        "formula": "C16H18N3NaO4S",
+        "mw": 371.39
+      },
+      {
+        "dosed": "Sulbactam sodium",
+        "chembl": "CHEMBL1200944",
+        "formula": "C8H10NNaO5S",
+        "mw": 255.23
+      }
+    ],
+    "note": "Powder for injection, 1 g / 0.5 g (strengths given as the free acids). Sodium salts are the standard sterile forms for injection; confirm against the SmPC."
+  },
+  "Cefuroxime (as axetil)": {
+    "kind": "ester",
+    "dosed": "Cefuroxime axetil",
+    "chembl": "CHEMBL1095930",
+    "parent": "CHEMBL1095930",
+    "formula": "C20H22N4O10S",
+    "mw": 510.48,
+    "parentFormula": "C20H22N4O10S",
+    "parentMw": 510.48,
+    "note": "1-acetoxyethyl ester prodrug of cefuroxime (CHEMBL1436). ChEMBL treats the ester as its own parent."
+  },
+  "Chloroquine phosphate": {
+    "kind": "salt",
+    "dosed": "Chloroquine phosphate",
+    "chembl": "CHEMBL58510",
+    "parent": "CHEMBL76",
+    "formula": "C18H32ClN3O8P2",
+    "mw": 515.87,
+    "parentFormula": "C18H26ClN3",
+    "parentMw": 319.88,
+    "note": "Diphosphate (chloroquine with 2 H3PO4)."
+  },
+  "Hydroxychloroquine sulfate": {
+    "kind": "salt",
+    "dosed": "Hydroxychloroquine sulfate",
+    "chembl": "CHEMBL1690",
+    "parent": "CHEMBL1535",
+    "formula": "C18H28ClN3O5S",
+    "mw": 433.96,
+    "parentFormula": "C18H26ClN3O",
+    "parentMw": 335.88,
+    "note": ""
+  },
+  "Isoniazid": {
+    "kind": "molecule",
+    "dosed": "Isoniazid",
+    "chembl": "CHEMBL64",
+    "parent": "CHEMBL64",
+    "formula": "C6H7N3O",
+    "mw": 137.14,
+    "parentFormula": "C6H7N3O",
+    "parentMw": 137.14,
+    "note": ""
+  },
+  "Rifampicin": {
+    "kind": "molecule",
+    "dosed": "Rifampicin",
+    "chembl": "CHEMBL374478",
+    "parent": "CHEMBL374478",
+    "formula": "C43H58N4O12",
+    "mw": 822.95,
+    "parentFormula": "C43H58N4O12",
+    "parentMw": 822.95,
+    "note": ""
+  },
+  "Vancomycin (as hydrochloride)": {
+    "kind": "salt",
+    "dosed": "Vancomycin hydrochloride",
+    "chembl": "CHEMBL1200628",
+    "parent": "CHEMBL262777",
+    "formula": "C66H76Cl3N9O24",
+    "mw": 1485.73,
+    "parentFormula": "C66H75Cl2N9O24",
+    "parentMw": 1449.27,
+    "note": ""
+  },
+  "Aminophylline": {
+    "kind": "salt",
+    "dosed": "Aminophylline (theophylline–ethylenediamine 2:1)",
+    "chembl": "CHEMBL1370561",
+    "parent": "CHEMBL190",
+    "formula": "C16H24N10O4",
+    "mw": 420.43,
+    "parentFormula": "C7H8N4O2",
+    "parentMw": 180.17,
+    "note": "Anhydrous 2:1 theophylline/ethylenediamine complex. ChEMBL labels this record molecule_type 'Protein', which is a ChEMBL data error. Parent is theophylline (CHEMBL190)."
+  },
+  "Atropine sulfate": {
+    "kind": "salt",
+    "dosed": "Atropine sulfate",
+    "chembl": "CHEMBL2146146",
+    "parent": "CHEMBL517712",
+    "formula": "C17H25NO7S",
+    "mw": 387.45,
+    "parentFormula": "C17H23NO3",
+    "parentMw": 289.38,
+    "note": "ChEMBL's record stores a 1:1 atropine:H2SO4 structure with no water. The pharmacopoeial substance is (atropine)2·H2SO4·H2O (monohydrate). ChEMBL has no separate record for that, so its 2:1 monohydrate weight is not given here. Confirm against the product label/CoA before publishing."
+  },
+  "Epinephrine": {
+    "kind": "molecule",
+    "dosed": "Epinephrine",
+    "chembl": "CHEMBL679",
+    "parent": "CHEMBL679",
+    "formula": "C9H13NO3",
+    "mw": 183.21,
+    "parentFormula": "C9H13NO3",
+    "parentMw": 183.21,
+    "note": "Product name is the base. 1 mg/mL injections are often made with epinephrine hydrochloride or bitartrate, with strength expressed as base; confirm from the label."
+  },
+  "Etomidate": {
+    "kind": "molecule",
+    "dosed": "Etomidate",
+    "chembl": "CHEMBL681",
+    "parent": "CHEMBL681",
+    "formula": "C14H16N2O2",
+    "mw": 244.29,
+    "parentFormula": "C14H16N2O2",
+    "parentMw": 244.29,
+    "note": ""
+  },
+  "Heparin sodium": {
+    "kind": "biologic",
+    "dosed": "Heparin sodium",
+    "chembl": "CHEMBL1201657",
+    "parent": "CHEMBL1201657",
+    "formula": null,
+    "mw": null,
+    "parentFormula": null,
+    "parentMw": null,
+    "note": "Polydisperse sulfated polysaccharide (porcine). ChEMBL gives no formula or weight."
+  },
+  "Hyoscine-N-butylbromide": {
+    "kind": "salt",
+    "dosed": "Hyoscine butylbromide (butylscopolamine bromide)",
+    "chembl": "CHEMBL1256901",
+    "parent": "CHEMBL1618102",
+    "formula": "C21H30BrNO4",
+    "mw": 440.38,
+    "parentFormula": "C21H30NO4+",
+    "parentMw": 360.47,
+    "note": "Quaternary ammonium bromide. The old value was the bare cation C21H30NO4+ (360.47)."
+  },
+  "Lidocaine / chlorhexidine": {
+    "kind": "combination",
+    "dosed": "Lidocaine hydrochloride + Chlorhexidine gluconate (digluconate)",
+    "chembl": null,
+    "parent": null,
+    "formula": null,
+    "mw": null,
+    "parentFormula": null,
+    "parentMw": null,
+    "components": [
+      {
+        "dosed": "Lidocaine hydrochloride",
+        "chembl": "CHEMBL1200409",
+        "formula": "C14H25ClN2O2",
+        "mw": 288.82
+      },
+      {
+        "dosed": "Chlorhexidine gluconate (digluconate)",
+        "chembl": "CHEMBL4297088",
+        "formula": "C34H54Cl2N10O14",
+        "mw": 897.77
+      }
+    ],
+    "note": "Gel, 2% / 0.05%. The salt forms are assumed from the usual formulation of this gel type (e.g. Instillagel) and are not confirmed by the product name: verify against the SmPC. ChEMBL's lidocaine HCl record is the monohydrate (its SMILES includes H2O)."
+  },
+  "Naloxone hydrochloride": {
+    "kind": "salt",
+    "dosed": "Naloxone hydrochloride",
+    "chembl": "CHEMBL1718",
+    "parent": "CHEMBL80",
+    "formula": "C19H22ClNO4",
+    "mw": 363.84,
+    "parentFormula": "C19H21NO4",
+    "parentMw": 327.38,
+    "note": "Anhydrous record (exact pref_name match). ChEMBL also has NALOXONE HYDROCHLORIDE DIHYDRATE (CHEMBL5315056, C19H26ClNO6, 399.87), the Ph. Eur. form. Use that record if the CoA states dihydrate."
+  },
+  "Salbutamol (as sulfate)": {
+    "kind": "salt",
+    "dosed": "Salbutamol sulfate",
+    "chembl": "CHEMBL1441059",
+    "parent": "CHEMBL714",
+    "formula": "C26H44N2O10S",
+    "mw": 576.71,
+    "parentFormula": "C13H21NO3",
+    "parentMw": 239.31,
+    "note": "ChEMBL pref_name ALBUTEROL SULFATE. 2 salbutamol : 1 H2SO4, so the formula holds two salbutamol units."
+  },
+  "Calcium folinate": {
+    "kind": "salt",
+    "dosed": "Calcium folinate (leucovorin calcium)",
+    "chembl": "CHEMBL1201138",
+    "parent": "CHEMBL1679",
+    "formula": "C20H21CaN7O7",
+    "mw": 511.51,
+    "parentFormula": "C20H23N7O7",
+    "parentMw": 473.45,
+    "note": "Anhydrous record. The commercial substance is often the pentahydrate (listed as a synonym), but ChEMBL has no separate hydrate record."
+  },
+  "Infliximab": {
+    "kind": "biologic",
+    "dosed": "Infliximab",
+    "chembl": "CHEMBL1201581",
+    "parent": "CHEMBL1201581",
+    "formula": null,
+    "mw": null,
+    "parentFormula": null,
+    "parentMw": null,
+    "note": "Chimeric monoclonal antibody. ChEMBL gives no formula."
+  },
+  "Misoprostol": {
+    "kind": "molecule",
+    "dosed": "Misoprostol",
+    "chembl": "CHEMBL606",
+    "parent": "CHEMBL606",
+    "formula": "C22H38O5",
+    "mw": 382.54,
+    "parentFormula": "C22H38O5",
+    "parentMw": 382.54,
+    "note": ""
+  },
+  "Ursodeoxycholic acid": {
+    "kind": "molecule",
+    "dosed": "Ursodeoxycholic acid",
+    "chembl": "CHEMBL1551",
+    "parent": "CHEMBL1551",
+    "formula": "C24H40O4",
+    "mw": 392.58,
+    "parentFormula": "C24H40O4",
+    "parentMw": 392.58,
+    "note": ""
+  },
+  "Alendronate (as sodium)": {
+    "kind": "salt",
+    "dosed": "Alendronate sodium",
+    "chembl": "CHEMBL675",
+    "parent": "CHEMBL870",
+    "formula": "C4H12NNaO7P2",
+    "mw": 271.08,
+    "parentFormula": "C4H13NO7P2",
+    "parentMw": 249.1,
+    "note": "ChEMBL's record is anhydrous monosodium alendronate. The marketed API is usually the trihydrate (synonym 'Alendronate sodium trihydrate'), but ChEMBL has no separate trihydrate record, so no trihydrate formula/weight is given."
+  }
+}

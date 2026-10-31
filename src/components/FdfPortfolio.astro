@@ -19,6 +19,12 @@ const O = (o:string) => pl ? (pl.origins?.[o] ?? o) : o;
 const S = (status:string) => pl ? (status === 'available' ? s.statusAvailable : s.statusLaunching) : undefined;
 const description = pl ? pl.description : portfolio.description;
 const trust = pl ? pl.trust : portfolio.trust;
+const verifyNote = ({
+  en: 'How to verify: the IFDA import licence, the registration (IRC) of each product above, the reserve-programme contract and batch certificates of analysis can be shown to partners and authorities on request, under a confidentiality agreement where needed.',
+  fa: 'راستی‌آزمایی: مجوز واردات سازمان غذا و دارو، ثبت (کد IRC) هر یک از محصولات بالا، قرارداد ذخایر راهبردی و گواهی آنالیز هر بچ، در صورت درخواست به شرکا و مراجع، و در صورت لزوم در چارچوب توافق‌نامهٔ محرمانگی، ارائه می‌شود.',
+  zh: '核实方式：IFDA 进口许可、上述每个产品的注册（IRC 编码）、国家储备合同及各批次检验报告，可应合作方和主管部门要求提供，必要时在签署保密协议后提供。',
+  tr: 'Doğrulama: IFDA ithalat izni, yukarıdaki her ürünün ruhsatı (IRC), rezerv programı sözleşmesi ve seri analiz sertifikaları, talep halinde ortaklara ve otoritelere, gerektiğinde gizlilik sözleşmesiyle gösterilir.',
+} as Record<string, string>)[lang] || '';
 const manufacturer = pl ? { ...portfolio.manufacturer, ...pl.manufacturer } : portfolio.manufacturer;
 const products = portfolio.groups.flatMap(group => group.products.map(product => ({ ...product, area:G(group).title, areaId:group.id })));
 const searchText = (product:typeof products[number]) => [product.name, product.atc, product.area, product.statusLabel, ...product.origins, ...product.forms.flatMap(form => [form.form,form.strength])].join(' ').toLowerCase();
@@ -41,6 +47,7 @@ const i18n = JSON.stringify({ count: s.count(987654,123456).replace('987654','{n
       <dl class="portfolio-stats"><div><dt>{s.registered}</dt><dd class="num">{portfolio.counts.total}</dd></div><div><dt>{s.available}</dt><dd class="num">{portfolio.counts.available}</dd></div><div><dt>{s.launching}</dt><dd class="num">{portfolio.counts.launching}</dd></div><div><dt>{s.areas}</dt><dd class="num">{portfolio.counts.areas}</dd></div></dl>
     </div>
     <div class="portfolio-capabilities">{trust.map((item: any, i: number)=><article><span class="pc-ico"><Icon name={(['shield','box','globe','check'] as const)[i % 4]} size={18}/></span><div><h3>{item.title}</h3><p>{item.description}</p></div></article>)}</div>
+    {verifyNote && <p class="portfolio-verify">{verifyNote}</p>}
   </div>
   <div class="portfolio-body">
     <div class="container">
