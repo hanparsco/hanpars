@@ -106,5 +106,9 @@
  "Alendronate (as sodium)": {
   "slug": "alendronate",
   "source": "PB-116"
+ },
+ "Cefuroxime (as axetil)": {
+  "slug": "cefuroxime",
+  "source": "PB-123"
  }
 }
