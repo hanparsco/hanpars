@@ -1,8 +1,8 @@
 $ astro check
-14:00:16 [content] Syncing content
-14:00:16 [content] Synced content
-14:00:16 [types] Generated 127ms
-14:00:16 [check] Getting diagnostics for Astro files in /home/runner/work/hanpars/hanpars...
+14:01:22 [content] Syncing content
+14:01:22 [content] Synced content
+14:01:22 [types] Generated 112ms
+14:01:22 [check] Getting diagnostics for Astro files in /home/runner/work/hanpars/hanpars...
 [96mscripts/seo-audit.mjs[0m:[93m39[0m:[93m57[0m - [93mwarning[0m[90m ts(6133): [0m't' is declared but its value is never read.
 
 [7m39[0m     issue('duplicate descriptions', [...descs].filter(([t, l]) => l.length > 1).map(([t, l]) => `${l.length}× ${t.slice(0, 80)} :: ${l.slice(0, 3).join(', ')}`)),
@@ -17,25 +17,25 @@ $ astro check
 [7m11[0m const fmt = (n: number) => n.toLocaleString(numLocale(lang));
 [7m  [0m [93m      ~~~[0m
 
-[96msrc/components/FdfPortfolio.astro[0m:[93m69[0m:[93m650[0m - [91merror[0m[90m ts(1005): [0m'}' expected.
+[96msrc/components/FdfPortfolio.astro[0m:[93m71[0m:[93m548[0m - [91merror[0m[90m ts(1005): [0m'}' expected.
 
-[7m69[0m           return <article class:list={["portfolio-product-card", "has-photo"]} data-portfolio-card data-area={group.id} data-search={searchText(entry)}>{PHOTO[product.name] && <figure class="pc-photo"><img src={`/images/portfolio/${PHOTO[product.name].slug}-640.webp`} srcset={`/images/portfolio/${PHOTO[product.name].slug}-640.webp 640w, /images/portfolio/${PHOTO[product.name].slug}-1200.webp 1200w`} sizes="(max-width:640px) 92vw, 380px" width="640" height="400" alt={`${product.name} — ${lang === "zh" ? "包装照片" : lang === "fa" ? "تصویر بسته‌بندی" : lang === "tr" ? "ambalaj fotoğrafı" : "pack shot"}`} loading="lazy" decoding="async" /></figure>{!PHOTO[product.name] && <figure class="pc-photo pc-photo-empty" aria-hidden="true"><Icon name="box" size={56}/><span>{({ en: "Pack photo coming soon", fa: "تصویر بسته‌بندی به‌زودی", zh: "包装照片即将上线", tr: "Ambalaj fotoğrafı yakında" } as Record<string,string>)[lang]}</span></figure>}<div class="portfolio-card-top"><span class="portfolio-form-icons">{product.formIcons.slice(0,2).map(icon=><DosageFormIcon name={icon.id} label={icon.label} size={24}/>)}</span><div class="portfolio-card-title"><h4 dir="ltr">{product.name}</h4>{lang !== 'en' && lang !== 'fa' && locName(lang, product.name.replace(/\s*\(.*\)\s*/g, '')) && <span class="portfolio-loc" lang={htmlLang[lang]}>{locName(lang, product.name.replace(/\s*\(.*\)\s*/g, ''))}</span>}<code class="portfolio-atc" dir="ltr">{product.atc}</code></div></div><dl class="portfolio-forms">{product.forms.map(form=><div><dt>{F(form.form)}</dt><dd dir="ltr">{form.strength}</dd></div>)}</dl>{(() => { const cx = CX[product.name]; const sub = SUB[product.name]; if (!cx) return null; return <div class="pc-cx">
-[7m  [0m [91m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ~[0m
-[96msrc/components/FdfPortfolio.astro[0m:[93m227[0m:[93m1[0m - [91merror[0m[90m astro: [0mExpected a closing tag but instead found the end of the file.
+[7m71[0m           return <article class:list={["portfolio-product-card", "has-photo"]} data-portfolio-card data-area={group.id} data-search={searchText(entry)}>{PHOTO[product.name] && <figure class="pc-photo"><img src={`/images/portfolio/${PHOTO[product.name].slug}-640.webp`} srcset={`/images/portfolio/${PHOTO[product.name].slug}-640.webp 640w, /images/portfolio/${PHOTO[product.name].slug}-1200.webp 1200w`} sizes="(max-width:640px) 92vw, 380px" width="640" height="400" alt={`${product.name} — ${photoAlt}`} loading="lazy" decoding="async" /></figure>{!PHOTO[product.name] && <figure class="pc-photo pc-photo-empty" aria-hidden="true"><Icon name="box" size={56}/><span>{photoSoon}</span></figure>}<div class="portfolio-card-top"><span class="portfolio-form-icons">{product.formIcons.slice(0,2).map(icon=><DosageFormIcon name={icon.id} label={icon.label} size={24}/>)}</span><div class="portfolio-card-title"><h4 dir="ltr">{product.name}</h4>{lang !== 'en' && lang !== 'fa' && locName(lang, product.name.replace(/\s*\(.*\)\s*/g, '')) && <span class="portfolio-loc" lang={htmlLang[lang]}>{locName(lang, product.name.replace(/\s*\(.*\)\s*/g, ''))}</span>}<code class="portfolio-atc" dir="ltr">{product.atc}</code></div></div><dl class="portfolio-forms">{product.forms.map(form=><div><dt>{F(form.form)}</dt><dd dir="ltr">{form.strength}</dd></div>)}</dl>{(() => { const cx = CX[product.name]; const sub = SUB[product.name]; if (!cx) return null; return <div class="pc-cx">
+[7m  [0m [91m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ~[0m
+[96msrc/components/FdfPortfolio.astro[0m:[93m229[0m:[93m1[0m - [91merror[0m[90m astro: [0mExpected a closing tag but instead found the end of the file.
 
-[7m227[0m 
+[7m229[0m 
 [7m   [0m [91m[0m
-[96msrc/components/FdfPortfolio.astro[0m:[93m98[0m:[93m3[0m - [91merror[0m[90m astro: [0mExpected a matching closing tag but instead found '</div>'.
+[96msrc/components/FdfPortfolio.astro[0m:[93m100[0m:[93m3[0m - [91merror[0m[90m astro: [0mExpected a matching closing tag but instead found '</div>'.
 
-[7m98[0m   </div>
-[7m  [0m [91m  ~~~~~~[0m
-[96msrc/components/FdfPortfolio.astro[0m:[93m97[0m:[93m5[0m - [91merror[0m[90m astro: [0mExpected a matching closing tag but instead found '</div>'.
+[7m100[0m   </div>
+[7m   [0m [91m  ~~~~~~[0m
+[96msrc/components/FdfPortfolio.astro[0m:[93m99[0m:[93m5[0m - [91merror[0m[90m astro: [0mExpected a matching closing tag but instead found '</div>'.
 
-[7m97[0m     </div>
+[7m99[0m     </div>
 [7m  [0m [91m    ~~~~~~[0m
-[96msrc/components/FdfPortfolio.astro[0m:[93m67[0m:[93m9[0m - [91merror[0m[90m astro: [0mFound a text expression that doesn't have the closing expression:
+[96msrc/components/FdfPortfolio.astro[0m:[93m69[0m:[93m9[0m - [91merror[0m[90m astro: [0mFound a text expression that doesn't have the closing expression:
 
-[7m67[0m         {portfolio.groups.map(group=><section class="portfolio-group" data-portfolio-group={group.id} aria-labelledby={`portfolio-${group.id}`}><div class="portfolio-group-head"><div><h3 id={`portfolio-${group.id}`}>{G(group).title}</h3><p class="portfolio-kicker">{G(group).kicker}</p><p>{G(group).description}</p></div><span class="portfolio-group-count"><strong data-portfolio-group-count>{group.products.length}</strong> <span data-portfolio-group-label>{group.products.length===1?s.molecule:s.molecules}</span></span></div><div class="portfolio-card-grid">{group.products.map(product=>{
+[7m69[0m         {portfolio.groups.map(group=><section class="portfolio-group" data-portfolio-group={group.id} aria-labelledby={`portfolio-${group.id}`}><div class="portfolio-group-head"><div><h3 id={`portfolio-${group.id}`}>{G(group).title}</h3><p class="portfolio-kicker">{G(group).kicker}</p><p>{G(group).description}</p></div><span class="portfolio-group-count"><strong data-portfolio-group-count>{group.products.length}</strong> <span data-portfolio-group-label>{group.products.length===1?s.molecule:s.molecules}</span></span></div><div class="portfolio-card-grid">{group.products.map(product=>{
 [7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 [96msrc/components/Home.astro[0m:[93m114[0m:[93m75[0m - [93mwarning[0m[90m ts(6133): [0m'i' is declared but its value is never read.
