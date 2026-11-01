@@ -1,13 +1,22 @@
 {
- "updated": "2026-10-31T23:45:12Z",
+ "updated": "2026-11-01T23:54:09Z",
  "global": [
   {
-   "title": "NRx Pharmaceuticals Wins FDA Approval for Preservative-Free Generic Ketamine Injection",
-   "url": "https://www.citybiz.co/article/927034/nrx-pharmaceuticals-wins-fda-approval-for-preservative-free-generic-ketamine-injection/",
-   "source": "citybiz",
-   "date": "2026-10-30",
-   "summary": "NRx Pharmaceuticals Wins FDA Approval for Preservative-Free Generic Ketamine Injection citybiz",
-   "image": "/news/g-3e71992cd0.jpg",
+   "title": "FDA Approves Preservative-Free Generic Ketamine as Hospital Shortage Continues",
+   "url": "https://www.inkl.com/news/fda-approves-preservative-free-generic-ketamine-as-hospital-shortage-continues",
+   "source": "inkl",
+   "date": "2026-11-01",
+   "summary": "FDA Approves Preservative-Free Generic Ketamine as Hospital Shortage Continues inkl",
+   "image": "/news/g-07bd7512e2.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "FDA Rival Approval Could Be A Game Changer For Precigen (PGEN)",
+   "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-pgen/precigen/news/fda-rival-approval-could-be-a-game-changer-for-precigen-pgen",
+   "source": "Simply Wall St",
+   "date": "2026-11-01",
+   "summary": "FDA Rival Approval Could Be A Game Changer For Precigen (PGEN) Simply Wall St",
+   "image": "/news/g-7c8371e100.jpg",
    "kind": "news"
   },
   {
@@ -17,15 +26,6 @@
    "date": "2026-10-30",
    "summary": "A Pfizer joint venture with Zydus Cadila in India that manufactures sterile injectables, including chemotherapy drugs for U.S. cancer patients, remains closed after severe flooding in July, with the company estimating that new supplies could begin returning in mid-to-late 2028 un…",
    "image": "/news/g-dae348d487.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "FDA Approves Ilumya for Adults With Active Psoriatic Arthritis",
-   "url": "https://www.pharmexec.com/view/fda-approves-ilumya-tildrakizumab-active-psoriatic-arthritis",
-   "source": "Pharmaceutical Executive",
-   "date": "2026-10-30",
-   "summary": "Sun Pharma's IL-23 inhibitor tildrakizumab gains a psoriatic arthritis indication; the announcement cited no phase 3 efficacy figures.",
-   "image": "/news/g-d56d50b531.jpg",
    "kind": "news"
   }
  ],
@@ -40,12 +40,12 @@
    "kind": "news"
   },
   {
-   "title": "Can India break its dependence on China for pharma APIs?",
-   "url": "https://www.itln.in/videos/can-india-break-its-dependence-on-china-for-pharma-apis-1361130",
-   "source": "Indian Transport & Logistics",
-   "date": "2026-10-28",
-   "summary": "Can India break its dependence on China for pharma APIs? Indian Transport & Logistics",
-   "image": "/news/c-2223e11366.jpg",
+   "title": "'Piramal Pharma has Cut China Raw Material Dependence to Single Digits'",
+   "url": "https://www.tradingview.com/news/moodys:0db6996043917:0-piramal-pharma-has-cut-china-raw-material-dependence-to-single-digits/",
+   "source": "TradingView",
+   "date": "2026-10-29",
+   "summary": "'Piramal Pharma has Cut China Raw Material Dependence to Single Digits' TradingView",
+   "image": "/news/c-bec67e7ce2.jpg",
    "kind": "news"
   },
   {
