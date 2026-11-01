@@ -1,0 +1,116 @@
+{
+  "retrieval_date": "2026-10-23",
+  "fonts": [
+    {
+      "family": "Noto-Serif-SC",
+      "source_directory": "https://github.com/google/fonts/tree/main/ofl/notoserifsc",
+      "files": [
+        {
+          "path": "Noto-Serif-SC/Desktop/NotoSerifSC-Variable.ttf",
+          "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf",
+          "github_blob_sha": "eab063faf229160a52d3760f5555150e4eb9e5bf",
+          "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+          "bytes": 25125512,
+          "processing": "original bytes; filename normalized for usability"
+        },
+        {
+          "path": "Noto-Serif-SC/OFL.txt",
+          "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/OFL.txt",
+          "github_blob_sha": "94d1bf7b52481343e2983fb7751e8b7abe1ea07b",
+          "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+          "bytes": 4350,
+          "processing": "original bytes"
+        },
+        {
+          "path": "Noto-Serif-SC/METADATA.pb",
+          "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/METADATA.pb",
+          "github_blob_sha": "8dec93ddf145e23e1041986fef1c10ea8d43a222",
+          "sha256": "e0c253c6f850fc3ef6e7fc398361133dd55acc408c931822a3f69cfac08554c2",
+          "bytes": 1373,
+          "processing": "original bytes"
+        },
+        {
+          "path": "Noto-Serif-SC/upstream_info.md",
+          "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/upstream_info.md",
+          "github_blob_sha": "0b2cf47177a57c3477466af202d858d32c7f7d22",
+          "sha256": "260316c1df651c64c687caa0c474e91d25ffaa56f870de8a7707b3dbca03b98b",
+          "bytes": 1043,
+          "processing": "original bytes"
+        },
+        {
+          "path": "Noto-Serif-SC/Web/NotoSerifSC-Variable.woff2",
+          "derived_from": "Noto-Serif-SC/Desktop/NotoSerifSC-Variable.ttf",
+          "processing": "local full-font WOFF2 format conversion using fontTools; no glyph subsetting",
+          "sha256": "4396348159c6e7d4616574af910e4aa169cb58fd5efe162a5a68b31fd3672d6f",
+          "bytes": 11032368
+        }
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200.0,
+          "default": 200.0,
+          "max": 900.0
+        }
+      ],
+      "cmap_character_count": 30928,
+      "tested_characters": "药品质量采购注册原料药制剂氯钠硫酸葡萄糖伊朗市场，。；：！？（）《》「」0123456789API"
+    },
+    {
+      "family": "Noto-Sans-SC",
+      "source_directory": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+      "files": [
+        {
+          "path": "Noto-Sans-SC/Desktop/NotoSansSC-Variable.ttf",
+          "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+          "github_blob_sha": "fb0637bafbcd804fe32152370a1225990745b4bc",
+          "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+          "bytes": 17772300,
+          "processing": "original bytes; filename normalized for usability"
+        },
+        {
+          "path": "Noto-Sans-SC/OFL.txt",
+          "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/OFL.txt",
+          "github_blob_sha": "1c9f43281b8f216c5461fe9ac729afbade7724e4",
+          "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+          "bytes": 4388,
+          "processing": "original bytes"
+        },
+        {
+          "path": "Noto-Sans-SC/METADATA.pb",
+          "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/METADATA.pb",
+          "github_blob_sha": "2da7e54d742a000810c6ec99ffae919158d9d4d6",
+          "sha256": "c6c4bdb785793b2de1da177caeeffcd0c90d7680bdab2de8f88ab45007bc59bc",
+          "bytes": 1296,
+          "processing": "original bytes"
+        },
+        {
+          "path": "Noto-Sans-SC/upstream_info.md",
+          "source_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/upstream_info.md",
+          "github_blob_sha": "3f3d1979d3778ad446f0e6e01c2fc96262f4f307",
+          "sha256": "9a10facde2dc3ded9d6314b4a595c0a7f3e421fc2f3840104d2d67f4d542b918",
+          "bytes": 2694,
+          "processing": "original bytes"
+        },
+        {
+          "path": "Noto-Sans-SC/Web/NotoSansSC-Variable.woff2",
+          "derived_from": "Noto-Sans-SC/Desktop/NotoSansSC-Variable.ttf",
+          "processing": "local full-font WOFF2 format conversion using fontTools; no glyph subsetting",
+          "sha256": "8d752499ffb52be0539467b26c5ff62cfce6b0bf028603a61572a454fa56e8e8",
+          "bytes": 7782308
+        }
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 100.0,
+          "default": 100.0,
+          "max": 900.0
+        }
+      ],
+      "cmap_character_count": 30890,
+      "tested_characters": "药品质量采购注册原料药制剂氯钠硫酸葡萄糖伊朗市场，。；：！？（）《》「」0123456789API"
+    }
+  ],
+  "limits": "Full official SC font snapshots, not universal Chinese Unicode coverage. Preview-only font subsets are not included. No website changes performed."
+}
