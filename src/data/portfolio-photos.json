@@ -110,5 +110,9 @@
  "Cefuroxime (as axetil)": {
   "slug": "cefuroxime",
   "source": "PB-123"
+ },
+ "Estradiol valerate": {
+  "slug": "estradiol-valerate",
+  "source": "PB-124"
  }
 }
