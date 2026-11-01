@@ -25,7 +25,7 @@
  },
  "Hydrocortisone (as sodium succinate)": {
   "slug": "hydrocortisone",
-  "source": "PB-103"
+  "source": "PB-114"
  },
  "Clomipramine hydrochloride": {
   "slug": "clomipramine",
@@ -73,7 +73,7 @@
  },
  "Etomidate": {
   "slug": "etomidate",
-  "source": "PB-046"
+  "source": "PB-113"
  },
  "Heparin sodium": {
   "slug": "heparin",
@@ -85,7 +85,7 @@
  },
  "Naloxone hydrochloride": {
   "slug": "naloxone",
-  "source": "PB-034"
+  "source": "PB-115"
  },
  "Salbutamol (as sulfate)": {
   "slug": "salbutamol",
@@ -97,7 +97,7 @@
  },
  "Infliximab": {
   "slug": "infliximab",
-  "source": "PB-018"
+  "source": "PB-117"
  },
  "Misoprostol": {
   "slug": "misoprostol",
@@ -105,6 +105,6 @@
  },
  "Alendronate (as sodium)": {
   "slug": "alendronate",
-  "source": "PB-007"
+  "source": "PB-116"
  }
 }
