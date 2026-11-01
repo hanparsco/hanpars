@@ -1,0 +1,110 @@
+{
+ "Iodixanol": {
+  "slug": "iodixanol",
+  "source": "PB-044"
+ },
+ "Iohexol": {
+  "slug": "iohexol",
+  "source": "PB-042"
+ },
+ "Meglumine compound": {
+  "slug": "meglumine-compound",
+  "source": "PB-093"
+ },
+ "Calcitonin": {
+  "slug": "calcitonin",
+  "source": "PB-002"
+ },
+ "Cyproterone compound": {
+  "slug": "cyproterone-compound",
+  "source": "PB-091"
+ },
+ "Exemestane": {
+  "slug": "exemestane",
+  "source": "PB-010"
+ },
+ "Hydrocortisone (as sodium succinate)": {
+  "slug": "hydrocortisone",
+  "source": "PB-103"
+ },
+ "Clomipramine hydrochloride": {
+  "slug": "clomipramine",
+  "source": "PB-051"
+ },
+ "Clozapine": {
+  "slug": "clozapine",
+  "source": "PB-062"
+ },
+ "Olanzapine": {
+  "slug": "olanzapine",
+  "source": "PB-029"
+ },
+ "Sertraline (as hydrochloride)": {
+  "slug": "sertraline",
+  "source": "PB-086"
+ },
+ "Clopidogrel (as bisulfate)": {
+  "slug": "clopidogrel",
+  "source": "PB-079"
+ },
+ "Ampicillin": {
+  "slug": "ampicillin",
+  "source": "PB-065"
+ },
+ "Ampicillin / sulbactam": {
+  "slug": "ampicillin-sulbactam",
+  "source": "PB-064"
+ },
+ "Chloroquine phosphate": {
+  "slug": "chloroquine",
+  "source": "PB-108"
+ },
+ "Hydroxychloroquine sulfate": {
+  "slug": "hydroxychloroquine",
+  "source": "PB-112"
+ },
+ "Vancomycin (as hydrochloride)": {
+  "slug": "vancomycin",
+  "source": "PB-016"
+ },
+ "Aminophylline": {
+  "slug": "aminophylline",
+  "source": "PB-082"
+ },
+ "Etomidate": {
+  "slug": "etomidate",
+  "source": "PB-046"
+ },
+ "Heparin sodium": {
+  "slug": "heparin",
+  "source": "PB-024"
+ },
+ "Lidocaine / chlorhexidine": {
+  "slug": "lidocaine-chlorhexidine",
+  "source": "PB-099"
+ },
+ "Naloxone hydrochloride": {
+  "slug": "naloxone",
+  "source": "PB-032"
+ },
+ "Salbutamol (as sulfate)": {
+  "slug": "salbutamol",
+  "source": "PB-053"
+ },
+ "Calcium folinate": {
+  "slug": "calcium-folinate",
+  "source": "PB-004"
+ },
+ "Infliximab": {
+  "slug": "infliximab",
+  "source": "PB-018"
+ },
+ "Misoprostol": {
+  "slug": "misoprostol",
+  "source": "PB-014"
+ },
+ "Alendronate (as sodium)": {
+  "slug": "alendronate",
+  "source": "PB-007"
+ }
+}
