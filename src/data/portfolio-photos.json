@@ -25,7 +25,7 @@
  },
  "Hydrocortisone (as sodium succinate)": {
   "slug": "hydrocortisone",
-  "source": "PB-114"
+  "source": "PB-120"
  },
  "Clomipramine hydrochloride": {
   "slug": "clomipramine",
@@ -81,7 +81,7 @@
  },
  "Lidocaine / chlorhexidine": {
   "slug": "lidocaine-chlorhexidine",
-  "source": "PB-099"
+  "source": "PB-119"
  },
  "Naloxone hydrochloride": {
   "slug": "naloxone",
