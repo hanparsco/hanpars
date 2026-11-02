@@ -1,11 +1,15 @@
 {
+ "Iohexol|300 mg/mL 50 mL": {
+  "slug": "iohexol-300",
+  "source": "PB-043"
+ },
+ "Iohexol|350 mg/mL 100 mL": {
+  "slug": "iohexol",
+  "source": "PB-042"
+ },
  "Iodixanol": {
   "slug": "iodixanol",
   "source": "PB-044"
- },
- "Iohexol": {
-  "slug": "iohexol",
-  "source": "PB-042"
  },
  "Meglumine compound": {
   "slug": "meglumine-compound",

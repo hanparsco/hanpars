@@ -20,16 +20,16 @@ if (portfolio) {
 
   function apply() {
     const matches = (entry:HTMLElement) => (area === 'all' || entry.dataset.area === area) && (entry.dataset.search || '').includes(query);
-    let count = 0;
+    let count = 0; const seen = new Set<string>();
     const visibleAreas = new Set<string>();
     cards.forEach(card => {
       const show = matches(card);
       card.hidden = !show;
-      if (show) { count++; visibleAreas.add(card.dataset.area || ''); }
+      if (show) { const k = card.dataset.molecule || ''; if (!seen.has(k)) { seen.add(k); count++; } visibleAreas.add(card.dataset.area || ''); }
     });
     rows.forEach(row => { row.hidden = !matches(row); });
     groups.forEach(group => {
-      const visible = Array.from(group.querySelectorAll<HTMLElement>('[data-portfolio-card]')).filter(card => !card.hidden).length;
+      const visible = new Set(Array.from(group.querySelectorAll<HTMLElement>('[data-portfolio-card]')).filter(card => !card.hidden).map(card => card.dataset.molecule || '')).size;
       group.hidden = visible === 0;
       const groupCount = group.querySelector<HTMLElement>('[data-portfolio-group-count]');
       if (groupCount) groupCount.textContent = pfNum(visible);
