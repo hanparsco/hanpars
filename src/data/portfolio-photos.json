@@ -43,9 +43,13 @@
   "slug": "olanzapine",
   "source": "PB-029"
  },
- "Sertraline (as hydrochloride)": {
-  "slug": "sertraline",
-  "source": "PB-086"
+ "Sertraline (as hydrochloride)|100 mg": {
+  "slug": "selectra-100",
+  "source": "PB-073"
+ },
+ "Sertraline (as hydrochloride)|50 mg": {
+  "slug": "selectra-50",
+  "source": "PB-076"
  },
  "Clopidogrel (as bisulfate)": {
   "slug": "clopidogrel",
