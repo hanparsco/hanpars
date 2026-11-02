@@ -122,5 +122,9 @@
  "Estradiol valerate": {
   "slug": "estradiol-valerate",
   "source": "PB-124"
+ },
+ "Sertraline (as hydrochloride)|Asentrix": {
+  "slug": "sertraline",
+  "source": "PB-086"
  }
 }
