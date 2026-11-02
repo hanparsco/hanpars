@@ -208,6 +208,7 @@
    "3× Kolinerjik nikotinik agonist :: /tr/fdf/nicotine-1608, /tr/fdf/nicotine-51790, /tr/fdf/nicotine-51793",
    "3× Ozmotik laksatif (makrogol) :: /tr/fdf/polyethylene-glycol-18312, /tr/fdf/polyethylene-glycol-2174, /tr/fdf/polyethylene-glycol-52450",
    "3× Total parenteral beslenme :: /tr/fdf/total-parentral-nutrition-53022, /tr/fdf/total-parentral-nutrition-53023, /tr/fdf/total-parentral-nutrition-53024",
+   "3× Sertraline (as hydrochloride) :: /tr/fdf, /tr/fdf, /tr/fdf",
    "2× ithal edilen birim :: /tr/about-us, /tr/import-activity",
    "2× ALBUTEROL SALBUTAMOL SULPHATE :: /tr/api/a-z/a, /tr/api",
    "2× dibazik potasyum fosfat :: /tr/api/a-z/d, /tr/excipient",
@@ -331,8 +332,7 @@
    "2× Topikal/rektal antihemoroidal preparat (kategori) :: /tr/fdf/antihemorrhoid-96, /tr/fdf/antihemorrhoid-97",
    "2× Beklometazon dipropiyonat / formoterol fumarat :: /tr/fdf/beclomethasone-dipropionate-formoterol-fumarate-52189, /tr/fdf/beclomethasone-dipropionate-formoterol-fumarate-52192",
    "2× Gebelik: Gebelik “Kategori D” (bkz. UYARILAR.) :: /tr/fdf/bleomycin-170, /tr/fdf/bleomycin-52471",
-   "2× Antiepileptik Ajan; Duygudurum Dengeleyici :: /tr/fdf/carbamazepine-1420, /tr/fdf/carbamazepine-2114",
-   "2× Vajinal anti-enfektif kombinasyon (linkozamid antibakteriyel / imidazol antifungal) :: /tr/fdf/clindamycin-clotrimazole-23052, /tr/fdf/clindamycin-clotrimazole-50402"
+   "2× Antiepileptik Ajan; Duygudurum Dengeleyici :: /tr/fdf/carbamazepine-1420, /tr/fdf/carbamazepine-2114"
   ]
  }
 }

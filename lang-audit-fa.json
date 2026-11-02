@@ -46,6 +46,7 @@
    "3× DIPHTHERIA TOXOID / TETANUS TOXOID / PERTUSSIS / HAEMOPHILUS INFLUENZAE TYPE B / HEPATITIS :: /fa/fdf/a-z/d, /fa/fdf/a-z/d, /fa/fdf/a-z/d",
    "3× PIPERACILLIN (AS SODIUM) / TAZOBACTAM (AS SODIUM) INJECTION, POWDER, FOR SOLUTION PARENTER :: /fa/fdf/a-z/p, /fa/fdf/a-z/p, /fa/fdf/a-z/p",
    "3× TOTAL PARENTRAL NUTRITION INJECTION, EMULSION INTRAVENOUS 5 mg/7.4 mg/9.3 mg/4.3 mg/4.4 mg :: /fa/fdf/a-z/t, /fa/fdf/a-z/t, /fa/fdf/a-z/t",
+   "3× Sertraline (as hydrochloride) :: /fa/fdf, /fa/fdf, /fa/fdf",
    "2× ALBUTEROL SALBUTAMOL SULPHATE :: /fa/api/a-z/a, /fa/api",
    "2× (18F) FLUDEOXYGLUCOSE INJECTION, SOLUTION PARENTERAL 10 mCi :: /fa/fdf/a-z/0-9, /fa/fdf",
    "2× 153 Sm-EDTMP INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL 150 mg :: /fa/fdf/a-z/0-9, /fa/fdf",
@@ -124,7 +125,7 @@
    "2× Hydrocortisone (as sodium succinate) :: /fa/fdf, /fa/fdf",
    "2× Escitalopram (as oxalate) :: /fa/fdf, /fa/fdf",
    "2× Quetiapine (as fumarate) :: /fa/fdf, /fa/fdf",
-   "2× Sertraline (as hydrochloride) :: /fa/fdf, /fa/fdf",
+   "2× C17H18Cl3N (Sertraline hydrochloride) :: /fa/fdf, /fa/fdf",
    "2× Clopidogrel (as bisulfate) :: /fa/fdf, /fa/fdf",
    "2× Cefuroxime (as axetil) :: /fa/fdf, /fa/fdf",
    "2× Vancomycin (as hydrochloride) :: /fa/fdf, /fa/fdf",
@@ -279,8 +280,7 @@
    "1× Carbomer copolymer type A (allyl pentaerythritol crosslinked) :: /fa/excipient",
    "1× Carbomer copolymer type B (allyl pentaerythritol crosslinked) :: /fa/excipient",
    "1× Carbomer copolymer type C (allyl pentaerythritol crosslinked) :: /fa/excipient",
-   "1× Carbomer homopolymer type A (allyl pentaerythritol crosslinked) :: /fa/excipient",
-   "1× Carbomer homopolymer type B (allyl pentaerythritol crosslinked) :: /fa/excipient"
+   "1× Carbomer homopolymer type A (allyl pentaerythritol crosslinked) :: /fa/excipient"
   ]
  }
 }
