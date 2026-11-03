@@ -45,15 +45,18 @@
  },
  "Sertraline (as hydrochloride)|100 mg": {
   "slug": "selectra-100",
-  "source": "PB-073"
+  "source": "PB-073",
+  "brand": "Selectra"
  },
  "Sertraline (as hydrochloride)|50 mg": {
   "slug": "selectra-50",
-  "source": "PB-076"
+  "source": "PB-076",
+  "brand": "Selectra"
  },
  "Clopidogrel (as bisulfate)": {
   "slug": "clopidogrel",
-  "source": "PB-079"
+  "source": "PB-079",
+  "brand": "Plavinexa"
  },
  "Ampicillin": {
   "slug": "ampicillin",
@@ -125,6 +128,22 @@
  },
  "Sertraline (as hydrochloride)|Asentrix": {
   "slug": "sertraline",
-  "source": "PB-086"
+  "source": "PB-086",
+  "brand": "Asentrix"
+ },
+ "Clopidogrel (as bisulfate)|Planor": {
+  "slug": "planor",
+  "source": "PB-039",
+  "brand": "Planor"
+ },
+ "Clopidogrel (as bisulfate)|Lopigrol": {
+  "slug": "lopigrol",
+  "source": "PB-068",
+  "brand": "Lopigrol"
+ },
+ "Clopidogrel (as bisulfate)|Noumed": {
+  "slug": "clopidogrel-generic",
+  "source": "PB-036",
+  "brand": "Clopidogrel (Noumed)"
  }
 }
