@@ -1,35 +1,44 @@
 {
- "updated": "2026-11-01T23:54:09Z",
+ "updated": "2026-11-03T02:38:57Z",
  "global": [
   {
-   "title": "FDA Approves Preservative-Free Generic Ketamine as Hospital Shortage Continues",
-   "url": "https://www.inkl.com/news/fda-approves-preservative-free-generic-ketamine-as-hospital-shortage-continues",
-   "source": "inkl",
-   "date": "2026-11-01",
-   "summary": "FDA Approves Preservative-Free Generic Ketamine as Hospital Shortage Continues inkl",
-   "image": "/news/g-07bd7512e2.jpg",
+   "title": "Recon: FDA approves generic lenacapavir intended for lower income countries; EMA to review Lundbeck's Deanxit for reported serious side effects",
+   "url": "https://www.raps.org/resource/recon-fda-approves-generic-lenacapavir-intended-for-lower-income-countries-ema-to-review-lundbeck-s-deanxit-for-reported-serious-side-effects.html",
+   "source": "RAPS",
+   "date": "2026-11-02",
+   "summary": "Recon: FDA approves generic lenacapavir intended for lower income countries; EMA to review Lundbeck's Deanxit for reported serious side effects RAPS",
+   "image": "/news/g-7f6b31db0d.jpg",
    "kind": "news"
   },
   {
-   "title": "FDA Rival Approval Could Be A Game Changer For Precigen (PGEN)",
-   "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-pgen/precigen/news/fda-rival-approval-could-be-a-game-changer-for-precigen-pgen",
-   "source": "Simply Wall St",
-   "date": "2026-11-01",
-   "summary": "FDA Rival Approval Could Be A Game Changer For Precigen (PGEN) Simply Wall St",
-   "image": "/news/g-7c8371e100.jpg",
+   "title": "Pace Life Sciences completes EMA GMP inspection at New Jersey CDMO facility",
+   "url": "https://manufacturingchemist.com/pace-life-sciences-ema-gmp-inspection-jersey-cdmo",
+   "source": "Manufacturing Chemist",
+   "date": "2026-11-02",
+   "summary": "Pace Life Sciences completes EMA GMP inspection at New Jersey CDMO facility Manufacturing Chemist",
+   "image": "",
    "kind": "news"
   },
   {
-   "title": "Pfizer looks to reroute supply after flooding sidelined India injectables plant",
-   "url": "https://www.fiercepharma.com/pharma/pfizer-eyes-multi-year-repairs-after-flooding-sidelined-india-injectables-plant",
-   "source": "Fierce Pharma",
-   "date": "2026-10-30",
-   "summary": "A Pfizer joint venture with Zydus Cadila in India that manufactures sterile injectables, including chemotherapy drugs for U.S. cancer patients, remains closed after severe flooding in July, with the company estimating that new supplies could begin returning in mid-to-late 2028 un…",
-   "image": "/news/g-dae348d487.jpg",
+   "title": "Pharmaceutical Executive Daily: FDA Approves Voceryq",
+   "url": "https://www.pharmexec.com/view/daily-fda-approves-voceryq",
+   "source": "Pharmaceutical Executive",
+   "date": "2026-11-02",
+   "summary": "FDA grants accelerated approval to INOVIO’s Voceryq to reduce surgical burden in recurrent respiratory papillomatosis, Brox.AI’s Hamish Brocklebank on the three levels of digital clone use cases in pharma, and CytoDyn’s Dr. Jay Lalezari on his path from HIV clinician to CEO.",
+   "image": "/news/g-821062b98b.jpg",
    "kind": "news"
   }
  ],
  "china": [
+  {
+   "title": "Fresenius strikes WuXi biosimilars deal for up to 37 assets, targeting €370B market",
+   "url": "https://www.fiercepharma.com/pharma/fresenius-expands-biosimilars-pipeline-37-asset-wuxi-deal-targeting-eur370b-market",
+   "source": "Fierce Pharma",
+   "date": "2026-11-02",
+   "summary": "Fresenius has inked a broad deal with WuXi Biologics to scale its biosimilars portfolio to as many as 66 molecules targeting a combined originator market worth over 370 billion euros ($415 billion).",
+   "image": "/news/c-b65860dcd2.jpg",
+   "kind": "news"
+  },
   {
    "title": "Altruist Biologics' Integrated CMC Platform Supports NMPA Acceptance of NDA for Localized Manufacturing of Multinational Client's Biologic",
    "url": "https://www.morningstar.com/news/pr-newswire/20261029cn83385/altruist-biologics-integrated-cmc-platform-supports-nmpa-acceptance-of-nda-for-localized-manufacturing-of-multinational-clients-biologic",
@@ -46,15 +55,6 @@
    "date": "2026-10-29",
    "summary": "'Piramal Pharma has Cut China Raw Material Dependence to Single Digits' TradingView",
    "image": "/news/c-bec67e7ce2.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "“From Drug Development to Production”: Global Big Pharma Expands Investment in China, Accelerating Its Rise as a Biotech and Pharmaceutical Powerhouse",
-   "url": "https://economy.ac/market/2026/10/202610295931",
-   "source": "https://economy.ac/",
-   "date": "2026-10-28",
-   "summary": "“From Drug Development to Production”: Global Big Pharma Expands Investment in China, Accelerating Its Rise as a Biotech and Pharmaceutical Powerhouse https://economy.ac/",
-   "image": "/news/c-d7f0da07e5.jpg",
    "kind": "news"
   }
  ]

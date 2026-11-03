@@ -1,32 +1,33 @@
+  ! image /article-image-alias/pace-life-sciences-completes-ema-gmp.png: unknown url type: '/article-image-alias/pace-life-sciences-completes-ema-gmp.png'
 global feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 16 items
+  Google News: 20 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 57 items
+  Google News: 36 items
 china feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 16 items
+  Google News: 20 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 57 items
-  Google News: 63 items
-  Google News: 0 items (no <item> elements; root <rss>, 1281 bytes, start b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><generator>NFE/5.0</generator><title>"China "active pharmaceutical ingredient" OR "API manufacturer" OR "API expo')
-  Google News: 17 items
-  Google News: 34 items
+  Google News: 36 items
+  Google News: 25 items
+  Google News: 1 items
+  Google News: 19 items
+  Google News: 29 items
 global
-  - inkl | FDA Approves Preservative-Free Generic Ketamine as Hospital Shortage C | img
-  - Simply Wall St | FDA Rival Approval Could Be A Game Changer For Precigen (PGEN) | img
-  - Fierce Pharma | Pfizer looks to reroute supply after flooding sidelined India injectab | img
+  - RAPS | Recon: FDA approves generic lenacapavir intended for lower income coun | img
+  - Manufacturing Chemist | Pace Life Sciences completes EMA GMP inspection at New Jersey CDMO fac | no image
+  - Pharmaceutical Executive | Pharmaceutical Executive Daily: FDA Approves Voceryq | img
 china
+  - Fierce Pharma | Fresenius strikes WuXi biosimilars deal for up to 37 assets, targeting | img
   - Morningstar | Altruist Biologics' Integrated CMC Platform Supports NMPA Acceptance o | img
   - TradingView | 'Piramal Pharma has Cut China Raw Material Dependence to Single Digits | img
-  - https://economy.ac/ | “From Drug Development to Production”: Global Big Pharma Expands Inves | img
