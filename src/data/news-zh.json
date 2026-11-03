@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T02:40:51Z",
+ "updated": "2026-11-03T10:08:20Z",
  "items": [
   {
    "title": "全球首个APRIL抑制剂获FDA加速批准：IgA肾病精准治疗迎来里程碑突破",
@@ -26,18 +26,6 @@
    "imageBasis": ""
   },
   {
-   "title": "华海药业：子公司HB0056注射液项目新增适应症临床试验获批",
-   "url": "https://www.36kr.com/newsflashes/4052361601422470",
-   "source": "36氪",
-   "date": "2026-11-02",
-   "summary": "",
-   "image": "/news/zh-8c645bd4b9.jpg",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-02T20:31:40Z",
-   "imageSource": "https://img.36krcdn.com/20191024/v2_1571894049839_img_jpg",
-   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
-  },
-  {
    "title": "万泰生物宣布HPV九价疫苗馨可宁®9在泰国上市",
    "url": "https://www.jiemian.com/article/15281616.html",
    "source": "界面新闻",
@@ -50,16 +38,28 @@
    "imageBasis": ""
   },
   {
-   "title": "Porter收购Pareto Intelligence，创建了唯一将分析、参与和护理服务整合于医疗保险、医疗补助和ACA市场的组织",
+   "title": "医疗保健IT和服务平台Porter收购Pareto Intelligence，创建了唯一将分析、参与和护理服务整合于医疗保险、医疗补助和ACA市场的组织",
    "url": "https://www.vbdata.cn/intelDetail/1135978",
    "source": "动脉网",
    "date": "2026-11-02",
    "summary": "",
    "image": "",
    "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-03T02:40:51Z",
+   "retrieved": "2026-11-03T10:08:20Z",
    "imageSource": "",
    "imageBasis": ""
+  },
+  {
+   "title": "华海药业：子公司HB0056注射液项目新增适应症临床试验获批",
+   "url": "https://www.36kr.com/newsflashes/4052361601422470",
+   "source": "36氪",
+   "date": "2026-11-01",
+   "summary": "",
+   "image": "/news/zh-8c645bd4b9.jpg",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-02T20:31:40Z",
+   "imageSource": "https://img.36krcdn.com/20191024/v2_1571894049839_img_jpg",
+   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
   },
   {
    "title": "华北制药2.45亿元收购一家抗体公司",
