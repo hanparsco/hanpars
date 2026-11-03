@@ -118,6 +118,7 @@
    "6× Simetikon (aktive dimetikon) :: /tr/fdf/simethicone-dimethicone-activated-10541, /tr/fdf/simethicone-dimethicone-activated-1131, /tr/fdf/simethicone-dimethicone-activated-1132",
    "5× bisoprolol fumarat / hidroklorotiyazid :: /tr/fdf/a-z/b, /tr/fdf/a-z/b, /tr/fdf/a-z/b",
    "5× Bisoprolol fumarat / hidroklorotiyazid :: /tr/fdf/bisoprolol-fumarate-hydrochlorothiazide-52730, /tr/fdf/bisoprolol-fumarate-hydrochlorothiazide-52731, /tr/fdf/bisoprolol-fumarate-hydrochlorothiazide-52732",
+   "5× Clopidogrel (as bisulfate) :: /tr/fdf, /tr/fdf, /tr/fdf",
    "4× parasetamol / kafein / asetilsalisilik asit :: /tr/fdf/a-z/a, /tr/fdf/a-z/a, /tr/fdf",
    "4× amlodipin / bisoprolol fumarat :: /tr/fdf/a-z/a, /tr/fdf/a-z/a, /tr/fdf/a-z/a",
    "4× amlodipin / valsartan / hidroklorotiyazid :: /tr/fdf/a-z/a, /tr/fdf/a-z/a, /tr/fdf/a-z/a",
@@ -143,6 +144,7 @@
    "4× Oksazolidinon grubu antibakteriyel :: /tr/fdf/linezolid-21942, /tr/fdf/linezolid-50114, /tr/fdf/linezolid-52928",
    "4× Sistemik antifungal; triazol :: /tr/fdf/posaconazole-50722, /tr/fdf/posaconazole-51840, /tr/fdf/voriconazole-6382",
    "4× Sertraline (as hydrochloride) :: /tr/fdf, /tr/fdf, /tr/fdf",
+   "4× C16H18ClNO6S2 (Clopidogrel bisulfate) :: /tr/fdf, /tr/fdf, /tr/fdf",
    "3× Iodixanol: 181 bin birim (Kontrast maddeler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
    "3× Iohexol: 330 bin birim (Kontrast maddeler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
    "3× Ampicillin: 1,2 mn birim (Antienfektifler) :: /tr/about-us, /tr/fdf, /tr/import-activity",
@@ -330,9 +332,7 @@
    "2× Amino asit / lipid / glukoz (1-1) :: /tr/fdf/amino-acid-lipid-glucose-1-1-50180, /tr/fdf/amino-acid-lipid-glucose-1-1-50359",
    "2× Amino asit / lipid / glukoz (2-1) :: /tr/fdf/amino-acid-lipid-glucose-2-1-50179, /tr/fdf/amino-acid-lipid-glucose-2-1-50360",
    "2× Amino asit / lipid / glukoz (3-1) :: /tr/fdf/amino-acid-lipid-glucose-3-1-50366, /tr/fdf/amino-acid-lipid-glucose-3-1-50367",
-   "2× Topikal/rektal antihemoroidal preparat (kategori) :: /tr/fdf/antihemorrhoid-96, /tr/fdf/antihemorrhoid-97",
-   "2× Beklometazon dipropiyonat / formoterol fumarat :: /tr/fdf/beclomethasone-dipropionate-formoterol-fumarate-52189, /tr/fdf/beclomethasone-dipropionate-formoterol-fumarate-52192",
-   "2× Gebelik: Gebelik “Kategori D” (bkz. UYARILAR.) :: /tr/fdf/bleomycin-170, /tr/fdf/bleomycin-52471"
+   "2× Topikal/rektal antihemoroidal preparat (kategori) :: /tr/fdf/antihemorrhoid-96, /tr/fdf/antihemorrhoid-97"
   ]
  }
 }

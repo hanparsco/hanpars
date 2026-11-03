@@ -15,11 +15,13 @@
   "top": [
    "6× ACETAMINOPHEN / CHLORPHENIRAMINE / DEXTROMETHORPHAN / PHENYLEPHRINE SYRUP ORAL 160 mg/1 mg :: /zh/fdf/a-z/a, /zh/fdf/a-z/a, /zh/fdf/a-z/a",
    "6× FACTOR VIII / VON WILLEBRAND FACTOR INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERA :: /zh/fdf/a-z/f, /zh/fdf/a-z/f, /zh/fdf/a-z/f",
+   "5× Clopidogrel (as bisulfate) :: /zh/fdf, /zh/fdf, /zh/fdf",
    "4× COAGULATION FACTOR VIII (RECOMBINANT) INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTE :: /zh/fdf/a-z/c, /zh/fdf/a-z/c, /zh/fdf/a-z/c",
    "4× DEXMEDETOMIDINE (AS HYDROCHLORIDE) INJECTION, SOLUTION, CONCENTRATE PARENTERAL 100 ug/1mL  :: /zh/fdf/a-z/d, /zh/fdf/a-z/d, /zh/fdf/a-z/d",
    "4× HEMODIALYSIS CONCENTRATED II ACIDIC SOLUTION, CONCENTRATE HEMODIALYSIS 3710 meq/70 meq/35  :: /zh/fdf/a-z/h, /zh/fdf/a-z/h, /zh/fdf/a-z/h",
    "4× MEASLES / MUMPS / RUBELLA VACCINE INJECTION, POWDER, LYOPHILIZED, FOR SOLUTION PARENTERAL  :: /zh/fdf/a-z/m, /zh/fdf/a-z/m, /zh/fdf/a-z/m",
    "4× Sertraline (as hydrochloride) :: /zh/fdf, /zh/fdf, /zh/fdf",
+   "4× C16H18ClNO6S2 (Clopidogrel bisulfate) :: /zh/fdf, /zh/fdf, /zh/fdf",
    "3× AMINO ACID / LIPID / GLUCOSE (1-2) INJECTION, EMULSION INTRAVENOUS 2.26 mg/3.01 mg/2.73 mg :: /zh/fdf/a-z/a, /zh/fdf/a-z/a, /zh/fdf/a-z/a",
    "3× AMINO ACID / LIPID / GLUCOSE (2-2) INJECTION, EMULSION INTRAVENOUS 3.28 mg/4.38 mg/3.98 mg :: /zh/fdf/a-z/a, /zh/fdf/a-z/a, /zh/fdf/a-z/a",
    "3× AMINO ACID / LIPID / GLUCOSE (3-2) INJECTION, EMULSION INTRAVENOUS 1.87 mg/2.5 mg/2.27 mg/ :: /zh/fdf/a-z/a, /zh/fdf/a-z/a, /zh/fdf/a-z/a",
@@ -109,7 +111,6 @@
    "2× Hydrocortisone (as sodium succinate) :: /zh/fdf, /zh/fdf",
    "2× Escitalopram (as oxalate) :: /zh/fdf, /zh/fdf",
    "2× Quetiapine (as fumarate) :: /zh/fdf, /zh/fdf",
-   "2× Clopidogrel (as bisulfate) :: /zh/fdf, /zh/fdf",
    "2× Cefuroxime (as axetil) :: /zh/fdf, /zh/fdf",
    "2× Vancomycin (as hydrochloride) :: /zh/fdf, /zh/fdf",
    "2× 25 mg/mL 10 mL :: /zh/fdf, /zh/fdf",
@@ -261,8 +262,7 @@
    "1× Calcium sulfate dihydrate :: /zh/excipient",
    "1× Caprylic/capric triglyceride/lecithin/alcohol :: /zh/excipient",
    "1× Caprylic/capric/succinic triglyceride :: /zh/excipient",
-   "1× Carbomer copolymer type A (allyl pentaerythritol crosslinked) :: /zh/excipient",
-   "1× Carbomer copolymer type B (allyl pentaerythritol crosslinked) :: /zh/excipient"
+   "1× Carbomer copolymer type A (allyl pentaerythritol crosslinked) :: /zh/excipient"
   ]
  }
 }
