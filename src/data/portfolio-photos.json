@@ -4,119 +4,119 @@
   "source": "PB-043"
  },
  "Iohexol|350 mg/mL 100 mL": {
-  "slug": "iohexol",
-  "source": "PB-042"
+  "slug": "iohexol-s",
+  "source": "scene: Hanpars V2 (16).jpg"
  },
  "Iodixanol": {
-  "slug": "iodixanol",
-  "source": "PB-044"
+  "slug": "iodixanol-s",
+  "source": "scene: 3.png"
  },
  "Meglumine compound": {
-  "slug": "meglumine-compound",
-  "source": "PB-125"
+  "slug": "meglumine-compound-s",
+  "source": "scene: 8.png"
  },
  "Calcitonin": {
-  "slug": "calcitonin",
-  "source": "PB-002"
+  "slug": "calcitonin-s",
+  "source": "scene: Hanpars V2 (12).jpg"
  },
  "Cyproterone compound": {
-  "slug": "cyproterone-compound",
-  "source": "PB-091"
+  "slug": "cyproterone-compound-s",
+  "source": "scene: Hanpars V3 (10).jpg"
  },
  "Exemestane": {
-  "slug": "exemestane",
-  "source": "PB-010"
+  "slug": "exemestane-s",
+  "source": "scene: Hanpars V2 (10).jpg"
  },
  "Hydrocortisone (as sodium succinate)": {
-  "slug": "hydrocortisone",
-  "source": "PB-120"
+  "slug": "hydrocortisone-s",
+  "source": "scene: 808200E8-7100-4065-9BE0-1FE3BF53D048.png (2).jpeg"
  },
  "Clomipramine hydrochloride": {
-  "slug": "clomipramine",
-  "source": "PB-051"
+  "slug": "clomipramine-s",
+  "source": "scene: Hanpars V2 (30).jpg"
  },
  "Clozapine": {
-  "slug": "clozapine",
-  "source": "PB-062"
+  "slug": "clozapine-s",
+  "source": "scene: Hanpars V2 (28).jpg"
  },
  "Olanzapine": {
-  "slug": "olanzapine",
-  "source": "PB-029"
+  "slug": "olanzapine-s",
+  "source": "scene: Hanpars V2 (20).jpg"
  },
  "Sertraline (as hydrochloride)|100 mg": {
-  "slug": "selectra-100",
-  "source": "PB-073",
+  "slug": "selectra-100-s",
+  "source": "scene: Hanpars V2 (22).jpg",
   "brand": "Selectra"
  },
  "Sertraline (as hydrochloride)|50 mg": {
-  "slug": "selectra-50",
-  "source": "PB-076",
+  "slug": "selectra-50-s",
+  "source": "scene: b7e284de-982a-4251-8353-4a22eb67b5c6.jpg",
   "brand": "Selectra"
  },
  "Clopidogrel (as bisulfate)": {
-  "slug": "clopidogrel",
-  "source": "PB-079",
+  "slug": "clopidogrel-s",
+  "source": "scene: Hanpars V2 (21).jpg",
   "brand": "Plavinexa"
  },
  "Ampicillin": {
-  "slug": "ampicillin",
-  "source": "PB-065"
+  "slug": "ampicillin-s",
+  "source": "scene: Hanpars V3 (5).jpg"
  },
  "Ampicillin / sulbactam": {
-  "slug": "ampicillin-sulbactam",
-  "source": "PB-064"
+  "slug": "ampicillin-sulbactam-s",
+  "source": "scene: Untitled Design (2).jpg"
  },
  "Chloroquine phosphate": {
-  "slug": "chloroquine",
-  "source": "PB-108"
+  "slug": "chloroquine-s",
+  "source": "scene: 9c440e27-74f4-4cd4-b3eb-675853c6f844.jpg"
  },
  "Hydroxychloroquine sulfate": {
-  "slug": "hydroxychloroquine",
-  "source": "PB-112"
+  "slug": "hydroxychloroquine-s",
+  "source": "scene: photo_2026-11-02_22-41-56.jpg"
  },
  "Vancomycin (as hydrochloride)": {
-  "slug": "vancomycin",
-  "source": "PB-016"
+  "slug": "vancomycin-s",
+  "source": "scene: Hanpars V2 (3).jpg"
  },
  "Aminophylline": {
-  "slug": "aminophylline",
-  "source": "PB-082"
+  "slug": "aminophylline-s",
+  "source": "scene: 11.jpg"
  },
  "Etomidate": {
-  "slug": "etomidate",
-  "source": "PB-113"
+  "slug": "etomidate-s",
+  "source": "scene: Untitled Design.jpg"
  },
  "Heparin sodium": {
-  "slug": "heparin",
-  "source": "PB-024"
+  "slug": "heparin-s",
+  "source": "scene: Hanpars V3 (4).jpg"
  },
  "Lidocaine / chlorhexidine": {
   "slug": "lidocaine-chlorhexidine",
   "source": "PB-119"
  },
  "Naloxone hydrochloride": {
-  "slug": "naloxone",
-  "source": "PB-122"
+  "slug": "naloxone-s",
+  "source": "scene: Hanpars V2 (19).jpg"
  },
  "Salbutamol (as sulfate)": {
-  "slug": "salbutamol",
-  "source": "PB-053"
+  "slug": "salbutamol-s",
+  "source": "scene: IMG_1640.jpeg"
  },
  "Calcium folinate": {
-  "slug": "calcium-folinate",
-  "source": "PB-004"
+  "slug": "calcium-folinate-s",
+  "source": "scene: 1.png"
  },
  "Infliximab": {
-  "slug": "infliximab",
-  "source": "PB-117"
+  "slug": "infliximab-s",
+  "source": "scene: Hanpars V2 (6).jpg"
  },
  "Misoprostol": {
-  "slug": "misoprostol",
-  "source": "PB-014"
+  "slug": "misoprostol-s",
+  "source": "scene: IMG_1631.jpeg"
  },
  "Alendronate (as sodium)": {
-  "slug": "alendronate",
-  "source": "PB-116"
+  "slug": "alendronate-s",
+  "source": "scene: Hanpars V3 (3).jpg"
  },
  "Cefuroxime (as axetil)": {
   "slug": "cefuroxime",
@@ -127,18 +127,18 @@
   "source": "PB-124"
  },
  "Sertraline (as hydrochloride)|Asentrix": {
-  "slug": "sertraline",
-  "source": "PB-086",
+  "slug": "sertraline-s",
+  "source": "scene: Hanpars V3 (9).jpg",
   "brand": "Asentrix"
  },
  "Clopidogrel (as bisulfate)|Planor": {
-  "slug": "planor",
-  "source": "PB-039",
+  "slug": "planor-s",
+  "source": "scene: Hanpars V2 (18).jpg",
   "brand": "Planor"
  },
  "Clopidogrel (as bisulfate)|Lopigrol": {
-  "slug": "lopigrol",
-  "source": "PB-068",
+  "slug": "lopigrol-s",
+  "source": "scene: Hanpars V2 (23).jpg",
   "brand": "Lopigrol"
  },
  "Clopidogrel (as bisulfate)|Noumed": {
