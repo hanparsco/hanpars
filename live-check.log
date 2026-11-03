@@ -37,7 +37,7 @@
   ok  200 [news] https://www.raps.org/resource/recon-fda-approves-generic-lenacapavir-intended-for-lower-income-countries-ema-to-review-lundbeck-s-deanxit-for-reported-serious-side-effects.html
   ok  200 [news] https://manufacturingchemist.com/pace-life-sciences-ema-gmp-inspection-jersey-cdmo
   ok  200 [news] https://www.pharmexec.com/view/daily-fda-approves-voceryq
-  ok  200 [news] https://www.fiercepharma.com/pharma/fresenius-expands-biosimilars-pipeline-37-asset-wuxi-deal-targeting-eur370b-market
+  blocked 403 [news] https://www.fiercepharma.com/pharma/fresenius-expands-biosimilars-pipeline-37-asset-wuxi-deal-targeting-eur370b-market
   ok  200 [news] https://www.morningstar.com/news/pr-newswire/20261029cn83385/altruist-biologics-integrated-cmc-platform-supports-nmpa-acceptance-of-nda-for-localized-manufacturing-of-multinational-clients-biologic
   ok  200 [news] https://www.tradingview.com/news/moodys:0db6996043917:0-piramal-pharma-has-cut-china-raw-material-dependence-to-single-digits/
   ok  200 [webmail] https://secureserver.titan.email/mail/
