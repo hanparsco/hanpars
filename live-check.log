@@ -22,12 +22,12 @@
   200 https://hanpars.com/sitemap-tr.xml: 5401 URLs
   total 21625 URLs, 21625 unique
 == sample of 200 sitemap URLs
-  checked 200 pages and 785 alternates
+  checked 200 pages and 777 alternates
 == repaired cohorts (regression fixtures)
   compat stubs, contact-query canonicals and placeholder policy checked in 4 languages
 == external links (warnings only)
   regulatory watch as of 2026-10-29: 6 items
-  news updated 2026-11-03T02:38:57Z
+  news updated 2026-11-04T00:53:46Z
   ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/concept-paper-revision-guideline-similar-biological-medicinal-products-chmp-437-04-rev1_en.pdf
   ok  200 [watch] https://picscheme.org/docview/11495
   ok  200 [watch] https://health.ec.europa.eu/medicinal-products/falsified-medicines/importation-active-substances-listing-third-countries_en
@@ -35,10 +35,10 @@
   blocked 404 [watch] https://www.fda.gov/apology_objects/abuse-detection-apology.html
   ok  200 [watch] https://www.who.int/publications/m/item/main-outcomes-of-the-83rd-meeting-of-the-who-expert-committee-on-biological-standardization-held-from-12-to-15-october-2026
   ok  200 [news] https://www.raps.org/resource/recon-fda-approves-generic-lenacapavir-intended-for-lower-income-countries-ema-to-review-lundbeck-s-deanxit-for-reported-serious-side-effects.html
-  ok  200 [news] https://manufacturingchemist.com/pace-life-sciences-ema-gmp-inspection-jersey-cdmo
+  ok  200 [news] https://www.fiercepharma.com/pharma/madrigal-rezdiffra-storms-past-blockbuster-milestone-ceo-hails-accelerating-mash-market
   ok  200 [news] https://www.pharmexec.com/view/daily-fda-approves-voceryq
   ok  200 [news] https://www.fiercepharma.com/pharma/fresenius-expands-biosimilars-pipeline-37-asset-wuxi-deal-targeting-eur370b-market
+  ok  200 [news] https://www.biospectrumasia.com/news/25/28625/japans-shionogi-transfers-generic-drug-business-to-zhejiang-gaozhi-pharma-in-china.html
   ok  200 [news] https://www.morningstar.com/news/pr-newswire/20261029cn83385/altruist-biologics-integrated-cmc-platform-supports-nmpa-acceptance-of-nda-for-localized-manufacturing-of-multinational-clients-biologic
-  ok  200 [news] https://www.tradingview.com/news/moodys:0db6996043917:0-piramal-pharma-has-cut-china-raw-material-dependence-to-single-digits/
   ok  200 [webmail] https://secureserver.titan.email/mail/
 == result: OK
