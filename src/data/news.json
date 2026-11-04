@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T02:38:57Z",
+ "updated": "2026-11-04T00:53:46Z",
  "global": [
   {
    "title": "Recon: FDA approves generic lenacapavir intended for lower income countries; EMA to review Lundbeck's Deanxit for reported serious side effects",
@@ -11,12 +11,12 @@
    "kind": "news"
   },
   {
-   "title": "Pace Life Sciences completes EMA GMP inspection at New Jersey CDMO facility",
-   "url": "https://manufacturingchemist.com/pace-life-sciences-ema-gmp-inspection-jersey-cdmo",
-   "source": "Manufacturing Chemist",
-   "date": "2026-11-02",
-   "summary": "Pace Life Sciences completes EMA GMP inspection at New Jersey CDMO facility Manufacturing Chemist",
-   "image": "",
+   "title": "Madrigal’s Rezdiffra storms past blockbuster milestone as CEO hails ‘accelerating’ MASH market",
+   "url": "https://www.fiercepharma.com/pharma/madrigal-rezdiffra-storms-past-blockbuster-milestone-ceo-hails-accelerating-mash-market",
+   "source": "Fierce Pharma",
+   "date": "2026-11-03",
+   "summary": "To Madrigal CEO Bill Sibold, “it’s hard to find a more attractive growth opportunity in biotech” than MASH, as the company’s Rezdiffra, the first FDA-approved MASH therapy, crossed the $1 billion mark in annual sales.",
+   "image": "/news/g-5bb40396c4.jpg",
    "kind": "news"
   },
   {
@@ -31,12 +31,21 @@
  ],
  "china": [
   {
-   "title": "Fresenius strikes WuXi biosimilars deal for up to 37 assets, targeting €370B market",
+   "title": "Fresenius strikes WuXi Bio biosimilars deal for up to 37 assets, targeting €370B market",
    "url": "https://www.fiercepharma.com/pharma/fresenius-expands-biosimilars-pipeline-37-asset-wuxi-deal-targeting-eur370b-market",
    "source": "Fierce Pharma",
    "date": "2026-11-02",
    "summary": "Fresenius has inked a broad deal with WuXi Biologics to scale its biosimilars portfolio to as many as 66 molecules targeting a combined originator market worth over 370 billion euros ($415 billion).",
    "image": "/news/c-b65860dcd2.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "Japan's Shionogi transfers generic drug business to Zhejiang Gaozhi Pharma in China",
+   "url": "https://www.biospectrumasia.com/news/25/28625/japans-shionogi-transfers-generic-drug-business-to-zhejiang-gaozhi-pharma-in-china.html",
+   "source": "BioSpectrum Asia",
+   "date": "2026-11-03",
+   "summary": "Japan's Shionogi transfers generic drug business to Zhejiang Gaozhi Pharma in China BioSpectrum Asia",
+   "image": "/news/c-4ce2fbf6d8.jpg",
    "kind": "news"
   },
   {
@@ -46,15 +55,6 @@
    "date": "2026-10-29",
    "summary": "Altruist Biologics' Integrated CMC Platform Supports NMPA Acceptance of NDA for Localized Manufacturing of Multinational Client's Biologic Morningstar",
    "image": "/news/c-5617dcef88.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "'Piramal Pharma has Cut China Raw Material Dependence to Single Digits'",
-   "url": "https://www.tradingview.com/news/moodys:0db6996043917:0-piramal-pharma-has-cut-china-raw-material-dependence-to-single-digits/",
-   "source": "TradingView",
-   "date": "2026-10-29",
-   "summary": "'Piramal Pharma has Cut China Raw Material Dependence to Single Digits' TradingView",
-   "image": "/news/c-bec67e7ce2.jpg",
    "kind": "news"
   }
  ]
