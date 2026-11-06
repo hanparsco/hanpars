@@ -38,7 +38,8 @@
   blocked 403 [news] https://njbiz.com/bayer-mfn-drug-pricing-tariffs/
   ok  200 [news] https://simplywall.st/stocks/us/pharmaceuticals-biotech/nyse-teva/teva-pharmaceutical-industries/news/teva-pharmaceutical-industries-teva-adds-two-fda-approved-bi
   ok  200 [news] https://www.techtimes.com/articles/329913/20261102/fresenius-signs-largest-ever-biosimilar-deal-wuxi-biologics-us-ban-decision-due-six-weeks.htm
-  ok  200 [news] https://finance.biggo.com/news/38a546d5-7f12-4b5a-903c-a5e4b5e5d36f
+  WARN ERR TimeoutError [news] https://finance.biggo.com/news/38a546d5-7f12-4b5a-903c-a5e4b5e5d36f
   ok  200 [news] https://www.biospectrumasia.com/news/25/28625/japans-shionogi-transfers-generic-drug-business-to-zhejiang-gaozhi-pharma-in-china.html
   ok  200 [webmail] https://secureserver.titan.email/mail/
+  1 external link warning(s)
 == result: OK
