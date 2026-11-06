@@ -1,6 +1,24 @@
 {
- "updated": "2026-11-05T01:04:09Z",
+ "updated": "2026-11-06T01:08:11Z",
  "global": [
+  {
+   "title": "Ellipsis Health buys Kouper Health to act on AI voice calls",
+   "url": "https://endpoints.news/ellipsis-health-buys-kouper-health-to-act-on-ai-voice-calls/",
+   "source": "Endpoints News",
+   "date": "2026-11-05",
+   "summary": "Ellipsis Health, a startup developing voice AI for healthcare, has acquired another company as demand for AI that can call patients heats up, Endpoints News learned exclusively. Ellipsis, which uses voice AI to screen and ...",
+   "image": "/news/g-90417c2e05.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "Bayer weighs drug price deal with Trump administration as tariff risks loom",
+   "url": "https://njbiz.com/bayer-mfn-drug-pricing-tariffs/",
+   "source": "NJBIZ",
+   "date": "2026-11-05",
+   "summary": "Bayer weighs drug price deal with Trump administration as tariff risks loom NJBIZ",
+   "image": "/news/g-7ea3173ee6.jpg",
+   "kind": "news"
+  },
   {
    "title": "Teva Pharmaceutical Industries (TEVA) Adds Two FDA Approved Biosimilars To Its US Portfolio",
    "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nyse-teva/teva-pharmaceutical-industries/news/teva-pharmaceutical-industries-teva-adds-two-fda-approved-bi",
@@ -9,34 +27,25 @@
    "summary": "Teva Pharmaceutical Industries (TEVA) Adds Two FDA Approved Biosimilars To Its US Portfolio Simply Wall St",
    "image": "/news/g-f8cec7f6ad.jpg",
    "kind": "news"
-  },
-  {
-   "title": "Madrigal’s Rezdiffra storms past blockbuster milestone as CEO hails ‘accelerating’ MASH market",
-   "url": "https://www.fiercepharma.com/pharma/madrigal-rezdiffra-storms-past-blockbuster-milestone-ceo-hails-accelerating-mash-market",
-   "source": "Fierce Pharma",
-   "date": "2026-11-03",
-   "summary": "To Madrigal CEO Bill Sibold, “it’s hard to find a more attractive growth opportunity in biotech” than MASH, as the company’s Rezdiffra, the first FDA-approved MASH therapy, crossed the $1 billion mark in annual sales.",
-   "image": "/news/g-5bb40396c4.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Pharmaceutical Executive Daily: FDA Approves Voceryq",
-   "url": "https://www.pharmexec.com/view/daily-fda-approves-voceryq",
-   "source": "Pharmaceutical Executive",
-   "date": "2026-11-02",
-   "summary": "FDA grants accelerated approval to INOVIO’s Voceryq to reduce surgical burden in recurrent respiratory papillomatosis, Brox.AI’s Hamish Brocklebank on the three levels of digital clone use cases in pharma, and CytoDyn’s Dr. Jay Lalezari on his path from HIV clinician to CEO.",
-   "image": "/news/g-821062b98b.jpg",
-   "kind": "news"
   }
  ],
  "china": [
   {
-   "title": "Fresenius strikes WuXi Bio biosimilars deal for up to 37 assets, targeting €370B market",
-   "url": "https://www.fiercepharma.com/pharma/fresenius-expands-biosimilars-pipeline-37-asset-wuxi-deal-targeting-eur370b-market",
-   "source": "Fierce Pharma",
-   "date": "2026-11-02",
-   "summary": "Fresenius has inked a broad deal with WuXi Biologics to scale its biosimilars portfolio to as many as 66 molecules targeting a combined originator market worth over 370 billion euros ($415 billion).",
-   "image": "/news/c-b65860dcd2.jpg",
+   "title": "Fresenius Signs Largest-Ever Biosimilar Deal With WuXi Biologics; US Ban Decision Due in Six Weeks",
+   "url": "https://www.techtimes.com/articles/329913/20261102/fresenius-signs-largest-ever-biosimilar-deal-wuxi-biologics-us-ban-decision-due-six-weeks.htm",
+   "source": "Tech Times",
+   "date": "2026-11-03",
+   "summary": "Fresenius Signs Largest-Ever Biosimilar Deal With WuXi Biologics; US Ban Decision Due in Six Weeks Tech Times",
+   "image": "/news/c-7cc3ae4b01.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "United Laboratories' Semaglutide Weight-Loss Indication Accepted by China's NMPA; Shares Surge Over 6% in Early Trading",
+   "url": "https://finance.biggo.com/news/38a546d5-7f12-4b5a-903c-a5e4b5e5d36f",
+   "source": "BigGo Finance",
+   "date": "2026-11-05",
+   "summary": "United Laboratories' Semaglutide Weight-Loss Indication Accepted by China's NMPA; Shares Surge Over 6% in Early Trading BigGo Finance",
+   "image": "/news/c-cdf48a3b81.jpg",
    "kind": "news"
   },
   {
@@ -46,15 +55,6 @@
    "date": "2026-11-03",
    "summary": "Japan's Shionogi transfers generic drug business to Zhejiang Gaozhi Pharma in China BioSpectrum Asia",
    "image": "/news/c-4ce2fbf6d8.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "STAT+: Pharmalittle: We’re reading about CVS plans to split up, FDA inspections in India and China and more",
-   "url": "https://www.statnews.com/pharmalot/2026/11/04/cvs-plans-to-split-up-fda-inspections-in-india-and-china/?utm_campaign=rss",
-   "source": "STAT",
-   "date": "2026-11-04",
-   "summary": "The Trump administration will survey key components of pharmaceutical production in order to identify domestic supply chain vulnerabilities.",
-   "image": "/news/c-e2715c5353.jpg",
    "kind": "news"
   }
  ]
