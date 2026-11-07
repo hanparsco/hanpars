@@ -1,60 +1,60 @@
 {
- "updated": "2026-11-06T01:08:11Z",
+ "updated": "2026-11-07T00:20:20Z",
  "global": [
   {
-   "title": "Ellipsis Health buys Kouper Health to act on AI voice calls",
-   "url": "https://endpoints.news/ellipsis-health-buys-kouper-health-to-act-on-ai-voice-calls/",
-   "source": "Endpoints News",
-   "date": "2026-11-05",
-   "summary": "Ellipsis Health, a startup developing voice AI for healthcare, has acquired another company as demand for AI that can call patients heats up, Endpoints News learned exclusively. Ellipsis, which uses voice AI to screen and ...",
-   "image": "/news/g-90417c2e05.jpg",
+   "title": "FDA Grants Accelerated Approval to Rybrevant Faspro in Head and Neck Cancer",
+   "url": "https://www.pharmexec.com/view/fda-accelerated-approval-rybrevant-faspro-head-neck-cancer",
+   "source": "Pharmaceutical Executive",
+   "date": "2026-11-06",
+   "summary": "Accelerated approval of subcutaneous Rybrevant Faspro (amivantamab) based on a 42% response rate in 102 patients; a phase 3 confirmatory trial is under way.",
+   "image": "/news/g-26c999c7ef.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "Fierce Pharma Asia—Boehringer’s $7.4B SBP deal; Fresenius’ sweeping biosim pact; A $1B molecular glue bet",
+   "url": "https://www.fiercepharma.com/pharma/boehringer-74b-sbp-deal-fresenius-wuxi-bio-sweeping-biosim-pact-evommune-molecular-glue-bet",
+   "source": "Fierce Pharma",
+   "date": "2026-11-06",
+   "summary": "Boehringer Ingelheim entered a potential $7.4 billion oncology-focused deal with China's SBP Group, as Fresenius formed a 37-asset biosimilar development collaboration with WuXi Biologics, and Evommune licensed an inflammatory disease molecular glue candidate from China's Hinova …",
+   "image": "/news/g-3bb878301c.jpg",
    "kind": "news"
   },
   {
    "title": "Bayer weighs drug price deal with Trump administration as tariff risks loom",
    "url": "https://njbiz.com/bayer-mfn-drug-pricing-tariffs/",
    "source": "NJBIZ",
-   "date": "2026-11-05",
+   "date": "2026-11-06",
    "summary": "Bayer weighs drug price deal with Trump administration as tariff risks loom NJBIZ",
    "image": "/news/g-7ea3173ee6.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Teva Pharmaceutical Industries (TEVA) Adds Two FDA Approved Biosimilars To Its US Portfolio",
-   "url": "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nyse-teva/teva-pharmaceutical-industries/news/teva-pharmaceutical-industries-teva-adds-two-fda-approved-bi",
-   "source": "Simply Wall St",
-   "date": "2026-11-04",
-   "summary": "Teva Pharmaceutical Industries (TEVA) Adds Two FDA Approved Biosimilars To Its US Portfolio Simply Wall St",
-   "image": "/news/g-f8cec7f6ad.jpg",
    "kind": "news"
   }
  ],
  "china": [
   {
-   "title": "Fresenius Signs Largest-Ever Biosimilar Deal With WuXi Biologics; US Ban Decision Due in Six Weeks",
-   "url": "https://www.techtimes.com/articles/329913/20261102/fresenius-signs-largest-ever-biosimilar-deal-wuxi-biologics-us-ban-decision-due-six-weeks.htm",
+   "title": "China Approves First Golimumab Biosimilar as Bio-Thera Clinches Unprecedented US-EU-China Triple in 2026",
+   "url": "https://www.techtimes.com/articles/330190/20261106/china-approves-first-golimumab-biosimilar-bio-thera-clinches-unprecedented-us-eu-china-triple-2026.htm",
    "source": "Tech Times",
-   "date": "2026-11-03",
-   "summary": "Fresenius Signs Largest-Ever Biosimilar Deal With WuXi Biologics; US Ban Decision Due in Six Weeks Tech Times",
-   "image": "/news/c-7cc3ae4b01.jpg",
+   "date": "2026-11-06",
+   "summary": "China Approves First Golimumab Biosimilar as Bio-Thera Clinches Unprecedented US-EU-China Triple in 2026 Tech Times",
+   "image": "/news/c-6e790023c0.jpg",
    "kind": "news"
   },
   {
-   "title": "United Laboratories' Semaglutide Weight-Loss Indication Accepted by China's NMPA; Shares Surge Over 6% in Early Trading",
-   "url": "https://finance.biggo.com/news/38a546d5-7f12-4b5a-903c-a5e4b5e5d36f",
-   "source": "BigGo Finance",
-   "date": "2026-11-05",
-   "summary": "United Laboratories' Semaglutide Weight-Loss Indication Accepted by China's NMPA; Shares Surge Over 6% in Early Trading BigGo Finance",
-   "image": "/news/c-cdf48a3b81.jpg",
+   "title": "Suzhou Pharma Highlights Critical Cleanroom Applications in Modern Pharmaceutical Manufacturing and Global Drug Safety",
+   "url": "https://www.mykxlg.com/online_features/press_releases/suzhou-pharma-highlights-critical-cleanroom-applications-in-modern-pharmaceutical-manufacturing-and-global-drug-safety/article_83399c30-902d-52d4-8fe5-6f7178e00b33.html",
+   "source": "mykxlg.com",
+   "date": "2026-11-06",
+   "summary": "Suzhou Pharma Highlights Critical Cleanroom Applications in Modern Pharmaceutical Manufacturing and Global Drug Safety mykxlg.com",
+   "image": "/news/c-900dbd6428.jpg",
    "kind": "news"
   },
   {
-   "title": "Japan's Shionogi transfers generic drug business to Zhejiang Gaozhi Pharma in China",
-   "url": "https://www.biospectrumasia.com/news/25/28625/japans-shionogi-transfers-generic-drug-business-to-zhejiang-gaozhi-pharma-in-china.html",
-   "source": "BioSpectrum Asia",
-   "date": "2026-11-03",
-   "summary": "Japan's Shionogi transfers generic drug business to Zhejiang Gaozhi Pharma in China BioSpectrum Asia",
-   "image": "/news/c-4ce2fbf6d8.jpg",
+   "title": "Lynk Pharmaceuticals Announces NMPA Acceptance of New Drug Application for Zemprocitinib in the Treatment of Rheumatoid Arthritis",
+   "url": "https://www.manilatimes.net/2026/11/06/tmt-newswire/pr-newswire/lynk-pharmaceuticals-announces-nmpa-acceptance-of-new-drug-application-for-zemprocitinib-in-the-treatment-of-rheumatoid-arthritis/2463827",
+   "source": "The Manila Times",
+   "date": "2026-11-06",
+   "summary": "Lynk Pharmaceuticals Announces NMPA Acceptance of New Drug Application for Zemprocitinib in the Treatment of Rheumatoid Arthritis The Manila Times",
+   "image": "/news/c-afca2bbda4.jpg",
    "kind": "news"
   }
  ]
