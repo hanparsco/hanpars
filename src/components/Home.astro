@@ -1,6 +1,7 @@
 ---
 import CTA from './CTA.astro';
 import Photo from './Photo.astro';
+import HeroSlides from './HeroSlides.astro';
 import NewsCard from './NewsCard.astro';
 import FaqFa from './FaqFa.astro';
 import Icon from './Icon.astro';
@@ -48,7 +49,7 @@ const areaIcons: Record<string, string> = {"area-1": "<path d=\"M4 8V5a1 1 0 0 1
       <p class="lede">{s.home.lede}</p>
       {lang !== 'fa' && <div class="hero-actions"><a class="button button-light" href={L('/contact-us-1?type=sourcing')}>{s.home.primary}</a></div>}
     </div>
-    <Photo name="hero-products" class="hero-photo hero-photo-tall" alt={s.home.heroAlt} priority />
+    <HeroSlides />
   </div>
   <div class="hero-meta"><div class="container hero-meta-inner">{entries.map(entry => <a href={L(entry.href)}><strong>{entry.name}</strong><span>{entry.text}</span></a>)}</div></div>
 </section>
