@@ -1,0 +1,48 @@
+name: Daily full backup
+
+# Every day at 02:00 Tehran time (UTC+3:30, no DST) = 22:30 UTC the day before.
+# Produces one complete source archive (code, data, images, fonts, rebuild guide, change history) and
+# replaces the asset of the release "backup-latest". A Google Apps Script copies it into Google Drive
+# (folder "hanpars-com-backup") – see tools/drive-backup.gs.
+on:
+  schedule:
+    - cron: '30 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Build archive
+        id: zip
+        run: |
+          set -e
+          D=$(TZ=Asia/Tehran date +%F)
+          C=$(git rev-parse --short HEAD)
+          git log --date=short --pretty=format:'%h %ad %s' > HISTORY.txt
+          sed -i "s/^Backup date: .*/Backup date: $D (Tehran) · Git commit: $C (branch main) · Live site: https:\/\/hanpars.com/" REBUILD-GUIDE.md
+          cd ..
+          zip -qr -9 "$RUNNER_TEMP/hanpars-com-backup-latest.zip" hanpars \
+            -x 'hanpars/.git/*' 'hanpars/node_modules/*' 'hanpars/product-photo-bank/*' '*/__pycache__/*' 'hanpars/dist/*' 'hanpars/.astro/*'
+          ls -la "$RUNNER_TEMP/hanpars-com-backup-latest.zip"
+          echo "date=$D" >> "$GITHUB_OUTPUT"; echo "commit=$C" >> "$GITHUB_OUTPUT"
+          echo "size=$(du -h "$RUNNER_TEMP/hanpars-com-backup-latest.zip" | cut -f1)" >> "$GITHUB_OUTPUT"
+      - name: Publish to release backup-latest
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          NOTES="Complete source backup of hanpars.com — ${{ steps.zip.outputs.date }}, commit ${{ steps.zip.outputs.commit }}, ${{ steps.zip.outputs.size }}. Read REBUILD-GUIDE.md inside the archive. Refreshed daily at 02:00 Tehran."
+          gh release view backup-latest >/dev/null 2>&1 || gh release create backup-latest --target main --title "Full backup (latest)" --notes "$NOTES" --latest=false
+          gh release upload backup-latest "$RUNNER_TEMP/hanpars-com-backup-latest.zip" --clobber
+          gh release edit backup-latest --notes "$NOTES"
