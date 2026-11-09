@@ -45,6 +45,13 @@ const privacyNote = ({
     <div class="brief-head"><h2>{c.formTitle}</h2><p>{c.formLede}</p></div>
     <p class="brief-legend" id="enquiry-type-legend">{c.typeLegend}</p>
     <div class="enquiry-tabs" role="tablist" aria-labelledby="enquiry-type-legend">{types.map((k, i) => <button id={`enquiry-${k}`} type="button" class="enquiry-tab" role="tab" aria-selected={i === 0 ? 'true' : 'false'} aria-controls="brief-form" data-enquiry-type={k} tabindex={i === 0 ? 0 : -1}><span class="enquiry-icon" aria-hidden="true" set:html={icons[k]}/><span class="enquiry-text"><strong>{c.tabs[k]}</strong><small>{c.tabHints[k]}</small></span></button>)}</div>
+    {lang === 'fa' && <aside class="form-notice" role="note" aria-label="توجه">
+      <strong>توجه</strong>
+      <ol>
+        <li>شرکت هانیا پرسان دارو امکان فروش مستقیم دارو به غیر از پخش‌های سراسری (اعم از دانشگاه‌ها، داروخانه‌ها و افراد) را ندارد.</li>
+        <li>شرکت هانیا پرسان دارو امکان فروش مواد اولیهٔ دارویی به غیر از شرکت‌های داروسازی (اعم از دانشگاه‌ها و افراد) را ندارد.</li>
+      </ol>
+    </aside>}
     <form id="brief-form" aria-labelledby="enquiry-sourcing" role="tabpanel" action={formEndpoint} method="POST" data-access-key={formAccessKey} data-i18n={i18n} data-email={mEnc(contactEmail)} data-ra-email={mEnc(raEmail)} data-t0="0" novalidate>
       <input type="hidden" name="access_key" value={formAccessKey} />
       <input type="hidden" name="subject" value="Website enquiry" data-subject />
