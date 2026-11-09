@@ -63,13 +63,18 @@ const locTitle0 = lang === 'en' ? '' : (locName(lang, title) || catalogueName(la
 const locForm = lang === 'en' ? '' : formL[lang](p.form, p.route);
 const locTitle = lang === 'tr' && locTitle0 ? locTitle0.charAt(0).toLocaleUpperCase('tr') + locTitle0.slice(1) : locTitle0;
 const nameBoth = locTitle ? (lang === 'zh' ? `${locTitle}（${title}）` : `${locTitle} (${title})`) : title;
-const labelName = main ? `${main.generic}${main.brand ? ` (${main.brand})` : ''}` : '';
-const srcLine = ({
-  en: `${m.source}: ${labelName} — US FDA prescribing information${effective ? `, ${effective}` : ''}`,
-  fa: `${m.source}: اطلاعات تجویز مصوب FDA آمریکا برای ${labelName}${effective ? `، نسخهٔ ${effective}` : ''}؛`,
-  zh: `${m.source}：美国 FDA 处方信息（${labelName}${effective ? `，${effective} 版` : ''}）`,
-  tr: `${m.source}: ${labelName} için ABD FDA reçeteleme bilgisi${effective ? `, ${effective}` : ''}`,
-} as Record<string, string>)[lang];
+const norm = (x: string) => x.toLowerCase().replace(/[^a-z0-9]/g, '');
+const labelName = main ? `${main.generic}${main.brand && norm(main.brand) !== norm(main.generic) ? ` (${main.brand})` : ''}` : '';
+// human-readable label date per language (the raw form is YYYY-MM-DD)
+const effDate = (() => { if (!effective) return ''; const [y, mo, d] = effective.split('-').map(Number); const FA = ['ژانویه', 'فوریه', 'مارس', 'آوریل', 'مه', 'ژوئن', 'ژوئیه', 'اوت', 'سپتامبر', 'اکتبر', 'نوامبر', 'دسامبر']; const TR = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık']; const EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  return lang === 'fa' ? `${d} ${FA[mo - 1]} ${y}` : lang === 'zh' ? `${y} 年 ${mo} 月 ${d} 日` : lang === 'tr' ? `${d} ${TR[mo - 1]} ${y}` : `${d} ${EN[mo - 1]} ${y}`; })();
+// source sentence in three parts: [before the DailyMed link, link text, after the link]; the link sits inside the sentence in every language
+const src = ({
+  en: [`${m.source}: US FDA prescribing information for ${labelName}${effDate ? ` (label version of ${effDate})` : ''}, via `, 'DailyMed', `. ${m.sourceNote}`],
+  fa: [`${m.source}: بروشور رسمی (اطلاعات تجویز) مصوب سازمان غذا و داروی آمریکا (FDA) برای ${labelName}${effDate ? `، نسخهٔ ${effDate}` : ''}، به نقل از `, 'DailyMed', `. این متن خلاصه‌شده است و متن کامل بروشور ملاک است. ثبت، موارد مصرف و برچسب‌گذاری این دارو در ایران ممکن است متفاوت باشد.`],
+  zh: [`${m.source}：美国 FDA 批准的 ${labelName} 处方信息${effDate ? `（${effDate}版）` : ''}，引自 `, 'DailyMed', `。${m.sourceNote}`],
+  tr: [`${m.source}: ${labelName} için ABD FDA tarafından onaylı reçeteleme bilgisi${effDate ? ` (${effDate} tarihli etiket)` : ''}, `, 'DailyMed', ` üzerinden. ${m.sourceNote}`],
+} as Record<string, [string, string, string]>)[lang];
 const seoNote = ({
   en: `${title} ${formLabel.toLowerCase()}${p.strength ? ' ' + p.strength : ''}: import of this medicine into the Iranian market can be arranged on request through Haniya Parsan Darou Co. (Hanpars), pharmaceutical importer of finished medicines and APIs, including emergency (urgent) import. Availability and registration status are confirmed per enquiry.`,
   fa: `${nameBoth}${locForm ? ' ' + locForm : ''}${p.strength ? ' ' + p.strength : ''}: امکان واردات و تأمین این داروی خارجی برای بازار ایران از طریق شرکت هانیا پرسان دارو، واردکنندهٔ دارو، فرآوردهٔ دارویی و مواد اولیهٔ دارویی، در صورت استعلام؛ از جمله داروی فوریتی. موجود بودن و وضعیت ثبت هر دارو هنگام استعلام اعلام می‌شود.`,
@@ -107,7 +112,7 @@ const seoNote = ({
       {sec.pregnancy.text && <section class="pd-sec pd-pregnancy"><h2><span class="pd-ico"><Icon name="leaf" size={18}/></span>{m.pregnancy}</h2><p {...L1(sec.pregnancy)}>{sec.pregnancy.text}</p></section>}
       {sec.storage.text && <section class="pd-sec pd-storage"><h2><span class="pd-ico"><Icon name="box" size={18}/></span>{m.storage}</h2><p {...L1(sec.storage)}>{sec.storage.text}</p></section>}
       {isEditorial ? <p class="form-hint prod-source">{m.editorialSource}</p> :
-      <p class="form-hint prod-source" lang={htmlLang[lang]} dir={dir(lang)}>{srcLine}{dailymed && <>{' '}<a class="text-link" href={dailymed} target="_blank" rel="noopener noreferrer" lang="en" dir="ltr">DailyMed</a></>}{lang === 'en' ? '. ' : ' '}{m.sourceNote}</p>}
+      <p class="form-hint prod-source" lang={htmlLang[lang]} dir={dir(lang)}>{src[0]}{dailymed ? <a class="text-link" href={dailymed} target="_blank" rel="noopener noreferrer" lang="en" dir="ltr">{src[1]}</a> : <span lang="en" dir="ltr">{src[1]}</span>}{src[2]}</p>}
     </> : <p class="archive-note">{m.noInfo}</p>}
   </div>
   <aside class="mol-aside">
