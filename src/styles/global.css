@@ -1670,7 +1670,7 @@ html[lang^=zh] .brand .original-logo { width:auto; height:112px; margin:6px 0; }
 @media (max-width:760px) { .prod-b2b-inner { grid-template-columns:1fr; padding:22px; } }
 
 /* enquiry form: inline validation and captcha */
-.form-field.has-error input, .form-field.has-error textarea { border-color:#c2321f; box-shadow:0 0 0 3px #c2321f22; }
+.form-field.has-error input, .form-field.has-error select, .form-field.has-error textarea { border-color:#c2321f; box-shadow:0 0 0 3px #c2321f22; }
 .field-error { margin:6px 0 0; font-size:13.5px; color:#b3281a; min-height:0; }
 .field-error:empty { display:none; }
 .form-captcha { margin:6px 0 18px; } .form-captcha.has-error .h-captcha { outline:2px solid #c2321f; outline-offset:4px; border-radius:6px; }
@@ -1679,3 +1679,7 @@ html[lang^=zh] .brand .original-logo { width:auto; height:112px; margin:6px 0; }
 .form-notice { margin:0 0 22px; padding:16px 20px; border-radius:14px; background:#fff6e6; border:1px solid #f0c98a; border-inline-start:4px solid #d9900f; color:var(--ink); }
 .form-notice strong { display:block; margin-bottom:6px; color:#9a5b00; }
 .form-notice ol { margin:0; padding-inline-start:22px; list-style:persian; } .form-notice li { line-height:1.8; font-size:15px; }
+
+/* enquiry form: service dropdown */
+#ra-service { width:100%; appearance:none; -webkit-appearance:none; padding-inline-end:40px; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; }
+[dir=rtl] #ra-service { background-position:left 14px center; }

@@ -201,6 +201,11 @@ if (form) {
     cdmo: { product:'Product or project name', specification:'Dosage form, strength and project stage', message:'Development / manufacturing support needed', heading:'FDF CDMO enquiry' },
   };
   const status = document.getElementById('brief-status');
+  const raSelect = document.getElementById('ra-service') as HTMLSelectElement | null;
+  const raOtherField = document.getElementById('ra-other-field') as HTMLElement | null;
+  const raOther = document.getElementById('ra-other') as HTMLInputElement | null;
+  const syncRaOther = () => { const on = !!raSelect && raSelect.value === 'other'; if (raOtherField) raOtherField.hidden = !on; if (raOther) { raOther.required = on; raOther.disabled = !on || !!raSelect?.disabled; if (!on) raOther.value = ''; } };
+  raSelect?.addEventListener('change', syncRaOther);
   function selectType(selected: string) {
     type = selected;
     tabs.forEach(tab => {
@@ -219,6 +224,13 @@ if (form) {
     const subject = form!.querySelector<HTMLInputElement>('[data-subject]');
     if (typeField) typeField.value = labels[type].heading;
     if (subject) subject.value = `${labels[type].heading} — website`;
+    // Regulatory enquiries use their own set of fields; the hidden block is disabled so it is neither validated nor sent
+    const raBlock = form!.querySelector<HTMLElement>('[data-ra-fields]'), stdBlock = form!.querySelector<HTMLElement>('[data-std-fields]');
+    const isRa = type === 'regulatory';
+    if (raBlock) { raBlock.hidden = !isRa; raBlock.querySelectorAll<HTMLInputElement>('input, select, textarea').forEach(el => { el.disabled = !isRa; }); }
+    if (stdBlock) { stdBlock.hidden = isRa; stdBlock.querySelectorAll<HTMLInputElement>('input, select, textarea').forEach(el => { el.disabled = isRa; }); }
+    form!.querySelectorAll<HTMLElement>('.has-error').forEach(el => el.classList.remove('has-error'));
+    if (isRa) syncRaOther();
     const email = mDec(type === 'regulatory' ? (form!.dataset.raEmail || '') : (form!.dataset.email || ''));
     const cc = form!.querySelector<HTMLInputElement>('[data-cc-field]');
     if (cc) cc.value = type === 'regulatory' ? mDec(form!.dataset.raEmail || '') : '';
@@ -235,24 +247,23 @@ if (form) {
   chips.forEach(chip => chip.addEventListener('click', () => { const input = document.getElementById(chip.dataset.chipFor || '') as HTMLInputElement | null; if (!input) return; input.value = input.value === chip.dataset.chipValue ? '' : (chip.dataset.chipValue || ''); syncChips(); }));
   chips.forEach(chip => document.getElementById(chip.dataset.chipFor || '')?.addEventListener('input', syncChips));
   // "Urgent" chosen → ask for the reason (required while the box is shown)
-  const urgField = document.getElementById('urgency-field') as HTMLElement | null;
-  const urgInput = document.getElementById('brief-urgency') as HTMLTextAreaElement | null;
   const urgentChip = form.querySelector<HTMLButtonElement>('[data-urgent]');
-  const timingInput = document.getElementById('brief-timing') as HTMLInputElement | null;
-  const syncUrgency = () => {
+  const urgPairs: [string, string, string][] = [['brief-timing', 'urgency-field', 'brief-urgency'], ['ra-timing', 'ra-urgency-field', 'ra-urgency']];
+  const syncUrgency = () => urgPairs.forEach(([tId, fId, iId]) => {
+    const timingInput = document.getElementById(tId) as HTMLInputElement | null, urgField = document.getElementById(fId), urgInput = document.getElementById(iId) as HTMLTextAreaElement | null;
     const v = (timingInput?.value || '').trim().toLowerCase();
     const on = !!urgentChip && v === (urgentChip.dataset.chipValue || '').toLowerCase() || /urgent|acil|紧急|فوری/.test(v);
     if (urgField) urgField.hidden = !on;
-    if (urgInput) { urgInput.required = on; if (!on) { urgInput.value = ''; urgInput.closest('.form-field')?.classList.remove('has-error'); } }
-  };
-  timingInput?.addEventListener('input', syncUrgency); chips.forEach(chip => chip.addEventListener('click', syncUrgency)); syncUrgency();
+    if (urgInput) { urgInput.required = on; urgInput.disabled = !on || !!timingInput?.disabled; if (!on) { urgInput.value = ''; urgInput.closest('.form-field')?.classList.remove('has-error'); } }
+  });
+  urgPairs.forEach(([tId]) => document.getElementById(tId)?.addEventListener('input', syncUrgency)); chips.forEach(chip => chip.addEventListener('click', syncUrgency)); syncUrgency();
   const button = form.querySelector<HTMLButtonElement>('[data-send-brief]');
   const formStart = Date.now();
   // Inline validation: every visible field is required; messages in the page language, shown under the field.
   const V = formI18n.v || {};
   // hide the captcha box if its script could not load within 12 s, so the form never becomes unsendable
   setTimeout(() => { const cb = form.querySelector<HTMLElement>('.form-captcha'); if (cb && !cb.querySelector('iframe')) cb.hidden = true; }, 12000);
-  const fields = Array.from(form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input:not([type=hidden]):not(.botcheck), textarea'));
+  const fields = Array.from(form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input:not([type=hidden]):not(.botcheck), textarea, select'));
   const errOf = (el: HTMLElement) => { const w = el.closest('.form-field'); let e = w?.querySelector<HTMLElement>('.field-error'); if (!e && w) { e = document.createElement('p'); e.className = 'field-error'; e.setAttribute('role', 'alert'); w.appendChild(e); } return e; };
   // Free/personal mailbox providers: not accepted as a company address (all languages except Chinese, where corporate mail is often on QQ/163)
   const FREE = /^(gmail|googlemail|yahoo|ymail|rocketmail|hotmail|outlook|live|msn|aol|icloud|me|mac|protonmail|proton|pm|zoho|yandex|mail|gmx|web|inbox|fastmail|tutanota|tuta|hushmail|chmail|email|usa|duck|duckduckgo|hey|mailinator|guerrillamail|10minutemail|temp-mail|yopmail|qq|163|126|foxmail|sina|sohu)\.(com|ru|net|org|ir|me|de|co\.uk|fr|cn|co|io|app|email)$/i;
@@ -266,7 +277,7 @@ if (form) {
   form.addEventListener('submit', async event => {
     event.preventDefault();
     let ok = true, first: HTMLElement | null = null;
-    fields.forEach(el => { if ((el as HTMLElement).closest('[hidden]')) return; if (!check(el)) { ok = false; first ||= el; } });
+    fields.forEach(el => { if ((el as HTMLElement).closest('[hidden]') || (el as HTMLInputElement).disabled) return; if (!check(el)) { ok = false; first ||= el; } });
     const cap = form.querySelector<HTMLTextAreaElement>('textarea[name="h-captcha-response"]');
     const capBox = form.querySelector<HTMLElement>('.form-captcha');
     // the widget is required only when it actually loaded (hCaptcha may be unreachable on some networks); the honeypot and timing checks still apply
@@ -298,7 +309,7 @@ if (form) {
       const response = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body:new FormData(form) });
       const result = await response.json().catch(() => ({}));
       if (response.ok && result && result.success === true) {
-        form.reset(); selectType(type); syncChips(); syncUrgency(); try { (window as any).hcaptcha?.reset(); } catch {}
+        form.reset(); selectType(type); syncChips(); syncUrgency(); syncRaOther(); try { (window as any).hcaptcha?.reset(); } catch {}
         if (status) status.textContent = formI18n.sent || 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
       } else {
         throw new Error(result.message || 'Submission failed');
