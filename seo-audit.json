@@ -1,6 +1,6 @@
 {
- "pages": 22219,
- "indexable": 21625,
+ "pages": 22227,
+ "indexable": 21627,
  "issues": [
   {
    "name": "title missing",
@@ -9,23 +9,23 @@
   },
   {
    "name": "title > 65 chars",
-   "count": 1212,
+   "count": 1240,
    "sample": [
-    "/api (66) Active pharmaceutical ingredients (API) supplier in Iran | Hanpars",
-    "/china-to-iran (101) How to export medicines and APIs from China to Iran: IFDA registration, importer, documents | Hanpars",
-    "/fa/api (69) واردات مواد اولیه دارویی (API) | تأمین مادهٔ مؤثره | هانیا پرسان دارو",
-    "/fa/excipient (71) واردات اکسیپینت (اکسیپیان) | مواد اولیه جانبی دارویی | هانیا پرسان دارو",
-    "/fa/fdf/acetaminophen-caffeine-chlorpheniramine-vitamin-c-52636 (78) استامینوفن / کافئین / کلرفنیرامین / ویتامین C کپسول 200 mg/25 mg/2.5 mg/150 mg",
-    "/fa/fdf/acetaminophen-caffeine-ibuprofen-21742 (66) استامینوفن / کافئین / ایبوپروفن کپسول 325 mg/40 mg/200 mg کد 21742",
-    "/fa/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50341 (102) استامینوفن / کلرفنیرامین / دکسترومتورفان / فنیل‌افرین شربت 160 mg/1 mg/5 mg/2.5 mg/5mL 120 mL کد 50341",
-    "/fa/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-50378 (102) استامینوفن / کلرفنیرامین / دکسترومتورفان / فنیل‌افرین شربت 160 mg/1 mg/5 mg/2.5 mg/5mL 200 mL کد 50378",
-    "/fa/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-51915 (101) استامینوفن / کلرفنیرامین / دکسترومتورفان / فنیل‌افرین شربت 160 mg/1 mg/5 mg/2.5 mg/5mL 60 mL کد 51915",
-    "/fa/fdf/acetaminophen-chlorpheniramine-dextromethorphan-phenylephrin-53455 (102) استامینوفن / کلرفنیرامین / دکسترومتورفان / فنیل‌افرین / اسید آسکوربیک قرص 500 mg/2 mg/15 mg/5 mg/38 mg",
-    "/fa/fdf/acetaminophen-diphenhydramine-phenylephrine-21832 (85) استامینوفن / دیفن‌هیدرامین / فنیل‌افرین شربت 160 mg/12.5 mg/2.5 mg/5mL 60 mL کد 21832",
-    "/fa/fdf/acetaminophen-diphenhydramine-phenylephrine-52273 (86) استامینوفن / دیفن‌هیدرامین / فنیل‌افرین شربت 160 mg/12.5 mg/2.5 mg/5mL 120 mL کد 52273",
-    "/fa/fdf/acetaminophen-diphenhydramine-phenylephrine-52274 (86) استامینوفن / دیفن‌هیدرامین / فنیل‌افرین شربت 160 mg/12.5 mg/2.5 mg/5mL 200 mL کد 52274",
-    "/fa/fdf/acetaminophen-guaifenesin-phenylephrine-22078 (79) استامینوفن / گایفنزین / فنیل‌افرین شربت 125 mg/50 mg/2.5 mg/5mL 120 mL کد 22078",
-    "/fa/fdf/acetaminophen-guaifenesin-phenylephrine-52271 (79) استامینوفن / گایفنزین / فنیل‌افرین شربت 125 mg/50 mg/2.5 mg/5mL 200 mL کد 52271"
+    "/api/amino-acids (66) Amino acids API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/angiotensin (66) Angiotensin API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/aripiprazole-i (69) Aripiprazole i API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/aztreonam-alfa (69) Aztreonam alfa API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/cyanocobalamin (69) Cyanocobalamin API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/desogestrel-cn (69) Desogestrel cn API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/ethiodized-oil (69) Ethiodized oil API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/fluoxetine-hci (69) Fluoxetine hci API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/heparin-sodium (69) Heparin sodium API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/iron-dextran (67) Iron dextran API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/iron-sucrose (67) Iron sucrose API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/ivermectin-fur (69) Ivermectin fur API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/macrogol-3350 (68) Macrogol 3350 API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/mebendazole-a (68) Mebendazole a API | Manufacturers &amp; suppliers for Iran | Hanpars",
+    "/api/meclizine-hcl (68) MECLIZINE HCl API | Manufacturers &amp; suppliers for Iran | Hanpars"
    ]
   },
   {
@@ -59,7 +59,7 @@
    "count": 6,
    "sample": [
     "/china-to-iran (222)",
-    "/fdf-cdmo (187)",
+    "/fdf-cdmo (196)",
     "/partners (266)",
     "/precursors (166)",
     "/tr/fdf-cdmo (170)",
@@ -92,13 +92,23 @@
   },
   {
    "name": "duplicate descriptions",
-   "count": 5,
+   "count": 31,
    "sample": [
     "2× واکسن دیفتری / هموفیلوس آنفلوانزای نوع b / سیاه‌سرفه / فلج اطفال / کزاز / هپاتیت :: /fa/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53418, /fa/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53419",
     "3× واکسن توکسوئید دیفتری / توکسوئید کزاز / سیاه‌سرفه / هموفیلوس آنفلوانزای نوع b /  :: /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /fa/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461",
-    "2× Difteri / Haemophilus influenzae tip b / boğmaca / çocuk felci / tetanoz / hepat :: /tr/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53418, /tr/fdf/diphtheria-hemophilus-influenzae-b-pertussis-poliomyelitis-t-53419",
-    "3× Difteri toksoidi / tetanoz toksoidi / boğmaca / Haemophilus influenzae tip b / h :: /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-19428, /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-21561, /tr/fdf/diphtheria-toxoid-tetanus-toxoid-pertussis-haemophilus-influ-52461",
-    "2× İnsan allojenik umbilikal kordon dokusu kaynaklı mezenkimal stromal hücreler (Hu :: /tr/fdf/human-allogenic-umbilical-cord-tissue-derived-mesenchymal-st-53517, /tr/fdf/human-allogenic-umbilical-cord-tissue-derived-mesenchymal-st-53663"
+    "3× Amino Acid 10% (2) Injection, Solution 5 mg/8.9 mg/5.74 mg/3.12 mg/4.4 mg/4.7 mg :: /fdf/amino-acid-10-2-14115, /fdf/amino-acid-10-2-52272, /fdf/amino-acid-10-2-52340",
+    "2× Amino Acid 10% (3) Injection, Solution 5.8 mg/12 mg/16.925 mg/2 mg/3.5 mg/8.2 mg :: /fdf/amino-acid-10-3-52896, /fdf/amino-acid-10-3-52897",
+    "2× Amino Acid 10% Paediatric (1) Injection, Solution 8 mg/13 mg/8.51 mg/3.12 mg/3.7 :: /fdf/amino-acid-10-paediatric-1-53310, /fdf/amino-acid-10-paediatric-1-56",
+    "2× Amino Acid 10% Paediatric (2) Injection, Solution 5.1 mg/7.6 mg/8.8 mg/2 mg/3.1  :: /fdf/amino-acid-10-paediatric-2-52022, /fdf/amino-acid-10-paediatric-2-52023",
+    "2× Amino Acid 10% With Electrolyte Injection, Solution 5 mg/8.9 mg/8.56 mg/4.4 mg/4 :: /fdf/amino-acid-10-with-electrolyte-19892, /fdf/amino-acid-10-with-electrolyte-52095",
+    "2× Amino Acid 5% With Electrolyte Injection, Solution 2.5 mg/4.45 mg/4.28 mg/2.2 mg :: /fdf/amino-acid-5-with-electrolyte-19923, /fdf/amino-acid-5-with-electrolyte-19926",
+    "2× Amino Acid / Lipid / Glucose (1-1) Injection, Emulsion 32 g/8 g/6.41 g/4.34 g/1. :: /fdf/amino-acid-lipid-glucose-1-1-50180, /fdf/amino-acid-lipid-glucose-1-1-50359",
+    "3× Amino Acid / Lipid / Glucose (1-2) Injection, Emulsion 2.26 mg/3.01 mg/2.73 mg/1 :: /fdf/amino-acid-lipid-glucose-1-2-19614, /fdf/amino-acid-lipid-glucose-1-2-51054, /fdf/amino-acid-lipid-glucose-1-2-51055",
+    "2× Amino Acid / Lipid / Glucose (2-1) Injection, Emulsion 32 g/8 g/8.24 g/5.58 g/1. :: /fdf/amino-acid-lipid-glucose-2-1-50179, /fdf/amino-acid-lipid-glucose-2-1-50360",
+    "3× Amino Acid / Lipid / Glucose (2-2) Injection, Emulsion 3.28 mg/4.38 mg/3.98 mg/2 :: /fdf/amino-acid-lipid-glucose-2-2-51064, /fdf/amino-acid-lipid-glucose-2-2-51065, /fdf/amino-acid-lipid-glucose-2-2-51066",
+    "2× Amino Acid / Lipid / Glucose (3-1) Injection, Emulsion 24 g/6 g/3.66 g/2.48 g/0. :: /fdf/amino-acid-lipid-glucose-3-1-50366, /fdf/amino-acid-lipid-glucose-3-1-50367",
+    "3× Amino Acid / Lipid / Glucose (3-2) Injection, Emulsion 1.87 mg/2.5 mg/2.27 mg/1. :: /fdf/amino-acid-lipid-glucose-3-2-51061, /fdf/amino-acid-lipid-glucose-3-2-51062, /fdf/amino-acid-lipid-glucose-3-2-51063",
+    "3× Total Parentral Nutrition Injection, Emulsion 5 mg/7.4 mg/9.3 mg/4.3 mg/4.4 mg/6 :: /fdf/total-parentral-nutrition-53022, /fdf/total-parentral-nutrition-53023, /fdf/total-parentral-nutrition-53024"
    ]
   },
   {
@@ -204,5 +214,5 @@
    "sample": []
   }
  ],
- "sha": "496b6b9de5e75199b97da604a3d2bd27a68577c0"
+ "sha": "3b61492d2e21aa8aa132bf9a67dcc432d21e6e32"
 }
