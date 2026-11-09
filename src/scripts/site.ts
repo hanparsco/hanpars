@@ -238,6 +238,8 @@ if (form) {
   const formStart = Date.now();
   // Inline validation: every visible field is required; messages in the page language, shown under the field.
   const V = formI18n.v || {};
+  // hide the captcha box if its script could not load within 12 s, so the form never becomes unsendable
+  setTimeout(() => { const cb = form.querySelector<HTMLElement>('.form-captcha'); if (cb && !cb.querySelector('iframe')) cb.hidden = true; }, 12000);
   const fields = Array.from(form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input:not([type=hidden]):not(.botcheck), textarea'));
   const errOf = (el: HTMLElement) => { const w = el.closest('.form-field'); let e = w?.querySelector<HTMLElement>('.field-error'); if (!e && w) { e = document.createElement('p'); e.className = 'field-error'; e.setAttribute('role', 'alert'); w.appendChild(e); } return e; };
   const check = (el: HTMLInputElement | HTMLTextAreaElement) => {
@@ -252,7 +254,9 @@ if (form) {
     fields.forEach(el => { if (!check(el)) { ok = false; first ||= el; } });
     const cap = form.querySelector<HTMLTextAreaElement>('textarea[name="h-captcha-response"]');
     const capBox = form.querySelector<HTMLElement>('.form-captcha');
-    const capOk = !capBox || (!!cap && cap.value.length > 0);
+    // the widget is required only when it actually loaded (hCaptcha may be unreachable on some networks); the honeypot and timing checks still apply
+    const capLoaded = !!capBox?.querySelector('iframe');
+    const capOk = !capBox || !capLoaded || (!!cap && cap.value.length > 0);
     if (capBox) { capBox.classList.toggle('has-error', !capOk); let e = capBox.querySelector<HTMLElement>('.field-error'); if (!e) { e = document.createElement('p'); e.className = 'field-error'; e.setAttribute('role', 'alert'); capBox.appendChild(e); } e.textContent = capOk ? '' : (V.captcha || 'Please tick the “I am human” box.'); }
     if (!ok || !capOk) { if (status) status.textContent = V.fix || 'Please complete the highlighted fields.'; (first || capBox)?.scrollIntoView({ block: 'center', behavior: 'smooth' }); (first as HTMLInputElement | null)?.focus(); return; }
     // Bot filter: the hidden honeypot is ticked, or the form was "filled" faster than a person can (under 4 s).
