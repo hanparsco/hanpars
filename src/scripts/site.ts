@@ -98,31 +98,37 @@ if (guide) {
 }
 
 const escHtml = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-async function loadCatalogueRows(catalogue: HTMLElement) {
-  const src = catalogue.dataset.src; if (!src) return;
-  const tbody = catalogue.querySelector('tbody'); if (!tbody) return;
+type CatRow = { html: string; search: string; status: string };
+async function loadCatalogueRows(catalogue: HTMLElement): Promise<CatRow[]> {
+  const tbody = catalogue.querySelector('tbody');
+  // the server-rendered first page is the fallback when the full list cannot be fetched
+  const fallback = (): CatRow[] => Array.from(catalogue.querySelectorAll<HTMLTableRowElement>('[data-catalogue-row]')).map(r => ({ html: r.outerHTML, search: r.dataset.search || '', status: r.dataset.status || '' }));
+  const src = catalogue.dataset.src; if (!src || !tbody) return fallback();
   try {
     const data = await fetch(src).then(r => r.json()) as [string, string, string, string, string?][];
     const locLang = catalogue.dataset.locLang || 'en';
     const base = catalogue.dataset.base || ''; const type = catalogue.dataset.type || 'fdf';
     const enq = (JSON.parse(catalogue.dataset.i18n || '{}').enquire) || 'Enquire';
-    tbody.innerHTML = data.map(([n, c, g, sl, loc], i) => {
+    return data.map(([n, c, g, sl, loc], i) => {
       const href = sl ? `${base}/${type === 'fdf' ? 'fdf' : 'api'}/${sl}` : '';
       const name = '<span class="cat-ico" aria-hidden="true"></span><span class="cat-text">' + (href ? `<a class="table-link" href="${href}">${escHtml(n)}</a>` : `<span class="cat-plain">${escHtml(n)}</span>`) + (loc ? `<span class="cat-loc" lang="${locLang}" dir="auto">${escHtml(loc)}</span>` : '') + '</span>';
       const code = href && c ? `<a class="table-link table-link-muted" href="${href}">${escHtml(c)}</a>` : escHtml(c || '—');
-      return `<tr data-catalogue-row data-status="${escHtml(g)}" data-search="${escHtml((n + ' ' + (loc || '') + ' ' + c).toLowerCase())}" data-index="${i}"><td dir="ltr" class="cat-cell">${name}</td><td class="table-code" dir="ltr">${code}</td><td><a class="table-request" href="${base}/contact-us-1?type=sourcing&product=${encodeURIComponent(n)}">${escHtml(enq)}</a></td></tr>`;
-    }).join('');
+      const search = (n + ' ' + (loc || '') + ' ' + c).toLowerCase();
+      return { search, status: g, html: `<tr data-catalogue-row data-status="${escHtml(g)}" data-index="${i}"><td dir="ltr" class="cat-cell">${name}</td><td class="table-code" dir="ltr">${code}</td><td><a class="table-request" href="${base}/contact-us-1?type=sourcing&product=${encodeURIComponent(n)}">${escHtml(enq)}</a></td></tr>` };
+    });
   } catch {
-    // keep the server-rendered rows and point to the plain A–Z pages that list every entry
     const st = catalogue.querySelector('[data-catalogue-status]');
     const lg = document.documentElement.lang.slice(0, 2);
     if (st) st.textContent = ({ fa: 'فهرست کامل بارگیری نشد؛ همهٔ موارد در فهرست الفبایی پایین صفحه هست.', zh: '完整列表未能加载；全部条目见下方 A–Z 索引。', tr: 'Tam liste yüklenemedi; tüm kayıtlar aşağıdaki A–Z dizininde.' } as Record<string, string>)[lg] || 'The full list could not be loaded; every entry is in the A–Z index below.';
+    return fallback();
   }
 }
 for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]')) { void initCatalogue(catalogue); }
 async function initCatalogue(catalogue: HTMLElement) {
-  await loadCatalogueRows(catalogue);
-  const rows = Array.from(catalogue.querySelectorAll<HTMLTableRowElement>('[data-catalogue-row]'));
+  // Only the visible page is in the DOM (the full list is ~4,000 rows): filtering runs on the in-memory array and
+  // re-renders 25 rows, so typing stays instant on phones. Input is debounced lightly.
+  const rows = await loadCatalogueRows(catalogue);
+  const tbody = catalogue.querySelector('tbody');
   const input = catalogue.querySelector<HTMLInputElement>('[data-catalogue-search]');
   const pageSize = Number(catalogue.dataset.pageSize || '25');
   const i18n = JSON.parse(catalogue.dataset.i18n || '{}') as { inList?:string; matching?:string; none?:string; showing?:string };
@@ -140,14 +146,14 @@ async function initCatalogue(catalogue: HTMLElement) {
   const prev = catalogue.querySelector<HTMLButtonElement>('[data-catalogue-prev]');
   const next = catalogue.querySelector<HTMLButtonElement>('[data-catalogue-next]');
   const pager = catalogue.querySelector<HTMLElement>('[data-catalogue-pager]');
+  const locale = document.documentElement.lang === 'tr' ? 'tr-TR' : 'en-US';
   function render() {
     const start = page * pageSize;
     const end = Math.min(start + pageSize, matching.length);
-    rows.forEach(row => { row.hidden = true; });
-    matching.slice(start, end).forEach(row => { row.hidden = false; });
-    if (count) count.textContent = siteNum(matching.length.toLocaleString(document.documentElement.lang === 'tr' ? 'tr-TR' : 'en-US'));
+    if (tbody) tbody.innerHTML = matching.slice(start, end).map(r => r.html).join('');
+    if (count) count.textContent = siteNum(matching.length.toLocaleString(locale));
     if (suffix) suffix.textContent = (input?.value || statusFilter) ? (i18n.matching || 'matching your search') : (i18n.inList || 'in the list');
-    if (status) status.textContent = matching.length ? siteNum((i18n.showing || 'Showing {a}–{b} of {n} entries').replace('{a}', String(start+1)).replace('{b}', String(end)).replace('{n}', matching.length.toLocaleString(document.documentElement.lang === 'tr' ? 'tr-TR' : 'en-US'))) : (i18n.none || 'No matching entries');
+    if (status) status.textContent = matching.length ? siteNum((i18n.showing || 'Showing {a}–{b} of {n} entries').replace('{a}', String(start+1)).replace('{b}', String(end)).replace('{n}', matching.length.toLocaleString(locale))) : (i18n.none || 'No entries match your search.');
     if (pageLabel) pageLabel.textContent = siteNum(`${page+1} / ${Math.max(1,Math.ceil(matching.length/pageSize))}`);
     if (empty) empty.hidden = matching.length !== 0;
     if (prev) prev.disabled = page === 0;
@@ -156,11 +162,12 @@ async function initCatalogue(catalogue: HTMLElement) {
   }
   function applyFilters() {
     const search = (input?.value || '').trim().toLowerCase();
-    matching = rows.filter(row => (row.dataset.search || '').includes(search) && (!statusFilter || row.dataset.status === statusFilter));
+    matching = rows.filter(row => row.search.includes(search) && (!statusFilter || row.status === statusFilter));
     page = 0;
     render();
   }
-  input?.addEventListener('input', applyFilters);
+  let timer: number | undefined;
+  input?.addEventListener('input', () => { clearTimeout(timer); timer = window.setTimeout(applyFilters, 90); });
   filters.forEach(button => button.addEventListener('click', () => {
     statusFilter = button.dataset.catalogueFilter || '';
     filters.forEach(b => b.setAttribute('aria-pressed', String(b === button)));
