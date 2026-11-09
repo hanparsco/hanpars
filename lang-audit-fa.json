@@ -1,9 +1,9 @@
 {
  "lang": "fa",
- "pages": 5553,
+ "pages": 5555,
  "issues": {
   "description not in target language": {
-   "count": 20,
+   "count": 22,
    "sample": [
     "/fa/insights/2030-vision-the-future-of-china-s-api-industry :: As we look toward 2030, China's Active Pharmaceutical Ingredient (API) industry stands at an inflect",
     "/fa/insights/beyond-generics-china-s-strategic-pivot-to-high-value-api-production :: The landscape of China's Active Pharmaceutical Ingredient (API) industry is undergoing a profound tr",
@@ -15,7 +15,9 @@
     "/fa/insights/cooperation-competition-china-s-api-industry-on-the-world-stage :: The global Active Pharmaceutical Ingredient (API) landscape is characterised by a complex interplay ",
     "/fa/insights/digital-transformation-how-ai-is-revolutionizing-api-development-in-china :: China's Active Pharmaceutical Ingredient (API) industry is experiencing a profound digital transform",
     "/fa/insights/disease-demographics-how-china-s-health-challenges-drive-api-innovation :: China's evolving disease burden is creating a powerful domestic driver for pharmaceutical innovation",
+    "/fa/insights/exporting-apis-to-iran-what-iranian-manufacturers-ask-suppliers-for :: Iran has a large domestic pharmaceutical industry that imports most of its active ingredients. What ",
     "/fa/insights/global-impact-of-chinese-api-exports-and-supply-chain-dynamics :: Chinese APIs power 30-40% of global generics, with exports rising amid quality improvements...",
+    "/fa/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers :: Foreign medicines reach Iran through an IFDA-licensed importer that registers the product, imports i",
     "/fa/insights/key-trends-in-china-s-api-market-for-2025-2026 :: China's API sector grows with focus on sustainability, complex molecules, and regulatory alignment..",
     "/fa/insights/key-trends-shaping-china-s-finished-dosage-formulation-market-in-2025-2026 :: China's finished dosage form sector evolves rapidly with a shift towards high-value, complex formula",
     "/fa/insights/leading-api-manufacturers-in-china-profiles-and-innovations :: Profiling top Chinese API producers like Zhejiang Huahai, CSPC Pharma, and their cutting-edge advanc",
@@ -25,6 +27,17 @@
     "/fa/insights/sustainable-synthesis-green-chemistry-initiatives-in-china-s-api-industry :: China's Active Pharmaceutical Ingredient (API) industry is undergoing a significant transformation t",
     "/fa/insights/the-1-92-billion-opportunity-how-china-s-api-manufacturers-are-capitalizing-on-patent-expirations :: The pharmaceutical industry is approaching a significant patent cliff, with blockbuster drugs worth ",
     "/fa/insights/the-dragon-s-grip-how-china-dominates-global-pharmaceutical-supply-chains :: China's dominance in global pharmaceutical supply chains has reached unprecedented levels, creating "
+   ]
+  },
+  "link leaves the language": {
+   "count": 6,
+   "sample": [
+    "/fa/insights/exporting-apis-to-iran-what-iranian-manufacturers-ask-suppliers-for -> /api",
+    "/fa/insights/exporting-apis-to-iran-what-iranian-manufacturers-ask-suppliers-for -> /china-to-iran",
+    "/fa/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /fdf-cdmo",
+    "/fa/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /china-to-iran",
+    "/fa/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /partners",
+    "/fa/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /regulatory-affairs"
    ]
   }
  },

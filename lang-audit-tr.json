@@ -1,9 +1,9 @@
 {
  "lang": "tr",
- "pages": 5554,
+ "pages": 5556,
  "issues": {
   "description not in target language": {
-   "count": 116,
+   "count": 118,
    "sample": [
     "/tr/api/a-z/a :: Etkin maddeler, harf A",
     "/tr/api/a-z/b :: Etkin maddeler, harf B",
@@ -48,7 +48,7 @@
    ]
   },
   "title not in target language": {
-   "count": 21,
+   "count": 23,
    "sample": [
     "/tr/api :: Etkin maddeler (API) | Hanpars",
     "/tr/insights/2030-vision-the-future-of-china-s-api-industry :: 2030 Vision: The Future of China&#39;s API Industry | Hanpars",
@@ -61,7 +61,9 @@
     "/tr/insights/cooperation-competition-china-s-api-industry-on-the-world-stage :: Cooperation &amp; Competition: China&#39;s API Industry on the World Stage | Hanpars",
     "/tr/insights/digital-transformation-how-ai-is-revolutionizing-api-development-in-china :: Digital Transformation: How AI Is Revolutionising API Development in China | Hanpars",
     "/tr/insights/disease-demographics-how-china-s-health-challenges-drive-api-innovation :: Disease Demographics: How China&#39;s Health Challenges Drive API Innovation | Hanpars",
+    "/tr/insights/exporting-apis-to-iran-what-iranian-manufacturers-ask-suppliers-for :: Exporting APIs to Iran: what Iranian manufacturers ask their suppliers for | Hanpars",
     "/tr/insights/global-impact-of-chinese-api-exports-and-supply-chain-dynamics :: Global Impact of Chinese API Exports and Supply Chain Dynamics | Hanpars",
+    "/tr/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers :: How to register a medicine in Iran: a practical guide for foreign manufacturers | Hanpars",
     "/tr/insights/key-trends-in-china-s-api-market-for-2025-2026 :: Key Trends in China&#39;s API Market for 2025–2026 | Hanpars",
     "/tr/insights/key-trends-shaping-china-s-finished-dosage-formulation-market-in-2025-2026 :: Key Trends Shaping China&#39;s Finished Dosage Formulation Market in 2025–2026 | Hanpars",
     "/tr/insights/leading-api-manufacturers-in-china-profiles-and-innovations :: Leading API Manufacturers in China: Profiles and Innovations | Hanpars",
@@ -71,6 +73,17 @@
     "/tr/insights/sustainable-synthesis-green-chemistry-initiatives-in-china-s-api-industry :: Sustainable Synthesis: Green Chemistry Initiatives in China&#39;s API Industry | Hanpars",
     "/tr/insights/the-1-92-billion-opportunity-how-china-s-api-manufacturers-are-capitalizing-on-patent-expirations :: The Patent-Cliff Opportunity: How China&#39;s API Manufacturers Are Capitalising on Patent Expirations | Hanpars",
     "/tr/insights/the-dragon-s-grip-how-china-dominates-global-pharmaceutical-supply-chains :: The Dragon&#39;s Grip: How China Dominates Global Pharmaceutical Supply Chains | Hanpars"
+   ]
+  },
+  "link leaves the language": {
+   "count": 6,
+   "sample": [
+    "/tr/insights/exporting-apis-to-iran-what-iranian-manufacturers-ask-suppliers-for -> /api",
+    "/tr/insights/exporting-apis-to-iran-what-iranian-manufacturers-ask-suppliers-for -> /china-to-iran",
+    "/tr/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /fdf-cdmo",
+    "/tr/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /china-to-iran",
+    "/tr/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /partners",
+    "/tr/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /regulatory-affairs"
    ]
   },
   "hreflang set incomplete": {
@@ -83,8 +96,8 @@
  "englishLines": {
   "distinct": 5234,
   "top": [
-   "11109× Etkin maddeler (API) :: /tr/about-us, /tr/about-us, /tr/api/a-z/a",
-   "5554× 1.582 maddelik referans yelpazesi :: /tr/about-us, /tr/api/a-z/a, /tr/api/a-z/b",
+   "11113× Etkin maddeler (API) :: /tr/about-us, /tr/about-us, /tr/api/a-z/a",
+   "5556× 1.582 maddelik referans yelpazesi :: /tr/about-us, /tr/api/a-z/a, /tr/api/a-z/b",
    "1584× API referans yelpazesi :: /tr/api/abacavir-sulfate, /tr/api/abaloparatide, /tr/api/abemaciclib",
    "47× enjeksiyonluk liyofilize toz :: /tr/fdf/azacitidine-53632, /tr/fdf/azacitidine-9486, /tr/fdf/azacitidine-9486",
    "27× Seyreltici / dolgu maddesi :: /tr/excipient, /tr/excipient, /tr/excipient",
