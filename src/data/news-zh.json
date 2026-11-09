@@ -1,47 +1,11 @@
 {
- "updated": "2026-11-09T00:07:28Z",
+ "updated": "2026-11-09T07:15:58Z",
  "items": [
-  {
-   "title": "超 20 亿美元！国内 AI 制药新锐达成出海合作",
-   "url": "https://bydrug.pharmcube.com/news/detail/e8df1b624271b7d7275254cae8296c38",
-   "source": "医药魔方",
-   "date": "2026-11-06",
-   "summary": "",
-   "image": "",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-09T00:07:28Z",
-   "imageSource": "",
-   "imageBasis": ""
-  },
-  {
-   "title": "独家专访宋云龙博士：BD累计超78亿美元，AI制药深耕者的第“三”次创业",
-   "url": "https://bydrug.pharmcube.com/news/detail/7eba2dfa735c26e3e8552f07d0017e49",
-   "source": "医药魔方",
-   "date": "2026-11-08",
-   "summary": "",
-   "image": "",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-08T06:44:45Z",
-   "imageSource": "",
-   "imageBasis": ""
-  },
-  {
-   "title": "值得并购的AI药企没几家了",
-   "url": "https://www.vbdata.cn/1519102973",
-   "source": "动脉网",
-   "date": "2026-11-09",
-   "summary": "",
-   "image": "/news/zh-b680ce7fd7.jpg",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-09T00:07:28Z",
-   "imageSource": "https://cdn.vbdata.cn/upload/source/57/33/97/22/63203e6002eda.jpg",
-   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
-  },
   {
    "title": "过去25年，全球获批上市药物的靶点变迁",
    "url": "https://m.36kr.com/p/4057705328236424",
-   "source": "36氪",
-   "date": "2026-11-05",
+   "source": "医药魔方",
+   "date": "2026-11-09",
    "summary": "",
    "image": "",
    "feed": "Google News RSS (zh-CN)",
@@ -50,28 +14,64 @@
    "imageBasis": ""
   },
   {
-   "title": "阿舒克森片进博会举行获批上市庆典，拜耳携手中国卒中专科联盟助力脑卒中防治与百万减残- 进展专区",
-   "url": "https://news.bioon.com/article/4bf195e38428.html",
-   "source": "生物谷",
-   "date": "2026-11-07",
+   "title": "华纳药厂：艾司奥美拉唑镁化学原料药获上市批准",
+   "url": "https://bydrug.pharmcube.com/news/detail/5291ebcc940837224594fa7d07dfeb42",
+   "source": "医药魔方",
+   "date": "2026-11-09",
    "summary": "",
    "image": "",
    "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-09T00:07:28Z",
+   "retrieved": "2026-11-09T07:15:58Z",
    "imageSource": "",
    "imageBasis": ""
   },
   {
-   "title": "一口气布局37个产品，生物类似药十年大单落地！国内军团竞逐全球",
-   "url": "https://www.yyjjb.com.cn/11/05/202611051126282628_28432.shtml",
-   "source": "医药经济报",
-   "date": "2026-11-05",
+   "title": "argenx将以最高11.5亿美元收购Unnatural Products，以推进下一代药物研发",
+   "url": "https://www.vbdata.cn/intelDetail/1142013",
+   "source": "动脉网",
+   "date": "2026-11-08",
    "summary": "",
    "image": "",
    "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-09T00:07:28Z",
+   "retrieved": "2026-11-09T07:15:58Z",
    "imageSource": "",
    "imageBasis": ""
+  },
+  {
+   "title": "中肽生化替度格鲁肽原料药完成美国 FDA DMF电子递交，助力短肠综合征治疗用药可及性",
+   "url": "https://www.vbdata.cn/newsDetail/19f7cbb8d9c011f1a9c800163e034e34",
+   "source": "动脉网",
+   "date": "2026-11-07",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-09T07:15:58Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
+   "title": "诺华与东航物流签署战略合作协议 探索创新药物供应链潜在新路径",
+   "url": "https://www.jiemian.com/article/15310238.html",
+   "source": "界面新闻",
+   "date": "2026-11-07",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-09T07:15:58Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
+   "title": "过去25年全球获批上市药物的靶点变迁全景解析",
+   "url": "https://eu.36kr.com/zh/p/4057705328236424",
+   "source": "36氪",
+   "date": "2026-11-05",
+   "summary": "",
+   "image": "/news/zh-025b999253.jpg",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-09T07:15:58Z",
+   "imageSource": "https://img.36krcdn.com/hsossms/20261106/v2_08e2bd96d1494678ab53d842ec2e29c4@5091053@ai_oswg883156oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
   }
  ]
 }
