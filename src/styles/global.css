@@ -1668,3 +1668,9 @@ html[lang^=zh] .brand .original-logo { width:auto; height:112px; margin:6px 0; }
 .prod-b2b h2 { font-size:21px; margin:0 0 8px; } .prod-b2b p { margin:0; color:var(--muted); line-height:1.8; }
 .prod-b2b-actions { display:flex; gap:18px; align-items:center; flex-wrap:wrap; }
 @media (max-width:760px) { .prod-b2b-inner { grid-template-columns:1fr; padding:22px; } }
+
+/* enquiry form: inline validation and captcha */
+.form-field.has-error input, .form-field.has-error textarea { border-color:#c2321f; box-shadow:0 0 0 3px #c2321f22; }
+.field-error { margin:6px 0 0; font-size:13.5px; color:#b3281a; min-height:0; }
+.field-error:empty { display:none; }
+.form-captcha { margin:6px 0 18px; } .form-captcha.has-error .h-captcha { outline:2px solid #c2321f; outline-offset:4px; border-radius:6px; }

@@ -194,7 +194,7 @@ if (form) {
   const parameters = new URLSearchParams(window.location.search);
   const allowedTypes = ['sourcing','regulatory','cdmo'];
   let type = allowedTypes.includes(parameters.get('type') || '') ? parameters.get('type')! : 'sourcing';
-  const formI18n = JSON.parse(form.dataset.i18n || '{}') as { labels?: Record<string, { product:string; specification:string; message:string; heading:string }>; notConnected?:string; sent?:string; failed?:string; sending?:string; send?:string };
+  const formI18n = JSON.parse(form.dataset.i18n || '{}') as { v?: Record<string, string>; labels?: Record<string, { product:string; specification:string; message:string; heading:string }>; notConnected?:string; sent?:string; failed?:string; sending?:string; send?:string };
   const labels: Record<string, { product:string; specification:string; message:string; heading:string }> = formI18n.labels || {
     sourcing: { product:'Product or ingredient name', specification:'Specification, grade or strength', message:'Documentation needs and other details', heading:'Sourcing enquiry' },
     regulatory: { product:'Product / API / FDF', specification:'Dossier format and current status', message:'Regulatory support needed', heading:'Regulatory affairs enquiry' },
@@ -236,9 +236,25 @@ if (form) {
   chips.forEach(chip => document.getElementById(chip.dataset.chipFor || '')?.addEventListener('input', syncChips));
   const button = form.querySelector<HTMLButtonElement>('[data-send-brief]');
   const formStart = Date.now();
+  // Inline validation: every visible field is required; messages in the page language, shown under the field.
+  const V = formI18n.v || {};
+  const fields = Array.from(form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input:not([type=hidden]):not(.botcheck), textarea'));
+  const errOf = (el: HTMLElement) => { const w = el.closest('.form-field'); let e = w?.querySelector<HTMLElement>('.field-error'); if (!e && w) { e = document.createElement('p'); e.className = 'field-error'; e.setAttribute('role', 'alert'); w.appendChild(e); } return e; };
+  const check = (el: HTMLInputElement | HTMLTextAreaElement) => {
+    const msg = el.validity.valueMissing || (el.required && !el.value.trim()) ? (V.required || 'This field is required.') : el.validity.typeMismatch ? (V.email || 'Please enter a valid email address.') : '';
+    el.closest('.form-field')?.classList.toggle('has-error', !!msg); el.setAttribute('aria-invalid', msg ? 'true' : 'false');
+    const e = errOf(el); if (e) e.textContent = msg; return !msg;
+  };
+  fields.forEach(el => { el.addEventListener('blur', () => check(el)); el.addEventListener('input', () => { if (el.closest('.form-field')?.classList.contains('has-error')) check(el); }); });
   form.addEventListener('submit', async event => {
     event.preventDefault();
-    if (!form.reportValidity()) return;
+    let ok = true, first: HTMLElement | null = null;
+    fields.forEach(el => { if (!check(el)) { ok = false; first ||= el; } });
+    const cap = form.querySelector<HTMLTextAreaElement>('textarea[name="h-captcha-response"]');
+    const capBox = form.querySelector<HTMLElement>('.form-captcha');
+    const capOk = !capBox || (!!cap && cap.value.length > 0);
+    if (capBox) { capBox.classList.toggle('has-error', !capOk); let e = capBox.querySelector<HTMLElement>('.field-error'); if (!e) { e = document.createElement('p'); e.className = 'field-error'; e.setAttribute('role', 'alert'); capBox.appendChild(e); } e.textContent = capOk ? '' : (V.captcha || 'Please tick the “I am human” box.'); }
+    if (!ok || !capOk) { if (status) status.textContent = V.fix || 'Please complete the highlighted fields.'; (first || capBox)?.scrollIntoView({ block: 'center', behavior: 'smooth' }); (first as HTMLInputElement | null)?.focus(); return; }
     // Bot filter: the hidden honeypot is ticked, or the form was "filled" faster than a person can (under 4 s).
     // Pretend success so the bot learns nothing, and send nothing.
     const trap = form.querySelector<HTMLInputElement>('.botcheck');
@@ -263,7 +279,7 @@ if (form) {
       const response = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body:new FormData(form) });
       const result = await response.json().catch(() => ({}));
       if (response.ok && result && result.success === true) {
-        form.reset(); selectType(type); syncChips();
+        form.reset(); selectType(type); syncChips(); try { (window as any).hcaptcha?.reset(); } catch {}
         if (status) status.textContent = formI18n.sent || 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
       } else {
         throw new Error(result.message || 'Submission failed');
