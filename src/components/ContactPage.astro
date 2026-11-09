@@ -25,12 +25,12 @@ const icons: Record<string, string> = {
   clock: sv('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'),
 };
 const vMsg = ({
-  en: { required: 'This field is required.', email: 'Please enter a valid email address.', captcha: 'Please tick the “I am human” box.', fix: 'Please complete the highlighted fields.' },
-  fa: { required: 'پر کردن این فیلد الزامی است.', email: 'نشانی ایمیل معتبر وارد کنید.', captcha: 'لطفاً گزینهٔ «من ربات نیستم» را تأیید کنید.', fix: 'لطفاً فیلدهای مشخص‌شده را کامل کنید.' },
+  en: { required: 'This field is required.', email: 'Please enter a valid email address.', corp: 'Please use your company email address; personal addresses (Gmail, Yahoo, Outlook, etc.) are not accepted.', captcha: 'Please tick the “I am human” box.', fix: 'Please complete the highlighted fields.' },
+  fa: { required: 'پر کردن این فیلد الزامی است.', email: 'نشانی ایمیل معتبر وارد کنید.', corp: 'فقط ایمیل سازمانی پذیرفته می‌شود؛ ایمیل‌های شخصی (Gmail، Yahoo، Outlook و مانند آن) قابل قبول نیست.', captcha: 'لطفاً گزینهٔ «من ربات نیستم» را تأیید کنید.', fix: 'لطفاً فیلدهای مشخص‌شده را کامل کنید.' },
   zh: { required: '此项为必填。', email: '请输入有效的电子邮箱。', captcha: '请完成人机验证。', fix: '请填写标出的必填项。' },
-  tr: { required: 'Bu alan zorunludur.', email: 'Geçerli bir e-posta adresi girin.', captcha: 'Lütfen “Ben robot değilim” kutusunu işaretleyin.', fix: 'Lütfen işaretli alanları doldurun.' },
+  tr: { required: 'Bu alan zorunludur.', email: 'Geçerli bir e-posta adresi girin.', corp: 'Lütfen kurumsal e-posta adresinizi kullanın; kişisel adresler (Gmail, Yahoo, Outlook vb.) kabul edilmez.', captcha: 'Lütfen “Ben robot değilim” kutusunu işaretleyin.', fix: 'Lütfen işaretli alanları doldurun.' },
 } as Record<string, Record<string, string>>)[lang];
-const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, sent: c.sent, failed: c.failed, sending: c.sending, send: c.send, v: vMsg });
+const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, sent: c.sent, failed: c.failed, sending: c.sending, send: c.send, v: vMsg, corpOnly: lang !== 'zh' });
 const privacyNote = ({
         en: 'Privacy: the details you enter are sent through Web3Forms, a form-relay service, to the office e-mail of Haniya Parsan Darou Co. (Hanpars) in Tehran and are used to answer your enquiry. To ask what we hold about you, or to have it deleted, send a request through this form.',
         fa: 'حریم خصوصی: اطلاعاتی که وارد می‌کنید از طریق سرویس ارسال فرم Web3Forms به ایمیل دفتر شرکت هانیا پرسان دارو در تهران فرستاده می‌شود و برای پاسخ به درخواست شما به کار می‌رود. برای اطلاع از اطلاعات ثبت‌شده یا درخواست حذف آن، از همین فرم استفاده کنید.',

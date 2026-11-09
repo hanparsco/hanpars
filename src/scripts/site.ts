@@ -194,7 +194,7 @@ if (form) {
   const parameters = new URLSearchParams(window.location.search);
   const allowedTypes = ['sourcing','regulatory','cdmo'];
   let type = allowedTypes.includes(parameters.get('type') || '') ? parameters.get('type')! : 'sourcing';
-  const formI18n = JSON.parse(form.dataset.i18n || '{}') as { v?: Record<string, string>; labels?: Record<string, { product:string; specification:string; message:string; heading:string }>; notConnected?:string; sent?:string; failed?:string; sending?:string; send?:string };
+  const formI18n = JSON.parse(form.dataset.i18n || '{}') as { v?: Record<string, string>; corpOnly?: boolean; labels?: Record<string, { product:string; specification:string; message:string; heading:string }>; notConnected?:string; sent?:string; failed?:string; sending?:string; send?:string };
   const labels: Record<string, { product:string; specification:string; message:string; heading:string }> = formI18n.labels || {
     sourcing: { product:'Product or ingredient name', specification:'Specification, grade or strength', message:'Documentation needs and other details', heading:'Sourcing enquiry' },
     regulatory: { product:'Product / API / FDF', specification:'Dossier format and current status', message:'Regulatory support needed', heading:'Regulatory affairs enquiry' },
@@ -242,8 +242,11 @@ if (form) {
   setTimeout(() => { const cb = form.querySelector<HTMLElement>('.form-captcha'); if (cb && !cb.querySelector('iframe')) cb.hidden = true; }, 12000);
   const fields = Array.from(form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input:not([type=hidden]):not(.botcheck), textarea'));
   const errOf = (el: HTMLElement) => { const w = el.closest('.form-field'); let e = w?.querySelector<HTMLElement>('.field-error'); if (!e && w) { e = document.createElement('p'); e.className = 'field-error'; e.setAttribute('role', 'alert'); w.appendChild(e); } return e; };
+  // Free/personal mailbox providers: not accepted as a company address (all languages except Chinese, where corporate mail is often on QQ/163)
+  const FREE = /^(gmail|googlemail|yahoo|ymail|rocketmail|hotmail|outlook|live|msn|aol|icloud|me|mac|protonmail|proton|pm|zoho|yandex|mail|gmx|web|inbox|fastmail|tutanota|tuta|hushmail|chmail|email|usa|duck|duckduckgo|hey|mailinator|guerrillamail|10minutemail|temp-mail|yopmail|qq|163|126|foxmail|sina|sohu)\.(com|ru|net|org|ir|me|de|co\.uk|fr|cn|co|io|app|email)$/i;
+  const isFree = (v: string) => { const d = v.trim().toLowerCase().split('@')[1] || ''; return FREE.test(d) || /^(gmail|yahoo|hotmail|outlook|live|icloud|protonmail|yandex|mail|gmx)\./.test(d); };
   const check = (el: HTMLInputElement | HTMLTextAreaElement) => {
-    const msg = el.validity.valueMissing || (el.required && !el.value.trim()) ? (V.required || 'This field is required.') : el.validity.typeMismatch ? (V.email || 'Please enter a valid email address.') : '';
+    const msg = el.validity.valueMissing || (el.required && !el.value.trim()) ? (V.required || 'This field is required.') : el.validity.typeMismatch ? (V.email || 'Please enter a valid email address.') : (formI18n.corpOnly && el.type === 'email' && isFree(el.value)) ? (V.corp || 'Please use your company email address.') : '';
     el.closest('.form-field')?.classList.toggle('has-error', !!msg); el.setAttribute('aria-invalid', msg ? 'true' : 'false');
     const e = errOf(el); if (e) e.textContent = msg; return !msg;
   };
