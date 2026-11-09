@@ -243,7 +243,7 @@ def save_image(url: str, slug: str) -> str:
         from PIL import Image
         data = fetch(url, 25)
         im = Image.open(io.BytesIO(data)).convert('RGB')
-        im.thumbnail((1200, 1200))
+        im.thumbnail((800, 800))
         w, h = im.size
         target = 16 / 10
         if w / h > target:
@@ -252,7 +252,7 @@ def save_image(url: str, slug: str) -> str:
             nh = int(w / target); im = im.crop((0, (h - nh) // 2, w, (h - nh) // 2 + nh))
         IMG_DIR.mkdir(parents=True, exist_ok=True)
         out = IMG_DIR / f'{slug}.jpg'
-        im.save(out, 'JPEG', quality=78, optimize=True)
+        im.save(out, 'JPEG', quality=74, optimize=True, progressive=True)
         return f'/news/{slug}.jpg'
     except Exception as e:
         print(f'  ! image {url[:80]}: {e}', file=sys.stderr)

@@ -123,7 +123,17 @@ async function loadCatalogueRows(catalogue: HTMLElement): Promise<CatRow[]> {
     return fallback();
   }
 }
-for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]')) { void initCatalogue(catalogue); }
+// The full list (~500 KB JSON) is fetched only when the table comes near the viewport or the search box is used,
+// so it never competes with the hero, fonts and first screen on load. The server-rendered first page is shown meanwhile.
+for (const catalogue of document.querySelectorAll<HTMLElement>('[data-catalogue]')) {
+  let started = false;
+  const start = () => { if (started) return; started = true; io?.disconnect(); void initCatalogue(catalogue); };
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(entries => { if (entries.some(e => e.isIntersecting)) start(); }, { rootMargin: '900px 0px' }) : null;
+  if (io) io.observe(catalogue); else start();
+  catalogue.querySelector('[data-catalogue-search]')?.addEventListener('focus', start, { once: true });
+  catalogue.addEventListener('pointerdown', start, { once: true });
+  if (location.hash.length > 1 && catalogue.contains(document.getElementById(location.hash.slice(1)))) start();
+}
 async function initCatalogue(catalogue: HTMLElement) {
   // Only the visible page is in the DOM (the full list is ~4,000 rows): filtering runs on the in-memory array and
   // re-renders 25 rows, so typing stays instant on phones. Input is debounced lightly.

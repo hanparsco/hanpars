@@ -10,7 +10,7 @@ const date = item.date ? new Date(item.date + 'T00:00:00Z').toLocaleDateString(d
 const host = (() => { try { return new URL(item.url).hostname.replace(/^www\./,''); } catch { return ''; } })();
 ---
 <article class:list={['news-card', { 'news-card-dark': dark }]}>
-  <a href={item.url} target="_blank" rel="noopener noreferrer" class="news-figure" tabindex="-1" aria-hidden="true">{item.image ? <img src={item.image} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" width="1200" height="750"/> : <span class="news-placeholder"/>}</a>
+  <a href={item.url} target="_blank" rel="noopener noreferrer" class="news-figure" tabindex="-1" aria-hidden="true">{item.image ? <img src={item.image} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" width="800" height="500"/> : <span class="news-placeholder"/>}</a>
   <div class="news-body">
     <p class="news-meta"><span class="news-source" {...tl}>{item.source}</span>{item.kind === 'press' && <span class="news-kind">{pressLabel}</span>}<time datetime={item.date}>{date}</time></p>
     <h3 {...tl}><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a></h3>

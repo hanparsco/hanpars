@@ -875,9 +875,10 @@ html:is([lang=en],[lang=tr]) :is(input,textarea,select) { font-family:var(--sans
 html:is([lang=en],[lang=tr]) :is(.num,.table-code,.cat-count-badge,.catalogue-count,.mol-keyfacts dd,.mol-table dd,.portfolio-table code,.portfolio-forms dd,.spotlight-figure strong,.hero-meta strong,.catalogue-foot) { font-variant-numeric:tabular-nums; }
 html:is([lang=en],[lang=tr]) :is(.news-summary,.exc-top) { font-family:var(--sans); }
 
-/* ================= Simplified Chinese: Noto Serif SC (hero/intro headings) + Noto Sans SC (text, UI) =================
-   Scoped to .hanpars-zh-hans, which only the header, main and footer of /zh routes carry. Roles use weights 400/500/600 only. */
-.hanpars-zh-hans { --display:'Hanpars Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif; --sans:var(--display); --zh-serif:'Hanpars Noto Serif SC', 'Songti SC', 'SimSun', serif; font-family:var(--sans); font-synthesis:none; }
+/* ================= Simplified Chinese: system CJK fonts (PingFang / YaHei / Noto CJK), serif accent for hero headings =================
+   Scoped to .hanpars-zh-hans, which only the header, main and footer of /zh routes carry. Roles use weights 400/500/600 only.
+   The partitioned Noto SC web fonts (public/fonts/noto-sc, ~1.4 MB per visit) are no longer linked: page weight for /zh dropped by ~70%. */
+.hanpars-zh-hans { --display:'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Noto Sans SC', 'Source Han Sans SC', system-ui, sans-serif; --sans:var(--display); --zh-serif:'Songti SC', 'STSong', 'Noto Serif CJK SC', 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', serif; font-family:var(--sans); font-synthesis:none; }
 main.hanpars-zh-hans { font-size:1.0625rem; line-height:1.8; }
 .hanpars-zh-hans :is(input,textarea,select,button) { font-family:var(--sans); font-synthesis:none; }
 .hanpars-zh-hans :is(h1,h2,h3,h4) { font-family:var(--sans); font-weight:600; letter-spacing:0; }

@@ -146,13 +146,13 @@ def save_image(url: str, slug: str) -> str:
         im = Image.open(io.BytesIO(raw)).convert('RGB')
         w, h = im.size
         if w < 300 or h < 150: return ''
-        target = 1200 / 750
+        target = 800 / 500
         if w / h > target: nw = int(h * target); im = im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h))
         else: nh = int(w / target); im = im.crop((0, (h - nh) // 2, w, (h - nh) // 2 + nh))
-        im = im.resize((1200, 750), Image.LANCZOS)
+        im = im.resize((800, 500), Image.LANCZOS)
         IMG_DIR.mkdir(parents=True, exist_ok=True)
         out = IMG_DIR / f'{slug}.jpg'
-        im.save(out, 'JPEG', quality=78, optimize=True)
+        im.save(out, 'JPEG', quality=74, optimize=True, progressive=True)
         return f'/news/{slug}.jpg'
     except Exception as e:
         print(f'  image failed for {slug}: {e}')
