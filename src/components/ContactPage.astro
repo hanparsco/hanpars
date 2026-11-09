@@ -30,6 +30,12 @@ const vMsg = ({
   zh: { required: '此项为必填。', email: '请输入有效的电子邮箱。', captcha: '请完成人机验证。', fix: '请填写标出的必填项。' },
   tr: { required: 'Bu alan zorunludur.', email: 'Geçerli bir e-posta adresi girin.', corp: 'Lütfen kurumsal e-posta adresinizi kullanın; kişisel adresler (Gmail, Yahoo, Outlook vb.) kabul edilmez.', captcha: 'Lütfen “Ben robot değilim” kutusunu işaretleyin.', fix: 'Lütfen işaretli alanları doldurun.' },
 } as Record<string, Record<string, string>>)[lang];
+const urg = ({
+  en: { label: 'Why is this urgent?', ph: 'For example: a shortage in the market, a hospital tender deadline, a patient on treatment, or a licence that expires soon.' },
+  fa: { label: 'دلیل فوریت چیست؟', ph: 'برای مثال: کمبود در بازار، مهلت مناقصهٔ بیمارستان، بیمار تحت درمان، یا مجوزی که به‌زودی منقضی می‌شود.' },
+  zh: { label: '紧急原因是什么？', ph: '例如：市场短缺、医院招标截止日期、患者正在治疗中，或许可证即将到期。' },
+  tr: { label: 'Neden acil?', ph: 'Örneğin: piyasada yokluk, hastane ihalesi için son tarih, tedavideki bir hasta veya yakında dolacak bir ruhsat.' },
+} as Record<string, { label: string; ph: string }>)[lang];
 const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, sent: c.sent, failed: c.failed, sending: c.sending, send: c.send, v: vMsg, corpOnly: lang !== 'zh' });
 const privacyNote = ({
         en: 'Privacy: the details you enter are sent through Web3Forms, a form-relay service, to the office e-mail of Haniya Parsan Darou Co. (Hanpars) in Tehran and are used to answer your enquiry. To ask what we hold about you, or to have it deleted, send a request through this form.',
@@ -66,7 +72,8 @@ const privacyNote = ({
           <div class="form-field"><label for="brief-spec"><span data-spec-label>{c.spec}</span> <span class="req" aria-hidden="true">*</span></label><input id="brief-spec" name="specification" required placeholder={c.specPh} maxlength="500"/></div>
           <div class="form-field"><label for="brief-quantity"><span data-quantity-label>{c.quantity}</span> <span class="req" aria-hidden="true">*</span></label><input id="brief-quantity" name="quantity" required placeholder={c.quantityPh} maxlength="300"/></div>
           <div class="form-field"><label for="brief-market">{c.market} <span class="req" aria-hidden="true">*</span></label><input id="brief-market" name="market" required placeholder={c.marketPh} maxlength="300"/></div>
-          <div class="form-field"><label for="brief-timing">{c.timing} <span class="req" aria-hidden="true">*</span></label><input id="brief-timing" name="timing" required placeholder={c.timingPh} maxlength="300"/><div class="chips" role="group" aria-label={c.timing}>{c.timingChips.map(v => <button type="button" class="chip" data-chip-for="brief-timing" data-chip-value={v} aria-pressed="false">{v}</button>)}</div></div>
+          <div class="form-field"><label for="brief-timing">{c.timing} <span class="req" aria-hidden="true">*</span></label><input id="brief-timing" name="timing" required placeholder={c.timingPh} maxlength="300"/><div class="chips" role="group" aria-label={c.timing}>{c.timingChips.map(v => <button type="button" class="chip" data-chip-for="brief-timing" data-chip-value={v} aria-pressed="false" data-urgent={v === c.timingChips[0] ? 'true' : undefined}>{v}</button>)}</div></div>
+          <div class="form-field full" id="urgency-field" hidden><label for="brief-urgency">{urg.label} <span class="req" aria-hidden="true">*</span></label><textarea id="brief-urgency" name="urgency_reason" placeholder={urg.ph} maxlength="1000" rows="3"></textarea></div>
           <div class="form-field full"><label for="brief-message"><span data-message-label>{c.message}</span> <span class="req" aria-hidden="true">*</span></label><textarea id="brief-message" name="message" required placeholder={c.messagePh} maxlength="5000" rows="4"></textarea></div>
         </div>
       </fieldset>

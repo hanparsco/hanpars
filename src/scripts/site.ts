@@ -234,6 +234,18 @@ if (form) {
   const syncChips = () => chips.forEach(chip => { const input = document.getElementById(chip.dataset.chipFor || '') as HTMLInputElement | null; chip.setAttribute('aria-pressed', String(!!input && input.value === chip.dataset.chipValue)); });
   chips.forEach(chip => chip.addEventListener('click', () => { const input = document.getElementById(chip.dataset.chipFor || '') as HTMLInputElement | null; if (!input) return; input.value = input.value === chip.dataset.chipValue ? '' : (chip.dataset.chipValue || ''); syncChips(); }));
   chips.forEach(chip => document.getElementById(chip.dataset.chipFor || '')?.addEventListener('input', syncChips));
+  // "Urgent" chosen → ask for the reason (required while the box is shown)
+  const urgField = document.getElementById('urgency-field') as HTMLElement | null;
+  const urgInput = document.getElementById('brief-urgency') as HTMLTextAreaElement | null;
+  const urgentChip = form.querySelector<HTMLButtonElement>('[data-urgent]');
+  const timingInput = document.getElementById('brief-timing') as HTMLInputElement | null;
+  const syncUrgency = () => {
+    const v = (timingInput?.value || '').trim().toLowerCase();
+    const on = !!urgentChip && v === (urgentChip.dataset.chipValue || '').toLowerCase() || /urgent|acil|紧急|فوری/.test(v);
+    if (urgField) urgField.hidden = !on;
+    if (urgInput) { urgInput.required = on; if (!on) { urgInput.value = ''; urgInput.closest('.form-field')?.classList.remove('has-error'); } }
+  };
+  timingInput?.addEventListener('input', syncUrgency); chips.forEach(chip => chip.addEventListener('click', syncUrgency)); syncUrgency();
   const button = form.querySelector<HTMLButtonElement>('[data-send-brief]');
   const formStart = Date.now();
   // Inline validation: every visible field is required; messages in the page language, shown under the field.
@@ -254,7 +266,7 @@ if (form) {
   form.addEventListener('submit', async event => {
     event.preventDefault();
     let ok = true, first: HTMLElement | null = null;
-    fields.forEach(el => { if (!check(el)) { ok = false; first ||= el; } });
+    fields.forEach(el => { if ((el as HTMLElement).closest('[hidden]')) return; if (!check(el)) { ok = false; first ||= el; } });
     const cap = form.querySelector<HTMLTextAreaElement>('textarea[name="h-captcha-response"]');
     const capBox = form.querySelector<HTMLElement>('.form-captcha');
     // the widget is required only when it actually loaded (hCaptcha may be unreachable on some networks); the honeypot and timing checks still apply
@@ -286,7 +298,7 @@ if (form) {
       const response = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body:new FormData(form) });
       const result = await response.json().catch(() => ({}));
       if (response.ok && result && result.success === true) {
-        form.reset(); selectType(type); syncChips(); try { (window as any).hcaptcha?.reset(); } catch {}
+        form.reset(); selectType(type); syncChips(); syncUrgency(); try { (window as any).hcaptcha?.reset(); } catch {}
         if (status) status.textContent = formI18n.sent || 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
       } else {
         throw new Error(result.message || 'Submission failed');

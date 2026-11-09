@@ -108,7 +108,7 @@ export const zh: UI = {
     tabHints: { sourcing: '原料药、成品药、药用辅料、保健品原料', regulatory: '注册资料、IFDA 申报、生命周期管理', cdmo: '开发与合同生产' },
     typeLegend: '咨询类型', step1: '您的需求', step2: '联系方式', optional: '选填', timingChips: ['紧急', '3 个月内', '6 个月以上'],
     name: '您的姓名', company: '公司或机构', email: '电子邮箱', phone: '电话',
-    product: '产品或原料名称', productPh: '例如 INN 名称、原料药或原料名称', spec: '质量标准、等级或规格', specPh: '选填',
+    product: '产品或原料名称', productPh: '例如 INN 名称、原料药或原料名称', spec: '质量标准、等级或规格', specPh: '等级、规格或药典标准',
     quantity: '数量或项目规模', quantityPh: '例如 100 万片', market: '目标市场或目的地', marketPh: '例如 伊朗',
     timing: '时间要求', timingPh: '例如 2027 年第一季度', message: '文件需求及其他详情', messagePh: '质量标准、文件、注册资料进度，或您需要的支持。',
     send: '提交询盘', sending: '发送中…', orEmail: '或发送邮件至', disclaimer: '请勿填写敏感的个人或医疗信息。提交询盘不构成对报价、供应或交期的确认。',
