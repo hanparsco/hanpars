@@ -42,12 +42,12 @@ export function productSeo(entry: { name: string; code: string }, lang: Lang, in
   const ind0 = lang === 'en' ? (en?.indications || '') : (fa?.indications || en?.indications || '');
   const ind = ind0.replace(/^\s*(موارد مصرف|适应症(?:[与和及]用法(?:用量)?)?|Endikasyonlar(?: ve kullanım)?|Indications(?: and usage)?)\s*[:：]\s*/i, '');
   const description = lang === 'zh'
-    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}，编号 ${entry.code}，${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '，' + strength : ''}${p.pack ? '，' + p.pack : ''}。${ind ? '适应症：' + ind + ' ' : ''}汉帕斯负责该产品在伊朗市场的采购、进口与注册，可提供紧急进口及相关文件支持。`, 150)
+    ? clip(`${nameFa ? nameFa + '（' + name + '）' : name}${fForm ? fForm : ''}${strength ? ' ' + strength : ''}${p.pack ? '，' + p.pack : ''}：伊朗药品目录编号 ${entry.code}。汉帕斯负责该药品在伊朗的采购、进口与注册，欢迎中国生产企业洽谈出口伊朗。${ind ? '适应症：' + ind : ''}`, 150)
     : lang === 'tr'
     ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}, kod ${entry.code}, ${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? ', ' + strength : ''}${p.pack ? ', ' + p.pack : ''}. ${ind ? 'Endikasyonlar: ' + ind + ' ' : ''}İran’da tedarik ve ithalat: Hanpars.`, 158)
     : lang === 'fa'
     ? clip(`${nameFa ? nameFa + ' (' + name + ')' : name}، کد ${entry.code}، ${fForm}${fRoute ? ' ' + fRoute : ''}${strength ? '، ' + strength : ''}${p.pack ? '، ' + p.pack : ''}. ${ind ? 'موارد مصرف: ' + ind + ' ' : ''}تأمین و واردات توسط هانیا پرسان دارو.`, 158)
-    : clip(`${name} (code ${entry.code}) ${prettyName(p.form)}${strength ? ' ' + strength : ''}${p.pack ? ', ' + p.pack : ''}. ${ind ? 'Indications: ' + ind + ' ' : ''}Sourcing and import in Iran by Hanpars.`, 158);
+    : clip(`${name} ${prettyName(p.form)}${strength ? ' ' + strength : ''}${p.pack ? ', ' + p.pack : ''} (Iran drug code ${entry.code}): sourcing, import and supply in Iran by Hanpars. ${ind ? 'Indications: ' + ind : ''}`, 158);
   const nl = nameFa || name;
   const keywords = lang === 'zh'
     ? [nameFa, name, `${nl}${fFormShort}`, `${nl}供应商`, `${nl}出口伊朗`, `伊朗${nl}进口`, `${nl} ${strength}`, '伊朗药品进口', '伊朗药品注册', '汉帕斯'].filter(Boolean).join('，')
@@ -81,12 +81,12 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
   const pick = (c: string[]) => c.find(x => x.length <= 65) || c[c.length - 1];
   const cas = mol.cas ? ` CAS ${mol.cas}` : '';
   const title = lang === 'zh'
-    ? pick([nameFa ? `${nameFa}（${name}）${cas} | 原料药供应 | 汉帕斯` : '', `${nameFa || name}${cas} | 原料药 | 汉帕斯`, `${nameFa || name}${cas}`].filter(Boolean))
+    ? pick([nameFa ? `${nameFa}原料药（${name}）${cas} | 生产厂家与供应商 | 出口伊朗 | 汉帕斯` : '', nameFa ? `${nameFa}原料药（${name}）${cas} | 生产厂家与供应商 | 汉帕斯` : '', nameFa ? `${nameFa}原料药（${name}）${cas} | 汉帕斯` : '', `${nameFa || name}原料药${cas} | 汉帕斯`, `${nameFa || name}${cas}`].filter(Boolean))
     : lang === 'tr'
     ? pick([nameFa && nameFa.toLowerCase() !== name.toLowerCase() ? `${nameFa} (${name})${cas} | Hanpars` : '', `${nameFa || name}${cas} | Etkin madde tedariki | Hanpars`, `${nameFa || name}${cas} | Hanpars`, `${nameFa || name}${cas}`].filter(Boolean))
     : lang === 'fa'
     ? pick([nameFa ? `${nameFa} (${name})${cas} | تأمین API | هانیا پرسان دارو` : '', nameFa ? `${nameFa} (${name})${cas} | تأمین API` : '', `${nameFa || name}${cas} | مادهٔ مؤثره | هانیا پرسان دارو`, `${nameFa || name}${cas} | تأمین API`, `${nameFa || name}${cas}`].filter(Boolean))
-    : pick([`${name}${cas ? ' (' + cas.trim() + ')' : ''} | API supplier | Hanpars`, `${name}${cas ? ' (' + cas.trim() + ')' : ''} | Hanpars`, `${name}${cas ? ' (' + cas.trim() + ')' : ''}`]);
+    : pick([`${name} API${cas ? ' (' + cas.trim() + ')' : ''} | Manufacturers & suppliers for Iran | Hanpars`, `${name} API${cas ? ' (' + cas.trim() + ')' : ''} | Suppliers for Iran | Hanpars`, `${name} API${cas ? ' (' + cas.trim() + ')' : ''} | Supplier | Hanpars`, `${name} API | Supplier | Hanpars`, `${name} API${cas ? ' (' + cas.trim() + ')' : ''}`]);
   const keywords = lang === 'zh'
     ? [nameFa, name, mol.cas, `${nameFa || name}原料药`, `${nameFa || name}原料药供应商`, `${nameFa || name} CAS ${mol.cas || ''}`.trim(), `${nameFa || name}出口伊朗`, '原料药出口伊朗', '汉帕斯'].filter(Boolean).join('，')
     : lang === 'tr'
@@ -104,12 +104,12 @@ export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) 
     return clip(`${head}${sp}${ts[ts.length - 1]}`.trim(), n);
   };
   const description = lang === 'zh'
-    ? compose(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。`, faDesc, ['汉帕斯为伊朗制药企业采购该原料药，可提供 DMF/CEP、GMP 证书及分析证书（COA），并协助在伊朗食品药品监督管理局注册与进口。', '汉帕斯提供附 DMF/CEP 和 GMP 文件的原料药供应。'], 120, '')
+    ? compose(`${nameFa ? nameFa + '（' + name + '）' : name}${mol.cas ? '，CAS 号 ' + mol.cas : ''}${mol.formula ? '，分子式 ' + mol.formula : ''}。`, faDesc, ['汉帕斯从中国、印度、土耳其和欧洲 GMP 生产厂家采购该原料药供伊朗制药企业使用，附 DMF/CEP、GMP 证书及 COA，并办理进口与注册。欢迎生产厂家联系供货。', '汉帕斯采购该原料药出口伊朗，附 DMF/CEP 和 GMP 文件；欢迎生产厂家联系。'], 120, '')
     : lang === 'tr'
     ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, faDesc, ['İran’daki ilaç üreticileri için DMF/CEP, GMP ve analiz sertifikalı etkin madde tedariki ve ithalatı: Hanpars.', 'DMF/CEP ve GMP belgeli etkin madde tedariki: Hanpars.'], 160)
     : lang === 'fa'
     ? compose(`${nameFa ? nameFa + ' (' + name + ')' : name}${mol.cas ? '، شمارهٔ CAS ' + mol.cas : ''}${mol.formula ? '، فرمول ' + mol.formula : ''}.`, faDesc, ['تأمین و واردات مادهٔ مؤثره (API) برای تولیدکنندگان دارو در ایران، با مستندات DMF/CEP، گواهی GMP و COA، توسط هانیا پرسان دارو.', 'تأمین مادهٔ مؤثره (API) با مستندات DMF/CEP و GMP توسط هانیا پرسان دارو.'], 160)
-    : compose(`${name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, mol.description, ['API sourcing for manufacturers in Iran, with DMF/CEP, GMP and CoA documentation from qualified suppliers: Hanpars.', 'API sourcing with DMF/CEP and GMP documentation by Hanpars.'], 160);
+    : compose(`${name}${mol.cas ? ', CAS ' + mol.cas : ''}${mol.formula ? ', ' + mol.formula : ''}.`, mol.description, ['Sourced from GMP manufacturers in China, India, Türkiye and Europe, with DMF/CEP, GMP certificate and CoA. Import and IFDA support for Iran: Hanpars.', 'GMP manufacturers in China, India, Türkiye and Europe, with DMF/CEP and CoA: Hanpars.'], 160);
   const schema = mol.cid ? {
     '@context': 'https://schema.org', '@type': 'ChemicalSubstance', name, identifier: mol.cas || undefined,
     alternateName: [...(nameFa ? [nameFa] : []), ...(mol.synonyms || []).slice(0, 5)], molecularFormula: mol.formula || undefined, molecularWeight: mol.mw ? `${mol.mw} g/mol` : undefined,

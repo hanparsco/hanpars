@@ -1663,3 +1663,8 @@ html[lang^=zh] .brand .original-logo { width:auto; height:112px; margin:6px 0; }
 #product-portfolio .pc-photo-empty { display:flex; flex-direction:column; gap:10px; align-items:center; justify-content:center; color:#a39b8c; font-size:13.5px; }
 #product-portfolio .pc-photo-empty svg { opacity:.65; }
 #product-portfolio .pc-brand { display:block; margin:0 0 4px; font-size:13.5px; font-weight:600; color:var(--lapis-deep); }
+/* Persian product pages: enquiry band for distributors, hospitals and pharmacies */
+.prod-b2b-inner { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:20px 40px; align-items:center; padding:26px 28px; border-radius:20px; background:var(--paper); border:1px solid var(--line); }
+.prod-b2b h2 { font-size:21px; margin:0 0 8px; } .prod-b2b p { margin:0; color:var(--muted); line-height:1.8; }
+.prod-b2b-actions { display:flex; gap:18px; align-items:center; flex-wrap:wrap; }
+@media (max-width:760px) { .prod-b2b-inner { grid-template-columns:1fr; padding:22px; } }

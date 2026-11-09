@@ -1,6 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import { cdmo } from '../data/cdmo';
+import { cdmoFaq } from '../data/cdmo-faq';
 import { langFromPath, localePath } from '../i18n';
 const lang = langFromPath(Astro.url.pathname) as 'en' | 'fa' | 'zh' | 'tr';
 const c = cdmo[lang] || cdmo.en;
@@ -9,6 +10,8 @@ const num = (i: number) => (lang === 'fa' ? String(i + 1) : String(i + 1).padSta
 const svcIcons = ['search', 'shield', 'molecule', 'layers', 'file', 'globe'];
 const formIcons = ['capsule', 'shield', 'box'];
 const routeIcons = ['globe', 'layers', 'shield'];
+const faq = cdmoFaq[lang] || cdmoFaq.en;
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.items.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
 const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور رگولاتوری', zh: '注册事务', tr: 'Ruhsatlandırma hizmetleri' } as const)[lang];
 ---
 <section class="section cd-intro">
@@ -113,6 +116,14 @@ const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور �
   </div>
 </section>
 
+<section class="section cd-faq-sec">
+  <div class="container cd-faq-grid">
+    <h2>{faq.title}</h2>
+    <div class="cd-faq">{faq.items.map(f => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+  </div>
+</section>
+<script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+
 <section class="section cd-brief-sec">
   <div class="container cd-brief">
     <div>
@@ -127,6 +138,12 @@ const regLink = ({ en: 'Regulatory affairs services', fa: 'خدمات امور �
 </section>
 
 <style>
+  .cd-faq-grid { display:grid; grid-template-columns:minmax(0,4fr) minmax(0,8fr); gap:clamp(24px,4vw,56px); align-items:start; }
+  .cd-faq details { border-top:1px solid var(--line); padding:16px 0; } .cd-faq details:last-child { border-bottom:1px solid var(--line); }
+  .cd-faq summary { cursor:pointer; font-weight:600; font-size:17px; list-style:none; display:flex; justify-content:space-between; gap:16px; }
+  .cd-faq summary::after { content:'+'; color:var(--lapis); font-weight:500; } .cd-faq details[open] summary::after { content:'–'; }
+  .cd-faq p { margin:12px 0 0; color:var(--muted); line-height:1.65; max-width:72ch; }
+  @media (max-width:860px) { .cd-faq-grid { grid-template-columns:1fr; } }
   .cd-kicker { margin:0 0 14px; font:600 13px/1.4 var(--sans); letter-spacing:.08em; text-transform:uppercase; color:var(--lapis); }
   :global([dir=rtl]) .cd-kicker, :global(html[lang^=zh]) .cd-kicker { letter-spacing:0; text-transform:none; font-size:14px; }
   .cd-intro-grid { display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:clamp(28px,5vw,72px); align-items:start; }

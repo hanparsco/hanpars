@@ -28,6 +28,14 @@ const enquiry = L(`/contact-us-1?type=sourcing&product=${encodeURIComponent(mol.
 const num = (v: number | null | undefined, d = 1) => (v === null || v === undefined) ? '—' : Number(v).toLocaleString('en-US', { maximumFractionDigits: d });
 const locTitle0 = lang === 'en' ? '' : (locName(lang, displayName) || locName(lang, mol.name) || '');
 const locTitle = lang === 'tr' && locTitle0 ? locTitle0.charAt(0).toLocaleUpperCase('tr') + locTitle0.slice(1) : locTitle0;
+const nmL = (lang !== 'en' && locTitle) ? locTitle : displayName;
+const supplyH = ({ en: `${displayName} API manufacturers and suppliers`, fa: `تأمین مادهٔ مؤثرهٔ ${nmL}: تولیدکنندگان و تأمین‌کنندگان`, zh: `${nmL}原料药生产厂家与供应商`, tr: `${nmL} etkin madde üreticileri ve tedarikçileri` } as Record<string, string>)[lang];
+const supplyP = ({
+  en: `Hanpars sources ${displayName} API from GMP manufacturers in China, India, Türkiye and Europe for pharmaceutical companies in Iran. Each offer comes with the supplier's documentation (DMF or CEP where available, GMP certificate and certificate of analysis), and we handle import and the IFDA paperwork. Send the grade, quantity and specification you need. Manufacturers of ${displayName} who want to supply Iran are also welcome to contact us.`,
+  fa: `هانیا پرسان دارو مادهٔ مؤثرهٔ ${nmL} را از تولیدکنندگان دارای GMP در چین، هند، ترکیه و اروپا برای شرکت‌های داروسازی ایران تأمین می‌کند. هر پیشنهاد همراه با مستندات تأمین‌کننده (DMF یا CEP در صورت وجود، گواهی GMP و COA) است و واردات و امور سازمان غذا و دارو با ماست. گرید، مقدار و مشخصات مورد نیاز را برای استعلام بفرستید.`,
+  zh: `汉帕斯为伊朗制药企业采购${nmL}原料药，货源来自中国、印度、土耳其和欧洲的 GMP 生产厂家。每份报价均附供应商文件（如有 DMF 或 CEP、GMP 证书和分析证书 COA），进口及伊朗食品药品监督管理局（IFDA）相关手续由我们办理。欢迎${nmL}原料药生产厂家与我们联系，向伊朗市场供货。`,
+  tr: `Hanpars, İran’daki ilaç şirketleri için ${nmL} etkin maddesini Çin, Hindistan, Türkiye ve Avrupa’daki GMP üreticilerinden tedarik eder. Her teklif tedarikçinin belgeleriyle (varsa DMF veya CEP, GMP sertifikası ve analiz sertifikası) gelir; ithalatı ve IFDA işlemlerini biz yürütürüz. ${nmL} üreten ve İran’a tedarik etmek isteyen üreticiler de bizimle iletişime geçebilir.`,
+} as Record<string, string>)[lang];
 const esc = (x: string) => x.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const nameBoth = locTitle ? (lang === 'zh' ? `${locTitle}（${displayName}）` : `${locTitle} (${displayName})`) : displayName;
 const seoNote = ({
@@ -58,6 +66,7 @@ const seoNote = ({
   <div class="mol-main api-main">
     {(faDesc || mol.description) && <section class="pd-sec pd-moa mol-about"><h2><span class="pd-ico"><Icon name="molecule" size={18}/></span>{m.about}</h2>{faDesc ? <p>{faDesc}</p> : <p lang="en" dir="ltr">{mol.description}</p>}{mol.descriptionSource && <p class="form-hint">{m.source}: {mol.descriptionSource}{viaPubchem}</p>}</section>}
     {mol.parentMatch && <p class="archive-note">{m.parentNote(mol.matched || '')}</p>}
+    <section class="pd-sec mol-supply"><h2><span class="pd-ico"><Icon name="globe" size={18}/></span>{supplyH}</h2><p>{supplyP}</p></section>
     <section class="pd-sec api-ids"><h2><span class="pd-ico"><Icon name="file" size={18}/></span>{m.identifiers}</h2>
     <dl class="mol-table">
       {mol.iupac && <div><dt>{m.iupac}</dt><dd lang="en" dir="ltr" class="mol-wrap">{mol.iupac}</dd></div>}

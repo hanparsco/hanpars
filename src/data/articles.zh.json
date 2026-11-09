@@ -1,29 +1,106 @@
 {
  "_note": "Chinese titles and summaries for the 2025 insight archive (the article bodies remain in English). Keyed by slug.",
  "categories": {
-  "Market Trends": "市场趋势", "Global Expansion": "国际化", "Innovation & Technology": "创新与技术", "API Trends": "原料药趋势", "Manufacturer Spotlight": "企业观察",
-  "Regulatory Updates": "监管动态", "Market Analysis": "市场分析", "Supply Chain": "供应链", "Therapeutic Focus": "治疗领域"
+  "Market Trends": "市场趋势",
+  "Global Expansion": "国际化",
+  "Innovation & Technology": "创新与技术",
+  "API Trends": "原料药趋势",
+  "Manufacturer Spotlight": "企业观察",
+  "Regulatory Updates": "监管动态",
+  "Market Analysis": "市场分析",
+  "Supply Chain": "供应链",
+  "Therapeutic Focus": "治疗领域"
  },
  "articles": {
-  "key-trends-shaping-china-s-finished-dosage-formulation-market-in-2025-2026": { "title": "2025–2026 年中国制剂市场的主要趋势", "excerpt": "中国制剂行业正向高附加值、复杂制剂和创新产品转型，监管改革和集采持续重塑市场格局。" },
-  "chinese-finished-dosage-formulations-going-global-export-growth-and-international-impact": { "title": "中国制剂走向国际：出口增长与海外影响", "excerpt": "中国制剂企业通过质量升级和国际认证扩大出口，在新兴市场和规范市场的份额持续上升。" },
-  "china-as-an-innovator-in-finished-dosage-formulations-from-generics-to-cutting-edge-therapies": { "title": "从仿制到创新：中国制剂企业的技术升级", "excerpt": "生物类似药、复杂仿制药和新型给药系统成为中国制剂企业研发投入的重点。" },
-  "key-trends-in-china-s-api-market-for-2025-2026": { "title": "2025–2026 年中国原料药市场的主要趋势", "excerpt": "中国原料药行业在环保要求、复杂分子和监管接轨方面持续调整，产能向高质量产品集中。" },
-  "leading-api-manufacturers-in-china-profiles-and-innovations": { "title": "中国主要原料药企业概览", "excerpt": "浙江华海、石药集团等主要原料药生产企业的业务布局、认证情况与技术特点。" },
-  "global-impact-of-chinese-api-exports-and-supply-chain-dynamics": { "title": "中国原料药出口与全球供应链", "excerpt": "中国原料药支撑全球约三至四成的仿制药生产，出口在质量提升的同时持续增长。" },
-  "regulatory-changes-impacting-china-s-api-sector": { "title": "影响中国原料药行业的监管变化", "excerpt": "NMPA 的一系列改革推动中国原料药行业与国际标准接轨，带动质量和出口能力提升。" },
-  "sustainability-initiatives-in-chinese-api-production": { "title": "中国原料药生产中的绿色化学与可持续发展", "excerpt": "在环保压力下，中国原料药企业推进绿色化学、减排和废弃物管理。" },
-  "china-s-api-market-in-2025-a-15-97-billion-industry-poised-for-growth": { "title": "2025 年中国原料药市场：规模与增长前景", "excerpt": "中国原料药市场规模约 160 亿美元，增长动力来自出口、专利到期和高附加值产品。" },
-  "regulatory-evolution-how-china-s-new-api-policies-are-reshaping-the-global-pharmaceutical-landscape": { "title": "监管演进：中国原料药新政的国际影响", "excerpt": "登记备案制、关联审评和 GMP 检查的变化如何影响中国原料药在全球市场的地位。" },
-  "beyond-generics-china-s-strategic-pivot-to-high-value-api-production": { "title": "超越仿制：中国原料药向高附加值产品转型", "excerpt": "中国原料药企业从大宗产品转向特色原料药、高活性原料药和多肽等高附加值领域。" },
-  "capital-influx-major-investments-reshaping-china-s-api-manufacturing-capabilities": { "title": "资本投入重塑中国原料药产能", "excerpt": "近年的重大投资项目正在提升中国原料药行业的产能、自动化水平和合规能力。" },
-  "the-dragon-s-grip-how-china-dominates-global-pharmaceutical-supply-chains": { "title": "中国在全球医药供应链中的地位", "excerpt": "中国在原料药、中间体和起始物料供应中的份额，以及各国供应链多元化政策的影响。" },
-  "the-1-92-billion-opportunity-how-china-s-api-manufacturers-are-capitalizing-on-patent-expirations": { "title": "专利到期带来的机会：中国原料药企业的布局", "excerpt": "专利悬崖为中国原料药企业带来新的仿制药原料需求，领先企业已提前布局。" },
-  "disease-demographics-how-china-s-health-challenges-drive-api-innovation": { "title": "疾病谱变化如何推动中国原料药创新", "excerpt": "人口老龄化和慢性病负担推动中国原料药企业聚焦心血管、代谢和肿瘤领域。" },
-  "biological-revolution-china-s-emerging-leadership-in-biologic-apis": { "title": "生物制药原料：中国的新兴优势", "excerpt": "中国在生物类似药和生物药原液生产方面的能力快速提升。" },
-  "sustainable-synthesis-green-chemistry-initiatives-in-china-s-api-industry": { "title": "绿色合成：中国原料药行业的绿色化学实践", "excerpt": "连续流工艺、酶催化和溶剂回收等绿色化学技术在中国原料药企业中的应用。" },
-  "digital-transformation-how-ai-is-revolutionizing-api-development-in-china": { "title": "数字化转型：人工智能在中国原料药研发中的应用", "excerpt": "人工智能和数字化工具如何缩短中国原料药的工艺开发周期并提高质量控制水平。" },
-  "cooperation-competition-china-s-api-industry-on-the-world-stage": { "title": "合作与竞争：中国原料药行业的国际环境", "excerpt": "中国原料药企业与印度、欧洲同行的竞争与合作，以及对下游市场的影响。" },
-  "2030-vision-the-future-of-china-s-api-industry": { "title": "2030 年展望：中国原料药行业的未来", "excerpt": "未来五年中国原料药行业在技术、监管和国际化方面的可能走向。" }
+  "key-trends-shaping-china-s-finished-dosage-formulation-market-in-2025-2026": {
+   "title": "2025–2026 年中国制剂市场的主要趋势",
+   "excerpt": "中国制剂行业正向高附加值、复杂制剂和创新产品转型，监管改革和集采持续重塑市场格局。"
+  },
+  "chinese-finished-dosage-formulations-going-global-export-growth-and-international-impact": {
+   "title": "中国制剂走向国际：出口增长与海外影响",
+   "excerpt": "中国制剂企业通过质量升级和国际认证扩大出口，在新兴市场和规范市场的份额持续上升。"
+  },
+  "china-as-an-innovator-in-finished-dosage-formulations-from-generics-to-cutting-edge-therapies": {
+   "title": "从仿制到创新：中国制剂企业的技术升级",
+   "excerpt": "生物类似药、复杂仿制药和新型给药系统成为中国制剂企业研发投入的重点。"
+  },
+  "key-trends-in-china-s-api-market-for-2025-2026": {
+   "title": "2025–2026 年中国原料药市场的主要趋势",
+   "excerpt": "中国原料药行业在环保要求、复杂分子和监管接轨方面持续调整，产能向高质量产品集中。"
+  },
+  "leading-api-manufacturers-in-china-profiles-and-innovations": {
+   "title": "中国主要原料药企业概览",
+   "excerpt": "浙江华海、石药集团等主要原料药生产企业的业务布局、认证情况与技术特点。"
+  },
+  "global-impact-of-chinese-api-exports-and-supply-chain-dynamics": {
+   "title": "中国原料药出口与全球供应链",
+   "excerpt": "中国原料药支撑全球约三至四成的仿制药生产，出口在质量提升的同时持续增长。"
+  },
+  "regulatory-changes-impacting-china-s-api-sector": {
+   "title": "影响中国原料药行业的监管变化",
+   "excerpt": "NMPA 的一系列改革推动中国原料药行业与国际标准接轨，带动质量和出口能力提升。"
+  },
+  "sustainability-initiatives-in-chinese-api-production": {
+   "title": "中国原料药生产中的绿色化学与可持续发展",
+   "excerpt": "在环保压力下，中国原料药企业推进绿色化学、减排和废弃物管理。"
+  },
+  "china-s-api-market-in-2025-a-15-97-billion-industry-poised-for-growth": {
+   "title": "2025 年中国原料药市场：规模与增长前景",
+   "excerpt": "中国原料药市场规模约 160 亿美元，增长动力来自出口、专利到期和高附加值产品。"
+  },
+  "regulatory-evolution-how-china-s-new-api-policies-are-reshaping-the-global-pharmaceutical-landscape": {
+   "title": "监管演进：中国原料药新政的国际影响",
+   "excerpt": "登记备案制、关联审评和 GMP 检查的变化如何影响中国原料药在全球市场的地位。"
+  },
+  "beyond-generics-china-s-strategic-pivot-to-high-value-api-production": {
+   "title": "超越仿制：中国原料药向高附加值产品转型",
+   "excerpt": "中国原料药企业从大宗产品转向特色原料药、高活性原料药和多肽等高附加值领域。"
+  },
+  "capital-influx-major-investments-reshaping-china-s-api-manufacturing-capabilities": {
+   "title": "资本投入重塑中国原料药产能",
+   "excerpt": "近年的重大投资项目正在提升中国原料药行业的产能、自动化水平和合规能力。"
+  },
+  "the-dragon-s-grip-how-china-dominates-global-pharmaceutical-supply-chains": {
+   "title": "中国在全球医药供应链中的地位",
+   "excerpt": "中国在原料药、中间体和起始物料供应中的份额，以及各国供应链多元化政策的影响。"
+  },
+  "the-1-92-billion-opportunity-how-china-s-api-manufacturers-are-capitalizing-on-patent-expirations": {
+   "title": "专利到期带来的机会：中国原料药企业的布局",
+   "excerpt": "专利悬崖为中国原料药企业带来新的仿制药原料需求，领先企业已提前布局。"
+  },
+  "disease-demographics-how-china-s-health-challenges-drive-api-innovation": {
+   "title": "疾病谱变化如何推动中国原料药创新",
+   "excerpt": "人口老龄化和慢性病负担推动中国原料药企业聚焦心血管、代谢和肿瘤领域。"
+  },
+  "biological-revolution-china-s-emerging-leadership-in-biologic-apis": {
+   "title": "生物制药原料：中国的新兴优势",
+   "excerpt": "中国在生物类似药和生物药原液生产方面的能力快速提升。"
+  },
+  "sustainable-synthesis-green-chemistry-initiatives-in-china-s-api-industry": {
+   "title": "绿色合成：中国原料药行业的绿色化学实践",
+   "excerpt": "连续流工艺、酶催化和溶剂回收等绿色化学技术在中国原料药企业中的应用。"
+  },
+  "digital-transformation-how-ai-is-revolutionizing-api-development-in-china": {
+   "title": "数字化转型：人工智能在中国原料药研发中的应用",
+   "excerpt": "人工智能和数字化工具如何缩短中国原料药的工艺开发周期并提高质量控制水平。"
+  },
+  "cooperation-competition-china-s-api-industry-on-the-world-stage": {
+   "title": "合作与竞争：中国原料药行业的国际环境",
+   "excerpt": "中国原料药企业与印度、欧洲同行的竞争与合作，以及对下游市场的影响。"
+  },
+  "2030-vision-the-future-of-china-s-api-industry": {
+   "title": "2030 年展望：中国原料药行业的未来",
+   "excerpt": "未来五年中国原料药行业在技术、监管和国际化方面的可能走向。"
+  },
+  "how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers": {
+   "title": "如何在伊朗注册药品：外国生产企业实用指南",
+   "excerpt": "外国药品须通过持有伊朗食品药品监督管理局（IFDA）进口许可的伊朗公司进入市场，由其注册、进口并承担上市后责任。本文介绍注册路径、关键文件和常见卡点。",
+   "content": "\n<p>在伊朗销售的每一种药品都必须在伊朗食品药品监督管理局（IFDA）注册。外国生产企业不能自己持有注册：须通过一家持有 IFDA 药品进口许可的伊朗公司，由其递交注册资料、取得产品 IRC 编码、负责进口，并对上市产品承担责任。</p>\n<h4>一、先选定进口商</h4>\n<p>进口商实际上就是您在伊朗的注册持有人。应选择已持有 IFDA 进口许可、有自己的注册团队、能开展药物警戒、并有通往医院和药店的分销渠道的公司。双方应书面约定注册资料、定价文件、进口许可、仓储、召回和投诉的分工。随后由生产企业为该产品出具指定该进口商的<strong>授权书（LoA）</strong>。</p>\n<h4>二、准备注册资料</h4>\n<ul>\n<li><strong>CTD 资料</strong>（按需包括第 1–5 模块）：原料药和制剂的质量资料、覆盖所申报有效期和气候带的稳定性数据，以及需要时的临床或生物等效性资料。</li>\n<li><strong>原产国注册证明</strong>，通常为药品证书（CPP）或自由销售证明。</li>\n<li>生产场地的 <strong>GMP 证明</strong>；IFDA 可能要求现场检查，或认可公认监管机构签发的证书。</li>\n<li>可加印伊朗市场要求的波斯语标签和说明书的<strong>包装设计</strong>。</li>\n</ul>\n<h4>三、注册、定价与 IRC 编码</h4>\n<p>进口商向 IFDA 递交资料、答复问题并准备定价文件。产品获批后取得 IRC 编码，该编码印在每个包装上，用于伊朗供应链追溯。</p>\n<h4>四、紧急进口：更快的第一步</h4>\n<p>对于短缺或尚未注册的药品，IFDA 允许持证进口商按明确需求进行<strong>紧急进口</strong>。在正式注册进行期间，这是向市场供货的可行方式，但不能替代正式注册。</p>\n<h4>五、项目常见卡点</h4>\n<ul>\n<li>CPP 或 GMP 证书过期，或与资料中的具体产品和场地不一致。</li>\n<li>稳定性数据未覆盖所申报的有效期或气候带。</li>\n<li>生产企业与进口商之间未约定药物警戒和召回责任。</li>\n<li>所选进口商没有注册人员，IFDA 的问题几个月得不到答复。</li>\n</ul>\n<h4>在伊朗授权生产</h4>\n<p>伊朗所用药品大部分在国内生产，政策也倾向本地化。对许多产品而言，长期更有利的路径是由伊朗 GMP 工厂授权生产，外国企业保留品牌和质量标准。详见<a href=\"/zh/fdf-cdmo#licensed-manufacturing\">在伊朗授权生产</a>。</p>\n<p>汉帕斯是持有 IFDA 进口许可并拥有自己注册团队的伊朗进口商。中国企业的具体步骤请见<a href=\"/zh/china-to-iran\">中国药品和原料药出口伊朗指南</a>；我们作为合作方承担的工作请见<a href=\"/zh/partners\">致外国生产企业</a>和<a href=\"/zh/regulatory-affairs\">注册事务</a>。</p>\n"
+  },
+  "exporting-apis-to-iran-what-iranian-manufacturers-ask-suppliers-for": {
+   "title": "原料药出口伊朗：伊朗制药企业向供应商要什么",
+   "excerpt": "伊朗制剂产业规模大，原料药大部分依赖进口。买方下单前查看哪些内容、哪些文件决定成交，以及进口如何进行。",
+   "content": "\n<p>伊朗生产的制剂占其用药的大部分，但所用原料药大多依赖进口，主要来自中国和印度。对原料药生产厂家而言，伊朗是由众多工业买方构成的市场，而不是一次性招标；买方偏重技术，质量和注册团队的意见先于采购部门。</p>\n<h4>买方首先核查什么</h4>\n<ul>\n<li><strong>原料药注册文件</strong>：DMF 公开部分、CEP 或同等技术资料，便于伊朗制剂企业将该货源加入其在 IFDA 的产品注册。</li>\n<li>生产场地的 <strong>GMP 证书</strong>，须在有效期内并与实际生产批次的场地一致。</li>\n<li>按买方采用的药典（USP、EP 或 BP）出具的<strong>分析证书（COA）</strong>，以及供检测的样品。</li>\n<li><strong>稳定性数据</strong>和复验期。</li>\n<li><strong>合成路线和杂质谱</strong>，包括残留溶剂，以及越来越受关注的亚硝胺风险评估。</li>\n</ul>\n<h4>为什么新货源需要时间</h4>\n<p>变更或增加原料药货源属于制剂注册的变更。买方需检测样品，通常还要做试生产批次和稳定性，并向 IFDA 递交变更，之后才会有商业订单。一开始就提供完整技术资料的供应商可以大大缩短这一过程。</p>\n<h4>进口如何进行</h4>\n<p>原料药由持有 IFDA 药用原料进口许可的公司进口。进口商凭上述文件为每批货物办理进口许可，安排清关和质量放行，再交付制剂企业。管制物质和易制毒化学品需要额外许可。</p>\n<h4>供应商如何赢得订单</h4>\n<ul>\n<li>提供与买方药典一致的英文质量标准和 COA。</li>\n<li>愿意提供 DMF 公开部分并答复质量问卷。</li>\n<li>批间质量稳定，变更提前通知。</li>\n<li>在伊朗有一家既了解买方技术要求又熟悉 IFDA 流程的进口商。</li>\n</ul>\n<p>汉帕斯从中国、印度、土耳其和欧洲 GMP 生产厂家采购原料药，供伊朗制剂企业使用，并依 IFDA 许可进口。欢迎浏览<a href=\"/zh/api\">原料药目录</a>、阅读<a href=\"/zh/china-to-iran\">中国出口商指南</a>；如果您生产原料药并希望向伊朗供货，请与我们联系。</p>\n"
+  }
  }
 }

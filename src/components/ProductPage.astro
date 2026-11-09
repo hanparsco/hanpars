@@ -125,6 +125,10 @@ const seoNote = ({
     <a class="button button-navy" href={enquiry}>{m.enquire}</a>
   </aside>
 </div></section>
+{lang === 'fa' && <section class="section section-tight prod-b2b"><div class="container prod-b2b-inner">
+  <div><h2>تأمین {locTitle || title} برای پخش، بیمارستان و داروخانه</h2><p>هانیا پرسان دارو این فرآورده را از طریق واردات فوریتی و تأمین‌کنندگان دارای GMP تأمین می‌کند. برای استعلام موجودی، زمان تحویل و مستندات، فرم استعلام را بفرستید یا با دفتر تهران تماس بگیرید.</p></div>
+  <div class="prod-b2b-actions"><a class="button button-navy" href={enquiry}>{m.enquire}</a><a class="text-link" href="tel:+982188883325" dir="ltr">۰۲۱ ۸۸۸۸ ۳۳۲۵</a></div>
+</div></section>}
 
 {sameIngredient.length > 0 && <section class="section section-paper section-tight"><div class="container">
   <div class="section-head"><h2>{m.otherForms}</h2></div>
