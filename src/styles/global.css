@@ -1678,4 +1678,4 @@ html[lang^=zh] .brand .original-logo { width:auto; height:112px; margin:6px 0; }
 /* Persian enquiry form: sales-policy notice above the form */
 .form-notice { margin:0 0 22px; padding:16px 20px; border-radius:14px; background:#fff6e6; border:1px solid #f0c98a; border-inline-start:4px solid #d9900f; color:var(--ink); }
 .form-notice strong { display:block; margin-bottom:6px; color:#9a5b00; }
-.form-notice ol { margin:0; padding-inline-start:22px; } .form-notice li { line-height:1.8; font-size:15px; }
+.form-notice ol { margin:0; padding-inline-start:22px; list-style:persian; } .form-notice li { line-height:1.8; font-size:15px; }
