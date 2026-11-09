@@ -41,7 +41,7 @@ if (portfolio) {
     if (cardView) cardView.hidden = view !== 'cards' || count === 0;
     if (tableView) tableView.hidden = view !== 'table' || count === 0;
     if (empty) empty.hidden = count !== 0;
-    if (counter) counter.textContent = pfNum((i18n.count || '{n} molecules across {a} therapeutic areas').replace('{n}', String(count)).replace('{a}', String(visibleAreas.size))) + (query || area!=='all' ? (i18n.filtered || ' matching your filters') : '');
+    if (counter) counter.textContent = pfNum((i18n.count || '{n} molecules across {a} therapeutic areas').replace('{n}', String(count)).replace('{a}', String(visibleAreas.size)).replace(/\b1 molecules\b/, '1 molecule').replace(/\b1 therapeutic areas\b/, '1 therapeutic area').replace(/\b1 molekül\b/, '1 molekül')) + (query || area!=='all' ? (i18n.filtered || ' matching your filters') : '');
   }
 
   areaButtons.forEach(button => button.addEventListener('click', () => { area = button.dataset.portfolioArea || 'all'; apply(); }));

@@ -8,5 +8,6 @@ export function getStaticPaths() {
   return articles.map(article=>({params:{slug:article.slug},props:{article}}));
 }
 const { article } = Astro.props;
+const zhFull = !!(zhArt.articles as Record<string, { content?: string }>)[article.slug]?.content;  // full Chinese body → an indexable page of its own
 ---
-<Layout title={`${(zhArt.articles as Record<string, { title: string; excerpt: string }>)[article.slug]?.title || article.title} | 汉帕斯`} description={((zhArt.articles as Record<string, { title: string; excerpt: string }>)[article.slug]?.excerpt || articleSummary(article)).slice(0,155)} noindex canonicalPath={`/insights/${article.slug}`}><Article article={article}/></Layout>
+<Layout title={`${(zhArt.articles as Record<string, { title: string; excerpt: string }>)[article.slug]?.title || article.title} | 汉帕斯`} description={((zhArt.articles as Record<string, { title: string; excerpt: string }>)[article.slug]?.excerpt || articleSummary(article)).slice(0,155)} noindex={!zhFull} canonicalPath={zhFull ? undefined : `/insights/${article.slug}`} skipLangs={['fa', 'tr']}><Article article={article}/></Layout>
