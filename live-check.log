@@ -38,8 +38,7 @@
   ok  200 [news] https://www.mychesco.com/a/news/regional/icymi-fda-approves-inovios-first-dna-medicine-for-rare-disease/
   ok  200 [news] https://endpoints.news/ellipsis-health-buys-kouper-health-to-act-on-ai-voice-calls/
   ok  200 [news] https://www.techtimes.com/articles/330190/20261106/china-approves-first-golimumab-biosimilar-bio-thera-clinches-unprecedented-us-eu-china-triple-2026.htm
-  WARN ERR TimeoutError [news] https://finance.biggo.com/news/38a546d5-7f12-4b5a-903c-a5e4b5e5d36f
+  ok  200 [news] https://finance.biggo.com/news/38a546d5-7f12-4b5a-903c-a5e4b5e5d36f
   ok  200 [news] https://www.manilatimes.net/2026/11/06/tmt-newswire/pr-newswire/lynk-pharmaceuticals-announces-nmpa-acceptance-of-new-drug-application-for-zemprocitinib-in-the-treatment-of-rheumatoid-arthritis/2463827
   ok  200 [webmail] https://secureserver.titan.email/mail/
-  1 external link warning(s)
 == result: OK
