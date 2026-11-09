@@ -64,7 +64,10 @@ const locForm = lang === 'en' ? '' : formL[lang](p.form, p.route);
 const locTitle = lang === 'tr' && locTitle0 ? locTitle0.charAt(0).toLocaleUpperCase('tr') + locTitle0.slice(1) : locTitle0;
 const nameBoth = locTitle ? (lang === 'zh' ? `${locTitle}（${title}）` : `${locTitle} (${title})`) : title;
 const norm = (x: string) => x.toLowerCase().replace(/[^a-z0-9]/g, '');
-const labelName = main ? `${main.generic}${main.brand && norm(main.brand) !== norm(main.generic) ? ` (${main.brand})` : ''}` : '';
+// a "brand" that is just the generic name again (often with a typo in the FDA label, e.g. "Hydrocloride") adds nothing
+const lev = (a: string, b: string) => { const m = a.length, n = b.length; let p = Array.from({ length: n + 1 }, (_, j) => j); for (let i = 1; i <= m; i++) { const c = [i]; for (let j = 1; j <= n; j++) c[j] = Math.min(p[j] + 1, c[j - 1] + 1, p[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); p = c; } return p[n]; };
+const sameName = (a: string, b: string) => { const x = norm(a), y = norm(b); return x === y || x.includes(y) || y.includes(x) || lev(x, y) <= 2; };
+const labelName = main ? `${main.generic}${main.brand && !sameName(main.brand, main.generic) ? ` (${main.brand})` : ''}` : '';
 // human-readable label date per language (the raw form is YYYY-MM-DD)
 const effDate = (() => { if (!effective) return ''; const [y, mo, d] = effective.split('-').map(Number); const FA = ['ژانویه', 'فوریه', 'مارس', 'آوریل', 'مه', 'ژوئن', 'ژوئیه', 'اوت', 'سپتامبر', 'اکتبر', 'نوامبر', 'دسامبر']; const TR = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık']; const EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   return lang === 'fa' ? `${d} ${FA[mo - 1]} ${y}` : lang === 'zh' ? `${y} 年 ${mo} 月 ${d} 日` : lang === 'tr' ? `${d} ${TR[mo - 1]} ${y}` : `${d} ${EN[mo - 1]} ${y}`; })();
