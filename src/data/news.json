@@ -1,35 +1,53 @@
 {
- "updated": "2026-11-09T00:01:51Z",
+ "updated": "2026-11-10T02:55:28Z",
  "global": [
   {
-   "title": "FDA Grants Accelerated Approval to Rybrevant Faspro in Head and Neck Cancer",
-   "url": "https://www.pharmexec.com/view/fda-accelerated-approval-rybrevant-faspro-head-neck-cancer",
+   "title": "Pharmaceutical Executive Daily: argenx Acquires Unnatural Products Inc.",
+   "url": "https://www.pharmexec.com/view/daily-argenx-acquires-unnatural-products-inc-",
    "source": "Pharmaceutical Executive",
-   "date": "2026-11-06",
-   "summary": "Accelerated approval of subcutaneous Rybrevant Faspro (amivantamab) based on a 42% response rate in 102 patients; a phase 3 confirmatory trial is under way.",
-   "image": "/news/g-26c999c7ef.jpg",
+   "date": "2026-11-09",
+   "summary": "argenx acquires Unnatural Products for up to $1.15 billion to expand its immunology capabilities, GiftHealth’s Chip Parkinson on how single-partner platforms can transform the prescription journey, and Partha Anbil on why competing on net value matters more than cutting list pric…",
+   "image": "/news/g-6b84adc1a3.jpg",
    "kind": "news"
   },
   {
-   "title": "ICYMI: FDA Approves INOVIO’s First DNA Medicine for Rare Disease",
-   "url": "https://www.mychesco.com/a/news/regional/icymi-fda-approves-inovios-first-dna-medicine-for-rare-disease/",
-   "source": "MyChesCo",
-   "date": "2026-11-07",
-   "summary": "ICYMI: FDA Approves INOVIO’s First DNA Medicine for Rare Disease MyChesCo",
-   "image": "/news/g-e169eb9d18.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Ellipsis Health buys Kouper Health to act on AI voice calls",
-   "url": "https://endpoints.news/ellipsis-health-buys-kouper-health-to-act-on-ai-voice-calls/",
+   "title": "Trump’s drug pricing deals force tough choices on launches",
+   "url": "https://endpoints.news/trumps-drug-pricing-deals-force-tough-choices-on-launches/",
    "source": "Endpoints News",
-   "date": "2026-11-05",
-   "summary": "Ellipsis Health, a startup developing voice AI for healthcare, has acquired another company as demand for AI that can call patients heats up, Endpoints News learned exclusively. Ellipsis, which uses voice AI to screen and ...",
-   "image": "/news/g-90417c2e05.jpg",
+   "date": "2026-11-09",
+   "summary": "Companies that committed to President Donald Trump’s drug pricing policy now face difficult decisions when launching new medicines. The “most favored nation” (MFN) pricing policy seeks to tie US drug prices to those charged in ...",
+   "image": "/news/g-9256c2facc.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "AstraZeneca Proposes $10 Billion Rhythm Pharmaceuticals Acquisition",
+   "url": "https://www.chosun.com/english/industry-en/2026/11/10/7FHZLBCBR5G7VN4PHAEHCNKLOY/",
+   "source": "조선일보",
+   "date": "2026-11-09",
+   "summary": "AstraZeneca Proposes $10 Billion Rhythm Pharmaceuticals Acquisition 조선일보",
+   "image": "/news/g-c3f14d02d3.jpg",
    "kind": "news"
   }
  ],
  "china": [
+  {
+   "title": "Bio-Thera gains Chinese approval for spondylitis and rheumatoid arthritis drug",
+   "url": "https://www.pharmaceutical-technology.com/news/bio-thera-nmpa-authorisation-bat2506-china/",
+   "source": "Pharmaceutical Technology",
+   "date": "2026-11-09",
+   "summary": "China's NMPA has granted marketing authorisation for Bio-Thera Solutions’ BAT2506 to treat ankylosing spondylitis and rheumatoid arthritis.",
+   "image": "/news/c-ca4146046c.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "China-Sourced KSMs Leave Vital 40 Exposed, APIIC Warns",
+   "url": "https://www.pharmaceuticalcommerce.com/view/china-sourced-ksms-leave-vital-40-exposed-apiic-warns",
+   "source": "Pharmaceutical Commerce",
+   "date": "2026-11-09",
+   "summary": "China-Sourced KSMs Leave Vital 40 Exposed, APIIC Warns Pharmaceutical Commerce",
+   "image": "/news/c-a64e45da77.jpg",
+   "kind": "news"
+  },
   {
    "title": "China Approves First Golimumab Biosimilar as Bio-Thera Clinches Unprecedented US-EU-China Triple in 2026",
    "url": "https://www.techtimes.com/articles/330190/20261106/china-approves-first-golimumab-biosimilar-bio-thera-clinches-unprecedented-us-eu-china-triple-2026.htm",
@@ -37,24 +55,6 @@
    "date": "2026-11-06",
    "summary": "China Approves First Golimumab Biosimilar as Bio-Thera Clinches Unprecedented US-EU-China Triple in 2026 Tech Times",
    "image": "/news/c-6e790023c0.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "United Laboratories' Semaglutide Weight-Loss Indication Accepted by China's NMPA; Shares Surge Over 6% in Early Trading",
-   "url": "https://finance.biggo.com/news/38a546d5-7f12-4b5a-903c-a5e4b5e5d36f",
-   "source": "BigGo Finance",
-   "date": "2026-11-05",
-   "summary": "United Laboratories' Semaglutide Weight-Loss Indication Accepted by China's NMPA; Shares Surge Over 6% in Early Trading BigGo Finance",
-   "image": "/news/c-cdf48a3b81.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Lynk Pharmaceuticals Announces NMPA Acceptance of New Drug Application for Zemprocitinib in the Treatment of Rheumatoid Arthritis",
-   "url": "https://www.manilatimes.net/2026/11/06/tmt-newswire/pr-newswire/lynk-pharmaceuticals-announces-nmpa-acceptance-of-new-drug-application-for-zemprocitinib-in-the-treatment-of-rheumatoid-arthritis/2463827",
-   "source": "The Manila Times",
-   "date": "2026-11-06",
-   "summary": "Lynk Pharmaceuticals Announces NMPA Acceptance of New Drug Application for Zemprocitinib in the Treatment of Rheumatoid Arthritis The Manila Times",
-   "image": "/news/c-afca2bbda4.jpg",
    "kind": "news"
   }
  ]
