@@ -290,6 +290,8 @@ const rtl = lang === 'fa';
     let inView = false;
     const wake = () => { if (inView) start(); };
     for (const ev of ['pointerenter', 'pointerdown', 'pointermove', 'touchstart']) cv.addEventListener(ev, wake, { passive: true });
+    // typing anywhere on the page (e.g. the reference-table search) takes priority: the scene holds still at once
+    document.addEventListener('focusin', e => { if ((e.target as HTMLElement)?.matches?.('input, textarea, select')) idleAt = 0; });
     size(); draw(performance.now());
     new ResizeObserver(() => { size(); draw(performance.now()); }).observe(cv);
     new IntersectionObserver(es => es.forEach(e => { inView = e.isIntersecting; if (inView) start(); else stop(); }), { threshold: .05 }).observe(cv);

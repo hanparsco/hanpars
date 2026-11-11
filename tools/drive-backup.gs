@@ -6,7 +6,7 @@
  * One-time setup (2 minutes):
  *   1. Open https://script.google.com → New project → paste this whole file → Save.
  *   2. Choose the function "setup" in the toolbar → Run → allow the permissions (Drive + external request).
- *   Done: it saves today's copy immediately and then runs every day between 03:00 and 04:00 Tehran time.
+ *   Done: it saves today's copy immediately and then runs every day between 07:00 and 08:00 Tehran time (GitHub's 02:00 job is sometimes delayed by a few hours).
  */
 const FOLDER_ID = '1o31RBCua8UV5W_dkTxoAWGKcEZ7eEbqm';   // Drive folder "hanpars-com-backup"
 const SOURCE = 'https://github.com/hanparsco/hanpars/releases/download/backup-latest/hanpars-com-backup-latest.zip';
@@ -29,6 +29,6 @@ function backupHanpars() {
 
 function setup() {
   ScriptApp.getProjectTriggers().forEach(t => { if (t.getHandlerFunction() === 'backupHanpars') ScriptApp.deleteTrigger(t); });
-  ScriptApp.newTrigger('backupHanpars').timeBased().everyDays(1).atHour(3).inTimezone('Asia/Tehran').create();
+  ScriptApp.newTrigger('backupHanpars').timeBased().everyDays(1).atHour(7).inTimezone('Asia/Tehran').create();
   backupHanpars();
 }
