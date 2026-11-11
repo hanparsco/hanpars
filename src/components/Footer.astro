@@ -31,15 +31,15 @@ const langs = ([
       <div class="ft-brand">
         <p class="ft-name">{f.name}</p>
         <p>{s.footer.intro}</p>
-        {lang !== 'fa' && <a class="button button-light ft-cta" href={L('/contact-us-1')}>{f.enquire}<Icon name="arrow" size={18} class="ft-arrow" /></a>}
+        <a class="button button-light ft-cta" href={L('/contact-us-1')}>{f.enquire}<Icon name="arrow" size={18} class="ft-arrow" /></a>
       </div>
       <div class="ft-contact" aria-label={f.reach}>
         <h2 class="ft-label">{f.reach}</h2>
-        {lang !== 'fa' && <a class="ft-card" href="tel:+982188883325"><span class="ft-ico"><Icon name="phone" size={18} /></span><span><small>{f.phone}</small><strong dir="ltr" data-fa-digits>+98 21 8888 3325</strong></span></a>}
+        <a class="ft-card" href="tel:+982188883325"><span class="ft-ico"><Icon name="phone" size={18} /></span><span><small>{f.phone}</small><strong dir="ltr" data-fa-digits>+98 21 8888 3325</strong></span></a>
         <a class="ft-card" href={L(brand === 'regulatory' ? '/contact-us-1?type=regulatory' : '/contact-us-1')} data-m={mEnc(email)}><span class="ft-ico"><Icon name="mail" size={18} /></span><span><small>{f.email}</small><strong dir="ltr" lang="en" data-m-text>{mShow(email)}</strong></span></a>
         {lang === 'zh' && wechatId && <div class="ft-card"><span class="ft-ico"><WeChatIcon size={18} uid="ftc" /></span><span><small>微信</small><a href={L('/contact-us-1#wechat')} data-wechat><strong dir="ltr" lang="en">{wechatId}</strong></a></span></div>}
-        {lang !== 'fa' && <div class="ft-card"><span class="ft-ico"><Icon name="pin" size={18} /></span><span><small>{f.office}</small><strong>{s.footer.address}</strong></span></div>}
-        {lang !== 'fa' && <div class="ft-card"><span class="ft-ico"><Icon name="clock" size={18} /></span><span><small>{s.contact.hours}</small><strong>{s.contact.hoursText}</strong></span></div>}
+        <div class="ft-card"><span class="ft-ico"><Icon name="pin" size={18} /></span><span><small>{f.office}</small><strong>{s.footer.address}</strong></span></div>
+        <div class="ft-card"><span class="ft-ico"><Icon name="clock" size={18} /></span><span><small>{s.contact.hours}</small><strong>{s.contact.hoursText}</strong></span></div>
       </div>
     </div>
     )}
