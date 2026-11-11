@@ -1,8 +1,8 @@
 $ astro check
-14:01:22 [content] Syncing content
-14:01:22 [content] Synced content
-14:01:22 [types] Generated 112ms
-14:01:22 [check] Getting diagnostics for Astro files in /home/runner/work/hanpars/hanpars...
+12:53:44 [content] Syncing content
+12:53:44 [content] Synced content
+12:53:44 [types] Generated 110ms
+12:53:44 [check] Getting diagnostics for Astro files in /home/runner/work/hanpars/hanpars...
 [96mscripts/seo-audit.mjs[0m:[93m39[0m:[93m57[0m - [93mwarning[0m[90m ts(6133): [0m't' is declared but its value is never read.
 
 [7m39[0m     issue('duplicate descriptions', [...descs].filter(([t, l]) => l.length > 1).map(([t, l]) => `${l.length}× ${t.slice(0, 80)} :: ${l.slice(0, 3).join(', ')}`)),
@@ -17,30 +17,31 @@ $ astro check
 [7m11[0m const fmt = (n: number) => n.toLocaleString(numLocale(lang));
 [7m  [0m [93m      ~~~[0m
 
-[96msrc/components/FdfPortfolio.astro[0m:[93m71[0m:[93m548[0m - [91merror[0m[90m ts(1005): [0m'}' expected.
+[96msrc/components/Footer.astro[0m:[93m42[0m:[93m10[0m - [91merror[0m[90m ts(2367): [0mThis comparison appears to be unintentional because the types '"en" | "zh" | "tr"' and '"fa"' have no overlap.
 
-[7m71[0m           return <article class:list={["portfolio-product-card", "has-photo"]} data-portfolio-card data-area={group.id} data-search={searchText(entry)}>{PHOTO[product.name] && <figure class="pc-photo"><img src={`/images/portfolio/${PHOTO[product.name].slug}-640.webp`} srcset={`/images/portfolio/${PHOTO[product.name].slug}-640.webp 640w, /images/portfolio/${PHOTO[product.name].slug}-1200.webp 1200w`} sizes="(max-width:640px) 92vw, 380px" width="640" height="400" alt={`${product.name} — ${photoAlt}`} loading="lazy" decoding="async" /></figure>{!PHOTO[product.name] && <figure class="pc-photo pc-photo-empty" aria-hidden="true"><Icon name="box" size={56}/><span>{photoSoon}</span></figure>}<div class="portfolio-card-top"><span class="portfolio-form-icons">{product.formIcons.slice(0,2).map(icon=><DosageFormIcon name={icon.id} label={icon.label} size={24}/>)}</span><div class="portfolio-card-title"><h4 dir="ltr">{product.name}</h4>{lang !== 'en' && lang !== 'fa' && locName(lang, product.name.replace(/\s*\(.*\)\s*/g, '')) && <span class="portfolio-loc" lang={htmlLang[lang]}>{locName(lang, product.name.replace(/\s*\(.*\)\s*/g, ''))}</span>}<code class="portfolio-atc" dir="ltr">{product.atc}</code></div></div><dl class="portfolio-forms">{product.forms.map(form=><div><dt>{F(form.form)}</dt><dd dir="ltr">{form.strength}</dd></div>)}</dl>{(() => { const cx = CX[product.name]; const sub = SUB[product.name]; if (!cx) return null; return <div class="pc-cx">
-[7m  [0m [91m                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ~[0m
-[96msrc/components/FdfPortfolio.astro[0m:[93m229[0m:[93m1[0m - [91merror[0m[90m astro: [0mExpected a closing tag but instead found the end of the file.
+[7m42[0m         {lang !== 'fa' && <div class="ft-card"><span class="ft-ico"><Icon name="clock" size={18} /></span><span><small>{s.contact.hours}</small><strong>{s.contact.hoursText}</strong></span></div>}
+[7m  [0m [91m         ~~~~~~~~~~~~~[0m
+[96msrc/components/Footer.astro[0m:[93m41[0m:[93m10[0m - [91merror[0m[90m ts(2367): [0mThis comparison appears to be unintentional because the types '"en" | "zh" | "tr"' and '"fa"' have no overlap.
 
-[7m229[0m 
-[7m   [0m [91m[0m
-[96msrc/components/FdfPortfolio.astro[0m:[93m100[0m:[93m3[0m - [91merror[0m[90m astro: [0mExpected a matching closing tag but instead found '</div>'.
+[7m41[0m         {lang !== 'fa' && <div class="ft-card"><span class="ft-ico"><Icon name="pin" size={18} /></span><span><small>{f.office}</small><strong>{s.footer.address}</strong></span></div>}
+[7m  [0m [91m         ~~~~~~~~~~~~~[0m
+[96msrc/components/Footer.astro[0m:[93m38[0m:[93m10[0m - [91merror[0m[90m ts(2367): [0mThis comparison appears to be unintentional because the types '"en" | "zh" | "tr"' and '"fa"' have no overlap.
 
-[7m100[0m   </div>
-[7m   [0m [91m  ~~~~~~[0m
-[96msrc/components/FdfPortfolio.astro[0m:[93m99[0m:[93m5[0m - [91merror[0m[90m astro: [0mExpected a matching closing tag but instead found '</div>'.
+[7m38[0m         {lang !== 'fa' && <a class="ft-card" href="tel:+982188883325"><span class="ft-ico"><Icon name="phone" size={18} /></span><span><small>{f.phone}</small><strong dir="ltr" data-fa-digits>+98 21 8888 3325</strong></span></a>}
+[7m  [0m [91m         ~~~~~~~~~~~~~[0m
+[96msrc/components/Footer.astro[0m:[93m34[0m:[93m10[0m - [91merror[0m[90m ts(2367): [0mThis comparison appears to be unintentional because the types '"en" | "zh" | "tr"' and '"fa"' have no overlap.
 
-[7m99[0m     </div>
-[7m  [0m [91m    ~~~~~~[0m
-[96msrc/components/FdfPortfolio.astro[0m:[93m69[0m:[93m9[0m - [91merror[0m[90m astro: [0mFound a text expression that doesn't have the closing expression:
+[7m34[0m         {lang !== 'fa' && <a class="button button-light ft-cta" href={L('/contact-us-1')}>{f.enquire}<Icon name="arrow" size={18} class="ft-arrow" /></a>}
+[7m  [0m [91m         ~~~~~~~~~~~~~[0m
 
-[7m69[0m         {portfolio.groups.map(group=><section class="portfolio-group" data-portfolio-group={group.id} aria-labelledby={`portfolio-${group.id}`}><div class="portfolio-group-head"><div><h3 id={`portfolio-${group.id}`}>{G(group).title}</h3><p class="portfolio-kicker">{G(group).kicker}</p><p>{G(group).description}</p></div><span class="portfolio-group-count"><strong data-portfolio-group-count>{group.products.length}</strong> <span data-portfolio-group-label>{group.products.length===1?s.molecule:s.molecules}</span></span></div><div class="portfolio-card-grid">{group.products.map(product=>{
-[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/components/HeroSlides.astro[0m:[93m12[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'N' is declared but its value is never read.
 
-[96msrc/components/Home.astro[0m:[93m114[0m:[93m75[0m - [93mwarning[0m[90m ts(6133): [0m'i' is declared but its value is never read.
+[7m12[0m const N = ALTS.length;
+[7m  [0m [93m      ~[0m
 
-[7m114[0m     {todayNews.length > 0 && <div class="news-grid">{todayNews.map((item, i) => <NewsCard item={item} eager={false} fa={lang === 'fa'}/>)}</div>}
+[96msrc/components/Home.astro[0m:[93m115[0m:[93m75[0m - [93mwarning[0m[90m ts(6133): [0m'i' is declared but its value is never read.
+
+[7m115[0m     {todayNews.length > 0 && <div class="news-grid">{todayNews.map((item, i) => <NewsCard item={item} eager={false} fa={lang === 'fa'}/>)}</div>}
 [7m   [0m [93m                                                                          ~[0m
 
 [96msrc/components/Imports2026.astro[0m:[93m76[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'grads' is declared but its value is never read.
@@ -86,9 +87,9 @@ $ astro check
 [7m77[0m export function moleculeSeo(slug: string, mol: any, lang: Lang, faDesc: string) {
 [7m  [0m [93m                            ~~~~[0m
 
-Result (100 files): 
-- 5 errors
+Result (102 files): 
+- 4 errors
 - 0 warnings
-- 13 hints
+- 14 hints
 
 [ELIFECYCLE] Command failed with exit code 1.
