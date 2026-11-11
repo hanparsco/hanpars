@@ -53,6 +53,8 @@ const N = ALTS.length;
   .hs-dots { position:absolute; inset-inline:0; bottom:11%; display:flex; justify-content:center; gap:6px; z-index:2; }
   .hs-dot { width:7px; height:7px; padding:0; border:0; border-radius:50%; background:#ffffff99; box-shadow:0 0 0 1px #0000002e; cursor:pointer; transition:width .25s, background .25s; }
   .hs-dot.is-active { width:20px; border-radius:5px; background:#fff; }
+  .hs-dot { position:relative; }
+  .hs-dot::after { content:''; position:absolute; inset:-9px -3px; }   /* ~25 px tall touch target around the 7 px dot */
   .hs-dot:focus-visible { outline:2px solid var(--glacier, #9cd); outline-offset:2px; }
   :global(.hero-split .hero-grid:has(.hero-slides)) { grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr); gap:40px; }
   @media (prefers-reduced-motion: reduce) { .hs-slide { transition:none; } }

@@ -275,12 +275,24 @@ const rtl = lang === 'fa';
       ctx.fillStyle = vg; ctx.fillRect(0, 0, W, H);
       frame++;
     };
-    const loop = (now: number) => { draw(now); if (running) raf = requestAnimationFrame(loop); };
-    const start = () => { if (running || reduce) return; running = true; raf = requestAnimationFrame(loop); };
+    // The sway is slow, so ~30 fps looks identical and halves the work; after 10 s in view with no interaction the
+    // scene holds still (the canvas keeps its last frame), so the page next to it — the reference table — stays smooth.
+    // Hover, touch or drag wakes it again.
+    let last = 0, idleAt = 0;
+    const loop = (now: number) => {
+      if (!running) return;
+      if (!drag && now > idleAt) { running = false; return; }
+      if (drag || now - last >= 32) { last = now; draw(now); }
+      raf = requestAnimationFrame(loop);
+    };
+    const start = () => { if (reduce) return; idleAt = performance.now() + 10000; if (running) return; running = true; raf = requestAnimationFrame(loop); };
     const stop = () => { running = false; cancelAnimationFrame(raf); };
+    let inView = false;
+    const wake = () => { if (inView) start(); };
+    for (const ev of ['pointerenter', 'pointerdown', 'pointermove', 'touchstart']) cv.addEventListener(ev, wake, { passive: true });
     size(); draw(performance.now());
     new ResizeObserver(() => { size(); draw(performance.now()); }).observe(cv);
-    new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? start() : stop()), { threshold: .05 }).observe(cv);
+    new IntersectionObserver(es => es.forEach(e => { inView = e.isIntersecting; if (inView) start(); else stop(); }), { threshold: .05 }).observe(cv);
     const hit = (cx: number, cy: number) => {
       const r = cv.getBoundingClientRect(), x = cx - r.left, y = cy - r.top;
       return [...items].sort((a, b) => a.d - b.d).find(it => (x - it.sx) ** 2 + (y - it.sy) ** 2 <= Math.max(it.sr, 8) ** 2) || null;
