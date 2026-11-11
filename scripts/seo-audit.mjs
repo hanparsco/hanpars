@@ -48,8 +48,9 @@ const report = {
 };
 // ---- release gate: genuine regressions only (editorial heuristics above stay advisory) ----
 const sitemapUrls = new Set();
-for (const l of ['en', 'fa', 'zh', 'tr']) {
-  try { for (const m of (await readFile(join(root, `sitemap-${l}.xml`), 'utf8')).matchAll(/<loc>([^<]+)<\/loc>/g)) sitemapUrls.add(new URL(m[1]).pathname); } catch {}
+const smIndex = await readFile(join(root, 'sitemap.xml'), 'utf8').catch(() => '');
+for (const sm of [...smIndex.matchAll(/<loc>[^<]*\/(sitemap-[\w-]+\.xml)<\/loc>/g)].map(m => m[1])) {
+  try { for (const m of (await readFile(join(root, sm), 'utf8')).matchAll(/<loc>([^<]+)<\/loc>/g)) sitemapUrls.add(new URL(m[1]).pathname); } catch {}
 }
 const byPath = new Map(pages.map(p => [p.path, p]));
 const noindexInSitemap = [...sitemapUrls].filter(u => /noindex/.test(byPath.get(u)?.robots || ''));

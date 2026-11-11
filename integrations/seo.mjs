@@ -83,18 +83,21 @@ export default function seo({ site }) {
           const alts = LANGS.map(([, tag, pre]) => { const q = withPre(pre, en); return pages.has(q) ? `<xhtml:link rel="alternate" hreflang="${tag}" href="${loc(q)}"/>` : ''; }).join('')
             + (pages.has(en) ? `<xhtml:link rel="alternate" hreflang="x-default" href="${loc(en)}"/>` : '');
           const lm = lastmod[p][1];
-          byLang[langOf(p)[0]].push(`<url><loc>${loc(p)}</loc>${lm ? `<lastmod>${lm}</lastmod>` : ''}${alts}</url>`);
+          // one sitemap per language and section, so Search Console reports indexing per cohort (fdf / api / the rest)
+          const sec = /^\/(fdf|api)\//.test(en) ? '-' + en.split('/')[1] : '';
+          const key = langOf(p)[0] + sec; (byLang[key] ||= []).push(`<url><loc>${loc(p)}</loc>${lm ? `<lastmod>${lm}</lastmod>` : ''}${alts}</url>`);
         }
         const head = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
         const index = [];
-        for (const [l] of LANGS) {
-          if (!byLang[l].length) continue;
-          await writeFile(join(root, `sitemap-${l}.xml`), head + byLang[l].join('\n') + '\n</urlset>\n');
-          index.push(`<sitemap><loc>${site}/sitemap-${l}.xml</loc></sitemap>`);
+        for (const [l] of LANGS) for (const sec of ['', '-fdf', '-api']) {
+          const k = l + sec;
+          if (!byLang[k]?.length) continue;
+          await writeFile(join(root, `sitemap-${k}.xml`), head + byLang[k].join('\n') + '\n</urlset>\n');
+          index.push(`<sitemap><loc>${site}/sitemap-${k}.xml</loc></sitemap>`);
         }
         await writeFile(join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${index.join('\n')}\n</sitemapindex>\n`);
         const rows = Object.values(byLang).flat();
-        await writeFile(join(root, 'robots.txt'), `# Search engines and AI assistants are welcome to read and cite this site.\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: Claude-SearchBot\nAllow: /\n\nUser-agent: Claude-User\nAllow: /\n\nUser-agent: anthropic-ai\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Perplexity-User\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: Googlebot\nAllow: /\n\nUser-agent: Bingbot\nAllow: /\n\nUser-agent: Applebot\nAllow: /\n\nUser-agent: Applebot-Extended\nAllow: /\n\nUser-agent: Amazonbot\nAllow: /\n\nUser-agent: DuckAssistBot\nAllow: /\n\nUser-agent: YouBot\nAllow: /\n\nUser-agent: cohere-ai\nAllow: /\n\nUser-agent: Meta-ExternalAgent\nAllow: /\n\nUser-agent: Bytespider\nAllow: /\n\nUser-agent: Baiduspider\nAllow: /\n\nUser-agent: Baiduspider-render\nAllow: /\n\nUser-agent: Sogou web spider\nAllow: /\n\nUser-agent: 360Spider\nAllow: /\n\nUser-agent: YisouSpider\nAllow: /\n\nUser-agent: DeepSeekBot\nAllow: /\n\nUser-agent: PetalBot\nAllow: /\n\nUser-agent: YandexBot\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\nSitemap: ${site}/sitemap-zh.xml\nSitemap: ${site}/sitemap-en.xml\nSitemap: ${site}/sitemap-fa.xml\nSitemap: ${site}/sitemap-tr.xml\n`);
+        await writeFile(join(root, 'robots.txt'), `# Search engines and AI assistants are welcome to read and cite this site.\nUser-agent: GPTBot\nAllow: /\n\nUser-agent: ChatGPT-User\nAllow: /\n\nUser-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: ClaudeBot\nAllow: /\n\nUser-agent: Claude-SearchBot\nAllow: /\n\nUser-agent: Claude-User\nAllow: /\n\nUser-agent: anthropic-ai\nAllow: /\n\nUser-agent: PerplexityBot\nAllow: /\n\nUser-agent: Perplexity-User\nAllow: /\n\nUser-agent: Google-Extended\nAllow: /\n\nUser-agent: Googlebot\nAllow: /\n\nUser-agent: Bingbot\nAllow: /\n\nUser-agent: Applebot\nAllow: /\n\nUser-agent: Applebot-Extended\nAllow: /\n\nUser-agent: Amazonbot\nAllow: /\n\nUser-agent: DuckAssistBot\nAllow: /\n\nUser-agent: YouBot\nAllow: /\n\nUser-agent: cohere-ai\nAllow: /\n\nUser-agent: Meta-ExternalAgent\nAllow: /\n\nUser-agent: Bytespider\nAllow: /\n\nUser-agent: Baiduspider\nAllow: /\n\nUser-agent: Baiduspider-render\nAllow: /\n\nUser-agent: Sogou web spider\nAllow: /\n\nUser-agent: 360Spider\nAllow: /\n\nUser-agent: YisouSpider\nAllow: /\n\nUser-agent: DeepSeekBot\nAllow: /\n\nUser-agent: PetalBot\nAllow: /\n\nUser-agent: YandexBot\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\n${index.map(x => 'Sitemap: ' + x.replace(/<\/?(sitemap|loc)>/g, '')).filter(x => !x.endsWith('/sitemap.xml')).join('\n')}\n`);
         // trailing-slash and /index.html stubs: /x/ and /x/index.html -> /x, all languages (GitHub Pages cannot send 301s)
         let stubs = 0;
         // also cover the noindex A–Z browse pages (not in the sitemap, but linked from every catalogue)
