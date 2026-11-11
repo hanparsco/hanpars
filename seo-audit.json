@@ -147,7 +147,7 @@
    "count": 4,
    "sample": [
     "/excipient (795 KB)",
-    "/fa/excipient (908 KB)",
+    "/fa/excipient (907 KB)",
     "/tr/excipient (931 KB)",
     "/zh/excipient (830 KB)"
    ]
@@ -215,5 +215,5 @@
    "sample": []
   }
  ],
- "sha": "1323b5d0e58197c2652a2ab24d5ac6cd88b98b21"
+ "sha": "9a8b36f00b668a8246ecc598e823fcab791b838f"
 }
