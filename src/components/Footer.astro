@@ -26,6 +26,7 @@ const langs = ([
 <footer class:list={['site-footer', { 'hanpars-zh-hans': lang === 'zh' }]} dir={dir(lang)}>
   <img class="ft-watermark" src={brand === 'regulatory' ? '/brand/hanpars-regulatory-light.png' : lang === 'zh' ? '/brand/hanpars-logo-zh.png' : '/brand/hanpars-logo-transparent.png'} alt="" aria-hidden="true" width="222" height="123" loading="lazy" decoding="async" />
   <div class="container ft-inner">
+    {lang !== 'fa' && (
     <div class="ft-top">
       <div class="ft-brand">
         <p class="ft-name">{f.name}</p>
@@ -41,6 +42,7 @@ const langs = ([
         {lang !== 'fa' && <div class="ft-card"><span class="ft-ico"><Icon name="clock" size={18} /></span><span><small>{s.contact.hours}</small><strong>{s.contact.hoursText}</strong></span></div>}
       </div>
     </div>
+    )}
 
     <nav class="ft-links" aria-label="Footer">
       {s.groups.map(group => (
@@ -51,10 +53,12 @@ const langs = ([
       ))}
     </nav>
 
+    {lang !== 'fa' && (
     <div class="ft-offices">
       <span class="ft-label">{f.offices}</span>
       <ul>{f.cities.map((c, i) => <li><strong>{c}</strong><span>{[f.countries[i], i === 0 ? f.hq : i === 3 ? f.wholesaler : f.partner].filter(Boolean).join(' · ')}</span></li>)}</ul>
     </div>
+    )}
 
     <div class="ft-bottom">
       <span>© {new Date().getFullYear()} {s.footer.rights}</span>
