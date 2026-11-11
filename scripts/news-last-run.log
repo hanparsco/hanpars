@@ -3,30 +3,30 @@ global feeds
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 12 items
+  Google News: 16 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 6 items
+  Google News: 11 items
 china feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 12 items
+  Google News: 16 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 6 items
-  Google News: 13 items
-  Google News: 0 items (no <item> elements; root <rss>, 1281 bytes, start b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><generator>NFE/5.0</generator><title>"China "active pharmaceutical ingredient" OR "API manufacturer" OR "API expo')
-  Google News: 8 items
+  Google News: 11 items
   Google News: 22 items
+  Google News: 1 items
+  Google News: 6 items
+  Google News: 20 items
 global
-  - Pharmaceutical Executive | Pharmaceutical Executive Daily: argenx Acquires Unnatural Products Inc | img
-  - Endpoints News | Trump’s drug pricing deals force tough choices on launches | img
-  - 조선일보 | AstraZeneca Proposes $10 Billion Rhythm Pharmaceuticals Acquisition | img
+  - Fierce Pharma | Merck KGaA lands FDA nod in rare tumor disorder, portending Ono, Daiic | img
+  - Pharmaceutical Executive | Pharmaceutical Executive Daily: FDA Requires Safety Label Update on GL | img
+  - Endpoints News | Argenx to acquire Unnatural Products in deal worth up to $1.15B | img
 china
+  - TradingView | Simcere Pharmaceutical Says SIM0725 Receives Clinical Trial Approval F | img
+  - Lokmat Times | China's Pharmaceutical Grip: Supply Chain Worries and Quality Checks I | img
   - Pharmaceutical Technology | Bio-Thera gains Chinese approval for spondylitis and rheumatoid arthri | img
-  - Pharmaceutical Commerce | China-Sourced KSMs Leave Vital 40 Exposed, APIIC Warns | img
-  - Tech Times | China Approves First Golimumab Biosimilar as Bio-Thera Clinches Unprec | img

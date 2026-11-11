@@ -1,35 +1,53 @@
 {
- "updated": "2026-11-10T02:55:28Z",
+ "updated": "2026-11-11T00:53:58Z",
  "global": [
   {
-   "title": "Pharmaceutical Executive Daily: argenx Acquires Unnatural Products Inc.",
-   "url": "https://www.pharmexec.com/view/daily-argenx-acquires-unnatural-products-inc-",
-   "source": "Pharmaceutical Executive",
-   "date": "2026-11-09",
-   "summary": "argenx acquires Unnatural Products for up to $1.15 billion to expand its immunology capabilities, GiftHealth’s Chip Parkinson on how single-partner platforms can transform the prescription journey, and Partha Anbil on why competing on net value matters more than cutting list pric…",
-   "image": "/news/g-6b84adc1a3.jpg",
+   "title": "Merck KGaA lands FDA nod in rare tumor disorder, portending Ono, Daiichi showdown",
+   "url": "https://www.fiercepharma.com/pharma/merck-kgaa-lands-fda-nod-rare-tumor-disorder",
+   "source": "Fierce Pharma",
+   "date": "2026-11-10",
+   "summary": "The FDA’s decision was based on Merck’s phase 3 Maneuver trial and follows similar approvals by other global regulators, including in China, Canada and Switzerland.",
+   "image": "/news/g-bc8780b607.jpg",
    "kind": "news"
   },
   {
-   "title": "Trump’s drug pricing deals force tough choices on launches",
-   "url": "https://endpoints.news/trumps-drug-pricing-deals-force-tough-choices-on-launches/",
+   "title": "Pharmaceutical Executive Daily: FDA Requires Safety Label Update on GLP-1 Receptor Agonist",
+   "url": "https://www.pharmexec.com/view/daily-fda-requires-safety-label-update-glp1-receptor-agonist",
+   "source": "Pharmaceutical Executive",
+   "date": "2026-11-10",
+   "summary": "FDA approves Bayer’s asundexian as the first Factor XIa inhibitor for secondary stroke prevention, the FDA requires a new safety label warning across all GLP-1 receptor agonists for a potential NAION risk, and AstraZeneca acquires Omniose to add a bioconjugation platform to its v…",
+   "image": "/news/g-33d0390a38.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "Argenx to acquire Unnatural Products in deal worth up to $1.15B",
+   "url": "https://endpoints.news/argenx-to-acquire-unnatural-products-in-deal-worth-up-to-1-15b/",
    "source": "Endpoints News",
    "date": "2026-11-09",
-   "summary": "Companies that committed to President Donald Trump’s drug pricing policy now face difficult decisions when launching new medicines. The “most favored nation” (MFN) pricing policy seeks to tie US drug prices to those charged in ...",
-   "image": "/news/g-9256c2facc.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "AstraZeneca Proposes $10 Billion Rhythm Pharmaceuticals Acquisition",
-   "url": "https://www.chosun.com/english/industry-en/2026/11/10/7FHZLBCBR5G7VN4PHAEHCNKLOY/",
-   "source": "조선일보",
-   "date": "2026-11-09",
-   "summary": "AstraZeneca Proposes $10 Billion Rhythm Pharmaceuticals Acquisition 조선일보",
-   "image": "/news/g-c3f14d02d3.jpg",
+   "summary": "Argenx said Monday it will buy a macrocycle biotech that started out of a garage, paying $550 million upfront in cash for Unnatural Products with as much as $595 million in milestone payments on the ...",
+   "image": "/news/g-4244866610.jpg",
    "kind": "news"
   }
  ],
  "china": [
+  {
+   "title": "Simcere Pharmaceutical Says SIM0725 Receives Clinical Trial Approval From NMPA Of China",
+   "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46R14M:0-simcere-pharmaceutical-says-sim0725-receives-clinical-trial-approval-from-nmpa-of-china/",
+   "source": "TradingView",
+   "date": "2026-11-10",
+   "summary": "Simcere Pharmaceutical Says SIM0725 Receives Clinical Trial Approval From NMPA Of China TradingView",
+   "image": "/news/c-8241d89150.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "China's Pharmaceutical Grip: Supply Chain Worries and Quality Checks Intensify",
+   "url": "https://www.lokmattimes.com/health/chinas-pharmaceutical-grip-supply-chain-worries-and-quality-checks-intensify-a001-w02/",
+   "source": "Lokmat Times",
+   "date": "2026-11-10",
+   "summary": "China's Pharmaceutical Grip: Supply Chain Worries and Quality Checks Intensify Lokmat Times",
+   "image": "/news/c-2c7ff73966.jpg",
+   "kind": "news"
+  },
   {
    "title": "Bio-Thera gains Chinese approval for spondylitis and rheumatoid arthritis drug",
    "url": "https://www.pharmaceutical-technology.com/news/bio-thera-nmpa-authorisation-bat2506-china/",
@@ -37,24 +55,6 @@
    "date": "2026-11-09",
    "summary": "China's NMPA has granted marketing authorisation for Bio-Thera Solutions’ BAT2506 to treat ankylosing spondylitis and rheumatoid arthritis.",
    "image": "/news/c-ca4146046c.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "China-Sourced KSMs Leave Vital 40 Exposed, APIIC Warns",
-   "url": "https://www.pharmaceuticalcommerce.com/view/china-sourced-ksms-leave-vital-40-exposed-apiic-warns",
-   "source": "Pharmaceutical Commerce",
-   "date": "2026-11-09",
-   "summary": "China-Sourced KSMs Leave Vital 40 Exposed, APIIC Warns Pharmaceutical Commerce",
-   "image": "/news/c-a64e45da77.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "China Approves First Golimumab Biosimilar as Bio-Thera Clinches Unprecedented US-EU-China Triple in 2026",
-   "url": "https://www.techtimes.com/articles/330190/20261106/china-approves-first-golimumab-biosimilar-bio-thera-clinches-unprecedented-us-eu-china-triple-2026.htm",
-   "source": "Tech Times",
-   "date": "2026-11-06",
-   "summary": "China Approves First Golimumab Biosimilar as Bio-Thera Clinches Unprecedented US-EU-China Triple in 2026 Tech Times",
-   "image": "/news/c-6e790023c0.jpg",
    "kind": "news"
   }
  ]
