@@ -35,18 +35,18 @@
   compat stubs, contact-query canonicals and placeholder policy checked in 4 languages
 == external links (warnings only)
   regulatory watch as of 2026-10-29: 6 items
-  news updated 2026-11-11T00:53:58Z
+  news updated 2026-11-12T02:00:07Z
   ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/concept-paper-revision-guideline-similar-biological-medicinal-products-chmp-437-04-rev1_en.pdf
   ok  200 [watch] https://picscheme.org/docview/11495
   ok  200 [watch] https://health.ec.europa.eu/medicinal-products/falsified-medicines/importation-active-substances-listing-third-countries_en
   ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/considerations-regarding-implementation-ich-m13b-bioequivalence-immediate-release-solid-oral-dosage-forms_en.pdf
   blocked 404 [watch] https://www.fda.gov/apology_objects/abuse-detection-apology.html
   ok  200 [watch] https://www.who.int/publications/m/item/main-outcomes-of-the-83rd-meeting-of-the-who-expert-committee-on-biological-standardization-held-from-12-to-15-october-2026
+  ok  200 [news] https://www.pharmexec.com/view/daily-fda-approves-pimjetmi
   ok  200 [news] https://www.fiercepharma.com/pharma/merck-kgaa-lands-fda-nod-rare-tumor-disorder
-  ok  200 [news] https://www.pharmexec.com/view/daily-fda-requires-safety-label-update-glp1-receptor-agonist
-  ok  200 [news] https://endpoints.news/argenx-to-acquire-unnatural-products-in-deal-worth-up-to-1-15b/
+  blocked 403 [news] https://indicanews.com/president-trumps-tariff-push-faces-hurdle-as-us-remains-dependent-on-indian-generic-drugs-report/
+  ok  200 [news] https://www.biospace.com/drug-delivery/fda-warns-chinese-providers-of-compounding-apis-over-record-request-refusals
+  ok  200 [news] https://en.fnnews.com/news/202611120747302317
   ok  200 [news] https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46R14M:0-simcere-pharmaceutical-says-sim0725-receives-clinical-trial-approval-from-nmpa-of-china/
-  ok  200 [news] https://www.lokmattimes.com/health/chinas-pharmaceutical-grip-supply-chain-worries-and-quality-checks-intensify-a001-w02/
-  ok  200 [news] https://www.pharmaceutical-technology.com/news/bio-thera-nmpa-authorisation-bat2506-china/
   ok  200 [webmail] https://secureserver.titan.email/mail/
 == result: OK
