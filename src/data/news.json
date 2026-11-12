@@ -1,6 +1,15 @@
 {
- "updated": "2026-11-11T00:53:58Z",
+ "updated": "2026-11-12T02:00:07Z",
  "global": [
+  {
+   "title": "FDA Approves Pimjetmi",
+   "url": "https://www.pharmexec.com/view/daily-fda-approves-pimjetmi",
+   "source": "Pharmaceutical Executive",
+   "date": "2026-11-11",
+   "summary": "FDA Approves Pimjetmi | PharmExec Pharmaceutical Executive",
+   "image": "/news/g-032d36f058.jpg",
+   "kind": "news"
+  },
   {
    "title": "Merck KGaA lands FDA nod in rare tumor disorder, portending Ono, Daiichi showdown",
    "url": "https://www.fiercepharma.com/pharma/merck-kgaa-lands-fda-nod-rare-tumor-disorder",
@@ -11,25 +20,34 @@
    "kind": "news"
   },
   {
-   "title": "Pharmaceutical Executive Daily: FDA Requires Safety Label Update on GLP-1 Receptor Agonist",
-   "url": "https://www.pharmexec.com/view/daily-fda-requires-safety-label-update-glp1-receptor-agonist",
-   "source": "Pharmaceutical Executive",
+   "title": "President Trump’s Tariff Push Faces Hurdle As US Remains Dependent On Indian Generic Drugs: Report",
+   "url": "https://indicanews.com/president-trumps-tariff-push-faces-hurdle-as-us-remains-dependent-on-indian-generic-drugs-report/",
+   "source": "indica News",
    "date": "2026-11-10",
-   "summary": "FDA approves Bayer’s asundexian as the first Factor XIa inhibitor for secondary stroke prevention, the FDA requires a new safety label warning across all GLP-1 receptor agonists for a potential NAION risk, and AstraZeneca acquires Omniose to add a bioconjugation platform to its v…",
-   "image": "/news/g-33d0390a38.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Argenx to acquire Unnatural Products in deal worth up to $1.15B",
-   "url": "https://endpoints.news/argenx-to-acquire-unnatural-products-in-deal-worth-up-to-1-15b/",
-   "source": "Endpoints News",
-   "date": "2026-11-09",
-   "summary": "Argenx said Monday it will buy a macrocycle biotech that started out of a garage, paying $550 million upfront in cash for Unnatural Products with as much as $595 million in milestone payments on the ...",
-   "image": "/news/g-4244866610.jpg",
+   "summary": "President Trump’s Tariff Push Faces Hurdle As US Remains Dependent On Indian Generic Drugs: Report indica News",
+   "image": "/news/g-d1c698c6cc.jpg",
    "kind": "news"
   }
  ],
  "china": [
+  {
+   "title": "FDA warns Chinese providers of compounding APIs over record-request refusals",
+   "url": "https://www.biospace.com/drug-delivery/fda-warns-chinese-providers-of-compounding-apis-over-record-request-refusals",
+   "source": "BioSpace",
+   "date": "2026-11-11",
+   "summary": "FDA warns Chinese providers of compounding APIs over record-request refusals BioSpace",
+   "image": "/news/c-f48c8e8ae3.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "Amicogen joins forces with Chinese culture media leader...Songdo International City GMP plant to serve as a “second production base”",
+   "url": "https://en.fnnews.com/news/202611120747302317",
+   "source": "파이낸셜뉴스",
+   "date": "2026-11-11",
+   "summary": "Amicogen joins forces with Chinese culture media leader...Songdo International City GMP plant to serve as a “second production base” 파이낸셜뉴스",
+   "image": "/news/c-c82a4135bc.jpg",
+   "kind": "news"
+  },
   {
    "title": "Simcere Pharmaceutical Says SIM0725 Receives Clinical Trial Approval From NMPA Of China",
    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46R14M:0-simcere-pharmaceutical-says-sim0725-receives-clinical-trial-approval-from-nmpa-of-china/",
@@ -37,24 +55,6 @@
    "date": "2026-11-10",
    "summary": "Simcere Pharmaceutical Says SIM0725 Receives Clinical Trial Approval From NMPA Of China TradingView",
    "image": "/news/c-8241d89150.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "China's Pharmaceutical Grip: Supply Chain Worries and Quality Checks Intensify",
-   "url": "https://www.lokmattimes.com/health/chinas-pharmaceutical-grip-supply-chain-worries-and-quality-checks-intensify-a001-w02/",
-   "source": "Lokmat Times",
-   "date": "2026-11-10",
-   "summary": "China's Pharmaceutical Grip: Supply Chain Worries and Quality Checks Intensify Lokmat Times",
-   "image": "/news/c-2c7ff73966.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Bio-Thera gains Chinese approval for spondylitis and rheumatoid arthritis drug",
-   "url": "https://www.pharmaceutical-technology.com/news/bio-thera-nmpa-authorisation-bat2506-china/",
-   "source": "Pharmaceutical Technology",
-   "date": "2026-11-09",
-   "summary": "China's NMPA has granted marketing authorisation for Bio-Thera Solutions’ BAT2506 to treat ankylosing spondylitis and rheumatoid arthritis.",
-   "image": "/news/c-ca4146046c.jpg",
    "kind": "news"
   }
  ]
