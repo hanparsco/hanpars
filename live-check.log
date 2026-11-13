@@ -30,22 +30,22 @@
   200 https://hanpars.com/sitemap-tr-api.xml: 1502 URLs
   total 21629 URLs, 21629 unique
 == sample of 200 sitemap URLs
-  checked 200 pages and 725 alternates
+  checked 200 pages and 721 alternates
 == repaired cohorts (regression fixtures)
   compat stubs, contact-query canonicals and placeholder policy checked in 4 languages
 == external links (warnings only)
   regulatory watch as of 2026-10-29: 6 items
-  news updated 2026-11-12T02:00:07Z
+  news updated 2026-11-13T01:28:30Z
   ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/concept-paper-revision-guideline-similar-biological-medicinal-products-chmp-437-04-rev1_en.pdf
   ok  200 [watch] https://picscheme.org/docview/11495
   ok  200 [watch] https://health.ec.europa.eu/medicinal-products/falsified-medicines/importation-active-substances-listing-third-countries_en
   ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/considerations-regarding-implementation-ich-m13b-bioequivalence-immediate-release-solid-oral-dosage-forms_en.pdf
   blocked 404 [watch] https://www.fda.gov/apology_objects/abuse-detection-apology.html
   ok  200 [watch] https://www.who.int/publications/m/item/main-outcomes-of-the-83rd-meeting-of-the-who-expert-committee-on-biological-standardization-held-from-12-to-15-october-2026
-  ok  200 [news] https://www.pharmexec.com/view/daily-fda-approves-pimjetmi
-  ok  200 [news] https://www.fiercepharma.com/pharma/merck-kgaa-lands-fda-nod-rare-tumor-disorder
-  blocked 403 [news] https://indicanews.com/president-trumps-tariff-push-faces-hurdle-as-us-remains-dependent-on-indian-generic-drugs-report/
-  ok  200 [news] https://www.biospace.com/drug-delivery/fda-warns-chinese-providers-of-compounding-apis-over-record-request-refusals
+  ok  200 [news] https://www.fiercepharma.com/pharma/fda-cites-record-request-breakdowns-trio-api-maker-warning-letters
+  ok  200 [news] https://www.pharmexec.com/view/daily-moderna-outlines-growth-plan-2026-analyst-day
+  ok  200 [news] https://www.raps.org/resource/recon-fda-shelves-commissioner-s-voucher-program-eli-lilly-gets-first-glp-1-weight-loss-pill-approved-in-china.html
+  ok  200 [news] https://www.medicaldaily.com/fda-warns-chinese-compounded-drug-ingredient-makers-481191
   ok  200 [news] https://en.fnnews.com/news/202611120747302317
   ok  200 [news] https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46R14M:0-simcere-pharmaceutical-says-sim0725-receives-clinical-trial-approval-from-nmpa-of-china/
   ok  200 [webmail] https://secureserver.titan.email/mail/
