@@ -95,7 +95,7 @@ const areaIcons: Record<string, string> = {"area-1": "<path d=\"M4 8V5a1 1 0 0 1
       <ul class="cn-facts">
         {lang !== 'fa' && <li><span class="cn-ico"><Icon name="pin" size={17}/></span><span>{s.home.companyAddress.split(' · ').slice(-1)[0]}</span></li>}
         {lang !== 'fa' && <li><span class="cn-ico"><Icon name="clock" size={17}/></span><span>{s.home.companyHours}</span></li>}
-        {lang !== 'fa' && <li><span class="cn-ico"><Icon name="phone" size={17}/></span><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></li>}
+        {lang === 'zh' && <li><span class="cn-ico"><Icon name="phone" size={17}/></span><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></li>}
       </ul>
       <a class="button button-navy cn-more" href={L('/about-us')}>{s.home.about}<Icon name="arrow" size={17} class="cn-arrow"/></a>
     </div>

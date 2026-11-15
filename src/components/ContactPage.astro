@@ -113,7 +113,7 @@ const privacyNote = ({
     </form>
   </div>
   {lang !== 'fa' && <aside class="contact-aside"><h3>{c.asideTitle}</h3><p>{c.asideText}</p>
-    <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.phone}/><div><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></p></div></div>
+    {lang === 'zh' && <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.phone}/><div><strong>{c.phone}</strong><p><a href="tel:+982188883325" dir="ltr" data-fa-digits>+98 21 8888 3325</a></p></div></div>}
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.mail}/><div><strong>{c.email}</strong><p><a href="#brief-form" data-m={mEnc(contactEmail)} dir="ltr" data-m-text>{mShow(contactEmail)}</a><br/><a href="#brief-form" data-m={mEnc(raEmail)} dir="ltr" data-m-text>{mShow(raEmail)}</a></p></div></div>
     {wechatId && <div class="contact-detail" id="wechat"><span class="cd-icon" aria-hidden="true" set:html={wxSvg}/><div><strong>{wxLabel}</strong><p><a href="#wechat" data-wechat><bdi dir="ltr" lang="en">{wechatId}</bdi></a></p><span class="form-hint">{wxHint}</span></div></div>}
     <div class="contact-detail"><span class="cd-icon" aria-hidden="true" set:html={icons.pin}/><div><strong>{c.office}</strong><p>{officeLines.map((l, n) => <>{n > 0 && <br/>}{l}</>)}</p></div></div>
