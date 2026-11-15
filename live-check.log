@@ -30,23 +30,23 @@
   200 https://hanpars.com/sitemap-tr-api.xml: 1502 URLs
   total 21629 URLs, 21629 unique
 == sample of 200 sitemap URLs
-  checked 200 pages and 733 alternates
+  checked 200 pages and 729 alternates
 == repaired cohorts (regression fixtures)
   compat stubs, contact-query canonicals and placeholder policy checked in 4 languages
 == external links (warnings only)
   regulatory watch as of 2026-10-29: 6 items
-  news updated 2026-11-14T01:02:25Z
+  news updated 2026-11-15T00:17:21Z
   ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/concept-paper-revision-guideline-similar-biological-medicinal-products-chmp-437-04-rev1_en.pdf
   ok  200 [watch] https://picscheme.org/docview/11495
   ok  200 [watch] https://health.ec.europa.eu/medicinal-products/falsified-medicines/importation-active-substances-listing-third-countries_en
   ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/considerations-regarding-implementation-ich-m13b-bioequivalence-immediate-release-solid-oral-dosage-forms_en.pdf
   blocked 404 [watch] https://www.fda.gov/apology_objects/abuse-detection-apology.html
   ok  200 [watch] https://www.who.int/publications/m/item/main-outcomes-of-the-83rd-meeting-of-the-who-expert-committee-on-biological-standardization-held-from-12-to-15-october-2026
+  blocked 202 [news] https://www.thepharmaletter.com/pharma-news/novo-files-for-etavopivat-approval-with-fda-and-ema-for-sickle-cell-disease
   ok  200 [news] https://www.pharmexec.com/view/daily-fda-shelves-cnpv-program
   ok  200 [news] https://endpoints.news/milestone-cuts-20-of-staff-as-cardamyst-sales-hit-1m-in-q3/
-  ok  200 [news] https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-9-12-november-2026
-  ok  200 [news] https://via.ritzau.dk/pressemeddelelse/15283073/leo-pharma-announces-nmpa-approval-of-anzupgor-delgocitinib-cream-for-patients-with-moderate-to-severe-chronic-hand-eczema-che-in-china?publisherId=12353927&lang=da
-  ok  200 [news] https://www.biospace.com/drug-delivery/fda-warns-chinese-providers-of-compounding-apis-over-record-request-refusals
-  ok  200 [news] https://www.pharmaceutical-technology.com/news/eli-lilly-oral-glp1-ra-foundayo-nmpa-approval-weight-management/
+  ok  200 [news] https://www.raps.org/resource/fda-warns-three-chinese-api-manufacturers-for-refusing-records-requests-quality-oversight.html
+  ok  200 [news] https://www.biospace.com/press-releases/leo-pharma-announces-nmpa-approval-of-anzupgo-delgocitinib-cream-for-patients-with-moderate-to-severe-chronic-hand-eczema-che-in-china
+  ok  200 [news] https://www.businesstoday.in/industry/pharma/story/indias-pharma-industry-shifts-to-high-value-drugs-advanced-manufacturing-to-cut-china-dependence-report-567492-2026-11-14
   ok  200 [webmail] https://secureserver.titan.email/mail/
 == result: OK
