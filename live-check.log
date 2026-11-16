@@ -40,7 +40,7 @@
   ok  200 [watch] https://picscheme.org/docview/11495
   ok  200 [watch] https://health.ec.europa.eu/medicinal-products/falsified-medicines/importation-active-substances-listing-third-countries_en
   ok  200 [watch] https://www.ema.europa.eu/en/documents/scientific-guideline/considerations-regarding-implementation-ich-m13b-bioequivalence-immediate-release-solid-oral-dosage-forms_en.pdf
-  ok  200 [watch] https://www.fda.gov/regulatory-information/search-fda-guidance-documents/individualized-human-genome-editing-products-considerations-bla-submission-and-postapproval
+  blocked 404 [watch] https://www.fda.gov/apology_objects/abuse-detection-apology.html
   ok  200 [watch] https://www.who.int/publications/m/item/main-outcomes-of-the-83rd-meeting-of-the-who-expert-committee-on-biological-standardization-held-from-12-to-15-october-2026
   ok  200 [news] https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/sun-pharma-eyes-4-billion-loan-for-organon-buy-five-banks-likely-to-anchor-refinancing/articleshow/135864434.cms?from=mdr
   ok  200 [news] https://pharmaphorum.com/news/fda-wont-approve-summit-akesos-ivonescimab
