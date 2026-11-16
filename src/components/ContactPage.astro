@@ -48,10 +48,10 @@ const ra = ({
 } as Record<string, { need: string; pick: string; other: string; otherPh: string; product: string; productPh: string; market: string; marketPh: string; explain: string; explainPh: string; items: string[] }>)[lang];
 const i18n = JSON.stringify({ labels: c.labels, notConnected: c.notConnected, sent: c.sent, failed: c.failed, sending: c.sending, send: c.send, v: vMsg, corpOnly: lang !== 'zh' });
 const privacyNote = ({
-        en: 'Privacy: the details you enter are sent through Web3Forms, a form-relay service, to the office e-mail of Haniya Parsan Darou Co. (Hanpars) in Tehran and are used to answer your enquiry. To ask what we hold about you, or to have it deleted, send a request through this form.',
-        fa: 'حریم خصوصی: اطلاعاتی که وارد می‌کنید از طریق سرویس ارسال فرم Web3Forms به ایمیل دفتر شرکت هانیا پرسان دارو در تهران فرستاده می‌شود و برای پاسخ به درخواست شما به کار می‌رود. برای اطلاع از اطلاعات ثبت‌شده یا درخواست حذف آن، از همین فرم استفاده کنید.',
-        zh: '隐私说明：您填写的信息将通过表单转发服务 Web3Forms 发送至德黑兰 汉尼亚帕尔桑药业有限公司（汉帕斯）的办公邮箱，仅用于答复您的询盘。如需了解我们保存的信息或要求删除，请通过本表单提出。',
-        tr: 'Gizlilik: Girdiğiniz bilgiler Web3Forms form aktarım hizmeti aracılığıyla Tahran’daki Haniya Parsan Darou Co. (Hanpars) ofis e-postasına gönderilir ve talebinizi yanıtlamak için kullanılır. Hakkınızda tutulan bilgileri öğrenmek veya silinmesini istemek için bu formu kullanın.',
+        en: 'Privacy: the details you enter are sent through Web3Forms, a form-relay service, to the office e-mail of Haniya Parsan Darou Co. (Hanpars) in Tehran; supply requests are also filed in Hanpars’ internal project tracker. They are used only to answer your enquiry. To ask what we hold about you, or to have it deleted, send a request through this form.',
+        fa: 'حریم خصوصی: اطلاعاتی که وارد می‌کنید از طریق سرویس ارسال فرم Web3Forms به ایمیل دفتر شرکت هانیا پرسان دارو در تهران فرستاده می‌شود و درخواست‌های تأمین در سامانهٔ داخلی پیگیری پروژه‌های هانپارس نیز ثبت می‌شود؛ این اطلاعات فقط برای پاسخ به درخواست شما به کار می‌رود. برای اطلاع از اطلاعات ثبت‌شده یا درخواست حذف آن، از همین فرم استفاده کنید.',
+        zh: '隐私说明：您填写的信息将通过表单转发服务 Web3Forms 发送至德黑兰 汉尼亚帕尔桑药业有限公司（汉帕斯）的办公邮箱；采购询盘还会记录在汉帕斯内部的项目跟踪系统中。这些信息仅用于答复您的询盘。如需了解我们保存的信息或要求删除，请通过本表单提出。',
+        tr: 'Gizlilik: Girdiğiniz bilgiler Web3Forms form aktarım hizmeti aracılığıyla Tahran’daki Haniya Parsan Darou Co. (Hanpars) ofis e-postasına gönderilir; tedarik talepleri ayrıca Hanpars’ın dahili proje takip sistemine kaydedilir. Bilgiler yalnızca talebinizi yanıtlamak için kullanılır. Hakkınızda tutulan bilgileri öğrenmek veya silinmesini istemek için bu formu kullanın.',
       } as Record<string, string>)[lang];
 ---
 <script is:inline src="https://web3forms.com/client/script.js" async defer></script>

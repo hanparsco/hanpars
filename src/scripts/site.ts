@@ -322,10 +322,18 @@ if (form) {
     }
     if (button) { button.disabled = true; button.textContent = formI18n.sending || 'Sending…'; }
     if (status) status.textContent = '';
+    // Copy of the fields for the Hanpars project tracker (supply requests only), taken before the form is reset.
+    const fd = new FormData(form);
+    const trackerCopy: Record<string, string> = {};
+    for (const k of ['enquiry_type','language','product','specification','quantity','market','timing','urgency_reason','message','name','company','email','phone']) trackerCopy[k] = String(fd.get(k) ?? '');
     try {
-      const response = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body:new FormData(form) });
+      const response = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body:fd });
       const result = await response.json().catch(() => ({}));
       if (response.ok && result && result.success === true) {
+        // Also file sourcing requests in the internal tracker; never blocks or changes what the visitor sees.
+        if (trackerCopy.enquiry_type === 'sourcing') {
+          try { fetch('https://ra.teohan.com/api/intake', { method:'POST', mode:'cors', keepalive:true, headers:{ 'Content-Type':'text/plain' }, body: JSON.stringify(trackerCopy) }).catch(() => {}); } catch {}
+        }
         form.reset(); selectType(type); syncChips(); syncUrgency(); syncRaOther(); try { (window as any).hcaptcha?.reset(); } catch {}
         if (status) status.textContent = formI18n.sent || 'Thank you. Your enquiry has been sent to the Hanpars office; we reply by email.';
       } else {
