@@ -334,7 +334,9 @@ if (form) {
       const result = await response.json().catch(() => ({}));
       if (response.ok && result && result.success === true) {
         // Also file sourcing requests in the internal tracker; never blocks or changes what the visitor sees.
-        if (trackerCopy.enquiry_type === 'sourcing') {
+        // the hidden type field carries the visible label ("Sourcing enquiry", «درخواست تأمین»…), so test the tab key itself
+        trackerCopy.enquiry_type = type;
+        if (type === 'sourcing') {
           try { fetch('https://ra.teohan.com/api/intake', { method:'POST', mode:'cors', keepalive:true, headers:{ 'Content-Type':'text/plain' }, body: JSON.stringify(trackerCopy) }).catch(() => {}); } catch {}
         }
         form.reset(); selectType(type); syncChips(); syncUrgency(); syncRaOther(); try { (window as any).hcaptcha?.reset(); } catch {}
