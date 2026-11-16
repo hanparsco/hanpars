@@ -275,6 +275,9 @@ if (form) {
   });
   urgPairs.forEach(([tId]) => document.getElementById(tId)?.addEventListener('input', syncUrgency)); chips.forEach(chip => chip.addEventListener('click', syncUrgency)); syncUrgency();
   const button = form.querySelector<HTMLButtonElement>('[data-send-brief]');
+  // The form has no action and its button starts disabled: nothing can be sent until this script (validation,
+  // corporate-email rule, captcha) is running. Before, a tap on a slow connection posted the raw form to Web3Forms.
+  if (button) button.disabled = false;
   const formStart = Date.now();
   // Inline validation: every visible field is required; messages in the page language, shown under the field.
   const V = formI18n.v || {};
@@ -327,7 +330,7 @@ if (form) {
     const trackerCopy: Record<string, string> = {};
     for (const k of ['enquiry_type','language','product','specification','quantity','market','timing','urgency_reason','message','name','company','email','phone']) trackerCopy[k] = String(fd.get(k) ?? '');
     try {
-      const response = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body:fd });
+      const response = await fetch(form.dataset.action || '', { method:'POST', headers:{ 'Accept':'application/json' }, body:fd });
       const result = await response.json().catch(() => ({}));
       if (response.ok && result && result.success === true) {
         // Also file sourcing requests in the internal tracker; never blocks or changes what the visitor sees.
