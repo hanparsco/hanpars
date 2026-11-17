@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T18:57:39Z",
+ "updated": "2026-11-17T03:14:04Z",
  "items": [
   {
    "title": "中国医药：佩玛贝特化学原料药上市申请获批准",
@@ -14,30 +14,6 @@
    "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
   },
   {
-   "title": "津药药业：盐酸苯海拉明化学原料药上市申请获批准",
-   "url": "https://www.jiemian.com/article/15337340.html",
-   "source": "界面新闻",
-   "date": "2026-11-16",
-   "summary": "",
-   "image": "",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-16T18:57:39Z",
-   "imageSource": "",
-   "imageBasis": ""
-  },
-  {
-   "title": "康方生物出海受挫，遭FDA拒批！",
-   "url": "https://bydrug.pharmcube.com/news/detail/1ddbbdb307fb313c3262b755bc4d6935",
-   "source": "医药魔方",
-   "date": "2026-11-16",
-   "summary": "",
-   "image": "",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-16T07:21:44Z",
-   "imageSource": "",
-   "imageBasis": ""
-  },
-  {
    "title": "中国 “双抗神药”美国闯关失利：FDA为何不买账？中国创新药出海还有多远？",
    "url": "https://bydrug.pharmcube.com/news/detail/ff92413a687a2ef2a4b696af0295bbe1",
    "source": "医药魔方",
@@ -46,6 +22,30 @@
    "image": "",
    "feed": "Google News RSS (zh-CN)",
    "retrieved": "2026-11-15T23:12:11Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
+   "title": "罗氏下一代乳腺癌新药获批上市",
+   "url": "https://bydrug.pharmcube.com/news/detail/31a3bcacef89f26c770d8a4ebb04fec4",
+   "source": "医药魔方",
+   "date": "2026-11-17",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-17T03:14:04Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
+   "title": "药康生物：拟3.12亿元收购佰麦生物80%股权",
+   "url": "https://www.vbdata.cn/intelDetail/1148678",
+   "source": "动脉网",
+   "date": "2026-11-17",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-17T03:14:04Z",
    "imageSource": "",
    "imageBasis": ""
   },
@@ -62,16 +62,16 @@
    "imageBasis": ""
   },
   {
-   "title": "3.12亿元，集萃药康收购南京佰麦生物80%股权",
-   "url": "https://www.vbdata.cn/intelDetail/1149021",
-   "source": "动脉网",
+   "title": "炎症疾病生物技术公司Rezera推迟在美2亿美元IPO",
+   "url": "https://www.36kr.com/newsflashes/4072093292024704",
+   "source": "36氪",
    "date": "2026-11-16",
    "summary": "",
-   "image": "",
+   "image": "/news/zh-af2222332d.jpg",
    "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-16T18:57:39Z",
-   "imageSource": "",
-   "imageBasis": ""
+   "retrieved": "2026-11-17T03:14:04Z",
+   "imageSource": "https://img.36krcdn.com/20191024/v2_1571894049839_img_jpg",
+   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
   }
  ]
 }
