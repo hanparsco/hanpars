@@ -1,35 +1,53 @@
 {
- "updated": "2026-11-16T00:22:51Z",
+ "updated": "2026-11-17T03:10:03Z",
  "global": [
   {
-   "title": "Sun Pharma eyes $4 billion loan for Organon buy, five banks likely to anchor refinancing",
-   "url": "https://m.economictimes.com/industry/healthcare/biotech/pharmaceuticals/sun-pharma-eyes-4-billion-loan-for-organon-buy-five-banks-likely-to-anchor-refinancing/articleshow/135864434.cms",
-   "source": "The Economic Times",
-   "date": "2026-11-15",
-   "summary": "Sun Pharma eyes $4 billion loan for Organon buy, five banks likely to anchor refinancing The Economic Times",
-   "image": "/news/g-e4903eaaa7.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "FDA won't approve Summit, Akeso's ivonescimab",
-   "url": "https://pharmaphorum.com/news/fda-wont-approve-summit-akesos-ivonescimab",
-   "source": "Pharmaphorum",
-   "date": "2026-11-15",
-   "summary": "FDA won't approve Summit, Akeso's ivonescimab Phil.Taylor Sun, 15/11/2026 - 18:23",
-   "image": "/news/g-e74e64e6eb.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Pharmaceutical Executive Daily: FDA Shelves CNPV Program",
-   "url": "https://www.pharmexec.com/view/daily-fda-shelves-cnpv-program",
+   "title": "Pharmaceutical Executive Daily: FDA Approves Three New Therapies",
+   "url": "https://www.pharmexec.com/view/daily-fda-approves-three-new-therapies",
    "source": "Pharmaceutical Executive",
-   "date": "2026-11-13",
-   "summary": "FDA reportedly shelves its Commissioner’s National Priority Voucher program, Eli Lilly breaks ground on a $3.5 billion Pennsylvania manufacturing site for next-generation obesity treatments, and Parexel’s Stacy Hurt on how small protocol decisions can become enrollment and retent…",
-   "image": "/news/g-ae8a6d985a.jpg",
+   "date": "2026-11-16",
+   "summary": "FDA approves three new therapies, a wave of dealmaking led by Johnson & Johnson, Eli Lilly, AmyriAD Therapeutics, and Sanofi, and Ossium Health’s Kevin Caldwell joins The Ron Lanton Report on rebuilding bone marrow transplants around deceased-donor marrow.",
+   "image": "/news/g-ad34861bd8.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "AstraZeneca secures FDA approval for Imfinzi combo in MIBC",
+   "url": "https://www.pharmaceutical-technology.com/news/astrazeneca-fda-approval-imfinzi-combo-mibc/",
+   "source": "Pharmaceutical Technology",
+   "date": "2026-11-16",
+   "summary": "The US FDA has approved AstraZeneca's Imfinzi in combination with enfortumab vedotin for adult patients with MIBC who cannot receive or have refused cisplatin-based chemotherapy.",
+   "image": "/news/g-43dd835ebc.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "J&J to buy eye disease biotech Ollin Biosciences for up to $3.3B",
+   "url": "https://endpoints.news/jj-to-buy-eye-disease-biotech-ollin-biosciences-for-up-to-3-3b/",
+   "source": "Endpoints News",
+   "date": "2026-11-16",
+   "summary": "Johnson & Johnson said Monday it will snap up Ollin Biosciences in a deal worth up to $3.3 billion, just a little over a year after the ophthalmology biotech broke cover ...",
+   "image": "/news/g-6f4d814717.jpg",
    "kind": "news"
   }
  ],
  "china": [
+  {
+   "title": "Lilly wins China nod for oral obesity drug, to invest $3.5 billion in U.S. production",
+   "url": "https://biz.chosun.com/en/en-science/2026/11/13/HRT2XF5FTFG4TNBWO42JNSBRDM/",
+   "source": "Chosunbiz",
+   "date": "2026-11-13",
+   "summary": "Lilly wins China nod for oral obesity drug, to invest $3.5 billion in U.S. production Chosunbiz",
+   "image": "/news/c-4e18d4ca3c.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "China's Pharmaceutical Supply Chain Focus Of House Hearing",
+   "url": "https://legis1.com/news/pharmaceutical-supply-chain-house-panel-will",
+   "source": "Legis1",
+   "date": "2026-11-13",
+   "summary": "China's Pharmaceutical Supply Chain Focus Of House Hearing Legis1",
+   "image": "/news/c-29e8144c53.jpg",
+   "kind": "news"
+  },
   {
    "title": "FDA warns Chinese API manufacturers for refusing records requests, quality oversight",
    "url": "https://www.raps.org/resource/fda-warns-three-chinese-api-manufacturers-for-refusing-records-requests-quality-oversight.html",
@@ -37,24 +55,6 @@
    "date": "2026-11-13",
    "summary": "FDA warns Chinese API manufacturers for refusing records requests, quality oversight RAPS",
    "image": "/news/c-2f5cb87d99.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "LEO Pharma announces NMPA-approval of Anzupgo® (delgocitinib) cream for patients with moderate to severe chronic hand eczema (CHE) in China",
-   "url": "https://www.biospace.com/press-releases/leo-pharma-announces-nmpa-approval-of-anzupgo-delgocitinib-cream-for-patients-with-moderate-to-severe-chronic-hand-eczema-che-in-china",
-   "source": "BioSpace",
-   "date": "2026-11-13",
-   "summary": "LEO Pharma announces NMPA-approval of Anzupgo® (delgocitinib) cream for patients with moderate to severe chronic hand eczema (CHE) in China BioSpace",
-   "image": "/news/c-05ae61d886.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "India's pharma industry shifts to high-value drugs, advanced manufacturing to cut China dependence: Report",
-   "url": "https://www.businesstoday.in/industry/pharma/story/indias-pharma-industry-shifts-to-high-value-drugs-advanced-manufacturing-to-cut-china-dependence-report-567492-2026-11-14",
-   "source": "Business Today",
-   "date": "2026-11-14",
-   "summary": "India's pharma industry shifts to high-value drugs, advanced manufacturing to cut China dependence: Report Business Today",
-   "image": "/news/c-96c67be1f8.jpg",
    "kind": "news"
   }
  ]
