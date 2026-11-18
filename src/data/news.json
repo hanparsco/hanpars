@@ -1,6 +1,15 @@
 {
- "updated": "2026-11-17T03:10:03Z",
+ "updated": "2026-11-18T02:35:59Z",
  "global": [
+  {
+   "title": "GSK’s Nuvalent buyout delivers again as FDA clears Nelkarmi for lung cancer",
+   "url": "https://endpoints.news/gsks-nuvalent-buyout-delivers-again-as-fda-clears-nelkarmi-for-lung-cancer/",
+   "source": "Endpoints News",
+   "date": "2026-11-17",
+   "summary": "GSK has secured a US accelerated approval for its oral lung cancer drug neladalkib, one of two assets at the heart of its $10.6 billion purchase of oncology drugmaker Nuvalent earlier this ...",
+   "image": "/news/g-a8423b8dc0.jpg",
+   "kind": "news"
+  },
   {
    "title": "Pharmaceutical Executive Daily: FDA Approves Three New Therapies",
    "url": "https://www.pharmexec.com/view/daily-fda-approves-three-new-therapies",
@@ -11,50 +20,41 @@
    "kind": "news"
   },
   {
-   "title": "AstraZeneca secures FDA approval for Imfinzi combo in MIBC",
-   "url": "https://www.pharmaceutical-technology.com/news/astrazeneca-fda-approval-imfinzi-combo-mibc/",
-   "source": "Pharmaceutical Technology",
-   "date": "2026-11-16",
-   "summary": "The US FDA has approved AstraZeneca's Imfinzi in combination with enfortumab vedotin for adult patients with MIBC who cannot receive or have refused cisplatin-based chemotherapy.",
-   "image": "/news/g-43dd835ebc.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "J&J to buy eye disease biotech Ollin Biosciences for up to $3.3B",
-   "url": "https://endpoints.news/jj-to-buy-eye-disease-biotech-ollin-biosciences-for-up-to-3-3b/",
-   "source": "Endpoints News",
-   "date": "2026-11-16",
-   "summary": "Johnson & Johnson said Monday it will snap up Ollin Biosciences in a deal worth up to $3.3 billion, just a little over a year after the ophthalmology biotech broke cover ...",
-   "image": "/news/g-6f4d814717.jpg",
+   "title": "Roche’s next major breast cancer drug, Wilserdly, secures FDA approval as 4th oral SERD",
+   "url": "https://www.fiercepharma.com/pharma/roche-next-big-breast-cancer-drug-wilserdly-secures-fda-approval-4th-oral-serd",
+   "source": "Fierce Pharma",
+   "date": "2026-11-17",
+   "summary": "Roche’s giredestrant took the first step toward what some analysts project could exceed $10 billion in peak annual sales, winning FDA approval for certain patients with HR-positive, HER2-negative breast cancer.",
+   "image": "/news/g-39eb5060a2.jpg",
    "kind": "news"
   }
  ],
  "china": [
   {
-   "title": "Lilly wins China nod for oral obesity drug, to invest $3.5 billion in U.S. production",
-   "url": "https://biz.chosun.com/en/en-science/2026/11/13/HRT2XF5FTFG4TNBWO42JNSBRDM/",
-   "source": "Chosunbiz",
-   "date": "2026-11-13",
-   "summary": "Lilly wins China nod for oral obesity drug, to invest $3.5 billion in U.S. production Chosunbiz",
-   "image": "/news/c-4e18d4ca3c.jpg",
+   "title": "Simcere Pharmaceutical Says Sim0712 Receives Clinical Trial Approval From China's NMPA",
+   "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46X0PO:0-simcere-pharmaceutical-says-sim0712-receives-clinical-trial-approval-from-china-s-nmpa/",
+   "source": "TradingView",
+   "date": "2026-11-16",
+   "summary": "Simcere Pharmaceutical Says Sim0712 Receives Clinical Trial Approval From China's NMPA TradingView",
+   "image": "/news/c-daba274613.jpg",
    "kind": "news"
   },
   {
-   "title": "China's Pharmaceutical Supply Chain Focus Of House Hearing",
-   "url": "https://legis1.com/news/pharmaceutical-supply-chain-house-panel-will",
-   "source": "Legis1",
-   "date": "2026-11-13",
-   "summary": "China's Pharmaceutical Supply Chain Focus Of House Hearing Legis1",
-   "image": "/news/c-29e8144c53.jpg",
+   "title": "27 batches of medicines from 17 manufacturers, including Beijing Tong Ren Tang, fail regulatory checks",
+   "url": "https://www.zaobao.com.sg/en/news/china/27-batches-medicines-17-manufacturers-including-beijing-tong-ren-tang-fail-regulatory-checks",
+   "source": "联合早报",
+   "date": "2026-11-17",
+   "summary": "27 batches of medicines from 17 manufacturers, including Beijing Tong Ren Tang, fail regulatory checks 联合早报",
+   "image": "/news/c-082095bff4.jpg",
    "kind": "news"
   },
   {
-   "title": "FDA warns Chinese API manufacturers for refusing records requests, quality oversight",
-   "url": "https://www.raps.org/resource/fda-warns-three-chinese-api-manufacturers-for-refusing-records-requests-quality-oversight.html",
-   "source": "RAPS",
-   "date": "2026-11-13",
-   "summary": "FDA warns Chinese API manufacturers for refusing records requests, quality oversight RAPS",
-   "image": "/news/c-2f5cb87d99.jpg",
+   "title": "India's pharma industry shifts to high-value drugs, advanced manufacturing to cut China dependence: Report",
+   "url": "https://www.businesstoday.in/industry/pharma/story/indias-pharma-industry-shifts-to-high-value-drugs-advanced-manufacturing-to-cut-china-dependence-report-567492-2026-11-14",
+   "source": "Business Today",
+   "date": "2026-11-14",
+   "summary": "India's pharma industry shifts to high-value drugs, advanced manufacturing to cut China dependence: Report Business Today",
+   "image": "/news/c-96c67be1f8.jpg",
    "kind": "news"
   }
  ]

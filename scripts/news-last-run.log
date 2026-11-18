@@ -1,32 +1,32 @@
-  ! Google News: HTTP Error 429: Too Many Requests
-  ! Google News: HTTP Error 429: Too Many Requests
-  ! Google News: HTTP Error 429: Too Many Requests
-  ! Google News: HTTP Error 429: Too Many Requests
 global feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
+  Google News: 19 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 19 items
+  Google News: 27 items
 china feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
+  Google News: 19 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 19 items
-  Google News: 2 items
-  Google News: 25 items
+  Google News: 27 items
+  Google News: 24 items
+  Google News: 1 items
+  Google News: 21 items
+  Google News: 30 items
 global
+  - Endpoints News | GSK’s Nuvalent buyout delivers again as FDA clears Nelkarmi for lung c | img
   - Pharmaceutical Executive | Pharmaceutical Executive Daily: FDA Approves Three New Therapies | img
-  - Pharmaceutical Technology | AstraZeneca secures FDA approval for Imfinzi combo in MIBC | img
-  - Endpoints News | J&J to buy eye disease biotech Ollin Biosciences for up to $3.3B | img
+  - Fierce Pharma | Roche’s next major breast cancer drug, Wilserdly, secures FDA approval | img
 china
-  - Chosunbiz | Lilly wins China nod for oral obesity drug, to invest $3.5 billion in  | img
-  - Legis1 | China's Pharmaceutical Supply Chain Focus Of House Hearing | img
-  - RAPS | FDA warns Chinese API manufacturers for refusing records requests, qua | img
+  - TradingView | Simcere Pharmaceutical Says Sim0712 Receives Clinical Trial Approval F | img
+  - 联合早报 | 27 batches of medicines from 17 manufacturers, including Beijing Tong  | img
+  - Business Today | India's pharma industry shifts to high-value drugs, advanced manufactu | img
