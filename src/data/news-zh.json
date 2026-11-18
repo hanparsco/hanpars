@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T22:41:25Z",
+ "updated": "2026-11-18T03:54:21Z",
  "items": [
   {
    "title": "中国医药：佩玛贝特化学原料药上市申请获批准",
@@ -38,6 +38,18 @@
    "imageBasis": ""
   },
   {
+   "title": "超103亿美元，礼来报价收购Rhythm制药",
+   "url": "https://www.vbdata.cn/intelDetail/1150735",
+   "source": "动脉网",
+   "date": "2026-11-18",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-18T03:54:21Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
    "title": "罗氏奥妥珠单抗获FDA批准治疗原发性膜性肾病，成为美国首个获批疗法",
    "url": "https://bydrug.pharmcube.com/news/detail/5f4d69b772fa85bc63ee9a43556db0cb",
    "source": "医药魔方",
@@ -50,28 +62,16 @@
    "imageBasis": ""
   },
   {
-   "title": "全球最大AI制药融资诞生，单笔50亿美元，估值冲破500亿美元",
-   "url": "https://www.vbdata.cn/intelDetail/1150215",
+   "title": "Biomolecular Life Holdings， Inc.在准备收购大卫·孔特雷拉斯博士的医疗实践机构Dr Dacon Medicina Biológica SAS之际，再迈里程碑",
+   "url": "https://www.vbdata.cn/intelDetail/1149981",
    "source": "动脉网",
    "date": "2026-11-17",
    "summary": "",
    "image": "",
    "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-17T22:41:25Z",
+   "retrieved": "2026-11-18T03:54:21Z",
    "imageSource": "",
    "imageBasis": ""
-  },
-  {
-   "title": "22亿美元！中国创新药NewCo被 MNC收购",
-   "url": "https://www.vbdata.cn/1519105251",
-   "source": "动脉网",
-   "date": "2026-11-17",
-   "summary": "",
-   "image": "/news/zh-ece4b3229e.jpg",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-17T13:54:20Z",
-   "imageSource": "https://cdn.vbdata.cn/upload/source/51/29/93/25/68b1721e92166.jpg",
-   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
   }
  ]
 }
