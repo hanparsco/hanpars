@@ -289,7 +289,7 @@ if (form) {
   const FREE = /^(gmail|googlemail|yahoo|ymail|rocketmail|hotmail|outlook|live|msn|aol|icloud|me|mac|protonmail|proton|pm|zoho|yandex|mail|gmx|web|inbox|fastmail|tutanota|tuta|hushmail|chmail|email|usa|duck|duckduckgo|hey|mailinator|guerrillamail|10minutemail|temp-mail|yopmail|qq|163|126|foxmail|sina|sohu)\.(com|ru|net|org|ir|me|de|co\.uk|fr|cn|co|io|app|email)$/i;
   // Free-mail brands are blocked under any ending, with no ending ("x@gmail") and with common typos ("gmial", "gmail.con").
   const FREE_BRAND = /^(g(oogle)?mail|gmai|gmial|gamil|gmal|gmil|gmaill|yahoo|yaho|yahooo|ymail|rocketmail|hotmail|hotmial|hotmal|outlook|outlok|live|msn|aol|icloud|protonmail|proton|zoho|zohomail|yandex|gmx|fastmail|tutanota|tuta|hushmail|chmail|duckduckgo|mailinator|guerrillamail|10minutemail|temp-mail|yopmail|qq|163|126|foxmail|sina|sohu)$/i;
-  const isFree = (v: string) => { const d = v.trim().toLowerCase().split('@')[1] || ''; return FREE.test(d) || FREE_BRAND.test(d.split('.')[0]) || /^(gmail|yahoo|hotmail|outlook|live|icloud|protonmail|yandex|mail|gmx)\./.test(d); };
+  const isFree = (v: string) => { const d = v.trim().toLowerCase().split('@')[1] || ''; return FREE.test(d) || FREE_BRAND.test(d.split('.')[0]) || /^(gmail|yahoo|hotmail|outlook|live|icloud|protonmail|yandex|gmx)\./.test(d); };
   // The browser accepts "name@company" without a dot; a real address needs a domain such as company.com
   const badDomain = (v: string) => !/^[^@\s]+@[^@\s]+\.[a-z\u0600-\u06ff]{2,}$/i.test(v.trim());
   const check = (el: HTMLInputElement | HTMLTextAreaElement) => {
