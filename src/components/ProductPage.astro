@@ -97,7 +97,7 @@ const seoNote = ({
       {p.salt && <div><dt>{m.salt}</dt><dd lang="en" dir="ltr">{prettyName(p.salt)}</dd></div>}
       {fa.pharmClass ? <div lang={htmlLang[lang]} dir={dir(lang)}><dt>{m.class}</dt><dd>{fa.pharmClass}</dd></div> : (main?.pharmClass && main.pharmClass.length > 0 && <div><dt>{m.class}</dt><dd lang="en" dir="ltr">{main.pharmClass.map((c: string) => c.replace(/\s*\[EPC\]/, '')).join(' · ')}</dd></div>)}
     </dl>
-    <div class="hero-actions"><a class="button button-light" href={enquiry}>{m.enquire}</a><a class="text-link" href={L('/fdf#fdf-reference')}>{m.back}</a></div>
+    <div class="hero-actions"><a class="button button-light" href={enquiry} rel="nofollow">{m.enquire}</a><a class="text-link" href={L('/fdf#fdf-reference')}>{m.back}</a></div>
     <p class="prod-seo-note" lang={htmlLang[lang]} dir={dir(lang)}>{seoNote}</p>
     {lang === 'fa' && <p class="prod-patient-note" role="note"><Icon name="shield" size={16}/><span>هانیا پرسان دارو فقط امکان فروش به پخش‌های دارویی سراسری دارد و فروش مستقیم به داروخانه‌ها و افراد ممکن نیست.</span></p>}
   </div>
@@ -130,12 +130,12 @@ const seoNote = ({
     {molLinks.length > 0 && <><h3>{m.activeIngredient}</h3><ul class="link-list prod-links" lang="en" dir="ltr">{molLinks.map(l => <li><a href={l.href}>{l.name}<small>{l.cas}</small></a></li>)}</ul></>}
     <h3>{m.sourcing}</h3>
     <ul class="check-list mol-checks">{m.sourcingPoints.map(x => <li>{x}</li>)}</ul>
-    <a class="button button-navy" href={enquiry}>{m.enquire}</a>
+    <a class="button button-navy" href={enquiry} rel="nofollow">{m.enquire}</a>
   </aside>
 </div></section>
 {lang === 'fa' && <section class="section section-tight prod-b2b"><div class="container prod-b2b-inner">
   <div><h2>تأمین {locTitle || title} برای پخش‌های دارویی سراسری</h2><p>هانیا پرسان دارو فقط امکان فروش به پخش‌های دارویی سراسری دارد و فروش مستقیم به داروخانه‌ها و افراد ممکن نیست. پخش‌های سراسری برای استعلام موجودی، زمان تحویل و مستندات، فرم استعلام را بفرستند یا با دفتر تهران تماس بگیرند.</p></div>
-  <div class="prod-b2b-actions"><a class="button button-navy" href={enquiry}>{m.enquire}</a><a class="text-link" href="tel:+982188883325" dir="ltr">۰۲۱ ۸۸۸۸ ۳۳۲۵</a></div>
+  <div class="prod-b2b-actions"><a class="button button-navy" href={enquiry} rel="nofollow">{m.enquire}</a><a class="text-link" href="tel:+982188883325" dir="ltr">۰۲۱ ۸۸۸۸ ۳۳۲۵</a></div>
 </div></section>}
 
 {sameIngredient.length > 0 && <section class="section section-paper section-tight"><div class="container">
