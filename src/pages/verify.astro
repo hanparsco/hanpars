@@ -1,0 +1,98 @@
+---
+// Letter authenticity check. The QR code printed on a Hanpars letter opens this page with the letter's
+// register id and authenticity code (?id=1405-88001&c=XXXXXXXXXXXX); the page asks the company's letter
+// register (office.teohan.com) whether that code belongs to a registered letter and shows its number and date.
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Letter authenticity check | Hanpars" description="Check that a letter from Haniya Parsan Darou Co. is genuine: scan the QR code on the letter or enter its number and authenticity code." noindex>
+  <section class="hero page-hero"><div class="container"><div class="hero-main">
+    <h1>Letter authenticity check</h1>
+    <p class="lede">Every letter issued by Haniya Parsan Darou Co. carries an authenticity code. This page checks the code against the company's letter register.</p>
+    <p class="lede vfa" lang="fa" dir="rtl">هر نامهٔ صادرشده از شرکت هانیا پرسان دارو یک کد اصالت دارد. این صفحه آن کد را با دفتر ثبت نامه‌های شرکت تطبیق می‌دهد.</p>
+  </div></div></section>
+  <section class="section"><div class="container vwrap">
+    <div id="vres" class="vcard" data-state="idle" aria-live="polite">
+      <p class="vtag" id="vtag">Authenticity code</p>
+      <p class="vcode" id="vcode">—</p>
+      <h2 id="vhead">Scan the QR code on the letter, or enter its details below.</h2>
+      <dl id="vdl" hidden>
+        <dt>Letter number <span lang="fa" dir="rtl">شمارهٔ نامه</span></dt><dd id="vno"></dd>
+        <dt>Date <span lang="fa" dir="rtl">تاریخ</span></dt><dd id="vdate"></dd>
+        <dt>Issued by <span lang="fa" dir="rtl">صادرکننده</span></dt><dd>Haniya Parsan Darou Co. <span lang="fa" dir="rtl">شرکت هانیا پرسان دارو</span></dd>
+      </dl>
+      <p id="vnote" class="vnote"></p>
+    </div>
+    <form id="vform" class="vform" novalidate>
+      <label>Letter number, as printed (for example 1405/HP/88001 or ۱۴۰۵/ه.پ/۸۸۰۰۱)<input id="fno" inputmode="text" autocomplete="off" /></label>
+      <label>Authenticity code (12 characters)<input id="fcode" autocomplete="off" maxlength="14" /></label>
+      <button class="button" type="submit">Check</button>
+    </form>
+    <p class="vsmall">Only the letter number and date are shown here; the content of a letter is never published. Questions: +98 21 8888 3325 · contact@hanpars.com</p>
+  </div></section>
+</Layout>
+<style>
+  .vfa { font-family: inherit; margin-top: -24px; }
+  .vwrap { max-width: 760px; }
+  .vcard { background: #fff; border: 1px solid var(--line); border-inline-start: 6px solid var(--muted); border-radius: 2px; padding: 28px 28px 22px; }
+  .vcard[data-state="ok"] { border-inline-start-color: var(--lapis); }
+  .vcard[data-state="no"], .vcard[data-state="err"] { border-inline-start-color: #b23b2a; }
+  .vtag { display: inline-block; margin: 0 0 8px; padding: 3px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; background: var(--paper); color: var(--muted); }
+  .vcard[data-state="ok"] .vtag { background: var(--glacier-soft); color: var(--lapis-deep); }
+  .vcard[data-state="no"] .vtag, .vcard[data-state="err"] .vtag { background: #fbe9e7; color: #9a2a1c; }
+  .vcode { font-size: clamp(24px, 4vw, 34px); font-weight: 700; letter-spacing: .12em; margin: 0 0 14px; direction: ltr; word-break: break-all; }
+  .vcard h2 { font-size: clamp(18px, 2vw, 22px); margin: 0 0 16px; }
+  .vcard dl { margin: 0 0 14px; border-top: 1px solid var(--line); }
+  .vcard dt { font-size: 13px; color: var(--muted); margin-top: 12px; }
+  .vcard dt span, .vcard dd span { margin-inline-start: 10px; color: var(--muted); font-weight: 400; unicode-bidi: isolate; }
+  .vcard dd { margin: 2px 0 0; padding-bottom: 12px; border-bottom: 1px solid var(--line); font-size: 19px; font-weight: 700; }
+  .vnote { margin: 0; color: var(--muted); font-size: 15px; }
+  .vform { display: grid; gap: 14px; margin-top: 28px; }
+  .vform label { display: grid; gap: 6px; font-size: 14px; font-weight: 700; }
+  .vform input { font: inherit; padding: 11px 12px; border: 1px solid var(--line); border-radius: 2px; background: #fff; direction: ltr; }
+  .vform .button { justify-self: start; }
+  .vsmall { color: var(--muted); font-size: 14px; margin-top: 22px; }
+</style>
+<script is:inline>
+(() => {
+  const API = "https://office.teohan.com/api/verify";
+  const $ = (id) => document.getElementById(id);
+  const MON = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const fa = (s) => String(s).replace(/[0-9]/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]);
+  const lat = (s) => String(s).replace(/[۰-۹]/g, (d) => "۰۱۲۳۴۵۶۷۸۹".indexOf(d)).replace(/[٠-٩]/g, (d) => "٠١٢٣٤٥٦٧٨٩".indexOf(d));
+  function g2j(gy, gm, gd) {
+    const gdm = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+    let jy = gy <= 1600 ? 0 : 979; gy -= gy <= 1600 ? 621 : 1600;
+    const gy2 = gm > 2 ? gy + 1 : gy;
+    let days = 365 * gy + Math.floor((gy2 + 3) / 4) - Math.floor((gy2 + 99) / 100) + Math.floor((gy2 + 399) / 400) - 80 + gd + gdm[gm - 1];
+    jy += 33 * Math.floor(days / 12053); days %= 12053; jy += 4 * Math.floor(days / 1461); days %= 1461;
+    if (days > 365) { jy += Math.floor((days - 1) / 365); days = (days - 1) % 365; }
+    const jm = days < 186 ? 1 + Math.floor(days / 31) : 7 + Math.floor((days - 186) / 30);
+    return [jy, jm, 1 + (days < 186 ? days % 31 : (days - 186) % 30)];
+  }
+  const two = (n) => String(n).padStart(2, "0");
+  const span = (t) => { const s = document.createElement("span"); s.lang = "fa"; s.dir = "rtl"; s.textContent = t; return s; };
+  function show(state, tag, head, note) { $("vres").dataset.state = state; $("vtag").textContent = tag; $("vhead").textContent = head; $("vnote").textContent = note || ""; $("vdl").hidden = state !== "ok"; }
+  async function check(id, code) {
+    $("vcode").textContent = code || "—";
+    if (!/^[0-9]{4}-[0-9]{5}$/.test(id) || !/^[0-9A-F]{12}$/.test(code)) { show("no", "No match", "This code does not match a registered letter.", "Check the letter number and the 12-character code, then try again."); return; }
+    show("idle", "Checking…", "Checking the letter register…");
+    try {
+      const r = await fetch(API + "?id=" + encodeURIComponent(id) + "&c=" + encodeURIComponent(code), { cache: "no-store" });
+      if (r.status === 404) { show("no", "No match", "This code does not match a registered letter.", "If you hold a letter with this code, it is not in the register of Haniya Parsan Darou Co. Please contact the company."); return; }
+      if (!r.ok) throw new Error("x");
+      const d = await r.json(), no5 = String(d.serial).padStart(5, "0"), p = d.date.split("-").map(Number), j = g2j(p[0], p[1], p[2]);
+      $("vno").textContent = d.year + "/HP/" + no5 + " "; $("vno").appendChild(span(fa(d.year) + "/ه.پ/" + fa(no5)));
+      $("vdate").textContent = p[2] + " " + MON[p[1] - 1] + " " + p[0] + " "; $("vdate").appendChild(span(fa(j[0] + "/" + two(j[1]) + "/" + two(j[2]))));
+      show("ok", "Genuine: registered letter", "This letter is in the register of Haniya Parsan Darou Co.", "Compare the number and date with the letter in your hand. If they differ, the letter is not genuine.");
+    } catch { show("err", "Could not check", "The letter register could not be reached.", "Please try again in a moment, or contact the company."); }
+  }
+  const q = new URLSearchParams(location.search), id = q.get("id") || "", c = (q.get("c") || "").toUpperCase();
+  if (id || c) { check(id, c); const m = /^([0-9]{4})-([0-9]{5})$/.exec(id); if (m) $("fno").value = m[1] + "/HP/" + m[2]; $("fcode").value = c; }
+  $("vform").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const n = lat($("fno").value).match(/([0-9]{4})\D+([0-9]{5})/), code = $("fcode").value.replace(/[^0-9a-f]/gi, "").toUpperCase();
+    check(n ? n[1] + "-" + n[2] : "", code);
+    $("vres").scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+})();
+</script>
