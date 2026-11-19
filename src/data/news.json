@@ -1,6 +1,15 @@
 {
- "updated": "2026-11-18T02:35:59Z",
+ "updated": "2026-11-19T01:59:48Z",
  "global": [
+  {
+   "title": "Your Questions Answered: GLP-1 Deals, FDA Approvals, and Manufacturing Buildout",
+   "url": "https://www.pharmexec.com/view/your-questions-answered-glp1-deals-fda-approvals-manufacturing-buildout",
+   "source": "Pharmaceutical Executive",
+   "date": "2026-11-18",
+   "summary": "The month's biggest moves — from Pfizer and Blackstone's obesity co-funding agreement to Lilly's $3.5B Pennsylvania groundbreaking — answered in plain language.",
+   "image": "/news/g-e9417a720b.jpg",
+   "kind": "news"
+  },
   {
    "title": "GSK’s Nuvalent buyout delivers again as FDA clears Nelkarmi for lung cancer",
    "url": "https://endpoints.news/gsks-nuvalent-buyout-delivers-again-as-fda-clears-nelkarmi-for-lung-cancer/",
@@ -8,15 +17,6 @@
    "date": "2026-11-17",
    "summary": "GSK has secured a US accelerated approval for its oral lung cancer drug neladalkib, one of two assets at the heart of its $10.6 billion purchase of oncology drugmaker Nuvalent earlier this ...",
    "image": "/news/g-a8423b8dc0.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Pharmaceutical Executive Daily: FDA Approves Three New Therapies",
-   "url": "https://www.pharmexec.com/view/daily-fda-approves-three-new-therapies",
-   "source": "Pharmaceutical Executive",
-   "date": "2026-11-16",
-   "summary": "FDA approves three new therapies, a wave of dealmaking led by Johnson & Johnson, Eli Lilly, AmyriAD Therapeutics, and Sanofi, and Ossium Health’s Kevin Caldwell joins The Ron Lanton Report on rebuilding bone marrow transplants around deceased-donor marrow.",
-   "image": "/news/g-ad34861bd8.jpg",
    "kind": "news"
   },
   {
@@ -49,12 +49,12 @@
    "kind": "news"
   },
   {
-   "title": "India's pharma industry shifts to high-value drugs, advanced manufacturing to cut China dependence: Report",
-   "url": "https://www.businesstoday.in/industry/pharma/story/indias-pharma-industry-shifts-to-high-value-drugs-advanced-manufacturing-to-cut-china-dependence-report-567492-2026-11-14",
-   "source": "Business Today",
-   "date": "2026-11-14",
-   "summary": "India's pharma industry shifts to high-value drugs, advanced manufacturing to cut China dependence: Report Business Today",
-   "image": "/news/c-96c67be1f8.jpg",
+   "title": "Akeso Announces NMPA Acceptance of sNDA for Ivonescimab in Combination with Chemotherapy for First-Line Biliary Tract Cancer",
+   "url": "https://www.plataformamedia.com/en/2026/11/17/akeso-announces-nmpa-acceptance-of-snda-for-ivonescimab-in-combination-with-chemotherapy-for-first-line-biliary-tract-cancer/",
+   "source": "Plataforma Media",
+   "date": "2026-11-17",
+   "summary": "Akeso Announces NMPA Acceptance of sNDA for Ivonescimab in Combination with Chemotherapy for First-Line Biliary Tract Cancer Plataforma Media",
+   "image": "",
    "kind": "news"
   }
  ]
