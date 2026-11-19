@@ -1,0 +1,130 @@
+# Search engines and AI assistants are welcome to read and cite this site.
+User-agent: GPTBot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Claude-User
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Googlebot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Bingbot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Applebot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: YouBot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Bytespider
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Baiduspider-render
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: Sogou web spider
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: 360Spider
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: YisouSpider
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: DeepSeekBot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: PetalBot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: YandexBot
+Allow: /
+Disallow: /*contact-us-1?
+
+User-agent: *
+Allow: /
+Disallow: /*contact-us-1?
+
+Sitemap: https://hanpars.com/sitemap.xml
+Sitemap: https://hanpars.com/sitemap-en.xml
+Sitemap: https://hanpars.com/sitemap-en-fdf.xml
+Sitemap: https://hanpars.com/sitemap-en-api.xml
+Sitemap: https://hanpars.com/sitemap-fa.xml
+Sitemap: https://hanpars.com/sitemap-fa-fdf.xml
+Sitemap: https://hanpars.com/sitemap-fa-api.xml
+Sitemap: https://hanpars.com/sitemap-zh.xml
+Sitemap: https://hanpars.com/sitemap-zh-fdf.xml
+Sitemap: https://hanpars.com/sitemap-zh-api.xml
+Sitemap: https://hanpars.com/sitemap-tr.xml
+Sitemap: https://hanpars.com/sitemap-tr-fdf.xml
+Sitemap: https://hanpars.com/sitemap-tr-api.xml
