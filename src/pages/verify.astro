@@ -5,45 +5,56 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Letter authenticity check | Hanpars" description="Check that a letter from Haniya Parsan Darou Co. is genuine: scan the QR code on the letter or enter its number and authenticity code." noindex>
+  <div id="vpage" data-vlang="en">
   <section class="hero page-hero"><div class="container"><div class="hero-main">
-    <h1>Letter authenticity check</h1>
-    <p class="lede">Every letter issued by Haniya Parsan Darou Co. carries an authenticity code. This page checks the code against the company's letter register.</p>
-    <p class="lede vfa" lang="fa" dir="rtl">هر نامهٔ صادرشده از شرکت هانیا پرسان دارو یک کد اصالت دارد. این صفحه آن کد را با دفتر ثبت نامه‌های شرکت تطبیق می‌دهد.</p>
+    <h1 id="vh1">Letter authenticity check</h1>
+    <p class="lede" id="vlede">Every letter issued by Haniya Parsan Darou Co. carries an authenticity code. This page checks the code against the company's letter register.</p>
+    <p class="lede vfa" id="vlede2" lang="fa" dir="rtl">هر نامهٔ صادرشده از شرکت هانیا پرسان دارو یک کد اصالت دارد. این صفحه آن کد را با دفتر ثبت نامه‌های شرکت تطبیق می‌دهد.</p>
   </div></div></section>
   <section class="section"><div class="container vwrap">
     <div id="vres" class="vcard" data-state="idle" aria-live="polite">
-      <p class="vtag" id="vtag">Authenticity code</p>
+      <div class="vtop"><span class="vmark" id="vmark" aria-hidden="true"></span><p class="vtag" id="vtag">Authenticity code</p></div>
       <p class="vcode" id="vcode">—</p>
       <h2 id="vhead">Scan the QR code on the letter, or enter its details below.</h2>
       <dl id="vdl" hidden>
-        <dt>Letter number <span lang="fa" dir="rtl">شمارهٔ نامه</span></dt><dd id="vno"></dd>
-        <dt>Date <span lang="fa" dir="rtl">تاریخ</span></dt><dd id="vdate"></dd>
-        <dt>Issued by <span lang="fa" dir="rtl">صادرکننده</span></dt><dd>Haniya Parsan Darou Co. <span lang="fa" dir="rtl">شرکت هانیا پرسان دارو</span></dd>
+        <dt id="vl1">Letter number</dt><dd id="vno"></dd>
+        <dt id="vl2">Date</dt><dd id="vdate"></dd>
+        <dt id="vl3">Issued by</dt><dd id="viss"></dd>
       </dl>
       <p id="vnote" class="vnote"></p>
     </div>
     <form id="vform" class="vform" novalidate>
-      <label>Letter number, as printed (for example 1405/HP/88001 or ۱۴۰۵/ه.پ/۸۸۰۰۱)<input id="fno" inputmode="text" autocomplete="off" /></label>
-      <label>Authenticity code (12 characters)<input id="fcode" autocomplete="off" maxlength="14" /></label>
-      <button class="button" type="submit">Check</button>
+      <label><span id="vf1">Letter number, as printed (for example 1405/HP/88001 or ۱۴۰۵/ه.پ/۸۸۰۰۱)</span><input id="fno" inputmode="text" autocomplete="off" /></label>
+      <label><span id="vf2">Authenticity code (12 characters)</span><input id="fcode" autocomplete="off" maxlength="14" /></label>
+      <button class="button" type="submit" id="vbtn">Check</button>
     </form>
-    <p class="vsmall">Only the letter number and date are shown here; the content of a letter is never published. Questions: +98 21 8888 3325 · contact@hanpars.com</p>
+    <p class="vsmall" id="vsmall">Only the letter number and date are shown here; the content of a letter is never published. Questions: +98 21 8888 3325 · contact@hanpars.com</p>
   </div></section>
+  </div>
 </Layout>
 <style>
-  .vfa { font-family: inherit; margin-top: -24px; }
+  .vfa { margin-top: -24px; font-family: 'Narengi', system-ui, sans-serif; }
+  #vpage[data-vlang="fa"] { direction: rtl; }
+  #vpage[data-vlang="fa"] :is(h1, h2, p, dt, dd, label, .button) { font-family: 'Narengi', system-ui, sans-serif; letter-spacing: 0; }
+  #vpage[data-vlang="fa"] .vfa { display: none; }
   .vwrap { max-width: 760px; }
   .vcard { background: #fff; border: 1px solid var(--line); border-inline-start: 6px solid var(--muted); border-radius: 2px; padding: 28px 28px 22px; }
-  .vcard[data-state="ok"] { border-inline-start-color: var(--lapis); }
+  .vcard[data-state="ok"] { border-color: #bfe3cc; border-inline-start-color: #1c8a4a; background: #f4fbf6; }
   .vcard[data-state="no"], .vcard[data-state="err"] { border-inline-start-color: #b23b2a; }
-  .vtag { display: inline-block; margin: 0 0 8px; padding: 3px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; background: var(--paper); color: var(--muted); }
-  .vcard[data-state="ok"] .vtag { background: var(--glacier-soft); color: var(--lapis-deep); }
+  .vtop { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .vmark { display: none; flex: none; width: 44px; height: 44px; border-radius: 50%; align-items: center; justify-content: center; font-size: 26px; font-weight: 700; line-height: 1; color: #fff; }
+  .vcard[data-state="ok"] .vmark { display: flex; background: #1c8a4a; }
+  .vcard[data-state="no"] .vmark { display: flex; background: #b23b2a; }
+  .vtag { display: inline-block; margin: 0; padding: 4px 14px; border-radius: 999px; font-size: 14px; font-weight: 700; background: var(--paper); color: var(--muted); }
+  .vcard[data-state="ok"] .vtag { background: #d9f1e1; color: #14693a; font-size: 16px; }
   .vcard[data-state="no"] .vtag, .vcard[data-state="err"] .vtag { background: #fbe9e7; color: #9a2a1c; }
-  .vcode { font-size: clamp(24px, 4vw, 34px); font-weight: 700; letter-spacing: .12em; margin: 0 0 14px; direction: ltr; word-break: break-all; }
+  .vcode { font-family: var(--sans, system-ui), sans-serif !important; font-size: clamp(24px, 4vw, 34px); font-weight: 700; letter-spacing: .12em !important; margin: 0 0 14px; direction: ltr; word-break: break-all; }
+  #vpage[data-vlang="fa"] .vcode { text-align: right; }
   .vcard h2 { font-size: clamp(18px, 2vw, 22px); margin: 0 0 16px; }
+  .vcard[data-state="ok"] h2 { color: #14693a; }
   .vcard dl { margin: 0 0 14px; border-top: 1px solid var(--line); }
   .vcard dt { font-size: 13px; color: var(--muted); margin-top: 12px; }
-  .vcard dt span, .vcard dd span { margin-inline-start: 10px; color: var(--muted); font-weight: 400; unicode-bidi: isolate; }
+  .vcard dd span { margin-inline-start: 10px; color: var(--muted); font-weight: 400; unicode-bidi: isolate; white-space: nowrap; display: inline-block; }
   .vcard dd { margin: 2px 0 0; padding-bottom: 12px; border-bottom: 1px solid var(--line); font-size: 19px; font-weight: 700; }
   .vnote { margin: 0; color: var(--muted); font-size: 15px; }
   .vform { display: grid; gap: 14px; margin-top: 28px; }
@@ -59,6 +70,30 @@ import Layout from '../layouts/Layout.astro';
   const MON = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const fa = (s) => String(s).replace(/[0-9]/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]);
   const lat = (s) => String(s).replace(/[۰-۹]/g, (d) => "۰۱۲۳۴۵۶۷۸۹".indexOf(d)).replace(/[٠-٩]/g, (d) => "٠١٢٣٤٥٦٧٨٩".indexOf(d));
+  // Persian letters are confirmed in Persian (the QR carries l=fa; the register also says which language the letter is in).
+  const T = {
+    en: { h1: "Letter authenticity check", lede: "Every letter issued by Haniya Parsan Darou Co. carries an authenticity code. This page checks the code against the company's letter register.",
+      idleTag: "Authenticity code", idle: "Scan the QR code on the letter, or enter its details below.", checkingTag: "Checking…", checking: "Checking the letter register…",
+      okTag: "Authenticity confirmed", ok: "This letter is genuine: it is in the register of Haniya Parsan Darou Co.", okNote: "Compare the number and date with the letter in your hand. If they differ, the letter is not genuine.",
+      noTag: "Not confirmed", no: "This code does not match a registered letter.", noNote: "If you hold a letter with this code, it is not in the register of Haniya Parsan Darou Co. Please contact the company.", badNote: "Check the letter number and the 12-character code, then try again.",
+      errTag: "Could not check", err: "The letter register could not be reached.", errNote: "Please try again in a moment, or contact the company.",
+      l1: "Letter number", l2: "Date", l3: "Issued by", f1: "Letter number, as printed (for example 1405/HP/88001 or ۱۴۰۵/ه.پ/۸۸۰۰۱)", f2: "Authenticity code (12 characters)", btn: "Check",
+      small: "Only the letter number and date are shown here; the content of a letter is never published. Questions: +98 21 8888 3325 · contact@hanpars.com" },
+    fa: { h1: "بررسی اصالت نامه", lede: "هر نامهٔ صادرشده از شرکت هانیا پرسان دارو یک کد اصالت دارد. این صفحه آن کد را با دفتر ثبت نامه‌های شرکت تطبیق می‌دهد.",
+      idleTag: "کد اصالت", idle: "کد QR روی نامه را اسکن کنید یا مشخصات نامه را در پایین وارد کنید.", checkingTag: "در حال بررسی…", checking: "در حال بررسی دفتر ثبت نامه‌ها…",
+      okTag: "اصالت نامه تأیید شد", ok: "این نامه اصل است و در دفتر ثبت نامه‌های شرکت هانیا پرسان دارو ثبت شده است.", okNote: "شماره و تاریخ را با نامه‌ای که در دست دارید مقایسه کنید؛ اگر متفاوت است، نامه اصل نیست.",
+      noTag: "تأیید نشد", no: "این کد با هیچ نامهٔ ثبت‌شده‌ای مطابقت ندارد.", noNote: "اگر نامه‌ای با این کد در دست دارید، آن نامه در دفتر شرکت هانیا پرسان دارو ثبت نشده است. لطفاً با شرکت تماس بگیرید.", badNote: "شمارهٔ نامه و کد ۱۲ نویسه‌ای را بررسی کنید و دوباره امتحان کنید.",
+      errTag: "بررسی انجام نشد", err: "ارتباط با دفتر ثبت نامه‌ها برقرار نشد.", errNote: "چند لحظهٔ دیگر دوباره امتحان کنید یا با شرکت تماس بگیرید.",
+      l1: "شمارهٔ نامه", l2: "تاریخ", l3: "صادرکننده", f1: "شمارهٔ نامه، همان‌طور که چاپ شده (مثلاً ۱۴۰۵/ه.پ/۸۸۰۰۱)", f2: "کد اصالت (۱۲ نویسه)", btn: "بررسی",
+      small: "در این صفحه فقط شماره و تاریخ نامه نمایش داده می‌شود و متن نامه هرگز منتشر نمی‌شود. پرسش‌ها: ۸۸۸۸۳۳۲۵-۰۲۱ · contact@hanpars.com" }
+  };
+  let lang = "en", last = ["idle", "idleTag", "idle", ""];
+  function setLang(l) {
+    lang = l === "fa" ? "fa" : "en"; const t = T[lang]; $("vpage").dataset.vlang = lang; $("vpage").lang = lang;
+    $("vh1").textContent = t.h1; $("vlede").textContent = t.lede; $("vl1").textContent = t.l1; $("vl2").textContent = t.l2; $("vl3").textContent = t.l3;
+    $("vf1").textContent = t.f1; $("vf2").textContent = t.f2; $("vbtn").textContent = t.btn; $("vsmall").textContent = t.small;
+    show(...last);
+  }
   function g2j(gy, gm, gd) {
     const gdm = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
     let jy = gy <= 1600 ? 0 : 979; gy -= gy <= 1600 ? 621 : 1600;
@@ -70,27 +105,38 @@ import Layout from '../layouts/Layout.astro';
     return [jy, jm, 1 + (days < 186 ? days % 31 : (days - 186) % 30)];
   }
   const two = (n) => String(n).padStart(2, "0");
-  const span = (t) => { const s = document.createElement("span"); s.lang = "fa"; s.dir = "rtl"; s.textContent = t; return s; };
-  function show(state, tag, head, note) { $("vres").dataset.state = state; $("vtag").textContent = tag; $("vhead").textContent = head; $("vnote").textContent = note || ""; $("vdl").hidden = state !== "ok"; }
+  const pair = (node, main, other) => { node.textContent = main + " "; const s = document.createElement("span"); s.textContent = other; s.dir = /[\u0600-\u06ff]/.test(other) ? "rtl" : "ltr"; node.appendChild(s); };
+  function show(state, tagKey, headKey, noteKey) {
+    last = [state, tagKey, headKey, noteKey]; const t = T[lang];
+    $("vres").dataset.state = state; $("vmark").textContent = state === "ok" ? "✓" : state === "no" ? "✕" : "";
+    $("vtag").textContent = t[tagKey]; $("vhead").textContent = t[headKey]; $("vnote").textContent = noteKey ? t[noteKey] : ""; $("vdl").hidden = state !== "ok";
+  }
+  let rec = null;
+  function fill() {
+    if (!rec) return; const no5 = String(rec.serial).padStart(5, "0"), p = rec.date.split("-").map(Number), j = g2j(p[0], p[1], p[2]);
+    const noEn = rec.year + "/HP/" + no5, noFa = fa(rec.year) + "/ه.پ/" + fa(no5), dEn = p[2] + " " + MON[p[1] - 1] + " " + p[0], dFa = fa(j[0] + "/" + two(j[1]) + "/" + two(j[2]));
+    if (lang === "fa") { pair($("vno"), noFa, noEn); pair($("vdate"), dFa, dEn); pair($("viss"), "شرکت هانیا پرسان دارو", "Haniya Parsan Darou Co."); }
+    else { pair($("vno"), noEn, noFa); pair($("vdate"), dEn, dFa); pair($("viss"), "Haniya Parsan Darou Co.", "شرکت هانیا پرسان دارو"); }
+  }
   async function check(id, code) {
-    $("vcode").textContent = code || "—";
-    if (!/^[0-9]{4}-[0-9]{5}$/.test(id) || !/^[0-9A-F]{12}$/.test(code)) { show("no", "No match", "This code does not match a registered letter.", "Check the letter number and the 12-character code, then try again."); return; }
-    show("idle", "Checking…", "Checking the letter register…");
+    $("vcode").textContent = code || "—"; rec = null;
+    if (!/^[0-9]{4}-[0-9]{5}$/.test(id) || !/^[0-9A-F]{12}$/.test(code)) { show("no", "noTag", "no", "badNote"); return; }
+    show("idle", "checkingTag", "checking", "");
     try {
       const r = await fetch(API + "?id=" + encodeURIComponent(id) + "&c=" + encodeURIComponent(code), { cache: "no-store" });
-      if (r.status === 404) { show("no", "No match", "This code does not match a registered letter.", "If you hold a letter with this code, it is not in the register of Haniya Parsan Darou Co. Please contact the company."); return; }
+      if (r.status === 404) { show("no", "noTag", "no", "noNote"); return; }
       if (!r.ok) throw new Error("x");
-      const d = await r.json(), no5 = String(d.serial).padStart(5, "0"), p = d.date.split("-").map(Number), j = g2j(p[0], p[1], p[2]);
-      $("vno").textContent = d.year + "/HP/" + no5 + " "; $("vno").appendChild(span(fa(d.year) + "/ه.پ/" + fa(no5)));
-      $("vdate").textContent = p[2] + " " + MON[p[1] - 1] + " " + p[0] + " "; $("vdate").appendChild(span(fa(j[0] + "/" + two(j[1]) + "/" + two(j[2]))));
-      show("ok", "Genuine: registered letter", "This letter is in the register of Haniya Parsan Darou Co.", "Compare the number and date with the letter in your hand. If they differ, the letter is not genuine.");
-    } catch { show("err", "Could not check", "The letter register could not be reached.", "Please try again in a moment, or contact the company."); }
+      rec = await r.json(); if (rec.lang === "fa" || rec.lang === "en") setLang(rec.lang);
+      fill(); show("ok", "okTag", "ok", "okNote");
+    } catch { show("err", "errTag", "err", "errNote"); }
   }
   const q = new URLSearchParams(location.search), id = q.get("id") || "", c = (q.get("c") || "").toUpperCase();
-  if (id || c) { check(id, c); const m = /^([0-9]{4})-([0-9]{5})$/.exec(id); if (m) $("fno").value = m[1] + "/HP/" + m[2]; $("fcode").value = c; }
+  setLang(q.get("l") === "fa" ? "fa" : "en");
+  if (id || c) { check(id, c); const m = /^([0-9]{4})-([0-9]{5})$/.exec(id); if (m) $("fno").value = lang === "fa" ? fa(m[1]) + "/ه.پ/" + fa(m[2]) : m[1] + "/HP/" + m[2]; $("fcode").value = c; }
   $("vform").addEventListener("submit", (e) => {
     e.preventDefault();
-    const n = lat($("fno").value).match(/([0-9]{4})\D+([0-9]{5})/), code = $("fcode").value.replace(/[^0-9a-f]/gi, "").toUpperCase();
+    const raw = $("fno").value, n = lat(raw).match(/([0-9]{4})\D+([0-9]{5})/), code = $("fcode").value.replace(/[^0-9a-f]/gi, "").toUpperCase();
+    if (/[۰-۹\u0600-\u06ff]/.test(raw)) setLang("fa");
     check(n ? n[1] + "-" + n[2] : "", code);
     $("vres").scrollIntoView({ behavior: "smooth", block: "center" });
   });
