@@ -1,6 +1,15 @@
 {
- "updated": "2026-11-19T01:59:48Z",
+ "updated": "2026-11-20T01:53:58Z",
  "global": [
+  {
+   "title": "Lilly starts work on Pennsylvania obesity plant; ITM, AtomVie strike supply deal",
+   "url": "https://endpoints.news/lilly-starts-work-on-pennsylvania-obesity-plant-itm-atomvie-strike-supply-deal/",
+   "source": "Endpoints News",
+   "date": "2026-11-19",
+   "summary": "Lilly breaks ground in Pennsylvania: Eli Lilly has started construction on its $3.5 billion factory in Lehigh Valley, PA, which will manufacture obesity drugs including Lilly’s retatrutide. The site is expected ...",
+   "image": "/news/g-e54cb642b3.jpg",
+   "kind": "news"
+  },
   {
    "title": "Your Questions Answered: GLP-1 Deals, FDA Approvals, and Manufacturing Buildout",
    "url": "https://www.pharmexec.com/view/your-questions-answered-glp1-deals-fda-approvals-manufacturing-buildout",
@@ -11,50 +20,41 @@
    "kind": "news"
   },
   {
-   "title": "GSK’s Nuvalent buyout delivers again as FDA clears Nelkarmi for lung cancer",
-   "url": "https://endpoints.news/gsks-nuvalent-buyout-delivers-again-as-fda-clears-nelkarmi-for-lung-cancer/",
-   "source": "Endpoints News",
-   "date": "2026-11-17",
-   "summary": "GSK has secured a US accelerated approval for its oral lung cancer drug neladalkib, one of two assets at the heart of its $10.6 billion purchase of oncology drugmaker Nuvalent earlier this ...",
-   "image": "/news/g-a8423b8dc0.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Roche’s next major breast cancer drug, Wilserdly, secures FDA approval as 4th oral SERD",
-   "url": "https://www.fiercepharma.com/pharma/roche-next-big-breast-cancer-drug-wilserdly-secures-fda-approval-4th-oral-serd",
+   "title": "CDMO Lotte inks commercial production deal as work on South Korean plant wraps",
+   "url": "https://www.fiercepharma.com/manufacturing/lotte-inks-production-deal-cdmo-preps-open-33b-south-korean-plant",
    "source": "Fierce Pharma",
-   "date": "2026-11-17",
-   "summary": "Roche’s giredestrant took the first step toward what some analysts project could exceed $10 billion in peak annual sales, winning FDA approval for certain patients with HR-positive, HER2-negative breast cancer.",
-   "image": "/news/g-39eb5060a2.jpg",
+   "date": "2026-11-19",
+   "summary": "Lotte Biologics, which was established in 2022, inked a major manufacturing deal with an unnamed pharmaceutical company as the South Korean CDMO gears up for commercial production at its new multi-billion-dollar Songdo Bio Campus near Seoul.",
+   "image": "/news/g-fcc95a0f94.jpg",
    "kind": "news"
   }
  ],
  "china": [
   {
-   "title": "Simcere Pharmaceutical Says Sim0712 Receives Clinical Trial Approval From China's NMPA",
-   "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46X0PO:0-simcere-pharmaceutical-says-sim0712-receives-clinical-trial-approval-from-china-s-nmpa/",
-   "source": "TradingView",
-   "date": "2026-11-16",
-   "summary": "Simcere Pharmaceutical Says Sim0712 Receives Clinical Trial Approval From China's NMPA TradingView",
-   "image": "/news/c-daba274613.jpg",
+   "title": "New alarm over China's grip on drug supply chains",
+   "url": "https://news.lavx.hu/article/new-alarm-over-china-s-grip-on-drug-supply-chains",
+   "source": "news.lavx.hu",
+   "date": "2026-11-20",
+   "summary": "New alarm over China's grip on drug supply chains news.lavx.hu",
+   "image": "/news/c-0d1a7d7abd.jpg",
    "kind": "news"
   },
   {
-   "title": "27 batches of medicines from 17 manufacturers, including Beijing Tong Ren Tang, fail regulatory checks",
-   "url": "https://www.zaobao.com.sg/en/news/china/27-batches-medicines-17-manufacturers-including-beijing-tong-ren-tang-fail-regulatory-checks",
-   "source": "联合早报",
-   "date": "2026-11-17",
-   "summary": "27 batches of medicines from 17 manufacturers, including Beijing Tong Ren Tang, fail regulatory checks 联合早报",
-   "image": "/news/c-082095bff4.jpg",
+   "title": "Senate Commission Says China Is Seizing Drug Supply Chain, Pushes For Congressional Action",
+   "url": "https://dailycaller.com/2026/11/19/nsceb-senate-commission-china-ccp-todd-young/",
+   "source": "The Daily Caller",
+   "date": "2026-11-19",
+   "summary": "Senate Commission Says China Is Seizing Drug Supply Chain, Pushes For Congressional Action The Daily Caller",
+   "image": "/news/c-7ece23cd0a.jpg",
    "kind": "news"
   },
   {
-   "title": "Akeso Announces NMPA Acceptance of sNDA for Ivonescimab in Combination with Chemotherapy for First-Line Biliary Tract Cancer",
-   "url": "https://www.plataformamedia.com/en/2026/11/17/akeso-announces-nmpa-acceptance-of-snda-for-ivonescimab-in-combination-with-chemotherapy-for-first-line-biliary-tract-cancer/",
-   "source": "Plataforma Media",
-   "date": "2026-11-17",
-   "summary": "Akeso Announces NMPA Acceptance of sNDA for Ivonescimab in Combination with Chemotherapy for First-Line Biliary Tract Cancer Plataforma Media",
-   "image": "",
+   "title": "Bipartisan panel says China 'doubling down' on control of pharma supply chain (PFE:NYSE)",
+   "url": "https://seekingalpha.com/news/4674864-bipartisan-panel-says-china-doubling-down-on-control-of-pharma-supply-chain",
+   "source": "Seeking Alpha",
+   "date": "2026-11-19",
+   "summary": "Bipartisan panel says China 'doubling down' on control of pharma supply chain (PFE:NYSE) Seeking Alpha",
+   "image": "/news/c-3cb7ec3d51.jpg",
    "kind": "news"
   }
  ]
