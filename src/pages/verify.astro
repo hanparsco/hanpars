@@ -40,14 +40,14 @@ import Layout from '../layouts/Layout.astro';
   .vwrap { max-width: 760px; }
   .vcard { background: #fff; border: 1px solid var(--line); border-inline-start: 6px solid var(--muted); border-radius: 2px; padding: 28px 28px 22px; }
   .vcard[data-state="ok"] { border-color: #bfe3cc; border-inline-start-color: #1c8a4a; background: #f4fbf6; }
-  .vcard[data-state="no"], .vcard[data-state="err"] { border-inline-start-color: #b23b2a; }
+  .vcard[data-state="no"], .vcard[data-state="err"], .vcard[data-state="void"] { border-inline-start-color: #b23b2a; }
   .vtop { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
   .vmark { display: none; flex: none; width: 44px; height: 44px; border-radius: 50%; align-items: center; justify-content: center; font-size: 26px; font-weight: 700; line-height: 1; color: #fff; }
   .vcard[data-state="ok"] .vmark { display: flex; background: #1c8a4a; }
-  .vcard[data-state="no"] .vmark { display: flex; background: #b23b2a; }
+  .vcard[data-state="no"] .vmark, .vcard[data-state="void"] .vmark { display: flex; background: #b23b2a; }
   .vtag { display: inline-block; margin: 0; padding: 4px 14px; border-radius: 999px; font-size: 14px; font-weight: 700; background: var(--paper); color: var(--muted); }
   .vcard[data-state="ok"] .vtag { background: #d9f1e1; color: #14693a; font-size: 16px; }
-  .vcard[data-state="no"] .vtag, .vcard[data-state="err"] .vtag { background: #fbe9e7; color: #9a2a1c; }
+  .vcard[data-state="no"] .vtag, .vcard[data-state="err"] .vtag, .vcard[data-state="void"] .vtag { background: #fbe9e7; color: #9a2a1c; }
   .vcode { font-family: var(--sans, system-ui), sans-serif !important; font-size: clamp(24px, 4vw, 34px); font-weight: 700; letter-spacing: .12em !important; margin: 0 0 14px; direction: ltr; word-break: break-all; }
   #vpage[data-vlang="fa"] .vcode { text-align: right; }
   .vcard h2 { font-size: clamp(18px, 2vw, 22px); margin: 0 0 16px; }
@@ -75,6 +75,7 @@ import Layout from '../layouts/Layout.astro';
     en: { h1: "Letter authenticity check", lede: "Every letter issued by Haniya Parsan Darou Co. carries an authenticity code. This page checks the code against the company's letter register.",
       idleTag: "Authenticity code", idle: "Scan the QR code on the letter, or enter its details below.", checkingTag: "Checking…", checking: "Checking the letter register…",
       okTag: "Authenticity confirmed", ok: "This letter is genuine: it is in the register of Haniya Parsan Darou Co.", okNote: "Compare the number and date with the letter in your hand. If they differ, the letter is not genuine.",
+      voidTag: "Cancelled", void: "This letter was cancelled by Haniya Parsan Darou Co. and is no longer valid.", voidNote: "The letter was registered, then withdrawn by the company. Please contact the company before relying on it.",
       noTag: "Not confirmed", no: "This code does not match a registered letter.", noNote: "If you hold a letter with this code, it is not in the register of Haniya Parsan Darou Co. Please contact the company.", badNote: "Check the letter number and the 12-character code, then try again.",
       errTag: "Could not check", err: "The letter register could not be reached.", errNote: "Please try again in a moment, or contact the company.",
       l1: "Letter number", l2: "Date", l3: "Issued by", f1: "Letter number, as printed (for example 1405/HP/88001 or ۱۴۰۵/ه.پ/۸۸۰۰۱)", f2: "Authenticity code (12 characters)", btn: "Check",
@@ -82,6 +83,7 @@ import Layout from '../layouts/Layout.astro';
     fa: { h1: "بررسی اصالت نامه", lede: "هر نامهٔ صادرشده از شرکت هانیا پرسان دارو یک کد اصالت دارد. این صفحه آن کد را با دفتر ثبت نامه‌های شرکت تطبیق می‌دهد.",
       idleTag: "کد اصالت", idle: "کد QR روی نامه را اسکن کنید یا مشخصات نامه را در پایین وارد کنید.", checkingTag: "در حال بررسی…", checking: "در حال بررسی دفتر ثبت نامه‌ها…",
       okTag: "اصالت نامه تأیید شد", ok: "این نامه اصل است و در دفتر ثبت نامه‌های شرکت هانیا پرسان دارو ثبت شده است.", okNote: "شماره و تاریخ را با نامه‌ای که در دست دارید مقایسه کنید؛ اگر متفاوت است، نامه اصل نیست.",
+      voidTag: "باطل شده", void: "این نامه از سوی شرکت هانیا پرسان دارو باطل شده و دیگر اعتبار ندارد.", voidNote: "این نامه ثبت و سپس از سوی شرکت باطل شده است. پیش از استناد به آن با شرکت تماس بگیرید.",
       noTag: "تأیید نشد", no: "این کد با هیچ نامهٔ ثبت‌شده‌ای مطابقت ندارد.", noNote: "اگر نامه‌ای با این کد در دست دارید، آن نامه در دفتر شرکت هانیا پرسان دارو ثبت نشده است. لطفاً با شرکت تماس بگیرید.", badNote: "شمارهٔ نامه و کد ۱۲ نویسه‌ای را بررسی کنید و دوباره امتحان کنید.",
       errTag: "بررسی انجام نشد", err: "ارتباط با دفتر ثبت نامه‌ها برقرار نشد.", errNote: "چند لحظهٔ دیگر دوباره امتحان کنید یا با شرکت تماس بگیرید.",
       l1: "شمارهٔ نامه", l2: "تاریخ", l3: "صادرکننده", f1: "شمارهٔ نامه، همان‌طور که چاپ شده (مثلاً ۱۴۰۵/ه.پ/۸۸۰۰۱)", f2: "کد اصالت (۱۲ نویسه)", btn: "بررسی",
@@ -108,8 +110,8 @@ import Layout from '../layouts/Layout.astro';
   const pair = (node, main, other) => { node.textContent = main + " "; const s = document.createElement("span"); s.textContent = other; s.dir = /[\u0600-\u06ff]/.test(other) ? "rtl" : "ltr"; node.appendChild(s); };
   function show(state, tagKey, headKey, noteKey) {
     last = [state, tagKey, headKey, noteKey]; const t = T[lang];
-    $("vres").dataset.state = state; $("vmark").textContent = state === "ok" ? "✓" : state === "no" ? "✕" : "";
-    $("vtag").textContent = t[tagKey]; $("vhead").textContent = t[headKey]; $("vnote").textContent = noteKey ? t[noteKey] : ""; $("vdl").hidden = state !== "ok";
+    $("vres").dataset.state = state; $("vmark").textContent = state === "ok" ? "✓" : state === "no" || state === "void" ? "✕" : "";
+    $("vtag").textContent = t[tagKey]; $("vhead").textContent = t[headKey]; $("vnote").textContent = noteKey ? t[noteKey] : ""; $("vdl").hidden = state !== "ok" && state !== "void";
   }
   let rec = null;
   function fill() {
@@ -127,7 +129,7 @@ import Layout from '../layouts/Layout.astro';
       if (r.status === 404) { show("no", "noTag", "no", "noNote"); return; }
       if (!r.ok) throw new Error("x");
       rec = await r.json(); if (rec.lang === "fa" || rec.lang === "en") setLang(rec.lang);
-      fill(); show("ok", "okTag", "ok", "okNote");
+      fill(); if (rec.void) show("void", "voidTag", "void", "voidNote"); else show("ok", "okTag", "ok", "okNote");
     } catch { show("err", "errTag", "err", "errNote"); }
   }
   const q = new URLSearchParams(location.search), id = q.get("id") || "", c = (q.get("c") || "").toUpperCase();
