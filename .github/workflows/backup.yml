@@ -1,12 +1,13 @@
 name: Daily full backup
 
-# Every day at 02:00 Tehran time (UTC+3:30, no DST) = 22:30 UTC the day before.
+# Every day at 22:00 Tehran time (UTC+3:30, no DST) = 18:30 UTC. GitHub starts scheduled runs 0-6 h late, so the
+# archive is always ready before the Google Drive copy (Apps Script, morning Tehran time).
 # Produces one complete source archive (code, data, images, fonts, rebuild guide, change history) and
 # replaces the asset of the release "backup-latest". A Google Apps Script copies it into Google Drive
 # (folder "hanpars-com-backup") – see tools/drive-backup.gs.
 on:
   schedule:
-    - cron: '30 22 * * *'
+    - cron: '30 18 * * *'
   workflow_dispatch:
 
 permissions:
@@ -42,7 +43,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          NOTES="Complete source backup of hanpars.com — ${{ steps.zip.outputs.date }}, commit ${{ steps.zip.outputs.commit }}, ${{ steps.zip.outputs.size }}. Read REBUILD-GUIDE.md inside the archive. Refreshed daily at 02:00 Tehran."
+          NOTES="Complete source backup of hanpars.com — ${{ steps.zip.outputs.date }}, commit ${{ steps.zip.outputs.commit }}, ${{ steps.zip.outputs.size }}. Read REBUILD-GUIDE.md inside the archive. Refreshed nightly (22:00 Tehran, GitHub may start it a few hours late)."
           gh release view backup-latest >/dev/null 2>&1 || gh release create backup-latest --target main --title "Full backup (latest)" --notes "$NOTES" --latest=false
           gh release upload backup-latest "$RUNNER_TEMP/hanpars-com-backup-latest.zip" --clobber
           gh release edit backup-latest --notes "$NOTES"
