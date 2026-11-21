@@ -67,4 +67,4 @@ Optional environment variable: `PUBLIC_WEB3FORMS_KEY` (contact-form key; a defau
 ## 7. Automatic backup
 `.github/workflows/backup.yml` rebuilds this archive every night at 22:00 Tehran and publishes it as the asset of the
 GitHub release `backup-latest`; `tools/drive-backup.gs` (Google Apps Script) copies it into the Drive folder
-`Hanparscom` between 12:00 and 13:00 Tehran and keeps the last 7 daily copies (Google e-mails the owner if the nightly archive is stale).
+`Hanparscom` every morning (Tehran time) and keeps the last 7 daily copies (Google e-mails the owner if the nightly archive is stale).
