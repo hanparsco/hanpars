@@ -1,11 +1,11 @@
 /**
  * hanpars.com -> Google Drive daily backup (Apps Script project "hanpars-com-daily-backup" in the owner's Google account)
  * Copies the complete site archive (rebuilt by GitHub Actions every night; GitHub starts it 0-6 h late) into the Drive
- * folder "hanpars-com-backup" as hanpars-com-backup-YYYY-MM-DD.zip and keeps the last KEEP days.
+ * folder "Hanparscom" as hanpars-com-backup-YYYY-MM-DD.zip and keeps the last KEEP days.
  * Runs every day between 12:00 and 13:00 Tehran time. If the GitHub archive is older than MAX_AGE_H hours
  * (the nightly build did not run), the copy is still saved but the run ends with an error, so Google e-mails the owner.
  */
-const FOLDER_ID = '1o31RBCua8UV5W_dkTxoAWGKcEZ7eEbqm';   // Drive folder "hanpars-com-backup"
+const FOLDER_ID = '1o31RBCua8UV5W_dkTxoAWGKcEZ7eEbqm';   // Drive folder "Hanparscom"
 const SOURCE = 'https://github.com/hanparsco/hanpars/releases/download/backup-latest/hanpars-com-backup-latest.zip';
 const RELEASE_API = 'https://api.github.com/repos/hanparsco/hanpars/releases/tags/backup-latest';
 const KEEP = 7;                                            // daily copies to keep
