@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-20T21:59:21Z",
+ "updated": "2026-11-21T13:04:59Z",
  "items": [
   {
-   "title": "中国医药：子公司获莫匹罗星原料药上市批准",
-   "url": "https://www.jiemian.com/article/15355410.html",
-   "source": "界面新闻",
-   "date": "2026-11-20",
+   "title": "10项FDA批准；1项NMPA创新产品批准，527个器械获NMPA批准注册文件——医疗器械获批周报（2026.11.13-2026.11.19）",
+   "url": "https://www.vbdata.cn/intelDetail/1152899",
+   "source": "动脉网",
+   "date": "2026-11-21",
    "summary": "",
    "image": "",
    "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-20T13:38:53Z",
+   "retrieved": "2026-11-21T13:04:59Z",
    "imageSource": "",
    "imageBasis": ""
   },
@@ -18,6 +18,18 @@
    "url": "https://bydrug.pharmcube.com/news/detail/0e87170a68da85062dcf071de35fe230",
    "source": "医药魔方",
    "date": "2026-11-18",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-20T13:38:53Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
+   "title": "中国医药：子公司获莫匹罗星原料药上市批准",
+   "url": "https://www.jiemian.com/article/15355410.html",
+   "source": "界面新闻",
+   "date": "2026-11-20",
    "summary": "",
    "image": "",
    "feed": "Google News RSS (zh-CN)",
@@ -60,18 +72,6 @@
    "retrieved": "2026-11-19T13:57:56Z",
    "imageSource": "",
    "imageBasis": ""
-  },
-  {
-   "title": "3.3亿美元首付款 辉瑞为何提前布局中国创新药赛道？",
-   "url": "https://eu.36kr.com/zh/p/4076338906682241",
-   "source": "36氪",
-   "date": "2026-11-18",
-   "summary": "",
-   "image": "/news/zh-99baae94cc.jpg",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-19T13:57:56Z",
-   "imageSource": "https://img.36krcdn.com/hsossms/20261119/v2_d2d112dc486944f89eceaad6b72d116f@000000@ai_oswg735618oswg2048oswg2048_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
-   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
   }
  ]
 }
