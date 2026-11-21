@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T01:53:58Z",
+ "updated": "2026-11-21T01:44:21Z",
  "global": [
   {
    "title": "Lilly starts work on Pennsylvania obesity plant; ITM, AtomVie strike supply deal",
@@ -11,6 +11,15 @@
    "kind": "news"
   },
   {
+   "title": "FDA sets up new safety council to keep tabs on approved vaccines, cell and gene therapies",
+   "url": "https://www.fiercepharma.com/pharma/fda-sets-new-safety-council-under-cber-keep-tabs-approved-vaccines-cell-and-gene-therapies",
+   "source": "Fierce Pharma",
+   "date": "2026-11-20",
+   "summary": "The FDA's Center for Biologics Evaluation and Research is setting up a new governance body focused on safety oversight of products like cell and gene therapies and vaccines once they’ve hit the market.",
+   "image": "/news/g-94e8ebc0ac.jpg",
+   "kind": "news"
+  },
+  {
    "title": "Your Questions Answered: GLP-1 Deals, FDA Approvals, and Manufacturing Buildout",
    "url": "https://www.pharmexec.com/view/your-questions-answered-glp1-deals-fda-approvals-manufacturing-buildout",
    "source": "Pharmaceutical Executive",
@@ -18,18 +27,27 @@
    "summary": "The month's biggest moves — from Pfizer and Blackstone's obesity co-funding agreement to Lilly's $3.5B Pennsylvania groundbreaking — answered in plain language.",
    "image": "/news/g-e9417a720b.jpg",
    "kind": "news"
-  },
-  {
-   "title": "CDMO Lotte inks commercial production deal as work on South Korean plant wraps",
-   "url": "https://www.fiercepharma.com/manufacturing/lotte-inks-production-deal-cdmo-preps-open-33b-south-korean-plant",
-   "source": "Fierce Pharma",
-   "date": "2026-11-19",
-   "summary": "Lotte Biologics, which was established in 2022, inked a major manufacturing deal with an unnamed pharmaceutical company as the South Korean CDMO gears up for commercial production at its new multi-billion-dollar Songdo Bio Campus near Seoul.",
-   "image": "/news/g-fcc95a0f94.jpg",
-   "kind": "news"
   }
  ],
  "china": [
+  {
+   "title": "CPA Questions China Commission’s Push to Invest in Indian Drug Manufacturing",
+   "url": "https://prosperousamerica.org/cpa-questions-china-commissions-push-to-invest-in-indian-drug-manufacturing/",
+   "source": "Coalition For A Prosperous America",
+   "date": "2026-11-20",
+   "summary": "CPA Questions China Commission’s Push to Invest in Indian Drug Manufacturing Coalition For A Prosperous America",
+   "image": "/news/c-9e16c2f97c.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "SSY Group Wins China NMPA Approval for Four Peritoneal Dialysis Solutions, Bicarbonate Dual-Chamber Bag Line Takes Shape",
+   "url": "https://finance.biggo.com/news/af1c6ee7-f867-4674-b06b-dcf8742a82aa",
+   "source": "finance.biggo.com",
+   "date": "2026-11-19",
+   "summary": "SSY Group Wins China NMPA Approval for Four Peritoneal Dialysis Solutions, Bicarbonate Dual-Chamber Bag Line Takes Shape finance.biggo.com",
+   "image": "/news/c-9aceddc34e.jpg",
+   "kind": "news"
+  },
   {
    "title": "New alarm over China's grip on drug supply chains",
    "url": "https://news.lavx.hu/article/new-alarm-over-china-s-grip-on-drug-supply-chains",
@@ -37,24 +55,6 @@
    "date": "2026-11-20",
    "summary": "New alarm over China's grip on drug supply chains news.lavx.hu",
    "image": "/news/c-0d1a7d7abd.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Senate Commission Says China Is Seizing Drug Supply Chain, Pushes For Congressional Action",
-   "url": "https://dailycaller.com/2026/11/19/nsceb-senate-commission-china-ccp-todd-young/",
-   "source": "The Daily Caller",
-   "date": "2026-11-19",
-   "summary": "Senate Commission Says China Is Seizing Drug Supply Chain, Pushes For Congressional Action The Daily Caller",
-   "image": "/news/c-7ece23cd0a.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Bipartisan panel says China 'doubling down' on control of pharma supply chain (PFE:NYSE)",
-   "url": "https://seekingalpha.com/news/4674864-bipartisan-panel-says-china-doubling-down-on-control-of-pharma-supply-chain",
-   "source": "Seeking Alpha",
-   "date": "2026-11-19",
-   "summary": "Bipartisan panel says China 'doubling down' on control of pharma supply chain (PFE:NYSE) Seeking Alpha",
-   "image": "/news/c-3cb7ec3d51.jpg",
    "kind": "news"
   }
  ]
