@@ -46,7 +46,8 @@
   ok  200 [news] https://www.pharmexec.com/view/your-questions-answered-glp1-deals-fda-approvals-manufacturing-buildout
   ok  200 [news] https://www.fiercepharma.com/pharma/fda-sets-new-safety-council-under-cber-keep-tabs-approved-vaccines-cell-and-gene-therapies
   ok  200 [news] https://prosperousamerica.org/cpa-questions-china-commissions-push-to-invest-in-indian-drug-manufacturing/
-  ok  200 [news] https://finance.biggo.com/news/af1c6ee7-f867-4674-b06b-dcf8742a82aa
+  WARN ERR TimeoutError [news] https://finance.biggo.com/news/af1c6ee7-f867-4674-b06b-dcf8742a82aa
   ok  200 [news] https://news.lavx.hu/article/new-alarm-over-china-s-grip-on-drug-supply-chains
   ok  200 [webmail] https://secureserver.titan.email/mail/
+  1 external link warning(s)
 == result: OK
