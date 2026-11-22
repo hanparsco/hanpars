@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T17:53:16Z",
+ "updated": "2026-11-22T23:39:21Z",
  "items": [
   {
    "title": "مهلت سه‌روزه واردکنندگان دارو برای ثبت قیمت ارزی در سامانه قیمت‌گذاری",
@@ -12,6 +12,19 @@
    "feed": "https://doshanbehayedarouei.ir/feed/",
    "retrieved": "2026-11-22T09:56:01Z",
    "imageSource": "og:image of https://doshanbehayedarouei.ir/pharma/32781/",
+   "imageBasis": "publisher preview image (RSS/og:image), shown as a linked thumbnail with attribution; removed on request"
+  },
+  {
+   "title": "ایمان ایرانمنش: درس آموخته هایی از تجربه اخیر تأمین برخی مواد اولیه دارویی ازجمله اقلام مرتبط با داروهای اعصاب و روان",
+   "url": "https://doshanbehayedarouei.ir/pharma/32829/",
+   "source": "دوشنبه‌های دارویی",
+   "date": "2026-11-22",
+   "summary": "ایمان ایرانمنش، مدیرعامل سبحان دارو: توسعه تولید مواد مؤثره باید از ظرفیت‌سازی به همکاری پایدار صنعتی برسد. به گزارش دوشنبه های دارویی، ایمان ایرانمنش، مدیرعامل سبحان دارو در یادداشت اختصاصی نوشت: تجربه اخیر تأمین برخی مواد اولیه دارویی منجمله اقلام مرتبط با د",
+   "image": "/news/fa-7b0ee28684.jpg",
+   "category": "صنعت دارو",
+   "feed": "https://doshanbehayedarouei.ir/feed/",
+   "retrieved": "2026-11-22T23:39:21Z",
+   "imageSource": "og:image of https://doshanbehayedarouei.ir/pharma/32829/",
    "imageBasis": "publisher preview image (RSS/og:image), shown as a linked thumbnail with attribution; removed on request"
   },
   {
@@ -64,19 +77,6 @@
    "feed": "https://doshanbehayedarouei.ir/feed/",
    "retrieved": "2026-11-22T17:53:16Z",
    "imageSource": "og:image of https://doshanbehayedarouei.ir/pharma/32797/",
-   "imageBasis": "publisher preview image (RSS/og:image), shown as a linked thumbnail with attribution; removed on request"
-  },
-  {
-   "title": "نوونوردیسک پارس؛ ۲۰ سال تعهد به سلامت، سرمایه‌گذاری و تولید در ایران",
-   "url": "https://doshanbehayedarouei.ir/company-news/32786/",
-   "source": "دوشنبه‌های دارویی",
-   "date": "2026-11-22",
-   "summary": "هم‌زمان با بیستمین سالگرد فعالیت نوو نوردیسک پارس در ایران، این شرکت بر تداوم تعهد خود به سلامت بیماران، توسعه تولید داخلی و مشارکت در ارتقای نظام سلامت کشور تأکید دارد. نوونوردیسک، شرکت پیشرو جهانی در حوزه سلامت با بیش از ۱۰۰ سال سابقه، با هدف مقابله با بیمار",
-   "image": "/news/fa-6ea2fbcefc.jpg",
-   "category": "اخبار شرکت ها",
-   "feed": "https://doshanbehayedarouei.ir/feed/",
-   "retrieved": "2026-11-22T09:56:01Z",
-   "imageSource": "og:image of https://doshanbehayedarouei.ir/company-news/32786/",
    "imageBasis": "publisher preview image (RSS/og:image), shown as a linked thumbnail with attribution; removed on request"
   }
  ]
