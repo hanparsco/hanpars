@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T01:44:21Z",
+ "updated": "2026-11-22T00:41:02Z",
  "global": [
   {
    "title": "Lilly starts work on Pennsylvania obesity plant; ITM, AtomVie strike supply deal",
@@ -11,21 +11,21 @@
    "kind": "news"
   },
   {
-   "title": "FDA sets up new safety council to keep tabs on approved vaccines, cell and gene therapies",
-   "url": "https://www.fiercepharma.com/pharma/fda-sets-new-safety-council-under-cber-keep-tabs-approved-vaccines-cell-and-gene-therapies",
-   "source": "Fierce Pharma",
-   "date": "2026-11-20",
-   "summary": "The FDA's Center for Biologics Evaluation and Research is setting up a new governance body focused on safety oversight of products like cell and gene therapies and vaccines once they’ve hit the market.",
-   "image": "/news/g-94e8ebc0ac.jpg",
-   "kind": "news"
-  },
-  {
    "title": "Your Questions Answered: GLP-1 Deals, FDA Approvals, and Manufacturing Buildout",
    "url": "https://www.pharmexec.com/view/your-questions-answered-glp1-deals-fda-approvals-manufacturing-buildout",
    "source": "Pharmaceutical Executive",
    "date": "2026-11-18",
    "summary": "The month's biggest moves — from Pfizer and Blackstone's obesity co-funding agreement to Lilly's $3.5B Pennsylvania groundbreaking — answered in plain language.",
    "image": "/news/g-e9417a720b.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "FDA sets up new safety council to keep tabs on approved vaccines, cell and gene therapies",
+   "url": "https://www.fiercepharma.com/pharma/fda-sets-new-safety-council-under-cber-keep-tabs-approved-vaccines-cell-and-gene-therapies",
+   "source": "Fierce Pharma",
+   "date": "2026-11-20",
+   "summary": "The FDA's Center for Biologics Evaluation and Research is setting up a new governance body focused on safety oversight of products like cell and gene therapies and vaccines once they’ve hit the market.",
+   "image": "/news/g-94e8ebc0ac.jpg",
    "kind": "news"
   }
  ],
