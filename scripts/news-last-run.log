@@ -1,32 +1,32 @@
-  ! Google News: HTTP Error 429: Too Many Requests
 global feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 11 items
+  Google News: 10 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 24 items
+  Google News: 45 items
 china feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
+  Google News: 10 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 24 items
-  Google News: 41 items
+  Google News: 45 items
+  Google News: 28 items
   Google News: 1 items
-  Google News: 18 items
+  Google News: 13 items
   Google News: 21 items
 global
   - Endpoints News | Lilly starts work on Pennsylvania obesity plant; ITM, AtomVie strike s | img
-  - Pharmaceutical Executive | Your Questions Answered: GLP-1 Deals, FDA Approvals, and Manufacturing | img
   - Fierce Pharma | FDA sets up new safety council to keep tabs on approved vaccines, cell | img
+  - CASRAI | FDA CDER Launches Database of New Approach Methodology Use Cases for N | img
 china
+  - Business Today | Why Washington wants India to break China’s hold on generic drug start | img
   - Coalition For A Prosperous America | CPA Questions China Commission’s Push to Invest in Indian Drug Manufac | img
-  - finance.biggo.com | SSY Group Wins China NMPA Approval for Four Peritoneal Dialysis Soluti | img
   - news.lavx.hu | New alarm over China's grip on drug supply chains | img
