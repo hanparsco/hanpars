@@ -1,0 +1,12 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import RaServicePage from '../../components/RaServicePage.astro';
+import { raServices, raServiceBySlug, raUi } from '../../data/ra-services';
+export function getStaticPaths() { return raServices.map(s => ({ params: { service: s.slug } })); }
+const svc = raServiceBySlug[Astro.params.service!];
+const c = svc.t.en;
+const crumbs = [{ name: 'Home', path: '/' }, { name: raUi.en.crumb, path: '/regulatory-affairs' }, { name: c.nav, path: '/regulatory-affairs/' + svc.slug }];
+---
+<Layout title={c.metaTitle} description={c.metaDesc} breadcrumbs={crumbs} brand="regulatory">
+  <RaServicePage service={svc}/>
+</Layout>

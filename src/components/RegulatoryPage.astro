@@ -15,6 +15,7 @@ const svcIcons = ['molecule', 'file', 'globe', 'layers', 'shield'];
 const intelIcons = ['search', 'globe', 'file', 'layers'];
 const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a, tierName: tier.name, tierNum: tier.num })));
 import watchData from '../data/regulatory-watch.json';
+import { raServices, raUi } from '../data/ra-services';
 // Regulatory watch: one shared file, refreshed daily by the "Regulatory Watch daily scan" scheduled task
 type WL = 'en' | 'fa' | 'zh' | 'tr';
 const wl = (['en', 'fa', 'zh', 'tr'].includes(lang) ? lang : 'en') as WL;
@@ -133,6 +134,7 @@ const record = {
 
 <section class="section section-paper" id="services"><div class="container">
   <div class="section-head"><h2>{r.cover}</h2><p class="lede">{data.coverIntro}</p></div>
+  <ul class="ra-svc-links" aria-label={raUi[wl].servicesTitle}>{raServices.map(sv => <li><a href={L(`/regulatory-affairs/${sv.slug}`)}><span class="ra-ico" aria-hidden="true"><Icon name={sv.icon} size={20}/></span><span>{sv.t[wl].nav}</span><Icon name="arrow" size={16} class="ra-svc-arrow"/></a></li>)}</ul>
   <div class="ra-services">{data.services.map((group, gi) => <article class:list={['ra-group', { 'ra-group-wide': group.items.length > 5 }]}><div class="ra-group-head"><span class="ra-ico" aria-hidden="true"><Icon name={svcIcons[gi % svcIcons.length]} size={20}/></span><div><h3>{group.title}</h3>{group.kicker && <p class="ra-kicker" dir="ltr">{group.kicker}</p>}</div></div><ul class="ra-list">{group.items.map(item => <li>{item}</li>)}</ul></article>)}</div>
 </div></section>
 
@@ -171,6 +173,12 @@ const record = {
 </script>
 
 <style>
+  .ra-svc-links { list-style:none; padding:0; margin:0 0 28px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
+  .ra-svc-links a { display:flex; align-items:center; gap:12px; height:100%; padding:14px 16px; border:1px solid var(--line); border-radius:16px; background:var(--white); color:var(--ink); font-weight:600; text-decoration:none; }
+  .ra-svc-links a:hover { border-color:var(--lapis); }
+  .ra-svc-links a > span:nth-child(2) { flex:1; }
+  .ra-svc-arrow { color:var(--lapis); flex:none; }
+  :global([dir=rtl]) .ra-svc-arrow { transform:scaleX(-1); }
   /* quick section links */
   .ra-nav { background:var(--paper); border-bottom:1px solid var(--line); position:relative; z-index:2; }
   .ra-nav ul { list-style:none; margin:0; padding:14px 0; display:flex; gap:8px; overflow-x:auto; scrollbar-width:none; }
