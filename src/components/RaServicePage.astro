@@ -41,6 +41,12 @@ const ld = [
   </div>
 </section>
 
+{c.extra && c.extra.length > 0 && <section class="section rs-extra-sec">
+  <div class="container rs-extra">
+    {c.extra.map((x, i) => <article class="rs-extra-card"><span class="rs-ico"><Icon name={i === 0 ? 'file' : 'layers'} size={20}/></span><h2>{x.h}</h2><p>{x.p}</p><ul>{x.items.map(it => <li><Icon name="check" size={17} class="rs-check"/><span>{it}</span></li>)}</ul></article>)}
+  </div>
+</section>}
+
 <section class="section">
   <div class="container rs-split">
     <div class="rs-deliv">
@@ -126,6 +132,14 @@ const ld = [
   .rs-related span { flex:1; }
   .rs-arrow { color:var(--lapis); flex:none; }
   :global([dir=rtl]) .rs-arrow { transform:scaleX(-1); }
+  .rs-extra { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+  .rs-extra-card { display:flex; flex-direction:column; gap:12px; padding:28px; border:1px solid var(--line); border-radius:20px; background:var(--glacier-soft); }
+  .rs-extra-card h2 { font-size:24px; margin:4px 0 0; }
+  .rs-extra-card p { margin:0; color:var(--ink); line-height:1.6; }
+  .rs-extra-card ul { list-style:none; padding:0; margin:4px 0 0; display:grid; }
+  .rs-extra-card li { display:flex; gap:12px; padding:10px 0; border-top:1px solid var(--line); line-height:1.5; font-size:15.5px; }
+  .rs-extra-card .rs-ico { background:var(--white); }
+  @media (max-width:860px) { .rs-extra { grid-template-columns:1fr; } }
   @media (max-width:980px) { .rs-grid, .rs-related { grid-template-columns:repeat(2,minmax(0,1fr)); } .rs-steps { grid-template-columns:1fr 1fr; row-gap:18px; } }
   @media (max-width:860px) { .rs-intro-grid, .rs-split, .rs-faq-grid { grid-template-columns:1fr; } }
   @media (max-width:620px) { .rs-grid, .rs-related, .rs-steps { grid-template-columns:1fr; } }

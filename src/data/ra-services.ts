@@ -8,6 +8,7 @@ export interface RaServiceText {
   delivTitle: string; deliv: string[];
   stepsTitle: string; steps: { h: string; p: string }[];
   faq: { q: string; a: string }[];
+  extra?: { h: string; p: string; items: string[] }[];
 }
 export interface RaService { slug: string; icon: string; formItem?: number; serviceType: string; t: Record<RaLang, RaServiceText> }
 
@@ -43,6 +44,7 @@ export const raServices: RaService[] = [
           { h: 'eCTD publishing and lifecycle', p: 'Baseline and lifecycle sequences, granularity and hyperlinking per ICH M8 and regional specifications, validation before submission.' },
           { h: 'IMPD and clinical trial documents', p: 'Quality IMPD (drug substance, product, placebo and comparators), simplified IMPD where justified, investigator’s brochure support and responses to clinical trial questions.' },
         ],
+        extra: [{ h: "Ready-to-use document templates", p: "If your team writes the dossier itself, we can provide professional, ready-to-use templates for every document and module required for submission, structured to the ICH M4 headings and the target agency’s Module 1 requirements.", items: ["Templates for CTD Modules 1 to 5, with section headings and guidance notes", "Module 2 summary and overview templates linked to Modules 3 to 5", "Templates for the IMPD, product information (SmPC, PIL, labelling) and responses to questions", "Adapted to the target agency’s Module 1 and regional requirements"] }, { h: "eCTD access and publishing only", p: "If you only need the eCTD step, we provide it as a separate service. We hold a licence for eCTD publishing software, so you do not need to buy or run your own.", items: ["Compilation of your documents into baseline and lifecycle eCTD sequences", "Technical validation against the agency’s eCTD specifications before submission", "Lifecycle management of later sequences for variations and renewals", "Your content stays as you wrote it; we handle the format and publishing"] }],
         delivTitle: 'What you receive',
         deliv: ['A complete CTD or eCTD sequence ready for submission, or the modules you ask for', 'A dossier gap list with what is missing and who must provide it', 'An IMPD and supporting documents for the clinical trial application', 'Document templates and a lifecycle log for later variations'],
         stepsTitle: 'How we work',
@@ -81,6 +83,7 @@ export const raServices: RaService[] = [
           { h: 'انتشار eCTD و چرخهٔ عمر', p: 'توالی پایه و توالی‌های چرخهٔ عمر، سطح‌بندی و پیوندهای داخلی مطابق ICH M8 و مشخصات منطقه‌ای، و اعتبارسنجی پیش از ارسال.' },
           { h: 'IMPD و مدارک کارآزمایی بالینی', p: 'IMPD کیفی (مادهٔ مؤثره، فرآورده، دارونما و داروی مقایسه)، IMPD ساده‌شده در صورت توجیه، پشتیبانی بروشور محقق و پاسخ به پرسش‌های مرجع دربارهٔ کارآزمایی.' },
         ],
+        extra: [{ h: "الگوهای آمادهٔ مدارک", p: "اگر تیم شما خودش پرونده را می‌نویسد، می‌توانیم الگوهای حرفه‌ای و آمادهٔ استفاده برای همهٔ مدارک و ماژول‌های لازم برای ارسال را در اختیارتان بگذاریم؛ مطابق سرفصل‌های ICH M4 و الزامات ماژول ۱ مرجع مقصد.", items: ["الگوی ماژول‌های ۱ تا ۵ پروندهٔ CTD با سرفصل‌ها و راهنمای نگارش", "الگوی خلاصه‌ها و مرورهای ماژول ۲، مرتبط با ماژول‌های ۳ تا ۵", "الگوی IMPD، اطلاعات فرآورده (خلاصهٔ ویژگی‌های فرآورده، بروشور بیمار، برچسب) و پاسخ به پرسش‌های مرجع", "تطبیق‌یافته با ماژول ۱ و الزامات منطقه‌ای مرجع مقصد"] }, { h: "دسترسی به eCTD و خدمات انتشار به‌تنهایی", p: "اگر فقط به مرحلهٔ eCTD نیاز دارید، آن را به‌صورت خدمت جداگانه ارائه می‌کنیم. مجوز نرم‌افزار انتشار eCTD را داریم و لازم نیست خودتان نرم‌افزار بخرید یا راه‌اندازی کنید.", items: ["گردآوری مدارک شما در قالب توالی پایه و توالی‌های چرخهٔ عمر eCTD", "اعتبارسنجی فنی با مشخصات eCTD مرجع پیش از ارسال", "مدیریت توالی‌های بعدی برای تغییرات و تمدید", "محتوای شما همان‌طور که نوشته‌اید می‌ماند؛ قالب‌بندی و انتشار با ماست"] }],
         delivTitle: 'آنچه تحویل می‌گیرید',
         deliv: ['پروندهٔ کامل CTD یا توالی eCTD آمادهٔ ارسال، یا ماژول‌هایی که درخواست کرده‌اید', 'فهرست نقص‌های پرونده: چه چیزی کم است و تأمینش با کیست', 'IMPD و مدارک پشتیبان درخواست کارآزمایی بالینی', 'الگوی مدارک و دفتر ثبت چرخهٔ عمر برای تغییرات بعدی'],
         stepsTitle: 'روش کار ما',
@@ -119,6 +122,7 @@ export const raServices: RaService[] = [
           { h: 'eCTD 发布与生命周期', p: '按 ICH M8 及地区规范编制基线和生命周期序列、粒度与超链接，提交前进行技术验证。' },
           { h: 'IMPD 与临床试验文件', p: '质量 IMPD（原料药、制剂、安慰剂和对照药）、有依据时的简化 IMPD、研究者手册支持以及临床试验问题答复。' },
         ],
+        extra: [{ h: "即用型文件模板", p: "如果您的团队自行撰写注册资料，我们可以提供申报所需全部文件和模块的专业即用型模板，按 ICH M4 标题和目标机构的模块 1 要求编排。", items: ["CTD 模块 1 至 5 模板，含章节标题和撰写说明", "与模块 3 至 5 对应的模块 2 综述和总结模板", "IMPD、产品信息（SmPC、患者说明书、标签）及问题答复模板", "按目标机构的模块 1 和地区要求调整"] }, { h: "单独的 eCTD 访问与发布服务", p: "如果您只需要 eCTD 环节，我们可作为单独服务提供。我们拥有 eCTD 发布软件的许可，您无需自行购买或运行软件。", items: ["将您的文件编制为 eCTD 基线和生命周期序列", "提交前按机构 eCTD 规范进行技术验证", "管理后续变更和再注册的生命周期序列", "内容保持您撰写的原样；格式和发布由我们负责"] }],
         delivTitle: '交付成果',
         deliv: ['可直接提交的完整 CTD 资料或 eCTD 序列，或您需要的模块', '资料缺口清单：缺少什么、由谁提供', '临床试验申请所需的 IMPD 及支持文件', '文件模板和用于后续变更的生命周期记录'],
         stepsTitle: '工作流程',
@@ -157,6 +161,7 @@ export const raServices: RaService[] = [
           { h: 'eCTD yayımlama ve yaşam döngüsü', p: 'ICH M8 ve bölgesel spesifikasyonlara göre temel ve yaşam döngüsü dizileri, ayrıntı düzeyi ve bağlantılar; gönderim öncesi doğrulama.' },
           { h: 'IMPD ve klinik araştırma belgeleri', p: 'Kalite IMPD’si (etkin madde, ürün, plasebo ve karşılaştırma ürünleri), gerekçeli durumlarda basitleştirilmiş IMPD, araştırmacı broşürü desteği ve klinik araştırma sorularına yanıtlar.' },
         ],
+        extra: [{ h: "Kullanıma hazır belge şablonları", p: "Dosyayı kendi ekibiniz yazıyorsa, başvuru için gereken tüm belgeler ve modüller için ICH M4 başlıklarına ve hedef otoritenin Modül 1 gerekliliklerine göre düzenlenmiş, kullanıma hazır profesyonel şablonlar sağlayabiliriz.", items: ["Bölüm başlıkları ve yazım notlarıyla CTD Modül 1–5 şablonları", "Modül 3–5’e bağlı Modül 2 özet ve genel bakış şablonları", "IMPD, ürün bilgileri (KÜB, KT, etiket) ve soru yanıtları şablonları", "Hedef otoritenin Modül 1 ve bölgesel gerekliliklerine uyarlanmış"] }, { h: "Yalnızca eCTD erişimi ve yayımlama", p: "Yalnızca eCTD aşamasına ihtiyacınız varsa bunu ayrı bir hizmet olarak sunarız. eCTD yayımlama yazılımı lisansımız olduğundan kendi yazılımınızı satın almanız veya çalıştırmanız gerekmez.", items: ["Belgelerinizin temel ve yaşam döngüsü eCTD dizilerine derlenmesi", "Gönderim öncesi otoritenin eCTD spesifikasyonlarına göre teknik doğrulama", "Varyasyonlar ve yenilemeler için sonraki dizilerin yönetimi", "İçerik yazdığınız gibi kalır; format ve yayımlama bizde"] }],
         delivTitle: 'Teslim ettiklerimiz',
         deliv: ['Gönderime hazır eksiksiz CTD dosyası veya eCTD dizisi ya da istediğiniz modüller', 'Neyin eksik olduğunu ve kimin sağlaması gerektiğini gösteren eksiklik listesi', 'Klinik araştırma başvurusu için IMPD ve destek belgeleri', 'Sonraki varyasyonlar için belge şablonları ve yaşam döngüsü kaydı'],
         stepsTitle: 'Nasıl çalışıyoruz',
@@ -357,8 +362,8 @@ export const raServices: RaService[] = [
           { h: 'Inspect and close', p: 'Support during the inspection, then responses and CAPA until the observations are closed.' },
         ],
         faq: [
-          { q: 'Which inspections do you prepare sites for?', a: 'EU-GMP inspections by EEA authorities, MHRA, PIC/S member authorities and national authorities in the markets where the product will be registered, including Iran’s IFDA where a foreign site inspection is required.' },
-          { q: 'Do you work on site?', a: 'Both on site and remotely. A remote document and data review is usually the first step; an on-site mock inspection follows when the inspection date is set.' },
+          { q: 'Which inspections do you prepare sites for?', a: 'EU-GMP inspections by EEA authorities, MHRA, PIC/S member authorities and national authorities in the markets where the product will be registered.' },
+          { q: 'Do you work on site?', a: 'Both on site and remotely. A remote document and data review is usually the first step; an on-site mock inspection follows when the inspection date is set, if required.' },
           { q: 'Can you help after an inspection with critical or major observations?', a: 'Yes. We analyse the observations, write the responses and CAPA plans the authority expects and follow them until they are closed.' },
         ],
       },
@@ -392,7 +397,7 @@ export const raServices: RaService[] = [
         ],
         faq: [
           { q: 'سایت را برای کدام بازرسی‌ها آماده می‌کنید؟', a: 'بازرسی EU-GMP مراجع اروپایی، MHRA، مراجع عضو PIC/S و مراجع ملی بازارهایی که فرآورده در آن‌ها ثبت می‌شود.' },
-          { q: 'حضوری کار می‌کنید یا از راه دور؟', a: 'هر دو. بررسی مدارک و داده‌ها از راه دور معمولاً گام اول است و پس از تعیین تاریخ بازرسی، بازرسی آزمایشی حضوری انجام می‌شود.' },
+          { q: 'حضوری کار می‌کنید یا از راه دور؟', a: 'هر دو. بررسی مدارک و داده‌ها از راه دور معمولاً گام اول است و پس از تعیین تاریخ بازرسی، در صورت نیاز بازرسی آزمایشی حضوری انجام می‌شود.' },
           { q: 'پس از بازرسی با یافته‌های بحرانی یا عمده هم کمک می‌کنید؟', a: 'بله. یافته‌ها را تحلیل می‌کنیم، پاسخ‌ها و برنامه‌های CAPA موردانتظار مرجع را می‌نویسیم و تا بسته شدن آن‌ها پیگیری می‌کنیم.' },
         ],
       },
@@ -425,8 +430,8 @@ export const raServices: RaService[] = [
           { h: '检查与关闭', p: '检查期间提供支持，之后撰写答复和 CAPA，直至缺陷项关闭。' },
         ],
         faq: [
-          { q: '你们为哪些检查做准备？', a: '欧洲经济区机构的欧盟 GMP 检查、MHRA、PIC/S 成员机构以及产品注册市场的国家机构检查，包括需要境外场地检查时的伊朗 IFDA 检查。' },
-          { q: '你们是现场工作还是远程工作？', a: '两者皆可。通常先远程审核文件和数据，确定检查日期后再进行现场模拟检查。' },
+          { q: '你们为哪些检查做准备？', a: '欧洲经济区机构的欧盟 GMP 检查、MHRA、PIC/S 成员机构以及产品注册市场的国家机构检查。' },
+          { q: '你们是现场工作还是远程工作？', a: '两者皆可。通常先远程审核文件和数据，确定检查日期后，如有需要再进行现场模拟检查。' },
           { q: '检查中出现严重或主要缺陷后能否协助？', a: '可以。我们分析缺陷项，撰写机构期望的答复和 CAPA 计划，并跟进直至关闭。' },
         ],
       },
@@ -459,8 +464,8 @@ export const raServices: RaService[] = [
           { h: 'Denetim ve kapanış', p: 'Denetim sırasında destek; ardından bulgular kapanana kadar yanıtlar ve CAPA.' },
         ],
         faq: [
-          { q: 'Hangi denetimlere hazırlık yapıyorsunuz?', a: 'AEA otoritelerinin AB-GMP denetimleri, MHRA, PIC/S üyesi otoriteler ve ürünün ruhsatlandırılacağı pazarların ulusal otoriteleri; yabancı tesis denetimi gerektiğinde İran IFDA dahil.' },
-          { q: 'Yerinde mi çalışıyorsunuz?', a: 'Hem yerinde hem uzaktan. Genellikle ilk adım uzaktan belge ve veri incelemesidir; denetim tarihi belli olunca yerinde deneme denetimi yapılır.' },
+          { q: 'Hangi denetimlere hazırlık yapıyorsunuz?', a: 'AEA otoritelerinin AB-GMP denetimleri, MHRA, PIC/S üyesi otoriteler ve ürünün ruhsatlandırılacağı pazarların ulusal otoriteleri.' },
+          { q: 'Yerinde mi çalışıyorsunuz?', a: 'Hem yerinde hem uzaktan. Genellikle ilk adım uzaktan belge ve veri incelemesidir; denetim tarihi belli olunca, gerekirse yerinde deneme denetimi yapılır.' },
           { q: 'Kritik veya majör bulgularla geçen bir denetimden sonra yardımcı olur musunuz?', a: 'Evet. Bulguları analiz eder, otoritenin beklediği yanıtları ve CAPA planlarını yazar ve kapanana kadar takip ederiz.' },
         ],
       },
