@@ -53,43 +53,6 @@
  "tiers": [
   {
    "num": "01",
-   "name": "Home market: Iran",
-   "sub": "Iran Food and Drug Administration · the authority we file with every week",
-   "authorities": [
-    {
-     "id": "ifda",
-     "short": "IFDA",
-     "name": "Iran Food and Drug Administration",
-     "region": "Islamic Republic of Iran",
-     "format": "CTD (paper and electronic), Persian labelling",
-     "footnote": "Hanpars is the applicant and licence holder: registrations, IRC codes and import licences are in our name under the manufacturer’s letter of authorisation.",
-     "procedures": [
-      {
-       "name": "Import registration of a finished medicine",
-       "note": "Dossier review on the basis of the manufacturer’s CTD, GMP certificate and CPP; price approval; IRC code issued to the importer."
-      },
-      {
-       "name": "Urgent (emergency) import",
-       "note": "For medicines on the shortage list or with an urgent clinical need: a shortened file and an import permit ahead of full registration, with batch-level documentation."
-      },
-      {
-       "name": "API and excipient registration",
-       "note": "Registration of the substance and its manufacturing site for Iranian manufacturers and importers, on the basis of DMF/CEP and GMP evidence."
-      },
-      {
-       "name": "Licensed local manufacture",
-       "note": "Registration of a foreign product manufactured under licence in an Iranian GMP plant; technology transfer and comparative data in the file."
-      },
-      {
-       "name": "Variations, renewals and pharmacovigilance",
-       "note": "Post-approval changes, periodic renewals and adverse-event reporting as licence holder."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "num": "02",
    "name": "Stringent regulatory authorities",
    "sub": "WHO-Listed Authorities · established ICH regulators",
    "authorities": [
@@ -294,7 +257,7 @@
    ]
   },
   {
-   "num": "03",
+   "num": "02",
    "name": "ICH members and observers",
    "sub": "WHO maturity level 3–4 national authorities",
    "authorities": [
@@ -491,7 +454,7 @@
    ]
   },
   {
-   "num": "04",
+   "num": "03",
    "name": "Regional harmonised procedures",
    "sub": "One dossier, several member states",
    "authorities": [
@@ -550,7 +513,7 @@
    ]
   },
   {
-   "num": "05",
+   "num": "04",
    "name": "National authorities with reliance pathways",
    "sub": "Build on a reference approval",
    "authorities": [

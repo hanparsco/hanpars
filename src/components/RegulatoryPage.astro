@@ -102,7 +102,7 @@ const record = {
   ],
 };
 ---
-<PageHero title={r.title} category={r.category} description={data.intro} action={r.action} href="/contact-us-1?type=regulatory" photo="ra-datastream" photoAlt={r.photoAlt}/>
+<PageHero title={r.title} category={r.category} description={data.intro} action={r.action} href="/contact-us-1?type=regulatory"/>
 
 <nav class="ra-nav" aria-label={r.title}><div class="container"><ul>{[...(record ? [['#record', record.title]] : []), ['#services', r.cover], ['#markets', r.file], ['#intelligence', r.intel], ['#watch', r.watch]].map(([h, l]) => <li><a href={h}>{l}</a></li>)}</ul></div></nav>
 
@@ -128,8 +128,8 @@ const record = {
 
 <section class="section section-navy" id="markets" data-ra-authorities><div class="container">
   <div class="section-head"><h2>{r.file}</h2><p class="lede">{data.fileIntro}</p></div>
-  <div class="ra-tiers">{data.tiers.map(tier => <div class="ra-tier"><div class="ra-tier-head"><span class="ra-tier-num">{lang === 'fa' ? String(tier.num).replace(/^0+/, '') : tier.num}</span><div><h3>{tier.name}</h3><p>{tier.sub}</p></div></div><div class="ra-chips" role="group" aria-label={`${r.authorities}: ${tier.name}`}>{tier.authorities.map(a => <button type="button" data-authority={a.id} aria-pressed={a.id === 'ifda' ? 'true' : 'false'} dir="ltr">{a.short}</button>)}</div></div>)}</div>
-  <div class="ra-detail" aria-live="polite">{authorities.map(a => <article class="ra-authority" data-authority-panel={a.id} hidden={a.id !== 'ifda'}><p class="ra-authority-tier">{a.tierName}</p><h3 dir="ltr">{a.name}</h3><p class="ra-authority-meta"><span>{a.region}</span><span>{r.format}: <span dir="ltr">{a.format}</span></span></p><h4>{r.routes}</h4><dl class="ra-routes">{a.procedures.map(p => <div><dt>{p.name}</dt><dd>{p.note}</dd></div>)}</dl>{a.footnote && <p class="ra-footnote">{a.footnote}</p>}</article>)}</div>
+  <div class="ra-tiers">{data.tiers.map(tier => <div class="ra-tier"><div class="ra-tier-head"><span class="ra-tier-num">{lang === 'fa' ? String(tier.num).replace(/^0+/, '') : tier.num}</span><div><h3>{tier.name}</h3><p>{tier.sub}</p></div></div><div class="ra-chips" role="group" aria-label={`${r.authorities}: ${tier.name}`}>{tier.authorities.map(a => <button type="button" data-authority={a.id} aria-pressed={a.id === authorities[0].id ? 'true' : 'false'} dir="ltr">{a.short}</button>)}</div></div>)}</div>
+  <div class="ra-detail" aria-live="polite">{authorities.map(a => <article class="ra-authority" data-authority-panel={a.id} hidden={a.id !== authorities[0].id}><p class="ra-authority-tier">{a.tierName}</p><h3 dir="ltr">{a.name}</h3><p class="ra-authority-meta"><span>{a.region}</span><span>{r.format}: <span dir="ltr">{a.format}</span></span></p><h4>{r.routes}</h4><dl class="ra-routes">{a.procedures.map(p => <div><dt>{p.name}</dt><dd>{p.note}</dd></div>)}</dl>{a.footnote && <p class="ra-footnote">{a.footnote}</p>}</article>)}</div>
 </div></section>
 
 <section class="section section-paper" id="intelligence"><div class="container">

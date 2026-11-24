@@ -16,7 +16,7 @@ const ld = { '@context': 'https://schema.org', '@type': 'Service', '@id': `${url
   provider: { '@id': `${site.origin}/#organization` }, areaServed: 'Worldwide',
   hasOfferCatalog: { '@type': 'OfferCatalog', name: h.detailTitle, itemListElement: raMarkets.map(s => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: (s.t[lang] || s.t.en).name, description: (s.t[lang] || s.t.en).text } })) } };
 ---
-<PageHero title={h.title} category={ui.category} description={h.lead} action={ui.cta} href={enquiry} photo="ra-datastream" photoAlt={h.title}/>
+<PageHero title={h.title} category={ui.category} description={h.lead} action={ui.cta} href={enquiry}/>
 
 <section class="section">
   <div class="container">

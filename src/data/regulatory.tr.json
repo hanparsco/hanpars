@@ -53,43 +53,6 @@
  "tiers": [
   {
    "num": "01",
-   "name": "İç pazar: İran",
-   "sub": "İran Gıda ve İlaç İdaresi (IFDA): her hafta başvuru yaptığımız otorite",
-   "authorities": [
-    {
-     "id": "ifda",
-     "short": "IFDA",
-     "name": "İran Gıda ve İlaç İdaresi",
-     "region": "İran İslam Cumhuriyeti",
-     "format": "CTD (basılı ve elektronik), Farsça etiket",
-     "footnote": "Hanpars başvuru sahibi ve ruhsat sahibidir: ruhsatlar, IRC kodları ve ithalat izinleri üreticinin yetki belgesiyle bizim adımızadır.",
-     "procedures": [
-      {
-       "name": "Bitmiş ürün ithalat ruhsatı",
-       "note": "Üreticinin CTD dosyası, GMP sertifikası ve CPP’si esas alınarak değerlendirme; fiyat onayı; ithalatçıya IRC kodu."
-      },
-      {
-       "name": "Acil ithalat",
-       "note": "Kıtlık listesindeki veya acil klinik ihtiyaç olan ilaçlar için: kısaltılmış dosya ve tam ruhsattan önce ithalat izni, seri bazında dokümantasyon."
-      },
-      {
-       "name": "Etkin madde ve yardımcı madde kaydı",
-       "note": "İranlı üreticiler ve ithalatçılar için maddenin ve üretim sahasının DMF/CEP ve GMP kanıtlarıyla kaydı."
-      },
-      {
-       "name": "Lisanslı yerel üretim",
-       "note": "İranlı bir GMP tesisinde lisans altında üretilen yabancı ürünün ruhsatı; dosyada teknoloji transferi ve karşılaştırma verileri."
-      },
-      {
-       "name": "Varyasyon, yenileme ve farmakovijilans",
-       "note": "Ruhsat sahibi olarak onay sonrası değişiklikler, dönemsel yenilemeler ve advers olay bildirimi."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "num": "02",
    "name": "Sıkı düzenleyici otoriteler",
    "sub": "WHO listesindekiler · ICH kurucu düzenleyicileri",
    "authorities": [
@@ -294,7 +257,7 @@
    ]
   },
   {
-   "num": "03",
+   "num": "02",
    "name": "ICH düzenleyici üyeleri",
    "sub": "WHO olgunluk düzeyi 3–4 olan ulusal otoriteler",
    "authorities": [
@@ -491,7 +454,7 @@
    ]
   },
   {
-   "num": "04",
+   "num": "03",
    "name": "Bölgesel uyumlaştırılmış prosedürler",
    "sub": "Tek dosya, birden çok üye ülke",
    "authorities": [
@@ -550,7 +513,7 @@
    ]
   },
   {
-   "num": "05",
+   "num": "04",
    "name": "Dayanma yollarına sahip ulusal otoriteler",
    "sub": "Bir referans onaya dayanın",
    "authorities": [

@@ -23,7 +23,7 @@ const ld = [
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
 ];
 ---
-<PageHero title={c.title} category={ui.category} description={c.lead} action={ui.cta} href={enquiry} photo="ra-datastream" photoAlt={c.title}/>
+<PageHero title={c.title} category={ui.category} description={c.lead} action={ui.cta} href={enquiry}/>
 
 <section class="section rs-intro">
   <div class="container rs-intro-grid">
