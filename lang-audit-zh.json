@@ -1,6 +1,6 @@
 {
  "lang": "zh",
- "pages": 5557,
+ "pages": 5562,
  "issues": {
   "hreflang set incomplete": {
    "count": 4,
@@ -9,6 +9,16 @@
     "/zh/insights/exporting-apis-to-iran-what-iranian-manufacturers-ask-suppliers-for (3)",
     "/zh/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers (3)",
     "/zh/partners (4)"
+   ]
+  },
+  "broken internal link": {
+   "count": 5,
+   "sample": [
+    "/zh/regulatory-affairs/ctd-dossier-impd -> /zh/zh/contact-us-1",
+    "/zh/regulatory-affairs/development-strategy -> /zh/zh/contact-us-1",
+    "/zh/regulatory-affairs/dossier-review-deficiency-response -> /zh/zh/contact-us-1",
+    "/zh/regulatory-affairs/gmp-inspection-readiness -> /zh/zh/contact-us-1",
+    "/zh/regulatory-affairs/regulatory-training -> /zh/zh/contact-us-1"
    ]
   }
  },

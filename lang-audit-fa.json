@@ -1,6 +1,6 @@
 {
  "lang": "fa",
- "pages": 5555,
+ "pages": 5560,
  "issues": {
   "description not in target language": {
    "count": 22,
@@ -38,6 +38,16 @@
     "/fa/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /china-to-iran",
     "/fa/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /partners",
     "/fa/insights/how-to-register-a-medicine-in-iran-guide-for-foreign-manufacturers -> /regulatory-affairs"
+   ]
+  },
+  "broken internal link": {
+   "count": 5,
+   "sample": [
+    "/fa/regulatory-affairs/ctd-dossier-impd -> /fa/fa/contact-us-1",
+    "/fa/regulatory-affairs/development-strategy -> /fa/fa/contact-us-1",
+    "/fa/regulatory-affairs/dossier-review-deficiency-response -> /fa/fa/contact-us-1",
+    "/fa/regulatory-affairs/gmp-inspection-readiness -> /fa/fa/contact-us-1",
+    "/fa/regulatory-affairs/regulatory-training -> /fa/fa/contact-us-1"
    ]
   }
  },
