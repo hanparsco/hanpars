@@ -3,6 +3,7 @@
 import PageHero from './PageHero.astro';
 import Icon from './Icon.astro';
 import { raServices, raUi, type RaService, type RaLang } from '../data/ra-services';
+import { raCountries, raRegHub } from '../data/ra-countries';
 import { langFromPath, localePath } from '../i18n';
 interface Props { service: RaService }
 const { service } = Astro.props;
@@ -12,13 +13,16 @@ const c = service.t[lang] || service.t.en;
 const ui = raUi[lang] || raUi.en;
 const L = (p: string) => localePath(p, lang);
 const num = (i: number) => (lang === 'fa' ? (i + 1).toLocaleString('fa-IR') : String(i + 1).padStart(2, '0'));
-const enquiry = L(`/contact-us-1?type=regulatory${service.formItem ? `&service=${service.formItem}` : ''}`);
-const url = `${site.origin}${L(`/regulatory-affairs/${service.slug}`)}`;
+const isCountry = service.group === 'country';
+const hub = raRegHub[lang] || raRegHub.en;
+const pathOf = (s: RaService) => s.group === 'country' ? `/regulatory-affairs/drug-registration/${s.slug}` : `/regulatory-affairs/${s.slug}`;
+const enquiry = L(`/contact-us-1?type=regulatory${service.formItem ? `&service=${service.formItem}` : ''}${c.market ? `&market=${encodeURIComponent(c.market)}` : ''}`);
+const url = `${site.origin}${L(pathOf(service))}`;
 const icons = ['file', 'search', 'molecule', 'layers', 'shield', 'globe'];
-const others = raServices.filter(s => s.slug !== service.slug);
+const others = (isCountry ? raCountries : raServices).filter(s => s.slug !== service.slug);
 const ld = [
   { '@context': 'https://schema.org', '@type': 'Service', '@id': `${url}#service`, name: c.title, serviceType: service.serviceType, description: c.metaDesc, url,
-    provider: { '@id': `${site.origin}/#organization` }, areaServed: ['Iran', 'European Union', 'United Kingdom', 'Türkiye', 'Russia', 'Middle East'], availableLanguage: ['en', 'fa'],
+    provider: { '@id': `${site.origin}/#organization` }, areaServed: service.areaServed || ['Iran', 'European Union', 'United Kingdom', 'Türkiye', 'Russia', 'Middle East'], availableLanguage: ['en', 'fa'],
     hasOfferCatalog: { '@type': 'OfferCatalog', name: c.whatTitle, itemListElement: c.what.map(w => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: w.h, description: w.p } })) } },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
 ];
@@ -79,9 +83,10 @@ const ld = [
 
 <section class="section section-paper">
   <div class="container">
-    <div class="section-head"><h2>{ui.related}</h2></div>
+    <div class="section-head"><h2>{isCountry ? hub.detailTitle : ui.related}</h2></div>
     <ul class="rs-related">
-      {others.map(o => <li><a href={L(`/regulatory-affairs/${o.slug}`)}><Icon name={o.icon} size={20}/><span>{(o.t[lang] || o.t.en).nav}</span><Icon name="arrow" size={16} class="rs-arrow"/></a></li>)}
+      {others.map(o => <li><a href={L(pathOf(o))}><Icon name={o.icon} size={20}/><span>{(o.t[lang] || o.t.en).nav}</span><Icon name="arrow" size={16} class="rs-arrow"/></a></li>)}
+      {isCountry && <li><a href={L('/regulatory-affairs/drug-registration')}><Icon name="globe" size={20}/><span>{hub.otherTitle}</span><Icon name="arrow" size={16} class="rs-arrow"/></a></li>}
       <li><a href={L('/regulatory-affairs')}><Icon name="globe" size={20}/><span>{ui.back}</span><Icon name="arrow" size={16} class="rs-arrow"/></a></li>
     </ul>
   </div>

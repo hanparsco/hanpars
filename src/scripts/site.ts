@@ -260,6 +260,9 @@ if (form) {
   // ?service=N (from a regulatory service page) preselects that item in the RA "What you need" list
   const svcIdx = Number(parameters.get('service') || 0);
   if (type === 'regulatory' && raSelect && svcIdx > 0 && svcIdx < raSelect.options.length - 1) { raSelect.selectedIndex = svcIdx; syncRaOther(); }
+  const raMarket = document.getElementById('ra-market') as HTMLInputElement | null;
+  const mk = (parameters.get('market') || '').slice(0, 80);
+  if (type === 'regulatory' && raMarket && mk && !raMarket.value) raMarket.value = mk;
   const product = document.getElementById('brief-product') as HTMLInputElement | null;
   if (product && parameters.get('product')) product.value = parameters.get('product')!.slice(0,500);
   const chips = Array.from(form.querySelectorAll<HTMLButtonElement>('[data-chip-for]'));

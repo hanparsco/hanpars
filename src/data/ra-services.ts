@@ -9,8 +9,9 @@ export interface RaServiceText {
   stepsTitle: string; steps: { h: string; p: string }[];
   faq: { q: string; a: string }[];
   extra?: { h: string; p: string; items: string[] }[];
+  market?: string;
 }
-export interface RaService { slug: string; icon: string; formItem?: number; serviceType: string; t: Record<RaLang, RaServiceText> }
+export interface RaService { slug: string; icon: string; formItem?: number; serviceType: string; group?: 'service' | 'country'; areaServed?: string[]; t: Record<RaLang, RaServiceText> }
 
 export const raUi: Record<RaLang, { crumb: string; category: string; related: string; back: string; cta: string; ctaText: string; faqTitle: string; record: string; recordNote: string; servicesTitle: string; servicesLede: string; more: string }> = {
   en: { crumb: 'Regulatory affairs', category: 'Regulatory affairs', related: 'Related regulatory services', back: 'All regulatory affairs services', cta: 'Discuss your project', ctaText: 'Tell us the product, the target market and where the dossier stands. A regulatory specialist replies; technical data is exchanged under a confidentiality agreement.', faqTitle: 'Common questions', record: 'Team record', recordNote: 'Figures are the cumulative professional record of our regulatory team members, including work done before they joined Hanpars.', servicesTitle: 'Service pages', servicesLede: 'Each core service has its own page with scope, deliverables, process and common questions.', more: 'Read more' },

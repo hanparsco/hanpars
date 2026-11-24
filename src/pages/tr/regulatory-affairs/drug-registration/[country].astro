@@ -1,0 +1,13 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import RaServicePage from '../../../../components/RaServicePage.astro';
+import { raUi } from '../../../../data/ra-services';
+import { raCountries, raCountryBySlug, raRegHub } from '../../../../data/ra-countries';
+export function getStaticPaths() { return raCountries.map(s => ({ params: { country: s.slug } })); }
+const svc = raCountryBySlug[Astro.params.country!];
+const c = svc.t.tr;
+const crumbs = [{ name: 'Ana sayfa', path: '/tr' }, { name: raUi.tr.crumb, path: '/tr/regulatory-affairs' }, { name: raRegHub.tr.nav, path: '/tr/regulatory-affairs/drug-registration' }, { name: c.nav, path: '/tr/regulatory-affairs/drug-registration/' + svc.slug }];
+---
+<Layout title={c.metaTitle} description={c.metaDesc} breadcrumbs={crumbs} brand="regulatory">
+  <RaServicePage service={svc}/>
+</Layout>

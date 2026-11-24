@@ -1,0 +1,62 @@
+---
+/** /regulatory-affairs/drug-registration: market guides + other countries and regions. */
+import PageHero from './PageHero.astro';
+import Icon from './Icon.astro';
+import { raUi, type RaLang } from '../data/ra-services';
+import { raCountries, raRegHub } from '../data/ra-countries';
+import { langFromPath, localePath } from '../i18n';
+const site = { origin: (Astro.site?.origin) || 'https://hanpars.com' };
+const lang = langFromPath(Astro.url.pathname) as RaLang;
+const h = raRegHub[lang] || raRegHub.en;
+const ui = raUi[lang] || raUi.en;
+const L = (p: string) => localePath(p, lang);
+const enquiry = L('/contact-us-1?type=regulatory&service=5');
+const url = `${site.origin}${L('/regulatory-affairs/drug-registration')}`;
+const ld = { '@context': 'https://schema.org', '@type': 'Service', '@id': `${url}#service`, name: h.title, serviceType: 'Drug and API registration', description: h.metaDesc, url,
+  provider: { '@id': `${site.origin}/#organization` }, areaServed: 'Worldwide',
+  hasOfferCatalog: { '@type': 'OfferCatalog', name: h.detailTitle, itemListElement: raCountries.map(s => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: (s.t[lang] || s.t.en).title, url: `${site.origin}${L('/regulatory-affairs/drug-registration/' + s.slug)}` } })) } };
+---
+<PageHero title={h.title} category={ui.category} description={h.lead} action={ui.cta} href={enquiry} photo="ra-datastream" photoAlt={h.title}/>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><h2>{h.detailTitle}</h2><p class="lede">{h.detailLede}</p></div>
+    <ul class="rh-list">
+      {raCountries.map(s => { const c = s.t[lang] || s.t.en; return <li><a href={L('/regulatory-affairs/drug-registration/' + s.slug)}><span class="rh-ico"><Icon name="globe" size={20}/></span><span class="rh-txt"><strong>{c.nav}</strong><small>{c.lead}</small></span><Icon name="arrow" size={16} class="rh-arrow"/></a></li>; })}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-paper">
+  <div class="container">
+    <div class="section-head"><h2>{h.otherTitle}</h2><p class="lede">{h.otherLede}</p></div>
+    <ul class="rh-regions">{h.regions.map(r => <li><h3>{r.h}</h3><p>{r.p}</p></li>)}</ul>
+    <p class="rh-note">{h.note}</p>
+  </div>
+</section>
+
+<section class="invite"><div class="container invite-inner"><div>
+  <h2>{ui.cta}</h2><p class="lede">{ui.ctaText}</p>
+  <div class="actions"><a class="button button-navy" href={enquiry} rel="nofollow">{ui.cta}</a></div>
+</div></div></section>
+
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+
+<style>
+  .rh-list { list-style:none; padding:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+  .rh-list a { display:flex; align-items:flex-start; gap:14px; height:100%; padding:20px; border:1px solid var(--line); border-radius:18px; background:var(--white); color:var(--ink); text-decoration:none; }
+  .rh-list a:hover { border-color:var(--lapis); }
+  .rh-ico { flex:none; display:inline-grid; place-items:center; width:42px; height:42px; border-radius:12px; background:var(--glacier-soft); color:var(--lapis-deep); }
+  .rh-txt { flex:1; display:flex; flex-direction:column; gap:6px; }
+  .rh-txt strong { font-size:18px; }
+  .rh-txt small { font-size:15px; line-height:1.5; color:var(--muted); }
+  .rh-arrow { flex:none; margin-top:4px; color:var(--lapis); }
+  :global([dir=rtl]) .rh-arrow { transform:scaleX(-1); }
+  .rh-regions { list-style:none; padding:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+  .rh-regions li { padding:20px; border:1px solid var(--line); border-radius:16px; background:var(--white); }
+  .rh-regions h3 { font-size:17px; margin-bottom:8px; }
+  .rh-regions p { margin:0; font-size:15px; line-height:1.55; color:var(--muted); }
+  .rh-note { margin:24px 0 0; padding:18px 22px; border-radius:16px; background:var(--glacier-soft); color:var(--ink); max-width:none; }
+  @media (max-width:980px) { .rh-regions { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  @media (max-width:700px) { .rh-list, .rh-regions { grid-template-columns:1fr; } }
+</style>

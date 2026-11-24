@@ -1,0 +1,11 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import RaCountryHub from '../../../../components/RaCountryHub.astro';
+import { raUi } from '../../../../data/ra-services';
+import { raRegHub } from '../../../../data/ra-countries';
+const h = raRegHub.fa;
+const crumbs = [{ name: 'خانه', path: '/fa' }, { name: raUi.fa.crumb, path: '/fa/regulatory-affairs' }, { name: h.nav, path: '/fa/regulatory-affairs/drug-registration' }];
+---
+<Layout title={h.metaTitle} description={h.metaDesc} breadcrumbs={crumbs} brand="regulatory">
+  <RaCountryHub/>
+</Layout>
