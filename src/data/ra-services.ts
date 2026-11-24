@@ -628,6 +628,7 @@ export const raServices: RaService[] = [
         ],
         whatTitle: 'Training topics',
         what: [
+          { h: 'ICH guidelines', p: 'The ICH Quality, Safety, Efficacy and Multidisciplinary guidelines (Q, S, E and M series) that dossiers and inspections are judged against, and how agencies apply them in practice.' },
           { h: 'CTD and eCTD in practice', p: 'Structure, granularity and lifecycle; the most common technical and content errors and how to avoid them.' },
           { h: 'Writing Module 2 and Module 3', p: 'How to write summaries and quality sections that an assessor can follow and accept.' },
           { h: 'Agency questions and deficiency letters', p: 'Classifying questions, planning responses and writing answers that close the issue.' },
@@ -662,6 +663,7 @@ export const raServices: RaService[] = [
         ],
         whatTitle: 'موضوعات آموزشی',
         what: [
+          { h: 'راهنماهای ICH', p: 'راهنماهای کیفیت، ایمنی، اثربخشی و چندرشته‌ای ICH (سری‌های Q، S، E و M) که پرونده‌ها و بازرسی‌ها بر اساس آن‌ها ارزیابی می‌شوند، و اینکه مراجع در عمل چطور آن‌ها را به کار می‌برند.' },
           { h: 'CTD و eCTD در عمل', p: 'ساختار، سطح‌بندی و چرخهٔ عمر؛ رایج‌ترین خطاهای فنی و محتوایی و راه پیشگیری از آن‌ها.' },
           { h: 'نگارش ماژول ۲ و ماژول ۳', p: 'خلاصه‌ها و بخش‌های کیفی را چطور بنویسیم که ارزیاب راحت دنبال کند و بپذیرد.' },
           { h: 'پرسش‌های مرجع و نامه‌های نقص', p: 'دسته‌بندی پرسش‌ها، برنامه‌ریزی پاسخ و نگارش پاسخی که موضوع را ببندد.' },
@@ -696,6 +698,7 @@ export const raServices: RaService[] = [
         ],
         whatTitle: '培训主题',
         what: [
+          { h: 'ICH 指导原则', p: 'ICH 质量、安全性、有效性及多学科指导原则（Q、S、E、M 系列）：注册资料和检查的评判依据，以及监管机构在实践中如何应用。' },
           { h: 'CTD 与 eCTD 实务', p: '结构、粒度与生命周期；最常见的技术和内容错误及避免方法。' },
           { h: '撰写模块 2 和模块 3', p: '如何撰写审评员能够理解和接受的综述及质量章节。' },
           { h: '监管问题与缺陷信', p: '问题分类、答复规划以及撰写能够关闭问题的答复。' },
@@ -730,6 +733,7 @@ export const raServices: RaService[] = [
         ],
         whatTitle: 'Eğitim konuları',
         what: [
+          { h: 'ICH kılavuzları', p: 'Dosyaların ve denetimlerin değerlendirildiği ICH kalite, güvenlilik, etkililik ve multidisipliner kılavuzları (Q, S, E ve M serileri) ve otoritelerin bunları uygulamada nasıl kullandığı.' },
           { h: 'Uygulamada CTD ve eCTD', p: 'Yapı, ayrıntı düzeyi ve yaşam döngüsü; en yaygın teknik ve içerik hataları ve bunlardan kaçınma yolları.' },
           { h: 'Modül 2 ve Modül 3 yazımı', p: 'Değerlendiricinin takip edip kabul edebileceği özetlerin ve kalite bölümlerinin nasıl yazılacağı.' },
           { h: 'Otorite soruları ve eksiklik yazıları', p: 'Soruların sınıflandırılması, yanıtların planlanması ve konuyu kapatan yanıtların yazılması.' },
