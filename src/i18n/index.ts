@@ -63,7 +63,9 @@ const base = {
       { label: 'Services', items: [
         { label: 'For foreign manufacturers', href: '/partners', note: 'Your licensed importer and partner in Iran' },
         { label: 'China to Iran: export guide', href: '/china-to-iran', note: 'How medicines and APIs from China enter Iran' },
-        { label: 'Regulatory affairs', href: '/regulatory-affairs', note: 'Dossiers, IFDA submissions, lifecycle' },
+        { label: 'Regulatory affairs', href: '/regulatory-affairs', note: 'Dossiers and registration in any market' },
+        { label: 'Drug registration by country', href: '/regulatory-affairs/drug-registration', note: 'EU, UK, Iran, Türkiye, EAEU, GCC and more' },
+        { label: 'CTD/eCTD dossiers', href: '/regulatory-affairs/ctd-dossier-impd', note: 'Writing, review and eCTD publishing' },
         { label: 'Finished Dosage Form CDMO', href: '/fdf-cdmo', note: 'Development and manufacturing projects' },
       ] },
       { label: 'Company', items: [
@@ -277,7 +279,9 @@ const base = {
         { label: 'ملزومات دارویی', href: '/supplies', note: 'بسته‌بندی اولیه، کپسول، اقلام مصرفی' },
       ] },
       { label: 'خدمات', items: [
-        { label: 'امور رگولاتوری', href: '/regulatory-affairs', note: 'پرونده، ثبت در سازمان غذا و دارو، تمدید و تغییرات پروانه' },
+        { label: 'امور رگولاتوری', href: '/regulatory-affairs', note: 'پرونده، ثبت دارو در ایران و کشورهای دیگر، تمدید و تغییرات' },
+        { label: 'ثبت دارو در کشورهای مختلف', href: '/regulatory-affairs/drug-registration', note: 'اروپا، بریتانیا، ترکیه، اوراسیا، خلیج فارس و…' },
+        { label: 'تهیهٔ پروندهٔ CTD/eCTD', href: '/regulatory-affairs/ctd-dossier-impd', note: 'نگارش، بازبینی و انتشار eCTD' },
         { label: 'تولید قراردادی (CDMO)', href: '/fdf-cdmo', note: 'پروژه‌های توسعه و تولید' },
       ] },
       { label: 'شرکت', items: [

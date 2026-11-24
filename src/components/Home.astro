@@ -1,4 +1,6 @@
 ---
+import { raServices } from '../data/ra-services';
+import { raRegHub } from '../data/ra-countries';
 import CTA from './CTA.astro';
 import Photo from './Photo.astro';
 import HeroSlides from './HeroSlides.astro';
@@ -62,6 +64,7 @@ const areaIcons: Record<string, string> = {"area-1": "<path d=\"M4 8V5a1 1 0 0 1
       <h3>{item.title}</h3>
       <p>{item.text}</p>
       <div class="trio-links"><a class="trio-link" href={L(item.href)}><span>{item.link}</span><span class="trio-arrow" aria-hidden="true">{lang === 'fa' ? '←' : '→'}</span></a>{(item as any).link2 && <a class="trio-link" href={L((item as any).href2)}><span>{(item as any).link2}</span><span class="trio-arrow" aria-hidden="true">{lang === 'fa' ? '←' : '→'}</span></a>}</div>
+      {item.href === '/regulatory-affairs' && <ul class="trio-sub">{raServices.map(sv => <li><a href={L(`/regulatory-affairs/${sv.slug}`)}>{(sv.t as any)[lang]?.nav || sv.t.en.nav}</a></li>)}<li><a href={L('/regulatory-affairs/drug-registration')}>{(raRegHub as any)[lang]?.nav || raRegHub.en.nav}</a></li></ul>}
     </article>)}</div>
     {lang === 'fa' && <p class="lede trio-after">{s.home.threeLede}</p>}
     {partnerBand && <a class="partner-band" href={L('/partners')}><span class="partner-band-ico"><Icon name="shield" size={22}/></span><span class="partner-band-text"><strong>{partnerBand.title}</strong><span>{partnerBand.text}</span></span><span class="partner-band-cta">{partnerBand.cta}<Icon name="arrow" size={17} class="partner-band-arrow"/></span></a>}

@@ -1,4 +1,5 @@
 ---
+import RaPromo from './RaPromo.astro';
 import Icon from './Icon.astro';
 import DosageFormIcon from './DosageFormIcon.astro';
 import CTA from './CTA.astro';
@@ -131,6 +132,7 @@ const seoNote = ({
     <h3>{m.sourcing}</h3>
     <ul class="check-list mol-checks">{m.sourcingPoints.map(x => <li>{x}</li>)}</ul>
     <a class="button button-navy" href={enquiry} rel="nofollow">{m.enquire}</a>
+    <RaPromo kind="fdf"/>
   </aside>
 </div></section>
 {lang === 'fa' && <section class="section section-tight prod-b2b"><div class="container prod-b2b-inner">

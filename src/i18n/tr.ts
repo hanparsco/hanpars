@@ -16,7 +16,9 @@ export const tr: UI = {
       ] },
       { label: 'Hizmetler', items: [
         { label: 'Türk üreticiler için', href: '/partners', note: 'İran’daki lisanslı ithalatçınız ve ortağınız' },
-        { label: 'Ruhsatlandırma ve regülasyon', href: '/regulatory-affairs', note: 'Dosyalar, IFDA başvuruları, yaşam döngüsü' },
+        { label: 'Ruhsatlandırma ve regülasyon', href: '/regulatory-affairs', note: 'Dosyalar ve her pazarda ruhsat' },
+        { label: 'Ülkelere göre ilaç ruhsatı', href: '/regulatory-affairs/drug-registration', note: 'AB, Birleşik Krallık, İran, Türkiye, AEB, Körfez ve diğerleri' },
+        { label: 'CTD/eCTD dosyaları', href: '/regulatory-affairs/ctd-dossier-impd', note: 'Yazım, inceleme ve eCTD yayımlama' },
         { label: 'FDF CDMO', href: '/fdf-cdmo', note: 'Geliştirme ve üretim projeleri' },
       ] },
       { label: 'Şirket', items: [

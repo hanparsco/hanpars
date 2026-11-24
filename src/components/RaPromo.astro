@@ -1,0 +1,26 @@
+---
+/** Small cross-link from API / FDF product pages to the regulatory service pages. */
+import Icon from './Icon.astro';
+import { langFromPath, localePath } from '../i18n';
+interface Props { kind: 'api' | 'fdf' }
+const { kind } = Astro.props;
+const lang = langFromPath(Astro.url.pathname) as 'en' | 'fa' | 'zh' | 'tr';
+const L = (p: string) => localePath(p, lang);
+const T = {
+  en: { api: 'Registering a medicine with this API in another market?', fdf: 'Registering this product in another market?', ctd: 'CTD/eCTD dossiers', reg: 'Drug registration by country' },
+  fa: { api: 'برای ثبت داروی حاوی این ماده در بازارهای دیگر یا تهیهٔ پروندهٔ CTD:', fdf: 'برای ثبت این دارو در بازارهای دیگر یا تهیهٔ پروندهٔ CTD:', ctd: 'تهیهٔ پروندهٔ CTD/eCTD', reg: 'ثبت دارو در کشورهای مختلف' },
+  zh: { api: '需要在其他市场注册含该原料药的制剂？', fdf: '需要在其他市场注册该产品？', ctd: 'CTD/eCTD 注册资料', reg: '各国药品注册' },
+  tr: { api: 'Bu etkin maddeyi içeren bir ilacı başka bir pazarda ruhsatlandırmak mı istiyorsunuz?', fdf: 'Bu ürünü başka bir pazarda ruhsatlandırmak mı istiyorsunuz?', ctd: 'CTD/eCTD dosyaları', reg: 'Ülkelere göre ilaç ruhsatı' },
+}[lang] || null;
+---
+{T && <div class="ra-promo">
+  <p><Icon name="file" size={16}/><span>{T[kind]}</span></p>
+  <ul><li><a href={L('/regulatory-affairs/ctd-dossier-impd')}>{T.ctd}</a></li><li><a href={L('/regulatory-affairs/drug-registration')}>{T.reg}</a></li></ul>
+</div>}
+<style>
+  .ra-promo { margin-top:18px; padding:14px 16px; border:1px solid var(--line); border-radius:14px; background:var(--paper); }
+  .ra-promo p { display:flex; gap:8px; align-items:flex-start; margin:0 0 8px; font-size:14.5px; line-height:1.55; color:var(--ink); }
+  .ra-promo p :global(svg) { flex:none; margin-top:3px; color:var(--lapis); }
+  .ra-promo ul { list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:6px 16px; }
+  .ra-promo a { font-size:14.5px; font-weight:600; color:var(--lapis-deep); }
+</style>
