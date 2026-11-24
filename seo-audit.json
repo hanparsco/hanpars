@@ -1,6 +1,6 @@
 {
- "pages": 22280,
- "indexable": 21681,
+ "pages": 22276,
+ "indexable": 21677,
  "issues": [
   {
    "name": "title missing",
@@ -9,7 +9,7 @@
   },
   {
    "name": "title > 65 chars",
-   "count": 1271,
+   "count": 1266,
    "sample": [
     "/api/amino-acids (66) Amino acids API | Manufacturers &amp; suppliers for Iran | Hanpars",
     "/api/angiotensin (66) Angiotensin API | Manufacturers &amp; suppliers for Iran | Hanpars",
@@ -44,7 +44,7 @@
     "/zh/fdf/sodium-acid-phosphate-phosphate-sodium-2397 磷酸二氢钠 泡腾片 500 mg | 汉帕斯",
     "/zh/fdf/thrombocytes-platelet-phresis-and-irradiated-52967 单采辐照血小板 注射液 | 汉帕斯",
     "/zh/import-activity 进口动态 | 汉帕斯",
-    "/zh/insights/dossier-gap-analysis-before-submission-module-by-module-checklist 递交前的资料差距分析：逐模块检查清单 | 汉帕斯",
+    "/zh/insights/impd-vs-ctd-quality-requirements-side-by-side IMPD 与 CTD：质量要求对照 | 汉帕斯",
     "/zh/news 今日医药资讯 | 汉帕斯",
     "/zh/nutrition 营养与保健品原料 | 汉帕斯"
    ]
@@ -77,7 +77,7 @@
   },
   {
    "name": "description < 70 chars",
-   "count": 24,
+   "count": 23,
    "sample": [
     "/zh/about-us 关于汉帕斯（汉尼亚帕尔桑药业有限公司）：德黑兰的持牌药品进口企业，为伊朗采购、进口并注册原料药、药用辅料和制剂。",
     "/zh/api 检索汉帕斯收录 1,582 种物质的原料药参考品种目录，并按质量标准和目标市场提交询盘。",
@@ -88,12 +88,12 @@
     "/zh/fdf 浏览汉帕斯经 IFDA 注册的医院用药和专科用药产品组合，以及收录 3,885 种制剂的参考清单，并提交询盘。",
     "/zh/import-activity 汉帕斯 2026 年进口动态：逾 3,600 万欧元、超过 1.1 亿单位药品，涵盖 30 种分子，货源来自土耳其、中国和英国。",
     "/zh/insights/biosimilar-comparability-what-agencies-expect-in-the-dossier 生物类似药凭借与参比产品的可比性获批。分析研究需要证明什么、仍需多少临床数据，以及资料通常在哪些方面受到质疑。",
-    "/zh/insights/dossier-gap-analysis-before-submission-module-by-module-checklist 审评中的大多数问题本可预见。一份在资料提交监管机构前逐模块审核的实用清单。",
     "/zh/insights/drug-registration-routes-compared-eu-uk-eaeu-gcc-turkiye 在经常一起规划的五个市场中，谁可以申请、有哪些程序、审评需要多长时间。",
     "/zh/insights/exporting-apis-to-iran-what-iranian-manufacturers-ask-suppliers-for 伊朗制剂产业规模大，原料药大部分依赖进口。买方下单前查看哪些内容、哪些文件决定成交，以及进口如何进行。",
     "/zh/insights/how-to-answer-a-deficiency-letter-from-a-regulatory-agency 收到问题清单或缺陷信是审评的正常环节。如何对问题分类、判断哪些需要新数据，并撰写审评员能一次关闭的答复。",
-    "/zh/insights/impd-under-the-eu-clinical-trials-regulation-quality-section 欧盟临床试验法规适用于所有试验后，IMPD 作为单一申请的一部分通过 CTIS 递交。质量部分须涵盖哪些内容，申请通常在哪些方面被提问。",
-    "/zh/insights/preparing-for-an-eu-gmp-or-pic-s-inspection-mock-inspection-checklist 权威机构颁发的 GMP 证书往往是进入新市场注册的前提。检查员最先关注什么、如何开展模拟检查，以及最常见的缺陷项。"
+    "/zh/insights/impd-vs-ctd-quality-requirements-side-by-side 临床试验 IMPD 的质量部分与上市许可资料的模块 3 采用相同标题，但所要求的深度不同。两者要求的并列对照。",
+    "/zh/insights/preparing-for-an-eu-gmp-or-pic-s-inspection-mock-inspection-checklist 权威机构颁发的 GMP 证书往往是进入新市场注册的前提。检查员最先关注什么、如何开展模拟检查，以及最常见的缺陷项。",
+    "/zh/markets 汉帕斯在伊朗供应并注册药品，从中国、印度、土耳其和欧洲的生产企业采购。了解询盘应包含的内容。"
    ]
   },
   {
@@ -225,5 +225,5 @@
    "sample": []
   }
  ],
- "sha": "184064934e9f28f7915bc5812343ed1299b7b1e4"
+ "sha": "dd54b24091d49a77b8a1b7357c9c9ec3d342dc71"
 }
