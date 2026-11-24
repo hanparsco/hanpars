@@ -1,6 +1,6 @@
 {
- "pages": 22228,
- "indexable": 21629,
+ "pages": 22248,
+ "indexable": 21649,
  "issues": [
   {
    "name": "title missing",
@@ -9,7 +9,7 @@
   },
   {
    "name": "title > 65 chars",
-   "count": 1240,
+   "count": 1244,
    "sample": [
     "/api/amino-acids (66) Amino acids API | Manufacturers &amp; suppliers for Iran | Hanpars",
     "/api/angiotensin (66) Angiotensin API | Manufacturers &amp; suppliers for Iran | Hanpars",
@@ -30,7 +30,7 @@
   },
   {
    "name": "title < 25 chars",
-   "count": 16,
+   "count": 18,
    "sample": [
     "/zh/blog-1 文章存档 | 汉帕斯",
     "/zh/contact-us-1 联系我们 | 汉帕斯",
@@ -56,19 +56,28 @@
   },
   {
    "name": "description > 165 chars",
-   "count": 6,
+   "count": 16,
    "sample": [
     "/china-to-iran (222)",
+    "/fa/regulatory-affairs/development-strategy (170)",
     "/fdf-cdmo (196)",
     "/partners (266)",
     "/precursors (166)",
+    "/regulatory-affairs/ctd-dossier-impd (187)",
+    "/regulatory-affairs/development-strategy (188)",
+    "/regulatory-affairs/dossier-review-deficiency-response (183)",
+    "/regulatory-affairs/gmp-inspection-readiness (180)",
+    "/regulatory-affairs/regulatory-training (178)",
     "/tr/fdf-cdmo (170)",
-    "/tr/partners (200)"
+    "/tr/partners (200)",
+    "/tr/regulatory-affairs/ctd-dossier-impd (186)",
+    "/tr/regulatory-affairs/development-strategy (208)",
+    "/tr/regulatory-affairs/dossier-review-deficiency-response (182)"
    ]
   },
   {
    "name": "description < 70 chars",
-   "count": 14,
+   "count": 19,
    "sample": [
     "/zh/about-us 关于汉帕斯（汉尼亚帕尔桑药业有限公司）：德黑兰的持牌药品进口企业，为伊朗采购、进口并注册原料药、药用辅料和制剂。",
     "/zh/api 检索汉帕斯收录 1,582 种物质的原料药参考品种目录，并按质量标准和目标市场提交询盘。",
@@ -82,8 +91,9 @@
     "/zh/markets 汉帕斯在伊朗供应并注册药品，从中国、印度、土耳其和欧洲的生产企业采购。了解询盘应包含的内容。",
     "/zh/news 每日全球医药要闻及中国制剂、原料药资讯，每天清晨更新，附来源与链接。",
     "/zh/precursors 汉帕斯为伊朗药品生产企业采购原料药起始物料、高级中间体和工艺试剂，来源于合格生产企业，文件齐全。",
-    "/zh/regulatory-affairs 伊朗药品注册事务：IFDA 注册策略、CTD 资料、GMP 检查准备及生命周期维护，服务于进入伊朗市场的生产企业。",
-    "/zh/supplies 汉帕斯为伊朗采购药包材与耗材：西林瓶、安瓿、胶塞和泡罩铝箔等内包材、空心胶囊及生产耗材，按规格供应。"
+    "/zh/regulatory-affairs/ctd-dossier-impd CTD 模块 1–5 的撰写与审核、eCTD 编制及生命周期序列，以及用于欧盟、英国等市场临床试验申请的 IMPD（质量、非临床、临床）。",
+    "/zh/regulatory-affairs/development-strategy 面向生物制品、生物类似药和小分子的注册策略：开发和 CMC 规划、可比性与生物相似性研究、生物等效性研究计划及审批路径。",
+    "/zh/regulatory-affairs/dossier-review-deficiency-response 申报前对 CTD 资料进行法规与质量差距分析，从审评员角度预审，并对监管机构问题和缺陷信撰写结构化答复。"
    ]
   },
   {
@@ -215,5 +225,5 @@
    "sample": []
   }
  ],
- "sha": "160334d8419b8a4704e79e0423493ac9c68d65b2"
+ "sha": "a8962c47fbb6031f6b2ff1811cd0ad177d00a35f"
 }
