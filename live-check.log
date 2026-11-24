@@ -16,21 +16,21 @@
   info 200 https://hanpars.com/fdf.html
   info 200 https://hanpars.com/home
 == sitemaps
-  200 https://hanpars.com/sitemap-en.xml: 46 URLs
+  200 https://hanpars.com/sitemap-en.xml: 53 URLs
   200 https://hanpars.com/sitemap-en-fdf.xml: 3882 URLs
   200 https://hanpars.com/sitemap-en-api.xml: 1502 URLs
-  200 https://hanpars.com/sitemap-fa.xml: 22 URLs
+  200 https://hanpars.com/sitemap-fa.xml: 29 URLs
   200 https://hanpars.com/sitemap-fa-fdf.xml: 3882 URLs
   200 https://hanpars.com/sitemap-fa-api.xml: 1502 URLs
-  200 https://hanpars.com/sitemap-zh.xml: 26 URLs
+  200 https://hanpars.com/sitemap-zh.xml: 33 URLs
   200 https://hanpars.com/sitemap-zh-fdf.xml: 3882 URLs
   200 https://hanpars.com/sitemap-zh-api.xml: 1502 URLs
-  200 https://hanpars.com/sitemap-tr.xml: 23 URLs
+  200 https://hanpars.com/sitemap-tr.xml: 30 URLs
   200 https://hanpars.com/sitemap-tr-fdf.xml: 3882 URLs
   200 https://hanpars.com/sitemap-tr-api.xml: 1502 URLs
-  total 21653 URLs, 21653 unique
+  total 21681 URLs, 21681 unique
 == sample of 200 sitemap URLs
-  checked 200 pages and 725 alternates
+  checked 200 pages and 722 alternates
 == repaired cohorts (regression fixtures)
   compat stubs, contact-query canonicals and placeholder policy checked in 4 languages
 == external links (warnings only)
