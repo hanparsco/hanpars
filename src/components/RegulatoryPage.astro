@@ -17,6 +17,7 @@ const authorities = data.tiers.flatMap(tier => tier.authorities.map(a => ({ ...a
 import watchData from '../data/regulatory-watch.json';
 import { raServices, raUi } from '../data/ra-services';
 import { raRegHub } from '../data/ra-countries';
+import { raFaq } from '../data/ra-faq';
 // Regulatory watch: one shared file, refreshed daily by the "Regulatory Watch daily scan" scheduled task
 type WL = 'en' | 'fa' | 'zh' | 'tr';
 const wl = (['en', 'fa', 'zh', 'tr'].includes(lang) ? lang : 'en') as WL;
@@ -57,14 +58,14 @@ const RECORD = {
     advItems: ['EMA (CHMP/SAWP)', 'MHRA', 'AGES (Austria)', 'HPRA (Ireland)', 'Russian Ministry of Health', 'TİTCK'], advMore: 'and others',
   },
   fa: {
-    title: 'امور رگولاتوری مبتنی بر شواهد',
-    lede: 'ارزش مشاورهٔ رگولاتوری فقط به نتیجه‌ای است که در برابر مرجع قانونی به دست آورده است.',
-    body: 'کارنامهٔ تیم ما بر بازرسی‌های موفق، پرونده‌های تأییدشده و جلساتی ساخته شده که مستقیماً با خود مراجع قانونی برگزار شده است؛ در بازارهای سخت‌گیر، منطقه‌ای و ملی.',
-    note: 'هر عدد زیر یک نتیجهٔ محقق‌شده است، نه یک برنامه.',
+    title: 'سوابق تیم رگولاتوری',
+    lede: 'ارزش مشاورهٔ رگولاتوری به نتیجه‌ای است که در عمل نزد مراجع گرفته است.',
+    body: 'سوابق تیم ما شامل بازرسی‌های موفق، پرونده‌های تأییدشده و جلسات مستقیم با مراجع رگولاتوری در بازارهای سخت‌گیر، منطقه‌ای و ملی است.',
+    note: 'هر عدد زیر کاری است که انجام شده، نه برنامهٔ آینده.',
     stats: ['پروانهٔ فروش (MA) اخذشده در سراسر جهان', 'پروندهٔ CTD تدوین و تکمیل‌شده، ماژول‌های ۱ تا ۵', 'انتشار eCTD و ارسال‌های چرخهٔ عمر محصول برای EMA، MHRA و مراجع ملی', 'اخذ پروانهٔ فروش EMA از مسیر متمرکز (Centralised)'],
-    gmp: 'بازرسی‌های GMP که با موفقیت میزبانی و بسته شده‌اند و گواهی‌های GMP حاصل از آن‌ها در ثبت‌های متعدد به کار رفته است:',
+    gmp: 'بازرسی‌های GMP که با موفقیت پشت سر گذاشته شده و گواهی‌های حاصل از آن‌ها در ثبت‌های متعدد استفاده شده است:',
     gmpItems: ['EU-GMP (مرجع EEA)', 'MHRA (بریتانیا)', 'ANVISA (برزیل)', 'Minpromtorg (روسیه)', 'TİTCK (ترکیه)'], gmpMore: '· و دیگران',
-    adv: 'مشاورهٔ علمی و جلسات با مراجع قانونی، برگزارشده با:',
+    adv: 'مشاورهٔ علمی و جلسات برگزارشده با مراجع:',
     advItems: ['EMA (CHMP/SAWP)', 'MHRA', 'AGES (اتریش)', 'HPRA (ایرلند)', 'وزارت بهداشت روسیه', 'TİTCK'], advMore: 'و دیگران',
   },
   zh: {
@@ -156,6 +157,12 @@ const record = {
   <div class="section-head"><h2>{r.watch}</h2><p class="lede">{r.watchLede(watchAsOf)}</p></div>
   <ul class="insight-list">{watchItems.map(item => <li><a class="insight-row ra-watch-row" href={item.url} target="_blank" rel="noopener noreferrer"><time dir={lang === 'fa' ? 'rtl' : 'ltr'}>{item.date}</time><div><p class="ra-watch-agency"><span dir="ltr">{item.agency}</span> · {item.tag}</p><h3>{item.title}</h3><p>{item.summary}</p></div><span class="cat">{r.source}</span></a></li>)}</ul>
 </div></section>
+
+<section class="section" id="faq"><div class="container ra-faq-grid">
+  <h2>{raFaq[wl].title}</h2>
+  <div class="ra-faq">{raFaq[wl].items.map(f => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+</div></section>
+<script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: raFaq[wl].items.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) })} />
 
 <CTA title={data.ctaTitle} description={data.ctaText} email={raEmail} regulatoryOnly />
 
@@ -274,4 +281,10 @@ const record = {
   @media(max-width:980px) { .rr-stats { grid-template-columns:repeat(2,minmax(0,1fr)); } .rr-stat:nth-child(3) { border-inline-start:0; } .rr-stat:nth-child(n+3) { border-top:1px solid var(--line); } }
   @media(max-width:860px) { .rr-intro { grid-template-columns:minmax(0,1fr); gap:16px; margin-top:-16px; } .rr-intro .rr-note { justify-self:start; } .rr-lists { grid-template-columns:minmax(0,1fr); } }
   @media(max-width:520px) { .rr-stats { grid-template-columns:minmax(0,1fr); } .rr-stat { flex-direction:row; align-items:center; gap:16px; padding:18px 20px; border-inline-start:0; border-top:1px solid var(--line); } .rr-stat:first-child { border-top:0; } .rr-fig { min-width:92px; font-size:36px; } .rr-ico { width:44px; height:44px; flex:none; } .rr-card { padding:20px; } }
+  .ra-faq-grid { display:grid; grid-template-columns:minmax(0,4fr) minmax(0,8fr); gap:clamp(24px,4vw,56px); align-items:start; }
+  .ra-faq details { border-top:1px solid var(--line); padding:16px 0; } .ra-faq details:last-child { border-bottom:1px solid var(--line); }
+  .ra-faq summary { cursor:pointer; font-weight:600; font-size:17px; list-style:none; display:flex; justify-content:space-between; gap:16px; }
+  .ra-faq summary::after { content:'+'; color:var(--lapis); font-weight:500; } .ra-faq details[open] summary::after { content:'–'; }
+  .ra-faq p { margin:12px 0 0; color:var(--muted); line-height:1.65; max-width:72ch; }
+  @media (max-width:860px) { .ra-faq-grid { grid-template-columns:1fr; } }
 </style>
