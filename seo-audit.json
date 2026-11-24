@@ -1,6 +1,6 @@
 {
- "pages": 22248,
- "indexable": 21649,
+ "pages": 22252,
+ "indexable": 21653,
  "issues": [
   {
    "name": "title missing",
@@ -9,7 +9,7 @@
   },
   {
    "name": "title > 65 chars",
-   "count": 1244,
+   "count": 1247,
    "sample": [
     "/api/amino-acids (66) Amino acids API | Manufacturers &amp; suppliers for Iran | Hanpars",
     "/api/angiotensin (66) Angiotensin API | Manufacturers &amp; suppliers for Iran | Hanpars",
@@ -56,23 +56,23 @@
   },
   {
    "name": "description > 165 chars",
-   "count": 16,
+   "count": 19,
    "sample": [
     "/china-to-iran (222)",
     "/fa/regulatory-affairs/development-strategy (170)",
+    "/fa/regulatory-affairs/drug-registration (182)",
     "/fdf-cdmo (196)",
     "/partners (266)",
     "/precursors (166)",
     "/regulatory-affairs/ctd-dossier-impd (187)",
     "/regulatory-affairs/development-strategy (188)",
     "/regulatory-affairs/dossier-review-deficiency-response (183)",
+    "/regulatory-affairs/drug-registration (205)",
     "/regulatory-affairs/gmp-inspection-readiness (180)",
     "/regulatory-affairs/regulatory-training (178)",
     "/tr/fdf-cdmo (170)",
     "/tr/partners (200)",
-    "/tr/regulatory-affairs/ctd-dossier-impd (186)",
-    "/tr/regulatory-affairs/development-strategy (208)",
-    "/tr/regulatory-affairs/dossier-review-deficiency-response (182)"
+    "/tr/regulatory-affairs/ctd-dossier-impd (186)"
    ]
   },
   {
@@ -225,5 +225,5 @@
    "sample": []
   }
  ],
- "sha": "a8962c47fbb6031f6b2ff1811cd0ad177d00a35f"
+ "sha": "4697d67c658e9b21f9d40261fd149eb468514104"
 }
