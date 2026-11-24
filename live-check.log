@@ -30,7 +30,7 @@
   200 https://hanpars.com/sitemap-tr-api.xml: 1502 URLs
   total 21629 URLs, 21629 unique
 == sample of 200 sitemap URLs
-  checked 200 pages and 729 alternates
+  checked 200 pages and 721 alternates
 == repaired cohorts (regression fixtures)
   compat stubs, contact-query canonicals and placeholder policy checked in 4 languages
 == external links (warnings only)
