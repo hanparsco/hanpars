@@ -46,7 +46,8 @@
   ok  200 [news] https://www.pharmtech.com/view/early-breast-cancer-approval-expands-giredestrants-oral-solid-dose-demand
   ok  200 [news] https://www.prnewswire.com/news-releases/lupin-receives-approval-from-us-fda-for-ferric-citrate-tablets-302948631.html
   ok  200 [news] https://www.tradingview.com/news/reuters.com,2026:newsml_FWN4720LD:0-fujian-haixi-pharmaceuticals-says-nmpa-approves-hx9428-for-diabetic-macular-edema/
-  ok  200 [news] https://www.tampafp.com/major-u-s-drugmakers-halt-trials-at-chinese-military-hospitals-after-fda-inspection-standoffs/
+  WARN 307 [news] https://www.tampafp.com/major-u-s-drugmakers-halt-trials-at-chinese-military-hospitals-after-fda-inspection-standoffs/
   ok  200 [news] https://www.businesstoday.in/industry/pharma/story/indias-api-industry-grows-8-9-in-volume-but-chinese-competition-puts-pressure-on-revenues-569188-2026-11-23
   ok  200 [webmail] https://secureserver.titan.email/mail/
+  1 external link warning(s)
 == result: OK
