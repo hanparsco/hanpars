@@ -3,9 +3,13 @@ import Layout from '../../../layouts/Layout.astro';
 import Article from '../../../components/ArticlePage.astro';
 import articles from '../../../data/articles.json';
 import { articleSummary } from '../../../data/text';
+import { artTx, artFull, fullLangs } from '../../../data/articles-i18n';
 export function getStaticPaths() {
   return articles.map(article=>({params:{slug:article.slug},props:{article}}));
 }
 const { article } = Astro.props;
+const tx = artTx('tr', article.slug);
+const full = artFull('tr', article.slug);   // a full tr body → an indexable page of its own; otherwise noindex, canonical to English
+const skip = ['en', 'fa', 'zh', 'tr'].filter(l => !fullLangs(article.slug).includes(l));
 ---
-<Layout title={`${article.title} | Hanpars`} description={articleSummary(article).slice(0,155)} noindex canonicalPath={`/insights/${article.slug}`}><Article article={article}/></Layout>
+<Layout title={`${tx?.title || article.title} | Hanpars`} description={(tx?.excerpt || articleSummary(article)).slice(0,155)} noindex={!full} canonicalPath={full ? undefined : `/insights/${article.slug}`} skipLangs={full ? skip as any : []}><Article article={article}/></Layout>
