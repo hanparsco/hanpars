@@ -1,6 +1,6 @@
 {
  "lang": "tr",
- "pages": 5569,
+ "pages": 5568,
  "issues": {
   "description not in target language": {
    "count": 118,
@@ -107,8 +107,8 @@
  "englishLines": {
   "distinct": 5235,
   "top": [
-   "11139× Etkin maddeler (API) :: /tr/about-us, /tr/about-us, /tr/api/a-z/a",
-   "5569× 1.582 maddelik referans yelpazesi :: /tr/about-us, /tr/api/a-z/a, /tr/api/a-z/b",
+   "11137× Etkin maddeler (API) :: /tr/about-us, /tr/about-us, /tr/api/a-z/a",
+   "5568× 1.582 maddelik referans yelpazesi :: /tr/about-us, /tr/api/a-z/a, /tr/api/a-z/b",
    "1584× API referans yelpazesi :: /tr/api/abacavir-sulfate, /tr/api/abaloparatide, /tr/api/abemaciclib",
    "47× enjeksiyonluk liyofilize toz :: /tr/fdf/azacitidine-53632, /tr/fdf/azacitidine-9486, /tr/fdf/azacitidine-9486",
    "27× Seyreltici / dolgu maddesi :: /tr/excipient, /tr/excipient, /tr/excipient",
