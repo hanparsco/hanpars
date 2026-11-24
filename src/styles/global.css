@@ -486,6 +486,9 @@ html[lang=fa] .brief-legend { letter-spacing:0; font-size:14px; text-transform:n
 .article-body td:first-child { font-weight:600; color:var(--navy); }
 .article-body h4 { font-size:21px; margin:36px 0 14px; }
 .art-fig { margin:8px 0 32px; }
+.article-body table.art-vs thead th:nth-child(2) { background:var(--paper); }
+.article-body table.art-vs thead th:nth-child(3) { background:var(--glacier-soft); color:var(--lapis-deep); }
+.article-body table.art-vs td:nth-child(3) { background:#f4f8fb; }
 .art-cols { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
 .art-col { padding:18px 20px; border:1px solid var(--line); border-radius:16px; background:var(--white); }
 .art-col-new { border-color:var(--lapis); background:var(--glacier-soft); }
