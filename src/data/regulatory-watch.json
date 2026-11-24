@@ -1,119 +1,119 @@
 {
   "_about": "Regulatory watch on /regulatory-affairs (all languages). Written automatically by the daily 'Regulatory Watch daily scan' scheduled task from its dashboard ledger. asOf = scan date (YYYY-MM-DD). Each item: id, date (YYYY-MM-DD), agency, url (agency's own page), tag (one of: final, draft, closing, approval, gmp, news), title/summary in en, fa, zh, tr. Keep 6 items, newest first.",
-  "asOf": "2026-10-29",
+  "asOf": "2026-11-24",
   "items": [
     {
-      "id": "20261031-ema-biosimilar-concept-closing",
-      "date": "2026-10-31",
-      "agency": "EMA · CHMP",
+      "id": "20261201-fda-hepatic-impairment-pk-draft-closing",
+      "date": "2026-12-01",
+      "agency": "FDA · CDER",
       "tag": "closing",
-      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/concept-paper-revision-guideline-similar-biological-medicinal-products-chmp-437-04-rev1_en.pdf",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/pharmacokinetics-patients-impaired-hepatic-function-study-design-data-analysis-and-impact-dosing",
       "title": {
-        "en": "Biosimilar guideline revision: concept-paper consultation closes 31 October",
-        "fa": "بازنگری راهنمای بیوسیمیلارها: مهلت نظرخواهی دربارهٔ مقالهٔ مفهومی ۳۱ اکتبر به پایان می‌رسد",
-        "zh": "生物类似药指南修订：概念文件征求意见于 10 月 31 日截止",
-        "tr": "Biyobenzer kılavuzu revizyonu: kavram belgesi danışması 31 Ekim’de kapanıyor"
+        "en": "FDA draft on PK studies in hepatic impairment: comments close 1 December",
+        "fa": "پیش‌نویس FDA دربارهٔ مطالعات فارماکوکینتیک در نارسایی کبدی: مهلت نظرخواهی تا 1 دسامبر",
+        "zh": "FDA 肝功能损害药代动力学研究指南草案：意见征集 12 月 1 日截止",
+        "tr": "FDA’nın karaciğer yetmezliğinde PK çalışmaları taslağı: görüşler 1 Aralık’ta kapanıyor"
       },
       "summary": {
-        "en": "EMA is revising its overarching guideline on similar biological medicinal products (CHMP/437/04 Rev.1); a draft guideline is expected in Q2 2027.",
-        "fa": "EMA در حال بازنگری راهنمای کلی فرآورده‌های بیولوژیک مشابه (CHMP/437/04 Rev.1) است؛ پیش‌نویس راهنما در سه‌ماههٔ دوم ۲۰۲۷ انتظار می‌رود.",
-        "zh": "EMA 正在修订类似生物药品总体指南（CHMP/437/04 Rev.1），指南草案预计于 2027 年第二季度发布。",
-        "tr": "EMA, benzer biyolojik tıbbi ürünlere ilişkin genel kılavuzunu (CHMP/437/04 Rev.1) revize ediyor; taslak kılavuzun 2027’nin ikinci çeyreğinde yayımlanması bekleniyor."
+        "en": "The draft would replace the 2003 guidance: studies needed when over 30% of elimination is hepatic, no reduced design, NCI/MELD classification, and explicit coverage of therapeutic proteins, mAbs and ADCs.",
+        "fa": "این پیش‌نویس جایگزین راهنمای 2003 می‌شود: انجام مطالعه برای داروهایی با بیش از 30 درصد حذف کبدی، کنار گذاشتن طرح کاهش‌یافته، طبقه‌بندی NCI/MELD و شمول صریح پروتئین‌های درمانی، آنتی‌بادی‌های مونوکلونال و ADCها.",
+        "zh": "草案将取代 2003 年指南：肝脏消除超过 30% 时须开展研究，取消简化设计，引入 NCI/MELD 分级，并明确涵盖治疗性蛋白、单抗和 ADC。",
+        "tr": "Taslak 2003 kılavuzunun yerini alacak: eliminasyonun %30’undan fazlası hepatik ise çalışma gerekecek, azaltılmış tasarım kalkacak, NCI/MELD sınıflaması gelecek; terapötik proteinler, mAb’ler ve ADC’ler açıkça kapsanacak."
       }
     },
     {
-      "id": "20261028-pics-pi058-1-annex1-interpretation",
-      "date": "2026-10-28",
-      "agency": "PIC/S",
+      "id": "20261125-tmmda-ct-safety-reporting-closing",
+      "date": "2026-11-25",
+      "agency": "TİTCK",
+      "tag": "closing",
+      "url": "https://titck.gov.tr/duyuru/5401",
+      "title": {
+        "en": "TİTCK draft on safety reporting in clinical trials: comments close 25 November",
+        "fa": "پیش‌نویس TİTCK دربارهٔ گزارش‌دهی ایمنی در کارآزمایی‌های بالینی: مهلت نظرخواهی تا 25 نوامبر",
+        "zh": "TİTCK 临床试验安全性报告指南草案：意见征集 11 月 25 日截止",
+        "tr": "TİTCK klinik araştırmalarda güvenlilik bildirimi taslağı: görüşler 25 Kasım’da kapanıyor"
+      },
+      "summary": {
+        "en": "The revision of guideline KAD-KLVZ-07 reflects practical experience and WHO Global Benchmarking findings; comments go through the TİTCK external opinion platform.",
+        "fa": "بازنگری راهنمای KAD-KLVZ-07 بر پایهٔ تجربهٔ اجرایی و یافته‌های ارزیابی Global Benchmarking سازمان جهانی بهداشت انجام شده و نظرات از طریق سامانهٔ نظرخواهی TİTCK دریافت می‌شود.",
+        "zh": "KAD-KLVZ-07 指南修订吸收了实践经验和 WHO 全球基准评估的发现；意见通过 TİTCK 外部意见平台提交。",
+        "tr": "KAD-KLVZ-07 kılavuzunun revizyonu uygulama deneyimini ve WHO Küresel Kıyaslama bulgularını yansıtıyor; görüşler TİTCK dış görüş platformu üzerinden iletiliyor."
+      }
+    },
+    {
+      "id": "20261119-mhra-irp-route-b-deadlines",
+      "date": "2026-11-19",
+      "agency": "MHRA",
       "tag": "final",
-      "url": "https://picscheme.org/docview/11495",
+      "url": "https://www.gov.uk/government/publications/international-recognition-procedure/international-recognition-procedure",
       "title": {
-        "en": "PIC/S adopts a Q&A interpretation of the 2022 Annex 1 on sterile manufacturing",
-        "fa": "PIC/S راهنمای پرسش و پاسخ تفسیر ضمیمهٔ ۱ (۲۰۲۲) در تولید استریل را تصویب کرد",
-        "zh": "PIC/S 通过 2022 版附录 1（无菌生产）问答式解读文件",
-        "tr": "PIC/S, steril üretime ilişkin 2022 Ek 1 için soru-cevap yorum belgesini kabul etti"
+        "en": "MHRA publishes new International Recognition Procedure Route B timetable to 2028",
+        "fa": "MHRA جدول زمانی جدید مسیر B در رویهٔ شناسایی بین‌المللی (IRP) را تا 2028 منتشر کرد",
+        "zh": "MHRA 发布国际认可程序（IRP）路径 B 至 2028 年的新时间表",
+        "tr": "MHRA, Uluslararası Tanıma Prosedürü Route B takvimini 2028’e kadar güncelledi"
       },
       "summary": {
-        "en": "PI 058-1, drafted with EMA and WHO and in force from 28 October, explains how inspectors read the contamination-control strategy, isolators and RABS, PUPSIT and aseptic process simulation, without adding new requirements.",
-        "fa": "سند PI 058-1 که با همکاری EMA و WHO تهیه شده و از 28 اکتبر اجرایی است، نحوهٔ تفسیر بازرسان از راهبرد کنترل آلودگی، ایزولاتورها و RABS، PUPSIT و شبیه‌سازی فرایند آسپتیک را توضیح می‌دهد و الزام جدیدی اضافه نمی‌کند.",
-        "zh": "PI 058-1 由 PIC/S 与 EMA、WHO 共同起草，自 10 月 28 日起生效，说明检查员如何理解污染控制策略、隔离器与 RABS、PUPSIT 及无菌工艺模拟，不新增要求。",
-        "tr": "EMA ve WHO ile birlikte hazırlanan ve 28 Ekim’de yürürlüğe giren PI 058-1, müfettişlerin kontaminasyon kontrol stratejisini, izolatörleri ve RABS’ı, PUPSIT’i ve aseptik proses simülasyonunu nasıl yorumladığını yeni gereklilik eklemeden açıklıyor."
+        "en": "The refreshed table of Route B submission deadlines, start dates and CHM meetings runs to late 2028; the next deadlines are 2 and 30 December 2026. Timelines, eligibility and reference regulators are unchanged.",
+        "fa": "جدول به‌روزشدهٔ مهلت‌های ارسال، تاریخ‌های شروع و جلسات CHM برای مسیر B تا اواخر 2028 را پوشش می‌دهد؛ مهلت‌های بعدی 2 و 30 دسامبر 2026 است. زمان‌بندی، شرایط احراز و مراجع مرجع تغییری نکرده است.",
+        "zh": "更新后的路径 B 递交截止日、启动日期和 CHM 会议时间表延至 2028 年底；下一批截止日为 2026 年 12 月 2 日和 30 日。时限、资格及参考监管机构不变。",
+        "tr": "Route B başvuru son tarihleri, başlangıç tarihleri ve CHM toplantıları tablosu 2028 sonuna kadar uzatıldı; sıradaki son tarihler 2 ve 30 Aralık 2026. Süreler, uygunluk ve referans otoriteler değişmedi."
       }
     },
     {
-      "id": "20261028-ec-singapore-api-gmp-equivalence",
-      "date": "2026-10-28",
-      "agency": "European Commission",
-      "tag": "gmp",
-      "url": "https://health.ec.europa.eu/medicinal-products/falsified-medicines/importation-active-substances-listing-third-countries_en",
+      "id": "20261118-ema-quality-qa-invitro-equivalence",
+      "date": "2026-11-18",
+      "agency": "EMA · QWP",
+      "tag": "final",
+      "url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-medicines-questions-answers-introduction/quality-medicines-questions-answers-part-2",
       "title": {
-        "en": "EU recognises Singapore’s API GMP framework as equivalent",
-        "fa": "اتحادیهٔ اروپا چارچوب GMP مواد مؤثرهٔ سنگاپور را معادل خود شناخت",
-        "zh": "欧盟认定新加坡原料药 GMP 体系与欧盟等效",
-        "tr": "AB, Singapur’un etkin madde GMP çerçevesini eşdeğer kabul etti"
+        "en": "EMA Q&As on showing therapeutic equivalence by in-vitro quality comparison",
+        "fa": "پرسش و پاسخ‌های EMA دربارهٔ اثبات هم‌ارزی درمانی با مقایسهٔ آزمایشگاهی ویژگی‌های کیفی",
+        "zh": "EMA 发布以体外质量属性比较证明治疗等效性的问答",
+        "tr": "EMA’dan in vitro kalite karşılaştırmasıyla terapötik eşdeğerliğin gösterilmesine dair S&C’ler"
       },
       "summary": {
-        "en": "Implementing Decision (EU) 2026/2347 adds Singapore to the third countries whose active-substance GMP is equivalent, so Singapore-made APIs no longer need written confirmations for EU import once it applies.",
-        "fa": "با تصمیم اجرایی (EU) 2026/2347، سنگاپور به فهرست کشورهایی افزوده شد که GMP مواد مؤثرهٔ آن‌ها معادل اتحادیهٔ اروپاست؛ پس از اجرا، مواد مؤثرهٔ ساخت سنگاپور برای ورود به اروپا به تأییدیهٔ کتبی نیاز ندارند.",
-        "zh": "欧盟实施决定 (EU) 2026/2347 将新加坡列入原料药 GMP 等效第三国名单，生效后新加坡生产的原料药进口欧盟不再需要书面确认函。",
-        "tr": "(EU) 2026/2347 sayılı Uygulama Kararı Singapur’u etkin madde GMP’si eşdeğer üçüncü ülkeler listesine ekledi; uygulamaya girdiğinde Singapur üretimi etkin maddeler AB’ye ithalatta yazılı teyit gerektirmeyecek."
+        "en": "Thirteen new Q&As set a step-wise framework for locally acting chemical products: justified CQAs, at least 3 commercial-scale test batches against typically 6–10 EU reference batches, no pooling, and a report in 3.2.P.2.3.",
+        "fa": "سیزده پرسش و پاسخ جدید چارچوبی گام‌به‌گام برای فرآورده‌های شیمیایی با اثر موضعی تعیین می‌کند: CQAهای مستدل، دست‌کم 3 بچ آزمون در مقیاس تجاری در برابر معمولاً 6 تا 10 بچ مرجع اروپایی، بدون ادغام داده‌ها و گزارش در بخش 3.2.P.2.3.",
+        "zh": "13 条新问答为局部作用化学药品设定了分步框架：合理论证的 CQA、至少 3 批商业规模受试批对照通常 6–10 批欧盟参比批、不得合并数据，并在 3.2.P.2.3 中提交报告。",
+        "tr": "On üç yeni S&C, lokal etkili kimyasal ürünler için adım adım bir çerçeve getiriyor: gerekçelendirilmiş CQA’lar, genellikle 6–10 AB referans serisine karşı en az 3 ticari ölçekli test serisi, veri birleştirme yok ve 3.2.P.2.3’te rapor."
       }
     },
     {
-      "id": "20261028-ema-ich-m13b-implementation",
-      "date": "2026-10-28",
+      "id": "20261117-fda-global-reliance-disclosure",
+      "date": "2026-11-17",
+      "agency": "FDA",
+      "tag": "news",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-launches-global-reliance-disclosure-program-expand-patient-access-medicines-worldwide",
+      "title": {
+        "en": "FDA to share redacted review packages with foreign regulators for reliance",
+        "fa": "FDA بستهٔ ارزیابی ویرایش‌شده را برای اتکای متقابل در اختیار مراجع خارجی قرار می‌دهد",
+        "zh": "FDA 将向境外监管机构提供删节版审评资料以支持监管依赖",
+        "tr": "FDA, güvenme amaçlı olarak yabancı otoritelerle karartılmış değerlendirme paketlerini paylaşacak"
+      },
+      "summary": {
+        "en": "Under the Global Reliance Disclosure Program, sponsors receive minimally redacted approval packages to pass to other regulators, starting with PEPFAR tentative approvals and covering all novel drugs and 351(a) BLAs from January 2027.",
+        "fa": "در قالب برنامهٔ Global Reliance Disclosure، صاحبان پرونده بستهٔ تأیید با حداقل حذفیات را برای ارائه به سایر مراجع دریافت می‌کنند؛ این کار با تأییدهای موقت PEPFAR آغاز و از ژانویهٔ 2027 به همهٔ داروهای نوین و BLAهای 351(a) گسترش می‌یابد.",
+        "zh": "根据全球依赖信息披露计划，申办者可获得最小限度删节的批准资料包并转交其他监管机构；先从 PEPFAR 暂定批准开始，自 2027 年 1 月起覆盖所有新药及 351(a) BLA。",
+        "tr": "Küresel Güvenme Açıklama Programı kapsamında sponsorlar, diğer otoritelere iletmek üzere asgari düzeyde karartılmış onay paketleri alacak; PEPFAR geçici onaylarıyla başlayıp Ocak 2027’den itibaren tüm yeni ilaçları ve 351(a) BLA’ları kapsayacak."
+      }
+    },
+    {
+      "id": "20261113-ema-insulin-aspart-biosimilars-garzulys-donrafylix",
+      "date": "2026-11-13",
       "agency": "EMA · CHMP",
-      "tag": "final",
-      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/considerations-regarding-implementation-ich-m13b-bioequivalence-immediate-release-solid-oral-dosage-forms_en.pdf",
+      "tag": "approval",
+      "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-9-12-november-2026",
       "title": {
-        "en": "EMA sets EU implementation of ICH M13B biowaivers for additional strengths",
-        "fa": "EMA نحوهٔ اجرای ICH M13B (معافیت زیستی قدرت‌های اضافی) را در اتحادیهٔ اروپا اعلام کرد",
-        "zh": "EMA 发布 ICH M13B（附加规格生物豁免）欧盟实施考虑",
-        "tr": "EMA, ek dozlar için ICH M13B biyomuafiyetlerinin AB’de uygulanmasını belirledi"
+        "en": "CHMP backs two insulin aspart biosimilars, Garzulys and Donrafylix",
+        "fa": "CHMP دو بیوسیمیلار insulin aspart با نام‌های Garzulys و Donrafylix را تأیید کرد",
+        "zh": "CHMP 推荐批准两款门冬胰岛素生物类似药 Garzulys 和 Donrafylix",
+        "tr": "CHMP, iki insulin aspart biyobenzeri Garzulys ve Donrafylix için olumlu görüş verdi"
       },
       "summary": {
-        "en": "M13B will replace the strength-biowaiver sections of the EU bioequivalence guideline for applications submitted after 17 March 2027; earlier studies are assessed case by case.",
-        "fa": "M13B برای درخواست‌هایی که پس از 17 مارس 2027 ارائه شوند، جایگزین بخش‌های معافیت قدرت در راهنمای هم‌ارزی زیستی اتحادیهٔ اروپا می‌شود؛ مطالعات قبلی به‌صورت موردی ارزیابی می‌شوند.",
-        "zh": "对于 2027 年 3 月 17 日之后提交的申请，M13B 将取代欧盟生物等效性指南中有关规格豁免的章节；此前完成的研究将逐案评估。",
-        "tr": "M13B, 17 Mart 2027’den sonra yapılan başvurularda AB biyoeşdeğerlik kılavuzunun doz biyomuafiyeti bölümlerinin yerini alacak; önceki çalışmalar vaka bazında değerlendirilecek."
-      }
-    },
-    {
-      "id": "20261027-fda-cber-genome-editing-ifs-draft",
-      "date": "2026-10-27",
-      "agency": "FDA · CBER",
-      "tag": "draft",
-      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/individualized-human-genome-editing-products-considerations-bla-submission-and-postapproval",
-      "title": {
-        "en": "FDA draft guidance: one BLA for individualised genome-editing products",
-        "fa": "پیش‌نویس راهنمای FDA: یک BLA برای فرآورده‌های ویرایش ژنوم فردمحور",
-        "zh": "FDA 指南草案：个体化基因组编辑产品可通过一份 BLA 申报",
-        "tr": "FDA taslak kılavuzu: bireyselleştirilmiş genom düzenleme ürünleri için tek BLA"
-      },
-      "summary": {
-        "en": "Sponsors could define an allowed range of patient-specific variants in a single BLA and add new variants after approval as manufacturing changes, supported by in-vitro data. Comments due around 27 November.",
-        "fa": "حامیان می‌توانند دامنهٔ مجاز واریانت‌های مختص بیمار را در یک BLA تعریف کنند و پس از تأیید، واریانت‌های جدید را به‌عنوان تغییر تولید با داده‌های آزمایشگاهی اضافه کنند. مهلت ارسال نظر حدود 27 نوامبر است.",
-        "zh": "申办者可在一份 BLA 中界定患者特异性变体的允许范围，获批后凭体外数据以生产变更方式新增变体。意见截止约为 11 月 27 日。",
-        "tr": "Sponsorlar hastaya özgü varyantların izin verilen aralığını tek bir BLA’da tanımlayabilecek, onaydan sonra yeni varyantları in vitro verilerle üretim değişikliği olarak ekleyebilecek. Görüşler için son tarih 27 Kasım civarı."
-      }
-    },
-    {
-      "id": "20261026-who-ecbs-83-outcomes",
-      "date": "2026-10-26",
-      "agency": "WHO · ECBS",
-      "tag": "final",
-      "url": "https://www.who.int/publications/m/item/main-outcomes-of-the-83rd-meeting-of-the-who-expert-committee-on-biological-standardization-held-from-12-to-15-october-2026",
-      "title": {
-        "en": "WHO adopts one guideline on post-approval changes to biological products",
-        "fa": "WHO یک راهنمای واحد برای تغییرات پس از تأیید فرآورده‌های بیولوژیک تصویب کرد",
-        "zh": "WHO 通过生物制品批准后变更统一指南",
-        "tr": "WHO, biyolojik ürünlerde onay sonrası değişiklikler için tek kılavuz kabul etti"
-      },
-      "summary": {
-        "en": "The 83rd ECBS merged the vaccine and biotherapeutic change guidelines into one text that encourages reliance, and set 12 reference standards, including the first for ustekinumab.",
-        "fa": "هشتاد و سومین نشست ECBS راهنماهای تغییرات واکسن‌ها و داروهای بیولوژیک درمانی را در یک متن ادغام کرد که اتکای متقابل را تشویق می‌کند، و 12 استاندارد مرجع، از جمله نخستین استاندارد ustekinumab، را تعیین کرد.",
-        "zh": "第 83 届 ECBS 将疫苗和生物治疗产品变更指南合并为一份鼓励监管依赖的文本，并确立 12 项参比标准，包括首个 ustekinumab 国际标准。",
-        "tr": "83. ECBS, aşı ve bioterapötik değişiklik kılavuzlarını güvenmeyi teşvik eden tek bir metinde birleştirdi ve ilki ustekinumab için olmak üzere 12 referans standardı belirledi."
+        "en": "At its November meeting CHMP gave positive opinions on two insulin aspart biosimilars for diabetes in patients aged one year and older, widening EU options for rapid-acting insulin.",
+        "fa": "CHMP در نشست نوامبر برای دو بیوسیمیلار insulin aspart جهت درمان دیابت در بیماران یک سال و بالاتر نظر مثبت داد و گزینه‌های انسولین سریع‌الاثر در اتحادیهٔ اروپا گسترده‌تر شد.",
+        "zh": "CHMP 在 11 月会议上对两款用于 1 岁及以上糖尿病患者的门冬胰岛素生物类似药给出积极意见，扩大了欧盟速效胰岛素的选择。",
+        "tr": "CHMP kasım toplantısında bir yaş ve üzeri diyabet hastalarına yönelik iki insulin aspart biyobenzeri için olumlu görüş verdi; böylece AB’de hızlı etkili insülin seçenekleri genişledi."
       }
     }
   ]
