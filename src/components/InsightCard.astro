@@ -1,6 +1,6 @@
 ---
 import { articleSummary } from '../data/text';
-import { artTx, artCat, htmlLangOf } from '../data/articles-i18n';
+import { artTx, artCat, htmlLangOf, ltrWrap } from '../data/articles-i18n';
 import { langFromPath, localePath, dateLocale, htmlLang } from '../i18n';
 interface Props { article: { slug:string; title:string; date:string; category:string; excerpt:string; content:string }; index?:number; }
 const { article } = Astro.props;
@@ -16,6 +16,6 @@ const rowLang = zh ? { lang: htmlLangOf[lang], dir: lang === 'fa' ? 'rtl' : 'ltr
 ---
 <a class="insight-row" href={localePath(`/insights/${article.slug}`, lang)} {...rowLang} data-row-lang={lang}>
   <time datetime={isoDate} lang={htmlLang[lang]} dir={lang === 'fa' ? 'rtl' : 'ltr'}>{date}</time>
-  <div><h3>{title}</h3><p>{summary.slice(0,160)}{summary.length>160?'…':''}</p></div>
+  {lang === 'fa' && zh ? <div><h3 set:html={ltrWrap(title)}/><p set:html={ltrWrap(summary.slice(0,160) + (summary.length>160?'…':''))}/></div> : <div><h3>{title}</h3><p>{summary.slice(0,160)}{summary.length>160?'…':''}</p></div>}
   <span class="cat">{category}</span>
 </a>
