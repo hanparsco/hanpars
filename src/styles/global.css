@@ -480,6 +480,20 @@ html[lang=fa] .brief-legend { letter-spacing:0; font-size:14px; text-transform:n
 .article-body img { display:none; }
 .article-body table { width:100%; overflow:auto; border-collapse:collapse; font-size:16px; }
 .article-body td,.article-body th { padding:12px; border:1px solid var(--line); }
+.article-body .table-wrap { overflow-x:auto; margin:8px 0 28px; }
+.article-body .table-wrap table { min-width:560px; }
+.article-body th { background:var(--paper); text-align:start; font-weight:600; }
+.article-body td:first-child { font-weight:600; color:var(--navy); }
+.article-body h4 { font-size:21px; margin:36px 0 14px; }
+.art-fig { margin:8px 0 32px; }
+.art-cols { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.art-col { padding:18px 20px; border:1px solid var(--line); border-radius:16px; background:var(--white); }
+.art-col-new { border-color:var(--lapis); background:var(--glacier-soft); }
+.art-col .art-col-h { margin:0 0 10px; font-weight:700; font-size:16px; color:var(--navy); }
+.art-col ol { margin:0; padding-inline-start:20px; font-size:15.5px; line-height:1.6; }
+.art-col li { margin-bottom:6px; }
+.art-fig figcaption { margin-top:10px; font-size:14.5px; color:var(--muted); }
+@media (max-width:700px) { .art-cols { grid-template-columns:1fr; } }
 .article-navigation { display:flex; justify-content:space-between; gap:20px; margin-top:56px; padding-top:28px; border-top:1px solid var(--line); }
 .no-results { padding:50px 0; color:var(--muted); }
 
@@ -700,8 +714,8 @@ html[lang=fa] .persian-name { font-family:var(--display); }
 html[lang=fa] [dir=ltr],html[lang=fa] [lang=en] { font-family:'Montserrat','Source Sans 3',system-ui,sans-serif; }
 html[lang=fa] [lang=en] [lang=fa],html[lang=fa] [dir=ltr] [dir=rtl] { font-family:var(--sans); }
 html[lang=fa] [data-fa-digits] { font-family:var(--display); letter-spacing:0; unicode-bidi:isolate; }
-html[lang=fa] .article-body,html[lang=fa] .article-body p,html[lang=fa] .insight-row[lang=en] h3,html[lang=fa] .insight-row[lang=en] p { font-family:'Source Sans 3',sans-serif; line-height:1.6; }
-html[lang=fa] .insight-row[lang=en] h3,html[lang=fa] .article-body h2,html[lang=fa] .article-body h3,html[lang=fa] .page-hero h1[lang=en] { font-family:'Montserrat',sans-serif; letter-spacing:-.02em; }
+html[lang=fa] .article-body[lang=en],html[lang=fa] .article-body[lang=en] p,html[lang=fa] .insight-row[lang=en] h3,html[lang=fa] .insight-row[lang=en] p { font-family:'Source Sans 3',sans-serif; line-height:1.6; }
+html[lang=fa] .insight-row[lang=en] h3,html[lang=fa] .article-body[lang=en] h2,html[lang=fa] .article-body[lang=en] h3,html[lang=fa] .page-hero h1[lang=en] { font-family:'Montserrat',sans-serif; letter-spacing:-.02em; }
 html[lang=fa] .insight-row[lang=en] { text-align:left; }
 html[lang=fa] .catalogue-table td,html[lang=fa] .catalogue-table th,html[lang=fa] .catalogue-table .table-code { font-family:'Source Sans 3',sans-serif; }
 html[lang=fa] input,html[lang=fa] textarea,html[lang=fa] button,html[lang=fa] select { font-family:inherit; }
