@@ -157,7 +157,7 @@ export const zh: UI = {
     ctaProduct: '告诉我们产品与目标市场，我们为您说明下一步。', ctaCdmo: '告诉我们项目目前所处的阶段。',
   },
   regulatory: {
-    title: '注册事务', category: '服务', action: '申请评估', photoAlt: '镜片上显示全球监管数据流地图的眼镜',
+    title: '注册事务与药品注册', category: '服务', action: '申请评估', photoAlt: '镜片上显示全球监管数据流地图的眼镜',
     cover: '服务范围', file: '申报机构', intel: '法规情报与 AI 应用', principle: 'AI 使用原则',
     watch: '监管机构的最新变化', watchLede: (d: string) => `监管动态，截至 ${d}。内容摘自各监管机构自行发布的资料；完整内容请查阅来源。`,
     authorities: '监管机构', routes: '我们办理的申报路径', format: '注册资料格式', source: '来源',
