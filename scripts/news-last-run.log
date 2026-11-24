@@ -3,30 +3,30 @@ global feeds
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 10 items
+  Google News: 43 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 45 items
+  Google News: 38 items
 china feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 10 items
+  Google News: 43 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 45 items
-  Google News: 28 items
-  Google News: 1 items
-  Google News: 13 items
-  Google News: 21 items
+  Google News: 38 items
+  Google News: 25 items
+  Google News: 0 items (no <item> elements; root <rss>, 1281 bytes, start b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><generator>NFE/5.0</generator><title>"China "active pharmaceutical ingredient" OR "API manufacturer" OR "API expo')
+  Google News: 14 items
+  Google News: 23 items
 global
-  - Endpoints News | Lilly starts work on Pennsylvania obesity plant; ITM, AtomVie strike s | img
-  - Fierce Pharma | FDA sets up new safety council to keep tabs on approved vaccines, cell | img
-  - CASRAI | FDA CDER Launches Database of New Approach Methodology Use Cases for N | img
+  - RAPS | Recon: FDA approves first early-stage breast cancer hormone therapy in | img
+  - PharmTech.com | Early Breast Cancer Approval Expands Giredestrant's Oral Solid-Dose De | img
+  - PR Newswire | Lupin Receives Approval from U.S. FDA for Ferric Citrate Tablets | img
 china
-  - Business Today | Why Washington wants India to break China’s hold on generic drug start | img
-  - Coalition For A Prosperous America | CPA Questions China Commission’s Push to Invest in Indian Drug Manufac | img
-  - news.lavx.hu | New alarm over China's grip on drug supply chains | img
+  - TradingView | Fujian Haixi Pharmaceuticals Says NMPA Approves HX9428 For Diabetic Ma | img
+  - Tampa Free Press | Major U.S. Drugmakers Halt Trials At Chinese Military Hospitals After  | img
+  - Business Today | India's API industry grows 8–9% in volume, but Chinese competition put | img
