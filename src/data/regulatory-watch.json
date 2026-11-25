@@ -1,6 +1,6 @@
 {
   "_about": "Regulatory watch on /regulatory-affairs (all languages). Written automatically by the daily 'Regulatory Watch daily scan' scheduled task from its dashboard ledger. asOf = scan date (YYYY-MM-DD). Each item: id, date (YYYY-MM-DD), agency, url (agency's own page), tag (one of: final, draft, closing, approval, gmp, news), title/summary in en, fa, zh, tr. Keep 6 items, newest first.",
-  "asOf": "2026-11-24",
+  "asOf": "2026-11-25",
   "items": [
     {
       "id": "20261201-fda-hepatic-impairment-pk-draft-closing",
@@ -22,22 +22,41 @@
       }
     },
     {
-      "id": "20261125-tmmda-ct-safety-reporting-closing",
-      "date": "2026-11-25",
-      "agency": "TİTCK",
+      "id": "20261130-anvisa-blood-products-nontransfusional-cd13-14-closing",
+      "date": "2026-11-30",
+      "agency": "ANVISA",
       "tag": "closing",
-      "url": "https://titck.gov.tr/duyuru/5401",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-abre-consultas-dirigidas-sobre-produtos-componentes-do-sangue-para-fins-terapeuticos-nao-transfusionais",
       "title": {
-        "en": "TİTCK draft on safety reporting in clinical trials: comments close 25 November",
-        "fa": "پیش‌نویس TİTCK دربارهٔ گزارش‌دهی ایمنی در کارآزمایی‌های بالینی: مهلت نظرخواهی تا 25 نوامبر",
-        "zh": "TİTCK 临床试验安全性报告指南草案：意见征集 11 月 25 日截止",
-        "tr": "TİTCK klinik araştırmalarda güvenlilik bildirimi taslağı: görüşler 25 Kasım’da kapanıyor"
+        "en": "ANVISA consultations on non-transfusional blood products close 30 November",
+        "fa": "نظرخواهی‌های ANVISA دربارهٔ فرآورده‌های خونی با کاربرد غیرانتقالی تا 30 نوامبر ادامه دارد",
+        "zh": "ANVISA 非输血用途血液制品定向征求意见 11 月 30 日截止",
+        "tr": "ANVISA’nın transfüzyon dışı kan ürünleri istişareleri 30 Kasım’da kapanıyor"
       },
       "summary": {
-        "en": "The revision of guideline KAD-KLVZ-07 reflects practical experience and WHO Global Benchmarking findings; comments go through the TİTCK external opinion platform.",
-        "fa": "بازنگری راهنمای KAD-KLVZ-07 بر پایهٔ تجربهٔ اجرایی و یافته‌های ارزیابی Global Benchmarking سازمان جهانی بهداشت انجام شده و نظرات از طریق سامانهٔ نظرخواهی TİTCK دریافت می‌شود.",
-        "zh": "KAD-KLVZ-07 指南修订吸收了实践经验和 WHO 全球基准评估的发现；意见通过 TİTCK 外部意见平台提交。",
-        "tr": "KAD-KLVZ-07 kılavuzunun revizyonu uygulama deneyimini ve WHO Küresel Kıyaslama bulgularını yansıtıyor; görüşler TİTCK dış görüş platformu üzerinden iletiliyor."
+        "en": "Targeted consultations CD 13 and 14/2026 feed an impact analysis for a binding rule on platelet-rich plasma, fibrin, autologous serum eye drops and similar products, now covered only by technical notes.",
+        "fa": "نظرخواهی‌های هدفمند CD 13 و 14/2026 مبنای ارزیابی اثرات برای تدوین مقرراتی الزام‌آور دربارهٔ پلاسمای غنی از پلاکت، فیبرین، قطرهٔ چشمی سرم اتولوگ و فرآورده‌های مشابه است که اکنون تنها با یادداشت‌های فنی تنظیم می‌شوند.",
+        "zh": "定向征求意见 CD 13 和 14/2026 将为制定富血小板血浆、纤维蛋白、自体血清滴眼液等产品的强制性法规提供影响分析依据，这些产品目前仅受技术说明规范。",
+        "tr": "CD 13 ve 14/2026 hedefli istişareleri, şu an yalnızca teknik notlarla düzenlenen trombositten zengin plazma, fibrin, otolog serum göz damlası ve benzeri ürünler için bağlayıcı bir düzenlemeye yönelik etki analizine girdi sağlayacak."
+      }
+    },
+    {
+      "id": "20261127-fda-genome-editing-bla-draft-closing",
+      "date": "2026-11-27",
+      "agency": "FDA · CBER",
+      "tag": "closing",
+      "url": "https://www.federalregister.gov/documents/2026/10/28/2026-21954/individualized-human-genome-editing-products-considerations-for-bla-submission-and-postapproval",
+      "title": {
+        "en": "CBER draft on BLAs for individualised genome-editing products: comments close 27 Nov",
+        "fa": "پیش‌نویس CBER دربارهٔ BLA فرآورده‌های ویرایش ژنوم فردمحور: مهلت نظرخواهی تا 27 نوامبر",
+        "zh": "CBER 个体化基因组编辑产品 BLA 指南草案：意见征集 11 月 27 日截止",
+        "tr": "CBER’in kişiye özel genom düzenleme ürünleri BLA taslağı: görüşler 27 Kasım’da kapanıyor"
+      },
+      "summary": {
+        "en": "Docket FDA-2026-D-11783 covers BLA content and post-approval management for individualised human genome-editing products; the 30-day comment window ends around 27 November.",
+        "fa": "پروندهٔ FDA-2026-D-11783 به محتوای BLA و مدیریت پس از تأیید فرآورده‌های ویرایش ژنوم انسانی فردمحور می‌پردازد؛ مهلت 30 روزهٔ نظرخواهی حدود 27 نوامبر به پایان می‌رسد.",
+        "zh": "案卷 FDA-2026-D-11783 涉及个体化人类基因组编辑产品的 BLA 内容及批准后管理；30 天意见征集期约于 11 月 27 日结束。",
+        "tr": "FDA-2026-D-11783 dosyası, kişiye özel insan genom düzenleme ürünleri için BLA içeriğini ve onay sonrası yönetimi ele alıyor; 30 günlük görüş süresi 27 Kasım civarında sona eriyor."
       }
     },
     {
@@ -76,25 +95,6 @@
         "fa": "سیزده پرسش و پاسخ جدید چارچوبی گام‌به‌گام برای فرآورده‌های شیمیایی با اثر موضعی تعیین می‌کند: CQAهای مستدل، دست‌کم 3 بچ آزمون در مقیاس تجاری در برابر معمولاً 6 تا 10 بچ مرجع اروپایی، بدون ادغام داده‌ها و گزارش در بخش 3.2.P.2.3.",
         "zh": "13 条新问答为局部作用化学药品设定了分步框架：合理论证的 CQA、至少 3 批商业规模受试批对照通常 6–10 批欧盟参比批、不得合并数据，并在 3.2.P.2.3 中提交报告。",
         "tr": "On üç yeni S&C, lokal etkili kimyasal ürünler için adım adım bir çerçeve getiriyor: gerekçelendirilmiş CQA’lar, genellikle 6–10 AB referans serisine karşı en az 3 ticari ölçekli test serisi, veri birleştirme yok ve 3.2.P.2.3’te rapor."
-      }
-    },
-    {
-      "id": "20261117-fda-global-reliance-disclosure",
-      "date": "2026-11-17",
-      "agency": "FDA",
-      "tag": "news",
-      "url": "https://www.fda.gov/news-events/press-announcements/fda-launches-global-reliance-disclosure-program-expand-patient-access-medicines-worldwide",
-      "title": {
-        "en": "FDA to share redacted review packages with foreign regulators for reliance",
-        "fa": "FDA بستهٔ ارزیابی ویرایش‌شده را برای اتکای متقابل در اختیار مراجع خارجی قرار می‌دهد",
-        "zh": "FDA 将向境外监管机构提供删节版审评资料以支持监管依赖",
-        "tr": "FDA, güvenme amaçlı olarak yabancı otoritelerle karartılmış değerlendirme paketlerini paylaşacak"
-      },
-      "summary": {
-        "en": "Under the Global Reliance Disclosure Program, sponsors receive minimally redacted approval packages to pass to other regulators, starting with PEPFAR tentative approvals and covering all novel drugs and 351(a) BLAs from January 2027.",
-        "fa": "در قالب برنامهٔ Global Reliance Disclosure، صاحبان پرونده بستهٔ تأیید با حداقل حذفیات را برای ارائه به سایر مراجع دریافت می‌کنند؛ این کار با تأییدهای موقت PEPFAR آغاز و از ژانویهٔ 2027 به همهٔ داروهای نوین و BLAهای 351(a) گسترش می‌یابد.",
-        "zh": "根据全球依赖信息披露计划，申办者可获得最小限度删节的批准资料包并转交其他监管机构；先从 PEPFAR 暂定批准开始，自 2027 年 1 月起覆盖所有新药及 351(a) BLA。",
-        "tr": "Küresel Güvenme Açıklama Programı kapsamında sponsorlar, diğer otoritelere iletmek üzere asgari düzeyde karartılmış onay paketleri alacak; PEPFAR geçici onaylarıyla başlayıp Ocak 2027’den itibaren tüm yeni ilaçları ve 351(a) BLA’ları kapsayacak."
       }
     },
     {
