@@ -1,17 +1,17 @@
   医药魔方: 100 results, 100 from the source itself
-  医药经济报: 6 results, 6 from the source itself
+  医药经济报: 12 results, 12 from the source itself
   同写意: 4 results, 0 from the source itself
-  E药经理人: 10 results, 0 from the source itself
-  动脉网: 50 results, 50 from the source itself
-  药智网: 6 results, 6 from the source itself
-  生物谷: 55 results, 55 from the source itself
-  财新: 4 results, 4 from the source itself
-  界面新闻: 48 results, 48 from the source itself
+  E药经理人: 7 results, 0 from the source itself
+  动脉网: 51 results, 51 from the source itself
+  药智网: query failed: HTTPError: HTTP Error 429: Too Many Requests
+  生物谷: 47 results, 47 from the source itself
+  财新: 3 results, 3 from the source itself
+  界面新闻: 46 results, 46 from the source itself
   36氪: 100 results, 100 from the source itself
-  ! page fetch for image failed: https://www.yyjjb.com.cn/11/24/20261124094508458_28538.shtml RemoteDisconnected
-  2026-11-25 医药魔方: 默沙东百亿美元引进！全球首创 ADC 在国内启动新 III 期临床  [no img]
+  ! page fetch for image failed: https://www.yyjjb.com.cn/yyjjb/202611/20261124140513513_2473 RemoteDisconnected
+  2026-11-24 医药魔方: 1356.55亿美元之后：中国创新药BD出海十年，从"借船"到"驾船"  [no img]
+  2026-11-25 医药魔方: 汇聚创新药、前沿细胞与癌症疫苗资源，全球肿瘤医生网携手无癌家园赋能合作伙伴  [no img]
   2026-11-24 36氪: 410亿美元：制药业近三年最大并购的风向  [img]
+  2026-11-24 36氪: 410亿美元重磅交易 制药业近三年最大并购背后的行业风向解析  [img]
   2026-11-25 界面新闻: 恒瑞医药：HRS-9308片临床试验获批  [no img]
-  2026-11-24 医药魔方: 410 亿美元收购落地：赛诺菲收获的不止两款明星药  [no img]
-  2026-11-24 医药经济报: 《化妆品监督管理条例》实施后的首个染发新原料获批上市  [no img]
-  2026-11-24 界面新闻: 中信证券：看好国内原料药产业的结构性投资机会  [no img]
+  2026-11-24 医药经济报: 锻造出海自主化运营的硬实力  [no img]
