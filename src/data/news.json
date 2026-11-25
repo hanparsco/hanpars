@@ -1,53 +1,35 @@
 {
- "updated": "2026-11-24T04:58:47Z",
+ "updated": "2026-11-25T03:44:35Z",
  "global": [
   {
-   "title": "Recon: FDA approves first early-stage breast cancer hormone therapy in two decades; Lilly to acquire Huntington's disease drug developer LoQus23",
-   "url": "https://www.raps.org/resource/recon-fda-approves-first-early-stage-breast-cancer-hormone-therapy-in-two-decades-lilly-to-acquire-huntington-s-disease-drug-developer-loqus23.html",
-   "source": "RAPS",
-   "date": "2026-11-23",
-   "summary": "Recon: FDA approves first early-stage breast cancer hormone therapy in two decades; Lilly to acquire Huntington's disease drug developer LoQus23 RAPS",
-   "image": "/news/g-c9a27dc493.jpg",
+   "title": "Sanofi to buy Insmed for $41B in industry's largest acquisition in years",
+   "url": "https://endpoints.news/sanofi-to-buy-insmed-for-41b-in-industrys-largest-acquisition-in-years/",
+   "source": "Endpoints News",
+   "date": "2026-11-24",
+   "summary": "Sanofi has made it official: The French pharma plans to acquire Insmed for $41 billion in cash, marking the first megadeal in the biopharma industry since Pfizer's $43 billion takeover of ...",
+   "image": "/news/g-9376871a55.jpg",
    "kind": "news"
   },
   {
-   "title": "Early Breast Cancer Approval Expands Giredestrant's Oral Solid-Dose Demand",
-   "url": "https://www.pharmtech.com/view/early-breast-cancer-approval-expands-giredestrants-oral-solid-dose-demand",
-   "source": "PharmTech.com",
-   "date": "2026-11-23",
-   "summary": "Early Breast Cancer Approval Expands Giredestrant's Oral Solid-Dose Demand PharmTech.com",
-   "image": "/news/g-02139abecb.jpg",
+   "title": "Sanofi Acquires Insmed in 41 Billion Dollar Pharma Deal",
+   "url": "https://peradaban.id/en/sanofi-insmed-acquisition-2026",
+   "source": "Peradaban.id",
+   "date": "2026-11-24",
+   "summary": "Sanofi Acquires Insmed in 41 Billion Dollar Pharma Deal Peradaban.id",
+   "image": "/news/g-5ee43861bf.jpg",
    "kind": "news"
   },
   {
-   "title": "Lupin Receives Approval from U.S. FDA for Ferric Citrate Tablets",
-   "url": "https://www.prnewswire.com/news-releases/lupin-receives-approval-from-us-fda-for-ferric-citrate-tablets-302948631.html",
-   "source": "PR Newswire",
-   "date": "2026-11-23",
-   "summary": "Lupin Receives Approval from U.S. FDA for Ferric Citrate Tablets PR Newswire",
-   "image": "/news/g-be740cb24a.jpg",
-   "kind": "press"
+   "title": "Orca deploys undisclosed number of layoffs amid focus on Tregzi launch",
+   "url": "https://www.fiercepharma.com/pharma/orca-deploys-layoffs-prioritize-tregzi-launch",
+   "source": "Fierce Pharma",
+   "date": "2026-11-24",
+   "summary": "Orca Bio is making cuts to its workforce just months after launching its first FDA-approved therapy, Tregzi.",
+   "image": "/news/g-cc7801c5da.jpg",
+   "kind": "news"
   }
  ],
  "china": [
-  {
-   "title": "Fujian Haixi Pharmaceuticals Says NMPA Approves HX9428 For Diabetic Macular Edema",
-   "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN4720LD:0-fujian-haixi-pharmaceuticals-says-nmpa-approves-hx9428-for-diabetic-macular-edema/",
-   "source": "TradingView",
-   "date": "2026-11-23",
-   "summary": "Fujian Haixi Pharmaceuticals Says NMPA Approves HX9428 For Diabetic Macular Edema TradingView",
-   "image": "/news/c-855f13088c.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Major U.S. Drugmakers Halt Trials At Chinese Military Hospitals After FDA Inspection Standoffs",
-   "url": "https://www.tampafp.com/major-u-s-drugmakers-halt-trials-at-chinese-military-hospitals-after-fda-inspection-standoffs/",
-   "source": "Tampa Free Press",
-   "date": "2026-11-23",
-   "summary": "Major U.S. Drugmakers Halt Trials At Chinese Military Hospitals After FDA Inspection Standoffs Tampa Free Press",
-   "image": "/news/c-777218ca46.jpg",
-   "kind": "news"
-  },
   {
    "title": "India's API industry grows 8–9% in volume, but Chinese competition puts pressure on revenues, say experts",
    "url": "https://www.businesstoday.in/industry/pharma/story/indias-api-industry-grows-8-9-in-volume-but-chinese-competition-puts-pressure-on-revenues-569188-2026-11-23",
@@ -55,6 +37,24 @@
    "date": "2026-11-23",
    "summary": "India's API industry grows 8–9% in volume, but Chinese competition puts pressure on revenues, say experts Business Today",
    "image": "/news/c-7f668ccd8e.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "Senate Commission Says China Is Seizing Drug Supply Chain, Pushes For Congressional Action",
+   "url": "https://www.themainewire.com/2026/11/senate-commission-says-china-is-seizing-drug-supply-chain-pushes-for-congressional-action/",
+   "source": "The Maine Wire",
+   "date": "2026-11-21",
+   "summary": "Senate Commission Says China Is Seizing Drug Supply Chain, Pushes For Congressional Action The Maine Wire",
+   "image": "/news/c-456a328d1f.jpg",
+   "kind": "news"
+  },
+  {
+   "title": "Sihuan Pharmaceutical’s Xiangyayan Neck Filler Approved by China’s NMPA",
+   "url": "https://www.tipranks.com/news/company-announcements/sihuan-pharmaceuticals-xiangyayan-neck-filler-approved-by-chinas-nmpa",
+   "source": "TipRanks",
+   "date": "2026-11-24",
+   "summary": "Sihuan Pharmaceutical’s Xiangyayan Neck Filler Approved by China’s NMPA TipRanks",
+   "image": "",
    "kind": "news"
   }
  ]
