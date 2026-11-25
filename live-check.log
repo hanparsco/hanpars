@@ -30,7 +30,7 @@
   200 https://hanpars.com/sitemap-tr-api.xml: 1502 URLs
   total 21677 URLs, 21677 unique
 == sample of 200 sitemap URLs
-  checked 200 pages and 730 alternates
+  checked 200 pages and 726 alternates
 == repaired cohorts (regression fixtures)
   compat stubs, contact-query canonicals and placeholder policy checked in 4 languages
 == external links (warnings only)
@@ -44,10 +44,9 @@
   ok  200 [watch] https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-9-12-november-2026
   ok  200 [news] https://www.raps.org/resource/recon-fda-approves-first-early-stage-breast-cancer-hormone-therapy-in-two-decades-lilly-to-acquire-huntington-s-disease-drug-developer-loqus23.html
   ok  200 [news] https://www.pharmtech.com/view/early-breast-cancer-approval-expands-giredestrants-oral-solid-dose-demand
-  ok  200 [news] https://www.prnewswire.com/news-releases/lupin-receives-approval-from-us-fda-for-ferric-citrate-tablets-302948631.html
+  blocked 403 [news] https://www.prnewswire.com/news-releases/lupin-receives-approval-from-us-fda-for-ferric-citrate-tablets-302948631.html
   ok  200 [news] https://www.tradingview.com/news/reuters.com,2026:newsml_FWN4720LD:0-fujian-haixi-pharmaceuticals-says-nmpa-approves-hx9428-for-diabetic-macular-edema/
-  WARN 307 [news] https://www.tampafp.com/major-u-s-drugmakers-halt-trials-at-chinese-military-hospitals-after-fda-inspection-standoffs/
+  ok  200 [news] https://www.tampafp.com/major-u-s-drugmakers-halt-trials-at-chinese-military-hospitals-after-fda-inspection-standoffs/
   ok  200 [news] https://www.businesstoday.in/industry/pharma/story/indias-api-industry-grows-8-9-in-volume-but-chinese-competition-puts-pressure-on-revenues-569188-2026-11-23
   ok  200 [webmail] https://secureserver.titan.email/mail/
-  1 external link warning(s)
 == result: OK
