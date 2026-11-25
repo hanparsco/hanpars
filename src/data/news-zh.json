@@ -1,15 +1,39 @@
 {
- "updated": "2026-11-25T01:08:08Z",
+ "updated": "2026-11-25T11:46:43Z",
  "items": [
   {
-   "title": "1356.55亿美元之后：中国创新药BD出海十年，从\"借船\"到\"驾船\"",
-   "url": "https://bydrug.pharmcube.com/news/detail/db95524138ad7a03f2e069c6461d007c",
+   "title": "默沙东百亿美元引进！全球首创 ADC 在国内启动新 III 期临床",
+   "url": "https://bydrug.pharmcube.com/news/detail/75f243196470632e7c4759c1c3cab07c",
    "source": "医药魔方",
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "summary": "",
    "image": "",
    "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-25T01:08:08Z",
+   "retrieved": "2026-11-25T11:46:43Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
+   "title": "410亿美元：制药业近三年最大并购的风向",
+   "url": "https://www.36kr.com/p/4084994231424904",
+   "source": "36氪",
+   "date": "2026-11-24",
+   "summary": "",
+   "image": "/news/zh-381a509561.jpg",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-25T11:46:43Z",
+   "imageSource": "https://img.36krcdn.com/hsossms/20261125/v2_c9b5ec2eeded4606afbba5a4bca7d03d@5888275@ai_oswg846525oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
+  },
+  {
+   "title": "恒瑞医药：HRS-9308片临床试验获批",
+   "url": "https://www.jiemian.com/article/15373156.html",
+   "source": "界面新闻",
+   "date": "2026-11-25",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-25T11:46:43Z",
    "imageSource": "",
    "imageBasis": ""
   },
@@ -48,30 +72,6 @@
    "retrieved": "2026-11-24T03:04:10Z",
    "imageSource": "",
    "imageBasis": ""
-  },
-  {
-   "title": "生物类似药集采来了，业内预计降幅温和",
-   "url": "https://www.jiemian.com/article/15363683.html",
-   "source": "界面新闻",
-   "date": "2026-11-23",
-   "summary": "",
-   "image": "",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-23T15:26:17Z",
-   "imageSource": "",
-   "imageBasis": ""
-  },
-  {
-   "title": "7个品种、40余家企业，生物类似药全国集采明日开抢",
-   "url": "https://www.vbdata.cn/1519106194",
-   "source": "动脉网",
-   "date": "2026-11-23",
-   "summary": "",
-   "image": "/news/zh-a857a4924d.jpg",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-25T01:08:08Z",
-   "imageSource": "https://cdn.vbdata.cn/upload/source/97/23/23/21/604729b4222f8.jpg",
-   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
   }
  ]
 }
