@@ -1,6 +1,6 @@
 {
   "_about": "Regulatory watch on /regulatory-affairs (all languages). Written automatically by the daily 'Regulatory Watch daily scan' scheduled task from its dashboard ledger. asOf = scan date (YYYY-MM-DD). Each item: id, date (YYYY-MM-DD), agency, url (agency's own page), tag (one of: final, draft, closing, approval, gmp, news), title/summary in en, fa, zh, tr. Keep 6 items, newest first.",
-  "asOf": "2026-11-25",
+  "asOf": "2026-11-26",
   "items": [
     {
       "id": "20261201-fda-hepatic-impairment-pk-draft-closing",
@@ -60,60 +60,60 @@
       }
     },
     {
-      "id": "20261119-mhra-irp-route-b-deadlines",
+      "id": "20261124-ema-tev-priority-antimicrobials-draft",
+      "date": "2026-11-24",
+      "agency": "EMA · CHMP",
+      "tag": "draft",
+      "url": "https://www.ema.europa.eu/en/human-regulatory-overview/public-health-threats/antimicrobial-resistance/priority-antimicrobials-transferable-data-exclusivity-vouchers",
+      "title": {
+        "en": "EMA consults on which antimicrobials qualify for transferable exclusivity vouchers",
+        "fa": "نظرخواهی EMA دربارهٔ معیارهای ضدمیکروبی‌های واجد شرایط دریافت واچر انحصار دادهٔ قابل انتقال",
+        "zh": "EMA 就可获得可转让数据独占权凭证的优先抗菌药物标准征求意见",
+        "tr": "EMA, devredilebilir veri münhasırlığı kuponuna uygun antimikrobiyalleri görüşe açtı"
+      },
+      "summary": {
+        "en": "Under the new EU pharmaceutical legislation, draft criteria EMA/CHMP/241405/2026 define 'priority antimicrobials' eligible for a transferable data-exclusivity voucher; EC outlines on supply and funding accompany it. Comments by 31 January 2027.",
+        "fa": "در چارچوب قانون‌گذاری دارویی جدید اتحادیهٔ اروپا، پیش‌نویس معیارهای EMA/CHMP/241405/2026 مشخص می‌کند کدام ضدمیکروبی‌ها «اولویت‌دار» و مشمول واچر انحصار داده‌اند؛ دو سند کمیسیون دربارهٔ ظرفیت تأمین و حمایت مالی نیز همراه آن است. مهلت نظرات: 31 ژانویه 2027.",
+        "zh": "根据欧盟新药品立法，草案 EMA/CHMP/241405/2026 界定了可获得可转让数据独占权凭证的“优先抗菌药物”，并附有欧盟委员会关于供应能力和资金支持的两份纲要。意见截止 2027 年 1 月 31 日。",
+        "tr": "Yeni AB ilaç mevzuatı kapsamında EMA/CHMP/241405/2026 taslak kriterleri, devredilebilir veri münhasırlığı kuponuna uygun “öncelikli antimikrobiyalleri” tanımlıyor; tedarik ve finansmana dair iki AK taslağı da eşlik ediyor. Görüşler 31 Ocak 2027’ye kadar."
+      }
+    },
+    {
+      "id": "20261119-mhra-gtmp-definition-response",
       "date": "2026-11-19",
       "agency": "MHRA",
       "tag": "final",
-      "url": "https://www.gov.uk/government/publications/international-recognition-procedure/international-recognition-procedure",
+      "url": "https://www.gov.uk/government/consultations/consultation-on-the-regulation-of-gene-therapy-medicinal-products",
       "title": {
-        "en": "MHRA publishes new International Recognition Procedure Route B timetable to 2028",
-        "fa": "MHRA جدول زمانی جدید مسیر B در رویهٔ شناسایی بین‌المللی (IRP) را تا 2028 منتشر کرد",
-        "zh": "MHRA 发布国际认可程序（IRP）路径 B 至 2028 年的新时间表",
-        "tr": "MHRA, Uluslararası Tanıma Prosedürü Route B takvimini 2028’e kadar güncelledi"
+        "en": "UK confirms wider gene therapy definition covering synthetic nucleic acids and editing",
+        "fa": "بریتانیا تعریف گسترده‌تر فرآوردهٔ ژن‌درمانی، شامل نوکلئیک‌اسیدهای سنتزی و ویرایش ژنوم را تأیید کرد",
+        "zh": "英国确认扩大基因治疗产品定义，纳入合成核酸和基因组编辑产品",
+        "tr": "Birleşik Krallık, sentetik nükleik asitleri ve genom düzenlemeyi kapsayan geniş gen tedavisi tanımını onayladı"
       },
       "summary": {
-        "en": "The refreshed table of Route B submission deadlines, start dates and CHM meetings runs to late 2028; the next deadlines are 2 and 30 December 2026. Timelines, eligibility and reference regulators are unchanged.",
-        "fa": "جدول به‌روزشدهٔ مهلت‌های ارسال، تاریخ‌های شروع و جلسات CHM برای مسیر B تا اواخر 2028 را پوشش می‌دهد؛ مهلت‌های بعدی 2 و 30 دسامبر 2026 است. زمان‌بندی، شرایط احراز و مراجع مرجع تغییری نکرده است.",
-        "zh": "更新后的路径 B 递交截止日、启动日期和 CHM 会议时间表延至 2028 年底；下一批截止日为 2026 年 12 月 2 日和 30 日。时限、资格及参考监管机构不变。",
-        "tr": "Route B başvuru son tarihleri, başlangıç tarihleri ve CHM toplantıları tablosu 2028 sonuna kadar uzatıldı; sıradaki son tarihler 2 ve 30 Aralık 2026. Süreler, uygunluk ve referans otoriteler değişmedi."
+        "en": "The consultation response confirms the Human Medicines Regulations will bring synthetic nucleic-acid and genome-editing products into the GTMP definition; non-transcribed oligonucleotides stay out and licensed products are not reclassified.",
+        "fa": "پاسخ رسمی به نظرخواهی تأیید می‌کند که مقررات Human Medicines Regulations اصلاح می‌شود تا فرآورده‌های نوکلئیک‌اسید سنتزی و ویرایش ژنوم در تعریف GTMP قرار گیرند؛ الیگونوکلئوتیدهای فاقد رونویسی خارج می‌مانند و فرآورده‌های دارای مجوز بازطبقه‌بندی نمی‌شوند.",
+        "zh": "征求意见答复确认将修订 Human Medicines Regulations，把合成核酸和基因组编辑产品纳入 GTMP 定义；不经转录或翻译起效的寡核苷酸不在其列，已获批产品不重新分类。",
+        "tr": "İstişare yanıtı, Human Medicines Regulations’ın sentetik nükleik asit ve genom düzenleme ürünlerini GTMP tanımına alacak şekilde değiştirileceğini doğruluyor; transkripsiyonsuz oligonükleotitler kapsam dışı kalıyor, ruhsatlı ürünler yeniden sınıflandırılmıyor."
       }
     },
     {
-      "id": "20261118-ema-quality-qa-invitro-equivalence",
-      "date": "2026-11-18",
-      "agency": "EMA · QWP",
+      "id": "20261119-hc-rmp-guidance-consolidated",
+      "date": "2026-11-19",
+      "agency": "Health Canada",
       "tag": "final",
-      "url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-medicines-questions-answers-introduction/quality-medicines-questions-answers-part-2",
+      "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/submitting-risk-management-plans.html",
       "title": {
-        "en": "EMA Q&As on showing therapeutic equivalence by in-vitro quality comparison",
-        "fa": "پرسش و پاسخ‌های EMA دربارهٔ اثبات هم‌ارزی درمانی با مقایسهٔ آزمایشگاهی ویژگی‌های کیفی",
-        "zh": "EMA 发布以体外质量属性比较证明治疗等效性的问答",
-        "tr": "EMA’dan in vitro kalite karşılaştırmasıyla terapötik eşdeğerliğin gösterilmesine dair S&C’ler"
+        "en": "Health Canada consolidates risk management plan guidance, effective 1 April 2027",
+        "fa": "Health Canada راهنمای ارائهٔ برنامهٔ مدیریت خطر (RMP) را یکپارچه کرد؛ اجرا از 1 آوریل 2027",
+        "zh": "加拿大卫生部整合风险管理计划提交指南，2027 年 4 月 1 日生效",
+        "tr": "Health Canada risk yönetim planı kılavuzlarını birleştirdi; 1 Nisan 2027’de yürürlüğe giriyor"
       },
       "summary": {
-        "en": "Thirteen new Q&As set a step-wise framework for locally acting chemical products: justified CQAs, at least 3 commercial-scale test batches against typically 6–10 EU reference batches, no pooling, and a report in 3.2.P.2.3.",
-        "fa": "سیزده پرسش و پاسخ جدید چارچوبی گام‌به‌گام برای فرآورده‌های شیمیایی با اثر موضعی تعیین می‌کند: CQAهای مستدل، دست‌کم 3 بچ آزمون در مقیاس تجاری در برابر معمولاً 6 تا 10 بچ مرجع اروپایی، بدون ادغام داده‌ها و گزارش در بخش 3.2.P.2.3.",
-        "zh": "13 条新问答为局部作用化学药品设定了分步框架：合理论证的 CQA、至少 3 批商业规模受试批对照通常 6–10 批欧盟参比批、不得合并数据，并在 3.2.P.2.3 中提交报告。",
-        "tr": "On üç yeni S&C, lokal etkili kimyasal ürünler için adım adım bir çerçeve getiriyor: gerekçelendirilmiş CQA’lar, genellikle 6–10 AB referans serisine karşı en az 3 ticari ölçekli test serisi, veri birleştirme yok ve 3.2.P.2.3’te rapor."
-      }
-    },
-    {
-      "id": "20261113-ema-insulin-aspart-biosimilars-garzulys-donrafylix",
-      "date": "2026-11-13",
-      "agency": "EMA · CHMP",
-      "tag": "approval",
-      "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-9-12-november-2026",
-      "title": {
-        "en": "CHMP backs two insulin aspart biosimilars, Garzulys and Donrafylix",
-        "fa": "CHMP دو بیوسیمیلار insulin aspart با نام‌های Garzulys و Donrafylix را تأیید کرد",
-        "zh": "CHMP 推荐批准两款门冬胰岛素生物类似药 Garzulys 和 Donrafylix",
-        "tr": "CHMP, iki insulin aspart biyobenzeri Garzulys ve Donrafylix için olumlu görüş verdi"
-      },
-      "summary": {
-        "en": "At its November meeting CHMP gave positive opinions on two insulin aspart biosimilars for diabetes in patients aged one year and older, widening EU options for rapid-acting insulin.",
-        "fa": "CHMP در نشست نوامبر برای دو بیوسیمیلار insulin aspart جهت درمان دیابت در بیماران یک سال و بالاتر نظر مثبت داد و گزینه‌های انسولین سریع‌الاثر در اتحادیهٔ اروپا گسترده‌تر شد.",
-        "zh": "CHMP 在 11 月会议上对两款用于 1 岁及以上糖尿病患者的门冬胰岛素生物类似药给出积极意见，扩大了欧盟速效胰岛素的选择。",
-        "tr": "CHMP kasım toplantısında bir yaş ve üzeri diyabet hastalarına yönelik iki insulin aspart biyobenzeri için olumlu görüş verdi; böylece AB’de hızlı etkili insülin seçenekleri genişledi."
+        "en": "The revised guidance merges the general and opioid RMP documents, aligns them with new FDR C.01.701 provisions covering Schedule D biologics and biosimilars, and makes a bilingual RMP summary a screening requirement.",
+        "fa": "راهنمای بازنگری‌شده اسناد عمومی و ویژهٔ اپیوئیدها را ادغام و با مفاد جدید FDR C.01.701 که فرآورده‌های بیولوژیک و بیوسیمیلارهای Schedule D را هم در بر می‌گیرد هماهنگ می‌کند؛ ارائهٔ خلاصهٔ دوزبانهٔ RMP نیز شرط پذیرش اولیهٔ پرونده شده است.",
+        "zh": "修订后的指南合并了通用及阿片类 RMP 指南，与涵盖 Schedule D 生物制品和生物类似药的新 FDR C.01.701 条款衔接，并将双语 RMP 摘要列为形式审查要求。",
+        "tr": "Revize kılavuz, genel ve opioid RMP belgelerini birleştirip Schedule D biyolojik ve biyobenzerleri kapsayan yeni FDR C.01.701 hükümleriyle uyumlu hale getiriyor; iki dilli RMP özeti ön inceleme şartı oluyor."
       }
     }
   ]
