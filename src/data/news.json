@@ -1,35 +1,44 @@
 {
- "updated": "2026-11-25T03:44:35Z",
+ "updated": "2026-11-26T03:06:30Z",
  "global": [
   {
-   "title": "Sanofi to buy Insmed for $41B in industry's largest acquisition in years",
-   "url": "https://endpoints.news/sanofi-to-buy-insmed-for-41b-in-industrys-largest-acquisition-in-years/",
+   "title": "Pharming pauses Ruconest production, warns of supply interruption",
+   "url": "https://endpoints.news/pharming-pauses-ruconest-production-warns-of-supply-interruption/",
    "source": "Endpoints News",
-   "date": "2026-11-24",
-   "summary": "Sanofi has made it official: The French pharma plans to acquire Insmed for $41 billion in cash, marking the first megadeal in the biopharma industry since Pfizer's $43 billion takeover of ...",
-   "image": "/news/g-9376871a55.jpg",
+   "date": "2026-11-25",
+   "summary": "Pharming said Wednesday it has paused the production of its marketed drug for acute attacks of hereditary angioedema (HAE) due to issues at an unnamed third-party manufacturer. The drugmaker has notified the FDA that the ...",
+   "image": "/news/g-3ec1855c30.jpg",
    "kind": "news"
   },
   {
-   "title": "Sanofi Acquires Insmed in 41 Billion Dollar Pharma Deal",
-   "url": "https://peradaban.id/en/sanofi-insmed-acquisition-2026",
-   "source": "Peradaban.id",
-   "date": "2026-11-24",
-   "summary": "Sanofi Acquires Insmed in 41 Billion Dollar Pharma Deal Peradaban.id",
-   "image": "/news/g-5ee43861bf.jpg",
+   "title": "Cogent Biosciences gains FDA approval for Ekitna combo in GIST",
+   "url": "https://www.pharmaceutical-technology.com/news/cogent-biosciences-fda-ekitna-combo-gist/",
+   "source": "Pharmaceutical Technology",
+   "date": "2026-11-25",
+   "summary": "The US FDA has approved Cogent Biosciences’ Ekitna in combination with sunitinib for adult patients with advanced GIST who previously received imatinib.",
+   "image": "/news/g-13b41b652d.jpg",
    "kind": "news"
   },
   {
-   "title": "Orca deploys undisclosed number of layoffs amid focus on Tregzi launch",
-   "url": "https://www.fiercepharma.com/pharma/orca-deploys-layoffs-prioritize-tregzi-launch",
-   "source": "Fierce Pharma",
-   "date": "2026-11-24",
-   "summary": "Orca Bio is making cuts to its workforce just months after launching its first FDA-approved therapy, Tregzi.",
-   "image": "/news/g-cc7801c5da.jpg",
+   "title": "Lupin Receives Approval from U.S. FDA for Sitagliptin and Metformin Hydrochloride Tablets, in the United States",
+   "url": "https://www.tradingview.com/news/prnewswire:b1352e3992175:0-lupin-receives-approval-from-u-s-fda-for-sitagliptin-and-metformin-hydrochloride-tablets-in-the-united-states/",
+   "source": "TradingView",
+   "date": "2026-11-25",
+   "summary": "Lupin Receives Approval from U.S. FDA for Sitagliptin and Metformin Hydrochloride Tablets, in the United States TradingView",
+   "image": "/news/g-164169e5a1.jpg",
    "kind": "news"
   }
  ],
  "china": [
+  {
+   "title": "Sihuan Pharma Says NMPA Approves Meiyan Space's Xiangyayan As Class III Medical Device",
+   "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN4752EC:0-sihuan-pharma-says-nmpa-approves-meiyan-space-s-xiangyayan-as-class-iii-medical-device/?mobileapp_new=true",
+   "source": "TradingView",
+   "date": "2026-11-24",
+   "summary": "Sihuan Pharma Says NMPA Approves Meiyan Space's Xiangyayan As Class III Medical Device TradingView",
+   "image": "/news/c-07cc870870.jpg",
+   "kind": "news"
+  },
   {
    "title": "India's API industry grows 8–9% in volume, but Chinese competition puts pressure on revenues, say experts",
    "url": "https://www.businesstoday.in/industry/pharma/story/indias-api-industry-grows-8-9-in-volume-but-chinese-competition-puts-pressure-on-revenues-569188-2026-11-23",
@@ -46,15 +55,6 @@
    "date": "2026-11-21",
    "summary": "Senate Commission Says China Is Seizing Drug Supply Chain, Pushes For Congressional Action The Maine Wire",
    "image": "/news/c-456a328d1f.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Sihuan Pharmaceutical’s Xiangyayan Neck Filler Approved by China’s NMPA",
-   "url": "https://www.tipranks.com/news/company-announcements/sihuan-pharmaceuticals-xiangyayan-neck-filler-approved-by-chinas-nmpa",
-   "source": "TipRanks",
-   "date": "2026-11-24",
-   "summary": "Sihuan Pharmaceutical’s Xiangyayan Neck Filler Approved by China’s NMPA TipRanks",
-   "image": "",
    "kind": "news"
   }
  ]

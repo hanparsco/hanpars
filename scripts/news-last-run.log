@@ -1,32 +1,32 @@
+  ! Fierce Pharma: HTTP Error 403: Forbidden
+  ! Fierce Pharma: HTTP Error 403: Forbidden
 global feeds
-  Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 16 items
+  Google News: 26 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 45 items
+  Google News: 24 items
 china feeds
-  Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
-  Google News: 16 items
+  Google News: 26 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
-  Google News: 45 items
-  Google News: 47 items
+  Google News: 24 items
+  Google News: 24 items
   Google News: 0 items (no <item> elements; root <rss>, 1281 bytes, start b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><generator>NFE/5.0</generator><title>"China "active pharmaceutical ingredient" OR "API manufacturer" OR "API expo')
   Google News: 26 items
-  Google News: 25 items
+  Google News: 26 items
 global
-  - Endpoints News | Sanofi to buy Insmed for $41B in industry's largest acquisition in yea | img
-  - Peradaban.id | Sanofi Acquires Insmed in 41 Billion Dollar Pharma Deal | img
-  - Fierce Pharma | Orca deploys undisclosed number of layoffs amid focus on Tregzi launch | img
+  - Endpoints News | Pharming pauses Ruconest production, warns of supply interruption | img
+  - Pharmaceutical Technology | Cogent Biosciences gains FDA approval for Ekitna combo in GIST | img
+  - TradingView | Lupin Receives Approval from U.S. FDA for Sitagliptin and Metformin Hy | img
 china
+  - TradingView | Sihuan Pharma Says NMPA Approves Meiyan Space's Xiangyayan As Class II | img
   - Business Today | India's API industry grows 8–9% in volume, but Chinese competition put | img
   - The Maine Wire | Senate Commission Says China Is Seizing Drug Supply Chain, Pushes For  | img
-  - TipRanks | Sihuan Pharmaceutical’s Xiangyayan Neck Filler Approved by China’s NMP | no image
