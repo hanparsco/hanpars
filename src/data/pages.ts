@@ -107,8 +107,8 @@ export const pages = {
     photo: 'tehran-alborz', photoAlt: 'Tehran beneath the snow-covered Alborz mountains',
   },
   'fdf-cdmo': {
-    title: 'Finished dosage form CDMO', category: 'Services',
-    description: 'Contract development and manufacturing of finished dosage forms for the Iranian market: one project team from formulation and technology transfer to IFDA registration and supply.',
+    title: 'Finished dosage form (FDF) CDMO services', category: 'Services',
+    description: 'Contract development and manufacturing of tablets, capsules, injectables and liquids for Iran and other markets. One project team coordinates qualified GMP partners in China, Türkiye, India, Europe and Iran, from formulation and technology transfer to the CTD dossier and IFDA registration.',
     meta: 'Finished dosage form CDMO for Iran: formulation, analytical development, technology transfer, stability, CTD dossier and IFDA registration, coordinated by Hanpars with qualified GMP partners.',
     introTitle: 'We run the project. Partners run the plant.',
     intro: ['Formulation, analytical work, scale-up, stability, packaging and technology transfer rarely sit under one roof. Hanpars coordinates them across development and manufacturing partners, with the target market\'s regulatory requirements in view from the first batch.', 'Hanpars does not own a plant, does not hold a GMP certificate for one, and cannot guarantee a regulatory outcome. We offer the coordination, the partner network and the dossier.'],
