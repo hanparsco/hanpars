@@ -62,7 +62,7 @@
     "/fa/regulatory-affairs/development-strategy (170)",
     "/fa/regulatory-affairs/drug-registration (182)",
     "/fa/regulatory-affairs (210)",
-    "/fdf-cdmo (196)",
+    "/fdf-cdmo (208)",
     "/partners (266)",
     "/precursors (166)",
     "/regulatory-affairs/ctd-dossier-impd (187)",
@@ -225,5 +225,5 @@
    "sample": []
   }
  ],
- "sha": "115100febb6be867d8712be8255656fdb58d714b"
+ "sha": "d1008dc1933cb1364eccb0e0503687e5f71bbff6"
 }
