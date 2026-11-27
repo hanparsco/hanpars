@@ -91,17 +91,6 @@
    "sample": [
     "/tr/partners (4)"
    ]
-  },
-  "broken internal link": {
-   "count": 6,
-   "sample": [
-    "/tr/regulatory-affairs/ctd-dossier-impd -> /tr/tr/contact-us-1",
-    "/tr/regulatory-affairs/development-strategy -> /tr/tr/contact-us-1",
-    "/tr/regulatory-affairs/dossier-review-deficiency-response -> /tr/tr/contact-us-1",
-    "/tr/regulatory-affairs/drug-registration -> /tr/tr/contact-us-1",
-    "/tr/regulatory-affairs/gmp-inspection-readiness -> /tr/tr/contact-us-1",
-    "/tr/regulatory-affairs/regulatory-training -> /tr/tr/contact-us-1"
-   ]
   }
  },
  "englishLines": {
