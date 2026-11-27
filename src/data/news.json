@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T03:06:30Z",
+ "updated": "2026-11-27T03:16:12Z",
  "global": [
   {
    "title": "Pharming pauses Ruconest production, warns of supply interruption",
@@ -11,6 +11,15 @@
    "kind": "news"
   },
   {
+   "title": "Sanofi inks massive $41B Insmed buyout for post-Dupixent growth drivers",
+   "url": "https://www.fiercepharma.com/pharma/sanofi-inks-41b-insmed-buyout-post-dupixent-growth-drivers",
+   "source": "Fierce Pharma",
+   "date": "2026-11-24",
+   "summary": "Sanofi has struck a deal to acquire Insmed for $41 billion, securing three commercial and late-phase respiratory assets to offset Dupixent’s looming loss of exclusivity.",
+   "image": "/news/g-2c9478fe97.jpg",
+   "kind": "news"
+  },
+  {
    "title": "Cogent Biosciences gains FDA approval for Ekitna combo in GIST",
    "url": "https://www.pharmaceutical-technology.com/news/cogent-biosciences-fda-ekitna-combo-gist/",
    "source": "Pharmaceutical Technology",
@@ -18,18 +27,18 @@
    "summary": "The US FDA has approved Cogent Biosciences’ Ekitna in combination with sunitinib for adult patients with advanced GIST who previously received imatinib.",
    "image": "/news/g-13b41b652d.jpg",
    "kind": "news"
-  },
-  {
-   "title": "Lupin Receives Approval from U.S. FDA for Sitagliptin and Metformin Hydrochloride Tablets, in the United States",
-   "url": "https://www.tradingview.com/news/prnewswire:b1352e3992175:0-lupin-receives-approval-from-u-s-fda-for-sitagliptin-and-metformin-hydrochloride-tablets-in-the-united-states/",
-   "source": "TradingView",
-   "date": "2026-11-25",
-   "summary": "Lupin Receives Approval from U.S. FDA for Sitagliptin and Metformin Hydrochloride Tablets, in the United States TradingView",
-   "image": "/news/g-164169e5a1.jpg",
-   "kind": "news"
   }
  ],
  "china": [
+  {
+   "title": "Bayer signs $3.25bn oncology deal with Hansoh Pharma",
+   "url": "https://www.pharmaceutical-technology.com/news/bayer-oncology-deal-hansoh-pharma/",
+   "source": "Pharmaceutical Technology",
+   "date": "2026-11-26",
+   "summary": "Bayer has entered into an exclusive worldwide licensing agreement potentially valued at up to $3.25bn with Hansoh Pharma to develop, manufacture, and commercialise the Phase I oncology candidate HS-20122.",
+   "image": "/news/c-1eabb8d6d6.jpg",
+   "kind": "news"
+  },
   {
    "title": "Sihuan Pharma Says NMPA Approves Meiyan Space's Xiangyayan As Class III Medical Device",
    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN4752EC:0-sihuan-pharma-says-nmpa-approves-meiyan-space-s-xiangyayan-as-class-iii-medical-device/?mobileapp_new=true",
@@ -46,15 +55,6 @@
    "date": "2026-11-23",
    "summary": "India's API industry grows 8–9% in volume, but Chinese competition puts pressure on revenues, say experts Business Today",
    "image": "/news/c-7f668ccd8e.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Senate Commission Says China Is Seizing Drug Supply Chain, Pushes For Congressional Action",
-   "url": "https://www.themainewire.com/2026/11/senate-commission-says-china-is-seizing-drug-supply-chain-pushes-for-congressional-action/",
-   "source": "The Maine Wire",
-   "date": "2026-11-21",
-   "summary": "Senate Commission Says China Is Seizing Drug Supply Chain, Pushes For Congressional Action The Maine Wire",
-   "image": "/news/c-456a328d1f.jpg",
    "kind": "news"
   }
  ]
