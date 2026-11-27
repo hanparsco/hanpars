@@ -10,13 +10,14 @@ const lang = langFromPath(Astro.url.pathname) as RaLang;
 const h = raRegHub[lang] || raRegHub.en;
 const ui = raUi[lang] || raUi.en;
 const L = (p: string) => localePath(p, lang);
-const enquiry = L('/contact-us-1?type=regulatory&service=5');
+const enquiryPath = '/contact-us-1?type=regulatory&service=5';
+const enquiry = L(enquiryPath);
 const url = `${site.origin}${L('/regulatory-affairs/drug-registration')}`;
 const ld = { '@context': 'https://schema.org', '@type': 'Service', '@id': `${url}#service`, name: h.title, serviceType: 'Drug and API registration', description: h.metaDesc, url,
   provider: { '@id': `${site.origin}/#organization` }, areaServed: 'Worldwide',
   hasOfferCatalog: { '@type': 'OfferCatalog', name: h.detailTitle, itemListElement: raMarkets.map(s => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: (s.t[lang] || s.t.en).name, description: (s.t[lang] || s.t.en).text } })) } };
 ---
-<PageHero title={h.title} category={ui.category} description={h.lead} action={ui.cta} href={enquiry}/>
+<PageHero title={h.title} category={ui.category} description={h.lead} action={ui.cta} href={enquiryPath}/>
 
 <section class="section">
   <div class="container">

@@ -11,7 +11,7 @@ const lang = langFromPath(Astro.url.pathname);
 const path = stripLang(Astro.url.pathname);
 const s = t(lang);
 const L = (p: string) => localePath(p, lang);
-const switchPath = /^\/(home|404)(\.html)?\/?$/.test(path) ? '/' : path;  // pages that exist only in English
+const switchPath = /^\/(home|404|verify)(\.html)?\/?$/.test(path) ? '/' : path;  // pages that exist only in English
 const others = langs.map(l => ({ l, href: localePath(switchPath, l) }));
 const sv = (d: string) => `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
 const icons: Record<string, string> = {

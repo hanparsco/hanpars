@@ -17,7 +17,7 @@ const f = ({
   tr: { name: 'Haniya Parsan Darou Co.', reach: 'Bize ulaşın', phone: 'Telefon', email: 'E-posta', office: 'Genel merkez', hoursLabel: 'Çalışma saatleri', offices: 'Ofislerimiz', hq: 'Genel merkez', partner: 'Ortak ofis', wholesaler: 'Münhasır toptancımızın ofisi', cities: ['Tahran', 'İstanbul', 'Hangzhou', 'Zhenjiang'], countries: ['İran', 'Türkiye', 'Çin', 'Çin'], top: 'Başa dön', enquire: 'Talep gönderin' },
 } as const)[lang];
 const path0 = stripLang(Astro.url.pathname);
-const switchPath = /^\/(home|404)(\.html)?\/?$/.test(path0) ? '/' : path0;  // keep the same page when switching language
+const switchPath = /^\/(home|404|verify)(\.html)?\/?$/.test(path0) ? '/' : path0;  // keep the same page when switching language
 const langs = ([
   { l: 'en', label: 'English' }, { l: 'fa', label: 'فارسی' },
   { l: 'zh', label: '中文' }, { l: 'tr', label: 'Türkçe' },

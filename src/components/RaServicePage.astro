@@ -12,7 +12,8 @@ const c = service.t[lang] || service.t.en;
 const ui = raUi[lang] || raUi.en;
 const L = (p: string) => localePath(p, lang);
 const num = (i: number) => (lang === 'fa' ? (i + 1).toLocaleString('fa-IR') : String(i + 1).padStart(2, '0'));
-const enquiry = L(`/contact-us-1?type=regulatory${service.formItem ? `&service=${service.formItem}` : ''}`);
+const enquiryPath = `/contact-us-1?type=regulatory${service.formItem ? `&service=${service.formItem}` : ''}`;
+const enquiry = L(enquiryPath);
 const url = `${site.origin}${L(`/regulatory-affairs/${service.slug}`)}`;
 const icons = ['file', 'search', 'molecule', 'layers', 'shield', 'globe'];
 const others = raServices.filter(s => s.slug !== service.slug);
@@ -23,7 +24,7 @@ const ld = [
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
 ];
 ---
-<PageHero title={c.title} category={ui.category} description={c.lead} action={ui.cta} href={enquiry}/>
+<PageHero title={c.title} category={ui.category} description={c.lead} action={ui.cta} href={enquiryPath}/>
 
 <section class="section rs-intro">
   <div class="container rs-intro-grid">
