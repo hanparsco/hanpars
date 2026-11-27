@@ -1,30 +1,6 @@
 {
- "updated": "2026-11-26T23:22:10Z",
+ "updated": "2026-11-27T09:09:25Z",
  "items": [
-  {
-   "title": "行业热点速览：浙江GMP公示：普洛康裕1条非无菌原料药线（D级，氟苯尼考）获推荐；安迪苏蛋氨酸动态定价锚定供需，四季度成本或边际改善医药新闻-ByDrug-一站式医药资源共享中心-医药魔方",
-   "url": "https://bydrug.pharmcube.com/news/detail/5bfab525c683adeb399166d886cd0a15",
-   "source": "医药魔方",
-   "date": "2026-11-25",
-   "summary": "",
-   "image": "",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-26T23:22:10Z",
-   "imageSource": "",
-   "imageBasis": ""
-  },
-  {
-   "title": "破局“出海第一公里”：从这场国家级供需对接会，看国产器械如何抱团掘金全球",
-   "url": "https://www.vbdata.cn/1519106510",
-   "source": "动脉网",
-   "date": "2026-11-26",
-   "summary": "",
-   "image": "/news/zh-0f400168c1.jpg",
-   "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-26T04:31:01Z",
-   "imageSource": "https://cdn.vbdata.cn/upload/source/10/44/87/22/638db3dfbe64b.jpg",
-   "imageBasis": "publisher preview image (og:image), shown as a linked thumbnail with attribution; removed on request"
-  },
   {
    "title": "立方制药：西诺氨酯原料药上市申请获受理",
    "url": "https://www.jiemian.com/article/15378004.html",
@@ -34,6 +10,18 @@
    "image": "",
    "feed": "Google News RSS (zh-CN)",
    "retrieved": "2026-11-26T14:32:14Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
+   "title": "乙肝新药获批上市，慢性乙肝患者有望告别终身服药",
+   "url": "https://bydrug.pharmcube.com",
+   "source": "医药魔方",
+   "date": "2026-11-27",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-27T09:09:25Z",
    "imageSource": "",
    "imageBasis": ""
   },
@@ -50,14 +38,26 @@
    "imageBasis": ""
   },
   {
-   "title": "汇聚创新药、前沿细胞与癌症疫苗资源，全球肿瘤医生网携手无癌家园赋能合作伙伴",
-   "url": "https://bydrug.pharmcube.com/news/detail/a3a02699b29cfc81c4f9ac51a84367ea",
+   "title": "政策法规 | 国家药监局药审中心发布《新型冠状病毒预防用mRNA疫苗平台技术药学研究与评价技术指导原则（征求意见稿）》",
+   "url": "https://bydrug.pharmcube.com",
    "source": "医药魔方",
-   "date": "2026-11-25",
+   "date": "2026-11-27",
    "summary": "",
    "image": "",
    "feed": "Google News RSS (zh-CN)",
-   "retrieved": "2026-11-26T23:22:10Z",
+   "retrieved": "2026-11-27T09:09:25Z",
+   "imageSource": "",
+   "imageBasis": ""
+  },
+  {
+   "title": "拜耳与翰森制药达成独家全球许可合作，强化下一代精准肿瘤研发管线",
+   "url": "https://www.vbdata.cn",
+   "source": "动脉网",
+   "date": "2026-11-26",
+   "summary": "",
+   "image": "",
+   "feed": "Google News RSS (zh-CN)",
+   "retrieved": "2026-11-27T09:09:25Z",
    "imageSource": "",
    "imageBasis": ""
   },
