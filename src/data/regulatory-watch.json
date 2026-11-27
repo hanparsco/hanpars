@@ -1,6 +1,6 @@
 {
   "_about": "Regulatory watch on /regulatory-affairs (all languages). Written automatically by the daily 'Regulatory Watch daily scan' scheduled task from its dashboard ledger. asOf = scan date (YYYY-MM-DD). Each item: id, date (YYYY-MM-DD), agency, url (agency's own page), tag (one of: final, draft, closing, approval, gmp, news), title/summary in en, fa, zh, tr. Keep 6 items, newest first.",
-  "asOf": "2026-11-26",
+  "asOf": "2026-11-27",
   "items": [
     {
       "id": "20261201-fda-hepatic-impairment-pk-draft-closing",
@@ -41,22 +41,41 @@
       }
     },
     {
-      "id": "20261127-fda-genome-editing-bla-draft-closing",
+      "id": "20261127-fda-genome-editing-bla-comment-extension",
       "date": "2026-11-27",
       "agency": "FDA · CBER",
-      "tag": "closing",
-      "url": "https://www.federalregister.gov/documents/2026/10/28/2026-21954/individualized-human-genome-editing-products-considerations-for-bla-submission-and-postapproval",
+      "tag": "draft",
+      "url": "https://www.federalregister.gov/documents/2026/11/27/2026-24021/individualized-human-genome-editing-products-considerations-for-bla-submission-and-postapproval",
       "title": {
-        "en": "CBER draft on BLAs for individualised genome-editing products: comments close 27 Nov",
-        "fa": "پیش‌نویس CBER دربارهٔ BLA فرآورده‌های ویرایش ژنوم فردمحور: مهلت نظرخواهی تا 27 نوامبر",
-        "zh": "CBER 个体化基因组编辑产品 BLA 指南草案：意见征集 11 月 27 日截止",
-        "tr": "CBER’in kişiye özel genom düzenleme ürünleri BLA taslağı: görüşler 27 Kasım’da kapanıyor"
+        "en": "FDA extends comments on CBER genome-editing BLA draft to 28 December",
+        "fa": "FDA مهلت نظرخواهی پیش‌نویس CBER دربارهٔ BLA فرآورده‌های ویرایش ژنوم را تا 28 دسامبر تمدید کرد",
+        "zh": "FDA 将 CBER 基因组编辑产品 BLA 指南草案意见征集延至 12 月 28 日",
+        "tr": "FDA, CBER’in genom düzenleme BLA taslağına görüş süresini 28 Aralık’a uzattı"
       },
       "summary": {
-        "en": "Docket FDA-2026-D-11783 covers BLA content and post-approval management for individualised human genome-editing products; the 30-day comment window ends around 27 November.",
-        "fa": "پروندهٔ FDA-2026-D-11783 به محتوای BLA و مدیریت پس از تأیید فرآورده‌های ویرایش ژنوم انسانی فردمحور می‌پردازد؛ مهلت 30 روزهٔ نظرخواهی حدود 27 نوامبر به پایان می‌رسد.",
-        "zh": "案卷 FDA-2026-D-11783 涉及个体化人类基因组编辑产品的 BLA 内容及批准后管理；30 天意见征集期约于 11 月 27 日结束。",
-        "tr": "FDA-2026-D-11783 dosyası, kişiye özel insan genom düzenleme ürünleri için BLA içeriğini ve onay sonrası yönetimi ele alıyor; 30 günlük görüş süresi 27 Kasım civarında sona eriyor."
+        "en": "Following stakeholder requests, a Federal Register notice moves the deadline for docket FDA-2026-D-11783, on BLA content and post-approval management for individualised genome-editing products, from 27 November to 28 December.",
+        "fa": "در پی درخواست ذی‌نفعان، اطلاعیهٔ Federal Register مهلت ارسال نظر دربارهٔ پروندهٔ FDA-2026-D-11783، ناظر بر محتوای BLA و مدیریت پس از تأیید فرآورده‌های ویرایش ژنوم فردمحور، را از 27 نوامبر به 28 دسامبر منتقل کرد.",
+        "zh": "应利益相关方请求，FDA 在《联邦公报》发布通知，将案卷 FDA-2026-D-11783（个体化基因组编辑产品 BLA 内容及批准后管理）的意见截止日期由 11 月 27 日延至 12 月 28 日。",
+        "tr": "Paydaş talepleri üzerine Federal Register duyurusu, kişiye özel genom düzenleme ürünlerinde BLA içeriği ve onay sonrası yönetimi ele alan FDA-2026-D-11783 dosyası için görüş tarihini 27 Kasım’dan 28 Aralık’a taşıdı."
+      }
+    },
+    {
+      "id": "20261125-ec-eu-pharma-package-parliament-adoption",
+      "date": "2026-11-25",
+      "agency": "EU · Parliament",
+      "tag": "final",
+      "url": "https://www.europarl.europa.eu/news/en/press-room/20261123IPR49040/background-pharmaceutical-package-and-critical-medicines-act",
+      "title": {
+        "en": "European Parliament approves EU pharma package and adopts Critical Medicines Act",
+        "fa": "پارلمان اروپا بستهٔ اصلاح قوانین دارویی اتحادیه را نهایی و قانون داروهای حیاتی را تصویب کرد",
+        "zh": "欧洲议会最终批准欧盟药品立法一揽子方案并通过《关键药品法》",
+        "tr": "Avrupa Parlamentosu AB ilaç paketini onayladı, Kritik İlaçlar Yasası’nı kabul etti"
+      },
+      "summary": {
+        "en": "The new regulation and directive set 8+1 years of baseline regulatory protection, add exclusivity vouchers for priority antimicrobials and tighten supply duties; they apply about 24 months after entry into force. The Critical Medicines Act still needs Council sign-off.",
+        "fa": "مقررات و دستورالعمل جدید، حمایت پایهٔ 8+1 ساله از داده‌ها، واچر انحصار برای ضدمیکروبی‌های اولویت‌دار و تعهدات سخت‌گیرانه‌تر تأمین را پیش‌بینی می‌کنند و حدود 24 ماه پس از لازم‌الاجرا شدن اعمال خواهند شد. قانون داروهای حیاتی هنوز به تأیید رسمی شورا نیاز دارد.",
+        "zh": "新条例和指令规定 8+1 年基础监管保护期，引入优先抗菌药物独占权凭证并强化供应义务，将于生效约 24 个月后适用；《关键药品法》仍需理事会正式批准。",
+        "tr": "Yeni tüzük ve direktif 8+1 yıllık temel düzenleyici koruma, öncelikli antimikrobiyaller için münhasırlık kuponları ve daha sıkı tedarik yükümlülükleri getiriyor; yürürlükten yaklaşık 24 ay sonra uygulanacak. Kritik İlaçlar Yasası henüz Konsey onayı bekliyor."
       }
     },
     {
@@ -95,25 +114,6 @@
         "fa": "پاسخ رسمی به نظرخواهی تأیید می‌کند که مقررات Human Medicines Regulations اصلاح می‌شود تا فرآورده‌های نوکلئیک‌اسید سنتزی و ویرایش ژنوم در تعریف GTMP قرار گیرند؛ الیگونوکلئوتیدهای فاقد رونویسی خارج می‌مانند و فرآورده‌های دارای مجوز بازطبقه‌بندی نمی‌شوند.",
         "zh": "征求意见答复确认将修订 Human Medicines Regulations，把合成核酸和基因组编辑产品纳入 GTMP 定义；不经转录或翻译起效的寡核苷酸不在其列，已获批产品不重新分类。",
         "tr": "İstişare yanıtı, Human Medicines Regulations’ın sentetik nükleik asit ve genom düzenleme ürünlerini GTMP tanımına alacak şekilde değiştirileceğini doğruluyor; transkripsiyonsuz oligonükleotitler kapsam dışı kalıyor, ruhsatlı ürünler yeniden sınıflandırılmıyor."
-      }
-    },
-    {
-      "id": "20261119-hc-rmp-guidance-consolidated",
-      "date": "2026-11-19",
-      "agency": "Health Canada",
-      "tag": "final",
-      "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/submitting-risk-management-plans.html",
-      "title": {
-        "en": "Health Canada consolidates risk management plan guidance, effective 1 April 2027",
-        "fa": "Health Canada راهنمای ارائهٔ برنامهٔ مدیریت خطر (RMP) را یکپارچه کرد؛ اجرا از 1 آوریل 2027",
-        "zh": "加拿大卫生部整合风险管理计划提交指南，2027 年 4 月 1 日生效",
-        "tr": "Health Canada risk yönetim planı kılavuzlarını birleştirdi; 1 Nisan 2027’de yürürlüğe giriyor"
-      },
-      "summary": {
-        "en": "The revised guidance merges the general and opioid RMP documents, aligns them with new FDR C.01.701 provisions covering Schedule D biologics and biosimilars, and makes a bilingual RMP summary a screening requirement.",
-        "fa": "راهنمای بازنگری‌شده اسناد عمومی و ویژهٔ اپیوئیدها را ادغام و با مفاد جدید FDR C.01.701 که فرآورده‌های بیولوژیک و بیوسیمیلارهای Schedule D را هم در بر می‌گیرد هماهنگ می‌کند؛ ارائهٔ خلاصهٔ دوزبانهٔ RMP نیز شرط پذیرش اولیهٔ پرونده شده است.",
-        "zh": "修订后的指南合并了通用及阿片类 RMP 指南，与涵盖 Schedule D 生物制品和生物类似药的新 FDR C.01.701 条款衔接，并将双语 RMP 摘要列为形式审查要求。",
-        "tr": "Revize kılavuz, genel ve opioid RMP belgelerini birleştirip Schedule D biyolojik ve biyobenzerleri kapsayan yeni FDR C.01.701 hükümleriyle uyumlu hale getiriyor; iki dilli RMP özeti ön inceleme şartı oluyor."
       }
     }
   ]
