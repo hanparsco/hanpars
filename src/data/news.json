@@ -1,6 +1,15 @@
 {
- "updated": "2026-11-27T03:16:12Z",
+ "updated": "2026-11-28T02:57:13Z",
  "global": [
+  {
+   "title": "Lupin Announces U.S. FDA Approval and Launch of Sitagliptin Tablets, USP in the United States",
+   "url": "https://www.tradingview.com/news/prnewswire:5b792c86c5258:0-lupin-announces-u-s-fda-approval-and-launch-of-sitagliptin-tablets-usp-in-the-united-states/",
+   "source": "TradingView",
+   "date": "2026-11-27",
+   "summary": "Lupin Announces U.S. FDA Approval and Launch of Sitagliptin Tablets, USP in the United States TradingView",
+   "image": "/news/g-9229b6b8b6.jpg",
+   "kind": "news"
+  },
   {
    "title": "Pharming pauses Ruconest production, warns of supply interruption",
    "url": "https://endpoints.news/pharming-pauses-ruconest-production-warns-of-supply-interruption/",
@@ -11,21 +20,12 @@
    "kind": "news"
   },
   {
-   "title": "Sanofi inks massive $41B Insmed buyout for post-Dupixent growth drivers",
-   "url": "https://www.fiercepharma.com/pharma/sanofi-inks-41b-insmed-buyout-post-dupixent-growth-drivers",
-   "source": "Fierce Pharma",
-   "date": "2026-11-24",
-   "summary": "Sanofi has struck a deal to acquire Insmed for $41 billion, securing three commercial and late-phase respiratory assets to offset Dupixent’s looming loss of exclusivity.",
-   "image": "/news/g-2c9478fe97.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "Cogent Biosciences gains FDA approval for Ekitna combo in GIST",
-   "url": "https://www.pharmaceutical-technology.com/news/cogent-biosciences-fda-ekitna-combo-gist/",
-   "source": "Pharmaceutical Technology",
-   "date": "2026-11-25",
-   "summary": "The US FDA has approved Cogent Biosciences’ Ekitna in combination with sunitinib for adult patients with advanced GIST who previously received imatinib.",
-   "image": "/news/g-13b41b652d.jpg",
+   "title": "How Sanofi's new CEO struck a rapid $41 billion deal for Insmed",
+   "url": "https://lufkindailynews.com/news_reuters/business/how-sanofis-new-ceo-struck-a-rapid-41-billion-deal-for-insmed/article_ed5d8167-7145-5603-b5e5-8f7cf91d5853.html",
+   "source": "The Lufkin Daily News",
+   "date": "2026-11-27",
+   "summary": "How Sanofi's new CEO struck a rapid $41 billion deal for Insmed The Lufkin Daily News",
+   "image": "/news/g-35ec30dc41.jpg",
    "kind": "news"
   }
  ],
@@ -40,21 +40,21 @@
    "kind": "news"
   },
   {
+   "title": "Bayer plans up to €500 million Beijing plant, its biggest China pharma bet",
+   "url": "https://mlq.ai/news/bayer-plans-up-to-500-million-beijing-plant-its-biggest-china-pharma-bet/",
+   "source": "MLQ.ai",
+   "date": "2026-11-27",
+   "summary": "Bayer plans up to €500 million Beijing plant, its biggest China pharma bet MLQ.ai",
+   "image": "",
+   "kind": "news"
+  },
+  {
    "title": "Sihuan Pharma Says NMPA Approves Meiyan Space's Xiangyayan As Class III Medical Device",
    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN4752EC:0-sihuan-pharma-says-nmpa-approves-meiyan-space-s-xiangyayan-as-class-iii-medical-device/?mobileapp_new=true",
    "source": "TradingView",
    "date": "2026-11-24",
    "summary": "Sihuan Pharma Says NMPA Approves Meiyan Space's Xiangyayan As Class III Medical Device TradingView",
    "image": "/news/c-07cc870870.jpg",
-   "kind": "news"
-  },
-  {
-   "title": "India's API industry grows 8–9% in volume, but Chinese competition puts pressure on revenues, say experts",
-   "url": "https://www.businesstoday.in/industry/pharma/story/indias-api-industry-grows-8-9-in-volume-but-chinese-competition-puts-pressure-on-revenues-569188-2026-11-23",
-   "source": "Business Today",
-   "date": "2026-11-23",
-   "summary": "India's API industry grows 8–9% in volume, but Chinese competition puts pressure on revenues, say experts Business Today",
-   "image": "/news/c-7f668ccd8e.jpg",
    "kind": "news"
   }
  ]

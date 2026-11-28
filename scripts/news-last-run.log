@@ -1,32 +1,32 @@
-  ! Google News: HTTP Error 503: Service Unavailable
-  ! Google News: HTTP Error 503: Service Unavailable
-  ! Google News: HTTP Error 503: Service Unavailable
-  ! Google News: HTTP Error 503: Service Unavailable
-  ! Google News: HTTP Error 503: Service Unavailable
-  ! Google News: HTTP Error 503: Service Unavailable
-  ! Google News: HTTP Error 503: Service Unavailable
-  ! Google News: HTTP Error 503: Service Unavailable
 global feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
+  Google News: 21 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
+  Google News: 29 items
 china feeds
   Fierce Pharma: 25 items
   Pharmaceutical Executive: 30 items
   BioPharma Dive: 10 items
   Endpoints News: 24 items
+  Google News: 21 items
   Pharmaceutical Technology: 10 items
   STAT: 20 items
   Pharmaphorum: 10 items
+  Google News: 29 items
+  Google News: 25 items
+  Google News: 0 items (no <item> elements; root <rss>, 1281 bytes, start b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><generator>NFE/5.0</generator><title>"China "active pharmaceutical ingredient" OR "API manufacturer" OR "API expo')
+  Google News: 53 items
+  Google News: 58 items
 global
+  - TradingView | Lupin Announces U.S. FDA Approval and Launch of Sitagliptin Tablets, U | img
   - Endpoints News | Pharming pauses Ruconest production, warns of supply interruption | img
-  - Fierce Pharma | Sanofi inks massive $41B Insmed buyout for post-Dupixent growth driver | img
-  - Pharmaceutical Technology | Cogent Biosciences gains FDA approval for Ekitna combo in GIST | img
+  - The Lufkin Daily News | How Sanofi's new CEO struck a rapid $41 billion deal for Insmed | img
 china
   - Pharmaceutical Technology | Bayer signs $3.25bn oncology deal with Hansoh Pharma | img
+  - MLQ.ai | Bayer plans up to €500 million Beijing plant, its biggest China pharma | no image
   - TradingView | Sihuan Pharma Says NMPA Approves Meiyan Space's Xiangyayan As Class II | img
-  - Business Today | India's API industry grows 8–9% in volume, but Chinese competition put | img
