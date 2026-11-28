@@ -38,7 +38,7 @@
   news updated 2026-11-28T02:57:13Z
   blocked 404 [watch] https://www.fda.gov/apology_objects/abuse-detection-apology.html
   WARN ERR ConnectionResetError [watch] https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-abre-consultas-dirigidas-sobre-produtos-componentes-do-sangue-para-fins-terapeuticos-nao-transfusionais
-  ok  200 [watch] https://unblock.federalregister.gov
+  ok  200 [watch] https://www.federalregister.gov/documents/2026/11/27/2026-24021/individualized-human-genome-editing-products-considerations-for-bla-submission-and-postapproval
   blocked 202 [watch] https://www.europarl.europa.eu/news/en/press-room/20261123IPR49040/background-pharmaceutical-package-and-critical-medicines-act
   ok  200 [watch] https://www.ema.europa.eu/en/human-regulatory-overview/public-health-threats/antimicrobial-resistance/priority-antimicrobials-transferable-data-exclusivity-vouchers
   ok  200 [watch] https://www.gov.uk/government/consultations/consultation-on-the-regulation-of-gene-therapy-medicinal-products
