@@ -1,6 +1,6 @@
 {
   "_about": "Regulatory watch on /regulatory-affairs (all languages). Written automatically by the daily 'Regulatory Watch daily scan' scheduled task from its dashboard ledger. asOf = scan date (YYYY-MM-DD). Each item: id, date (YYYY-MM-DD), agency, url (agency's own page), tag (one of: final, draft, closing, approval, gmp, news), title/summary in en, fa, zh, tr. Keep 6 items, newest first.",
-  "asOf": "2026-11-27",
+  "asOf": "2026-11-28",
   "items": [
     {
       "id": "20261201-fda-hepatic-impairment-pk-draft-closing",
